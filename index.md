@@ -10,7 +10,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - **Teoretisk matematikk 2** <br/>
   Matematikk knytt til VGS-faget R2.
 - **Anvendt matematikk 2** <br/>
-  Anvendelser av matematikken presentert i TM1 og TM2
+  Anvendelser av matematikken presentert i TM1 og TM2.
   
 ### Files
 
