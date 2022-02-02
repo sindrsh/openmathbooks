@@ -13,16 +13,13 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. During the spring and summer of 2022 the collection will consist of the following books (for the moment, the books are in Norwegian):
+- Matematikkens byggesteiner
+- Anvendt matematikk 1
+- Teoretisk matematikk 1
+- Teoretisk matematikk 2
+- Anvendt matematikk 2
 
-Content 
-* Sequences and series
-* Trigonometry
-* Vector calculus
-* Geometries in 3-space
-* Derivation
-* Integration
-* Differential equations
-* GeoGebra (independent document)
 ### Built With
 
 * [LaTeX](https://www.latex-project.org/)
@@ -41,9 +38,8 @@ This space includes the complete file structure of the book ready to be compiled
 
 <!-- ROADMAP -->
 ## Roadmap
-My personal target is to make a collection of (free) books covering the topics up to pre-calculus level. Upcoming changes for this book includes 
-- adding content covering numerical methods 
-- adapting the book to the new guidelines set by Utdanningsdirektoratet, invoked on 01.08.2022  
+My personal target is to make a collection of (free) books covering the topics up to precalculus level. Upcoming changes for this book includes 
+
 
 In addition, any feedback on the books content is always welcome.
 
