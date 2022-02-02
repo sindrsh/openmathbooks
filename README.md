@@ -1,4 +1,4 @@
-# Før kalkulus
+# OpenMathBooks
 
 <!-- PROJECT LOGO -->
 <br />
