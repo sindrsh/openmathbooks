@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# About the book
 
-You can use the [editor on GitHub](https://github.com/sindrsh/openmathbooks/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+_First Principles of Math_ is a free text book (PDF) introducing the basic concepts of math, namely
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Integers and rational and irrational numbers
+- The elementary operations
+- Fractions
+- Negative numbers
+- Geometry
+- Algebra
+- Equations
+- Functions
 
-### Markdown
+### Files
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The book is available in two different languages; Norwegian (original) and English. The respective versions are found here
 
-```markdown
-Syntax highlighted code block
+- [First Principles of Math (English)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/FP_eng.pdf)
+- [Matematikken sine byggesteinar (Norwegian, nynorsk)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB.pdf)
+- [Matematikkens byggesteiner (Norwegian, bokmål)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf) 
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sindrsh/openmathbooks/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Contact
+sindre.heggen@gmail.com
