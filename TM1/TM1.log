@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 FEB 2022 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 FEB 2022 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1386,18 +1386,19 @@ File: uesvect.fd
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./cmt/cmt_bm.tex (./cmt/.
+./../doc.tex)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 14.
+(Font)              <10.95> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 8.
 
-Overfull \hbox (5.22075pt too wide) in paragraph at lines 14--15
+Overfull \hbox (5.22075pt too wide) in paragraph at lines 8--9
 \T1/lmr/m/n/10.95 det er etablert at $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 
 er en vari-abel, vil det der-for ikke være noen forskjell 
  []
 
-[2
+) [2
 
 ]
 Kapittel 1.
@@ -1633,6 +1634,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 468--468
 
 [24]) [25]
 Kapittel 3.
+[26
+
+]
+Kapittel 4.
 (./lim/lim_bm.tex (./lim/../../doc.tex)
 Overfull \hbox (11.39993pt too wide) in paragraph at lines 7--9
 \T1/lmr/m/sl/10.95 nærme vi måtte ønske $\OMS/lmsy/m/n/10.95 ^^@$ \T1/lmr/m/sl/
@@ -1691,7 +1696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 r/m/n/10.95 en verdi. Dette gjør altså at
  []
 
-[26
+[27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
@@ -1700,9 +1705,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--32
 /lmr/m/n/10.95 går mot
  []
 
-) [27]
-Kapittel 4.
-(./der/der_bm.tex (./der/../../doc.tex) [28
+) [28]
+Kapittel 5.
+(./der/der_bm.tex (./der/../../doc.tex) [29
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
@@ -1711,12 +1716,12 @@ m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , og som
  går gjen-nom punk-tet
  []
 
-<der/../fig/der1.pdf, id=403, 170.46686pt x 142.01054pt>
+<der/../fig/der1.pdf, id=412, 170.46686pt x 142.01054pt>
 File: der/../fig/der1.pdf Graphic file (type pdf)
 <use der/../fig/der1.pdf>
 Package pdftex.def Info: der/../fig/der1.pdf  used on input line 41.
 (pdftex.def)             Requested size: 170.46643pt x 142.0102pt.
-[29 <./der/../fig/der1.pdf>]
+[30 <./der/../fig/der1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 .
  Den de-riverte av $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 med hen-syn på $\O
@@ -1731,7 +1736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--81
 10.95 "$
  []
 
-[30] [31] [32
+[31] [32] [33
 
 ]
 Overfull \hbox (7.31697pt too wide) in paragraph at lines 99--100
@@ -1750,16 +1755,16 @@ m funksjon
  []
 
 
-LaTeX Warning: Reference `fa_h' on page 33 undefined on input line 117.
+LaTeX Warning: Reference `fa_h' on page 34 undefined on input line 117.
 
-[33
+[34
 
-] [34] [35
+] [35] [36
 
-] [36
+] [37
 
-]) [37]
-Kapittel 5.
+]) [38]
+Kapittel 6.
 (./inv/inv_bm.tex (./inv/../../doc.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
@@ -1767,11 +1772,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
  til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er unike på in-ter-
  []
 
-[38
+[39
 
-] [39
+] [40
 
-] [40]
+] [41]
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []\T1/lmr/m/n/10.95 Hvis $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $\OML/lmm
 /m/it/10.95 g$ \T1/lmr/m/n/10.95 er omvendte funksjoner, skrives $\OML/lmm/m/it
@@ -1791,7 +1796,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 ære
  []
 
-[41]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har ab-so-lutt mak-si-mum $\OML/lmm
 /m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )$ \T1
@@ -1818,7 +1823,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 it/10.95 f$\T1/lmr/m/n/10.95 . Nærmere bestemt et mak-si-
  []
 
-[42
+[43
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 97--97
@@ -1842,7 +1847,7 @@ s-i-tiv til neg-a-tiv, går $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 fra kon-ve
 ks til
  []
 
-[43]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \T1/lmr/m/n/10.95 Av $[]$ er det $[]$ og $[]$ som opp-fyller kravet fra lignin-
 
@@ -1866,7 +1871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 /m/n/10.95 går fra kon-veks til konkav i $[]$
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []\T1/lmr/m/n/10.95 Hvis hele linja mel-lom $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 a; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 ))$ \T1/l
@@ -1875,7 +1880,7 @@ mr/m/n/10.95 og $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b; f\OT1/lmr/m/n/10.95
 afen til
  []
 
-<inv/../fig/konv.pdf, id=518, 115.99335pt x 91.49182pt>
+<inv/../fig/konv.pdf, id=527, 115.99335pt x 91.49182pt>
 File: inv/../fig/konv.pdf Graphic file (type pdf)
 <use inv/../fig/konv.pdf>
 Package pdftex.def Info: inv/../fig/konv.pdf  used on input line 156.
@@ -1889,19 +1894,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--156
 afen
  []
 
-<inv/../fig/konk.pdf, id=519, 115.99335pt x 89.60475pt>
+<inv/../fig/konk.pdf, id=528, 115.99335pt x 89.60475pt>
 File: inv/../fig/konk.pdf Graphic file (type pdf)
 <use inv/../fig/konk.pdf>
 Package pdftex.def Info: inv/../fig/konk.pdf  used on input line 156.
 (pdftex.def)             Requested size: 115.99304pt x 89.6045pt.
-) [45
+) [46
 
  <./inv/../fig/konv.pdf> <./inv/../fig/konk.pdf>]
-Kapittel 6.
-[46
+Kapittel 7.
+[47
 
 ]
-Kapittel 7.
+Kapittel 8.
 (./geo/geo_bm.tex (./geo/../../doc.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []\T1/lmr/m/n/10.95 Gitt $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 BAC$\T1/lmr/m/n
@@ -1909,7 +1914,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 \T1/lmr/m/it/10.95 halver-ingslinja \T1/lmr/m/n/10.95 til
  []
 
-<geo/../fig/halfline.pdf, id=539, 142.26149pt x 98.10652pt>
+<geo/../fig/halfline.pdf, id=548, 142.26149pt x 98.10652pt>
 File: geo/../fig/halfline.pdf Graphic file (type pdf)
 <use geo/../fig/halfline.pdf>
 Package pdftex.def Info: geo/../fig/halfline.pdf  used on input line 11.
@@ -1921,7 +1926,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 ik at
  []
 
-<geo/../fig/midtp.pdf, id=540, 170.7178pt x 14.18298pt>
+<geo/../fig/midtp.pdf, id=549, 170.7178pt x 14.18298pt>
 File: geo/../fig/midtp.pdf Graphic file (type pdf)
 <use geo/../fig/midtp.pdf>
 Package pdftex.def Info: geo/../fig/midtp.pdf  used on input line 15.
@@ -1932,16 +1937,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
  står nor-malt på, og går gjen-nom midt-
  []
 
-<geo/../fig/midnorm0.pdf, id=541, 170.7178pt x 73.59496pt>
+<geo/../fig/midnorm0.pdf, id=550, 170.7178pt x 73.59496pt>
 File: geo/../fig/midnorm0.pdf Graphic file (type pdf)
 <use geo/../fig/midnorm0.pdf>
 Package pdftex.def Info: geo/../fig/midnorm0.pdf  used on input line 19.
 (pdftex.def)             Requested size: 170.71738pt x 73.59477pt.
-[47
+[48
 
- <./geo/../fig/halfline.pdf> <./geo/../fig/midtp.pdf>] [48 <./geo/../fig/midnor
+ <./geo/../fig/halfline.pdf> <./geo/../fig/midtp.pdf>] [49 <./geo/../fig/midnor
 m0.pdf>]
-<geo/../fig/hlikb.pdf, id=569, 142.26149pt x 83.45177pt>
+<geo/../fig/hlikb.pdf, id=579, 142.26149pt x 83.45177pt>
 File: geo/../fig/hlikb.pdf Graphic file (type pdf)
 <use geo/../fig/hlikb.pdf>
 Package pdftex.def Info: geo/../fig/hlikb.pdf  used on input line 25.
@@ -1971,7 +1976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--38
  samme
  []
 
-<geo/../fig/median1a.pdf, id=571, 142.26149pt x 80.95244pt>
+<geo/../fig/median1a.pdf, id=581, 142.26149pt x 80.95244pt>
 File: geo/../fig/median1a.pdf Graphic file (type pdf)
 <use geo/../fig/median1a.pdf>
 Package pdftex.def Info: geo/../fig/median1a.pdf  used on input line 38.
@@ -1984,12 +1989,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--38
 som skjærer
  []
 
-<geo/../fig/median1b.pdf, id=573, 142.26149pt x 80.95244pt>
+<geo/../fig/median1b.pdf, id=583, 142.26149pt x 80.95244pt>
 File: geo/../fig/median1b.pdf Graphic file (type pdf)
 <use geo/../fig/median1b.pdf>
 Package pdftex.def Info: geo/../fig/median1b.pdf  used on input line 69.
 (pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
-<geo/../fig/median1c.pdf, id=574, 142.26149pt x 80.95244pt>
+<geo/../fig/median1c.pdf, id=584, 142.26149pt x 80.95244pt>
 File: geo/../fig/median1c.pdf Graphic file (type pdf)
 <use geo/../fig/median1c.pdf>
 Package pdftex.def Info: geo/../fig/median1c.pdf  used on input line 69.
@@ -2047,9 +2052,9 @@ r/m/n/10.95 og $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 AGB$ \T1/lmr/m/n/10.95 er
  top-pvin-kler og
  []
 
-[49
+[50
 
- <./geo/../fig/hlikb.pdf> <./geo/../fig/median1a.pdf>] [50 <./geo/../fig/median
+ <./geo/../fig/hlikb.pdf> <./geo/../fig/median1a.pdf>] [51 <./geo/../fig/median
 1b.pdf> <./geo/../fig/median1c.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []\T1/lmr/m/n/10.95 Midtnormalene i en trekant møtes i ett og samme punkt. Dett
@@ -2062,12 +2067,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--73
 ten på
  []
 
-<geo/../fig/midnorm1a.pdf, id=606, 170.7178pt x 168.55972pt>
+<geo/../fig/midnorm1a.pdf, id=615, 170.7178pt x 168.55972pt>
 File: geo/../fig/midnorm1a.pdf Graphic file (type pdf)
 <use geo/../fig/midnorm1a.pdf>
 Package pdftex.def Info: geo/../fig/midnorm1a.pdf  used on input line 73.
 (pdftex.def)             Requested size: 170.71738pt x 168.5593pt.
-<geo/../fig/midnorm1b.pdf, id=608, 170.7178pt x 158.8334pt>
+<geo/../fig/midnorm1b.pdf, id=617, 170.7178pt x 158.8334pt>
 File: geo/../fig/midnorm1b.pdf Graphic file (type pdf)
 <use geo/../fig/midnorm1b.pdf>
 Package pdftex.def Info: geo/../fig/midnorm1b.pdf  used on input line 82.
@@ -2107,7 +2112,7 @@ n/10.95 og $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 må nød-vendigvis ligge på
 sirke-len med sen-trum
  []
 
-[51 <./geo/../fig/midnorm1a.pdf>]
+[52 <./geo/../fig/midnorm1a.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T1/lmr/m/n/10.95 Halveringslinjene til vin-k-lene i en trekant møtes i ett o
 g samme
@@ -2119,12 +2124,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--86
 nskrevne \T1/lmr/m/n/10.95 sirke-len, som
  []
 
-<geo/../fig/innskr1a.pdf, id=617, 199.1741pt x 102.1416pt>
+<geo/../fig/innskr1a.pdf, id=626, 199.1741pt x 102.1416pt>
 File: geo/../fig/innskr1a.pdf Graphic file (type pdf)
 <use geo/../fig/innskr1a.pdf>
 Package pdftex.def Info: geo/../fig/innskr1a.pdf  used on input line 86.
 (pdftex.def)             Requested size: 199.17361pt x 102.14134pt.
-<geo/../fig/innskr1b.pdf, id=619, 199.1741pt x 108.76636pt>
+<geo/../fig/innskr1b.pdf, id=628, 199.1741pt x 108.76636pt>
 File: geo/../fig/innskr1b.pdf Graphic file (type pdf)
 <use geo/../fig/innskr1b.pdf>
 Package pdftex.def Info: geo/../fig/innskr1b.pdf  used on input line 92.
@@ -2185,18 +2190,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
  og $[]$. Altså er $[]$,
  []
 
-[52 <./geo/../fig/midnorm1b.pdf> <./geo/../fig/innskr1a.pdf>]) [53 <./geo/../fi
+[53 <./geo/../fig/midnorm1b.pdf> <./geo/../fig/innskr1a.pdf>]) [54 <./geo/../fi
 g/innskr1b.pdf>]
-Kapittel 8.
-[54
+Kapittel 9.
+[55
 
 ] (./tan/tan_bm.tex (./tan/../../doc.tex)
-<tan/../fig/tang0a.pdf, id=646, 101.47913pt x 101.47913pt>
+<tan/../fig/tang0a.pdf, id=656, 101.47913pt x 101.47913pt>
 File: tan/../fig/tang0a.pdf Graphic file (type pdf)
 <use tan/../fig/tang0a.pdf>
 Package pdftex.def Info: tan/../fig/tang0a.pdf  used on input line 18.
 (pdftex.def)             Requested size: 101.47887pt x 101.47887pt.
-<tan/../fig/tang0b.pdf, id=647, 142.01054pt x 113.56427pt>
+<tan/../fig/tang0b.pdf, id=657, 142.01054pt x 113.56427pt>
 File: tan/../fig/tang0b.pdf Graphic file (type pdf)
 <use tan/../fig/tang0b.pdf>
 Package pdftex.def Info: tan/../fig/tang0b.pdf  used on input line 19.
@@ -2207,15 +2212,15 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 20.
 See the caption package documentation for explanation.
 
-[55
+[56
 
  <./tan/../fig/tang0a.pdf> <./tan/../fig/tang0b.pdf>]
-<tan/../fig/tang1b.pdf, id=668, 182.93344pt x 180.96608pt>
+<tan/../fig/tang1b.pdf, id=677, 182.93344pt x 180.96608pt>
 File: tan/../fig/tang1b.pdf Graphic file (type pdf)
 <use tan/../fig/tang1b.pdf>
 Package pdftex.def Info: tan/../fig/tang1b.pdf  used on input line 51.
 (pdftex.def)             Requested size: 182.93298pt x 180.96562pt.
-<tan/../fig/tang1c.pdf, id=669, 172.30373pt x 153.20236pt>
+<tan/../fig/tang1c.pdf, id=678, 172.30373pt x 153.20236pt>
 File: tan/../fig/tang1c.pdf Graphic file (type pdf)
 <use tan/../fig/tang1c.pdf>
 Package pdftex.def Info: tan/../fig/tang1c.pdf  used on input line 52.
@@ -2231,13 +2236,13 @@ Overfull \hbox (21.06429pt too wide) in paragraph at lines 51--53
  [][][] 
  []
 
-[56 <./tan/../fig/tang1b.pdf> <./tan/../fig/tang1c.pdf>] [57]
+[57 <./tan/../fig/tang1b.pdf> <./tan/../fig/tang1c.pdf>] [58]
 Overfull \hbox (2.11848pt too wide) in paragraph at lines 104--111
 \T1/lmr/m/n/10.95 Når $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 går mot 0, er b
 egge led-dene i [][] <<0 over 0>> ut-trykk. Vi bruker 
  []
 
-[58]
+[59]
 Overfull \hbox (0.15736pt too wide) in paragraph at lines 154--156
 \T1/lmr/m/n/10.95 Siden $[]$ og $[]$, er grafen til $\OML/lmm/m/it/10.95 g$ \T1
 /lmr/m/n/10.95 tan-ger-ingslinja til sirke- 
@@ -2250,29 +2255,29 @@ r $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 går mot 0. Altså er $\OML/lmm/m/it/
 10.95 g$ \T1/lmr/m/n/10.95 tan-ger-ingslinja til sirke- 
  []
 
-) [59] [60
+) [60] [61
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./TM1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `TM1.out' has not changed.
-(rerunfilecheck)             Checksum: 851FD324CD26EF801B9BFFE7F441B9AF;1993.
+(rerunfilecheck)             Checksum: 62998C13B856FCA98E6239F9DDA9BBBA;2041.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31942 strings out of 481239
- 624229 string characters out of 5920378
- 938824 words of memory out of 5000000
- 46219 multiletter control sequences out of 15000+600000
+ 31954 strings out of 481239
+ 624364 string characters out of 5920378
+ 937838 words of memory out of 5000000
+ 46222 multiletter control sequences out of 15000+600000
  645657 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,16n,104p,869b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,16n,104p,869b,1087s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -2296,10 +2301,10 @@ share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public
 /fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/esvect/vect10.pfb>
-Output written on TM1.pdf (60 pages, 527922 bytes).
+Output written on TM1.pdf (61 pages, 528569 bytes).
 PDF statistics:
- 866 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 220 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 760 compressed objects within 8 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

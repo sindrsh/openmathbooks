@@ -10,26 +10,27 @@
 \contentsline {section}{\numberline {2.5}Polynomers egenskaper}{18}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Logaritmer}{20}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Forklaringer}{22}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Grenseverdier og kontinuitet}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Grenseverdier}{26}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Derivasjon}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Definisjoner }{28}{section.4.1}%
-\contentsline {subsubsection}{Linearisering av en funksjon}{30}{subsubsection*.17}%
-\contentsline {section}{\numberline {4.2}Derivasjonsregler}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Kjerneregelen}{33}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Produktregelen}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Divisjonsregelen}{36}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Funksjonsdrøfting}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Monotoniegenskaper}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Injektive funksjoner}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Omvendte funksjoner}{39}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ekstremalpunkt}{42}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Konvekse og konkave funksjoner}{45}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Vektorer}{46}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Geometri}{47}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Definisjoner}{47}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Egenskaper til trekanter}{49}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Numeriske metoder}{54}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Newtons metode}{54}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Derivasjon}{54}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Vekstmodeller}{54}{section.8.3}%
+\contentsline {chapter}{\numberline {3}Trigonometri}{26}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Grenseverdier og kontinuitet}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Grenseverdier}{27}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Derivasjon}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definisjoner }{29}{section.5.1}%
+\contentsline {subsubsection}{Linearisering av en funksjon}{31}{subsubsection*.17}%
+\contentsline {section}{\numberline {5.2}Derivasjonsregler}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Kjerneregelen}{34}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Produktregelen}{36}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Divisjonsregelen}{37}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Funksjonsdrøfting}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Monotoniegenskaper}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Injektive funksjoner}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Omvendte funksjoner}{40}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Ekstremalpunkt}{43}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Konvekse og konkave funksjoner}{46}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Vektorer}{47}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Geometri}{48}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Definisjoner}{48}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Egenskaper til trekanter}{50}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Numeriske metoder}{55}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Newtons metode}{55}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Derivasjon}{55}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Vekstmodeller}{55}{section.9.3}%
