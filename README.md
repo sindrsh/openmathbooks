@@ -30,11 +30,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This space includes the complete file structure of the book ready to be compiled in a TeX-editor. The main documents are
-
-- bokR2_pdf.tex (builds the PDF of the main book)
-- bokR2.tex (builds the PDF of the main book, adapted for two-sided printing)
-- ggbr2.tex (builds the PDF of the book on GeoGebra 5) 
+This space includes the complete file structure of the books ready to be compiled in a TeX-editor.
 
 <!-- ROADMAP -->
 ## Roadmap
