@@ -3,9 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">Før kalkulus</h3>
+  <h3 align="center">OpenMathBooks</h3>
   <p align="center">
-    A free book on the Norwegian math-subject R2.
+    Series of free math books.
     <br />
   </p>
 </p>
