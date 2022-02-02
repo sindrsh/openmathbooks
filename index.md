@@ -1,13 +1,17 @@
 ## About the book
 
 OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. During the spring and summer of 2022 the collection will consist of the following books (for the moment, the books are in Norwegian):
-- **Matematikkens byggesteiner**<br/>
-  Introduksjon til basiskunnskaper innen matematikk.
-- Anvendt matematikk 1
-- Teoretisk matematikk 1
-- Teoretisk matematikk 2
-- Anvendt matematikk 2
-
+- **Matematikkens byggesteiner (MB)**<br/>
+  Grunnleggende teori innen matematikk.
+- **Anvendt matematikk 1 (AM1)** <br/>
+  Anvendelser av matematikken presentert i MB.
+- **Teoretisk matematikk 1(TM1)** <br/>
+  Matematikk knytt til VGS-fagene 1T og R1.
+- **Teoretisk matematikk 2** 
+  Matematikk knytt til VGS-faget R2.
+- **Anvendt matematikk 2**
+  Anvendelser av matematikken presentert i TM1 og TM2
+  
 ### Files
 
 The books are found here
