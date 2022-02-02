@@ -57,7 +57,7 @@ Distributed under the CC BY-NC-SA 4.0 license. To view a copy of this license, v
 
 Sindre Sogge Heggen - sindre.heggen@gmail.com
 
-Project Link: [https://sindrsh.github.io/precalc/](https://sindrsh.github.io/precalc/)
+Project Link:
 
 
 
