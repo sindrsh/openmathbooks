@@ -5,7 +5,7 @@
 <p align="center">
   <h3 align="center">OpenMathBooks</h3>
   <p align="center">
-    Series of free math books.
+    Collection of free math books.
     <br />
   </p>
 </p>
