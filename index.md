@@ -1,19 +1,15 @@
 ## About the book
 
-_First Principles of Math_ is a free text book (PDF) introducing the basic concepts of math, namely
-
-- Integers and rational and irrational numbers
-- The elementary operations
-- Fractions
-- Negative numbers
-- Geometry
-- Algebra
-- Equations
-- Functions
+OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. During the spring and summer of 2022 the collection will consist of the following books (for the moment, the books are in Norwegian):
+- Matematikkens byggesteiner
+- Anvendt matematikk 1
+- Teoretisk matematikk 1
+- Teoretisk matematikk 2
+- Anvendt matematikk 2
 
 ### Files
 
-The book is available in two different languages; Norwegian (original) and English. The respective versions are found here
+The books are found here
 
 - [First Principles of Math (English)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/FP_eng.pdf)
 - [Matematikken sine byggesteinar (Norwegian, nynorsk)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB.pdf)
