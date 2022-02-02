@@ -1,0 +1,35 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Mengder}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Mengder}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Verdi- og definisjonsmengder}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Algebra}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Kvadratsetningene og fullstendige kvadrat}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Andregradslikninger}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Navn på funksjoner}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Polynomdivisjon}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Polynomers egenskaper}{18}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Logaritmer}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Forklaringer}{22}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Grenseverdier og kontinuitet}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Grenseverdier}{26}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Derivasjon}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Definisjoner }{28}{section.4.1}%
+\contentsline {subsubsection}{Linearisering av en funksjon}{30}{subsubsection*.17}%
+\contentsline {section}{\numberline {4.2}Derivasjonsregler}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Kjerneregelen}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Produktregelen}{35}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Divisjonsregelen}{36}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Funksjonsdrøfting}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Monotoniegenskaper}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Injektive funksjoner}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Omvendte funksjoner}{39}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ekstremalpunkt}{42}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Konvekse og konkave funksjoner}{45}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Vektorer}{46}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Geometri}{47}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Definisjoner}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Egenskaper til trekanter}{49}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Numeriske metoder}{54}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Newtons metode}{54}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Derivasjon}{54}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Vekstmodeller}{54}{section.8.3}%

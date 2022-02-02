@@ -1,0 +1,469 @@
+\input{../../doc}
+\input{../tm_bm}
+\input{../../preamb}
+
+
+\begin{document}
+\section{Kvadratsetningene og fullstendige kvadrat}
+\reg[Kvadratsetningene]{
+For to reelle tall $ a $ og $ b $ er
+\alg{
+&&(a+b)^2 &= a^2+2ab+b^2 && \text{(1. kvadratsetning)}\vn
+&&(a-b)^2 &= a^2-2ab+b^2 && \text{(2. kvadratsetning)} \vn
+&&(a+b)(a-b)&= a^2-b^2 && \text{(3. kvadratsetning)}
+}
+}
+\spr{
+$ (a+b)^2 $ og $ (a-b)^2 $ kalles \textit{fullstendige kvadrat}.\vsk	
+	
+3. kvadratsetning kalles også \textit{konjugatsetningen}.
+}
+\eks[1]{
+Skriv om $ a^2+8a+16 $ til et fullstendig kvadrat.
+
+\sv \vsb \vs
+\alg{
+a^2+8a+16 &= a^2+2\cdot4a+4^2 \\
+&= (a+4)^2
+}
+}
+\eks[??]{
+Skriv om $ k^2+6k +7 $ til et uttrykk der alle instanser av $ l $ er i et fullstendig kvadrat.
+
+\sv \vsb \vs
+\alg{
+k^2+6k +7 &= k^2+2\cdot3k+7  \\
+&= k^2+2\cdot3k+ 3^2-3^2+7 \\
+&= (k+3)^2-2
+}
+}
+\newpage
+\eks[??]{
+Faktoriser $ x^2-10x+16 $.
+
+\sv
+Vi starter med å lage et fullstendig kvadrat:
+\alg{
+x^2-10x+16 &= x^2-2\cdot5x+5^2-5^2+16 \\
+&= (x-5)^2-9
+}
+Vi legger merke til at $ 9=3^2 $, og bruker 3. kvadratsetning:
+\alg{
+(x-5)^2-3^2 &= (x-5+3)(x-5-3) \\
+&= (x-2)(x-8)
+}
+Altså er 
+\[ x^2-10x+16=(x-2)(x-8) \]
+} \vsk
+
+\reg[$\bm {a_1 a_2}$-metoden]{
+Gitt $ x, b, c \in \mathbb{R} $. Hvis $ a_1a_2=c$ og $ a_1+a_2=b $, er 
+\begin{equation}
+x^2+bx+c=(x+a_1)(x+a_2)	\label{a1a2}
+\end{equation}
+}
+\eks[1]{
+Faktoriser uttrykket $ x^2-x-6 $.
+
+\sv
+Siden $ 2(-3)=-6 $ og $ 2+(-3)=-1 $, er
+\[ x^2-1x-6=(x+2)(x-3) \]
+}
+\eks[2]{
+	Faktoriser uttrykket $ b^2-5b+4 $.
+	
+	\sv
+	Siden ${(-4)( -1)=4} $ og ${ (-4)+(-1)=-5} $, er 
+	\[ b^2-5b+4 =(b-4)(b-1) \] 
+}
+\newpage
+\section{Andregradslikninger}
+\reg[Andregradslikning uten konstantledd]{
+	Gitt likningen
+	\nn{
+		ax^2+bx=0
+	}
+	Likningen kan da faktoriseres til
+	\nn{
+		x(ax+b)=0
+	}
+	Altså er 
+	\nn{x=0\qquad \vee \qquad x=-\frac{b}{a}}
+}
+\eks[1]{
+	Løs likningen 
+	\nn{2x^2-4x=0}
+	\sv \vs \vs
+	
+	\algv{
+		2x^2-4x&=0 \\
+		x(2x-4)&=0
+	}
+	Altså er $ x=0 $, eller 
+	\algv{
+		2x-4&=0 \\
+		2x&=4 \\
+		x&=2
+	}
+} \vsk
+
+\reg[Andregradslikning med konstantledd]{
+	Gitt likningen
+	\begin{equation}\label{abc}
+		ax^2+bx+c=0
+	\end{equation}
+	hvor $ a, b $ og $ c $ er konstanter. Da er $ x $ gitt ved \textit{abc}-formelen:
+	\begin{align}
+		&&\qquad\qquad\qquad	x&= \frac{-b\pm\sqrt{b^2-4ac}}{2a} &&\qquad(\textit{abc}\text{\,-\,formelen})
+	\end{align}
+	Hvis $ {x=x_1} $ og $ {x_2} $ er løsninger gitt av \textit{abc}-formelen, kan vi skrive
+	\begin{equation}\label{abcfakt}
+		ax^2+bx+x=0
+	\end{equation}
+}
+\eks[1]{
+	Løs likningen	
+	\[ 2x^2-7x+5=0 \]
+	\sv
+	Vi bruker \textit{abc}-formelen. Da er $ a=2 $, $ b=-7 $ og $ c=5 $. Nå får vi at
+	\alg{
+		x &=\frac{-(-7)\pm\sqrt{(-7)^2-4\cdot2\cdot5}}{2\cdot2} \br
+		&=\frac{7\pm\sqrt{49-40}}{4} \br
+		&=\frac{7\pm\sqrt{9}}{4}\br
+		&=\frac{7\pm3}{4}	
+	}
+	Enten er
+	\algv{
+		x&=\frac{7+3}{4} \br
+		&=\frac{5}{2}	
+	}	
+	Eller så er
+	\alg{
+		x&=\frac{7-3}{4} \br
+		&=1
+	}	 	
+}
+\eks[2]{
+	Løs likningen 
+	\[ x^2+3-10=0 \]
+	\sv
+	Vi bruker \textit{abc}-formelen. Da er $ a=1 $, $ b=3 $ og $ c=-10 $. Nå får vi at
+	\alg{
+		x&=\frac{-3\pm\sqrt{3^2-4\cdot1\cdot(-10)}}{2\cdot1}\br
+		&=\frac{-3\pm\sqrt{9+40}}{2} \br
+		&=\frac{-3\pm7}{2}
+	}
+	Altså er
+	\[ x=-5\qquad\vee\qquad x=2 \]
+}
+\eks[3]{
+Løs likningen	
+\[ 4x^2-8x+1 \]
+\sv
+Av \textit{abc}-formelen har vi at
+\alg{
+x&=\frac{8\pm\sqrt{(-8)^2-4\cdot4\cdot1}}{2\cdot4} \\
+&=\frac{8\pm 4\sqrt{4-1}}{8} \br
+&=\frac{2\pm\sqrt{3}}{2}
+}
+Altså er 
+\[ x=\frac{2+\sqrt{3}}{2}\quad\vee\quad \frac{2-\sqrt{3}}{2} \]
+}
+
+\newpage
+\section{Navn på funksjoner}
+\reg[Potensfunksjoner]{
+Gitt $ k, b\in \mathbb{R} $. En funksjon på formen
+\begin{equation}\label{powrfunc}
+	f(x)=k x^m	
+\end{equation}
+er da en \textit{potensfunksjon} med \textit{koeffisient} $ k $.
+}
+\reg[Polynomfunksjoner]{
+En polynomfunksjon er én av følgende:
+\begin{itemize}
+	\item en potensfunksjon med heltalls eksponent større eller lik 0.
+	\item summen av flere potensfunksjoner med heltalls eksponent større eller lik 0.
+\end{itemize}
+Polynomfunksjoner kategoriseres etter den største eksponenten i funksjonsuttrykket. For konstantene $ a $, $ b $, $ c $ og $ d$, og en variabel $ x $, har vi at \vs
+\begin{center}
+	\begin{tabular}{|r|l|} \hline
+		\textbf{funksjonsuttyrykk} & \textbf{funksjonsnavn} \\ \hline
+		$ ax+b $ &1. grads funksjon/polynom (lineær) \\
+		$ ax^2+bx+c $& 2. grads funksjon/polynom (kvadratisk) \\
+		$ ax^3+bx^2+cx+d $& 3. grads funksjon/polynom (kubisk) \\ \hline
+	\end{tabular}
+\end{center}
+}
+\eks[1]{ \vs
+\abc{
+\item Skriv uttrykket til et 7. grads polynom med utelukkende heltalls koeffisienter.
+\item Skriv uttrykket til et 5. grads polynom med minst én koeffisient uttrykt som et rasjonalt tall.
+} \vs
+\sv \vs
+\abc{
+\item  $ 4x^7-5x^2+4 $
+\item $ \frac{2}{7}x^5-3 $
+}
+
+}
+\section{Polynomdivisjon}
+Når to gitte tall ikke er delelige med hverandre, kan vi bruke brøker for å uttrykke kvotienten. For eksempel er
+\begin{equation}\label{17div3}
+	\frac{17}{3}=5+\frac{2}{3}
+\end{equation}
+At likheten over stemmer er også lett å bekrefte ved utregningen
+\[ \left(5+\frac{2}{3}\right)\cdot3=5\cdot3+\frac{2}{3}\cdot3=17 \]
+Tanken bak \eqref{17div3} er at vi skriver om telleren slik at den delen av 17 som er delelig med 5 framkommer:
+\[ \frac{17}{3}=\frac{5\cdot3+2}{3}=5+\frac{2}{3} 
+\]
+Den samme tankegangen om divisjon kan brukes for brøker med polynomer, og da kalles det \textit{polynomdivisjon}: 
+\regv
+\eks[1]{
+Utfør polynomdivisjon på uttrykket
+\[ \frac{2x^2+3x-4}{x+5} \] 
+\sv
+\metode{Metode 1}{0.4\linewidth} \\
+Vi gjør følgende trinnvis; med den største potensen av $ x $ i telleren som utgangspunkt, lager vi uttrykk som er delelige med telleren.
+\alg{
+	\frac{2x^2+3x-4}{x+5}&=\frac{2x(x+5)-10x+3x-4}{x+5} \br
+	&= 2x+\frac{-7x-4}{x+5} \br
+	&= 2x+\frac{-7(x+5)+35-4}{x+5} \br
+	&= 2x-7 +\frac{31}{x+5}
+}
+\newpage
+\metode{Metode 2}{0.4\linewidth}
+(Se utregningen under punktene)
+\begin{enumerate}[label=\roman*)]
+	\item  Vi observerer at leddet med den høyste ordenen av $ x $ i dividenden er $ 2x^2 $. Dette uttrykket kan vi framkalle ved å multiplisere dividenden med $ 2x $. Vi skriver $ 2x $ til høgre for likhetstegnet, og subtraherer $ 2x(x+5)=2x^2+10x $.
+	\item Differansen fra punkt ii) er ${-7x-4}$. Vi kan framkalle leddet med den høyeste ordenen av $ x $ ved å multiplisere dividenden med $ -7 $. Vi skriver $ -7 $ til høgre for likhetstegnet, og subtraherer $ -7(x+5)=-7x-5 $. 
+	\item Differansen fra punkt iii) er $ 31 $. Dette er et uttrykk som har lavere orden av $ x $ enn dividenden, og dermed skriver vi $ \frac{31}{x+5} $ til høgre for likhetstegnet.
+\end{enumerate}
+\alg{
+	\phantom{-}&(2x^2+3x-4):(x+5) =2x-7+\frac{31}{x+5} \\ 
+	-&\underline{(2x^2+10x)} \\
+	&\phantom{02x-}-7x-4  \\
+	&\phantom{xx}-\underline{(-7x-35)}\\
+	&\phantom{aaaaaaaaaa''\,}31 
+}
+}
+\newpage
+\eks[2]{
+Utfør polynomdivisjon på uttrykket
+\[ \frac{x^3-4x^2+9}{x^2-2} \]
+\sv
+\metode{Metode 1}{0.4\linewidth}\\ \vs
+\alg{
+\frac{x^3-4x^2+9}{x^2-2}&= \frac{x(x^2-2)+2x-4x^2+9}{x^2-2} \br
+&=x+\frac{-4x^2+2x+9}{x^2-2}\br
+&=x+\frac{-4(x^2-2)-8+2x+9}{x^2-2}\br
+&= x-4+\frac{2x+1}{x^2-2}
+}
+\metode{Metode 2}{0.4\linewidth} \\ \vs
+\alg{
+	\phantom{-}&(x^3-4x^2+9):(x^2-2) =x-4+\frac{2x+1}{x^2-2} \\ 
+	-&\underline{(x^3-2x)} \\
+	&\phantom{02x}-4x^2+2x+9  \\
+	&\phantom{'}-\underline{(-\,4x^2+8)}\\
+	&\phantom{aaaaaaaaaa'}2x+1 
+}
+}\newpage
+
+\eks[3]{
+Utfør polynomdivisjon på uttrykket
+\[ \frac{x^3-3x^2-6x+8 }{x-4}\]
+
+\sv
+\metode{Metode 1}{0.4\linewidth} \\ \vs
+\alg{
+\frac{x^3-3x^2-6x+8 }{x-4} &= \frac{x^2(x-4)+4x^2-3x^2-6x+8}{x-4} \br
+&= x^2 +\frac{x^2-6x+8}{x-4} \br
+&= x^2+\frac{x(x-4)+4x-6x+8}{x-4}\br
+&=x^2+x+\frac{-2x+8}{x-4} \br
+&= x^2+x-2
+}
+\metode{Metode 2}{0.4\linewidth} \\ \vs
+\alg{
+	\phantom{-}&(x^3-3x^2-6x+8):(x-4) =x^2+x-2 \\ 
+	-&\underline{(x^3-4x^2)} \\
+	&\phantom{02xx''',}x^2-6x+8  \\
+	&\phantom{''}-\underline{(-\,x^2-4x)}\\
+	&\phantom{aaaaaa''''}-2x+8 \\
+	&\phantom{aaaa,,,}-\underline{(-2x+8)}\\
+	&\phantom{aaaaaaaaaaaaaa,}0
+}
+%\mer Dette betyr at
+%\[ x^3-3x^2-6x+8 = (x^2+x-2)(x-4) \]
+}
+\newpage
+\section{Polynomers egenskaper}
+Eksemplene på side ??-?? peker på noen viktige sammenhenger som gjelder for generelle tilfeller:
+\reg[Polinomdivisjon \label{polydiv}]{
+La $ A_k $ betegne et polynom $ A $ med grad $ k $. Gitt polynomet $ P_m $, da fins polynomene $ Q_n $, $ S_{m-n} $ og $ R_{n-1} $, hvor $ m\geq n>0 $, slik at
+\begin{equation}\label{polydiveq}
+\frac{P_m}{Q_n}=S_{m-n}+\frac{R_{n-1}}{Q_n}	
+\end{equation}
+}
+\spr{
+Hvis $ R_{n-1}=0 $, sier vi at $ P_m $ er delelig med $ Q_n $.
+} \vsk
+
+
+\newpage
+\reg[Faktorer i polynomer \label{polyfakt}]{
+	Gitt et polynom $ P(x) $ og en konstant $ a $. Da har vi at
+	\begin{equation}
+		P \text{ er delelig med } x-a  \Longleftrightarrow P(a)=0 
+	\end{equation}
+	Hvis dette stemmer, fins det et polynom $ S(x) $ slik at
+	\begin{equation}\label{PfaktS}
+		P=(a-x)S
+	\end{equation}
+}
+\eks[1]{
+Gitt polynomet
+\[ P(x)= x^3-3x^2-6x+8\]
+\abc{
+\item Vis at $ x=1 $ løser likningen $ P=0 $.
+\item Faktoriser $ P $. 
+}
+\sv
+
+\abc{
+\item Vi undersøker $ P(1) $:
+\alg{
+P(1)&=1^3-3\cdot1^3-6\cdot1+8 \\
+&= 0
+}
+Altså er $ P=0 $ når $ x=1 $.
+\item Siden $ P(1)=0 $, er $ x-1 $ en faktor i $ P $. Ved polynomdivisjon (se s.??-??) finner vi at
+\[ P=(x-1)(x^2-2x-8) \]
+Da $ 2(-4)=-8 $ og $ -4+2=-2 $, er
+\[ x^2-2x-8=(x+2)(x-4) \]
+Dette betyr at
+\[ P=(x-1)(x+2)(x-4) \]
+}
+}
+\section{Logaritmer}
+I \mb\, så vi på potenstall, som består av et grunntall og en eksponent. En \textit{logaritme} er en matematisk operasjon relativ til et tall. Hvis en logaritme er relativ til grunntallet til en potens, vil operasjonen resultere i ekspontenten.\vsk
+
+La oss skrive logaritmen relativ til 10 som $ \log_{10} $, da er for eksempel
+\[ \log_{10} 10^2 = 2 \]
+Videre er
+\[ \log_{10} 1000= \log_{10} 10^3 = 3\]
+Følelig kan vi også skrive
+\[ 10^3 = 10^{\log_{10} 1000} \]
+Med potensreglene som ugangspunkt (se \mb), kan man utlede mange regler for logartimer.\regv
+\reg[Definisjon av logaritmen]{
+La $ \log_a $ betegne logaritmen relativ til $ a\in\{\mathbb{R} | a\neq0 \} $. For $ m\in\mathbb{R} $ er da
+\[ \log_a a^m = m \]
+Alternativt kan vi skrive
+\[ m=a^{\log_{a} m} \]
+} \regv
+
+\reg[Logaritmeregler]{
+Gitt de reelle tallene $a, x$ og $y$, alle forskjellige fra 0. Da er	
+\alg{
+\log_a a&= 1\label{loga}\vn	
+\log_a 1 &= 0 \label{log1}\vn
+\log_a (xy)&=\log_a x + \log_a y \label{logxy} \vn
+\log_a \left(\frac{x}{y}\right)&= \log_{a} x - \log_{a} y \label{logxdivy} \vn
+\log_{a} x^y &= y \log_{a} x \label{logxexpy}
+}
+}
+\spr{
+\sym{$ \log_{10}$} skrives ofte bare som \sym{$ \log $}.\vsk
+
+\sym{$ \log_e $} skrives ofte som \sym{$ \ln $}. (Se ?? for mer om tallet $ e $.)
+}
+\newpage
+\section{Forklaringer}
+\fork{Andregradslikninger}{
+	Gitt likningen
+	\[ ax^2+bx+c=0 \]
+	Vi starter med å omskrive likningen:
+	\[ x^2+\frac{b}{a}x+\frac{c}{a}=0 \]
+	Så lager vi et fullstendig kvadrat, og anvdender konjugatsetningen til å faktorisere uttrykket:
+	\alg{
+		x^2+\frac{b}{a}x+\frac{c}{a}&=x^2+2\cdot\frac{b}{2a}x+\frac{c}{a}\\
+		&=\left(x+\frac{b}{2a}\right)^2-\frac{b^2}{4a^2}+\frac{c}{a} \\
+		&=\left(x+\frac{b}{2a}\right)^2-\frac{b^2-4ac}{4a^2} \\
+		&=\left(x+\frac{b}{2a}\right)^2-\left(\sqrt{\frac{b^2-4ac}{4a^2}}\,\right)^2 \br
+		&=\left(x+\frac{b}{2a}\right)^2-\left(\frac{\sqrt{b^2-4ac}}{2a}\,\right)^2 \br
+		&=\left(x+\frac{b}{2a}+\frac{\sqrt{b^2-4ac}}{2a}\,\right)\left(x+\frac{b}{2a}-\frac{\sqrt{b^2-4ac}}{2a}\,\right)
+	}	
+	Uttrykket over er lik 0 når
+	\[ x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\qquad\vee\qquad x=\frac{-b\pm\sqrt{b^2-4ac}}{2a} \]
+}
+
+\fork{Logaritmerregler}{
+\textbf{Likning} \textbf{\eqref{loga}}		
+\[ \log_a a= \log_a a^1=1  \]
+\textbf{Likning} \eqref{log1}
+\[ \log_a 1 = \log_{a} a^0 =0  \]
+\textbf{Likning} \eqref{logxy}\\
+For $ m, n\in \mathbb{R} $, har vi at
+\alg{
+\log_a a^{m+n}&=m+n \\
+&= \log_{a} a^m + \log_a a^n
+}
+Vi setter\footnote{Vi tar det her for gitt at ethvert reelt tall forskjellig fra 0 kan uttrykkes som et potenstall.} $ {x=a^m} $ og $ {y=a^n} $. Siden $ {\log_a a^{m+n}=\log_{a} (a^m\cdot a^n)}$, her da
+\[ \log_{a} (x y)=\log_{a} x+\log_{a} y \]
+\textbf{Likning} \eqref{logxdivy}\\
+Ved å undersøke $ \log_a a^{m-n} $, og ved å sette $ {y=a^{-n}} $, blir\\ forklaringen tilsvarende den gitt for likning \eqref{logxy}.\vsk
+
+\textbf{Likning} \eqref{logxexpy} \os
+Siden $ x=a^{\log_a x} $ og $ \left(a^{\log_a x}\right)^y = a^{y \log_{a} x} $ (se potensregler i \mb), har vi at
+\algv{
+\log_{a} x^y &= \log_{a} a^{y\log_a x}  \\
+&= y\log_{a} x
+}
+} \vsk
+\newpage
+\fork{Polynomdivisjon (\ref{polydiv})}{
+Gitt polynomene
+\alg{
+&P_m\text{\quad hvor }ax^m\text{ er leddet med høyest grad}\vn
+&Q_{n}\text{\quad hvor } bx^n\text{ er leddet med høyest grad}	
+}
+Da kan vi skrive
+\begin{equation}\label{polydivforkla}
+	P_m=\frac{a}{b}x^{m-n}Q_n-\frac{a}{b}x^{m-n}Q_n+P_m
+\end{equation}
+Polynomet $ {-\frac{a}{b}x^{m-n}Q_n+P_m} $ må nødvendigvis ha grad lavere eller lik $ m-1 $. Vi kaller dette polynomet $ U$, og får at
+\begin{equation}\label{polydivforklb}
+	 P_m = \frac{a}{b}x^{m-n}Q_n+U
+\end{equation}
+Dermed er
+\begin{equation}\label{polydivu}
+\frac{P_m}{Q_n}=\frac{a}{b}x^{m-n}+\frac{U}{Q_n}
+\end{equation}
+Vi kan nå stadig gjenta prosedyren fra \eqref{polydivforkla} og \eqref{polydivforklb}, hvor høgresiden i \eqref{polydivu} får ledd med grad stadig mindre enn $ {m-n} $, fram til polynomet i telleren på høgresiden får grad $ n-1 $.
+}
+\fork{Faktorisering av polynom}{
+(i) Vi starter med å vise at
+\begin{center}
+	Hvis $ P $ er delelig med $ x-a $ 
+	er $ x=a $ en løsning for $ P=0 $.
+\end{center}
+For et polynom $ S $ har vi av \eqref{polydiveq} at
+\alg{
+\frac{P}{x-a}&= S \\
+P &= (x-a)S
+}
+Da er åpenbart $ x=a $ en løsning for likningen $ P=0 $.\vsk
+
+(ii) Vi går over til å vise at
+\begin{center}
+	Hvis $ x=a $ er en løsning for $ P=0 $, er $ P $ delelig med $ x-a $.
+\end{center}
+For polynomene $ S $ og $ R $
+\alg{
+\frac{P}{x-a}&=S+\frac{R}{x-a} \br
+P &= (x-a)S+R
+}
+Siden $ {x-a} $ har grad 1, må $ R $ ha grad 0, og er dermed en konstant. Hvis $ P(a)=0 $, er 
+\[ 0=R \]
+Altså er $ P $ delelig med $ x-a $.
+}
+\end{document}

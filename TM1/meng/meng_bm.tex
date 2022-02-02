@@ -1,0 +1,82 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../tm_bm}
+
+\begin{document}
+\section{Mengder}
+En samling av tall kalles en \textit{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
+}, og et tall som er en del av en mengde kalles et \textit{element} i denne mengden. Mengder kan inneholde et endelig antall elementer og de kan inneholde uendelig mange elementer. \regv
+\reg[Mengder]{
+For to reelle tall $ a $ og $ b $, hvor $ a<b $, har vi at
+\begin{center}
+	\begin{tabular}{c l}
+		$ [a, b] $ & er mengden av alle reelle tall større eller lik $ a $ \\
+		&og mindre eller lik $ b $. \\
+		$ (a, b] $ & er mengden av alle reelle tall større enn $ a $ \\
+		&og mindre eller lik $ b $.\\ 
+		$ [a, b) $ & er mengden av alle reelle tall større eller lik $ a $ \\
+		&og mindre enn $ b $.
+	\end{tabular}
+\end{center}
+$ [a, b] $ kalles et lukket intervall, mens både $ (a, b] $ og $ [a, b) $ kalles halvåpne intervall.\vsk
+
+Mengden av tre tall $ a $, $ b $ og $ c $ skrives som $ \{a, b, c\} $.\vsk
+
+At $ x $ er et element i en mengde $ M $ skrives som $ x\in M $.\vsk
+
+At $ x $ ikke er et element i en mengde $ M $ skrives som $ x\not \in M $. 
+}
+\spr{
+$ x \in M$ uttales ''$ x $ inneholdt i $ M $'' eller ''$ x $ er et element i $ M $''.
+}
+\eks[1]{
+Mengden av alle heltall større enn 0 og mindre enn 10 skriver vi som 
+\[ \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \]
+Denne mengden inneholder 9 elementer. 3 er et element i denne mengden, og da kan vi skrive $ 3\in\{1, 2, 3, 4, 5, 6, 7, 8, 9\}  $\vsk 
+
+10 er ikke et element i denne mengden, og da kan vi skrive \\$ 10 \not\in  \{1, 2, 3, 4, 5, 6, 7, 8, 9\} $.
+} 
+\eks[2]{
+Skriv opp ulikhetene som gjelder for alle $ x\in M $, og om 1 er inneholdt i $ M $.
+\abc{
+\item $ M = [0, 1] $
+\item $ M = (0, 1] $
+\item $ M = [0, 1) $
+}
+\sv \vs
+\abc{
+\item $ 0\leq x \leq 1 $. Videre er $ 1\in M $.
+\item $ 0< x \leq 1 $. Videre er $ 1\in M $.
+\item $ 0\leq x < 1 $. Videre er $ 1\not \in M $.
+}
+}\vsk
+
+\reg[Navn på mengder]{\vs
+\begin{center}
+	\begin{tabular}{c l}
+		$ \mathbb{N} $ & Mengden av alle positive heltall\footnote{Inneholder \textit{ikke} 0.}\\
+		$ \mathbb{Z} $ & Mengden av alle heltall\footnote{Inneholder 0.}\\
+		$ \mathbb{Q} $ & Mengden av alle rasjonale tall\\
+		$ \mathbb{N} $ & Mengden av alle reelle tall\\
+		$ \mathbb{C} $ & Mengden av alle komplekse tall\\
+	\end{tabular}
+\end{center}
+}
+\section{Verdi- og definisjonsmengder}
+Alle funksjoner har en definisjonsmengde og en verdimengde. For en funksjon $ f(x) $, er definisjonsmengden den mengden som utelukkende inneholder alle verdier $ x $ kan ha. Denne mengden skrives da som $ D_f $. Hvilke verdier $ x $ kan ha er bestemt av to ting:
+\begin{itemize}
+	\item Hvilken sammenheng $ x $ skal brukes i.
+	\item Om $ f $ ikke er definert for visse $ x $-verdier.
+\end{itemize}
+
+La oss først bruke $ f(x)=2x+1 $ som et eksempel. Denne funksjonene er definert for alle $ x\in \mathbb{R} $. Vi kunne derfor latt $ \mathbb{R} $ være definisjonsmengden til $ f $, men for enhelhets skyld velger vi her $ D_f=[0, 1] $. Mengden som utelukkende inneholder alle verdier $ f $ kan ha når $ x\in D_f $, er verdimengden til $ f $. Denne mengden skrives som $ V_f $. I dette tilfellet er (forklar for deg selv hvorfor) $ f\in [1, 3] $, altså er $ V_f=[1, 3] $.\vsk
+
+La oss videre se på funksjonen $ g(x)=\frac{1}{x} $. Denne funksjonen er ikke definert for $ x=0 $, noe som betyr at vi allerede har fått en restriksjon på definisjonsmengden til $ g $. Også her gjør vi det enkelt, og unngår\footnote{I \refsec{??} skal vi se nærmere på funksjoner som $ g $ når $ x $ nærmer seg 0.} 0 med god klaring ved å sette $ D_g=[1, 2] $. Da er (forklar for deg selv hvorfor) $ V_g=\left[\frac{1}{2}, 1\right] $.\regv
+ 
+\reg[Verdi- og definisjonsmengder]{
+Gitt en funksjon $ f(x) $. Mengden som utelukkende inneholder alle verdier $ x $ kan ha, er da definisjonsmengden til $ f $. Denne mengden skrives som $ D_f $.\vsk
+
+Mengden som utelukkende inneholder alle verdier $ f $ kan ha når $ x\in D_f $, er verdimengden til $ f $. 
+}
+
+\end{document}

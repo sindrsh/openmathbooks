@@ -1,0 +1,65 @@
+\input{../doc}
+\input{../preamb}
+\input{tm_bm}
+
+% Name of content in TOC
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
+\begin{document}
+	
+	{\footnotesize \tableofcontents}
+	\newpage
+	
+	\section*{Viktig kommentar om funksjoner}
+	Som nevnt i \mb, er funksjoner variabler som endrer seg i takt med at andre variabler endrer seg. I denne boka vil det å skrive en funksjon $ f $ som $ f(x) $ indikere at $ f $ endrer seg i takt med variabelen $ x $. Så lenge det er etablert at $ x $ er en variabel, vil det derfor ikke være noen forskjell på $ f $ og $ f(x)$, for eksempel kan vi skrive
+	\begin{equation}\label{ff(x)}
+		f=f(x)=2x	
+	\end{equation} 
+	En slik konvensjon gjør at mange forklaringer får penere uttrykk, men den krever at vi er bevisst hvordan paranteser brukes i sammenheng med multiplikasjon og i sammenheng med funksjoner. Da må vi tenke over om et symbol står for en uavhengig variabel eller en variabel som avhenger av en annen $ - $ altså en funksjon. Slik \eqref{ff(x)} er formulert, er $ x $ en uavhengig variabel og $ f $ en variabel avhengig av $ x $. For en konstant $ a $ er da
+	\alg{
+		x(a)&=x\cdot a=ax \vn
+		f(a)&=2\cdot a=2a
+	}
+Videre er
+\[ f-a=2x-a \]
+	\chapter{Mengder}
+	\import{meng/}{meng_bm}
+	
+	\chapter{Algebra}
+	\import{alg/}{alg_bm}
+	
+	\chapter{Grenseverdier og kontinuitet}
+	\import{lim/}{lim_bm}
+	
+	\chapter{Derivasjon}
+	\import{der/}{der_bm}
+	
+	\chapter{Funksjonsdrøfting}
+	\import{inv/}{inv_bm}
+	
+	\chapter{Vektorer}
+	
+	\chapter{Geometri}
+	\import{geo/}{geo_bm}
+
+	\chapter{Numeriske metoder}
+	\section{Newtons metode}
+	\section{Derivasjon}
+	\section{Vekstmodeller}
+	
+	\chapter*{Vedlegg}
+	\import{tan/}{tan_bm}
+	
+
+	
+	\newpage
+	\section*{Litteratur}
+	Moise, E. E. (1974). \textit{Elementary geometry from an advanced standpoint}. Reading, Addison-Wesley Publishing Company.\vsk
+	
+	Lindstrøm, T. (2006). \textit{Kalkulus} (2. utg). Oslo, Universitetsforlaget AS.\vsk
+	
+	Spivak, M. (1994). \textit{Calculus} (3. utg). Cambridge, Cambridge University Press
+	
+	
+\end{document}
+

@@ -1,0 +1,110 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../ekstra_preamb_nn}
+
+\begin{document}
+	\pagenumbering{roman}
+\regu[Å sette prøve]{Når vi erstattar $ x $ med eit tal i ei likning, \textit{set me prøve } på likninga. \vsk
+
+Viss vi får lik verdi på begge sider av likninga, \textbf{er} talet løysinga til likninga. Viss vi får ulike verdiar, \textbf{er ikkje} talet løysinga.
+}
+\eks[1]{ \vs
+\abc{
+\item Undersøk om $ {x=3} $ er løysinga til likninga $ \colb{x}+4= 7 $.
+\item Undersøk om $ {x=5} $ er løysinga til likninga $ 2\colb{x} = 20 $.
+}
+\sv
+\abc{
+	\item I likninga
+	\[ \colb{x}+4=7 \]
+	erstattar vi $ \colb{x} $ med \colb{3}:
+	\alg{
+		\colb{3}+4 &= 7 \\
+		7 &= 7
+	}
+Altså \textbf{er} $ {x=3} $ løysinga til likninga.
+\item I likninga (hugs at $ 2\colb{x}=2\cdot\colb{x} $)
+\[ 2\cdot\colb{x}=20 \]
+erstattar vi $ \colb{x} $ med \colb{5}:
+\alg{
+2\cdot \colb{5}&=20 \\
+10 &= 20
+}
+Altså \textbf{er ikkje} $ x=5 $ løysinga til likninga. 
+} 
+}
+\newpage
+\eks[2]{
+\abc{
+\item Løys likninga $ 5x - 7 = 4x + 2  $.
+\item Set prøve på svaret ditt.
+}
+
+\sv
+
+\abc{ 
+\item \phantom{} \vsb 
+\begin{align} 
+	5x-4x &= 2+7 \\
+	x &= 9
+\end{align}
+\item  I den originale likninga har vi at
+\nn{
+5\cdot{\colb{x}} - 7 = 4\cdot\colb{x} + 2 
+}
+Når vi erstattar  $ \colb{x} $ med $ \colb{9} $, får vi
+\alg{
+5\cdot{\colb{9}} - 7 &= 4\cdot\colb{9} + 2 \\
+45-7 &= 36+2 \\
+38 &= 38
+}
+Verdien til venstre er lik den til høgre, og da er vi sikre på at $ x=9 $ er løysinga til likninga.
+}
+}
+\newpage
+\eks[3]{
+\abc{
+\item Løys likninga $ 10x-6 = 8x+4 $.
+\item Set prøve på svaret ditt.
+}
+\sv
+\abc{
+\item \phantom{} \vs
+\alg{
+10x-8x &= 4+6 \\
+\frac{\cancel{2}x}{2} &= \frac{10}{2} \\
+x &= 5
+}
+\item Vi set $ x=5 $ inn i den originale likninga:
+\alg{
+ 10\cdot5-6 &= 8\cdot5+4 \\
+ 44 &= 44
+}
+Altså er vi sikre på at $ x=5 $ er løysinga til likninga.
+}
+}
+\newpage
+\eks[4]{
+\abc{
+\item Løys likninga $ 2x+41 = 9x-1 $.
+\item Set prøve på svaret ditt.
+}
+\sv
+\abc{
+\item (Merk at vi samlar $ x $-ane på høgre side fordi $ 9 $ er større enn $ 2 $).
+\alg{
+41+1 &= 9x-2x \\
+\frac{42}{7} &= \frac{\cancel{7}x}{\cancel{7}}\\
+6 &= x 
+}
+\item Vi set $ x=6 $ inn i den originale likninga:
+\alg{
+2\cdot6 +41 &= 9\cdot6 -1 \\
+53 &= 53
+}
+Altså er vi sikre på at $ x=6 $ er løysinga til likninga.
+}
+}
+\end{document}
+
+

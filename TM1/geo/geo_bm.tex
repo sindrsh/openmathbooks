@@ -1,0 +1,95 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../tm_bm}
+
+\begin{document}
+\section{Definisjoner}
+\reg[Halveringslinje]{
+Gitt $ \angle BAC $. For et punkt $ P $ som ligger på \textit{halveringslinja} til vinkelen, er
+\[ \angle BAP = PAC=\frac{1}{2}\angle BAC \] 
+\fig{halfline}
+}	
+\reg[Midtpunkt]{
+Midtpunktet $ C $ til $ AB $ er punktet på linjestykket som er slik at $ AC=CB $.
+\fig{midtp} 
+}
+\reg[Midtnormal]{
+Midtnormalen til $ AB $ står normalt på, og går gjennom midtpunktet til, $ AB $.
+\fig{midnorm0}
+}
+\section{Egenskaper til trekanter}
+\reg[Midtnormal i likebeint trekant \label{hlikb}]{
+Gitt en likebeint trekant $ \triangle ABC $, hvor $ AC=BC $, som vist i figuren under. 
+\fig{hlikb}
+Høgda $ DC $ ligger da på midtnormalen til $ AB $.
+}
+\fork{\ref{hlikb}}{
+Da både $ \triangle ADC $ og $ \triangle DBC $ er rettvinklede, har $ CD $ som korteste katet, og $ {AC=BC} $, følger det av Pytagoras' setning at $ {AD=BD} $.
+}
+\reg[Medianer i trekanter \label{trkmedian}]{
+En \textit{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
+
+De tre medianene i en trekant skjærer hverandre i ett og samme punkt.
+\fig{median1a}
+Gitt $ \triangle ABC $ med medianer $ CD $, $ BF $ og $ AE $, som skjærer hverandre i $ G $. Da er
+\alg{	
+\frac{CG}{GD}=\frac{BG}{GF}=\frac{AG}{GE} = 2
+}
+}
+\fork{\ref{trkmedian}}{
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\includegraphics{\figp{median1b}}
+	}\;\;
+	\subfloat[]{
+		\includegraphics{\figp{median1c}}
+	}
+\end{figure}
+Vi lar $ G $ være skjæringspunktet til $ BF $ og $ AE $, og tar det for gitt at dette ligger inne i $ \triangle ABC $. Da $ {AF=\frac{1}{2}AC} $ og $ {BE=\frac{1}{2}BC }$, er $ {ABF= BAE=\frac{1}{2}ABC} $. Dermed har $ F $ og $ E $ lik avstand til $ AB $, som betyr at $ {FE\parallel AB} $. Videre har vi også at
+\alg{
+ABG + AFG &= ABG + BGE \\
+AFG &= BGE 
+}
+$ G $ har lik avstand til $ AF $ og $ FC $, og $ {AF=FC} $. Dermed er $ AFG=GFC $. Tilsvarende er $ BGE=GEC $. Altså har disse fire trekantene likt areal. Videre er
+\alg{
+AFG+GFC+GEC&= AEC \\
+GEC &= \frac{1}{6}ABC
+}
+La $ H $ være skjæringspunktet til $ AE $ og $ CD $. Med samme framgangsmåte som over kan det vises at
+\[HEC=\frac{1}{6}ABC \]
+Da både $ \triangle GEC $ og $ \triangle HEC $ har $ CE $ som side, likt areal, og både $ G $ og $ H $ ligger på $ AE $, må $ G=H $. Altså skjærer medianene hverandre i ett og samme punkt. \vsk
+
+$ \triangle ABC\sim\triangle FEC$ fordi de har parvis parallelle sider. Dermed er
+\[ \frac{AB}{FE} = \frac{BC}{CE}=2  \]
+$ {\triangle ABG\sim\triangle EFG }$ fordi $ \angle EGF $ og $ \angle AGB $ er toppvinkler og $ AB\parallel FE $. Dermed er
+\[ \frac{GB}{FG}=\frac{AB}{FE}=2 \]
+Tilsvarende kan det vises at
+\[ \frac{CG}{GD}=\frac{AG}{GE}=2 \]
+}
+\reg[Midtnormaler i trekanter \label{midtrk}]{
+Midtnormalene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i sirkelen som har hjørnene til trekanten på sin bue.	
+\fig{midnorm1a}
+}
+\fork{\ref{midtrk}}{
+\fig{midnorm1b}
+Gitt $ \triangle ABC $ med midtpunktene $ D $, $ E $ og $ F $. Vi lar $ S $ være skjæringspunktet til de respektive midtnormalene til $ AC $ og $ AB $.
+$ {\triangle AFS\sim\triangle CFS} $ fordi begge er rettvinklede, begge har $ FS $ som korteste katet, og $ AF=FC $. Tilsvarende er $ {\triangle ADS\sim\triangle BDS} $. Følgelig er $ {CS=AS=BS} $. Dette betyr at 
+\begin{itemize}
+	\item $ \triangle BSC $ er likebeint, og da går midtnormalen til $ BC $ gjennom $ S $.
+	\item $ A $, $ B $ og $ C $ må nødvendigvis ligge på sirkelen med sentrum $ S $ og radius $ AS=BS=CS $ 
+\end{itemize}
+}
+\reg[Halveringslinjer og innskrevet sirkel i trekanter \label{innskr1a}]{
+Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i den \textit{innskrevne} sirkelen, som tangerer hver av sidene i trekanten.
+\fig{innskr1a}
+}
+\fork{\ref{innskr1a}}{
+\fig{innskr1b}
+Gitt $ \triangle ABC $. Vi lar $ S $ være skjæringspunktet til de respective halveringslinjene til $ \angle BAC $ og $ \angle CBA $. Videre plasserer vi $ D $, $ E $ og $ F $ slik at $ {DS\perp AB} $, $ {ES\perp BC} $ og $ {FS\perp AC} $. $ {\triangle ASD\cong\triangle ASF} $ fordi begge er rettvinklede og har hypotenus $ AS $, og $ {\angle DAS=\angle SAF} $. Tilsvarende er $ {\triangle BSD \cong \triangle BSE} $. Dermed er $ {SE=SD=SF} $. Følgelig er $ F $, $ C $ og $ E $ de respektive tangeringspunktene til $ AB $, $ BC $ og $ AC $ og sirkelen med sentrum $ S $ og radius $ SE $. \vsk
+
+Videre har vi at $ {\triangle CSE \cong  \triangle CSF} $, fordi begge er rettvinklede og har hypotenus $ CS $, og $ {SF=SE} $. Altså er $ {\angle FCS=\angle ECS}$, som betyr at $ CS $ ligger på halveringslinja til $ \angle ACB $.
+}
+\end{document}
+
+

@@ -1,0 +1,65 @@
+\input{../../doc}
+\input{../tm_bm}
+\input{../../preamb}
+
+\begin{document}
+\section{Ligninger med flere ukjente}
+Hvis vi har to ukjente størrelser $ x $ og $ y $, kan vi finne verdien til begge dersom vi har to forskjellige likningar: 
+\eks[1]{
+	Finn $ x $ og $ y $ gitt av de to likningae under
+	\alg{
+		x+y&=8 \tag{I} \label{xy1}\\[5pt]
+		6x+3y&=33\tag{II} \label{xy2}
+	}
+	
+	\sv
+	Vi starter med å løse én av likningae med hensyn på én av de ukjente. I dette tilfellet velger vi å løse likning \eqref{xy1} med hensyn på $ x $:
+	\alg{
+		x+y&=8 \\
+		x&=8-y
+	}
+	Dette uttrykket for $ x $ setter vi nå inn i likning \eqref{xy2}:
+	\alg{
+		6(8-y)+3y&=33 \\
+		48-6y+3y&=33 \\
+		15&=3y \\
+		5&=y
+	}
+	Denne verdien for $ y $ setter vi inn i likning \eqref{xy1}:
+	\alg{
+		x+5&=8 \\
+		x&=3
+	}
+	Altså er $ x=3 $ og $ y=5 $.
+}
+\newpage
+\eks[2]{
+	Finn $ x $ og $ y $ gitt av de to likningae under
+	\alg{
+		3x+2y&=32	 \tag{I} \label{xy12}\\[5pt]
+		2x+y&=18 \tag{II} \label{xy22}
+	}
+	\sv
+	Vi velger her å først løse likning \eqref{xy22} med hensyn på $ y $:
+	\alg{
+		2x+y&=18 \\
+		y&=18-2x
+	}	
+	Dette uttrykket fot $ y $ setter vi inn i 
+	likning \eqref{xy12}:
+	\alg{
+		3x+2(18-2x)&=32 \\
+		3x+36-4x&=32 \\
+		4&=x	
+	}
+	Denne verdien for $ x $ setter vi inn i likning \eqref{xy22}:
+	\alg{
+		2\cdot4+y&=18 \\
+		y&=10	
+	}		
+	Altså er $ x=4 $ og $ y=10 $.
+}
+
+\end{document}
+
+

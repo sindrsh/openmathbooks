@@ -1,0 +1,158 @@
+\input{../../doc}
+\input{../tm_bm}
+\input{../../preamb}
+
+
+\begin{document}
+\section{Monotoniegenskaper}
+	
+\section{Injektive funksjoner}
+\reg[Injektive funksoner]{
+Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \textit{injektiv} på dette intervallet.
+}
+\spr{
+Et annet ord for injektiv er \textit{én-entydig}.
+}
+
+\section{Omvendte funksjoner}
+Gitt funksjonen $ f(x)=2x+1 $, som åpenbart er injektiv for alle $ x\in \mathbb{R} $. Dette betyr at likningen $ f=2x+1 $ bare har én løsning, uavhengig om vi løser med hensyn på $ x $ eller $ f $. Løser vi med hensyn på $ x $, får vi at
+\[ x=\frac{f-1}{2} \]
+Nå har vi gått fra å ha et uttrykk for $ f $ til, det ''omvendte'', et uttrykk for $ x $. Siden $ x $ og $ f $ begge er variabler, er $ x $ en funksjon av $ f $, og for å tydeliggjøre dette kunne vi ha skrevet
+\[ x(f)=\frac{f-1}{2} \]
+Denne funksjonen kalles den \textit{omvendte} til $ f $. Setter vi uttrykket til $ f $ inn i uttrykket til $ x(f) $, får vi nødvendigvis $ x $:
+\alg{
+x\left(2x+1\right)&=\frac{2x+1-1}{2} \\
+&= x
+} 
+Likningen over synliggjør et problem; det er veldig rotete å behandle $ x $ som en funksjon og som en variabel samtidig. Det er derfor vanlig å omdøpe både $ f $ og $ x $, slik at den omvendte funksjonen og variabelen den avhenger av får nye symboler. For eksempel kan vi sette $ y=f$ og $ g=x $. Den omvendte funksjonen $ g $ til $ f $ er da at
+\[ g(y)=\frac{y-1}{2} \]
+\reg[Omvendte funksjoner]{
+Gitt to injektive funksjoner $ f(x) $ og $ g(y) $. Hvis
+\[ g\left[f\right]=x \]
+er $ f $ og $ g $ \textit{omvendte} funksjoner.
+} \newpage
+\eks[1]{Gitt funksjonen $ f(x)=5x-3 $.
+\abc{
+\item Finn den omvendte funksjonen $ g $ til $ f $.
+\item Vis at $ g\left[f(x)\right]=x $. 
+} 
+
+\sv
+\abc{
+\item Vi setter $ y=f $, og løser likningen med hensyn på $ x $:
+\alg{
+	y&= 5x-3 \\
+	x &= \frac{y+3}{5}
+}
+Da er $ g(y)=\frac{y+3}{5} $.
+\item Når $ y = f $, har vi at
+\alg{
+g(y)&=g(5x-3)\br 
+&= \frac{5x-3+3}{5} \\
+&= x
+}
+}
+}
+\newpage
+\info{$ \bm {f^{-1}} $}{
+Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. Da er det veldig viktig å merke seg at $ f^{-1} $ ikke er det samme som $ (f)^{-1} $. For eksempel, gitt $ f(x)= x+1 $. Da er
+\[ f^{-1}=x-1 \qquad,\qquad (f)^{-1}=\frac{1}{x+1}\] 
+I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
+\[ f^n=(f)^n \] 
+}
+
+\section{Ekstremalpunkt}
+\textsl{Merk}: Et tall $ c $ kan omtales som et punkt i funskjonsdrøftinger.
+\reg[Maksimum og minimum]{\label{max}\index{maksimum}\index{minimum}	
+	Gitt en funksjon $ f(x) $:\bs
+	\textbf{Absolutt maksimum og absolutt minimum:}
+	\begin{itemize}
+		\item $ f $ har absolutt maksimum $ f(c) $ hvis $ {f(c)\geq f(x)} $ for alle $ x\in D_f $.
+		
+		\item $ f $ har absolutt minimum $ f(c) $ hvis ${ f(c)\leq f(x) }$ for alle $ x\in D_f $.
+	\end{itemize}
+	\textbf{Lokalt maksimum og absolutt minimum:}
+	\begin{itemize}
+		\item $ f $ har et lokalt maksimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\geq f(x) $ for $ x\in I  $.
+		
+		\item $ f $ har et lokalt minimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\leq f(x) $ for $ x\in I  $.
+	\end{itemize}\vs
+}
+\reg[Ekstremalverdi og ekstremalpunkt]{\index{ekstremalpunkt}\index{ekstremalverdi}
+	Gitt en funksjon $ f(x) $ med maksimum/minimum $ f(c) $. Da er
+	\begin{itemize}
+		\item $ f(c) $ en ekstremalverdi for $ f $.
+		\item $ c $ et ekstremalpunkt for $ f $. Nærmere bestemt et maksimalpunkt/minimumspunkt for $ f $.
+		\item $ (c, f(c)) $ et toppunkt/bunnpunkt for $ f $.
+	\end{itemize}\vs
+}
+\newpage
+\reg[Infleksjonspunkt og vendepunkt]{\index{infleksjonspunkt}\index{vendepunkt}
+	For en kontinuerlig funksjon $ f(x) $ har vi at
+	\begin{itemize}
+		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \textit{infleksjonspunkt} for $ f $.
+		\item Hvis $ c $ er er infleksjonspunkt for $ f $, er $ (c, f(x)) $ et \textit{vendepunkt}.
+		\item Hvis $ f'' $ går fra positiv til negativ, går $ f $ fra konveks til konkav (og omvendt).
+	\end{itemize}\vs
+}
+\newpage
+\eks{
+	Gitt funksjonen
+	\[ f(x)=\sin x\quad,\quad x\in[-2, 4] \]	
+	\textbf{a)} Finn infleksjonspunktene til $ f $.
+	
+	\textbf{b)} Finn vendepunktene til $ f $. \\
+	
+	\sv
+	\textbf{a)} Infleksjonspunktene finner vi der hvor $ f''(x)=0 $:
+	\alg{f''(x) &= 0\\
+		(\sin x)'' &= 0 \\
+		-\sin x &= 0 	}
+	Av $ {x\in D_f} $ er det $ {x=0} $ og $ {x=\pi }$ som oppfyller kravet fra ligningen over. For å finne ut om $ f'' $ skifter fortegn i disse punktene, setter vi opp et fortegnsskjema:
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=2]	
+			\draw[color=black] (0,-0.25) -- (0,1.25);
+			\node[anchor=south] at (0,1.25) { $-2$};  
+			\draw[color=black] (2,-0.25) -- (2,1.25);
+			\node[anchor=south] at (2,1.25) { $\pi$};	
+			\draw[color=black] (3,-0.25) -- (3,1.25);
+			\node[anchor=south] at (3,1.25) { $4$};		
+			\draw[dashed,color=black] (0,1) -- (3,1);
+			\draw[dashed,color=black] (0,0.5) -- (1,0.5);
+			\draw[dashed,color=black] (2,0.5) -- (3,0.5);	
+			\draw[color=black] (1,0.5) -- (2,0.5);	
+			\node[anchor=east] at (0,0.5) { $\sin x$};  		
+			\node[anchor=east] at (0,1) { $-1$};  
+			\draw[color=black] (1,-0.25) -- (1,1.25);
+			\node[anchor=south] at (1,1.25) { $0$};    
+			\draw[color=black] (0,0) -- (1,0);
+			\draw[color=black] (2,0) -- (3,0);	    
+			\draw[dashed,color=black] (1,0) -- (2,0);    
+			\node[anchor=east] at (0,0) {$f''$};     
+			\filldraw (1,0) circle[radius=1pt] ;   	
+			\filldraw (2,0) circle[radius=1pt] ; 	
+		\end{tikzpicture}
+	\end{figure}
+	
+	$ f'' $ går altså fra positiv til negativ i $ {x=0} $ og fra negativ til positiv i $ {x=\pi} $. Dette betyr at $ f $ går fra konveks til konkav i $ {x=0} $ og fra konkav til konveks i $ {x=\pi }$.
+}
+
+\section{Konvekse og konkave funksjoner}
+\reg[Konvekse og konkave funksjoner]{
+	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
+	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konveks for $ x\in[a, b] $.	
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konv}}
+	\end{figure}	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konkav for $ x\in[a, b] $.
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konk}}
+	\end{figure}
+	\vs
+}
+
+\end{document}
