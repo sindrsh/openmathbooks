@@ -34,10 +34,9 @@ This space includes the complete file structure of the books ready to be compile
 
 <!-- ROADMAP -->
 ## Roadmap
-My personal target is to make a collection of (free) books covering the topics up to precalculus level. Upcoming changes for this book includes 
-
-
-In addition, any feedback on the books content is always welcome.
+- Completing "Teoretisk matematikk 1" and "Anvendt mateamtikk 2"
+- Rename and edit "Før kalkulus", the new name being "Teoretisk matematikk 2". Biggest change in the edit is adding "Numeriske metoder"
+- Make minor changes in "Matematikkens byggesteiner" and "Anvendt matemematikk 1"
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -50,16 +49,12 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the CC BY-NC-SA 4.0 license. To view a copy of this license, visit [http://creativecommons.org/licenses/by-nc-sa/4.0/](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 Sindre Sogge Heggen - sindre.heggen@gmail.com
 
 Project Link:
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
