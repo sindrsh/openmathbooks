@@ -1,4 +1,4 @@
-# About the book
+## About the book
 
 _First Principles of Math_ is a free text book (PDF) introducing the basic concepts of math, namely
 
