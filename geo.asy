@@ -1,4 +1,10 @@
+import graph;
+
 pair O = (0,0);
+
+pair f(real v){
+	return (cos(v),sin(v));
+}
 
 void mksq2(pair A=(0,0), pair B=(1,0), real sc=1, real u=sc, pen p=black, real rot=0, bool h=true){
 	real k = 0.3cm;
@@ -8,6 +14,17 @@ void mksq2(pair A=(0,0), pair B=(1,0), real sc=1, real u=sc, pen p=black, real r
     if (h){sq=sc*nx--sc*nx+u*ny--u*ny;}
     else sq=(0,0)--sc*nx--sc*nx+u*ny--u*ny--cycle;
     draw(A,rotate(rot)*sq, p);
+}
+
+void dv(pair A, pair B, pair C, string l="$u$", pair al=E,real sc=0.5, pen p = blue, pair D=(0,0)){
+	pair AC = A-C;
+	pair BC = B-C;
+	real v1 = atan2(AC.y, AC.x);
+	real v2 = atan2(BC.y, BC.x);
+	write((v1-v2)*180/pi);
+	path s;
+	s = graph(f, D.x+v1, D.y+v2, operator..);
+	draw(shift(C)*scale(sc)*s,p, L=l, align=al);
 }
 
 struct Tri{

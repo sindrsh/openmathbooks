@@ -4,6 +4,7 @@
 
 \begin{document}
 \section{Definisjoner}
+\subsubsection{Linjer}
 \reg[Halveringslinje]{
 Gitt $ \angle BAC $. For et punkt $ P $ som ligger på \textit{halveringslinja} til vinkelen, er
 \[ \angle BAP = PAC=\frac{1}{2}\angle BAC \] 
@@ -17,7 +18,57 @@ Midtpunktet $ C $ til $ AB $ er punktet på linjestykket som er slik at $ AC=CB 
 Midtnormalen til $ AB $ står normalt på, og går gjennom midtpunktet til, $ AB $.
 \fig{midnorm0}
 }
+
+\subsubsection{Sinus, cosinus og tangens I}
+I \mb\;så vi at 
+
+\reg[Sinus, cosinus og tangens]{
+Gitt en rettvinklet trekant med kateter $ a $ og $ b $, hypotenus $ c $, og vinkel $ v $, som vist i figuren under.
+\fig{sincostan}
+Da er
+\algv{
+\sin v &= \frac{a}{c}\vn
+\cos v &= \frac{b}{c} \vn
+\tan v &= \frac{a}{b}
+}
+}
+\spr{
+I figuren over blir $ a $ kalt den \textit{motstående} kateten til vinkel $ v $, og $ b $ den \textit{hosliggende}.
+}
+\reg[Sinus, cosinus og tangens]{
+	Gitt $ \triangle ABC$, hvor $ {v=\angle BAC>90^\circ} $, som vist i figuren under.
+	\fig{sincostan2}
+	Da er
+	\algv{
+		\sin v &= \frac{CD}{AC}\vn
+		\cos v &= -\frac{AD}{AC} \vn
+		\tan v &= -\frac{CD}{AD}
+	}
+}
 \section{Egenskaper til trekanter}
+
+\reg[Arealsetningen]{
+\fig{arealsetn}
+Arealet $ T $ til $ \triangle ABC $ er
+\begin{equation}
+T= AB\cdot AC\cdot\sin \angle A
+\end{equation}
+}
+\reg[Sinussetningen]{
+	\fig{arealsetn}
+	For enhver trekant $ \triangle ABC $ er
+	\begin{equation}
+		\frac{\sin \angle A}{BC}= \frac{\sin \angle B}{AC}=\frac{\sin \angle C}{AB}
+	\end{equation}
+}
+\reg[Cosinussetningen]{
+Gitt en trekant med sidelengder $ a $, $ b $ og $ c $, og vinkel $ v $, som vist i figuren under.
+\fig{cossetn}
+Da er
+\begin{equation}
+a^2 = b^2+c^2-ab\cos v	
+\end{equation}
+}
 \reg[Midtnormal i likebeint trekant \label{hlikb}]{
 Gitt en likebeint trekant $ \triangle ABC $, hvor $ AC=BC $, som vist i figuren under. 
 \fig{hlikb}

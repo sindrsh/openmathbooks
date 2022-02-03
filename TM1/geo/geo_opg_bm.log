@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  3 FEB 2022 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  3 FEB 2022 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**geo_bm.tex
-(./geo_bm.tex
+**geo_opg_bm.tex
+(./geo_opg_bm.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -1047,11 +1047,11 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
 )
-\geo_bm@idxfile=\write6
-\openout6 = `geo_bm.idx'.
+\geo_opg_bm@idxfile=\write6
+\openout6 = `geo_opg_bm.idx'.
 
 
-Writing index file geo_bm.idx
+Writing index file geo_opg_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks47
@@ -1210,8 +1210,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(../tm_bm.tex) (./geo_bm.aux)
-\openout1 = `geo_bm.aux'.
+(../tm_bm.tex) (./geo_opg_bm.aux)
+\openout1 = `geo_opg_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -1325,434 +1325,90 @@ LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
 
-(./geo_bm.out) (./geo_bm.out)
+(./geo_opg_bm.out) (./geo_opg_bm.out)
 \@outlinefile=\write7
-\openout7 = `geo_bm.out'.
+\openout7 = `geo_opg_bm.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
+.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-2.
-
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
+.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-12.
+9.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-12.
+9.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 12.
+(Font)              <12> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 12.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
-
+(Font)              <6> on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-2.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 9
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-12.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
-[]\T1/lmr/m/n/10.95 Gitt $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 BAC$\T1/lmr/m/n
-/10.95 . For et punkt $\OML/lmm/m/it/10.95 P$ \T1/lmr/m/n/10.95 som lig-ger på 
-\T1/lmr/m/it/10.95 halver-ingslinja \T1/lmr/m/n/10.95 til
- []
-
-<../fig/halfline.pdf, id=15, 142.26149pt x 98.10652pt>
-File: ../fig/halfline.pdf Graphic file (type pdf)
-<use ../fig/halfline.pdf>
-Package pdftex.def Info: ../fig/halfline.pdf  used on input line 12.
-(pdftex.def)             Requested size: 142.26112pt x 98.10626pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
-[]\T1/lmr/m/n/10.95 Midtpunktet $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 til $
-\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95 er punk-tet på linjestykket som er sl
-ik at
- []
-
-<../fig/midtp.pdf, id=16, 170.7178pt x 14.18298pt>
-File: ../fig/midtp.pdf Graphic file (type pdf)
-<use ../fig/midtp.pdf>
-Package pdftex.def Info: ../fig/midtp.pdf  used on input line 16.
-(pdftex.def)             Requested size: 170.71738pt x 14.18294pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]\T1/lmr/m/n/10.95 Midtnormalen til $\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95
- står nor-malt på, og går gjen-nom midt-
- []
-
-<../fig/midnorm0.pdf, id=17, 170.7178pt x 73.59496pt>
-File: ../fig/midnorm0.pdf Graphic file (type pdf)
-<use ../fig/midnorm0.pdf>
-Package pdftex.def Info: ../fig/midnorm0.pdf  used on input line 20.
-(pdftex.def)             Requested size: 170.71738pt x 73.59477pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]\T1/lmr/m/n/10.95 Gitt en rettvin-klet trekant med kateter $\OML/lmm/m/it/10.
-95 a$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 b$\T1/lmr/m/n/10.95 , hy-potenu
-s $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 , og
- []
-
-<../fig/sincostan.pdf, id=19, 113.81522pt x 89.8557pt>
-File: ../fig/sincostan.pdf Graphic file (type pdf)
-<use ../fig/sincostan.pdf>
-Package pdftex.def Info: ../fig/sincostan.pdf  used on input line 34.
-(pdftex.def)             Requested size: 113.81493pt x 89.85547pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/lmr/m/n/10.95 I fig-uren over blir $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10
-.95 kalt den \T1/lmr/m/it/10.95 mot-stående \T1/lmr/m/n/10.95 kateten til vinke
-l $\OML/lmm/m/it/10.95 v$\T1/lmr/m/n/10.95 , og
- []
-
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/halfline.pdf> <../f
-ig/midtp.pdf> <../fig/midnorm0.pdf>]
-<../fig/sincostan2.pdf, id=54, 170.7178pt x 81.07289pt>
-File: ../fig/sincostan2.pdf Graphic file (type pdf)
-<use ../fig/sincostan2.pdf>
-Package pdftex.def Info: ../fig/sincostan2.pdf  used on input line 47.
-(pdftex.def)             Requested size: 170.71738pt x 81.07268pt.
- [2 <../fig/sincostan.pdf>] [3 <../fig/sincostan2.pdf>]
-<../fig/arealsetn.pdf, id=77, 170.7178pt x 60.77707pt>
-File: ../fig/arealsetn.pdf Graphic file (type pdf)
-<use ../fig/arealsetn.pdf>
-Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 56.
-(pdftex.def)             Requested size: 170.71738pt x 60.7769pt.
-File: ../fig/arealsetn.pdf Graphic file (type pdf)
-<use ../fig/arealsetn.pdf>
-Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 63.
-(pdftex.def)             Requested size: 170.71738pt x 60.7769pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
-[]\T1/lmr/m/n/10.95 Gitt en trekant med side-lengder $\OML/lmm/m/it/10.95 a$\T1
-/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10
-.95 c$\T1/lmr/m/n/10.95 , og vinkel $\OML/lmm/m/it/10.95 v$\T1/lmr/m/n/10.95 , 
-som vist i
- []
-
-<../fig/cossetn.pdf, id=78, 170.7178pt x 78.49324pt>
-File: ../fig/cossetn.pdf Graphic file (type pdf)
-<use ../fig/cossetn.pdf>
-Package pdftex.def Info: ../fig/cossetn.pdf  used on input line 71.
-(pdftex.def)             Requested size: 170.71738pt x 78.49304pt.
-<../fig/hlikb.pdf, id=79, 142.26149pt x 83.45177pt>
-File: ../fig/hlikb.pdf Graphic file (type pdf)
-<use ../fig/hlikb.pdf>
-Package pdftex.def Info: ../fig/hlikb.pdf  used on input line 76.
-(pdftex.def)             Requested size: 142.26112pt x 83.45155pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]\T1/lmr/m/n/10.95 Da både $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ADC$ \T1/
-lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 DBC$ \T1/lmr/m/n/10.
-95 er rettvin-klede, har $\OML/lmm/m/it/10.95 CD$ \T1/lmr/m/n/10.95 som ko-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-\T1/lmr/m/n/10.95 rteste katet, og $[]$, føl-ger det av Py-tago-ras' set-ning a
-t
- []
-
-[4
-
- <../fig/arealsetn.pdf> <../fig/cossetn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]\T1/lmr/m/n/10.95 En \T1/lmr/m/it/10.95 me-dian \T1/lmr/m/n/10.95 er et linje
-stykke som går fra et hjørne i en trekant til
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]\T1/lmr/m/n/10.95 De tre me-di-anene i en trekant skjærer hveran-dre i ett og
- samme
- []
-
-<../fig/median1a.pdf, id=100, 142.26149pt x 80.95244pt>
-File: ../fig/median1a.pdf Graphic file (type pdf)
-<use ../fig/median1a.pdf>
-Package pdftex.def Info: ../fig/median1a.pdf  used on input line 89.
-(pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m
-/n/10.95 med me-di-aner $\OML/lmm/m/it/10.95 CD$\T1/lmr/m/n/10.95 , $\OML/lmm/m
-/it/10.95 BF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AE$\T1/lmr/m/n/10.95 , 
-som skjærer
- []
-
-<../fig/median1b.pdf, id=102, 142.26149pt x 80.95244pt>
-File: ../fig/median1b.pdf Graphic file (type pdf)
-<use ../fig/median1b.pdf>
-Package pdftex.def Info: ../fig/median1b.pdf  used on input line 120.
-(pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
-<../fig/median1c.pdf, id=103, 142.26149pt x 80.95244pt>
-File: ../fig/median1c.pdf Graphic file (type pdf)
-<use ../fig/median1c.pdf>
-Package pdftex.def Info: ../fig/median1c.pdf  used on input line 120.
-(pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\T1/lmr/m/n/10.95 Vi lar $\OML/lmm/m/it/10.95 G$ \T1/lmr/m/n/10.95 være skjærin
-gspunk-tet til $\OML/lmm/m/it/10.95 BF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.
-95 AE$\T1/lmr/m/n/10.95 , og tar det
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\T1/lmr/m/n/10.95 for gitt at dette lig-ger inne i $\OMS/lmsy/m/n/10.95 4\OML/l
-mm/m/it/10.95 ABC$\T1/lmr/m/n/10.95 . Da $[]$ og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]$\T1/lmr/m/n/10.95 , er $[]$. Dermed har $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/
-10.95 og $\OML/lmm/m/it/10.95 E$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\T1/lmr/m/n/10.95 lik av-s-tand til $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n/10.95 ,
- som be-tyr at $[]$. Videre har vi også
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-$\OML/lmm/m/it/10.95 G$ \T1/lmr/m/n/10.95 har lik av-s-tand til $\OML/lmm/m/it/
-10.95 AF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 FC$\T1/lmr/m/n/10.95 , og $
-[]$. Dermed er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 H$ \T1/lmr/m/n/10.95 være skjæringspu
-nk-tet til $\OML/lmm/m/it/10.95 AE$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 C
-D$\T1/lmr/m/n/10.95 . Med samme fram-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-\T1/lmr/m/n/10.95 Da både $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 GEC$ \T1/lm
-r/m/n/10.95 og $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 HEC$ \T1/lmr/m/n/10.95
- har $\OML/lmm/m/it/10.95 CE$ \T1/lmr/m/n/10.95 som side, likt areal, og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-$[]$ \T1/lmr/m/n/10.95 fordi $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 EGF$ \T1/lm
-r/m/n/10.95 og $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 AGB$ \T1/lmr/m/n/10.95 er
- top-pvin-kler og
- []
-
-[5 <../fig/hlikb.pdf> <../fig/median1a.pdf>] [6 <../fig/median1b.pdf> <../fig/m
-edian1c.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-[]\T1/lmr/m/n/10.95 Midtnormalene i en trekant møtes i ett og samme punkt. Dett
-e
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
-\T1/lmr/m/n/10.95 punk-tet er sen-trum i sirke-len som har hjørnene til trekan-
-ten på
- []
-
-<../fig/midnorm1a.pdf, id=135, 170.7178pt x 168.55972pt>
-File: ../fig/midnorm1a.pdf Graphic file (type pdf)
-<use ../fig/midnorm1a.pdf>
-Package pdftex.def Info: ../fig/midnorm1a.pdf  used on input line 124.
-(pdftex.def)             Requested size: 170.71738pt x 168.5593pt.
-<../fig/midnorm1b.pdf, id=137, 170.7178pt x 158.8334pt>
-File: ../fig/midnorm1b.pdf Graphic file (type pdf)
-<use ../fig/midnorm1b.pdf>
-Package pdftex.def Info: ../fig/midnorm1b.pdf  used on input line 133.
-(pdftex.def)             Requested size: 170.71738pt x 158.833pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-\T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m
-/n/10.95 med midt-punk-tene $\OML/lmm/m/it/10.95 D$\T1/lmr/m/n/10.95 , $\OML/lm
-m/m/it/10.95 E$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 F$\T1/lmr/m/n/10.95 .
- Vi lar $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 være
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-\T1/lmr/m/n/10.95 skjæringspunk-tet til de re-spek-tive midt-nor-ma-lene til $\
-OML/lmm/m/it/10.95 AC$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n
-/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]$ \T1/lmr/m/n/10.95 fordi begge er rettvin-klede, begge har $\OML/lmm/m/it/10
-.95 FS$ \T1/lmr/m/n/10.95 som
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-33.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]$\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 BSC$ \T1/lmr/m/n/10.95 er like-bein
-t, og da går midt-nor-malen til $\OML/lmm/m/it/10.95 BC$ \T1/lmr/m/n/10.95 gjen
--
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--133
-[]$\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/
-n/10.95 og $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 må nød-vendigvis ligge på 
-sirke-len med sen-trum
- []
-
-[7 <../fig/midnorm1a.pdf> <../fig/midnorm1b.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
-[]\T1/lmr/bx/n/12 0.12Halveringslinjer og innskrevet sirkel i trekan-ter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
-[]\T1/lmr/m/n/10.95 Halveringslinjene til vin-k-lene i en trekant møtes i ett o
-g samme
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
-\T1/lmr/m/n/10.95 punkt. Dette punk-tet er sen-trum i den \T1/lmr/m/it/10.95 in
-nskrevne \T1/lmr/m/n/10.95 sirke-len, som
- []
-
-<../fig/innskr1a.pdf, id=152, 199.1741pt x 102.1416pt>
-File: ../fig/innskr1a.pdf Graphic file (type pdf)
-<use ../fig/innskr1a.pdf>
-Package pdftex.def Info: ../fig/innskr1a.pdf  used on input line 137.
-(pdftex.def)             Requested size: 199.17361pt x 102.14134pt.
-<../fig/innskr1b.pdf, id=154, 199.1741pt x 108.76636pt>
-File: ../fig/innskr1b.pdf Graphic file (type pdf)
-<use ../fig/innskr1b.pdf>
-Package pdftex.def Info: ../fig/innskr1b.pdf  used on input line 143.
-(pdftex.def)             Requested size: 199.17361pt x 108.76608pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$\T1/lmr/m/
-n/10.95 . Vi lar $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 være skjæringspunk-t
-et til de re-spec-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 tive halver-ingslin-jene til $\U/msa/m/n/10.95 \\OML/lmm/m/it
-/10.95 BAC$ \T1/lmr/m/n/10.95 og $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 CBA$\T1
-/lmr/m/n/10.95 . Videre plasserer
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 vi $\OML/lmm/m/it/10.95 D$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/
-10.95 E$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/10.95 slik at
- $[]$, $[]$ og $[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-[]$ \T1/lmr/m/n/10.95 fordi begge er rettvin-klede og har hy-potenus
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\OML/lmm/m/it/10.95 AS$\T1/lmr/m/n/10.95 , og $[]$. Tilsvarende er $[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 Dermed er $[]$. Føl-gelig er $\OML/lmm/m/it/10.95 F$\T1/lmr/m
-/n/10.95 , $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 E$
- \T1/lmr/m/n/10.95 de re-spek-tive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 tan-ger-ingspunk-tene til $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n
-/10.95 , $\OML/lmm/m/it/10.95 BC$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AC$
- \T1/lmr/m/n/10.95 og sirke-len med sen-trum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-[]\T1/lmr/m/n/10.95 Videre har vi at $[]$, fordi begge er rettvin-klede
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
-\T1/lmr/m/n/10.95 og har hy-potenus $\OML/lmm/m/it/10.95 CS$\T1/lmr/m/n/10.95 ,
- og $[]$. Altså er $[]$,
- []
-
-[8 <../fig/innskr1a.pdf> <../fig/innskr1b.pdf>] [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
- (./geo_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
-Package rerunfilecheck Info: File `geo_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 05FC32502A9235EC690C84E4CD4EC4A8;110.
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+ (./geo_opg_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package rerunfilecheck Info: File `geo_opg_bm.out' has not changed.
+(rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
  ) 
 Here is how much of TeX's memory you used:
- 31425 strings out of 481239
- 618031 string characters out of 5920378
- 935271 words of memory out of 5000000
- 45965 multiletter control sequences out of 15000+600000
- 585555 words of font info for 67 fonts, out of 8000000 for 9000
+ 31142 strings out of 481239
+ 612262 string characters out of 5920378
+ 926158 words of memory out of 5000000
+ 45737 multiletter control sequences out of 15000+600000
+ 571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,10n,104p,875b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
-thit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on geo_bm.pdf (9 pages, 208907 bytes).
+ 70i,5n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmsy8.pfb>
+Output written on geo_opg_bm.pdf (1 page, 75235 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 59 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
