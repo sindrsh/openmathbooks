@@ -1,7 +1,7 @@
 import "../../inh" as inh;
 import "../../geo" as geo;
 
-size(4cm);
+size(3.5cm);
 
 Tri t = mktri(3,5,4);
 

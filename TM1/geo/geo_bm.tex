@@ -4,7 +4,6 @@
 
 \begin{document}
 \section{Definisjoner}
-\subsubsection{Linjer}
 \reg[Halveringslinje]{
 Gitt $ \angle BAC $. For et punkt $ P $ som ligger på \textit{halveringslinja} til vinkelen, er
 \[ \angle BAP = PAC=\frac{1}{2}\angle BAC \] 
@@ -18,40 +17,37 @@ Midtpunktet $ C $ til $ AB $ er punktet på linjestykket som er slik at $ AC=CB 
 Midtnormalen til $ AB $ står normalt på, og går gjennom midtpunktet til, $ AB $.
 \fig{midnorm0}
 }
-
-\subsubsection{Sinus, cosinus og tangens I}
-I \mb\;så vi at 
-
+\newpage
 \reg[Sinus, cosinus og tangens]{
-Gitt en rettvinklet trekant med kateter $ a $ og $ b $, hypotenus $ c $, og vinkel $ v $, som vist i figuren under.
+Gitt en rettvinklet trekant med katetene $ a $ og $ b $, hypotenus $ c $, og vinkel $ v $, som vist i figuren under.
 \fig{sincostan}
-Da er
-\algv{
-\sin v &= \frac{a}{c}\vn
-\cos v &= \frac{b}{c} \vn
-\tan v &= \frac{a}{b}
-}
+Da er \vs
+\begin{align}
+\sin v &= \frac{a}{c} \label{sindef1}\vn
+\cos v &= \frac{b}{c} \label{cosdef1}\vn
+\tan v &= \frac{a}{b} 	
+\end{align}
 }
 \spr{
 I figuren over blir $ a $ kalt den \textit{motstående} kateten til vinkel $ v $, og $ b $ den \textit{hosliggende}.
 }
-\reg[Sinus, cosinus og tangens]{
+\reg[Sinus, cosinus og tangens I]{
 	Gitt $ \triangle ABC$, hvor $ {v=\angle BAC>90^\circ} $, som vist i figuren under.
 	\fig{sincostan2}
-	Da er
-	\algv{
-		\sin v &= \frac{CD}{AC}\vn
-		\cos v &= -\frac{AD}{AC} \vn
-		\tan v &= -\frac{CD}{AD}
-	}
+	Da er \vs
+\begin{align}
+	\sin v &= \frac{CD}{AC} \label{sindef2} \vn
+	\cos v &= -\frac{AD}{AC} \label{cosdef2}  \vn
+	\tan v &= -\frac{CD}{AD} \label{tandef2}
+\end{align}
 }
 \section{Egenskaper til trekanter}
 
-\reg[Arealsetningen]{
+\reg[\arealsetn \label{arealsetn}]{
 \fig{arealsetn}
 Arealet $ T $ til $ \triangle ABC $ er
 \begin{equation}
-T= AB\cdot AC\cdot\sin \angle A
+T=\frac{1}{2} AB\cdot AC\cdot\sin \angle A
 \end{equation}
 }
 \reg[Sinussetningen]{
@@ -61,23 +57,24 @@ T= AB\cdot AC\cdot\sin \angle A
 		\frac{\sin \angle A}{BC}= \frac{\sin \angle B}{AC}=\frac{\sin \angle C}{AB}
 	\end{equation}
 }
-\reg[Cosinussetningen]{
-Gitt en trekant med sidelengder $ a $, $ b $ og $ c $, og vinkel $ v $, som vist i figuren under.
-\fig{cossetn}
+\reg[\cossetn \label{cossetn}]{
+Gitt en trekant med sidelengder $ a $, $ b $ og $ c $, og vinkel $ v $, som vist i figurene under.
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{cossetna}}} \qquad \quad
+	\subfloat[]{\includegraphics{\figp{cossetnb}}}
+\end{figure}
 Da er
 \begin{equation}
 a^2 = b^2+c^2-ab\cos v	
 \end{equation}
 }
-\reg[Midtnormal i likebeint trekant \label{hlikb}]{
+\reg[\hlikb \label{hlikb}]{
 Gitt en likebeint trekant $ \triangle ABC $, hvor $ AC=BC $, som vist i figuren under. 
 \fig{hlikb}
 Høgda $ DC $ ligger da på midtnormalen til $ AB $.
 }
-\fork{\ref{hlikb}}{
-Da både $ \triangle ADC $ og $ \triangle DBC $ er rettvinklede, har $ CD $ som korteste katet, og $ {AC=BC} $, følger det av Pytagoras' setning at $ {AD=BD} $.
-}
-\reg[Medianer i trekanter \label{trkmedian}]{
+\reg[\trkmedian \label{trkmedian}]{
 En \textit{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
 
 De tre medianene i en trekant skjærer hverandre i ett og samme punkt.
@@ -87,59 +84,204 @@ Gitt $ \triangle ABC $ med medianer $ CD $, $ BF $ og $ AE $, som skjærer hvera
 \frac{CG}{GD}=\frac{BG}{GF}=\frac{AG}{GE} = 2
 }
 }
-\fork{\ref{trkmedian}}{
-\begin{figure}
-	\centering
-	\subfloat[]{
-		\includegraphics{\figp{median1b}}
-	}\;\;
-	\subfloat[]{
-		\includegraphics{\figp{median1c}}
-	}
-\end{figure}
-Vi lar $ G $ være skjæringspunktet til $ BF $ og $ AE $, og tar det for gitt at dette ligger inne i $ \triangle ABC $. Da $ {AF=\frac{1}{2}AC} $ og $ {BE=\frac{1}{2}BC }$, er $ {ABF= BAE=\frac{1}{2}ABC} $. Dermed har $ F $ og $ E $ lik avstand til $ AB $, som betyr at $ {FE\parallel AB} $. Videre har vi også at
-\alg{
-ABG + AFG &= ABG + BGE \\
-AFG &= BGE 
-}
-$ G $ har lik avstand til $ AF $ og $ FC $, og $ {AF=FC} $. Dermed er $ AFG=GFC $. Tilsvarende er $ BGE=GEC $. Altså har disse fire trekantene likt areal. Videre er
-\alg{
-AFG+GFC+GEC&= AEC \\
-GEC &= \frac{1}{6}ABC
-}
-La $ H $ være skjæringspunktet til $ AE $ og $ CD $. Med samme framgangsmåte som over kan det vises at
-\[HEC=\frac{1}{6}ABC \]
-Da både $ \triangle GEC $ og $ \triangle HEC $ har $ CE $ som side, likt areal, og både $ G $ og $ H $ ligger på $ AE $, må $ G=H $. Altså skjærer medianene hverandre i ett og samme punkt. \vsk
-
-$ \triangle ABC\sim\triangle FEC$ fordi de har parvis parallelle sider. Dermed er
-\[ \frac{AB}{FE} = \frac{BC}{CE}=2  \]
-$ {\triangle ABG\sim\triangle EFG }$ fordi $ \angle EGF $ og $ \angle AGB $ er toppvinkler og $ AB\parallel FE $. Dermed er
-\[ \frac{GB}{FG}=\frac{AB}{FE}=2 \]
-Tilsvarende kan det vises at
-\[ \frac{CG}{GD}=\frac{AG}{GE}=2 \]
-}
-\reg[Midtnormaler i trekanter \label{midtrk}]{
+\reg[\midtrk \label{midtrk}]{
 Midtnormalene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i sirkelen som har hjørnene til trekanten på sin bue.	
 \fig{midnorm1a}
 }
-\fork{\ref{midtrk}}{
-\fig{midnorm1b}
-Gitt $ \triangle ABC $ med midtpunktene $ D $, $ E $ og $ F $. Vi lar $ S $ være skjæringspunktet til de respektive midtnormalene til $ AC $ og $ AB $.
-$ {\triangle AFS\sim\triangle CFS} $ fordi begge er rettvinklede, begge har $ FS $ som korteste katet, og $ AF=FC $. Tilsvarende er $ {\triangle ADS\sim\triangle BDS} $. Følgelig er $ {CS=AS=BS} $. Dette betyr at 
-\begin{itemize}
-	\item $ \triangle BSC $ er likebeint, og da går midtnormalen til $ BC $ gjennom $ S $.
-	\item $ A $, $ B $ og $ C $ må nødvendigvis ligge på sirkelen med sentrum $ S $ og radius $ AS=BS=CS $ 
-\end{itemize}
-}
-\reg[Halveringslinjer og innskrevet sirkel i trekanter \label{innskr1a}]{
+
+\reg[\innskrsirk \label{innskrsirk}]{
 Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i den \textit{innskrevne} sirkelen, som tangerer hver av sidene i trekanten.
 \fig{innskr1a}
 }
-\fork{\ref{innskr1a}}{
-\fig{innskr1b}
-Gitt $ \triangle ABC $. Vi lar $ S $ være skjæringspunktet til de respective halveringslinjene til $ \angle BAC $ og $ \angle CBA $. Videre plasserer vi $ D $, $ E $ og $ F $ slik at $ {DS\perp AB} $, $ {ES\perp BC} $ og $ {FS\perp AC} $. $ {\triangle ASD\cong\triangle ASF} $ fordi begge er rettvinklede og har hypotenus $ AS $, og $ {\angle DAS=\angle SAF} $. Tilsvarende er $ {\triangle BSD \cong \triangle BSE} $. Dermed er $ {SE=SD=SF} $. Følgelig er $ F $, $ C $ og $ E $ de respektive tangeringspunktene til $ AB $, $ BC $ og $ AC $ og sirkelen med sentrum $ S $ og radius $ SE $. \vsk
 
-Videre har vi at $ {\triangle CSE \cong  \triangle CSF} $, fordi begge er rettvinklede og har hypotenus $ CS $, og $ {SF=SE} $. Altså er $ {\angle FCS=\angle ECS}$, som betyr at $ CS $ ligger på halveringslinja til $ \angle ACB $.
+\section{Egenskaper til sirkler}
+\reg[\tang \label{tang}]{
+En linje som skjærer en sirkel i bare ett punkt, kalles en \textit{tangent} til sirkelen.\vsk
+
+La $ S $ være sentrum i en sirkel, og la $ A $ være skjæringspunktet til denne sirkelen og ei linje. Da har vi at
+\nn{
+\text{linja er en tangent til sirkelen} \Longleftrightarrow \vv{AS}\text{ står vinkelrett på linja} 
+}
+	
+\fig{tang0a}
+}\regv
+
+\reg[\perfvink \label{perfvink}]{
+	Både periferi- og sentralvinkler har vinkelbein som ligger (delvis) inni en sirkel. \vsk
+	
+	En sentralvinkel har toppunkt i sentrum av en sirkel.\vsk
+	
+	En periferivinkel har toppunkt på sirkelbuen.\vsk
+	
+	Gitt en periferivinkel $ u $ og en sentralvinkel $ v $, som er innskrevet i samme sirkel og som spenner over samme sirkelbue. Da er\vs
+	\begin{equation}\label{v2u}
+		v=2u
+	\end{equation}
+	\centering
+	\includegraphics[]{\figp{pervink0a}}\qquad
+	\includegraphics[]{\figp{pervink0b}}\qquad
+	\includegraphics[]{\figp{pervink0c}}	
+}
+
+
+\section{Forklaringer}
+\fork{\ref{hlikb} \hlikb}{
+	Da både $ \triangle ADC $ og $ \triangle DBC $ er rettvinklede, har $ CD $ som korteste katet, og $ {AC=BC} $, følger det av Pytagoras' setning at $ {AD=BD} $.
+} \vsk
+
+\fork{\ref{trkmedian} \trkmedian}{
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\includegraphics{\figp{median1b}}
+		}\;\;
+		\subfloat[]{
+			\includegraphics{\figp{median1c}}
+		}
+	\end{figure}
+	Vi lar $ G $ være skjæringspunktet til $ BF $ og $ AE $, og tar det for gitt at dette ligger inne i $ \triangle ABC $. Da $ {AF=\frac{1}{2}AC} $ og $ {BE=\frac{1}{2}BC }$, er $ {ABF= BAE=\frac{1}{2}ABC} $. Dermed har $ F $ og $ E $ lik avstand til $ AB $, som betyr at $ {FE\parallel AB} $. Videre har vi også at
+	\alg{
+		ABG + AFG &= ABG + BGE \\
+		AFG &= BGE 
+	}
+	$ G $ har lik avstand til $ AF $ og $ FC $, og $ {AF=FC} $. Dermed er $ AFG=GFC $. Tilsvarende er $ BGE=GEC $. Altså har disse fire trekantene likt areal. Videre er
+	\alg{
+		AFG+GFC+GEC&= AEC \\
+		GEC &= \frac{1}{6}ABC
+	}
+	La $ H $ være skjæringspunktet til $ AE $ og $ CD $. Med samme framgangsmåte som over kan det vises at
+	\[HEC=\frac{1}{6}ABC \]
+	Da både $ \triangle GEC $ og $ \triangle HEC $ har $ CE $ som side, likt areal, og både $ G $ og $ H $ ligger på $ AE $, må $ G=H $. Altså skjærer medianene hverandre i ett og samme punkt. \vsk
+	
+	$ \triangle ABC\sim\triangle FEC$ fordi de har parvis parallelle sider. Dermed er
+	\[ \frac{AB}{FE} = \frac{BC}{CE}=2  \]
+	$ {\triangle ABG\sim\triangle EFG }$ fordi $ \angle EGF $ og $ \angle AGB $ er toppvinkler og $ AB\parallel FE $. Dermed er
+	\[ \frac{GB}{FG}=\frac{AB}{FE}=2 \]
+	Tilsvarende kan det vises at
+	\[ \frac{CG}{GD}=\frac{AG}{GE}=2 \]
+}
+\newpage
+\fork{\ref{midtrk} \midtrk}{
+	\fig{midnorm1b}
+	Gitt $ \triangle ABC $ med midtpunktene $ D $, $ E $ og $ F $. Vi lar $ S $ være skjæringspunktet til de respektive midtnormalene til $ AC $ og $ AB $.
+	$ {\triangle AFS\sim\triangle CFS} $ fordi begge er rettvinklede, begge har $ FS $ som korteste katet, og $ AF=FC $. Tilsvarende er $ {\triangle ADS\sim\triangle BDS} $. Følgelig er $ {CS=AS=BS} $. Dette betyr at 
+	\begin{itemize}
+		\item $ \triangle BSC $ er likebeint, og da går midtnormalen til $ BC $ gjennom $ S $.
+		\item $ A $, $ B $ og $ C $ må nødvendigvis ligge på sirkelen med sentrum $ S $ og radius $ AS=BS=CS $ 
+	\end{itemize}
+}
+\newpage
+\fork{\ref{innskrsirk} \innskrsirk}{
+	\fig{innskr1b}
+	Gitt $ \triangle ABC $. Vi lar $ S $ være skjæringspunktet til de respective halveringslinjene til $ \angle BAC $ og $ \angle CBA $. Videre plasserer vi $ D $, $ E $ og $ F $ slik at $ {DS\perp AB} $, $ {ES\perp BC} $ og $ {FS\perp AC} $. $ {\triangle ASD\cong\triangle ASF} $ fordi begge er rettvinklede og har hypotenus $ AS $, og $ {\angle DAS=\angle SAF} $. Tilsvarende er $ {\triangle BSD \cong \triangle BSE} $. Dermed er $ {SE=SD=SF} $. Følgelig er $ F $, $ C $ og $ E $ de respektive tangeringspunktene til $ AB $, $ BC $ og $ AC $ og sirkelen med sentrum $ S $ og radius $ SE $. \vsk
+	
+	Videre har vi at $ {\triangle CSE \cong  \triangle CSF} $, fordi begge er rettvinklede og har hypotenus $ CS $, og $ {SF=SE} $. Altså er $ {\angle FCS=\angle ECS}$, som betyr at $ CS $ ligger på halveringslinja til $ \angle ACB $.
+}
+\newpage
+\fork{\ref{tang} \tang}{
+\textbf{Linja er en tangent til sirkelen ${\boldmath \Longrightarrow \vv{AS}} $ står vinkelrett på linja}
+\fig{tangforkla}
+Vi antar at vinkelen mellom linja og $ \vv{AS} $ er ulik $ 90^\circ $. Da må det finnes et punkt $ B $ på linja slik at $ {\angle BAS=\angle SBA} $, som betyr at $ \triangle ASB $ er likebeint. Følgelig er $ {AS=BS} $, og da $ AS $ er lik radien i sirkelen, må dette bety at $ B $ også ligger på sirkelen. Dette motsier det faktum at $ A $ er det eneste skjæringspunktet til sirkelen og linja, og dermed må vinkelen mellom linja og $ \vv{AS} $ være $ 90^\circ $. \vsk
+
+\textbf{Linja er en tangent til sirkelen ${\boldmath \Longleftarrow \vv{AS}} $ står vinkelrett på linja}
+\fig{tangforklb}
+Gitt et vilkårlig punkt $ B $, som ikke samsvarer med $ A $, på linja. Da er $ BS $ hypotenusen i $ \triangle ABC $. Dette innebærer at $ BS $ er større enn radien til sirkelen ($ {BS>AS} $), og da kan $ B $ umulig ligge på sirkelen. Altså er $ A $ det eneste punktet som ligger på både linja og sirkelen, og dermed er linja en tangent til sirkelen.
+}
+
+\fork{\ref{arealsetn} \arealsetn }{
+	Gitt to tilfeller av $ \triangle ABC$, som vist i figuren under. Det éne hvor $ \angle BAC\in (0^\circ, 90^\circ] $, det andre hvor $ \angle BAC\in(90^\circ, 0^\circ) $ og la $ h $ være høyden med grunnlinje $ AB $.
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\includegraphics{\figp{arealsetnforkla}}
+		}
+		\subfloat[]{
+			\includegraphics{\figp{arealsetnforklb}}
+		}
+	\end{figure}
+	Arealet $ T $ til $ \triangle ABC$ er i begge tilfeller
+	\begin{equation}
+		T = \frac{1}{2}AB\cdot h
+	\end{equation}
+	Av henholdsvis \eqref{sindef1} og \eqref{sindef2} har vi at $ h=AC\cdot \sin \angle BAC $, og da er
+	\[ T = \frac{1}{2}AB\cdot h=\frac{1}{2}AB\cdot AC\sin \angle BAC \]
+}
+\newpage
+\fork{\ref{cossetn} \cossetn}{
+	{\boldmath $ v\in(90^\circ, 180^\circ) $ }\\	
+	\fig{cossetnforkla}	
+	Av Pytagoras' setning har vi at
+	\nn{
+		x^2=b^2-h^2 \label{cossetnforkl1}
+	}
+	og at
+	\alg{
+		a^2&=(x+c)^2+h^2 \label{cosetnforkla2}\\
+		a^2&=x^2+2xc+c^2+h^2 \label{cossetnforkl2}
+	}
+	Ved å sette uttrykket for $ x^2 $ fra \eqref{cossetnforkl1} inn i \eqref{cossetnforkl2}, får vi at
+	\alg{
+		a^2&=b^2-h^2+2xc+c^2+h^2 \\
+		a^2&=b^2+c^2+2xc \label{cossetnforkl3}
+	}
+	Av \eqref{cosdef2} har vi at $ x=-b\cos v $, og da er
+	\nn{
+		a^2=b^2+c^2-2bc\cos v
+	}
+	{\boldmath $ v\in[(0^\circ, 90^\circ] $ }\\	
+	\fig{cossetnforklb}	
+	Dette tilfellet skiller seg ut fra tilfellet hvor $ {v\in(90^\circ, 180^\circ]} $ på to måter:
+	\begin{enumerate}[label=(\roman*)]
+		\item I \eqref{cosetnforkla2} får vi $ (c-x)^2 $ i steden for $ (x+c)^2 $. I \eqref{cossetnforkl3} får vi da $ -2xc $ i steden for $ +2xc $.
+		\item Av \eqref{cosdef1} er $ x=b\cos v $. Av punkt (ii) følger det da at
+		\[ a^2=b^2+c^2-2bc\cos v \]
+	\end{enumerate}
+}
+\fork{\ref{perfvink} \perfvink}{
+	Tilhørende periferi- og sentralvinkler kan deles inn i tre tilfeller.\vsk
+	
+	\textbf{i) En diameter i sirkelen er høyre eller venstre vinkelbein i begge vinklene}\\[5pt]
+	I figuren under er $ S $ sentrum i sirkelen, ${\angle BAC= u}$ en periferi-vinkel og $ {\angle BSC=v} $ den tilhørende sentralvinkelen. Vi setter $ {\angle {SCB}=a} $. $ {\angle {ACS}=\angle {SAC}=u} $ og ${\angle {CBS}=\angle {SCB}=a} $ fordi både $ \triangle {ASC} $ og $ \triangle {SBC} $ er likebeinte.\vspace{-1pt}
+	\fig{pervinkforkla}
+	Vi har at \vs
+	\begin{align}
+		2a &= 180^\circ-v \label{aogv} \vn
+		2u+2a &= 180^\circ \label{uoga}
+	\end{align}
+	Vi setter uttrykket for $ 2a $ fra \eqref{aogv} inn i \eqref{uoga}:
+	\alg{
+		2u+180^\circ -v &= 180^\circ\\
+		2u &= v
+	}
+	
+	\textbf{ii) Vinklene ligger innenfor samme halvdel av sirkelen}\\[5pt]
+	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I tillegg har vi tegnet inn en diameter, som er med på å danne vinklene $ a $ og $ b $. Både $ u $ og $ v $ ligger i sin helhet på samme side av denne diameteren.
+	\fig{pervinkforkld}
+	Ettersom $  {u+a }$  er en periferivinkel, og $ {v+b }$ den tilhørende sentralvinkelen, vet vi av tilfelle 1 at
+	\[ 2(u+a) = v+b  \]
+	Men ettersom $ a $ og $ b $ også er samhørende periferi- og sentralvinkler, er $ {2a=b} $. Det betyr at
+	\algv{
+		2u+b &= v+b \\
+		2u &= v
+	}
+	\newpage
+	\textbf{iii) Vinklene ligger ikke innenfor samme halvdel av sirkelen}\\[5pt]
+	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I figuren til høyre har vi tegnet inn en diameter. Den deler $ u $ inn i vinklene $ a $ og $ c $, og $ v $ inn i $ b $ og $ d $.
+	\begin{center}
+		\includegraphics[]{\figp{pervinkforklc}}\qquad
+		\includegraphics[]{\figp{pervinkforklb}}
+	\end{center}
+	$ a $ og $ c $ er begge periferivinkler, med henholdsvis $ b $ og $ d $ som tilhørende sentralvinkler. Av tilfelle i) har vi da at
+	\algv{
+		2a &= b \vn
+		2c &= d
+	}
+	Dermed er
+	\algv{
+		2a+2c &= b+d \\
+		2(a+c) &= v \\
+		2u &= v
+	}
 }
 \end{document}
 

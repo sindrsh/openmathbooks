@@ -29,8 +29,10 @@
 \contentsline {chapter}{\numberline {7}Vektorer}{47}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Geometri}{48}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Definisjoner}{48}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Egenskaper til trekanter}{50}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Numeriske metoder}{55}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Newtons metode}{55}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Derivasjon}{55}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Vekstmodeller}{55}{section.9.3}%
+\contentsline {section}{\numberline {8.2}Egenskaper til trekanter}{51}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Egenskaper til sirkler}{54}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Forklaringer}{55}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Numeriske metoder}{64}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Newtons metode}{64}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Derivasjon}{64}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Vekstmodeller}{64}{section.9.3}%
