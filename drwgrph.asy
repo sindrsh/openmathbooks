@@ -6,8 +6,8 @@ void mktcy(real y, string nm=""){
     draw((0,y), (0.1cm,0) --(-0.1cm,0), L=Label(nm, position=EndPoint));    
     }   
 
-void mktc(real x, string nm=""){
-    draw((x,0), (0,0.1cm) --(0,-0.1cm), L=Label(nm, position=EndPoint));
+void mktc(real x, string nm="", position pos=EndPoint){
+    draw((x,0), (0,0.1cm) --(0,-0.1cm), L=Label(nm, position=pos));
     }   
 
 void xaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false, real tc=1){

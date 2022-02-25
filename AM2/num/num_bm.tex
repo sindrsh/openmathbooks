@@ -1,0 +1,40 @@
+\input{../../doc}
+\input{../am2_bm}
+\input{../../preamb}
+
+
+\begin{document}
+\section{Newtons metode}
+Gitt en funskjon $ f(x) $ og likningen 
+\[ f=0 \]
+Ved Newtons metode følger man følgende resonnement for å finne en løsning av likningen: \regv
+\st{
+Gitt at $ {f(x_a)=0} $.
+Vi starter med en $ x $-verdi $ x_0 $. Skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $ kaller vi $ x_1 $. Vi antar at $ |x_1-x_a|<|x_0-x_a| $. 
+}
+Siden $ x_1 $ er skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $, har vi  at\footnote{Se oppgave??}
+\alg{
+f'(x_0)(x_1-x_0)+f(x_0)&=0 \\
+f'(x_0)x_1 &= f'(x_0)x_0-f(x_0) \\
+x_1 &= x_0-\frac{f(x_0)}{f'(x_0)}
+}
+\begin{figure}
+\subfloat[]{
+\includegraphics{\figp{newt1a}}
+}
+\subfloat[]{
+	\includegraphics{\figp{newt1b}}
+}
+\end{figure}
+Ved å bruke tangenten til $ f $ i $ x_1 $, kan vi finne enda en ny $ x $-verdi, som vi antar gir en bedre tilnærming til $ x_a $ enn det $ x_1 $ gir. Denne prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig tilnærming til $ x_a $.
+\newpage
+\reg[Newtons metode (Newton-Rhapson metoden)]{
+Gitt en funskjon $ f(x) $ og likningen 
+\[ f=0 \]
+hvor ${f(x_a)=0 }$. For et passende valg av $ x_n $ antas det da at $ {|x_{n+1}-x_a|<|x_n-x_a|} $, hvor
+\nn{
+x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
+}
+}
+
+\end{document}
