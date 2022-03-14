@@ -54,8 +54,8 @@
 \usepackage{longtable} %breakable table
 
 % Ligningsreferanser
-\usepackage{mathtools}
-\mathtoolsset{showonlyrefs}
+%\usepackage{mathtools}
+%\mathtoolsset{showonlyrefs}
 
 % index
 \usepackage{imakeidx}
@@ -83,7 +83,7 @@
 \numberwithin{rg}{chapter}
 \newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 
-\newcommand\alg[1]{\begin{align} #1 \end{align}}
+\newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
 \newcommand\eks[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=green!3] {\large \textbf{Eksempel #1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
 
@@ -140,13 +140,15 @@
 \newcommand{\sectionbreak}{\clearpage} % New page on each section
 
 \newcommand{\nn}[1]{
-\begin{equation}
+\begin{equation*}
 	#1
-\end{equation}
+\end{equation*}
 }
 
-% Equation comments
+% Comments
 \newcommand{\cm}[1]{\llap{\color{blue} #1}}
+
+%%%
 
 \newcommand\fork[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{#1 (forklaring)} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
  
