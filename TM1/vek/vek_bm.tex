@@ -65,6 +65,10 @@ Skriv vektorene på komponentform.
 		\vec{u}-(\vec{v}+\vec{w}) &= \vec{u}-\vec{v}-\vec{w}
 	\end{align}
 }
+\subsubsection{Vinkelen mellom to vektorer}
+Vinkelen mellom to vektorer er (den minste) vinkelen som blir dannet når vektorene plasseres i samme startpunkt. For to vektorer $ \vec{u} $ og $ \vec{v} $ skriver vi denne vinkelen som $ \angle(\vec{u}, \vec{v}) $.
+\fig{vekvink}
+I vektorregning er det vanlig å oppgi vinkler i grader, altså på\\¨ intervallet $ [0^\circ, 180^\circ] $.
 \section{Lengden til en vektor}
 Gitt en vektor $ \vec{v}=[x_1, y_1] $. \textit{Lengden} til $ \vec{v} $ er avstanden mellom startpunktet og endepunktet. 
 \begin{figure}
@@ -72,7 +76,7 @@ Gitt en vektor $ \vec{v}=[x_1, y_1] $. \textit{Lengden} til $ \vec{v} $ er avsta
 \subfloat[]{\includegraphics{\figp{veklena}}}\qquad\quad
 \subfloat[]{\includegraphics{\figp{veklenb}}}
 \end{figure}
-Av enhver vektor kan vi danne en rettvinklet trekant hvor $ |\vec{v}| $ er lengden til hypotenusen og $ x_1 $ og $ y_1 $ er de respektive lengdene til katetene. Dermed er $ |\vec{v}| $ gitt av Pytagoras' setning.\regv
+Av enhver vektor kan vi danne en rettvinklet trekant hvor $ |\vec{v}| $ er lengden til hypotenusen og $ |x_1| $ og $ |y_1| $ er de respektive lengdene til katetene. Dermed er $ |\vec{v}| $ gitt av Pytagoras' setning.\regv
 
 \reg[Lengden til en vektor ]{
 Gitt en vektor $ \vec{v}=[x_1, y_1] $. Lengden $ |\vec{v}| $ er da 
@@ -89,12 +93,13 @@ Finn lengden til vektorene $ \vec{a}= [7, 4] $ og $ \vec{b}= [-3, 2] $.
 	|\vec{b}|&=\sqrt{(-3)^2+2^2}=\sqrt{13}
 }
 }
+
 \section{Skalarproduktet I}
 \reg[Skalarproduktet I]{
 For to vektorer $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, er \textit{skalarproduktet} gitt som
-\nn{
-\vec{u}\cdot\vec{v}=x_1x_2+y_1y_2 \label{skaldef1}
-}
+\begin{equation}
+	\vec{u}\cdot\vec{v}=x_1x_2+y_1y_2 \label{skaldef1}
+\end{equation}
 }
 \spr{
 Skalarproduktet kalles også \textit{prikkproduktet} eller \textit{indreproduktet}.
@@ -130,16 +135,12 @@ Gitt vektorene $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $ og $ \vec{c}=[1,-9] $. Regn
 	}
 }
 \section{Skalarproduktet II}
-Vinkelen mellom to vektorer er (den minste) vinkelen som blir dannet når vektorene plasseres i samme startpunkt. For to vektorer $ \vec{u} $ og $ \vec{v} $ skriver vi denne vinkelen som $ \angle(\vec{u}, \vec{v}) $.
-\fig{vekvink}
-I vektorregning er det vanlig å oppgi vinkler i grader, altså fra intervallet $ [0^\circ, 180^\circ] $.\vsk
-
 Gitt vektoren $ \vec{u}-\vec{v} $, hvor 
 $ \vec{u}=[x_1, y_1] $ og $ \vec{v}=[x_2, y_2] $. Da er
 \[ \vec{u}-\vec{v}=[x_1-x_2, y_1-y_2] \]
 Av \eqref{veklen} har vi at
 \begin{align}
-	|\vec{u}-\vec{v}|&= \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}  \\
+	|\vec{u}-\vec{v}|&= \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} \nonumber \\
 	&= \sqrt{x_1^2 - 2x_1 x_2 + x_2^2 + y_1^2 - 2y_1 y_2 + y_2^2 }\label{preskal}
 \end{align}
 
@@ -167,6 +168,7 @@ Fra (\ref{skal2}) kan vi gjøre en viktig observasjon; Hvis $\angle (\vec{u},\ve
 	\vec{u}\cdot\vec{v}=0
 }
 \reg[Vinkelrette vektorer \label{vinkrett} ]{
+For to vektorer $ \vec{u} $ og $ \vec{v} $ har vi at
 	\begin{equation}\label{vinkretteq}
 		\vec{u} \cdot \vec{v} = 0\iff \vec{u}\perp \vec{v}
 	\end{equation}
@@ -200,18 +202,23 @@ Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Da $ {\vec{a}\per
 \info{Nullvektoren}{
 I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. For å rettferdiggjøre betingelsen som går begge veier i \eqref{vinkretteq}, må vi spørre: Kan vi få ${ \vec{u}\cdot\vec{v} =0}$ om vinkelen mellom $ \vec{u} $ og $ \vec{v} $ \textsl{ikke} er $ 90^\circ $? \vsk
 
-På intervallet $ [0^\circ, 180^\circ) $ er det bare en vinkel lik $ 90^\circ $ som resulterer i cosinusverdi 0. Skal skalarproduktet bli 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med denne lengden er \textit{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man hevde at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textit{alle} vektorer.
+På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ som resulterer i cosinusverdi 0. Skal skalarproduktet bli 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med denne lengden er \textit{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man hevde at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textit{alle} vektorer.
 }
 \section{Parallelle vektorer}
-Vi har tidligere sett hvordan finne lengden til en vektor, men en vektor har også en retning. Retningen til en vektor kan uttrykkes ved (den minste) vinkelen vektoren danner med $ x $-aksen når den er plassert i grunnstillingen. Hvis to vektorer danner den samme vinkelen med $ x $-aksen er de parallelle.
+Hvis vinkelen mellom to vektorer er $ 0^\circ $ eller $ 180^\circ $, er de parallelle.
+
+
 \begin{figure}
 \centering
 \subfloat[]{\includegraphics{\figp{vekpara}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekparb}}}
 \end{figure}
-Gitt to vektorer $ \vec{u}=[x_1, y_1] $ og $ \vec{v}=[x_2, y_2] $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $. Alle tangensverdier til vinkler på intervallet $ [0^\circ, 180^\circ) $ er unike, og dette betyr at hvis $ \theta=\alpha $, må vi ha at
-\[ \frac{y_1}{x_1}=\frac{y_2}{x_2} \]
-Sammenhengen blir enda mer tydelig hvis vi omskriver likningen over til å gjelde de samsvarende komponentene\footnote{
+Gitt to vektorer $ \vec{u}=[x_1, y_1] $ og $ \vec{v}=[x_2, y_2] $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $, med $ x $-aksen som høgre vinkelbein. Da er $ {\tan \theta =\frac{y_1}{x_1}} $ og $ {\tan \alpha =\frac{y_2}{x_2}} $. Hvis $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, er det to muligheter:
+\begin{enumerate}[label=(\roman*)]
+\item $ \theta=0^\circ $ og $ \alpha=180^\circ $, eller omvendt.
+\item $ \theta = \alpha $
+\end{enumerate}
+I begge tilfeller er $ \angle(\vec{u}, \vec{v}) $ enten $ 0^\circ $ eller $ 180^\circ $, og da er $ \vec{u} $ og $ \vec{v} $ parallelle. Det omvendte gjelder også: Hvis punkt (i) eller (ii) gjelder, er $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $. Det er ofte praktisk å omskrive denne sammehengen til forholdet mellom samsvarende komponenter\footnote{
 For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter: \vspace{-6pt}
 \begin{itemize}
 	\item $ x_1 $ og $ x_2 $
@@ -219,7 +226,7 @@ For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter:
 \end{itemize}
 }: \regv
 \reg[Parallelle vektorer]{
-	To vektorer $ {\vec{u}=[x_1, y_1]} \text{ og } {\vec{v}=[x_2, y_2]} $ er parallelle hvis forholdet mellom samsvarende komponenter er likt.
+	For to vektorer $ {\vec{u}=[x_1, y_1]} \text{ og } {\vec{v}=[x_2, y_2]} $ har vi at
 	\begin{equation}
 		\frac{x_1}{x_2}=\frac{y_1}{y_2} \iff \vec{u}\parallel\vec{v}
 	\end{equation}
@@ -240,6 +247,89 @@ Vi har at
 \vec{c}=5[2, -4]=5\vec{a}
 }
 Dermed er $ \vec{a}\parallel \vec{c} $. Da $ \frac{20}{10}\neq \frac{-45}{15} $, er $ \vec{b} $ og $ \vec{c} $ \textsl{ikke} parallelle.
+}
+\section{Parameterisering av ei linje}
+Gitt ei linje $ l $, som vist i figuren under
+\fig{linje}
+Hvis en vektor $ \vec{r} $ er parallell med $ l $, kalles den en \textit{retningsvektor}\index{retningsvektor!for linje}  for linja. Si at $ {\vec{r}=[a, b]} $ er en retningsvektor for $ l $, og at $ A=(x_0, y_0) $ er et punkt på $ l $. Om vi starter i $ A $ og vandrer parallellt med $ \vec{r} $, kan vi være sikre på at vi fortsatt befinner oss på linja. Dette må bety at vi for en variabel $ t $ kan nå et vilkårlig punkt $ {B=(x, y)} $ på linja ved følgende utregning:
+\[B= A+t\vec{r} \]
+På koordinatform kan vi skrive dette som\footnote{Se \eqref{Aplusu}.}
+\[(x, y)= (x_0 +at, y_0+bt) \]
+Uttrykket over kalles \textit{parameteriseringen} til linja, uttrykt ved $ t $. Parameteriseringen skrives ofte slik:\regv
+\reg[Linje i rommet]{
+	Ei linje $ l $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ kan parameteriseres ved
+	\begin{equation}l: \left\lbrace{
+			\begin{array}{lll}
+				x= x_0 + at   \\
+				y= y_0 + bt   
+			\end{array}
+		}\right. 
+	\end{equation}
+	hvor $ t\in\mathbb{R} $.
+}
 
+\section{Determinanter} \index{determinant}
+\reg[\boldmath$ 2\times 2 $ determinanter]{Determinanten $ \det(\vec{u}, \vec{v}) $ av to vektorer $ {\vec{u}=[a, b] }$ og $ {\vec{v}=[b, c]} $ er gitt som
+	\algv{
+		\det(\vec{u}, \vec{v}) &= \left|\begin{matrix}
+			a & b \\
+			c & d
+		\end{matrix}\right| \\
+		&= ad-bc	
+	}
+}
+\eks{
+	Gitt vektorene $ {\vec{u}=[-1, 3] }$ og $ {\vec{v}=[-2, 4]} $. Bestem $ \det(\vec{u}, \vec{v})$.
+	
+	\sv
+	\vs	\algv{
+		\det(\vec{u}, \vec{v}) &= \left|\begin{matrix}
+			-1 & 3 \\
+			-2 & 4
+		\end{matrix}\right| \\
+		&= (-1)4-3(-2)	\\
+		&= 2
+	}
+}
+\reg[\detar \label{det2area}]{
+Arealet $ A $ til et parallellogram formet av to vektorer $ \vec{u} $ og $ \vec{v} $ er gitt ved
+\begin{equation}
+	A= |\det(\vec{u}, \vec{v})| \label{det2arparl}
+\end{equation}
+\fig{utspprl}
+Arealet $ A $ til en trekant formet av to vektorer $ \vec{u} $ og $ \vec{v} $ er gitt ved
+\begin{equation}
+	A= \frac{1}{2}|\det(\vec{u}, \vec{v})| \label{det2artrk}
+\end{equation}
+\fig{utsptrk}
+}
+\newpage
+\fork{\ref{det2area} \detar }{
+Vi lar $ A_N $ betegne arealet til en geometrisk form $ N $.
+\begin{figure}
+\subfloat[]{\includegraphics{\figp{utspprl}}}\qquad
+\subfloat[]{\includegraphics{\figp{utspprlforkl}}}\qquad
+\end{figure}
+Gitt to vektorer $ {\vec{u}=[a, b]} $ og $ {\vec{v}=[c, d]} $, hvor $ {a, b, c, d >0} $, som vist i figur \textsl{(a)}. Plasserer vi vektorene i grunnstillingen er punktene vist i figur \textsl{(b)} gitt som
+\alg{
+O &= (0, 0) & B&=(a, b) & C &= (a+b, c+d) \br
+  D&= (c, d) & E &= (a+c, 0) & F &= (0, b+d)
+}
+Med $ OE $ som grunnlinje har $ \triangle OEB $ høgde $ b $, altså er
+\[  2A_{\triangle OEB}=(a+c)b \]
+Tilsvarende er
+\[  2A_{\triangle FDO}=(b+d)c \]
+Da $ A_{\triangle OEB}=A_{\triangle CDF}$ og $ A_{\triangle FDO}=A_{\triangle EBC} $, har vi at
+\alg{
+A_{\square ABCD}&=A_{\square OECF}-2A_{\triangle OBE}-2A_{\triangle FDO} \\
+&=(a+c)(b+d)-(a+c)b-(b+d)c \\
+&=(a+c)d-(b+d)c\\
+&= ad-bc
+}
+I figurene har vi antatt at (den minste) vinkelen mellom $ \vec{v} $ og $ x $-aksen er mindre enn vinkelen mellom $ \vec{u} $ og $ x $-aksen. I omvendt tilfelle ville vi fått at 
+\[ A_{\square OECF}=bc-ad \]
+Altså er
+\[  A_{\square OECF}=|ac-bd| \]
+På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $, se oppgave \ref{det2arbevis}.
 }
 \end{document}

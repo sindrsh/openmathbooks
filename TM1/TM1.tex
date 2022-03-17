@@ -2,10 +2,14 @@
 \input{../preamb}
 \input{tm_bm}
 
+
+
 % Name of content in TOC
 \addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
 
 \begin{document}
+	
+	\import{kap0/}{framside}
 	
 	{\footnotesize \tableofcontents}
 	\newpage
@@ -18,8 +22,12 @@
 	\chapter{Algebra}
 	\import{alg/}{alg_bm}
 	
-	\chapter{Trigonometri}	
+	\chapter{Geometri}
+	\import{geo/}{geo_bm}
 	
+	\chapter{Vektorer}
+	\import{vek/}{vek_bm}
+		
 	\chapter{Grenseverdier og kontinuitet}
 	\import{lim/}{lim_bm}
 	
@@ -29,15 +37,14 @@
 	\chapter{Funksjonsdrøfting}
 	\import{inv/}{inv_bm}
 	
-	\chapter{Vektorer}
 	
-	\chapter{Geometri}
-	\import{geo/}{geo_bm}
+	
+	
 
-	\chapter{Numeriske metoder}
-	\section{Newtons metode}
-	\section{Derivasjon}
-	\section{Vekstmodeller}
+	%\chapter{Numeriske metoder}
+	%\section{Newtons metode}
+	%\section{Derivasjon}
+	%\section{Vekstmodeller}
 	
 	\chapter*{Vedlegg}
 	\import{tan/}{tan_bm}

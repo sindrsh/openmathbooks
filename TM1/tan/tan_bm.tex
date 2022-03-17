@@ -1,6 +1,6 @@
 \input{../../doc}
 \input{../../preamb}
-\input{../sp_preamb_bm}
+\input{../tm_bm}
 
 \begin{document}
 \section*{Tangeringslinja til en graf}
@@ -103,12 +103,12 @@ ht&=\frac{(f_c-f_a)(f_b-f_c)+2h^2}{2(f_b+f_c-2f_a)} \br
 &=\frac{(f_c-f_a)(f_b-f_c)}{2(f_b+f_c-2f_a)}+\frac{h^2}{f_b+f_c-2f_a} \label{ht}
 }
 Når $ h $ går mot 0, er begge leddene i \eqref{ht} <<0 over 0>> uttrykk. Vi bruker L'Hopitals regel på det siste leddet: 
-\alg{
-&&\lim\limits_{h\to0}\frac{h^2}{2(f_b+f_c-2f_a)}&=\lim\limits_{h\to0}\frac{\left(h^2\right)'}{(f_b+f_c-2f_a)'} \br
-&&&=\lim\limits_{h\to0} \frac{2h}{-\dot{f}_b+\dot{f}_c} &&\text{<<0 over 0>>}\br
-&&&=\lim\limits_{h\to0} \frac{2}{\ddot{f}_b+\ddot{f}_c}  \\
-&& &=\frac{1}{f_a''} \label{ht2}
-}
+\begin{align}
+	&&\lim\limits_{h\to0}\frac{h^2}{2(f_b+f_c-2f_a)}&=\lim\limits_{h\to0}\frac{\left(h^2\right)'}{(f_b+f_c-2f_a)'} \br
+	&&&=\lim\limits_{h\to0} \frac{2h}{-\dot{f}_b+\dot{f}_c} &&\text{<<0 over 0>>}\br
+	&&&=\lim\limits_{h\to0} \frac{2}{\ddot{f}_b+\ddot{f}_c}  \\
+	&& &=\frac{1}{f_a''} \label{ht2}
+\end{align}
 
 Ved å bruke L'Hopitals regel på det første leddet i \eqref{ht} har vi at
 \alg{
@@ -123,10 +123,10 @@ Begge leddene over er <<0 over 0>> uttrykk. Vi undersøker dem hver for seg ved 
 \lim\limits_{h\to 0}\frac{\dot{f_c}(f_b-f_c)}{-\dot{f}_b+\dot{f}_c} &= \lim\limits_{h\to 0} \left[\frac{\ddot{f}_c(f_b-f_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right] \br
 &= 0+\frac{(f_a')^2}{2f_a''} \label{ht1a}
 }
-\alg{
-\lim\limits_{h\to 0}\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}&= \lim\limits_{h\to 0}\left[\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{(f_c-f_a)(-\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right]\br
-&=\frac{(f_a')^2}{2f_a''}+0 \label{ht1b}
-}
+\begin{align}
+	\lim\limits_{h\to 0}\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}&= \lim\limits_{h\to 0}\left[\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{(f_c-f_a)(-\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right]\br
+	&=\frac{(f_a')^2}{2f_a''}+0 \label{ht1b}
+\end{align}
 Av \eqref{ht}, \eqref{ht2}, \eqref{ht1a} og \eqref{ht1b} har vi at
 \[ \lim\limits_{h\to0} h t=\frac{1+(f_a')^2}{f_a''} \]
 Dermed er 

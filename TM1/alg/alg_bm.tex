@@ -28,7 +28,7 @@ a^2+8a+16 &= a^2+2\cdot4a+4^2 \\
 }
 }
 \eks[??]{
-Skriv om $ k^2+6k +7 $ til et uttrykk der alle instanser av $ l $ er i et fullstendig kvadrat.
+Skriv om $ k^2+6k +7 $ til et uttrykk der alle instanser av $ k $ er i et fullstendig kvadrat.
 
 \sv \vsb \vs
 \alg{
@@ -356,20 +356,24 @@ Følelig kan vi også skrive
 Med potensreglene som ugangspunkt (se \mb), kan man utlede mange regler for logartimer.\regv
 \reg[Definisjon av logaritmen]{
 La $ \log_a $ betegne logaritmen relativ til $ a\in\{\mathbb{R} | a\neq0 \} $. For $ m\in\mathbb{R} $ er da
-\[ \log_a a^m = m \]
+\begin{equation}
+	\log_a a^m = m
+\end{equation}
 Alternativt kan vi skrive
-\[ m=a^{\log_{a} m} \]
+\begin{equation}
+	m=a^{\log_{a} m}
+\end{equation}
 } \regv
 
 \reg[Logaritmeregler]{
 Gitt de reelle tallene $a, x$ og $y$, alle forskjellige fra 0. Da er	
-\alg{
-\log_a a&= 1\label{loga}\vn	
-\log_a 1 &= 0 \label{log1}\vn
-\log_a (xy)&=\log_a x + \log_a y \label{logxy} \vn
-\log_a \left(\frac{x}{y}\right)&= \log_{a} x - \log_{a} y \label{logxdivy} \vn
-\log_{a} x^y &= y \log_{a} x \label{logxexpy}
-}
+\begin{align}
+	\log_a a&= 1\label{loga}\vn	
+	\log_a 1 &= 0 \label{log1}\vn
+	\log_a (xy)&=\log_a x + \log_a y \label{logxy} \vn
+	\log_a \left(\frac{x}{y}\right)&= \log_{a} x - \log_{a} y \label{logxdivy} \vn
+	\log_{a} x^y &= y \log_{a} x \label{logxexpy}
+\end{align}
 }
 \spr{
 \sym{$ \log_{10}$} skrives ofte bare som \sym{$ \log $}.\vsk
@@ -440,6 +444,7 @@ Dermed er
 \end{equation}
 Vi kan nå stadig gjenta prosedyren fra \eqref{polydivforkla} og \eqref{polydivforklb}, hvor høgresiden i \eqref{polydivu} får ledd med grad stadig mindre enn $ {m-n} $, fram til polynomet i telleren på høgresiden får grad $ n-1 $.
 }
+\newpage
 \fork{Faktorisering av polynom}{
 (i) Vi starter med å vise at
 \begin{center}

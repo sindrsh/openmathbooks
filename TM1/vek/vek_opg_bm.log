@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  14 MAR 2022 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAR 2022 08:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,37 +1350,49 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-) [1
+)
+
+LaTeX Warning: Reference `skal2' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Reference `det2arparl' on page 1 undefined on input line 18.
+
+[1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./vek_opg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 10.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `vek_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 30635 strings out of 481239
- 602754 string characters out of 5920378
- 912746 words of memory out of 5000000
- 45249 multiletter control sequences out of 15000+600000
+ 30653 strings out of 481239
+ 602974 string characters out of 5920378
+ 914833 words of memory out of 5000000
+ 45258 multiletter control sequences out of 15000+600000
  571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsy10.pfb>
-Output written on vek_opg_bm.pdf (1 page, 89512 bytes).
+ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on vek_opg_bm.pdf (1 page, 105717 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

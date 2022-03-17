@@ -2,7 +2,7 @@ import "../../inh" as inh;
 import "../../drwgrph" as inh;
 import "../../geo" as geo;
 
-unitsize(0.75cm);
+unitsize(0.6cm);
 
 
 real a = 5;

@@ -1,0 +1,6 @@
+vektor TM1
+- finne parameterisering ut ifra funksjonsuttrykk til rett linje
+- finne funksjonsuttrykk ut ifra parameterisering
+
+trigonometri TM2
+- vise at |det(u,v)|=|u||v|*sin(vinkel(u,v))
