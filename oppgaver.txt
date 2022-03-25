@@ -1,6 +1,32 @@
-vektor TM1
+
+---TM1---
+
+der
+- beregne radien i en veisving
+
+funk 
+- utforske kritisk punkt for f = abs(x)
+- vise formel for avstand mellom linja mellom to punkt og grafen
+
+vektor
 - finne parameterisering ut ifra funksjonsuttrykk til rett linje
 - finne funksjonsuttrykk ut ifra parameterisering
 
-trigonometri TM2
+
+---TM2---
+trigonometri
 - vise at |det(u,v)|=|u||v|*sin(vinkel(u,v))
+
+---AM2---
+
+log
+- godot
+- desibel ?
+- massemagnitudeskala
+- vekstmodell
+
+funkdroft
+- luftmotstand
+
+
+

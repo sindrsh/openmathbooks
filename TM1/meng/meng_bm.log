@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAR 2022 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  18 MAR 2022 08:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,24 +1425,26 @@ m/it/10.95 f$ \T1/lmr/m/n/10.95 kan ha når
 
 [3
 
+] [4
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (./meng_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `meng_bm.out' has not changed.
-(rerunfilecheck)             Checksum: A5DEE068E33DB96DF8162663427E8DB9;109.
+(rerunfilecheck)             Checksum: BBE314503FDCC6777573407FD5686B3C;157.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30820 strings out of 481239
- 605933 string characters out of 5920378
+ 30824 strings out of 481239
+ 605977 string characters out of 5920378
  919745 words of memory out of 5000000
- 45390 multiletter control sequences out of 15000+600000
+ 45392 multiletter control sequences out of 15000+600000
  614300 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,16n,104p,876b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1461,10 +1463,10 @@ ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on meng_bm.pdf (3 pages, 238604 bytes).
+Output written on meng_bm.pdf (4 pages, 241093 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 142 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

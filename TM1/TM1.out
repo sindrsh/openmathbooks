@@ -1,40 +1,43 @@
 \BOOKMARK [0][-]{chapter.1}{Mengder}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Mengder}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Verdi- og definisjonsmengder}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Algebra}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Kvadratsetningene og fullstendige kvadrat}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Andregradslikninger}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Navn p\345 funksjoner}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.4}{Polynomdivisjon}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.5}{Polynomers egenskaper}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.6}{Logaritmer}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.7}{Forklaringer}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Geometri}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Definisjoner}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Egenskaper til trekanter}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{Egenskaper til sirkler}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{Forklaringer}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Vektorer}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Introduksjon}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Regneregler}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{Lengden til en vektor}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.4}{Skalarproduktet I}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.5}{Skalarproduktet II}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.6}{Vektorer vinkelrett p\345 hverandre}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.7}{Parallelle vektorer}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.8}{Parameterisering av ei linje}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.9}{Determinanter}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Grenseverdier og kontinuitet}{}% 27
-\BOOKMARK [1][-]{section.5.1}{Grenseverdier}{chapter.5}% 28
-\BOOKMARK [0][-]{chapter.6}{Derivasjon}{}% 29
-\BOOKMARK [1][-]{section.6.1}{Definisjoner }{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.2}{Derivasjonsregler}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{Kjerneregelen}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.4}{Produktregelen}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.5}{Divisjonsregelen}{chapter.6}% 34
-\BOOKMARK [0][-]{chapter.7}{Funksjonsdr\370fting}{}% 35
-\BOOKMARK [1][-]{section.7.1}{Monotoniegenskaper}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.2}{Injektive funksjoner}{chapter.7}% 37
-\BOOKMARK [1][-]{section.7.3}{Omvendte funksjoner}{chapter.7}% 38
-\BOOKMARK [1][-]{section.7.4}{Ekstremalpunkt}{chapter.7}% 39
-\BOOKMARK [1][-]{section.7.5}{Konvekse og konkave funksjoner}{chapter.7}% 40
+\BOOKMARK [1][-]{section.1.3}{Betingelser}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Algebra}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Kvadratsetningene og fullstendige kvadrat}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Andregradslikninger}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Navn p\345 funksjoner}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Polynomdivisjon}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{Polynomers egenskaper}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.6}{Logaritmer}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.7}{Forklaringer}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Geometri}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Definisjoner}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Egenskaper til trekanter}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Egenskaper til sirkler}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.4}{Forklaringer}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Vektorer}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Introduksjon}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.2}{Regneregler}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.3}{Lengden til en vektor}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.4}{Skalarproduktet I}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.5}{Skalarproduktet II}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.6}{Vektorer vinkelrett p\345 hverandre}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.7}{Parallelle vektorer}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.8}{Parameterisering av ei linje}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.9}{Determinanter}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Grenseverdier og kontinuitet}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Grenseverdier}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Kontinuitet}{chapter.5}% 30
+\BOOKMARK [0][-]{chapter.6}{Derivasjon}{}% 31
+\BOOKMARK [1][-]{section.6.1}{Definisjoner }{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.2}{Derivasjonsregler}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.3}{Kjerneregelen}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.4}{Produktregelen}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.5}{Divisjonsregelen}{chapter.6}% 36
+\BOOKMARK [0][-]{chapter.7}{Funksjonsdr\370fting}{}% 37
+\BOOKMARK [1][-]{section.7.1}{Monotoniegenskaper}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.2}{Ekstremalpunkt}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.3}{Asymptoter}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.4}{Konvekse og konkave funksjoner}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.5}{Injektive funksjoner}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.6}{Omvendte funksjoner}{chapter.7}% 43

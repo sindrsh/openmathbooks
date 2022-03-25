@@ -63,21 +63,21 @@ f'(x)=\lim\limits_{h\to0}\frac{f(x+h)-f(x)}{h}
 \subsubsection{Linearisering av en funksjon}
 Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være (se figur ???)
 \[ f(a+k)\approx f(a)+f'(a)k \]
-Det er ofte nyttig å vite differansen mellom en tilnærming og den faktiske verdien:
+Det er ofte nyttig å vite differansen $ \varepsilon $ mellom en tilnærming og den faktiske verdien:
 \begin{equation}\label{vareps}
-	\varepsilon_f = f(a+k)-\left[f(a)+f'(a)k\right]
+	\varepsilon = f(a+k)-\left[f(a)+f'(a)k\right]
 \end{equation}
 Vi legger merket til at\footnote{Dette overlates til leseren å vise.} $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k} =0 $, og skriver om \eqref{vareps} til en formel for $ f(x+k) $: \regv
-\reg[Linearisering av en funskjon]{
+\reg[Linearisering av en funskjon \label{linfunk}]{
 Gitt en funskjon $ f(x) $ og en variabel $ k $. Da finnes en funksjon $ \varepsilon $ slik at
-\begin{equation} \label{fa_k}
-f(x+k)=f(x)+f'(a)k+\varepsilon_f	
+\begin{equation} \label{linfunkeq}
+f(a+k)=f(a)+f'(a)k+\varepsilon
 \end{equation}
 hvor $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k}=0 $. \vsk
 
 Tilnærmingen
-\[ f(x+k)\approx f(x)+f'(x)k \]
-kalles da lineæarapproksimasjonen av $ f(x+k) $.
+\[ f(a+k)\approx f(a)+f'(x)k \]
+kalles \outl{lineæarapproksimasjonen} av $ f(x+k) $.
 }
 \section{Derivasjonsregler}
 
@@ -114,7 +114,7 @@ Vi setter $ k = u(x+h)-u(x) $. Da er
 \alg{
 \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}&= \lim\limits_{h \to 0}\frac{g\left[u+k\right]-g\left[u\right]}{h}
 }
-Av \eqref{fa_h} har vi at
+Av \eqref{linfunkeq} har vi at
 \[ g(u)-g(u+k)= g'(u)k+\varepsilon_g  \]
 Altså er
 \alg{

@@ -1,35 +1,105 @@
 \input{../../doc}
 \input{../../preamb}
-\input{../sp_preamb_bm}
+\input{../tm_bm}
 
 \begin{document}
 \section{Grenseverdier}
-Si at vi starter med verdien 0.9, og deretter stadig legger til 9 som bakerste siffer. Da får vi verdiene 0.9, 0.99, 0.999 og så videre. Ved å legge til 9 som bakerste siffer på denne måten, \textsl{kan vi komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ verdien 1}. Det å ''komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ en verdi'' vil vi heretter kalle å ''gå mot en verdi''. Metoden vi akkurat beskrev kan vi altså se på som en metode for å \textsl{gå mot} 1. Vi kan da si at \textit{grenseverdien} til denne metoden er 1. 
-For å indikere en grenseverdi skriver vi \sym{$ \lim $}, og for å vise til at en variabel $ x $ går mot et tall $ a $ skriver vi \sym{$ x\to a $}:\regv
+Si at vi starter med verdien 0.9, og deretter stadig legger til 9 som bakerste siffer. Da får vi verdiene 0.9, 0.99, 0.999 og så videre. Ved å legge til 9 som bakerste siffer på denne måten, \textsl{kan vi komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ verdien 1}. Det å ''komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ en verdi'' vil vi heretter kalle å ''gå mot en verdi''. Metoden vi akkurat beskrev kan vi se på som en metode for å \textsl{gå mot} 1. Vi kan da si at \textit{grenseverdien} til denne metoden er 1. 
+For å indikere en grenseverdi skriver vi \sym{$ \lim $}.\vsk
 
-\reg[Grenseverdien til en funksjon]{ \vsb
+Det er viktig å tenke over at vi kan gå mot et tall fra to sider; fra venstre eller fra høgre på tallinjen. Med en metode som gir oss verdiene 0.9, 0.99, 0.999 og så videre, nærmer vi oss 1 fra venstre. Lager vi oss en metode som gir verdiene 1.1, 1.01, 1.001 og så videre, nærmer vi oss 1 fra høgre. Dette vises ved å markere \sym{$ + $} eller $ \sym{$ - $} $ på tallet vi går mot. 
+
+\regv
+
+\reg[Grenseverdier]{ \vsb
 \alg{
+x\to a^+ &= x \text{ går mot } a \text{ fra høgre} \br
+x\to a^- &= x \text{ går mot } a \text{ fra venstre} \br
+x\to a &=  x \text{ går mot } a \text{ (fra både høgre og venstre)}\\[12pt]
 \lim\limits_{x\to a} f(x) &= \text{grenseverdien til } f \text{ når } x \text{ går mot } a \\
 &= \text{verdien }f\text{ går mot når }x \text{ går mot }a
 } 
+}\regv
+
+\spr{
+Å gå mot en verdi fra høgre/venstre kalles også å gå mot en verdi ovenfra/nedenfra.
+}\regv
+
+\info{\note}{
+\sym{$ x\to a$} omfatter de to tilfellene \sym{$ x\to a^+ $} og \sym{$ x\to a^- $}. Ofte vil disse være så like av natur at vi kan behandle \sym{$ x\to a $} som ett tilfelle.
 }
 \regv
 
 \info{En utvidelse av \sym{$ = $}}{
-Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel skriver vi at
+Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel er
 \begin{equation} \label{limxto2}
 	\lim_{x\to 2}(x+1)=2+1=3 
 \end{equation}
 Det er verd å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli \textsl{eksakt lik} 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går eksakt mot} en verdi. Dette gjør altså at grenseverdier bringer en noe utvidet forståelse av \sym{$ = $}.
 }
-\regv
+\newpage
 \eks[1]{
-Gitt $ f(x)=\frac{x^2+2x+1}{x-1} $. Finn $ \lim\limits_{x\to 1} f(x) $. 
+Gitt $ f(x)=\frac{x^2+2x-3}{x-1} $. Finn $ \lim\limits_{x\to 1} f(x) $. 
 
 \sv
-
-Hensikten med denne oppgaven er å undersøke om $ f(x) $ går mot en bestemt verdi når $ x $ går mot 1, selv om $ f$ ikke
+Når $ x\neq1 $, har vi at
+\alg{
+f(x)&= \frac{(x-1)(x+3)}{x-1} \\
+&= x+3
+}
+Dette betyr at 
+\alg{
+\lim\limits_{x\to 1} f(x) &= \lim\limits_{x\to 1} x+3 \\
+&= 4
+} 
+}
+\section{Kontinuitet}
+\reg[Kontinuitet]{
+Gitt en funksjon $ f(x) $ og en konstant $ c $. Hvis $ f(c) $ eksisterer, er $ f $ kontinuerlig for $ x=c $ hvis
+\begin{equation}\label{kont}
+	\lim\limits_{x\to c} f(x)=f(c) 
+\end{equation}
+Hvis \eqref{kont} er ugyldig, er $ f $ diskontinuerlig for $ x=c $.
+}
+\eks[1 \label{konteks1}]{
+Undersøk om funksjonene er kontinuerlige for $ x=2 $.
+\abc{
+\item \begin{equation}f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x+4 &,&x<2 \\
+			-3x+12   &,& x\geq 2
+		\end{array}
+	}\right. 
+\end{equation}	
+\item \begin{equation}g(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x+1 &,&x\leq2 \\
+			-x+6   &,& x> 2
+		\end{array}
+	}\right. 
+\end{equation}	
 }
 
-
+\sv \vs
+\abc{
+\item Vi har at
+\algv{
+\lim\limits_{x\to2^+} f(x)&=f(2)= -3\cdot2+12 = 6\br
+\lim\limits_{x\to2^-} f(x)&= 2+4 = 6
+}
+Altså er $ f $ kontinuerlig for $ x=2 $.
+\item Vi har at
+\algv{
+	\lim\limits_{x\to2^-} g(x)&=g(2)= 2+1 = 3\br
+	\lim\limits_{x\to2^+} g(x)&= -2+6 = 4
+}
+Altså er $ g $ ikke kontinuerlig for $ x=2 $.
+}
+}
+\newpage
+\info{Visualisering av kontinuitet}{
+Visuelt kan vi skille mellom kontinuerlige og diskontinuerlige funksjoner slik; kontinuerlige funksjoner har sammenhengende grafer, diskontinuerlige funksjoner har det ikke. Et utsnitt av grafene til funksjonene fra \eksref{Eksempel 1} på side \pageref{konteks1} ser slik ut:
+\fig{konteks1}
+Grafer fungerer utmerket til å avgjøre hvilke funskjoner vi \textsl{forventer} å være kontinuerlige eller ikke, men er aldri gyldige som et bevis for dette. 
+}
 \end{document}

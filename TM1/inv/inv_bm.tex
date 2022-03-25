@@ -5,7 +5,257 @@
 
 \begin{document}
 \section{Monotoniegenskaper}
+De fleste funksjonsverdier varierer. Beskrivelser av hvordan funksjonene varierer kaller vi beskrivelser av funksjonenes \textit{monotoniegenskaper}.\regv
+\reg[Voksende og avtagende funskjoner \label{voksogav}]{
+Gitt en funksjon $ f(x) $ og to reelle tall $ a $ og $ b $. 
+\begin{itemize}
+\item $ f $ er \textit{voksende} på intervallet $ [a, b] $ hvis vi for alle $ x_1, x_2 \in[a, b]$ har at
+\begin{equation}\label{voksende}
+	x_1<x_2 \Rightarrow f(x_1)\leq f(x_2)
+\end{equation}
+Hvis $ {f(x_1)\leq f(x_2) }$ kan erstattes med $ {f(x_1)< f(x_2)} $, er $ f $ \textit{strengt voksende}.
+\fig{voksende}
+\item $ f $ er \textit{avtagende} på intervallet $ [a, b] $ hvis vi for alle $ {x_1, x_2 \in[a, b]}$ har at
+\begin{equation}\label{avtagende}
+	x_1<x_2 \Rightarrow f(x_1)\geq f(x_2)
+\end{equation}
+Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \textit{strengt avtagende}.
+\fig{avtagende}
+\end{itemize}
+} \newpage
+
+\reg[\monder \label{monder}]{
+Gitt $ f(x) $ deriverbar på intervallet $ [a, b] $.
+\begin{itemize}
+\item Hvis $ {f'(x)\geq0} $ for $ {x\in[a, b]} $, er $ f $ voksende for $ x\in(a, b) $
+\item Hvis $ {f'(x)\leq0} $ for $ {x\in[a, b]} $, er $ f $ avtagende for $ x\in(a, b) $
+\end{itemize}
+Hvis henholdsvis $ \geq $ og $ \leq $ kan erstattes med $ > $ og $ < $, er $ f $ strengt voksende/avtagende. 
+} \regv
+
+\eks[]{
+Avgjør på hvilke intervaller $ f $ er voksende/avtagende når
+\[ f(x)=\frac{1}{3} x^3 - 4x^2 + 12x\qquad,\qquad x\in[0, 8] \]
+\sv \vs
+Vi har at
+\[  f'(x)=x^2-8x+12 \]
+For å tydeliggjøre når $ f' $ er positiv, negativ eller lik 0 gjør vi to ting; vi faktoriserer uttrykket til $ f' $, og tegner et \textit{fortegnsskjema}:
+\[ f'(x)=(x-2)(x-6) \]
+\fig{fortgnskj1}
+Fortegnsskjemaet illustrerer følgende:
+\begin{itemize}
+	\item Uttrykket $ x-2 $ er negativt når  $ x\in[0, 2) $, lik 0 når $ x=2 $, og positivt når $ x\in(2, 8]  $.
+	\item Uttrykket $ x-6 $ er negativt når $ x\in[0, 8) $, lik 0 når $ x=6 $, og positivt når $ x\in(6, 8]  $.
+	\item Siden $ f'=(x-2)(x-6) $, er \vspace{-5pt}
+	\begin{center}
+		\begin{tabular}{l}
+			$ f'\geq0 $ når $ {{x\in[0, 2]} \cup (6, 8]} $ \br
+			$ f'=0 $ når $ {x\in\{2, 6\}} $ \br
+			$ f'\leq0 $ når $ x\in[2, 6]$
+		\end{tabular}
+	\end{center}
+\end{itemize}
+Dette betyr at
+\begin{center}
+	\begin{tabular}{l}
+		$ f $ er voksende når $ x\in(0, 2) \cup (6, 8) $ \br
+		$ f $ er avtagende når $ x\in(2, 6)$
+	\end{tabular}
+\end{center}
+}
+\fork{\ref{monder}\,\monder}{
+Gitt $ f(x) $, hvor $ {f'(x)\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se vedlegg??} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
+\alg{
+f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+}
+Da $ c\in[a, b] $, er $ {f'(x)\geq 0} $, og da er
+\alg{
+0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
+}
+Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $. \vs
+}
+
+
+\section{Ekstremalpunkt}
+\reg[Maksimum og minimum]{\label{max}\index{maksimum}\index{minimum}	
+	\notesm{Et tall $ c $ kan omtales som et punkt i funskjonsdrøftinger, underforstått at det er snakk om punktet $ (c, 0) $.} \br
 	
+	Gitt en funksjon $ f(x) $ og et tall $ c $.\bs
+	\textbf{Absolutt maksimum og minimum}
+	\begin{itemize}
+		\item $ f $ har absolutt maksimum $ f(c) $ hvis $ {f(c)\geq f(x)} $ for alle $ x\in D_f $.
+		
+		\item $ f $ har absolutt minimum $ f(c) $ hvis ${ f(c)\leq f(x) }$ for alle $ x\in D_f $.
+	\end{itemize}
+	\textbf{Lokalt maksimum og minimum}
+	\begin{itemize}
+		\item $ f $ har et lokalt maksimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\geq f(x) $ for $ x\in I  $.
+		
+		\item $ f $ har et lokalt minimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\leq f(x) $ for $ x\in I  $.
+	\end{itemize}\vs
+}
+\spr{
+Et \textit{maksimum/minimum} blir også kalt en\\ \textit{maksimumsverdi/minimumsverdi}.
+}
+\reg[Ekstremalverdi og ekstremalpunkt]{\index{ekstremalpunkt}\index{ekstremalverdi}
+	Gitt en funksjon $ f(x) $ med maksimum/minimum $ f(c) $. Da er
+	\begin{itemize}
+		\item $ f(c) $ en ekstremalverdi for $ f $.
+		\item $ c $ et ekstremalpunkt for $ f $. Nærmere bestemt et maksimalpunkt/minimumspunkt for $ f $.
+		\item $ (c, f(c)) $ et toppunkt/bunnpunkt for $ f $.
+	\end{itemize}
+}
+\reg[Kritiske punkt]{
+Et tall $ c $ er et kritisk punkt for en funksjon $ f(x) $ hvis én av følgende gjelder:
+\begin{itemize}
+	\item $ f $ er ikke deriverbar i $ c $
+	\item $ f'(c)=0 $
+\end{itemize}
+}
+\reg[\fderekstr \label{fderekstr}]{
+Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
+\begin{enumerate}[label=(\roman*)]
+	\item Hvis $ c $ er et lokalt ekstremalpunkt for $ f $, er $ {f'(c)= 0}$
+	\item Hvis $ {f'>0} $ for $ {x\in(a, c)} $ og $ {f'<0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt maksimumspunkt for $ f $
+	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $
+\end{enumerate}
+
+}
+\fork{\ref{fderekstr} \fderekstr}{
+\textbf{Punkt (i)} \os
+
+La $ c $ være et lokalt maksimumspunkt for $ f $. For et tall $ h $ må vi da ha at $ c\geq x $ for $ x\in(c-|h|, c+|h|) $. Da er
+\[ f(c+h)-f(c)\leq 0 \] 
+Dette betyr at
+\alg{
+\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h}\leq 0 
+}
+og at
+\alg{
+	\lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}\geq 0 
+}
+Følgelig er
+\[ \lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}=\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \]
+Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.
+\newpage
+
+\textbf{Punkt (ii)} \os
+Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende der. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende der. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
+
+\textbf{Punkt (iii)} \os
+Tilsvarende resonnement som for punkt (ii).
+}
+
+\newpage
+\reg[Infleksjonspunkt og vendepunkt]{\index{infleksjonspunkt}\index{vendepunkt}
+	For en kontinuerlig funksjon $ f(x) $ har vi at
+	\begin{itemize}
+		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \textit{infleksjonspunkt} for $ f $.
+		\item Hvis $ c $ er et infleksjonspunkt for $ f $, er $ (c, f(c)) $ et \textit{vendepunkt}.
+		\item Hvis $ f'' $ går fra positiv til negativ, går $ f $ fra konveks til konkav (og omvendt).
+	\end{itemize}\vs
+}
+\newpage
+\eks[]{
+\[ f(x)=x^3-3x^2-144x-140 \]
+\begin{center}
+	\begin{tabular}{c | c}
+		\textbf{punkt/verdi} & \textbf{type} \\ \hline
+		$ A=(-14, -1456) $ & absolutt bunnpunkt \\
+		$ -14 $ & ekstremalpunkt; absolutt minimum \\
+		$ -1456 $& absolutt minimum \\ \hline
+		$ B=(-6, 400) $ & lokalt toppunkt \\		
+		$ -6 $ & ekstremalpunkt; lokalt maksimalpunkt \\
+		$ 400 $ & lokalt maksimum \\ \hline
+		$ C=(-1, -286) $ & vendepunkt  \\
+		$ -1 $ & infleksjonspunkt \\ \hline 
+		$ D = (8, -972) $ & lokalt bunnpunkt \\
+		$ 8 $ & ekstremalpunkt; lokalt minimumspunkt \\
+		$ -972 $ & lokal minimum \\ \hline
+		$ E= (16, 884) $ & absolutt maksimum \\
+		$ 16 $ & ekstremalpunkt; absolutt maksimumspunkt \\
+		$ 884 $ & absolutt maksimum \\ \hline
+		$ -10 $, $ -1 $ og $ 14 $ & nullpunkt \\ \hline
+	\end{tabular}
+\end{center}
+\fig{funkdroft}
+}
+\newpage
+\eks{
+	Gitt funksjonen
+	\[ f(x)=\sin x\quad,\quad x\in[-2, 4] \]	
+	\textbf{a)} Finn infleksjonspunktene til $ f $.
+	
+	\textbf{b)} Finn vendepunktene til $ f $. \\
+	
+	\sv
+	\textbf{a)} Infleksjonspunktene finner vi der hvor $ f''(x)=0 $:
+	\alg{f''(x) &= 0\\
+		(\sin x)'' &= 0 \\
+		-\sin x &= 0 	}
+	Av $ {x\in D_f} $ er det $ {x=0} $ og $ {x=\pi }$ som oppfyller kravet fra ligningen over. For å finne ut om $ f'' $ skifter fortegn i disse punktene, setter vi opp et fortegnsskjema:
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=2]	
+			\draw[color=black] (0,-0.25) -- (0,1.25);
+			\node[anchor=south] at (0,1.25) { $-2$};  
+			\draw[color=black] (2,-0.25) -- (2,1.25);
+			\node[anchor=south] at (2,1.25) { $\pi$};	
+			\draw[color=black] (3,-0.25) -- (3,1.25);
+			\node[anchor=south] at (3,1.25) { $4$};		
+			\draw[dashed,color=black] (0,1) -- (3,1);
+			\draw[dashed,color=black] (0,0.5) -- (1,0.5);
+			\draw[dashed,color=black] (2,0.5) -- (3,0.5);	
+			\draw[color=black] (1,0.5) -- (2,0.5);	
+			\node[anchor=east] at (0,0.5) { $\sin x$};  		
+			\node[anchor=east] at (0,1) { $-1$};  
+			\draw[color=black] (1,-0.25) -- (1,1.25);
+			\node[anchor=south] at (1,1.25) { $0$};    
+			\draw[color=black] (0,0) -- (1,0);
+			\draw[color=black] (2,0) -- (3,0);	    
+			\draw[dashed,color=black] (1,0) -- (2,0);    
+			\node[anchor=east] at (0,0) {$f''$};     
+			\filldraw (1,0) circle[radius=1pt] ;   	
+			\filldraw (2,0) circle[radius=1pt] ; 	
+		\end{tikzpicture}
+	\end{figure}
+	
+	$ f'' $ går altså fra positiv til negativ i $ {x=0} $ og fra negativ til positiv i $ {x=\pi} $. Dette betyr at $ f $ går fra konveks til konkav i $ {x=0} $ og fra konkav til konveks i $ {x=\pi }$.
+}
+\section{Asymptoter}
+\reg[Vertikale asymptoter]{
+Gitt en funksjon $ f(x) $ og en konstant $ c $.
+\begin{itemize}
+	\item Hvis $ {\lim\limits_{x\to c^+} f(x)=\pm \infty}  $, er $ c $ en \outl{vertikal asymptote ovenfra} for $ f $.
+	\item Hvis $ {\lim\limits_{x\to c^-} f(x)=\pm \infty}  $, er $ c $ en \outl{vertikal asymptote \\nedenfra} for $ f $.
+	\item Hvis $ {\lim\limits_{x\to c} f(x)=\pm \infty}  $, er $ c $ en \outl{vertikal asymptote} for $ f $.
+\end{itemize}
+}
+\eks[]{
+Finn den vertikale asymptoten til funksjonen
+\[ f(x)=\frac{1}{x-3}+2 \]
+\sv
+Vi observerer at
+\[ \lim\limits_{x\to 3}\left[\frac{1}{x-3}+2\right]=\pm \infty  \]
+Altså er $ x=3 $ en vertikal asymptote.
+}
+\section{Konvekse og konkave funksjoner}
+\reg[Konvekse og konkave funksjoner]{
+	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
+	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konveks for $ x\in[a, b] $.	
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konv}}
+	\end{figure}	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konkav for $ x\in[a, b] $.
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konk}}
+	\end{figure}
+	\vs
+}
+
 \section{Injektive funksjoner}
 \reg[Injektive funksoner]{
 Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \textit{injektiv} på dette intervallet.
@@ -59,100 +309,6 @@ Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. D
 \[ f^{-1}=x-1 \qquad,\qquad (f)^{-1}=\frac{1}{x+1}\] 
 I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 \[ f^n=(f)^n \] 
-}
-
-\section{Ekstremalpunkt}
-\textsl{Merk}: Et tall $ c $ kan omtales som et punkt i funskjonsdrøftinger.
-\reg[Maksimum og minimum]{\label{max}\index{maksimum}\index{minimum}	
-	Gitt en funksjon $ f(x) $:\bs
-	\textbf{Absolutt maksimum og absolutt minimum:}
-	\begin{itemize}
-		\item $ f $ har absolutt maksimum $ f(c) $ hvis $ {f(c)\geq f(x)} $ for alle $ x\in D_f $.
-		
-		\item $ f $ har absolutt minimum $ f(c) $ hvis ${ f(c)\leq f(x) }$ for alle $ x\in D_f $.
-	\end{itemize}
-	\textbf{Lokalt maksimum og absolutt minimum:}
-	\begin{itemize}
-		\item $ f $ har et lokalt maksimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\geq f(x) $ for $ x\in I  $.
-		
-		\item $ f $ har et lokalt minimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\leq f(x) $ for $ x\in I  $.
-	\end{itemize}\vs
-}
-\reg[Ekstremalverdi og ekstremalpunkt]{\index{ekstremalpunkt}\index{ekstremalverdi}
-	Gitt en funksjon $ f(x) $ med maksimum/minimum $ f(c) $. Da er
-	\begin{itemize}
-		\item $ f(c) $ en ekstremalverdi for $ f $.
-		\item $ c $ et ekstremalpunkt for $ f $. Nærmere bestemt et maksimalpunkt/minimumspunkt for $ f $.
-		\item $ (c, f(c)) $ et toppunkt/bunnpunkt for $ f $.
-	\end{itemize}\vs
-}
-\newpage
-\reg[Infleksjonspunkt og vendepunkt]{\index{infleksjonspunkt}\index{vendepunkt}
-	For en kontinuerlig funksjon $ f(x) $ har vi at
-	\begin{itemize}
-		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \textit{infleksjonspunkt} for $ f $.
-		\item Hvis $ c $ er er infleksjonspunkt for $ f $, er $ (c, f(x)) $ et \textit{vendepunkt}.
-		\item Hvis $ f'' $ går fra positiv til negativ, går $ f $ fra konveks til konkav (og omvendt).
-	\end{itemize}\vs
-}
-\newpage
-\eks{
-	Gitt funksjonen
-	\[ f(x)=\sin x\quad,\quad x\in[-2, 4] \]	
-	\textbf{a)} Finn infleksjonspunktene til $ f $.
-	
-	\textbf{b)} Finn vendepunktene til $ f $. \\
-	
-	\sv
-	\textbf{a)} Infleksjonspunktene finner vi der hvor $ f''(x)=0 $:
-	\alg{f''(x) &= 0\\
-		(\sin x)'' &= 0 \\
-		-\sin x &= 0 	}
-	Av $ {x\in D_f} $ er det $ {x=0} $ og $ {x=\pi }$ som oppfyller kravet fra ligningen over. For å finne ut om $ f'' $ skifter fortegn i disse punktene, setter vi opp et fortegnsskjema:
-	\begin{figure}[H]
-		\centering
-		\begin{tikzpicture}[scale=2]	
-			\draw[color=black] (0,-0.25) -- (0,1.25);
-			\node[anchor=south] at (0,1.25) { $-2$};  
-			\draw[color=black] (2,-0.25) -- (2,1.25);
-			\node[anchor=south] at (2,1.25) { $\pi$};	
-			\draw[color=black] (3,-0.25) -- (3,1.25);
-			\node[anchor=south] at (3,1.25) { $4$};		
-			\draw[dashed,color=black] (0,1) -- (3,1);
-			\draw[dashed,color=black] (0,0.5) -- (1,0.5);
-			\draw[dashed,color=black] (2,0.5) -- (3,0.5);	
-			\draw[color=black] (1,0.5) -- (2,0.5);	
-			\node[anchor=east] at (0,0.5) { $\sin x$};  		
-			\node[anchor=east] at (0,1) { $-1$};  
-			\draw[color=black] (1,-0.25) -- (1,1.25);
-			\node[anchor=south] at (1,1.25) { $0$};    
-			\draw[color=black] (0,0) -- (1,0);
-			\draw[color=black] (2,0) -- (3,0);	    
-			\draw[dashed,color=black] (1,0) -- (2,0);    
-			\node[anchor=east] at (0,0) {$f''$};     
-			\filldraw (1,0) circle[radius=1pt] ;   	
-			\filldraw (2,0) circle[radius=1pt] ; 	
-		\end{tikzpicture}
-	\end{figure}
-	
-	$ f'' $ går altså fra positiv til negativ i $ {x=0} $ og fra negativ til positiv i $ {x=\pi} $. Dette betyr at $ f $ går fra konveks til konkav i $ {x=0} $ og fra konkav til konveks i $ {x=\pi }$.
-}
-
-\section{Konvekse og konkave funksjoner}
-\reg[Konvekse og konkave funksjoner]{
-	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
-	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konveks for $ x\in[a, b] $.	
-	\begin{figure}
-		\centering
-		\includegraphics[]{\figp{konv}}
-	\end{figure}	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konkav for $ x\in[a, b] $.
-	\begin{figure}
-		\centering
-		\includegraphics[]{\figp{konk}}
-	\end{figure}
-	\vs
 }
 
 \end{document}

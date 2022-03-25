@@ -82,6 +82,7 @@
 \newcounter{rg}
 \numberwithin{rg}{chapter}
 \newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
@@ -218,12 +219,16 @@ Rekn ut.
 \newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
 \newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}\textsl{#2 \ref*{#1}}}}
 \newcommand{\rref}[1]{\hrs{#1}{regel}}
+\newcommand{\dref}[1]{\hrs{#1}{definisjon}}
 \newcommand{\refkap}[1]{\hrs{#1}{kapittel}}
 \newcommand{\refsec}[1]{\hrs{#1}{seksjon}}
+\newcommand{\eksref}[1]{\textsl{#1}}
 
 \newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
 \newcommand{\tm}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
 
+% outline word
+\newcommand{\outl}[1]{\textbf{#1}}
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 
