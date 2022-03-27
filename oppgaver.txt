@@ -5,12 +5,15 @@ der
 - beregne radien i en veisving
 
 funk 
+- vertikale asymptoter
 - utforske kritisk punkt for f = abs(x)
 - vise formel for avstand mellom linja mellom to punkt og grafen
 
 vektor
 - finne parameterisering ut ifra funksjonsuttrykk til rett linje
 - finne funksjonsuttrykk ut ifra parameterisering
+- finn funksjonen som viser avstanden mellom linja fra a til b
+og (x,f(x)) for x in [a, b]
 
 
 ---TM2---

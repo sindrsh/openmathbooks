@@ -18,17 +18,25 @@ For to reelle tall $ a $ og $ b $, hvor $ a<b $, har vi at
 		&og mindre enn $ b $.
 	\end{tabular}
 \end{center}
-$ [a, b] $ kalles et lukket intervall, mens både $ (a, b] $ og $ [a, b) $ kalles halvåpne intervall.\vsk
+$ [a, b] $ kalles et lukket intervall, $ (a, b) $ kalles et åpent intervall, og både $ (a, b] $ og $ [a, b) $ kalles halvåpne intervall.\vsk
 
-Mengden av tre tall $ a $, $ b $ og $ c $ skrives som $ \{a, b, c\} $.\vsk
+Mengden som inneholder bare $ a $ og $ b $ skrives som $ \{a, b\} $. \vsk
 
 At $ x $ er et element i en mengde $ M $ skrives som $ x\in M $.\vsk
 
-At $ x $ ikke er et element i en mengde $ M $ skrives som $ x\not \in M $. 
+At $ x $ ikke er et element i en mengde $ M $ skrives som $ x\not \in M $. \vsk
+
+At $ x $ er et element i både en mengde $ M_1 $ og en mengde $ M_2 $ skrives som $ x \in M_1 \cup M_2 $. 
 }
 \spr{
-$ x \in M$ uttales ''$ x $ inneholdt i $ M $'' eller ''$ x $ er et element i $ M $''.
+$ x \in M$ uttales ''$ x $ inneholdt i $ M $''.\vsk
+
+Mange tekster bruker \sym{$ \langle $} istedenfor \sym{$ ( $} for å indikere åpne (eller halvåpne) intervall.
 }
+\info{\note}{
+Når vi heretter i boka definerer et intervall beskrevet av $ a $ og $ b $, tar vi det for gitt at $ a $ og $ b $ er to reelle tall.
+}
+\newpage
 \eks[1]{
 Mengden av alle heltall større enn 0 og mindre enn 10 skriver vi som 
 \[ \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \]
@@ -62,6 +70,8 @@ Skriv opp ulikhetene som gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $
 	\end{tabular}
 \end{center}
 }
+\subsubsection{Symbolet for uendelig}
+Det finnes uendelig 
 \section{Verdi- og definisjonsmengder}
 Alle funksjoner har en definisjonsmengde og en verdimengde. For en funksjon $ f(x) $, er definisjonsmengden den mengden som utelukkende inneholder alle verdier $ x $ kan ha. Denne mengden skrives da som $ D_f $. Hvilke verdier $ x $ kan ha er bestemt av to ting:
 \begin{itemize}
@@ -79,7 +89,35 @@ Gitt en funksjon $ f(x) $. Mengden som utelukkende inneholder alle verdier $ x $
 Mengden som utelukkende inneholder alle verdier $ f $ kan ha når $ x\in D_f $, er verdimengden til $ f $. 
 }
 \section{Betingelser}
-Symbolet \sym{$ \Rightarrow $} bruker vi for å vise til at hvis én ting er sann, så er en annen (eller flere) ting sann også. For eksempel, alle tall som er delelige med 2 er partall. For et tall $ n $ kan vi skrive dette slik:
-\[ \frac{n}{2}=\text{heltall} \Rightarrow  n\text{ er et partall} \]
-Videre kan man spørre seg om det omvendte gjelder; hvis $ n $ er et partall, er det da delelig med 2?
+Symbolet \sym{$ \Rightarrow $} bruker vi for å vise til at hvis et vilkår er oppfylt, så er en annen (eller flere) vilkår også oppfylt. For eksempel; i \mb\;så vi at hvis en trekant er rettvinklet, er Pytagoras' setning gyldig. Dette kan vi skrive slik:
+\[ \text{trekanten er rettvinklet} \Rightarrow \text{Pytagoras' setning er gyldig}\]
+Men vi så også at det omvendte gjelder; hvis Pytagoras' setning er gyldig, må trekanten være rettvinklet. Da kan vi skrive
+\[ \text{trekanten er rettvinklet} \iff \text{Pytagoras' setning er gyldig}\]
+Det er veldig viktig å være bevisst forskjellen på \sym{$ \Rightarrow $} og \sym{$ \iff $}; at vilkår A oppfylt gir B oppfylt, trenger ikke å bety at vilkår B oppfylt gir vilkår A oppfylt! \regv
+
+\eks[1]{ \vs \vs
+\[ \text{firkanten er et kvadrat}\Rightarrow\text{firkanten har fire like lange sider} \]
+}
+\eks[2]{ \vs 
+	\[ \text{tallet er et primtall større enn 2}\Rightarrow\text{tallet er et oddetall} \]
+}
+\eks[3]{\vs
+\[ \text{tallet er et partall}\iff\text{tallet er delelig med 2} \]
+}
+\subsubsection{Funksjoner med betingelser}
+Funksjoner kan gjerne ha flere uttrykk som gjelder for forskjellige vilkår. La oss for eksempel definere en funksjon $ f(x) $ slik:
+\alg{
+&\text{For }x<1 \text{ er funksjonsuttrykket } {-2x+1}\\
+&\text{For }x\geq 1\text{ er funksjonsuttrykket } x^2-2x
+}
+\fig{funkvilk}
+Dette kan vi skrive som
+\begin{equation}f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			-2x+1 &,&x<1 \\
+			x^2-2x   &,& x\geq 1
+		\end{array}
+	}\right. 
+\end{equation}
+
 \end{document}

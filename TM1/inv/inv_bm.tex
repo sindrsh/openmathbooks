@@ -7,7 +7,7 @@
 \section{Monotoniegenskaper}
 De fleste funksjonsverdier varierer. Beskrivelser av hvordan funksjonene varierer kaller vi beskrivelser av funksjonenes \textit{monotoniegenskaper}.\regv
 \reg[Voksende og avtagende funskjoner \label{voksogav}]{
-Gitt en funksjon $ f(x) $ og to reelle tall $ a $ og $ b $. 
+Gitt en funksjon $ f(x) $.
 \begin{itemize}
 \item $ f $ er \textit{voksende} på intervallet $ [a, b] $ hvis vi for alle $ x_1, x_2 \in[a, b]$ har at
 \begin{equation}\label{voksende}
@@ -27,8 +27,8 @@ Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \t
 \reg[\monder \label{monder}]{
 Gitt $ f(x) $ deriverbar på intervallet $ [a, b] $.
 \begin{itemize}
-\item Hvis $ {f'(x)\geq0} $ for $ {x\in[a, b]} $, er $ f $ voksende for $ x\in(a, b) $
-\item Hvis $ {f'(x)\leq0} $ for $ {x\in[a, b]} $, er $ f $ avtagende for $ x\in(a, b) $
+\item Hvis $ {f'\geq0} $ for $ {x\in[a, b]} $, er $ f $ voksende for $ x\in(a, b) $
+\item Hvis $ {f'\leq0} $ for $ {x\in[a, b]} $, er $ f $ avtagende for $ x\in(a, b) $
 \end{itemize}
 Hvis henholdsvis $ \geq $ og $ \leq $ kan erstattes med $ > $ og $ < $, er $ f $ strengt voksende/avtagende. 
 } \regv
@@ -64,7 +64,7 @@ Dette betyr at
 \end{center}
 }
 \fork{\ref{monder}\,\monder}{
-Gitt $ f(x) $, hvor $ {f'(x)\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se vedlegg??} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
+Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se vedlegg??} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
 \alg{
 f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
 }
@@ -119,7 +119,9 @@ Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
 	\item Hvis $ {f'>0} $ for $ {x\in(a, c)} $ og $ {f'<0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt maksimumspunkt for $ f $
 	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $
 \end{enumerate}
-
+}
+\spr{
+Det som blir beskrevet i punkt ii) og iii) omtales ofte som at \outl{$ \bm f $ skifter fortegn i $ \bm c $} 
 }
 \fork{\ref{fderekstr} \fderekstr}{
 \textbf{Punkt (i)} \os
@@ -136,8 +138,7 @@ og at
 }
 Følgelig er
 \[ \lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}=\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \]
-Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.
-\newpage
+Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.\vsk
 
 \textbf{Punkt (ii)} \os
 Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende der. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende der. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
@@ -145,7 +146,25 @@ Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er 
 \textbf{Punkt (iii)} \os
 Tilsvarende resonnement som for punkt (ii).
 }
+\newpage
 
+\reg[\andredertest \label{andredertest}]{
+	Gitt en deriverba funksjon $ f(x) $ og et tall $ c $.
+	\begin{itemize}
+		\item Hvis $ {f'(c)=0} $ og $ {f''(c)<0} $, er $ f(c) $ et lokalt maksimum.
+		\item Hvis $ {f'(c)=0 }$ og $ {f''(c)>0} $, er $ f(c) $ et lokalt minimum.
+		\item Hvis ${ f'(c)=f''(c)=0 }$, kan man ikke ut ifra denne informasjonen alene si om $ f(c) $ er et lokalt maksimum eller minimum.
+	\end{itemize}	
+}
+\fork{\ref{andredertest} \andredertest}{
+	Av definisjonen for den deriverte har vi at
+	\[ f''(c)=\lim\limits_{h \to 0}\frac{f'(c+h)-f'(c)}{h} \]
+	Når $ f'(c)=0$, er
+	\[ f''(c)=\lim\limits_{h \to 0}\frac{f'(c+h)}{h} \]
+	Når $ f''(c)<0 $, betyr dette at
+	\[\lim\limits_{h \to 0} \frac{f'(c+h)}{h}<0 \]
+	Altså må $ {f'(c+h)} $ være positiv når $ h $ går mot 0 fra venstre og negativ når $ h $ går mot 0 fra høgre. Dermed skifter $ f' $ fortegn i $ c $, som da må være et maksimalpunkt for $ f $. Tilsvarende må $ c $ være et minimumspunkt for $ f $ hvis $ {f(c)=0} $ og $ {f''(c)<0} $.
+}
 \newpage
 \reg[Infleksjonspunkt og vendepunkt]{\index{infleksjonspunkt}\index{vendepunkt}
 	For en kontinuerlig funksjon $ f(x) $ har vi at
@@ -232,12 +251,25 @@ Gitt en funksjon $ f(x) $ og en konstant $ c $.
 \end{itemize}
 }
 \eks[]{
-Finn den vertikale asymptoten til funksjonen
+Finn den vertikale asymptoten til
 \[ f(x)=\frac{1}{x-3}+2 \]
 \sv
 Vi observerer at
 \[ \lim\limits_{x\to 3}\left[\frac{1}{x-3}+2\right]=\pm \infty  \]
-Altså er $ x=3 $ en vertikal asymptote.
+Altså er $ x=3 $ en vertikal asymptote for $ f $
+} \vsk
+
+\reg[Horisontale asymptoter]{
+Gitt en funksjon $ f(x) $. Da er $ {y=c} $ en \outl{horisontal asymptote} for $ f $ hvis 
+\[  {\lim\limits_{x\to |\infty|} f(x)=c} \]
+}
+\eks[]{
+	Finn den horisontale asymptoten til
+	\[ f(x)=\frac{1}{x-3}+2 \]
+	\sv
+	Vi observerer at
+	\[ \lim\limits_{x\to |\infty|}\left[\frac{1}{x-3}+2\right]=2 \]
+	Altså er $ y=2 $ en horisontal asymptote for $ f $.
 }
 \section{Konvekse og konkave funksjoner}
 \reg[Konvekse og konkave funksjoner]{
@@ -278,13 +310,13 @@ Likningen over synliggjør et problem; det er veldig rotete å behandle $ x $ so
 \[ g(y)=\frac{y-1}{2} \]
 \reg[Omvendte funksjoner]{
 Gitt to injektive funksjoner $ f(x) $ og $ g(y) $. Hvis
-\[ g\left[f\right]=x \]
+\[ g(f)=x \]
 er $ f $ og $ g $ \textit{omvendte} funksjoner.
 } \newpage
 \eks[1]{Gitt funksjonen $ f(x)=5x-3 $.
 \abc{
 \item Finn den omvendte funksjonen $ g $ til $ f $.
-\item Vis at $ g\left[f(x)\right]=x $. 
+\item Vis at $ g(f)=x $. 
 } 
 
 \sv
