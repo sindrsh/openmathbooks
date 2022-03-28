@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAR 2022 08:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  28 MAR 2022 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1484,65 +1484,67 @@ oly-nom $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 med grad $\OML/lmm/m/it/10.95
 
 ] [12] [13
 
-] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
+] [14] [15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
 \T1/lmr/m/n/10.95 Så lager vi et full-s-tendig kvadrat, og an-vden-der kon-ju-g
 at-set-nin-
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 425.
+(Font)              <9> on input line 452.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 425.
+(Font)              <5> on input line 452.
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 [][][][]\T1/lmr/m/n/9 Vi tar det her for gitt at ethvert reelt tall forskjel-li
 g fra 0 kan ut-trykkes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 \T1/lmr/m/n/10.95 Vi set-ter[][][] $[]$ og $[]$. Siden $[]$,
  []
 
-[15
+[16
 
-] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
 \T1/lmr/m/n/10.95 Polynomet $[]$ må nød-vendigvis ha grad la-vere
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
 \T1/lmr/m/n/10.95 Vi kan nå stadig gjenta prosedyren fra [] og [], hvor hø-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
 \T1/lmr/m/n/10.95 gres-i-den i [] får ledd med grad stadig min-dre enn $[]$, fr
 am
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 473--473
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 \T1/lmr/m/n/10.95 Siden $[]$ har grad 1, må $\OML/lmm/m/it/10.95 R$ \T1/lmr/m/n
 /10.95 ha grad 0, og er dermed en kon-
  []
 
-[18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
+[19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
  (./alg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `alg_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 99EE3C9209741F96F84F6019C1C92C83;398.
+(rerunfilecheck)             Checksum: 7F8886588004EA3BAAF0F1A0193517BF;479.
  ) 
 Here is how much of TeX's memory you used:
- 30955 strings out of 481239
- 607768 string characters out of 5920378
- 923496 words of memory out of 5000000
- 45467 multiletter control sequences out of 15000+600000
+ 30970 strings out of 481239
+ 607906 string characters out of 5920378
+ 923905 words of memory out of 5000000
+ 45480 multiletter control sequences out of 15000+600000
  623342 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,14n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1561,10 +1563,10 @@ fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on alg_bm.pdf (18 pages, 276993 bytes).
+Output written on alg_bm.pdf (19 pages, 279672 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

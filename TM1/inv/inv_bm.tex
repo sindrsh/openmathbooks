@@ -120,6 +120,24 @@ Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
 	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $
 \end{enumerate}
 }
+\eks[1]{
+Finn det lokale bunnpunktet og toppunktet til 
+\[ f(x)=2x^3 + 9x^2 - 60x \]
+\sv
+Vi starter med å finne $ f' $:
+\alg{
+f'&=6x^2+18x-60 \\
+&= 6(x^2+3x-10)
+}
+Siden $ 5(-2)=10 $ og $ 5-2=3 $, har vi av \rref{a1a2} at
+\[ f'=6(x-2)(x+5) \]
+$ f'=0 $ for $ x=2 $ og $ x=-5 $. Vi har at
+\alg{
+f(-5)&=2^3+9\cdot2^2-60\cdot2 = -68	\br
+f(2)&=5^3+9\cdot5^2-60\cdot5 = 275 
+}
+Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
+}
 \spr{
 Det som blir beskrevet i punkt ii) og iii) omtales ofte som at \outl{$ \bm f $ skifter fortegn i $ \bm c $} 
 }

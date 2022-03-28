@@ -1,6 +1,10 @@
 
 ---TM1---
 
+alg
+- forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
+ved å bruke potensregelen for ln
+
 der
 - beregne radien i en veisving
 

@@ -56,10 +56,10 @@ Altså er
 \[ x^2-10x+16=(x-2)(x-8) \]
 } \vsk
 
-\reg[$\bm {a_1 a_2}$-metoden]{
+\reg[$\bm {a_1 a_2}$-metoden \label{a1a2}]{
 Gitt $ x, b, c \in \mathbb{R} $. Hvis $ a_1a_2=c$ og $ a_1+a_2=b $, er 
 \begin{equation}
-x^2+bx+c=(x+a_1)(x+a_2)	\label{a1a2}
+x^2+bx+c=(x+a_1)(x+a_2)	\label{a1a2eq}
 \end{equation}
 }
 \eks[1]{
@@ -380,6 +380,33 @@ Gitt de reelle tallene $a, x$ og $y$, alle forskjellige fra 0. Da er
 
 \sym{$ \log_e $} skrives ofte som \sym{$ \ln $}. (Se ?? for mer om tallet $ e $.)
 }
+\eks[?]{
+Løs likningen 
+\[4 e^x-8=16 \]
+\sv \vsb \vsb \vs
+\alg{
+4e^x &= 24\\
+e^x &= 6 \\
+\ln e^x &= \ln 6 \\
+x &= \ln 6
+}
+}
+
+\section{Å løse likninger ved bytte av variabel}
+La oss løse likningen 
+\begin{equation}\label{eqsqrtxu}
+	x-11\sqrt{x}+28=0
+\end{equation}
+Hvis vi ser nøye etter, innser vi at dette er en andregradslikning for $ \sqrt{x} $. Enda tydeligere blir dette hvis vi definerer variabelen $ u=\sqrt{x} $, da kan vi skrive \eqref{eqsqrtxu} som
+\[ u^2-11u+28=0 \]
+Siden $ (-7)\cdot(-4)=28 $ og $ -7-4=-11 $, har vi av \eqref{a1a2eq} at
+\[ (u-4)(u-7)=0 \]
+Altså er 
+\[ u=4 \qquad \vee \qquad u=7 \]
+Dette betyr at
+\[ \sqrt{x}=4 \qquad \vee \qquad \sqrt{x}=7 \]
+Dermed er
+\[ x=16 \qquad \vee \qquad x=49 \]
 \newpage
 \section{Forklaringer}
 \fork{Andregradslikninger}{

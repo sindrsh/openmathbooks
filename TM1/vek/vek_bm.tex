@@ -303,6 +303,24 @@ Arealet $ A $ til en trekant formet av to vektorer $ \vec{u} $ og $ \vec{v} $ er
 \end{equation}
 \fig{utsptrk}
 }
+\reg[Avstand mellom punkt og linje]{
+	Avstanden $ h $ mellom et punkt $ B $ og en linje gitt av punktet $ A $ og retningsvektoren $ \vec{r} $ er gitt som
+	\begin{equation}
+		h = \frac{\left|\vv{AB}\times \vec r\,\right| }{|\vec{r}|}
+	\end{equation}
+\fig{plin}
+}
+\fork{}{
+La en linje $ l $ i rommet være gitt  av et punkt $ A $ og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja, som vist i figuren under
+\fig{plin}
+Den korteste avstanden fra \textit{B} til linja er høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Arealet til denne trekanten er gitt ved \eqref{det2artrk}:
+\[ \frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right| \]
+Av den klassiske arealformelen for en trekant har vi nå at
+\alg{\frac{1}{2}|\vec{r}\,|h &=\frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right|  \br
+	h &= \frac{\left|\det\left(\vv{AB}, \vec r\right)\right| }{|\vec{r}|}
+}
+}
+
 \newpage
 \fork{\ref{det2area} \detar }{
 Vi lar $ A_N $ betegne arealet til en geometrisk form $ N $.

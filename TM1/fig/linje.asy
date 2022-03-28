@@ -22,11 +22,12 @@ pair B = (x, f(x));
 pair C = (1,f(1));
 pair D = (3.5,f(3.5));
 
-dott(D,"$B$",SE);
-dott(C,"$A$",SE);
+
 
 draw(A--B,blue, L=Label("$l$", align=NW,position=Relative(1)));
 draw(C--D,arrow=Arrow(), L=Label("$\vec r$", align=NW,position=Relative(0.5)));
+dott(D,"$B$",SE);
+dott(C,"$A$",SE);
 
 
 

@@ -7,7 +7,7 @@
 En samling av tall kalles en \textit{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
 }, og et tall som er en del av en mengde kalles et \textit{element} i denne mengden. Mengder kan inneholde et endelig antall elementer og de kan inneholde uendelig mange elementer. \regv
 \reg[Mengder]{
-For to reelle tall $ a $ og $ b $, hvor $ a<b $, har vi at
+For to reelle tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
 \begin{center}
 	\begin{tabular}{c l}
 		$ [a, b] $ & er mengden av alle reelle tall større eller lik $ a $ \\
@@ -34,7 +34,7 @@ $ x \in M$ uttales ''$ x $ inneholdt i $ M $''.\vsk
 Mange tekster bruker \sym{$ \langle $} istedenfor \sym{$ ( $} for å indikere åpne (eller halvåpne) intervall.
 }
 \info{\note}{
-Når vi heretter i boka definerer et intervall beskrevet av $ a $ og $ b $, tar vi det for gitt at $ a $ og $ b $ er to reelle tall.
+Når vi heretter i boka definerer et intervall beskrevet av $ a $ og $ b $, tar vi det for gitt at $ a $ og $ b $ er to reelle tall og at $ a\leq b $.
 }
 \newpage
 \eks[1]{
@@ -59,7 +59,7 @@ Skriv opp ulikhetene som gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $
 }
 }\vsk
 
-\reg[Navn på mengder]{\vs
+\regdef[Navn på mengder \label{mengder}]{\vs
 \begin{center}
 	\begin{tabular}{c l}
 		$ \mathbb{N} $ & Mengden av alle positive heltall\footnote{Inneholder \textit{ikke} 0.}\\
@@ -71,7 +71,19 @@ Skriv opp ulikhetene som gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $
 \end{center}
 }
 \subsubsection{Symbolet for uendelig}
-Det finnes uendelig 
+Mengdene i \dref{mengder} inneholder uendelig mange elementer. Noen ganger ønsker vi å avgrense deler av en uendelig mengde, og da melder det seg et behov for et symbol som  er med på å symbolisere dette. \sym{$ \infty $} er symbolet for en uendelig stor, positiv verdi.\regv 
+
+\eks[]{
+Et vilkår om at $ \geq>2 $ kan vi skrive som $ x\in[2 ,\, \infty) $.\vsk
+
+Et vilkår om at $ x<-7 $ kan vi skrive som $ x\in(-\infty ,-7) $.\vsk
+}
+\spr{
+De to intervallene i eksempelet over kan også skrives som $ [2, \rightarrow] $ og $ (\leftarrow, -7) $.
+}
+\info{\note}{
+\sym{$ \infty $} er ikke noe bestemt tall. Å bruke de fire grunnleggende regneartene alene med dette symbolet gir derfor ingen mening.
+}
 \section{Verdi- og definisjonsmengder}
 Alle funksjoner har en definisjonsmengde og en verdimengde. For en funksjon $ f(x) $, er definisjonsmengden den mengden som utelukkende inneholder alle verdier $ x $ kan ha. Denne mengden skrives da som $ D_f $. Hvilke verdier $ x $ kan ha er bestemt av to ting:
 \begin{itemize}
