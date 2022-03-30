@@ -36,5 +36,43 @@ hvor ${f(x_a)=0 }$. For et passende valg av $ x_n $ antas det da at $ {|x_{n+1}-
 x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
 }
 }
+\section{Trapesmetoden} \label{Trapesmetoden}
+Gitt en funksjone $ f(x) $. Integralet $ \int_a^b f \,dx $ kan vi tilnærme ved å 
+\st{
+\begin{enumerate}
+	\item Dele intervallet $ [a, b] $ inn i mindre intervall. Disse skal vi kalle \textit{delintervall}.
+	\item Finne en tilnærmet verdi for integralet av $ f $ på hvert\\ delintervall.
+	\item Summere verdiene fra punkt 2.
+\end{enumerate}
+}\regv
+
+I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ a=x_0 $, betyr dette at 
+\alg{
+x_1&=x_0+h & x_2&=x_0+2h & x_3&=x_3+3h=b
+}
+hvor $ h=\frac{b-a}{3} $. En tilnæret verdi for $ \int_{a}^{x_1}f\,dx $, får vi ved å finne arealet til trapeset med hjørner (husk at $ x_0=a $)
+\alg{
+(x_0, 0) && (x_1, 0) && (x_1, f(x_1)) && (x_0, f(a))
+}
+Dette arealet er gitt ved uttrykket
+\[ \frac{1}{2}(x_1-x_0)\left[f(x_0)+f(x_1)\right] \]
+Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skrive
+\[ \int_{a}^{b} f\,dx \approx \sum_{i=0}^{2} \frac{1}{2}(x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
+\begin{figure}
+	\centering
+	\subfloat[Tilnærming med 3\\ \hspace{0.55cm}delintervaller.]{\includegraphics{\figp{trapmet}}}\qquad
+	\subfloat[Tilnærming med 20\\ \hspace{0.55cm}delintervaller]{\includegraphics{\figp{trapmetb}}}
+	\caption{\label{trapmetfig}}
+\end{figure}
+
+\reg[Trapesmetoden \label{trapmet}]{
+Gitt en integrerbar funksjon $ f $. En tilnærmet verdi for $ \int_{a}^{b} f\,dx $ er da gitt som
+\[ \int_{a}^{b} f\,dx \approx \sum_{i=0}^{n} \frac{1}{2}(x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
+hvor $ a=x_0 $, $ b=x_n $ og $ x_{n+1}>x_n $.
+}
+\info{\note}{
+Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n+1} $ delintervaller. Det er heller inget krav om at delintervallene skal være like store, men det gjør implementeringen av metoden lettere. Uttrykket for $ h $ fra side \pageref{Trapesmetoden} vil i så fall bli
+\[ h=\frac{b-a}{n+1} \]
+}
 
 \end{document}

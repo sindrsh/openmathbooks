@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 FEB 2022 22:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  30 MAR 2022 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,26 +1012,6 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@chunks=\count339
 \LT@p@ftn=\toks44
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
-
-(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
-)
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count340
-\l_MT_multwidth_dim=\dimen321
-\origjot=\skip133
-\l_MT_shortvdotswithinadjustabove_dim=\dimen322
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
-\l_MT_above_intertext_sep=\dimen324
-\l_MT_below_intertext_sep=\dimen325
-\l_MT_above_shortintertext_sep=\dimen326
-\l_MT_below_shortintertext_sep=\dimen327
-)
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
@@ -1047,8 +1027,8 @@ Writing index file num_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
-\footnotemargin=\dimen328
-\c@pp@next@reset=\count341
+\footnotemargin=\dimen321
+\c@pp@next@reset=\count340
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1060,22 +1040,22 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count342
+\c@abspage=\count341
 )
-\c@pp@a@footnote=\count343
+\c@pp@a@footnote=\count342
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks46
-\labelindent=\skip134
-\enit@outerparindent=\dimen329
+\labelindent=\skip133
+\enit@outerparindent=\dimen322
 \enit@toks=\toks47
 \enit@inbox=\box138
-\enit@count@id=\count344
-\enitdp@description=\count345
+\enit@count@id=\count343
+\enitdp@description=\count344
 )
-\c@rg=\count346
-\c@opg=\count347
+\c@rg=\count345
+\c@opg=\count346
 
 (/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
@@ -1120,9 +1100,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen330
-\Hy@linkcounter=\count348
-\Hy@pagecounter=\count349
+\@linkdim=\dimen323
+\Hy@linkcounter=\count347
+\Hy@pagecounter=\count348
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1135,8 +1115,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count350
-\pdfmajorversion=\count351
+\Hy@SavedSpaceFactor=\count349
+\pdfmajorversion=\count350
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1144,14 +1124,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count352
+\c@Hy@tempcnt=\count351
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen331
+\XeTeXLinkMargin=\dimen324
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1160,9 +1140,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count353
-\Field@Width=\dimen332
-\Fld@charsize=\dimen333
+\Fld@menulength=\count352
+\Field@Width=\dimen325
+\Fld@charsize=\dimen326
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1176,9 +1156,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count354
-\c@Item=\count355
-\c@Hfootnote=\count356
+\Hy@abspage=\count353
+\c@Item=\count354
+\c@Hfootnote=\count355
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1188,8 +1168,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count357
-\c@bookmark@seq@number=\count358
+\Fld@listcount=\count356
+\c@bookmark@seq@number=\count357
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1200,7 +1180,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip135
+\Hy@SectionHShift=\skip134
 )
 (./num_bm.aux)
 \openout1 = `num_bm.aux'.
@@ -1265,16 +1245,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
-\scratchdimen=\dimen334
+\scratchcounter=\count358
+\scratchdimen=\dimen327
 \scratchbox=\box139
-\nofMPsegments=\count360
-\nofMParguments=\count361
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count362
-\MPscratchDim=\dimen335
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen328
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1311,7 +1291,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count364
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1390,12 +1370,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 15.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 15.
-<../fig/newt1a.pdf, id=12, 170.7178pt x 142.26149pt>
+<../fig/newt1a.pdf, id=16, 170.7178pt x 142.26149pt>
 File: ../fig/newt1a.pdf Graphic file (type pdf)
 <use ../fig/newt1a.pdf>
 Package pdftex.def Info: ../fig/newt1a.pdf  used on input line 24.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
-<../fig/newt1b.pdf, id=13, 170.7178pt x 142.26149pt>
+<../fig/newt1b.pdf, id=17, 170.7178pt x 142.26149pt>
 File: ../fig/newt1b.pdf Graphic file (type pdf)
 <use ../fig/newt1b.pdf>
 Package pdftex.def Info: ../fig/newt1b.pdf  used on input line 27.
@@ -1418,44 +1398,114 @@ Denne prosedyren
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/newt1a.pdf> <../fig
 /newt1b.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\T1/lmr/bx/n/12 Regel 0.1Newtons metode (Newton-Rhapson meto-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
 \T1/lmr/m/n/10.95 hvor $[]$. For et passende valg av $\OML/lmm/m/it/10.95 x[]$ 
 \T1/lmr/m/n/10.95 an-tas det da at
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]\T1/lmr/m/n/10.95 Dele in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.9
+5 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i min-dre in-ter-vall. Disse 
+skal vi
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 	\subfloat
+               [TilnÃ¦rming med 3\\ \hspace{0.55cm}delintervaller.]{\include...
+<../fig/trapmet.pdf, id=73, 136.57022pt x 113.81522pt>
+File: ../fig/trapmet.pdf Graphic file (type pdf)
+<use ../fig/trapmet.pdf>
+Package pdftex.def Info: ../fig/trapmet.pdf  used on input line 63.
+(pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 	\subfloat
+               [TilnÃ¦rming med 20\\ \hspace{0.55cm}delintervaller]{\include...
+<../fig/trapmetb.pdf, id=74, 136.57022pt x 113.81522pt>
+File: ../fig/trapmetb.pdf Graphic file (type pdf)
+<use ../fig/trapmetb.pdf>
+Package pdftex.def Info: ../fig/trapmetb.pdf  used on input line 64.
+(pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 65.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]\T1/lmr/m/n/10.95 Gitt en in-te-grerbar funksjon $\OML/lmm/m/it/10.95 f$\T1/l
+mr/m/n/10.95 . En tilnærmet verdi for $[][] \OML/lmm/m/it/10.95 f dx$ \T1/lmr/m
+/n/10.95 er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]\T1/lmr/m/n/10.95 Slik [][]\T1/lmr/m/sl/10.95 regel 0.2[][][] \T1/lmr/m/n/10.
+95 er for-mulert, vil $[]$ være delt inn i $[]$ delin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/lmr/m/n/10.95 ter-valler. Det er heller in-get krav om at delin-ter-val-len
+e skal være
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\T1/lmr/m/n/10.95 like store, men det gjør im-ple-menterin-gen av meto-den let-
+tere.
+ []
+
+[3
+
+ <../fig/trapmet.pdf> <../fig/trapmetb.pdf>] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
  (./num_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `num_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 72CC9949006AD498497D4017390EA8A2;51.
+(rerunfilecheck)             Checksum: 7F8C34C08F25C75F18DA17A35455323C;101.
  ) 
 Here is how much of TeX's memory you used:
- 31242 strings out of 481239
- 613696 string characters out of 5920378
- 928632 words of memory out of 5000000
- 45823 multiletter control sequences out of 15000+600000
- 599418 words of font info for 86 fonts, out of 8000000 for 9000
+ 30808 strings out of 481239
+ 605660 string characters out of 5920378
+ 919789 words of memory out of 5000000
+ 45383 multiletter control sequences out of 15000+600000
+ 606706 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,9n,104p,875b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on num_bm.pdf (2 pages, 180796 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+
+Output written on num_bm.pdf (4 pages, 260021 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 173 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
