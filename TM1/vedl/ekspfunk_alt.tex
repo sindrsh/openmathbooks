@@ -1,0 +1,74 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+\subsubsection{Den deriverte som motivajon}
+Gitt funksjonen $ f(x)=a^x $. Da har vi at
+\alg{
+\left(a^x\right)'&=\lim\limits_{h\to 0}\frac{a^{x+h}-a^x}{h}\br
+&= \lim\limits_{h\to 0}\frac{a^{x}a^h-a^x}{h}
+}
+Da $ x $ er uavhengig av $ h $, får vi at
+\alg{
+\left(a^x\right)'=a^x\lim\limits_{h\to 0}\frac{a^h-1}{h}
+}
+Likningen over peker mot noe fantastisk; hvis det finnes et tall $ a $ som er slik at $ {\lim\limits_{h\to 0}\frac{a^h-1}{h}=1} $, så vil funksjonen $ a^x $ være sin egen deriverte funksjon! Altså er da $ \left(a^x\right)'=a^x $. Vi legger nå merke til at hvis
+\[ a=\lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} \]
+så er 
+\algv{
+\lim\limits_{h\to 0}\frac{a^h-1}{h}&=\lim\limits_{h\to 0}\frac{\left(\left(1+h\right)^\frac{1}{h}\right)^h-1}{h}\br
+&=\frac{1+h-1}{h}\\
+&=1
+}
+Hvis vi kan vise at grenseverdien $ \lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} $ eksisterer, har vi altså funnet akkurat det uttrykket for $ a $ som vi ønsket oss.
+
+\subsubsection{Undersøking av grenseverdien}
+Ved å sette $ z=\frac{1}{h} $, kan vi skrive
+\[ \lim\limits_{h\to0}(1+h)^\frac{1}{h}=\lim\limits_{n\to \infty}\left(1+\frac{1}{z}\right)^z \]
+Vi setter $ {\lim\limits_{z\to \infty}\left(1+\frac{1}{z}\right)^z=e}  $. Spørsmålet nå er om $ e $ har en endelig verdi eller ikke. Det første vi kan legge merke til, er at for alle $ {z\geq0 }$ er
+\[ 1+\frac{1}{n}\geq1  \]
+Dette må bety at $ e $ er voksende når $ {z\to\infty} $. Så lenge $ e $ har en øvre grense, kan vi da være sikre på at uttrykket går mot en endelig verdi\footnote{Hvis $ e $ hadde vært både voksende og avtagende når $ {z\to\infty} $, ville uttrykket svinget i verdi, og jobben med å finne en øvre og nedre grense ville fort blitt vanskeligere.}.\vsk
+
+Vi setter $ {\lim\limits_{n\to \infty}\left(1+\frac{1}{n}\right)^n=e_n} $, hvor $ {n\in\mathbb{N}} $. Hvis $ e_n $ har en endelig verdi, er det åpenbart at $ e=e_n $.
+Av binomialteoremet (se ??) har vi at
+\begin{align}
+	e_n&=1+\binom{n}{0}\frac{1}{n}+\binom{n}{2}\left(\frac{1}{n}\right)^2+\binom{n}{3}\left(\frac{1}{n}\right)^3+...\nonumber\\
+	&= 1+1+\frac{n(n-1)}{2!n^2}+\frac{n(n-1)(n-2)}{3!n^3}+... \label{eforklns}
+\end{align}
+\begin{comment}
+Videre legger vi merke til at
+\alg{
+\frac{n(n-1)}{2!n^2}&= \frac{1}{2!}\left(\frac{n}{n}-\frac{1}{n}\right)\br&=\frac{1}{2!}\left(1-\frac{1}{n}\right) \\[15pt]
+\frac{n(n-1)(n-2)}{3!n^3}&=\frac{1}{3!}\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right)
+}
+Altså er
+\begin{equation}\label{eforklvalpre}
+\left(1+\frac{1}{n}\right)^n=1+1+\frac{1}{2!}\left(1-\frac{1}{n}\right)+\frac{1}{3!}\left(1-\frac{1}{n}\right)\left(1-\frac{2}{n}\right)+...
+\end{equation}
+\end{comment}
+Gitt et heltall $ k $, hvor $ 1\leq k\leq n $. Da $\lim\limits_{n\to\infty} \frac{n-k}{n}\leq 1 $, følger det av \eqref{eforklns} at
+\begin{equation}\label{eforkval}
+2<e_n\leq1+1+\frac{1}{2!}+\frac{1}{3!}+...
+\end{equation}
+Siden  $ k!\geq 2^{k-1} $, er
+\begin{equation}\label{eforklsup2n}
+	1+\frac{1}{2!}+\frac{1}{3!}+...<1+\frac{1}{2}+\frac{1}{2^2}+...
+\end{equation}
+Uttrykket til høgre kjenner vi igjen som en uendelig geometrisk rekke med $ a_1=1 $ og $ k=\frac{1}{2} $. Summen $ S $ av denne rekka er (se AM2??) gitt som
+\alg{
+S&= \frac{a_1}{1-k} \\
+&= \frac{1}{1-\frac{1}{2}} \\
+&=2
+}
+Dette betyr at venstresiden i \eqref{eforklsup2n} er mindre enn 2, og da har vi av \eqref{eforkval} at
+\[ e_n<3 \]
+Altså er
+\[ 2<e<3\]
+Nå vet vi at $ e $ går mot en endelig verdi, og det gir derfor mening å behandle $ e $ som et gitt tall.
+
+\subsubsection{Et tilbakeblikk på den deriverte}
+Derivasjon av potensfunksjoner var det som motiverte oss til å undersøke tallet $ e $. Av det vi har drøftet i de foregående avsnittene, følger det at
+\[ \left(e^x\right)'=e^x \]
+Likningen over er rett og slett én av de viktigste likningene i matematikk.
+\end{document}

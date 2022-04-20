@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  28 MAR 2022 20:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 APR 2022 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,7 +55,7 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)) (../tm_bm.tex)
+)) (../bm.tex)
 (../../preamb.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
@@ -1353,119 +1353,94 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]\T1/lmr/m/n/10.95 Skriv om $[]$ til et ut-trykk der $\OML/lmm/m/it/10.95 k$ \
+T1/lmr/m/n/10.95 er et ledd i et full-s-
+ []
+
+[1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\T1/lmr/m/n/10.95 Kvadratsetningene føl-ger di-rekte av den dis-tribu-tive eg
+en-skapen
+ []
+
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 64.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+(Font)              <12> on input line 68.
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 \T1/lmr/m/n/10.95 Hvis $[]$ og $[]$ er løs-ninger gitt av \T1/lmr/m/it/10.95 ab
 c\T1/lmr/m/n/10.95 -formelen, kan vi
  []
 
-[3
+[4
 
-] [4] [5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-97.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]\T1/lmr/m/n/10.95 summen av flere potens-funksjoner med heltalls ek-spo-nent
+] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+\T1/lmr/m/n/10.95 Så lager vi et full-s-tendig kvadrat, og an-vden-der kon-ju-g
+at-set-nin-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\T1/lmr/m/n/10.95 Polynomfunksjoner kat-e-goris-eres et-ter den største ek-spo-
-nen-ten i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-\T1/lmr/m/n/10.95 funksjon-sut-trykket. For kon-stan-tene $\OML/lmm/m/it/10.95 
-a$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 b$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it
-/10.95 c$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 d$\T1/lmr/m/n/10.95 , og en
- vari-abel
- []
-
-
-Overfull \hbox (4.37608pt too wide) in paragraph at lines 197--197
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-[]\T1/lmr/m/n/10.95 Skriv ut-trykket til et 7. grads poly-nom med utelukkende
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-[]\T1/lmr/m/n/10.95 Skriv ut-trykket til et 5. grads poly-nom med minst én ko-e
-ff-
- []
-
-[6
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\T1/lmr/m/n/10.95 Vi gjør føl-gende trin-nvis; med den største potensen av $\
 OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 telleren som ut-gangspunkt, lager vi ut-trykk som er delelige
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\T1/lmr/m/n/10.95 Vi ob-serverer at led-det med den høyste or-de-nen av $\OML
 /lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 div-i-den-den er $\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 x[]
 $\T1/lmr/m/n/10.95 . Dette ut-trykket kan vi framkalle ved å
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 mul-ti-plis-ere div-i-den-den med $\OT1/lmr/m/n/10.95 2\OML/l
 mm/m/it/10.95 x$\T1/lmr/m/n/10.95 . Vi skriver $\OT1/lmr/m/n/10.95 2\OML/lmm/m/
 it/10.95 x$ \T1/lmr/m/n/10.95 til hø-gre for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\T1/lmr/m/n/10.95 Differansen fra punkt ii) er $[]$. Vi kan framkalle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 led-det med den høyeste or-de-nen av $\OML/lmm/m/it/10.95 x$ 
 \T1/lmr/m/n/10.95 ved å mul-ti-plis-ere
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 div-i-den-den med $\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 
 7$\T1/lmr/m/n/10.95 . Vi skriver $\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 7$ 
 \T1/lmr/m/n/10.95 til hø-gre for likhet-steg-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []\T1/lmr/m/n/10.95 Differansen fra punkt iii) er $\OT1/lmr/m/n/10.95 31$\T1/lm
 r/m/n/10.95 . Dette er et ut-trykk som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \T1/lmr/m/n/10.95 har la-vere or-den av $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.
 95 enn div-i-den-den, og dermed skriver vi
  []
@@ -1473,7 +1448,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--249
 [7
 
 ] [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 A[]$ \T1/lmr/m/n/10.95 betegne et p
 oly-nom $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 med grad $\OML/lmm/m/it/10.95
  k$\T1/lmr/m/n/10.95 . Gitt poly-nomet $\OML/lmm/m/it/10.95 P[]$\T1/lmr/m/n/10.
@@ -1482,91 +1457,124 @@ oly-nom $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 med grad $\OML/lmm/m/it/10.95
 
 [11
 
-] [12] [13
+] [12]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 331.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 331.
+<../fig/ekspfunk.pdf, id=141, 258.92734pt x 284.52296pt>
+File: ../fig/ekspfunk.pdf Graphic file (type pdf)
+<use ../fig/ekspfunk.pdf>
+Package pdftex.def Info: ../fig/ekspfunk.pdf  used on input line 334.
+(pdftex.def)             Requested size: 258.9267pt x 284.52225pt.
+ [13
 
-] [14] [15
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 428--428
-\T1/lmr/m/n/10.95 Så lager vi et full-s-tendig kvadrat, og an-vden-der kon-ju-g
-at-set-nin-
+ <../fig/ekspfunk.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+[][][][][][][] \T1/lmr/m/n/10.95 skrives ofte som [][][][][][], mens [][][][][]
+[] skrives ofte som [][][][][][]
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 452.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 452.
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--452
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+\T1/lmr/m/n/10.95 eller (!) [][][][][][]. Når man bruker dig-i-tale hjelpemi-dl
+er til å finne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+\T1/lmr/m/n/10.95 verdier til log-a-r-it-mer er det der-for vik-tig å sjekke hv
+a som er
+ []
+
+[14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]\T1/lmr/m/sl/9 Merk: \T1/lmr/m/n/9 Log-a-r-it-mere-g-lene er her gitt ved den
+ naturlige log-a-r-it-men. De samme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+\T1/lmr/m/n/9 rege-lene vil gjelde ved å er-statte $[]$ med $[][]$, og $\OML/lm
+m/m/it/9 e$ \T1/lmr/m/n/9 med $\OML/lmm/m/it/9 a$\T1/lmr/m/n/9 , for et vilkårl
+ig
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 [][][][]\T1/lmr/m/n/9 Vi tar det her for gitt at ethvert reelt tall forskjel-li
 g fra 0 kan ut-trykkes
  []
 
+[16] [17
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--452
-\T1/lmr/m/n/10.95 Vi set-ter[][][] $[]$ og $[]$. Siden $[]$,
- []
-
-[16
-
-] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 473--473
+]
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 \T1/lmr/m/n/10.95 Polynomet $[]$ må nød-vendigvis ha grad la-vere
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--473
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 \T1/lmr/m/n/10.95 Vi kan nå stadig gjenta prosedyren fra [] og [], hvor hø-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--473
+Underfull \hbox (badness 10000) in paragraph at lines 461--461
 \T1/lmr/m/n/10.95 gres-i-den i [] får ledd med grad stadig min-dre enn $[]$, fr
 am
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 500--500
+[18
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
 \T1/lmr/m/n/10.95 Siden $[]$ har grad 1, må $\OML/lmm/m/it/10.95 R$ \T1/lmr/m/n
 /10.95 ha grad 0, og er dermed en kon-
  []
 
 [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
  (./alg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `alg_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 7F8886588004EA3BAAF0F1A0193517BF;479.
+(rerunfilecheck)             Checksum: BA07C6E54825D7D18579B6A9E76209B3;469.
  ) 
 Here is how much of TeX's memory you used:
- 30970 strings out of 481239
- 607906 string characters out of 5920378
- 923905 words of memory out of 5000000
- 45480 multiletter control sequences out of 15000+600000
- 623342 words of font info for 101 fonts, out of 8000000 for 9000
+ 30948 strings out of 481239
+ 607274 string characters out of 5920378
+ 922064 words of memory out of 5000000
+ 45465 multiletter control sequences out of 15000+600000
+ 626007 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,14n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on alg_bm.pdf (19 pages, 279672 bytes).
+-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+bx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb>
+Output written on alg_bm.pdf (19 pages, 349322 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

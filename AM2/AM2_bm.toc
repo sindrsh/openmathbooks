@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Numeriske metoder}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Newtons metode}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Trapesmetoden}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}GeoGebra}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Knapper og kommandoer}{8}{section.2.1}%
+\contentsline {subsubsection}{Hurtigtaster}{8}{subsubsection*.3}%
+\contentsline {subsubsection}{Kommandoliste}{9}{subsubsection*.4}%

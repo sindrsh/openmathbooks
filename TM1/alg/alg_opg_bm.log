@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  28 MAR 2022 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  3 APR 2022 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -55,7 +55,7 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)) (../tm_bm.tex)
+)) (../bm.tex)
 (../../preamb.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
@@ -1302,69 +1302,69 @@ LaTeX Info: Redefining \nameref on input line 6.
 \openout7 = `alg_opg_bm.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-2.
+4.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-2.
+4.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-12.
+14.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-12.
+14.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 12.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
+(Font)              <6> on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-2.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-12.
+14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
 
-LaTeX Warning: Reference `a1a2' on page 1 undefined on input line 15.
+LaTeX Warning: Reference `a1a2' on page 1 undefined on input line 38.
 
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./alg_opg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `alg_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
 
@@ -1373,24 +1373,25 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30647 strings out of 481239
- 602847 string characters out of 5920378
- 913078 words of memory out of 5000000
- 45261 multiletter control sequences out of 15000+600000
- 571909 words of font info for 62 fonts, out of 8000000 for 9000
+ 30666 strings out of 481239
+ 603093 string characters out of 5920378
+ 915210 words of memory out of 5000000
+ 45272 multiletter control sequences out of 15000+600000
+ 576171 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on alg_opg_bm.pdf (1 page, 96389 bytes).
+type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on alg_opg_bm.pdf (1 page, 110734 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

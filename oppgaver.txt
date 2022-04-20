@@ -4,6 +4,7 @@
 alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
 ved å bruke potensregelen for ln
+- forklar kvadratsetningene ut ifra figurer
 
 der
 - beregne radien i en veisving
@@ -12,6 +13,8 @@ funk
 - vertikale asymptoter
 - utforske kritisk punkt for f = abs(x)
 - vise formel for avstand mellom linja mellom to punkt og grafen
+- forklar hvorfor to polynomer ikker har/har asymptote for x=a 
+ved å undersøke polynomet med polynomdivisjon.
 
 vektor
 - finne parameterisering ut ifra funksjonsuttrykk til rett linje

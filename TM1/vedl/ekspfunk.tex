@@ -1,0 +1,64 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+\subsubsection{Den deriverte som motivajon}
+Gitt funksjonen $ f(x)=a^x $. Da har vi at
+\alg{
+\left(a^x\right)'&=\lim\limits_{h\to 0}\frac{a^{x+h}-a^x}{h}\br
+&= \lim\limits_{h\to 0}\frac{a^{x}a^h-a^x}{h}
+}
+Da $ x $ er uavhengig av $ h $, får vi at
+\alg{
+\left(a^x\right)'=a^x\lim\limits_{h\to 0}\frac{a^h-1}{h}
+}
+Likningen over peker mot noe fantastisk; hvis det finnes et tall $ a $ som er slik at $ {\lim\limits_{h\to 0}\frac{a^h-1}{h}=1} $, så vil funksjonen $ a^x $ være sin egen deriverte funksjon! Altså er da $ \left(a^x\right)'=a^x $. Vi legger nå merke til at hvis
+\[ a=\lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} \]
+så er 
+\algv{
+\lim\limits_{h\to 0}\frac{a^h-1}{h}&=\lim\limits_{h\to 0}\frac{\left(\left(1+h\right)^\frac{1}{h}\right)^h-1}{h}\br
+&=\frac{1+h-1}{h}\\
+&=1
+}
+Hvis vi kan vise at grenseverdien $ \lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} $ eksisterer, har vi altså funnet akkurat det uttrykket for $ a $ som vi ønsket oss.
+
+\subsubsection{Undersøking av grenseverdien}
+Vi innfører de to funksjonene
+\[ f(h)=1+h \qquad,\qquad g(h)=2-\left(\frac{1}{4}\right)^{h}\]
+Videre ønsker vi å undersøke for hvilke verdier $ f $ er mindre enn  $ g $. Når $ f=g $, har vi at
+\begin{equation}\label{eforkleqh}
+	1+h=2-\left(\frac{1}{4}\right)^h 
+\end{equation}
+Vi gjør nå følgende observasjon: Gitt to tall $ c $ og $ k $, og funksjonen $ p(h)=a^h $, hvor $ k>0 $ og $ 0<a<1 $. Da har vi at
+\alg{
+p(c+k)-p(c)=a^{c+k}-a^{c}=a^c\left(a^{k}-1\right)
+}
+Tilsvarende er
+\alg{
+p(c+2k)-p(c+k)&=a^{c+k}\left(a^{k}-1\right)
+}
+Videre er $ a^{c+k}<a^c $ og $ a^k-1<1 $, som betyr at
+\[ \frac{p(c+k)-p(c)}{h}<\frac{p(c+2k)-p(c)}{h} \]
+Dermed må linja mellom $ (c, p(c)) $ og $ (c+k, p(c+k)) $ være brattere enn linja mellom $ (c+k, p(c+k)) $ og $ (c+2k, p(c+2k)) $, og da må $ (c+k, p(c+k)) $ ligge under linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $.
+\fig{ekspfunk3}
+Det er åpenbart at $ p(h) $ ikke er en lineær funksjon, og da må én av disse tre påstandene være gyldig:
+\begin{enumerate}[label=(\alph*)]
+	\item $ p $ er konveks for alle $ h$
+	\item $ p $ er konkav for alle $ h $
+	\item $ p $ er skiftvis konkav/konveks
+\end{enumerate}
+Men hvis $ p $ er konkav må det finnes et intervall hvor $ (c+k, p(c+k)) $ ligger over linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $, og dette er selvmotsigende. Altså må $ p $ nødvendigvis være konveks for alle $ h $.\vsk
+
+Av det vi akkurat har funnet, kan vi konkludere med at $2-\left(\frac{1}{4}\right)^h $ er et konkavt uttrykk. Da $ 1+h$ er et lineært uttrykk, har \eqref{eforkleqh} maksimalt to løsninger.
+
+Vi setter $z=\frac{1}{h} $ for $ h\neq0 $. Da er
+\[ \lim\limits_{h\to 0} (1+h)^h=\lim\limits_{z\to\infty}=\left(1+\frac{1}{z}\right)^\frac{1}{z} \]
+Videre kan \eqref{eforkleqh} omskrives til
+\begin{equation}\label{eforkleqz}
+	1+\frac{1}{z}=2-\left(\frac{1}{4}\right)^\frac{1}{z}
+\end{equation}
+Det er enkelt å vise at $ h=0 $ og $ h=\frac{1}{2} $ er løsningene til \eqref{eforkleqh}. Dette må bety at $ z=\frac{1}{\frac{1}{2}}=2 $ er den eneste løsningen til \eqref{eforkleqz}. Det er også enkelt å bekrefte at venstresiden i \eqref{eforkleqz} er større enn høgresiden for $ z=1 $, og dette innebærer at
+\[ 1+\frac{1}{z}<2-\left(\frac{1}{4}\right)^\frac{1}{z} \]
+\fig{ekspfunk2}
+\end{document}
