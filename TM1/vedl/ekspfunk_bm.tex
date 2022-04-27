@@ -3,6 +3,7 @@
 \input{../bm}
 
 \begin{document}	
+\section{Eulers tall}
 \subsubsection{Den deriverte som motivajon}
 Gitt funksjonen $ f(x)=a^x $. Da har vi at
 \alg{
@@ -48,9 +49,9 @@ Det er åpenbart at $ p(h) $ ikke er en lineær funksjon, og da må én av disse
 	\item $ p $ er konkav for alle $ h $
 	\item $ p $ er skiftvis konkav/konveks
 \end{enumerate}
-Men hvis $ p $ er konkav må det finnes et intervall hvor $ (c+k, p(c+k)) $ ligger over linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $, og dette er selvmotsigende. Altså må $ p $ nødvendigvis være konveks for alle $ h $.\vsk
+Men hvis $ p $ er konkav, må det finnes et intervall hvor $ (c+k, p(c+k)) $ ligger over linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $, og dette er selvmotsigende. Altså må $ p $ nødvendigvis være konveks for alle $ h $.\vsk
 
-Av det vi akkurat har funnet, kan vi konkludere med at $2-\left(\frac{1}{4}\right)^h $ er et konkavt uttrykk. Da $ 1+h$ er et lineært uttrykk, har \eqref{eforkleqh} maksimalt to løsninger.
+Av det vi akkurat har funnet, kan vi konkludere med at funksjonen $2-\left(\frac{1}{4}\right)^h $ er konkav for alle $ h $, og da $ 1+h$ er et lineært uttrykk, har \eqref{eforkleqh} maksimalt to løsninger.\vsk
 
 Vi setter $z=\frac{1}{h} $ for $ h\neq0 $. Da er
 \[ \lim\limits_{h\to 0} (1+h)^h=\lim\limits_{z\to\infty}=\left(1+\frac{1}{z}\right)^\frac{1}{z} \]
@@ -61,4 +62,22 @@ Videre kan \eqref{eforkleqh} omskrives til
 Det er enkelt å vise at $ h=0 $ og $ h=\frac{1}{2} $ er løsningene til \eqref{eforkleqh}. Dette må bety at $ z=\frac{1}{\frac{1}{2}}=2 $ er den eneste løsningen til \eqref{eforkleqz}. Det er også enkelt å bekrefte at venstresiden i \eqref{eforkleqz} er større enn høgresiden for $ z=1 $, og dette innebærer at
 \[ 1+\frac{1}{z}<2-\left(\frac{1}{4}\right)^\frac{1}{z} \]
 \fig{ekspfunk2}
+For $ z\to\infty $ kan vi derfor være sikre på at
+\[ 1+\frac{1}{z}<1+1-\left(\frac{1}{4}\right)^\frac{1}{z}+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^2+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^3+... \]
+Høgresiden i ulikheten over kjenner vi igjen (se ?? i \tmto) som en uendelig geometrisk rekke hvor summen er gitt som
+\[ \frac{1}{1-\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)} =\frac{1}{\left(\frac{1}{4}\right)^\frac{1}{z}}=4^\frac{1}{z} \]
+Altså er
+\begin{equation}\label{eforkllim4}
+	\lim\limits_{z\to\infty}\left(1+\frac{1}{z}\right)^z\leq \lim\limits_{z\to\infty}\left(4^\frac{1}{z}\right)^z=4
+\end{equation}
+Ved å bytte ut $ \frac{1}{4} $ med $ \frac{1}{2} $ i \eqref{eforkleqh}, får likningen i stedet løsningene $ {h=-1} $ og $ {h=1} $. Med dette som utgangspunkt kan vi på samme måte som vi kom fram til \eqref{eforkllim4} vise at
+\[ 	2\leq\lim\limits_{z\to\infty}\left(1+\frac{1}{z}\right)^z \] 
+\fig{ekspfunk4}
+Nå vet vi altså at $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ ligger et sted mellom 2 og 4.
+Da uttrykket inneholder utelukkende positive ledd for $ {z\to\infty} $, kan vi også være sikre på at grenseverdien er endelig\footnote{I motsetning til å være ubestemt. For eksempel vil $ \lim\limits_{x\to \infty} \cos x $  være ubestemt, fordi $ \cos x $ svinger mellom $ -1 $ og $ 1 $.}. Da gir derfor mening å behandle grenseverdien som et tall, som vi kaller for $ e $:
+\[ e=\lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n  \]
+\subsubsection{Et tilbakeblikk på den deriverte}
+Derivasjon av potensfunksjoner var det som motiverte oss til å undersøke tallet $ e $. Av det vi har drøftet i de foregående avsnittene, følger det at
+\[ \left(e^x\right)'=e^x \]
+Likningen over er rett og slett én av de viktigste likningene i matematikk.
 \end{document}

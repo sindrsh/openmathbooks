@@ -6,8 +6,15 @@ alg
 ved å bruke potensregelen for ln
 - forklar kvadratsetningene ut ifra figurer
 
+geo
+- vis at cos x + cos y = cos x cos y - sin x sin y
+
 der
+- finn uttrykket for tangeringslinja til f i punktet a
 - beregne radien i en veisving
+
+grens
+- vis at lim0 sin x/x = 1 og lim 0 (cos x - 1)/x = 0  
 
 funk 
 - vertikale asymptoter
@@ -26,6 +33,9 @@ og (x,f(x)) for x in [a, b]
 ---TM2---
 trigonometri
 - vise at |det(u,v)|=|u||v|*sin(vinkel(u,v))
+
+folger
+- vis at (1/a)^(1/x) kan skrives som 1+(1-a^(1/x)+(1-a^(1/x))^2+...)
 
 ---AM2---
 

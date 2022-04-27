@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 APR 2022 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  24 APR 2022 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,7 +1462,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 331.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 331.
-<../fig/ekspfunk.pdf, id=141, 258.92734pt x 284.52296pt>
+<../fig/ekspfunk.pdf, id=137, 258.92734pt x 284.52296pt>
 File: ../fig/ekspfunk.pdf Graphic file (type pdf)
 <use ../fig/ekspfunk.pdf>
 Package pdftex.def Info: ../fig/ekspfunk.pdf  used on input line 334.
@@ -1508,45 +1508,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--424
 g fra 0 kan ut-trykkes
  []
 
-[16] [17
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 \T1/lmr/m/n/10.95 Polynomet $[]$ må nød-vendigvis ha grad la-vere
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 \T1/lmr/m/n/10.95 Vi kan nå stadig gjenta prosedyren fra [] og [], hvor hø-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--461
+Underfull \hbox (badness 10000) in paragraph at lines 446--446
 \T1/lmr/m/n/10.95 gres-i-den i [] får ledd med grad stadig min-dre enn $[]$, fr
 am
  []
 
-[18
+[17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
 \T1/lmr/m/n/10.95 Siden $[]$ har grad 1, må $\OML/lmm/m/it/10.95 R$ \T1/lmr/m/n
 /10.95 ha grad 0, og er dermed en kon-
  []
 
-[19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
  (./alg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
 Package rerunfilecheck Info: File `alg_bm.out' has not changed.
-(rerunfilecheck)             Checksum: BA07C6E54825D7D18579B6A9E76209B3;469.
+(rerunfilecheck)             Checksum: CAB750E4BDA6721538736CA4A143178F;360.
  ) 
 Here is how much of TeX's memory you used:
- 30948 strings out of 481239
- 607274 string characters out of 5920378
- 922064 words of memory out of 5000000
+ 30945 strings out of 481239
+ 607226 string characters out of 5920378
+ 921968 words of memory out of 5000000
  45465 multiletter control sequences out of 15000+600000
  626007 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1571,10 +1569,10 @@ ts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on alg_bm.pdf (19 pages, 349322 bytes).
+Output written on alg_bm.pdf (18 pages, 347887 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 74 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 

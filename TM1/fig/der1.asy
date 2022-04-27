@@ -12,8 +12,8 @@ real g(real x, real t) {
 real a = -1;
 real b = 2;
 
-yaks(f(a),f(b));
-xaks(a,b);
+yaks(f(a),f(b),l="$f$");
+xaks(a,b,l="$x$");
 
 draw(graph(f,a,b),blue);
 

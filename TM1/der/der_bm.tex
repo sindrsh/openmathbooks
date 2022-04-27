@@ -1,46 +1,56 @@
 \input{../../doc}
-\input{../tm_bm}
 \input{../../preamb}
+\input{../bm}
 
 
 \begin{document}
 
 \section{Definisjoner \label{grense}}
-Gitt en funksjon $ f(x) $ og to verdier $ x $-verdier $ x_1 $ og $ x_2 $, hvor $ {x_1<x_2} $. Den gjennomsnittlige endringen til $ f $ fra $ x_1 $ til $ x_2 $ er da gitt som
-\[ \frac{f(x_2)-f(x_1)}{x_2-x_1} \]
-Uttrykket over forteller hvor mye funksjonsverdien endrer seg i forhold til hvor mye $ x $-verdien endrer seg, og gir stigningstallet til linja som går gjennom punktene $ (x_1, f(x_1)) $ og $ (x_2, f(x_2)) $.
-\[ figur \]
-La oss finne den gjennomsnittlige endringen til $ f(x)=x^2 $ når $ x=2 $ og $ x=3 $.  
-\nn{
-\frac{f(3)-f(2)}{3-2}= \frac{3^2-2^2}{1}
-= 5
+Gitt en funksjon $ f(x) $ og to $ x $-verdier $ a $ og $ b $, hvor $ {a<b} $. Endringen til $ f $ relativ til endringen til $ x $ for disse verdiene er gitt som
+\begin{equation}\label{releq}
+	\frac{f(b)-f(a)}{b-a}
+\end{equation}
+I \mb\ har vi sett at uttrykket over gir stigningstallet til linja som går gjennom punktene $ (a, f(a)) $ og $ (b, f(b)) $. I en matematisk sammenheng er det ekstra interessant å undersøke \eqref{releq} når $ b $ nærmer seg $ a $.
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2a}}
+	}\qquad
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2b}}
+	}\\
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2c}}
+	} \qquad
+	\subfloat[]{
+	\includegraphics[scale=0.8]{\figp{der2d}}
 }
-
-
-Men vi kan jo så mye bedre enn dette. Det er ingenting som hindrer oss i å gjøre intervallet vi studerer mye mindre, og med dèt komme mye nærmere punktet vi er ute etter. Faktisk kan vi tenke oss en avstand mellom de to \textit{x}-verdiene som er så nære 0 som overhodet mulig. Betegner vi denne avstanden som $ \Delta x $ så skriver vi $ \lim\limits_{\Delta x \to 0} $\,, som indikerer at vi studerer tilfeller i grensen hvor $ \Delta x $ går mot 0. 
-
-Så om vi nå ser på gjennomsnittsstigningen til \textit{f} mellom $ x=2 $ og \textit{x} i umiddelbar nærhet av 2, gir dette oss en uendelig god tilnærming til stignigstallet vi er ute etter. Resultatet kaller vi da \textit{den deriverte av f med hensyn på x for} $ x=2 $, som vi skriver som $ f'(2) $:
-\[f'(2) =\lim\limits_{\Delta x \to 0} \frac{f(2+\Delta x)-f(2)}{\Delta x} \]
-
-
-
-Så la oss nå prøve å regne ut $ f'(2) $:
-\alg{
-f'(2) &=\lim\limits_{\Delta x \to 0} \frac{f(2+\Delta x)-f(2)}{\Delta x} \\
-&=\lim\limits_{\Delta x \to 0} \frac{(2+\Delta x)^2-2^2}{\Delta x} \\
-&= \lim\limits_{\Delta x \to 0} \frac{2^2+4\Delta x + (\Delta x)^2-2^2}{\Delta x} \\
-&= 4
-}
-Metoden vi har brukt over kan brukes for en hvilken som helst kontinuerlig funksjon av $ x $ for et hvilket som helst valg av $ x $.
-
-\reg[Definisjon av den deriverte \label{derdefa}]{
-Gitt en funksjon $ f(x) $. Den deriverte av $ f $ i $ x=a $ er da gitt som
-\[ f'(a) =\lim\limits_{h \to 0} \frac{f(a+h)-f(x)}{h} \]
-Linja som har stigingstall $ f'(a) $, og som går gjennom punktet $ (a, f(a)) $, kalles \textit{tangeringslinja} til $ f $ for $ x=a $.
+\end{figure}
+Ved å sette $ b=a+h $, hvor $ h>0 $, kan vi skrive \eqref{releq} som
+\[ \frac{f(a+h)-f(a)}{h} \]
+Å \outl{derivere} innebærer å undersøke grenseverdien til denne brøken når $ h $ går mot 0.
+\regdef[Den deriverte\label{derdefa}]{
+Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $ i $ {x=a} $} er da gitt som
+\begin{equation}\label{derdefaeq}
+	f'(a) =\lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h}
+\end{equation}
+Linja som har stigingstall $ f'(a) $, og som går gjennom punktet $ (a, f(a)) $, kalles \outl{tangeringslinja} til $ f $ for $ x=a $.
 \fig{der1}
 }
+\eks[1]{
+Gitt $ f(x)=x^2 $. Finn $ f'(2) $.
 
-\eks{
+\sv
+Vi har at
+\algv{
+	f'(2) &=\lim\limits_{h \to 0} \frac{f(2+h)-f(2)}{h} \\
+	&=\lim\limits_{h \to 0} \frac{(2+h)^2-2^2}{h} \\
+	&= \lim\limits_{h \to 0} \frac{2^2+4h + (h)^2-2^2}{h} \\
+	&= 4
+}
+}
+\newpage
+\eks[2]{ \label{dereks2}
 Gitt $ f(x)=x^3 $. Finn $ f'(a) $ .\vsk
 
 \sv
@@ -53,13 +63,10 @@ f'(a) &=\lim\limits_{h \to 0} \frac{(a+h)^3-a^3}{h} \br
 }
 Altså er $ f'(a)=3a^2 $.
 }
-\reg[Den deriverte som funksjon]{
-Gitt en funksjon $ f $. Den deriverte av $ f $ med hensyn på $ x $ er da\footnote{Gitt at grenseverdien eksisterer.} definert som 
-\begin{equation}
-f'(x)=\lim\limits_{h\to0}\frac{f(x+h)-f(x)}{h}	
-\end{equation} 
+\info{Alternativ definisjon}{
+En ekvivalent utgave av \eqref{derdefaeq} er
+\[ \lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a} \]
 }
-
 \subsubsection{Linearisering av en funksjon}
 Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være (se figur ???)
 \[ f(a+k)\approx f(a)+f'(a)k \]
@@ -76,44 +83,69 @@ f(a+k)=f(a)+f'(a)k+\varepsilon
 hvor $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k}=0 $. \vsk
 
 Tilnærmingen
-\[ f(a+k)\approx f(a)+f'(x)k \]
-kalles \outl{lineæarapproksimasjonen} av $ f(x+k) $.
+\begin{equation}\label{linaprx}
+	f(a+k)\approx f(a)+f'(x)k
+\end{equation}
+kalles \outl{lineæarapproksimasjonen} av $ f(a+k) $.
 }
 \section{Derivasjonsregler}
+\subsection{Den deriverte}
+\outl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
+\reg[Den deriverte funksjonen]{
+	Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $} er funksjonen som fremkommer ved å erstatte $ a $ i \eqref{derdefaeq} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
+}
+\eks[]{
+Gitt $ {f(x)=x^3} $. Siden\footnote{Se \outl{Eksempel 2}, side \pageref{dereks2}.} $ {f'(a)=3a^2} $, er $ f'(x)=3x^2 $. 
+}
+\info{Alternative skrivemåter}{
+Alternative skrivemåter for \sym{$f'$} er 
+\sym{$ (f)'$} og \sym{$\frac{\text{d}}{\text{d}x} f $}.
+}
+\info{Derivert med hensyn på}{
+Derivasjon som vi har sett på så langt har vært en brøk med en differanse av $ x $-verdier i nevner og den tilknyttede differansen av $ f $-verdier i teller. Da sier vi at $ f $ er derivert med \outl{hensyn på $ x $}. I denne bokserien skal vi i all hovedsak se på funksjoner som bare er avhengige av én variabel. Gitt en funksjon $ f(x) $, er det da underforstått at \sym{$ f' $} symboliserer $ f $ derivert med hensyn på $ x $.\vsk
 
-\reg[Den deriverte av utvalgte funksjoner]{
-\vspace{-11 pt}
-\begin{align*}
-&  (x^r)' = r x^{r-1}  \\
-& (\ln x)'=  \frac{1}{x} \\
-& (\sin x)' = \cos (x) \\
-& (\cos x)' = -\sin (x)  \\
-& (e^x)' =e^{x}  \\
-& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x
-\end{align*}
+Samtidig er det greit å være klar over at en funksjon gjerne kan være avhengig av flere variabler. For eksempel er funksjonen
+\[ f(x, y)= x^2+y^3 \]
+en \outl{flervariabel funksjon}, avhengig av både $ x $ og $ y $. I dette tilfellet kan vi bruke skrive \sym{$ \frac{\text{d}}{\text{d}x} f$} for å indikere derivasjon med hensyn på $ x $, og \sym{$ \frac{\text{d}}{\text{d}x}f $} for å indikere derivasjon med hensyn på $ y $. Leseren må gjerne forklare for seg selv hvorfor følgende stemmer:
+\[ \frac{\text{d}}{\text{d}x}f = 2x \qquad,\qquad  \frac{\text{d}}{\text{d}y}f = 3y^2 ,\]
+}
+\subsection{Den deriverte av elementære funksjoner}
+\reg[Den deriverte av elementære funksjoner]{
+For $x, r\in \mathbb{R} $ og
+\begin{align}
+& (e^x)' =e^{x} \label{derex} \vn	
+&  (x^r)' = r x^{r-1} \label{derxr} \vn
+& (\ln x)'=  \frac{1}{x} \label{derlnx} \vn
+& (\sin x)' = \cos (x) \label{dercosx} \vn
+& (\cos x)' = -\sin (x) \label{dersinx} \vn
+& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x \label{dertanx}
+\end{align}
 }	
-\vspace{11 pt}
-\section{Kjerneregelen}
-\textbf{Bevis for kjerneregelen}
+\reg[Den deriverte av sammensatte funksjoner]{
+Gitt $ c\in \mathbb{R} $ og funksjonene $ f(x) $ og $ g(x) $. Da er
+\alg{
+& \left(a\cdot f\right)'=a\cdot f' \vn
+& \left(f+g\right)' =f'+g' \vn
+& \left(f-g\right)'=f'-g'
+}
+}
+\subsection{Kjerneregelen}
+La oss se på tre funksjoner $ f $, $ g $ og $ u $, hvor
+\[ f(x)= g\left[u(x)\right] \]
+$ f $ beskrives direkte av $ x $, mens $ g $ beskrives indirekte av $ x $, via $ u(x) $. \vsk
 
-La oss se på tre funksjoner \textit{f} og \textit{g} som oppfyller likheten $f(x)= g(u(x)) $. \textit{f} beskrives direkte av \textit{x}, mens \textit{g} beskrives av indirekte av \textit{x} som en funksjon av $ u(x) $. \vsk
-
-La oss bruke $f(x) =e^{x^2} $ som eksempel. Kjenner vi verdien til \textit{x}, kan vi fort regne ut hva verdien til $ f(x) $ er. For eksempel er: 
+La oss bruke $f(x) =e^{x^2} $ som eksempel. Kjenner vi verdien til \textit{x}, kan vi fort regne ut hva verdien til $ f(x) $ er. For eksempel er
 \[ f(2)=e^4 \]
-Men vi kan også skrive $ g(u(x))=e^{u(x)} $, hvor $ u(x)=x^2 $. Denne skrivemåten impliserer at når vi kjenner verdien til \textit{x}, så regner vi først ut verdien til \textit{u}, før vi til slutt finnner verdien av $g$: 
+Men vi kan også skrive $ {g\left[u(x)\right]=e^{u(x)}} $, hvor $ u(x)=x^2 $. Denne skrivemåten impliserer at når vi kjenner verdien til \textit{x}, regner vi først ut verdien til \textit{u}, før vi så finner verdien av $g$: 
 \[ u(2) =4\qquad,\qquad 
-g(u(2))=e^{u(2)}=e^4 \]
-Så det vi har nå er fire unike størrelser: en varierende \textit{x}, \textit{f} som funksjon av \textit{x}, \textit{u} som funksjon av \textit{x} og \textit{g} som funksjon av \textit{u}.
-\[ fig \]
+g\left[u(2)\right]=e^{u(2)}=e^4 \]
 Av derdef?? har vi at
 \alg{
 f(x)&=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h} \br
 &= \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}
 }
 Vi setter $ k = u(x+h)-u(x) $. Da er
-\alg{
-\lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}&= \lim\limits_{h \to 0}\frac{g\left[u+k\right]-g\left[u\right]}{h}
-}
+\[ \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}= \lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h} \]
 Av \eqref{linfunkeq} har vi at
 \[ g(u)-g(u+k)= g'(u)k+\varepsilon_g  \]
 Altså er
@@ -126,66 +158,55 @@ Da $ \lim\limits_{h\to0}k=0 $, er $ \lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0
 \lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
 }
 \reg[Kjerneregelen \label{kjerne}]{
-For en funksjon $ f(x)=g(u(x)) $ kan vi finne \textit{f} derivert med hensyn på \textit{x} som:
-\[ f'(x) = g'(u)u'(x) \]
+For en funksjon $ f(x)=g\left[u(x)\right] $, har vi at
+\begin{equation}\label{kjerneeq}
+	f'(x) = g'(u)u'(x)
+\end{equation}
 }
-\vspace{11 pt}
-
+\regv
 \eks{
-Finn $ f'(x) $ når  $ f(x)=e^{x^2+x+1} $
-\\
+Finn $ f'(x) $ når  $ f(x)=e^{x^2+x+1} $.\\
+\sv
 
-\textbf{Svar:} Vi setter $ u=x^2+x+1 $, og får:
+Vi setter $ u=x^2+x+1 $, og får at
 \begin{align*}
-& g(u)=e^u \\
-& g'(u)=e^u \\
+& g(u)=e^u \vn
+& g'(u)=e^u \vn
 & u'(x) = 2x + 1
 \end{align*}
-Altså blir:
-\alg{
+Altså er
+\algv{
  f'(x) &= g'(u)u'(x) \\
- &= e^{(x^2+x+1)}(2x+1) 
+ &= e^u(2x+1)\\
+ &= e^{x^2+x+1}(2x+1) 
 }
 }
-\section{Produktregelen}
-\textbf{Bevis for produktregelen}
-
-Si at vi har en funksjon \textit{f} som består av to funksjoner \textit{u} og \textit{v}, som begge er avhengige av \textit{x}:  
+\subsection{Produkt- og divisjonsregelen}
+Gitt funksjonene $ f $, $ u $ og $ v $, hvor
 \[ f(x)=u(x)v(x) \] 
-
-For enhver kontinuerlig funksjon \textit{g} er $ g'(x) $ er definert som:
-\[ g'= \lim\limits_{\Delta x\to 0}\frac{g(x+\Delta x)-g(x)}{\Delta x} \]
-
-$ f'(x) $ kan vi derfor skrive som:
-\[ f'=\lim\limits_{\Delta x\to 0}\frac{u(x+\Delta x)v(x+\Delta x)-u(x)v(x)}{\Delta x} \]
-
-La oss nå skrive $ u(x) $ og $ v(x) $ som \textit{u} og \textit{v} og $ u(x+\Delta x) $ og $ v(x+\Delta x) $ som $ \tilde{u} $ og $ \tilde{v} $:
+Av defref?? er da
+\[ f'=\lim\limits_{h\to 0}\frac{u(x+h)v(x+h)-u(x)v(x)}{h} \]
+La oss nå skrive $ u(x) $ og $ v(x) $ som henholdsvis $ u $ og $ v ,$ og $ u(x+h) $ og $ v(x+h) $ som henholdsvis $ \tilde{u} $ og $ \tilde{v} $:
 \alg{
-f'(x) &= \lim\limits_{\Delta x\to 0} \frac{\tilde{u}\tilde{v}- u v}{\Delta x}
+f' &= \lim\limits_{h\to 0} \frac{\tilde{u}\tilde{v}- u v}{h}
 }
-Vi kan alltids legge til 0 i form av $ \dfrac{u\tilde{v}}{\Delta x}- \dfrac{u\tilde{v}}{\Delta x} $:
-\alg{f'&= \lim\limits_{\Delta x\to 0} \left[\frac{\tilde{u}\tilde{v}- u v}{\Delta x} + \frac{u\tilde{v}}{\Delta x}- \frac{u\tilde{v}}{\Delta x}\right] \\
-&= \lim\limits_{\Delta x\to 0}\left[\frac{(\tilde{u}- u)\tilde{v}}{\Delta x} +\frac{u(\tilde{v}- v)}{\Delta x} \right]
+Vi kan alltids legge til 0 i form av $ \dfrac{u\tilde{v}}{h}- \dfrac{u\tilde{v}}{h} $:
+\alg{f'&= \lim\limits_{h\to 0} \left[\frac{\tilde{u}\tilde{v}- u v}{h} + \frac{u\tilde{v}}{h}- \frac{u\tilde{v}}{h}\right] \\
+&= \lim\limits_{h\to 0}\left[\frac{(\tilde{u}- u)\tilde{v}}{h} +\frac{u(\tilde{v}- v)}{h} \right]
 	}
-Siden vi for enhver kontinuerlig funksjon $ g $ har at $ \lim\limits_{\Delta x\to 0} \tilde{g}=g $ og at $ \lim\limits_{\Delta x\to 0}  \frac{\tilde{g}-g}{\Delta x}=g'$, får vi nå:
-\[ f'=u'v+uv' \]	
-
+Siden vi for enhver kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \tilde{g}=g} $ og \\$ {\lim\limits_{h\to 0}  \frac{g(x+k)-g(x)}{h}=g'}$, er
+\[ f'=u'v+uv' \]
 \reg[Produktregelen ved derivasjon]{
-Gitt $ {f(x)=u(x)v(x)} $ da er
+Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ {f=uv} $ da er
 \[ f'=u'v+uv' \]	
 }
-\section{Divisjonsregelen}
-Dersom vi har uttrykket $ f(x)=\dfrac{u(x)}{v(x)} $ kan vi bruke produktregelen og kjerneregelen:
-\alg{f'&=\left(\dfrac{u}{v} \right)'\\
-	&= \left(u v^{-1}\right)' \\
-	&= u' v^{-1} - u v^{-2}v' \\
-	&= \frac{u'v - u v'}{v^2}}
-
 \reg[Divisjonsregelen ved derivasjon]{
-Dersom vi har funksjonen $ f(x)=\dfrac{u(x)}{v(x)} $, kan vi finne $ f'(x) $ ved:
-\[ f'=\frac{u'v-uv'}{v^2} \]
+Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ f=\dfrac{u}{v} $. Da er
+\begin{equation}\label{derdivreg}
+	f'=\frac{u'v-uv'}{v^2} 
+\end{equation}
 }
-
+\section{Forklaringer}
 \fork{L'hoptial}{
 Siden $ f(a)=g(a)=0 $, er
 \alg{
@@ -208,7 +229,7 @@ Vi har at
 \alg{
 \lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f}}{\frac{1}{g}} 
 }
-Da $ \lim\limits_{x\to a} f=\lim\limits_{x\to a} g=0 $, må $ \lim\limits_{x\to a} \frac{1}{f}=\lim\limits_{x\to a}\frac{1}{g}=0 $. Av Lhopital1?? har vi da at 
+Da $ {\lim\limits_{x\to a} f=\lim\limits_{x\to a} g=\infty} $, må $ {\lim\limits_{x\to a} \frac{1}{f}=\lim\limits_{x\to a}\frac{1}{g}=0} $. Av Lhopital1?? har vi da at 
 \alg{
 \lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f^2}f'}{\frac{1}{g^2}g'} 
 }
@@ -217,4 +238,88 @@ Multipliserer vi begge sider med $ \lim\limits_{x\to a} \frac{f^2}{g^2} $, får 
 \lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}
 }	
 }
+\fork{}{
+Av kjerneregelen har vi at
+\alg{f'&=\left(\dfrac{u}{v} \right)'\\
+	&= \left(u v^{-1}\right)' \\
+	&= u' v^{-1} - u v^{-2}v' \\
+	&= \frac{u'v - u v'}{v^2}
+}
+}
+
+\fork{}{
+\textbf{Likning (\ref{derxr})}\\
+Vi starter med å merke oss at
+\alg{(\ln x^r)'&=(r \ln x)' \\
+	&= \frac{r}{x}
+}  
+Vi setter $ u=x^r $. Av kjerneregelen har vi da at
+\alg{
+\frac{r}{x}&=	(\ln u)'\\
+	&=\frac{1}{u} u' \\
+	&=\frac{1}{x^r}(x^r)' 
+}
+Altså er
+\[ 	(x^r)'= \frac{r}{x}x^r = r x^{r-1} \]
+
+\textbf{Likning (\ref{derlnx})}\\	
+Vi har at $ {x=e^{\ln x}} $. Vi setter $ {u=\ln x} $ og $ g(u)=e^u $. Da har vi at $ x=g(u) $, og at
+\alg{
+g'(u) &= e^u=e^{\ln x}=x \br
+u'(x) &= \left(\ln x\right)'
+}
+Av kjerneregelen har vi at
+\alg{
+\left(x\right)' &= g'(u)u'(x)\\
+&= x \left(\ln x\right)'
+}
+Da\footnote{Se oppgave ??.}  ${\left(x\right)'=1} $, har vi at
+\[ 1 = x\left(\ln x \right)' \]
+Altså er
+\[ \left(\ln x\right)'= \frac{1}{x} \]
+
+Vi skal her anvende de to ligningene (se vedlegg??)
+\alg{&\lim\limits_{x\to0} \frac{\sin x}{x}=1 \tag{I} \label{Isinxx}\br
+	&\lim\limits_{x\to0} \frac{\cos x-1}{x}=0\tag{II} \label{Icosxx}	
+}
+Av \eqref{derdefaeq} har vi at
+\[ (\cos x)'= \lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h} \]
+Ved (\ref{cu-v}) kan vi skrive
+\alg{
+	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos (h)-\sin x\sin(h)-\cos x}{h} \\
+	&=\lim\limits_{h\to 0}\frac{( \cos(h)-1)\cos x-\sin x\sin(h)}{h} \\
+	&= \lim\limits_{h\to 0}\frac{\cos(h)-1)}{h}\cos x- \lim\limits_{h\to 0} \frac{\sin(h)}{h}\sin x \\
+	&= 0-1\cdot\sin x \\
+	&= -\sin x
+}
+Mellom tredje og fjerde linje i likningen over brukte vi (\ref{Isinxx}) og (\ref{Icosxx}). \vsk
+
+{\boldmath $ (\sin x)'=\cos x $}\bs
+Av (\ref{cossomsin}), (\ref{sinsomcos}) og (\ref{-cosxcosx}) har vi at
+\alg{
+	\sin x &= \cos\left(x-\frac{\pi}{2}\right) \br
+	\sin\left(\frac{\pi}{2}-x\right)&= \cos x
+}
+Bruker vi det faktum at $ {(\cos x)'=-\sin x} $, i kombinasjon med kjerneregelen, får vi at
+\algv{
+	(\sin x)' &= \left(\cos\left(x-\frac{\pi}{2}\right)\right)' \\
+	&= -\sin\left(x-\frac{\pi}{2}\right)\cdot 1 \\
+	&= \sin\left(\frac{\pi}{2}-x\right) \\
+	&= \cos x
+}
+
+{\boldmath $ (\tan x)'=\frac{1}{\cos^2 x} $}\bs
+Av kjerneregelen og \eqref{derdivreg} har vi at
+\alg{
+	(\tan x)' &= \left(\frac{\sin x}{\cos x}\right)' \\
+	&= \cos x \cos^{-1}x +\sin x\left(\cos^{-1}\right)'\\
+	&= 1 +\sin x(-\cos^{-2}x)(-\sin x) \\
+	&= 1+\tan^2 x\\
+	&= \frac{\cos^2 x+\sin^2 x}{\cos^2 x}  \\
+	&= \frac{1}{\cos^2 x}
+}
+}
+
+
+
 \end{document}

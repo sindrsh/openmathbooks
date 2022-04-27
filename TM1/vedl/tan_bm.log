@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAR 2022 08:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 APR 2022 06:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,296 +1182,27 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip134
 )
-(../tm_bm.tex) (./tan_bm.aux)
-\openout1 = `tan_bm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
+! LaTeX Error: File `../tm_bm.tex' not found.
 
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-*geometry* detected driver: pdftex
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
-Package geometry Warning: The marginal notes overrun the paper.
-     Add 17.78496pt and more to the right margin.
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.3 \input{../tm_bm}
+                    ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(65.44142pt, 341.43307pt, 51.21504pt)
-* v-part:(T,H,B)=(51.21504pt, 574.74559pt, 56.9055pt)
-* \paperwidth=458.08954pt
-* \paperheight=682.86613pt
-* \textwidth=341.43307pt
-* \textheight=574.74559pt
-* \oddsidemargin=-6.82857pt
-* \evensidemargin=-6.82857pt
-* \topmargin=-58.05495pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen327
-\scratchbox=\box139
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen328
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks49
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 5.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
-)
-Package caption Info: wrapfig package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box140
-Package hyperref Info: Link coloring OFF on input line 5.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count364
-)
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
-
-(./tan_bm.out) (./tan_bm.out)
-\@outlinefile=\write7
-\openout7 = `tan_bm.out'.
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-0.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-5.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-5.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-15.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-15.
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 15.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 15.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-5.
-
-(/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-)
-LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-15.
-
-(/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
-File: uesvect.fd 
-)
-<../fig/tang0a.pdf, id=9, 101.47913pt x 101.47913pt>
-File: ../fig/tang0a.pdf Graphic file (type pdf)
-<use ../fig/tang0a.pdf>
-Package pdftex.def Info: ../fig/tang0a.pdf  used on input line 18.
-(pdftex.def)             Requested size: 101.47887pt x 101.47887pt.
-<../fig/tang0b.pdf, id=10, 142.01054pt x 113.56427pt>
-File: ../fig/tang0b.pdf Graphic file (type pdf)
-<use ../fig/tang0b.pdf>
-Package pdftex.def Info: ../fig/tang0b.pdf  used on input line 19.
-(pdftex.def)             Requested size: 142.0102pt x 113.56398pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 20.
-See the caption package documentation for explanation.
-
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/tang0a.pdf> <../fig
-/tang0b.pdf>]
-<../fig/tang1b.pdf, id=45, 182.93344pt x 180.96608pt>
-File: ../fig/tang1b.pdf Graphic file (type pdf)
-<use ../fig/tang1b.pdf>
-Package pdftex.def Info: ../fig/tang1b.pdf  used on input line 51.
-(pdftex.def)             Requested size: 182.93298pt x 180.96562pt.
-<../fig/tang1c.pdf, id=46, 172.30373pt x 153.20236pt>
-File: ../fig/tang1c.pdf Graphic file (type pdf)
-<use ../fig/tang1c.pdf>
-Package pdftex.def Info: ../fig/tang1c.pdf  used on input line 52.
-(pdftex.def)             Requested size: 172.3033pt x 153.20198pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 53.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (21.06429pt too wide) in paragraph at lines 51--53
- [][][] 
- []
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 55.
-[2 <../fig/tang1b.pdf> <../fig/tang1c.pdf>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 90.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 90.
-
-
-Package hyperref Warning: Suppressing empty link on input line 92.
-
-
-Package hyperref Warning: Suppressing empty link on input line 92.
-
-[3]
-
-Package hyperref Warning: Suppressing empty link on input line 137.
-
-[4]
-Overfull \hbox (0.15736pt too wide) in paragraph at lines 154--156
-\T1/lmr/m/n/10.95 Siden $[]$ og $[]$, er grafen til $\OML/lmm/m/it/10.95 g$ \T1
-/lmr/m/n/10.95 tan-ger-ingslinja til sirke- 
- []
-
-
-Overfull \hbox (0.71046pt too wide) in paragraph at lines 154--156
-\T1/lmr/m/n/10.95 len med sen-trum $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 nå
-r $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 går mot 0. Altså er $\OML/lmm/m/it/
-10.95 g$ \T1/lmr/m/n/10.95 tan-ger-ingslinja til sirke- 
- []
-
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
- (./tan_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
-Package rerunfilecheck Info: File `tan_bm.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 30786 strings out of 481239
- 605168 string characters out of 5920378
- 922955 words of memory out of 5000000
- 45353 multiletter control sequences out of 15000+600000
- 614845 words of font info for 99 fonts, out of 8000000 for 9000
+ 29792 strings out of 481239
+ 589056 string characters out of 5920378
+ 906283 words of memory out of 5000000
+ 44504 multiletter control sequences out of 15000+600000
+ 533407 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,15n,104p,875b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
-
-Output written on tan_bm.pdf (5 pages, 258025 bytes).
-PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 70i,0n,104p,875b,138s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
