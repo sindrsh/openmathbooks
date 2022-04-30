@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  30 APR 2022 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  30 APR 2022 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**vek_bm.tex
-(./vek_bm.tex
+**alg_opg_fas.tex
+(./alg_opg_fas.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -55,8 +55,8 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)) (../../preamb.tex
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)) (../bm.tex)
+(../../preamb.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
@@ -1019,11 +1019,11 @@ nous mode
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ))
-\vek_bm@idxfile=\write6
-\openout6 = `vek_bm.idx'.
+\alg_opg_fas@idxfile=\write6
+\openout6 = `alg_opg_fas.idx'.
 
 
-Writing index file vek_bm.idx
+Writing index file alg_opg_fas.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1182,26 +1182,26 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip134
 )
-(../bm.tex) (./vek_bm.aux)
-\openout1 = `vek_bm.aux'.
+(./alg_opg_fas.aux)
+\openout1 = `alg_opg_fas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 6.
 
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1266,7 +1266,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 5.
+LaTeX Info: Redefining \selectfont on input line 6.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1280,7 +1280,7 @@ Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box140
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1293,510 +1293,121 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
 
-(./vek_bm.out) (./vek_bm.out)
+(./alg_opg_fas.out) (./alg_opg_fas.out)
 \@outlinefile=\write7
-\openout7 = `vek_bm.out'.
+\openout7 = `alg_opg_fas.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
+
+
+LaTeX Warning: Reference `algopgligukonst' on page 1 undefined on input line 9.
+
+
+
+LaTeX Warning: Reference `algogligukonst2' on page 1 undefined on input line 12
 .
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+9.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+9.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-7.
+19.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-7.
+19.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 7.
+(Font)              <10.95> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 7.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 7.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+(Font)              <6> on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 7
-.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-7.
+19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-<../fig/vekdefa.pdf, id=51, 117.87036pt x 157.02666pt>
-File: ../fig/vekdefa.pdf Graphic file (type pdf)
-<use ../fig/vekdefa.pdf>
-Package pdftex.def Info: ../fig/vekdefa.pdf  used on input line 10.
-(pdftex.def)             Requested size: 117.87006pt x 157.02626pt.
-<../fig/vekdefb.pdf, id=52, 157.68913pt x 167.72662pt>
-File: ../fig/vekdefb.pdf Graphic file (type pdf)
-<use ../fig/vekdefb.pdf>
-Package pdftex.def Info: ../fig/vekdefb.pdf  used on input line 11.
-(pdftex.def)             Requested size: 157.68874pt x 167.7262pt.
 
-Overfull \hbox (18.60075pt too wide) in paragraph at lines 13--14
-\T1/lmr/m/n/10.95 Når en vek-tor har start-punkt $\OT1/lmr/m/n/10.95 (0\OML/lmm
-/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$\T1/lmr/m/n/10.95 , sier vi at den er vist 
-i []grunn-stillingen[]. 
- []
+LaTeX Warning: Reference `algopga1a2' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Reference `algopg' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Reference `algopgostehull' on page 1 undefined on input line 26.
+
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/vekdefa.pdf> <../fi
-g/vekdefb.pdf>]
-<../fig/vek1.pdf, id=89, 318.10846pt x 315.68942pt>
-File: ../fig/vek1.pdf Graphic file (type pdf)
-<use ../fig/vek1.pdf>
-Package pdftex.def Info: ../fig/vek1.pdf  used on input line 21.
-(pdftex.def)             Requested size: 318.10768pt x 315.68864pt.
-
-Overfull \hbox (6.83446pt too wide) in paragraph at lines 21--21
- [] 
- []
-
-[2 <../fig/vek1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[]\T1/lmr/m/n/10.95 En vek-tor $[]$ med start-punkt $[]$ og en-depunkt $\OT1/lm
-r/m/n/10.95 (\OML/lmm/m/it/10.95 x[]; y[]\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.9
-5 er
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-5.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]\T1/lmr/m/n/10.95 Gitt vek-torene $[]$ og $[]$, punk-tet $[]$
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.67 }
-      
-<../fig/uplusv.pdf, id=113, 74.85968pt x 69.50969pt>
-File: ../fig/uplusv.pdf Graphic file (type pdf)
-<use ../fig/uplusv.pdf>
-Package pdftex.def Info: ../fig/uplusv.pdf  used on input line 67.
-(pdftex.def)             Requested size: 74.85948pt x 69.5095pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.67 }
-      
-<../fig/uminusv.pdf, id=114, 91.55203pt x 47.58778pt>
-File: ../fig/uminusv.pdf Graphic file (type pdf)
-<use ../fig/uminusv.pdf>
-Package pdftex.def Info: ../fig/uminusv.pdf  used on input line 67.
-(pdftex.def)             Requested size: 91.55179pt x 47.58765pt.
-<../fig/vekvink.pdf, id=115, 128.54022pt x 64.52104pt>
-File: ../fig/vekvink.pdf Graphic file (type pdf)
-<use ../fig/vekvink.pdf>
-Package pdftex.def Info: ../fig/vekvink.pdf  used on input line 70.
-(pdftex.def)             Requested size: 128.53989pt x 64.52087pt.
- [4
-
- <../fig/uplusv.pdf> <../fig/uminusv.pdf> <../fig/vekvink.pdf>]pdfTeX warning (
-ext4): destination with the same identifier (name{subfigure.1.1}) has been alre
-ady used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.76 \subfloat
-              []{\includegraphics{\figp{veklena}}}\qquad\quad
-<../fig/veklena.pdf, id=157, 131.05965pt x 107.3912pt>
-File: ../fig/veklena.pdf Graphic file (type pdf)
-<use ../fig/veklena.pdf>
-Package pdftex.def Info: ../fig/veklena.pdf  used on input line 76.
-(pdftex.def)             Requested size: 131.05931pt x 107.39093pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.77 \subfloat
-              []{\includegraphics{\figp{veklenb}}}
-<../fig/veklenb.pdf, id=158, 131.27042pt x 84.18451pt>
-File: ../fig/veklenb.pdf Graphic file (type pdf)
-<use ../fig/veklenb.pdf>
-Package pdftex.def Info: ../fig/veklenb.pdf  used on input line 77.
-(pdftex.def)             Requested size: 131.27008pt x 84.18428pt.
-
-Overfull \hbox (7.83983pt too wide) in paragraph at lines 79--80
-\T1/lmr/m/n/10.95 den til hy-potenusen og $\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/1
-0.95 x[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 j\OML/
-lmm/m/it/10.95 y[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 er de re-spek-tive l
-eng-dene til katetene. 
- []
-
-[5
-
- <../fig/veklena.pdf> <../fig/veklenb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]\T1/lmr/m/n/10.95 For to vek-torer $[]$ og $[]$, er \T1/lmr/m/it/10.95 skalar
-pro-duk-tet
- []
-
-[6
-
-] [7]
-
-LaTeX Warning: Reference `veklen' on page 8 undefined on input line 144.
-
-<../fig/skaldef.pdf, id=208, 171.21968pt x 85.86078pt>
-File: ../fig/skaldef.pdf Graphic file (type pdf)
-<use ../fig/skaldef.pdf>
-Package pdftex.def Info: ../fig/skaldef.pdf  used on input line 155.
-(pdftex.def)             Requested size: 171.21925pt x 85.86057pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 156.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 156.
-[8
-
- <../fig/skaldef.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
-[]\T1/lmr/m/n/10.95 Det er mange måter å ut-trykke at $[]$ på. Blant an-net kan
- vi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
-[]\T1/lmr/m/n/10.95 Sjekk om vek-torene $[]$, $[]$ og $[]$ er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
-\T1/lmr/m/n/10.95 Altså er $[]$ og $[]$ \T1/lmr/m/sl/10.95 ikke \T1/lmr/m/n/10.
-95 or-tog-o-nale. Da $[]$, kan heller ikke $[]$ og $[]$
- []
-
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-[]$[]$\T1/lmr/m/n/10.95 . For å ret-tfer-dig-gjøre betingelsen som går
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 begge veier i [], må vi spørre: Kan vi få $[]$ om vinke-len
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-[]\T1/lmr/m/n/10.95 På in-ter-val-let $\OT1/lmr/m/n/10.95 [0[]\OML/lmm/m/it/10.
-95 ; \OT1/lmr/m/n/10.95 180[]]$ \T1/lmr/m/n/10.95 er det bare vinkelver-dien $\
-OT1/lmr/m/n/10.95 90[]$ \T1/lmr/m/n/10.95 som re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 sul-terer i cos-i-nusverdi 0. Skal skalarpro-duk-tet bli 0 fo
-r an-dre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 vin-kler, må der-for leng-den av $[]$ eller $[]$ være 0. Den 
-en-este vek-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 toren med denne leng-den er \T1/lmr/m/it/10.95 nul-lvek-toren
- $[]$\T1/lmr/m/n/10.95 , som rett og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 slett ikke har noen ret-ning[][][]. Det er likevel van-lig å 
-de-finere at
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
-[]\T1/lmr/m/n/10.95 Hvis vinke-len mel-lom to vek-torer er $\OT1/lmr/m/n/10.95 
-0[]$ \T1/lmr/m/n/10.95 eller $\OT1/lmr/m/n/10.95 180[]$\T1/lmr/m/n/10.95 , er d
-e par-al-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.216 \subfloat
-               []{\includegraphics{\figp{vekpara}}}\qquad
-<../fig/vekpara.pdf, id=251, 113.98586pt x 93.73018pt>
-File: ../fig/vekpara.pdf Graphic file (type pdf)
-<use ../fig/vekpara.pdf>
-Package pdftex.def Info: ../fig/vekpara.pdf  used on input line 216.
-(pdftex.def)             Requested size: 113.98557pt x 93.72995pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.217 \subfloat
-               []{\includegraphics{\figp{vekparb}}}
-<../fig/vekparb.pdf, id=252, 143.05446pt x 116.52533pt>
-File: ../fig/vekparb.pdf Graphic file (type pdf)
-<use ../fig/vekparb.pdf>
-Package pdftex.def Info: ../fig/vekparb.pdf  used on input line 217.
-(pdftex.def)             Requested size: 143.0541pt x 116.52504pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]\T1/lmr/m/n/10.95 Når $[]$, sier vi at $[]$ er et \T1/lmr/m/it/10.95 mul-ti-p
-lum \T1/lmr/m/n/10.95 av $[]$ (og omvendt). Vi
- []
-
-[11
-
- <../fig/vekpara.pdf> <../fig/vekparb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
-[]\T1/lmr/m/n/10.95 Undersøk hvorvidt $[]$ og $[]$ er par-al-lelle med
- []
-
-[12]
-<../fig/vek0.pdf, id=293, 199.1741pt x 142.26149pt>
-File: ../fig/vek0.pdf Graphic file (type pdf)
-<use ../fig/vek0.pdf>
-Package pdftex.def Info: ../fig/vek0.pdf  used on input line 269.
-(pdftex.def)             Requested size: 199.17361pt x 142.26112pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
-[]\T1/lmr/m/n/10.95 Visuelt sett er den største forskjellen mel-lom en fun-skjo
-n $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/1
-0.95 )$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
-\T1/lmr/m/n/10.95 og en vek-tor-funksjon $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/1
-0.95 t\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 at grafen til $\OML/lmm/m/it/10.9
-5 f$ \T1/lmr/m/n/10.95 bare kan skjære et
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
-\T1/lmr/m/n/10.95 bestemt punkt én gang, mens grafen til $[]$ kan skjære et bes
-temt
- []
-
-<../fig/linje.pdf, id=294, 170.7178pt x 95.09528pt>
-File: ../fig/linje.pdf Graphic file (type pdf)
-<use ../fig/linje.pdf>
-Package pdftex.def Info: ../fig/linje.pdf  used on input line 276.
-(pdftex.def)             Requested size: 170.71738pt x 95.09503pt.
-[13
-
- <../fig/vek0.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
-[]\T1/lmr/m/n/10.95 Ei linje $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/l
-mr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som går gjen-nom punk-tet $[]$ og har ret-
- []
-
-[14 <../fig/linje.pdf>]
-<../fig/sirklig1.pdf, id=324, 57.40446pt x 64.5612pt>
-File: ../fig/sirklig1.pdf Graphic file (type pdf)
-<use ../fig/sirklig1.pdf>
-Package pdftex.def Info: ../fig/sirklig1.pdf  used on input line 288.
-(pdftex.def)             Requested size: 57.4043pt x 64.56104pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
-[]\T1/lmr/m/n/10.95 Gitt en sirkel ra-dius $\OML/lmm/m/it/10.95 r$ \T1/lmr/m/n/
-10.95 og sen-trum $[]$. Hvis punk-tet
- []
-
-[15
-
- <../fig/sirklig1.pdf>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 328.
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]\T1/lmr/m/n/10.95 Determinanten $[]\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/it/10.95 
-; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 av to vek-torer $[]$ og $[]$ er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
-[]\T1/lmr/m/n/10.95 Arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 til et pa
-r-al-lel-logram formet av to vek-torer $[]$ og $[]$ er
- []
-
-<../fig/utspprl.pdf, id=339, 114.3171pt x 85.86078pt>
-File: ../fig/utspprl.pdf Graphic file (type pdf)
-<use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 353.
-(pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
-<../fig/utsptrk.pdf, id=340, 86.2422pt x 57.40446pt>
-File: ../fig/utsptrk.pdf Graphic file (type pdf)
-<use ../fig/utsptrk.pdf>
-Package pdftex.def Info: ../fig/utsptrk.pdf  used on input line 353.
-(pdftex.def)             Requested size: 86.24197pt x 57.4043pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
-[]\T1/lmr/m/n/10.95 Avstanden $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-lom
- et punkt $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 og en linje gitt av punk-te
-t $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og
- []
-
-<../fig/plin.pdf, id=341, 142.26149pt x 124.04343pt>
-File: ../fig/plin.pdf Graphic file (type pdf)
-<use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 360.
-(pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
-[16
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
-[]\T1/lmr/m/n/10.95 La en linje $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 i rom
--met være gitt av et punkt $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og en ret-
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
-\T1/lmr/m/n/10.95 ningsvek-tor $[]$. I til-legg lig-ger et punkt \T1/lmr/m/it/1
-0.95 B \T1/lmr/m/n/10.95 uten-for linja, som
- []
-
-File: ../fig/plin.pdf Graphic file (type pdf)
-<use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 370.
-(pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
-\T1/lmr/m/n/10.95 Den ko-rteste av-s-tanden fra \T1/lmr/m/it/10.95 B \T1/lmr/m/
-n/10.95 til linja er høy-den \T1/lmr/m/it/10.95 h \T1/lmr/m/n/10.95 i trekan-te
-n
- []
-
-[17 <../fig/utspprl.pdf> <../fig/utsptrk.pdf> <../fig/plin.pdf>] [18]pdfTeX war
-ning (ext4): destination with the same identifier (name{subfigure.1.1}) has bee
-n already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.400 }
-       
-File: ../fig/utspprl.pdf Graphic file (type pdf)
-<use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 400.
-(pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.400 }
-       
-<../fig/utspprlforkl.pdf, id=388, 138.648pt x 107.79271pt>
-File: ../fig/utspprlforkl.pdf Graphic file (type pdf)
-<use ../fig/utspprlforkl.pdf>
-Package pdftex.def Info: ../fig/utspprlforkl.pdf  used on input line 400.
-(pdftex.def)             Requested size: 138.64764pt x 107.79243pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-\T1/lmr/m/n/10.95 Gitt to vek-torer $[]$ og $[]$, hvor $[]$, som
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-\T1/lmr/m/n/10.95 vist i figur \T1/lmr/m/sl/10.95 (a)\T1/lmr/m/n/10.95 . Plasse
-rer vi vek-torene i grunnstill-in-gen er punk-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-\T1/lmr/m/n/10.95 I fig-urene har vi an-tatt at (den min-ste) vinke-len mel-lom
- $[]$ og
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen er min-dre enn vinke-len mel-lom
- $[]$ og $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen. I omvendt
- []
-
-
-LaTeX Warning: Reference `det2arbevis' on page 19 undefined on input line 400.
-
-[19 <../fig/utspprlforkl.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
- (./vek_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
-Package rerunfilecheck Info: File `vek_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 1AEF817C69F67C5EC5F5953631970D17;650.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./alg_opg_fas.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `alg_opg_fas.out' has not changed.
+(rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31123 strings out of 481239
- 611108 string characters out of 5920378
- 924780 words of memory out of 5000000
- 45600 multiletter control sequences out of 15000+600000
- 618210 words of font info for 101 fonts, out of 8000000 for 9000
+ 30660 strings out of 481239
+ 603063 string characters out of 5920378
+ 914167 words of memory out of 5000000
+ 45271 multiletter control sequences out of 15000+600000
+ 568903 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,24n,104p,875b,983s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
-e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbsy1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/esvect/vect10.pfb>
-Output written on vek_bm.pdf (19 pages, 370157 bytes).
+ 70i,5n,104p,880b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy10.pfb>
+Output written on alg_opg_fas.pdf (1 page, 101887 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

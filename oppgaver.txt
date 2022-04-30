@@ -1,6 +1,9 @@
 
 ---TM1---
 
+Obs!
+- fisk L'Hopital forklaring
+
 alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
 ved å bruke potensregelen for ln
@@ -10,8 +13,11 @@ geo
 - vis at cos x + cos y = cos x cos y - sin x sin y
 
 der
+- vis at (a^x)' = a^x*ln x (?)
 - finn uttrykket for tangeringslinja til f i punktet a
 - beregne radien i en veisving
+- bruke L'hop til å finne grenser når x-> infty
+- vis at hvis f'(x) er definert, så er f(x) kontinuerlig.
 
 grens
 - vis at lim0 sin x/x = 1 og lim 0 (cos x - 1)/x = 0  
@@ -24,10 +30,13 @@ funk
 ved å undersøke polynomet med polynomdivisjon.
 
 vektor
+- skriv vektorfunksjoner som parameteriseringer, og omvendt
 - finne parameterisering ut ifra funksjonsuttrykk til rett linje
 - finne funksjonsuttrykk ut ifra parameterisering
 - finn funksjonen som viser avstanden mellom linja fra a til b
 og (x,f(x)) for x in [a, b]
+- skriv sirkellikning på alternativ måte
+- forklar betingelser som må være oppfylt for at A=(x, y) skal ligge utenfor/innenfor sirkelen.
 
 
 ---TM2---

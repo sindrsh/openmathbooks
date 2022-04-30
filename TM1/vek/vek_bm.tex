@@ -1,6 +1,6 @@
 \input{../../doc}
 \input{../../preamb}
-\input{../tm_bm}
+\input{../bm}
 
 \begin{document}	
 \section{Introduksjon}\index{vektor}
@@ -10,7 +10,7 @@ En todimensjonal vektor angir en forflytning i et koordinatsystem med en $ x $-a
 \subfloat[]{\includegraphics{\figp{vekdefa}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekdefb}}}
 \end{figure}
-I figur \textsl{(a)} er vektoren $ \vec{u} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (3,1) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \textit{grunnstill-ingen}. I figur \textsl{(b)} er $ \vec{u} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{u} $ viser til er å vandre 2 mot høgre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ \vec{u}=[2, 3] $, som kalles $ \vec{u} $ skrevet på \textit{komponentform}. 
+I figur \textsl{(a)} er vektoren $ \vec{v} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (3,1) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \outl{grunn-stillingen}. I figur \textsl{(b)} er $ \vec{v} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{v} $ viser til er å vandre 2 mot høgre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ \vec{u}=[2, 3] $, som kalles $ \vec{u} $ skrevet på \outl{komponentform}. 
 \newpage
 \eks[1]{
 \alg{
@@ -81,7 +81,7 @@ Av enhver vektor kan vi danne en rettvinklet trekant hvor $ |\vec{v}| $ er lengd
 \reg[Lengden til en vektor ]{
 Gitt en vektor $ \vec{v}=[x_1, y_1] $. Lengden $ |\vec{v}| $ er da 
 \begin{equation}
-	|\vec{v}|=\sqrt{x_1^2+y_1^2} \label{veklen}
+	|\vec{v}|=\sqrt{x_1^2+y_1^2} \label{vekleneq}
 \end{equation}
 }
 \eks[1]{
@@ -133,6 +133,9 @@ Gitt vektorene $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $ og $ \vec{c}=[1,-9] $. Regn
 		&= \vec{a}^{\,2} + 2 \vec{a}\cdot \vec{b} + \vec{b}^{\,2} \\
 		&= \left(\vec{a}+ \vec{b}\right)^2
 	}
+}
+\info{Skalar??}{
+
 }
 \section{Skalarproduktet II}
 Gitt vektoren $ \vec{u}-\vec{v} $, hvor 
@@ -205,7 +208,7 @@ I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec
 På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ som resulterer i cosinusverdi 0. Skal skalarproduktet bli 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med denne lengden er \textit{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man hevde at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textit{alle} vektorer.
 }
 \section{Parallelle vektorer}
-Hvis vinkelen mellom to vektorer er $ 0^\circ $ eller $ 180^\circ $, er de parallelle.
+\regdef[Parallelle vektorer]{Hvis vinkelen mellom to vektorer er $ 0^\circ $ eller $ 180^\circ $, er de parallelle.}
 
 
 \begin{figure}
@@ -248,24 +251,69 @@ Vi har at
 }
 Dermed er $ \vec{a}\parallel \vec{c} $. Da $ \frac{20}{10}\neq \frac{-45}{15} $, er $ \vec{b} $ og $ \vec{c} $ \textsl{ikke} parallelle.
 }
-\section{Parameterisering av ei linje}
+\section{Vektorfunksjoner; parameterisering}
+\regdef{
+Gitt to funksjoner $ f(t) $ og $ g(t) $. En vektor $ \vec{v} $ på formen
+\[ \vec{v}(t)=[f(t), g(t)] \]
+er da en \outl{vektorfunksjon}.\vsk
+
+$ \vec{v} $ kan skrives på \outl{parameterisert form} som
+\begin{equation}\vec{v}(t): \left\lbrace{
+		\begin{array}{lll}
+			x= f(t)   \\
+			y= g(t)   
+		\end{array}
+	}\right. 
+\end{equation}
+\fig{vek0}
+}
+\info{\note}{
+Visuelt sett er den største forskjellen mellom en funskjon $ f(x) $ og en vektorfunksjon $ \vec{v}(t) $ at grafen til $ f $ bare kan skjære et bestemt punkt én gang, mens grafen til $ \vec{v} $ kan skjære et bestemt punkt uendelig mange ganger.
+}
+
+\subsection{Vektorfunksjonen til ei linje}
 Gitt ei linje $ l $, som vist i figuren under
 \fig{linje}
 Hvis en vektor $ \vec{r} $ er parallell med $ l $, kalles den en \textit{retningsvektor}\index{retningsvektor!for linje}  for linja. Si at $ {\vec{r}=[a, b]} $ er en retningsvektor for $ l $, og at $ A=(x_0, y_0) $ er et punkt på $ l $. Om vi starter i $ A $ og vandrer parallellt med $ \vec{r} $, kan vi være sikre på at vi fortsatt befinner oss på linja. Dette må bety at vi for en variabel $ t $ kan nå et vilkårlig punkt $ {B=(x, y)} $ på linja ved følgende utregning:
 \[B= A+t\vec{r} \]
 På koordinatform kan vi skrive dette som\footnote{Se \eqref{Aplusu}.}
 \[(x, y)= (x_0 +at, y_0+bt) \]
-Uttrykket over kalles \textit{parameteriseringen} til linja, uttrykt ved $ t $. Parameteriseringen skrives ofte slik:\regv
-\reg[Linje i rommet]{
-	Ei linje $ l $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ kan parameteriseres ved
-	\begin{equation}l: \left\lbrace{
-			\begin{array}{lll}
-				x= x_0 + at   \\
-				y= y_0 + bt   
-			\end{array}
-		}\right. 
-	\end{equation}
-	hvor $ t\in\mathbb{R} $.
+Altså kan linja skrives som en vektorfunksjon:\regv
+\reg[Linje som vektorfunksjon]{
+	Ei linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ er gitt som
+	\[ \vec{l}=[x_0 + at, y_0+ bt] \]
+}
+\section{Sirkellikningen}
+Gitt en sirkel med sentrum $ S=(x_0, y_0) $ og et punkt $ A=(x, y) $, som ligger på buen til sirkelen. 
+\fig{sirklig1}
+Da er
+\[ \vv{SA}=[x-x_0, y-y_0] \]
+Av \eqref{vekleneq} er da
+\[ \left|\vv{SA}\right|^2=(x-x_0)^2+(y-y_0)^2 \]
+Hvis vi lar $ r $ være radien til sirkelen, er $ \left|\vv{SA}\right|=r $, og dermed kan vi uttrykke $ r $ ved koordinatene til $ S $ og $ A $.\regv
+\reg[Sirkelligningen]{
+Gitt en sirkel radius $ r $ og sentrum $ {S=(x_0, y_0)} $. Hvis punktet $ A=(x, y) $ ligger på buen til sirkelen, er
+\nn{
+(x-x_0)^2+(y-y_0)^2=r^2
+}
+}
+\eks[]{
+Finn sentrum og radien til sirkelen gitt av likningen
+\begin{equation}\label{sirkligeks1}
+	x^2 + y^2 - 4x + 10y - 20=0
+\end{equation} \vs
+\sv
+Vi starter med å lage fullstendige kvadrat:
+\alg{
+x^2-4x &= (x-2)^2-2^2 \vn
+y^2+10y &= (y+5)^2-5^2 
+}
+Altså kan vi skrive \eqref{sirkligeks1} som
+\alg{
+(x-2)^2+(y+5)^2-2^2-5^2-20&=0 \\
+(x-2)^2+(y+5)^2&=7^2
+}
+Altså har sirkelen sentrum $ (2, -5) $ og radius 7.
 }
 
 \section{Determinanter} \index{determinant}

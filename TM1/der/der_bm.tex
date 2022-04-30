@@ -65,7 +65,9 @@ Altså er $ f'(a)=3a^2 $.
 }
 \info{Alternativ definisjon}{
 En ekvivalent utgave av \eqref{derdefaeq} er
-\[ \lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a} \]
+\begin{equation}\label{derdefalt}
+f'(a)=	\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}
+\end{equation}
 }
 \subsubsection{Linearisering av en funksjon}
 Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være (se figur ???)
@@ -200,12 +202,70 @@ Siden vi for enhver kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ {f=uv} $ da er
 \[ f'=u'v+uv' \]	
 }
+\eks[1]{
+Finn den deriverte av funksjonen $ f(x)=x^2e^x $.
+
+\sv
+Vi setter $ {u(x)=x^2} $ og $ v(x)=e^x $, da er
+\alg{
+f &= uv
+&u'&=2x
+&v'&=e^x
+}
+Altså er
+\algv{
+f' &= 2xe^x +x^2 e^x \\
+&=xe^x(2+x)
+}
+}
+\vsk
+
 \reg[Divisjonsregelen ved derivasjon]{
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ f=\dfrac{u}{v} $. Da er
 \begin{equation}\label{derdivreg}
 	f'=\frac{u'v-uv'}{v^2} 
 \end{equation}
 }
+\eks{
+Finn den deriverte av funksjonen $ f(x)=\frac{\cos x}{x^4} $.
+
+\sv
+Vi setter $ u(x)=\cos x $ og $ v(x)=x $, da er
+\alg{
+f&=uv & u'&=-\sin x & v' &= 4x^3
+}
+Altså er
+\alg{
+f' &= \frac{-\sin x\cdot x^4-\cos x\cdot 4x^3}{x^8} \br
+&= -\frac{x\sin x+4\cos x}{x^5}
+}
+\notesm{Vi kan også finne $ f $' ved å sette $ {u(x)=\cos x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
+}
+
+\reg[L'Hopitals regel I \label{Lhop}]{
+Gitt to deriverbare funksjoner $ f(x) $ og $ g(x) $, hvor
+\[ f(a)=g(a)=0 \]
+eller hvor
+\[ \lim\limits_{x\to a}f=\lim\limits_{x\to a}g=\infty \] 
+Da er
+\nn{
+\lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}\label{Lhopeq}
+}
+}
+\eks[]{
+Finn grenseverdien til $ \lim\limits_{x\to 0} \dfrac{e^x-1}{x}$.
+
+\sv
+Vi setter $ {f(x)=e^x-1} $ og $ {g(x)=x} $, og merker oss at $ {f(0)=g(0)=0} $. Dermed har vi at
+\alg{
+\lim\limits_{x\to 0} \frac{e^x-1}{x}&=\lim\limits_{x\to0}\frac{f}{g}
+\br
+&=\lim\limits_{x\to0} \frac{f'}{g'}\br
+&=\lim\limits_{x\to0}\frac{e^x}{1} \\
+&= 1
+} 
+}
+
 \section{Forklaringer}
 \fork{L'hoptial}{
 Siden $ f(a)=g(a)=0 $, er
@@ -239,10 +299,11 @@ Multipliserer vi begge sider med $ \lim\limits_{x\to a} \frac{f^2}{g^2} $, får 
 }	
 }
 \fork{}{
-Av kjerneregelen har vi at
-\alg{f'&=\left(\dfrac{u}{v} \right)'\\
-	&= \left(u v^{-1}\right)' \\
-	&= u' v^{-1} - u v^{-2}v' \\
+Vi har at
+\[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
+Av produktregelen og kjerneregelen er da
+\alg{
+f'	&= u' v^{-1} - u v^{-2}v' \\
 	&= \frac{u'v - u v'}{v^2}
 }
 }
@@ -286,15 +347,15 @@ Av \eqref{derdefaeq} har vi at
 \[ (\cos x)'= \lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h} \]
 Ved (\ref{cu-v}) kan vi skrive
 \alg{
-	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos (h)-\sin x\sin(h)-\cos x}{h} \\
-	&=\lim\limits_{h\to 0}\frac{( \cos(h)-1)\cos x-\sin x\sin(h)}{h} \\
-	&= \lim\limits_{h\to 0}\frac{\cos(h)-1)}{h}\cos x- \lim\limits_{h\to 0} \frac{\sin(h)}{h}\sin x \\
+	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos h-\sin x\sin h-\cos x}{h} \\
+	&=\lim\limits_{h\to 0}\frac{\left[\cos h-1\right]\cos x-\sin x\sin h}{h} \\
+	&= \lim\limits_{h\to 0}\frac{\cos h-1}{h}\cos x- \lim\limits_{h\to 0} \frac{\sin h}{h}\sin x \\
 	&= 0-1\cdot\sin x \\
 	&= -\sin x
 }
 Mellom tredje og fjerde linje i likningen over brukte vi (\ref{Isinxx}) og (\ref{Icosxx}). \vsk
 
-{\boldmath $ (\sin x)'=\cos x $}\bs
+\textbf{Likning (\ref{dersinx})}\\
 Av (\ref{cossomsin}), (\ref{sinsomcos}) og (\ref{-cosxcosx}) har vi at
 \alg{
 	\sin x &= \cos\left(x-\frac{\pi}{2}\right) \br
@@ -308,7 +369,7 @@ Bruker vi det faktum at $ {(\cos x)'=-\sin x} $, i kombinasjon med kjerneregelen
 	&= \cos x
 }
 
-{\boldmath $ (\tan x)'=\frac{1}{\cos^2 x} $}\bs
+\textbf{Likning (\ref{dertanx})}\\
 Av kjerneregelen og \eqref{derdivreg} har vi at
 \alg{
 	(\tan x)' &= \left(\frac{\sin x}{\cos x}\right)' \\
