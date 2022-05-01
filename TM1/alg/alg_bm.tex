@@ -103,32 +103,32 @@ Hvis $ a_1+a_2=b $ og $ {a_1a_2=c}$, er
 	\begin{align}
 		&&\qquad\qquad\qquad	x&= \frac{-b\pm\sqrt{b^2-4ac}}{2a} &&\qquad(\textit{abc}\text{\,-\,formelen})
 	\end{align}
-	Hvis $ {x=x_1} $ og $ {x_2} $ er løsninger gitt av \textit{abc}-formelen, kan vi skrive
+	Hvis $ {x=x_1} $ og $ {x=x_2} $ er løsninger gitt av \textit{abc}-formelen, kan vi skrive
 	\begin{equation}\label{abcfakt}
-		ax^2+bx+x=0
+		ax^2+bx+c=a(x-x_1)(x-x_2)
 	\end{equation}
 }
 \eks[1]{
-	Løs likningen	
-	\[ 2x^2-7x+5=0 \]
-	\sv
-	Vi bruker \textit{abc}-formelen. Da er $ a=2 $, $ b=-7 $ og $ c=5 $. Nå får vi at
-	\alg{
-		x &=\frac{-(-7)\pm\sqrt{(-7)^2-4\cdot2\cdot5}}{2\cdot2} \br
-		&=\frac{7\pm\sqrt{49-40}}{4} \br
-		&=\frac{7\pm\sqrt{9}}{4}\br
-		&=\frac{7\pm3}{4}	
-	}
-	Enten er
-	\algv{
-		x&=\frac{7+3}{4} \br
-		&=\frac{5}{2}	
-	}	
-	Eller så er
-	\alg{
-		x&=\frac{7-3}{4} \br
-		&=1
-	}	 	
+	\abc{
+	\item Løs likningen	$ 2x^2-7x+5=0  $.
+	\item Faktoriser uttrykket på venstre side i oppgave a). 
+} \vs
+\sv \vs
+\abc{
+\item Vi bruker \textit{abc}-formelen. Da er $ a=2 $, $ b=-7 $ og $ c=5 $. Nå får vi at
+\alg{
+	x &=\frac{-(-7)\pm\sqrt{(-7)^2-4\cdot2\cdot5}}{2\cdot2} \br
+	&=\frac{7\pm\sqrt{49-40}}{4} \br
+	&=\frac{7\pm\sqrt{9}}{4}\br
+	&=\frac{7\pm3}{4}	
+}
+Enten er
+\[ x=\frac{7+3}{4}=\frac{5}{2} \]	
+Eller så er
+\[ x=\frac{7-3}{4}=1 \]	
+
+\item $ 2x^2-7x+5=2(x-1)\left(x-\frac{5}{2}\right) $ 	
+}
 }
 \eks[2]{
 	Løs likningen 
@@ -272,7 +272,7 @@ La $ A_k $ betegne et polynom $ A $ med grad $ k $. Gitt polynomet $ P_m $, da f
 \end{equation}
 }
 \spr{
-Hvis $ R_{n-1}=0 $, sier vi at $ P_m $ er delelig med $ Q_n $.
+Hvis $ R_{n-1}=0 $, sier vi at $ P_m $ er \outl{delelig} med $ Q_n $.
 } 
 \eks[1]{
 Undersøk om polynomene er delelige med $ {x-3} $.

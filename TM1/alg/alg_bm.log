@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  24 APR 2022 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 MAY 2022 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,7 +1462,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 331.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 331.
-<../fig/ekspfunk.pdf, id=137, 258.92734pt x 284.52296pt>
+<../fig/ekspfunk.pdf, id=141, 258.92734pt x 284.52296pt>
 File: ../fig/ekspfunk.pdf Graphic file (type pdf)
 <use ../fig/ekspfunk.pdf>
 Package pdftex.def Info: ../fig/ekspfunk.pdf  used on input line 334.
@@ -1542,10 +1542,10 @@ Package rerunfilecheck Info: File `alg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: CAB750E4BDA6721538736CA4A143178F;360.
  ) 
 Here is how much of TeX's memory you used:
- 30945 strings out of 481239
- 607226 string characters out of 5920378
- 921968 words of memory out of 5000000
- 45465 multiletter control sequences out of 15000+600000
+ 30951 strings out of 481239
+ 607264 string characters out of 5920378
+ 922017 words of memory out of 5000000
+ 45467 multiletter control sequences out of 15000+600000
  626007 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,14n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1569,10 +1569,10 @@ ts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on alg_bm.pdf (18 pages, 347887 bytes).
+Output written on alg_bm.pdf (18 pages, 347573 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
  74 words of extra memory for PDF output out of 10000 (max. 10000000)
 
