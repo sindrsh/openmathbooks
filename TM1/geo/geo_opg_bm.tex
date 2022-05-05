@@ -1,29 +1,72 @@
 \input{../../doc}
 \input{../../preamb}
-\input{../tm_bm}
+\input{../bm}
 
 \begin{document}
 \opgt
 
-\op{geoopgsinvmin180}
+\op{opggeosinvmin180}
 Gitt $ v\in [0^\circ, 90^\circ] $.
 \abc{
 \item Vis at $ \sin v = \sin(180^\circ-v) $.
 \item Vis at $ \cos v = -\cos(180^\circ-v) $
 }
 
-\op{geoopgarealsetn}
+\op{opggeoarsetn}
+Finn arealet til $ \triangle ABC $ når
+\abc{
+\item $ \angle A=60^\circ $, $ AB=5 $ og $ AC=7 $.
+\item $ \angle B=18^\circ $, $ AB=4 $ og $ BC=3 $. $ \left(\sin 18^\circ = \frac{\sqrt{5}-1}{4}\right) $
+\item $ \angle A= 75^\circ $, $ \angle B=60^\circ $, $ AC=\sqrt{6} $ og $ BC=\sqrt{3}+1 $
+}
+
+\op{opggeoarealsetn}
 \abch{
 \item Bevis arealsetningen.
 \item Bevis sinussetningen.
 }
 
+\op{opggeoviscos}
+\abc{
+\item Vis at $ \cos 45^\circ=\frac{\sqrt{2}}{2} $.
+\item Vis at $ \sin 30^\circ=\frac{1}{2} $.
+\item Vis at $ \cos 30^\circ=\frac{\sqrt{3}}{2} $.
+}
+\fig{opggeo1}z
+
+\op{opggeovistan}
+Vis at $ \tan v = \dfrac{\sin v}{\cos v}  $.
+
+\nes
+
+\op{opggeoabcr}
+Gitt en trekant med sidelengder $ a $, $ b $ og $ c $ og innskrevet sirkel med radius $ r $. Forklar hvorfor arealet til trekanten er gitt som 
+\[ \frac{1}{2}(a+b+c)r \]
+
+\op{opggeo2r}
+La $ a=BC $, $ b=AC $, $ c=AB $ og $ DM=r $.
+\abc{
+	\item Vis at $ r= \frac{ac}{a+b+c}$.
+	\item Vis at $ 2r=a+c-b $.
+	\item Bruk uttrykkene fra oppgave (a) og (b) til å finne $ b^2 $ uttrykt ved $ a $ og $ c $. Hva kalles denne formelen?
+}
+\fig{geoopg2r}
+
+\op{opggeotanchord}
+Den røde linja tangerer sirkelen. Vis at $ \angle BAC=\angle EBC $.
+\fig{geoopgtanchord}
+\newpage
 \ekspop{1}
 Bevis cosinussetningen.
 
 \ekspop{2}
-For $ v\in [0^\circ, 90^\circ] $, vis at
+Vis at
 \[ \cos(u+v)= \cos u\cos v-\sin u \sin v \]
+Det er tilstrekkelig å vise likheten for tilfellet hvor $ v,u \in [0^\circ, 90^\circ] $.
+
+\ekspop{2}
+Vis at $ \sin 18^\circ=\frac{1}{4}(\sqrt{5}-1) $. (Hint: Se figur.)
+\fig{opggeo2}
 \end{document}
 
 

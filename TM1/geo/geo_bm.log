@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAR 2022 08:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  5 MAY 2022 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,7 +1182,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip134
 )
-(../tm_bm.tex) (./geo_bm.aux)
+(../bm.tex) (./geo_bm.aux)
 \openout1 = `geo_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1368,8 +1368,7 @@ Package pdftex.def Info: ../fig/halfline.pdf  used on input line 13.
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 []\T1/lmr/m/n/10.95 Midtpunktet $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 til $
-\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95 er punk-tet på linjestykket som er sl
-ik at
+\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95 er punk-tet på linjestykket slik at
  []
 
 <../fig/midtp.pdf, id=24, 170.7178pt x 14.18298pt>
@@ -1411,65 +1410,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--35
 l $\OML/lmm/m/it/10.95 v$\T1/lmr/m/n/10.95 , og
  []
 
-<../fig/sincostan2.pdf, id=59, 170.7178pt x 81.07289pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\T1/lmr/m/n/10.95 De aller fleste sinus-, cosinus- og tan-gensverdier er ir-r
+asjonale
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/lmr/m/n/10.95 tall, i prak-tiske an-ven-delser av ver-di-ene er det der-for
+ van-lig
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/lmr/m/n/10.95 å benytte dig-i-tale hjelpemi-dler. Ver-di-ene som er vik-tig
+st for
+ []
+
+<../fig/sincostaneks.pdf, id=59, 99.58203pt x 78.87468pt>
+File: ../fig/sincostaneks.pdf Graphic file (type pdf)
+<use ../fig/sincostaneks.pdf>
+Package pdftex.def Info: ../fig/sincostaneks.pdf  used on input line 42.
+(pdftex.def)             Requested size: 99.58177pt x 78.87447pt.
+<../fig/sincostan2.pdf, id=60, 170.7178pt x 81.07289pt>
 File: ../fig/sincostan2.pdf Graphic file (type pdf)
 <use ../fig/sincostan2.pdf>
-Package pdftex.def Info: ../fig/sincostan2.pdf  used on input line 45.
+Package pdftex.def Info: ../fig/sincostan2.pdf  used on input line 53.
 (pdftex.def)             Requested size: 170.71738pt x 81.07268pt.
-[2 <../fig/sincostan.pdf> <../fig/sincostan2.pdf>]
-<../fig/arealsetn.pdf, id=84, 170.7178pt x 60.77707pt>
+<../fig/sincostaneks2.pdf, id=61, 111.0549pt x 71.71794pt>
+File: ../fig/sincostaneks2.pdf Graphic file (type pdf)
+<use ../fig/sincostaneks2.pdf>
+Package pdftex.def Info: ../fig/sincostaneks2.pdf  used on input line 58.
+(pdftex.def)             Requested size: 111.05461pt x 71.71776pt.
+[2 <../fig/sincostan.pdf> <../fig/sincostaneks.pdf>] [3 <../fig/sincostan2.pdf>
+ <../fig/sincostaneks2.pdf>]
+<../fig/arealsetn.pdf, id=109, 170.7178pt x 60.77707pt>
 File: ../fig/arealsetn.pdf Graphic file (type pdf)
 <use ../fig/arealsetn.pdf>
-Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 54.
+Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 72.
 (pdftex.def)             Requested size: 170.71738pt x 60.7769pt.
+<../fig/arealsetnb.pdf, id=110, 113.81522pt x 58.36806pt>
+File: ../fig/arealsetnb.pdf Graphic file (type pdf)
+<use ../fig/arealsetnb.pdf>
+Package pdftex.def Info: ../fig/arealsetnb.pdf  used on input line 72.
+(pdftex.def)             Requested size: 113.81493pt x 58.36789pt.
+<../fig/arealsetneks1.pdf, id=111, 166.80316pt x 73.22356pt>
+File: ../fig/arealsetneks1.pdf Graphic file (type pdf)
+<use ../fig/arealsetneks1.pdf>
+Package pdftex.def Info: ../fig/arealsetneks1.pdf  used on input line 78.
+(pdftex.def)             Requested size: 166.80275pt x 73.22337pt.
 File: ../fig/arealsetn.pdf Graphic file (type pdf)
 <use ../fig/arealsetn.pdf>
-Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 61.
+Package pdftex.def Info: ../fig/arealsetn.pdf  used on input line 88.
 (pdftex.def)             Requested size: 170.71738pt x 60.7769pt.
+File: ../fig/arealsetnb.pdf Graphic file (type pdf)
+<use ../fig/arealsetnb.pdf>
+Package pdftex.def Info: ../fig/arealsetnb.pdf  used on input line 88.
+(pdftex.def)             Requested size: 113.81493pt x 58.36789pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 []\T1/lmr/m/n/10.95 Gitt en trekant med side-lengder $\OML/lmm/m/it/10.95 a$\T1
 /lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10
 .95 c$\T1/lmr/m/n/10.95 , og vinkel $\OML/lmm/m/it/10.95 v$\T1/lmr/m/n/10.95 , 
 som vist i
  []
 
-<../fig/cossetna.pdf, id=85, 170.7178pt x 78.49324pt>
+<../fig/cossetna.pdf, id=112, 170.7178pt x 78.49324pt>
 File: ../fig/cossetna.pdf Graphic file (type pdf)
 <use ../fig/cossetna.pdf>
-Package pdftex.def Info: ../fig/cossetna.pdf  used on input line 73.
+Package pdftex.def Info: ../fig/cossetna.pdf  used on input line 100.
 (pdftex.def)             Requested size: 170.71738pt x 78.49304pt.
-<../fig/cossetnb.pdf, id=86, 99.58203pt x 75.31136pt>
+<../fig/cossetnb.pdf, id=113, 99.58203pt x 75.31136pt>
 File: ../fig/cossetnb.pdf Graphic file (type pdf)
 <use ../fig/cossetnb.pdf>
-Package pdftex.def Info: ../fig/cossetnb.pdf  used on input line 73.
+Package pdftex.def Info: ../fig/cossetnb.pdf  used on input line 100.
 (pdftex.def)             Requested size: 99.58177pt x 75.31116pt.
-<../fig/hlikb.pdf, id=87, 142.26149pt x 83.45177pt>
+<../fig/hlikb.pdf, id=114, 142.26149pt x 83.45177pt>
 File: ../fig/hlikb.pdf Graphic file (type pdf)
 <use ../fig/hlikb.pdf>
-Package pdftex.def Info: ../fig/hlikb.pdf  used on input line 78.
+Package pdftex.def Info: ../fig/hlikb.pdf  used on input line 105.
 (pdftex.def)             Requested size: 142.26112pt x 83.45155pt.
-[3
+[4
 
- <../fig/arealsetn.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
-[]\T1/lmr/m/n/10.95 En \T1/lmr/m/it/10.95 me-dian \T1/lmr/m/n/10.95 er et linje
-stykke som går fra et hjørne i en trekant til
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.105 }
+       pdfTeX warning (ext4): destination with the same identifier (name{subfig
+ure.1.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.105 }
+        <../fig/arealsetn.pdf> <../fig/arealsetnb.pdf> <../fig/arealsetneks1.pd
+f>]
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]\T1/lmr/m/n/10.95 En []me-dian[] er et linjestykke som går fra et hjørne i en
+ trekant til
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 []\T1/lmr/m/n/10.95 De tre me-di-anene i en trekant skjærer hveran-dre i ett og
  samme
  []
 
-<../fig/median1a.pdf, id=102, 142.26149pt x 80.95244pt>
+<../fig/median1a.pdf, id=146, 142.26149pt x 80.95244pt>
 File: ../fig/median1a.pdf Graphic file (type pdf)
 <use ../fig/median1a.pdf>
-Package pdftex.def Info: ../fig/median1a.pdf  used on input line 88.
+Package pdftex.def Info: ../fig/median1a.pdf  used on input line 115.
 (pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 \T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m
 /n/10.95 med me-di-aner $\OML/lmm/m/it/10.95 CD$\T1/lmr/m/n/10.95 , $\OML/lmm/m
 /it/10.95 BF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AE$\T1/lmr/m/n/10.95 , 
@@ -1477,102 +1532,114 @@ som skjærer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 []\T1/lmr/m/n/10.95 Midtnormalene i en trekant møtes i ett og samme punkt. Dett
 e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\T1/lmr/m/n/10.95 punk-tet er sen-trum i sirke-len som har hjørnene til trekan-
-ten på
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
+\T1/lmr/m/n/10.95 punk-tet er sen-trum i den []om-skrevne sirke-len[] til treka
+ntne, som
  []
 
-<../fig/midnorm1a.pdf, id=103, 170.7178pt x 168.55972pt>
+<../fig/midnorm1a.pdf, id=147, 170.7178pt x 168.55972pt>
 File: ../fig/midnorm1a.pdf Graphic file (type pdf)
 <use ../fig/midnorm1a.pdf>
-Package pdftex.def Info: ../fig/midnorm1a.pdf  used on input line 92.
+Package pdftex.def Info: ../fig/midnorm1a.pdf  used on input line 119.
 (pdftex.def)             Requested size: 170.71738pt x 168.5593pt.
-[4 <../fig/cossetna.pdf> <../fig/cossetnb.pdf> <../fig/hlikb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]\T1/lmr/bx/n/12 0.12Halveringslinjer og innskrevet sirkel i trekan-ter[]
+[5pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1
+.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.119 }
+       pdfTeX warning (ext4): destination with the same identifier (name{subfig
+ure.1.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.119 }
+        <../fig/cossetna.pdf> <../fig/cossetnb.pdf> <../fig/hlikb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]\T1/lmr/bx/n/12 Regel 0.12Halveringslinjer og innskrevet sirkel i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []\T1/lmr/m/n/10.95 Halveringslinjene til vin-k-lene i en trekant møtes i ett o
 g samme
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-\T1/lmr/m/n/10.95 punkt. Dette punk-tet er sen-trum i den \T1/lmr/m/it/10.95 in
-nskrevne \T1/lmr/m/n/10.95 sirke-len, som
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+\T1/lmr/m/n/10.95 punkt. Dette punk-tet er sen-trum i den []innskrevne sirke-le
+n[] til
  []
 
-<../fig/innskr1a.pdf, id=129, 199.1741pt x 102.1416pt>
+<../fig/innskr1a.pdf, id=170, 199.1741pt x 102.1416pt>
 File: ../fig/innskr1a.pdf Graphic file (type pdf)
 <use ../fig/innskr1a.pdf>
-Package pdftex.def Info: ../fig/innskr1a.pdf  used on input line 97.
+Package pdftex.def Info: ../fig/innskr1a.pdf  used on input line 124.
 (pdftex.def)             Requested size: 199.17361pt x 102.14134pt.
-[5 <../fig/median1a.pdf> <../fig/midnorm1a.pdf>] [6 <../fig/innskr1a.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[6 <../fig/median1a.pdf> <../fig/midnorm1a.pdf>] [7 <../fig/innskr1a.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []\T1/lmr/m/n/10.95 En linje som skjærer en sirkel i bare ett punkt, kalles en 
 \T1/lmr/m/it/10.95 tan-gent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--109
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 være sen-trum 
 i en sirkel, og la $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 være skjæringspunk
 -tet til
  []
 
-<../fig/tang0a.pdf, id=153, 101.47913pt x 101.47913pt>
+<../fig/tang0a.pdf, id=194, 101.47913pt x 101.47913pt>
 File: ../fig/tang0a.pdf Graphic file (type pdf)
 <use ../fig/tang0a.pdf>
-Package pdftex.def Info: ../fig/tang0a.pdf  used on input line 109.
+Package pdftex.def Info: ../fig/tang0a.pdf  used on input line 136.
 (pdftex.def)             Requested size: 101.47887pt x 101.47887pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []\T1/lmr/m/n/10.95 Både periferi- og sen-tralvin-kler har vinkel-bein som lig-
 ger
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []\T1/lmr/m/n/10.95 Gitt en per-iferivinkel $\OML/lmm/m/it/10.95 u$ \T1/lmr/m/n
 /10.95 og en sen-tralvinkel $\OML/lmm/m/it/10.95 v$\T1/lmr/m/n/10.95 , som er i
 nnskrevet i
  []
 
-<../fig/pervink0a.pdf, id=154, 85.86078pt x 85.86078pt>
+<../fig/pervink0a.pdf, id=195, 85.86078pt x 85.86078pt>
 File: ../fig/pervink0a.pdf Graphic file (type pdf)
 <use ../fig/pervink0a.pdf>
-Package pdftex.def Info: ../fig/pervink0a.pdf  used on input line 126.
+Package pdftex.def Info: ../fig/pervink0a.pdf  used on input line 153.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
-<../fig/pervink0b.pdf, id=155, 85.86078pt x 85.86078pt>
+<../fig/pervink0b.pdf, id=196, 85.86078pt x 85.86078pt>
 File: ../fig/pervink0b.pdf Graphic file (type pdf)
 <use ../fig/pervink0b.pdf>
-Package pdftex.def Info: ../fig/pervink0b.pdf  used on input line 126.
+Package pdftex.def Info: ../fig/pervink0b.pdf  used on input line 153.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
-<../fig/pervink0c.pdf, id=156, 85.86078pt x 85.86078pt>
+<../fig/pervink0c.pdf, id=197, 85.86078pt x 85.86078pt>
 File: ../fig/pervink0c.pdf Graphic file (type pdf)
 <use ../fig/pervink0c.pdf>
-Package pdftex.def Info: ../fig/pervink0c.pdf  used on input line 126.
+Package pdftex.def Info: ../fig/pervink0c.pdf  used on input line 153.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
-[7
+[8
 
  <../fig/tang0a.pdf> <../fig/pervink0a.pdf> <../fig/pervink0b.pdf> <../fig/perv
 ink0c.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []\T1/lmr/m/n/10.95 Da både $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ADC$ \T1/
 lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 DBC$ \T1/lmr/m/n/10.
 95 er rettvin-klede, har $\OML/lmm/m/it/10.95 CD$ \T1/lmr/m/n/10.95 som ko-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 \T1/lmr/m/n/10.95 rteste katet, og $[]$, føl-ger det av Py-tago-ras' set-ning a
 t
  []
@@ -1581,87 +1648,87 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 }
+l.191 }
        
-<../fig/median1b.pdf, id=186, 142.26149pt x 80.95244pt>
+<../fig/median1b.pdf, id=226, 142.26149pt x 80.95244pt>
 File: ../fig/median1b.pdf Graphic file (type pdf)
 <use ../fig/median1b.pdf>
-Package pdftex.def Info: ../fig/median1b.pdf  used on input line 164.
+Package pdftex.def Info: ../fig/median1b.pdf  used on input line 191.
 (pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 }
+l.191 }
        
-<../fig/median1c.pdf, id=187, 142.26149pt x 80.95244pt>
+<../fig/median1c.pdf, id=227, 142.26149pt x 80.95244pt>
 File: ../fig/median1c.pdf Graphic file (type pdf)
 <use ../fig/median1c.pdf>
-Package pdftex.def Info: ../fig/median1c.pdf  used on input line 164.
+Package pdftex.def Info: ../fig/median1c.pdf  used on input line 191.
 (pdftex.def)             Requested size: 142.26112pt x 80.95222pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \T1/lmr/m/n/10.95 Vi lar $\OML/lmm/m/it/10.95 G$ \T1/lmr/m/n/10.95 være skjærin
 gspunk-tet til $\OML/lmm/m/it/10.95 BF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.
 95 AE$\T1/lmr/m/n/10.95 , og tar det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \T1/lmr/m/n/10.95 for gitt at dette lig-ger inne i $\OMS/lmsy/m/n/10.95 4\OML/l
 mm/m/it/10.95 ABC$\T1/lmr/m/n/10.95 . Da $[]$ og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 []$\T1/lmr/m/n/10.95 , er $[]$. Dermed har $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/
 10.95 og $\OML/lmm/m/it/10.95 E$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \T1/lmr/m/n/10.95 lik av-s-tand til $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n/10.95 ,
  som be-tyr at $[]$. Videre har vi også
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 $\OML/lmm/m/it/10.95 G$ \T1/lmr/m/n/10.95 har lik av-s-tand til $\OML/lmm/m/it/
 10.95 AF$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 FC$\T1/lmr/m/n/10.95 , og $
 []$. Dermed er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 H$ \T1/lmr/m/n/10.95 være skjæringspu
 nk-tet til $\OML/lmm/m/it/10.95 AE$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 C
 D$\T1/lmr/m/n/10.95 . Med samme fram-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 \T1/lmr/m/n/10.95 Da både $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 GEC$ \T1/lm
 r/m/n/10.95 og $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 HEC$ \T1/lmr/m/n/10.95
  har $\OML/lmm/m/it/10.95 CE$ \T1/lmr/m/n/10.95 som side, likt areal, og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--164
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
 $[]$ \T1/lmr/m/n/10.95 fordi $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 EGF$ \T1/lm
 r/m/n/10.95 og $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 AGB$ \T1/lmr/m/n/10.95 er
  top-pvin-kler og
  []
 
-[8
+[9
 
- <../fig/median1b.pdf> <../fig/median1c.pdf>] [9]
-<../fig/midnorm1b.pdf, id=205, 170.7178pt x 158.8334pt>
+ <../fig/median1b.pdf> <../fig/median1c.pdf>] [10]
+<../fig/midnorm1b.pdf, id=245, 170.7178pt x 158.8334pt>
 File: ../fig/midnorm1b.pdf Graphic file (type pdf)
 <use ../fig/midnorm1b.pdf>
-Package pdftex.def Info: ../fig/midnorm1b.pdf  used on input line 174.
+Package pdftex.def Info: ../fig/midnorm1b.pdf  used on input line 201.
 (pdftex.def)             Requested size: 170.71738pt x 158.833pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 \T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m
 /n/10.95 med midt-punk-tene $\OML/lmm/m/it/10.95 D$\T1/lmr/m/n/10.95 , $\OML/lm
 m/m/it/10.95 E$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 F$\T1/lmr/m/n/10.95 .
@@ -1669,199 +1736,199 @@ m/m/it/10.95 E$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 F$\T1/lmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 \T1/lmr/m/n/10.95 skjæringspunk-tet til de re-spek-tive midt-nor-ma-lene til $\
 OML/lmm/m/it/10.95 AC$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n
 /10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 []$ \T1/lmr/m/n/10.95 fordi begge er rettvin-klede, begge har $\OML/lmm/m/it/10
 .95 FS$ \T1/lmr/m/n/10.95 som
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-74.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+01.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 []$\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 BSC$ \T1/lmr/m/n/10.95 er like-bein
 t, og da går midt-nor-malen til $\OML/lmm/m/it/10.95 BC$ \T1/lmr/m/n/10.95 gjen
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 []$\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/
 n/10.95 og $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 må nød-vendigvis ligge på 
 sirke-len med sen-trum
  []
 
-[10 <../fig/midnorm1b.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[11 <../fig/midnorm1b.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 [][]\T1/lmr/bx/n/12 0.12[] Halver-ingslin-jer og innskrevet sirkel i trekan-ter
 
  []
 
-<../fig/innskr1b.pdf, id=216, 199.1741pt x 108.76636pt>
+<../fig/innskr1b.pdf, id=256, 199.1741pt x 108.76636pt>
 File: ../fig/innskr1b.pdf Graphic file (type pdf)
 <use ../fig/innskr1b.pdf>
-Package pdftex.def Info: ../fig/innskr1b.pdf  used on input line 181.
+Package pdftex.def Info: ../fig/innskr1b.pdf  used on input line 208.
 (pdftex.def)             Requested size: 199.17361pt x 108.76608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 Gitt $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$\T1/lmr/m/
 n/10.95 . Vi lar $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 være skjæringspunk-t
 et til de re-spec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 tive halver-ingslin-jene til $\U/msa/m/n/10.95 \\OML/lmm/m/it
 /10.95 BAC$ \T1/lmr/m/n/10.95 og $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 CBA$\T1
 /lmr/m/n/10.95 . Videre plasserer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 vi $\OML/lmm/m/it/10.95 D$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/
 10.95 E$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/10.95 slik at
  $[]$, $[]$ og $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []$ \T1/lmr/m/n/10.95 fordi begge er rettvin-klede og har hy-potenus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \OML/lmm/m/it/10.95 AS$\T1/lmr/m/n/10.95 , og $[]$. Tilsvarende er $[]$.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 Dermed er $[]$. Føl-gelig er $\OML/lmm/m/it/10.95 F$\T1/lmr/m
 /n/10.95 , $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 E$
  \T1/lmr/m/n/10.95 de re-spek-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 tan-ger-ingspunk-tene til $\OML/lmm/m/it/10.95 AB$\T1/lmr/m/n
 /10.95 , $\OML/lmm/m/it/10.95 BC$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 AC$
  \T1/lmr/m/n/10.95 og sirke-len med sen-trum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []\T1/lmr/m/n/10.95 Videre har vi at $[]$, fordi begge er rettvin-klede
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 \T1/lmr/m/n/10.95 og har hy-potenus $\OML/lmm/m/it/10.95 CS$\T1/lmr/m/n/10.95 ,
  og $[]$. Altså er $[]$,
  []
 
-[11 <../fig/innskr1b.pdf>]
+[12 <../fig/innskr1b.pdf>]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 218.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 218
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []\T1/lmr/bx/n/10.95 Linja er en tan-gent til sirke-len $[]$ står vinkel-rett p
 å
  []
 
-<../fig/tangforkla.pdf, id=226, 104.58072pt x 101.47913pt>
+<../fig/tangforkla.pdf, id=266, 104.58072pt x 101.47913pt>
 File: ../fig/tangforkla.pdf Graphic file (type pdf)
 <use ../fig/tangforkla.pdf>
-Package pdftex.def Info: ../fig/tangforkla.pdf  used on input line 191.
+Package pdftex.def Info: ../fig/tangforkla.pdf  used on input line 218.
 (pdftex.def)             Requested size: 104.58044pt x 101.47887pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 Vi an-tar at vinke-len mel-lom linja og $[]$ er ulik $\OT1/lm
 r/m/n/10.95 90[]$\T1/lmr/m/n/10.95 . Da må det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 finnes et punkt $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 på 
 linja slik at $[]$, som be-tyr at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ASB$ \T1/lmr/m/n/10.95 er like-beint. 
 Føl-gelig er $[]$, og da $\OML/lmm/m/it/10.95 AS$ \T1/lmr/m/n/10.95 er lik ra-d
 ien
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 i sirke-len, må dette bety at $\OML/lmm/m/it/10.95 B$ \T1/lmr
 /m/n/10.95 også lig-ger på sirke-len. Dette mot-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 sier det fak-tum at $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95
  er det en-este skjæringspunk-tet til sirke-len
  []
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 218.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 218
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 []\T1/lmr/bx/n/10.95 Linja er en tan-gent til sirke-len $[]$ står vinkel-rett p
 å
  []
 
-<../fig/tangforklb.pdf, id=227, 104.58072pt x 101.47913pt>
+<../fig/tangforklb.pdf, id=267, 104.58072pt x 101.47913pt>
 File: ../fig/tangforklb.pdf Graphic file (type pdf)
 <use ../fig/tangforklb.pdf>
-Package pdftex.def Info: ../fig/tangforklb.pdf  used on input line 191.
+Package pdftex.def Info: ../fig/tangforklb.pdf  used on input line 218.
 (pdftex.def)             Requested size: 104.58044pt x 101.47887pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 Gitt et vilkårlig punkt $\OML/lmm/m/it/10.95 B$\T1/lmr/m/n/10
 .95 , som ikke samsvarer med $\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 , på linj
 a.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 Da er $\OML/lmm/m/it/10.95 BS$ \T1/lmr/m/n/10.95 hy-potenusen
  i $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$\T1/lmr/m/n/10.95 . Dette in-n
 ebærer at $\OML/lmm/m/it/10.95 BS$ \T1/lmr/m/n/10.95 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 større enn ra-dien til sirke-len ($[]$), og da kan $\OML/lmm/
 m/it/10.95 B$ \T1/lmr/m/n/10.95 umulig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 \T1/lmr/m/n/10.95 ligge på sirke-len. Altså er $\OML/lmm/m/it/10.95 A$ \T1/lmr/
 m/n/10.95 det en-este punk-tet som lig-ger på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
 []\T1/lmr/m/n/10.95 Gitt to til-feller av $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/1
 0.95 ABC$\T1/lmr/m/n/10.95 , som vist i fig-uren un-der. Det éne
  []
@@ -1870,158 +1937,158 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 }
+l.237 }
        
-<../fig/arealsetnforkla.pdf, id=229, 142.26149pt x 72.34026pt>
+<../fig/arealsetnforkla.pdf, id=269, 142.26149pt x 72.34026pt>
 File: ../fig/arealsetnforkla.pdf Graphic file (type pdf)
 <use ../fig/arealsetnforkla.pdf>
-Package pdftex.def Info: ../fig/arealsetnforkla.pdf  used on input line 210.
+Package pdftex.def Info: ../fig/arealsetnforkla.pdf  used on input line 237.
 (pdftex.def)             Requested size: 142.26112pt x 72.34006pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 }
+l.237 }
        
-<../fig/arealsetnforklb.pdf, id=230, 142.26149pt x 71.37666pt>
+<../fig/arealsetnforklb.pdf, id=270, 142.26149pt x 71.37666pt>
 File: ../fig/arealsetnforklb.pdf Graphic file (type pdf)
 <use ../fig/arealsetnforklb.pdf>
-Package pdftex.def Info: ../fig/arealsetnforklb.pdf  used on input line 210.
+Package pdftex.def Info: ../fig/arealsetnforklb.pdf  used on input line 237.
 (pdftex.def)             Requested size: 142.26112pt x 71.37646pt.
- [12 <../fig/tangforkla.pdf> <../fig/tangforklb.pdf>] [13 <../fig/arealsetnfork
+ [13 <../fig/tangforkla.pdf> <../fig/tangforklb.pdf>] [14 <../fig/arealsetnfork
 la.pdf> <../fig/arealsetnforklb.pdf>]
-<../fig/cossetnforkla.pdf, id=262, 170.7178pt x 64.97275pt>
+<../fig/cossetnforkla.pdf, id=303, 170.7178pt x 64.97275pt>
 File: ../fig/cossetnforkla.pdf Graphic file (type pdf)
 <use ../fig/cossetnforkla.pdf>
-Package pdftex.def Info: ../fig/cossetnforkla.pdf  used on input line 241.
+Package pdftex.def Info: ../fig/cossetnforkla.pdf  used on input line 268.
 (pdftex.def)             Requested size: 170.71738pt x 64.97258pt.
-<../fig/cossetnforklb.pdf, id=266, 113.81522pt x 84.73657pt>
+<../fig/cossetnforklb.pdf, id=307, 113.81522pt x 84.73657pt>
 File: ../fig/cossetnforklb.pdf Graphic file (type pdf)
 <use ../fig/cossetnforklb.pdf>
-Package pdftex.def Info: ../fig/cossetnforklb.pdf  used on input line 241.
+Package pdftex.def Info: ../fig/cossetnforklb.pdf  used on input line 268.
 (pdftex.def)             Requested size: 113.81493pt x 84.73636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 \T1/lmr/m/n/10.95 Dette til-fel-let skiller seg ut fra til-fel-let hvor $[]$ på
  to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/bx/n/10.95 i) En di-am-e-ter i sirke-len er høyre eller ven-stre vink
 el-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/m/n/10.95 I fig-uren un-der er $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10
 .95 sen-trum i sirke-len, $[]$ en periferi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 vinkel og $[]$ den tilhørende sen-tralvinke-len. Vi set-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []$\T1/lmr/m/n/10.95 . $[]$ og $[]$ fordi
  []
 
-<../fig/pervinkforkla.pdf, id=271, 111.82779pt x 91.11038pt>
+<../fig/pervinkforkla.pdf, id=312, 111.82779pt x 91.11038pt>
 File: ../fig/pervinkforkla.pdf Graphic file (type pdf)
 <use ../fig/pervinkforkla.pdf>
-Package pdftex.def Info: ../fig/pervinkforkla.pdf  used on input line 287.
+Package pdftex.def Info: ../fig/pervinkforkla.pdf  used on input line 314.
 (pdftex.def)             Requested size: 111.82751pt x 91.11014pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/m/n/10.95 I fig-uren un-der er $\OML/lmm/m/it/10.95 u$ \T1/lmr/m/n/10
 .95 en per-iferivinkel og $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 den tilhøre
 nde sen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 tralvinke-len. I til-legg har vi teg-net inn en di-am-e-ter, 
 som er med
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 på å danne vin-k-lene $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.
 95 og $\OML/lmm/m/it/10.95 b$\T1/lmr/m/n/10.95 . Både $\OML/lmm/m/it/10.95 u$ \
 T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 lig-ger i sin hel
 -het på
  []
 
-<../fig/pervinkforkld.pdf, id=274, 85.86078pt x 85.86078pt>
+<../fig/pervinkforkld.pdf, id=315, 85.86078pt x 85.86078pt>
 File: ../fig/pervinkforkld.pdf Graphic file (type pdf)
 <use ../fig/pervinkforkld.pdf>
-Package pdftex.def Info: ../fig/pervinkforkld.pdf  used on input line 287.
+Package pdftex.def Info: ../fig/pervinkforkld.pdf  used on input line 314.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 Ettersom $[]$ er en per-iferivinkel, og $[]$ den tilhørende
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 Men et-ter-som $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 og $
 \OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 også er samhørende periferi- og sen-tr
 alvin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/bx/n/10.95 iii) Vin-k-lene lig-ger ikke in-nen-for samme halvdel av
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/m/n/10.95 I fig-uren un-der er $\OML/lmm/m/it/10.95 u$ \T1/lmr/m/n/10
 .95 en per-iferivinkel og $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 den tilhøre
 nde sen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 \T1/lmr/m/n/10.95 tralvinke-len. I fig-uren til høyre har vi teg-net inn en di-
 am-e-ter.
  []
 
-<../fig/pervinkforklc.pdf, id=275, 85.86078pt x 85.86078pt>
+<../fig/pervinkforklc.pdf, id=316, 85.86078pt x 85.86078pt>
 File: ../fig/pervinkforklc.pdf Graphic file (type pdf)
 <use ../fig/pervinkforklc.pdf>
-Package pdftex.def Info: ../fig/pervinkforklc.pdf  used on input line 287.
+Package pdftex.def Info: ../fig/pervinkforklc.pdf  used on input line 314.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
-<../fig/pervinkforklb.pdf, id=276, 85.86078pt x 85.86078pt>
+<../fig/pervinkforklb.pdf, id=317, 85.86078pt x 85.86078pt>
 File: ../fig/pervinkforklb.pdf Graphic file (type pdf)
 <use ../fig/pervinkforklb.pdf>
-Package pdftex.def Info: ../fig/pervinkforklb.pdf  used on input line 287.
+Package pdftex.def Info: ../fig/pervinkforklb.pdf  used on input line 314.
 (pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--287
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/
 n/10.95 er begge per-iferivin-kler, med hen-holdsvis $\OML/lmm/m/it/10.95 b$ \T
 1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 d$ \T1/lmr/m/n/10.95 som
  []
 
-[14 <../fig/cossetnforkla.pdf> <../fig/cossetnforklb.pdf>] [15 <../fig/pervinkf
-orkla.pdf> <../fig/pervinkforkld.pdf>] [16 <../fig/pervinkforklc.pdf> <../fig/p
+[15 <../fig/cossetnforkla.pdf> <../fig/cossetnforklb.pdf>] [16 <../fig/pervinkf
+orkla.pdf> <../fig/pervinkforkld.pdf>] [17 <../fig/pervinkforklc.pdf> <../fig/p
 ervinkforklb.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (./geo_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `geo_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 172DB846315FF60C03A4E6613C2F5A3B;218.
  ) 
 Here is how much of TeX's memory you used:
- 31094 strings out of 481239
- 612262 string characters out of 5920378
- 925629 words of memory out of 5000000
- 45601 multiletter control sequences out of 15000+600000
+ 31142 strings out of 481239
+ 613189 string characters out of 5920378
+ 926051 words of memory out of 5000000
+ 45645 multiletter control sequences out of 15000+600000
  591535 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,16n,104p,875b,997s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2029,19 +2096,21 @@ Here is how much of TeX's memory you used:
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
-Output written on geo_bm.pdf (16 pages, 303669 bytes).
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+ib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
+Output written on geo_bm.pdf (17 pages, 332961 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

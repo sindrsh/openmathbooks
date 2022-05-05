@@ -1,4 +1,9 @@
 
+---MB---
+geo
+Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
+
+
 ---TM1---
 
 Obs!
@@ -8,6 +13,8 @@ alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
 ved å bruke potensregelen for ln
 - forklar kvadratsetningene ut ifra figurer
+- for andregradslikning: vise at hvis x1 og x2 er løsninger av likningen, så er (x1+x2)/2 x-verdien til toppunktet
+
 
 geo
 - vis at cos x + cos y = cos x cos y - sin x sin y
@@ -26,8 +33,10 @@ funk
 - vertikale asymptoter
 - utforske kritisk punkt for f = abs(x)
 - vise formel for avstand mellom linja mellom to punkt og grafen
-- forklar hvorfor to polynomer ikker har/har asymptote for x=a 
+- forklar hvorfor to polynomer ikke har/har asymptote for x=a 
 ved å undersøke polynomet med polynomdivisjon.
+- lag fortegnsskjema ut ifra graf
+- vis ulikhet grafisk ved å skissere andregradsfunksjon og linje
 
 vektor
 - skriv vektorfunksjoner som parameteriseringer, og omvendt

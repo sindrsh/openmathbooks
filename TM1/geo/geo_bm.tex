@@ -1,26 +1,26 @@
 \input{../../doc}
 \input{../../preamb}
-\input{../tm_bm}
+\input{../bm}
 
 \begin{document}
 \section{Definisjoner}
-\reg[Halveringslinje]{
+\regdef[Halveringslinje]{
 Gitt $ \angle BAC $. For et punkt $ P $ som ligger på \textit{halveringslinja} til vinkelen, er
 \begin{equation}
 	\angle BAP = PAC=\frac{1}{2}\angle BAC
 \end{equation}
 \fig{halfline}
 }	
-\reg[Midtpunkt]{
-Midtpunktet $ C $ til $ AB $ er punktet på linjestykket som er slik at $ AC=CB $.
+\regdef[Midtpunkt]{
+Midtpunktet $ C $ til $ AB $ er punktet på linjestykket slik at $ {AC=CB} $.
 \fig{midtp} 
 }
-\reg[Midtnormal]{
+\regdef[Midtnormal]{
 Midtnormalen til $ AB $ står normalt på, og går gjennom midtpunktet til, $ AB $.
 \fig{midnorm0}
 }
 \newpage
-\reg[Sinus, cosinus og tangens]{
+\regdef[Sinus, cosinus og tangens]{
 Gitt en rettvinklet trekant med katetene $ a $ og $ b $, hypotenus $ c $, og vinkel $ v $, som vist i figuren under.
 \fig{sincostan}
 Da er \vs
@@ -33,6 +33,14 @@ Da er \vs
 \spr{
 I figuren over blir $ a $ kalt den \textit{motstående} kateten til vinkel $ v $, og $ b $ den \textit{hosliggende}.
 }
+\info{Eksaktverdier}{
+	De aller fleste sinus-, cosinus- og tangensverdier er irrasjonale tall, i praktiske anvendelser av verdiene er det derfor vanlig å benytte digitale hjelpemidler. Verdiene som er viktigst for teoretiske formål er gitt i vedlegg ??.
+}
+\eks[]{ \vs
+\fig{sincostaneks}
+\[ \sin v =\frac{3}{5}\quad,\quad \cos v = \frac{4}{5}\quad,\quad \tan v = \frac{3}{4} \]
+}
+
 \reg[Sinus, cosinus og tangens I]{
 	Gitt $ \triangle ABC$, hvor $ {v=\angle BAC>90^\circ} $, som vist i figuren under.
 	\fig{sincostan2}
@@ -43,18 +51,37 @@ I figuren over blir $ a $ kalt den \textit{motstående} kateten til vinkel $ v $
 	\tan v &= -\frac{CD}{AD} \label{tandef2}
 \end{align}
 }
+\eks[]{ \vs
+\fig{sincostaneks2}
+I figuren over er $ CD=\sqrt{3} $, $ AD=1 $ og $ AC=2 $. Da er
+\[ \sin 120^\circ =\frac{\sqrt{3}}{2}\quad,\quad \cos 120^\circ = -\frac{1}{2}\quad,\quad \tan 120^\circ =-\sqrt{3} \]
+}
+
 \section{Egenskaper til trekanter}
 
 \reg[\arealsetn \label{arealsetn}]{
-\fig{arealsetn}
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{arealsetn}}}\qquad
+	\subfloat[]{\includegraphics{\figp{arealsetnb}}}
+\end{figure}
 Arealet $ T $ til $ \triangle ABC $ er
 \begin{equation}
 T=\frac{1}{2} AB\cdot AC\cdot\sin \angle A
 \end{equation}
 }
+\eks[]{\vs
+\fig{arealsetneks1}
+Da $ \sin 60^\circ =\frac{\sqrt{3}}{2} $
+Arealet $ T $ til $ \triangle ABC $ er
+\[ T=\frac{1}{2}\cdot5\cdot 2\cdot \frac{\sqrt{3}}{2} =\frac{5\sqrt{3}}{2} \]
+}
 \reg[Sinussetningen]{
-	\fig{arealsetn}
-	For enhver trekant $ \triangle ABC $ er
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{arealsetn}}}\qquad
+	\subfloat[]{\includegraphics{\figp{arealsetnb}}}
+\end{figure}
 	\begin{equation}
 		\frac{\sin \angle A}{BC}= \frac{\sin \angle B}{AC}=\frac{\sin \angle C}{AB}
 	\end{equation}
@@ -77,7 +104,7 @@ Gitt en likebeint trekant $ \triangle ABC $, hvor $ AC=BC $, som vist i figuren 
 Høgda $ DC $ ligger da på midtnormalen til $ AB $.
 }
 \reg[\trkmedian \label{trkmedian}]{
-En \textit{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
+En \outl{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
 
 De tre medianene i en trekant skjærer hverandre i ett og samme punkt.
 \fig{median1a}
@@ -87,12 +114,12 @@ Gitt $ \triangle ABC $ med medianer $ CD $, $ BF $ og $ AE $, som skjærer hvera
 }
 }
 \reg[\midtrk \label{midtrk}]{
-Midtnormalene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i sirkelen som har hjørnene til trekanten på sin bue.	
+Midtnormalene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i den \outl{omskrevne sirkelen} til trekantne, som har hjørnene til trekanten på sin bue.	
 \fig{midnorm1a}
 }
 
 \reg[\innskrsirk \label{innskrsirk}]{
-Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i den \textit{innskrevne} sirkelen, som tangerer hver av sidene i trekanten.
+Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i den \outl{innskrevne sirkelen} til trekanten, som tangerer hver av sidene til trekanten.
 \fig{innskr1a}
 }
 

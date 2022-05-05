@@ -1,0 +1,42 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+	\footnotesize
+\opgt
+\opr{opggeo2r}
+\abc{
+\item Vi har at
+\algv{
+	AF&=AD=c-r \vn
+	FC&=CE=a-r
+}
+Da $ AF+FC=c $, er
+\algv{
+	c-r+a-r&=b \\
+	c+a-b&=2r
+}
+\item Med $ c $ som grunnlinje har $ \triangle ABC $ høgde $ b $. Av den klassiske arealformelen for en trekant (se \mb) og formelen fra \refop{opggeoabcr} har vi da at
+\alg{
+(a+b+c)r &= ac \\
+r &= \frac{ac}{a+b+c}
+}
+\item Av oppgave (a) og (b) er
+\algv{
+c+a-b &= \frac{2ac}{a+b+c} \\
+(c+a-b)(a+b+c)&=2ac \\
+(a+c)^2-b^2 &= 2ac \\
+a^2+c^2 &= b^2
+}
+Formelen kjenner vi igjen som Pytagoras' setning.
+}
+
+\opr{geoopgtanchord}
+\fig{geoopgtanchordlf}
+Vi setter $ v=\angle BAC $.
+Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
+\[ \angle EBC=90^\circ-\angle CBO=u \]
+\end{document}
+
+

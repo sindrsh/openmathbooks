@@ -17,6 +17,6 @@ draw(C--D, blue);
 
 dott(A, "$A$", SW);
 dott(B, "$B$", SE);
-
+dott(C.x);
 
 

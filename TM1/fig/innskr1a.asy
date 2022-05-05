@@ -8,8 +8,7 @@ mksq2(t.Et,t.rs);
 
 draw(t.A--t.B--t.C--t.A);
 draw(t.Dt--t.rs^^t.Et--t.rs^^t.Ft--t.rs,Cyan);
-draw(t.A--t.rs^^t.B--t.rs^^t.C--t.rs,deepgreen);
-
+draw(t.A--t.rs^^t.B--t.rs^^t.C--t.rs,red);
 ds(t.rs,t.r,blue);
 
 

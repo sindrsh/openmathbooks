@@ -11,7 +11,7 @@ pair Ep = t.B+1/2*(t.C-t.B);
 mksq2(D,t.Rs);
 mksq2(Ep,t.Rs);
 mksq2(F,t.Rs);
-draw(D--t.Rs^^F--t.Rs^^Ep--t.Rs,deepgreen);
+draw(D--t.Rs^^F--t.Rs^^Ep--t.Rs,red);
 
 ds(t.Rs,t.R);
 

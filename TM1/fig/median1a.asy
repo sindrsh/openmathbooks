@@ -12,7 +12,7 @@ pair Ep = t.B+1/2*(t.C-t.B);
 pair G = intersectionpoint(F--t.B,D--t.C);
 
 draw(t.A--t.B--t.C--t.A);
-draw(F--t.B^^Ep--t.A^^D--t.C,deepgreen);
+draw(F--t.B^^Ep--t.A^^D--t.C,red);
 
 dott(t.A, "$A$", SW);
 dott(t.B, "$B$", SE);
