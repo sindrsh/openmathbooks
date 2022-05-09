@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  5 MAY 2022 06:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  9 MAY 2022 09:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1356,47 +1356,56 @@ File: uesvect.fd
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+<../fig/opgalgulik.pdf, id=55, 171.3602pt x 113.81522pt>
+File: ../fig/opgalgulik.pdf Graphic file (type pdf)
+<use ../fig/opgalgulik.pdf>
+Package pdftex.def Info: ../fig/opgalgulik.pdf  used on input line 78.
+(pdftex.def)             Requested size: 171.35977pt x 113.81493pt.
+ [2 <../fig/opgalgulik.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
  
  []
 
-<../fig/opgalgsym.pdf, id=56, 113.81522pt x 58.91008pt>
+<../fig/opgalgsym.pdf, id=91, 113.81522pt x 58.91008pt>
 File: ../fig/opgalgsym.pdf Graphic file (type pdf)
 <use ../fig/opgalgsym.pdf>
-Package pdftex.def Info: ../fig/opgalgsym.pdf  used on input line 113.
+Package pdftex.def Info: ../fig/opgalgsym.pdf  used on input line 131.
 (pdftex.def)             Requested size: 113.81493pt x 58.90993pt.
-[2 <../fig/opgalgsym.pdf>] [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+[3 <../fig/opgalgsym.pdf>] [4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
  (./alg_opg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `alg_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
  ) 
 Here is how much of TeX's memory you used:
- 30753 strings out of 481239
- 603977 string characters out of 5920378
- 919606 words of memory out of 5000000
- 45296 multiletter control sequences out of 15000+600000
+ 30769 strings out of 481239
+ 604240 string characters out of 5920378
+ 919661 words of memory out of 5000000
+ 45304 multiletter control sequences out of 15000+600000
  576171 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,6n,104p,879b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,6n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmsy8.pfb>
-Output written on alg_opg_bm.pdf (4 pages, 155230 bytes).
+-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on alg_opg_bm.pdf (5 pages, 190601 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
- 73 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
