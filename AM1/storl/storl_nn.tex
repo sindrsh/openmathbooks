@@ -1,0 +1,192 @@
+\input{../doc}
+\input{../preamb_nn}
+
+\begin{document}
+
+\section{Størrelsar, einingar og prefiks}
+Det vi kan måle og uttrykke med tall, kaller vi \textit{størrelsar}. Ein størrelse består gjerne av både ein verdi og ei \textit{eining}, og i denne seksjonen skal vi sjå på desse tre einingane:
+\tbs
+\begin{center}
+	\begin{tabular}{c|c|c}
+		\textbf{eining} & \textbf{forkorting} &\textbf{eining for}\\ \hline
+		meter & m &lengde\\\hline
+		gram & g &masse\\\hline
+		liter & L & volum
+	\end{tabular}
+\end{center}\tbs
+Nokre gongar har vi veldig store eller veldig små størrelsar, for eksempel er det ca. 40\,075\,000\,m rundt ekvator! For så store tall er det vanleg å bruke ein \textit{prefiks}. Da kan vi skrive at det er ca. 40\,075 km rundt ekvator. Her står 'km' for 'kilometer', og 'kilo' betyr '1\,000'. Så 1\,000\enh{meter}  er altså 1\enh{kilometer} . Her er prefiksane ein oftast\footnote{Unntaket er 'deka', som er ein veldig lite brukt prefiks, men vi har tatt den med fordi den kompletterer tallmønsteret.} møter på i kvardagen:
+\begin{center}
+	\begin{tabular}{c|c|r}
+		\textbf{prefiks} & \textbf{forkortelse}&\textbf{verdi} \\ \hline
+		kilo & k & 1\,000\phantom{000\;}\\\hline
+		hekto & h & 100\phantom{000\;}\\\hline
+		deka & da & 10\phantom{000\;}\\\hline
+		desi & d & 0,1\phantom{0\,\;}\\\hline
+		centi & c & 0,01\phantom{\,\;}\\\hline
+		milli & m & 0,001\\\hline		
+	\end{tabular}
+\end{center}
+Bruker vi denne tabellen i kombinasjon med einingane kan vi for eksempel sjå at\vs
+\alg{
+	1000\enh{g}&= 1\enh{kg} \\
+	0,1 \enh{m} &= 1\enh{dm} \\
+	0,01 \enh{L} &= 1\enh{cL}
+}
+Enda ryddigare kan vi få det viss vi lager ein vannrett tabell (se neste side) med meter, gram eller liter lagt til i midten\footnote{Legg merke til at 'meter', 'gram' og 'liter' er \textsl{einingar}, mens 'kilo', 'hekto' osv. er \textsl{tal}. Det kan derfor verke litt rart å sette dei opp i samme tabell, men for vårt formål fungerer det heilt fint.}. 
+\newpage
+\reg[\ompref \label{ompref}]{Når vi skal endre prefiksar kan vi bruke denne tabellen:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hekto &
+			deka & m/g/L &
+			desi & 
+			centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Komma må flyttast like mange gongar som antal ruter vi må flytte oss frå opprinnelig prefiks til ny prefiks.\vsk
+	
+	{\footnotesize For lengde brukes også eininga 'mil' (1 mil $ = $ 10\,000\,m). Denne kan leggast på til venstre for 'kilo'.}
+}
+\eks[1]{
+	Skriv om 23,4\,mL til antall 'L'.
+	
+	\sv
+	Vi skriv tabellen vår med L i midten, og legg merke til at vi må \textsl{tre ruter til venstre} for å komme oss fra 'mL' til 'L':
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hekto &
+			deka & \color{blue}L &
+			desi & 
+			centi & 
+			\color{red} milli & 		
+		\end{tabular}
+	\end{center}
+	Det betyr at vi må flytte kommaet vårt tre plassar til venstre for å gjere om mL til L:
+	\[ 23,4\enh{mL}=0,0234\enh{L} \]
+}
+\eks[2]{
+	Skriv om 30\,hg til antall 'cg'.
+	
+	\sv
+	Vi skriv tabellen vår med 'g' i midten og legg merke til at vi må \textsl{fire ruter til høyre} for å komme oss fra 'hg' til 'cg':
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			\color{red}hekto &
+			deka & g &
+			desi & 
+			\color{blue}centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Dét betyr at vi må flytte kommaet vårt fire plassar til høyre for å gjere om 'hg' til 'cg':
+	\[ 30\enh{mg}=300\,000\enh{cg} \]
+}
+\newpage
+\eks[3]{
+	Gjør om 12\,500\,dm til antall 'mil'.
+	
+	\sv
+	Vi skriv tabellen vår med m i midten, legg til 'mil', og merker oss at vi må \textsl{fem ruter til høyre} for å komme oss fra hg til cg:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c}
+			\color{blue}mil &kilo &
+			hekto &
+			deka & m &
+			\color{red} desi & 
+			centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Dét betyr at vi må flytte kommaet vårt fem plassar til høyre for å gjere om 'mil' til 'dm':
+	\[ 12\,500\enh{dm}=0,125\enh{mil} \]
+}\vsk
+
+\fork{\ref{ompref} \ompref}{
+Omgjering av prefikser handlar om å gange/dele med 10, 100 osv. (se \refsec{Ganging} og \refsec{Divisjon}) \vsk
+
+La oss som første eksempel skrive om $ 3,452\enh{km} $ til antall 'meter'. Vi har at
+\algv{
+3,452\enh{km}&= 3,452\cdot1000 \enh{m} \\
+&=3\,452\enh{m}
+}
+La oss som andre eksempel skrive om 47\enh{mm} til antall 'meter'. Vi har at
+\algv{
+47\enh{mm}&=47\cdot\frac{1}{1000} \enh{m} \\
+&= (47:1000) \enh{m}\\
+&=0,047\enh{m}
+}
+}
+\section{Regning med forskjellige nemningar \label{regnmforbenvn}}
+En (eventuell) prefiks og ei eining utgjer ei \textit{nemning}. For eksempel, 9\enh{km} har nemninga 'km', mens 9\enh{m} har nemninga 'm'. Når vi skal utføre rekneoperasjoner med størrelsar som har nemning, er det heilt avgjerande at vi passar på at nemningane som er involvert er dei same. \regv
+
+\eks[1]{
+Regn ut $ 5\enh{km}+4\,000\enh{m} $.
+
+\sv
+Her må vi enten gjere om 5\enh{km} til antall m eller 4\,000\enh{m} til antall km før vi kan legge sammen verdiene. Vi velger å gjere om $ 5\enh{km} $ til antall m:
+\[ \text{5\enh{km}=5\,000\enh{m}}\]
+Nå har vi at
+\alg{
+5\enh{km}+4\,000\enh{m} &= 5\,000\enh{m}+4\,000\enh{m} \\
+&= 9\,000\enh{m}
+}
+}
+\info{Tips}{
+I mange utregninger kan eininger føre til at uttrykkene blir litt rotete. Hvis du er helt sikker på at alle benevningene er like, kan du med fordel skrive utregninger uten benevning. I \textsl{Eksempel 1} over kunne vi da regnet ut
+\[ 5\,000+4\,000=9\,000 \]
+Men merk at i et endelig svar \textsl{må} vi ha med benevning:
+\[ 5\enh{km}+4\,000\enh{m}= 9\,000\enh{m} \]
+}
+\newpage
+\eks[2]{
+	Hvis du kjører med konstant fart, er strekningen du har kjørt etter ein viss tid gitt ved formelen
+	\[ \text{strekning}=\text{fart}\cdot \text{tid} \]
+	
+	\abc{
+		\item Hvor langt kjører ein bil som holder farten 50\enh{km/h} i 3 timer?
+		\item Hvor langt kjører ein bil som holder farten  90\enh{km/h} i 45 minutt?
+	}
+	
+	\sv
+	\abc{
+		\item I formelen er nå  farten $ 50 $ og tiden $ 3 $, og da er
+		\[ \text{strekning}=50\cdot3=150 \]
+		Altså har bilen kjørt 150\enh{km} 
+		\item Her har vi to forskjellige eininger for tid involvert; timer og minutt. Da må vi enten gjere om farten til km/min eller tiden til timer. Vi velger å gjere om minutt til timer:
+		\alg{
+			45\enh{minutt}&=\frac{45}{60}\enh{timer} \br
+			&=\frac{3}{4}\enh{timer}
+		}
+	}
+	I formelen er nå farten 90 og tiden $ \dfrac{3}{4} $, og da er
+	\[ \text{strekning}=90\cdot\frac{3}{4}=67.5\]
+	Altså har bilen kjørt 67.5\enh{km}.
+}
+\newpage
+\eks[3]{
+	\textit{Kiloprisen} til ein vare er hva ein vare koster per kg. Kilopris er gitt ved formelen
+	\[ \text{kilopris}=\frac{\text{pris}}{\text{vekt}} \]
+	\abc{
+		\item 10\enh{kg} tomater koster 35\enh{kr}. Hva er kiloprisen til tomatene?
+		\item Safran går for å være verdens dyreste krydder, 5\enh{g} kan koste 600\enh{kr}. Hva er da kiloprisen på safran?
+	}
+	\sv
+	\abc{
+		\item I formelen er nå prisen 35 og vekten 10, og da er
+		\[ \text{kilopris}=\frac{35}{10}=3,5 \]
+		Altså er kiloprisen på tomater 3,5\enh{kr/kg}
+		\item Her har vi to forskjellige eininger for vekt involvert; kg og gram. Vi gjør om antall g til antall kg (se ??):
+		\[ 5\enh{g}=0,005\enh{kg} \]
+	}
+	I formelen vår er nå prisen 600 og vekten 0,005, og da er
+	\[ \text{kilopris}=\frac{600}{0,005}=120\,000 \]
+	Altså koster safran 120\,000\enh{kr/kg}.
+}
+
+\end{document}
+
+

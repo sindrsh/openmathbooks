@@ -1,0 +1,80 @@
+\documentclass[english,openright ,hidelinks,pdftex, 12 pt, class=report,crop=false]{standalone}
+\input{/home/sindre/P/preamb}
+
+\geometry{a4paper,verbose,tmargin=1cm,bmargin=2cm,lmargin=4cm,rmargin=4cm,headheight=3cm,headsep=1cm,footskip=1cm}
+\newcounter{inl}
+\newcounter{abc}
+%\numberwithin{inl}{}
+\newcommand{\inl}[1]{\vspace{15pt} \setcounter{abc}{0} \refstepcounter{inl} {\large \textbf{Oppgave \theinl \label{#1}}} \vspace{5 pt}\\}
+\renewcommand\theabc{\alph{abc}}
+\newcommand{\ab}{\refstepcounter{abc} \textbf{\theabc}) }
+\usepackage{array}
+
+
+\begin{document}
+
+\inl{p1}
+
+\textbf{a)} Finn uttrykkene til $ f(x) $ og $ g(x) $ på bildet under.
+\begin{figure}
+	\centering
+	\includegraphics[]{Fig1}
+\end{figure}
+
+\textbf{b)} Finn skjæringspunktet mellom $ f(x) $ og $ g(x) $ grafisk.\os
+
+\inl{p7}
+For å leie buss med Mattergøy Busselskap må man betale 4000 kr for buss og sjåfør, i tillegg til 20 kr for hver mil bussen skal kjøre.\os
+\textbf{a)} Sett opp et uttrykk $ S(x) $ som viser hvor mye man må betale hvis bussen skal kjøre $ x $ mil.\os
+\textbf{b)} Hvor langt får man kjørt for 6000 kr?
+
+
+
+
+\inl{p3}
+Gitt funksjonene:\vs
+\alg{
+f(x) &= 2x+1 \\[5pt]
+g(x) &= -x+10
+}
+Finn skjæringspunktet mellom $ f(x) $ og $ g(x) $.
+\newpage
+\inl{p2}
+\textbf{a)} Tegn grafen til $ {f(x)=2x-1} $ i koordinatsystemet under:
+\begin{figure}
+	\centering
+	\includegraphics[]{fig2}
+\end{figure}
+\textbf{b)} Gitt funksjonen $ {f(x)=x^2-2x+1} $. Fyll ut tabellen:\os
+\begin{center}
+	\begin{tabular}{*{5}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ -1 $ & $ 0 $ & $ 1 $\\ \hline
+		$ f(x) $& & & & 
+	\end{tabular}
+\end{center}
+
+\textbf{c)} Gitt funksjonen $ {f(x)=-x^2-x+2} $. Fyll ut tabellen:\os
+\begin{center}
+	\begin{tabular}{*{3}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ 2 $ \\ \hline
+		$ f(x) $& & 
+	\end{tabular}
+\end{center}
+
+\inl{p6}
+Finn uttrykket til $ f(x) $.
+\begin{figure}
+	\centering
+	\includegraphics[]{Fig3}
+\end{figure}
+
+\newpage
+{\Large \textbf{Ekstra: Eksamensoppgaver}} \\[20pt]
+\begin{centering}
+\includegraphics[scale=0.7]{eks1}\\[20pt]
+\includegraphics[scale=0.7]{eks2}
+\includegraphics[scale=0.7]{eks3}
+\end{centering}
+\end{document}
+
+

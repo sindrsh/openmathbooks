@@ -1,0 +1,148 @@
+\documentclass[english,openright ,hidelinks,pdftex, 12 pt, class=report,crop=false]{standalone}
+\input{/home/sindre/P/preamb}
+
+\geometry{a4paper,verbose,tmargin=1cm,bmargin=1cm,lmargin=4cm,rmargin=4cm,headheight=3cm,headsep=1cm,footskip=1cm}
+\newcounter{inl}
+\newcounter{abc}
+%\numberwithin{inl}{}
+\newcommand{\inl}[1]{\vspace{15pt} \setcounter{abc}{0} \refstepcounter{inl} {\large \textbf{Oppgave \theinl \label{#1}}} \vspace{5 pt}\\}
+\renewcommand\theabc{\alph{abc}}
+\newcommand{\ab}{\refstepcounter{abc} \textbf{\theabc}) }
+\usepackage{array}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+{\Large Løsningsforslag} \\[15pt]	
+{\Large \textbf{Del 1 - Uten hjelpemidler}} 	
+	
+\inl{p1}
+
+\textbf{a)} Av figuren ser vi at når vi går 1 bort, må vi gå 1 opp for å komme tilbake til grafen til $ f(x) $. Dette betyr at stigningstallet til $ x $ er $ {\frac{1}{1}=1 }$. Videre ser vi at grafen til $ f(x) $ skjærer verdien 1 på vertikalaksen, derfor er konstantleddet også 1. Derfor har vi at:
+\[ f(x)=1x+1=x+1 \]
+Når vi går 1 bort, må vi gå 2 ned for å komme tilbake til grafen til $ g(x) $, som derfor har stigningstall $ \frac{-2}{1}=-2$. Videre ser vi at konstantleddet må være 4, derfor har vi at:
+\[ g(x)=-2x+4 \]
+\begin{figure}
+	\centering
+	\includegraphics[]{fig1b}
+\end{figure}
+
+
+\textbf{b)} Av grafen ser vi at skjæringspunktet er (1, 2) (markert med rød prikk på bildet over).\os
+
+\inl{p7}
+For å leie buss med Sindreerkul Busselskap må man betale 3000 kr for buss og sjåfør, i tillegg til 10 kr for hver mil bussen skal kjøre.\os
+\textbf{a)} Siden vi må betale 10 kr for hver mil som kjæres, må vi gange 10 med antall mil. Siden $ x $ betyr mil må vi gange 10 med $ x $. I tillegg må vi legge på 3000 kr etterpå for buss og sjåfør:
+\[ S(x) = 10x+3000 \]
+
+\textbf{b)} \textit{Løsningsmetode 1}: Siden $ S(x) $ er hvor mye vi må betale for en tur, og vi kan betale 5000 kr kan vi skrive $ {S(x)=5000} $. Da får vi en ligning vi kan løse:
+\alg{
+5000 &= 10x + 3000 \\
+5000-3000&= 10 x \\
+\frac{200\cancel{0}}{\cancel{0}} &= \frac{\cancel{10}x}{\cancel{10}}\\
+200&= x
+}
+Vi får altså kjørt 200 mil for 5000 kr.\os
+
+\textit{Løsningsmetode 2}: For å få 5000, må vi legge 2000 til 3000. For at $ 10x $ skal bli 2000 ser vi at $ x $ må være 200:
+\alg{
+10\cdot200+3000 &= 2000+3000\\
+&= 5000
+}
+Altså kan vi kjøre 200 mil for 5000 kr.
+
+
+\inl{p3}
+I skjæringspunktet må $ f(x) $ og $ g(x) $ være like:
+\alg{
+	f(x)&=g(x) \\
+	3x+1 &= -x+9 \\
+	3x+x &= 9-1 \\
+	\frac{\cancel{4}x}{\cancel{4}} &= \frac{8}{4} \\
+	 x &= 2
+}
+For å finne funksjonsverdien når $ {x=2} $ kan vi selv velge om vi vil finne $ f(2) $ eller $ g(2) $, vi bruker her $ f(2) $:
+\alg{
+f(2) &= 3\cdot2+1 \\ 
+&=7
+}
+Skjæringspunktet er altså $ (2,7) $
+
+\inl{p2}
+\textbf{a)} Vi finner to punkt på grafen til $ f(x) $ ved selv å velge ut to $ x $-verdier, i vårt tilfelle bruker vi $ x=0 $ og $ x=3 $ (det er lurt å ha litt avstand mellom $ x $-verdiene).
+
+\parbox{0.65\linewidth}{\alg{
+		f(0) &= 2\cdot0-1\\ &=-1\\
+		f(3)&= 2\cdot3-1 \\ &= 6-1 \\&=5
+}}
+\parbox{0.25\linewidth}{
+\begin{tabular}{|c|c|}
+	\boldmath $ x $ &  \boldmath $ f(x) $ \\ \hline
+	0 & -1 \\ 
+	3 & 5
+\end{tabular}
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.94]{fig2b}
+\end{figure}
+
+
+\textbf{b)} \vs \vs
+\alg{
+f(-2) &= (-2)^2 - 3(-2)+2 = 4+6+2 =12 \\
+f(-1) &= (-1)^2 - 3(-1)+2 = 6 \\
+f(0) &= 0^2-3\cdot0+2 =2 \\
+f(1) &= 1^2-3\cdot1+2 =0
+}
+\begin{center}
+	\begin{tabular}{*{5}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ -1 $ & $ 0 $ & $ 1 $\\ \hline
+		$ f(x) $& 12 & 6 &2 &0 
+	\end{tabular}
+\end{center}
+
+\textbf{c)} \vs \vs 
+\alg{
+	f(-2) &= -(-2)^2 +(-2)-1 = -4-2-1 =-7 \\
+	f(2) &= -2^2+2-1 =-4+2-1=-3
+}
+
+\begin{center}
+	\begin{tabular}{*{3}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ 2 $ \\ \hline
+		$ f(x) $& $ -7 $ & $ -3 $ 
+	\end{tabular}
+\end{center}
+
+\inl{p6}
+Av figuren ser vi at når vi går 3 bort, må vi gå 1 opp for å komme tilbake til grafen, derfor er stigningstallet $ \frac{1}{3} $. Grafen til $ f(x) $ skjærer vertikalaksen i verdien 1, som derfor er konstantleddet. Da har vi at:
+\[ f(x)= \frac{1}{3}x+1 \]
+\begin{figure}
+	\centering
+	\includegraphics[]{fig3b}
+\end{figure}
+
+\newpage
+{\Large \textbf{Del 2 - Med hjelpemidler}} 
+	
+\inl{p4}
+Gitt funksjonen
+\[ f(x)=x^2-2x-3 \]
+\textbf{a)} Finn verdien til $ f(x) $ når $ {x=10} $. \os
+\textbf{b)} Finn toppunktet/bunnpunktet til $ f $.\os
+\textbf{c)} Finn nullpunktene til $ f $. \os
+\textbf{d)} Hva er $ x $ når $ {f(x)=12} $?
+
+\inl{p5}
+Funksjonen $ D(x) $ er en tilnærming for hvor mange timer dagslys Ålesund har $ x $ måneder etter 1. januar.
+\[ D(x)= 0.0129x^4-0.2912x^3+1.6250x^2+0.2189x+5.414\quad, \quad 0\leq x\leq12 \]
+\textbf{a)} Tegn grafen til $ D $.\os
+\textbf{b)} I hvilken måned er dagen lengst, ifølge funksjonen?\os
+\textbf{c)} I hvilken måned er dagen kortest, ifølge funksjonen?\os
+\textbf{d)} \textit{Vårjevndøgn} kalles dagene i året hvor det er mørkt og lyst like lenge. Hvilke måneder er det vårjevndøgn, ifølge funksjonen?
+
+
+\end{document}
+
+

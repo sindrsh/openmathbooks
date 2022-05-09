@@ -1,0 +1,160 @@
+\input{/home/sindre/P/doc}
+\input{/home/sindre/P/preamb}
+
+\begin{document}
+\begin{itemize}
+	\item gjere overslag over svar, rekne praktiske oppgåver, med og utan digitale verktøy, presentere resultata og vurdere kor rimelege dei er
+\end{itemize}
+\newpage	
+\section{Regler for regneartene}
+\reg[Regneregler for \boldmath $ + $ og $ - $]{
+	\algvv{
+		+- &= - \\
+		-- &= + \\
+		+\cdot- &= - \\
+		-\cdot-&= - \\
+		+:- & = -	\\
+		-:-&= +}
+	\vspace{-25 pt}}
+\eks[1]{
+	Regn ut: \os
+	\begin{tabular}{@{} l l l l }
+	\textbf{a)} $ 3--2  $ & \textbf{b)} $ 3\cdot (-2) $ 	& \textbf{c)} $ (-4)\cdot(-5)  $ & \textbf{d)} $ 8:(-4)  $
+	\end{tabular}
+	
+	
+	\sv 
+	
+	\textbf{a)} \algvv{ 3--2 &= 3+2\\	&= 5 }
+	
+	\textbf{b)} \algvv{ 3\cdot(-2) = -6}	
+	
+	\textbf{c)} \algvv{(-4)\cdot(-5)=20}
+	
+	
+	\textbf{d)} \algvv{ 8:(-4) = -2}		
+	
+}
+\section{Regnerekkefølge}
+\reg[Regnerekkefølge]{\vs
+	\begin{enumerate}
+		\item Regnestykker inni paranteser
+		\item Potenser
+		\item Ganging og deling
+		\item Pluss og minus
+	\end{enumerate}
+}
+\eks[1]{
+\begin{flalign*}
+&&	2\cdot(-3)+4 &= -6+4 &&\cm{$ \cdot $ før $ + $ eller $ - $} 
+\end{flalign*}	
+}
+\eks[2]{
+	\vspace{-22 pt}
+	\begin{flalign*}
+	&&4\cdot3^2 &= 4\cdot9 &&\cm{Potenser før ganging}\\
+	&& &= 36
+	\end{flalign*}
+}
+\eks[3]{\vs \vs
+\begin{flalign*}
+&&		\qquad\qquad(2+4)\cdot(-2)^2 &= 6\cdot4 &&\color{blue} \text{Paranteser før potenser} \\
+&&  &= 24	
+\end{flalign*}
+}
+\eks[4]{\vspace{-22 pt}
+	\begin{flalign*}
+	&&	&\quad\,(2--5)\cdot2^3-4\cdot3+2 && \cm{Paranteser først} \\
+	&&	&= 7\cdot2^2-10:(-2)+2 && \cm{Potenser etterpå} \\
+	&&	&= 7\cdot 4	-10:(-2)+2 && \cm{Så $ \cdot $ og $ : $} \\
+	&&	&= 28--5+2 && \cm{$ + $ og $ - $ til slutt}\\
+	&&	&= 28+5+2 &&  \\
+	&&	&= 35
+	\end{flalign*}
+}
+\section{Overslagsregning}
+Det er ikke alltid vi trenger å vite svaret på regnestykker helt nøyaktig, noen ganger er det viktigere at vi fort kan avgjøre hva svaret omtrent blir. Når vi finner svar som omtrent er riktige, sier vi at vi gjør et \textit{overslag}. Poenget med overslag er å endre på tallene som inngår i regnestykker, slik at vi greier å greier å finne svaret ved hoderegning.\vsk
+
+Si nå at vi skal gjøre et overslag på regnestykket:
+\[ 98,2+24,6 \]
+Vi ser at 98,2 ca. er lik 100. Skriver vi 100 istedenfor 98,2 i regnestykket vårt, får vi noe som er litt mer enn det nøyaktige svaret. Skal vi endre på 24,6 bør vi derfor gjøre det til et tall som er litt mindre. 24,6 er ganske nærme 20, så vi kan skrive at:
+\alg{
+98,2+24,6& \approx 100 + 20 \\
+&= 120
+}
+Når vi gjør overslag på tall som legges sammen bør vi altså prøve å gjøre det ene tallet større (runde opp) og et tall mindre (runde ned).\vsk
+
+Det samme gjelder også hvis vi har ganging, for eksempel:
+\[ 1689\cdot12 \]
+Her er det fristenede å endre 12 til 10. For å ''veie opp'' for at svaret da blir litt mindre enn det egentlige, endrer vi 1689 opp til 1700. Da får vi:
+\alg{
+1689\cdot12&\approx 1700\cdot 10 \\&=17000
+}
+Skal et tall trekkes fra et annet blir det litt annerledes. La oss gjør et overslag på:
+\[ 186,4-28,9 \]
+Hvis vi runder 186,4 opp til 190 får vi et svar som er større enn det egentlige, derfor bør vi også trekke ifra noe. Det kan vi gjøre ved også å runde 28,9 oppover (til 30):
+\alg{
+186,4-28,9&\approx 190-30 \\&=160
+}
+Samme prinsippet gjelder for deling: 
+\[ 145:17 \]
+Det er fristenede å runde 17 opp til 20. Deler vi noe med 20 istedenfor 17, blir svaret mindre. Derfor bør vi også runde 145 oppover (til 150):
+\alg{
+145:17 &\approx 150:20 \\
+&= 75
+}
+\reg[Overslagsregning]{\vspace{-5pt}
+\begin{center}
+		\begin{tabular}{|c| l|}
+		\hline
+		$ \begin{matrix}
+		+ \\
+		\cdot
+		\end{matrix} $ & Et tall opp, et tall ned. \\
+		\hline
+		$ \begin{matrix}
+		- \\
+		:
+		\end{matrix} $ & Begge tall opp, eller begge tall ned.	\\ \hline
+	\end{tabular} 
+\end{center}
+	Fremste siffer bør helst ikke endres med mer enn 1:
+	\begin{flalign*}
+	&& 8,5 &\approx 9 &&\color{ForestGreen} \llap{\text{O.K}} \\
+	&& 8,5 & \approx 10 &&\color{red} \llap{\text{ikke O.K}}
+	\end{flalign*}
+}
+\eks[]{
+	Rund av og finn omtrentlig svar for regnestykkene.\os
+	
+	\begin{tabular}{@{} l l}
+		\textbf{a)} $ 23,1+174,7 $ &\quad \textbf{b)} $ 11,8\cdot107,2 $ \br
+		\textbf{c)} $ 37,4-18,9 $  &\quad \textbf{d)} $ 1054:209 $	
+	\end{tabular}
+
+\sv
+\textbf{a)}\algvv{
+32,1 + 174,7 &\approx 30+170 \\
+&= 200
+}
+\textbf{b)}\algvv{
+	11,8 \cdot 107,2 &\approx 10\cdot110 \\
+	&= 1100
+}
+\textbf{c)}\algvv{
+	37,4 - 18,9 &\approx 40-20 \\
+	&= 20
+}
+\textbf{d)}\algvv{
+1054:209 &\approx 1000:200 \\
+	&= 5
+}
+}
+\info{Avrunding av \boldmath $ \pi  $}{
+$ \pi $ er det vi kaller et irrasjonelt tall, noe som betyr at det har uendelig mange desimaler!
+\[ \pi =3,14159265359...  \]
+Skal vi skrive $ \pi $ som et desimaltall, må vi derfor alltid gjøre en avrunding. På Del 1 (som er uten hjelpemidler) på eksamen kan vi tillate oss å si at:
+\[ \pi \approx3 \]
+}
+\end{document}
+

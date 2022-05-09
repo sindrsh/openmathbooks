@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{\numberline {0.1}Grunnprinsippet}{2}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}\IeC {\r A} lage en funksjon}{2}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Grafen til en funksjon}{4}{subsection.0.1.2}
+\contentsline {section}{\numberline {0.2}Line\IeC {\ae }re funksjoner}{8}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Definisjon}{8}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}\IeC {\r A} tegne grafen til funksjonen}{10}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {0.2.3}\IeC {\r A} finne stigningstall og konstantledd grafisk}{12}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {0.2.4}Skj\IeC {\ae }ring mellom to funksjoner}{17}{subsection.0.2.4}

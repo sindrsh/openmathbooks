@@ -1,0 +1,237 @@
+\input{../doc}
+\input{../preamb_nn}
+
+\begin{document}
+\section{Standardform}
+Vi kan utnytte \rref{gangdesmed10100} og \rref{deledesmed10100}, og det vi kan om potenser\footnote{sjå \mb\,s 101-106.}, til å skrive tal på \textit{standardform}. \vsk
+
+La oss sjå på tallet 6\,700. Av \rref{gangdesmed10100} veit vi at
+\[ 6\,700=6,7\cdot1\,000 \]
+Og sidan $ 1000=10^3 $, er
+\[ 6\,700=6,7\cdot1\,000=6,7\cdot 10^3 \]
+\st{
+$ 6,7\cdot10^3 $ er 6\,700 skriven på standardform fordi
+\begin{itemize}
+	\item 6,7 er større enn 0 og mindre enn 10.
+	\item $ 10^3 $ er ein potens med grunntal 10 og eksponent 3, som er  eit  heiltal.
+	\item 6,7 og $ 10^3 $ er gonga saman.
+\end{itemize}
+}
+\linje \\[12pt]
+
+La oss også sjå på tallet  0,093. Av \rref{deledesmed10100} har vi at
+\[ 0,093=9,3: 100 \]
+Men å dele med 100 er det same som å gonge med $ 10^{-2} $, altså er
+\[ 0,093=9,3: 100=9,3\cdot10^{-2} \]
+\st{
+$ 9,3\cdot10^{-2} $ er 0,093 skriven på standardform fordi	
+\begin{itemize}
+	\item 9,3 er større enn 0 og mindre enn 10.
+	\item $ 10^{-2} $ er ein potens med grunntal 10 og eksponent $ -2 $, som er  eit  heiltal.
+	\item $ 9,3 $ og $ 10^{-2} $ er gonga saman.
+\end{itemize} 
+}
+\reg[Standardform]{
+Eit tall skrive som
+\[ a\cdot 10^n \]
+kor $ {0<a<10} $ og $ n $ er  eit  heiltal, er  eit  tal skriven på standardform.
+}
+\eks[1]{
+Skriv 980 på standardform.
+
+\sv \vsb
+\[ 980 = 9,8\cdot 10^2 \]
+}
+\eks[2]{
+	Skriv 0,00671 på standardform.
+	
+	\sv \vsb
+	\[ 0,00671 = 6,71\cdot 10^{-3} \]
+}
+\info{Tips}{
+For å skrive om tall på standardform kan du gjere følgande:
+\begin{enumerate}
+	\item Flytt komma slik at du får  eit  tal som ligg mellom 0 og 10.
+	\item Gong dette tallet med ein tiarpotens som har eksponent med talverdi lik antallet plassar du flytta komma. \qquad  Flytta du komma mot venstre/høgre, er eksponenten positiv/negativ. 
+\end{enumerate}
+}
+\eks[3]{
+Skriv 9\,761\,432 på standardform.
+
+\sv \vs
+\begin{enumerate}
+\item 	Vi flyttar komma 6 plassar til venstre, og får $ 9\colr{,}761432 $
+\item Vi gongar dette tallet med $ 10^6 $, og får at 
+\[ 9\,761\,432=9,761432\cdot 10^6 \] 
+\end{enumerate}
+}
+\newpage
+\eks[4]{
+Skriv 0,00039 på standardform.
+
+\sv \vs
+\begin{enumerate}
+	\item Vi flyttar komma 4 plasser til høgre, og får $ 3,9 $.
+	\item Vi gongar dette tallet med $ 10^{-4} $, og får at
+	\[ 0,00039=3,9\cdot10^{-4} \]
+\end{enumerate}
+}
+\section{Regning med tid \label{regningmedtid}}
+Sekund, minutt og timar er organisert i grupper på 60:
+\alg{
+1\text{ minutt} &= 60\text{ sekund} \\
+1\text{ time} &= 60\text{ minutt} 
+}
+Dette betyr at \textsl{overgongar} oppstår i utrekningar når vi når 60.\regv
+
+\eks[1]{
+$ \text{2\enh{t} 25\enh{min} } + \text{10\enh{t} 45\enh{min}}= \text{13\enh{t} 10\enh{min} } $\vsk
+
+\metode{Utrekningsmetode 1}{0.35\linewidth}
+\os
+\begin{tabular}{r|r|r}
+ & &10\enh{t} 45\enh{min}  \\ \hline
+ 15\enh{min}  &15\enh{min} & 11\enh{t} 00\enh{min}  \\
+ 10\enh{min} &25\enh{min} & 11\enh{t} 10\enh{min} \\
+ 2\enh{t} & 2\enh{t} 25\enh{min}  & 13\enh{t} 10\enh{min}
+\end{tabular} \vsk \vsk
+
+\metode{Utrekningsmetode 2}{0.35\linewidth}\os
+\begin{tabular}{r|r|r}
+	& & 10:45 \\ \hline 
+	00:15 & 00:15 & 11:00 \\
+	00:10 & 00:25 & 11:10 \\
+	02:00 & 02:25 & 13:10
+\end{tabular}
+} \regv
+
+\eks[2]{
+	$ \text{14\enh{t} 18\enh{min} } - \text{9\enh{t} 34\enh{min}}= \text{4\enh{t} 44\enh{min} } $\vsk
+	
+	\begin{center}
+		\parbox{0.4\linewidth}{
+			\metode{Utrekningsmetode 1}{0.9\linewidth} \os
+			\begin{tabular}{r|r}
+				&  9\enh{t} 34\enh{min} \\ \hline 
+				26\enh{min} & 10\enh{t} 00\enh{min} \\
+				18\enh{min} & 10\enh{t} 18\enh{min} \\
+				4\enh{t} & 14\enh{t} 00\enh{min} \\ \hline
+				4\enh{t} 44\enh{min}
+			\end{tabular}
+		} \qquad \qquad
+		\parbox{0.4\linewidth}{
+			\metode{Utrekningsmetode 2}{0.9\linewidth} \os
+			\begin{tabular}{r|r}
+				& 09:34 \\ \hline 
+				00:26 & 10:00 \\
+				00:18& 10:18 \\
+				04:00 & 14:18 \\ \hline
+				04:44 
+			\end{tabular}
+		}
+	\end{center}
+}
+
+\section{Avrunding og overslagsregning}
+
+\subsection{Avrunding}
+Ved \textit{avrunding} av  eit  tall minkar vi antal siffer forskjellige frå 0 i eit  tall. Vidare kan ein runde av til \textsl{næraste einar}, \textsl{næraste tiar} eller liknande.\regv
+\eks[1]{
+Ved avrunding til \textsl{næraste einar} avrundast
+\begin{itemize}
+	\item 1, 2, 3 og 4 \textsl{ned} til 0 fordi dei er nærare 0 enn 10.
+	\item 6, 7, 8 og 9 \textsl{opp} til 10 fordi dei er nærare 10 \\enn 0.
+\end{itemize}	
+5 avrundast også opp til 10.
+\fig{avrnd0}
+}
+
+\eks[2]{ \vs
+\begin{itemize}
+	\item $\boldmath \textbf{63 avrundet til næraste tiar} = 60 $ \\
+	Dette fordi 63 er nærmere 60 enn 70.
+	\fig{avrnda}
+	\item $\boldmath \textbf{78 avrundet til næraste tiar} = 80 $ \\
+	Dette fordi 78 er nærmere 80 enn 70.
+	\fig{avrndb}
+	\item $\boldmath \textbf{359 avrundet til næraste hundrer} = 400 $\\
+	Dette fordi 359 er nærmere 400 enn 300.
+	\fig{avrndc}
+	\item $ \boldmath \textbf{11,8 avrundet til næraste einar} = 12$ \\
+	Dette fordi 11,8 er nærmere 12 enn 11.
+	\fig{avrndd}
+\end{itemize}
+}
+
+\subsection{Overslagsrekning}
+Det er ikkje alltid vi trenger å vite svaret på reknestykker helt nøyaktig, noen ganger er det viktigere at vi fort kan avgjøre hva svaret \textsl{omtrent} er det samme som, aller helst ved hoderekning. Når vi finn svar som omtrent er rett, seier vi at vi gjer eit \textit{overslag}. \textsl{Eit overslag inneber at vi avrundar tala som inngår i et reknestykke slik at utrekninga blir enklare}. \vsk
+
+\textit{Obs!} Avrunding ved overslag treng ikkje å innebere avrunding til næraste tier o.l.\vsk
+
+\spr{
+At noko er ''omtrent det same som'' skriv vi ofte som ''cirka'' (ca.). Symbolet for ''cirka'' er \sym{$ \approx $}.
+} 
+
+\subsubsection{Overslag ved addisjon og gonging}
+La oss gjere  eit overslag på reknestykket
+\[ 98,2+24,6 \]
+Vi ser at $ 98,2\approx 100 $. Skriv vi 100 i staden for 98,2 i reknestykket vårt, får vi noko som er litt meir enn det nøyaktige svaret. Skal vi endre på 24,6 bør vi derfor gjere det til eit tal som er litt mindre. 24,6 er ganske nære 20, så vi kan skrive 
+\[ 98,2+24,6 \approx 100 + 20 = 120 \]
+Når vi gjer overslag på tal som leggast saman, bør vi altså prøve å gjere det eine talet større (runde opp) og  eit  tal mindre (runde ned).\\
+
+\linje
+Det same gjeld også viss vi har gonging, for eksempel
+\[ 1689\cdot12 \]
+Her avrundar vi 12 til 10. For å ''veie opp'' for at svaret da blir litt mindre enn det eigentlege, avrundar vi 1689 opp til 1700. Da får vi
+\[ 1689\cdot12\approx 1700\cdot 10 =17\,000 \]
+\subsubsection{Overslag ved subtraskjon og deling}
+Skal  eit  tal trekkast frå  eit  anna, blir det litt annleis. La oss gjere  eit overslag på
+\[ 186,4-28,9 \]
+Hvis vi rundar 186,4 opp til 190 får vi  eit  svar som er større enn det eigentlege, derfor bør vi også trekke frå litt meir. Det kan vi gjere ved også å runde 28,9 oppover (til 30):
+\alg{
+	186,4-28,9&\approx 190-30 \\&=160
+}
+Same prinsippet gjeld for deling: 
+\[ 145:17 \]
+Vi avrundar 17 opp til 20. Deler vi noko med 20 i staden for 17, blir svaret mindre. Derfor bør vi også runde 145 oppover (til 150):
+\[ 145:17 \approx 150:20 = 75 \]
+
+\subsubsection{Overslagsregning oppsummert}
+\reg[Overslagsrekning \label{tipsoverslag}]{ \vs
+\begin{itemize}
+	\item Ved addisjon eller multiplikasjon mellom to tal, avrund gjerne  eit  tal opp og  eit  tal ned.
+	\item Ved subtraksjon eller deling mellom to tal, avrund gjerne begge tal ned eller begge tal opp.
+\end{itemize}	
+}
+\eks[]{
+	Rund av og finn omtrentleg svar for reknestykka.\os
+	
+	\abch{
+	\item $ {23,1+174,7} $ 
+	\item $ {11,8\cdot107,2} $ 		
+	} \os
+\abchs{3}{
+	\item $ {37,4-18,9} $  \ \ 
+	\item $ {1054:209} $
+}
+ \vspace{-2pt}
+ 
+	\sv  \vspace{-7pt}
+	\abc{
+	\item $ 32,1 + 174,7 \approx 30+170 = 200 $
+	\item $ 11,8 \cdot 107,2 \approx 10\cdot110 = 1100 $
+	\item $ 37,4 - 18,9 \approx 40-20 = 20 $
+	\item $ 1054:209 \approx 1000:200 = 5 $
+}
+} \vsk
+
+\info{Kommentar
+}{
+Det fins ingen konkrete reglar for kva ein \textsl{kan} eller ikkje \textsl{kan} tillate seg av forenklingar når ein gjer eit overslag, det som er kalt \rref{tipsoverslag} er strengt tatt ikkje ein regel, men eit  nyttig tips.\vsk
+
+Ein kan også spørre seg kor langt unna det faktiske svaret ein kan tillate seg å vere ved overslagsregning. Heller ikkje dette er det noko fasitsvar på, men ei grei føring er at overslaget og det faktiske svaret skal vere av same \textit{størrelsesorden}. Litt enkelt sagt betyr dette at hvis det faktiske svaret har med tusenar å gjere, bør også overslaget ha med tusenar å gjere. Meir nøyaktig sagt betyr det av det faktiske svaret og ditt overslag bør ha same tiarpotens når dei er skrivne på standardform.
+}
+
+
+\end{document}s
+

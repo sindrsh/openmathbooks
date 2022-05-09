@@ -1,0 +1,33 @@
+\input{/home/sindre/P/doc}
+\input{/home/sindre/P/preamb}
+
+\newcounter{inl}
+\numberwithin{inl}{chapter}
+\newcommand{\inl}{\vspace{15pt} \refstepcounter{inl} \textbf{Oppgave \theinl} \vspace{2 pt}\\}
+\renewcommand\theinl{\arabic{inl}}
+
+\begin{document}
+	
+\inl
+Finn den siste vinkelen i trekanten når de to andre vinklene er:\os
+\begin{tabular}{@{}l l l l}
+	\textbf{a)} $ 60^\circ $ og $ 37^\circ $
+&	\textbf{b)} $ 90^\circ $ og $ 15^\circ $
+&	\textbf{b)} $ 45^\circ $ og $ 45^\circ $
+&	\textbf{b)} $ 60^\circ $ og $ 60^\circ $
+\end{tabular}
+
+\inl
+Forklar hvorfor:\os
+\textbf{a)} $ \triangle ABC $ og $ \triangle DEF $ er formlike.\\
+\includegraphics[scale=0.5]{frm1}
+
+
+\textbf{b)} $ \triangle ABC$ og $ \triangle DEB $ er formlike. ($ AC $ og $ DE $ er parallelle).\\
+\includegraphics[scale=0.5]{frm2}.
+
+\textbf{c)} $ \triangle ABC$ og $ \triangle DEB $ er formlike. ($ \angle ADC=\angle BDC=90^\circ $).\\
+\includegraphics[scale=0.5]{frm3}.
+
+\end{document}
+

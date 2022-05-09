@@ -1,0 +1,501 @@
+\input{/home/sindre/P/doc}
+\input{/home/sindre/P/preamb}
+
+
+\begin{document}
+
+\newpage
+
+\section{Grunnprinsippet}
+\subsection{Å lage en funksjon}
+
+I \net{https://drive.google.com/open?id=1bRBc-HdZu8vgMH36tQ3ML4BWtuUy5-ik}{Video 1} ser du en strekmann, la oss kalle ham Pi, som beveger seg bortover etterhvert som sekundene går. For å skissere ferden til Pi kan vi tegne en figur som dette:
+\begin{figure}
+	\centering
+	\includegraphics[]{\asym{funk}}
+	\caption{\label{sogm}}
+\end{figure}
+Etter 0 sekunder har Pi kommet til 0-metersmerket, etter 1 sekund har han kommet til 2-metersmerket, etter 2 sekunder har han kommet til 4-metersmerket osv. Denne informasjonen kan vi sette opp i en tabell som denne:
+
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Sekunder} & \textbf{Metersmerke}\\ \hline 
+		0 & 0\\ \hline 
+		1 & 2\\ \hline 
+		2 & 4 \\\hline 
+		3 & 6 \\\hline 
+		4 & 8 \\\hline 
+		5 & 10 \\\hline 
+	\end{tabular}
+\captionof{table}{\label{sekogmetr}}
+\end{center}
+Det vi nå kan legge merke til, er at det er en sammenheng mellom hvor mange sekunder det har gått og hvilket metersmerke Pi har kommet til:
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Sekunder} & \textbf{Metersmerke}\\ \hline 
+		0 & $ 2\cdot0=0 $\\ \hline 
+		1 & $ 2\cdot1=2 $\\ \hline 
+		2 & $ 2\cdot2=4 $ \\\hline 
+		3 & $ 2\cdot3=6 $ \\\hline 
+		4 & $ 2\cdot4=8 $ \\\hline 
+		5 & $ 2\cdot5=10 $\\\hline 
+	\end{tabular}
+\captionof{table}{\label{samnh}}
+\end{center}
+Når vi har en sammenheng mellom to størrelser kan vi lage en \textit{funksjon}. Tabellen over viser oss at for å finne hvilket metersmerke Pi har nådd, kan vi gange antall sekunder det har gått med tallet 2. Dette betyr at \textit{metersmerket Pi har nådd} er en funksjon av \textit{sekunder det har gått}, denne funksjonen kan vi skrive slik:
+\[ \textit{metersmerket Pi har nådd}=2\cdot\textit{sekunder det har gått} \]
+Men som vanlig er det litt trasig å måtte skrive disse lange ordene hele tiden, derfor er det kjekt å forkorte dem til bare én bokstav. For eksempel kan vi forkorte \textit{metersmerket Pi har nådd} til bare \textit{P} og \textit{sekunder det har gått} til bare $ s $. Da kan vi skrive funksjonen slik:
+
+\prbxl{0.6}{\[ P=2 s \]}\quad
+\prbxr{0.3}{\footnotesize Husk at $ 2s $ er det samme som $ 2\cdot s $}
+
+Og til slutt, for å gjøre det helt tydelig at vi må vite hva $ s $ er for å finne $ P $, er det vanlig å skrive funksjonen slik:
+
+\prbxl{0.5}{\[ P(s)=2 s \]}\quad
+\prbxr{0.4}{\footnotesize\textsl{Merk:} Parantesen med $ s $ inni har her ingenting med ganging å gjøre.}
+
+Vi har nå funnet \textit{funksjonsuttrykket} til $ P(s) $. I praksis betyr dette at når vi vet verdien til $ s $, kan vi erstatte $ s $ med denne verdien i funksjonen vår. For eksempel er:
+\alg{
+P(0)&=2\cdot 0=0 &\text{''0 sekunder, 0-metersmerket''}\\
+P(1)&=2\cdot 1=2 &\text{''1 sekunder, 2-metersmerket''}\\
+P(2)&=2 \cdot 2=4 &\text{''2 sekunder, 4-metersmerket''}\\ 
+P(3)&=2 \cdot 2=6 &\text{''3 sekunder, 6-metersmerket''}\\ 
+P(4)&=2 \cdot 2=8 &\text{''4 sekunder, 8-metersmerket''}\\ 
+P(5)&=2 \cdot 5 =10 &\text{''5 sekunder, 10-metersmerket''}
+}
+Dette er akkurat det samme som vi har i \textsl{Tabell \ref{sekogmetr}}, men som vi nå kan skrive med de nye navnene våre:
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		\boldmath $ s$ &\boldmath $ P(s) $\\ \hline 
+		0 & 0\\ \hline 
+		1 & 2\\ \hline 
+		2 & 4 \\\hline 
+		3 & 6 \\\hline 
+		4 & 8 \\\hline 
+		5 & 10 \\\hline 
+	\end{tabular}
+	\captionof{table}{\label{sekogmetr2}}
+\end{center}
+\eks{
+Den raskeste skilpadden som er observert svømte i ca 10\,m/s.\os
+\textbf{a)} Regn ut hvor langt denne skilpadden kan svømme etter 1 sekund, 2 sekunder og 3 sekunder. \os
+\textbf{b)} Lag en funksjon $ l(s) $ som viser hvor mange meter denne skilpadden har svømt etter $ s $ sekunder.\os
+\textbf{c)} Bruk funksjonen til å finne ut hvor langt skilpadden har svømt etter 20 sekunder.
+
+\sv
+\textbf{a)} \vs \vs \alg{
+\text{Meter svømt etter 1 sekund: }10\cdot 1 = 10 \\
+\text{Meter svømt etter 2 sekund: }10\cdot 2 = 20 \\
+\text{Meter svømt etter 3 sekund: }10\cdot 3 = 30 \\
+}
+\textbf{b)} Vi observerer i oppgave a) at når vi skal finne lengden ganger vi alltid tallet 10 med antall sekunder. Kaller vi lengden for $ l(s) $ og sekunder for $ s $, blir altså funksjonen vår:
+\[ l(s)=10s \]
+\textbf{c)} $ {l(20)=10\cdot20=200} $. Skilpadden har altså svømt 200\,m etter 20 sekunder.
+}
+\subsection{Grafen til en funksjon}
+Vi har akkurat sett på funksjonen
+\[ P(s)=2s \]
+som beskriver hvilket metersmerke strekmannen Pi fra \net{https://drive.google.com/open?id=1_cScbKGjozn7FDQdhXlQzsZBjIGZjwiZ}{Video 1} har nådd etter $ s $ sekunder. I \textsl{Tabell \ref{sekogmetr2}} har vi også verdiene til $ P(s) $ for de fem første sekundene, og \textsl{Figur \ref{sogm}} viser en måte å skissere denne tabellen på. I denne figuren har vi skrevet inn antall sekunder og metersmerkene langs én og samme linje (ei linje med tall på kaller vi en \textit{akse}). \vsk
+
+\prbxl{0.6}{Men som nevnt er selve poenget med funksjoner at det er en sammenheng mellom to størrelser, og denne sammenhengen er det ikke så lett å få øye på hvis vi tegner størrelsene våre langs én og samme akse. }\qquad \prbxr{0.3}{Størrelsene er i dette tilfellet \textit{sekunder} og \textit{metersmerke}.}\vspace{-2pt}
+Derfor kan det være lurt å lage to akser, slik som dette (se \net{https://drive.google.com/open?id=1_cScbKGjozn7FDQdhXlQzsZBjIGZjwiZ}{Video 2}):
+
+\raggedleft
+\prbxr{0.4}{Helt generelt kaller vi aksen som går rett bort 
+for \textit{horisontalaksen} og aksen som går rett opp for
+\textit{vertikalaksen}\label{axes}.}
+\vspace{-85pt}
+\begin{figure}
+	\centering
+	\includegraphics[]{\asym{funk1}}
+\end{figure}
+\raggedright
+Og for å slippe å skrive $ s $ eller $ m $ bak alle tallene er det vanlig å sette navn på aksene isteden:\\ 
+\raggedleft
+\prbxr{0.4}{Legg også merke til at vi har fjernet de to nullene. Hjørnet/krysset der begge størrelsene er 0 kalles \textit{origo}.}
+\vspace{-80pt}
+\begin{figure}
+	\centering
+	\includegraphics[]{\asym{funk2}}
+\end{figure}
+\raggedright
+Nå som vi har to akser, tegner vi tallene fra \textsl{Tabell \ref{sekogmetr2}} inn på følgende måte:
+\begin{itemize}
+	\item Fordi $ s=0 $ og $ m(0)=0 $ går vi 0 bort og 0 opp.
+	\item Fordi $ s=1 $ og $ m(0)=0 $ går vi 1 bort og 2 opp.
+	\item Fordi $ s=2 $ og $ m(0)=0 $ går vi 2 bort og 4 opp.
+	\item Fordi $ s=3 $ og $ m(0)=0 $ går vi 3 bort og 6 opp.
+	\item Fordi $ s=4 $ og $ m(0)=0 $ går vi 4 bort og 8 opp.
+	\item Fordi $ s=5 $ og $ m(0)=0 $ går vi 5 bort og 10 opp.
+\end{itemize}
+Disee parene med tall tegner vi inn som \textit{punkt} i figuren vår:\vspace{11pt}
+\parbox[r]{0.6\linewidth}{\quad \includegraphics[]{\asym{funk3}}}\qquad\quad
+\parbox[r]{0.3\linewidth}{\begin{tabular}{|c|c|}
+		\hline
+		\boldmath $ s$ &\boldmath $ P(s) $\\ \hline 
+		0 & 0\\ \hline 
+		1 & 2\\ \hline 
+		2 & 4 \\\hline 
+		3 & 6 \\\hline 
+		4 & 8 \\\hline 
+		5 & 10 \\\hline 
+\end{tabular}}\vspace{11pt}
+
+Og nå kan vi oppdage at det er et bestemt mønster mellom punktene vi har tegnet inn, nemlig at det går en rett linje mellom dem alle:
+\fig{funk4}
+Og siden vi vet at $ {P(s)=2s} $ kan vi finne ut hvor langt strekmannen har gått for så mange sekunder vi bare måtte ønske oss, for eksempel kan vi finne hvor langt han har gått etter 6, 7 og 8 sekunder:
+\alg{
+P(6) &= 2\cdot 6 = 12 \\
+P(7) &= 2\cdot 6 = 14 \\
+P(8) &= 2\cdot 6 = 16 
+}
+Legger vi til disse punktene blir figuren vår seende slik ut:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{\asym{funk5}}
+\end{figure}
+Vi observerer nå at alle punktene vi finner ved å bruke funksjonen $ P(s) $ vil ligge på den blå linja, og vi kaller den blå linja \textit{grafen} til $ P(s) $. (Det er også verdt å merke seg at selv om vi bare hadde visste om to punkt som lå på den blå linja, kunne vi ha tegnet grafen så langt vi ville likevel. Dette er fordi vi treffer alle de andre punktene uansett hvilke to punkt vi velger å tegne linja igjennom).\regv
+
+\section{Lineære funksjoner}
+\subsection{Definisjon}
+Tenk nå at en strekmann med navn Rho starter på 3-metersmerket fra \net{https://drive.google.com/open?id=1bRBc-HdZu8vgMH36tQ3ML4BWtuUy5-ik}{Video 1}, men fortsatt går i det samme tempoet som Pi. Dette er vist i \net{https://drive.google.com/open?id=10TO55oRkO59oCMX43nGV9savuG3whdCA}{Video 3}. Tabellen og grafen til denne ferden blir seende slik ut:
+\prbxl{0.55}{
+\fig{funk8}
+}\quad
+\prbxl{0.35}{	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Sekunder} & \textbf{Metersmerke}\\ \hline 
+		0 & 3\\ \hline 
+		1 & 5\\ \hline 
+		2 & 7 \\\hline 
+		3 & 9 \\\hline 
+		4 & 11 \\\hline 
+		5 & 13 \\\hline 
+\end{tabular}}
+Men også for Rho er det en sammenheng mellom hvor mange sekunder han har brukt, og hvilket metersmerke han har nådd:
+\begin{center}
+		\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Sekunder} & \textbf{Metersmerke}\\ \hline 
+		0 & $ 2\cdot0+3=3 $\\ \hline 
+		1 & $ 2\cdot1+3=5 $\\ \hline 
+		2 & $ 2\cdot2+3=7 $ \\\hline 
+		3 & $ 2\cdot3+3=9 $ \\\hline 
+		4 & $ 2\cdot4+3=11 $ \\\hline 
+		5 & $ 2\cdot5+3=13 $\\\hline 
+	\end{tabular}
+\end{center}
+Hvis vi nå kaller \textit{metersmerket Rho har nådd} for $ R $ og \textit{sekunder Rho har gått} for $ s $, kan vi lage denne funksjonen:
+\[ R(s)=2s+3 \]
+La oss nå sammenligne funksjonen til Pi og Rho:
+
+\parbox[c]{0.75\linewidth}{\fig{funk9}}\quad
+\prbxr{0.2}{Siden vi har to funksjoner har vi tegnet navnene på selve grafene istedenfor vertikalaksen. Dette vil vi også gjøre en del heretter selv om vi bare har én funksjon.}
+
+Det første vi kan merke oss er at grafen til begge funksjonene er en rett linje. Funksjoner med slike grafer kaller vi \textit{lineære} funksjoner. Det andre vi kan merke oss er at grafene til $ P(s) $ og $ R(s) $ er parallelle, dette kommer av at Pi og Rho har den samme farten: \textsl{For hvert sekund som går, flytter begge seg 2 meter. Dette vet vi fordi begge funksjonsuttrykkene har et 2-tall foran $ s $}.\vsk 
+
+Den eneste forskjellen er at $ R(s) $ hele tiden ligger 3 hakk høyere enn $ P(s) $, dette kommer av at $ R(s) $ har et enslig 3-tall i sitt funksjonsuttrykk, mens uttrykket for $ P(s) $ bare består av $ 2s $. \textsl{Dette forteller oss at Rho starter på 3-metersmerket, mens Pi starter på 0-metersmerket}.\vsk
+
+Når vi ser på funksjonene $ R(s) $ og $ P(s) $, finner vi tallene 2 og 3 og bokstaven $ s $. Fordi $ s $ (sekundene det har gått) forandrer seg kaller vi $ s $ 
+\prbxl{0.6}{for \textit{variabelen} til funksjonene. For lineære funksjoner kaller vi tallet foran variabelen for \textit{stigningstallet} og tallet som står ''alene'' for \textit{konstantleddet}.}\qquad 
+\prbxr{0.3}{Stigningstallet kalles noen ganger \textit{vekstfarten}.}
+\os
+\info{Obs!}{
+Vi har sett hvordan det er helt opp til oss selv å velge hva vi kaller funksjonene og variablene våre. Når man skal lage generelle huskeregler for funksjoner er det i matematikk vanlig å kalle variabelen for $ x $ og funksjonen for $ f(x) $. Mange elever tenker ''ligning!'' straks de ser bokstaven $ x $, men dette er ikke tilfellet her. (Rett nok skal vi etterhvert se at funksjoner og ligninger er nært beslektet).}
+\reg[Lineære funksjoner]{
+Funksjoner på formen 
+\[ f(x)=ax +b \]
+kalles linære funksjoner. $ x $ er variabelen,
+$ a $ er stigningstallet, og $ b $ er konstantleddet.
+}
+\eks{\vs \vs
+\alg{
+&f(x)=3x-4 \text{ har stigningstall 3 og konstantledd}{-4} \\
+&g(x) =-2x+1\text{ har stigningstall }{-2}\text{ og konstantledd }{1}\\ 
+&m(r) =r+7\text{ har stigningstall }{1}\text{ og konstantledd }{7}\\
+&p(s) =-s+200\text{ har stigningstall }{-1}\text{ og konstantledd }{200}\\
+&Q(t) =8t\text{ har stigningstall }{8}\text{ og konstantledd }{0}\\ 
+}
+}
+\subsection{Å tegne grafen til funksjonen}
+Lineære funksjoner har sitt navn nettopp fordi alle funksjoner av denne typen har en graf som er en rett linje.  Dette gjør at grafen til lineære funksjoner er overkommelig å tegne, for vi trenger bare to punkt for å lage en rett linje!\regv
+\eks[1]{
+Tegn grafen til funksjonen $ {f(x)=5x-3} $ for $ x $-verdier mellom $ -2 $ og 3. 
+
+\sv
+Det vi trenger er to punkt som vi vet at ligger på grafen til $ f(x) $. Disse kan vi finne ved å sette inn to valgfrie(!) $ x $-verdier i funksjonsuttrykket. Fordi 0 er et veldig enkelt tall å regne med kan det være greit å starte med å velge at $ {x=0} $, da får vi at:
+\alg{
+f(0)&=5\cdot 0 -3 \\
+&= -3
+}
+Da vet vi at punktet $ (0, -3) $ ligger på grafen til $ f(x) $.\vsk
+
+Videre kan det være lurt å velge en $ x $-verdi som ligger et lite stykke unna den første $ x $-verdien vi har valgt (dette er fordi vi må være mer nøyaktig med streken vi tegner jo nærmere punktene våre ligger), så la oss bruke $ x-$verdien 2:
+\alg{
+f(2)&=5\cdot 2 -3 \\
+&= 10-3 \\
+&= 7
+}
+Og derfor vet vi at $ (2, 7) $ også er et punkt på grafen til $ f(x) $. Med to punkt er vi klare til å tegne den rette linja:\vspace{5pt}
+\parbox[r]{0.6\linewidth}{\qquad\qquad\includegraphics[]{\asym{funk17}}}
+\parbox{0.35\linewidth}{
+	\vspace{-120pt}
+\quad	\begin{tabular}{|c|c|}
+	$ x $ & $ f(x) $ \\ \hline
+	0 & $ -3 $ \\
+	2 & 7
+\end{tabular}	
+}
+
+}
+\eks[2]{
+	Når en bil kjører i 80 km/h er lengden $ l $ (i kilometer) bilen har kjørt etter $ t $ timer gitt ved funksjonen
+	\[ l(t)=80t \]
+	Tegn grafen til $ l(t) $ for $ {t=0} $ til $ {t=10} $.
+	
+	\sv
+	For å tegne grafen til $ l(t) $ trenger vi å finne to punkt på grafen. Siden vi har fått vite hvordan vi kan regne ut $ l(t) $ er det helt opp til oss selv hvilken $ t $-verdi vi skal bruke (!), så lenge vi velger $ t $ mellom 0\,-10.
+	\vsk
+	
+	0 er jo et enktelt tall å bruke, så vi starter med å finne at:
+	\[ l(0)=80\cdot 0 = 0 \]
+	Dette gir oss punktet $ (0, 0) $.\vsk
+	
+	Og siden 10 også er et enkelt tall å bruke finner vi at:
+	\[ l(10)=80\cdot 10 =800 \]
+	Dette gir oss punktet $ (10, 800) $. \vsk
+	
+	Da har vi to punkt og er klare til å tegne grafen:
+	\fig{funk6}
+}
+\subsection{Å finne stigningstall og konstantledd grafisk}
+Vi fortsetter å se på funksjonen til Rho, som vi vet er gitt ved dette uttrykket:
+\[ R(s)=2x+3 \]
+Vi har akkurat sett at uttrykket forteller oss at 2 er stigningstallet til funksjonen, mens 3 er konstantleddet. Dette kunne vi også funnet ved å studere grafen til $ R(s) $ på følgende måte (se tilbake til s.\,\pageref{axes} hvis du er usikker på hva som menes med horisontal/vertikalaksen):
+\begin{itemize}
+	\item Når vi går 1 bort langs horisontalaksen, går grafen 2 opp langs vertikalaksen, derfor er stigningstallet 2.
+	\item Grafen skjærer vertikalaksen i verdien 3, derfor er konstantleddet 3.
+\end{itemize}
+\fig{funk11}
+%\fig{funk10}
+Metoden vi akkurat brukte kan vi bruke for alle lineære funksjoner. 
+\begin{itemize}
+	\item For å finne stigningstallet sjekker vi hvor langt (opp/ned) vi beveger oss langs vertikalaksen når vi går 1 bort (til høyre) langs horisontalaksen.
+	\item For å finne konstantleddet ser vi hvilken verdi grafen skjærer på vertikalaksen.
+\end{itemize}
+Men vi er ikke alltid så heldige at vi direkte kan lese av hvor mye vi beveger oss langs vertikalaksen når vi går 1 bort langs horisontalaksen, som f.eks. i denne figuren:
+\fig{funk12b}
+Løsningen blir da å legge merke til at hvis vi går to skritt langs horisontalaksen, så blir det greiere å lese av hvor langt vi har bevegd oss langs vertikalaksen:
+\fig{funk12}
+Av figuren ser vi at når man går 2 bort, beveger grafen seg 3 opp. Det må bety at:\vs
+\[ \text{Når man går 1 bort, går grafen }\frac{3}{2}=1,5\text{ opp.} \]
+Stigningstallet er derfor $ 1,5 $. Samtidig ser vi at grafen skjærer vertikalaksen i verdien 2, og derfor er konstantleddet 2. Altså er funksjonsuttrykket dette: \vs
+\[  f(x)=\underbrace{1,5}_{\llap{stigningstall}}x +\overbrace{2}^{\rlap{konstantledd}}\]
+\reg[Å finne stigningstall og konstantledd grafisk \label{stgogkonst}]{
+Av grafen til en lineær funksjon $ f(x) $ kan vi finne at:
+\begin{itemize}
+	\item stigningstallet $ a $ har samme verdi som brøken $ \frac{\pm \Delta f}{\Delta x} $. $ \Delta x $ er er lengden vi går til høyre fra et punkt på grafen, $ \Delta f $ er lengden vi etterpå må gå opp eller ned for å komme tilbake til grafen. Går vi opp setter vi $ + $ foran $ \Delta f $, går vi ned setter vi $ - $ foran.
+	\item konstantleddet $ b $ er verdien hvor grafen skjærer vertikalaksen.
+\end{itemize}
+\fig{funk13}
+}
+\eks[1]{
+Finn funksjonsuttrykket til $ f(x) $:
+\fig{funk14}
+
+\sv
+Vi observerer at når vi går 3 bort langs horisontalaksen, går grafen 1 opp langs vertikalaksen, stigningstallet er derfor $ \frac{1}{3} $. Vi ser også at grafen skjærer vertikalaksen når verdien er 2, og derfor er konstantleddet 2. Dette betyr at:
+\[ f(x)=\frac{1}{3}x+2 \]
+\fig{funk14b}
+}
+\eks[2]{
+	Finn funksjonsuttrykket til $ f(x) $:
+	\fig{funk15}
+\sv
+Vi observerer at når vi går 2 til høyre, må vi gå 4 \textsl{ned} langs vertikalaksen, stigningstallet er derfor: 
+\[ \frac{-4}{2}=-2 \]
+Vi ser også at grafen skjærer vertikalaksen når verdien er 1, og derfor er konstantleddet 1. Dette betyr at:
+\[ f(x)=-2x+1 \]
+\fig{funk15b}
+}
+\subsection{Skjæring mellom to funksjoner} 
+I mange sammenhenger kan det være nyttig å sammenligne to funksjoner, og ofte er vi interessert i å vite når den éne er større enn den andre. Dette gjør vi ved å finne \textit{skjæringspunktene} til funksjonene, og for lineære funksjoner er det alltid bare snakk om ett punkt.\vsk
+
+La oss tenke at klassen skal på en reise som krever leie av buss. Hos \textit{Jenssen Turbuss} får klassen dette tilbudet:
+\[ \textsl{2000\,kr for sjåfør og 30\,kr per mil som kjøres} \]
+Mens \textit{Tide Buss} tilbyr dette:
+\[ \textsl{1500\,kr for sjåfør og 40\,kr per mil som kjøres} \]
+Antall kroner vi til sammen må betale etter å ha kjørt $ x $ mil kaller vi nå for $ J(x) $ for \textit{Jenssen Turbuss} og $ T(x) $ for \textit{Tide Buss}. Dette gir oss disse to funksjonene:
+\begin{align}
+	J(x) &= 30x + 2000 \label{J}\br 
+	T(x) &= 40x + 1500 \label{T}
+\end{align}
+
+\bhd{Å finne skjæringspunkt grafisk}
+
+Tegner vi grafene for disse funksjonene for $ x $ mellom 0\,mil og 10\,mil får vi denne figuren:
+\fig{funk16}
+I tillegg til grafene har vi også tegnet inn skjæringspunktet, som er punktet hvor de to grafene møter hverandre. Vi kan nå lese av at skjæringspunktet er $ (50, 3500) $, dette betyr at:
+\begin{itemize}
+	\item Skal vi kjøre akkurat 50\,mil blir prisen den samme for begge selskapene.
+	\item Skal vi kjøre \textsl{mindre} enn 50\,mil er det billigst å velge \textit{Tide Buss}. Dette fordi grafen til $ T(x) $ ligger under grafen til $ J(x) $ etter skjæringspunktet.
+	\item Skal vi kjøre \textsl{mer} enn 50\,mil er det billigst å velge \textit{Jenssen Buss}. Dette fordi grafen til $ J(x) $ ligger under grafen til $ T(x) $ før skjæringspunktet.
+\end{itemize}
+\bhd{Å finne skjæringspunkt ved regning}
+Å tegne grafer for hand kan være tidkrevende saker, hvis det bare er skjæringspunktet vi er interessert i kan det derfor være raskere å finne dette ved regning isteden. Det gjør vi ved å merke oss at i skjæringspunktet må verdien til de to funksjonene våre den samme, altså vet vi at:
+\[ J(x)=T(x)\text{ i skjæringspunktet} \]
+Erstatter vi $ J(x) $ og $ T(x) $ med sine funksjonsuttrykk, får vi en ligning vi kan løse (se tilbake til \eqref{J} og \eqref{T} for disse uttrykkene):
+\alg{
+J(x)&=T(x) \\
+300x+2000 &=400x+1500 \\
+2000-1500 &= 400x-300x \\
+500 &= 100x \\
+\frac{5\cancel{00}}{1\cancel{00}} &= \frac{\cancel{100}x}{\cancel{100}}\br
+50 &= x
+}
+Vi har derfor funnet at busselskapene koster det samme hvis vi kjører 50\,mil. For å finne \textsl{hvor} mye de koster finner vi verdien til én av funksjonene for $ {x=50} $, vi bruker her $ J(x) $:
+\alg{
+ J(50)&=300\cdot 50 +2000 \\
+ &= 1500+2000 \\
+ &= 3500
+}
+Ved regning har vi nå funnet det samme som vi fant grafisk, skjæringspunktet er ${ (50, 3500)} $.\regv
+\reg[Skæringspunkt]{
+For to funksjoner $ f(x) $ og $ g(x) $ er skjæringspunktet det punktet hvor verdien til begge funksjonene er den samme. Skjæringspunktet kan finnes grafisk eller ved regning. Ved regning løser man ligningen:
+\[ f(x)=g(x) \]
+}
+\section{Andregradsfunksjoner}
+Eksempler på det som kalles \textit{andregradsfunksjoner} er dette:
+\prbxl{0.6}{\alg{
+		f(x) &= -3x^2+4x+3 \\
+		g(x) &= -x^2 \\
+		r(t) &= t^2+4 \\
+		h(k) &= 5k^2-\frac{3}{2}k 
+}}\quad
+\prbxr{0.3}{Forenklet sagt kan vi si at når en variabel  ($ {x, t}  $ eller $ k $) på det meste er opphøyd i andre, har vi en andregradsfunksjon.}
+Grafen til en andregradsfunksjoner er mye vanskeligere å tegne for hand enn for en lineær funksjon, noe vi skal se et eksempel på nå.\vsk
+
+La oss forsøke å tegne funksjonen 
+\[ f(x)=x^2-2x-3 \]
+for $ x $ mellom $ -2 $ og 4. For andregradsfunksjoner trenger vi ganske mange punkt bare for å få et bilde av hvordan grafen ser ut, og vi velger her å bruke  $ {-2,-1, 0, 1, 2, 3}$ og 4 som $ x $-verdier. Da kan vi lage oss denne tabellen:
+
+\prbxl{0.7}{
+	\begin{align*}
+f(-2) &= (-2)^2-2(-2)-3=4+6-3=5 \\
+f(-1) &= (-1)^2-2(-1)-3=1+2-3=0 \\
+f(0) &= 0^2-2\cdot 0-3=0-0-3=-3 \\
+f(1) &= 1^2-2\cdot 1-3=1-2-3=-4 \\
+f(2) &= 2^2-2\cdot 2-3=4-4-3=-3 \\
+f(3) &= 3^2-2\cdot 3-3=9-6-3=0 \\
+f(4) &= 4^2-2\cdot 4-3=16-12-3=5
+\end{align*}
+}\quad
+\parbox{0.2\linewidth}{\begin{tabular}{|c| c|}
+		\hline
+		$ x $ & $ f(x) $ \\ \hline
+		$ -2 $ & 5 \\
+		$ -1 $ &0 \\
+		$ 0 $ & $ -3 $ \\ 
+		1 & $ -4 $ \\
+		2 & $ -3 $ \\
+		3 & $ 0 $ \\
+		4 &$ 5 $ \\ \hline
+\end{tabular}}
+
+Tegner vi så disse punktene inn i et koordinatsystem får vi denne figuren:
+\fig{funk18}
+Vi ser raskt at det ikke er noen rett linje som kan gå gjennom alle disse punktene, grafen til en andrefunksjon er istedenfor en bue, slik som dette:
+\fig{funk18b}
+Fra figuren over er det også verdt å merke seg to ting:
+\begin{itemize}
+		\item Når $ {x=-1} $ eller $ {x=3} $ så er $ f(x)=0 $. Vi ser derfor at $ (-1, 0) $ og $ (3, 0) $ er \textit{nullpunktene} til $ f(x) $.
+		\item Når $ {x=1} $ er $ f(x) $ på sitt laveste, derfor kaller vi $ (1, -4) $ \textit{bunnpunktet} til $ f(x) $.
+\end{itemize}
+\fig{funk18c}
+
+\begin{comment}
+\section{Gjennomsnitt og vekstfart}
+Tenk deg at en Kari og en BMW starter på samme sted og kjører langs den samme veien. De to sjåførene har hver sin plan for hvordan de ønsker å kjøre:
+\begin{itemize}
+\item Volvo-sjåføren vil kjøre i 60 km/h i 4 timer og så ta pause i 1 time.
+\item BMW-sjåføren vil kjøre i 120 km/h i 2 timer og så ta pause i 3 timer.
+\end{itemize}
+
+
+\vsk
+
+Vi spør oss nå: Hvor langt har bilene kommet etter 5 timer? For å hjelpe oss med å svare på dette lager vi en graf som skisserer ferden til Volvoen og BMWen. Grafene som viser hvor langt bilene har kjørt etter $ x $ kilometer skal vi kalle $ V(x) $ for Volvoen og $ B(x) $ for BMWen.
+\begin{itemize}
+\item Etter 0 timer har Volvoen kjørt 0\,km, og derfor starter grafen i punktet $ (0, 0) $. Etter 4 timer har Volvoen kjørt $ {60\cdot4=240} $\,km, altså må $ (4, 240) $ være et punkt på grafen. Og siden Volvoen kjører med den samme farten de første 4 timene, må grafen der være en rett linje. Den siste timen beveger ikke Volvoen seg, det betyr at den har kommet 240\,km både etter 4 timer og etter 5 timer, altså må grafen der være en rett strek mellom punktene $ (4, 240) $ og $ (5, 240) $.
+\end{itemize}
+\fig{funk19}
+\begin{itemize}
+\item Etter 0 timer har BMWen kjørt 0\,km, og derfor starter grafen i punktet $ (0, 0) $. Etter 2 timer har BMWen kjørt $ {120\cdot2=240} $\,km, altså må $ (2, 240) $ være et punkt på grafen. Og siden BMWen kjører med den samme farten de første 2 timene, må grafen der være en rett linje. De siste 3 timene beveger ikke BMWen seg, det betyr at den har kommet 240\,km både etter 2 timer og etter 5 timer, altså må grafen der være en rett strek mellom punktene $ (4, 240) $ og $ (5, 240) $.
+\end{itemize}
+\fig{funk19b}
+Etter 5 timer har altså begge bilene kjørt 240\,km! Dette er fordi at selv om de har kjørt i forskjellige hastigheter hatt forskjellige lengder på pausene, så er \textit{gjennomsnittsfarten} den samme. 
+\prbxl{0.7}{Når en bil kjører med forskjellige hastigheter over en viss tid er gjennomsnittsfarten den farten bilen måtte kjørt hele tiden for å komme like langt. For eksempel: Siden Volvoen kjørte 240\,km på 5 timer, var gjennomsnittsfarten $ \frac{240 \enh{km}}{5\enh{h}} =44\text{\,km/h}$, og det}\qquad \prbxr{0.2}{Det har blitt norsk standard å forkorte timer med h.}. \vspace{-2pt} \\
+samme gjelder for BMWen.
+Dette betyr at hvis bilene hadde kjørt 44\,km/h i 5 timer, så hadde de også kommet 240\,km avsted. Dette kan vi merke oss grafisk ved at linja mellom punktet $ (0,0) $ og $ (5, 240) $ har stigningstallet 44:
+\begin{figure}\centering
+\parbox{0.5\linewidth}{\includegraphics[]{\asym{funk19c}}}
+\parbox{0.25\linewidth}{\[ \frac{240}{5}=44 \]}
+\end{figure}
+Og sånn vil det være i alle tilfeller: Gjennomsnittet for to punkt på en graf vil alltid være stigningstallet til linja mellom punktene. I praktiske sammenhenger hender det at stigningstallet kalles \textit{vekstfart}/\textit{fart} eller \textit{gjennomsnittlig vekstfart/fart}.\regv
+\reg[Gjennomsnitt og vekstfaktor]{
+Gjennomsnittet av to punkt på en graf tilsvarer stigningstallet til linja (se \hr{stgogkonst}) mellom punktene. Stigningstallet kan også kalles \textit{vekstfart/fart} eller \textit{gjennomsnittlig vekstfart/fart}.
+}
+\eks[1]{
+På grafen under viser $ y $ hvor mange kroner et idrettslag tjener på å selge $ x $ vafler.\os 
+\fig{funk20}
+\textbf{a)} Hva er vekstfarten? \os
+\textbf{b)} Hvilken praktisk betydning har vekstfarten?
+}
+
+\end{comment}
+
+\section{Proporsjonalitet}
+Troika er av mange holdt for å være verdens beste sjokolade og én Troika koster ca 15 kr. Kjøper vi én Troika må vi betale $ {15\cdot1 =15}$ kr, kjøper vi to Troikaer må vi betale $ {15\cdot2=30 }$ kr osv. For kjøp av opptil 4 Troikaer kan vi sette opp en tabell som dette:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		$ y $ (totalpris) & 15 & 30 & 45 & 60 \\ \hline 
+		$ x $ (antall) & 1 & 2 & 3 & 4 \\ \hline 
+	\end{tabular}
+\end{center}
+Her har vi altså kalt totalprisen for $ y $ og antallet for $ x $. Det vi nå kan legge merke til er at $ {\frac{15}{1}=15} $,  $ {\frac{30}{2}=15} $ osv, altså er $ \frac{y}{x}=15 $:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		\boldmath$ p $ \textbf{(pris)} & 15 & 30 & 45 & 60 \\ \hline 
+		\boldmath$ x $ \textbf{(antall)} & 1 & 2 & 3 & 4 \\ \hline 
+	  \boldmath $ p/x $  & 15 & 15 & 15 &15 \\ \hline 
+	\end{tabular}
+\end{center}
+Hvis to størrelser delt på hverandre alltid blir det samme tallet, sier vi at vi har \textit{proporsjonale størrelser}. I dette tilfellet er altså prisen og antallet proporsjonale størrelser fordi $ \text{pris}/\text{antall} $ alltid blir 15. Dette forteller oss, som vi har nevnt, at det koster 15\,kr for én Troika. Dette betyr også at uttrykket for prisen $ p $ blir seende slik ut:
+\[ p(x) = 15x \]
+Grafen til denne funksjonen blir seende slik ut:
+\fig{funk21}
+\reg[Proporsjonale størrelser]{
+Hvis $ y/x $ alltid blir det samme tallet $ a $, har vi at:
+\begin{itemize}
+	\item $ x $ og $ y $ er proporsjonale størrelser.
+	\item Uttrykket for $ y $ blir:\; $  y=a x  $
+	\item Grafen til $ y $ blir en rett linje som skjærer origo.
+	\fig{funk22}
+\end{itemize}
+}
+\eks{
+Tabellen under viser hvor my man må betale hvis man 
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		$ y $ (totalpris) & 15 & 30 & 45 & 60 \\ \hline 
+		$ x $ (antall) & 1 & 2 & 3 & 4 \\ \hline 
+	\end{tabular}
+\end{center}
+}
+\end{document}

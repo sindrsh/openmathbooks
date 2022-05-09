@@ -1,0 +1,455 @@
+\input{/home/sindre/P/doc}
+\input{/home/sindre/P/preamb}
+\usepackage{pgfplots}
+%\usepackage{needspace}
+%\raggedbottom
+%\goodbreak
+%\Needspace{10\baselineskip}
+
+\begin{document}
+\section{Funksjoner \label{f1}}
+
+Se for deg at du og klassen skal på klassetur. For hver person som er med må det betales 200 kr for overnattig, i tillegg så koster leie av buss med sjåfør til sammen 5000 kr. For å finne ut hvor mye penger klassen må samle inn, lager dere følgende regnestykke:
+\begin{align*}
+	\text{penger som må samles inn}&=\text{pris for overnatting per elev} \cdot \text{antall elever}+\text{bussutgifter} \\
+	&= 200\cdot\text{antall elever} + 5000
+\end{align*}
+I mange sammenhenger kan det være litt tungvingt å bruke lange uttrykk som \textit{penger som må samles inn} og \textit{antall elever}. Det kan derfor være lurt av oss å bruke enkeltbokstaver istedenfor. La oss nå si at \textit{P} betyr penger som må samles inn, mens \textit{x} betyr antall elever. Regnestykket vårt blir da:
+$$P=200x+5000$$
+Siden vi uansett må betale 5000 kr i bussutgifter, er det slik at det eneste som forandrer på prisen vår \textit{P}, er antall elever \textit{x} som skal være med. Vi sier da at \textit{P} er en funksjon av $x$. For å tydeliggjøre at vi må vite \textit{x} for å finne \textit{P}, skriver vi ofte $P(x)$. $P(x)$ uttaler vi som \textit{P av x}.
+$$P(x)=200x+5000$$
+
+\section{Verdien av en funksjon}
+Når vi har en funksjon som $ P(x) $ kan vi finne verdien til denne hvis vi vet hva \textit{x} er.
+Så hva blir prisen dersom antall elever er 20? I uttrykket for $P(x)$, setter vi da inn at $x=20$:
+$$P(20)=200\cdot20+5000=9000$$
+Hvis \textit{x} istedenfor er 30 så erstatter vi alle \textit{x}-er i uttrykket for $ P(x) $ med 30:
+$$P(30)=200\cdot30+5000=11000$$
+
+\reg[Verdien av en funksjon når \textit{x} er kjent]{Dersom vi kjenner verdien til \textit{x} kan vi finne den tilhørende verdien til funksjonen $ f(x) $ ved å sette verdien til \textit{x} inn i uttrykket for $ f(x) $.
+}
+
+\eks[1]{Gitt funksjonen $ f(x)=3x+4 $. Finn  verdien til \textit{f} når $ x=8 $. \\
+
+\textbf{Svar:} $ f(8)=3\cdot8+4=24+4=28 $
+}
+
+\eks[2]{ Gitt funksjonen $ h(x)=x^2 +3x+2 $. Finn $ h(-2) $. \\
+
+\textbf{Svar:} $ h(-2)=(-2)^2 +3\cdot (-2) +2 =0$}
+
+\section[Verdien av \textit{x} når $ f(x) $ er kjent]{Verdien av \textit{x} når \boldmath$ f(x) $ er kjent}
+Noen ganger vet vi verdien til en funksjon. Da lurer vi ofte på hva verdien til $ x $ er. La oss si vi vet at prisen for klasseturen vi har sett på endte opp med å bli 9000 kr. Hvor mange elever var da med?
+
+Siden vi vet at $ P(x)=9000 $ kan vi nå skrive:
+\[ 9000=200x + 5000 \]
+Dette er en førstegradsligning med \textit{x} som ukjent.
+\begin{align*}
+9000&=200x + 5000 \\
+9000-5000 &=200x \\
+\frac{4000}{200} &=\frac{\bcancel{200}\,x}{\bcancel{200}} \\
+x &= 20
+\end{align*}
+
+Altså er 20 elever med på turen.
+
+\reg[Verdien av \textit{x} når \boldmath$ f(x) $ er kjent]{Dersom vi kjenner verdien til funksjonen $ f(x) $, får vi en ligning for $ x $.\\
+}
+
+\eks{Gitt funksjonen $ f(x)=3x+4 $. Hva er \textit{x} når $ f(x)=7 $? \\
+
+\textbf{Svar:} \vspace{-10 pt}\begin{align*}
+7&=3x+4 \\
+7-4 &= 3x \\
+\frac{3}{3} &= \frac{\bcancel{3}x}{\bcancel{3}} \\
+1 &= x
+\end{align*}\vspace{-20 pt}}
+\eks[2]{Gitt funksjonen $ h(x)=x^2 +3 $. Finn \textit{x} når $ h(x)=19 $. \\
+
+\textbf{Svar:} \vspace{-10 pt} \begin{align*}
+19&=x^2 +3 \\
+19-3 &= x^2 \\
+16 &= x^2 \\
+\sqrt{16} &= \sqrt{x^2} \\
+\pm 4 &= x
+\end{align*}\vspace{-20 pt}}
+\section{Tegning av grafen til en funksjon}	
+Som vi har sett, vil verdien til en funksjon $ f(x) $ avhenge av hva \textit{x} er. For funksjonenen $ f(x)=x^2-3x+2 $ kan vi lage oss en tabell som viser hvilke \textit{x}-verdier vi har plukket ut og hvilke verdier av $ f(x) $ disse resulterer i. La oss plukke ut $ -3,-2,-3, 0, 1, 2, 3 \text{ og }4$ som \textit{x}-verdier. Vi må da regne ut $ f(x) $ for hver av dem:
+
+\begin{minipage}{.75\linewidth}
+\begin{align*}
+f(-2) &= (-2)^2-3(-2)+2=4+6+2=11 \\
+f(-1) &= (-1)^2-3(-1)+2=1+3+2=5 \\
+f(0) &= 0^2-3\cdot 0+2=0-0+2=1 \\
+f(1) &= 1^2-3\cdot 1+2=1-3+2=-1 \\
+f(2) &= 2^2-3\cdot 2+2=4-6+2=-1 \\
+f(3) &= 3^2-3\cdot 3+2=9-9+2=1 \\
+f(4) &= 4^2-3\cdot 4+2=16-12+2=5
+\end{align*}
+\end{minipage}%
+\begin{minipage}{.2\linewidth}\vspace{-70pt}
+\vspace{15pt}
+\begin{shaded}Husk parantes når \textit{x} er et negativt \\
+tall.
+\end{shaded}
+\end{minipage} \\
+
+I tabellen vi nå lager skriver vi \textit{x}-verdiene vi har plukket ut i første rad og de tilhørende verdiene av $ f(x) $ i andre rad:
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|c|c|c|c| } 
+ \hline
+ x & -2 & -1 & 0 & 1 & 2 & 3 & 4  \\ 
+ \hline
+  f(x) & 11 & 5 & 1 & -1 & -1 & 1 & 5 \\
+ \hline
+\end{tabular}
+\end{center}
+
+Tallene fra tabellen kan vi markere som et punkt i et koordinatsystem. Vi lager oss da en tallinje som går oppover og en tallinje som går bortover. \textit{x}-verdiene finner vi ved å lese av på den horisontale tallinjen, mens $ f(x) $-verdiene leser vi av på den vertikale tallinjen.
+
+For å tegne inn punktene fra tabellen inn i koordinatsystemet kan vi starte der hvor tallinjene krysser og gå følgende veier:
+
+\begin{center}
+\begin{tabular}{ l l l} 
+ $ x=-2$ & $ f(x)=11 $ & \qquad \text{2 til \textit{venstre}, 11 \textit{opp}} \\
+  $ x=-1$ & $ f(x)=5 $ & \qquad \text{1 til \textit{venstre}, 5 \textit{opp}} \\
+   $ x=0$ & $ f(x)=1 $ & \qquad \text{0 bort, 1 \textit{opp}} \\
+    $ x=1$ & $ f(x)=-1 $ & \qquad \text{1 til \textit{høyre}, 1 \textit{ned}} \\
+     $ x=2$ & $ f(x)=-1 $ & \qquad \text{2 til \textit{høyre}, 1 \textit{ned}} \\
+      $ x=2$ & $ f(x)=1 $ & \qquad \text{2 til \textit{høyre}, 1 \textit{opp}} \\
+       $ x=4$ & $ f(x)=5 $ & \qquad \text{2 til \textit{høyre}, 5 \textit{opp}} \\
+\end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{#1^2 - 3*#1+1}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[
+%/pgf/number format/1000 sep={},
+	height=15cm, width=12cm,
+%    scale only axis,
+	grid=both,
+	axis lines = left,
+	xmin=-2.5, xmax=4.5,
+	ymin=-1.5, ymax=11.5,
+    xlabel=$x$,ylabel=$f(x)$, 
+        xtick={-3,...,4} , 
+    ytick={-1,1,2,...,11},
+	axis lines=middle,      
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+    samples=100, 
+    color=blue,
+]{f(x)};
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+Tenk nå at vi lager en ny tabell, men at vi finner så mange punkter at de ligger helt tett i tett inntil hverandre. Punktene vil da danne en sammenhengende strek som ser slik ut:
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{#1^2 - 3*#1+1}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+%/pgf/number format/1000 sep={},
+	height=15cm, width=12cm,
+%    scale only axis,
+	axis lines = left,
+	xmin=-2.5, xmax=4.5,
+	ymin=-1.5, ymax=11.5,
+    xlabel=$x$,ylabel=$f(x)$, 
+        xtick={-3,...,4} , 
+    ytick={-1,1,2,...,11},
+	axis lines=middle,      
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+    samples=100, 
+    color=blue,
+]{f(x)};
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+
+Figuren over kaller vi grafen til funksjonen $ f(x)=x^2+3x+1 $. Vi kan nå observere at punktene vi fant når \textit{x} var $ -2,-1, 0, 1, 2, 3 \text{ og } 4 $ ligger på linja til denne grafen: \\
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{(#1)^2 - 3*#1+1}%
+}
+
+\pgfmathsetmacro\fa{f(-2)}
+\pgfmathsetmacro\fb{f(-1)}
+\pgfmathsetmacro\fc{f(0)}
+\pgfmathsetmacro\fd{f(1)}
+\pgfmathsetmacro\fe{f(2)}
+\pgfmathsetmacro\ff{f(3)}
+\pgfmathsetmacro\fg{f(4)}
+\fa
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+%/pgf/number format/1000 sep={},
+	height=13cm, width=13cm,
+%    scale only axis,
+	axis lines = left,
+	xmin=-2.5, xmax=4.7,
+	ymin=-1.6, ymax=11.5,
+    xlabel=$x$,ylabel=$f(x)$, 
+        xtick={-3,...,4} , 
+    ytick={-1,1,2,...,11},
+	axis lines=middle,      
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+    samples=100, 
+    color=blue,
+]{f(x)};
+\addplot[only marks, black] table {
+      X Y		
+      -2 \fa
+      -1 \fb
+      0 \fc
+      1 \fd
+      2 \fe
+      3 \ff
+      4 \fg
+    }
+node[pos=0.0, right] {(-2,11)} 
+node[pos=0.16 , left] {(-1,5)}
+node[pos=0.33, right] {(0,1)}
+node[pos=0.50, anchor=north east] {(1,-1)}
+node[pos=0.68, anchor=north west] {(2,-1)}
+node[pos=0.80, right] {(3,1)}  
+node[pos=1, right] {(4,5)}  
+ ;
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+
+Og sånn vil det være for alle valg av \textit{x} så lenge vi finner punkt ved hjelp av denne funksjonen.
+
+\section{Lineære funksjoner}
+I \hr[seksjon]{f1} så vi på en klasse som skulle på tur, og fant at prisen $ P $ per \textit{x} antall elever kunne skrives som funksjonen:
+\[ P(x)=200x+5000 \]
+Denne funksjonen består av to ledd: Det ene er \textit{x} ganget med en konstant (200), mens det andre er bare en konstant (5000). Når en funksjon består av to slike ledd kaller vi den for en \textit{lineær funksjon}. Dette er fordi alle funksjoner av denne typen vil ha en graf som blir ei rett linje dersom vi tegner den i et koordinatsystem. 
+
+ Si nå at vi ikke visste funksjonsuttrykket til $ P(x) $, men bare fikk se grafen til den: 
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{200*#1 +5000}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[	axis y line=middle, axis x line=bottom,
+%/pgf/number format/1000 sep={},
+	height=10cm, width=12cm,
+%    scale only axis,
+%	axis lines = left,
+%	xmin=-2.5, xmax=4.5,
+	ymin=0, ymax=8000,
+%    xlabel=$x$,ylabel=$f(x)$, 
+    xtick={0, ..., 14} , 
+    ytick={0,1000,...,7000},    
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+	domain = 0:15,
+    samples=100, 
+    color=blue,
+]{f(x)};
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+
+Hvis vi ønsker å finne funksjonsuttrykket kan vi startet med å finne konstanten som står aleine. Når \textit{x} er 0, så blir det ene leddet i funksjonen også lik 0, og derfor er det bare det enslige konstantleddet som står igjen i dette punktet. Når $ x=0 $ er funksjonsverdien lik 5000, dette betyr at konstanten som står aleine også er lik 5000.
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{200*#1 +5000}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[	axis y line=middle, axis x line=bottom,
+%/pgf/number format/1000 sep={},
+	height=10cm, width=12cm,
+%    scale only axis,
+%	axis lines = left,
+%	xmin=-2.5, xmax=4.5,
+	ymin=0, ymax=8000,
+%    xlabel=$x$,ylabel=$f(x)$, 
+    xtick={0, ..., 14} , 
+    ytick={0,1000,...,7000},    
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+	domain = 0:15,
+    samples=100, 
+    color=blue,
+]{f(x)}
+node[pos=0.0, black, inner sep=0pt, pin=-45:\color{black} den enslige konstanten] {};
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+
+Tallet som ganges med \textit{x} forteller oss hvor mye prisen stiger for hver elev som blir med. For å finne ut av dette velger vi oss to \textit{x}-verdier som gir punkt det er lett å lese av på figuren:
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{200*#1 +5000}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[	axis y line=middle, axis x line=bottom,
+%/pgf/number format/1000 sep={},
+	height=10cm, width=12cm,
+%    scale only axis,
+%	axis lines = left,
+%	xmin=-2.5, xmax=4.5,
+	ymin=0, ymax=8000,
+%    xlabel=$x$,ylabel=$f(x)$, 
+    xtick={0, ..., 14} , 
+    ytick={0,1000,...,7000},    
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+	domain = 0:15,
+    samples=100, 
+    color=blue,
+]{f(x)};
+\addplot[dashed,very thin,color=black] coordinates { (5,0) (5,6000) };
+\addplot[dashed,very thin,color=black] coordinates { (10,0) (10,7000) };
+\addplot[dashed,very thin,color=black] coordinates { (0,6000) (5,6000) };
+\addplot[dashed,very thin,color=black] coordinates { (0,7000) (10,7000) };
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+
+For $ x=5 $ ser vi at prisen blir 6000. Når $ x=10 $ blir den derimot 7000. Dette betyr at prisen har steget med $ 7000-6000=1000 $ når antallet elever økte med $ 10-5=5 $. Prisøkningen per elev blir derfor:
+\[ \frac{1000}{5}=200 \]
+Tallet som skal ganges med \textit{x} er altså 200. 
+
+Ut ifra det vi har funnet, kan vi nå skrive:
+\[ P(x)=200x+5000 \]
+Dette stemmer overens med uttrykket som vi egentlig visste fra før av. Generelt kaller vi konstanten som ganges med \textit{x} for \textit{stigningstallet}, mens konstanten som står aleine kaller vi for \textit{konstantleddet}.
+
+\reg[Lineære funksjoner]{Når vi kan skrive en funksjon $ f(x) $ som et tall \textit{a} ganget med \textit{x}, pluss et annet tall \textit{b}, så kaller vi $ f(x) $ for en lineær funksjon:
+\[ f(x)=a x + b \]
+
+\textit{a} kaller vi for stigningstallet, mens \textit{b} kaller vi for konstantleddet. De to tallene er definert som:
+\[ b=f(0) \]
+\[ a=\frac{f(x_2)-f(x_1)}{x_2-x_1} \]
+hvor $ x_1 \text{ og } x_2$ er to tilfeldig valgte \textit{x}-verdier og der $ x_2>x_1 $. 
+
+\begin{figure}[H]
+\centering
+\pgfmathdeclarefunction{f}{1}{%
+  \pgfmathparse{0.5*#1 +4}%
+}
+\pgfplotsset{scaled y ticks=false}
+\begin{tikzpicture}[scale=1]
+\begin{axis}[	axis y line=middle, axis x line=bottom,
+	height=10cm, width=12cm,
+    xticklabels={},
+    yticklabels={},   
+    extra x ticks={0,4, 10}, 
+    extra x tick labels={0,$ x_1 $, $ x_2 $ },
+    extra y ticks={6, 9}, 
+    extra y tick labels={$ f(x_1) $, $ f(x_2) $ },    
+%    xlabel style={at={(ticklabel* cs:1)},anchor=north west}, 
+every axis x label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+},
+every axis y label/.style={
+    at={(ticklabel* cs:1.05)},
+    anchor=center,
+}	   
+]
+\addplot [
+	domain = -1:15,
+    samples=100, 
+    color=blue,
+]{f(x)}
+node[pos=0.063, black, inner sep=0pt, pin=-45:\color{black} b] {};
+\addplot[dashed,very thin,color=black] coordinates { (4,0) (4,6) };
+\addplot[dashed,very thin,color=black] coordinates { (10,0) (10,9) };
+\addplot[dashed,very thin,color=black] coordinates { (0,6) (4,6) };
+\addplot[dashed,very thin,color=black] coordinates { (0,9) (10,9) };
+\end{axis} 
+\end{tikzpicture}
+\end{figure}
+}
+\eks{
+Prisen $ P $ kroner for å kjøre \textit{x} kilometer i en taxi er gitt ved funksjon:
+\[ P(x)= 10x+100 \]
+a) Hva må du betale når du har kjørt 0 kilometer?
+
+b) Hvor mye stiger prisen med for hver kilometer du kjører?
+
+c) Hva må du betale dersom taxien kjører deg 20 kilometer? \\
+
+\textbf{Svar:} \vspace{5pt} \\
+a) Når $ x=0 $ står vi igjen med bare konstantleddet til \textit{P}, som er 100. Prisen er derfor 100 kr
+
+b) Hvor mye prisen stiger med per kilometer er stigningstallet til funksjonen. Prisen stiger derfor med 10 kr per kilometer.
+
+c) $ P(20)=10\cdot20 + 100=300 $. Altså må vi betale 300 kr for å kjøre 20 kilometer.
+}
+\end{document}

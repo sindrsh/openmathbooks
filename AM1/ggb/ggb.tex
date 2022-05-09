@@ -1,0 +1,133 @@
+\input{../doc}
+\input{../preamb}
+
+\begin{document}
+\section{GeoGebra}
+\subsection{Introduksjon}
+Når du åpner GeoGebra får du et bilde som dette:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{ggbalgoggraf}
+\end{figure}
+Feltet hvor det står ''Skriv inn'' kalles \textit{inntastingsfeltet}. Dette feltet og det blanke feltet under utgjør \textit{algebrafeltet}. Koordinatsystemet til høyre kalles \textit{grafikkfeltet}.
+
+\subsection{Å skrive inn punkt, funksjoner og linjer}
+\subsubsection{Punkt}
+Si at vi ønsker å få punktene $ (1,3) $ og $ (4,5) $ til å vises i grafikkfeltet. I inntastingsfeltet skriver vi da
+\g{(1,3)}
+og \vs
+\g{(4,5)}
+GeoGebra kaller da punktene $ A $ og $ B $, og tegner dem inn i grafikfeltet:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{pointAandB}
+\end{figure}
+Ønsker vi å selv et punkts navn kan vi f. eks skrive
+\g{P=(2,4)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{pointP}
+\end{figure}
+\subsubsection{Funksjoner}
+Si vi har funksjonen 
+\[f(x)= \frac{3}{2} x^2 + 3x \]
+For å bruke $ f(x) $ i GeoGebra, skriver vi:
+\g{3/2*x\^{}2+3x}
+Når vi ikke gir funksjonen noen navn, vil GeoGebra automatisk gi funksjonen navnet $ f $. I algebrafeltet får vi derfor
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{skrivf}
+\end{figure}
+I grafikkfeltet får vi grafen til $ f $. \vsk
+
+Hvis vi isteden har funksjonen
+\[ P(x)= 0,15x^3 - 0,4 x\]
+er det to ting vi må passe på. Det første er at \textsl{alle desimaltall må skrives med punktum istedenfor komma} i GeoGebra
+. Det andre er at vi ønsker å gi funksjonen navnet $ P(x) $. Vi skriver da
+\g{P(x) = 0.15x\^{}3 - 0.4x}
+og får \vspace{-5pt}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{pfig}
+\end{figure}
+\info{Obs!}{
+Man kan aldri gi funksjoner navnet $ {y(x)} $ i GeoGebra. $ y $ kan bare brukes når man skriver inn uttrykk for en rett linje, altså $ {y=ax +b} $, hvor $ a $ og $ b $ er to valgfrie tall.
+}
+
+\subsubsection{Vannette og loddrette linjer}
+
+Ønser vi å lage ei linje som går vannrett gjennom verdien 3 på $ y $-aksen og ei linje som går loddrett gjennom verdien 2 på $ x $-aksen skriver vi:
+\g{y = 3}
+og 
+\g{x = 2 }
+Da får vi denne figuren:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{23}
+\end{figure}
+
+\subsection{Å finne verdien til funksjoner og linjer}
+\subsubsection{Funksjoner}
+Si vi har funksjonen
+\[H(x)= x^2 + 3x -3 \]
+Hvis vi ønsker å vite hva $ H(2) $ er, skriver vi
+\g{H(2)}
+som resulterer i dette
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{H}
+\end{figure}
+Da vet vi at $ H(2)=7 $.
+\subsubsection{Linjer}
+Det anbefales på det sterkeste at du bruker funksjonsuttrykk når du behandler linjer i GeoGebra, men i noen tilfeller kommer man ikke utenom linjer på former $ y=ax+b $. \vsk
+
+La oss se på de to linjene \vs
+\alg{
+	y&= x-3 \vn
+	y&= -2x+1
+}
+Vi skriver disse inn i GeoGebra, og får
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{fglin1}
+\end{figure}
+Ønsker vi nå å finne hva verdien til $ {y=x-3} $ er når $ {x=2} $, må vi legge merke til at GeoGebra har kalt denne linja for $ f $. Svaret vi søker får vi da ved å skrive $ f(2) $. Ønsker vi samtidig å vite hva $ {y=-2x+1} $ er når $ {x=0} $ må vi skrive $ g(0) $:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{fglin2}
+\end{figure}
+
+\newpage
+\subsection{Knapper og kommandoer}
+\st{
+\textbf{Videoer}
+\begin{itemize}
+\item \net{https://drive.google.com/file/d/1u9u6eZFW8yqtM2ukdW9716i1_YH0NMOa/view?usp=sharing}{Finne nullpunktene til en graf}
+\item \net{https://drive.google.com/file/d/11B7o3WMrbR5cpfshkv9FSBpQ5khBCwLS/view?usp=sharing}{Finne lokale bunnpunkt (eller toppunkt) til en graf}
+\item \net{https://drive.google.com/file/d/1koy-ffEejtIt-YbIohoFN4gbMLi-95cb/view?usp=sharing}{Finne skjæringspunktene til to funksjoner}
+\item \net{https://drive.google.com/file/d/1Z8v05XjlqsSFpHEed5q4s0nGDjdQUfqs/view?usp=sharing}{Justere akser}
+\item \net{https://drive.google.com/file/d/1oKKDk084IEhy11rNhDk0-VykzXLuhthy/view?usp=sharing}{Endre tykkelse, farge o.l på graf}
+\item \net{https://drive.google.com/file/d/1568rRj2PxzwK6wSm7v4w3GWzDnGtSuuX/view?usp=sharing}{Tegne graf på gitt intervall}	\\[-5pt]
+{\footnotesize I videoen tegner vi $f(x)= x^2-3x+2 $ på intervallet $ 0\leq x \leq 5 $}.
+\item \net{https://drive.google.com/file/d/1x7y7DJMJ-7rfpgapB48e5Nlq6UnXXcI2/view?usp=sharing}{Lage linje mellom to punkt.}	\\[-5pt]
+{\footnotesize Legg merke til hva som gjøres mot slutten av videoen for å få det vante uttrykket $ y=ax+b $}.
+\end{itemize}
+}
+\st{\textbf{Kommandoer} \vsk
+	
+\mer Mange av kommandoene har egne knapper, som blant annet vist i videoene over.
+\begin{itemize}
+	\item \cmds{abs( <x> )}{Gir lengden til $ x $ (et tall, et linjestykke o.l.). Alternativt kan man skrive {\tt{|x|}}}.
+	\item \cmds{Linje( <Punkt>, <Punkt> )}{Gir linjen mellom to punkt.}
+	\item \cmds{Ekstremalpunkt( <Funksjon>, <Start>, <Slutt> )}{Finner lokale topp- og bunnpunkt for en funksjon på et gitt intervall.}
+	\item \cmds{Funksjon( <Funksjon>, <Start>, <Slutt> )}{Tegner en funksjon innenfor et gitt intervall.}
+	\item \cmds{Mangekant( <Punkt>, ..., <Punkt> )}{Tegner mangekanten mellom gitte punkt.}
+	\item \cmds{Nullpunkt( <Funksjon>, <Start>, <Slutt> )}{Gir nullpunktene til en funksjon innenfor et gitt intervall}
+	\item \cmds{Skjæring( <Objekt>, <Objekt> )}{Finner skjæringspunktene til to objekt (funksjoner, linjer o.l.)}
+	
+\end{itemize}
+}
+
+
+\end{document}
+

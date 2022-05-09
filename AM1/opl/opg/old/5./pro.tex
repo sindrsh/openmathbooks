@@ -1,0 +1,320 @@
+\input{/home/sindre/G/doc}
+\input{/home/sindre/G/preamb}
+
+
+\begin{document}
+\chapter{Prosentrekning}
+\section{Prosent av eit tal}
+Lat oss no prøve å finne 20\% av 400. Dette betyr at me skal ha 20 ganger meir enn 1\% av 400 :\label{20pro}
+\alg{
+\text{20\% av 400}&= 20\cdot\text{1\% av 400} \\
+&= 20\cdot 4\\
+&= 80
+}
+
+\eks[1]{
+	 Finn 50\% av 800.
+	 
+	 \sv
+	 Me startar med å rekne ut kva 1\% av 800 er:
+	 \[ 1\% \text{ av 800}=\frac{800}{100}=8 \]
+	 Sidan 1\% av 800 er 8, og me skal ha 50\% av 800, gangar me 50 med 8:
+	 \[ 50\cdot8 = 400 \]
+	 50\% av 800 er 400.  (50\% blir alltid halvparten av talet!)
+}
+\eks[2]{
+	Finn 70\% av 5\,000.
+	
+	\sv
+	
+	Me startar med å rekne ut kva 1\% av 5\,000 er:
+	\[ 1\% \text{ av 5\,000}=\frac{5000}{100}=50 \]
+	Sidan 1\% av 5\,000 er 50, og me skal ha 70\% av 5\,000, gangar me 50 med 70:
+	\[ 50\cdot70 = 3500 \]
+	70\% av 5\,000 er 3500.
+}
+
+\end{document}
+\eks[2]{
+	 Finn 2\% av 7,4. 
+	
+	\sv \vsb 
+	\[ \frac{2\cdot 7,4}{100}=0,148 \]
+}
+
+
+\section{Antall prosent \textit{a} utgjør av \textit{b}}
+Hva nå om vi har tallet 240 og ønsker å finne ut hvor mange prosent dette utgjør av 400?\vsk
+
+\parbox[l][][l]{0.75\linewidth}{
+	Vi vet at 1\% av 400 har verdien 4. For hver firer som går på 240 har vi derfor 1\%. Til sammen går det 60 firere på 240, dette betyr at 240 utgjør 60\% av 400.}\qquad
+\parbox[r][][l]{0.15\linewidth}{\begin{shaded}%
+$ \frac{240}{4}=60 $\vspace{-3pt}.\end{shaded}}
+\begin{figure}[hbt]
+	\centering 
+	\includegraphics[scale=1]{\asym{pro2}} 
+\end{figure}
+En direkte utregning kan vi skrive slik:
+\alg{
+\text{Antall prosent 240 utgjør av 400}&=\frac{240}{\text{Verdien til 1\% av 400}} \br
+&= \frac{240}{4} \br
+&= 60
+}
+
+\reg[Antall prosent \boldmath $ a $ utgjør av $ b $]{
+	\vs
+\begin{equation}\label{autgavb}
+\text{Antall prosent \textit{a} utgjør av \textit{b}}=\frac{a}{\text{1\% av }b}
+\end{equation}
+}
+\eks[1]{Hvor mange prosent utgjør 60 av 200?
+
+\sv
+1\% av 200 er $ {\frac{200}{100}=2} $. Antall prosent 60 utgjør av 200 er derfor:
+\[ \frac{60}{2}=30 \]
+60 er 30\% av 200.
+}
+\eks[2]{Hvor mange prosent utgjør 13,1 av 12,5?
+	
+	\sv
+	1\% av 12,5 er $ {\frac{12,5}{100}=0,125} $. Antall prosent 13,1 utgjør av 12,5 er derfor:
+	\[ \frac{13,1}{0,125}=104,8 \]
+	13,1 er 104,8\% av 12,5.
+}
+\eks[3]{
+En vare kostet opprinnelig 500 kr, men prisen er satt ned til 350 kr. Hvor mange prosent avslag er gitt?
+
+\sv
+Det er gitt $ {\text{500 kr}-\text{350 kr}=\text{150 kr}} $ i avslag og 1\% av 500 er $ {\frac{500}{100}=5} $. Antall prosent 150 utgjør av 500 er:
+\[ \frac{150}{5}=30  \]
+Avslaget er derfor 30\%.
+}
+\info{Tips}{Man kan også se på prosent som et forhold man alltid uttrykker som en brøk med 100 i nevner. For eksempel er forholdet mellom 40 og 800 lik \[ \frac{40}{800}=0,05 \]
+Skal vi gjøre om 0,05 til en brøk med 100 i nevener, må vi utvide brøken (Se ??):
+\alg{
+\frac{0,05}{1}\cdot\frac{100}{100} &= \frac{5}{100} \br
+&= 5 \%
+} 
+40 utgjør altså 5\% av 800.\vsk
+
+I praksis betyr dette at vi finner forholdet vi ønsker, og flytter komma to plasser til høyre. I \textsl{Eksempel 1} kunne vi skrevet:
+\[ \frac{60}{200}=0,3 \]
+Altså 30\%.
+}
+\begin{comment}
+\info{Tips}{I \textsl{Eksempel 1} over fant vi at 1\% av 200 er $ {\frac{200}{100}=2} $. Å dele på 2 er derfor det samme som å dele med $ \frac{200}{100} $. Istedenfor å skrive $ \frac{60}{2} $ kunne vi altså skrevet:
+\begin{flalign*}
+&&  \frac{60}{\frac{100}{200}}&=60\cdot\frac{100}{200} && \llap{\color{blue}\text{Se ??}}
+\end{flalign*}
+Dette ser litt kronglete ut, men siden ganging med hundre bare betyr at vi flytter komma to plasser til høyre, kan vi først regne ut 
+\[ \frac{60}{200}=0,3 \]
+og etterpå flytte komma to plasser for å få svaret i prosent:
+\[ 0,3 = 30\% \] 
+}
+\end{comment}
+\section{Prosentfaktor}
+\parbox[l][][l]{0.6\linewidth}{Vi har sett at når vi snakker om prosent, snaker vi egentlig om brøker med 100 som nevner. Disse brøkene har, som alle andre brøker, en verdi. Og for å i finne verdien til en brøk, deler vi tallet over brøkstreken med tallet under.}\qquad
+\parbox[r][][l]{0.3\linewidth}{\begin{shaded}%
+		Når vi deler på 100, flytter vi komma to plasser til venstre.\end{shaded}}
+\newline
+\vsk 
+Skal vi for eksempel finne verdien av 37,9\%, får vi:
+\alg{
+	37,9\%&=\frac{37,9}{100} \br
+	&= 0,379
+}
+Vi sier da at 37,7\% er skrevet som \textit{prosentfaktor}\index{prosentfaktor}.\regv
+\reg[Prosentfaktor \label{profakt}]{
+	Verdien av et prosenttall kalles prosentfaktoren.
+}
+\eks[1]{	Finn prosentfaktoren til 50\%.
+	
+	\sv \vs \vs
+	\[ 50\% = 0,5 \]
+	Prosentfaktoren er 0,5.
+}
+\eks[2]{	
+	Finn prosentfaktoren til 3,4\%.
+	
+	\sv \vs \vs
+	\[ 3,4\% = 0,034 \]
+	Prosentfaktoren er 0,034.}
+\eks[3]{	
+	Finn prosentfaktoren til 123\%.
+	
+	\sv \vs \vs
+	\[ 123\% = 1,23 \]
+	Prosentfaktoren er 1,23.}\vsk
+Når vi bruker prosentfaktorer sparer vi oss for å dele med 100 når vi skal finne prosenter av et tall. La oss se tilbake på regnestykket fra side \pageref{20pro}, hvor vi fant 20\% av 400. Da ganget vi 20 med 400 og delte på 100. Prosentfaktoren til 20\% er $ {\frac{20}{100}=0,2} $. Ganger vi denne med 400, får vi akkurat samme resultatet som på side \pageref{20pro}:
+\alg{
+\frac{20}{100}\cdot400 &= 0,2\cdot400 \\
+&= 80
+} 
+\reg[\textit{a}\% av \textit{b}]{\vsb
+\begin{equation}\label{aprob2}
+a\%\text{ av }b= (\text{prosentfaktoren til }a)\cdot b
+\end{equation}
+}
+\eks[1]{
+Finn 30\% av 90.
+
+\sv
+Prosentfaktoren til 30\% er 0,3, altså får vi:
+\alg{
+\text{30\% av 90}&= 0,3\cdot 90 \\
+&= 27
+}}
+\eks[2]{
+Finn 24,6\% av 189,5.
+
+\sv
+Prosentfaktoren til 124,6\% er 1,246\,, altså får vi:
+\alg{
+	\text{124,6\% av 189,5}&= 1,246 \cdot 189,5 \\
+	&=236.117
+}
+}
+\eks[3]{
+Finn 100\% av 80.
+
+\sv
+Prosentverdien til 100\% er 1, altså får vi:
+\alg{
+	\text{100\% av 80}&= 1\cdot 80 \\
+	&= 27}
+\textsl{Merk}: 100\% av et tall er alltid tallet selv!
+}
+\section{Vekstfaktor \label{vekstfaktor}}
+I mange dagligdagse situasjoner har noe økt eller minket med en viss prosent. I en butikk kan man for eksempel komme over en skjorte som originalt koster 500 kr, men som er rabbatert med 40\%. Dette betyr at vi skal trekke ifra 40\% av originalprisen når vi skal betale.\vsk
+
+Én måte å regne ut hva vi må betale, er å starte med å finne fratrekket:
+\alg{
+\text{40\% av 500}&=0.4\cdot500\\
+	&=200
+}
+$ {500-200=300 }$, altså må vi betale 300 kr for skjorten.\vsk
+
+Et litt annet regnestykke får vi om vi tenker på denne måten: Skal vi betale full pris, må vi betale 100\% av 500. Men får vi 40\% i rabatt, skal vi bare betale ${100\%-40\%=60\%}$ av 500:
+\alg{
+\text{60\% av 500}&=0.6\cdot500 \\
+&= 300 
+}
+Svaret blir selvsagt det samme, vi må betale 300 kr for skjorten.\vsk
+\end{document}
+\parbox[l][][l]{0.6\linewidth}{Det er ikke alltid vi er så heldige at vi får rabatt på et produkt, ofte må vi faktisk betale et tillegg. \textit{Mervardiavgiften} er et slikt tillegg. I Norge må vi betale 25\% i merverdiavgift på mange varer.\vspace{1pt}}\qquad
+\parbox[r][][l]{0.3\linewidth}{\begin{shaded}
+	Merverdiavgift for-\\kortes til mva.
+	\end{shaded}
+	}
+Det betyr at vi må betale et tillegg på 25\%, altså \\ $100\%+25\%=125\%$ av originalprisen.\vsk
+
+\parbox[l][][l]{0.485\linewidth}{
+\textsl{\color{OliveGreen}\textbf{Eksempel}}: Øreklokkene på bildet til høyre koster 999,20 kr \textsl{eksludert} mva. Men \textsl{inkludert} mva. må vi betale:
+\alg{
+	\text{125\% av 999,20}&=1.25\cdot999,20\\
+	&= 1249
+}
+Altså 1249 kr.\vsk
+
+Mer om merverdiavgiften finner du på \href{http://www.skatteetaten.no/no/Bedrift-og-organisasjon/avgifter/merverdiavgift/}{\color{blue}skatteetaten.no}.
+}\quad
+\parbox[r][][l]{0.55\linewidth}{
+		{\vspace{4pt}
+	%	\includegraphics[scale=0.4]{../fig/peltor}}}
+\vsk
+
+\prbxl{0.6}{Vi har nå sett på to eksempler: I det ene sank prisen på en vare, mens i det andre økte den. Når prisen sank med 40\%, endte vi opp med å betale 60\% av originalprisen. Vi sier da at \textit{vekstfaktoren} er 0,6. Når prisen økte med 25\%, endte vi opp med å betale 125\% av originalprisen. Da er vekstfaktoren 1,25.}\qquad
+\prbxr{0.3}{Mange stusser over at ordet vekstfaktor brukes selv om en størrelse \textsl{synker}, men slik er det. Kanskje et bedre ord ville være \textit{endringsfaktor}?}
+\regv
+\reg[Vekstfaktor \label{vekstfakt}]{\vs
+\begin{itemize}
+\item Når en størrelse synker med $ a $\%, ender vi opp med $ {100\% - a\%} $ av størrelsen.
+
+\item Når en størrelse øker med $ a $\%, ender vi opp med $ {100\% + a\%} $ av størrelsen. 
+
+\item Verdien til $ {100\% - a\%} $ eller $ {100\% + a\%} $ kalles vekstfaktoren.
+\end{itemize}
+}
+\eks[1]{ En vare verd 1000 kr er rabattert med 20\%.\os
+\textbf{a)} Hva er vekstfaktoren?\os
+\textbf{b)} Finn den nye prisen.
+	
+\sv 
+\textbf{a)} Siden det er 20\% rabbatt må vi betale $ {100\%-20\%= 80\%} $ av originalprisen. Vekstfaktoren er derfor 0,8. \os
+
+\textbf{b)} Den nye prisen finner vi ved å gange vekstfaktoren med originalprisen:
+\[ 0,8\cdot1000  = 800 \]
+Den nye prisen er altså 800 kr.
+}
+\eks[2]{En sjokolade koster 9,80 kr, ekskludert mva. På matvarer er det 15\% mva. \os
+\textbf{a)} Hva er vekstfaktoren?	\os
+\textbf{b)} Hva koster sjokoladen inkludert mva?
+
+\sv
+\textbf{a)} Med 15\% i tillegg må man betale $ {100\%+15\%= 115\%} $ av prisen eksludert mva. Vekstfaktoren er derfor 1,15.\vsk
+
+\textbf{b)} \vs
+\[ 1,15\cdot 9.90=12,25 \]
+Sjokoladen koster 12,25 kr inkludert mva.
+}
+\section{Prosentpoeng}
+Vi har akkurat sett på størrelser som økte eller minket med en viss prosent. Men hvis størrelsen selv er oppgitt i prosent, må vi holde tunga rett i munnen. La oss bruke størrelsen 10\% som et eksempel.\vsk
+
+
+\prbxl{0.6}{Hvis 10\% øker med 5\%, får vi:
+\alg{
+\text{10\% økt med 5\%} &= 10\%\cdot1,05\\
+&= 10,5\%
+}
+Men hvis 10\% istedenfor øker med 5 \textit{prosentpoeng}, ender vi med:
+}\qquad
+\prbxr{0.3}{I forrige seksjon fant vi at å øke en størrelse med 5\% er det samme som å gange størrelsen med 1,05}
+\alg{
+	\text{10\% økt med 5 prosentpoeng} &= 10\%+5\%\\
+	&= 15\%}
+10,5\% og 15\% er to helt forskjellige størrelser!\regv
+\reg[Prosentpoeng]{\vs \vs
+\alg{
+&\text{a\% økt med \textit{b} prosentpoeng} = a\% + b\% \br
+&\text{a\% minket med \textit{b} prosentpoeng} = a\% - b\%
+}
+}
+\eks{
+En dag var 5\% av elevene på en skole borte. Dagen etter var 7,5\% av elevene borte. \os
+\textbf{a)} Hvor mye økte fraværet i prosentpoeng?\os
+\textbf{b)} Hvor mye økte fraværet i prosent?
+
+\sv
+\textbf{a)} $ {7,5\%-5\%=2,5\%} $, derfor har fraværet økt med 2,5 prosentpoeng. \vsk
+
+\textbf{b)} Her må vi svare på hvor mye endringen, altså 2,5\%, utgjør av 5\%. Dette er det samme som å finne hvor mye 2,5 utgjør av 5. (Se tilbake til ligning \eqref{autgavb}). 1\% av 5 er 0,05, derfor får vi:
+\alg{
+\text{Antall prosent 2,5 utgjør av 5}&=\frac{2,5}{0,05} \\
+&= 50
+}
+Altså har fraværet økt med 50\%.
+}
+\info{Hva er egentlig forskjellen mellom prosent og prosentfaktor?}{Tenk på en skjorte som koster 200 kr. Tenk så at det er gitt 20\% rabatt på dene skjorten, altså får man $ {200\, \text{kr}\cdot0,2= 40\text{ kr}}$ i avslag. Men si at rabatten blir endret til 50\% av originalprisen, da blir avslaget $ {200\, \text{kr}\cdot0,5= 100\text{ kr}}$. \vsk
+
+Rabatten har da gått opp fra 20\% til 50\% av originalprisen, fra 40 kr til 100 kr. En økning på 60 kr. Og nå kommer poenget: Istedenfor å spørre \textit{hvor mange prosent av originalprisen har rabatten økt?}, bruker vi ordet prosentpoeng. Det samme spørsmålet blir da \textit{hvor mange prosentpoeng har rabatten økt?} Svaret blir $ {50\%-20\% = 30\%} $, altså 30 prosentpoeng. (60 utgjør 30\% av 200).\vsk
+
+Når vi isteden spør \textit{hvor mye har rabatten økt i prosent?}, mener vi \textit{hvor mange prosent av originalrabatten har rabatten økt?}. Dette kan vi finne på to måter:\vsk
+
+\textsl{Metode 1}:
+Originalrabatten var på 40 kr og økte med 60 kr. Hvor mange prosent 60 kr ugjør av 40 kr kan vi regne ut slik:
+\begin{flalign*}
+&& \frac{60}{0,4}& =150 && \llap{\color{blue}\text{1\% av 40 er 0,4}}
+\end{flalign*}
+Rabatten økte altså med 150\%.\vsk
+
+\textsl{Metode 2}: \\
+Økningen i prosentpoeng er 30, og startrabatten var 20\%. Hvor mange prosent 30 utgjør av 20 er:
+\begin{flalign*}
+&& \frac{30}{20}& =1,5 &&  \br
+&& & =150\% && \llap{\color{blue}\text{Se tipset på s \pageref{protips}}}
+\end{flalign*}
+Rabatten økte med 150\%.
+}
+
+\end{document}
+

@@ -1,0 +1,93 @@
+\documentclass[english,openright ,hidelinks,pdftex, 12 pt, class=report,crop=false]{standalone}
+\input{/home/sindre/P/preamb}
+
+\geometry{a4paper,verbose,tmargin=1cm,bmargin=2cm,lmargin=4cm,rmargin=4cm,headheight=3cm,headsep=1cm,footskip=1cm}
+\newcounter{inl}
+\newcounter{abc}
+%\numberwithin{inl}{}
+\newcommand{\inl}[1]{\vspace{15pt} \setcounter{abc}{0} \refstepcounter{inl} {\large \textbf{Oppgave \theinl \label{#1}}} \vspace{5 pt}\\}
+\renewcommand\theabc{\alph{abc}}
+\newcommand{\ab}{\refstepcounter{abc} \textbf{\theabc}) }
+\usepackage{array}
+
+
+\begin{document}
+{\Large \textbf{Del 1 - Uten hjelpemidler}} 	
+	
+\inl{p1}
+
+\textbf{a)} Finn uttrykkene til $ f(x) $ og $ g(x) $ på bildet under.
+\begin{figure}
+	\centering
+	\includegraphics[]{fig1}
+\end{figure}
+
+\textbf{b)} Finn skjæringspunktet mellom $ f(x) $ og $ g(x) $ grafisk.\os
+
+\inl{p7}
+For å leie buss med Sindreerkul Busselskap må man betale 3000 kr for buss og sjåfør, i tillegg til 10 kr for hver mil bussen skal kjøre.\os
+\textbf{a)} Sett opp et uttrykk $ S(x) $ som viser hvor mye man må betale hvis bussen skal kjøre $ x $ mil.\os
+\textbf{b)} Hvor langt får man kjørt for 5000 kr?
+
+
+
+
+\inl{p3}
+Gitt funksjonene:\vs
+\alg{
+f(x) &= 3x+1 \\[5pt]
+g(x) &= -x+9
+}
+Finn skjæringspunktet mellom $ f(x) $ og $ g(x) $.
+\newpage
+\inl{p2}
+\textbf{a)} Tegn grafen til $ {f(x)=2x-1} $ i koordinatsystemet under:
+\begin{figure}
+	\centering
+	\includegraphics[]{fig2}
+\end{figure}
+\textbf{b)} Gitt funksjonen $ {f(x)=x^2-3x+2} $. Fyll ut tabellen:\os
+\begin{center}
+	\begin{tabular}{*{5}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ -1 $ & $ 0 $ & $ 1 $\\ \hline
+		$ f(x) $& & & & 
+	\end{tabular}
+\end{center}
+
+\textbf{c)} Gitt funksjonen $ {f(x)=-x^2+x-1} $. Fyll ut tabellen:\os
+\begin{center}
+	\begin{tabular}{*{3}{|p{0.7cm}}|}
+		$ x $ & $ -2 $ & $ 2 $ \\ \hline
+		$ f(x) $& & 
+	\end{tabular}
+\end{center}
+
+\inl{p6}
+Finn uttrykket til $ f(x) $.
+\begin{figure}
+	\centering
+	\includegraphics[]{fig3}
+\end{figure}
+
+\newpage
+{\Large \textbf{Del 2 - Med hjelpemidler}} 
+	
+\inl{p4}
+Gitt funksjonen
+\[ f(x)=x^2-2x-3 \]
+\textbf{a)} Finn verdien til $ f(x) $ når $ {x=10} $. \os
+\textbf{b)} Finn toppunktet/bunnpunktet til $ f $.\os
+\textbf{c)} Finn nullpunktene til $ f $. \os
+\textbf{d)} Hva er $ x $ når $ {f(x)=12} $?
+
+\inl{p5}
+Funksjonen $ D(x) $ er en tilnærming for hvor mange timer dagslys Ålesund har $ x $ måneder etter 1. januar.
+\[ D(x)= 0.0129x^4-0.2912x^3+1.6250x^2+0.2189x+5.414\quad, \quad 0\leq x\leq12 \]
+\textbf{a)} Tegn grafen til $ D $.\os
+\textbf{b)} I hvilken måned er dagen lengst og i hvilken måned er dagen kortest, ifølge funksjonen?\os
+\textbf{c)} \textit{Vårjevndøgn} kalles dagene i året hvor det er mørkt og lyst like lenge. Hvilke måneder er det vårjevndøgn, ifølge funksjonen?
+
+
+\end{document}
+
+

@@ -1,0 +1,41 @@
+\documentclass[english, 12 pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{babel}
+\usepackage[hidelinks, bookmarks]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\setlength{\parindent}{0bp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{import}
+\usepackage{icomma}
+\usepackage{graphicx}
+\usepackage{placeins}
+\raggedbottom
+\makeatletter
+\usepackage{color}
+\raggedbottom
+
+\newcommand{\fig}[1]{
+\begin{figure}[h]
+	\includegraphics[]{#1}
+	\centering
+\end{figure}
+\newpage
+}
+
+\begin{document}
+\pagestyle{empty}
+\fig{fig1}
+\fig{fig2}
+\fig{fig3}
+\fig{fig4}
+\fig{fig5}
+\fig{fig6}
+\fig{fig7}
+\fig{fig8}
+\fig{fig9}
+
+\end{document}

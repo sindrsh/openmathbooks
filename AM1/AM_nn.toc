@@ -1,0 +1,117 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Utregningsmetoder}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Standardform}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Regning med tid }{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Avrunding og overslagsregning}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Avrunding}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Overslagsrekning}{15}{subsection.1.3.2}%
+\contentsline {subsubsection}{Overslag ved addisjon og gonging}{15}{subsubsection*.2}%
+\contentsline {subsubsection}{Overslag ved subtraskjon og deling}{16}{subsubsection*.3}%
+\contentsline {subsubsection}{Overslagsregning oppsummert}{16}{subsubsection*.4}%
+\contentsline {section}{Oppgaver}{18}{section*.6}%
+\contentsline {chapter}{\numberline {2}Størrelser og enheter}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Størrelsar, einingar og prefiks}{20}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Regning med forskjellige nemningar }{23}{section.2.2}%
+\contentsline {section}{Oppgaver}{26}{section*.8}%
+\contentsline {chapter}{\numberline {3}Statistikk}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduksjon}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Presentasjonsmetoder}{31}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Frekvenstabell}{31}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Søylediagram (stolpediagram)}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Sektordiagram (kakediagram)}{33}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Linjediagram}{34}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Tolking av tendenser; sentralmål}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Typetal}{36}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Gjennomsnitt}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Median}{38}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Tolking av forskjellar; spreiingsmål}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Variasjonsbredde}{40}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Kvartilbredde}{41}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Avvik, varians og standardavvik}{43}{subsection.3.4.3}%
+\contentsline {section}{Oppgaver}{46}{section*.15}%
+\contentsline {chapter}{\numberline {4}Geometri}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Symmetri}{50}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Omkrets, areal og volum med einigar}{55}{section.4.2}%
+\contentsline {section}{Oppgaver}{57}{section*.19}%
+\contentsline {chapter}{\numberline {5}Brøkrekning }{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Brøkdelar av heiler }{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Prosent}{63}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Prosentvis endring; auke eller redusering }{67}{subsection.5.2.1}%
+\contentsline {subsubsection}{Auke}{67}{subsubsection*.23}%
+\contentsline {subsubsection}{Redusering}{67}{subsubsection*.24}%
+\contentsline {subsubsection}{Prosentvis endring oppsummert}{68}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {5.2.2}Vekstfaktor}{70}{subsection.5.2.2}%
+\contentsline {subsubsection}{Å finne den prosentvise endringa}{72}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {5.2.3}Prosentpoeng}{75}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Gjentatt prosentvis endring}{78}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Forhold}{80}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Målestokk}{81}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Blandingsforhold}{84}{subsection.5.3.2}%
+\contentsline {section}{Oppgaver}{87}{section*.38}%
+\contentsline {chapter}{\numberline {6}Likningar, formlar og funksjonar }{91}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Å finne størrelser}{92}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Å finne størrelser direkte}{92}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Å finne størrelsar indirekte}{93}{subsection.6.1.2}%
+\contentsline {subsubsection}{Når formlane er kjente}{93}{subsubsection*.39}%
+\contentsline {subsubsection}{Når formlane er ukjente}{96}{subsubsection*.40}%
+\contentsline {section}{\numberline {6.2}Funksjoners egenskaper}{98}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Funksjoner med samme verdi; skjæringspunkt}{98}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Null-, bunn- og toppunkt}{102}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Likningssett}{104}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Innsettingsmetoden}{104}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Grafisk metode}{108}{subsection.6.3.2}%
+\contentsline {section}{Oppgaver}{110}{section*.52}%
+\contentsline {chapter}{\numberline {7}Økonomi }{116}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Indeksregning}{117}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Introduksjon}{117}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Konsumprisindeks og basisår}{117}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Kroneverdi}{119}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Realløn og nominell lønn}{120}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Lån og sparing}{123}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Lån}{123}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Sparing; innskuddsrente og forventa avkastning}{128}{subsection.7.2.2}%
+\contentsline {subsubsection}{Innskuddsrente}{128}{subsubsection*.60}%
+\contentsline {subsubsection}{Forventet avkastning}{128}{subsubsection*.62}%
+\contentsline {section}{\numberline {7.3}Skatt}{130}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Bruttolønn, frådrag og skattegrunnlag}{130}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Trygdeavgift}{131}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Trinnskatt }{132}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Nettolønn}{134}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Budsjett og regnskap}{135}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Budsjett }{135}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Regnskap}{136}{subsection.7.4.2}%
+\contentsline {section}{Oppgaver}{137}{section*.68}%
+\contentsline {chapter}{\numberline {8}Sannsynlighet }{141}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Grunnprinnsippet}{142}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Hendingar med og utan felles utfall}{144}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Hendingar utan felles utfall}{144}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Summen av alle sannsyn er 1}{146}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Felles utfall}{148}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Venndiagram}{151}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Krysstabell}{156}{subsection.8.2.5}%
+\contentsline {section}{\numberline {8.3}Gjentatte trekk }{157}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Permutasjoner}{157}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Sannsyn ved gjentatte trekk}{160}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Valgtre}{162}{subsection.8.3.3}%
+\contentsline {section}{Oppgaver}{166}{section*.78}%
+\contentsline {chapter}{\numberline {9}Digitale verktøy}{167}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Programmering}{168}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Regneark}{169}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Introduksjon}{169}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Utregninger}{169}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Cellereferanser}{170}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Kopiering og låsing av celler}{171}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Andre nyttige funksjoner}{173}{subsection.9.2.5}%
+\contentsline {section}{\numberline {9.3}GeoGebra}{174}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Introduksjon}{174}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Å skrive inn punkt, funksjoner og linjer}{174}{subsection.9.3.2}%
+\contentsline {subsubsection}{Punkt}{174}{subsubsection*.79}%
+\contentsline {subsubsection}{Funksjoner}{175}{subsubsection*.80}%
+\contentsline {subsubsection}{Vannette og loddrette linjer}{176}{subsubsection*.81}%
+\contentsline {subsection}{\numberline {9.3.3}Å finne verdien til funksjoner og linjer}{176}{subsection.9.3.3}%
+\contentsline {subsubsection}{Funksjoner}{176}{subsubsection*.82}%
+\contentsline {subsubsection}{Linjer}{177}{subsubsection*.83}%
+\contentsline {subsection}{\numberline {9.3.4}Knapper og kommandoer}{178}{subsection.9.3.4}%
+\contentsline {section}{Oppgaver}{180}{section*.84}%
+\contentsline {chapter}{Vedlegg}{183}{chapter*.85}%
+\contentsline {chapter}{Fasit}{184}{chapter*.86}%

@@ -1,0 +1,84 @@
+\documentclass[english,hidelinks,pdftex, 11 pt, class=article,crop=false]{standalone}
+\input{/home/sindre/G/preamb}
+
+
+\begin{document}
+\section{Omkrets}
+\subsection*{Generelt}
+Når ein måler kor langt det er rundt ein figur, finn ein \textit{omkretsen} til figuren. Lat oss starte med å finne omkretsen til dette rektangelet:
+\fig{geo1}
+Me ser at rektangelet har to sider som har lengde 4, og to sider som har lengde 5:
+\fig{geo1a}
+Dette betyr at:
+\alg{
+\text{Omkrets til rektangel} &= 4+4+5+5 \\
+&= 18
+}
+
+\subsection*{Omkrets når sidene er kjente}
+Nokre gonger er det ikkje så lett å sjå kor lange sidene er, men vi har fått vite det i staden. Som for eksempel i denne figuren, som har sider med lengdene 2, 1, 3 og 2:
+\fig{geo2}
+\alg{
+\text{Omkrets} &= 2+1+3+2 \\
+&= 8
+}
+\newpage
+\subsection*{Omkrets med eining}
+Når me måler lengder med linjal eller liknande må me passe på å ta med eininga i svaret vårt:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.06]{\asym{2t5}}
+\end{figure}
+\alg{
+\text{Omkrets til rektangel} &= 5\enh{cm}+2\enh{cm}+5\enh{cm}+2\enh{cm} \\
+&= 14\enh{cm}
+}
+
+\newpage
+\section{Areal}
+\begin{center}
+	\includegraphics[scale=0.2]{\asym{golv}}
+	\includegraphics[scale=0.117]{\asym{papir}}
+\end{center}
+\subsection*{Alle overflater har eit areal}
+Overalt rundt oss kan me sjå \textit{overflater}, som for eksempel eit golv eller arket me skriv på. Når me ønsker å seie noko om kor store overflater er, må me finne \textit{arealet} deira. Idéen bak omgrepet areal er denne:\vsk
+
+Me tenker oss eit kvadrat med bredde 1 og høgde 1, som me kan kalle for ''einarkvadradet'':
+\fig{tri_10}
+Så ser me på overflata me ønsker å finne arealet av og spør:\os
+\begin{center}
+	''Kor mange einarkvadrat er det plass til på denne overflata?''
+\end{center}
+Lat oss prøve dette med eit rektangel som er 5 breidt og 4 høgt:
+\fig{tri_11a}
+Me kan da telle oss fram til at rektangelet har plass til 20 einarkvadrat:
+\[ \text{Arealet til rektangelet}=20 \]
+\fig{tri_11}
+Me kan også legge merke til at figuren vår er den samme me brukte da me teikna gangestykket $ 4\cdot5 $:
+\alg{
+	\text{Arealet til rektangelet} &= 4\cdot 5 \\
+	&= 20 
+}
+\fig{tri_11}
+\reg[Arealet av rektangel \label{arfir}]{
+	\[ \text{Areal av rektangel}=\text{høgde}\cdot\text{bredde} \]
+	\fig{tri_12}
+}\vsk
+
+\subsection*{Areal med eining}
+Når me måler lengder med linjal eller liknande, må me også for areal passe på å ta med einingane:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.06]{\asym{2t5}}
+\end{figure}
+\[ \text{Areal av rektangel}=2\enh{cm}\cdot5\enh{cm} \]
+$ 2\enh{cm}\cdot5\enh{cm} $ reknar ein ut med å gange 2 med 5, og så skrive \,cm$ ^2 $ bakom:
+\prbxl{0.69}{\alg{
+		\text{Areal av rektangel}&=2\enh{cm}\cdot5\enh{cm} \\
+		&= 2\cdot 5\enh{cm}^2\\
+		&= 10\enh{cm}^2
+}}
+\prbxr{0.3}{Vi skriv cm$ ^2 $ fordi vi har ganga saman 2 lengder som vi har målt i cm.}
+
+\end{document}
+

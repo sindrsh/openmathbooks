@@ -1,0 +1,134 @@
+\input{../doc}
+\input{../preamb_nn}
+
+\begin{document}
+\section{Symmetri}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.19]{\fpath{sym}}\;
+	\includegraphics[scale=0.16]{\fpath{symb}}\;
+	\includegraphics[scale=0.16]{\fpath{symc}}
+	\caption*{Bilder henta fra \net{https://freesvg.org}{freesvg.org}.}
+\end{figure}
+Mange figurar kan delast inn i minst to delar der den éine delen berre er ei forskyvd, speilvend eller rotert utgåve av den andre. Dette kallast \textit{symmetri}\index{symmetri}. Dei tre komande regelboksane definerer dei tre variantene for symmetri, men merk dette: Symmetri blir som regel intuitivt forstått ved å studere figurar, men er omstendeleg å skildre med ord. Her vil det derfor, for mange, vere ein fordel å hoppe rett til eksempla. \vsk
+
+\reg[Translasjonssymmetri (parallellforskyvning)]{
+Ein symmetri der minst to deler er forskyvde utgåver av kvarandre kallast en \textit{translasjonssymmetri}. \vsk
+
+Når ei form forskyvast, blir kvart punkt på forma flytta langs den samme \vs \text{vektoren}\footnote{Ein vektor er eit linjestykke med retning.}.
+}
+\eks[1]{
+Figuren under viser ein translasjonssymmetri som består av to sommerfuglar.
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[scale=0.2]{\fpath{btfly0}}}\quad
+	\subfloat{\includegraphics[scale=0.2]{\fpath{btfly0}}}
+	\caption*{Bilde henta fra \net{https://freesvg.org}{freesvg.org}.}
+\end{figure}
+}
+\newpage
+\eks[2]{
+Under visast $ \triangle ABC $ og ein blå vektor.
+\fig{trans1a}
+Under visast $ \triangle ABC $ forskyvd med den blå vektoren. 
+\fig{trans1}
+}
+\reg[Speiling]{Ein symmetri der minst to delar er vende utgåver av kvarandre kallast ein \textit{speilingssymmetri} og har minst éin \textit{symmetrilinje} (\textit{symmetriakse}).\vsk
+
+Når eit punkt speilast, blir det forskjyvd vinkelrett på symmetrilinja, fram til det nye og det opprinnelege punktet har samme avstand til symmetrilinja.
+} 
+\newpage
+\eks[1]{
+Sommerfuglen er ein speilsymmetri, med den raude linja som symmetrilinje.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{\fpath{btfly}}
+\end{figure}
+}
+\eks[2]{
+	Den raude linja og den blå linja er begge symmetrilinjer til det grøne rektangelet.
+	\fig{sym2}
+}
+\eks[3]{
+Under visast ei form laga av punkta $ A, B, C, D, E $ og $ F $, og denne forma speila om den blå linja.
+\fig{sym3}
+}
+\reg[Rotasjonssymmetri]{
+Ein symmetri der minst to delar er ei rotert utgåve av kvarandre kallast ein \textit{rotasjonssymmetri} og har alltid eit tilhørande \textit{rotasjonspunkt} og ein \textit{rotasjonsvinkel}. \vsk
+
+Når eit punkt roterast vil det nye og det opprinnelege punktet
+\begin{itemize}
+	\item ligge langs den same sirkelbogen, som har sentrum i rotasjonspunktet. 
+	\item med rotasjonspunktet som toppunkt danne rotasjonsvinkelen.
+\end{itemize} 
+Viss rotasjonsvinkelen er eit positivt tal, vil det nye punktet forflyttast langs sirkelbogen \textsl{mot} klokka. Hvis rotasjonsvinkelen er eit negativt tall, vil det nye punktet forflyttast langs sirkelbogen \textsl{med} klokka.
+}
+\eks[1]{
+Mønsteret under er rotasjonssymmetrisk. Rotasjonssenteret er i midten av figuren og rotasjonsvinkelen er $ 120^\circ $
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{\fpath{rot0}}
+	\caption*{Bilde henta fra \net{https://freesvg.org}{freesvg.org}.}
+\end{figure}
+}
+\newpage
+\eks[2]{
+Figuren under viser $ \triangle ABC $ rotert $ 80^\circ $ om rotasjonspunktet $ P $.
+\fig{rot1}
+Da er
+\[ PA='PA \quad,\quad PB=PB'\quad,\quad PC=PC' \]
+og
+\[ \angle APA'=\angle BPB'=\angle CPC'=80^\circ \]
+} \vsk
+
+\spr{
+Ei form som er ei forskyvd, speilvend eller rotert utgåve av ei anna form, kallast ei \textit{kongruensavbilding}.
+}
+
+\section{Omkrets, areal og volum med einigar}
+\mer \textsl{I eksempla til denne seksjonen bruker vi areal- og volumformlar som du finn i \mb.} \vsk
+
+Når vi måler lengder med linjal eller liknande, må vi passe på å ta med nemningane i svaret vårt. \regv
+
+\eks[1]{ \vs
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.04]{\fpath{2t5}}
+\end{figure}
+\alg{
+	\text{omkretsen til rektangelet} &= 5\enh{cm}+2\enh{cm}+5\enh{cm}+2\enh{cm} \\
+	&= 14\enh{cm}
+} \vs
+
+\prbxl{0.65}{\alg{
+		\text{arealet til rektangelet}&=2\enh{cm}\cdot5\enh{cm} \\
+		&= 2\cdot 5\enh{cm}^2\\
+		&= 10\enh{cm}^2
+}}
+\prbxr{0.3}{Vi skriv 'cm$ ^2 $' fordi vi har gonga sammen 2 lengder som vi har målt i 'cm'.}
+}
+\newpage
+\eks[2]{
+Ein sylinder har radius $ 4\enh{m} $ og høgde $ 2\enh{m} $. Finn volumet til sylinderen.
+
+\sv
+Så lenge vi er sikre på at størrelsane vår har same nemning (i dette tilfellet 'm'), kan vi først rekne uten størrelser:
+\alg{
+\text{grunnflate til sylinderen}&=\pi\cdot 4^2 \\
+&= 16 \pi
+}
+\alg{
+\text{volumet til sylinderen}&= 16\pi \cdot2 \\
+&= 32\pi
+}
+Vi har her ganget sammen tre lengder (to faktorer lik 4\enh{m} og én faktor lik $ 2\enh{m} $) med meter som enhet, altså er volumet til sylinderen $ 32\pi\enh{m}^3 $.
+} \vsk
+
+\info{Merk}{
+Når vi finn volumet til gjenstandar, måler vi gjerne lengder som høgde, breidde, radius og liknande. Desse lengdene har eininga 'meter'. Men i det daglege oppgir vi gjerne volum med eininga 'liter'. Da er det verd å ha med seg at
+\[ 1\enh{L} = 1\enh{dm}^3 \]
+}
+\end{document}
+
+

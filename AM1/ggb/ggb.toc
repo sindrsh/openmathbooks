@@ -1,0 +1,16 @@
+\select@language {english}
+\select@language {english}
+\contentsline {chapter}{GeoGebra}{2}{chapter*.1}
+\contentsline {section}{G.1\tmspace +\thickmuskip {.2777em} Skrive inn en funksjon}{2}{section*.3}
+\contentsline {section}{G.2\tmspace +\thickmuskip {.2777em} Finne verdien til en funksjon/linje}{3}{section*.8}
+\contentsline {section}{G.3\tmspace +\thickmuskip {.2777em} Finne skj\IeC {\ae }ringspunkt}{4}{section*.12}
+\contentsline {section}{G.4\tmspace +\thickmuskip {.2777em} Finne nullpunkt}{5}{section*.13}
+\contentsline {section}{G.5\tmspace +\thickmuskip {.2777em} Finne topp- eller bunnpunkt}{5}{section*.14}
+\contentsline {section}{G.6\tmspace +\thickmuskip {.2777em} Tegne linjen mellom to punkt}{5}{section*.15}
+\contentsline {section}{G.7\tmspace +\thickmuskip {.2777em} Tegne graf p\IeC {\r a} gitt intervall}{5}{section*.16}
+\contentsline {section}{G.8\tmspace +\thickmuskip {.2777em} Oppgaver}{6}{section*.17}
+\contentsline {chapter}{Excel}{6}{section*.17}
+\contentsline {section}{E.1\tmspace +\thickmuskip {.2777em} Introduksjon}{6}{section*.19}
+\contentsline {section}{E.2\tmspace +\thickmuskip {.2777em} Cellereferanser}{7}{section*.23}
+\contentsline {section}{E.3\tmspace +\thickmuskip {.2777em} Kopiering av celler}{7}{section*.26}
+\contentsline {section}{E.4\tmspace +\thickmuskip {.2777em} Sm\IeC {\r a}triks}{10}{section*.31}

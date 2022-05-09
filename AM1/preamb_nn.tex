@@ -1,0 +1,257 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{geometry}
+\geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
+\setlength{\parindent}{0bp}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{babel}
+\usepackage{tabu}
+\makeatother
+\makeatletter
+
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\RaggedRight
+\raggedbottom
+\frenchspacing
+
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\addto\captionsenglish{\renewcommand{\partname}{Del}}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhald}}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{placeins}
+\usepackage{cancel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage[subfigure]{tocloft}
+\usepackage[font=footnotesize]{caption} % Figure caption
+\usepackage{bm}
+\usepackage[dvipsnames, table]{xcolor}
+\definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\colorlet{shadecolor}{Emerald!15} 
+\usepackage{icomma}
+\makeatother
+\usepackage[many]{tcolorbox}
+\usepackage{multicol}
+\usepackage{stackengine}
+
+% For tabular
+\addto\captionsenglish{\renewcommand{\tablename}{Tabell}}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable} %breakable table
+
+% Ligningsreferanser
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs}
+
+% index
+\usepackage{imakeidx}
+\makeindex[title=Indeks]
+
+%Footnote:
+\usepackage[bottom, hang, flushmargin]{footmisc}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+\addtolength{\footnotesep}{2mm}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand\footnoterule{\rule{\linewidth}{0.4pt}}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+%colors
+\definecolor{c1}{cmyk}{0,0.5,1,0}
+\definecolor{c2}{cmyk}{1,0.25,1,0}
+\definecolor{n3}{cmyk}{1,0.,1,0}
+\definecolor{neg}{cmyk}{1,0.,0.,0}
+
+% Lister med bokstavar
+\usepackage[inline]{enumitem}
+
+\newcounter{rg}
+\numberwithin{rg}{chapter}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+
+\newcommand{\regg}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\large \textbf{#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+
+\newcommand\alg[1]{\begin{align} #1 \end{align}}
+
+\newcommand\eks[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=green!3] {\large \textbf{Eksempel #1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand{\st}[1]{\begin{tcolorbox}[boxrule=0.0 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!12]{ #1} \end{tcolorbox}}
+
+\newcommand{\spr}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{Språkboksen} \vspace{5 pt}\\} #1 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand{\sym}[1]{\colorbox{blue!15}{#1}}
+
+\newcommand{\info}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=cyan!6] {\large \textbf{#1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand\algv[1]{\vspace{-11 pt}\begin{align*} #1 \end{align*}}
+
+\newcommand{\regv}{\vspace{5pt}}
+\newcommand{\mer}{\textsl{Merk}: }
+\newcommand\vsk{\vspace{11pt}}
+\newcommand\vs{\vspace{-11pt}}
+\newcommand\vsabc{\vspace{-5pt}}
+\newcommand\vsb{\vspace{-16pt}}
+\newcommand\sv{\vsk \textbf{Svar:} \vspace{4 pt}\\}
+\newcommand\br{\\[5 pt]}
+\newcommand{\fpath}[1]{../fig/#1}
+\newcommand\algvv[1]{\vs\vs\begin{align*} #1 \end{align*}}
+\newcommand{\y}[1]{$ {#1} $}
+\newcommand{\os}{\\[5 pt]}
+\newcommand{\prbxl}[2]{
+	\parbox[l][][l]{#1\linewidth}{#2
+}}
+\newcommand{\prbxr}[2]{\parbox[r][][l]{#1\linewidth}{
+		\setlength{\abovedisplayskip}{5pt}
+		\setlength{\belowdisplayskip}{5pt}	
+		\setlength{\abovedisplayshortskip}{0pt}
+		\setlength{\belowdisplayshortskip}{0pt} 
+		\begin{shaded}
+			\footnotesize	#2 \end{shaded}}}
+
+\newcommand{\fgbxr}[2]{
+	\parbox[r][][l]{#1\linewidth}{#2
+}}
+
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}
+\setlength{\cftaftertoctitleskip}{0 pt}
+\setlength{\cftbeforetoctitleskip}{0 pt}
+
+\newcommand{\bs}{\\[3pt]}
+\newcommand{\vn}{\\[6pt]}
+\newcommand{\fig}[1]{\begin{figure}
+		\centering
+		\includegraphics[]{\fpath{#1}}
+\end{figure}}
+
+
+\newcommand{\sectionbreak}{\clearpage} % New page on each section
+
+% Section comment
+\newcommand{\rmerk}[1]{
+\rule{\linewidth}{1pt}
+#1 \\[-4pt]
+\rule{\linewidth}{1pt}
+}
+
+% Equation comments
+\newcommand{\cm}[1]{\llap{\color{blue} #1}}
+
+\newcommand\fork[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{#1 (forklaring)} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+
+%%% Rule boxes %%%
+\newcommand{\gangdestihundre}{Å gonge desimaltall med 10, 100 osv.}
+\newcommand{\delmedtihundre}{Deling med 10, 100, 1\,000 osv.}
+\newcommand{\ompref}{Omgjering av prefiksar}
+
+
+%License
+\newcommand{\lic}{\textit{Anvend matematikk for grunnskule og VGS by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit\\ 
+		\net{http://creativecommons.org/licenses/by-nc-sa/4.0/}{http://creativecommons.org/licenses/by-nc-sa/4.0/}}}
+
+%references
+\newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
+\newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}\textsl{#2 \ref*{#1}}}}
+\newcommand{\rref}[1]{\hrs{#1}{Regel}}
+\newcommand{\refkap}[1]{\hrs{#1}{Kapittel}}
+\newcommand{\refsec}[1]{\hrs{#1}{Seksjon}}
+\newcommand{\refdsec}[1]{\hrs{#1}{Delseksjon}}
+
+\newcommand{\colr}[1]{{\color{red} #1}}
+\newcommand{\colb}[1]{{\color{blue} #1}}
+\newcommand{\colo}[1]{{\color{orange} #1}}
+\newcommand{\colc}[1]{{\color{cyan} #1}}
+\definecolor{projectgreen}{cmyk}{100,0,100,0}
+\newcommand{\colg}[1]{{\color{projectgreen} #1}}
+
+\newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
+\newcommand{\enh}[1]{\,\textrm{#1}}
+
+\newcommand{\metode}[2]{
+\textsl{#1} \\[-8pt]
+\rule{#2}{0.75pt}
+}
+
+\newcommand{\linje}{\rule{\linewidth}{1pt} }
+
+% Opg
+\newcommand{\abc}[1]{
+\begin{enumerate}[label=\alph*),leftmargin=18pt]
+#1
+\end{enumerate}
+}
+\newcommand{\abcs}[2]{
+	\begin{enumerate}[label=\alph*),start=#1,leftmargin=18pt]
+		#2
+	\end{enumerate}
+}
+
+\newcommand{\abch}[1]{
+	\hspace{-2pt}	\begin{enumerate*}[label=\alph*), itemjoin=\hspace{1cm}]
+		#1
+	\end{enumerate*}
+}
+
+\newcommand{\abchs}[2]{
+	\hspace{-2pt}	\begin{enumerate*}[label=\alph*), itemjoin=\hspace{1cm}, start=#1]
+		#2
+	\end{enumerate*}
+}
+
+\newcommand{\abcn}[1]{
+	\begin{enumerate}[label=\arabic*),leftmargin=20pt]
+		#1
+	\end{enumerate}
+}
+
+
+\newcommand{\opgt}{
+\newpage
+\phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
+\newcounter{opg}
+\numberwithin{opg}{section}
+\newcommand{\op}[1]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg} \vspace{2 pt} \label{#1} \\}
+\newcommand{\oprgn}[1]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg\;(regneark)} \vspace{2 pt} \label{#1} \\}
+\newcommand{\oppr}[1]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg\;(programmering)} \vspace{2 pt} \label{#1} \\}
+\newcommand{\ekspop}{\vsk\textbf{Gruble \thechapter}\vspace{2 pt} \\}
+\newcommand{\nes}{\stepcounter{section}
+	\setcounter{opg}{0}}
+\newcommand{\opr}[1]{\vspace{3pt}\textbf{\ref{#1}}}
+\newcommand{\tbs}{\vspace{5pt}}
+
+%Vedlegg
+\newcounter{vedl}
+\newcommand{\vedlg}[1]{\refstepcounter{vedl}\phantomsection\section*{G.\thevedl\;#1}  \addcontentsline{toc}{section}{G.\thevedl\; #1} }
+\newcommand{\nreqvd}{\refstepcounter{vedleq}\tag{\thevedl \thevedleq}}
+
+\newcounter{vedlE}
+\newcommand{\vedle}[1]{\refstepcounter{vedlE}\phantomsection\section*{E.\thevedlE\;#1}  \addcontentsline{toc}{section}{E.\thevedlE\; #1} }
+
+\newcounter{opge}
+\numberwithin{opge}{part}
+\newcommand{\ope}[1]{\vspace{15pt} \refstepcounter{opge}\large \textbf{\color{blue}E\theopge} \vspace{2 pt} \label{#1} \\}
+
+%Excel og GGB:
+
+\newcommand{\g}[1]{\begin{center} {\tt #1} \end{center}}
+\newcommand{\gv}[1]{\begin{center} \vspace{-11 pt} {\tt #1}  \end{center}}
+\newcommand{\cmds}[2]{{\tt #1}\\[-3pt]
+	#2}
+
+
+\usepackage{datetime2}
+\usepackage[]{hyperref}

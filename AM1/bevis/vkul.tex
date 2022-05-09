@@ -1,0 +1,113 @@
+\documentclass[12pt,english]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm,headheight=3cm,headsep=3cm,footskip=1cm}
+\setlength{\parskip}{12 pt}
+\setlength{\parindent}{0pt}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{graphicx}
+\makeatletter
+\usepackage{color}
+\usepackage{framed}
+\usepackage{babel}
+\usepackage{wrapfig}
+\usepackage{babel}
+\usepackage{float}
+\newcounter{opg}
+%\numberwithin{opg}{section}
+\newcommand{\op}[1]{\refstepcounter{opg} \textbf{\vspace{15 pt } \\Oppgave \theopg} (#1) \vspace{5 pt} \\}
+\renewcommand{\arraystretch}{1.5}	
+\usepackage{tabularx}
+\usepackage[hidelinks, bookmarks]{hyperref}
+\newcommand\tssec[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+
+% Figur
+\usepackage[font=footnotesize,labelfont=sl]{caption}
+\addto\captionsenglish{\renewcommand{\figurename}{Bilde}}
+\newcommand\fref[2][]{\hyperref[#2]{\textsl{Bilde \ref*{#2}#1}}}
+% Tikz
+\usepackage{tikz-qtree}
+\tikzset{myleaf/.style={label=below:{\strut#1}}}
+\usetikzlibrary{calc}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+
+\newcommand\asym[1]{#1}
+%\newcommand\asym[1]{/home/sindre/1P/asy/#1}
+
+\begin{document}
+\section*{Volumet til en kule}
+Vi skal nå vise hvorfor volumet $ V $ til en kule med radius $ r $ er gitt ved formelen:
+\[ V = \frac{4\pi r^3}{3} \]
+
+Vi starter med å se for oss kula omgitt av en sylinder med radius $ r $ og høyde $ 2r $, som i bildet under:
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule}}
+	\caption{\label{kule}}
+\end{figure}
+Volumet til en sylinder kan vi allerede formelen for, og hvis vi kan finne volumet som er inneklemt mellom sylinderen og kula, har vi det vi trenger. For da må jo volumet til kula være lik volumet til sylinderen minus det inneklemte volumet:
+\[ \text{volum til kule}=\text{volum til sylinder}-\text{inneklemt volum} \]
+
+
+Tenk nå at vi kutter figuren i \fref{kule} fra toppen og rett ned gjennom sentrum av kula. Dette kaller vi et \textit{vertikalt tverrsnitt}. Hvis vi ser på dette tverrsnittet rett fra siden, vil sylinderen se ut som en firkant og kula som en sirkel: 
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule2}}
+	\caption{}
+\end{figure}
+På dette tverrsnittet vandrer vi en lengde $ k $ rett opp fra sentrum til et punkt $ P $. Den halve bredden til kula i dette punktet kaller vi for $ s $. Vi kan da lage oss to rettvinklede trekanter av $ k $, $ r $ og $s $. Pytagoras' setning forteller oss da at:
+\[ s = \sqrt{r^2-k^2} \]
+
+Videre forestiller vi oss at vi igjen kutter figuren i \fref{kule}, men denne gangen rett fra siden og gjennom punktet $ P $. Det vi da får, kaller vi et \textit{horisontalt tverrsnitt}. Studerer vi dette tverrsnittet ovenfra får vi en figur som dette:
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule3}}
+	\caption{\label{tverrar}}
+\end{figure}
+Tverrsnittsarealet klemt mellom kula og sylinderen har vi gitt en lys grønnfarge, dette arealet må være tverrsnittsarealet til sylinderen minus tverrsnittsarealet til kula (vi dropper ''tverrsnitt'' foran i ligningen):
+\[ \text{inneklemt areal}=\text{areal til sylinder}-\text{areal til kule} \]
+Men radiusen til sylinderen er $ r $ overalt, dette må bety at arealet til alle tverrsnitt av sylinderen er $ \pi r^2 $. Når vi står i punktet $ P $ vil kula derimot ha bredden $ 2s $, noe som betyr at tverrsnittsarealet til kula må være lik $ \pi s^2 $. Vi er altså klare til å regne ut det inneklemte arealet (husk at $ s = \sqrt{r^2-k^2} $):
+\begin{align*}
+	\text{inneklemt areal} &= \pi r^2 - \pi s^2 \\
+	&= \pi r^2 - \pi \left(\sqrt{r^2-k^2}\right)^2 \\
+	&= \pi r^2 - \pi(r^2-k^2)\\
+	&= \pi r^2 - \pi r^2+\pi k^2\\
+	&= \pi k^2
+\end{align*}
+Det inneklemte arealet i punktet $ P $ er altså det samme som arealet til en sirkel med radius $ k $!
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule6}}
+	\caption{Samme areal som det grønne arealet i \fref{tverrar}.}
+\end{figure}
+Og bedre blir det! Vi tenker oss nå to kjegler, begge med både høyde og radius lik $ r $, satt med spissene mot hverandre i samme sentrum som i \fref{kule}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule4}}
+	\caption{\label{kjegle}}
+\end{figure}
+Det \textit{vertikale tverrsnittet} av denne figuren blir seende slik ut:
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{vkule5}}
+	\caption{}
+\end{figure}
+Sett rett fra siden får vi to likebeinte trekanter, som igjen kan deles inn i fire likebeinte trekanter. Vi kan da bruke formlikhet til å vise at hvis vi går $ k $ rett opp eller ned fra sentrum, så er avstanden ut til siden også $ k $. 
+
+Dette betyr at det \textit{horisontale tverrsnittsarealet} til kjeglene er $ \pi k^2 $, akkurat som det inneklemte tverrsnittsarealet fra \fref{tverrar}. Altså er det horisontale tverrsnittsarealet til figuren i \fref{kjegle} og tverrsnittsarealet til den inneklemt figuren fra \fref{kule} det samme overalt. Og siden de har samme høyde ($ 2r $), må dette bety at volumet også er det samme! Volumet til figuren fra \fref{kjegle} blir enkelt og greit volumt til de to kjeglene:
+\begin{align*}
+	\text{volumet til figuren i \fref{kjegle}}&= \frac{\pi r^3}{3}+\frac{\pi r^3}{3} \\[5 pt]
+	&= \frac{2\pi r^3}{3}
+\end{align*}
+Og da gjenstår det bare å trekke dette volumet fra volumet til sylinderen ($ 2\pi r^3 $) for å finne volumet til kula:
+\begin{align*}
+\text{volumet til kula}&=2\pi r^3- \frac{2\pi r^2}{3} \\
+&= \frac{6\pi r^3}{3}-\frac{2\pi r^3}{3} \\
+&= \frac{4\pi r^3}{3}
+\end{align*}
+
+\end{document}

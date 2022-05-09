@@ -1,0 +1,72 @@
+\documentclass[english,hidelinks,pdftex, 11 pt, class=report,crop=false]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,paperwidth=16.4 cm, paperheight=29cm, inner=2.05cm, outer=2.05 cm, bmargin=2cm, tmargin=1.8cm}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{babel}
+\usepackage{tabu}
+\setlength{\parindent}{0bp}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\begin{document}
+\huge \textbf{Lekseark matematikk torsdag}\\
+\footnotesize OBS! Hugs å skrive namn på arket. Svara skriv du direkte på arket. \\[25pt]
+\large
+
+
+\begin{tcolorbox}[title=Sannsynsrekning,colback=white]
+	Sjølve prinsippet bak sannsynsrekning, er at vi spør kor mange \textit{gunstige utfall}  vi har i eit utvalg av \textit{moglege utfall} . Sannsynet for ei \textit{hending} er da gitt som ein brøk:
+	\[ 	\text{sannsynet for ei hending}=\frac{\text{gunstige utfall}}{\text{moglege utfall}} \]
+\end{tcolorbox}
+\begin{tcolorbox}[title=Eksempel,colback=white]
+Kva er sannsynet for å trekke ei svart kule fra ei eske der det er 3 grå og 5 kvite kuler?
+\begin{figure}
+	\includegraphics[]{sanek1}
+\end{figure}
+\textbf{Svar:} \\[5pt]
+Gunstige utfall: $ 3 $\\
+Moglege utfall: $ 3+5=8 $\\
+Sannsynet for å trekke ei grå kule er $ \dfrac{3}{8} $
+\end{tcolorbox} \vspace{20pt}
+
+{\Large \textbf{Oppgåve 1}}\\[10pt]
+Finn sannsynet for å trekke ei grå kule når det er
+\begin{enumerate}[label=\alph*)]
+	\item 4 grå og 6 kvite kuler.\\
+	\includegraphics[]{sanopg1a}
+	\item 2 grå og 7 kvite kuler.\\
+\includegraphics[]{sanopg1b}
+	\item 9 grå og 3 kvite kuler.\\
+\includegraphics[]{sanopg1c}
+\item 12 grå og 24 kvite kuler.
+\item 16 grå og 29 kvite kuler.
+\item 89 grå og 112 kvite kuler.	
+\end{enumerate} \vspace{20pt}
+
+Obs! Ny oppgåve på neste side.
+
+\newpage{\Large \textbf{Oppgåve 2}}\\[10pt]
+Finn sannsynet for å trekke ei svart kule når det er
+\begin{enumerate}[label=\alph*)]
+	\item 4 grå, 6 kvite og 3 svarte kuler.\\
+	\includegraphics[]{sanopg2a}
+	\item 2 grå, 7 kvite og 4 svarte kuler.\\
+	\includegraphics[]{sanopg2b}
+	\item 3 grå og 4 kvite og 9 svarte kuler.\\
+	\includegraphics[]{sanopg2c}
+	\item 12 grå, 24 kvite og 53 svarte kuler.
+	\item 16 grå, 29 kvite og 79 svarte kuler.
+	\item 89 grå, 112 kvite og 142 svarte kuler.	
+\end{enumerate}
+
+
+
+\end{document}
+

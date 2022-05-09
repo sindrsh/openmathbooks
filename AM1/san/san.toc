@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\numberline {0.1}Grunnprinnsippet}{2}{section.0.1}
+\contentsline {section}{\numberline {0.2}Hendelser med og uten felles utfall}{2}{section.0.2}
+\contentsline {subsection}{\numberline {0.2.1}Hendelser uten felles utfall}{2}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {0.2.2}Summen av alle sannsynligheter er 1}{4}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {0.2.3}Felles utfall}{5}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {0.2.4}Venndiagram}{9}{subsection.0.2.4}
+\contentsline {subsection}{\numberline {0.2.5}Krysstabell}{12}{subsection.0.2.5}
+\contentsline {section}{\numberline {0.3}Gjentatte trekk }{12}{section.0.3}
+\contentsline {subsection}{\numberline {0.3.1}Kombinasjoner}{12}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {0.3.2}Sannsynlighet ved gjentatte trekk}{14}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {0.3.3}Valgtre}{16}{subsection.0.3.3}
