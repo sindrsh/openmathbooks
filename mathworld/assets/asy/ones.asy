@@ -1,0 +1,3 @@
+import inh;
+
+db();
