@@ -1,6 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://AdGame1.gd" type="Script" id=1]
+[ext_resource path="res://assets/asy/line.png" type="Texture" id=1]
+[ext_resource path="res://ad_house/CollisionLine.gd" type="Script" id=2]
+[ext_resource path="res://ad_house/NumberLine.gd" type="Script" id=3]
+[ext_resource path="res://ad_house/AdGame1.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "line",
+"speed": 5.0
+} ]
 
 [node name="AdGame1" type="Node2D"]
-script = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="NumberLine" type="Area2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Line" type="AnimatedSprite" parent="NumberLine"]
+frames = SubResource( 1 )
+animation = "line"
+
+[node name="CollisionLine" type="CollisionPolygon2D" parent="NumberLine"]
+script = ExtResource( 2 )

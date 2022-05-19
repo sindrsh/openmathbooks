@@ -1,0 +1,33 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://ad_house/IntCollision.gd" type="Script" id=1]
+[ext_resource path="res://ad_house/Number.gd" type="Script" id=2]
+[ext_resource path="res://assets/asy/one_red.png" type="Texture" id=3]
+[ext_resource path="res://assets/asy/two.png" type="Texture" id=4]
+[ext_resource path="res://assets/asy/one.png" type="Texture" id=5]
+[ext_resource path="res://assets/asy/two_red.png" type="Texture" id=6]
+[ext_resource path="res://assets/asy/one_select.png" type="Texture" id=7]
+[ext_resource path="res://assets/asy/two_select.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "two",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "one",
+"speed": 5.0
+} ]
+
+[node name="Number" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Int" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "one"
+
+[node name="IntCollision" type="CollisionPolygon2D" parent="."]
+script = ExtResource( 1 )

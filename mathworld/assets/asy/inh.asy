@@ -1,8 +1,9 @@
-settings.outformat="pdf";
+settings.outformat="png";
 defaultpen(fontsize(11 pt));
 
-real n = 10;
-size(n*0.0264583333cm);
+real n = 32;
+unitsize(n*0.0352778cm);
+settings.render = -1;
 //defaultpen(1bp);
 
 usepackage("icomma");
@@ -28,13 +29,13 @@ void ds(pair A=(0,0), real s=1, pen p=black){
 	draw(shift(A)*scale(s)*unitcircle,p=p);
 }
 
-void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0, real opac=0.1){
+void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0){
 	path b = box((0,0),(1,1));
 	int cnt = 0;
 	for (int i = 1; i <= I; ++i){
 		for (int j = 1; j <= J; ++j){
 			if (i<=m || j<=n){
-			filldraw(shift(sh+(i-1,j-1))*b, p+opacity(opac), drawpen=p1); 
+			filldraw(shift(sh+(i-1,j-1))*b, p, drawpen=black); 
 			++cnt;
 			}
 			} 

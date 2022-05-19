@@ -1,0 +1,87 @@
+\input{../../doc}
+\input{../bm}
+\input{../../preamb}
+
+
+\begin{document}
+	
+\section{Gjennomsnittlig vekstfart}
+Se for deg at vi slipper en ball fra 60 meter over bakken, og lar den falle fritt nedover. Når vi slipper ballen, starter vi også en stoppeklokke. Antall meter $ h $ ballen er over bakken etter $ t $ sekunder kan da tilnærmes ved funksjonen
+\[ h(t)=50-5t^2 \]
+\fig{ball}
+Det er åpenbart at ballen ikke har konstant\footnote{Se ??} fart, men i mange sammenhenger er det nyttig å undersøke hva farten hadde vært hvis den var det. Vi har at
+\[ h(0)=60\qquad,\qquad h(1)=60-5\cdot1^2=55 \]
+Dette betyr at i løpet av det første sekundet har ballen bevegd seg $ {60-55=5} $ meter nedover. Hvis farten var konstant ville den derfor vært
+\[ \frac{5\enh{m}}{1\enh{s}}=5\enh{m/s} \]
+Videre har vi at
+\[ h(3)=60-5\cdot3^2 =45  \]
+Dette betyr at mellom $ {t=1} $ og $ {t=3} $ har ballen gått fra å være 55 til 15 meter over bakken. Altså har ballen bevegd seg $ {55-15=40} $ meter i løpet av $ {3-1=2} $ sekunder. Hvis farten var konstant på dette intervallet, ville den derfor vært
+\[ \frac{40\enh{m}}{2\enh{s}}=20\enh{m/s} \] 
+\label{eksvekstfart}
+\newpage
+La oss oppsummere det vi har funnet:
+\begin{itemize}
+	\item På intervallet $ t\in[0, 1] $ har ballen bevegd seg 5 meter. Den ville bevegd seg like langt hvis den i løpet av dette sekundet hadde hatt en konstant fart lik 5\enh{m/s}. \os
+	
+	Verdien til denne farten, 5, er stigningstallet til linja som går gjennom punktene $ (0, 60) $ og $ (1, 45) $.
+	\item På intervallet $ t\in[1, 3] $ har ballen bevegd seg 40 meter. Den ville bevegd seg like langt hvis den i løpet av disse 2 sekundene hadde hatt en konstant fart lik 20\enh{m/s}.\os
+	
+	Verdien til denne farten, 20, er stigningstallet til linja som går gjennom punktene $ (1, 45) $ og $ (3, 15) $.
+\end{itemize}
+\fig{ballb}
+Stigningstallet til linja mellom to punkt som ligger på grafen til en funksjon kalles \outl{gjennomsnittlig vekstfart}:\regv
+
+\reg[Gjennomsnittlig vekstfart]{
+	Gitt en funksjon $ f(x) $. Da er
+\begin{equation}\label{gjsnvekstfarteq}
+	\text{gjennomsnittlig vekstfart på intervallet } [a, b]=\frac{f(b)-f(a)}{b-a}
+\end{equation}
+	\fig{vekstfakt}
+}
+\info{\note}{
+	Uttrykket for gjennomsnittlig vekstfart er også uttrykket for stigningstallet til linja som går gjennom punktene $ (a, f(a)) $ og $ (b, f(b)) $.
+}
+\info{Navnevalg}{
+	Til å begynne med er \outl{gjennomsnittlig vekstfart}  et lite beskrivende begrep, så det er nyttig å drøfte litt hva det innebærer.\os
+	
+	På side \pageref{eksvekstfart} så vi på avstanden ballen falt mellom $ {t=1} $ og $ {t=3} $. Farten til ballen er i stadig endring, men det er nyttig å stille spørsmålet ''hvis farten var konstant, hva måtte den vært for at ballen skulle falt like langt?''. Hvis vi tenker oss at farten er konstant, er $ h $ og $ t $ proporsjonale størrelser, og da er\footnote{Se \am.}
+	\[ \text{fart}=\frac{\text{lengde}}{\text{tid}} \]
+	Siden ballen har falt 40 meter på 2 sekunder, er farten 20\enh{m/s}. Den \outl{gjennomsnittlige vekstfarten} er altså størrelsen vi får dersom vi antar at funksjonen (i nevnte tilfelle $ h $) og variabelen (i nevnte tilfelle $ t $) er proporsjonale størrelser. Hvis ballen hadde hatt konstant fart lik 20\enh{m/s}, ville vi også fått en gjennomsnittsfart lik 20\enh{m/s}, uansett hvor mange ganger vi hadde målt farten. Derfor er det også vanlig å kalle farten vi fant for \outl{gjennomsnittsfarten} på intervallet.
+	
+}
+	
+\subsection*{Motvirkende krefter for kjørende bil}
+\#algebra \#modellering \#andregradsfunksjon \#omgjøring av enheter \\\#proporsjonalitet \#digital kompetanse\vsk
+
+La $ F $ være summen av kreftene som virker i motsatt retning av en bils kjøreretning. Ifølge en rapport\footnote{\net{https://sintef.brage.unit.no/sintef-xmlui/handle/11250/2468761}{https://sintef.brage.unit.no/sintef-xmlui/handle/11250/2468761}} fra SINTEF kan\footnote{Det er er her forutsatt flatt strekke, og sett vekk ifra motstand ved akselerasjon.} $ F $ tilnærmes som
+\[ F(v)= mgC_r+\frac{1}{2}\rho v^2 D_m\qquad,\qquad v\geq10\]
+\begin{center}
+	\begin{tabular}{c|c|c|c}
+		& \textbf{betydning} & \textbf{verdi}&\textbf{enhet}  \\ \hline
+		$ v $ & bilens hastighet & variabel& m/s \\
+		$ m $& bilens masse\footnotemark & 1409 & kg\\
+		$ g $& tyngdeakselerasjonen & 9.81 & m/$ \text{s}^2 $ \\
+		$ C_r $ & koeffisient for bilens rullemotstand & 0.015\\
+		$ \rho $ & tettheten til luft & 1.25 & kg/$ \text{m}^3 $ \\
+		$ D_m $& koeffisient for bilens luftmotstandsareal\footnotemark &0.74
+	\end{tabular}
+\end{center}
+
+\footnotetext[3]{Det er tatt ugangspunkt i gjennomsnittsvekten til en norsk personbil.}
+\footnotetext[4]{Verdien er hentet fra \net{en.wikipedia.org/wiki/Automobile\_drag\_coefficient\#Drag\_area}{en.wikipedia.org/wiki/Automobile\_drag\_coefficient\#Drag\_area}}
+
+\abc{
+\item Tegn grafen til $ F $ for $ v\in [10, 35] $
+\item På intervallet gitt i oppgave a, for hvilken hastighet er det at 
+\begin{itemize}
+	\item rullemotstanden gir det største bidraget til $ F $?
+	\item luftmotstanden gir det største bidraget til $ F $?
+\end{itemize} 
+Oppgi svarene rundet av til nærmeste heltall og målt i km/h.
+\item Med ''energiforbruk''\footnote{Den totale energimengden en bil bruker på en kjørelengde vil være høyere enn det vi har kalt ''energiforbruket''. Som regel vil den totale energimengden som kreves for å kjøre en strekning være høyere jo høyere hastighet man har. Slik kan man anta at differansen i energiforbruk vi finner i denne oppgaven er et minimum for den reelle differansen i total energimengde.} mener vi her den energien som må til for å motvirke $ F $ over en viss kjørelengde.
+Ved konstant hastighet er energiforbruket etter kjørt lengde proporsjonal med $ F $. På norske motorveier er 90\,km/h og 110\,km/h vanlige fartsgrenser. Hvor stor økning i energiforbruk vil en økning fra 90\,km/h til 110\,km/h innebære?\os
+
+\item Lag en funksjon $ F_1 $ som gir $ F $ ut ifra bilens hastighet målt i km/h.
+}
+
+\end{document}

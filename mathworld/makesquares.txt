@@ -43,3 +43,4 @@ func _ready():
 func _process(delta):
 	position = position+Vector2(0,speed)
 	update()
+

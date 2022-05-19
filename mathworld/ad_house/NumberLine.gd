@@ -1,4 +1,4 @@
-extends Path2D
+extends Area2D
 
 
 # Declare member variables here. Examples:
@@ -8,6 +8,7 @@ extends Path2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	position =Vector2(100,600)
 	pass # Replace with function body.
 
 
