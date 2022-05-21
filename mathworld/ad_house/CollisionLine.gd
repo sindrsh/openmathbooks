@@ -8,14 +8,14 @@ extends CollisionPolygon2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var height = 16
-	var width = height*1
+	var height = 16/2
+	var width = 900
 	polygon = PoolVector2Array ([
-		Vector2(0,0), 
-		Vector2(width,0),
+		Vector2(-width,-height), 
+		Vector2(width,-height),
 		Vector2(width,height),
-		Vector2(0,height),
-		Vector2(0,0)
+		Vector2(-width,height),
+		Vector2(-width,-height)
 		]
 	)
 

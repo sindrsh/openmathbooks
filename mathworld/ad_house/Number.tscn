@@ -11,18 +11,19 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ) ],
-"loop": false,
-"name": "two",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "one",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "two",
+"speed": 5.0
 } ]
 
 [node name="Number" type="Area2D"]
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Int" type="AnimatedSprite" parent="."]

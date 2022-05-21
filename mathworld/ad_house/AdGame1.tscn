@@ -17,6 +17,7 @@ animations = [ {
 script = ExtResource( 4 )
 
 [node name="NumberLine" type="Area2D" parent="."]
+collision_layer = 3
 script = ExtResource( 3 )
 
 [node name="Line" type="AnimatedSprite" parent="NumberLine"]
@@ -24,4 +25,15 @@ frames = SubResource( 1 )
 animation = "line"
 
 [node name="CollisionLine" type="CollisionPolygon2D" parent="NumberLine"]
+position = Vector2( 0, -14.3813 )
+scale = Vector2( 1, 1.21691 )
 script = ExtResource( 2 )
+
+[node name="Counter" type="Timer" parent="."]
+autostart = true
+
+[node name="CurrentNumber" type="Button" parent="."]
+margin_left = 445.0
+margin_top = 138.0
+margin_right = 502.0
+margin_bottom = 200.0
