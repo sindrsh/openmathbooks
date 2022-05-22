@@ -1,8 +1,7 @@
 settings.outformat="png";
 defaultpen(fontsize(11 pt));
 
-real n = 32;
-unitsize(n*0.0352778cm);
+unitsize(32pt);
 settings.render = -1;
 //defaultpen(1bp);
 
@@ -29,7 +28,7 @@ void ds(pair A=(0,0), real s=1, pen p=black){
 	draw(shift(A)*scale(s)*unitcircle,p=p);
 }
 
-void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0){
+void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=lightblue, pen p1=p, bool l=false, real ls=1.0){
 	path b = box((0,0),(1,1));
 	int cnt = 0;
 	for (int i = 1; i <= I; ++i){

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/asy/line.png" type="Texture" id=1]
 [ext_resource path="res://ad_house/CollisionLine.gd" type="Script" id=2]
@@ -12,6 +12,8 @@ animations = [ {
 "name": "line",
 "speed": 5.0
 } ]
+
+[sub_resource type="StyleBoxEmpty" id=2]
 
 [node name="AdGame1" type="Node2D"]
 script = ExtResource( 4 )
@@ -30,6 +32,7 @@ scale = Vector2( 1, 1.21691 )
 script = ExtResource( 2 )
 
 [node name="Counter" type="Timer" parent="."]
+wait_time = 2.0
 autostart = true
 
 [node name="CurrentNumber" type="Button" parent="."]
@@ -37,3 +40,12 @@ margin_left = 445.0
 margin_top = 138.0
 margin_right = 502.0
 margin_bottom = 200.0
+
+[node name="Score" type="Label" parent="."]
+margin_left = 900.0
+margin_top = 50.0
+margin_right = 940.0
+margin_bottom = 64.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 2 )
+text = "0"
