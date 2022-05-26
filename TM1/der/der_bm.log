@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  29 APR 2022 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 MAY 2022 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1374,9 +1374,9 @@ Package pdftex.def Info: ../fig/der2d.pdf  used on input line 27.
 (pdftex.def)             Requested size: 136.57442pt x 113.80933pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-\T1/lmr/m/n/10.95 Linja som har stig-ingstall $\OML/lmm/m/it/10.95 f[]\OT1/lmr/
-m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , og som
- går gjen-nom punk-tet
+\T1/lmr/m/n/10.95 Linja som har stign-ingstall $\OML/lmm/m/it/10.95 f[]\OT1/lmr
+/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , og so
+m går gjen-nom punk-tet
  []
 
 <../fig/der1.pdf, id=42, 170.7178pt x 142.26149pt>
@@ -1402,83 +1402,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
 \OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . []Den de-riverte 
 av $\OML/lmm/m/it/10.95 f$[] \T1/lmr/m/n/10.95 er funksjo-nen som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 \T1/lmr/m/n/10.95 fremkom-mer ved å er-statte $\OML/lmm/m/it/10.95 a$ \T1/lmr/m
 /n/10.95 i [] med $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 . Denne funksjo-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []\T1/lmr/m/n/10.95 Derivasjon som vi har sett på så langt har vært en brøk med
  en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 dif-fer-anse av $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -ver
 dier i nevner og den tilknyt-tede dif-fer-ansen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 av $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 -verdier i teller
 . Da sier vi at $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er de-rivert med []he
 n-syn på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \OML/lmm/m/it/10.95 x$[]\T1/lmr/m/n/10.95 . I denne bok-se-rien skal vi i all h
 ov-ed-sak se på funksjoner som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 bare er avhengige av én vari-abel. Gitt en funksjon $\OML/lmm
 /m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/
 lmr/m/n/10.95 , er det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 da un-der-forstått at [][][][][][] sym-bol-is-erer $\OML/lmm/
 m/it/10.95 f$ \T1/lmr/m/n/10.95 de-rivert med hen-syn på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []\T1/lmr/m/n/10.95 Samtidig er det greit å være klar over at en funksjon gjern
 e kan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 en []fler-vari-abel funksjon[], avhengig av både $\OML/lmm/m/
 it/10.95 x$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 . I d
 ette til-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 fel-let kan vi bruke skrive [][][][][][] for å in-dikere deri
 vasjon med
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 hen-syn på $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 , og [][]
 [][][][] for å in-dikere derivasjon med hen-syn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/n/10.95 på $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 . Leseren må gjer
 ne fork-lare for seg selv hvor-for føl-gende
  []
@@ -1486,25 +1486,25 @@ ne fork-lare for seg selv hvor-for føl-gende
 [5
 
 ] [6]
-Overfull \hbox (19.63864pt too wide) in paragraph at lines 140--142
+Overfull \hbox (19.63864pt too wide) in paragraph at lines 147--149
 \T1/lmr/m/n/10.95 Men vi kan også skrive $[]$, hvor $\OML/lmm/m/it/10.95 u\OT1/
 lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ) = \OML/lmm/m/it/10.95 
 x[]$\T1/lmr/m/n/10.95 . Denne skrivemåten 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
 \T1/lmr/m/sl/9 Merk: \T1/lmr/m/n/9 Vi kan også finne $\OML/lmm/m/it/9 f$\T1/lmr
 /m/n/9 ' ved å sette $[]$ og $[]$, for så å
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []\T1/lmr/m/n/10.95 Vi set-ter $[]$ og $[]$, og merker oss at
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 300--300
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 \T1/lmr/m/n/10.95 Da $[]$, må $[]$. Av Lho-pi-tal1??
  []
 
@@ -1512,34 +1512,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--300
 
 ]
 
-LaTeX Warning: Reference `cu-v' on page 12 undefined on input line 382.
+LaTeX Warning: Reference `cu-v' on page 12 undefined on input line 389.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
 \T1/lmr/m/n/10.95 Mellom tredje og fjerde linje i liknin-gen over brukte vi ([]
 I[]) og
  []
 
 
-LaTeX Warning: Reference `cossomsin' on page 12 undefined on input line 382.
+LaTeX Warning: Reference `cossomsin' on page 12 undefined on input line 389.
 
 
-LaTeX Warning: Reference `sinsomcos' on page 12 undefined on input line 382.
+LaTeX Warning: Reference `sinsomcos' on page 12 undefined on input line 389.
 
 
-LaTeX Warning: Reference `-cosxcosx' on page 12 undefined on input line 382.
+LaTeX Warning: Reference `-cosxcosx' on page 12 undefined on input line 389.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
 \T1/lmr/m/n/10.95 Bruker vi det fak-tum at $[]$, i kom-bi-nasjon med
  []
 
 [12] [13] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
  (./der_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
 Package rerunfilecheck Info: File `der_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 9962D6A9681AE3423CE3E029AB9D895C;460.
 
@@ -1548,10 +1548,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30946 strings out of 481239
- 607465 string characters out of 5920378
- 930360 words of memory out of 5000000
- 45475 multiletter control sequences out of 15000+600000
+ 30959 strings out of 481239
+ 607570 string characters out of 5920378
+ 931054 words of memory out of 5000000
+ 45485 multiletter control sequences out of 15000+600000
  606676 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,11n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1572,10 +1572,10 @@ ublic/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on der_bm.pdf (14 pages, 282660 bytes).
+Output written on der_bm.pdf (14 pages, 283079 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

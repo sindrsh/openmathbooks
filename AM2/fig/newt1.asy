@@ -22,6 +22,6 @@ yaks(-20,30,l="$f$");
 xaks(a,b, l="$x$");
 
 draw(graph(f,a,b),blue);
-mktc(2,"$x_a$", pos=BeginPoint);
+mktc(2,"$a$", pos=BeginPoint);
 
 

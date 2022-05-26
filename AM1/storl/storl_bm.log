@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 MAY 2022 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 MAY 2022 08:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1510,105 +1510,140 @@ t van-ligst å bruke [][][][][][] som
 [5
 
 ] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]\T1/lmr/m/n/10.95 I []-[] er det an-tatt at stør-relsene på ven-stre side av 
+liknin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/n/10.95 gen er \T1/lmr/m/it/10.95 kon-stant\T1/lmr/m/n/10.95 , men de
+t er ikke alltid slik. Lar du en stein falle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/n/10.95 fra en høgde, vil den åpen-bart ikke ha den samme farten hele
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/n/10.95 tiden. Ved å dele leng-den den har falt med tiden det tok, vi
+l du
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/n/10.95 finne \T1/lmr/m/sl/10.95 hvilken fart ballen ville hatt der-s
+om den skulle kom-met seg
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/sl/10.95 like langt på den samme tiden, der-som farten var den samme
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []\T1/lmr/m/n/10.95 Her må vi en-ten gjøre om 5km til an-tall m eller 4000m til
  an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 \T1/lmr/m/n/10.95 tall km før vi kan legge sam-men ver-di-ene. Vi vel-ger å gjø
 re om
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []\T1/lmr/m/n/10.95 I mange utreg-ninger kan en-heter føre til at ut-trykkene b
 lir litt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 \T1/lmr/m/n/10.95 rotete. Hvis du er helt sikker på at alle benevnin-gene er li
 ke,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--213
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 \T1/lmr/m/n/10.95 kan du med fordel skrive utreg-ninger uten benevn-ing. I \T1/
 lmr/m/sl/10.95 Ek-sem-
  []
 
-[7
+[8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Hvis du kjører med kon-stant fart, er streknin-gen du har k
 jørt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Hvor langt kjører en bil som holder farten 50km/h i 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Hvor langt kjører en bil som holder farten 90km/h i 45
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Her har vi to forskjel-lige en-heter for tid in-volvert; ti
 mer og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 \T1/lmr/m/n/10.95 min-utt. Da må vi en-ten gjøre om farten til km/min eller
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\T1/lmr/m/it/10.95 Kiloprisen \T1/lmr/m/n/10.95 til en vare er hva en vare ko
 ster per kg. Kilo-pris er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\T1/lmr/m/n/10.95 Safran går for å være ver-dens dyreste kry-d-der, 5g kan ko
 ste
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\T1/lmr/m/n/10.95 Her har vi to forskjel-lige en-heter for vekt in-volvert; k
 g og
  []
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
  (./storl_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `storl_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 43E130D34E8BFEBA36790A0F399BE682;210.
+(rerunfilecheck)             Checksum: BA1CC0D3D27A4FEC75BBF32D18050B74;211.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30839 strings out of 481239
- 605878 string characters out of 5920378
- 920212 words of memory out of 5000000
- 45398 multiletter control sequences out of 15000+600000
+ 30857 strings out of 481239
+ 606070 string characters out of 5920378
+ 921165 words of memory out of 5000000
+ 45409 multiletter control sequences out of 15000+600000
  612682 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,11n,104p,877b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
@@ -1617,10 +1652,10 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on storl_bm.pdf (9 pages, 248965 bytes).
+Output written on storl_bm.pdf (10 pages, 253046 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

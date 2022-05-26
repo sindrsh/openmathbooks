@@ -34,7 +34,7 @@ Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $ i $ {x=a} $} er da gitt 
 \begin{equation}\label{derdefaeq}
 	f'(a) =\lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h}
 \end{equation}
-Linja som har stigingstall $ f'(a) $, og som går gjennom punktet $ (a, f(a)) $, kalles \outl{tangeringslinja} til $ f $ for $ x=a $.
+Linja som har stigningstall $ f'(a) $, og som går gjennom punktet $ (a, f(a)) $, kalles \outl{tangeringslinja} til $ f $ for $ x=a $.
 \fig{der1}
 }
 \eks[1]{
@@ -90,6 +90,7 @@ Tilnærmingen
 \end{equation}
 kalles \outl{lineæarapproksimasjonen} av $ f(a+k) $.
 }
+
 \section{Derivasjonsregler}
 \subsection{Den deriverte}
 \outl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
@@ -130,6 +131,12 @@ Gitt $ c\in \mathbb{R} $ og funksjonene $ f(x) $ og $ g(x) $. Da er
 & \left(f+g\right)' =f'+g' \vn
 & \left(f-g\right)'=f'-g'
 }
+}
+\regdef[Den deriverte av en vektorfunksjon \label{vektfunkder}]{
+Gitt funksjonene $ f(t) $, $ g(t) $ og $ v(t)=[f(t), g(t)] $. Da er
+\begin{equation}\label{vektfunkdereq}
+v'(t)=[f'(t), g'(t)]	
+\end{equation}
 }
 \subsection{Kjerneregelen}
 La oss se på tre funksjoner $ f $, $ g $ og $ u $, hvor

@@ -1,16 +1,20 @@
 \input{../../doc}
-\input{../am2_bm}
 \input{../../preamb}
+\input{../bm}
 
 
 \begin{document}
+\section{Introduksjon til Python}
+{
+\centering
+\lstinputlisting[language=Python]{py1.py}
+}
 \section{Newtons metode}
 Gitt en funskjon $ f(x) $ og likningen 
 \[ f=0 \]
-Ved Newtons metode følger man følgende resonnement for å finne en løsning av likningen: \regv
+hvor $ f(a)=0 $. Ved \outl{Newtons metode} gjør vi denne antakelsen for å en tilnærming $ a $: \regv
 \st{
-Gitt at $ {f(x_a)=0} $.
-Vi starter med en $ x $-verdi $ x_0 $. Skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $ kaller vi $ x_1 $. Vi antar at $ |x_1-x_a|<|x_0-x_a| $. 
+La $ x_1 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $. Vi antar da at $ |x_1-a|<|x_0-a| $. Sagt med ord antar vi at $ x_1 $ gir en bedre tilnærming for $ a $ enn det $ x_0 $ gjør.
 }
 Siden $ x_1 $ er skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $, har vi  at\footnote{Se oppgave??}
 \alg{
@@ -26,38 +30,43 @@ x_1 &= x_0-\frac{f(x_0)}{f'(x_0)}
 	\includegraphics{\figp{newt1b}}
 }
 \end{figure}
-Ved å bruke tangenten til $ f $ i $ x_1 $, kan vi finne enda en ny $ x $-verdi, som vi antar gir en bedre tilnærming til $ x_a $ enn det $ x_1 $ gir. Denne prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig tilnærming til $ x_a $.
+La $ x_2 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_1 $. Ved å gjenta prosedyren vi brukte for å finne $ x_1 $, kan vi finne $ x_2 $, som vi antar er en enda bedre tilnærming for $ a $ enn $ x_1 $.
+Prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig\footnote{Hva som er en \textit{tilstrekkelig tilnærming} er det opp til oss selv å bestemme.} tilnærming til $ a$.
 \newpage
-\reg[Newtons metode (Newton-Rhapson metoden)]{
+\reg[Newtons metode]{
 Gitt en funskjon $ f(x) $ og likningen 
 \[ f=0 \]
-hvor ${f(x_a)=0 }$. For et passende valg av $ x_n $ antas det da at $ {|x_{n+1}-x_a|<|x_n-x_a|} $, hvor
+hvor ${f(a)=0 }$. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
 \nn{
 x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
 }
+antas det at $ x_{n+1} $ gir en bedre tilnærming for $ a $ enn $ x_{n} $.
+}
+\spr{
+\outl{Newtons metode} kalles også \outl{Newton-Rhapsos metode}.
 }
 \section{Trapesmetoden} \label{Trapesmetoden}
 Gitt en funksjone $ f(x) $. Integralet $ \int_a^b f \,dx $ kan vi tilnærme ved å 
 \st{
 \begin{enumerate}
-	\item Dele intervallet $ [a, b] $ inn i mindre intervall. Disse skal vi kalle \textit{delintervall}.
+	\item Dele intervallet $ [a, b] $ inn i mindre intervall. Disse kaller vi \outl{delintervall}.
 	\item Finne en tilnærmet verdi for integralet av $ f $ på hvert\\ delintervall.
 	\item Summere verdiene fra punkt 2.
 \end{enumerate}
 }\regv
 
-I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ a=x_0 $, betyr dette at 
+I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ {a=x_0} $ og $ {h=\frac{b-a}{3}} $, betyr dette at 
 \alg{
 x_1&=x_0+h & x_2&=x_0+2h & x_3&=x_3+3h=b
 }
-hvor $ h=\frac{b-a}{3} $. En tilnæret verdi for $ \int_{a}^{x_1}f\,dx $, får vi ved å finne arealet til trapeset med hjørner (husk at $ x_0=a $)
+En tilnæret verdi for $ \int_{a}^{x_1}f\,dx $ får vi ved å finne arealet til trapeset med hjørner (husk at $ x_0=a $)
 \alg{
 (x_0, 0) && (x_1, 0) && (x_1, f(x_1)) && (x_0, f(a))
 }
 Dette arealet er gitt ved uttrykket
 \[ \frac{1}{2}(x_1-x_0)\left[f(x_0)+f(x_1)\right] \]
 Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skrive
-\[ \int_{a}^{b} f\,dx \approx \sum_{i=0}^{2} \frac{1}{2}(x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
+\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{2} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
 \begin{figure}
 	\centering
 	\subfloat[Tilnærming med 3\\ \hspace{0.55cm}delintervaller.]{\includegraphics{\figp{trapmet}}}\qquad
@@ -67,12 +76,13 @@ Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skri
 
 \reg[Trapesmetoden \label{trapmet}]{
 Gitt en integrerbar funksjon $ f $. En tilnærmet verdi for $ \int_{a}^{b} f\,dx $ er da gitt som
-\[ \int_{a}^{b} f\,dx \approx \sum_{i=0}^{n} \frac{1}{2}(x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
+\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
 hvor $ a=x_0 $, $ b=x_n $ og $ x_{n+1}>x_n $.
 }
 \info{\note}{
-Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n+1} $ delintervaller. Det er heller inget krav om at delintervallene skal være like store, men det gjør implementeringen av metoden lettere. Uttrykket for $ h $ fra side \pageref{Trapesmetoden} vil i så fall bli
+Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n+1} $ delintervaller. Det er ikke et krav at delintervallene skal være like store, men det gjør implementeringen av metoden lettere. Uttrykket for $ h $ fra side \pageref{Trapesmetoden} vil i så fall bli
 \[ h=\frac{b-a}{n+1} \]
+Da er $ x_{n+1}=x_n+h $.
 }
 
 \end{document}

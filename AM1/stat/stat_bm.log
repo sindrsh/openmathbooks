@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  10 MAY 2022 07:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 MAY 2022 06:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1570,55 +1570,94 @@ File: ../fig/meanb.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../fig/meanb.pdf  used on input line 203.
 (pdftex.def)             Requested size: 185.52264pt x 36.19513pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]\T1/lmr/m/n/10.95 Tenk deg at du på en løpetur gjør tre målinger av farten di
+n.
+ []
+
+
+LaTeX Warning: Hyper reference `fart' on page 10 undefined on input line 210.
+
+
+LaTeX Warning: Reference `fart' on page 10 undefined on input line 210.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 Siden alle målinger av farten din hadde samme verdi, kan det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 være rimelig å anta at farten din var kon-stant. Og hvis den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 virke-lig var det, ville alle målinger av farten din hatt sam
+me
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 verdi, uansett hvor mange målinger du tok. Dette gjør at en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 kon-stant fart fra []\T1/lmr/m/sl/10.95 Defin-isjon [][] \T1/
+lmr/m/n/10.95 i daglig-tale også kalles []gjen-nom-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []\T1/lmr/m/n/10.95 Medianen er tal-let som en-der opp i midten av dataset-tet 
 når det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 []\T1/lmr/m/n/10.95 Hvis dataset-tet har par-talls an-tall verdier, er me-di-a-
 nen gjen-
  []
 
 [10 <../fig/meana.pdf> <../fig/meanb.pdf>] [11] [12]
-Overfull \hbox (1.047pt too wide) in paragraph at lines 235--236
+Overfull \hbox (1.047pt too wide) in paragraph at lines 242--243
 \T1/lmr/m/n/10.95 Ofte vil det også være store forskjeller (stor spred-ning) me
 l-lom dataene 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
 []\T1/lmr/m/n/10.95 Differansen mel-lom svarene med hen-holdsvis høgest og lave
 st
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
 []\T1/lmr/m/n/10.95 Svaret med hen-holdsvis høgest og lavest verdi er 124 og 38
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
 []\T1/lmr/m/n/10.95 Svaret med hen-holdsvis høgest og lavest verdi er 14 og 0. 
 Altså
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\T1/lmr/m/n/10.95 Skill det rangerte dataset-tet på midten, slik at to nye se
 tt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \T1/lmr/m/n/10.95 opp-står. (Viss det er odd-e-talls an-tall verdier i dataset-
 tet,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \T1/lmr/m/n/10.95 Om me-di-anene fra punkt 3: Den med høgest verdi kalles \T1/l
 mr/m/it/10.95 øvre
  []
@@ -1626,93 +1665,93 @@ mr/m/it/10.95 øvre
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
 []\T1/lmr/m/n/10.95 Medianen i det blå set-tet er 47 (ne-dre kvar-til) og me-di
 -a-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 []\T1/lmr/m/n/10.95 Medianen i det blå set-tet er 1 (ne-dre kvar-til) og me-di-
 a-nen
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
 []\T1/lmr/m/n/10.95 Nedre kvar-til, me-di-a-nen og øvre kvar-til blir også kalt
  hen-
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 []\T1/lmr/m/n/10.95 Differansen mel-lom en verdi og gjen-nom-snit-tet i et data
 sett
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 []\T1/lmr/m/n/10.95 Kvadrer avviket til hver verdi i dataset-tet, og sum-mer
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 []\T1/lmr/m/n/10.95 Gjennomsnittet fant vi på side []9[]. Vi utvider frekven-st
 a-bellen vår
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
 []\T1/lmr/m/n/10.95 For mo-biler to-talt er var-i-ansen 17781,25 og stan-dar-d-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
 []\T1/lmr/m/n/10.95 For mo-biler uten smart-funksjoner er var-i-ansen $\OT1/lmr
 /m/n/10.95 318 848\OML/lmm/m/it/10.95 :[]$ \T1/lmr/m/n/10.95 og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
 []\T1/lmr/m/n/10.95 For mo-biler med smart-funksjoner er var-i-ansen $\OT1/lmr/
 m/n/10.95 245 847\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 91[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 []\T1/lmr/m/n/10.95 La oss se hva som skjer hvis vi gjen-tar utreg-nin-gen fra 
 \T1/lmr/m/sl/10.95 Ek-sem-pel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 \T1/lmr/m/n/10.95 Men brøken $[]$ er jo per defin-isjon gjen-nom-snit-tet til
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 \T1/lmr/m/n/10.95 dataset-tet, og dermed blir ut-trykket over lik 0. Dette vil 
 gjelde
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 \T1/lmr/m/n/10.95 for alle datasett, så i denne sam-men-hen-gen gir ikke tal-le
 t 0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 \T1/lmr/m/n/10.95 noen yt-terligere in-for-masjon. Om vi de-r-i-mot kvadr-erer 
 avvikene,
  []
 
 [17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
  (./stat_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `stat_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 22569DE090B14AC65E87F2176F256C4C;964.
 
@@ -1721,13 +1760,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31015 strings out of 481239
- 608973 string characters out of 5920378
- 921186 words of memory out of 5000000
- 45533 multiletter control sequences out of 15000+600000
+ 31014 strings out of 481239
+ 608819 string characters out of 5920378
+ 921689 words of memory out of 5000000
+ 45532 multiletter control sequences out of 15000+600000
  631538 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,13n,104p,876b,983s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,104p,876b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1741,7 +1780,7 @@ m/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf
 b></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on stat_bm.pdf (18 pages, 283105 bytes).
+Output written on stat_bm.pdf (18 pages, 284272 bytes).
 PDF statistics:
  319 PDF objects out of 1000 (max. 8388607)
  275 compressed objects within 3 object streams

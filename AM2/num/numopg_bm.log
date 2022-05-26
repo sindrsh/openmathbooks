@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 MAY 2022 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 MAY 2022 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**funk_bm.tex
-(./funk_bm.tex
+**numopg_bm.tex
+(./numopg_bm.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -55,8 +55,8 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-)) (../bm.tex)
-(../../preamb.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)) (../../preamb.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
@@ -1019,11 +1019,11 @@ nous mode
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ))
-\funk_bm@idxfile=\write6
-\openout6 = `funk_bm.idx'.
+\numopg_bm@idxfile=\write6
+\openout6 = `numopg_bm.idx'.
 
 
-Writing index file funk_bm.idx
+Writing index file numopg_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1207,8 +1207,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip134
 )
-(./funk_bm.aux)
-\openout1 = `funk_bm.aux'.
+(../bm.tex) (./numopg_bm.aux)
+\openout1 = `numopg_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -1324,245 +1324,100 @@ LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
 
-(./funk_bm.out) (./funk_bm.out)
+(./numopg_bm.out) (./numopg_bm.out)
 \@outlinefile=\write7
-\openout7 = `funk_bm.out'.
+\openout7 = `numopg_bm.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-0.
+2.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-0.
+2.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-10.
+12.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-10.
+12.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 10.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 10.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+(Font)              <6> on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-0.
+2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-10.
+12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-Overfull \hbox (4.92174pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/10.95 falle fritt ne-dover. Når vi slip-per ballen, starter vi også
- en stoppeklokke. 
+Overfull \hbox (0.1676pt too wide) in paragraph at lines 27--27
+\T1/lmr/m/n/12 at $[]$ og $[]$ er med i hvert sitt delin-ter-vall. Fork-lar hvo
+r- 
  []
 
-
-Overfull \hbox (1.65933pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/10.95 An-tall me-ter $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 ball
-en er over bakken et-ter $\OML/lmm/m/it/10.95 t$ \T1/lmr/m/n/10.95 sekun-der ka
-n da tilnærmes 
- []
-
-<../fig/ball.pdf, id=11, 170.7178pt x 170.7178pt>
-File: ../fig/ball.pdf Graphic file (type pdf)
-<use ../fig/ball.pdf>
-Package pdftex.def Info: ../fig/ball.pdf  used on input line 12.
-(pdftex.def)             Requested size: 170.71738pt x 170.71738pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 13.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/ball.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-5.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-<../fig/ballb.pdf, id=41, 170.7178pt x 170.7178pt>
-File: ../fig/ballb.pdf Graphic file (type pdf)
-<use ../fig/ballb.pdf>
-Package pdftex.def Info: ../fig/ballb.pdf  used on input line 32.
-(pdftex.def)             Requested size: 170.71738pt x 170.71738pt.
-<../fig/vekstfakt.pdf, id=42, 170.7178pt x 113.81522pt>
-File: ../fig/vekstfakt.pdf Graphic file (type pdf)
-<use ../fig/vekstfakt.pdf>
-Package pdftex.def Info: ../fig/vekstfakt.pdf  used on input line 41.
-(pdftex.def)             Requested size: 170.71738pt x 113.81493pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-[]\T1/lmr/m/n/10.95 Uttrykket for gjen-nom-snit-tlig vek-st-fart er også ut-try
-kket for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
-\T1/lmr/m/n/10.95 stign-ingstal-let til linja som går gjen-nom punk-tene $\OT1/
-lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 
-a\OT1/lmr/m/n/10.95 ))$ \T1/lmr/m/n/10.95 og
- []
-
-[2 <../fig/ballb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-[]\T1/lmr/m/n/10.95 Til å beg-ynne med er []gjen-nom-snit-tlig vek-st-fart[] et
- lite
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 beskrivende be-grep, så det er nyt-tig å drøfte litt hva det 
-in-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-[]\T1/lmr/m/n/10.95 På side []1[] så vi på av-s-tanden ballen falt mel-lom $[]$
- og $[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 Farten til ballen er i stadig en-dring, men det er nyt-tig å 
-stille
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 spørsmålet ''hvis farten var kon-stant, hva måtte den vært fo
-r
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 at ballen skulle falt like langt?''. Hvis vi tenker oss at fa
-rten er
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 Hvis en ball har kon-stant fart og faller 40 me-ter på 2 seku
-n-der,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 er farten 20m/s. Vi har også sett i [][]AM[][] at en an-tatt 
-kon-stant
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-[]\T1/lmr/m/n/10.95 Den []gjen-nom-snit-tlige vek-st-farten[] er altså stør-rel
-sen vi får der-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
-\T1/lmr/m/n/10.95 som vi an-tar at funksjo-nen (i nevnte til-felle $\OML/lmm/m/
-it/10.95 h$\T1/lmr/m/n/10.95 ) og vari-abe-len (i
- []
-
-[3 <../fig/vekstfakt.pdf>] [4]
-Overfull \hbox (12.22302pt too wide) in paragraph at lines 75--75
-[][][]\T1/lmr/m/n/9 Verdien er hen-tet fra [][]en.wikipedia.org/wiki/Automobile
-_drag_coefficient#Drag_area[][]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[][][][]\T1/lmr/m/n/9 Den to-tale en-erg-i-meng-den en bil bruker på en kjøre-l
-engde vil være høyere enn det
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\T1/lmr/m/n/9 vi har kalt ''en-ergi-for-bruket''. Som regel vil den to-tale en-
-erg-i-meng-den som kreves
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\T1/lmr/m/n/9 for å kjøre en strekn-ing være høyere jo høyere hastighet man har
-. Slik kan man
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-\T1/lmr/m/n/9 anta at dif-fer-ansen i en-ergi-for-bruk vi finner i denne opp-ga
-ven er et min-i-mum for
- []
-
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
- (./funk_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
-Package rerunfilecheck Info: File `funk_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 1EEF867113BDAF0553CEDD1DD21F15E1;74.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (./numopg_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `numopg_bm.out' has not changed.
+(rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
  ) 
 Here is how much of TeX's memory you used:
- 32178 strings out of 481239
- 625452 string characters out of 5920378
- 938951 words of memory out of 5000000
- 46736 multiletter control sequences out of 15000+600000
- 599748 words of font info for 87 fonts, out of 8000000 for 9000
+ 31979 strings out of 481239
+ 621711 string characters out of 5920378
+ 934849 words of memory out of 5000000
+ 46576 multiletter control sequences out of 15000+600000
+ 571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,104p,876b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/
-texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
-sy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on funk_bm.pdf (5 pages, 201851 bytes).
+ 70i,5n,104p,878b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/esint-type1/esint10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx
+12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on numopg_bm.pdf (1 page, 110164 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

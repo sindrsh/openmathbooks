@@ -202,6 +202,7 @@
 \newcounter{opg}
 \numberwithin{opg}{section}
 \newcommand{\op}[1]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg} \vspace{2 pt} \label{#1} \\}
+\newcommand{\eksop}[2]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg} (#1) \vspace{2 pt} \label{#2} \\}
 \newcommand{\ekspop}[1]{\vsk\textbf{Gruble \thechapter.#1}\vspace{2 pt} \\}
 \newcommand{\nes}{\stepcounter{section}
 	\setcounter{opg}{0}}
@@ -227,18 +228,63 @@ Rekn ut.
 \newcommand{\refsec}[1]{\hrs{#1}{seksjon}}
 \newcommand{\eksref}[1]{\textsl{#1}}
 \newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
-\newcommand{\refop}[1]{\outl{oppgave \ref{#1}}}
+\newcommand{\refop}[1]{{\color{blue}oppgave \ref{#1}}}
 
-\newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
+\newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{AM}}
 \newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
 \newcommand{\tmen}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{TM1}}
 \newcommand{\tmto}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{TM2}}
+\newcommand{\eksbm}{
+\footnotesize
+Oppgaver har blitt gitt ved sentralt utformet eksamen i Norge er markert med forkortelser i parantes. Disse oppgavene er laget av \textit{Utdanningsdirektoratet}.
+\begin{center}
+	\begin{tabular}{c|c}
+		E & Eksempeloppgave \\
+		V & Eksamen fra vårsemesteret\\
+		H & Eksamen fra høstsemesteret \\
+		XX & Eksamen ble gitt i år 20XX
+	\end{tabular}
+\end{center}
+Tekst og innhold kan her være noe endret i forhold til originalen.
+}
 
 % outline word
 \newcommand{\outl}[1]{{\color{Emerald}#1}}
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 
+
+%%% Writing code
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+%%%
 \usepackage{datetime2}
 %%\usepackage{sansmathfonts} for dyslexia-friendly math
 \usepackage[]{hyperref}
