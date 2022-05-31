@@ -1,0 +1,30 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+
+\opgt	
+	
+\op{opgstorlbolt}
+\tagop{\#regresjon \#funksjonsdrøfting \#omgjøring av enheter}
+Usain Bolt har verdensrekorden for 100\enh{m} sprint. I tabellen under ser du hva tidtakeren viste ved hver 10. meter under dette rekordløpet. \vs
+\begin{center}\small
+	\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
+		meter & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100\\
+		sekunder& 1.89 & 2.88 & 3.78 & 4.64 & 5.47 & 6.29 & 7.1 & 7.92 & 8.75 & 9.58
+	\end{tabular}
+\end{center}
+\abc{
+	\item I figuren under har vi brukt datasettet fra tabellen til å utføre regresjon med et fjerdegradspolynom. Hva er det som er helt feil med denne tilnærmingen?
+	\begin{figure}
+		\includegraphics[scale=0.2]{\figp{100mreg}}
+	\end{figure}
+	\item I datasettet kan vi legge til et punkt som vil hjelpe med å korrigere feilen poengtert i a). Hvilket punkt er dette?
+	\item Bruk regresjon med et fjerdegradspolynom på datasettet fra b).
+	\item Ut ifra funksjonen du fant i c), hva var toppfarten til Bolt under dette løpet?
+	\item Bruk datasettet fra b) til å finne gjennomsnittsfarten til Bolt for $ {t\in[0, 1.89]} $ og for $ {t\in[1.89, 9.58]} $. Sammenlikn disse hastighetene med svaret fra oppgave d), og drøft årsaken til ulikhetene/\\likhetene.
+}
+
+\end{document}
+

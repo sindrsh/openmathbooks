@@ -1,5 +1,6 @@
 \usepackage[T1]{fontenc}
 %\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+\usepackage[utf8]{inputenc}
 \usepackage{lmodern} % load a font with all the characters
 \usepackage{geometry}
 \geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
@@ -139,6 +140,7 @@
 		\caption{#2}
 \end{figure}}
 
+
 \newcommand{\sectionbreak}{\clearpage} % New page on each section
 
 \newcommand{\nn}[1]{
@@ -214,6 +216,10 @@
 \newcommand{\rknut}{
 Rekn ut.
 }
+% tag exercises
+\newcommand{\tagop}[1]{
+{\color{Gray} #1} \os
+}
 
 %License
 \newcommand{\lic}{\textit{Matematikken sine byggesteinar by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit\\ 
@@ -240,9 +246,10 @@ Oppgaver har blitt gitt ved sentralt utformet eksamen i Norge er markert med for
 \begin{center}
 	\begin{tabular}{c|c}
 		E & Eksempeloppgave \\
-		V & Eksamen fra vårsemesteret\\
-		H & Eksamen fra høstsemesteret \\
-		XX & Eksamen ble gitt i år 20XX
+		V/H & Eksamen fra vårsemesteret/høstsemesteret\\
+		G/1P/1T/R1/R2 & Fag  \\
+		XX & År 20XX \\
+		D1/D2 & Del 1/Del 2
 	\end{tabular}
 \end{center}
 Tekst og innhold kan her være noe endret i forhold til originalen.
@@ -280,10 +287,25 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 	showspaces=false,                
 	showstringspaces=false,
 	showtabs=false,                  
-	tabsize=2
+	tabsize=2,
+	inputencoding=utf8,
+	extendedchars=true,
+	literate= {{å}{{\aa}}1 {æ}{{\ae}}1 {ø}{{\o}}1}
 }
 
 \lstset{style=mystyle}
+
+\newcommand{\python}[1]{
+\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]
+\lstinputlisting[language=Python]{#1}
+\end{tcolorbox}}
+\newcommand{\pythonut}[2]{
+\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]
+\lstinputlisting[language=Python]{#1}	
+\small \vspace{11pt}
+\textbf{Output} \\ \ttfamily
+#2
+\end{tcolorbox}}
 %%%
 \usepackage{datetime2}
 %%\usepackage{sansmathfonts} for dyslexia-friendly math

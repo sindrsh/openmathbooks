@@ -5,10 +5,49 @@
 
 \begin{document}
 \section{Introduksjon til Python}
-{
-\centering
-\lstinputlisting[language=Python]{py1.py}
+\pythonut{helloworld.py}{
+Hello world!
 }
+
+Python deler talll inn i tre typer:
+\begin{center}
+	\begin{tabular}{r|l}
+		\texttt{int} & reelle heltall \\
+		\texttt{float} & relle tall \\
+		\texttt{complex} & komplekse tall
+	\end{tabular} 
+\end{center}
+Vi skal i denne boka konsentrere oss om \texttt{int} og \texttt{float}. Tallypene definerer vi ved å ekskludere eller inkludere punktum:
+\python{intfloat.py}
+\pythonut{opr.py}{
+a+b =  7\\
+a-b =  3\\
+a*b =  10\\
+a/b =  2.5\\
+a**b =  25\\
+a\%b =  1\\
+a//b =  2\\
+}
+
+\pythonut{list.py}{
+stringlist =  ['98', '99', '100']\\
+stringlist =  [98, 99, 100]
+
+}
+
+\begin{center}
+	\begin{tabular}{c|l} \hline
+		\texttt{print(x)} & Skriver $ x $ til terminal. \\ \hline
+		\texttt{range(a)} & Lager en følge som starter på 0, og øker med 1 fram \\
+		&til $ a-1 $ er nådd. Følgen kan indekseres som en liste.		\\ \hline
+		\texttt{for x in a} & Itererer over hvert element i $ a $. $ a $ kan være en liste, \\
+		&et array eller en følge laget av \texttt{range} \\
+	\end{tabular} 
+\end{center}
+\info{Obs!}{
+	Bruk aldri innebygde funksjoner som navn på variabler.
+}
+
 \section{Newtons metode}
 Gitt en funskjon $ f(x) $ og likningen 
 \[ f=0 \]
@@ -55,18 +94,19 @@ Gitt en funksjone $ f(x) $. Integralet $ \int_a^b f \,dx $ kan vi tilnærme ved 
 \end{enumerate}
 }\regv
 
-I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ {a=x_0} $ og $ {h=\frac{b-a}{3}} $, betyr dette at 
+I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ {a=x_0} $ og $ {\Delta x=\frac{b-a}{3}} $, betyr dette at 
 \alg{
-x_1&=x_0+h & x_2&=x_0+2h & x_3&=x_3+3h=b
+x_1&=x_0+\Delta x & x_2&=x_0+2\Delta x & x_3&=x_3+3\Delta x=b
 }
 En tilnæret verdi for $ \int_{a}^{x_1}f\,dx $ får vi ved å finne arealet til trapeset med hjørner (husk at $ x_0=a $)
 \alg{
 (x_0, 0) && (x_1, 0) && (x_1, f(x_1)) && (x_0, f(a))
 }
 Dette arealet er gitt ved uttrykket
-\[ \frac{1}{2}(x_1-x_0)\left[f(x_0)+f(x_1)\right] \]
+\[ \frac{1}{2}(x_1-x_0)\left[f(x_0)+f(x_1)\right]=
+\frac{\Delta x}{2}\left[f(x_0)-f(x_1)\right] \]
 Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skrive
-\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{2} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
+\[ \int_{a}^{b} f\,dx \approx \frac{\Delta x}{2}\sum_{i=0}^{2} \left[f(x_i)+f(x_{i+1})\right] \]
 \begin{figure}
 	\centering
 	\subfloat[Tilnærming med 3\\ \hspace{0.55cm}delintervaller.]{\includegraphics{\figp{trapmet}}}\qquad
@@ -76,13 +116,21 @@ Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skri
 
 \reg[Trapesmetoden \label{trapmet}]{
 Gitt en integrerbar funksjon $ f $. En tilnærmet verdi for $ \int_{a}^{b} f\,dx $ er da gitt som
-\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right] \]
-hvor $ a=x_0 $, $ b=x_n $ og $ x_{n+1}>x_n $.
+\begin{equation}\label{trapmeteq}
+	\int_{a}^{b} f\,dx \approx \frac{\Delta x}{2}\sum_{i=0}^{n}\left[f(x_i)+f(x_{i+1})\right]
+\end{equation}
+hvor
+\algv{
+n&\in \mathbb{\hat{N}}\vn
+a&=x_0 \vn
+b&=x_n \vn
+\Delta x &= \frac{b-a}{n+1}\vn
+x_{n+1}&=x_n+i\Delta x
+}
+
 }
 \info{\note}{
-Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n+1} $ delintervaller. Det er ikke et krav at delintervallene skal være like store, men det gjør implementeringen av metoden lettere. Uttrykket for $ h $ fra side \pageref{Trapesmetoden} vil i så fall bli
-\[ h=\frac{b-a}{n+1} \]
-Da er $ x_{n+1}=x_n+h $.
+Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n+1} $ delintervaller.
 }
 
 \end{document}

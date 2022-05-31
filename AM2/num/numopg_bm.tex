@@ -6,6 +6,7 @@
 \begin{document}
 \opgt
 
+
 \nes
 \op{opgnumnewtmet}
 Gitt likningen
@@ -15,7 +16,20 @@ Gitt likningen
 \item Lag et script som finner de tre løsningene av likningen.
 }
 
-\op{opgnumtrapder}
+\nes
+
+\op{opgnumtrapalt}
+Forklar hvorfor \eqref{trapmeteq} også kan skrives som
+\[ \int_{a}^{b} f\,dx \approx \Delta x\left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}\left[f(x_i)+f(x_{i+1})\right]\right)  \]
+
+
+\op{opgnumtrapkonveks}
+Hvis funksjonen du skal integrere er konkav, vil trapesmetoden gi et overestimat eller et underestimat?
+
+\ekspop{1}
+Trapesmetoden kan også implementeres slik at delintervallene ikke nødvendigvis har samme bredde. Forklar hvorfor \eqref{trapmeteq} da kan skrives som
+\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right]  \]
+
 Gitt funksjonen 
 \[ f(x)= 1+\frac{1}{2}x^2+\sin(\pi x) \qquad x\in [0, 2]\]
 \abc{
@@ -24,5 +38,15 @@ Gitt funksjonen
 \[ x+\pi \cos(\pi x)=0 \]
 også er gode kandidater til å være med i delintervallene.
 \item Bruk Newtons metode til å finne $ x $-verdiene du ønsker. Stopp søket når $ |x_n-x_{n+1}| \leq 0.000001$.
+}
+
+\ekspop{2}
+Gitt integralet
+\[ I=\int\limits_0^2 x^3-5x+6\]
+La $ I_n $ være intgralet tilnærmet ved trapesmetoden med $ n $ del-intervaller.
+\abc{
+	\item Beregn $ I_{10} $ og $ I_{100} $ og $ I_{1000} $
+	\item La $ E_n=I-I_n $
+	\item Bruk regresjon til å finne den best tilpassede polynomfunksjonen for punktene $ \left(\frac{1}{n}, E_n\right), n\in[10, 100, 1000] $.
 }
 \end{document}

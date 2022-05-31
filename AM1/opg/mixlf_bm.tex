@@ -1,0 +1,23 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+Se for deg at vi slipper en ball fra 60 meter over bakken, og lar den falle fritt nedover. Når vi slipper ballen, starter vi også en stoppeklokke. Antall meter $ h $ ballen er over bakken etter $ t $ sekunder kan da tilnærmes ved funksjonen\footnote{Funksjonsuttrykket kan faktoriseres, men vi har valgt å ikke gjøre det her.}
+\[ h(t)=50-5t^2\quad,\quad x\in\left[0, \sqrt{10}\right] \]
+\fig{ball}
+Alle som har sett en ball falle, vet at den vil falle raskere og raskere fram til den treffer bakken. Ballen har altså \textit{ikke} konstant fart. Men det kan være nyttig å vite hva farten hadde vært \textit{hvis} den var konstant. La oss undersøke hva farten hadde vært hvis vi tenker oss at den var konstant mellom $ t=1 $ og $ t=3 $.
+\fig{ballb}
+Vi har at
+\algv{
+	h(1)&=50-5\cdot1^2 = 45 \\
+	h(3)&=50-5\cdot3^2 = 5
+}
+Altså har ballen falt $ {(45-5)\enh{m}=40\enh{m}} $ på $ (3-1)\enh{s}=2\enh{s} $. Av \eqref{farteq} har vi da at
+\[ \text{fart}=\frac{40\enh{m}}{2\enh{s}}=20\enh{m/s} \]
+Som vi har sett på side ??, er dette \outl{gjennomsnittsfarten  til ballen} mellom tiden fra det 1. sekundet til det 3. sekundet. \newpage
+Det er nå interessant å merke seg likheten mellom utrekningen av gjennomsnittsfarten og utrekningen for stigningstallet til linja mellom to punkt, som vi så på i \mb. Stigningstallet mellom punktene $ (1, h(1)) $ og $ (3, h(3)) $ er gitt som
+\[ \frac{f(3)-f(1)}{3-1}=\frac{5-45}{2}=-20 \]
+Gjennomsnittsfarten og stigningstallet har altså samme tallverdi, 20. Det som skiller verdiene, er at stigningstallet er negativt. Det forteller oss at ballen har gått i negativ retning, altså at ballen er fallende\footnote{Fordi vi har definert 'opp' som positiv retning.}. 
+\end{document}
+
