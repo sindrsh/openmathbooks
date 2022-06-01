@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 MAY 2022 06:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 JUN 2022 09:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1057,6 +1057,31 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \c@rg=\count345
 \c@opg=\count346
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count347
+\lst@gtempboxa=\box139
+\lst@token=\toks48
+\lst@length=\count348
+\lst@currlwidth=\dimen323
+\lst@column=\count349
+\lst@pos=\count350
+\lst@lostspace=\dimen324
+\lst@width=\dimen325
+\lst@newlines=\count351
+\lst@lineno=\count352
+\lst@maxwidth=\dimen326
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count353
+\lst@skipnumbers=\count354
+\lst@framebox=\box140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
 
@@ -1100,9 +1125,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen323
-\Hy@linkcounter=\count347
-\Hy@pagecounter=\count348
+\@linkdim=\dimen327
+\Hy@linkcounter=\count355
+\Hy@pagecounter=\count356
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1115,8 +1140,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count349
-\pdfmajorversion=\count350
+\Hy@SavedSpaceFactor=\count357
+\pdfmajorversion=\count358
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1124,14 +1149,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count351
+\c@Hy@tempcnt=\count359
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen324
+\XeTeXLinkMargin=\dimen328
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1140,9 +1165,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count352
-\Field@Width=\dimen325
-\Fld@charsize=\dimen326
+\Fld@menulength=\count360
+\Field@Width=\dimen329
+\Fld@charsize=\dimen330
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1156,9 +1181,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count353
-\c@Item=\count354
-\c@Hfootnote=\count355
+\Hy@abspage=\count361
+\c@Item=\count362
+\c@Hfootnote=\count363
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1168,8 +1193,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count356
-\c@bookmark@seq@number=\count357
+\Fld@listcount=\count364
+\c@bookmark@seq@number=\count365
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1245,17 +1270,17 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen327
-\scratchbox=\box139
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen328
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count366
+\scratchdimen=\dimen331
+\scratchbox=\box141
+\nofMPsegments=\count367
+\nofMParguments=\count368
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen332
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1270,6 +1295,7 @@ LaTeX Info: Redefining \selectfont on input line 5.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -1279,7 +1305,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box140
+\c@lstlisting=\count372
+\AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1291,7 +1318,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count364
+\c@section@level=\count373
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1570,188 +1597,233 @@ File: ../fig/meanb.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../fig/meanb.pdf  used on input line 203.
 (pdftex.def)             Requested size: 185.52264pt x 36.19513pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-[]\T1/lmr/m/n/10.95 Tenk deg at du på en løpetur gjør tre målinger av farten di
-n.
+LaTeX Warning: Hyper reference `fart' on page 10 undefined on input line 209.
+
+
+LaTeX Warning: Reference `fart' on page 10 undefined on input line 209.
+
+
+LaTeX Warning: Reference `label' on page 10 undefined on input line 212.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]\T1/lmr/m/n/10.95 Hvis vi \T1/lmr/m/it/10.95 an-tar \T1/lmr/m/n/10.95 at to s
+tør-relser er pro-porsjonale, kaller vi pro-
  []
 
 
-LaTeX Warning: Hyper reference `fart' on page 10 undefined on input line 210.
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/lmr/m/n/10.95 porsjon-alitet-skon-stan-ten fra [] den []gjen-nom-snit-tlige
+ en-drin-
+ []
 
+[10 <../fig/meana.pdf> <../fig/meanb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+[]\T1/lmr/m/n/10.95 For årene 2009 og 2010 er dif-fer-ansen mel-lom smart-tele-
 
-LaTeX Warning: Reference `fart' on page 10 undefined on input line 210.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\T1/lmr/m/n/10.95 Siden alle målinger av farten din hadde samme verdi, kan det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\T1/lmr/m/n/10.95 være rimelig å anta at farten din var kon-stant. Og hvis den
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\T1/lmr/m/n/10.95 Mellom 2009 og 2010 har altså sal-get av smart-tele-foner i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\T1/lmr/m/n/10.95 virke-lig var det, ville alle målinger av farten din hatt sam
-me
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+[]\T1/lmr/m/n/10.95 For årene 20010 og 2014 er dif-fer-ansen mel-lom smart-tele
+-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\T1/lmr/m/n/10.95 verdi, uansett hvor mange målinger du tok. Dette gjør at en
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\T1/lmr/m/n/10.95 Mellom 2010 og 2014 har altså sal-get av smart-tele-foner i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\T1/lmr/m/n/10.95 kon-stant fart fra []\T1/lmr/m/sl/10.95 Defin-isjon [][] \T1/
-lmr/m/n/10.95 i daglig-tale også kalles []gjen-nom-
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+[]\T1/lmr/m/n/10.95 For årene 2013 og 2014 er dif-fer-ansen mel-lom smart-tele-
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
+\T1/lmr/m/n/10.95 Mellom 20013 og 2014 har altså sal-get av smart-tele-foner
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . I [][]MB[][] har 
+vi sett at stign-ingstal-let til
+ []
+
+<../fig/lintopunkt.pdf, id=197, 113.81522pt x 113.81522pt>
+File: ../fig/lintopunkt.pdf Graphic file (type pdf)
+<use ../fig/lintopunkt.pdf>
+Package pdftex.def Info: ../fig/lintopunkt.pdf  used on input line 234.
+(pdftex.def)             Requested size: 113.81493pt x 113.81493pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+\T1/lmr/m/n/10.95 Sammenlikner vi dette ut-trykket med utreg-nin-gene fra side 
+[]11[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+\T1/lmr/m/n/10.95 ser vi at utreknin-gene er iden-tiske. Stign-ingstal-let mel-
+lom to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+\T1/lmr/m/n/10.95 punkt på en graf gir oss dermed den gjen-nom-snit-tlige en-dr
+in-gen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\T1/lmr/m/n/10.95 Medianen er tal-let som en-der opp i midten av dataset-tet 
 når det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--214
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\T1/lmr/m/n/10.95 Hvis dataset-tet har par-talls an-tall verdier, er me-di-a-
 nen gjen-
  []
 
-[10 <../fig/meana.pdf> <../fig/meanb.pdf>] [11] [12]
-Overfull \hbox (1.047pt too wide) in paragraph at lines 242--243
+[12 <../fig/lintopunkt.pdf>] [13] [14]
+Overfull \hbox (1.047pt too wide) in paragraph at lines 266--267
 \T1/lmr/m/n/10.95 Ofte vil det også være store forskjeller (stor spred-ning) me
 l-lom dataene 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 []\T1/lmr/m/n/10.95 Differansen mel-lom svarene med hen-holdsvis høgest og lave
 st
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--251
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\T1/lmr/m/n/10.95 Svaret med hen-holdsvis høgest og lavest verdi er 124 og 38
 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 []\T1/lmr/m/n/10.95 Svaret med hen-holdsvis høgest og lavest verdi er 14 og 0. 
 Altså
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []\T1/lmr/m/n/10.95 Skill det rangerte dataset-tet på midten, slik at to nye se
 tt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 \T1/lmr/m/n/10.95 opp-står. (Viss det er odd-e-talls an-tall verdier i dataset-
 tet,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 \T1/lmr/m/n/10.95 Om me-di-anene fra punkt 3: Den med høgest verdi kalles \T1/l
 mr/m/it/10.95 øvre
  []
 
-[13
+[15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 []\T1/lmr/m/n/10.95 Medianen i det blå set-tet er 47 (ne-dre kvar-til) og me-di
 -a-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\T1/lmr/m/n/10.95 Medianen i det blå set-tet er 1 (ne-dre kvar-til) og me-di-
 a-nen
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
 []\T1/lmr/m/n/10.95 Nedre kvar-til, me-di-a-nen og øvre kvar-til blir også kalt
  hen-
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 []\T1/lmr/m/n/10.95 Differansen mel-lom en verdi og gjen-nom-snit-tet i et data
 sett
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 []\T1/lmr/m/n/10.95 Kvadrer avviket til hver verdi i dataset-tet, og sum-mer
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
 []\T1/lmr/m/n/10.95 Gjennomsnittet fant vi på side []9[]. Vi utvider frekven-st
 a-bellen vår
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
 []\T1/lmr/m/n/10.95 For mo-biler to-talt er var-i-ansen 17781,25 og stan-dar-d-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
 []\T1/lmr/m/n/10.95 For mo-biler uten smart-funksjoner er var-i-ansen $\OT1/lmr
 /m/n/10.95 318 848\OML/lmm/m/it/10.95 :[]$ \T1/lmr/m/n/10.95 og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--376
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
 []\T1/lmr/m/n/10.95 For mo-biler med smart-funksjoner er var-i-ansen $\OT1/lmr/
 m/n/10.95 245 847\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 91[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 []\T1/lmr/m/n/10.95 La oss se hva som skjer hvis vi gjen-tar utreg-nin-gen fra 
 \T1/lmr/m/sl/10.95 Ek-sem-pel
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/lmr/m/n/10.95 Men brøken $[]$ er jo per defin-isjon gjen-nom-snit-tet til
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/lmr/m/n/10.95 dataset-tet, og dermed blir ut-trykket over lik 0. Dette vil 
 gjelde
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/lmr/m/n/10.95 for alle datasett, så i denne sam-men-hen-gen gir ikke tal-le
 t 0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 \T1/lmr/m/n/10.95 noen yt-terligere in-for-masjon. Om vi de-r-i-mot kvadr-erer 
 avvikene,
  []
 
-[17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
+[19] [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
  (./stat_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
 Package rerunfilecheck Info: File `stat_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 22569DE090B14AC65E87F2176F256C4C;964.
 
@@ -1760,30 +1832,32 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31014 strings out of 481239
- 608819 string characters out of 5920378
- 921689 words of memory out of 5000000
- 45532 multiletter control sequences out of 15000+600000
+ 32357 strings out of 481239
+ 627956 string characters out of 5920378
+ 941544 words of memory out of 5000000
+ 46857 multiletter control sequences out of 15000+600000
  631538 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,13n,104p,876b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,104p,876b,914s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/l
 m/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on stat_bm.pdf (18 pages, 284272 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
+Output written on stat_bm.pdf (20 pages, 308438 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

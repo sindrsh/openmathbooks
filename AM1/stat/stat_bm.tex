@@ -44,7 +44,7 @@ Personer som deltar i en undersøkelse der man skal svare på noe, kalles \texti
 \end{itemize}} \vsk
 \st{
 \textbf{Undersøkelse 4} \os
-Mobiltelefoner med smartfunksjoner (app-baserte) kom på det norske markedet i 2009. Tabellen\footnote{Tallene er hentet fra \net{https://www.medienorge.uib.no/statistikk/medium/ikt/405}{medienorge.uib.no}.} under viser det totale salget mobiltelefoner i tidsperioden 2009-2014, og andelen med og uten smartfunkskjoner.
+Mobiltelefoner med smartfunksjoner (app-baserte) kom på det norske markedet i 2009. Tabellen\footnote{Tallene er hentet fra \net{https://www.medienorge.uib.no/statistikk/medium/ikt/405}{medienorge.uib.no}.} under viser det totale salget mobiltelefoner i tidsperioden 2009-2014, og andelen med og uten smartfunkskjoner. Salgstallene oppgir antall 1\,000 telefoner.
 \begin{center}
 	\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} 
 	\textbf{År} &\textbf{2009}&\textbf{2010} &\textbf{2011} &\textbf{2012} &\textbf{2013}&\textbf{2014} \\ \hline
@@ -201,12 +201,36 @@ Legg merke til at gjennomsnitt handler om lik fordeling. Hvis vi har 4 rektangle
 Dette betyr at gjennomsnittslengden er $ {\frac{12}{4}=3} $. Hvis vi kunne omformet rektanglene slik at de ble like lange, ville altså hver av dem hatt lengde 3.
 \fig{meanb}
 }
-\info{Gjennomsnittsfart}{
+\subsubsection{Gjennomsnittlig endring per enhet}
 Tenk deg at du på en løpetur gjør tre målinger av farten din. Datasettet du ender opp med er
 \[ 10\enh{m/s}\qquad10\enh{m/s} \qquad10\enh{m/s}\]
 \outl{Gjennomsnittsfarten} din var da
 \[ \frac{10+10+10}{3}\enh{m/s}=10\enh{m/s} \]
-Siden alle målinger av farten din hadde samme verdi, kan det være rimelig å anta at farten din var konstant. Og hvis den virkelig var det, ville alle målinger av farten din hatt samme verdi, uansett hvor mange målinger du tok. Dette gjør at en konstant fart fra \hrs{fart}{Definisjon} i dagligtale også kalles \outl{gjennomsnittsfart}.
+Siden alle målinger av farten din hadde samme verdi, kan det være rimelig å anta at farten din var konstant. Og hvis den virkelig var det, ville alle målinger av farten din hatt samme verdi, uansett hvor mange målinger du tok. Dette gjør at en konstant fart fra \hrs{fart}{Definisjon} i dagligtale også kalles \outl{gjennomsnittsfart}. Sagt på en annen måte er dette den gjennomsnittlige endringen i antall meter per sekund.
+\regdef[Gjennomsnittlig endring per enhet]{
+Hvis vi \textit{antar} at to størrelser er proporsjonale, kaller vi proporsjonalitetskonstanten fra \eqref{label} den \outl{gjennomsnittlige endringen per enhet}.
+} \regv
+
+\st{ \label{gjsnittperund4}
+\textbf{Undersøkelse 4} 
+\begin{itemize}
+	\item For årene 2009 og 2010 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+	\[ \frac{1\,260-700}{2010-2009}=\frac{550}{1}=550  \]
+	Mellom 2009 og 2010 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med 550\,000 smarttelefoner per år.
+	\item For årene 20010 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+\[ \frac{1\,953-1\,250}{2014-2010}=\frac{703}{4}=175,75  \]
+	Mellom 2010 og 2014 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med ca. 176 smarttelefoner per år.	
+\item For årene 2013 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+\[ \frac{1\,953-2\,160}{2014-2013}=\frac{-207}{1}=-207  \]
+Mellom 20013 og 2014 har altså salget av smarttelefoner \textsl{sunket} med ca. 207\,000 smarttelefoner per år.		
+\end{itemize}
+}
+\newpage
+\info{Stignistallet til linja mellom to punkt}{
+Gitt en funksjon $ f(x) $. I \mb\ har vi sett at stigningstallet til linja mellom punktene $ (a, f(a)) $ og $ (b, f(b)) $ er gitt som
+\[ \frac{f(b)-f(a)}{b-a} \]
+\fig{lintopunkt}
+Sammenlikner vi dette uttrykket med utregningene fra side \pageref{gjsnittperund4}, ser vi at utrekningene er identiske. Stigningstallet mellom to punkt på en graf gir oss dermed den gjennomsnittlige endringen per enhet.
 }
 \subsection{Median}
 \reg[Median]{Medianen er tallet som ender opp i midten av datasettet når det rangeres fra tallet med lavest til høgest verdi.\vsk

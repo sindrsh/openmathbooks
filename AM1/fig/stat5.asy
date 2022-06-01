@@ -80,7 +80,7 @@ dY = 2*dY;
 draw(L1+dY--L2+dY, blue+1bp);
 label("u. sm.f.",L2+dY,E);
 
-label(rotate(90)*Label("antall mobiltelefoner solgt"), (-1.2,1300));
+label(rotate(90)*Label("antall 1000 mobiltelefoner solgt"), (-1.2,1300));
 label("år",(3.5,-400));
 
 label("Mobiltelefonsalg i Norge 2009-2015",(3.5,3000));
