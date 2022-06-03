@@ -55,8 +55,12 @@
 \usepackage{longtable} %breakable table
 
 % Ligningsreferanser
-%\usepackage{mathtools}
+\usepackage{mathtools} % for mathclap
 %\mathtoolsset{showonlyrefs}
+
+% sections without numbering in toc
+\newcommand\tsec[1]{\phantomsection \addcontentsline{toc}{section}{#1}
+	\section*{#1}}
 
 % index
 \usepackage{imakeidx}
@@ -77,6 +81,12 @@
 \definecolor{n3}{cmyk}{1,0.,1,0}
 \definecolor{neg}{cmyk}{1,0.,0.,0}
 
+
+\newcommand{\nreq}[1]{
+\begin{equation}
+	#1
+\end{equation}
+}
 % Lister med bokstavar
 \usepackage[inline]{enumitem}
 
@@ -150,6 +160,11 @@
 }
 
 \newcommand{\enh}[1]{\,\textrm{#1}}
+
+%asin, atan, acos
+\DeclareMathOperator{\atan}{atan}
+\DeclareMathOperator{\acos}{acos}
+\DeclareMathOperator{\asin}{asin}
 
 % Comments % old cm, ggb cm is new
 %\newcommand{\cm}[1]{\llap{\color{blue} #1}}
@@ -232,9 +247,11 @@ Rekn ut.
 \newcommand{\dref}[1]{\hrs{#1}{definisjon}}
 \newcommand{\refkap}[1]{\hrs{#1}{kapittel}}
 \newcommand{\refsec}[1]{\hrs{#1}{seksjon}}
+\newcommand{\refved}[1]{\hrs{#1}{vedlegg}}
 \newcommand{\eksref}[1]{\textsl{#1}}
 \newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
-\newcommand{\refop}[1]{{\color{blue}oppgave \ref{#1}}}
+\newcommand{\refop}[1]{{\color{blue}Oppgave \ref{#1}}}
+\newcommand{\refops}[1]{{\color{blue}Oppgave \ref{#1}}}
 
 \newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{AM}}
 \newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
@@ -307,6 +324,14 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 #2
 \end{tcolorbox}}
 %%%
+
+%page number
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\renewcommand{\headrule}{}
+%\fancyhead[RO, LE]{\thepage}
+
 \usepackage{datetime2}
 %%\usepackage{sansmathfonts} for dyslexia-friendly math
 \usepackage[]{hyperref}

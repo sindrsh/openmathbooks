@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 JUN 2022 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 JUN 2022 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1552,216 +1552,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--157
 an-tall per-soner som er
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 163--163
-[]\T1/lmr/m/n/10.95 Et punkt hvor to funksjoner har samme verdi kalles et
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\T1/lmr/m/n/10.95 Vi kan finne skjæringspunk-tet både ved en \T1/lmr/m/sl/10.
-95 grafisk \T1/lmr/m/n/10.95 og en \T1/lmr/m/sl/10.95 al-ge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\T1/lmr/m/n/10.95 Vi teg-ner grafene til funksjonene inn i det samme ko-or-di
--nat-sys-
- []
-
-<../fig/lig1.pdf, id=111, 227.61035pt x 199.1741pt>
-File: ../fig/lig1.pdf Graphic file (type pdf)
-<use ../fig/lig1.pdf>
-Package pdftex.def Info: ../fig/lig1.pdf  used on input line 198.
-(pdftex.def)             Requested size: 227.60979pt x 199.17361pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-\T1/lmr/m/n/10.95 Vi leser av at funksjonene har samme verdi når $[]$, og da ha
-r
- []
-
-[7
-
-] [8 <../fig/lig1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 []\T1/lmr/m/n/10.95 En klasse plan-leg-ger en tur som kr-ever buss-reise. De få
 r tilbud
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \T1/lmr/m/n/10.95 Videre løser vi nå opp-gaven både med en grafisk og en al-ge-
 
  []
 
-<../fig/lig2.pdf, id=135, 227.62039pt x 199.1741pt>
+<../fig/lig2.pdf, id=86, 227.62039pt x 199.1741pt>
 File: ../fig/lig2.pdf Graphic file (type pdf)
 <use ../fig/lig2.pdf>
-Package pdftex.def Info: ../fig/lig2.pdf  used on input line 239.
+Package pdftex.def Info: ../fig/lig2.pdf  used on input line 197.
 (pdftex.def)             Requested size: 227.61983pt x 199.17361pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \T1/lmr/m/n/10.95 Vi leser av at funksjonene har samme verdi når $[]$. Dette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \T1/lmr/m/n/10.95 be-tyr at bus-sel-skapene tilbyr samme pris hvis klassen skal
  kjøre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 \T1/lmr/m/n/10.95 Busselskapene tilbyr altså samme pris hvis klassen skal kjøre
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[]\T1/lmr/m/n/10.95 Punkt der funksjo-nen (fra ven-stre) går fra å synke i verd
-i
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
-[]\T1/lmr/m/n/10.95 Punkt der funksjo-nen (fra ven-stre) går fra å stige i verd
-i
- []
-
-<../fig/funkdroft.pdf, id=140, 284.52296pt x 227.62039pt>
-File: ../fig/funkdroft.pdf Graphic file (type pdf)
-<use ../fig/funkdroft.pdf>
-Package pdftex.def Info: ../fig/funkdroft.pdf  used on input line 259.
-(pdftex.def)             Requested size: 284.52225pt x 227.61983pt.
-[10 <../fig/lig2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-[]\T1/lmr/m/n/10.95 Det kan kan-skje virke litt rart at vi kaller $\OML/lmm/m/i
-t/10.95 x$\T1/lmr/m/n/10.95 -verdier for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-\T1/lmr/m/n/10.95 nullpunkt, punkt har jo både en $\OML/lmm/m/it/10.95 x$\T1/lm
-r/m/n/10.95 -verdi og en $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 -verdi. Men
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-\T1/lmr/m/n/10.95 når det er snakk om nullpunkt, er det un-der-forstått at $[]$
-,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
-\T1/lmr/m/n/10.95 og da er det tilstrekke-lig å vite $\OML/lmm/m/it/10.95 x$\T1
-/lmr/m/n/10.95 -verdien for å avgjøre hvilket
- []
-
-[11 <../fig/funkdroft.pdf>] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
-[]\T1/lmr/m/n/10.95 er det to uk-jente, trengs minst to likninger for å finne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--271
-[]\T1/lmr/m/n/10.95 er det tre uk-jente, trengs minst tre likninger for å finne
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
-[]\T1/lmr/m/n/10.95 Et lineært likn-ings-sett bestående av to uk-jente, $\OML/l
-mm/m/it/10.95 x$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 
-, kan løses
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
-[]\T1/lmr/m/n/10.95 sette ut-trykket fra punkt 1 inn i den an-dre liknin-gen, o
-g
- []
-
-[13
-
-] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-[]\T1/lmr/m/n/10.95 Ved innset-tingsme-to-den kan man ofte spare seg for en del
- utreg-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-\T1/lmr/m/n/10.95 n-ing ved å velge liknin-gen og den uk-jente som gir det fine
-ste
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-\T1/lmr/m/n/10.95 ut-trykket innled-ningsvis. Vi ob-serverer at [] gir et fint 
-ut-trykk
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+[6] [7 <../fig/lig2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []\T1/lmr/m/n/10.95 ''Broren min er dobbelt så gam-mel som meg. Til sam-men er 
 vi 9
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []\T1/lmr/m/n/10.95 Et lineært likn-ings-sett bestående av to uk-jente, $\OML/l
 mm/m/it/10.95 x$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 
 , kan løses
  []
 
-[17]
-<../fig/ligset1.pdf, id=213, 227.62039pt x 227.62039pt>
+[8]
+<../fig/ligset1.pdf, id=116, 227.62039pt x 227.62039pt>
 File: ../fig/ligset1.pdf Graphic file (type pdf)
 <use ../fig/ligset1.pdf>
-Package pdftex.def Info: ../fig/ligset1.pdf  used on input line 429.
+Package pdftex.def Info: ../fig/ligset1.pdf  used on input line 245.
 (pdftex.def)             Requested size: 227.61983pt x 227.61983pt.
- [18 <../fig/ligset1.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
+ [9 <../fig/ligset1.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./lig_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `lig_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 2CF3B8DB4ACF1B11792BDF509DB86597;654.
+(rerunfilecheck)             Checksum: 70D715B07C83DD6D04992D9E10E15CAD;300.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32310 strings out of 481239
- 627070 string characters out of 5920378
- 944414 words of memory out of 5000000
- 46810 multiletter control sequences out of 15000+600000
- 634568 words of font info for 113 fonts, out of 8000000 for 9000
+ 32240 strings out of 481239
+ 626118 string characters out of 5920378
+ 944163 words of memory out of 5000000
+ 46772 multiletter control sequences out of 15000+600000
+ 631538 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,20n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ 70i,20n,104p,875b,984s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmsy9.pfb>
-Output written on lig_bm.pdf (18 pages, 316405 bytes).
+mf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmsy9.pfb>
+Output written on lig_bm.pdf (9 pages, 254961 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 55 words of extra memory for PDF output out of 10000 (max. 10000000)
 

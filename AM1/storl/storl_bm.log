@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 JUN 2022 07:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 JUN 2022 09:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -59,11 +59,6 @@ File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
-)
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -116,7 +111,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen140
 \Gm@layouthoffset=\dimen141
 \Gm@layoutvoffset=\dimen142
-\Gm@dimlist=\toks18
+\Gm@dimlist=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
@@ -228,7 +223,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks17
 \ex@=\dimen159
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -258,21 +253,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count192
 \dspbrk@lvl=\count193
-\tag@help=\toks20
+\tag@help=\toks18
 \row@=\count194
 \column@=\count195
 \maxfields@=\count196
-\andhelp@=\toks21
+\andhelp@=\toks19
 \eqnshift@=\dimen162
 \alignsep@=\dimen163
 \tagshift@=\dimen164
 \tagwidth@=\dimen165
 \totwidth@=\dimen166
 \lineht@=\dimen167
-\@envbody=\toks22
+\@envbody=\toks20
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -325,7 +320,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen169
 \ar@mcellbox=\box50
 \extrarowheight=\dimen170
-\NC@list=\toks24
+\NC@list=\toks22
 \extratabsurround=\skip52
 \backup@length=\skip53
 \ar@cellbox=\box51
@@ -345,8 +340,8 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \abovetabulinesep=\dimen177
 \belowtabulinesep=\dimen178
 \tabustrutrule=\dimen179
-\tabu@thebody=\toks25
-\tabu@footnotes=\toks26
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
 \tabu@box=\box52
 \tabu@arstrutbox=\box53
 \tabu@hleads=\box54
@@ -360,7 +355,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \aftertitleunit=\skip56
 \ttl@plus=\dimen180
 \ttl@minus=\dimen181
-\ttl@toksa=\toks27
+\ttl@toksa=\toks25
 \titlewidth=\dimen182
 \titlewidthlast=\dimen183
 \titlewidthfirst=\dimen184
@@ -389,9 +384,9 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count271
-\float@exts=\toks28
+\float@exts=\toks26
 \float@box=\box57
-\@float@everytoks=\toks29
+\@float@everytoks=\toks27
 \@floatcapt=\box58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
@@ -449,7 +444,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \WF@size=\dimen198
 \c@WF@wrappedlines=\count281
 \WF@box=\box59
-\WF@everypar=\toks30
+\WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
@@ -514,7 +509,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks31
+\everycr=\toks29
 \minrowclearance=\skip117
 )
 \rownum=\count282
@@ -540,7 +535,7 @@ Package: tcolorbox 2019/11/15 version 4.22 text color boxes
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks32
+\pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen199
 \pgfutil@tempdimb=\dimen256
 
@@ -562,12 +557,12 @@ Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks35
+\pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen257
 \pgf@y=\dimen258
@@ -585,9 +580,9 @@ ex
 \c@pgf@countb=\count284
 \c@pgf@countc=\count285
 \c@pgf@countd=\count286
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count287
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
@@ -621,9 +616,9 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmath@dimen=\dimen267
 \pgfmath@count=\count290
 \pgfmath@box=\box61
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -758,8 +753,8 @@ Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
+\every@verbatim=\toks40
+\verbatim@line=\toks41
 \verbatim@in@stream=\read4
 )
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
@@ -805,8 +800,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen294
 \pgffor@skip=\dimen295
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
@@ -1015,7 +1010,7 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LT@rows=\count337
 \c@LT@tables=\count338
 \c@LT@chunks=\count339
-\LT@p@ftn=\toks46
+\LT@p@ftn=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
@@ -1031,7 +1026,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Writing index file storl_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks47
+\FN@temptoken=\toks45
 \footnotemargin=\dimen321
 \c@pp@next@reset=\count340
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
@@ -1051,10 +1046,10 @@ Package: perpage 2014/10/25 2.0 Reset/sort counters per page
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks48
+\enitkv@toks@=\toks46
 \labelindent=\skip133
 \enit@outerparindent=\dimen322
-\enit@toks=\toks49
+\enit@toks=\toks47
 \enit@inbox=\box138
 \enit@count@id=\count343
 \enitdp@description=\count344
@@ -1065,7 +1060,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count347
 \lst@gtempboxa=\box139
-\lst@token=\toks50
+\lst@token=\toks48
 \lst@length=\count348
 \lst@currlwidth=\dimen323
 \lst@column=\count349
@@ -1280,12 +1275,12 @@ Package geometry Warning: The marginal notes overrun the paper.
 \scratchbox=\box141
 \nofMPsegments=\count367
 \nofMParguments=\count368
-\everyMPshowfont=\toks51
+\everyMPshowfont=\toks49
 \MPscratchCnt=\count369
 \MPscratchDim=\dimen332
 \MPnumerator=\count370
 \makeMPintoPDFobject=\count371
-\everyMPtoPDFconversion=\toks52
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1527,179 +1522,194 @@ r. Vi
  []
 
 [4]
-Overfull \hbox (0.90941pt too wide) in paragraph at lines 148--149
+<../fig/armedstorl.pdf, id=63, 223.84628pt x 75.482pt>
+File: ../fig/armedstorl.pdf Graphic file (type pdf)
+<use ../fig/armedstorl.pdf>
+Package pdftex.def Info: ../fig/armedstorl.pdf  used on input line 165.
+(pdftex.def)             Requested size: 223.84572pt x 75.4818pt.
+ [5
+
+ <../fig/armedstorl.pdf>]
+Overfull \hbox (0.90941pt too wide) in paragraph at lines 178--179
 \T1/lmr/m/n/10.95 Si at det koster $\OT1/lmr/m/n/10.95 10 []$ \T1/lmr/m/n/10.95
  for $\OT1/lmr/m/n/10.95 0\OML/lmm/m/it/10.95 ;\OT1/lmr/m/n/10.95 5 []$ \T1/lmr
 /m/n/10.95 poteter. Hvis det er slik at denne prisen 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
 [][][][]\T1/lmr/m/n/9 Vi kunne også skrevet $[]$, men i dette til-fel-let er de
 t van-ligst å bruke [][][][][][] som
  []
 
-[5
 
-] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Overfull \hbox (3.52264pt too wide) in paragraph at lines 197--198
+\T1/lmr/m/n/10.95 som [], det er bare navnene på stør-relsene og en-hetene som 
+er forskjel- 
+ []
+
+[6
+
+] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 \T1/lmr/m/n/10.95 Vanlige benevninger for ef-fekt er 'J/s' og 'kWh/s'. 'J' står
  for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 \T1/lmr/m/n/10.95 en-ergien-e-heten 'Joule'. 'J/s' er det samme som 'W', som st
 år for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 []\T1/lmr/m/n/10.95 I []-[] er det an-tatt at stør-relsene på ven-stre side av 
 liknin-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/lmr/m/n/10.95 gen er \T1/lmr/m/it/10.95 kon-stant\T1/lmr/m/n/10.95 , men de
 t er ikke alltid slik. Lar du en stein falle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/lmr/m/n/10.95 fra en høgde, vil den åpen-bart ikke ha den samme farten hele
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/lmr/m/n/10.95 tiden. Ved å dele leng-den den har falt med tiden det tok, vi
 l du
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/lmr/m/n/10.95 finne \T1/lmr/m/sl/10.95 hvilken fart ballen ville hatt der-s
 om den skulle kom-met seg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
 \T1/lmr/m/sl/10.95 like langt på den samme tiden, der-som farten var den samme
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []\T1/lmr/m/n/10.95 Her må vi en-ten gjøre om 5km til an-tall m eller 4000m til
  an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 \T1/lmr/m/n/10.95 tall km før vi kan legge sam-men ver-di-ene. Vi vel-ger å gjø
 re om
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []\T1/lmr/m/n/10.95 I mange utreg-ninger kan en-heter føre til at ut-trykkene b
 lir litt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \T1/lmr/m/n/10.95 rotete. Hvis du er helt sikker på at alle benevnin-gene er li
 ke,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 \T1/lmr/m/n/10.95 kan du med fordel skrive utreg-ninger uten benevn-ing. I \T1/
 lmr/m/sl/10.95 Ek-sem-
  []
 
-[8
+[9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []\T1/lmr/m/n/10.95 Hvis du kjører med kon-stant fart, er streknin-gen du har k
 jørt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []\T1/lmr/m/n/10.95 Hvor langt kjører en bil som holder farten 50km/h i 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []\T1/lmr/m/n/10.95 Hvor langt kjører en bil som holder farten 90km/h i 45
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []\T1/lmr/m/n/10.95 Her har vi to forskjel-lige en-heter for tid in-volvert; ti
 mer og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 \T1/lmr/m/n/10.95 min-utt. Da må vi en-ten gjøre om farten til km/min eller
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\T1/lmr/m/it/10.95 Kiloprisen \T1/lmr/m/n/10.95 til en vare er hva en vare ko
 ster per kg. Kilo-pris er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\T1/lmr/m/n/10.95 Safran går for å være ver-dens dyreste kry-d-der, 5g kan ko
 ste
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\T1/lmr/m/n/10.95 Her har vi to forskjel-lige en-heter for vekt in-volvert; k
 g og
  []
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+[11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./storl_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `storl_bm.out' has not changed.
-(rerunfilecheck)             Checksum: BA1CC0D3D27A4FEC75BBF32D18050B74;211.
+(rerunfilecheck)             Checksum: 1723EE662C5292B45019C85D45643F18;273.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32218 strings out of 481239
- 625500 string characters out of 5920378
- 942776 words of memory out of 5000000
- 46748 multiletter control sequences out of 15000+600000
+ 32219 strings out of 481239
+ 625455 string characters out of 5920378
+ 941229 words of memory out of 5000000
+ 46743 multiletter control sequences out of 15000+600000
  612682 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,104p,877b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,12n,104p,877b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on storl_bm.pdf (10 pages, 255281 bytes).
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmsy10.pfb>
+Output written on storl_bm.pdf (11 pages, 269048 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 50 words of extra memory for PDF output out of 10000 (max. 10000000)
 

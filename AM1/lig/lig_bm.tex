@@ -155,115 +155,46 @@ Den eneste størrelsen vi ikke vet om er 'antall lodd'. Vi erstatter\footnote{De
 	}
 	Utgiften per person er altså 2\,500\enh{kr}.
 }
-\section{Funksjoners egenskaper}
-\textit{Denne seksjonen tar utgangspunkt i at leseren er kjent med funksjoner, se \mb, kapittel 9.}
-\subsection{Funksjoner med samme verdi; skjæringspunkt}
-\reg[Skjæringspunkt til grafer]{
-	Et punkt hvor to funksjoner har samme verdi kalles et \textit{skjæringspunkt} til funksjonene.
-}
-\eks[1]{
-Gitt de to funksjonene
-\alg{
-	f(x) &= 2x+1 \vn 
-	g(x) &= x+4
-}
-Finn skjæringspunktet til $ f(x) $ og $ g(x) $.
-
-\sv
-
-Vi kan finne skjæringspunktet både ved en \textsl{grafisk} og en \textsl{algebraisk} metode. \vsk
-
-\metode{Grafisk metode}{0.6\linewidth} \os
-
-Vi tegner grafene til funksjonene inn i det samme koordinatsystemet:
-\fig{lig1}
-Vi leser av at funksjonene har samme verdi når $ {x=3} $, og da har begge funksjonene verdien 7. Altså er skjæringspunktet $ (3, 7) $. \vsk
-\vsk
-
-\metode{Algebraisk metode}{0.6\linewidth} \os
-At $ f(x) $ og $ g(x) $ har samme verdi gir likningen
-\alg{
-f(x)&=g(x) \\
-2x+1 &=x+4 \\
-x&=3
-}
-Videre har vi at
-\alg{
-f(3)&=2\cdot3+1=7 \vn 
-g(3)&=3+4=7
-}
-Altså er $ (3, 7) $ skjæringspunktet til grafene.\vsk
-
-{\footnotesize \mer Det hadde selvsagt holdt å bare finne én av $ f(3) $ og $ g(3) $.}
-}
-\newpage
 \eks[2]{
-En klasse planlegger en tur som krever bussreise. De får tilbud fra to busselskap:
-\begin{itemize}
-	\item \textbf{Busselskap 1} \\
-	Klassen betaler 10\,000\,kr uansett, og 10\enh{kr} per km.
-	\item \textbf{Busselskap 2} \\
-	Klassen betaler 4\,000\,kr uansett, og 30\enh{kr} per km.
-\end{itemize}
-For hvilken lengde kjørt tilbyr busselskapene samme pris?
-
-\sv
-
-Vi innfører følgende variabler:
-\begin{itemize}
-	\item $ x=\text{antall kilometer kjørt} $ \\
-	\item $ f(x)=\text{pris for Busselskap 1} $ \\
-	\item $ g(x)=\text{pris for Busselskap 2} $
-\end{itemize}
-Da er
-\alg{
-	f(x)&=10x+10\,000\vn
-	g(x)&=30x+4\,000
-}
-Videre løser vi nå oppgaven både med en grafisk og en algebraisk metode. \vsk
-
-\metode{Grafisk metode}{0.6\linewidth} \os
-Vi tegner grafene til funksjonene inn i samme koordinatsystem:
-\fig{lig2}
-Vi leser av at funksjonene har samme verdi når $ {x=200} $. Dette betyr at busselskapene tilbyr samme pris hvis klassen skal kjøre 200\enh{km}.\vsk \vsk
-
-\metode{Algebraisk metode}{0.6\linewidth} \os
-Busselskapene har samme pris når
-\alg{
-f(x)&=g(x) \\
-10x+10\,000&=30x+6\,000 \\
-4\,000&=20x \\
-x&=200
-}
-Busselskapene tilbyr altså samme pris hvis klassen skal kjøre 200\enh{km}.
-}
-
-\subsection{Null-, bunn- og toppunkt}
-\reg[Null-, bunn- og toppunkt]{
-\vs	
+	En klasse planlegger en tur som krever bussreise. De får tilbud fra to busselskap:
 	\begin{itemize}
-	\item \textbf{Nullpunkt} \\[-5pt]
-	En $ x $-verdi som gir funksjonsverdi 0.
-	\item \textbf{Lokalt bunnpunkt} \\[-5pt]
-	Punkt der funksjonen (fra venstre) går fra å synke i verdi til å stige i verdi.
-	\item \textbf{Lokalt toppunkt} \\[-5pt]
-	Punkt der funksjonen (fra venstre) går fra å stige i verdi til å synke i verdi
-	\item \textbf{Globalt bunnpunkt} \\[-5pt]
-	Punkt der funksjonen har sin laveste verdi.
-	\item \textbf{Globalt toppunkt} \\[-5pt]
-	Punkt der funksjonen har sin høyeste verdi.
-\end{itemize}
+		\item \textbf{Busselskap 1} \\
+		Klassen betaler 10\,000\,kr uansett, og 10\enh{kr} per km.
+		\item \textbf{Busselskap 2} \\
+		Klassen betaler 4\,000\,kr uansett, og 30\enh{kr} per km.
+	\end{itemize}
+	For hvilken lengde kjørt tilbyr busselskapene samme pris?
+	
+	\sv
+	
+	Vi innfører følgende variabler:
+	\begin{itemize}
+		\item $ x=\text{antall kilometer kjørt} $ \\
+		\item $ f(x)=\text{pris for Busselskap 1} $ \\
+		\item $ g(x)=\text{pris for Busselskap 2} $
+	\end{itemize}
+	Da er
+	\alg{
+		f(x)&=10x+10\,000\vn
+		g(x)&=30x+4\,000
+	}
+	Videre løser vi nå oppgaven både med en grafisk og en algebraisk metode. \vsk
+	
+	\metode{Grafisk metode}{0.6\linewidth} \os
+	Vi tegner grafene til funksjonene inn i samme koordinatsystem:
+	\fig{lig2}
+	Vi leser av at funksjonene har samme verdi når $ {x=200} $. Dette betyr at busselskapene tilbyr samme pris hvis klassen skal kjøre 200\enh{km}.\vsk \vsk
+	
+	\metode{Algebraisk metode}{0.6\linewidth} \os
+	Busselskapene har samme pris når
+	\alg{
+		f(x)&=g(x) \\
+		10x+10\,000&=30x+6\,000 \\
+		4\,000&=20x \\
+		x&=200
+	}
+	Busselskapene tilbyr altså samme pris hvis klassen skal kjøre 200\enh{km}.
 }
-\eks[]{
-\fig{funkdroft}
-}
-\info{Hvorfor er nullpunkt en verdi?}{
-Det kan kanskje virke litt rart at vi kaller $ x $-verdier for nullpunkt, punkt har jo både en $ x $-verdi og en $ y $-verdi. Men når det er snakk om nullpunkt, er det underforstått at $ {y=0} $, og da er det tilstrekkelig å vite $ x $-verdien for å avgjøre hvilket punkt det er snakk om.  
-}
-
-
-
-
 \eks[4]{
 	''Broren min er dobbelt så gammel som meg. Til sammen er vi 9 år gamle. Hvor gammel er jeg?''.
 	
@@ -291,27 +222,6 @@ Et lineært likningssett bestående av to ukjente, $ x $ og $ y $, kan løses ve
 \end{enumerate}
 }
 \newpage
-\eks[1]{
-Løs likningsettet\vs
-\alg{
-	x-y&=5 \tag{I} \label{eks3a}\vn
-	x+y&=9 \tag{II} \label{eks3b}
-}\vs 
-\sv
-Av \eqref{eks3a} har vi at \vs
-\alg{
-x-y&=5 \\
-y&=x-5
-}
-Av \eqref{eks3b} har vi at \vs
-\alg{
-x+y&=9 \\
-y &= 9-x 
-}
-Vi tegner disse to linjene inn i et koordinatsystem:
-\fig{ligset1}
-Altså er $ x=7 $ og $ y=2 $.
-}
 \end{document}
 
 
