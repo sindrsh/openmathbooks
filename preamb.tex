@@ -288,6 +288,9 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+\newcommand{\pymet}[1]{{\ttfamily\color{magenta} #1}}
+\newcommand{\pytype}[1]{{\ttfamily\color{codepurple} #1}}
+
 \lstdefinestyle{mystyle}{
 	backgroundcolor=\color{backcolour},   
 	commentstyle=\color{codegreen},
@@ -307,7 +310,11 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 	tabsize=2,
 	inputencoding=utf8,
 	extendedchars=true,
-	literate= {{å}{{\aa}}1 {æ}{{\ae}}1 {ø}{{\o}}1}
+	literate= {
+		{å}{{\aa}}1 
+		{æ}{{\ae}}1 
+		{ø}{{\o}}1
+	}
 }
 
 \lstset{style=mystyle}

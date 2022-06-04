@@ -1,0 +1,138 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\section{Introduksjon til Python}
+\pythonut{helloworld.py}{
+Hello world!
+}
+
+Python deler talll inn i tre typer:
+\begin{center}
+	\begin{tabular}{r|l}
+		\texttt{int} & reelle heltall \\
+		\texttt{float} & relle tall \\
+		\texttt{complex} & komplekse tall
+	\end{tabular} 
+\end{center}
+Vi skal i denne boka konsentrere oss om \texttt{int} og \texttt{float}. Tallypene definerer vi ved å ekskludere eller inkludere punktum:
+\python{intfloat.py}
+\pythonut{opr.py}{
+a+b =  7\\
+a-b =  3\\
+a*b =  10\\
+a/b =  2.5\\
+a**b =  25\\
+a//b =  2 \\
+a\%b =  1
+}
+\subsection*{Boolske verdier og vilkår}
+De boolske verdiene er verdiene \pytype{True} og \pytype{False}. Disse vil være resultatet når vi sjekker om objekter er like eller ulike. For å sjekke dette har vi de \outl{sammenlignende operatorene}:
+\begin{center}
+	\begin{tabular}{c|c}
+		\textbf{operator} & \textbf{betydning} \\ \hline
+		\texttt{==}	& er lik \\ \rowcolor{gray!10}
+		\texttt{!=} & er \textsl{ikke} lik\\
+		\texttt{>} & er større enn \\ \rowcolor{gray!10}
+		\texttt{>=} & er større enn, eller lik \\
+		\texttt{<} & er mindre enn \\ \rowcolor{gray!10}
+		\texttt{<=} & er mindre enn, eller lik \\		
+	\end{tabular}
+\end{center}
+\pythonut{bool1.py}{
+False\\
+True\\
+True\\
+False\\
+}\vsk
+
+I tillegg til de sammenlignende operatorene kan vi bruke de \outl{logiske operatorene} \pytype{and}, \pytype{or} og \pytype{not}
+\pythonut{bool2.py}{
+False\\
+True\\
+True
+
+}
+\spr{
+Sjekker som bruker de sammenlignende og de logiske operatorene, skal vi heretter kalle \outl{vilkår}.
+}
+\subsection*{\pymet{if, else og elif} uttrykkene}
+Når vi ønsker å utføre handlinger bare \textsl{hvis} et vilkår er sant (\pytype{True}), bruker vi \pymet{if} uttrykket foran vilkåret. Koden vi skriver med innrykk under \pymet{if}-linjen, vil bare bli utført hvis vilkåret gir \pytype{True}. 
+\pythonut{if.py}{
+ Jepp, c er større enn b
+} 
+Hvis man først vil sjekke om et vilkår er sant, og så utføre handlinger hvis det \textsl{ikke} er det, kan vi bruke \pymet{else} uttrykket:
+\pythonut{else.py}{
+Men denne kommer, fordi vilkåret i if-linja over var False
+}
+\pymet{else} uttrykket tar bare hensyn til (og gir ikke mening uten) \pymet{if} uttrykket like over seg. Hvis vi vil at handlinger skal utføres \textsl{bare} hvis ingen tidligere \pymet{if} uttrykk ga noe utslag, må vi bruke\footnote{\pymet{elif} er en forkortelse for \pymet{else if}, som også kan brukes.} \pymet{elif} uttrykket. Dette er et \pymet{if} uttrykk som slår inn hvis \pymet{if} uttrykket over \textsl{ikke} ga utslag.
+\pythonut{elif.py}{
+Nå er vi sikre på at 1 < b < 3
+}
+
+\subsection*{Lister}
+Lister kan vi bruke for å samle objekter. Objektene som er i listen kalles \outl{elementene} til listen.
+\python{list1.py}
+Elementene i lister er \outl{indekserte}. Første objekt har indeks 0, andre objekt har indeks 1 og så videre:
+\pythonut{list1.py}{
+96 \\
+99 \\
+98
+}
+Med den innebygde funksjonen \texttt{append()} kan vi legge til et objekt i enden av listen. Dette er en \outl{innebygd funksjon}\footnote{Kort fortalt betyr det at det bare er noen typer objekter som kan bruke denne funksjonen.}, som vi skriver i enden av navnet på listen, med et punktum foran.
+\pythonut{list3.py}{
+[] \newline
+[3] \newline
+[3, 7]
+}
+Med funksjonen \texttt{pop()} kan vi hente ut et objekt fra listen
+\pythonut{list4.py}{
+a = 19 \\
+min\_liste = [6, 10, 15] \\
+a = 10 \\
+min\_liste = [6, 15]
+}
+\info{Forklar for deg selv}{
+Hva er forskjellen på å skive \texttt{a = min\_liste[1]} og å skrive \texttt{a = min\_liste.pop(1)}?
+}
+
+\subsection*{\pymet{for} looper}
+For objekter som inneholder flere elementer, kan vi bruke \pymet{for}-looper til å utføre handlinger for hvert element. Handlingene må vi skrive med et innrykk etter \pymet{for}-uttrykket:
+\pythonut{for.py}{
+5 \\
+50 \\[12pt]
+
+10\\
+100\\[12pt]
+
+15\\
+150
+}
+\spr{
+Å gå gjennom hvert element i (for eksempel) en liste kalles \outl{å iterere over listen}.
+}\vsk
+
+Ofte er det ønskelig å iterere over heltallene $ 0, 1, 2 $ og så videre. Til dette kan vi bruke \pymet{range()}-funksjonen:
+\pythonut{forrang.py}{
+0 \\
+1 \\
+2
+}
+\subsection*{\pymet{while} loop}
+Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi bruke \pymet{while} metoden:
+\pythonut{while1.py}{
+1\\
+2\\
+3\\
+4\\
+}
+\newpage
+
+\info{Obs!}{
+	Bruk aldri innebygde funksjoner som navn på variabler.
+}
+
+
+\end{document}
