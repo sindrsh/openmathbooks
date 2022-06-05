@@ -1,4 +1,4 @@
-import "../../inhopg" as inh;
+import "../../inh" as inh;
 import "../../drwgrph" as inh;
 import "../../geo" as geo;
 

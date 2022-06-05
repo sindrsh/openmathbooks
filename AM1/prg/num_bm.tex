@@ -5,20 +5,35 @@
 
 \begin{document}
 \section{Introduksjon til Python}
+Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}.
+\subsection{Objekt, type, funksjon og uttrykk}
+Vårt første skript består av bare én kodelinje:
+
 \pythonut{helloworld.py}{
 Hello world!
 }
 
-Python deler talll inn i tre typer:
+I kommende avsnitt vil begrepene \outl{objekt}, \outl{type}, \outl{funksjon} og \outl{uttrykk} stadig dukke opp.
+\begin{itemize}
+	\item Det aller meste i Python er objekter. I skriptet over er både \pymet{print()} og \pytype{"Hello world"} objekter.
+	\item Objekter vil være av forskjellige typer. \pymet{print()} er av typen \pytype{function}, mens \pytype{"Hello world"} er av typen \pytype{str}\footnote{'str' er en forkortelse for det engelske ordet 'string'.}. Hvilke handlinger som kan utføres med forskjellige objekter avhenger av hvilke typer de er.
+	\item Funksjoner kan ta imot \outl{argumenter}, for så å utføre handlinger. I skriptet over tar \pymet{print()}-funksjonen imot argumentet \pytype{"Hello world"}, og printer teksten til utdata.
+	\item Uttrykk har sterke likehetstrekk med funksjoner, men tar ikke imot argumenter.
+\end{itemize}
+\subsubsection{Tilvising}
+Tekst og tall kan vi se på som noen av de minste byggesteinene (objektene). Python har én type for tekst, og to typer for reelle tall:
 \begin{center}
-	\begin{tabular}{r|l}
-		\texttt{int} & reelle heltall \\
-		\texttt{float} & relle tall \\
-		\texttt{complex} & komplekse tall
+	\begin{tabular}{r|l} \rowcolor{gray!10}
+		\pytype{str} & tekst \\
+		\pytype{int} & heltall \\ \rowcolor{gray!10}
+		\pytype{float} & desimaltall
 	\end{tabular} 
 \end{center}
-Vi skal i denne boka konsentrere oss om \texttt{int} og \texttt{float}. Tallypene definerer vi ved å ekskludere eller inkludere punktum:
-\python{intfloat.py}
+Det er som regel nyttig å gi objektene våre navn. Dette gjør vi ved å skrive navnet etterfulgt av \texttt{=} og objektet. \outl{Kommentarer} er tekst som ikke blir behandlet som kode. Kommentarer kan vi skrive ved å starte setningen med \texttt{\color{codegreen} \#}.
+\python{strintfloat.py} \vsk
+
+Med Python kan vi selvsagt utføre klassiske regneoperasjoner:\regv
+
 \pythonut{opr.py}{
 a+b =  7\\
 a-b =  3\\
@@ -27,9 +42,27 @@ a/b =  2.5\\
 a**b =  25\\
 a//b =  2 \\
 a\%b =  1
+} \vsk
+
+Funksjonene \pymet{str()}, \pymet{int()} og \pymet{float()} kan vi bruke til å gjøre om objekter til typene \pytype{int} eller \pytype{float}: 
+\pythonut{strintfloatfunk.py}{
+	32.0\\
+	6\\
+	6.0
+} \vsk
+
+En viktig ting å være klar over er at \texttt{=} i Python \textsl{ikke} betyr det samme som \sym{$ = $} i matematikk. Mens $ \sym{=} $ kan oversettes til ''er lik'', kan vi si at \texttt{=} kan oversettes til 'er'.
+\pythonut{assign.py}{
+5 \\
+6 
+} \vsk
+At et objekt legger til seg selv og en annen verdi er så vanlig i programmering at Python har en egen operator for det:
+\pythonut{aplus1.py}{
+5\\
+6
 }
 \subsection*{Boolske verdier og vilkår}
-De boolske verdiene er verdiene \pytype{True} og \pytype{False}. Disse vil være resultatet når vi sjekker om objekter er like eller ulike. For å sjekke dette har vi de \outl{sammenlignende operatorene}:
+Verdiene \pytype{True} og \pytype{False} kalles \outl{boolske verdier}. Disse vil være resultatet når vi sjekker om objekter er like eller ulike. For å sjekke dette har vi de \outl{sammenlignende operatorene}:
 \begin{center}
 	\begin{tabular}{c|c}
 		\textbf{operator} & \textbf{betydning} \\ \hline

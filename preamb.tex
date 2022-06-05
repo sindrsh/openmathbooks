@@ -273,7 +273,7 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 }
 
 % outline word
-\newcommand{\outl}[1]{{\color{Emerald}#1}}
+\newcommand{\outl}[1]{{\color{teal}\textbf{#1}}}
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 
@@ -325,9 +325,11 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 \end{tcolorbox}}
 \newcommand{\pythonut}[2]{
 \begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]
+\small 
+%\textbf{Kode}
 \lstinputlisting[language=Python]{#1}	
-\small \vspace{11pt}
-\textbf{Output} \\ \ttfamily
+\vspace{11pt}
+\textbf{Utdata} \\ \ttfamily
 #2
 \end{tcolorbox}}
 %%%

@@ -221,6 +221,27 @@ Et lineært likningssett bestående av to ukjente, $ x $ og $ y $, kan løses ve
 		\item finne skjæringspunktet til linjene.
 \end{enumerate}
 }
+\section{Regresjon}
+Å forsøke å beskrive hvordan noe vil \textsl{utvikle} seg er en av de viktigste anvendelsene for funksjoner. Hvis vi har et datasett som beskriver tidligere hendelser, kan vi prøve å finne den funksjonen som passer best til datasettet. Dette kalles å utføre \outl{regresjon}. \vsk
+
+Grafen under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} antall elbiler i Norge etter år 2010.
+\fig{elbilsalg1}
+Vi ønsker nå å finne en funksjon som
+\begin{enumerate}[label=(\roman*)]
+	\item så godt som mulig skjærer hvert punkt.
+	\item har en graf som passer til situasjonen vi modellerer.
+\end{enumerate}
+Hvis vi utfører regresjon med en lineær funksjon i GeoGebra (se side \pageref{ggbreg}), får vi denne grafen:
+\fig{elbilsalg2}
+Utfører vi regresjon også med en andregradsfunksjon, får vi følgende resultat:
+\fig{elbilsalg3}
+I figuren over kan vi merke oss at
+\begin{itemize}
+	\item begge modellene (funksjonene) ''oppfører'' seg feilaktig i starten. Den lineære funksjonen starter med et negativt antall biler, mens den kvadratiske funksjonen starter med at antallet synker fra år 0 til år 1.
+	\item Grafen til den kvadratiske passer punktene mye bedre enn grafen til den lineære funksjonen.
+\end{itemize}
+Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var ca. 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit er at antall elbiler i 2021 var 455\,271.
+\fig{elbilsalg4}
 \newpage
 \end{document}
 

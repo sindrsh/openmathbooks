@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  4 JUN 2022 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  5 JUN 2022 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1348,136 +1348,140 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write7
 \openout7 = `num_bm.out'.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-0.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./helloworld.py)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-4.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-4.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-14.
+8.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-14.
+8.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 14.
+(Font)              <10.95> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
-
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-4.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 8
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-14.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-) (./intfloat.py)
-(./opr.py) [1
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 8.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+4.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (./helloworld.py)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+8.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (./strintfloat.py) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./bool1.py)
-(./bool2.py)
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./opr.py) (./strintfloatf
+unk.py) [2]
+(./assign.py) (./aplus1.py) [3] (./bool1.py) (./bool2.py)
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 []\T1/lmr/m/n/10.95 Sjekker som bruker de sam-men-lig-nende og de lo-giske op-e
 r-a-
  []
 
-[2]
+[4]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 61.
- (./if.py) (./else.py)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 70.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 70.
- (./elif.py) [3] (./list1.py) (./list1.py) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 94.
+ (./if.py) (./else.py) (./elif.py) [5] (./list1.py) (./list1.py) [6]
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 [][][][]\T1/lmr/m/n/9 Kort for-t-alt be-tyr det at det bare er noen typer ob-je
 k-ter som kan bruke denne
  []
 
 (./list3.py) (./list4.py)
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []\T1/lmr/m/n/10.95 Hva er forskjellen på å skive \T1/lmtt/m/n/10.95 a = min_li
 ste[1] \T1/lmr/m/n/10.95 og å skrive \T1/lmtt/m/n/10.95 a =
  []
 
-[5] (./for.py)
-Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[7] (./for.py)
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []\T1/lmr/m/n/10.95 Å gå gjen-nom hvert el-e-ment i (for ek-sem-pel) en liste k
-alles []å
+alles []\T1/lmr/bx/n/10.95 å
  []
 
-[6] (./forrang.py) (./while1.py) [7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+[8] (./forrang.py) (./while1.py) [9] [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (./num_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `num_bm.out' has not changed.
-(rerunfilecheck)             Checksum: D79A55CB6514AD403DF3193DAB37DE21;60.
+(rerunfilecheck)             Checksum: 3C58151CCC1B7AD455674AA08ECF90EF;146.
  ) 
 Here is how much of TeX's memory you used:
- 33262 strings out of 481239
- 639549 string characters out of 5920378
- 1213136 words of memory out of 5000000
- 47662 multiletter control sequences out of 15000+600000
- 609668 words of font info for 93 fonts, out of 8000000 for 9000
+ 33358 strings out of 481239
+ 641260 string characters out of 5920378
+ 1234359 words of memory out of 5000000
+ 47714 multiletter control sequences out of 15000+600000
+ 613029 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,104p,875b,1648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,104p,875b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
-/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on num_bm.pdf (8 pages, 272816 bytes).
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lm
+bx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+tt9.pfb>
+Output written on num_bm.pdf (10 pages, 311398 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 129 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
