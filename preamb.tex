@@ -92,8 +92,8 @@
 
 \newcounter{rg}
 \numberwithin{rg}{chapter}
-\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{Regel \therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
-\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{Definisjon \therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Emerald!7] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
@@ -132,6 +132,9 @@
 		\setlength{\belowdisplayshortskip}{0pt} 
 		\begin{shaded}
 			\footnotesize	#2 \end{shaded}}}
+\newcommand{\fgbxr}[2]{
+	\parbox[r][][l]{#1\linewidth}{#2
+}}		
 
 \renewcommand{\cfttoctitlefont}{\Large\bfseries}
 \setlength{\cftaftertoctitleskip}{0 pt}
@@ -243,15 +246,17 @@ Rekn ut.
 %referances
 \newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
 \newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}\textsl{#2 \ref*{#1}}}}
+\newcommand{\reftab}[1]{\hrs{#1}{tabell}}
 \newcommand{\rref}[1]{\hrs{#1}{regel}}
 \newcommand{\dref}[1]{\hrs{#1}{definisjon}}
 \newcommand{\refkap}[1]{\hrs{#1}{kapittel}}
 \newcommand{\refsec}[1]{\hrs{#1}{seksjon}}
+\newcommand{\refdsec}[1]{\hrs{#1}{delseksjon}}
 \newcommand{\refved}[1]{\hrs{#1}{vedlegg}}
 \newcommand{\eksref}[1]{\textsl{#1}}
 \newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
 \newcommand{\refop}[1]{{\color{blue}Oppgave \ref{#1}}}
-\newcommand{\refops}[1]{{\color{blue}Oppgave \ref{#1}}}
+\newcommand{\refops}[1]{{\color{blue}oppgave \ref{#1}}}
 
 \newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{AM}}
 \newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
@@ -272,8 +277,15 @@ Oppgaver har blitt gitt ved sentralt utformet eksamen i Norge er markert med for
 Tekst og innhold kan her være noe endret i forhold til originalen.
 }
 
+%Excel og GGB:
+
+\newcommand{\g}[1]{\begin{center} {\tt #1} \end{center}}
+\newcommand{\gv}[1]{\begin{center} \vspace{-11 pt} {\tt #1}  \end{center}}
+\newcommand{\cmds}[2]{{\tt #1}\\[-3pt]
+	#2}
+
 % outline word
-\newcommand{\outl}[1]{{\color{teal}\textbf{#1}}}
+\newcommand{\outl}[1]{{\boldmath \color{teal}\textbf{#1}}}
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 

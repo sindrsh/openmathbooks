@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 MAY 2022 07:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  6 JUN 2022 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,6 +1012,26 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@chunks=\count339
 \LT@p@ftn=\toks44
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count340
+\l_MT_multwidth_dim=\dimen321
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen322
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
+\l_MT_above_intertext_sep=\dimen324
+\l_MT_below_intertext_sep=\dimen325
+\l_MT_above_shortintertext_sep=\dimen326
+\l_MT_below_shortintertext_sep=\dimen327
+)
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
@@ -1027,8 +1047,8 @@ Writing index file vek_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
-\footnotemargin=\dimen321
-\c@pp@next@reset=\count340
+\footnotemargin=\dimen328
+\c@pp@next@reset=\count341
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1040,22 +1060,47 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count341
+\c@abspage=\count342
 )
-\c@pp@a@footnote=\count342
+\c@pp@a@footnote=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks46
-\labelindent=\skip133
-\enit@outerparindent=\dimen322
+\labelindent=\skip134
+\enit@outerparindent=\dimen329
 \enit@toks=\toks47
 \enit@inbox=\box138
-\enit@count@id=\count343
-\enitdp@description=\count344
+\enit@count@id=\count344
+\enitdp@description=\count345
 )
-\c@rg=\count345
-\c@opg=\count346
+\c@rg=\count346
+\c@opg=\count347
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count348
+\lst@gtempboxa=\box139
+\lst@token=\toks48
+\lst@length=\count349
+\lst@currlwidth=\dimen330
+\lst@column=\count350
+\lst@pos=\count351
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count352
+\lst@lineno=\count353
+\lst@maxwidth=\dimen333
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count354
+\lst@skipnumbers=\count355
+\lst@framebox=\box140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
@@ -1100,9 +1145,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen323
-\Hy@linkcounter=\count347
-\Hy@pagecounter=\count348
+\@linkdim=\dimen334
+\Hy@linkcounter=\count356
+\Hy@pagecounter=\count357
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1115,8 +1160,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count349
-\pdfmajorversion=\count350
+\Hy@SavedSpaceFactor=\count358
+\pdfmajorversion=\count359
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1124,14 +1169,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count351
+\c@Hy@tempcnt=\count360
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen324
+\XeTeXLinkMargin=\dimen335
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1140,9 +1185,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count352
-\Field@Width=\dimen325
-\Fld@charsize=\dimen326
+\Fld@menulength=\count361
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1156,9 +1201,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count353
-\c@Item=\count354
-\c@Hfootnote=\count355
+\Hy@abspage=\count362
+\c@Item=\count363
+\c@Hfootnote=\count364
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1168,8 +1213,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count356
-\c@bookmark@seq@number=\count357
+\Fld@listcount=\count365
+\c@bookmark@seq@number=\count366
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1180,7 +1225,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip134
+\Hy@SectionHShift=\skip135
 )
 (../bm.tex) (./vek_bm.aux)
 \openout1 = `vek_bm.aux'.
@@ -1245,17 +1290,17 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen327
-\scratchbox=\box139
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen328
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count367
+\scratchdimen=\dimen338
+\scratchbox=\box141
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen339
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1270,6 +1315,7 @@ LaTeX Info: Redefining \selectfont on input line 5.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -1279,7 +1325,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box140
+\c@lstlisting=\count373
+\AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1291,7 +1338,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count364
+\c@section@level=\count374
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1362,191 +1409,233 @@ File: ../fig/vekdefb.pdf Graphic file (type pdf)
 <use ../fig/vekdefb.pdf>
 Package pdftex.def Info: ../fig/vekdefb.pdf  used on input line 11.
 (pdftex.def)             Requested size: 157.68874pt x 167.7262pt.
-
-Overfull \hbox (18.60075pt too wide) in paragraph at lines 13--14
-\T1/lmr/m/n/10.95 Når en vek-tor har start-punkt $\OT1/lmr/m/n/10.95 (0\OML/lmm
-/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$\T1/lmr/m/n/10.95 , sier vi at den er vist 
-i []grunn-stillingen[]. 
- []
-
-[1
+ [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/vekdefa.pdf> <../fi
 g/vekdefb.pdf>]
-<../fig/vek1.pdf, id=89, 318.10846pt x 315.68942pt>
+<../fig/vek1.pdf, id=90, 318.10846pt x 315.68942pt>
 File: ../fig/vek1.pdf Graphic file (type pdf)
 <use ../fig/vek1.pdf>
-Package pdftex.def Info: ../fig/vek1.pdf  used on input line 21.
+Package pdftex.def Info: ../fig/vek1.pdf  used on input line 23.
 (pdftex.def)             Requested size: 318.10768pt x 315.68864pt.
 
-Overfull \hbox (6.83446pt too wide) in paragraph at lines 21--21
+Overfull \hbox (6.83446pt too wide) in paragraph at lines 23--23
  [] 
  []
 
 [2 <../fig/vek1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 []\T1/lmr/m/n/10.95 En vek-tor $[]$ med start-punkt $[]$ og en-depunkt $\OT1/lm
 r/m/n/10.95 (\OML/lmm/m/it/10.95 x[]; y[]\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.9
 5 er
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-5.
+7.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3]
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]\T1/lmr/m/n/10.95 Gitt vek-torene $[]$ og $[]$, punk-tet $[]$
+)
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\T1/lmr/m/n/10.95 Rent matem-a-tisk er det in-gen forskjell på et punkt og en
+ vek-tor;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 punk-tet $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a; b\OT1/lm
+r/m/n/10.95 )$ \T1/lmr/m/n/10.95 viser til akku-rat samme plasser-ing som vek-t
+oren
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ]$\T1/lmr/m/n/10
+.95 , og begge kan vise til den samme for-fly-t-nin-gen. Ofte kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 det likevel være greit å skille mel-lom når vi snakker om en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 plasser-ing og når vi snakker om en for-lyt-ning, og til det 
+bruker
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/lmr/m/n/10.95 Gitt vek-torene $[]$ og $[]$, punk-tet $[]$.
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 }
+l.65 }
       
 <../fig/uplusv.pdf, id=113, 74.85968pt x 69.50969pt>
 File: ../fig/uplusv.pdf Graphic file (type pdf)
 <use ../fig/uplusv.pdf>
-Package pdftex.def Info: ../fig/uplusv.pdf  used on input line 67.
+Package pdftex.def Info: ../fig/uplusv.pdf  used on input line 65.
 (pdftex.def)             Requested size: 74.85948pt x 69.5095pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 }
+l.65 }
       
 <../fig/uminusv.pdf, id=114, 91.55203pt x 47.58778pt>
 File: ../fig/uminusv.pdf Graphic file (type pdf)
 <use ../fig/uminusv.pdf>
-Package pdftex.def Info: ../fig/uminusv.pdf  used on input line 67.
+Package pdftex.def Info: ../fig/uminusv.pdf  used on input line 65.
 (pdftex.def)             Requested size: 91.55179pt x 47.58765pt.
-<../fig/vekvink.pdf, id=115, 128.54022pt x 64.52104pt>
-File: ../fig/vekvink.pdf Graphic file (type pdf)
-<use ../fig/vekvink.pdf>
-Package pdftex.def Info: ../fig/vekvink.pdf  used on input line 70.
-(pdftex.def)             Requested size: 128.53989pt x 64.52087pt.
  [4
 
- <../fig/uplusv.pdf> <../fig/uminusv.pdf> <../fig/vekvink.pdf>]pdfTeX warning (
-ext4): destination with the same identifier (name{subfigure.1.1}) has been alre
-ady used, duplicate ignored
+ <../fig/uplusv.pdf> <../fig/uminusv.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]\T1/lmr/bx/n/10.95 Vinkelen mel-lom to vek-torer[] \T1/lmr/m/n/10.95 er (den 
+min-ste) vinke-len som
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/lmr/m/n/10.95 blir dan-net når vek-torene plasseres i samme start-punkt. Fo
+r to
+ []
+
+<../fig/vekvink.pdf, id=144, 128.54022pt x 64.52104pt>
+File: ../fig/vekvink.pdf Graphic file (type pdf)
+<use ../fig/vekvink.pdf>
+Package pdftex.def Info: ../fig/vekvink.pdf  used on input line 78.
+(pdftex.def)             Requested size: 128.53989pt x 64.52087pt.
+[5 <../fig/vekvink.pdf>]pdfTeX warning (ext4): destination with the same identi
+fier (name{subfigure.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 \subfloat
+l.84 \subfloat
               []{\includegraphics{\figp{veklena}}}\qquad\quad
-<../fig/veklena.pdf, id=157, 131.05965pt x 107.3912pt>
+<../fig/veklena.pdf, id=165, 131.05965pt x 107.3912pt>
 File: ../fig/veklena.pdf Graphic file (type pdf)
 <use ../fig/veklena.pdf>
-Package pdftex.def Info: ../fig/veklena.pdf  used on input line 76.
+Package pdftex.def Info: ../fig/veklena.pdf  used on input line 84.
 (pdftex.def)             Requested size: 131.05931pt x 107.39093pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \subfloat
+l.85 \subfloat
               []{\includegraphics{\figp{veklenb}}}
-<../fig/veklenb.pdf, id=158, 131.27042pt x 84.18451pt>
+<../fig/veklenb.pdf, id=166, 131.27042pt x 84.18451pt>
 File: ../fig/veklenb.pdf Graphic file (type pdf)
 <use ../fig/veklenb.pdf>
-Package pdftex.def Info: ../fig/veklenb.pdf  used on input line 77.
+Package pdftex.def Info: ../fig/veklenb.pdf  used on input line 85.
 (pdftex.def)             Requested size: 131.27008pt x 84.18428pt.
 
-Overfull \hbox (7.83983pt too wide) in paragraph at lines 79--80
-\T1/lmr/m/n/10.95 den til hy-potenusen og $\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/1
-0.95 x[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 j\OML/
-lmm/m/it/10.95 y[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 er de re-spek-tive l
-eng-dene til katetene. 
- []
-
-[5
-
- <../fig/veklena.pdf> <../fig/veklenb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]\T1/lmr/m/n/10.95 For to vek-torer $[]$ og $[]$, er \T1/lmr/m/it/10.95 skalar
-pro-duk-tet
+Overfull \hbox (10.88147pt too wide) in paragraph at lines 87--88
+\T1/lmr/m/n/10.95 den til hy-potenusen, og $\OMS/lmsy/m/n/10.95 j\OML/lmm/m/it/
+10.95 x[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 j\OML
+/lmm/m/it/10.95 y[]\OMS/lmsy/m/n/10.95 j$ \T1/lmr/m/n/10.95 er de re-spek-tive 
+leng-dene til katetene. 
  []
 
 [6
 
-] [7]
+ <../fig/veklena.pdf> <../fig/veklenb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]\T1/lmr/m/n/10.95 For to vek-torer $[]$ og $[]$, er []\T1/lmr/bx/n/10.95 skal
+arpro-duk-tet[]
+ []
 
-LaTeX Warning: Reference `veklen' on page 8 undefined on input line 144.
 
-<../fig/skaldef.pdf, id=208, 171.21968pt x 85.86078pt>
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/lmr/m/n/10.95 Skalarproduktet kalles også []\T1/lmr/bx/n/10.95 prikkpro-d
+uk-tet[] \T1/lmr/m/n/10.95 eller []\T1/lmr/bx/n/10.95 indre-
+ []
+
+[7
+
+] [8]
+<../fig/skaldef.pdf, id=216, 171.21968pt x 85.86078pt>
 File: ../fig/skaldef.pdf Graphic file (type pdf)
 <use ../fig/skaldef.pdf>
-Package pdftex.def Info: ../fig/skaldef.pdf  used on input line 155.
+Package pdftex.def Info: ../fig/skaldef.pdf  used on input line 163.
 (pdftex.def)             Requested size: 171.21925pt x 85.86057pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 156.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 156.
-[8
+
+
+LaTeX Warning: Hyper reference `cossetn' on page 9 undefined on input line 164.
+
+
+[9
 
  <../fig/skaldef.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
 []\T1/lmr/m/n/10.95 Det er mange måter å ut-trykke at $[]$ på. Blant an-net kan
  vi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 []\T1/lmr/m/n/10.95 Sjekk om vek-torene $[]$, $[]$ og $[]$ er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
 \T1/lmr/m/n/10.95 Altså er $[]$ og $[]$ \T1/lmr/m/sl/10.95 ikke \T1/lmr/m/n/10.
 95 or-tog-o-nale. Da $[]$, kan heller ikke $[]$ og $[]$
  []
 
-[9
+[10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []$[]$\T1/lmr/m/n/10.95 . For å ret-tfer-dig-gjøre betingelsen som går
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \T1/lmr/m/n/10.95 begge veier i [], må vi spørre: Kan vi få $[]$ om vinke-len
  []
 
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 217.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 217.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []\T1/lmr/m/n/10.95 På in-ter-val-let $\OT1/lmr/m/n/10.95 [0[]\OML/lmm/m/it/10.
 95 ; \OT1/lmr/m/n/10.95 180[]]$ \T1/lmr/m/n/10.95 er det bare vinkelver-dien $\
 OT1/lmr/m/n/10.95 90[]$ \T1/lmr/m/n/10.95 som re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \T1/lmr/m/n/10.95 sul-terer i cos-i-nusverdi 0. Skal skalarpro-duk-tet bli 0 fo
 r an-dre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 \T1/lmr/m/n/10.95 vin-kler, må der-for leng-den av $[]$ eller $[]$ være 0. Den 
 en-este vek-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 toren med denne leng-den er \T1/lmr/m/it/10.95 nul-lvek-toren
- $[]$\T1/lmr/m/n/10.95 , som rett og
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/lmr/m/n/10.95 toren med denne leng-den er []\T1/lmr/bx/n/10.95 nul-lvek-tor
+en[] $[]$\T1/lmr/m/n/10.95 , som rett
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--209
-\T1/lmr/m/n/10.95 slett ikke har noen ret-ning[][][]. Det er likevel van-lig å 
-de-finere at
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/lmr/m/n/10.95 og slett ikke har noen ret-ning[][][]. Det er likevel van-lig
+ å de-finere
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
 []\T1/lmr/m/n/10.95 Hvis vinke-len mel-lom to vek-torer er $\OT1/lmr/m/n/10.95 
 0[]$ \T1/lmr/m/n/10.95 eller $\OT1/lmr/m/n/10.95 180[]$\T1/lmr/m/n/10.95 , er d
 e par-al-
@@ -1556,208 +1645,210 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \subfloat
+l.224 \subfloat
                []{\includegraphics{\figp{vekpara}}}\qquad
-<../fig/vekpara.pdf, id=251, 113.98586pt x 93.73018pt>
+<../fig/vekpara.pdf, id=257, 113.98586pt x 93.73018pt>
 File: ../fig/vekpara.pdf Graphic file (type pdf)
 <use ../fig/vekpara.pdf>
-Package pdftex.def Info: ../fig/vekpara.pdf  used on input line 216.
+Package pdftex.def Info: ../fig/vekpara.pdf  used on input line 224.
 (pdftex.def)             Requested size: 113.98557pt x 93.72995pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.217 \subfloat
+l.225 \subfloat
                []{\includegraphics{\figp{vekparb}}}
-<../fig/vekparb.pdf, id=252, 143.05446pt x 116.52533pt>
+<../fig/vekparb.pdf, id=258, 143.05446pt x 116.52533pt>
 File: ../fig/vekparb.pdf Graphic file (type pdf)
 <use ../fig/vekparb.pdf>
-Package pdftex.def Info: ../fig/vekparb.pdf  used on input line 217.
+Package pdftex.def Info: ../fig/vekparb.pdf  used on input line 225.
 (pdftex.def)             Requested size: 143.0541pt x 116.52504pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]\T1/lmr/m/n/10.95 Når $[]$, sier vi at $[]$ er et \T1/lmr/m/it/10.95 mul-ti-p
-lum \T1/lmr/m/n/10.95 av $[]$ (og omvendt). Vi
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\T1/lmr/m/n/10.95 Når $[]$, sier vi at $[]$ er et []\T1/lmr/bx/n/10.95 mul-ti
+-plum[] \T1/lmr/m/n/10.95 av $[]$ (og omvendt). Vi
  []
 
-[11
+[12
 
  <../fig/vekpara.pdf> <../fig/vekparb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 []\T1/lmr/m/n/10.95 Undersøk hvorvidt $[]$ og $[]$ er par-al-lelle med
  []
 
-[12]
-<../fig/vek0.pdf, id=293, 199.1741pt x 142.26149pt>
+[13]
+<../fig/vek0.pdf, id=300, 199.1741pt x 142.26149pt>
 File: ../fig/vek0.pdf Graphic file (type pdf)
 <use ../fig/vek0.pdf>
-Package pdftex.def Info: ../fig/vek0.pdf  used on input line 269.
+Package pdftex.def Info: ../fig/vek0.pdf  used on input line 277.
 (pdftex.def)             Requested size: 199.17361pt x 142.26112pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
-[]\T1/lmr/m/n/10.95 Til forskjell fra grafen til en skalar-funksjon kan grafen 
-til en
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+[]\T1/lmr/m/n/10.95 Til forskjell fra grafen til en skalar-funksjon, kan grafen
+ til en
  []
 
-<../fig/linje.pdf, id=294, 170.7178pt x 95.09528pt>
+<../fig/linje.pdf, id=301, 170.7178pt x 95.09528pt>
 File: ../fig/linje.pdf Graphic file (type pdf)
 <use ../fig/linje.pdf>
-Package pdftex.def Info: ../fig/linje.pdf  used on input line 276.
+Package pdftex.def Info: ../fig/linje.pdf  used on input line 284.
 (pdftex.def)             Requested size: 170.71738pt x 95.09503pt.
-[13
+[14
 
  <../fig/vek0.pdf> <../fig/linje.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 []\T1/lmr/m/n/10.95 Ei linje $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/l
 mr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som går gjen-nom punk-tet $[]$ og har ret-
  []
 
-[14]
-<../fig/sirklig1.pdf, id=324, 57.40446pt x 64.5612pt>
+[15]
+<../fig/sirklig1.pdf, id=330, 57.40446pt x 64.5612pt>
 File: ../fig/sirklig1.pdf Graphic file (type pdf)
 <use ../fig/sirklig1.pdf>
-Package pdftex.def Info: ../fig/sirklig1.pdf  used on input line 288.
+Package pdftex.def Info: ../fig/sirklig1.pdf  used on input line 296.
 (pdftex.def)             Requested size: 57.4043pt x 64.56104pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
 []\T1/lmr/m/n/10.95 Gitt en sirkel ra-dius $\OML/lmm/m/it/10.95 r$ \T1/lmr/m/n/
 10.95 og sen-trum $[]$. Hvis punk-tet
  []
 
-[15
+[16
 
  <../fig/sirklig1.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 328.
+(Font)              <12> on input line 337.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]\T1/lmr/m/n/10.95 Determinanten $[]\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/it/10.95 
-; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 av to vek-torer $[]$ og $[]$ er
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
+[]\T1/lmr/bx/n/10.95 Determinanten[] $[]\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/it/10.
+95 ; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 av to vek-torer $[]$ og $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 []\T1/lmr/m/n/10.95 Arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 til et pa
 r-al-lel-logram formet av to vek-torer $[]$ og $[]$ er
  []
 
-<../fig/utspprl.pdf, id=339, 114.3171pt x 85.86078pt>
+<../fig/utspprl.pdf, id=345, 114.3171pt x 85.86078pt>
 File: ../fig/utspprl.pdf Graphic file (type pdf)
 <use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 353.
+Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 362.
 (pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
-<../fig/utsptrk.pdf, id=340, 86.2422pt x 57.40446pt>
+<../fig/utsptrk.pdf, id=346, 86.2422pt x 57.40446pt>
 File: ../fig/utsptrk.pdf Graphic file (type pdf)
 <use ../fig/utsptrk.pdf>
-Package pdftex.def Info: ../fig/utsptrk.pdf  used on input line 353.
+Package pdftex.def Info: ../fig/utsptrk.pdf  used on input line 362.
 (pdftex.def)             Requested size: 86.24197pt x 57.4043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--360
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
 []\T1/lmr/m/n/10.95 Avstanden $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-lom
  et punkt $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 og en linje gitt av punk-te
 t $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og
  []
 
-<../fig/plin.pdf, id=341, 142.26149pt x 124.04343pt>
+<../fig/plin.pdf, id=347, 142.26149pt x 124.04343pt>
 File: ../fig/plin.pdf Graphic file (type pdf)
 <use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 360.
+Package pdftex.def Info: ../fig/plin.pdf  used on input line 369.
 (pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
-[16
+[17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 []\T1/lmr/m/n/10.95 La en linje $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 i rom
 -met være gitt av et punkt $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og en ret-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/m/n/10.95 ningsvek-tor $[]$. I til-legg lig-ger et punkt \T1/lmr/m/it/1
 0.95 B \T1/lmr/m/n/10.95 uten-for linja, som
  []
 
 File: ../fig/plin.pdf Graphic file (type pdf)
 <use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 370.
+Package pdftex.def Info: ../fig/plin.pdf  used on input line 379.
 (pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
 \T1/lmr/m/n/10.95 Den ko-rteste av-s-tanden fra \T1/lmr/m/it/10.95 B \T1/lmr/m/
 n/10.95 til linja er høy-den \T1/lmr/m/it/10.95 h \T1/lmr/m/n/10.95 i trekan-te
 n
  []
 
-[17 <../fig/utspprl.pdf> <../fig/utsptrk.pdf> <../fig/plin.pdf>] [18]pdfTeX war
+[18 <../fig/utspprl.pdf> <../fig/utsptrk.pdf> <../fig/plin.pdf>] [19]pdfTeX war
 ning (ext4): destination with the same identifier (name{subfigure.1.1}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.400 }
+l.408 }
        
 File: ../fig/utspprl.pdf Graphic file (type pdf)
 <use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 400.
+Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 408.
 (pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.400 }
+l.408 }
        
-<../fig/utspprlforkl.pdf, id=388, 138.648pt x 107.79271pt>
+<../fig/utspprlforkl.pdf, id=396, 138.648pt x 107.79271pt>
 File: ../fig/utspprlforkl.pdf Graphic file (type pdf)
 <use ../fig/utspprlforkl.pdf>
-Package pdftex.def Info: ../fig/utspprlforkl.pdf  used on input line 400.
+Package pdftex.def Info: ../fig/utspprlforkl.pdf  used on input line 408.
 (pdftex.def)             Requested size: 138.64764pt x 107.79243pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
 \T1/lmr/m/n/10.95 Gitt to vek-torer $[]$ og $[]$, hvor $[]$, som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
 \T1/lmr/m/n/10.95 vist i figur \T1/lmr/m/sl/10.95 (a)\T1/lmr/m/n/10.95 . Plasse
 rer vi vek-torene i grunnstill-in-gen er punk-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
 \T1/lmr/m/n/10.95 I fig-urene har vi an-tatt at (den min-ste) vinke-len mel-lom
  $[]$ og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 408--408
 \OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen er min-dre enn vinke-len mel-lom
  $[]$ og $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen. I omvendt
  []
 
 
-LaTeX Warning: Reference `det2arbevis' on page 19 undefined on input line 400.
+LaTeX Warning: Reference `det2arbevis' on page 20 undefined on input line 408.
 
-[19 <../fig/utspprlforkl.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
+[20
+
+ <../fig/utspprlforkl.pdf>] [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 409.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
  (./vek_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
 Package rerunfilecheck Info: File `vek_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 1AEF817C69F67C5EC5F5953631970D17;650.
+(rerunfilecheck)             Checksum: 478D2A0FD2B3EE161355A57638671F46;663.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 31123 strings out of 481239
- 611108 string characters out of 5920378
- 924779 words of memory out of 5000000
- 45600 multiletter control sequences out of 15000+600000
+ 32946 strings out of 481239
+ 638727 string characters out of 5920378
+ 957179 words of memory out of 5000000
+ 47400 multiletter control sequences out of 15000+600000
  618210 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,24n,104p,875b,983s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,24n,104p,875b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
@@ -1779,10 +1870,10 @@ f/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
 /fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/esvect/vect10.pfb>
-Output written on vek_bm.pdf (19 pages, 370044 bytes).
+Output written on vek_bm.pdf (21 pages, 372751 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 511 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

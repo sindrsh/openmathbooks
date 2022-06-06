@@ -5,21 +5,21 @@
 
 \begin{document}
 \section{Monotoniegenskaper}
-De fleste funksjonsverdier varierer. Beskrivelser av hvordan funksjonene varierer kaller vi beskrivelser av funksjonenes \textit{monotoniegenskaper}.\regv
+De fleste funksjonsverdier varierer. Beskrivelser av hvordan funksjonene varierer kaller vi beskrivelser av funksjonenes \outl{monotoniegenskaper}.\regv
 \reg[Voksende og avtagende funskjoner \label{voksogav}]{
 Gitt en funksjon $ f(x) $.
 \begin{itemize}
-\item $ f $ er \textit{voksende} på intervallet $ [a, b] $ hvis vi for alle $ x_1, x_2 \in[a, b]$ har at
+\item $ f $ er \outl{voksende} på intervallet $ [a, b] $ hvis vi for alle $ {x_1, x_2 \in[a, b]}$ har at
 \begin{equation}\label{voksende}
 	x_1<x_2 \Rightarrow f(x_1)\leq f(x_2)
 \end{equation}
-Hvis $ {f(x_1)\leq f(x_2) }$ kan erstattes med $ {f(x_1)< f(x_2)} $, er $ f $ \textit{strengt voksende}.
+Hvis $ {f(x_1)\leq f(x_2) }$ kan erstattes med $ {f(x_1)< f(x_2)} $, er $ f $ \outl{strengt voksende} på intervallet.
 \fig{voksende}
-\item $ f $ er \textit{avtagende} på intervallet $ [a, b] $ hvis vi for alle $ {x_1, x_2 \in[a, b]}$ har at
+\item $ f $ er \outl{avtagende} på intervallet $ [a, b] $ hvis vi for alle $ {x_1, x_2 \in[a, b]}$ har at
 \begin{equation}\label{avtagende}
 	x_1<x_2 \Rightarrow f(x_1)\geq f(x_2)
 \end{equation}
-Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \textit{strengt avtagende}.
+Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \outl{strengt avtagende} på intervallet.
 \fig{avtagende}
 \end{itemize}
 } \newpage
@@ -63,50 +63,34 @@ Dette betyr at
 	\end{tabular}
 \end{center}
 }
-\fork{\ref{monder}\,\monder}{
-Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se vedlegg??} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
-\alg{
-f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-}
-Da $ c\in[a, b] $, er $ {f'(x)\geq 0} $, og da er
-\alg{
-0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
-}
-Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $. \vs
-}
-
 
 \section{Ekstremalpunkt}
 \reg[Maksimum og minimum]{\label{max}\index{maksimum}\index{minimum}	
 	\notesm{Et tall $ c $ kan omtales som et punkt i funskjonsdrøftinger, underforstått at det er snakk om punktet $ (c, 0) $.} \br
 	
 	Gitt en funksjon $ f(x) $ og et tall $ c $.\bs
-	\textbf{Absolutt maksimum og minimum}
 	\begin{itemize}
-		\item $ f $ har absolutt maksimum $ f(c) $ hvis $ {f(c)\geq f(x)} $ for alle $ x\in D_f $.
+		\item $ f $ har \outl{absolutt maksimum} $ f(c) $ hvis $ {f(c)\geq f(x)} $ for alle $ x\in D_f $.
 		
-		\item $ f $ har absolutt minimum $ f(c) $ hvis ${ f(c)\leq f(x) }$ for alle $ x\in D_f $.
-	\end{itemize}
-	\textbf{Lokalt maksimum og minimum}
-	\begin{itemize}
-		\item $ f $ har et lokalt maksimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\geq f(x) $ for $ x\in I  $.
+		\item $ f $ har \outl{absolutt minimum} $ f(c) $ hvis ${ f(c)\leq f(x) }$ for alle $ x\in D_f $.
+		\item $ f $ har et \outl{lokalt maksimum} $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\geq f(x) $ for $ x\in I  $.
 		
-		\item $ f $ har et lokalt minimum $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\leq f(x) $ for $ x\in I  $.
+		\item $ f $ har et \outl{lokalt minimum} $ f(c) $ hvis det finnes et åpent intervall $ I $ om $ c $ slik at $ f(c)\leq f(x) $ for $ x\in I  $.
 	\end{itemize}\vs
 }
 \spr{
-Et \textit{maksimum/minimum} blir også kalt en\\ \textit{maksimumsverdi/minimumsverdi}.
+Et maksimum/minimum blir også kalt en\\ \outl{maksimumsverdi/minimumsverdi}.
 }
 \reg[Ekstremalverdi og ekstremalpunkt]{\index{ekstremalpunkt}\index{ekstremalverdi}
 	Gitt en funksjon $ f(x) $ med maksimum/minimum $ f(c) $. Da er
 	\begin{itemize}
-		\item $ f(c) $ en ekstremalverdi for $ f $.
-		\item $ c $ et ekstremalpunkt for $ f $. Nærmere bestemt et maksimalpunkt/minimumspunkt for $ f $.
-		\item $ (c, f(c)) $ et toppunkt/bunnpunkt for $ f $.
+		\item $ f(c) $ en \outl{ekstremalverdi} for $ f $.
+		\item $ c $ et \outl{ekstremalpunkt} for $ f $. Nærmere bestemt et maksimalpunkt/minimumspunkt for $ f $.
+		\item $ (c, f(c)) $ et \outl{toppunkt/bunnpunkt} for $ f $.
 	\end{itemize}
 }
 \reg[Kritiske punkt]{
-Et tall $ c $ er et kritisk punkt for en funksjon $ f(x) $ hvis én av følgende gjelder:
+Et tall $ c $ er et \outl{kritisk punkt} for en funksjon $ f(x) $ hvis én av følgende gjelder:
 \begin{itemize}
 	\item $ f $ er ikke deriverbar i $ c $
 	\item $ f'(c)=0 $
@@ -139,31 +123,9 @@ f(2)&=5^3+9\cdot5^2-60\cdot5 = 275
 Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
 }
 \spr{
-Det som blir beskrevet i punkt ii) og iii) omtales ofte som at \outl{$ \bm f $ skifter fortegn i $ \bm c $} 
+Det som blir beskrevet i punkt ii) og iii) omtales ofte som at ''$ f $ skifter fortegn i $ c $''. 
 }
-\fork{\ref{fderekstr} \fderekstr}{
-\textbf{Punkt (i)} \os
 
-La $ c $ være et lokalt maksimumspunkt for $ f $. For et tall $ h $ må vi da ha at $ c\geq x $ for $ x\in(c-|h|, c+|h|) $. Da er
-\[ f(c+h)-f(c)\leq 0 \] 
-Dette betyr at
-\alg{
-\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h}\leq 0 
-}
-og at
-\alg{
-	\lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}\geq 0 
-}
-Følgelig er
-\[ \lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}=\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \]
-Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.\vsk
-
-\textbf{Punkt (ii)} \os
-Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende der. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende der. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
-
-\textbf{Punkt (iii)} \os
-Tilsvarende resonnement som for punkt (ii).
-}
 \newpage
 
 \reg[\andredertest \label{andredertest}]{
@@ -194,71 +156,31 @@ Tilsvarende resonnement som for punkt (ii).
 }
 \newpage
 \eks[]{
-\[ f(x)=x^3-3x^2-144x-140 \]
+\[ f(x)=x^3-3x^2-144x-140\quad,\quad x\in[-14, 16] \]
 \begin{center}
+	\small
 	\begin{tabular}{c | c}
-		\textbf{punkt/verdi} & \textbf{type} \\ \hline
-		$ A=(-14, -1456) $ & absolutt bunnpunkt \\
-		$ -14 $ & ekstremalpunkt; absolutt minimum \\
-		$ -1456 $& absolutt minimum \\ \hline
-		$ B=(-6, 400) $ & lokalt toppunkt \\		
-		$ -6 $ & ekstremalpunkt; lokalt maksimalpunkt \\
+\rowcolor{gray!15}		\textbf{punkt/verdi} & \textbf{type} \\ \hline
+\rowcolor{orange!10}		$ A=(-14, -1456) $ & absolutt bunnpunkt \\ \hline
+\rowcolor{orange!10}		$ -14 $ & ekstremalpunkt; absolutt minimum \\ \hline
+\rowcolor{orange!10}		$ -1456 $& absolutt minimum \\ \hline
+\rowcolor{cyan!10}		$ B=(-6, 400) $ & lokalt toppunkt \\ \hline	\rowcolor{cyan!10}		
+		$ -6 $ & ekstremalpunkt; lokalt maksimalpunkt \\ \hline \rowcolor{cyan!10}	
 		$ 400 $ & lokalt maksimum \\ \hline
-		$ C=(-1, -286) $ & vendepunkt  \\
-		$ -1 $ & infleksjonspunkt \\ \hline 
-		$ D = (8, -972) $ & lokalt bunnpunkt \\
-		$ 8 $ & ekstremalpunkt; lokalt minimumspunkt \\
-		$ -972 $ & lokal minimum \\ \hline
-		$ E= (16, 884) $ & absolutt maksimum \\
-		$ 16 $ & ekstremalpunkt; absolutt maksimumspunkt \\
-		$ 884 $ & absolutt maksimum \\ \hline
-		$ -10 $, $ -1 $ og $ 14 $ & nullpunkt \\ \hline
+\rowcolor{orange!10}		$ C=(-1, -286) $ & vendepunkt  \\ \hline
+\rowcolor{orange!10}		$ -1 $ & infleksjonspunkt \\ \hline 
+\rowcolor{cyan!10}		$ D = (8, -972) $ & lokalt bunnpunkt \\ \hline
+\rowcolor{cyan!10}		$ 8 $ & ekstremalpunkt; lokalt minimumspunkt \\ \hline
+\rowcolor{cyan!10}		$ -972 $ & lokal minimum \\ \hline
+\rowcolor{orange!10}		$ E= (16, 884) $ & absolutt maksimum \\ \hline
+\rowcolor{orange!10}		$ 16 $ & ekstremalpunkt; absolutt maksimumspunkt \\ \hline
+\rowcolor{orange!10}		$ 884 $ & absolutt maksimum \\ \hline
+\rowcolor{cyan!10}		$ -10 $, $ -1 $ og $ 14 $ & nullpunkt \\ \hline
 	\end{tabular}
 \end{center}
 \fig{funkdroft}
 }
 \newpage
-\eks{
-	Gitt funksjonen
-	\[ f(x)=\sin x\quad,\quad x\in[-2, 4] \]	
-	\textbf{a)} Finn infleksjonspunktene til $ f $.
-	
-	\textbf{b)} Finn vendepunktene til $ f $. \\
-	
-	\sv
-	\textbf{a)} Infleksjonspunktene finner vi der hvor $ f''(x)=0 $:
-	\alg{f''(x) &= 0\\
-		(\sin x)'' &= 0 \\
-		-\sin x &= 0 	}
-	Av $ {x\in D_f} $ er det $ {x=0} $ og $ {x=\pi }$ som oppfyller kravet fra ligningen over. For å finne ut om $ f'' $ skifter fortegn i disse punktene, setter vi opp et fortegnsskjema:
-	\begin{figure}[H]
-		\centering
-		\begin{tikzpicture}[scale=2]	
-			\draw[color=black] (0,-0.25) -- (0,1.25);
-			\node[anchor=south] at (0,1.25) { $-2$};  
-			\draw[color=black] (2,-0.25) -- (2,1.25);
-			\node[anchor=south] at (2,1.25) { $\pi$};	
-			\draw[color=black] (3,-0.25) -- (3,1.25);
-			\node[anchor=south] at (3,1.25) { $4$};		
-			\draw[dashed,color=black] (0,1) -- (3,1);
-			\draw[dashed,color=black] (0,0.5) -- (1,0.5);
-			\draw[dashed,color=black] (2,0.5) -- (3,0.5);	
-			\draw[color=black] (1,0.5) -- (2,0.5);	
-			\node[anchor=east] at (0,0.5) { $\sin x$};  		
-			\node[anchor=east] at (0,1) { $-1$};  
-			\draw[color=black] (1,-0.25) -- (1,1.25);
-			\node[anchor=south] at (1,1.25) { $0$};    
-			\draw[color=black] (0,0) -- (1,0);
-			\draw[color=black] (2,0) -- (3,0);	    
-			\draw[dashed,color=black] (1,0) -- (2,0);    
-			\node[anchor=east] at (0,0) {$f''$};     
-			\filldraw (1,0) circle[radius=1pt] ;   	
-			\filldraw (2,0) circle[radius=1pt] ; 	
-		\end{tikzpicture}
-	\end{figure}
-	
-	$ f'' $ går altså fra positiv til negativ i $ {x=0} $ og fra negativ til positiv i $ {x=\pi} $. Dette betyr at $ f $ går fra konveks til konkav i $ {x=0} $ og fra konkav til konveks i $ {x=\pi }$.
-}
 \section{Asymptoter}
 \reg[Vertikale asymptoter]{
 Gitt en funksjon $ f(x) $ og en konstant $ c $.
@@ -274,7 +196,7 @@ Finn den vertikale asymptoten til
 \sv
 Vi observerer at
 \[ \lim\limits_{x\to 3}\left[\frac{1}{x-3}+2\right]=\pm \infty  \]
-Altså er $ x=3 $ en vertikal asymptote for $ f $
+Altså er $ x=3 $ en vertikal asymptote for $ f $.
 } \vsk
 
 \reg[Horisontale asymptoter]{
@@ -308,10 +230,10 @@ Gitt en funksjon $ f(x) $. Da er $ {y=c} $ en \outl{horisontal asymptote} for $ 
 
 \section{Injektive funksjoner}
 \reg[Injektive funksoner]{
-Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \textit{injektiv} på dette intervallet.
+Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \outl{injektiv} på dette intervallet.
 }
 \spr{
-Et annet ord for injektiv er \textit{én-entydig}.
+Et annet ord for injektiv er \outl{én-entydig}.
 }
 
 \section{Omvendte funksjoner}
@@ -329,7 +251,7 @@ Likningen over synliggjør et problem; det er veldig rotete å behandle $ x $ so
 \reg[Omvendte funksjoner]{
 Gitt to injektive funksjoner $ f(x) $ og $ g(y) $. Hvis
 \[ g(f)=x \]
-er $ f $ og $ g $ \textit{omvendte} funksjoner.
+er $ f $ og $ g $ \outl{omvendte} funksjoner.
 } \newpage
 \eks[1]{Gitt funksjonen $ f(x)=5x-3 $.
 \abc{
@@ -360,5 +282,42 @@ Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. D
 I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 \[ f^n=(f)^n \] 
 }
+\section*{Forklaringer}
+\fork{\ref{monder}\,\monder}{
+	Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se \refved{midsetn}} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
+	\alg{
+		f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+	}
+	Da $ c\in[a, b] $, er $ {f'(x)\geq 0} $, og da er
+	\alg{
+		0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
+	}
+	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $. \vs
+}\vsk
+
+\fork{\ref{fderekstr} \fderekstr}{
+	\textbf{Punkt (i)} \os
+	
+	La $ c $ være et lokalt maksimumspunkt for $ f $. For et tall $ h $ må vi da ha at $ c\geq x $ for $ x\in(c-|h|, c+|h|) $. Da er
+	\[ f(c+h)-f(c)\leq 0 \] 
+	Dette betyr at
+	\alg{
+		\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h}\leq 0 
+	}
+	og at
+	\alg{
+		\lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}\geq 0 
+	}
+	Følgelig er
+	\[ \lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}=\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \]
+	Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.\vsk
+	
+	\textbf{Punkt (ii)} \os
+	Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende der. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende der. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
+	
+	\textbf{Punkt (iii)} \os
+	Tilsvarende resonnement som for punkt (ii).
+}
+
 
 \end{document}

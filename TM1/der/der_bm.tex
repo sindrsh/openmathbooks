@@ -6,7 +6,7 @@
 \begin{document}
 
 \section{Definisjoner \label{grense}}
-Gitt en funksjon $ f(x) $ og to $ x $-verdier $ a $ og $ b $, hvor $ {a<b} $. Endringen til $ f $ relativ til endringen til $ x $ for disse verdiene er gitt som
+Gitt en funksjon $ f(x) $ og to $ x $-verdier $ a $ og $ b $. Endringen til $ f $ relativ til endringen til $ x $ for disse verdiene er gitt som
 \begin{equation}\label{releq}
 	\frac{f(b)-f(a)}{b-a}
 \end{equation}
@@ -26,9 +26,12 @@ I \mb\ har vi sett at uttrykket over gir stigningstallet til linja som går gjen
 	\includegraphics[scale=0.8]{\figp{der2d}}
 }
 \end{figure}
-Ved å sette $ b=a+h $, hvor $ h>0 $, kan vi skrive \eqref{releq} som
+Ved å innføre tallet $ h $, og å sette $ b=a+h $, kan vi skrive \eqref{releq} som
 \[ \frac{f(a+h)-f(a)}{h} \]
 Å \outl{derivere} innebærer å undersøke grenseverdien til denne brøken når $ h $ går mot 0.
+\info{\note}{
+I teksten og figurene over har vi tatt utgangspunkt i at $ {b>a }$, men dette er ikke en forutsetning for at uttrykkene er gyldige.
+}
 \regdef[Den deriverte\label{derdefa}]{
 Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $ i $ {x=a} $} er da gitt som
 \begin{equation}\label{derdefaeq}
@@ -70,7 +73,7 @@ f'(a)=	\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}
 \end{equation}
 }
 \subsubsection{Linearisering av en funksjon}
-Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være (se figur ???)
+Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være
 \[ f(a+k)\approx f(a)+f'(a)k \]
 Det er ofte nyttig å vite differansen $ \varepsilon $ mellom en tilnærming og den faktiske verdien:
 \begin{equation}\label{vareps}
@@ -93,12 +96,12 @@ kalles \outl{lineæarapproksimasjonen} av $ f(a+k) $.
 
 \section{Derivasjonsregler}
 \subsection{Den deriverte}
-\outl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
+\textsl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
 \reg[Den deriverte funksjonen]{
 	Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $} er funksjonen som fremkommer ved å erstatte $ a $ i \eqref{derdefaeq} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
 }
 \eks[]{
-Gitt $ {f(x)=x^3} $. Siden\footnote{Se \outl{Eksempel 2}, side \pageref{dereks2}.} $ {f'(a)=3a^2} $, er $ f'(x)=3x^2 $. 
+Gitt $ {f(x)=x^3} $. Siden\footnote{Se \textsl{Eksempel 2}, side \pageref{dereks2}.} $ {f'(a)=3a^2} $, er $ f'(x)=3x^2 $. 
 }
 \info{Alternative skrivemåter}{
 Alternative skrivemåter for \sym{$f'$} er 
@@ -113,8 +116,8 @@ en \outl{flervariabel funksjon}, avhengig av både $ x $ og $ y $. I dette tilfe
 \[ \frac{\text{d}}{\text{d}x}f = 2x \qquad,\qquad  \frac{\text{d}}{\text{d}y}f = 3y^2 ,\]
 }
 \subsection{Den deriverte av elementære funksjoner}
-\reg[Den deriverte av elementære funksjoner]{
-For $x, r\in \mathbb{R} $ og
+\reg[\derel \label{derel}]{
+For en variabel $ x $ og $ r\in\mathbb{R} $ er
 \begin{align}
 & (e^x)' =e^{x} \label{derex} \vn	
 &  (x^r)' = r x^{r-1} \label{derxr} \vn
@@ -132,6 +135,12 @@ Gitt $ c\in \mathbb{R} $ og funksjonene $ f(x) $ og $ g(x) $. Da er
 & \left(f-g\right)'=f'-g'
 }
 }
+\regdef[Den andrederiverte]{
+Gitt en deriverbar funksjon $ f(x) $. Da er den \outl{andrederiverte av $ f $} gitt som
+\begin{equation}\label{andredereq}
+	\left(f'\right)'=f''
+\end{equation}
+}
 \regdef[Den deriverte av en vektorfunksjon \label{vektfunkder}]{
 Gitt funksjonene $ f(t) $, $ g(t) $ og $ v(t)=[f(t), g(t)] $. Da er
 \begin{equation}\label{vektfunkdereq}
@@ -148,7 +157,7 @@ La oss bruke $f(x) =e^{x^2} $ som eksempel. Kjenner vi verdien til \textit{x}, k
 Men vi kan også skrive $ {g\left[u(x)\right]=e^{u(x)}} $, hvor $ u(x)=x^2 $. Denne skrivemåten impliserer at når vi kjenner verdien til \textit{x}, regner vi først ut verdien til \textit{u}, før vi så finner verdien av $g$: 
 \[ u(2) =4\qquad,\qquad 
 g\left[u(2)\right]=e^{u(2)}=e^4 \]
-Av derdef?? har vi at
+Av \eqref{derdefaeq} har vi at
 \alg{
 f(x)&=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h} \br
 &= \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}
@@ -167,7 +176,7 @@ Da $ \lim\limits_{h\to0}k=0 $, er $ \lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0
 \lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
 }
 \reg[Kjerneregelen \label{kjerne}]{
-For en funksjon $ f(x)=g\left[u(x)\right] $, har vi at
+For en funksjon $ f(x)=g\left[u(x)\right] $ har vi at
 \begin{equation}\label{kjerneeq}
 	f'(x) = g'(u)u'(x)
 \end{equation}
@@ -193,7 +202,7 @@ Altså er
 \subsection{Produkt- og divisjonsregelen}
 Gitt funksjonene $ f $, $ u $ og $ v $, hvor
 \[ f(x)=u(x)v(x) \] 
-Av defref?? er da
+Av \eqref{derdefa} er da
 \[ f'=\lim\limits_{h\to 0}\frac{u(x+h)v(x+h)-u(x)v(x)}{h} \]
 La oss nå skrive $ u(x) $ og $ v(x) $ som henholdsvis $ u $ og $ v ,$ og $ u(x+h) $ og $ v(x+h) $ som henholdsvis $ \tilde{u} $ og $ \tilde{v} $:
 \alg{
@@ -227,12 +236,13 @@ f' &= 2xe^x +x^2 e^x \\
 }
 \vsk
 
-\reg[Divisjonsregelen ved derivasjon]{
+\reg[\divder \label{divder}]{
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ f=\dfrac{u}{v} $. Da er
-\begin{equation}\label{derdivreg}
+\begin{equation}\label{divdereq}
 	f'=\frac{u'v-uv'}{v^2} 
 \end{equation}
 }
+\newpage
 \eks{
 Finn den deriverte av funksjonen $ f(x)=\frac{\cos x}{x^4} $.
 
@@ -248,12 +258,10 @@ f' &= \frac{-\sin x\cdot x^4-\cos x\cdot 4x^3}{x^8} \br
 }
 \notesm{Vi kan også finne $ f $' ved å sette $ {u(x)=\cos x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
 }
-
-\reg[L'Hopitals regel I \label{Lhop}]{
+\newpage
+\reg[L'Hopitals regel \label{Lhop}]{
 Gitt to deriverbare funksjoner $ f(x) $ og $ g(x) $, hvor
 \[ f(a)=g(a)=0 \]
-eller hvor
-\[ \lim\limits_{x\to a}f=\lim\limits_{x\to a}g=\infty \] 
 Da er
 \nn{
 \lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}\label{Lhopeq}
@@ -273,39 +281,16 @@ Vi setter $ {f(x)=e^x-1} $ og $ {g(x)=x} $, og merker oss at $ {f(0)=g(0)=0} $. 
 } 
 }
 
-\section{Forklaringer}
+\section*{Forklaringer}
 \fork{L'hoptial}{
 Siden $ f(a)=g(a)=0 $, er
 \alg{
 \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}
 }
-Vi setter $ k=a-x $, da har vi av linaprx?? at
-\alg{
-f(x)-f(a)&=f(x)-f(x+h)=-f'(x)k-\varepsilon_f \vn
-g(x)-g(a)&=g(x)-g(x+h)=-g'(x)k-\varepsilon_g 
-}
-Altså er
-\alg{
-\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)+\frac{\varepsilon_f}{k}}{g'(x)+\frac{\varepsilon_g}{k}}
-}
-Da $ \lim\limits_{x\to a} k = 0$, har vi at $ {\lim\limits_{x\to a} \frac{\varepsilon_f}{k}= \lim\limits_{x\to a}  \frac{\varepsilon_g}{k}=0} $
-Altså er 
+Av \eqref{derdefalt} har vi da at
 \[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]}
-\fork{L'hopital 2}{
-Vi har at
-\alg{
-\lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f}}{\frac{1}{g}} 
-}
-Da $ {\lim\limits_{x\to a} f=\lim\limits_{x\to a} g=\infty} $, må $ {\lim\limits_{x\to a} \frac{1}{f}=\lim\limits_{x\to a}\frac{1}{g}=0} $. Av Lhopital1?? har vi da at 
-\alg{
-\lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f^2}f'}{\frac{1}{g^2}g'} 
-}
-Multipliserer vi begge sider med $ \lim\limits_{x\to a} \frac{f^2}{g^2} $, får vi at
-\alg{
-\lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}
-}	
-}
-\fork{}{
+\vsk
+\fork{\ref{divder} \divder}{
 Vi har at
 \[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
 Av produktregelen og kjerneregelen er da
@@ -314,8 +299,8 @@ f'	&= u' v^{-1} - u v^{-2}v' \\
 	&= \frac{u'v - u v'}{v^2}
 }
 }
-
-\fork{}{
+\newpage
+\fork{\ref{derel} \derel}{
 \textbf{Likning (\ref{derxr})}\\
 Vi starter med å merke oss at
 \alg{(\ln x^r)'&=(r \ln x)' \\

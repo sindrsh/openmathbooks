@@ -1,7 +1,7 @@
 import "../../inh" as inh;
 import "../../drwgrph" as inh;
 
-size(10cm);
+size(6cm);
 
 real f(real x) { 
 	return exp(x); 

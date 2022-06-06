@@ -194,12 +194,12 @@ P(F\cup H)&= P(F)+P(H)-P(F\cap H)\br
 Målet med et venndiagram er å lage en figur som illustrerer antallet av de \textsl{særskilte} utfallene og de \textsl{felles} utfallene. La oss bruke eksempelet på side \pageref{eksfothand} til å lage en slik figur. For klassen der noen spiller fotball, noen handball og noen begge deler, kan vi lage et venndiagram som vist under.
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn}}
+	\includegraphics[]{\figp{venn}}
 \end{figure}
 Den grønne ellipsen\footnote{En ellipse er en ''strekt'' sirkel.} representerer de som spiller fotball ($ F $) og den blå de som spiller handball ($ H $). Da noen spiller \textsl{begge} sportene ($ F\cap H $), har vi tegnet ellipsene litt over i hverandre. Videre vet vi at 7 spiller fotball, 10 spiller handball og 4 av disse gjør \textsl{begge }deler. Dette illustreres slik:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{vennb}}
+	\includegraphics[]{\figp{vennb}}
 \end{figure}
 Diagrammet forteller nå at 3 personer spiller \textsl{bare} fotball og 6 spiller \textsl{bare} handball. I tilleg spiller 4 personer \textsl{både} fotball og handball. (Til sammen er det derfor 7 som spiller fotball og 10 som spiller handball.) 
 \newpage
@@ -240,12 +240,12 @@ Om en klasse med 29 elever vet vi følgende:
 La $ F $ bety 'spiller fobtall', $ H $ bety 'spiller handball' og $ V $ bety 'spiller volleyball'. Når vi skal lage et venndiagram, er det lurt å skrive inn de felles utfallene først. Ut ifra fjerde til syvende punkt kan vi tegne dette:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn3ea}}
+	\includegraphics[]{\figp{venn3ea}}
 \end{figure}
 Da ser vi videre at \y{16-5-1-3=7} elever spiller \textsl{bare} fotball, \y{12-5-1-2=4} spiller \textsl{bare} handball og \y{9-3-1-2=3} spiller \textsl{bare} volleyball:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn3e}}
+	\includegraphics[]{\figp{venn3e}}
 \end{figure} 
 \textbf{b)} Av diagrammet vårt ser vi at det er $ 8+5+1+3+4+2+3= 26 $ unike elever som spiller én eller flere av sportene. Sjansen for å trekke en av disse 26 i en klasse med 29 elever er $ \frac{26}{29} $. \br
 
@@ -284,7 +284,7 @@ Så fyller vi inn tabellen ut ifra infoen vi har:
 \subsection{Permutasjoner}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{\fpath{bolle}}
+	\includegraphics[scale=0.8]{\figp{bolle}}
 	\vs
 \end{figure}
 Si vi har en bolle med fire kuler som er nummererte fra 1 til 4. I et forsøk trekker vi opp en og en kule fram til vi har trukket opp tre kuler. Hvis vi for eksempel først trekker kule 2, deretter kule 4, og så kule 3, får vi \textit{permutasjonen} $2\; 4\; 3$. \vsk
@@ -292,20 +292,20 @@ Si vi har en bolle med fire kuler som er nummererte fra 1 til 4. I et forsøk tr
 Hvor mange forskjellige permutasjoner kan vi få? La oss lage en figur som hjelper oss med å finne svaret. Ved første trekning er det 4 kuler å plukke av, vi kan derfor si at vi har 4 veier å gå. Enten trekker vi kule 1, eller kule 2, eller kule 3, eller kule 4:
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{\fpath{perm1a}}
+\includegraphics[scale=0.8]{\figp{perm1a}}
 \end{figure}
 Kula vi trekker opp, legger vi ut av bollen, og trekker så for andre gang. For hver av de 4 veiene vi kunne gå i første trekning får vi nå 3 nye veier å gå. Altså har vi nå  $3\cdot4=12$ veier vi kan gå.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{\fpath{perm1b}}
+	\includegraphics[scale=0.8]{\figp{perm1b}}
 \end{figure}
  
 Den andre kula vi trekker opp legger vi også ut av bollen,  så  for hver av de 12 veiene fra 2. trekning, får vi nå to nye mulige veier å gå. Totalt antall veier (permutasjoner) blir derfor $12\cdot2=24$. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{\fpath{perm1c}}
+\includegraphics[scale=0.8]{\figp{perm1c}}
 \end{figure}
 
 Denne utregningen kunne vi også ha skrevet slik:
@@ -392,14 +392,14 @@ Sannsynligheten for at $ A $ skjer først, deretter $ B $, deretter $ C $, og s�
 Vi kan utnytte \rref{permsans} for å lage en hjelpetegning når vi har å gjøre med gjentatte trekk. Tegningen vi her skal ende opp med kalles et \textit{valgtre}. Vi tegner da en lignende figur som vi gjorde i delkapittel \ref{komb}, men langs alle veier skriver vi på sannsynligheten for utfallet veien leder oss til. 
 \begin{figure}[H]
 \centering
-\includegraphics{\fpath{bolle2}}
+\includegraphics{\figp{bolle2}}
 \end{figure}
 La oss igjen se på bollen med de syv kulene. Trekk av grønn, blå eller rød kule betegner vi henholdsvis med bokstavene \textit{G}, \textit{B} og \textit{R}.\vsk
 
 Ved første trekning er sjansen for å trekke en grønn kule $ \frac{3}{7} $, derfor skriver vi denne brøken på veien som fører oss til \textit{G}. Gitt at vi har trukket en grønn kule, er sannsynligheten for også å trekke en grønn kule i andre trekning lik $ \frac{2}{6} $. Denne brøken skriver vi derfor langs veien som fører oss fra \textit{G} til \textit{G}. Og sånn fortsetter vi til vi har ført opp alle sannsynlighetene til hver vei. For å få en rask oversikt over de forskjellige permutasjonene veiene fører til, kan det være lurt å skrive opp disse under hver ende av treet.  \vs
 \begin{figure}[H]
 \centering
-\includegraphics[]{\fpath{tree}}
+\includegraphics[]{\figp{tree}}
 \end{figure}
 La oss nå bruke valgtreet over til å finne sannsynligheten for å trekke én grønn og én blå kule. \textit{GB} og \textit{BG} er da de gunstige permutasjonene. Ved å gange sammen sannsynlighetene langs veien til \textit{GB}, finner vi at
 \[ P(GB)=\frac{3}{7}\cdot\frac{2}{6}=\frac{6}{42} \]
@@ -426,7 +426,7 @@ P(GB\cup BG)&=P(GB)+P(BG) \\
 \textbf{a)}
 \begin{figure}[H]
 	\centering
-	\includegraphics{\fpath{treee}}
+	\includegraphics{\figp{treee}}
 \end{figure}
 \textbf{b)} Av valgtreet vårt ser vi at
 \alg{

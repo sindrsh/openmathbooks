@@ -1,4 +1,5 @@
 
+
 ---MB---
 geo
 Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
@@ -6,8 +7,7 @@ Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
 
 ---TM1---
 
-Obs!
-- fisk L'Hopital forklaring
+Obs! Fiks figur til linearisering av f(x)
 
 alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
@@ -46,7 +46,7 @@ vektor
 og (x,f(x)) for x in [a, b]
 - skriv sirkellikning på alternativ måte
 - forklar betingelser som må være oppfylt for at A=(x, y) skal ligge utenfor/innenfor sirkelen.
-
+- undersøke begrepet 'lineært uavhengige'
 
 ---TM2---
 trigonometri

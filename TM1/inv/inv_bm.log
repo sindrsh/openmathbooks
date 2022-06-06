@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  8 MAY 2022 21:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  6 JUN 2022 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,6 +1012,26 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@chunks=\count339
 \LT@p@ftn=\toks44
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count340
+\l_MT_multwidth_dim=\dimen321
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen322
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
+\l_MT_above_intertext_sep=\dimen324
+\l_MT_below_intertext_sep=\dimen325
+\l_MT_above_shortintertext_sep=\dimen326
+\l_MT_below_shortintertext_sep=\dimen327
+)
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
@@ -1027,8 +1047,8 @@ Writing index file inv_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
-\footnotemargin=\dimen321
-\c@pp@next@reset=\count340
+\footnotemargin=\dimen328
+\c@pp@next@reset=\count341
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1040,22 +1060,47 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count341
+\c@abspage=\count342
 )
-\c@pp@a@footnote=\count342
+\c@pp@a@footnote=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks46
-\labelindent=\skip133
-\enit@outerparindent=\dimen322
+\labelindent=\skip134
+\enit@outerparindent=\dimen329
 \enit@toks=\toks47
 \enit@inbox=\box138
-\enit@count@id=\count343
-\enitdp@description=\count344
+\enit@count@id=\count344
+\enitdp@description=\count345
 )
-\c@rg=\count345
-\c@opg=\count346
+\c@rg=\count346
+\c@opg=\count347
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count348
+\lst@gtempboxa=\box139
+\lst@token=\toks48
+\lst@length=\count349
+\lst@currlwidth=\dimen330
+\lst@column=\count350
+\lst@pos=\count351
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count352
+\lst@lineno=\count353
+\lst@maxwidth=\dimen333
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count354
+\lst@skipnumbers=\count355
+\lst@framebox=\box140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
@@ -1100,9 +1145,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen323
-\Hy@linkcounter=\count347
-\Hy@pagecounter=\count348
+\@linkdim=\dimen334
+\Hy@linkcounter=\count356
+\Hy@pagecounter=\count357
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1115,8 +1160,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count349
-\pdfmajorversion=\count350
+\Hy@SavedSpaceFactor=\count358
+\pdfmajorversion=\count359
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1124,14 +1169,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count351
+\c@Hy@tempcnt=\count360
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen324
+\XeTeXLinkMargin=\dimen335
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1140,9 +1185,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count352
-\Field@Width=\dimen325
-\Fld@charsize=\dimen326
+\Fld@menulength=\count361
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1156,9 +1201,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count353
-\c@Item=\count354
-\c@Hfootnote=\count355
+\Hy@abspage=\count362
+\c@Item=\count363
+\c@Hfootnote=\count364
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1168,8 +1213,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count356
-\c@bookmark@seq@number=\count357
+\Fld@listcount=\count365
+\c@bookmark@seq@number=\count366
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1180,7 +1225,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip134
+\Hy@SectionHShift=\skip135
 )
 (./inv_bm.aux)
 \openout1 = `inv_bm.aux'.
@@ -1245,17 +1290,17 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen327
-\scratchbox=\box139
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen328
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count367
+\scratchdimen=\dimen338
+\scratchbox=\box141
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen339
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1270,6 +1315,7 @@ LaTeX Info: Redefining \selectfont on input line 6.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
@@ -1279,7 +1325,8 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box140
+\c@lstlisting=\count373
+\AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1291,7 +1338,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count364
+\c@section@level=\count374
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1301,55 +1348,53 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write7
 \openout7 = `inv_bm.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-5.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-5.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-25.
+8.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-25.
+8.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 25.
+(Font)              <10.95> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
-
+(Font)              <6> on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 2
-5.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 8
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-25.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
@@ -1361,9 +1406,9 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er \T1/lmr/m/it/10.95 vok-sende \T1
-/lmr/m/n/10.95 på in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\
-OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 hvis vi for alle
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er []\T1/lmr/bx/n/10.95 vok-sende[]
+ \T1/lmr/m/n/10.95 på in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a
+; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 hvis vi for alle
  []
 
 
@@ -1379,9 +1424,9 @@ Package pdftex.def Info: ../fig/voksende.pdf  used on input line 25.
 (pdftex.def)             Requested size: 113.81493pt x 85.35869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
-[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er \T1/lmr/m/it/10.95 av-ta-gende \
-T1/lmr/m/n/10.95 på in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; 
-b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 hvis vi for alle
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er []\T1/lmr/bx/n/10.95 av-ta-gende
+[] \T1/lmr/m/n/10.95 på in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95
+ a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 hvis vi for alle
  []
 
 
@@ -1424,100 +1469,82 @@ File: ../fig/fortgnskj1.pdf Graphic file (type pdf)
 <use ../fig/fortgnskj1.pdf>
 Package pdftex.def Info: ../fig/fortgnskj1.pdf  used on input line 65.
 (pdftex.def)             Requested size: 161.99481pt x 76.02382pt.
-[2 <../fig/fortgnskj1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-[][]\T1/lmr/bx/n/12 0.2[]Monotoniegenskaper og den de-riverte (fork-lar-
- []
-
+[2 <../fig/fortgnskj1.pdf>] [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 76.
+(Font)              <9> on input line 80.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 76.
+(Font)              <5> on input line 80.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-[]\T1/lmr/m/n/10.95 Gitt $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/i
-t/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , hvor $[]$ for $[]$. La $[]$ o
-g
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-[]$\T1/lmr/m/n/10.95 . Av mid-delverdiset-nin-gen[][][] finnes det et tall $[]$
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-\T1/lmr/m/n/10.95 Følgelig er $[]$, og av [][]\T1/lmr/m/sl/10.95 defin-isjon 0.
-1[][][] \T1/lmr/m/n/10.95 er da $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 vok-s
-ende
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []\T1/lmr/m/sl/9 Merk: \T1/lmr/m/n/9 Et tall $\OML/lmm/m/it/9 c$ \T1/lmr/m/n/9 
 kan om-tales som et punkt i fun-skjons-drøftinger, un-der-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har ab-so-lutt mak-si-mum $\OML/lmm
-/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )$ \T1
-/lmr/m/n/10.95 hvis $[]$ for alle
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har []\T1/lmr/bx/n/10.95 ab-so-lutt
+ mak-si-mum[] $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\O
+T1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 hvis $[]$ for alle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har et lokalt mak-si-mum $\OML/lmm/
-m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )$ \T1/
-lmr/m/n/10.95 hvis det finnes et åpent
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har []\T1/lmr/bx/n/10.95 ab-so-lutt
+ min-i-mum[] $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT
+1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 hvis $[]$ for alle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har et lokalt min-i-mum $\OML/lmm/m
-/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )$ \T1/l
-mr/m/n/10.95 hvis det finnes et åpent
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har et []\T1/lmr/bx/n/10.95 lokalt 
+mak-si-mum[] $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT
+1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 hvis det finnes et åpent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]$\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 et ek-stremalpunkt for $\OML/lmm/m/
-it/10.95 f$\T1/lmr/m/n/10.95 . Nærmere bestemt et mak-si-
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har et []\T1/lmr/bx/n/10.95 lokalt 
+min-i-mum[] $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1
+/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 hvis det finnes et åpent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]\T1/lmr/m/n/10.95 Et tall $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er et kri
--tisk punkt for en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/
-m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 hvis én av
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]$\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 et []\T1/lmr/bx/n/10.95 ek-stremalp
+unkt[] \T1/lmr/m/n/10.95 for $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . Nærmere
+ bestemt et mak-si-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\T1/lmr/m/n/10.95 Et tall $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er et []\
+T1/lmr/bx/n/10.95 kri-tisk punkt[] \T1/lmr/m/n/10.95 for en funksjon $\OML/lmm/
+m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/
+lmr/m/n/10.95 hvis én av
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 122.
+(Font)              <12> on input line 106.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
 []\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$ og $[]$ for $[]$, er $\OML/lmm/m/it/10.9
 5 c$ \T1/lmr/m/n/10.95 et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
 []\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$ og $[]$ for $[]$, er $\OML/lmm/m/it/10.9
 5 c$ \T1/lmr/m/n/10.95 et
  []
 
-[4
 
-]
-
-LaTeX Warning: Hyper reference `a1a2' on page 5 undefined on input line 140.
+LaTeX Warning: Hyper reference `a1a2' on page 4 undefined on input line 124.
 
 
-LaTeX Warning: Reference `a1a2' on page 5 undefined on input line 140.
+LaTeX Warning: Reference `a1a2' on page 4 undefined on input line 124.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \T1/lmr/m/n/10.95 Altså er $\OT1/lmr/m/n/10.95 (\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr
 /m/n/10.95 5\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 275)$ \T1/lmr/m/n/10.95 to
 p-punk-tet til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $\OT1/lmr/m/n/10.95
@@ -1525,99 +1552,55 @@ p-punk-tet til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $\OT1/lmr/m/n/10.95
 /m/n/10.95 er bun-npunk-tet
  []
 
+[4
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+]
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []\T1/lmr/m/n/10.95 Det som blir beskrevet i punkt ii) og iii) om-tales ofte so
-m at []$\OML/lmm/b/it/10.95 f$
+m at ''$\OML/lmm/m/it/10.95 f$
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-[]\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 være et lokalt
- mak-si-mum-spunkt for $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . For et tall $
-\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 må vi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\T1/lmr/m/n/10.95 Altså er $[]$, og $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95
- skifter fortegn fra pos-i-tiv til neg-a-tiv i $\OML/lmm/m/it/10.95 c$\T1/lmr/m
-/n/10.95 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\T1/lmr/m/n/10.95 Med samme fram-gangsmåte kan det vises at dette også gjelder
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\T1/lmr/m/n/10.95 der-som $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er et min-i
--mum-spunkt, bare at da skifter $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95 fra
- neg-a-tiv
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-[]\T1/lmr/m/n/10.95 Hvis $[]$ på in-ter-val-let $\OT1/lmr/m/n/10.95 (\OML/lmm/m
-/it/10.95 a; c\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , har vi av [][]\T1/lmr/m/
-sl/10.95 regel 0.2[][][] \T1/lmr/m/n/10.95 at $\OML/lmm/m/it/10.95 f$ \T1/lmr/m
-/n/10.95 er sterkt
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\T1/lmr/m/n/10.95 vok-sende der. Hvis $[]$ på $\OT1/lmr/m/n/10.95 (\OML/lmm/m/i
-t/10.95 c; b\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , er $\OML/lmm/m/it/10.95 f$
- \T1/lmr/m/n/10.95 sterkt av-ta-gende der.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\T1/lmr/m/n/10.95 Dette må nød-vendigvis bety at $[]$ for $[]$, og da
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\T1/lmr/m/n/10.95 Hvis $[]$, kan man ikke ut ifra denne in-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 \T1/lmr/m/n/10.95 masjo-nen alene si om $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.9
 5 (\OML/lmm/m/it/10.95 c\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er et lokalt ma
 k-si-mum eller
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \T1/lmr/m/n/10.95 Altså må $[]$ være pos-i-tiv når $\OML/lmm/m/it/10.95 h$ \T1/
 lmr/m/n/10.95 går mot 0 fra ven-stre og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \T1/lmr/m/n/10.95 neg-a-tiv når $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 går m
 ot 0 fra hø-gre. Dermed skifter $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95 for
 tegn i $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \T1/lmr/m/n/10.95 som da må være et mak-si-malpunkt for $\OML/lmm/m/it/10.95 f$
 \T1/lmr/m/n/10.95 . Tilsvarende må $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 væ
 re
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []\T1/lmr/m/n/10.95 Hvis $[]$ og $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95 sk
 ifter fortegn i $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 , er $\OML/lmm/m/it/10
 .95 c$ \T1/lmr/m/n/10.95 et \T1/lmr/m/it/10.95 in-flek-sjon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []\T1/lmr/m/n/10.95 Hvis $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er et in-fle
 k-sjon-spunkt for $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 , er $\OT1/lmr/m/n/1
 0.95 (\OML/lmm/m/it/10.95 c; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 c\OT1/lmr
@@ -1625,62 +1608,38 @@ k-sjon-spunkt for $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 , er $\OT1/lmr/m/n/1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er kon-veks på in-ter-vall hvor $[]
 $, og konkav på in-ter-
  []
 
-[8]
-Overfull \hbox (7.18637pt too wide) in paragraph at lines 219--219
- [] 
- []
-
-<../fig/funkdroft.pdf, id=146, 284.52296pt x 227.62039pt>
+[7]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 182.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 182.
+<../fig/funkdroft.pdf, id=132, 284.52296pt x 227.62039pt>
 File: ../fig/funkdroft.pdf Graphic file (type pdf)
 <use ../fig/funkdroft.pdf>
-Package pdftex.def Info: ../fig/funkdroft.pdf  used on input line 219.
+Package pdftex.def Info: ../fig/funkdroft.pdf  used on input line 182.
 (pdftex.def)             Requested size: 284.52225pt x 227.61983pt.
-[9 <../fig/funkdroft.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
-\T1/lmr/m/n/10.95 Av $[]$ er det $[]$ og $[]$ som opp-fyller kravet fra lignin-
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
-\T1/lmr/m/n/10.95 gen over. For å finne ut om $\OML/lmm/m/it/10.95 f[]$ \T1/lmr
-/m/n/10.95 skifter fortegn i disse punk-tene,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
-[]$\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95 går altså fra pos-i-tiv til neg-a
--tiv i $[]$ og fra neg-a-tiv til pos-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
-\T1/lmr/m/n/10.95 i-tiv i $[]$. Dette be-tyr at $\OML/lmm/m/it/10.95 f$ \T1/lmr
-/m/n/10.95 går fra kon-veks til konkav i $[]$
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 270--270
+ [8 <../fig/funkdroft.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\T1/lmr/m/n/10.95 Hvis $[]$, er $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 en 
-[]ver-tikal asymp-tote oven-fra[]
+[]\T1/lmr/bx/n/10.95 ver-tikal asymp-tote
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--283
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
-\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Da er $[]$ en []h
-o-rison-tal asymp-tote[] for
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Da er $[]$ en []\
+T1/lmr/bx/n/10.95 ho-rison-tal asymp-tote[]
  []
 
-[11
+[9
 
-] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 307--307
+] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\T1/lmr/m/n/10.95 Hvis hele linja mel-lom $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
 10.95 a; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 ))$ \T1/l
 mr/m/n/10.95 og $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b; f\OT1/lmr/m/n/10.95
@@ -1688,13 +1647,13 @@ mr/m/n/10.95 og $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b; f\OT1/lmr/m/n/10.95
 afen til
  []
 
-<../fig/konv.pdf, id=177, 115.99335pt x 91.49182pt>
+<../fig/konv.pdf, id=160, 115.99335pt x 91.49182pt>
 File: ../fig/konv.pdf Graphic file (type pdf)
 <use ../fig/konv.pdf>
-Package pdftex.def Info: ../fig/konv.pdf  used on input line 307.
+Package pdftex.def Info: ../fig/konv.pdf  used on input line 229.
 (pdftex.def)             Requested size: 115.99304pt x 91.49158pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--307
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 \T1/lmr/m/n/10.95 Hvis hele linja mel-lom $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10
 .95 a; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a\OT1/lmr/m/n/10.95 ))$ \T1/lmr
 /m/n/10.95 og $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b; f\OT1/lmr/m/n/10.95 (
@@ -1702,26 +1661,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 307--307
 afen
  []
 
-<../fig/konk.pdf, id=178, 115.99335pt x 89.60475pt>
+<../fig/konk.pdf, id=161, 115.99335pt x 89.60475pt>
 File: ../fig/konk.pdf Graphic file (type pdf)
 <use ../fig/konk.pdf>
-Package pdftex.def Info: ../fig/konk.pdf  used on input line 307.
+Package pdftex.def Info: ../fig/konk.pdf  used on input line 229.
 (pdftex.def)             Requested size: 115.99304pt x 89.6045pt.
-[13
+[11
 
  <../fig/konv.pdf> <../fig/konk.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 312--312
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
 \OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Hvis alle verdier
  til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er unike på in-ter-
  []
 
-[14
+[12
 
-] [15
+] [13
 
-] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\T1/lmr/m/n/10.95 Hvis $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $\OML/lmm
 /m/it/10.95 g$ \T1/lmr/m/n/10.95 er omvendte funksjoner, skrives $\OML/lmm/m/it
 /10.95 g$ \T1/lmr/m/n/10.95 ofte som $\OML/lmm/m/it/10.95 f[]$\T1/lmr/m/n/10.95
@@ -1729,23 +1688,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--362
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \T1/lmr/m/n/10.95 er det veldig vik-tig å merke seg at $\OML/lmm/m/it/10.95 f[]
 $ \T1/lmr/m/n/10.95 ikke er det samme som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
 \T1/lmr/m/n/10.95 I alle an-dre til-feller enn ved $[]$, vil det i denne boka v
 ære
  []
 
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 364.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 364.
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[][]\T1/lmr/bx/n/12 0.2[]Monotoniegenskaper og den de-riverte (fork-lar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]\T1/lmr/m/n/10.95 Gitt $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/i
+t/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , hvor $[]$ for $[]$. La $[]$ o
+g
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]$\T1/lmr/m/n/10.95 . Av mid-delverdiset-nin-gen[][][] finnes det et tall $[]$
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+\T1/lmr/m/n/10.95 Følgelig er $[]$, og av [][]\T1/lmr/m/sl/10.95 defin-isjon 0.
+1[][][] \T1/lmr/m/n/10.95 er da $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 vok-s
+ende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 være et lokalt
+ mak-si-mum-spunkt for $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . For et tall $
+\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 må vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 Altså er $[]$, og $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95
+ skifter fortegn fra pos-i-tiv til neg-a-tiv i $\OML/lmm/m/it/10.95 c$\T1/lmr/m
+/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 Med samme fram-gangsmåte kan det vises at dette også gjelder
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 der-som $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er et min-i
+-mum-spunkt, bare at da skifter $\OML/lmm/m/it/10.95 f[]$ \T1/lmr/m/n/10.95 fra
+ neg-a-tiv
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]\T1/lmr/m/n/10.95 Hvis $[]$ på in-ter-val-let $\OT1/lmr/m/n/10.95 (\OML/lmm/m
+/it/10.95 a; c\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , har vi av [][]\T1/lmr/m/
+sl/10.95 regel 0.2[][][] \T1/lmr/m/n/10.95 at $\OML/lmm/m/it/10.95 f$ \T1/lmr/m
+/n/10.95 er sterkt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 vok-sende der. Hvis $[]$ på $\OT1/lmr/m/n/10.95 (\OML/lmm/m/i
+t/10.95 c; b\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , er $\OML/lmm/m/it/10.95 f$
+ \T1/lmr/m/n/10.95 sterkt av-ta-gende der.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 Dette må nød-vendigvis bety at $[]$ for $[]$, og da
+ []
+
+[16
+
+] [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
  (./inv_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 364.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 364.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
 Package rerunfilecheck Info: File `inv_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 6D205A247AB928D6366E317AAFD5B711;333.
 
@@ -1754,17 +1786,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30988 strings out of 481239
- 608608 string characters out of 5920378
- 920435 words of memory out of 5000000
- 45512 multiletter control sequences out of 15000+600000
- 617840 words of font info for 100 fonts, out of 8000000 for 9000
+ 32824 strings out of 481239
+ 636315 string characters out of 5920378
+ 955770 words of memory out of 5000000
+ 47324 multiletter control sequences out of 15000+600000
+ 639364 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,11n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/l
-m/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
@@ -1782,7 +1814,7 @@ s/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb
 1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on inv_bm.pdf (17 pages, 347079 bytes).
+Output written on inv_bm.pdf (17 pages, 345279 bytes).
 PDF statistics:
  315 PDF objects out of 1000 (max. 8388607)
  262 compressed objects within 3 object streams

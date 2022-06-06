@@ -10,43 +10,46 @@
 \BOOKMARK [1][-]{section.2.5}{Eulers tall}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.6}{Logaritmer}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.7}{Forklaringer}{chapter.2}% 12
-\BOOKMARK [0][-]{chapter.3}{Geometri}{}% 13
-\BOOKMARK [1][-]{section.3.1}{Definisjoner}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Egenskaper til trekanter}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Egenskaper til sirkler}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{Forklaringer}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{Vektorer}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Introduksjon}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{Regneregler}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.3}{Lengden til en vektor}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.4}{Skalarproduktet I}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.5}{Skalarproduktet II}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.6}{Vektorer vinkelrett p\345 hverandre}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.7}{Parallelle vektorer}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.8}{Vektorfunksjoner; parameterisering}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.8.1}{Vektorfunksjonen til ei linje}{section.4.8}% 27
-\BOOKMARK [1][-]{section.4.9}{Sirkellikningen}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.10}{Determinanter}{chapter.4}% 29
-\BOOKMARK [0][-]{chapter.5}{Grenseverdier og kontinuitet}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Grenseverdier}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.2}{Kontinuitet}{chapter.5}% 32
-\BOOKMARK [0][-]{chapter.6}{Derivasjon}{}% 33
-\BOOKMARK [1][-]{section.6.1}{Definisjoner }{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.2}{Derivasjonsregler}{chapter.6}% 35
-\BOOKMARK [2][-]{subsection.6.2.1}{Den deriverte}{section.6.2}% 36
-\BOOKMARK [2][-]{subsection.6.2.2}{Den deriverte av element\346re funksjoner}{section.6.2}% 37
-\BOOKMARK [2][-]{subsection.6.2.3}{Kjerneregelen}{section.6.2}% 38
-\BOOKMARK [2][-]{subsection.6.2.4}{Produkt- og divisjonsregelen}{section.6.2}% 39
-\BOOKMARK [1][-]{section.6.3}{Forklaringer}{chapter.6}% 40
-\BOOKMARK [0][-]{chapter.7}{Funksjonsdr\370fting}{}% 41
-\BOOKMARK [1][-]{section.7.1}{Monotoniegenskaper}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.2}{Ekstremalpunkt}{chapter.7}% 43
-\BOOKMARK [1][-]{section.7.3}{Asymptoter}{chapter.7}% 44
-\BOOKMARK [1][-]{section.7.4}{Konvekse og konkave funksjoner}{chapter.7}% 45
-\BOOKMARK [1][-]{section.7.5}{Injektive funksjoner}{chapter.7}% 46
-\BOOKMARK [1][-]{section.7.6}{Omvendte funksjoner}{chapter.7}% 47
-\BOOKMARK [0][-]{chapter.8}{Vedlegg}{}% 48
-\BOOKMARK [1][-]{section.8.1}{Navn p\345 funksjoner}{chapter.8}% 49
-\BOOKMARK [1][-]{section.8.2}{\305 l\370se likninger ved bytte av variabel}{chapter.8}% 50
-\BOOKMARK [1][-]{section.8.3}{Eulers tall}{chapter.8}% 51
-\BOOKMARK [1][-]{section.8.4}{Tangeringslinja til en graf}{chapter.8}% 52
+\BOOKMARK [1][-]{section*.13}{Oppgaver}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Geometri}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Definisjoner}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Egenskaper til trekanter}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Egenskaper til sirkler}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Forklaringer}{chapter.3}% 18
+\BOOKMARK [1][-]{section*.28}{Oppgaver}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Vektorer}{}% 20
+\BOOKMARK [1][-]{section.4.1}{Introduksjon}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Regneregler for vektorer}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Lengden til en vektor}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Skalarproduktet I}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Skalarproduktet II}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.6}{Vektorer vinkelrett p\345 hverandre}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.7}{Parallelle vektorer}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.8}{Vektorfunksjoner; parameterisering}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.8.1}{Vektorfunksjonen til ei linje}{section.4.8}% 29
+\BOOKMARK [1][-]{section.4.9}{Sirkellikningen}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.10}{Determinanter}{chapter.4}% 31
+\BOOKMARK [1][-]{section*.46}{Oppgaver}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{Grenseverdier og kontinuitet}{}% 33
+\BOOKMARK [1][-]{section.5.1}{Grenseverdier}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.2}{Kontinuitet}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{Derivasjon}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Definisjoner }{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Derivasjonsregler}{chapter.6}% 38
+\BOOKMARK [2][-]{subsection.6.2.1}{Den deriverte}{section.6.2}% 39
+\BOOKMARK [2][-]{subsection.6.2.2}{Den deriverte av element\346re funksjoner}{section.6.2}% 40
+\BOOKMARK [2][-]{subsection.6.2.3}{Kjerneregelen}{section.6.2}% 41
+\BOOKMARK [2][-]{subsection.6.2.4}{Produkt- og divisjonsregelen}{section.6.2}% 42
+\BOOKMARK [1][-]{section*.64}{Oppgaver}{chapter.6}% 43
+\BOOKMARK [0][-]{chapter.7}{Funksjonsdr\370fting}{}% 44
+\BOOKMARK [1][-]{section.7.1}{Monotoniegenskaper}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.2}{Ekstremalpunkt}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.3}{Asymptoter}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.4}{Konvekse og konkave funksjoner}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.5}{Injektive funksjoner}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.6}{Omvendte funksjoner}{chapter.7}% 50
+\BOOKMARK [0][-]{chapter.8}{Vedlegg}{}% 51
+\BOOKMARK [1][-]{section.8.1}{Navn p\345 funksjoner}{chapter.8}% 52
+\BOOKMARK [1][-]{section.8.2}{\305 l\370se likninger ved bytte av variabel}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.3}{Eulers tall}{chapter.8}% 54
+\BOOKMARK [1][-]{section.8.4}{Tangeringslinja til en graf}{chapter.8}% 55

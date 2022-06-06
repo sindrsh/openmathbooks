@@ -122,11 +122,11 @@ Hvis $ a_1+a_2=b $ og $ {a_1a_2=c}$, er
 	\begin{equation}\label{abc}
 		ax^2+bx+c=0
 	\end{equation}
-	hvor $ a, b $ og $ c $ er konstanter. Da er $ x $ gitt ved \textit{abc}-formelen:
-	\begin{align}
+	hvor $ a, b, c \in \mathbb{R}$. Da er 
+	\begin{flalign*}
 		&&\qquad\qquad\qquad	x&= \frac{-b\pm\sqrt{b^2-4ac}}{2a} &&\qquad(\textit{abc}\text{\,-\,formelen})
-	\end{align}
-	Hvis $ {x=x_1} $ og $ {x=x_2} $ er løsninger gitt av \textit{abc}-formelen, kan vi skrive
+	\end{flalign*}
+	Hvis $ {x=x_1} $ og $ {x=x_2} $ er løsningene gitt av \textit{abc}-formelen, er
 	\begin{equation}\label{abcfakt}
 		ax^2+bx+c=a(x-x_1)(x-x_2)
 	\end{equation}
@@ -353,10 +353,10 @@ Dette betyr at
 \section{Eulers tall}
 \textit{Eulers tall}\index{eulers tall}\index{e} er en konstant som har så stor betydning i matematikk at den har fått sin egen bokstav; \sym{$ e $}. Tallet er irrasjonalt\footnote{Og \net{https://en.wikipedia.org/wiki/Transcendental_number}{trascendentalt}.}, og de ti første sifrene er
 \st{\[ e=2.718281828... \]}
-De mest fascinerende egenskapene til dette tallet kommer til syne når man undersøker funksjonen ${f(x)= e^x} $. Dette er en eksponentialfunksjon som er så viktig at den rett og slett går under navnet \\\textit{eksponentialfunksjonen}.
-\fig{ekspfunk}
+De mest fascinerende egenskapene til dette tallet kommer til syne når man undersøker funksjonen ${f(x)= e^x} $. Dette er en eksponentialfunksjon som er så viktig at den rett og slett går under navnet \\\textit{eksponentialfunksjonen}. Denne funksjonen skal vi undersøke nærmere i \refved{eulerstallfork} og \refkap{Derivasjon}.
+\fig{ekspfunk}i 
 \section{Logaritmer}
-I \mb\, så vi på potenstall, som består av et grunntall og en eksponent. En \textit{logaritme} er en matematisk operasjon relativ til et tall. Hvis en logaritme er relativ til grunntallet til en potens, vil operasjonen resultere i ekspontenten.\vsk
+I \mb\, så vi på potenstall, som består av et grunntall og en eksponent. En \outl{logaritme} er en matematisk operasjon relativ til et tall. Hvis en logaritme er relativ til grunntallet til en potens, vil operasjonen resultere i ekspontenten.\vsk
 
 Logaritmen relativ til 10 skrives $ \log_{10} $. Da er for eksempel
 \[ \log_{10} 10^2 = 2 \]
@@ -366,7 +366,7 @@ Følelig kan vi skrive
 \[ 1000 = 10^{\log_{10} 1000} \]
 Med potensreglene som ugangspunkt (se \mb), kan man utlede mange regler for logartimer.\regv
 \regdef[Logaritmer]{
-La $ \log_a $ betegne logaritmen relativ til $ a\in\{\mathbb{R} | a\neq0 \} $. For $ m\in\mathbb{R} $ er da
+La $ \log_a $ betegne logaritmen relativ til $ {a>0}$. For $ m\in\mathbb{R} $ er da
 \begin{equation}
 	\log_a a^m = m
 \end{equation}
@@ -382,9 +382,9 @@ Alternativt kan vi skrive \vs
 	\[ 3 = 8^{\log_8 3} \]
 }
 \spr{
-	\sym{$ \log_{10}$} skrives ofte som \sym{$ \log $}, mens \sym{$ \log_e $} skrives ofte som \sym{$ \ln $} eller (!) \sym{log}. Når man bruker digitale hjelpemidler til å finne verdier til logaritmer er det derfor viktig å sjekke hva som er grunntallet. I denne boka skal vi skrive \sym{$ \log_e $} som \sym{$ \ln $}. \vsk 
+	\sym{$ \log_{10}$} skrives ofte som \sym{$ \log $}, mens \sym{$ \log_e $} skrives ofte som \sym{$ \ln $} eller (!) \sym{log}. Når man bruker digitale hjelpemidler til å finne verdier til logaritmer er det derfor viktig å sjekke hva som er grunntallet. I denne boka skal vi skrive \sym{$ \log_e $} som \sym{$ \ln $}.	\\[5pt]
 	
-	Logaritmen med $ e $ som grunntall kalles den \textit{naturlige logaritmen}.
+	Logaritmen med $ e $ som grunntall kalles den \outl{naturlige logaritmen}.
 }
  \regv
 \eks[3]{ \vsb
@@ -392,19 +392,23 @@ Alternativt kan vi skrive \vs
 }
 \eks[4]{ \vsb
 	\[ \ln e^{-3} = -3 \]
-}
-\reg[Logaritmeregler]{
-\notesm{Logaritmereglene er her gitt ved den naturlige logaritmen. De samme regelene vil gjelde ved å erstatte $ \ln $ med $ \log_a $, og $ e $ med $ a $, for et vilkårlig tall $ a $.
-} \os
+} \vsk
 
-Gitt de reelle tallene $ x$ og $y$, alle forskjellige fra 0. Da er	
+\reg[Logaritmeregler]{
+\notesm{Logaritmereglene er her gitt ved den naturlige logaritmen. De samme regelene vil gjelde ved å erstatte $ \ln $ med $ \log_a $, og $ e $ med $ a $, for $ a>0 $.
+} \vsk
+
+For $ {x, y>0} $ har vi at \vs
 \begin{align}
 	\ln e&= 1\label{loga}\vn	
 	\ln 1 &= 0 \label{log1}\vn
 	\ln (xy)&=\ln x + \ln y \label{logxy} \vn
-	\ln \left(\frac{x}{y}\right)&= \ln x - \ln y \label{logxdivy} \vn
-	\ln x^y &= y \ln x \label{logxexpy}
+	\ln \left(\frac{x}{y}\right)&= \ln x - \ln y \label{logxdivy} 
 \end{align}
+For et tall $ y $ og $ x>0 $, er
+\begin{equation}
+		\ln x^y = y \ln x \label{logxexpy}
+\end{equation}
 }
 \eks[1]{\vsb
 \[ \ln(ex^5) =\ln e+\ln x^5=1+5\log x\]
@@ -441,7 +445,7 @@ Gitt de reelle tallene $ x$ og $y$, alle forskjellige fra 0. Da er
 }
 \newpage
 \section{Forklaringer}
-\fork{Polynomdivisjon (\ref{polydiv})}{
+\fork{\ref{polydiv} Polynomdivisjon}{
 Gitt polynomene
 \alg{
 &P_m\text{\quad hvor }ax^m\text{ er leddet med høyest grad}\vn
@@ -462,7 +466,7 @@ Dermed er
 Vi kan nå stadig gjenta prosedyren fra \eqref{polydivforkla} og \eqref{polydivforklb}, hvor høgresiden i \eqref{polydivu} får ledd med grad stadig mindre enn $ {m-n} $, fram til polynomet i telleren på høgresiden får grad $ n-1 $.
 }
 \newpage
-\fork{Faktorisering av polynom}{
+\fork{\ref{polyfakt} Faktorisering av polynom}{
 (i) Vi starter med å vise at
 \begin{center}
 	Hvis $ P $ er delelig med $ x-a $ 

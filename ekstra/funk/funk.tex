@@ -1,0 +1,64 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../ekstra_preamb_nn}
+
+\begin{document}
+\fork{L'hopital 2}{
+	Vi har at
+	\alg{
+		\lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f}}{\frac{1}{g}} 
+	}
+	Da $ {\lim\limits_{x\to a} f=\lim\limits_{x\to a} g=\infty} $, må $ {\lim\limits_{x\to a} \frac{1}{f}=\lim\limits_{x\to a}\frac{1}{g}=0} $. Av Lhopital1?? har vi da at 
+	\alg{
+		\lim\limits_{x\to a} \frac{g}{f}&=\lim\limits_{x\to a} \frac{\frac{1}{f^2}f'}{\frac{1}{g^2}g'} 
+	}
+	Multipliserer vi begge sider med $ \lim\limits_{x\to a} \frac{f^2}{g^2} $, får vi at
+	\alg{
+		\lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}
+	}	
+}
+
+\eks{
+	Gitt funksjonen
+	\[ f(x)=\sin x\quad,\quad x\in[-2, 4] \]	
+	\textbf{a)} Finn infleksjonspunktene til $ f $.
+	
+	\textbf{b)} Finn vendepunktene til $ f $. \\
+	
+	\sv
+	\textbf{a)} Infleksjonspunktene finner vi der hvor $ f''(x)=0 $:
+	\alg{f''(x) &= 0\\
+		(\sin x)'' &= 0 \\
+		-\sin x &= 0 	}
+	Av $ {x\in D_f} $ er det $ {x=0} $ og $ {x=\pi }$ som oppfyller kravet fra ligningen over. For å finne ut om $ f'' $ skifter fortegn i disse punktene, setter vi opp et fortegnsskjema:
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=2]	
+			\draw[color=black] (0,-0.25) -- (0,1.25);
+			\node[anchor=south] at (0,1.25) { $-2$};  
+			\draw[color=black] (2,-0.25) -- (2,1.25);
+			\node[anchor=south] at (2,1.25) { $\pi$};	
+			\draw[color=black] (3,-0.25) -- (3,1.25);
+			\node[anchor=south] at (3,1.25) { $4$};		
+			\draw[dashed,color=black] (0,1) -- (3,1);
+			\draw[dashed,color=black] (0,0.5) -- (1,0.5);
+			\draw[dashed,color=black] (2,0.5) -- (3,0.5);	
+			\draw[color=black] (1,0.5) -- (2,0.5);	
+			\node[anchor=east] at (0,0.5) { $\sin x$};  		
+			\node[anchor=east] at (0,1) { $-1$};  
+			\draw[color=black] (1,-0.25) -- (1,1.25);
+			\node[anchor=south] at (1,1.25) { $0$};    
+			\draw[color=black] (0,0) -- (1,0);
+			\draw[color=black] (2,0) -- (3,0);	    
+			\draw[dashed,color=black] (1,0) -- (2,0);    
+			\node[anchor=east] at (0,0) {$f''$};     
+			\filldraw (1,0) circle[radius=1pt] ;   	
+			\filldraw (2,0) circle[radius=1pt] ; 	
+		\end{tikzpicture}
+	\end{figure}
+	
+	$ f'' $ går altså fra positiv til negativ i $ {x=0} $ og fra negativ til positiv i $ {x=\pi} $. Dette betyr at $ f $ går fra konveks til konkav i $ {x=0} $ og fra konkav til konveks i $ {x=\pi }$.
+}
+\end{document}
+
+
