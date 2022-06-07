@@ -31,4 +31,5 @@ The books are licensed under CC BY-NC-SA 4.0. This means you are free to downloa
 
 ### Contact
 sindre.heggen@gmail.com
+
 Please join the [OpenMathBooks discord channel](https://discord.gg/jz9mPjkCNb) to enter discussions and/or provide feedback about the books.
