@@ -23,7 +23,7 @@ The books are found here:
 
 Still to come:
 - Full solutions manuals
-- Books in nynorsk and enlish translations
+- Books in nynorsk and english translations
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
 ### License
