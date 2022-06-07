@@ -21,7 +21,7 @@ The books are found here:
 - [Teoretisk matematikk 2 (bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing)  
 - [Anvendt matematikk 2 (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing) 
 
-Still to come:
+To come:
 - Full solutions manuals
 - Books in nynorsk and english translations
 
