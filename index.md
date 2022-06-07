@@ -7,9 +7,9 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
   Anvendelser av matematikken presentert i MB.
 - **Teoretisk matematikk 1(TM1)** <br/>
   Matematikk knytt til VGS-fagene 1T og R1.
-- **Teoretisk matematikk 2** <br/>
+- **Teoretisk matematikk 2 (TM2)** <br/>
   Matematikk knytt til VGS-faget R2.
-- **Anvendt matematikk 2** <br/>
+- **Anvendt matematikk 2 (AM2)** <br/>
   Anvendelser av matematikken presentert i TM1 og TM2.
   
 ### Files
