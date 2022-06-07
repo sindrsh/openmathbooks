@@ -15,10 +15,11 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 ### Files
 
 The books are found here
-
-- [First Principles of Math (English)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/FP_eng.pdf)
-- [Matematikken sine byggesteinar (Norwegian, nynorsk)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB.pdf)
-- [Matematikkens byggesteiner (Norwegian, bokmål)](https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf) 
+- [Matematikkens byggesteiner (bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)) 
+- [Anvendt matematikk 1 (bokmål)]([[https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing)) 
+- [Teoretisk matematikk 1 (bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing))
+- [Teoretisk matematikk 2(bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing))  
+- [Anvendt matematikk 2 (bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)) 
 
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
