@@ -61,7 +61,16 @@ At et objekt legger til seg selv og en annen verdi er så vanlig i programmering
 5\\
 6
 }
-\subsection*{Boolske verdier og vilkår}
+\newpage
+\subsection{Egne funksjoner}
+I Pyton  kan man enkelt lage sine egne funksjoner. En funksjon kan utføre handlinger, og den kan \outl{returnere} (return på engelsk) ett eller flere objekt. Den kan også ta imot argumenter. Koden vi skriver inni en funksjon blir bare utført hvis vi \outl{kaller} (call på engelsk) på funsjonen.
+\pythonut{func.py}{
+Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:  Hello! \\
+5
+
+}
+
+\subsection{Boolske verdier og vilkår}
 Verdiene \pytype{True} og \pytype{False} kalles \outl{boolske verdier}. Disse vil være resultatet når vi sjekker om objekter er like eller ulike. For å sjekke dette har vi de \outl{sammenlignende operatorene}:
 \begin{center}
 	\begin{tabular}{c|c}
@@ -91,7 +100,7 @@ True
 \spr{
 Sjekker som bruker de sammenlignende og de logiske operatorene, skal vi heretter kalle \outl{vilkår}.
 }
-\subsection*{\pymet{if, else og elif} uttrykkene}
+\subsection{\pymet{if, else og elif} uttrykkene}
 Når vi ønsker å utføre handlinger bare \textsl{hvis} et vilkår er sant (\pytype{True}), bruker vi \pymet{if} uttrykket foran vilkåret. Koden vi skriver med innrykk under \pymet{if}-linjen, vil bare bli utført hvis vilkåret gir \pytype{True}. 
 \pythonut{if.py}{
  Jepp, c er større enn b
@@ -105,7 +114,7 @@ Men denne kommer, fordi vilkåret i if-linja over var False
 Nå er vi sikre på at 1 < b < 3
 }
 
-\subsection*{Lister}
+\subsection{Lister}
 Lister kan vi bruke for å samle objekter. Objektene som er i listen kalles \outl{elementene} til listen.
 \python{list1.py}
 Elementene i lister er \outl{indekserte}. Første objekt har indeks 0, andre objekt har indeks 1 og så videre:
@@ -120,6 +129,7 @@ Med den innebygde funksjonen \texttt{append()} kan vi legge til et objekt i ende
 [3] \newline
 [3, 7]
 }
+\newpage
 Med funksjonen \texttt{pop()} kan vi hente ut et objekt fra listen
 \pythonut{list4.py}{
 a = 19 \\
@@ -130,8 +140,9 @@ min\_liste = [6, 15]
 \info{Forklar for deg selv}{
 Hva er forskjellen på å skive \texttt{a = min\_liste[1]} og å skrive \texttt{a = min\_liste.pop(1)}?
 }
-
-\subsection*{\pymet{for} looper}
+\newpage
+\subsection{Looper; \pymet{for} og \pymet{while}}
+\subsubsection{\pymet{for} loop}
 For objekter som inneholder flere elementer, kan vi bruke \pymet{for}-looper til å utføre handlinger for hvert element. Handlingene må vi skrive med et innrykk etter \pymet{for}-uttrykket:
 \pythonut{for.py}{
 5 \\
@@ -147,14 +158,14 @@ For objekter som inneholder flere elementer, kan vi bruke \pymet{for}-looper til
 Å gå gjennom hvert element i (for eksempel) en liste kalles \outl{å iterere over listen}.
 }\vsk
 
-Ofte er det ønskelig å iterere over heltallene $ 0, 1, 2 $ og så videre. Til dette kan vi bruke \pymet{range()}-funksjonen:
+Ofte er det ønskelig å iterere over heltallene $ 0, 1, 2 $ og så videre. Til dette kan vi bruke \pymet{range()}:
 \pythonut{forrang.py}{
 0 \\
 1 \\
 2
 }
-\subsection*{\pymet{while} loop}
-Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi bruke \pymet{while} metoden:
+\subsubsection{\pymet{while} loop}
+Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi bruke \pymet{while} metoden: \regv
 \pythonut{while1.py}{
 1\\
 2\\
@@ -163,9 +174,6 @@ Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi 
 }
 \newpage
 
-\info{Obs!}{
-	Bruk aldri innebygde funksjoner som navn på variabler.
-}
 
 
 \end{document}

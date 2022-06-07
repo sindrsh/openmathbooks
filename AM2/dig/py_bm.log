@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  5 JUN 2022 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**num_bm.tex
-(./num_bm.tex
+**py_bm.tex
+(./py_bm.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -1039,11 +1039,11 @@ nous mode
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ))
-\num_bm@idxfile=\write6
-\openout6 = `num_bm.idx'.
+\py_bm@idxfile=\write6
+\openout6 = `py_bm.idx'.
 
 
-Writing index file num_bm.idx
+Writing index file py_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1076,25 +1076,27 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@rg=\count346
 \c@opg=\count347
+\c@vedl=\count348
+\c@vedleq=\count349
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count348
+\lst@mode=\count350
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count349
+\lst@length=\count351
 \lst@currlwidth=\dimen330
-\lst@column=\count350
-\lst@pos=\count351
+\lst@column=\count352
+\lst@pos=\count353
 \lst@lostspace=\dimen331
 \lst@width=\dimen332
-\lst@newlines=\count352
-\lst@lineno=\count353
+\lst@newlines=\count354
+\lst@lineno=\count355
 \lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count354
-\lst@skipnumbers=\count355
+\c@lstnumber=\count356
+\lst@skipnumbers=\count357
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1146,8 +1148,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen334
-\Hy@linkcounter=\count356
-\Hy@pagecounter=\count357
+\Hy@linkcounter=\count358
+\Hy@pagecounter=\count359
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1160,8 +1162,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count358
-\pdfmajorversion=\count359
+\Hy@SavedSpaceFactor=\count360
+\pdfmajorversion=\count361
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1169,7 +1171,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count360
+\c@Hy@tempcnt=\count362
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1185,7 +1187,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count361
+\Fld@menulength=\count363
 \Field@Width=\dimen336
 \Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -1201,9 +1203,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count362
-\c@Item=\count363
-\c@Hfootnote=\count364
+\Hy@abspage=\count364
+\c@Item=\count365
+\c@Hfootnote=\count366
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1213,8 +1215,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count365
-\c@bookmark@seq@number=\count366
+\Fld@listcount=\count367
+\c@bookmark@seq@number=\count368
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1227,8 +1229,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(../bm.tex) (./num_bm.aux)
-\openout1 = `num_bm.aux'.
+(../bm.tex) (./py_bm.aux)
+\openout1 = `py_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -1290,16 +1292,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count367
+\scratchcounter=\count369
 \scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count368
-\nofMParguments=\count369
+\nofMPsegments=\count370
+\nofMParguments=\count371
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count370
+\MPscratchCnt=\count372
 \MPscratchDim=\dimen339
-\MPnumerator=\count371
-\makeMPintoPDFobject=\count372
+\MPnumerator=\count373
+\makeMPintoPDFobject=\count374
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1325,7 +1327,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count373
+\c@lstlisting=\count375
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 6.
 
@@ -1338,150 +1340,132 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count374
+\c@section@level=\count376
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
 
-(./num_bm.out) (./num_bm.out)
+(./py_bm.out) (./py_bm.out)
 \@outlinefile=\write7
-\openout7 = `num_bm.out'.
+\openout7 = `py_bm.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+0.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+0.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-8.
+10.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-8.
+10.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 8.
+(Font)              <10.95> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 8
-.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-8.
+10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-4.
+0.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./helloworld.py)
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-8.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./strintfloat.py) [1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./opr.py) (./strintfloatf
-unk.py) [2]
-(./assign.py) (./aplus1.py) [3] (./bool1.py) (./bool2.py)
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-[]\T1/lmr/m/n/10.95 Sjekker som bruker de sam-men-lig-nende og de lo-giske op-e
-r-a-
+)
+Overfull \hbox (0.93387pt too wide) in paragraph at lines 10--11
+\T1/lmr/m/n/10.95 bruker NumPy-arrays ist-e-den-for lis-ter går raskere, og at 
+NumPy-arrays 
  []
 
-[4]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 94.
- (./if.py) (./else.py) (./elif.py) [5] (./list1.py) (./list1.py) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
-[][][][]\T1/lmr/m/n/9 Kort for-t-alt be-tyr det at det bare er noen typer ob-je
-k-ter som kan bruke denne
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (./array1.py)
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]\T1/lmr/m/n/10.95 Til forskjell fra lis-ter, er el-e-mentene skilt bare med m
+el-lom-rom
  []
 
-(./list3.py) (./list4.py)
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
-[]\T1/lmr/m/n/10.95 Hva er forskjellen på å skive \T1/lmtt/m/n/10.95 a = min_li
-ste[1] \T1/lmr/m/n/10.95 og å skrive \T1/lmtt/m/n/10.95 a =
- []
+[1
 
-[7] (./for.py)
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-[]\T1/lmr/m/n/10.95 Å gå gjen-nom hvert el-e-ment i (for ek-sem-pel) en liste k
-alles []\T1/lmr/bx/n/10.95 å
- []
 
-[8] (./forrang.py) (./while1.py) [9] [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
- (./num_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
-Package rerunfilecheck Info: File `num_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 3C58151CCC1B7AD455674AA08ECF90EF;146.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./arrayopr.py)
+(./skalkryss.py) [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
+ (./py_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
+
+
+Package rerunfilecheck Warning: File `py_bm.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `py_bm.out':
+(rerunfilecheck)             Before: E502FC885F51A21FA7B223AE5A70A117;202
+(rerunfilecheck)             After:  DA4FB33212288DBB4120742B62A488A3;101.
  ) 
 Here is how much of TeX's memory you used:
- 33358 strings out of 481239
- 641260 string characters out of 5920378
- 1234359 words of memory out of 5000000
- 47714 multiletter control sequences out of 15000+600000
- 613029 words of font info for 95 fonts, out of 8000000 for 9000
+ 33098 strings out of 481239
+ 637422 string characters out of 5920378
+ 1168838 words of memory out of 5000000
+ 47633 multiletter control sequences out of 15000+600000
+ 590857 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,104p,875b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lm
-bx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-tt9.pfb>
-Output written on num_bm.pdf (10 pages, 311398 bytes).
+ 70i,7n,104p,874b,1706s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.0.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.0.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/pu
+blic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+Output written on py_bm.pdf (2 pages, 200934 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 159 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

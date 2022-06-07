@@ -48,13 +48,26 @@
 	\newpage
 	\import{inv/}{inv_bm}
 
+	\titleformat{\chapter}[hang]
+	{\normalfont\LARGE\bfseries}{}{}{\vspace{-1cm}\Huge}
+	\chapter*{Vedlegg \ref{vdlfunknavn}-\ref{vdltangent} \label{Tips} \addcontentsline{toc}{chapter}{Vedlegg A-D}}
+	\phantomsection
+	\vspace{20 pt}
 	
-	\chapter{Vedlegg}
-	\newpage
 	\import{vedl/}{funknavn_bm}
 	\import{vedl/}{bytvar_bm}
+	\import{vedl/}{sincostan_bm}	
 	\import{vedl/}{ekspfunk_bm}
 	\import{vedl/}{tan_bm}
+	
+	{\printindex \addtocontents{toc}{\protect\vspace{-5pt}}
+		\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
+	
+	\chapter*{Fasit}
+	
+	
+
+
 	
 
 	

@@ -1,0 +1,41 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\section{Python}
+\mers{Denne teksten bygger på teksten om Python i \am}.
+\subsection{NumPy}
+I Python kan man importere det som kalles \outl{bibliotek} for å få tilgang til enda flere typer objekter, funksjoner og liknende. NumPy er et bibliotek som inneholder typen \pymet{numpy.ndarray}. Denne typen har mange fellestrekk med en liste, men skiller seg ut ved at den inneholder et bestemt antall elemener. Dette gjør blant annet at prossesser som bruker NumPy-arrays istedenfor lister går raskere, og at NumPy-arrays egner seg bedre til regneoperasjoner.\vsk
+
+For å lage NumPy-arrays må vi importere NumPy-biblioteket: \regv
+\pythonut{array1.py}{
+[1 2] \newline
+[0 1 2 3]\newline
+[0. 0. 0.] \newline
+[ 2.  5.  8. 11.]
+
+}
+\info{Merk}{
+Til forskjell fra lister, er elementene skilt bare med mellomrom når de printes.
+}
+
+\newpage
+\subsubsection{Klassisek regnearter}
+Regneoperasjoner mellom NumPy-arrays blir utført elementvis:
+\pythonut{arrayopr.py}{
+[12 24] \newline
+[20 80]
+}
+\subsubsection{Vektoroperasjoner}
+NumPy-arrays fungerer ypperlig til å representere vektorer, og har innebygde metoder for å finne skalarprodukt, kryssprodukt og determinanter:\regv
+
+\pythonut{skalkryss.py}{
+-33 \newline
+[-5  1 17] \newline
+17.0
+}
+
+
+\end{document}

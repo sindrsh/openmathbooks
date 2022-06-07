@@ -1,6 +1,11 @@
-\BOOKMARK [0][-]{chapter.1}{GeoGebra}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Knapper og kommandoer}{chapter.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Numeriske metoder}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Introduksjon til Python}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.2}{Newtons metode}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{Trapesmetoden}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.1}{Digitale verkt\370y}{}% 1
+\BOOKMARK [1][-]{section.1.1}{GeoGebra}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{CAS}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Knapper og kommandoer}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Python}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{NumPy}{section.1.2}% 6
+\BOOKMARK [0][-]{chapter.2}{Numeriske metoder}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Newtons metode}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Trapesmetoden}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{Blandede oppgaver}{}% 10
+\BOOKMARK [1][-]{section*.12}{Oppgaver}{chapter.3}% 11

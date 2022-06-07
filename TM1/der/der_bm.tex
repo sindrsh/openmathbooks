@@ -121,10 +121,7 @@ For en variabel $ x $ og $ r\in\mathbb{R} $ er
 \begin{align}
 & (e^x)' =e^{x} \label{derex} \vn	
 &  (x^r)' = r x^{r-1} \label{derxr} \vn
-& (\ln x)'=  \frac{1}{x} \label{derlnx} \vn
-& (\sin x)' = \cos (x) \label{dercosx} \vn
-& (\cos x)' = -\sin (x) \label{dersinx} \vn
-& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x \label{dertanx}
+& (\ln x)'=  \frac{1}{x} \label{derlnx}
 \end{align}
 }	
 \reg[Den deriverte av sammensatte funksjoner]{
@@ -330,47 +327,6 @@ Da\footnote{Se oppgave ??.}  ${\left(x\right)'=1} $, har vi at
 \[ 1 = x\left(\ln x \right)' \]
 Altså er
 \[ \left(\ln x\right)'= \frac{1}{x} \]
-
-Vi skal her anvende de to ligningene (se vedlegg??)
-\alg{&\lim\limits_{x\to0} \frac{\sin x}{x}=1 \tag{I} \label{Isinxx}\br
-	&\lim\limits_{x\to0} \frac{\cos x-1}{x}=0\tag{II} \label{Icosxx}	
-}
-Av \eqref{derdefaeq} har vi at
-\[ (\cos x)'= \lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h} \]
-Ved (\ref{cu-v}) kan vi skrive
-\alg{
-	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos h-\sin x\sin h-\cos x}{h} \\
-	&=\lim\limits_{h\to 0}\frac{\left[\cos h-1\right]\cos x-\sin x\sin h}{h} \\
-	&= \lim\limits_{h\to 0}\frac{\cos h-1}{h}\cos x- \lim\limits_{h\to 0} \frac{\sin h}{h}\sin x \\
-	&= 0-1\cdot\sin x \\
-	&= -\sin x
-}
-Mellom tredje og fjerde linje i likningen over brukte vi (\ref{Isinxx}) og (\ref{Icosxx}). \vsk
-
-\textbf{Likning (\ref{dersinx})}\\
-Av (\ref{cossomsin}), (\ref{sinsomcos}) og (\ref{-cosxcosx}) har vi at
-\alg{
-	\sin x &= \cos\left(x-\frac{\pi}{2}\right) \br
-	\sin\left(\frac{\pi}{2}-x\right)&= \cos x
-}
-Bruker vi det faktum at $ {(\cos x)'=-\sin x} $, i kombinasjon med kjerneregelen, får vi at
-\algv{
-	(\sin x)' &= \left(\cos\left(x-\frac{\pi}{2}\right)\right)' \\
-	&= -\sin\left(x-\frac{\pi}{2}\right)\cdot 1 \\
-	&= \sin\left(\frac{\pi}{2}-x\right) \\
-	&= \cos x
-}
-
-\textbf{Likning (\ref{dertanx})}\\
-Av kjerneregelen og \eqref{derdivreg} har vi at
-\alg{
-	(\tan x)' &= \left(\frac{\sin x}{\cos x}\right)' \\
-	&= \cos x \cos^{-1}x +\sin x\left(\cos^{-1}\right)'\\
-	&= 1 +\sin x(-\cos^{-2}x)(-\sin x) \\
-	&= 1+\tan^2 x\\
-	&= \frac{\cos^2 x+\sin^2 x}{\cos^2 x}  \\
-	&= \frac{1}{\cos^2 x}
-}
 }
 
 

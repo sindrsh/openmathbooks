@@ -1,13 +1,54 @@
 \input{../../doc}
-\input{../am2_bm}
 \input{../../preamb}
+\input{../bm}
 
 \begin{document}
-	
-	
-	
-\section{Knapper og kommandoer}
-\subsection*{Grafikkfelt}
+\section{GeoGebra}	
+\subsection{CAS}	
+\subsubsection{Definere variabler \label{defvar}}
+Hvis vi ønsker å definere variabler som vi skal bruke i andre celler, må vi skrive \texttt{:=} . I figuren under er forskjellen mellom \texttt{=} og \texttt{:=} demonstrert med et forsøk på å finne $ f'(x) $ til funksjonen $ f(x)=x^2 $:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/fder}
+\end{figure}
+Av figuren legger vi også merke til at celle 3 og celle 4 er markert med en hvit runding. Dette indikerer at størrelsen vil vises i \textsl{Grafikkfelt} eller \textsl{Grafikkfelt 3D} hvis man trykker på markøren (den skal da bli blå).
+\subsubsection{Celle-referanser}
+
+Ofte kommer vi ut for situasjoner der vi ønsker å bruke uttrykket vi har funnet i tidligere celler. Som eksempel har vi i celle 1 skrevet inn volumet $ v $ av en kule med radius $ r $, mens i celle 2 har vi volumet $ V $ av en kule med radius $ R $. Ønsker vi å finne forholdet mellom disse, kan vi bruke cellereferanser som hjelpemiddel. For å referere til celle 1 skriver vi \texttt{\$1} og for celle 2 skriver vi \texttt{\$2}. Forholdet $ \frac{v}{V} $ kan vi da skriver som \texttt{\$1/\$2}:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/ref}
+\end{figure}
+
+\subsubsection{Lister}
+Når et uttrykk står inni sløyfeparanteser \{\}, betyr det at det er laget en liste. En liste inneholder flere elementer som vi kan hente ut. Dette gjør vi ved å skrive paranteser bak listen, hvor vi angir nummeret til elementet i listen.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/liste}
+\end{figure}
+
+Lister bruker vi også når vi skal løse liginger med flere ukjente:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/lign}
+\end{figure}
+\subsubsection{Høyre- og venstresiden \label{hogl}}
+De fleste uttrykkene vi jobber med i CAS inneholder et $ = $ tegn. Disse uttrykkene er en ligning med en venstre- og høyreside. Ofte ønsker vi å bruke uttrykket på bare én av disse sidene, og oftest høyresiden. Som eksempel har vi løst ligningen $ (a+b)x = c $ og definert funksjonen $ f(x)= d x^2 $. Vi ønsker så å sette løsningen av ligningen inn i funksjonen. Dette gjør vi ved hjelp av \texttt{HøyreSide}-kommandoen (resulatet uten bruken av denne er vist i celle 4).
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/hoyre}
+\end{figure}
+\subsubsection{ByttUt}
+Noen ganger ønsker vi å endre en variabel i et utrykk. For å gjøre dette kan vi anvende \cms{ByttUt}{<Uttrykk>, <Liste med forandringer>}. La oss se på uttrykket
+\[ \frac{a+b}{c} \]
+Vi ønsker nå å sette $ {a=d }$, $ {b=2} $ og $ {c=f} $. Dette kan vi gjør ved å skrive følgende:
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/cas2}
+\end{figure}	
+\newpage
+\subsection{Knapper og kommandoer}
+\subsubsection*{Grafikkfelt}
 Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er fra venstre.\vsk
 
 \begin{tabular}{@{}l}
@@ -43,6 +84,7 @@ Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er 
 	\\\hline	
 \end{tabular}
 \newpage
+
 \subsubsection{Kommandoliste}
 \cm{abs}{<x>}
 {Finner lengden til et objekt \textit{x}.
@@ -114,9 +156,9 @@ Løser en likning med $ x $ som ukjent.
 {Finner alle løsninger av en gitt likning med en gitt variabel som ukjent.}
 
 \cm{Maks}{<Funksjon>, <Start x-verdi>, <Slutt x-verdi>} {Finner absolutt maksimum og maskimalpunkt for en funksjon $ f $ på et gitt intervall.}
-
+\newpage
 \cm{Min}{<Funksjon>, <Start x-verdi>, <Slutt x-verdi>} {Finner absolutt minimum og minimumspunkt for en funksjon $ f $ på et gitt intervall.}
-
+\newpage
 \cm{Nullpunkt}{<Polynom> }
 {Finner alle nullpunkter til et polynom.}
 

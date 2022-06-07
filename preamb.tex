@@ -92,8 +92,8 @@
 
 \newcounter{rg}
 \numberwithin{rg}{chapter}
-\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
-\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Emerald!7] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{R\,\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{D\,\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
@@ -258,7 +258,7 @@ Rekn ut.
 \newcommand{\refop}[1]{{\color{blue}Oppgave \ref{#1}}}
 \newcommand{\refops}[1]{{\color{blue}oppgave \ref{#1}}}
 
-\newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{AM}}
+\newcommand{\am}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{AM1}}
 \newcommand{\mb}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{MB}}
 \newcommand{\tmen}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{TM1}}
 \newcommand{\tmto}{\net{https://sindrsh.github.io/FirstPrinciplesOfMath/}{TM2}}
@@ -289,6 +289,13 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 
+
+%Vedlegg
+\newcounter{vedl}
+\newcounter{vedleq}
+\renewcommand\thevedl{\Alph{vedl}}	
+\newcommand{\vedlegg}[1]{\refstepcounter{vedl}\section*{Vedlegg \thevedl: #1}  \setcounter{vedleq}{0}}
+\newcommand{\nreqvd}{\refstepcounter{vedleq}\tag{\thevedl \thevedleq}}
 
 %%% Writing code
 

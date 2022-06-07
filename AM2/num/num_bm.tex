@@ -4,89 +4,8 @@
 
 
 \begin{document}
-\section{Introduksjon til Python}
-\pythonut{helloworld.py}{
-Hello world!
-}
-
-Python deler talll inn i tre typer:
-\begin{center}
-	\begin{tabular}{r|l}
-		\texttt{int} & reelle heltall \\
-		\texttt{float} & relle tall \\
-		\texttt{complex} & komplekse tall
-	\end{tabular} 
-\end{center}
-Vi skal i denne boka konsentrere oss om \texttt{int} og \texttt{float}. Tallypene definerer vi ved å ekskludere eller inkludere punktum:
-\python{intfloat.py}
-\pythonut{opr.py}{
-a+b =  7\\
-a-b =  3\\
-a*b =  10\\
-a/b =  2.5\\
-a**b =  25\\
-a//b =  2 \\
-a\%b =  1
-}
-
-\subsubsection{Lister}
-Lister kan vi bruke for å samle objekter. Objektene som er i listen kalles \outl{elementene} til listen.
-\python{list1.py}
-Elementene i lister er \outl{indekserte}. Første objekt har indeks 0, andre objekt har indeks 1 og så videre:
-\pythonut{list1.py}{
-96 \\
-99 \\
-98
-}
-Med den innebygde funksjonen \texttt{append()} kan vi legge til et objekt i enden av listen. Dette er en \outl{innebygd funksjon}\footnote{Kort fortalt betyr det at det bare er noen typer objekter som kan bruke denne funksjonen.}, som vi skriver i enden av navnet på listen, med et punktum foran.
-\pythonut{list3.py}{
-[] \newline
-[3] \newline
-[3, 7]
-}
-Med funksjonen \texttt{pop()} kan vi hente ut et objekt fra listen
-\pythonut{list4.py}{
-a = 19 \\
-min\_liste = [6, 10, 15] \\
-a = 10 \\
-min\_liste = [6, 15]
-}
-\info{Forklar for deg selv}{
-Hva er forskjellen på å skive \texttt{a = min\_liste[1]} og å skrive \texttt{a = min\_liste.pop(1)}?
-}
-\subsubsection{\texttt{for}-looper}
-For objekter som inneholder flere elementer, kan vi bruke \pymet{for}-looper til å utføre handlinger for hvert element. Handlingene må vi skrive med et innrykk etter \pymet{for}-uttrykket:
-\pythonut{for.py}{
-5 \\
-50 \\[12pt]
-
-10\\
-100\\[12pt]
-
-15\\
-150
-}
-\spr{
-Å gå gjennom hvert element i (for eksempel) en liste kalles \outl{å iterere over listen}.
-}
-\newpage
-\begin{center}
-	\begin{tabular}{c|l} \hline
-		\texttt{print(x)} & Skriver $ x $ til terminal. \\ \hline
-		\texttt{range(a)} & Lager en følge som starter på 0, og øker med 1 fram \\
-		&til $ a-1 $ er nådd. Følgen kan indekseres som en liste.		\\ \hline
-		\texttt{for x in a} & Itererer over hvert element i $ a $. $ a $ kan være en liste, \\
-		&et array eller en følge laget av \texttt{range} \\
-	\end{tabular} 
-\end{center}
-\info{Obs!}{
-	Bruk aldri innebygde funksjoner som navn på variabler.
-}
-
 \section{Newtons metode}
-Gitt en funskjon $ f(x) $ og likningen 
-\[ f=0 \]
-hvor $ f(a)=0 $. Ved \outl{Newtons metode} gjør vi denne antakelsen for å en tilnærming $ a $: \regv
+Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Ved \outl{Newtons metode} gjør vi denne antakelsen for å en tilnærming $ a $: \regv
 \st{
 La $ x_1 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $. Vi antar da at $ |x_1-a|<|x_0-a| $. Sagt med ord antar vi at $ x_1 $ gir en bedre tilnærming for $ a $ enn det $ x_0 $ gjør.
 }
@@ -108,9 +27,7 @@ La $ x_2 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $
 Prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig\footnote{Hva som er en \textit{tilstrekkelig tilnærming} er det opp til oss selv å bestemme.} tilnærming til $ a$.
 \newpage
 \reg[Newtons metode]{
-Gitt en funskjon $ f(x) $ og likningen 
-\[ f=0 \]
-hvor ${f(a)=0 }$. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
+Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
 \nn{
 x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
 }
@@ -118,6 +35,9 @@ antas det at $ x_{n+1} $ gir en bedre tilnærming for $ a $ enn $ x_{n} $.
 }
 \spr{
 \outl{Newtons metode} kalles også \outl{Newton-Rhapsos metode}.
+}
+\info{Når er tilmærmingen god nok?}{
+Newtons metode beskriver en iterasjonsprossess som man håper at nærmer seg en verdi. Hvis meotden lykkes, vil $ x_{n+1}$ og $ x_n $ etterhvert være veldig like, og slik kan en grense for hvor liten $ {|x_{n+1}-x_n|} $ kan være fungere som et godt mål for når iterasjonsprossessen skal stoppe.
 }
 \section{Trapesmetoden} \label{Trapesmetoden}
 Gitt en funksjone $ f(x) $. Integralet $ \int_a^b f \,dx $ kan vi tilnærme ved å 

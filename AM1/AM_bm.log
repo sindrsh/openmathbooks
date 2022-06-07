@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  6 JUN 2022 23:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,25 +1076,27 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@rg=\count346
 \c@opg=\count347
+\c@vedl=\count348
+\c@vedleq=\count349
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count348
+\lst@mode=\count350
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count349
+\lst@length=\count351
 \lst@currlwidth=\dimen330
-\lst@column=\count350
-\lst@pos=\count351
+\lst@column=\count352
+\lst@pos=\count353
 \lst@lostspace=\dimen331
 \lst@width=\dimen332
-\lst@newlines=\count352
-\lst@lineno=\count353
+\lst@newlines=\count354
+\lst@lineno=\count355
 \lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count354
-\lst@skipnumbers=\count355
+\c@lstnumber=\count356
+\lst@skipnumbers=\count357
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1146,8 +1148,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen334
-\Hy@linkcounter=\count356
-\Hy@pagecounter=\count357
+\Hy@linkcounter=\count358
+\Hy@pagecounter=\count359
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1160,8 +1162,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count358
-\pdfmajorversion=\count359
+\Hy@SavedSpaceFactor=\count360
+\pdfmajorversion=\count361
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1169,7 +1171,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count360
+\c@Hy@tempcnt=\count362
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1185,7 +1187,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count361
+\Fld@menulength=\count363
 \Field@Width=\dimen336
 \Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -1201,9 +1203,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count362
-\c@Item=\count363
-\c@Hfootnote=\count364
+\Hy@abspage=\count364
+\c@Item=\count365
+\c@Hfootnote=\count366
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1213,8 +1215,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count365
-\c@bookmark@seq@number=\count366
+\Fld@listcount=\count367
+\c@bookmark@seq@number=\count368
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1300,16 +1302,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count367
+\scratchcounter=\count369
 \scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count368
-\nofMParguments=\count369
+\nofMPsegments=\count370
+\nofMParguments=\count371
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count370
+\MPscratchCnt=\count372
 \MPscratchDim=\dimen339
-\MPnumerator=\count371
-\makeMPintoPDFobject=\count372
+\MPnumerator=\count373
+\makeMPintoPDFobject=\count374
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1335,7 +1337,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count373
+\c@lstlisting=\count375
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 5.
 
@@ -1348,7 +1350,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count374
+\c@section@level=\count376
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1360,7 +1362,7 @@ LaTeX Info: Redefining \nameref on input line 5.
 
  (./kap0/framside.tex (../doc.tex)
 \GPT@outputbox=\box143
-<kap0/../fig/venn3e.pdf, id=344, 179.75156pt x 179.75156pt>
+<kap0/../fig/venn3e.pdf, id=368, 179.75156pt x 179.75156pt>
 File: kap0/../fig/venn3e.pdf Graphic file (type pdf)
 <use kap0/../fig/venn3e.pdf>
 Package pdftex.def Info: kap0/../fig/venn3e.pdf  used on input line 15.
@@ -1648,7 +1650,7 @@ r. Vi
  []
 
 [12]
-<storl/../fig/armedstorl.pdf, id=536, 223.84628pt x 75.482pt>
+<storl/../fig/armedstorl.pdf, id=566, 223.84628pt x 75.482pt>
 File: storl/../fig/armedstorl.pdf Graphic file (type pdf)
 <use storl/../fig/armedstorl.pdf>
 Package pdftex.def Info: storl/../fig/armedstorl.pdf  used on input line 165.
@@ -1881,23 +1883,23 @@ Overfull \hbox (27.6013pt too wide) in paragraph at lines 84--84
 m viser frekvensen.  
  []
 
-<stat/../fig/stat1.pdf, id=707, 227.62039pt x 156.49466pt>
+<stat/../fig/stat1.pdf, id=737, 227.62039pt x 156.49466pt>
 File: stat/../fig/stat1.pdf Graphic file (type pdf)
 <use stat/../fig/stat1.pdf>
 Package pdftex.def Info: stat/../fig/stat1.pdf  used on input line 88.
 (pdftex.def)             Requested size: 227.61983pt x 156.49426pt.
-<stat/../fig/stat2.pdf, id=708, 256.07669pt x 156.49466pt>
+<stat/../fig/stat2.pdf, id=738, 256.07669pt x 156.49466pt>
 File: stat/../fig/stat2.pdf Graphic file (type pdf)
 <use stat/../fig/stat2.pdf>
 Package pdftex.def Info: stat/../fig/stat2.pdf  used on input line 93.
 (pdftex.def)             Requested size: 256.07607pt x 156.49426pt.
 [26 <./stat/../fig/stat1.pdf> <./stat/../fig/stat2.pdf>]
-<stat/../fig/stat4.pdf, id=721, 225.63295pt x 136.09846pt>
+<stat/../fig/stat4.pdf, id=752, 225.63295pt x 136.09846pt>
 File: stat/../fig/stat4.pdf Graphic file (type pdf)
 <use stat/../fig/stat4.pdf>
 Package pdftex.def Info: stat/../fig/stat4.pdf  used on input line 100.
 (pdftex.def)             Requested size: 225.63239pt x 136.09811pt.
-<stat/../fig/stat3.pdf, id=722, 228.58398pt x 132.31433pt>
+<stat/../fig/stat3.pdf, id=753, 228.58398pt x 132.31433pt>
 File: stat/../fig/stat3.pdf Graphic file (type pdf)
 <use stat/../fig/stat3.pdf>
 Package pdftex.def Info: stat/../fig/stat3.pdf  used on input line 105.
@@ -1919,7 +1921,7 @@ on 3.1[][][]\T1/lmr/m/n/10.95 , [][]MB[][], s. 76 og opp-gave
  []
 
 [27 <./stat/../fig/stat4.pdf> <./stat/../fig/stat3.pdf>]
-<stat/../fig/stat5.pdf, id=747, 312.97928pt x 184.94093pt>
+<stat/../fig/stat5.pdf, id=777, 312.97928pt x 184.94093pt>
 File: stat/../fig/stat5.pdf Graphic file (type pdf)
 <use stat/../fig/stat5.pdf>
 Package pdftex.def Info: stat/../fig/stat5.pdf  used on input line 116.
@@ -1987,7 +1989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 blir den
  []
 
-<stat/../fig/meana.pdf, id=782, 185.52312pt x 36.19522pt>
+<stat/../fig/meana.pdf, id=812, 185.52312pt x 36.19522pt>
 File: stat/../fig/meana.pdf Graphic file (type pdf)
 <use stat/../fig/meana.pdf>
 Package pdftex.def Info: stat/../fig/meana.pdf  used on input line 203.
@@ -2004,7 +2006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 så hver av
  []
 
-<stat/../fig/meanb.pdf, id=783, 185.52312pt x 36.19522pt>
+<stat/../fig/meanb.pdf, id=813, 185.52312pt x 36.19522pt>
 File: stat/../fig/meanb.pdf Graphic file (type pdf)
 <use stat/../fig/meanb.pdf>
 Package pdftex.def Info: stat/../fig/meanb.pdf  used on input line 203.
@@ -2064,7 +2066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 vi sett at stign-ingstal-let til
  []
 
-<stat/../fig/lintopunkt.pdf, id=809, 113.81522pt x 113.81522pt>
+<stat/../fig/lintopunkt.pdf, id=839, 113.81522pt x 113.81522pt>
 File: stat/../fig/lintopunkt.pdf Graphic file (type pdf)
 <use stat/../fig/lintopunkt.pdf>
 Package pdftex.def Info: stat/../fig/lintopunkt.pdf  used on input line 234.
@@ -2252,32 +2254,32 @@ Kapittel 3.
 [46
 
 ] (./brok/brok.tex (./brok/../../doc.tex)
-<brok/../fig/br1.pdf, id=955, 28.45631pt x 56.90259pt>
+<brok/../fig/br1.pdf, id=986, 28.45631pt x 56.90259pt>
 File: brok/../fig/br1.pdf Graphic file (type pdf)
 <use brok/../fig/br1.pdf>
 Package pdftex.def Info: brok/../fig/br1.pdf  used on input line 11.
 (pdftex.def)             Requested size: 28.45624pt x 56.90244pt.
-<brok/../fig/br1a.pdf, id=956, 57.40446pt x 57.40446pt>
+<brok/../fig/br1a.pdf, id=987, 57.40446pt x 57.40446pt>
 File: brok/../fig/br1a.pdf Graphic file (type pdf)
 <use brok/../fig/br1a.pdf>
 Package pdftex.def Info: brok/../fig/br1a.pdf  used on input line 12.
 (pdftex.def)             Requested size: 57.4043pt x 57.4043pt.
-<brok/../fig/br1b.pdf, id=957, 92.97736pt x 14.725pt>
+<brok/../fig/br1b.pdf, id=988, 92.97736pt x 14.725pt>
 File: brok/../fig/br1b.pdf Graphic file (type pdf)
 <use brok/../fig/br1b.pdf>
 Package pdftex.def Info: brok/../fig/br1b.pdf  used on input line 13.
 (pdftex.def)             Requested size: 92.97711pt x 14.72496pt.
-<brok/../fig/br2.pdf, id=958, 57.40446pt x 43.18132pt>
+<brok/../fig/br2.pdf, id=989, 57.40446pt x 43.18132pt>
 File: brok/../fig/br2.pdf Graphic file (type pdf)
 <use brok/../fig/br2.pdf>
 Package pdftex.def Info: brok/../fig/br2.pdf  used on input line 24.
 (pdftex.def)             Requested size: 57.4043pt x 43.1812pt.
-<brok/../fig/br2a.pdf, id=959, 128.54022pt x 43.18132pt>
+<brok/../fig/br2a.pdf, id=990, 128.54022pt x 43.18132pt>
 File: brok/../fig/br2a.pdf Graphic file (type pdf)
 <use brok/../fig/br2a.pdf>
 Package pdftex.def Info: brok/../fig/br2a.pdf  used on input line 33.
 (pdftex.def)             Requested size: 128.53989pt x 43.1812pt.
-<brok/../fig/br2b.pdf, id=960, 81.30376pt x 28.95819pt>
+<brok/../fig/br2b.pdf, id=991, 81.30376pt x 28.95819pt>
 File: brok/../fig/br2b.pdf Graphic file (type pdf)
 <use brok/../fig/br2b.pdf>
 Package pdftex.def Info: brok/../fig/br2b.pdf  used on input line 35.
@@ -2316,7 +2318,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 n/10.95 , og da er det
  []
 
-<brok/../fig/kake.jpg, id=1013, 903.375pt x 672.26157pt>
+<brok/../fig/kake.jpg, id=1043, 903.375pt x 672.26157pt>
 File: brok/../fig/kake.jpg Graphic file (type jpg)
 <use brok/../fig/kake.jpg>
 Package pdftex.def Info: brok/../fig/kake.jpg  used on input line 68.
@@ -2410,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--265
 []\T1/lmr/m/n/10.95 I en bu-tikk kostet en skjorte først 500kr , men
  []
 
-<brok/../fig/sale.png, id=1059, 225.84375pt x 225.84375pt>
+<brok/../fig/sale.png, id=1090, 225.84375pt x 225.84375pt>
 File: brok/../fig/sale.png Graphic file (type png)
 <use brok/../fig/sale.png>
 Package pdftex.def Info: brok/../fig/sale.png  used on input line 265.
@@ -2452,7 +2454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--287
 []\T1/lmr/m/n/10.95 Undersøk om prisen der mva.
  []
 
-<brok/../fig/peltor.png, id=1065, 416.55624pt x 317.185pt>
+<brok/../fig/peltor.png, id=1096, 416.55624pt x 317.185pt>
 File: brok/../fig/peltor.png Graphic file (type png)
 <use brok/../fig/peltor.png>
 Package pdftex.def Info: brok/../fig/peltor.png  used on input line 287.
@@ -2623,7 +2625,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--431
 \T1/lmr/m/n/10.95 (ut-gangspunkt). For å foren-kle set-nin-gene,
  []
 
-<brok/../fig/sunglasses.jpeg, id=1124, 369.38pt x 369.38pt>
+<brok/../fig/sunglasses.jpeg, id=1154, 369.38pt x 369.38pt>
 File: brok/../fig/sunglasses.jpeg Graphic file (type jpg)
 <use brok/../fig/sunglasses.jpeg>
 Package pdftex.def Info: brok/../fig/sunglasses.jpeg  used on input line 435.
@@ -2783,7 +2785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--542
 \T1/lmr/m/n/10.95 den ene stør-relsen delt på den an-dre. Har vi for
  []
 
-<brok/../fig/bolle3.pdf, id=1160, 58.54874pt x 36.01456pt>
+<brok/../fig/bolle3.pdf, id=1190, 58.54874pt x 36.01456pt>
 File: brok/../fig/bolle3.pdf Graphic file (type pdf)
 <use brok/../fig/bolle3.pdf>
 Package pdftex.def Info: brok/../fig/bolle3.pdf  used on input line 545.
@@ -2908,7 +2910,7 @@ Overfull \hbox (5.02393pt too wide) in paragraph at lines 631--632
  \T1/lmr/m/n/10.95 vi blan-der, så lenge forholdet 
  []
 
-<brok/../fig/forh.pdf, id=1199, 147.44084pt x 84.43546pt>
+<brok/../fig/forh.pdf, id=1229, 147.44084pt x 84.43546pt>
 File: brok/../fig/forh.pdf Graphic file (type pdf)
 <use brok/../fig/forh.pdf>
 Package pdftex.def Info: brok/../fig/forh.pdf  used on input line 632.
@@ -2997,7 +2999,7 @@ kodille''?
  []
 
 [74]
-<brok/stihl.png, id=1292, 338.01282pt x 76.78688pt>
+<brok/stihl.png, id=1323, 338.01282pt x 76.78688pt>
 File: brok/stihl.png Graphic file (type png)
 <use brok/stihl.png>
 Package pdftex.def Info: brok/stihl.png  used on input line 138.
@@ -3184,7 +3186,7 @@ $\T1/lmr/m/n/10.95 , hva er da tem-per-a-turen
  []
 
 [84]
-<lig/../fig/elbilsalg1.pdf, id=1377, 282.61584pt x 195.02863pt>
+<lig/../fig/elbilsalg1.pdf, id=1407, 282.61584pt x 195.02863pt>
 File: lig/../fig/elbilsalg1.pdf Graphic file (type pdf)
 <use lig/../fig/elbilsalg1.pdf>
 Package pdftex.def Info: lig/../fig/elbilsalg1.pdf  used on input line 189.
@@ -3193,7 +3195,7 @@ Package pdftex.def Info: lig/../fig/elbilsalg1.pdf  used on input line 189.
 
 LaTeX Warning: Reference `ggbreg' on page 85 undefined on input line 195.
 
-<lig/../fig/elbilsalg2.pdf, id=1378, 282.61584pt x 199.77637pt>
+<lig/../fig/elbilsalg2.pdf, id=1408, 282.61584pt x 199.77637pt>
 File: lig/../fig/elbilsalg2.pdf Graphic file (type pdf)
 <use lig/../fig/elbilsalg2.pdf>
 Package pdftex.def Info: lig/../fig/elbilsalg2.pdf  used on input line 196.
@@ -3201,20 +3203,20 @@ Package pdftex.def Info: lig/../fig/elbilsalg2.pdf  used on input line 196.
 [85
 
  <./lig/../fig/elbilsalg1.pdf>]
-<lig/../fig/elbilsalg3.pdf, id=1390, 305.0296pt x 244.5938pt>
+<lig/../fig/elbilsalg3.pdf, id=1420, 305.0296pt x 244.5938pt>
 File: lig/../fig/elbilsalg3.pdf Graphic file (type pdf)
 <use lig/../fig/elbilsalg3.pdf>
 Package pdftex.def Info: lig/../fig/elbilsalg3.pdf  used on input line 198.
 (pdftex.def)             Requested size: 305.02884pt x 244.59319pt.
  [86 <./lig/../fig/elbilsalg2.pdf> <./lig/../fig/elbilsalg3.pdf>]
-<lig/../fig/elbilsalg4.pdf, id=1403, 305.0296pt x 244.5938pt>
+<lig/../fig/elbilsalg4.pdf, id=1434, 305.0296pt x 244.5938pt>
 File: lig/../fig/elbilsalg4.pdf Graphic file (type pdf)
 <use lig/../fig/elbilsalg4.pdf>
 Package pdftex.def Info: lig/../fig/elbilsalg4.pdf  used on input line 205.
 (pdftex.def)             Requested size: 305.02884pt x 244.59319pt.
  [87 <./lig/../fig/elbilsalg4.pdf>]) (./lig/ligopg_bm.tex
 (./lig/../../doc.tex)
-<lig/../fig/gj.pdf, id=1412, 218.0145pt x 68.60631pt>
+<lig/../fig/gj.pdf, id=1443, 218.0145pt x 68.60631pt>
 File: lig/../fig/gj.pdf Graphic file (type pdf)
 <use lig/../fig/gj.pdf>
 Package pdftex.def Info: lig/../fig/gj.pdf  used on input line 21.
@@ -3261,7 +3263,7 @@ Overfull \hbox (10.01917pt too wide) in paragraph at lines 139--139
  []
 
 [92]
-<lig/../fig/ligo1.pdf, id=1490, 227.62039pt x 284.52296pt>
+<lig/../fig/ligo1.pdf, id=1520, 227.62039pt x 284.52296pt>
 File: lig/../fig/ligo1.pdf Graphic file (type pdf)
 <use lig/../fig/ligo1.pdf>
 Package pdftex.def Info: lig/../fig/ligo1.pdf  used on input line 187.
@@ -3301,7 +3303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--11
 \T1/lmr/m/n/10.95 Forholdet mel-lom prisen i 2053 og i 2021
  []
 
-<oko/kr.jpg, id=1521, 48.18pt x 52.998pt>
+<oko/kr.jpg, id=1552, 48.18pt x 52.998pt>
 File: oko/kr.jpg Graphic file (type jpg)
 <use oko/kr.jpg>
 Package pdftex.def Info: oko/kr.jpg  used on input line 12.
@@ -3467,7 +3469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--243
 \T1/lmr/m/n/10.95 vil den kreve renter av gjelden din. Til
  []
 
-<oko/kred.jpg, id=1575, 1204.5pt x 903.375pt>
+<oko/kred.jpg, id=1605, 1204.5pt x 903.375pt>
 File: oko/kred.jpg Graphic file (type jpg)
 <use oko/kred.jpg>
 Package pdftex.def Info: oko/kred.jpg  used on input line 244.
@@ -3845,12 +3847,12 @@ n
 ) (./oko/okoopg.tex (./oko/../../doc.tex) [115] [116
 
 ]
-<oko/ser.png, id=1663, 232.61906pt x 72.27pt>
+<oko/ser.png, id=1693, 232.61906pt x 72.27pt>
 File: oko/ser.png Graphic file (type png)
 <use oko/ser.png>
 Package pdftex.def Info: oko/ser.png  used on input line 78.
 (pdftex.def)             Requested size: 232.61848pt x 72.2698pt.
-<oko/an.jpeg, id=1664, 230.36063pt x 82.80937pt>
+<oko/an.jpeg, id=1694, 230.36063pt x 82.80937pt>
 File: oko/an.jpeg Graphic file (type jpg)
 <use oko/an.jpeg>
 Package pdftex.def Info: oko/an.jpeg  used on input line 79.
@@ -3860,7 +3862,7 @@ Kapittel 6.
 [120
 
 ] (./san/san.tex (../doc.tex)
-<san/../fig/san1.pdf, id=1701, 207.28441pt x 35.15132pt>
+<san/../fig/san1.pdf, id=1731, 207.28441pt x 35.15132pt>
 File: san/../fig/san1.pdf Graphic file (type pdf)
 <use san/../fig/san1.pdf>
 Package pdftex.def Info: san/../fig/san1.pdf  used on input line 11.
@@ -3937,7 +3939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []\T1/lmr/m/n/9 Symbolet [][][][][][] kalles
  []
 
-<san/../fig/san1a.pdf, id=1716, 207.28441pt x 35.15132pt>
+<san/../fig/san1a.pdf, id=1746, 207.28441pt x 35.15132pt>
 File: san/../fig/san1a.pdf Graphic file (type pdf)
 <use san/../fig/san1a.pdf>
 Package pdftex.def Info: san/../fig/san1a.pdf  used on input line 37.
@@ -3999,7 +4001,7 @@ T1/lmr/m/n/10.95 blir trukket er det samme som at en
  []
 
 [126]
-<san/kort.png, id=1749, 717.43031pt x 297.36093pt>
+<san/kort.png, id=1780, 717.43031pt x 297.36093pt>
 File: san/kort.png Graphic file (type png)
 <use san/kort.png>
 Package pdftex.def Info: san/kort.png  used on input line 115.
@@ -4056,23 +4058,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--122
 /m/sl/9 og
  []
 
-<san/kort1.png, id=1750, 744.53156pt x 96.36pt>
+<san/kort1.png, id=1781, 744.53156pt x 96.36pt>
 File: san/kort1.png Graphic file (type png)
 <use san/kort1.png>
 Package pdftex.def Info: san/kort1.png  used on input line 126.
 (pdftex.def)             Requested size: 335.0361pt x 43.36159pt.
-<san/kort2.png, id=1751, 241.65282pt x 324.46219pt>
+<san/kort2.png, id=1782, 241.65282pt x 324.46219pt>
 File: san/kort2.png Graphic file (type png)
 <use san/kort2.png>
 Package pdftex.def Info: san/kort2.png  used on input line 132.
 (pdftex.def)             Requested size: 108.74275pt x 146.00662pt.
 [127 <./san/kort.png> <./san/kort1.png> <./san/kort2.png>]
-<san/kort4.png, id=1759, 487.06969pt x 88.83188pt>
+<san/kort4.png, id=1790, 487.06969pt x 88.83188pt>
 File: san/kort4.png Graphic file (type png)
 <use san/kort4.png>
 Package pdftex.def Info: san/kort4.png  used on input line 137.
 (pdftex.def)             Requested size: 219.17932pt x 39.97397pt.
-<san/kort3.png, id=1760, 733.23938pt x 306.39468pt>
+<san/kort3.png, id=1791, 733.23938pt x 306.39468pt>
 File: san/kort3.png Graphic file (type png)
 <use san/kort3.png>
 Package pdftex.def Info: san/kort3.png  used on input line 143.
@@ -4131,13 +4133,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--191
 m/sl/10.95 eller \T1/lmr/m/n/10.95 hand-ball er
  []
 
-<san/../fig/venn.pdf, id=1777, 171.21968pt x 57.40446pt>
+<san/../fig/venn.pdf, id=1807, 171.21968pt x 57.40446pt>
 File: san/../fig/venn.pdf Graphic file (type pdf)
 <use san/../fig/venn.pdf>
 Package pdftex.def Info: san/../fig/venn.pdf  used on input line 197.
 (pdftex.def)             Requested size: 171.21925pt x 57.4043pt.
 [130]
-<san/../fig/vennb.pdf, id=1783, 171.21968pt x 57.40446pt>
+<san/../fig/vennb.pdf, id=1813, 171.21968pt x 57.40446pt>
 File: san/../fig/vennb.pdf Graphic file (type pdf)
 <use san/../fig/vennb.pdf>
 Package pdftex.def Info: san/../fig/vennb.pdf  used on input line 202.
@@ -4179,7 +4181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--220
 'tar båt', ven-ndi-a-gram-met vårt blir da
  []
 
-<san/../fig/venne.pdf, id=1807, 171.21968pt x 57.40446pt>
+<san/../fig/venne.pdf, id=1837, 171.21968pt x 57.40446pt>
 File: san/../fig/venne.pdf Graphic file (type pdf)
 <use san/../fig/venne.pdf>
 Package pdftex.def Info: san/../fig/venne.pdf  used on input line 220.
@@ -4261,7 +4263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--253
  syvende
  []
 
-<san/../fig/venn3ea.pdf, id=1827, 179.75156pt x 179.75156pt>
+<san/../fig/venn3ea.pdf, id=1857, 179.75156pt x 179.75156pt>
 File: san/../fig/venn3ea.pdf Graphic file (type pdf)
 <use san/../fig/venn3ea.pdf>
 Package pdftex.def Info: san/../fig/venn3ea.pdf  used on input line 253.
@@ -4278,7 +4280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--253
 ll og $[]$
  []
 
-<san/../fig/venn3e.pdf, id=1828, 179.75156pt x 179.75156pt>
+<san/../fig/venn3e.pdf, id=1858, 179.75156pt x 179.75156pt>
 File: san/../fig/venn3e.pdf Graphic file (type pdf)
 <use san/../fig/venn3e.pdf>
 Package pdftex.def Info: san/../fig/venn3e.pdf  used on input line 253.
@@ -4295,12 +4297,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--253
  []
 
 [133] [134 <./san/../fig/venn3ea.pdf> <./san/../fig/venn3e.pdf>] [135]
-<san/../fig/bolle.pdf, id=1861, 142.76335pt x 71.63763pt>
+<san/../fig/bolle.pdf, id=1892, 142.76335pt x 71.63763pt>
 File: san/../fig/bolle.pdf Graphic file (type pdf)
 <use san/../fig/bolle.pdf>
 Package pdftex.def Info: san/../fig/bolle.pdf  used on input line 287.
 (pdftex.def)             Requested size: 114.21082pt x 57.31017pt.
-<san/../fig/perm1a.pdf, id=1862, 476.73108pt x 36.06474pt>
+<san/../fig/perm1a.pdf, id=1893, 476.73108pt x 36.06474pt>
 File: san/../fig/perm1a.pdf Graphic file (type pdf)
 <use san/../fig/perm1a.pdf>
 Package pdftex.def Info: san/../fig/perm1a.pdf  used on input line 295.
@@ -4310,7 +4312,7 @@ Overfull \hbox (39.9523pt too wide) in paragraph at lines 295--296
  [] 
  []
 
-<san/../fig/perm1b.pdf, id=1863, 476.73108pt x 64.52104pt>
+<san/../fig/perm1b.pdf, id=1894, 476.73108pt x 64.52104pt>
 File: san/../fig/perm1b.pdf Graphic file (type pdf)
 <use san/../fig/perm1b.pdf>
 Package pdftex.def Info: san/../fig/perm1b.pdf  used on input line 301.
@@ -4320,7 +4322,7 @@ Overfull \hbox (39.9523pt too wide) in paragraph at lines 301--302
  [] 
  []
 
-<san/../fig/perm1c.pdf, id=1864, 476.73108pt x 92.97736pt>
+<san/../fig/perm1c.pdf, id=1895, 476.73108pt x 92.97736pt>
 File: san/../fig/perm1c.pdf Graphic file (type pdf)
 <use san/../fig/perm1c.pdf>
 Package pdftex.def Info: san/../fig/perm1c.pdf  used on input line 308.
@@ -4456,7 +4458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--343
 \T1/lmr/m/n/10.95 én til. Hva er sannsyn-ligheten for
  []
 
-<san/../fig/bolle2.pdf, id=1903, 136.21892pt x 68.36542pt>
+<san/../fig/bolle2.pdf, id=1933, 136.21892pt x 68.36542pt>
 File: san/../fig/bolle2.pdf Graphic file (type pdf)
 <use san/../fig/bolle2.pdf>
 Package pdftex.def Info: san/../fig/bolle2.pdf  used on input line 346.
@@ -4573,7 +4575,7 @@ File: san/../fig/bolle2.pdf Graphic file (type pdf)
 <use san/../fig/bolle2.pdf>
 Package pdftex.def Info: san/../fig/bolle2.pdf  used on input line 395.
 (pdftex.def)             Requested size: 136.21858pt x 68.36523pt.
-<san/../fig/tree.pdf, id=1924, 392.4763pt x 116.92683pt>
+<san/../fig/tree.pdf, id=1954, 392.4763pt x 116.92683pt>
 File: san/../fig/tree.pdf Graphic file (type pdf)
 <use san/../fig/tree.pdf>
 Package pdftex.def Info: san/../fig/tree.pdf  used on input line 402.
@@ -4634,7 +4636,7 @@ kker \T1/lmr/m/sl/10.95 minst \T1/lmr/m/n/10.95 én blå \T1/lmr/m/sl/10.95 eller
 
  []
 
-<san/../fig/treee.pdf, id=1940, 319.17244pt x 116.92683pt>
+<san/../fig/treee.pdf, id=1970, 319.17244pt x 116.92683pt>
 File: san/../fig/treee.pdf Graphic file (type pdf)
 <use san/../fig/treee.pdf>
 Package pdftex.def Info: san/../fig/treee.pdf  used on input line 462.
@@ -4708,71 +4710,120 @@ t 8-kort eller et hjert-
 
 ]
 Kapittel 7.
-[146
-
-] (./prg/prg.tex (../doc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-[][][][]\T1/lmr/m/n/9 Enn så lenge. Pro-gram-mer-ing er et forholdsvis nytt tem
-a i norsk skole, forslag
+(./prg/prg_bm.tex (./prg/../../doc.tex)
+Overfull \hbox (3.1117pt too wide) in paragraph at lines 5--8
+\T1/lmr/m/n/10.95 data-maskin. Slik kan data-mask-iner ut-føre utreg-ninger, fr
+am-stille bilder, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
-\T1/lmr/m/n/9 om hva en lære-bok bør in-neholde om pro-gram-mer-ing mot-tas med
- glede på mail
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
 []\T1/lmr/m/n/10.95 Har du allerede nådd et høyt nivå som pro-gram-merer, og fø
 ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
 \T1/lmr/m/n/10.95 du har god kon-troll på data-typer, funksjoner, klasser o.l.?
  Da
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
 \T1/lmr/m/n/10.95 an-be-fales språket [][]Rust[][]. Mange holder dette for å væ
 re arv-tak-
  []
 
-) (./exl/rgn.tex (../doc.tex) [147
+) (./prg/py_bm.tex (./prg/../../doc.tex) [146
 
 ]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+(./prg/helloworld.py) (./prg/strintfloat.py) [147
+
+] (./prg/opr.py)
+(./prg/strintfloatfunk.py) [148] (./prg/assign.py) (./prg/aplus1.py) [149]
+(./prg/func.py)
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]\T1/lmtt/m/n/10 Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:
+ []
+
+[150] (./prg/bool1.py) (./prg/bool2.py)
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]\T1/lmr/m/n/10.95 Sjekker som bruker de sam-men-lig-nende og de lo-giske op-e
+r-a-
+ []
+
+[151]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 103.
+
+(./prg/if.py) (./prg/else.py) (./prg/elif.py) [152] (./prg/list1.py)
+(./prg/list1.py) [153]
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[][][][]\T1/lmr/m/n/9 Kort for-t-alt be-tyr det at det bare er noen typer ob-je
+k-ter som kan bruke denne
+ []
+
+(./prg/list3.py) [154] (./prg/list4.py)
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]\T1/lmr/m/n/10.95 Hva er forskjellen på å skive \T1/lmtt/m/n/10.95 a = min_li
+ste[1] \T1/lmr/m/n/10.95 og å skrive \T1/lmtt/m/n/10.95 a =
+ []
+
+[155]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 144.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 144.
+
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 145.
+(./prg/for.py)
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]\T1/lmr/m/n/10.95 Å gå gjen-nom hvert el-e-ment i (for ek-sem-pel) en liste k
+alles []\T1/lmr/bx/n/10.95 å
+ []
+
+(./prg/forrang.py) (./prg/while1.py) [156] [157]) (./exl/rgn.tex (../doc.tex)
 Overfull \hbox (10.18294pt too wide) in paragraph at lines 14--15
 \T1/lmr/m/n/10.95 staver (A, B, C osv.). Hvor-dan radene og kolonnene brukes er
  avgjørende 
  []
 
-<exl/figs/B3.png, id=1993, 499.8675pt x 287.0725pt>
+<exl/figs/B3.png, id=2252, 499.8675pt x 287.0725pt>
 File: exl/figs/B3.png Graphic file (type png)
 <use exl/figs/B3.png>
 Package pdftex.def Info: exl/figs/B3.png  used on input line 18.
 (pdftex.def)             Requested size: 124.96657pt x 71.76794pt.
-<exl/figs/ex2.png, id=1994, 243.15843pt x 143.78719pt>
+<exl/figs/ex2.png, id=2253, 243.15843pt x 143.78719pt>
 File: exl/figs/ex2.png Graphic file (type png)
 <use exl/figs/ex2.png>
 Package pdftex.def Info: exl/figs/ex2.png  used on input line 23.
 (pdftex.def)             Requested size: 85.10672pt x 50.32626pt.
-<exl/figs/ex3.png, id=1995, 322.20375pt x 188.705pt>
+<exl/figs/ex3.png, id=2254, 322.20375pt x 188.705pt>
 File: exl/figs/ex3.png Graphic file (type png)
 <use exl/figs/ex3.png>
 Package pdftex.def Info: exl/figs/ex3.png  used on input line 32.
 (pdftex.def)             Requested size: 96.66187pt x 56.61192pt.
-<exl/figs/ex4.png, id=1996, 327.2225pt x 188.705pt>
+<exl/figs/ex4.png, id=2255, 327.2225pt x 188.705pt>
 File: exl/figs/ex4.png Graphic file (type png)
 <use exl/figs/ex4.png>
 Package pdftex.def Info: exl/figs/ex4.png  used on input line 33.
 (pdftex.def)             Requested size: 98.1675pt x 56.61192pt.
-[148
+[158
 
  <./exl/figs/B3.png> <./exl/figs/ex2.png> <./exl/figs/ex3.png> <./exl/figs/ex4.
 png>]
-<exl/figs/intast.png, id=2006, 499.8675pt x 289.08pt>
+<exl/figs/intast.png, id=2264, 499.8675pt x 289.08pt>
 File: exl/figs/intast.png Graphic file (type png)
 <use exl/figs/intast.png>
 Package pdftex.def Info: exl/figs/intast.png  used on input line 38.
@@ -4783,7 +4834,7 @@ Overfull \hbox (4.2699pt too wide) in paragraph at lines 45--46
 al-let tilhørende 
  []
 
-<exl/figs/ex5.png, id=2007, 321.2pt x 185.69376pt>
+<exl/figs/ex5.png, id=2265, 321.2pt x 185.69376pt>
 File: exl/figs/ex5.png Graphic file (type png)
 <use exl/figs/ex5.png>
 Package pdftex.def Info: exl/figs/ex5.png  used on input line 49.
@@ -4792,7 +4843,7 @@ File: exl/figs/ex4.png Graphic file (type png)
 <use exl/figs/ex4.png>
 Package pdftex.def Info: exl/figs/ex4.png  used on input line 50.
 (pdftex.def)             Requested size: 98.1675pt x 56.61192pt.
-<exl/figs/ex6.png, id=2008, 321.2pt x 183.68625pt>
+<exl/figs/ex6.png, id=2266, 321.2pt x 183.68625pt>
 File: exl/figs/ex6.png Graphic file (type png)
 <use exl/figs/ex6.png>
 Package pdftex.def Info: exl/figs/ex6.png  used on input line 55.
@@ -4803,24 +4854,24 @@ Overfull \hbox (0.22708pt too wide) in paragraph at lines 59--61
 e de samme 
  []
 
-[149 <./exl/figs/intast.png> <./exl/figs/ex5.png> <./exl/figs/ex6.png>]
-<exl/figs/ex7.png, id=2017, 581.17125pt x 185.69376pt>
+[159 <./exl/figs/intast.png> <./exl/figs/ex5.png> <./exl/figs/ex6.png>]
+<exl/figs/ex7.png, id=2275, 581.17125pt x 185.69376pt>
 File: exl/figs/ex7.png Graphic file (type png)
 <use exl/figs/ex7.png>
 Package pdftex.def Info: exl/figs/ex7.png  used on input line 69.
 (pdftex.def)             Requested size: 174.35272pt x 55.70854pt.
-<exl/figs/ex8.png, id=2019, 717.68124pt x 186.6975pt>
+<exl/figs/ex8.png, id=2277, 717.68124pt x 186.6975pt>
 File: exl/figs/ex8.png Graphic file (type png)
 <use exl/figs/ex8.png>
 Package pdftex.def Info: exl/figs/ex8.png  used on input line 80.
 (pdftex.def)             Requested size: 215.30603pt x 56.00967pt.
-<exl/figs/ex15.png, id=2020, 581.17125pt x 181.67876pt>
+<exl/figs/ex15.png, id=2278, 581.17125pt x 181.67876pt>
 File: exl/figs/ex15.png Graphic file (type png)
 <use exl/figs/ex15.png>
 Package pdftex.def Info: exl/figs/ex15.png  used on input line 81.
 (pdftex.def)             Requested size: 174.35272pt x 54.50404pt.
 
-[150 <./exl/figs/ex7.png> <./exl/figs/ex8.png>]
+[160 <./exl/figs/ex7.png> <./exl/figs/ex8.png>]
 Overfull \hbox (16.26111pt too wide) in paragraph at lines 83--85
 \T1/lmr/m/n/10.95 Av det vi har sett i [][]videoen[][] og fig-urene over kan vi
  ta med oss to generelle 
@@ -4838,17 +4889,17 @@ Overfull \hbox (4.89957pt too wide) in paragraph at lines 92--93
 en er den samme 
  []
 
-<exl/figs/ex12.png, id=2033, 706.64pt x 278.03876pt>
+<exl/figs/ex12.png, id=2290, 706.64pt x 278.03876pt>
 File: exl/figs/ex12.png Graphic file (type png)
 <use exl/figs/ex12.png>
 Package pdftex.def Info: exl/figs/ex12.png  used on input line 95.
 (pdftex.def)             Requested size: 211.99364pt x 83.41226pt.
-<exl/figs/ex13.png, id=2034, 636.3775pt x 278.03876pt>
+<exl/figs/ex13.png, id=2291, 636.3775pt x 278.03876pt>
 File: exl/figs/ex13.png Graphic file (type png)
 <use exl/figs/ex13.png>
 Package pdftex.def Info: exl/figs/ex13.png  used on input line 96.
 (pdftex.def)             Requested size: 190.91472pt x 83.41226pt.
-[151 <./exl/figs/ex15.png> <./exl/figs/ex12.png> <./exl/figs/ex13.png>]
+[161 <./exl/figs/ex15.png> <./exl/figs/ex12.png> <./exl/figs/ex13.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []\T1/lmr/m/n/10.95 Finner gjen-nom-snit-tet for alle ver-di-ene fra og med cel
 le1
@@ -4866,26 +4917,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--128
 l og
  []
 
-) (./ggb/ggb.tex (../doc.tex) [152]
-<ggb/ggbalgoggraf.png, id=2058, 2023.56pt x 1316.92pt>
+) (./ggb/ggb.tex (../doc.tex) [162]
+<ggb/ggbalgoggraf.png, id=2316, 2023.56pt x 1316.92pt>
 File: ggb/ggbalgoggraf.png Graphic file (type png)
 <use ggb/ggbalgoggraf.png>
 Package pdftex.def Info: ggb/ggbalgoggraf.png  used on input line 10.
 (pdftex.def)             Requested size: 202.36784pt x 131.6997pt.
-<ggb/pointAandB.png, id=2059, 1312.905pt x 863.225pt>
+<ggb/pointAandB.png, id=2317, 1312.905pt x 863.225pt>
 File: ggb/pointAandB.png Graphic file (type png)
 <use ggb/pointAandB.png>
 Package pdftex.def Info: ggb/pointAandB.png  used on input line 23.
 (pdftex.def)             Requested size: 196.92725pt x 129.47816pt.
-<ggb/pointP.png, id=2060, 1324.95pt x 873.2625pt>
+<ggb/pointP.png, id=2318, 1324.95pt x 873.2625pt>
 File: ggb/pointP.png Graphic file (type png)
 <use ggb/pointP.png>
 Package pdftex.def Info: ggb/pointP.png  used on input line 29.
 (pdftex.def)             Requested size: 198.73392pt x 130.98372pt.
- [153
+ [163
 
  <./ggb/ggbalgoggraf.png> <./ggb/pointAandB.png>]
-<ggb/skrivf.png, id=2068, 388.45125pt x 67.25125pt>
+<ggb/skrivf.png, id=2326, 388.45125pt x 67.25125pt>
 File: ggb/skrivf.png Graphic file (type png)
 <use ggb/skrivf.png>
 Package pdftex.def Info: ggb/skrivf.png  used on input line 39.
@@ -4902,7 +4953,7 @@ Overfull \hbox (4.27533pt too wide) in paragraph at lines 44--47
 bra . Det an-dre er at vi ønsker 
  []
 
-<ggb/pfig.png, id=2069, 384.43625pt x 50.1875pt>
+<ggb/pfig.png, id=2327, 384.43625pt x 50.1875pt>
 File: ggb/pfig.png Graphic file (type png)
 <use ggb/pfig.png>
 Package pdftex.def Info: ggb/pfig.png  used on input line 51.
@@ -4919,29 +4970,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
 ltså
  []
 
-[154 <./ggb/pointP.png> <./ggb/skrivf.png> <./ggb/pfig.png>]
-<ggb/23.png, id=2076, 452.69125pt x 330.23375pt>
+[164 <./ggb/pointP.png> <./ggb/skrivf.png> <./ggb/pfig.png>]
+<ggb/23.png, id=2334, 452.69125pt x 330.23375pt>
 File: ggb/23.png Graphic file (type png)
 <use ggb/23.png>
 Package pdftex.def Info: ggb/23.png  used on input line 66.
 (pdftex.def)             Requested size: 226.34506pt x 165.11646pt.
-<ggb/H.png, id=2077, 385.44pt x 135.50626pt>
+<ggb/H.png, id=2335, 385.44pt x 135.50626pt>
 File: ggb/H.png Graphic file (type png)
 <use ggb/H.png>
 Package pdftex.def Info: ggb/H.png  used on input line 78.
 (pdftex.def)             Requested size: 192.71953pt x 67.75294pt.
- [155 <./ggb/23.png>]
-<ggb/fglin1.png, id=2085, 396.48125pt x 103.38625pt>
+ [165 <./ggb/23.png>]
+<ggb/fglin1.png, id=2343, 396.48125pt x 103.38625pt>
 File: ggb/fglin1.png Graphic file (type png)
 <use ggb/fglin1.png>
 Package pdftex.def Info: ggb/fglin1.png  used on input line 92.
 (pdftex.def)             Requested size: 198.24013pt x 51.693pt.
-<ggb/fglin2.png, id=2086, 398.48875pt x 170.6375pt>
+<ggb/fglin2.png, id=2344, 398.48875pt x 170.6375pt>
 File: ggb/fglin2.png Graphic file (type png)
 <use ggb/fglin2.png>
 Package pdftex.def Info: ggb/fglin2.png  used on input line 97.
 (pdftex.def)             Requested size: 239.0951pt x 102.38327pt.
- [156 <./ggb/H.png> <./ggb/fglin1.png> <./ggb/fglin2.png>]
+ [166 <./ggb/H.png> <./ggb/fglin1.png> <./ggb/fglin2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 115--115
 []\T1/lmr/m/n/9 Legg merke til hva som gjøres mot slut-ten av videoen for å få 
 det
@@ -4970,7 +5021,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--129
 er
  []
 
-[157]) [158] (./prg/prgopg.tex (../doc.tex)) (./exl/rgnopg.tex
+[167]) [168] (./prg/prgopg.tex (../doc.tex)) (./exl/rgnopg.tex
 (./exl/../../doc.tex)
 Overfull \hbox (7.55827pt too wide) in paragraph at lines 25--26
 []\T1/lmr/bx/n/12 b) \T1/lmr/m/n/12 Hvor mye koster lånet to-talt? (Sum-men av 
@@ -4983,7 +5034,7 @@ Overfull \hbox (9.7507pt too wide) in paragraph at lines 32--33
 r.  
  []
 
-[159
+[169
 
 ]) (./ggb/ggbopg.tex (../doc.tex)
 Overfull \hbox (3.94159pt too wide) in paragraph at lines 9--9
@@ -4992,66 +5043,80 @@ mm/m/it/12 x\OT1/lmr/m/n/12 )$ \T1/lmr/m/n/12 blå og $\OML/lmm/m/it/12 y$ \T1/l
 mr/m/n/12 grønn. Hva ser du ut ifra grafen 
  []
 
-) [160] [161
+) [170]
+Kapittel 8.
+(./opg/mix_bm.tex (./opg/../../doc.tex) (./opg/1pv22d1opg5.py)
+<opg/../fig/1pv22d1opg2.pdf, id=2401, 227.62039pt x 156.49466pt>
+File: opg/../fig/1pv22d1opg2.pdf Graphic file (type pdf)
+<use opg/../fig/1pv22d1opg2.pdf>
+Package pdftex.def Info: opg/../fig/1pv22d1opg2.pdf  used on input line 17.
+(pdftex.def)             Requested size: 227.61983pt x 156.49426pt.
+ [171
 
-] (./vdl/vdl.tex (./vdl/../../doc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-[]\T1/lmr/m/n/10.95 Definisjonsmengden til en fun-skjon $\OML/lmm/m/it/10.95 f\
-OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95
- er $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -verdiene $\OML/lmm/m/it/10.95 f\O
-T1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 
-er
+] [172 <./opg/../fig/1pv22d1opg2.pdf>] [173]
+Overfull \hbox (16.53667pt too wide) in paragraph at lines 44--45
+\T1/lmr/m/n/12 en bils kjør-eretning. Ifølge en rap-port[][][][] fra SIN-TEF ka
+n[][][][] $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 tilnærmes 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]\T1/lmr/m/n/10.95 Verdimengden til en fun-skjon $\OML/lmm/m/it/10.95 f\OT1/lm
-r/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er al
-le ver-di-ene $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\O
-T1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 kan ha.
+Overfull \hbox (5.30344pt too wide) in paragraph at lines 47--56
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\T1/lmr/m/n/10.95 Verdi-meng-den er bestemt av funksjon-sut-trykket og funksjo-
-nens
+Overfull \hbox (12.22302pt too wide) in paragraph at lines 59--59
+[][][]\T1/lmr/m/n/9 Verdien er hen-tet fra [][]en.wikipedia.org/wiki/Automobile
+_drag_coefficient#Drag_area[][]| 
+ []
+
+[174]
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[][][][]\T1/lmr/m/n/9 Den to-tale en-erg-i-meng-den en bil bruker på en kjøre-l
+engde vil være høyere enn det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]\T1/lmr/m/n/10.95 En poly-nom-funksjon er en funksjon som består av en sum av
-
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/9 vi har kalt ''en-ergi-for-bruket''. Som regel vil den to-tale en-
+erg-i-meng-den som kreves
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-[]\T1/lmr/m/n/10.95 Polynomfunksjoner har un-der-ti-tler som bestemmes av den
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/9 for å kjøre en strekn-ing være høyere jo høyere hastighet man har
+. Slik kan man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
-\T1/lmr/m/n/10.95 største ek-spo-nen-ten i funksjon-sut-trykket. For kon-stan-t
-ene $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 b$\T1/lmr/m
-/n/10.95 , $\OML/lmm/m/it/10.95 c$
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/9 anta at dif-fer-ansen i en-ergi-for-bruk vi finner i denne opp-ga
+ven er et min-i-mum for
  []
 
-) [162] [163
+
+Overfull \hbox (14.08182pt too wide) in paragraph at lines 73--73
+\T1/lmr/m/n/12 for å motvirke $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 over en viss 
+kjøre-lengde. Ved kon-stant hastighet 
+ []
+
+
+Overfull \hbox (1.84639pt too wide) in paragraph at lines 73--73
+\T1/lmr/m/n/12 norske mo-torveier er 90km/h og 110km/h van-lige farts-grenser. 
+
+ []
+
+) [175] [176
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
  (./AM_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package rerunfilecheck Info: File `AM_bm.out' has not changed.
+(rerunfilecheck)             Checksum: A9B9420C818BA5007E702B3346D0EF71;6194.
 
-
-Package rerunfilecheck Warning: File `AM_bm.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `AM_bm.out':
-(rerunfilecheck)             Before: B1D125B6A50906560604537F6F50131B;5698
-(rerunfilecheck)             After:  AC9ADF9B5375DADDA686688EA326D413;5698.
 
 LaTeX Warning: There were undefined references.
 
@@ -5060,15 +5125,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34662 strings out of 481239
- 660916 string characters out of 5920378
- 962405 words of memory out of 5000000
- 48280 multiletter control sequences out of 15000+600000
- 678466 words of font info for 136 fonts, out of 8000000 for 9000
+ 35471 strings out of 481239
+ 669948 string characters out of 5920378
+ 1243164 words of memory out of 5000000
+ 48805 multiletter control sequences out of 15000+600000
+ 685730 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,20n,104p,945b,1133s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.71} has been referenced but does not exi
-st, replaced by a fixed one
+ 70i,20n,104p,871b,1764s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exis
+t, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
 s/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texm
@@ -5082,24 +5150,25 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
 s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latx
 font/line10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/
 texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on AM_bm.pdf (164 pages, 2021734 bytes).
+lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+Output written on AM_bm.pdf (177 pages, 2120978 bytes).
 PDF statistics:
- 2424 PDF objects out of 2487 (max. 8388607)
- 2105 compressed objects within 22 object streams
- 737 named destinations out of 1000 (max. 500000)
- 1050 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2773 PDF objects out of 2984 (max. 8388607)
+ 2435 compressed objects within 25 object streams
+ 949 named destinations out of 1000 (max. 500000)
+ 1103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

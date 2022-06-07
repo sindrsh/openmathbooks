@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  27 MAY 2022 08:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,6 +1012,26 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@chunks=\count339
 \LT@p@ftn=\toks44
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count340
+\l_MT_multwidth_dim=\dimen321
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen322
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
+\l_MT_above_intertext_sep=\dimen324
+\l_MT_below_intertext_sep=\dimen325
+\l_MT_above_shortintertext_sep=\dimen326
+\l_MT_below_shortintertext_sep=\dimen327
+)
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
@@ -1027,8 +1047,8 @@ Writing index file AM2_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
-\footnotemargin=\dimen321
-\c@pp@next@reset=\count340
+\footnotemargin=\dimen328
+\c@pp@next@reset=\count341
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1040,41 +1060,43 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count341
+\c@abspage=\count342
 )
-\c@pp@a@footnote=\count342
+\c@pp@a@footnote=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks46
-\labelindent=\skip133
-\enit@outerparindent=\dimen322
+\labelindent=\skip134
+\enit@outerparindent=\dimen329
 \enit@toks=\toks47
 \enit@inbox=\box138
-\enit@count@id=\count343
-\enitdp@description=\count344
+\enit@count@id=\count344
+\enitdp@description=\count345
 )
-\c@rg=\count345
-\c@opg=\count346
+\c@rg=\count346
+\c@opg=\count347
+\c@vedl=\count348
+\c@vedleq=\count349
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count347
+\lst@mode=\count350
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count348
-\lst@currlwidth=\dimen323
-\lst@column=\count349
-\lst@pos=\count350
-\lst@lostspace=\dimen324
-\lst@width=\dimen325
-\lst@newlines=\count351
-\lst@lineno=\count352
-\lst@maxwidth=\dimen326
+\lst@length=\count351
+\lst@currlwidth=\dimen330
+\lst@column=\count352
+\lst@pos=\count353
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count354
+\lst@lineno=\count355
+\lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count353
-\lst@skipnumbers=\count354
+\c@lstnumber=\count356
+\lst@skipnumbers=\count357
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1125,9 +1147,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen327
-\Hy@linkcounter=\count355
-\Hy@pagecounter=\count356
+\@linkdim=\dimen334
+\Hy@linkcounter=\count358
+\Hy@pagecounter=\count359
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1140,8 +1162,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count357
-\pdfmajorversion=\count358
+\Hy@SavedSpaceFactor=\count360
+\pdfmajorversion=\count361
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1149,14 +1171,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count359
+\c@Hy@tempcnt=\count362
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen328
+\XeTeXLinkMargin=\dimen335
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1165,9 +1187,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count360
-\Field@Width=\dimen329
-\Fld@charsize=\dimen330
+\Fld@menulength=\count363
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1181,9 +1203,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count361
-\c@Item=\count362
-\c@Hfootnote=\count363
+\Hy@abspage=\count364
+\c@Item=\count365
+\c@Hfootnote=\count366
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1193,8 +1215,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count364
-\c@bookmark@seq@number=\count365
+\Fld@listcount=\count367
+\c@bookmark@seq@number=\count368
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1205,7 +1227,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip134
+\Hy@SectionHShift=\skip135
 )
 (./bm.tex) (./AM2_bm.aux)
 \openout1 = `AM2_bm.aux'.
@@ -1270,16 +1292,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count366
-\scratchdimen=\dimen331
+\scratchcounter=\count369
+\scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count367
-\nofMParguments=\count368
+\nofMPsegments=\count370
+\nofMParguments=\count371
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count369
-\MPscratchDim=\dimen332
-\MPnumerator=\count370
-\makeMPintoPDFobject=\count371
+\MPscratchCnt=\count372
+\MPscratchDim=\dimen339
+\MPnumerator=\count373
+\makeMPintoPDFobject=\count374
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1305,7 +1327,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count372
+\c@lstlisting=\count375
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 10.
 
@@ -1318,7 +1340,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count373
+\c@section@level=\count376
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -1330,7 +1352,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 
  (./kap0/framside.tex (./kap0/../../doc.tex)
 \GPT@outputbox=\box143
-<kap0/../fig/trapmet.pdf, id=31, 136.57022pt x 113.81522pt>
+<kap0/../fig/trapmet.pdf, id=51, 136.57022pt x 113.81522pt>
 File: kap0/../fig/trapmet.pdf Graphic file (type pdf)
 <use kap0/../fig/trapmet.pdf>
 Package pdftex.def Info: kap0/../fig/trapmet.pdf  used on input line 17.
@@ -1403,152 +1425,234 @@ l.15 	\newpage
 Kapittel 1.
 [2
 
-] (./ggb/ggb_bm.tex (./ggb/../../doc.tex)
+] (./dig/ggb_bm.tex (./dig/../../doc.tex)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 13.
+(Font)              <10.95> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 13.
-<ggb/fig/pkt.png, id=66, 47.17625pt x 45.16875pt>
-File: ggb/fig/pkt.png Graphic file (type png)
-<use ggb/fig/pkt.png>
-Package pdftex.def Info: ggb/fig/pkt.png  used on input line 14.
+(Font)              <8> on input line 9.
+<dig/fig/fder.png, id=91, 309.155pt x 294.09875pt>
+File: dig/fig/fder.png Graphic file (type png)
+<use dig/fig/fder.png>
+Package pdftex.def Info: dig/fig/fder.png  used on input line 12.
+(pdftex.def)             Requested size: 154.57712pt x 147.04901pt.
+<dig/fig/ref.png, id=92, 307.1475pt x 318.18875pt>
+File: dig/fig/ref.png Graphic file (type png)
+<use dig/fig/ref.png>
+Package pdftex.def Info: dig/fig/ref.png  used on input line 20.
+(pdftex.def)             Requested size: 153.57336pt x 159.09398pt.
+ [3
+
+ <./dig/fig/fder.png>]
+<dig/fig/liste.png, id=107, 306.14375pt x 305.14pt>
+File: dig/fig/liste.png Graphic file (type png)
+<use dig/fig/liste.png>
+Package pdftex.def Info: dig/fig/liste.png  used on input line 27.
+(pdftex.def)             Requested size: 153.07149pt x 152.56961pt.
+<dig/fig/lign.png, id=108, 355.3275pt x 324.21124pt>
+File: dig/fig/lign.png Graphic file (type png)
+<use dig/fig/lign.png>
+Package pdftex.def Info: dig/fig/lign.png  used on input line 33.
+(pdftex.def)             Requested size: 177.6633pt x 162.10522pt.
+ [4 <./dig/fig/ref.png> <./dig/fig/liste.png>]
+<dig/fig/hoyre.png, id=114, 342.27875pt x 435.6275pt>
+File: dig/fig/hoyre.png Graphic file (type png)
+<use dig/fig/hoyre.png>
+Package pdftex.def Info: dig/fig/hoyre.png  used on input line 39.
+(pdftex.def)             Requested size: 171.13895pt x 217.81322pt.
+
+Overfull \hbox (9.40617pt too wide) in paragraph at lines 42--43
+\T1/lmr/m/n/10.95 dette kan vi an-vende \T1/lmtt/m/n/10.95 ByttUt( <Uttrykk>, <
+Liste med forandringer> 
+ []
+
+[5 <./dig/fig/lign.png> <./dig/fig/hoyre.png>]
+<dig/fig/cas2.png, id=120, 370.38374pt x 223.83624pt>
+File: dig/fig/cas2.png Graphic file (type png)
+<use dig/fig/cas2.png>
+Package pdftex.def Info: dig/fig/cas2.png  used on input line 47.
+(pdftex.def)             Requested size: 185.1914pt x 111.91785pt.
+ [6 <./dig/fig/cas2.png>]
+<dig/fig/pkt.png, id=127, 47.17625pt x 45.16875pt>
+File: dig/fig/pkt.png Graphic file (type png)
+<use dig/fig/pkt.png>
+Package pdftex.def Info: dig/fig/pkt.png  used on input line 55.
 (pdftex.def)             Requested size: 18.87015pt x 18.06717pt.
-<ggb/fig/lin.png, id=67, 47.17625pt x 44.165pt>
-File: ggb/fig/lin.png Graphic file (type png)
-<use ggb/fig/lin.png>
-Package pdftex.def Info: ggb/fig/lin.png  used on input line 15.
+<dig/fig/lin.png, id=128, 47.17625pt x 44.165pt>
+File: dig/fig/lin.png Graphic file (type png)
+<use dig/fig/lin.png>
+Package pdftex.def Info: dig/fig/lin.png  used on input line 56.
 (pdftex.def)             Requested size: 18.87015pt x 17.66566pt.
-<ggb/fig/ekst.png, id=68, 46.1725pt x 44.165pt>
-File: ggb/fig/ekst.png Graphic file (type png)
-<use ggb/fig/ekst.png>
-Package pdftex.def Info: ggb/fig/ekst.png  used on input line 16.
+<dig/fig/ekst.png, id=129, 46.1725pt x 44.165pt>
+File: dig/fig/ekst.png Graphic file (type png)
+<use dig/fig/ekst.png>
+Package pdftex.def Info: dig/fig/ekst.png  used on input line 57.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<ggb/fig/nul.png, id=69, 46.1725pt x 44.165pt>
-File: ggb/fig/nul.png Graphic file (type png)
-<use ggb/fig/nul.png>
-Package pdftex.def Info: ggb/fig/nul.png  used on input line 17.
+<dig/fig/nul.png, id=130, 46.1725pt x 44.165pt>
+File: dig/fig/nul.png Graphic file (type png)
+<use dig/fig/nul.png>
+Package pdftex.def Info: dig/fig/nul.png  used on input line 58.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<ggb/fig/skj.png, id=70, 49.18375pt x 45.16875pt>
-File: ggb/fig/skj.png Graphic file (type png)
-<use ggb/fig/skj.png>
-Package pdftex.def Info: ggb/fig/skj.png  used on input line 18.
+<dig/fig/skj.png, id=131, 49.18375pt x 45.16875pt>
+File: dig/fig/skj.png Graphic file (type png)
+<use dig/fig/skj.png>
+Package pdftex.def Info: dig/fig/skj.png  used on input line 59.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<ggb/fig/vek.png, id=71, 47.17625pt x 43.16125pt>
-File: ggb/fig/vek.png Graphic file (type png)
-<use ggb/fig/vek.png>
-Package pdftex.def Info: ggb/fig/vek.png  used on input line 19.
+<dig/fig/vek.png, id=132, 47.17625pt x 43.16125pt>
+File: dig/fig/vek.png Graphic file (type png)
+<use dig/fig/vek.png>
+Package pdftex.def Info: dig/fig/vek.png  used on input line 60.
 (pdftex.def)             Requested size: 18.87015pt x 17.26418pt.
-<ggb/fig/tekst.png, id=72, 49.18375pt x 45.16875pt>
-File: ggb/fig/tekst.png Graphic file (type png)
-<use ggb/fig/tekst.png>
-Package pdftex.def Info: ggb/fig/tekst.png  used on input line 20.
+<dig/fig/tekst.png, id=133, 49.18375pt x 45.16875pt>
+File: dig/fig/tekst.png Graphic file (type png)
+<use dig/fig/tekst.png>
+Package pdftex.def Info: dig/fig/tekst.png  used on input line 61.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<ggb/fig/flytt.png, id=73, 45.16875pt x 44.165pt>
-File: ggb/fig/flytt.png Graphic file (type png)
-<use ggb/fig/flytt.png>
-Package pdftex.def Info: ggb/fig/flytt.png  used on input line 21.
+<dig/fig/flytt.png, id=134, 45.16875pt x 44.165pt>
+File: dig/fig/flytt.png Graphic file (type png)
+<use dig/fig/flytt.png>
+Package pdftex.def Info: dig/fig/flytt.png  used on input line 62.
 (pdftex.def)             Requested size: 18.06717pt x 17.66566pt.
 
-Overfull \hbox (27.75099pt too wide) in paragraph at lines 13--24
+Overfull \hbox (27.75099pt too wide) in paragraph at lines 54--65
 [][]  
  []
 
-<ggb/fig/erlik.png, id=74, 47.17625pt x 45.16875pt>
-File: ggb/fig/erlik.png Graphic file (type png)
-<use ggb/fig/erlik.png>
-Package pdftex.def Info: ggb/fig/erlik.png  used on input line 26.
+<dig/fig/erlik.png, id=135, 47.17625pt x 45.16875pt>
+File: dig/fig/erlik.png Graphic file (type png)
+<use dig/fig/erlik.png>
+Package pdftex.def Info: dig/fig/erlik.png  used on input line 67.
 (pdftex.def)             Requested size: 18.87015pt x 18.06717pt.
-<ggb/fig/brin.png, id=75, 45.16875pt x 44.165pt>
-File: ggb/fig/brin.png Graphic file (type png)
-<use ggb/fig/brin.png>
-Package pdftex.def Info: ggb/fig/brin.png  used on input line 27.
+<dig/fig/brin.png, id=136, 45.16875pt x 44.165pt>
+File: dig/fig/brin.png Graphic file (type png)
+<use dig/fig/brin.png>
+Package pdftex.def Info: dig/fig/brin.png  used on input line 68.
 (pdftex.def)             Requested size: 18.06717pt x 17.66566pt.
-<ggb/fig/caerlik.png, id=76, 43.16125pt x 45.16875pt>
-File: ggb/fig/caerlik.png Graphic file (type png)
-<use ggb/fig/caerlik.png>
-Package pdftex.def Info: ggb/fig/caerlik.png  used on input line 28.
+<dig/fig/caerlik.png, id=137, 43.16125pt x 45.16875pt>
+File: dig/fig/caerlik.png Graphic file (type png)
+<use dig/fig/caerlik.png>
+Package pdftex.def Info: dig/fig/caerlik.png  used on input line 69.
 (pdftex.def)             Requested size: 17.26418pt x 18.06717pt.
-<ggb/fig/x.png, id=77, 43.16125pt x 46.1725pt>
-File: ggb/fig/x.png Graphic file (type png)
-<use ggb/fig/x.png>
-Package pdftex.def Info: ggb/fig/x.png  used on input line 29.
+<dig/fig/x.png, id=138, 43.16125pt x 46.1725pt>
+File: dig/fig/x.png Graphic file (type png)
+<use dig/fig/x.png>
+Package pdftex.def Info: dig/fig/x.png  used on input line 70.
 (pdftex.def)             Requested size: 17.26418pt x 18.46866pt.
-<ggb/fig/xca.png, id=78, 45.16875pt x 45.16875pt>
-File: ggb/fig/xca.png Graphic file (type png)
-<use ggb/fig/xca.png>
-Package pdftex.def Info: ggb/fig/xca.png  used on input line 30.
+<dig/fig/xca.png, id=139, 45.16875pt x 45.16875pt>
+File: dig/fig/xca.png Graphic file (type png)
+<use dig/fig/xca.png>
+Package pdftex.def Info: dig/fig/xca.png  used on input line 71.
 (pdftex.def)             Requested size: 18.06717pt x 18.06717pt.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-7.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3
-
- <./ggb/fig/pkt.png> <./ggb/fig/lin.png> <./ggb/fig/ekst.png> <./ggb/fig/nul.pn
-g> <./ggb/fig/skj.png> <./ggb/fig/vek.png> <./ggb/fig/tekst.png> <./ggb/fig/fly
-tt.png> <./ggb/fig/erlik.png> <./ggb/fig/brin.png> <./ggb/fig/caerlik.png> <./g
-gb/fig/x.png> <./ggb/fig/xca.png>]
-[4]
-Overfull \hbox (29.06711pt too wide) in paragraph at lines 102--102
+[7 <./dig/fig/pkt.png> <./dig/fig/lin.png> <./dig/fig/ekst.png> <./dig/fig/nul.
+png> <./dig/fig/skj.png> <./dig/fig/vek.png> <./dig/fig/tekst.png> <./dig/fig/f
+lytt.png> <./dig/fig/erlik.png> <./dig/fig/brin.png> <./dig/fig/caerlik.png> <.
+/dig/fig/x.png> <./dig/fig/xca.png>] [8]
+Overfull \hbox (29.06711pt too wide) in paragraph at lines 144--144
 []\T1/lmtt/m/n/12 Kurve( <Uttrykk>, <Uttrykk>, <Uttrykk>, <Parametervariabel>, 
 
  []
 
 
-Overfull \hbox (8.39151pt too wide) in paragraph at lines 104--104
+Overfull \hbox (8.39151pt too wide) in paragraph at lines 146--146
 \T1/lmr/m/n/10.95 or-di-nater besår ut-trykket av et punkt på linja og en fri v
 ari-abel $\OMS/lmsy/m/n/10.95 g\OML/lmm/m/it/10.95 lambda$ 
  []
 
-[5]
-Overfull \hbox (25.97514pt too wide) in paragraph at lines 138--138
+[9] [10]
+Overfull \hbox (25.97514pt too wide) in paragraph at lines 180--180
 \T1/lmr/m/n/10.95 pyra-mide med grun-n-flate $[]$ og top-punkt $\OML/lmm/m/it/1
 0.95 D$\T1/lmr/m/n/10.95 , mens \T1/lmtt/m/n/10.95 Pyramide[A,B,C,D, 
  []
 
-[6] [7]) [8]
-Kapittel 2.
-[9
+[11] [12]) (./dig/py_bm.tex (./dig/../../doc.tex) [13]
+Overfull \hbox (0.93387pt too wide) in paragraph at lines 10--11
+\T1/lmr/m/n/10.95 bruker NumPy-arrays ist-e-den-for lis-ter går raskere, og at 
+NumPy-arrays 
+ []
 
-] (./num/num_bm.tex (./num/../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-(./num/helloworld.py) (./num/intfloat.py) (./num/opr.py) [10
+(./dig/array1.py)
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]\T1/lmr/m/n/10.95 Til forskjell fra lis-ter, er el-e-mentene skilt bare med m
+el-lom-rom
+ []
 
-] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[14
+
+] (./dig/arrayopr.py) (./dig/skalkryss.py)) [15]
+Kapittel 2.
+[16
+
+] (./num/num_bm.tex (./num/../../doc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
 []\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/n/10.95 være skjærin
 gspunk-tet mel-lom $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen og tan-gen-t
 en til $\OML/lmm/m/it/10.95 f$
  []
 
-<num/../fig/newt1a.pdf, id=157, 170.7178pt x 142.26149pt>
+<num/../fig/newt1a.pdf, id=231, 170.7178pt x 142.26149pt>
 File: num/../fig/newt1a.pdf Graphic file (type pdf)
 <use num/../fig/newt1a.pdf>
-Package pdftex.def Info: num/../fig/newt1a.pdf  used on input line 54.
+Package pdftex.def Info: num/../fig/newt1a.pdf  used on input line 21.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
-<num/../fig/newt1b.pdf, id=158, 170.7178pt x 142.26149pt>
+<num/../fig/newt1b.pdf, id=232, 170.7178pt x 142.26149pt>
 File: num/../fig/newt1b.pdf Graphic file (type pdf)
 <use num/../fig/newt1b.pdf>
-Package pdftex.def Info: num/../fig/newt1b.pdf  used on input line 57.
+Package pdftex.def Info: num/../fig/newt1b.pdf  used on input line 24.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
 
-Overfull \hbox (14.52383pt too wide) in paragraph at lines 54--58
+Overfull \hbox (14.52383pt too wide) in paragraph at lines 21--25
 [][][][][][]  
  []
 
-[12
+[17
 
  <./num/../fig/newt1a.pdf> <./num/../fig/newt1b.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-\T1/lmr/m/n/10.95 hvor $[]$. Gitt $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -ver
-diene $\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 x[]$ 
-\T1/lmr/m/n/10.95 for $[]$. Ved å
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\T1/lmr/m/n/10.95 Gitt en fun-skjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 
+(\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 si at vi ønsker å
+ finne et tall $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 slik at
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]$\T1/lmr/m/n/10.95 . Gitt $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -verdiene 
+$\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 x[]$ \T1/lm
+r/m/n/10.95 for $[]$. Ved å bruke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\T1/lmr/m/n/10.95 Newtons metode beskriver en it-erasjon-sprossess som man hå
+per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/lmr/m/n/10.95 at nærmer seg en verdi. Hvis meot-den lykkes, vil $\OML/lmm/m
+/it/10.95 x[]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 x[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/lmr/m/n/10.95 et-ter-hvert være veldig like, og slik kan en grense for hvor
+ liten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]$ \T1/lmr/m/n/10.95 kan være fun-gere som et godt mål for når it-erasjon-
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
 []\T1/lmr/m/n/10.95 Dele in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.9
 5 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i min-dre in-ter-vall. Disse 
 kaller vi
@@ -1558,99 +1662,116 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2.1
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 	\subfloat
+l.67 	\subfloat
                [TilnÃ¦rming med 3\\ \hspace{0.55cm}delintervaller.]{\include...
-<num/../fig/trapmet.pdf, id=198, 136.57022pt x 113.81522pt>
+<num/../fig/trapmet.pdf, id=271, 136.57022pt x 113.81522pt>
 File: num/../fig/trapmet.pdf Graphic file (type pdf)
 <use num/../fig/trapmet.pdf>
-Package pdftex.def Info: num/../fig/trapmet.pdf  used on input line 98.
+Package pdftex.def Info: num/../fig/trapmet.pdf  used on input line 67.
 (pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2.1
 .2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 	\subfloat
+l.68 	\subfloat
                [TilnÃ¦rming med 20\\ \hspace{0.55cm}delintervaller]{\include...
-<num/../fig/trapmetb.pdf, id=199, 136.57022pt x 113.81522pt>
+<num/../fig/trapmetb.pdf, id=272, 136.57022pt x 113.81522pt>
 File: num/../fig/trapmetb.pdf Graphic file (type pdf)
 <use num/../fig/trapmetb.pdf>
-Package pdftex.def Info: num/../fig/trapmetb.pdf  used on input line 99.
+Package pdftex.def Info: num/../fig/trapmetb.pdf  used on input line 68.
 (pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 100.
+(caption)                particular \caption on input line 69.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\T1/lmr/m/n/10.95 Gitt en in-te-grerbar funksjon $\OML/lmm/m/it/10.95 f$\T1/l
 mr/m/n/10.95 . En tilnærmet verdi for $[][] \OML/lmm/m/it/10.95 f dx$ \T1/lmr/m
 /n/10.95 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
 []\T1/lmr/m/n/10.95 Slik [][]\T1/lmr/m/sl/10.95 regel 2.2[][][] \T1/lmr/m/n/10.
 95 er for-mulert, vil $[]$ være delt inn i $[]$ delin-
  []
 
+[19
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmr/m/n/10.95 ter-valler. Det er ikke et krav at delin-ter-val-lene skal væ
-re like
+ <./num/../fig/trapmet.pdf> <./num/../fig/trapmetb.pdf>]) [20]
+Kapittel 3.
+[21
+
+] (./opg/mix_bm.tex (./opg/../../doc.tex)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 13.
+
+Overfull \hbox (6.03906pt too wide) in paragraph at lines 13--17
+ [] 
  []
 
+<opg/../fig/100mreg.png, id=311, 1174.3875pt x 845.1575pt>
+File: opg/../fig/100mreg.png Graphic file (type png)
+<use opg/../fig/100mreg.png>
+Package pdftex.def Info: opg/../fig/100mreg.png  used on input line 27.
+(pdftex.def)             Requested size: 234.87334pt x 169.0285pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-\T1/lmr/m/n/10.95 store, men det gjør im-ple-menterin-gen av meto-den let-tere.
- Ut-
+Overfull \hbox (28.46413pt too wide) in paragraph at lines 27--27
+\T1/lmr/m/n/12 for $[]$ og for $[]$. Sam-men-likn disse hastighetene 
  []
 
-[14
+) [22
 
- <./num/../fig/trapmet.pdf> <./num/../fig/trapmetb.pdf>]) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+ <./opg/../fig/100mreg.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./AM2_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `AM2_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 6CEB46A78A483A698208F7C6F1D175FD;350.
+(rerunfilecheck)             Checksum: 51027503A6C53ECA8FB0268FF6D0B2F4;627.
  ) 
 Here is how much of TeX's memory you used:
- 32840 strings out of 481239
- 632218 string characters out of 5920378
- 1182151 words of memory out of 5000000
- 47301 multiletter control sequences out of 15000+600000
- 635910 words of font info for 100 fonts, out of 8000000 for 9000
+ 33524 strings out of 481239
+ 643545 string characters out of 5920378
+ 1170582 words of memory out of 5000000
+ 47911 multiletter control sequences out of 15000+600000
+ 659542 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,104p,872b,1705s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+ 70i,12n,104p,872b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 bx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on AM2_bm.pdf (16 pages, 465421 bytes).
+fb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
+9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on AM2_bm.pdf (23 pages, 689259 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
