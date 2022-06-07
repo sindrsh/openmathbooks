@@ -16,10 +16,10 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 
 The books are found here
 - [Matematikkens byggesteiner (bokmål)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)) 
-- [Anvendt matematikk 1 (bokmål)]([[https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing)) 
-- [Teoretisk matematikk 1 (bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing))
-- [Teoretisk matematikk 2(bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing))  
-- [Anvendt matematikk 2 (bokmål)]([https://github.com/sindrsh/FirstPrinciplesOfMath/blob/master/MB_bm.pdf](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)) 
+- [Anvendt matematikk 1 (bokmål)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing))
+- [Teoretisk matematikk 1 (bokmål)](https://drive.google.com/file/d/1JJQBkm5yuZ1IaA2lHR1_lQgkqQe6WUgP/view?usp=sharing)
+- [Teoretisk matematikk 2(bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing)  
+- [Anvendt matematikk 2 (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing) 
 
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
