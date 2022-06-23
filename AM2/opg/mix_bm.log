@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,110 +1350,109 @@ LaTeX Info: Redefining \nameref on input line 5.
 \@outlinefile=\write7
 \openout7 = `mix_bm.out'.
 
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-5.
+3.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-5.
+3.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-15.
+13.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-15.
+13.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 15.
+(Font)              <10> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 15.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+(Font)              <5> on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-5.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-15.
+13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-Overfull \hbox (6.03906pt too wide) in paragraph at lines 15--19
+Overfull \hbox (6.03906pt too wide) in paragraph at lines 13--17
  [] 
  []
 
-<../fig/100mreg.png, id=12, 1174.3875pt x 845.1575pt>
+<../fig/100mreg.png, id=14, 1174.3875pt x 845.1575pt>
 File: ../fig/100mreg.png Graphic file (type png)
 <use ../fig/100mreg.png>
-Package pdftex.def Info: ../fig/100mreg.png  used on input line 29.
+Package pdftex.def Info: ../fig/100mreg.png  used on input line 27.
 (pdftex.def)             Requested size: 234.87334pt x 169.0285pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 27.
 
-Overfull \hbox (28.46413pt too wide) in paragraph at lines 29--29
+Overfull \hbox (28.46413pt too wide) in paragraph at lines 27--27
 \T1/lmr/m/n/12 for $[]$ og for $[]$. Sam-men-likn disse hastighetene 
  []
 
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/100mreg.png>]
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
+[2 <../fig/100mreg.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32605 strings out of 481239
- 632565 string characters out of 5920378
- 949467 words of memory out of 5000000
- 47175 multiletter control sequences out of 15000+600000
- 598175 words of font info for 93 fonts, out of 8000000 for 9000
+ 32600 strings out of 481239
+ 632510 string characters out of 5920378
+ 948467 words of memory out of 5000000
+ 47171 multiletter control sequences out of 15000+600000
+ 592178 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,104p,875b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,104p,875b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on mix_bm.pdf (2 pages, 224815 bytes).
+Output written on mix_bm.pdf (2 pages, 221904 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -87,13 +87,17 @@
 	#1
 \end{equation}
 }
+
+% Equation comments
+\newcommand{\cm}[1]{\llap{\color{blue} #1}}
+
 % Lister med bokstavar
 \usepackage[inline]{enumitem}
 
 \newcounter{rg}
 \numberwithin{rg}{chapter}
-\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{R\,\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
-\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{D\,\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
@@ -239,13 +243,9 @@ Rekn ut.
 {\color{Gray} #1} \os
 }
 
-%License
-\newcommand{\lic}{\textit{Matematikken sine byggesteinar by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit\\ 
-		\net{http://creativecommons.org/licenses/by-nc-sa/4.0/}{http://creativecommons.org/licenses/by-nc-sa/4.0/}}}
-
 %referances
 \newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
-\newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}\textsl{#2 \ref*{#1}}}}
+\newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}#2 \ref*{#1}}}
 \newcommand{\reftab}[1]{\hrs{#1}{tabell}}
 \newcommand{\rref}[1]{\hrs{#1}{regel}}
 \newcommand{\dref}[1]{\hrs{#1}{definisjon}}

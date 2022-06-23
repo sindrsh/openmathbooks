@@ -2,8 +2,19 @@
 
 ---MB---
 geo
-Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
+- I teoridel: 
+	Forklar bruken av "sider" o.l. etterfulgt av en størrelse. For 		eksempel "høgde 2".
+	Skriv om "Arealet til..." med liten a.
+- Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
 
+geo2
+- vis arealformelen for en trekant
+
+
+rrek
+- forklar hvordan man kan bruke divisjon med rest til å
+uttrykke et blanda tall
+obs! Fiks farger på rest-ruter (kan ikke ha samme som negative tall)
 
 ---TM1---
 
@@ -14,6 +25,7 @@ alg
 ved å bruke potensregelen for ln
 - forklar kvadratsetningene ut ifra figurer
 - for andregradslikning: vise at hvis x1 og x2 er løsninger av likningen, så er (x1+x2)/2 x-verdien til toppunktet
+
 
 
 geo
