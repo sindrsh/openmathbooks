@@ -5,7 +5,7 @@ geo
 - I teoridel: 
 	Forklar bruken av "sider" o.l. etterfulgt av en størrelse. For 		eksempel "høgde 2".
 	Skriv om "Arealet til..." med liten a.
-- Likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
+- Rettvinklet, likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
 
 geo2
 - vis arealformelen for en trekant

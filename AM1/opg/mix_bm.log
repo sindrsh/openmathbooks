@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 JUL 2022 06:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  3 AUG 2022 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1366,144 +1366,159 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (./1pv22d1opg5.py)
-<../fig/1pv22d1opg2.pdf, id=14, 227.62039pt x 156.49466pt>
+) (./1pv22d1opg5.py) [2]
+<../fig/1pv22d1opg2.pdf, id=37, 227.62039pt x 156.49466pt>
 File: ../fig/1pv22d1opg2.pdf Graphic file (type pdf)
 <use ../fig/1pv22d1opg2.pdf>
 Package pdftex.def Info: ../fig/1pv22d1opg2.pdf  used on input line 30.
 (pdftex.def)             Requested size: 227.61983pt x 156.49426pt.
- [2] [3 <../fig/1pv22d1opg2.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-1.
- (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-1.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+9.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-1.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+9.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-41.
+39.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-41.
+39.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 41.
+(Font)              <12> on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 41.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 41.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+(Font)              <6> on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 4
-1.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 3
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-41.
+39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
+) [3 <../fig/1pv22d1opg2.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+2.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 57.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 57.
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]\T1/lmr/m/n/12 The av-er-age flow rate at the mouth of the Ama-zon is suf-fi-
 
-Overfull \hbox (16.53667pt too wide) in paragraph at lines 57--58
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]\T1/lmr/m/sl/12 Den gjen-nom-snit-tlige van-n-førin-gen i munnin-gen av
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/sl/12 Amazonas-elven er nok til å fylle mer enn 83 slike per
+ []
+
+[5]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 87.
+
+Overfull \hbox (16.53667pt too wide) in paragraph at lines 87--88
 \T1/lmr/m/n/12 en bils kjør-eretning. Ifølge en rap-port[][][][] fra SIN-TEF ka
 n[][][][] $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 tilnærmes 
  []
 
 
-Overfull \hbox (5.30344pt too wide) in paragraph at lines 60--69
+Overfull \hbox (5.30344pt too wide) in paragraph at lines 90--99
  [] 
  []
 
 
-Overfull \hbox (12.22302pt too wide) in paragraph at lines 72--72
+Overfull \hbox (12.22302pt too wide) in paragraph at lines 102--102
 [][][]\T1/lmr/m/n/9 Verdien er hen-tet fra [][]en.wikipedia.org/wiki/Automobile
 _drag_coefficient#Drag_area[][]| 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 [][][][]\T1/lmr/m/n/9 Den to-tale en-erg-i-meng-den en bil bruker på en kjøre-l
 engde vil være høyere enn det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 \T1/lmr/m/n/9 vi har kalt ''en-ergi-for-bruket''. Som regel vil den to-tale en-
 erg-i-meng-den som kreves
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 \T1/lmr/m/n/9 for å kjøre en strekn-ing være høyere jo høyere hastighet man har
 . Slik kan man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 \T1/lmr/m/n/9 anta at dif-fer-ansen i en-ergi-for-bruk vi finner i denne opp-ga
 ven er et min-i-mum for
  []
 
 
-Overfull \hbox (14.08182pt too wide) in paragraph at lines 86--86
+Overfull \hbox (14.08182pt too wide) in paragraph at lines 116--116
 \T1/lmr/m/n/12 for å motvirke $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 over en viss 
 kjøre-lengde. Ved kon-stant hastighet 
  []
 
 
-Overfull \hbox (1.84639pt too wide) in paragraph at lines 86--86
+Overfull \hbox (1.84639pt too wide) in paragraph at lines 116--116
 \T1/lmr/m/n/12 norske mo-torveier er 90km/h og 110km/h van-lige farts-grenser. 
 
  []
 
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33129 strings out of 481239
- 638163 string characters out of 5920378
- 1133213 words of memory out of 5000000
- 47657 multiletter control sequences out of 15000+600000
- 594437 words of font info for 87 fonts, out of 8000000 for 9000
+ 33148 strings out of 481239
+ 638374 string characters out of 5920378
+ 1133269 words of memory out of 5000000
+ 47666 multiletter control sequences out of 15000+600000
+ 613293 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,12n,104p,875b,1642s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
@@ -1512,22 +1527,25 @@ st, replaced by a fixed one
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
 exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-t
 s1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on mix_bm.pdf (6 pages, 244581 bytes).
+1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxo10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
+Output written on mix_bm.pdf (7 pages, 344050 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
