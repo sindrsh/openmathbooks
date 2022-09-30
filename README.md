@@ -24,6 +24,18 @@ At the moment, all the books are available in Norwegien, and First principles of
 
 ## Norwegian versions
 * [Matematikkens byggesteiner](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
+* [Anvendt matematikk 1](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing)
+* [Teoretisk matematikk 1](https://drive.google.com/file/d/1JJQBkm5yuZ1IaA2lHR1_lQgkqQe6WUgP/view?usp=sharing)
+* [Teoretisk matematikk 2](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing)
+* [Anvendt matematikk 2](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
+
+## English versions
+* [First principles of math](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=sharing)
+* [Applied mathematics 1]()
+* [Theoretical mathematics 1]()
+* [Theoreticl mathematics 2]()
+* [Applied mathematics 2]()
+
 
 ### Built With
 
@@ -39,9 +51,8 @@ This space includes the complete file structure of the books ready to be compile
 
 <!-- ROADMAP -->
 ## Roadmap
-- Completing "Teoretisk matematikk 1" and "Anvendt mateamtikk 2"
-- Rename and edit "Før kalkulus", the new name being "Teoretisk matematikk 2". Biggest change in the edit is adding "Numeriske metoder"
-- Make minor changes in "Matematikkens byggesteiner" and "Anvendt matemematikk 1"
+- Translating all books into English
+- Adding more exercises
 
 <!-- CONTRIBUTING -->
 ## Contributing
