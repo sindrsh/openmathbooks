@@ -56,8 +56,10 @@ This space includes the complete file structure of the books ready to be compile
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Please make contact if you want to contribute to this project. Contributions especially sought out for are
+- Translating the books into other languages than Norwegian
+- Proofreading text and calculations
+- Adding problems to the sections
 
 <!-- LICENSE -->
 ## License
