@@ -31,10 +31,6 @@ At the moment, all the books are available in Norwegien, and First principles of
 
 ## English versions
 * [First principles of math](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=sharing)
-* [Applied mathematics 1]()
-* [Theoretical mathematics 1]()
-* [Theoreticl mathematics 2]()
-* [Applied mathematics 2]()
 
 
 ### Built With
