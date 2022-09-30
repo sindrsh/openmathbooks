@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 SEP 2022 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1419,7 +1419,8 @@ a\OT1/lmr/m/n/10.95 ))$
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 \T1/lmr/m/n/10.95 og $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 b; f\OT1/lmr/m/n/
 10.95 (\OML/lmm/m/it/10.95 b\OT1/lmr/m/n/10.95 ))$ \T1/lmr/m/n/10.95 kalles den
- []\T1/lmr/bx/n/10.95 gjen-nom-snit-tlige vek-st-farten til
+ []\T1/lmr/bx/n/10.95 gjen-nom-snit-tlige vek-st-farten[] \T1/lmr/m/n/10.95 til
+
  []
 
 
@@ -1530,7 +1531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 ant fart, måtte
  []
 
-<../fig/ballb.pdf, id=36, 170.7178pt x 113.81522pt>
+<../fig/ballb.pdf, id=34, 170.7178pt x 113.81522pt>
 File: ../fig/ballb.pdf Graphic file (type pdf)
 <use ../fig/ballb.pdf>
 Package pdftex.def Info: ../fig/ballb.pdf  used on input line 42.
@@ -1588,34 +1589,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `funk_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 4F4E75E8725D875E21099C92A0FEC425;54.
+(rerunfilecheck)             Checksum: 18F6CA7BE551493AB2B281D527C2A682;68.
  ) 
 Here is how much of TeX's memory you used:
- 32647 strings out of 481239
- 633599 string characters out of 5920378
- 951493 words of memory out of 5000000
- 47208 multiletter control sequences out of 15000+600000
+ 32642 strings out of 481239
+ 633583 string characters out of 5920378
+ 951347 words of memory out of 5000000
+ 47203 multiletter control sequences out of 15000+600000
  602773 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,8n,104p,876b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive
+-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy8.pfb>
-Output written on funk_bm.pdf (3 pages, 208204 bytes).
+/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on funk_bm.pdf (3 pages, 203685 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
