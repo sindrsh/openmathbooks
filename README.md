@@ -13,12 +13,17 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. During the spring and summer of 2022 the collection will consist of the following books (for the moment, the books are in Norwegian):
-- Matematikkens byggesteiner
-- Anvendt matematikk 1
-- Teoretisk matematikk 1
-- Teoretisk matematikk 2
-- Anvendt matematikk 2
+OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. During the spring and summer of 2022 the collection will consist of the following books:
+- First principles of math
+- Applied mathematics 1
+- Theoretical mathematics 1
+- Teoretical mathematics 2
+- Applied mathematcis 2
+
+At the moment, all the books are available in Norwegien, and First principles of math is available in English.
+
+## Norwegian versions
+* [Matematikkens byggesteiner](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
 
 ### Built With
 
@@ -53,11 +58,4 @@ Distributed under the CC BY-NC-SA 4.0 license. To view a copy of this license, v
 ## Contact
 
 Sindre Sogge Heggen - sindre.heggen@gmail.com
-
-Project Link:
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-_This Readme file is based on the template made by othneildrew_.
-
 
