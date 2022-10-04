@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  4 OCT 2022 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  4 OCT 2022 09:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**meng_bm.tex
-(./meng_bm.tex
+**lig_opg_bm.tex
+(./lig_opg_bm.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -1039,11 +1039,11 @@ nous mode
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ))
-\meng_bm@idxfile=\write6
-\openout6 = `meng_bm.idx'.
+\lig_opg_bm@idxfile=\write6
+\openout6 = `lig_opg_bm.idx'.
 
 
-Writing index file meng_bm.idx
+Writing index file lig_opg_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1229,26 +1229,26 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(../bm.tex) (./meng_bm.aux)
-\openout1 = `meng_bm.aux'.
+(./lig_opg_bm.aux)
+\openout1 = `lig_opg_bm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 4.
 
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1313,7 +1313,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 5.
+LaTeX Info: Redefining \selectfont on input line 4.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1329,7 +1329,7 @@ Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count375
 \AtBeginShipoutBox=\box142
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1342,266 +1342,155 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
 
-(./meng_bm.out) (./meng_bm.out)
+(./lig_opg_bm.out) (./lig_opg_bm.out)
 \@outlinefile=\write7
-\openout7 = `meng_bm.out'.
+\openout7 = `lig_opg_bm.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-.
+<../fig/gj.pdf, id=11, 218.0145pt x 68.60631pt>
+File: ../fig/gj.pdf Graphic file (type pdf)
+<use ../fig/gj.pdf>
+Package pdftex.def Info: ../fig/gj.pdf  used on input line 21.
+(pdftex.def)             Requested size: 218.01395pt x 68.60612pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+8.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-.
-
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+8.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-7.
+28.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-7.
+28.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 7.
+(Font)              <12> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 7.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 7.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+(Font)              <6> on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 7
-.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-7.
+28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 8.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 8.
+) [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
-[][][][]\T1/lmr/m/n/9 En mengde kan også være en sam-ling av an-dre matem-a-tis
-ke ob-jek-ter, som for
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/gj.pdf>]
+Overfull \hbox (0.78233pt too wide) in paragraph at lines 45--46
+[]\T1/lmr/m/n/12 Prisen på en vare er først sen-ket med 20%, og så er den nye p
+risen 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-$\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/
-10.95 kalles et lukket in-ter-vall, $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a;
- b\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 kalles et åpent in-ter-vall, og
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\T1/lmr/m/n/12 ''Den tradis-jonelle meto-den å es-timere mak-si-malpuls er å 
+ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-[]\T1/lmr/m/n/10.95 At $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 er et el-e-men
-t i både en mengde $\OML/lmm/m/it/10.95 M[]$ \T1/lmr/m/n/10.95 og en mengde $\O
-ML/lmm/m/it/10.95 M[]$\T1/lmr/m/n/10.95 ,
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]\T1/lmr/m/n/12 Hopp opp og ned i ca. 30 sekun-der (så fort og så høyt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
-[]\T1/lmr/m/n/10.95 Mange tek-ster bruker [][][][][][] ist-e-den-for [][][][][]
-[] for å in-dikere åpne (eller
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[]\T1/lmr/m/n/10.95 Når vi heretter i boka de-finerer et in-ter-vall beskrevet 
-av $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 b$\T1/lmr/
-m/n/10.95 ,
- []
-
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-[]\T1/lmr/m/n/10.95 Mengden av alle heltall større enn 0 og min-dre enn 10 skri
-ver vi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\T1/lmr/m/n/10.95 Denne meng-den in-neholder 9 el-e-menter. 3 er et el-e-ment i
- denne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]\T1/lmr/m/n/10.95 Skriv opp ulikhetene som gjelder for alle $[]$, og om 1 er
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]\T1/lmr/m/n/12 Tell hjertes-lag i 15 sekun-der umid-del-bart et-ter hop-pin-
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-[]\T1/lmr/m/n/10.95 De to in-ter-val-lene i ek-sem-pelet over kan også skrives 
-som $\OT1/lmr/m/n/10.95 [2\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 !\OT1/lmr/m
-/n/10.95 )$
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]\T1/lmr/m/n/12 ''2 ganger opp-trinn (trinnhøyde) pluss 1 gang in-ntrinn (trin
+-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[][][][][][][] \T1/lmr/m/n/10.95 er ikke noe bestemt tall. Å bruke de fire grun
-n-leggende
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+\T1/lmr/m/n/12 ndybde) bør bli 62 cen-time-ter (med et slin-gringsmonn på et
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
-\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Meng-den som utel
-ukkende in-neholder
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
+1.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [3] [4]
+Overfull \hbox (10.01917pt too wide) in paragraph at lines 139--139
+[]\T1/lmr/m/n/12 I 2005 kostet en sykkel 1500kr, mens den i 2014 ville kostet 1
+784kr 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-\T1/lmr/m/n/10.95 alle verdier $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 kan ha
-, er defin-isjon-s-meng-den til $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . Denn
-e meng-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-\T1/lmr/m/n/10.95 den skrives som $\OML/lmm/m/it/10.95 D[]$\T1/lmr/m/n/10.95 . 
-Meng-den som utelukkende in-neholder alle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-\T1/lmr/m/n/10.95 verdier $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 kan ha når 
-$[]$, er verdi-meng-den til $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . Denne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
-[]\T1/lmr/m/n/10.95 Figuren un-der viser$[]$, hvor $[]$. Da er
- []
-
-<../fig/defmengeks1.pdf, id=63, 114.55798pt x 142.26149pt>
-File: ../fig/defmengeks1.pdf Graphic file (type pdf)
-<use ../fig/defmengeks1.pdf>
-Package pdftex.def Info: ../fig/defmengeks1.pdf  used on input line 95.
-(pdftex.def)             Requested size: 114.5577pt x 142.26112pt.
-<../fig/defmengeks2.pdf, id=64, 199.1741pt x 73.91615pt>
-File: ../fig/defmengeks2.pdf Graphic file (type pdf)
-<use ../fig/defmengeks2.pdf>
-Package pdftex.def Info: ../fig/defmengeks2.pdf  used on input line 99.
-(pdftex.def)             Requested size: 199.17361pt x 73.91595pt.
-[4
-
- <../fig/defmengeks1.pdf> <../fig/defmengeks2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]\T1/lmr/m/n/10.95 Definisjonsmengden til en funksjon bestemmes av to ting;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T1/lmr/m/n/10.95 hvilken sam-men-heng funksjo-nen skal brukes i og eventuelle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T1/lmr/m/n/10.95 verdier som gir et ude-fin-ert funksjon-sut-trykk. I \T1/lmr/
-m/sl/10.95 Ek-sem-pel 1 \T1/lmr/m/n/10.95 på
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T1/lmr/m/n/10.95 side []4[] er defin-isjon-s-meng-den helt vilkårlig valgt, si
-den funksjo-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T1/lmr/m/n/10.95 nen er de-fin-ert for alle $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n
-/10.95 . I \T1/lmr/m/sl/10.95 Ek-sem-pel 2 \T1/lmr/m/n/10.95 de-r-i-mot er ikke
- funksjo-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T1/lmr/m/n/10.95 nen de-fin-ert for $[]$, så en defin-isjon-s-mengde som in-ne
-holdt
- []
-
-[5] [6
-
-]
-<../fig/funkvilk.pdf, id=104, 141.79977pt x 142.26149pt>
-File: ../fig/funkvilk.pdf Graphic file (type pdf)
-<use ../fig/funkvilk.pdf>
-Package pdftex.def Info: ../fig/funkvilk.pdf  used on input line 127.
-(pdftex.def)             Requested size: 141.79942pt x 142.26112pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 127.
-See the caption package documentation for explanation.
-
-[7 <../fig/funkvilk.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
- (./meng_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-Package rerunfilecheck Info: File `meng_bm.out' has not changed.
-(rerunfilecheck)             Checksum: A41EEBD5E79DD0A7E2A5B8135B53BD19;155.
+[5]
+<../fig/ligo1.pdf, id=100, 227.62039pt x 284.52296pt>
+File: ../fig/ligo1.pdf Graphic file (type pdf)
+<use ../fig/ligo1.pdf>
+Package pdftex.def Info: ../fig/ligo1.pdf  used on input line 187.
+(pdftex.def)             Requested size: 227.61983pt x 284.52225pt.
+ [6 <../fig/ligo1.pdf>] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+ (./lig_opg_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package rerunfilecheck Info: File `lig_opg_bm.out' has not changed.
+(rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
  ) 
 Here is how much of TeX's memory you used:
- 32691 strings out of 481239
- 633954 string characters out of 5920378
- 952974 words of memory out of 5000000
- 47236 multiletter control sequences out of 15000+600000
- 613964 words of font info for 90 fonts, out of 8000000 for 9000
+ 32672 strings out of 481239
+ 633917 string characters out of 5920378
+ 950961 words of memory out of 5000000
+ 47207 multiletter control sequences out of 15000+600000
+ 576546 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,16n,104p,876b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,104p,879b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on meng_bm.pdf (7 pages, 289252 bytes).
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy10.pfb>
+Output written on lig_opg_bm.pdf (7 pages, 176863 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 52 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

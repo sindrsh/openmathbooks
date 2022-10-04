@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  15 AUG 2022 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 OCT 2022 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1426,29 +1426,42 @@ Overfull \hbox (28.46413pt too wide) in paragraph at lines 28--28
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/100mreg.png>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 44.
 
+! LaTeX Error: File `../fig/godot_layers' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 ...degraphics[scale=0.5]{\figp{godot_layers}}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 50.
 [2]
-Overfull \hbox (6.5749pt too wide) in paragraph at lines 55--56
+Overfull \hbox (6.5749pt too wide) in paragraph at lines 61--62
 []\T1/lmr/m/n/12 Ut ifra $[]$, hvilken verdi må $\OML/lmm/m/it/12 ^^R$ \T1/lmr/
 m/n/12 ha for at kastet skal bli lengst mulig?  
  []
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32630 strings out of 481239
- 632868 string characters out of 5920378
- 949190 words of memory out of 5000000
- 47185 multiletter control sequences out of 15000+600000
+ 32662 strings out of 481239
+ 633307 string characters out of 5920378
+ 949496 words of memory out of 5000000
+ 47203 multiletter control sequences out of 15000+600000
  613186 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,7n,104p,875b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1461,10 +1474,10 @@ f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
 type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on mix_bm.pdf (3 pages, 308122 bytes).
+Output written on mix_bm.pdf (3 pages, 309388 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
