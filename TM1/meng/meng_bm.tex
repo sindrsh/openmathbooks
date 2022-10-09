@@ -4,8 +4,8 @@
 
 \begin{document}
 \section{Mengder}
-En samling av tall kalles en \textit{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
-}, og et tall som er en del av en mengde kalles et \textit{element}. Mengder kan inneholde et endelig\\ antall elementer og de kan inneholde uendelig mange elementer. \regv
+En samling av tall kalles en \outl{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
+}, og et tall som er en del av en mengde kalles et \outl{element}. Mengder kan inneholde et endelig\\ antall elementer og de kan inneholde uendelig mange elementer. \regv
 \regdef[Mengder]{
 For to reelle tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
 \begin{center}
@@ -24,7 +24,7 @@ Mengden som inneholder bare $ a $ og $ b $ skrives som $ \{a, b\} $. \vsk
 
 At $ x $ er et element i en mengde $ M $, skrives som $ x\in M $.\vsk
 
-At $ x $ ikke er et element i en mengde $ M $, skrives som $ x\not \in M $. \vsk
+At $ x $ \textsl{ikke} er et element i en mengde $ M $, skrives som $ x\not \in M $. \vsk
 
 At $ x $ er et element i både en mengde $ M_1 $ og en mengde $ M_2 $, skrives som $ x \in M_1 \cup M_2 $. 
 }
@@ -90,7 +90,7 @@ Gitt en funksjon $ f(x) $. Mengden som utelukkende inneholder alle verdier $ x $
 }
 \eks[1]
 { \label{mengeks1}
-Figuren under viser$ {f(x)=2x+1} $, hvor $ {D_f=[1, 3]} $. Da er ${ V_f=[1, 5]} $.
+Figuren under viser $ {f(x)=2x+1} $, hvor $ {D_f=[1, 3]} $. Da er ${ V_f=[1, 5]} $.
 \fig{defmengeks1}
 }
 \eks[2]{
@@ -102,7 +102,7 @@ Figuren under viser $ f(x)={\frac{1}{x}} $, hvor $ {D_f}=[-3, -1] \cup [2, 5] $.
 Definisjonsmengden til en funksjon bestemmes av to ting; hvilken sammenheng funksjonen skal brukes i og eventuelle verdier som gir et udefinert funksjonsuttrykk. I \textsl{Eksempel 1} på side \pageref{mengeks1} er definisjonsmengden helt vilkårlig valgt, siden funksjonen er definert for alle $ x $. I \textsl{Eksempel 2} derimot er ikke funksjonen definert for $ {x=0} $, så en definisjonsmengde som inneholdt denne verdien for $ x $ ville ikke gitt mening.
 }
 \section{Vilkår}
-Symbolet \sym{$ \Rightarrow $} bruker vi for å vise til at hvis et vilkår er oppfylt, så er en annen (eller flere) vilkår også oppfylt. For eksempel; i \mb\;så vi at hvis en trekant er rettvinklet, er Pytagoras' setning gyldig. Dette kan vi skrive slik:
+Symbolet \sym{$ \Rightarrow $} bruker vi for å vise til at hvis et vilkår er oppfylt, så er et annet (eller flere) vilkår også oppfylt. For eksempel; i \mb\;så vi at hvis en trekant er rettvinklet, er Pytagoras' setning gyldig. Dette kan vi skrive slik:
 \[ \text{trekanten er rettvinklet} \Rightarrow \text{Pytagoras' setning er gyldig}\]
 Men vi så også at det omvendte gjelder; hvis Pytagoras' setning er gyldig, må trekanten være rettvinklet. Da kan vi skrive
 \[ \text{trekanten er rettvinklet} \iff \text{Pytagoras' setning er gyldig}\]
@@ -128,7 +128,7 @@ Funksjoner kan gjerne ha flere uttrykk som gjelder ved forskjellige vilkår. La 
 Dette kan vi skrive som
 \begin{equation*}f(x)= \left\lbrace{
 		\begin{array}{rcr}
-			-2x+1 &,&x<1 \\
+			-2x+1 &,&x<1 \br
 			x^2-2x   &,& x\geq 1
 		\end{array}
 	}\right. \label{fsplit}

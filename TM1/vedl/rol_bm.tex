@@ -1,0 +1,30 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\vedlegg{Rolles teorem og middelverditeoremet} \label{vdlrollandmeanval}
+\reg[Rolles teorem \label{rolle}]{
+Gitt en funksjon $ f(x) $, deriverbar på intervallet $ (a, b) $, og hvor $ f(a)=f(b) $. Da fins et tall $ c\in[a, b] $ slik at $ f'(c)=0 $.
+\fig{roll}
+}
+\fork{\ref{rolle} \rolle}{
+Hvis uttrykket til $ f $ er en konstant, er $ f'(x)=0 $ på hele intervallet, og påstanden om tallet $ c $ er åpenbart sann. \vsk
+
+Hvis uttrykket til $ f $ ikke er en konstant, impliserer dette at $ f $ har et lokalt ekstremalpunkt på intervallet $ (a, b) $ (siden $ {f(a)=f(b)} $). La $ c $ være dette ekstremalpunktet, av \rref{fderekstr} er da $ f'(c)=0 $.
+}\vsk \vsk
+
+\reg[\meanval \label{meanval}]{
+Gitt en funksjon $ f(x) $ deriverbar på intervallet $ (a, b) $. Da fins et tall $ c\in(a, b) $ slik at
+\begin{equation}\label{meanvaleq}
+f'(c)=\frac{f(b)-f(a)}{b-a}
+\end{equation}
+\fig{meanval}
+}
+\fork{\ref{meanval} \meanval}{
+La $ g(x) $ være den lineære funksjonen som beskriver linja som går gjennom punktene $ (a, f(a)) $ og $ (b, f(b)) $. Videre definerer vi
+\[ h(x)=f-g=f(x)-\frac{f(b)-f(a)}{b-a}(a-x)+f(a) \]
+Da har vi at $ h(a)=h(b)=0 $. Av \refunnbr{rolle}{\rolle} vet vi da et det fins et tall $ c\in(a, b) $ hvor $ {h'(c)=0} $. Dette betyr at
+\[ f'(c)-\frac{f(b)-f(a)}{b-a}=0 \]
+}
+\end{document}

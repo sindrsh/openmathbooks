@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  4 OCT 2022 08:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  9 OCT 2022 07:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1499,7 +1499,7 @@ $[]$, er verdi-meng-den til $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . Denne
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 95--95
-[]\T1/lmr/m/n/10.95 Figuren un-der viser$[]$, hvor $[]$. Da er
+[]\T1/lmr/m/n/10.95 Figuren un-der viser $[]$, hvor $[]$. Da er
  []
 
 <../fig/defmengeks1.pdf, id=63, 114.55798pt x 142.26149pt>
@@ -1552,7 +1552,7 @@ holdt
 [5] [6
 
 ]
-<../fig/funkvilk.pdf, id=104, 141.79977pt x 142.26149pt>
+<../fig/funkvilk.pdf, id=103, 141.79977pt x 142.26149pt>
 File: ../fig/funkvilk.pdf Graphic file (type pdf)
 <use ../fig/funkvilk.pdf>
 Package pdftex.def Info: ../fig/funkvilk.pdf  used on input line 127.
@@ -1573,11 +1573,11 @@ Package rerunfilecheck Info: File `meng_bm.out' has not changed.
 (rerunfilecheck)             Checksum: A41EEBD5E79DD0A7E2A5B8135B53BD19;155.
  ) 
 Here is how much of TeX's memory you used:
- 32691 strings out of 481239
- 633954 string characters out of 5920378
- 952974 words of memory out of 5000000
- 47236 multiletter control sequences out of 15000+600000
- 613964 words of font info for 90 fonts, out of 8000000 for 9000
+ 32692 strings out of 481239
+ 633948 string characters out of 5920378
+ 953028 words of memory out of 5000000
+ 47238 multiletter control sequences out of 15000+600000
+ 609701 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,16n,104p,876b,877s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
@@ -1592,16 +1592,15 @@ texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on meng_bm.pdf (7 pages, 289252 bytes).
+/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb>
+Output written on meng_bm.pdf (7 pages, 280802 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 194 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 
