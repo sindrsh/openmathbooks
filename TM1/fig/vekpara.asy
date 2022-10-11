@@ -13,8 +13,8 @@ yaks(0,b,l="$y$",bex=1.2);
 
 
 pair A = (a,b);
-mktc(A.x,"$x_2$");
-mktcy(A.y,"$y_2$");
+mktc(A.x,"$x_1$");
+mktcy(A.y,"$y_1$");
 
 dv((A.x,0), A, O, "$\theta$",0.5N+E, Cyan,sc=1);
 

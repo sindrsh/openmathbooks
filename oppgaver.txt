@@ -19,6 +19,7 @@ obs! Fiks farger på rest-ruter (kan ikke ha samme som negative tall)
 ---TM1---
 
 Obs! Fiks figur til linearisering av f(x)
+Obs! Fiks forklaring av rest ved polynomdivisjon
 
 alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses

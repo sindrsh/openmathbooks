@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 SEP 2022 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  11 OCT 2022 08:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1423,10 +1423,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32507 strings out of 481239
- 630785 string characters out of 5920378
- 949923 words of memory out of 5000000
- 47090 multiletter control sequences out of 15000+600000
+ 32511 strings out of 481239
+ 630809 string characters out of 5920378
+ 950020 words of memory out of 5000000
+ 47094 multiletter control sequences out of 15000+600000
  571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1439,7 +1439,7 @@ f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
 type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on vek_opg_bm.pdf (1 page, 111959 bytes).
+Output written on vek_opg_bm.pdf (1 page, 111954 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream

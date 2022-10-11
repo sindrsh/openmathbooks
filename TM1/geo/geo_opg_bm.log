@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 SEP 2022 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  11 OCT 2022 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,7 +1434,7 @@ engde
 <../fig/opggeo2.pdf, id=95, 53.25897pt x 81.68517pt>
 File: ../fig/opggeo2.pdf Graphic file (type pdf)
 <use ../fig/opggeo2.pdf>
-Package pdftex.def Info: ../fig/opggeo2.pdf  used on input line 78.
+Package pdftex.def Info: ../fig/opggeo2.pdf  used on input line 73.
 (pdftex.def)             Requested size: 53.25882pt x 81.68495pt.
 [4 <../fig/opggeo2.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
@@ -1446,10 +1446,10 @@ Package rerunfilecheck Info: File `geo_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
  ) 
 Here is how much of TeX's memory you used:
- 32559 strings out of 481239
- 631873 string characters out of 5920378
- 950031 words of memory out of 5000000
- 47125 multiletter control sequences out of 15000+600000
+ 32563 strings out of 481239
+ 631897 string characters out of 5920378
+ 950128 words of memory out of 5000000
+ 47129 multiletter control sequences out of 15000+600000
  571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,104p,879b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1468,7 +1468,7 @@ re/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb>
-Output written on geo_opg_bm.pdf (4 pages, 190263 bytes).
+Output written on geo_opg_bm.pdf (4 pages, 190265 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  128 compressed objects within 2 object streams

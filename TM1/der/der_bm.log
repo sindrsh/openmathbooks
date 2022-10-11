@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  6 OCT 2022 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  11 OCT 2022 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,22 +1401,22 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-<../fig/der2a.pdf, id=33, 170.7178pt x 142.26149pt>
+<../fig/der2a.pdf, id=17, 170.7178pt x 142.26149pt>
 File: ../fig/der2a.pdf Graphic file (type pdf)
 <use ../fig/der2a.pdf>
 Package pdftex.def Info: ../fig/der2a.pdf  used on input line 18.
 (pdftex.def)             Requested size: 136.57442pt x 113.80933pt.
-<../fig/der2b.pdf, id=34, 170.7178pt x 142.26149pt>
+<../fig/der2b.pdf, id=18, 170.7178pt x 142.26149pt>
 File: ../fig/der2b.pdf Graphic file (type pdf)
 <use ../fig/der2b.pdf>
 Package pdftex.def Info: ../fig/der2b.pdf  used on input line 21.
 (pdftex.def)             Requested size: 136.57442pt x 113.80933pt.
-<../fig/der2c.pdf, id=35, 170.7178pt x 142.26149pt>
+<../fig/der2c.pdf, id=19, 170.7178pt x 142.26149pt>
 File: ../fig/der2c.pdf Graphic file (type pdf)
 <use ../fig/der2c.pdf>
 Package pdftex.def Info: ../fig/der2c.pdf  used on input line 24.
 (pdftex.def)             Requested size: 136.57442pt x 113.80933pt.
-<../fig/der2d.pdf, id=36, 170.7178pt x 142.26149pt>
+<../fig/der2d.pdf, id=20, 170.7178pt x 142.26149pt>
 File: ../fig/der2d.pdf Graphic file (type pdf)
 <use ../fig/der2d.pdf>
 Package pdftex.def Info: ../fig/der2d.pdf  used on input line 27.
@@ -1442,7 +1442,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 m går gjen-nom punk-tet
  []
 
-<../fig/der1.pdf, id=38, 170.7178pt x 142.26149pt>
+<../fig/der1.pdf, id=22, 170.7178pt x 142.26149pt>
 File: ../fig/der1.pdf Graphic file (type pdf)
 <use ../fig/der1.pdf>
 Package pdftex.def Info: ../fig/der1.pdf  used on input line 42.
@@ -1457,169 +1457,187 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 82.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 []\T1/lmr/m/n/10.95 Gitt en fun-skjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 
 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 og en vari-abel $
 \OML/lmm/m/it/10.95 k$\T1/lmr/m/n/10.95 . Da finnes en funksjon $\OML/lmm/m/it/
 10.95 "$
  []
 
-[3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+<../fig/flinear.pdf, id=87, 227.62039pt x 170.7178pt>
+File: ../fig/flinear.pdf Graphic file (type pdf)
+<use ../fig/flinear.pdf>
+Package pdftex.def Info: ../fig/flinear.pdf  used on input line 96.
+(pdftex.def)             Requested size: 227.61983pt x 170.71738pt.
+[3] [4 <../fig/flinear.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 []\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
-\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . []\T1/lmr/bx/n/10
-.95 Den de-riverte av $\OML/lmm/b/it/10.95 f$[] \T1/lmr/m/n/10.95 er funksjo-ne
-n som
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Den []\T1/lmr/bx/
+n/10.95 de-riverte funksjo-nen[] \T1/lmr/m/n/10.95 til $\OML/lmm/m/it/10.95 f$ 
+\T1/lmr/m/n/10.95 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-\T1/lmr/m/n/10.95 fremkom-mer ved å er-statte $\OML/lmm/m/it/10.95 a$ \T1/lmr/m
-/n/10.95 i [] med $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 . Denne funksjo-nen
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+\T1/lmr/m/n/10.95 funksjo-nen som fremkom-mer ved å er-statte $\OML/lmm/m/it/10
+.95 a$ \T1/lmr/m/n/10.95 i [] med $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 . De
+nne
  []
 
+[5
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+]
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\T1/lmr/m/n/10.95 Derivasjon som vi har sett på så langt har vært en brøk med
  en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 dif-fer-anse av $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -ver
 dier i nevner og den tilknyt-tede dif-fer-ansen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 av $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 -verdier i teller
 . Da sier vi at $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 er de-rivert med []\T
 1/lmr/bx/n/10.95 hen-syn på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \OML/lmm/b/it/10.95 x$[]\T1/lmr/m/n/10.95 . I denne bok-se-rien skal vi i all h
 ov-ed-sak se på funksjoner som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 bare er avhengige av én vari-abel. Gitt en funksjon $\OML/lmm
 /m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/
 lmr/m/n/10.95 , er det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 da un-der-forstått at [][][][][][] sym-bol-is-erer $\OML/lmm/
 m/it/10.95 f$ \T1/lmr/m/n/10.95 de-rivert med hen-syn på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\T1/lmr/m/n/10.95 Samtidig er det greit å være klar over at en funksjon gjern
 e kan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 en []\T1/lmr/bx/n/10.95 fler-vari-abel funksjon[]\T1/lmr/m/n/
 10.95 , avhengig av både $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 og $\OML/lmm
 /m/it/10.95 y$\T1/lmr/m/n/10.95 . I dette
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 til-fel-let kan vi bruke skrive [][][][][][] for å in-dikere 
 derivasjon med
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 hen-syn på $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 , og [][]
 [][][][] for å in-dikere derivasjon med hen-syn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 \T1/lmr/m/n/10.95 på $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 . Leseren må gjer
 ne fork-lare for seg selv hvor-for føl-gende
  []
 
-[5
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []\T1/lmr/m/n/10.95 Gitt en de-river-bar funksjon $\OML/lmm/m/it/10.95 f\OT1/lm
 r/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Da e
-r den []\T1/lmr/bx/n/10.95 an-dred-eriverte av
+r den []\T1/lmr/bx/n/10.95 an-dred-eriverte[]
  []
 
-[6]
-Overfull \hbox (19.63864pt too wide) in paragraph at lines 153--155
-\T1/lmr/m/n/10.95 Men vi kan også skrive $[]$, hvor $\OML/lmm/m/it/10.95 u\OT1/
-lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ) = \OML/lmm/m/it/10.95 
-x[]$\T1/lmr/m/n/10.95 . Denne skrivemåten 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+\T1/lmr/m/sl/9 Merk: \T1/lmr/m/n/9 Vi kan også finne $\OML/lmm/m/it/9 f[]$ \T1/
+lmr/m/n/9 ved å sette $[]$ og $[]$, for så å
  []
 
-[7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 257--257
-\T1/lmr/m/sl/9 Merk: \T1/lmr/m/n/9 Vi kan også finne $\OML/lmm/m/it/9 f$\T1/lmr
-/m/n/9 ' ved å sette $[]$ og $[]$, for så å
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
 []\T1/lmr/m/n/10.95 Vi set-ter $[]$ og $[]$, og merker oss at
  []
 
-[11] [12
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[][][][]\T1/lmr/m/n/9 Klammeparantesene $[]$ har i denne sam-men-hen-gen lik be
+-tyd-ning som
+ []
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+$\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 beskrives di-rekte av $\OML/lmm/m/it/
+10.95 x$\T1/lmr/m/n/10.95 , mens $\OML/lmm/m/it/10.95 g$ \T1/lmr/m/n/10.95 besk
+rives in-di-rekte av $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 , via
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+\T1/lmr/m/n/10.95 skrivemåten im-plis-erer at når vi kjen-ner ver-dien til \T1/
+lmr/m/it/10.95 x\T1/lmr/m/n/10.95 , reg-ner vi
+ []
+
+[11
+
+] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
 [][]\T1/lmr/bx/n/12 0.4[] Den de-riverte av el-e-men-tære funksjoner (fork-
  []
 
-[13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 334.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 334.
+[13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (./der_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 334.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `der_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 9C9AD2D6BF4126B6A0E8180417E82E89;411.
+(rerunfilecheck)             Checksum: 2D9C19C1E64429AD06098EB24ABDAF5A;104.
  ) 
 Here is how much of TeX's memory you used:
- 32778 strings out of 481239
- 635123 string characters out of 5920378
- 956130 words of memory out of 5000000
- 47288 multiletter control sequences out of 15000+600000
+ 32787 strings out of 481239
+ 635229 string characters out of 5920378
+ 957444 words of memory out of 5000000
+ 47295 multiletter control sequences out of 15000+600000
  609701 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,104p,875b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ 70i,12n,104p,875b,990s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-mib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on der_bm.pdf (13 pages, 309201 bytes).
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmsy8.pfb>
+Output written on der_bm.pdf (14 pages, 318817 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
 

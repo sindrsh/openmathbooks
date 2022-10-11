@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 07:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  10 OCT 2022 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1414,23 +1414,24 @@ Package rerunfilecheck Info: File `sincostan_bm.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32478 strings out of 481239
- 630525 string characters out of 5920378
- 946844 words of memory out of 5000000
- 47075 multiletter control sequences out of 15000+600000
+ 32483 strings out of 481239
+ 630551 string characters out of 5920378
+ 948953 words of memory out of 5000000
+ 47080 multiletter control sequences out of 15000+600000
  565908 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,10n,104p,881b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on sincostan_bm.pdf (1 page, 76990 bytes).
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy8.pfb>
+Output written on sincostan_bm.pdf (1 page, 80559 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

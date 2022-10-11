@@ -37,6 +37,27 @@ Formelen kjenner vi igjen som Pytagoras' setning.
 Vi setter $ v=\angle BAC $.
 Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
 \[ \angle EBC=90^\circ-\angle CBO=u \]
+
+\newpage
+\textbf{Gruble 3}
+\fig{opgcoscos}
+I figuren over merker vi oss at
+\alg{
+EB&=\sin v & AC &= \sin u  \br
+OE&=\cos v & OC&=\cos u
+}
+Da $ \triangle OCA \sim \triangle BEF $, har vi at
+\[ FE=\frac{BE}{OC}AC=\frac{\sin v}{\cos u}\sin u \]
+Videre har vi at $ EA=OA-OE=1-\cos v $. Tilsvarende er $ CH=1-\cos u $. I tillegg er 
+\nn{
+DC=FG=(FE+EA)\cos u=\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u
+}
+Nå har vi at
+\alg{
+OD &= OH-CH-DC \\
+\cos(u+v)&=1-(1-\cos u)-\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u \\
+&= \cos u \cos v- \sin u \sin v
+}
 \end{document}
 
 

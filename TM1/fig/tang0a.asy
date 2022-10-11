@@ -2,7 +2,7 @@ import "../../inh" as inh;
 import "../../drwgrph" as inh;
 import "../../geo" as geo;
 
-unitsize(1.5cm);
+unitsize(1.25cm);
 
 pair f(real x){
 	return (cos(x), sin(x));

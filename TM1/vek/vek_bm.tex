@@ -74,7 +74,7 @@ For vektorene $\vec{u}$, $ \vec{v} $ og $\vec{w} $, og et tall $ t $, har vi at
 }
 \newpage
 \regdef[Vinkelen mellom to vektorer]{
-\outl{Vinkelen mellom to vektorer} er (den minste) vinkelen som blir dannet når vektorene plasseres i samme startpunkt. For to vektorer $ \vec{u} $ og $ \vec{v} $ skriver vi denne vinkelen som $ \angle(\vec{u}, \vec{v}) $.
+Vinkelen mellom to vektorer er (den minste) vinkelen som blir dannet når vektorene plasseres i samme startpunkt. For to vektorer $ \vec{u} $ og $ \vec{v} $ skriver vi denne vinkelen som $ \angle(\vec{u}, \vec{v}) $.
 \fig{vekvink}}
 \info{Vinkelmål}{I vektorregning er det vanlig å oppgi vinkler i grader, altså på\\ intervallet $ [0^\circ, 180^\circ] $.}
 \section{Lengden til en vektor}
@@ -110,7 +110,7 @@ For to vektorer $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, er \outl{s
 \end{equation}
 }
 \spr{
-Skalarproduktet kalles også \outl{prikkproduktet} eller \outl{indre-produktet}.\vsk
+Skalarproduktet kalles også \outl{prikkproduktet} eller \\ \outl{indreproduktet}.\vsk
 
 Ordet \textit{skalar} viser til en éndimensjonal størrelse.
 }
@@ -122,8 +122,8 @@ Gitt vektorene $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $ og $ \vec{c}=[1,-9] $. Regn
 \vec{a}\cdot\vec{b}&=3\cdot4+2\cdot7=26 \br
 \vec{a}\cdot\vec{c}&=3\cdot1+2(-9)=-15
 }
-} \vsk
-
+}
+\newpage
 \reg[Regneregler for skalarproduktet]{
 	For vektorene $ \vec{u} $, $ \vec{v} $ og $ \vec{w} $ har vi at
 \begin{align}
@@ -161,9 +161,9 @@ Ved hjelp av \eqref{skaldef1} og \eqref{veku2} kan vi skrive \eqref{preskal} som
 \end{equation}
 Videre merker vi oss følgende figur:
 \fig{skaldef}
-Av {\color{blue}\hyperref[cossetn]{cosinussetningen}} og \eqref{skl1} er
+Av \refunnbr{cossetn}{cosinussetningen} og \eqref{skl1} er
 \alg{
-	|(\vec{v}-\vec{u})|^2&= |\vec{v}|^2+|\vec{u}|^2-2\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
+	|(\vec{v}-\vec{u})|^2&= |\vec{v}|^2+|\vec{u}|^2-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
 	\vec{v}^{\,2}- 2\vec{u}\cdot \vec{v} + \vec{u}^{\,2} &= \vec{v}^{\,2}+\vec{u}^{\,2}-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
 	\vec{u}\cdot \vec{v} &= |\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v})
 }
@@ -211,7 +211,7 @@ Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Da $ {\vec{a}\per
 }
 \newpage
 \info{Nullvektoren}{
-I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. For å rettferdiggjøre betingelsen som går begge veier i \eqref{vinkretteq}, må vi spørre: Kan vi få ${ \vec{u}\cdot\vec{v} =0}$ om vinkelen mellom $ \vec{u} $ og $ \vec{v} $ \textsl{ikke} er $ 90^\circ $? \vsk
+I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. For å rettferdiggjøre vilkåret som går begge veier i \eqref{vinkretteq}, må vi spørre: Kan vi få ${ \vec{u}\cdot\vec{v} =0}$ om vinkelen mellom $ \vec{u} $ og $ \vec{v} $ \textsl{ikke} er $ 90^\circ $? \vsk
 
 På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ som resulterer i cosinusverdi 0. Skal skalarproduktet bli 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med denne lengden er \outl{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man hevde at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textit{alle} vektorer.
 }
@@ -224,7 +224,7 @@ På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ 
 \subfloat[]{\includegraphics{\figp{vekpara}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekparb}}}
 \end{figure}
-Gitt to vektorer $ \vec{u}=[x_1, y_1] $ og $ \vec{v}=[x_2, y_2] $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $, med $ x $-aksen som høgre vinkelbein. Da er $ {\tan \theta =\frac{y_1}{x_1}} $ og $ {\tan \alpha =\frac{y_2}{x_2}} $. Hvis $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, er det to muligheter:
+Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $, med $ x $-aksen som høgre vinkelbein. Da er $ {\tan \theta =\frac{y_1}{x_1}} $ og $ {\tan \alpha =\frac{y_2}{x_2}} $. Hvis $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, er det to muligheter:
 \begin{enumerate}[label=(\roman*)]
 \item $ \theta=0^\circ $ og $ \alpha=180^\circ $, eller omvendt.
 \item $ \theta = \alpha $
@@ -247,7 +247,9 @@ Alternativt, for et tall $ t $ har vi at
 \end{equation}
 }
 \spr{
-Når $ {\vec{u}=t \vec{v}} $, sier vi at $ \vec{u} $ er et \outl{multiplum} av $ \vec{v} $ (og omvendt). Vi sier også at $ \vec{u} $ og $ \vec{v} $ er \outl{lineært uavhengige}. 
+Når $ {\vec{u}=t \vec{v}} $, sier vi at $ \vec{u} $ er et \outl{multiplum} av $ \vec{v} $ (og omvendt). Vi sier også at $ \vec{u} $ og $ \vec{v} $ er \outl{lineært avhengige}. \vsk
+
+Om to vektorer ikke er parallelle, sier vi at de er \outl{lineært uavhengige}.
 }
 \eks[]{
 Undersøk hvorvidt $ {\vec{a}=[2, -3]} $ og $ {\vec{b}=[20, -45]} $ er parallelle med $ {\vec{c}=[10, -15]} $.
@@ -279,16 +281,16 @@ $ \vec{v} $ kan skrives på \outl{parameterisert form} som
 Til forskjell fra grafen til en skalarfunksjon, kan grafen til en vektorfunksjon ''begevege seg fritt'' i koordinatsystemet.
 }
 
-\subsection{Vektorfunksjonen til ei linje}
-Gitt ei linje $ l $, som vist i figuren under
+\subsection{Vektorfunksjonen til en linje}
+Gitt en linje $ \vec{l}(t) $, som vist i figuren under
 \fig{linje}
-Hvis en vektor $ \vec{r} $ er parallell med $ l $, kalles den en \textit{retningsvektor}\index{retningsvektor!for linje}  for linja. Si at $ {\vec{r}=[a, b]} $ er en retningsvektor for $ l $, og at $ A=(x_0, y_0) $ er et punkt på $ l $. Om vi starter i $ A $ og vandrer parallellt med $ \vec{r} $, kan vi være sikre på at vi fortsatt befinner oss på linja. Dette må bety at vi for en variabel $ t $ kan nå et vilkårlig punkt $ {B=(x, y)} $ på linja ved følgende utregning:
+Hvis en vektor $ \vec{r} $ er parallell med $ \vec{l} $, kalles den en \outl{retningsvektor}\index{retningsvektor!for linje}  for linja. Si at $ {\vec{r}=[a, b]} $ er en retningsvektor for $ \vec{l} $, og at $ A=(x_0, y_0) $ er et punkt på $ \vec{l} $. Om vi starter i $ A $ og vandrer parallellt med $ \vec{r} $, kan vi være sikre på at vi fortsatt befinner oss på linja. Dette må bety at vi for en variabel $ t $ kan nå et vilkårlig punkt $ {B=(x, y)} $ på linja ved følgende utregning:
 \[B= A+t\vec{r} \]
 På koordinatform kan vi skrive dette som\footnote{Se \eqref{Aplusu}.}
 \[(x, y)= (x_0 +at, y_0+bt) \]
 Altså kan linja skrives som en vektorfunksjon:\regv
 \reg[Linje som vektorfunksjon]{
-	Ei linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ er gitt som
+	En linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ er gitt som
 	\[ \vec{l}=[x_0 + at, y_0+ bt] \]
 }
 \section{Sirkellikningen}
@@ -321,19 +323,18 @@ Altså kan vi skrive \eqref{sirkligeks1} som
 (x-2)^2+(y+5)^2-2^2-5^2-20&=0 \\
 (x-2)^2+(y+5)^2&=7^2
 }
-Altså har sirkelen sentrum $ (2, -5) $ og radius 7.
+Dermed har sirkelen sentrum $ (2, -5) $ og radius 7.
 }
 
 \section{Determinanter} \index{determinant}
 \reg[\boldmath$ 2\times 2 $ determinanter]{
 \outl{Determinanten} $ \det(\vec{u}, \vec{v}) $ av to vektorer $ {\vec{u}=[a, b] }$ og $ {\vec{v}=[b, c]} $ er gitt som
-	\algv{
-		\det(\vec{u}, \vec{v}) &= \left|\begin{matrix}
-			a & b \\
-			c & d
-		\end{matrix}\right| \\
-		&= ad-bc	
-	}
+\begin{equation}\label{determinant2eq}
+	\det(\vec{u}, \vec{v}) = \left|\begin{matrix}
+		a & b \\
+		c & d
+	\end{matrix}\right| = ad-bc
+\end{equation}
 }
 \eks{
 	Gitt vektorene $ {\vec{u}=[-1, 3] }$ og $ {\vec{v}=[-2, 4]} $. Regn ut $ \det(\vec{u}, \vec{v})$.
@@ -367,12 +368,13 @@ Arealet $ A $ til en trekant formet av to vektorer $ \vec{u} $ og $ \vec{v} $ er
 	\end{equation}
 \fig{plin}
 }
+\newpage
 \fork{\ref{avstpunktlin} \avstpunktlin}{
-La en linje $ l $ i rommet være gitt  av et punkt $ A $ og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja, som vist i figuren under
+La en linje $ \vec{l}(t) $ i rommet være gitt  av et punkt $ A $ og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja, som vist i figuren under
 \fig{plin}
 Den korteste avstanden fra \textit{B} til linja er høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Arealet til denne trekanten er gitt ved \eqref{det2artrk}:
 \[ \frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right| \]
-Av den klassiske arealformelen for en trekant har vi nå at
+Av den klassiske arealformelen for en trekant (se \mb) har vi nå at
 \alg{\frac{1}{2}|\vec{r}\,|h &=\frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right|  \br
 	h &= \frac{\left|\det\left(\vv{AB}, \vec r\right)\right| }{|\vec{r}|}
 }
@@ -404,6 +406,8 @@ I figurene har vi antatt at (den minste) vinkelen mellom $ \vec{v} $ og $ x $-ak
 \[ A_{\square OECF}=bc-ad \]
 Altså er
 \[  A_{\square OECF}=|ac-bd| \]
-På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $, se oppgave \ref{det2arbevis}.
+På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $, se \refops{det2arbevis}. \vsk
+
+\mers{\eqref{det2arparl} kan også vises veldig kortfattet ved å anvende trigonometri. Se oppgave ?? i \tmto\ for dette.}
 }
 \end{document}

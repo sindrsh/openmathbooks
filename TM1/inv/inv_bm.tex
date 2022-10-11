@@ -39,7 +39,7 @@ Avgjør på hvilke intervaller $ f $ er voksende/avtagende når
 \sv \vs
 Vi har at
 \[  f'(x)=x^2-8x+12 \]
-For å tydeliggjøre når $ f' $ er positiv, negativ eller lik 0 gjør vi to ting; vi faktoriserer uttrykket til $ f' $, og tegner et \textit{fortegnsskjema}:
+For å tydeliggjøre når $ f' $ er positiv, negativ eller lik 0 gjør vi to ting; vi faktoriserer uttrykket til $ f' $, og tegner et fortegnsskjema:
 \[ f'(x)=(x-2)(x-6) \]
 \fig{fortgnskj1}
 Fortegnsskjemaet illustrerer følgende:
@@ -64,7 +64,7 @@ Dette betyr at
 \end{center}
 }
 
-\section{Ekstremalpunkt}
+\section{Ekstremalpunkt, vendepunkt og infleksjons-punkt}
 \reg[Maksimum og minimum]{\label{max}\index{maksimum}\index{minimum}	
 	\notesm{Et tall $ c $ kan omtales som et punkt i funskjonsdrøftinger, underforstått at det er snakk om punktet $ (c, 0) $.} \br
 	
@@ -95,7 +95,8 @@ Et tall $ c $ er et \outl{kritisk punkt} for en funksjon $ f(x) $ hvis én av f�
 	\item $ f $ er ikke deriverbar i $ c $
 	\item $ f'(c)=0 $
 \end{itemize}
-}
+}\regv
+
 \reg[\fderekstr \label{fderekstr}]{
 Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
 \begin{enumerate}[label=(\roman*)]
@@ -104,6 +105,11 @@ Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
 	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $
 \end{enumerate}
 }
+\regv
+\spr{
+	Det som blir beskrevet i punkt (ii) og (iii) omtales ofte som at ''$ f $ skifter fortegn i $ c $''. 
+}
+\newpage
 \eks[1]{
 Finn det lokale bunnpunktet og toppunktet til 
 \[ f(x)=2x^3 + 9x^2 - 60x \]
@@ -122,9 +128,7 @@ f(2)&=5^3+9\cdot5^2-60\cdot5 = 275
 }
 Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
 }
-\spr{
-Det som blir beskrevet i punkt ii) og iii) omtales ofte som at ''$ f $ skifter fortegn i $ c $''. 
-}
+
 
 \newpage
 
@@ -149,36 +153,36 @@ Det som blir beskrevet i punkt ii) og iii) omtales ofte som at ''$ f $ skifter f
 \reg[Infleksjonspunkt og vendepunkt]{\index{infleksjonspunkt}\index{vendepunkt}
 	For en kontinuerlig funksjon $ f(x) $ har vi at
 	\begin{itemize}
-		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \textit{infleksjonspunkt} for $ f $.
-		\item Hvis $ c $ er et infleksjonspunkt for $ f $, er $ (c, f(c)) $ et \textit{vendepunkt}.
-		\item $ f $ er konveks på intervall hvor $ {f''>0} $, og konkav på intervall hvor $ {f''<0} $.
+		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \outl{infleksjonspunkt} for $ f $.
+		\item Hvis $ c $ er et infleksjonspunkt for $ f $, er $ (c, f(c)) $ et \outl{vendepunkt}.
+		\item $ f $ er konveks på intervall hvor $ {f''>0} $, og konkav på intervall hvor $ {f''<0} $. (Se \rref{konvkonk} angående kovekse og konkave funksjoner.)
 	\end{itemize}\vs
 }
 \newpage
 \eks[]{
 \[ f(x)=x^3-3x^2-144x-140\quad,\quad x\in[-14, 16] \]
+\fig{funkdroft}
 \begin{center}
 	\small
 	\begin{tabular}{c | c}
-\rowcolor{gray!15}		\textbf{punkt/verdi} & \textbf{type} \\ \hline
-\rowcolor{orange!10}		$ A=(-14, -1456) $ & absolutt bunnpunkt \\ \hline
-\rowcolor{orange!10}		$ -14 $ & ekstremalpunkt; absolutt minimum \\ \hline
-\rowcolor{orange!10}		$ -1456 $& absolutt minimum \\ \hline
+\rowcolor{gray!25}		\textbf{punkt/verdi} & \textbf{type} \\ \hline
+\rowcolor{green!10}		$ A=(-14, -1456) $ & absolutt bunnpunkt \\ \hline
+\rowcolor{green!10}		$ -14 $ & ekstremalpunkt; absolutt minimum \\ \hline
+\rowcolor{green!10}		$ -1456 $& absolutt minimum \\ \hline
 \rowcolor{cyan!10}		$ B=(-6, 400) $ & lokalt toppunkt \\ \hline	\rowcolor{cyan!10}		
 		$ -6 $ & ekstremalpunkt; lokalt maksimalpunkt \\ \hline \rowcolor{cyan!10}	
 		$ 400 $ & lokalt maksimum \\ \hline
-\rowcolor{orange!10}		$ C=(-1, -286) $ & vendepunkt  \\ \hline
-\rowcolor{orange!10}		$ -1 $ & infleksjonspunkt \\ \hline 
+\rowcolor{green!10}		$ C=(-1, -286) $ & vendepunkt  \\ \hline
+\rowcolor{green!10}		$ -1 $ & infleksjonspunkt \\ \hline 
 \rowcolor{cyan!10}		$ D = (8, -972) $ & lokalt bunnpunkt \\ \hline
 \rowcolor{cyan!10}		$ 8 $ & ekstremalpunkt; lokalt minimumspunkt \\ \hline
 \rowcolor{cyan!10}		$ -972 $ & lokal minimum \\ \hline
-\rowcolor{orange!10}		$ E= (16, 884) $ & absolutt maksimum \\ \hline
-\rowcolor{orange!10}		$ 16 $ & ekstremalpunkt; absolutt maksimumspunkt \\ \hline
-\rowcolor{orange!10}		$ 884 $ & absolutt maksimum \\ \hline
+\rowcolor{green!10}		$ E= (16, 884) $ & absolutt maksimum \\ \hline
+\rowcolor{green!10}		$ 16 $ & ekstremalpunkt; absolutt maksimumspunkt \\ \hline
+\rowcolor{green!10}		$ 884 $ & absolutt maksimum \\ \hline
 \rowcolor{cyan!10}		$ -10 $, $ -1 $ og $ 14 $ & nullpunkt \\ \hline
 	\end{tabular}
 \end{center}
-\fig{funkdroft}
 }
 \newpage
 \section{Asymptoter}
@@ -197,8 +201,8 @@ Finn den vertikale asymptoten til
 Vi observerer at
 \[ \lim\limits_{x\to 3}\left[\frac{1}{x-3}+2\right]=\pm \infty  \]
 Altså er $ x=3 $ en vertikal asymptote for $ f $.
-} \vsk
-
+} 
+\newpage
 \reg[Horisontale asymptoter]{
 Gitt en funksjon $ f(x) $. Da er $ {y=c} $ en \outl{horisontal asymptote} for $ f $ hvis 
 \[  {\lim\limits_{x\to |\infty|} f(x)=c} \]
@@ -212,31 +216,30 @@ Gitt en funksjon $ f(x) $. Da er $ {y=c} $ en \outl{horisontal asymptote} for $ 
 	Altså er $ y=2 $ en horisontal asymptote for $ f $.
 }
 \section{Konvekse og konkave funksjoner}
-\reg[Konvekse og konkave funksjoner]{
+\reg[Konvekse og konkave funksjoner \label{konvkonk}]{
 	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
 	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konveks for $ x\in[a, b] $.	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konveks} for $ x\in[a, b] $.	
 	\begin{figure}
 		\centering
 		\includegraphics[]{\figp{konv}}
 	\end{figure}	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ konkav for $ x\in[a, b] $.
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konkav} for $ x\in[a, b] $.
 	\begin{figure}
 		\centering
 		\includegraphics[]{\figp{konk}}
 	\end{figure}
 	\vs
 }
-
-\section{Injektive funksjoner}
+\section{Injektive og omvendte funksjoner}
+\subsubsection{Injektive funksjoner}
 \reg[Injektive funksoner]{
-Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \outl{injektiv} på dette intervallet.
+	Gitt en funksjon $ f(x) $. Hvis alle verdier til $ f $ er unike på intervallet $ x\in[a, b] $, er $ f $ \outl{injektiv} på dette intervallet.
 }
 \spr{
-Et annet ord for injektiv er \outl{én-entydig}.
+	Et annet ord for injektiv er \outl{én-entydig}.
 }
-
-\section{Omvendte funksjoner}
+\subsubsection{Omvendte funksjoner}
 Gitt funksjonen $ f(x)=2x+1 $, som åpenbart er injektiv for alle $ x\in \mathbb{R} $. Dette betyr at likningen $ f=2x+1 $ bare har én løsning, uavhengig om vi løser med hensyn på $ x $ eller $ f $. Løser vi med hensyn på $ x $, får vi at
 \[ x=\frac{f-1}{2} \]
 Nå har vi gått fra å ha et uttrykk for $ f $ til, det ''omvendte'', et uttrykk for $ x $. Siden $ x $ og $ f $ begge er variabler, er $ x $ en funksjon av $ f $, og for å tydeliggjøre dette kunne vi ha skrevet
@@ -252,7 +255,7 @@ Likningen over synliggjør et problem; det er veldig rotete å behandle $ x $ so
 Gitt to injektive funksjoner $ f(x) $ og $ g(y) $. Hvis
 \[ g(f)=x \]
 er $ f $ og $ g $ \outl{omvendte} funksjoner.
-} \newpage
+} 
 \eks[1]{Gitt funksjonen $ f(x)=5x-3 $.
 \abc{
 \item Finn den omvendte funksjonen $ g $ til $ f $.
@@ -277,14 +280,14 @@ g(y)&=g(5x-3)\br
 }
 \newpage
 \info{$ \bm {f^{-1}} $}{
-Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. Da er det veldig viktig å merke seg at $ f^{-1} $ ikke er det samme som $ (f)^{-1} $. For eksempel, gitt $ f(x)= x+1 $. Da er
+Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. Da er det viktig å merke seg at $ f^{-1} $ ikke er det samme som $ (f)^{-1} $. For eksempel, gitt $ f(x)= x+1 $. Da er
 \[ f^{-1}=x-1 \qquad,\qquad (f)^{-1}=\frac{1}{x+1}\] 
 I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 \[ f^n=(f)^n \] 
 }
 \section*{Forklaringer}
 \fork{\ref{monder}\,\monder}{
-	Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av middelverdisetningen\footnote{Se \refved{midsetn}} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
+	Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av \refunnbr{meanval}{middelverdisetningen} finnes det et tall $ {c\in(x_1, x_2)} $ slik at
 	\alg{
 		f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
 	}

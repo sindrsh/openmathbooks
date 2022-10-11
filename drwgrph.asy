@@ -46,7 +46,7 @@ void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
 	for (int i=0; floor(A.x) + i*dx<= floor(A.y); ++i){
 		draw((A.x + i*dx, B.x)--(A.x + i*dx, B.y), p);
 }
-	for (int i=0; floor(B.x) + i*dy<=  floor(B.y); ++i){
+	for (int i=0; floor(B.x) + i*dy <= B.y; ++i){
 		draw((A.x, B.x+ i*dy)--(A.y,B.x+ i*dy), p);
 }
 }

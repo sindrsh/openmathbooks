@@ -89,24 +89,27 @@ hvor $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k}=0 $. \vsk
 
 Tilnærmingen
 \begin{equation}\label{linaprx}
-	f(a+k)\approx f(a)+f'(x)k
+	f(a+k)\approx f(a)+f'(a)k
 \end{equation}
 kalles \outl{lineæarapproksimasjonen} av $ f(a+k) $.
+\fig{flinear}
 }
 
 \section{Derivasjonsregler}
-\subsection{Den deriverte}
+\subsubsection{Den deriverte funksjonen}
 \textsl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
 \reg[Den deriverte funksjonen]{
-	Gitt en funksjon $ f(x) $. \outl{Den deriverte av $ f $} er funksjonen som fremkommer ved å erstatte $ a $ i \eqref{derdefaeq} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
+	Gitt en funksjon $ f(x) $. Den \outl{deriverte funksjonen} til $ f $ er funksjonen som fremkommer ved å erstatte $ a $ i \eqref{derdefaeq} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
 }
 \eks[]{
 Gitt $ {f(x)=x^3} $. Siden\footnote{Se \textsl{Eksempel 2}, side \pageref{dereks2}.} $ {f'(a)=3a^2} $, er $ f'(x)=3x^2 $. 
-}
-\info{Alternative skrivemåter}{
+} \regv
+
+\spr{
 Alternative skrivemåter for \sym{$f'$} er 
 \sym{$ (f)'$} og \sym{$\frac{\text{d}}{\text{d}x} f $}.
 }
+\newpage
 \info{Derivert med hensyn på}{
 Derivasjon som vi har sett på så langt har vært en brøk med en differanse av $ x $-verdier i nevner og den tilknyttede differansen av $ f $-verdier i teller. Da sier vi at $ f $ er derivert med \outl{hensyn på $ x $}. I denne bokserien skal vi i all hovedsak se på funksjoner som bare er avhengige av én variabel. Gitt en funksjon $ f(x) $, er det da underforstått at \sym{$ f' $} symboliserer $ f $ derivert med hensyn på $ x $.\vsk
 
@@ -115,9 +118,10 @@ Samtidig er det greit å være klar over at en funksjon gjerne kan være avhengi
 en \outl{flervariabel funksjon}, avhengig av både $ x $ og $ y $. I dette tilfellet kan vi bruke skrive \sym{$ \frac{\text{d}}{\text{d}x} f$} for å indikere derivasjon med hensyn på $ x $, og \sym{$ \frac{\text{d}}{\text{d}x}f $} for å indikere derivasjon med hensyn på $ y $. Leseren må gjerne forklare for seg selv hvorfor følgende stemmer:
 \[ \frac{\text{d}}{\text{d}x}f = 2x \qquad,\qquad  \frac{\text{d}}{\text{d}y}f = 3y^2 ,\]
 }
-\subsection{Den deriverte av elementære funksjoner}
+\newpage
+\subsubsection{Den deriverte av elementære funksjoner}
 \reg[\derel \label{derel}]{
-For en variabel $ x $ og $ r\in\mathbb{R} $ er
+For en variabel $ x $ og en konstant $ r $ er
 \begin{align}
 & (e^x)' =e^{x} \label{derex} \vn	
 &  (x^r)' = r x^{r-1} \label{derxr} \vn
@@ -125,69 +129,44 @@ For en variabel $ x $ og $ r\in\mathbb{R} $ er
 \end{align}
 }	
 \reg[Den deriverte av sammensatte funksjoner]{
-Gitt $ c\in \mathbb{R} $ og funksjonene $ f(x) $ og $ g(x) $. Da er
+Gitt en konstant $ a $ og funksjonene $ f(x) $ og $ g(x) $. Da er
 \alg{
 & \left(a\cdot f\right)'=a\cdot f' \vn
 & \left(f+g\right)' =f'+g' \vn
 & \left(f-g\right)'=f'-g'
 }
-}
+} \regv
+
 \regdef[Den andrederiverte]{
-Gitt en deriverbar funksjon $ f(x) $. Da er den \outl{andrederiverte av $ f $} gitt som
+Gitt en deriverbar funksjon $ f(x) $. Da er den \outl{andrederiverte} funksjonen til $ f $ gitt som
 \begin{equation}\label{andredereq}
 	\left(f'\right)'=f''
 \end{equation}
-}
+} \regv
+
 \regdef[Den deriverte av en vektorfunksjon \label{vektfunkder}]{
 Gitt funksjonene $ f(t) $, $ g(t) $ og $ v(t)=[f(t), g(t)] $. Da er
 \begin{equation}\label{vektfunkdereq}
 v'(t)=[f'(t), g'(t)]	
 \end{equation}
 }
-\subsection{Kjerneregelen}
-La oss se på tre funksjoner $ f $, $ g $ og $ u $, hvor
-\[ f(x)= g\left[u(x)\right] \]
-$ f $ beskrives direkte av $ x $, mens $ g $ beskrives indirekte av $ x $, via $ u(x) $. \vsk
-
-La oss bruke $f(x) =e^{x^2} $ som eksempel. Kjenner vi verdien til \textit{x}, kan vi fort regne ut hva verdien til $ f(x) $ er. For eksempel er
-\[ f(2)=e^4 \]
-Men vi kan også skrive $ {g\left[u(x)\right]=e^{u(x)}} $, hvor $ u(x)=x^2 $. Denne skrivemåten impliserer at når vi kjenner verdien til \textit{x}, regner vi først ut verdien til \textit{u}, før vi så finner verdien av $g$: 
-\[ u(2) =4\qquad,\qquad 
-g\left[u(2)\right]=e^{u(2)}=e^4 \]
-Av \eqref{derdefaeq} har vi at
-\alg{
-f(x)&=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h} \br
-&= \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}
-}
-Vi setter $ k = u(x+h)-u(x) $. Da er
-\[ \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}= \lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h} \]
-Av \eqref{linfunkeq} har vi at
-\[ g(u)-g(u+k)= g'(u)k+\varepsilon_g  \]
-Altså er
-\alg{
-\lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h}& = \lim\limits_{h\to 0}\frac{g'(u)k+\varepsilon_g}{h}\br
-&=\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}
-}
-Da $ \lim\limits_{h\to0}k=0 $, er $ \lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0 $. Videre har vi at $ \lim\limits_{h\to0}\frac{k}{h}=u'(x) $. Altså har vi at
-\nn{
-\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
-}
-\reg[Kjerneregelen \label{kjerne}]{
+\newpage
+\subsubsection{Kjerne-, produkt- og divisjonsregelen ved derivasjon}
+\reg[\kjernereg \label{kjerne}]{
 For en funksjon $ f(x)=g\left[u(x)\right] $ har vi at
 \begin{equation}\label{kjerneeq}
 	f'(x) = g'(u)u'(x)
 \end{equation}
 }
-\regv
 \eks{
 Finn $ f'(x) $ når  $ f(x)=e^{x^2+x+1} $.\\
 \sv
 
 Vi setter $ u=x^2+x+1 $, og får at
 \begin{align*}
-& g(u)=e^u \vn
-& g'(u)=e^u \vn
-& u'(x) = 2x + 1
+g(u)&=e^u &
+g'(u)&=e^u &
+u'(x) &= 2x + 1
 \end{align*}
 Altså er
 \algv{
@@ -195,23 +174,9 @@ Altså er
  &= e^u(2x+1)\\
  &= e^{x^2+x+1}(2x+1) 
 }
-}
-\subsection{Produkt- og divisjonsregelen}
-Gitt funksjonene $ f $, $ u $ og $ v $, hvor
-\[ f(x)=u(x)v(x) \] 
-Av \eqref{derdefa} er da
-\[ f'=\lim\limits_{h\to 0}\frac{u(x+h)v(x+h)-u(x)v(x)}{h} \]
-La oss nå skrive $ u(x) $ og $ v(x) $ som henholdsvis $ u $ og $ v ,$ og $ u(x+h) $ og $ v(x+h) $ som henholdsvis $ \tilde{u} $ og $ \tilde{v} $:
-\alg{
-f' &= \lim\limits_{h\to 0} \frac{\tilde{u}\tilde{v}- u v}{h}
-}
-Vi kan alltids legge til 0 i form av $ \dfrac{u\tilde{v}}{h}- \dfrac{u\tilde{v}}{h} $:
-\alg{f'&= \lim\limits_{h\to 0} \left[\frac{\tilde{u}\tilde{v}- u v}{h} + \frac{u\tilde{v}}{h}- \frac{u\tilde{v}}{h}\right] \\
-&= \lim\limits_{h\to 0}\left[\frac{(\tilde{u}- u)\tilde{v}}{h} +\frac{u(\tilde{v}- v)}{h} \right]
-	}
-Siden vi for enhver kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \tilde{g}=g} $ og \\$ {\lim\limits_{h\to 0}  \frac{g(x+k)-g(x)}{h}=g'}$, er
-\[ f'=u'v+uv' \]
-\reg[Produktregelen ved derivasjon]{
+} \vsk
+
+\reg[\prodregder \label{prodregder}]{
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ {f=uv} $ da er
 \[ f'=u'v+uv' \]	
 }
@@ -239,24 +204,23 @@ Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ f=\dfrac{u}{v} $. Da er
 	f'=\frac{u'v-uv'}{v^2} 
 \end{equation}
 }
-\newpage
 \eks{
-Finn den deriverte av funksjonen $ f(x)=\frac{\cos x}{x^4} $.
+Finn den deriverte av funksjonen $ f(x)=\frac{\ln x}{x^4} $.
 
 \sv
-Vi setter $ u(x)=\cos x $ og $ v(x)=x $, da er
+Vi setter $ u(x)=\ln x $ og $ v(x)=x^4 $, da er
 \alg{
-f&=uv & u'&=-\sin x & v' &= 4x^3
+f&=\frac{u}{v} & u'&=x^{-1} & v' &= 4x^3
 }
 Altså er
 \alg{
-f' &= \frac{-\sin x\cdot x^4-\cos x\cdot 4x^3}{x^8} \br
-&= -\frac{x\sin x+4\cos x}{x^5}
+f' &= \frac{x^{-1}\cdot x^4-\ln x\cdot 4x^3}{x^8} \br
+&= \frac{1-4 \ln x}{x^5}
 }
-\notesm{Vi kan også finne $ f $' ved å sette $ {u(x)=\cos x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
+\notesm{Vi kan også finne $ f' $ ved å sette $ {u(x)=\ln x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
 }
 \newpage
-\reg[L'Hopitals regel \label{Lhop}]{
+\reg[\lhop \label{Lhop}]{
 Gitt to deriverbare funksjoner $ f(x) $ og $ g(x) $, hvor
 \[ f(a)=g(a)=0 \]
 Da er
@@ -279,23 +243,54 @@ Vi setter $ {f(x)=e^x-1} $ og $ {g(x)=x} $, og merker oss at $ {f(0)=g(0)=0} $. 
 }
 
 \section*{Forklaringer}
-\fork{L'hoptial}{
-Siden $ f(a)=g(a)=0 $, er
+
+\fork{\ref{kjerne} \kjernereg}{
+La oss se på tre funksjoner $ f $, $ g $ og $ u $, hvor\footnote{Klammeparantesene $ \sym{$ [\ ] $} $ har i denne sammenhengen lik betydning som vanlige paranteser, de brukes bare for å få ryddigere uttrykk.}
+\[ f(x)= g\left[u(x)\right] \]
+$ f $ beskrives direkte av $ x $, mens $ g $ beskrives indirekte av $ x $, via $ u(x) $. \vsk
+
+La oss bruke $f(x) =e^{x^2} $ som eksempel. Kjenner vi verdien til \textit{x}, kan vi fort regne ut hva verdien til $ f(x) $ er. For eksempel er
+\[ f(3)=e^{3^2}=e^9 \]
+Men vi kan også skrive $ {g\left[u(x)\right]=e^{u(x)}} $, hvor $ u(x)=x^2 $. Denne skrivemåten impliserer at når vi kjenner verdien til \textit{x}, regner vi først ut verdien til \textit{u}, før vi så finner verdien til $g$: 
+\[ u(3) =3^2=9\qquad,\qquad 
+g\left[u(3)\right]=e^{u(3)}=e^9 \]
+Av \eqref{derdefaeq} har vi at
 \alg{
-\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}
+	f'(x)&=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h} \br
+	&= \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}
 }
-Av \eqref{derdefalt} har vi da at
-\[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]}
-\vsk
-\fork{\ref{divder} \divder}{
-Vi har at
-\[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
-Av produktregelen og kjerneregelen er da
+Vi setter $ k = u(x+h)-u(x) $. Da er
+\[ \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}= \lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h} \]
+Av \eqref{linfunkeq} har vi at
+\[ g(u)-g(u+k)= g'(u)k+\varepsilon_g  \]
+Altså er
 \alg{
-f'	&= u' v^{-1} - u v^{-2}v' \\
-	&= \frac{u'v - u v'}{v^2}
+	\lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h}& = \lim\limits_{h\to 0}\frac{g'(u)k+\varepsilon_g}{h}\br
+	&=\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}
 }
+Da $ \lim\limits_{h\to0}k=0 $, er $ \lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0 $. Videre har vi at $ \lim\limits_{h\to0}\frac{k}{h}=u'(x) $. Altså har vi at
+\nn{
+	\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
 }
+} \vsk
+
+\fork{\ref{prodregder} \prodregder}{
+Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor
+\[ f=uv \] 
+Av \eqref{derdefa} er da
+\[ f'=\lim\limits_{h\to 0}\frac{u(x+h)v(x+h)-uv}{h} \]
+La oss skrive $ u(x+h) $ og $ v(x+h) $ som henholdsvis $ \tilde{u} $ og $ \tilde{v} $:
+\alg{
+	f' &= \lim\limits_{h\to 0} \frac{\tilde{u}\tilde{v}- u v}{h}
+}
+Vi kan alltids legge til 0 i form av $ \dfrac{u\tilde{v}}{h}- \dfrac{u\tilde{v}}{h} $:
+\alg{f'&= \lim\limits_{h\to 0} \left[\frac{\tilde{u}\tilde{v}- u v}{h} + \frac{u\tilde{v}}{h}- \frac{u\tilde{v}}{h}\right] \\
+	&= \lim\limits_{h\to 0}\left[\frac{(\tilde{u}- u)\tilde{v}}{h} +\frac{u(\tilde{v}- v)}{h} \right]
+}
+Siden vi for enhver kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \tilde{g}=g} $ og \\$ {\lim\limits_{h\to 0}  \frac{g(x+h)-g(x)}{h}=g'}$, er
+\[ f'=u'v+uv' \]
+}
+
 \newpage
 \fork{\ref{derel} \derel}{
 \textbf{Likning (\ref{derxr})}\\
@@ -327,8 +322,25 @@ Da\footnote{Se oppgave ??.}  ${\left(x\right)'=1} $, har vi at
 \[ 1 = x\left(\ln x \right)' \]
 Altså er
 \[ \left(\ln x\right)'= \frac{1}{x} \]
+} 
+
+\fork{\ref{divder} \divder}{
+	Vi har at
+	\[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
+	Av \refunnbr{prodregder}{produktregelen} og \refunnbr{kjerne}{kjerneregelen} er da
+	\alg{
+		f'	&= u' v^{-1} - u v^{-2}v' \\
+		&= \frac{u'v - u v'}{v^2}
+	}
+} \vsk
+
+\fork{\ref{Lhop} \lhop}{
+	Siden $ f(a)=g(a)=0 $, er
+	\alg{
+		\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}
+	}
+	Av \eqref{derdefalt} har vi da at
+	\[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]
 }
-
-
 
 \end{document}

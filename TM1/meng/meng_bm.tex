@@ -7,26 +7,26 @@
 En samling av tall kalles en \outl{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
 }, og et tall som er en del av en mengde kalles et \outl{element}. Mengder kan inneholde et endelig\\ antall elementer og de kan inneholde uendelig mange elementer. \regv
 \regdef[Mengder]{
-For to reelle tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
+For to tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
 \begin{center}
 	\begin{tabular}{c l}
-		$ [a, b] $ & er mengden av alle reelle tall større eller lik $ a $ \\
+		$ [a, b] $ & er mengden av alle tall større eller lik $ a $ \\
 		&og mindre eller lik $ b $. \\
-		$ (a, b] $ & er mengden av alle reelle tall større enn $ a $ \\
+		$ (a, b] $ & er mengden av alle tall større enn $ a $ \\
 		&og mindre eller lik $ b $.\\ 
 		$ [a, b) $ & er mengden av alle reelle tall større eller lik $ a $ \\
 		&og mindre enn $ b $.
 	\end{tabular}
 \end{center}
-$ [a, b] $ kalles et lukket intervall, $ (a, b) $ kalles et åpent intervall, og både $ (a, b] $ og $ [a, b) $ kalles halvåpne intervall.\vsk
+$ [a, b] $ kalles et \outl{lukket intervall}, $ (a, b) $ kalles et \outl{åpent \\intervall}, og både $ (a, b] $ og $ [a, b) $ kalles \outl{halvåpne intervall}.\vsk
 
 Mengden som inneholder bare $ a $ og $ b $ skrives som $ \{a, b\} $. \vsk
 
-At $ x $ er et element i en mengde $ M $, skrives som $ x\in M $.\vsk
+At $ x $ er et element i en mengde $ M $ skrives som $ x\in M $.\vsk
 
-At $ x $ \textsl{ikke} er et element i en mengde $ M $, skrives som $ x\not \in M $. \vsk
+At $ x $ \textsl{ikke} er et element i en mengde $ M $ skrives som $ x\not \in M $. \vsk
 
-At $ x $ er et element i både en mengde $ M_1 $ og en mengde $ M_2 $, skrives som $ x \in M_1 \cup M_2 $. 
+At mengden $ M $ består av mengdene $ M_1 $ og $ M_2 $ skrives som \\$ M = M_1 \cup M_2 $. 
 }
 \spr{
 $ x \in M$ uttales ''$ x $ inneholdt i $ M $''.\vsk
@@ -34,18 +34,18 @@ $ x \in M$ uttales ''$ x $ inneholdt i $ M $''.\vsk
 Mange tekster bruker \sym{$ \langle $} istedenfor \sym{$ ( $} for å indikere åpne (eller halvåpne) intervall.
 }
 \info{\note}{
-Når vi heretter i boka definerer et intervall beskrevet av $ a $ og $ b $, tar vi det for gitt at $ a $ og $ b $ er to reelle tall og at $ a\leq b $.
+Når vi heretter i boka definerer et intervall beskrevet av $ a $ og $ b $, tar vi det for gitt at $ a $ og $ b $ er to tall, og at $ a\leq b $.
 }
 \newpage
 \eks[1]{
-Mengden av alle heltall større enn 0 og mindre enn 10 skriver vi som 
+Mengden av alle heltall større enn 0 og mindre enn 10 kan vi skrive som
 \[ \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \]
 Denne mengden inneholder 9 elementer. 3 er et element i denne mengden, og da kan vi skrive $ 3\in\{1, 2, 3, 4, 5, 6, 7, 8, 9\}  $\vsk 
 
 10 er ikke et element i denne mengden, og da kan vi skrive \\$ 10 \not\in  \{1, 2, 3, 4, 5, 6, 7, 8, 9\} $.
 } 
 \eks[2]{
-Skriv opp ulikhetene som gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $ M $.
+I uttrykket $ 0\ ?\  x\  ?\  1 $, erstatt \sym{?} med et ulikhetssymbol slik at uttrykket gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $ M $.
 \abc{
 \item $ M = [0, 1] $
 \item $ M = (0, 1] $
@@ -62,10 +62,10 @@ Skriv opp ulikhetene som gjelder for alle $ {x\in M} $, og om 1 er inneholdt i $
 \regdef[Navn på mengder \label{mengder}]{\vs
 \begin{center}
 	\begin{tabular}{c l}
-		$ \mathbb{N} $ & Mengden av alle positive heltall\footnote{Inneholder \textit{ikke} 0.}\\
-		$ \mathbb{Z} $ & Mengden av alle heltall\footnote{Inneholder 0.}\\
-		$ \mathbb{Q} $ & Mengden av alle rasjonale tall\\
-		$ \mathbb{R} $ & Mengden av alle reelle tall\\
+		$ \mathbb{N} $ & Mengden av alle positive heltall\footnote{Inneholder \textsl{ikke} 0.}\os
+		$ \mathbb{Z} $ & Mengden av alle heltall\footnote{Inneholder 0.}\os
+		$ \mathbb{Q} $ & Mengden av alle rasjonale tall\os
+		$ \mathbb{R} $ & Mengden av alle reelle tall\os
 		$ \mathbb{C} $ & Mengden av alle komplekse tall\\
 	\end{tabular}
 \end{center}
@@ -86,20 +86,24 @@ De to intervallene i eksempelet over kan også skrives som $ [2, \rightarrow) $ 
 }
 \section{Verdi- og definisjonsmengder}
 \regdef[Verdi- og definisjonsmengder]{
-Gitt en funksjon $ f(x) $. Mengden som utelukkende inneholder alle verdier $ x $ kan ha, er definisjonsmengden til $ f $. Denne mengden skrives som $ D_f $. Mengden som utelukkende inneholder alle verdier $ f $ kan ha når $ {x\in D_f} $, er verdimengden til $ f $. Denne mengden skrives som $ V_f $. 
+Gitt en funksjon $ f(x) $. 
+\begin{itemize}
+	\item Mengden som utelukkende inneholder alle verdier $ x $ kan ha, er \outl{definisjonsmengden} til $ f $. Denne mengden skrives som $ D_f $.
+	\item Mengden som utelukkende inneholder alle verdier $ f $ kan ha når $ {x\in D_f} $, er \outl{verdimengden} til $ f $. Denne mengden skrives som $ V_f $. 
+\end{itemize}
 }
 \eks[1]
 { \label{mengeks1}
-Figuren under viser $ {f(x)=2x+1} $, hvor $ {D_f=[1, 3]} $. Da er ${ V_f=[1, 5]} $.
+Figuren under viser $ {f(x)=2x+1} $, hvor $ {D_f=[1, 3]} $. Da er ${ V_f=[1, 5]} $. \vs
 \fig{defmengeks1}
 }
 \eks[2]{
-Figuren under viser $ f(x)={\frac{1}{x}} $, hvor $ {D_f}=[-3, -1] \cup [2, 5] $. Da er $ {V_f=\left[-1, -\frac{1}{3}\right]\cup \left[\frac{1}{2},\frac{1}{5}\right]} $.
+Figuren under viser $ f(x)={\frac{1}{x}} $, hvor $ {D_f}=[-3, -1] \cup [2, 5] $. Da er $ {V_f=\left[-1, -\frac{1}{3}\right]\cup \left[\frac{1}{5},\frac{1}{2}\right]} $. \vs
 \fig{defmengeks2}
 }
 \newpage
 \info{\note}{
-Definisjonsmengden til en funksjon bestemmes av to ting; hvilken sammenheng funksjonen skal brukes i og eventuelle verdier som gir et udefinert funksjonsuttrykk. I \textsl{Eksempel 1} på side \pageref{mengeks1} er definisjonsmengden helt vilkårlig valgt, siden funksjonen er definert for alle $ x $. I \textsl{Eksempel 2} derimot er ikke funksjonen definert for $ {x=0} $, så en definisjonsmengde som inneholdt denne verdien for $ x $ ville ikke gitt mening.
+Definisjonsmengden til en funksjon bestemmes av to ting; hvilken sammenheng funksjonen skal brukes i, og eventuelle verdier som gir et udefinert funksjonsuttrykk. I \textsl{Eksempel 1} på side \pageref{mengeks1} er definisjonsmengden helt vilkårlig valgt, siden funksjonen er definert for alle $ x $. I \textsl{Eksempel 2} derimot er ikke funksjonen definert for $ {x=0} $, så en definisjonsmengde som inneholdt denne verdien for $ x $ ville ikke gitt mening.
 }
 \section{Vilkår}
 Symbolet \sym{$ \Rightarrow $} bruker vi for å vise til at hvis et vilkår er oppfylt, så er et annet (eller flere) vilkår også oppfylt. For eksempel; i \mb\;så vi at hvis en trekant er rettvinklet, er Pytagoras' setning gyldig. Dette kan vi skrive slik:
