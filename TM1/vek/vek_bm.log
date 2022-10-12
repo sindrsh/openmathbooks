@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  11 OCT 2022 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  12 OCT 2022 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1660,13 +1660,13 @@ File: ../fig/vekparb.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../fig/vekparb.pdf  used on input line 225.
 (pdftex.def)             Requested size: 143.0541pt x 116.52504pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Når $[]$, sier vi at $[]$ er et []\T1/lmr/bx/n/10.95 mul-ti
 -plum[] \T1/lmr/m/n/10.95 av $[]$ (og omvendt). Vi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--253
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 []\T1/lmr/m/n/10.95 Om to vek-torer ikke er par-al-lelle, sier vi at de er []\T
 1/lmr/bx/n/10.95 lineært
  []
@@ -1674,43 +1674,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--253
 [12
 
  <../fig/vekpara.pdf> <../fig/vekparb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 []\T1/lmr/m/n/10.95 Undersøk hvorvidt $[]$ og $[]$ er par-al-lelle med
  []
 
 [13]
-<../fig/vek0.pdf, id=300, 199.1741pt x 142.26149pt>
+<../fig/vek0.pdf, id=303, 199.1741pt x 142.26149pt>
 File: ../fig/vek0.pdf Graphic file (type pdf)
 <use ../fig/vek0.pdf>
-Package pdftex.def Info: ../fig/vek0.pdf  used on input line 279.
+Package pdftex.def Info: ../fig/vek0.pdf  used on input line 284.
 (pdftex.def)             Requested size: 199.17361pt x 142.26112pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--282
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
 []\T1/lmr/m/n/10.95 Til forskjell fra grafen til en skalar-funksjon, kan grafen
  til en
  []
 
-<../fig/linje.pdf, id=301, 170.7178pt x 95.09528pt>
+<../fig/linje.pdf, id=304, 170.7178pt x 95.09528pt>
 File: ../fig/linje.pdf Graphic file (type pdf)
 <use ../fig/linje.pdf>
-Package pdftex.def Info: ../fig/linje.pdf  used on input line 286.
+Package pdftex.def Info: ../fig/linje.pdf  used on input line 291.
 (pdftex.def)             Requested size: 170.71738pt x 95.09503pt.
 [14
 
  <../fig/vek0.pdf> <../fig/linje.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
 []\T1/lmr/m/n/10.95 En linje $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT1/l
 mr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som går gjen-nom punk-tet $[]$ og har
  []
 
 [15]
-<../fig/sirklig1.pdf, id=330, 57.40446pt x 64.5612pt>
+<../fig/sirklig1.pdf, id=333, 57.40446pt x 64.5612pt>
 File: ../fig/sirklig1.pdf Graphic file (type pdf)
 <use ../fig/sirklig1.pdf>
-Package pdftex.def Info: ../fig/sirklig1.pdf  used on input line 298.
+Package pdftex.def Info: ../fig/sirklig1.pdf  used on input line 303.
 (pdftex.def)             Requested size: 57.4043pt x 64.56104pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []\T1/lmr/m/n/10.95 Gitt en sirkel ra-dius $\OML/lmm/m/it/10.95 r$ \T1/lmr/m/n/
 10.95 og sen-trum $[]$. Hvis punk-tet
  []
@@ -1719,69 +1719,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--309
 
  <../fig/sirklig1.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 338.
+(Font)              <12> on input line 343.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []\T1/lmr/bx/n/10.95 Determinanten[] $[]\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/it/10.
 95 ; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 av to vek-torer $[]$ og $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
 []\T1/lmr/m/n/10.95 Arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 til et pa
 r-al-lel-logram formet av to vek-torer $[]$ og $[]$ er
  []
 
-<../fig/utspprl.pdf, id=345, 114.3171pt x 85.86078pt>
+<../fig/utspprl.pdf, id=348, 114.3171pt x 85.86078pt>
 File: ../fig/utspprl.pdf Graphic file (type pdf)
 <use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 363.
+Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 368.
 (pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
-<../fig/utsptrk.pdf, id=346, 86.2422pt x 57.40446pt>
+<../fig/utsptrk.pdf, id=349, 86.2422pt x 57.40446pt>
 File: ../fig/utsptrk.pdf Graphic file (type pdf)
 <use ../fig/utsptrk.pdf>
-Package pdftex.def Info: ../fig/utsptrk.pdf  used on input line 363.
+Package pdftex.def Info: ../fig/utsptrk.pdf  used on input line 368.
 (pdftex.def)             Requested size: 86.24197pt x 57.4043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 []\T1/lmr/m/n/10.95 Avstanden $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-lom
  et punkt $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 og en linje gitt av punk-te
 t $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og
  []
 
-<../fig/plin.pdf, id=347, 142.26149pt x 124.04343pt>
+<../fig/plin.pdf, id=350, 142.26149pt x 124.04343pt>
 File: ../fig/plin.pdf Graphic file (type pdf)
 <use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 370.
+Package pdftex.def Info: ../fig/plin.pdf  used on input line 375.
 (pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
 [17
 
  <../fig/utspprl.pdf> <../fig/utsptrk.pdf>] [18 <../fig/plin.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 []\T1/lmr/m/n/10.95 La en linje $[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 t\OT
 1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 i rom-met være gitt av et punkt $\OML/lmm/
 m/it/10.95 A$ \T1/lmr/m/n/10.95 og en ret-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 \T1/lmr/m/n/10.95 ningsvek-tor $[]$. I til-legg lig-ger et punkt \T1/lmr/m/it/1
 0.95 B \T1/lmr/m/n/10.95 uten-for linja, som vist i
  []
 
 File: ../fig/plin.pdf Graphic file (type pdf)
 <use ../fig/plin.pdf>
-Package pdftex.def Info: ../fig/plin.pdf  used on input line 381.
+Package pdftex.def Info: ../fig/plin.pdf  used on input line 386.
 (pdftex.def)             Requested size: 142.26112pt x 124.0431pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 \T1/lmr/m/n/10.95 Den ko-rteste av-s-tanden fra \T1/lmr/m/it/10.95 B \T1/lmr/m/
 n/10.95 til linja er høy-den \T1/lmr/m/it/10.95 h \T1/lmr/m/n/10.95 i trekan-te
 n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 386--386
 \T1/lmr/m/n/10.95 Av den klas-siske are-al-forme-len for en trekant (se [][]MB[
 ][]) har vi nå
  []
@@ -1790,51 +1790,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--381
 .1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 }
+l.417 }
        
 File: ../fig/utspprl.pdf Graphic file (type pdf)
 <use ../fig/utspprl.pdf>
-Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 412.
+Package pdftex.def Info: ../fig/utspprl.pdf  used on input line 417.
 (pdftex.def)             Requested size: 114.3168pt x 85.86057pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 }
+l.417 }
        
-<../fig/utspprlforkl.pdf, id=398, 138.648pt x 107.79271pt>
+<../fig/utspprlforkl.pdf, id=401, 138.648pt x 107.79271pt>
 File: ../fig/utspprlforkl.pdf Graphic file (type pdf)
 <use ../fig/utspprlforkl.pdf>
-Package pdftex.def Info: ../fig/utspprlforkl.pdf  used on input line 412.
+Package pdftex.def Info: ../fig/utspprlforkl.pdf  used on input line 417.
 (pdftex.def)             Requested size: 138.64764pt x 107.79243pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 \T1/lmr/m/n/10.95 Gitt to vek-torer $[]$ og $[]$, hvor $[]$, som
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 \T1/lmr/m/n/10.95 vist i figur \T1/lmr/m/sl/10.95 (a)\T1/lmr/m/n/10.95 . Plasse
 rer vi vek-torene i grunnstill-in-gen er punk-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 \T1/lmr/m/n/10.95 I fig-urene har vi an-tatt at (den min-ste) vinke-len mel-lom
  $[]$ og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 \OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen er min-dre enn vinke-len mel-lom
  $[]$ og $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen. I omvendt
  []
 
 
-LaTeX Warning: Reference `det2arbevis' on page 20 undefined on input line 412.
+LaTeX Warning: Reference `det2arbevis' on page 20 undefined on input line 417.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 []\T1/lmr/m/sl/9 Merk\T1/lmr/m/n/9 : [] kan også vises veldig ko-rt-fat-tet ved
  å an-vende trigonometri. Se
  []
@@ -1842,11 +1842,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--412
 [20
 
  <../fig/utspprlforkl.pdf>] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 418.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 418.
  (./vek_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 418.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 418.
 Package rerunfilecheck Info: File `vek_bm.out' has not changed.
 (rerunfilecheck)             Checksum: A9C64A0034C0DCBE14ED3509AF49B2FE;663.
 
@@ -1855,10 +1855,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32969 strings out of 481239
- 638877 string characters out of 5920378
- 954599 words of memory out of 5000000
- 47422 multiletter control sequences out of 15000+600000
+ 32974 strings out of 481239
+ 638925 string characters out of 5920378
+ 954683 words of memory out of 5000000
+ 47426 multiletter control sequences out of 15000+600000
  618210 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,24n,104p,875b,992s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1883,10 +1883,10 @@ f/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10
 /fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/esvect/vect10.pfb>
-Output written on vek_bm.pdf (21 pages, 368535 bytes).
+Output written on vek_bm.pdf (21 pages, 370191 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
+ 101 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

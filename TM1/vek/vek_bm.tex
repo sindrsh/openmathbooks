@@ -10,9 +10,9 @@ En \outl{todimensjonal vektor} angir en forflytning i et koordinatsystem med en 
 \subfloat[]{\includegraphics{\figp{vekdefa}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekdefb}}}
 \end{figure}
-I figur \textsl{(a)} er vektoren $ \vec{v} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (3,1) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \outl{grunn-stillingen}. I figur \textsl{(b)} er $ \vec{v} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{v} $ viser til er å vandre 2 mot høgre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ \vec{u}=[2, 3] $, som kalles $ \vec{u} $ skrevet på \outl{komponentform}. \vsk
+I figur \textsl{(a)} er vektoren $ \vec{v} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (3,1) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \outl{grunn-stillingen}. I figur \textsl{(b)} er $ \vec{v} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{v} $ viser til er å vandre 2 mot høgre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ \vec{u}=[2, 3] $, som kalles $ \vec{u} $ skrevet på \outl{komponentform}. 2 og 3 er henholdvis $ x $-komponenten og $ y $-komponenten til $ \vec{v} $.\vsk
 
-\spr{En todimensjonal vektor kalles også en \outl{vektor i rommet}.}
+\spr{En todimensjonal vektor kalles også en \outl{vektor i planet}.}
 \newpage
 \eks[1]{\vs
 \alg{
@@ -230,12 +230,17 @@ Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $. La $ \theta
 \item $ \theta = \alpha $
 \end{enumerate}
 I begge tilfeller er $ \angle(\vec{u}, \vec{v}) $ enten $ 0^\circ $ eller $ 180^\circ $, og da er $ \vec{u} $ og $ \vec{v} $ parallelle. Det omvendte gjelder også: Hvis punkt (i) eller (ii) gjelder, er $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $. Det er ofte praktisk å omskrive denne sammehengen til forholdet mellom samsvarende komponenter\footnote{
-For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter: \vspace{-6pt}
+For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter: \vspace{-5pt}
 \begin{itemize}
 	\item $ x_1 $ og $ x_2 $
 	\item $ y_1 $ og $ y_2 $
 \end{itemize}
-}: \regv
+}:
+\begin{equation}\label{parforkl}
+	\frac{x_1}{x_2}=\frac{y_1}{y_2}
+\end{equation}
+Det er også nyttig å merke seg at det må finnes to tall $ s $ og $ t $ slik at $ {\vec{u}=[tx_2, sy_2]} $. Hvis $ \vec{u}\parallel \vec{v}$, følger det av \eqref{parforkl} at $ {\frac{sx_2}{x_2}=\frac{ty_2}{y_2}}  $.
+Dermed er $ s=t $. Omvendt; hvis $ \vec{u}=t[x_2, y_2] $, oppfyller $ \vec{u} $ og $ \vec{v} $ åpenbart \eqref{parforkl}.
 \reg[Parallelle vektorer]{
 	For to vektorer $ {\vec{u}=[x_1, y_1]} \text{ og } {\vec{v}=[x_2, y_2]} $ har vi at
 	\begin{equation}

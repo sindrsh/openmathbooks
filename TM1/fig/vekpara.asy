@@ -20,5 +20,5 @@ dv((A.x,0), A, O, "$\theta$",0.5N+E, Cyan,sc=1);
 
 draw((A.x,0)--A--(0,A.y),dotted);
 
-draw(O--A,blue,arrow=Arrow(), L=Label("$\vec v$", align=NW,position=Relative(0.5)));
+draw(O--A,blue,arrow=Arrow(), L=Label("$\vec u$", align=NW,position=Relative(0.5)));
 //draw((0,0)--(0,-4),white);
