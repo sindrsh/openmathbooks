@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  4 OCT 2022 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  14 OCT 2022 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1076,27 +1076,28 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@rg=\count346
 \c@opg=\count347
-\c@vedl=\count348
-\c@vedleq=\count349
+\c@grub=\count348
+\c@vedl=\count349
+\c@vedleq=\count350
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count350
+\lst@mode=\count351
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count351
+\lst@length=\count352
 \lst@currlwidth=\dimen330
-\lst@column=\count352
-\lst@pos=\count353
+\lst@column=\count353
+\lst@pos=\count354
 \lst@lostspace=\dimen331
 \lst@width=\dimen332
-\lst@newlines=\count354
-\lst@lineno=\count355
+\lst@newlines=\count355
+\lst@lineno=\count356
 \lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count356
-\lst@skipnumbers=\count357
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1148,8 +1149,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen334
-\Hy@linkcounter=\count358
-\Hy@pagecounter=\count359
+\Hy@linkcounter=\count359
+\Hy@pagecounter=\count360
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1162,8 +1163,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count360
-\pdfmajorversion=\count361
+\Hy@SavedSpaceFactor=\count361
+\pdfmajorversion=\count362
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1171,7 +1172,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count362
+\c@Hy@tempcnt=\count363
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1187,7 +1188,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count363
+\Fld@menulength=\count364
 \Field@Width=\dimen336
 \Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -1203,9 +1204,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count364
-\c@Item=\count365
-\c@Hfootnote=\count366
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1215,8 +1216,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count367
-\c@bookmark@seq@number=\count368
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1292,16 +1293,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
+\scratchcounter=\count370
 \scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count370
-\nofMParguments=\count371
+\nofMPsegments=\count371
+\nofMParguments=\count372
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count372
+\MPscratchCnt=\count373
 \MPscratchDim=\dimen339
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1327,7 +1328,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count375
+\c@lstlisting=\count376
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 5.
 
@@ -1340,7 +1341,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count376
+\c@section@level=\count377
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1349,6 +1350,11 @@ LaTeX Info: Redefining \nameref on input line 5.
 (./mix_bm.out) (./mix_bm.out)
 \@outlinefile=\write7
 \openout7 = `mix_bm.out'.
+
+
+Overfull \hbox (18.5483pt too wide) in paragraph at lines 6--6
+|[]\T1/lmr/bx/n/14.4 Oppgaver med tall og situ-asjoner fra virkelig-
+ []
 
 
 Overfull \hbox (0.61801pt too wide) in paragraph at lines 13--13
@@ -1412,169 +1418,169 @@ File: uesvect.fd
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
-5.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+4.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 53.
+(Font)              <10> on input line 62.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 62.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 53.
+(Font)              <5> on input line 62.
 
 [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 65.
+(Font)              <9> on input line 74.
 
-Overfull \hbox (0.22945pt too wide) in paragraph at lines 65--65
+Overfull \hbox (0.22945pt too wide) in paragraph at lines 74--74
 []\T1/lmr/m/n/12 Gjenta spørsmålet fra opp-gave a), men hvor det blå tannhjulet
  
  []
 
-<../fig/tannhjul.pdf, id=54, 227.62039pt x 144.26898pt>
+<../fig/tannhjul.pdf, id=57, 227.62039pt x 144.26898pt>
 File: ../fig/tannhjul.pdf Graphic file (type pdf)
 <use ../fig/tannhjul.pdf>
-Package pdftex.def Info: ../fig/tannhjul.pdf  used on input line 66.
+Package pdftex.def Info: ../fig/tannhjul.pdf  used on input line 75.
 (pdftex.def)             Requested size: 227.61983pt x 144.26862pt.
 [3 <../fig/tannhjul.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 []\T1/lmr/m/n/12 Hvis en stør-relse har veldig høy verdi, kan det være let-tere
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \T1/lmr/m/n/12 å forestille seg om-fanget til stør-relsen ved å sam-men-ligne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \T1/lmr/m/n/12 den med en konkret stør-relse (i mot-set-ning til å bruke SI-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \T1/lmr/m/n/12 enhetene gram, me-ter og lig-nende). Opp-gave ?? - ?? han-dler
  []
 
 
-Overfull \hbox (2.40382pt too wide) in paragraph at lines 73--74
+Overfull \hbox (2.40382pt too wide) in paragraph at lines 82--83
 []\T1/lmr/m/n/12 Ifølge [][]WWF[][] kan en blåh-val veie opp til 200tonn, og if
 ølge [][]geno.no[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []\T1/lmr/m/n/12 (...) The av-er-age flow rate at the mouth of the Ama-zon is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []\T1/lmr/m/sl/12 (...) Den gjen-nom-snit-tlige van-n-førin-gen i munnin-gen av
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 \T1/lmr/m/sl/12 Amazonas-elven er nok til å fylle mer enn 83 slike per
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []\T1/lmr/m/n/12 The world lost 3.8 mil-lion hectares of trop-i-cal pri-mary fo
 r-est
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 \T1/lmr/m/n/12 in 2019 ^^U equiv-a-lent to a foot-ball pitch ev-ery six sec-ond
 s ^^U
  []
 
 
-Overfull \hbox (21.4728pt too wide) in paragraph at lines 99--100
+Overfull \hbox (21.4728pt too wide) in paragraph at lines 108--109
 []\T1/lmr/m/n/12 Ta ut-gangspunkt i tal-let ''3.8 mil-lion'', un-der-søk stør-r
 elsene ''hectares'' 
  []
 
 [5]
-Overfull \hbox (1.45764pt too wide) in paragraph at lines 106--107
+Overfull \hbox (1.45764pt too wide) in paragraph at lines 115--116
 []\T1/lmr/m/n/12 I spill-mo-toren [][]Godot[][] har noen ob-jek-ter egen-skapen
  ''Layer''. Dette 
  []
 
-<../fig/godot_layers.png, id=92, 134.37703pt x 88.45547pt>
+<../fig/godot_layers.png, id=95, 134.37703pt x 88.45547pt>
 File: ../fig/godot_layers.png Graphic file (type png)
 <use ../fig/godot_layers.png>
-Package pdftex.def Info: ../fig/godot_layers.png  used on input line 109.
+Package pdftex.def Info: ../fig/godot_layers.png  used on input line 118.
 (pdftex.def)             Requested size: 94.06326pt x 61.9184pt.
 
-Overfull \hbox (2.74123pt too wide) in paragraph at lines 111--118
+Overfull \hbox (2.74123pt too wide) in paragraph at lines 120--127
 \T1/lmr/m/n/12 Layers kan bestemmes i ed-i-toren, men det er også ønske-lig å b
 ruke 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-18.
+27.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [6 <../fig/godot_layers.png>]
-Overfull \hbox (16.53667pt too wide) in paragraph at lines 127--128
+Overfull \hbox (16.53667pt too wide) in paragraph at lines 136--137
 \T1/lmr/m/n/12 en bils kjør-eretning. Ifølge en rap-port[][][][] fra SIN-TEF ka
 n[][][][] $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 tilnærmes 
  []
 
 
-Overfull \hbox (5.30344pt too wide) in paragraph at lines 130--139
+Overfull \hbox (5.30344pt too wide) in paragraph at lines 139--148
  [] 
  []
 
 
-Overfull \hbox (12.22302pt too wide) in paragraph at lines 142--142
+Overfull \hbox (12.22302pt too wide) in paragraph at lines 151--151
 [][][]\T1/lmr/m/n/9 Verdien er hen-tet fra [][]en.wikipedia.org/wiki/Automobile
 _drag_coefficient#Drag_area[][]| 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 [][][][]\T1/lmr/m/n/9 Den to-tale en-erg-i-meng-den en bil bruker på en kjøre-l
 engde vil være høyere enn det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \T1/lmr/m/n/9 vi har kalt ''en-ergi-for-bruket''. Som regel vil den to-tale en-
 erg-i-meng-den som kreves
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \T1/lmr/m/n/9 for å kjøre en strekn-ing være høyere jo høyere hastighet man har
 . Slik kan man
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \T1/lmr/m/n/9 anta at dif-fer-ansen i en-ergi-for-bruk vi finner i denne opp-ga
 ven er et min-i-mum for
  []
 
 
-Overfull \hbox (14.08182pt too wide) in paragraph at lines 156--156
+Overfull \hbox (14.08182pt too wide) in paragraph at lines 165--165
 \T1/lmr/m/n/12 for å motvirke $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 over en viss 
 kjøre-lengde. Ved kon-stant hastighet 
  []
 
 
-Overfull \hbox (1.84639pt too wide) in paragraph at lines 156--156
+Overfull \hbox (1.84639pt too wide) in paragraph at lines 165--165
 \T1/lmr/m/n/12 norske mo-torveier er 90km/h og 110km/h van-lige farts-grenser. 
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 [][][][]\T1/lmr/m/n/9 Stille lengde btyr at man skal hoppe med sam-lede bein, o
 g uten å ta spring-fart
  []
@@ -1582,40 +1588,40 @@ g uten å ta spring-fart
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 []\T1/lmr/m/n/12 ''Den tradis-jonelle meto-den å es-timere mak-si-malpuls er å 
 ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\T1/lmr/m/n/12 Hopp opp og ned i ca. 30 sekun-der (så fort og så høyt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
 []\T1/lmr/m/n/12 Tell hjertes-lag i 15 sekun-der umid-del-bart et-ter hop-pin-
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []\T1/lmr/m/n/12 ''2 ganger opp-trinn (trinnhøyde) pluss 1 gang in-ntrinn (trin
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 \T1/lmr/m/n/12 ndybde) bør bli 62 cen-time-ter (med et slin-gringsmonn på et
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []\T1/lmr/m/n/9 Dette er oppp-gaver som har blitt gitt ved sen-tralt ut-formet 
 ek-samen i Norge.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
 \T1/lmr/m/n/9 Opp-gavene er laget av Ut-dan-nings-di-rek-toratet. Forko-r-telse
 r i parantes viser
  []
@@ -1626,25 +1632,25 @@ r i parantes viser
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 (./python/1pv22d1opg5.py) [13]
-<../fig/1pv22d1opg2.pdf, id=187, 227.62039pt x 156.49466pt>
+<../fig/1pv22d1opg2.pdf, id=190, 227.62039pt x 156.49466pt>
 File: ../fig/1pv22d1opg2.pdf Graphic file (type pdf)
 <use ../fig/1pv22d1opg2.pdf>
-Package pdftex.def Info: ../fig/1pv22d1opg2.pdf  used on input line 273.
+Package pdftex.def Info: ../fig/1pv22d1opg2.pdf  used on input line 282.
 (pdftex.def)             Requested size: 227.61983pt x 156.49426pt.
  [14 <../fig/1pv22d1opg2.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 9A25DBB8D6DFF9192CCCCD0BD11D30D6;180.
+(rerunfilecheck)             Checksum: 0CC29F81829D69F188DEEDE27D89B781;196.
  ) 
 Here is how much of TeX's memory you used:
- 33284 strings out of 481239
- 640209 string characters out of 5920378
- 1135418 words of memory out of 5000000
- 47750 multiletter control sequences out of 15000+600000
+ 33294 strings out of 481239
+ 640326 string characters out of 5920378
+ 1135749 words of memory out of 5000000
+ 47757 multiletter control sequences out of 15000+600000
  642082 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,12n,104p,875b,1633s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1655,9 +1661,9 @@ pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
 , replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-t
-s1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+s/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxo10.pfb></usr/share
@@ -1671,10 +1677,10 @@ hare/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public
 xmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 sy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmtt9.pfb>
-Output written on mix_bm.pdf (14 pages, 414552 bytes).
+Output written on mix_bm.pdf (14 pages, 415504 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
  52 words of extra memory for PDF output out of 10000 (max. 10000000)
 

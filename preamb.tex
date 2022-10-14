@@ -220,13 +220,15 @@
 	\end{enumerate*}
 }
 
-% Oppgaver
+% problems
+
 \newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
+
 \newcounter{opg}
 \numberwithin{opg}{section}
 \newcommand{\op}[1]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg} \vspace{2 pt} \label{#1} \\}
 \newcommand{\eksop}[2]{\vspace{15pt} \refstepcounter{opg}\large \textbf{\color{blue}\theopg} (#1) \vspace{2 pt} \label{#2} \\}
-\newcommand{\ekspop}[1]{\vsk\textbf{Gruble \thechapter.#1}\vspace{2 pt} \\}
+
 \newcommand{\nes}{\stepcounter{section}
 	\setcounter{opg}{0}}
 \newcommand{\opr}[1]{\vspace{3pt}\textbf{\ref{#1}}}
@@ -237,6 +239,13 @@
 \newcommand{\rknut}{
 Rekn ut.
 }
+
+\newcounter{grub}
+\numberwithin{opg}{chapter}
+\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
+
+
 % tag exercises
 \newcommand{\tagop}[1]{ 
 {\small \color{Gray} #1} \os

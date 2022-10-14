@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  2 OCT 2022 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  14 OCT 2022 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,9 +1350,14 @@ LaTeX Info: Redefining \nameref on input line 5.
 \@outlinefile=\write7
 \openout7 = `mix_bm.out'.
 
+
+Overfull \hbox (18.5483pt too wide) in paragraph at lines 6--6
+|[]\T1/lmr/bx/n/14.4 Oppgaver med tall og situ-asjoner fra virkelig-
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 4.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
@@ -1407,7 +1412,7 @@ Overfull \hbox (6.03906pt too wide) in paragraph at lines 14--18
  [] 
  []
 
-<../fig/100mreg.png, id=8, 1174.3875pt x 845.1575pt>
+<../fig/100mreg.png, id=12, 1174.3875pt x 845.1575pt>
 File: ../fig/100mreg.png Graphic file (type png)
 <use ../fig/100mreg.png>
 Package pdftex.def Info: ../fig/100mreg.png  used on input line 28.
@@ -1425,46 +1430,34 @@ Overfull \hbox (28.46413pt too wide) in paragraph at lines 28--28
 
 [1
 
+
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/100mreg.png>]
-
-! LaTeX Error: File `../fig/godot_layers' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 ...degraphics[scale=0.5]{\figp{godot_layers}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 50.
 [2]
-Overfull \hbox (6.5749pt too wide) in paragraph at lines 61--62
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 44.
+ [3]
+Overfull \hbox (6.5749pt too wide) in paragraph at lines 55--56
 []\T1/lmr/m/n/12 Ut ifra $[]$, hvilken verdi må $\OML/lmm/m/it/12 ^^R$ \T1/lmr/
 m/n/12 ha for at kastet skal bli lengst mulig?  
  []
 
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 0F0660C2BE3F46FE69036124D131D032;88.
  ) 
 Here is how much of TeX's memory you used:
- 32662 strings out of 481239
- 633307 string characters out of 5920378
- 949496 words of memory out of 5000000
- 47203 multiletter control sequences out of 15000+600000
- 613186 words of font info for 105 fonts, out of 8000000 for 9000
+ 32642 strings out of 481239
+ 632990 string characters out of 5920378
+ 949691 words of memory out of 5000000
+ 47195 multiletter control sequences out of 15000+600000
+ 619183 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,7n,104p,875b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,7n,104p,875b,894s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -1474,10 +1467,10 @@ f/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
 type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on mix_bm.pdf (3 pages, 309388 bytes).
+Output written on mix_bm.pdf (4 pages, 313783 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
