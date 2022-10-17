@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 JAN 2022 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  17 OCT 2022 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,14 +428,14 @@ Package geometry Warning: The marginal notes overrun the paper.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
 * h-part:(L,W,R)=(65.44142pt, 728.39038pt, 51.21504pt)
-* v-part:(T,H,B)=(51.21504pt, 489.38733pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 540.60239pt, 28.45274pt)
 * \paperwidth=845.04684pt
 * \paperheight=597.50787pt
 * \textwidth=728.39038pt
-* \textheight=489.38733pt
+* \textheight=540.60239pt
 * \oddsidemargin=-6.82857pt
 * \evensidemargin=-6.82857pt
-* \topmargin=-58.05495pt
+* \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -475,44 +475,44 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<fakttil100.pdf, id=1, 740.27567pt x 444.36014pt>
-File: fakttil100.pdf Graphic file (type pdf)
-<use fakttil100.pdf>
-Package pdftex.def Info: fakttil100.pdf  used on input line 24.
-(pdftex.def)             Requested size: 740.27386pt x 444.35904pt.
+<fakttil100opg.pdf, id=1, 740.27567pt x 510.94891pt>
+File: fakttil100opg.pdf Graphic file (type pdf)
+<use fakttil100opg.pdf>
+Package pdftex.def Info: fakttil100opg.pdf  used on input line 25.
+(pdftex.def)             Requested size: 740.27386pt x 510.94766pt.
 
-Overfull \hbox (11.88348pt too wide) in paragraph at lines 24--25
- [] 
- []
-
-<fakttil100b.pdf, id=2, 740.27567pt x 444.36014pt>
-File: fakttil100b.pdf Graphic file (type pdf)
-<use fakttil100b.pdf>
-Package pdftex.def Info: fakttil100b.pdf  used on input line 30.
-(pdftex.def)             Requested size: 740.27386pt x 444.35904pt.
-
-Overfull \hbox (11.88348pt too wide) in paragraph at lines 30--31
+Overfull \hbox (11.88348pt too wide) in paragraph at lines 25--26
  [] 
  []
 
 [1
 
- <./fakttil100.pdf{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}>]
-[2 <./fakttil100b.pdf>] (./finnfakt.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fakttil100opg.pdf>]
+File: fakttil100opg.pdf Graphic file (type pdf)
+<use fakttil100opg.pdf>
+Package pdftex.def Info: fakttil100opg.pdf  used on input line 32.
+(pdftex.def)             Requested size: 740.27386pt x 510.94766pt.
+
+Overfull \hbox (11.88348pt too wide) in paragraph at lines 32--33
+ [] 
+ []
+
+[2] (./finnfakt.aux) ) 
 Here is how much of TeX's memory you used:
- 7013 strings out of 481239
- 101286 string characters out of 5920378
- 364522 words of memory out of 5000000
- 22147 multiletter control sequences out of 15000+600000
+ 7007 strings out of 481239
+ 101171 string characters out of 5920378
+ 363523 words of memory out of 5000000
+ 22141 multiletter control sequences out of 15000+600000
  536397 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,5n,60p,323b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb>
-Output written on finnfakt.pdf (2 pages, 15619 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr10.pfb>
+Output written on finnfakt.pdf (2 pages, 42777 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
