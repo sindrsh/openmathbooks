@@ -1,0 +1,18 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+\opr{opggeospar}
+\abc{
+\item Når du har spart i 5 måneder betyr det at første innskudd har forrentet seg 4 ganger, andre beløp 3 ganger osv. Forrentingen tilsvarer en økning med $ 1.02 $. Medregnet det ferske innskuddet blir regnestykket
+\[ 1000\cdot1.02^4+1000\cdot1.02^3+1000\cdot1.02^2+1000\cdot1.02^1+1000 \]
+\item Av oppgave a) innse vi at $ P(n) $ er summen av en geometrisk rekke med $ a_1 = 1000 $ og $ k=1.02 $:
+\alg{
+	P(n)&= 1000\cdot\frac{1-1.02^n}{1-1.02} \\
+	&= -50000(1-1.02^n) \\
+	&= 50000(1.02^n-1)
+}
+}
+\end{document}
+
