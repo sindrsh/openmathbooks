@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  1 JUN 2022 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  21 OCT 2022 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,6 +1012,26 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \c@LT@chunks=\count339
 \LT@p@ftn=\toks44
 )
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count340
+\l_MT_multwidth_dim=\dimen321
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen322
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
+\l_MT_above_intertext_sep=\dimen324
+\l_MT_below_intertext_sep=\dimen325
+\l_MT_above_shortintertext_sep=\dimen326
+\l_MT_below_shortintertext_sep=\dimen327
+)
 (/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
 Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
 nous mode
@@ -1027,8 +1047,8 @@ Writing index file stat_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
-\footnotemargin=\dimen321
-\c@pp@next@reset=\count340
+\footnotemargin=\dimen328
+\c@pp@next@reset=\count341
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -1040,41 +1060,44 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count341
+\c@abspage=\count342
 )
-\c@pp@a@footnote=\count342
+\c@pp@a@footnote=\count343
 
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks46
-\labelindent=\skip133
-\enit@outerparindent=\dimen322
+\labelindent=\skip134
+\enit@outerparindent=\dimen329
 \enit@toks=\toks47
 \enit@inbox=\box138
-\enit@count@id=\count343
-\enitdp@description=\count344
+\enit@count@id=\count344
+\enitdp@description=\count345
 )
-\c@rg=\count345
-\c@opg=\count346
+\c@rg=\count346
+\c@opg=\count347
+\c@grub=\count348
+\c@vedl=\count349
+\c@vedleq=\count350
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count347
+\lst@mode=\count351
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count348
-\lst@currlwidth=\dimen323
-\lst@column=\count349
-\lst@pos=\count350
-\lst@lostspace=\dimen324
-\lst@width=\dimen325
-\lst@newlines=\count351
-\lst@lineno=\count352
-\lst@maxwidth=\dimen326
+\lst@length=\count352
+\lst@currlwidth=\dimen330
+\lst@column=\count353
+\lst@pos=\count354
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count355
+\lst@lineno=\count356
+\lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count353
-\lst@skipnumbers=\count354
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1125,9 +1148,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen327
-\Hy@linkcounter=\count355
-\Hy@pagecounter=\count356
+\@linkdim=\dimen334
+\Hy@linkcounter=\count359
+\Hy@pagecounter=\count360
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1140,8 +1163,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count357
-\pdfmajorversion=\count358
+\Hy@SavedSpaceFactor=\count361
+\pdfmajorversion=\count362
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1149,14 +1172,14 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count359
+\c@Hy@tempcnt=\count363
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen328
+\XeTeXLinkMargin=\dimen335
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1165,9 +1188,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count360
-\Field@Width=\dimen329
-\Fld@charsize=\dimen330
+\Fld@menulength=\count364
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -1181,9 +1204,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count361
-\c@Item=\count362
-\c@Hfootnote=\count363
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1193,8 +1216,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count364
-\c@bookmark@seq@number=\count365
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1205,7 +1228,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip134
+\Hy@SectionHShift=\skip135
 )
 (../bm.tex) (./stat_bm.aux)
 \openout1 = `stat_bm.aux'.
@@ -1270,16 +1293,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count366
-\scratchdimen=\dimen331
+\scratchcounter=\count370
+\scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count367
-\nofMParguments=\count368
+\nofMPsegments=\count371
+\nofMParguments=\count372
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count369
-\MPscratchDim=\dimen332
-\MPnumerator=\count370
-\makeMPintoPDFobject=\count371
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen339
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1305,7 +1328,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count372
+\c@lstlisting=\count376
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 5.
 
@@ -1318,7 +1341,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count373
+\c@section@level=\count377
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1497,8 +1520,8 @@ er om
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 109--109
-\T1/lmr/m/n/10.95 vin-kler og om brøkan-deler. Se []\T1/lmr/m/sl/10.95 sek-sjon
- [][]\T1/lmr/m/n/10.95 , [][]MB[][], s. 76 og opp-gave
+\T1/lmr/m/n/10.95 vin-kler og om brøkan-deler. Se []sek-sjon [][], [][]MB[][], 
+s. 76 og opp-gave
  []
 
 [5 <../fig/stat4.pdf> <../fig/stat3.pdf>]
@@ -1508,28 +1531,15 @@ File: ../fig/stat5.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../fig/stat5.pdf  used on input line 116.
 (pdftex.def)             Requested size: 312.97852pt x 184.94048pt.
  [6 <../fig/stat5.pdf>]
-Overfull \hbox (8.33597pt too wide) in paragraph at lines 118--119
-\T1/lmr/m/n/10.95 dette kalles \T1/lmr/m/it/10.95 sen-tralmål\T1/lmr/m/n/10.95 
-. De van-lig-ste sen-tralmå-lene er \T1/lmr/m/it/10.95 type-tall\T1/lmr/m/n/10.
-95 , \T1/lmr/m/it/10.95 gjennnom- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/lmr/m/n/10.95 I dataset-tet er det ver-dien 4 som opp-trer flest (tre) ga
-nger.
+nger. 4 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-\T1/lmr/m/n/10.95 (Dette kan vi se fra selve datasett på s. []2[], fra frekven-
-sta-bellen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-\T1/lmr/m/n/10.95 på s. []3[], fra søyle-di-a-gram-met på s. []4[] eller sek-to
-r-dia-gram-met på s.
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\T1/lmr/m/n/10.95 Hvis flere verdier opp-trer of-test i et datasett, har data
+set-tet flere
  []
 
 [7
@@ -1574,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 blir den
  []
 
-<../fig/meana.pdf, id=170, 185.52312pt x 36.19522pt>
+<../fig/meana.pdf, id=166, 185.52312pt x 36.19522pt>
 File: ../fig/meana.pdf Graphic file (type pdf)
 <use ../fig/meana.pdf>
 Package pdftex.def Info: ../fig/meana.pdf  used on input line 203.
@@ -1591,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 så hver av
  []
 
-<../fig/meanb.pdf, id=171, 185.52312pt x 36.19522pt>
+<../fig/meanb.pdf, id=167, 185.52312pt x 36.19522pt>
 File: ../fig/meanb.pdf Graphic file (type pdf)
 <use ../fig/meanb.pdf>
 Package pdftex.def Info: ../fig/meanb.pdf  used on input line 203.
@@ -1613,8 +1623,8 @@ tør-relser er pro-porsjonale, kaller vi pro-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 212--212
-\T1/lmr/m/n/10.95 porsjon-alitet-skon-stan-ten fra [] den []gjen-nom-snit-tlige
- en-drin-
+\T1/lmr/m/n/10.95 porsjon-alitet-skon-stan-ten fra [] den []\T1/lmr/bx/n/10.95 
+gjen-nom-snit-tlige en-
  []
 
 [10 <../fig/meana.pdf> <../fig/meanb.pdf>]
@@ -1657,7 +1667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--234
 vi sett at stign-ingstal-let til
  []
 
-<../fig/lintopunkt.pdf, id=197, 113.81522pt x 113.81522pt>
+<../fig/lintopunkt.pdf, id=193, 113.81522pt x 113.81522pt>
 File: ../fig/lintopunkt.pdf Graphic file (type pdf)
 <use ../fig/lintopunkt.pdf>
 Package pdftex.def Info: ../fig/lintopunkt.pdf  used on input line 234.
@@ -1832,10 +1842,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32357 strings out of 481239
- 627956 string characters out of 5920378
- 941544 words of memory out of 5000000
- 46857 multiletter control sequences out of 15000+600000
+ 32866 strings out of 481239
+ 636832 string characters out of 5920378
+ 953949 words of memory out of 5000000
+ 47359 multiletter control sequences out of 15000+600000
  631538 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,13n,104p,876b,914s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1854,10 +1864,10 @@ r/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 msy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on stat_bm.pdf (20 pages, 308438 bytes).
+Output written on stat_bm.pdf (20 pages, 307792 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
+ 343 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
  67 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

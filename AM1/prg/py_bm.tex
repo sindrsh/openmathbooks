@@ -5,7 +5,7 @@
 
 \begin{document}
 \section{Introduksjon til Python}
-Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}.
+Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}. Det er mange måter å få kjørt skriptet sitt på, blant annet kan man bruke en online compiler som \net{https://www.programiz.com/python-programming/online-compiler/}{programmiz.com}.
 \subsection{Objekt, type, funksjon og uttrykk}
 Vårt første skript består av bare én kodelinje:
 
@@ -113,7 +113,7 @@ Men denne kommer, fordi vilkåret i if-linja over var False
 \pythonut{elif.py}{
 Nå er vi sikre på at 1 < b < 3
 }
-
+\newpage
 \subsection{Lister}
 Lister kan vi bruke for å samle objekter. Objektene som er i listen kalles \outl{elementene} til listen.
 \python{list1.py}
@@ -139,7 +139,38 @@ min\_liste = [6, 15]
 }
 \info{Forklar for deg selv}{
 Hva er forskjellen på å skive \texttt{a = min\_liste[1]} og å skrive \texttt{a = min\_liste.pop(1)}?
+} \vsk
+
+Med funksjonen \texttt{sort()} kan vi sortere elementene i listen.
+\pythonut{list5.py}{
+[0, 1, 3, 4, 7, 8, 9]
+\\
+
+['a', 'b', 'c', 'd', 'e']
+}\vsk
+\newpage
+Med funksjonene \texttt{count()} kan vi telle gjentatte elementer i listen.
+\pythonut{list6.py}{
+4\\
+1\\
+2\\
+0
+} \vsk
+
+Med funksjonen \texttt{len()} kan vi finne antall elementer i en liste, og med funksjonen \texttt{sum()} kan vi finne summen av lister med tall som elementer.
+\pythonut{list7.py}{
+5\\
+3\\
+15
 }
+\newpage
+Med uttrykket \texttt{in} kan vi sjekke om et element er i en liste.
+\pythonut{list8.py}{
+True\\
+False
+}
+
+
 \newpage
 \subsection{Looper; \pymet{for} og \pymet{while}}
 \subsubsection{\pymet{for} loop}

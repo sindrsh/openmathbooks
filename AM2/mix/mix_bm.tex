@@ -1,0 +1,110 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+\section{Oppgaver med tall og situasjoner fra virkelig-heten}	
+\st{Se også oppgaver på \net{https://ektedata.uib.no/}{ekte.data.uib.no}}
+\linje
+
+\op{opggeospar}
+\tagop{
+\#rekker \#øknomi 
+}
+Du ønsker å spare penger i en bank som gir 2\,\% månedlig rente. Du sparer ved å gjøre et innskudd på 1000\enh{kr} hver måned.
+\abc{
+\item Skriv rekken som viser hvor mye penger du har i banken etter 5 måneder med sparing. Innskuddet i 5. måned skal tas med.
+\item Sett opp et uttrykk $ P(n) $ som viser hvor mye penger du har i banken $ n $ måneder etter at sparingen startet. Innskuddet i \textit{n}-te måned skal tas med.
+}
+\newpage
+\op{opganu}
+\tagop{
+\#rekker \#øknonomi \# programmering
+}
+Si at du låner $ 1\,500\,000 $ kroner av en bank. Lånet er et annuitetslån (se \am) med 3\% årlig rente, og lånet skal betales ned i løpet av 20 år med årlige fradrag og renter. For å beregne terminbeløpet $ x $ kan man tenke som følger:\os
+\st{
+	Tenk deg at din bank sparer penger i en annen bank, som tilbyr 3\% årlig sparerente. Da skal banken ende opp med det samme sparebeløpet ved begge disse tilfellene:
+	\begin{itemize}
+		\item I løpet av 20 år tilføres sparekontoen et årlig innskudd på $ x $ kroner.
+		\item 1\,500\,000 kroner settes på sparekonto og forrentes i 20 år.
+	\end{itemize}
+}
+\abc{
+\item Finn verdien til terminbeløpet $ x $.
+\item Lag et script som printer terminbeløp, avdrag og renter for hele nedbetalingstiden, og som bekrefter at svaret ditt fra a) er rett.
+\item Sammenlign svaret ditt med en lånekalkulator på internett. (Sett alle gebyrer lik 0).
+\item Sett opp en formel som viser det årlige terminbeløpet $ x $ ved et annuitetslån, uttrykt ved lånesummen $ L $, den årlige renten $ r $, og nedbetalingstiden $ t $.
+}
+
+
+\newpage
+\op{opgstorlbolt}
+\tagop{\#regresjon \#funksjonsdrøfting \#omgjøring av enheter}
+Usain Bolt har verdensrekorden for 100\enh{m} sprint. I tabellen under ser du hva tidtakeren viste ved hver 10. meter under dette rekordløpet. \vs
+\begin{center}\small
+	\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
+		meter & 10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100\\
+		sekunder& 1.89 & 2.88 & 3.78 & 4.64 & 5.47 & 6.29 & 7.1 & 7.92 & 8.75 & 9.58
+	\end{tabular}
+\end{center}
+\abc{
+	\item I figuren under har vi brukt datasettet fra tabellen til å utføre regresjon med et fjerdegradspolynom. Hva er det som er helt feil med denne tilnærmingen?
+	\begin{figure}
+		\includegraphics[scale=0.2]{\figp{100mreg}}
+	\end{figure}
+	\item I datasettet kan vi legge til et punkt som vil hjelpe med å korrigere feilen poengtert i a). Hvilket punkt er dette?
+	\item Bruk regresjon med et fjerdegradspolynom på datasettet fra b).
+	\item Ut ifra funksjonen du fant i c), hva var toppfarten til Bolt under dette løpet?
+	\item Bruk datasettet fra b) til å finne gjennomsnittsfarten til Bolt for $ {t\in[0, 1.89]} $ og for $ {t\in[1.89, 9.58]} $. Sammenlikn disse hastighetene med svaret fra oppgave d), og drøft årsaken til ulikhetene/\\likhetene.
+}
+\newpage
+\op{opghorkurv}
+\tagop{
+\#funksjoner \#regresjon \#derivasjon \#vektorer i planet
+}
+På side 26  i dokumentet \net{https://www.vegvesen.no/globalassets/fag/handboker/hb-v120-mai-2019.pdf}{Premisser for geometrisk utforming av veger} (utformet av Statens vegvesen) er minste \outl{horisontalkurveradius} $ R_{h, \text{min}} $ gitt ved formelen 
+\[ R_{h, \text{min}}=\frac{V^2}{127(\text{e}_\text{maks}+f_k)} \]
+hvor 
+\alg{
+V &= \text{fartsgrense} \br
+\text{e}_\text{maks}& = \text{maksimal overhøyde }\br
+f_k &= \text{dimensjonerende sidefriksjonsfaktor}
+}
+Si at en veibane er beskrevet av grafen en funksjon $ f(x) $. I vedlegg ?? i \tmen\ introduserte vi sirkelen som beksriver krumningen til $ f $. Vektoren mellom sentrum $ S $ i denne sirkelen og et punkt $ A= (x, f(x)) $ på grafen til $ f $ er gitt som
+\[ \vv{AS}= \frac{1}{f''}\left[-f\cdot(1+(f')^2), 1+(f')^2\right] \]
+La $ r $ være radien til sirkelen som beskriver krumningen til $ f $. Statens vegvesens krav tilsier at 
+\[ r< R_{h, \text{min}} \]
+Bruk et digitalt kart og regresjon til å finne en polynomfunksjon som gir en god tilnærming for utvalgte veistykker hvor fartsgrensen er kjent. Sett $ \textrm{e}_\text{maks}=0 $, og bruk tabellen\footnote{Hentet fra side 22 fra nevnte dokument.} under for å velge verdien til $ f_k $. Undersøk om krumningen til veistykket oppfyller kravet til Statens vegvesen i alle punkt.
+\begin{figure}
+	\includegraphics[scale=0.32]{fig/tab2_7}
+\end{figure}
+\newpage
+\op{opgstorstar} 
+\tagop{
+	\# modellering \# areal \# derivasjon
+}
+Gitt et rektangel med omkrets $ O $, og la $ x $ være den éne sidelengden.
+\abc{
+	\item  Finn uttrykket til funksjonen $ A(x) $, som viser aralet til rektangelet.
+	\item Hvilken form har rektangelet når arealet er størst?
+}
+
+\op{opgmagnskal}
+\tagop{
+\#logaritmer \#overslag
+}
+\outl{Momentmagnitudeskalaen} er en skala som brukes til å representere styrken på jordskjelv. Hvis $ S $ er det målte \outl{seismiske momentet} til jordskjelvet, er massemagnituden $ M_w $ gitt som\footnote{Kilde: \net{https://en.wikipedia.org/wiki/Moment_magnitude_scale}{Wikipedia}.}
+\[ M_w=\frac{2}{3} \log S-10.7 \]
+Energien som jordskjelvet utløser er tilnærmet proporsjonal med $ S $.\os
+
+Gitt to jordskjelv, jordskjelv $ A $ og jordskjelv $ B $, med henholdsvis seismisk moment $ S_A $ og $ S_B $. Si videre at proporsjonalitetskonstanten for energi utløst av det seismiske momentet er likt for begge jordskjelvene. Hvis jordskjelv $ A $ er målt til 1 mer enn jordskjelv $ B $ på momentmagnitudeskalaen, hva er da forholdet mellom energi utløst av jordskjelv $ A $ og energi utløst av jordskjelv $ B $? 
+\newpage
+\op{opgkast}
+Du skal prøve å kaste en ball så langt som mulig langs et flatt strekke. Posisjonen ballen har idét den forlater handen din setter du til $ (0, 0) $. Ved å anta at tyngdekraften deretter er den eneste kraften som virker på ballen, er posisjonen til ballen godt tilnærmet ved uttrykket
+\[ \vec{p}_g(t)=\vec{v}t-[0, 5t^2] \]
+hvor $ \vec{v}=[v_0 \cos \theta, v_0 \sin \theta] $ er hastighetsvektoren til ballen idét den forlot handen, og $ t $ er antall tidsenheter etter at ballen har forlatt handen. Idét ballen forlater handen din har den farten $ v_0 $, $ \vec{v} $ danner vinkelen $ \theta $ med horisontallinjen.\vsk 
+
+Ut ifra $ \vec{p}_g $, hvilken verdi må $ \theta $ ha for at kastet skal bli lengst mulig?
+
+\end{document}
+

@@ -17,8 +17,8 @@ mkb(I=a,J=b,sh=(2+2dx,0),sc=(1./a,1./b),p=arpeno);
 filldraw(shift(dx2+tdx,dy)*box((0,0),(1./a,1./b)),arpeno);
 label(scale(2)*Label("b)"),(dx2,dy+tdy));
 
-int a = 2;
-int b = 5;
+int a = 1;
+int b = 10;
 mkb(I=a,J=b,sh=(3+3dx,0),sc=(1./a,1./b),p=arpeng);
 filldraw(shift(2dx2+tdx,dy)*box((0,0),(1./a,1./b)),arpeng);
 label(scale(2)*Label("c)"),(2dx2,dy+tdy));
