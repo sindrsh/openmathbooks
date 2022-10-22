@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  21 OCT 2022 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  22 OCT 2022 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1354,56 +1354,56 @@ LaTeX Info: Redefining \nameref on input line 4.
 <../fig/gj.pdf, id=11, 218.0145pt x 68.60631pt>
 File: ../fig/gj.pdf Graphic file (type pdf)
 <use ../fig/gj.pdf>
-Package pdftex.def Info: ../fig/gj.pdf  used on input line 21.
+Package pdftex.def Info: ../fig/gj.pdf  used on input line 14.
 (pdftex.def)             Requested size: 218.01395pt x 68.60612pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 8.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 8.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-28.
+18.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-28.
+18.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <12> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 18.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 28.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+(Font)              <6> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 2
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-28.
+18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
@@ -1411,43 +1411,39 @@ File: uesvect.fd
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/gj.pdf>]
-Overfull \hbox (0.78233pt too wide) in paragraph at lines 45--46
-[]\T1/lmr/m/n/12 Prisen på en vare er først sen-ket med 20%, og så er den nye p
-risen 
- []
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+4.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-5.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [2] [3]
-Overfull \hbox (10.01917pt too wide) in paragraph at lines 103--103
+Overfull \hbox (10.01917pt too wide) in paragraph at lines 90--90
 []\T1/lmr/m/n/12 I 2005 kostet en sykkel 1500kr, mens den i 2014 ville kostet 1
 784kr 
  []
 
 [4] [5]
-<../fig/ligo1.pdf, id=98, 227.62039pt x 284.52296pt>
+<../fig/ligo1.pdf, id=96, 227.62039pt x 284.52296pt>
 File: ../fig/ligo1.pdf Graphic file (type pdf)
 <use ../fig/ligo1.pdf>
-Package pdftex.def Info: ../fig/ligo1.pdf  used on input line 153.
+Package pdftex.def Info: ../fig/ligo1.pdf  used on input line 140.
 (pdftex.def)             Requested size: 227.61983pt x 284.52225pt.
  [6 <../fig/ligo1.pdf>]
 
-LaTeX Warning: Hyper reference `median' on page 7 undefined on input line 176.
+LaTeX Warning: Hyper reference `median' on page 7 undefined on input line 167.
 
 
-LaTeX Warning: Reference `median' on page 7 undefined on input line 176.
+LaTeX Warning: Reference `median' on page 7 undefined on input line 167.
 
 
-LaTeX Warning: Reference `opgstat1' on page 7 undefined on input line 176.
+LaTeX Warning: Reference `opgstat1' on page 7 undefined on input line 167.
 
 [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./lig_opg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `lig_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
 
@@ -1456,15 +1452,15 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32600 strings out of 481239
- 632293 string characters out of 5920378
- 950022 words of memory out of 5000000
- 47138 multiletter control sequences out of 15000+600000
- 576546 words of font info for 64 fonts, out of 8000000 for 9000
+ 32601 strings out of 481239
+ 632357 string characters out of 5920378
+ 949955 words of memory out of 5000000
+ 47140 multiletter control sequences out of 15000+600000
+ 579576 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,8n,104p,879b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,8n,104p,879b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
 thit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
@@ -1474,11 +1470,11 @@ fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmsy10.pfb>
-Output written on lig_opg_bm.pdf (7 pages, 173415 bytes).
+blic/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+Output written on lig_opg_bm.pdf (7 pages, 195417 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
