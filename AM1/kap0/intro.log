@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  21 OCT 2022 22:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  23 OCT 2022 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1403,90 +1403,102 @@ LaTeX Font Info:    Trying to load font information for U+esvect on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
-) [1
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+1.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (9.86545pt too wide) in paragraph at lines 21--22
+\T1/lmr/m/n/10.95 view a copy of this li-cense, visit [][]http://creativecommon
+s.org/licenses/by- 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []\T1/lmr/m/n/10.95 Denne boka er i ut-gangspunk-tet gratis å bruke, men jeg hå
 per
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 du forstår hvor mye tid og ressurser jeg har brukt på å lage 
 den.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 Hvis du en-der opp med å like boka, håper jeg der-for du kan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 donere 50kr via Vipps til 90559730 eller via [][]Pay-Pal[][].
  Vær vennlig
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 å markere donasjo-nen med ''Mat-te-bok'' ved bruk av Vipps. P
 en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 gene vil bli brukt til å fort-sette ar-bei-det med å lage lær
 e-bøker
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 som er med på å gjøre matem-atikk lett tilgjen-gelig for alle
 . På
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []\T1/lmr/m/n/10.95 Boka blir op-p-datert så snart som råd når skrive-feil og l
 ig-nende
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \T1/lmr/m/n/10.95 blir op-pdaget, jeg vil der-for råde alle til å laste ned en 
 ny ver-
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-8.
+9.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (./intro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `intro.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32572 strings out of 481239
- 632244 string characters out of 5920378
- 946454 words of memory out of 5000000
- 47165 multiletter control sequences out of 15000+600000
- 567485 words of font info for 61 fonts, out of 8000000 for 9000
+ 32605 strings out of 481239
+ 633064 string characters out of 5920378
+ 946585 words of memory out of 5000000
+ 47194 multiletter control sequences out of 15000+600000
+ 567850 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,7n,104p,874b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmtt10.pfb>
-Output written on intro.pdf (2 pages, 91713 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on intro.pdf (2 pages, 93067 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

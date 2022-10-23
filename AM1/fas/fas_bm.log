@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  22 OCT 2022 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  23 OCT 2022 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,16 +1230,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(../bm.tex) (/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
-Package: xr 2019/07/22 v5.05 eXternal References (DPC)
-)
-
-Package xr Warning: 
-No file ../AM_bm.aux
-LABELS NOT IMPORTED.
- on input line 6.
-
-(./fas_bm.aux)
+(../bm.tex) (./fas_bm.aux)
 \openout1 = `fas_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1487,13 +1478,15 @@ LaTeX Warning: Reference `opgfrkvtb2' on page 1 undefined on input line 122.
 LaTeX Warning: Reference `opgstatsoyl' on page 1 undefined on input line 124.
 
 
-LaTeX Warning: Reference `statsoylrgn' on page 1 undefined on input line 126.
+LaTeX Warning: Reference `opgstatsoylrgn' on page 1 undefined on input line 126
+.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Reference `stathvorfor' on page 2 undefined on input line 129.
+LaTeX Warning: Reference `opgstathvorfor' on page 2 undefined on input line 129
+.
 
 
 Overfull \hbox (7.79253pt too wide) in paragraph at lines 135--135
@@ -1502,7 +1495,11 @@ Overfull \hbox (7.79253pt too wide) in paragraph at lines 135--135
  []
 
 
-LaTeX Warning: Reference `stathvorfor2' on page 2 undefined on input line 137.
+LaTeX Warning: Reference `opgstathvorfor2' on page 2 undefined on input line 13
+7.
+
+
+LaTeX Warning: Reference `BrokAM' on page 2 undefined on input line 139.
 
 
 LaTeX Warning: Reference `finbrokdel' on page 2 undefined on input line 140.
@@ -1569,169 +1566,168 @@ LaTeX Warning: Reference `lodd' on page 2 undefined on input line 246.
 LaTeX Warning: Reference `forh' on page 2 undefined on input line 248.
 
 
-LaTeX Warning: Reference `lig6' on page 2 undefined on input line 251.
+LaTeX Warning: Reference `Okonomi' on page 2 undefined on input line 250.
 
 
-LaTeX Warning: Reference `lig7' on page 2 undefined on input line 253.
+LaTeX Warning: Reference `opgkr' on page 2 undefined on input line 251.
+
+
+LaTeX Warning: Reference `opgelsereal' on page 2 undefined on input line 258.
 
 [2]
 
-LaTeX Warning: Reference `ligvol' on page 3 undefined on input line 259.
+LaTeX Warning: Reference `opgser' on page 3 undefined on input line 264.
 
 
-LaTeX Warning: Reference `ligpro1' on page 3 undefined on input line 265.
+LaTeX Warning: Reference `opganu' on page 3 undefined on input line 272.
 
 
-LaTeX Warning: Reference `ligpro2' on page 3 undefined on input line 271.
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-83.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3]
-
-LaTeX Warning: Reference `eksu22opg7' on page 4 undefined on input line 291.
+LaTeX Warning: Reference `opgserogan' on page 3 undefined on input line 274.
 
 
-LaTeX Warning: Reference `frm4' on page 4 undefined on input line 293.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 297.
-
-LaTeX Warning: Reference `frmtra' on page 4 undefined on input line 299.
+LaTeX Warning: Reference `opgspar' on page 3 undefined on input line 276.
 
 
-LaTeX Warning: Reference `frm5' on page 4 undefined on input line 301.
+LaTeX Warning: Reference `1PV22D1opg1' on page 3 undefined on input line 278.
 
 
-LaTeX Warning: Reference `ligindks' on page 4 undefined on input line 308.
+LaTeX Warning: Reference `opgkred' on page 3 undefined on input line 280.
 
 
-LaTeX Warning: Reference `ligskj1' on page 4 undefined on input line 310.
+LaTeX Warning: Reference `opgpensj' on page 3 undefined on input line 287.
 
 
-LaTeX Warning: Reference `ligskj2' on page 4 undefined on input line 312.
-
-
-LaTeX Warning: Reference `ligmob' on page 4 undefined on input line 314.
-
-
-LaTeX Warning: Reference `1PV22D1opg4' on page 4 undefined on input line 320.
-
-
-LaTeX Warning: Reference `1PV22D1opg6' on page 4 undefined on input line 327.
-
-
-LaTeX Warning: Reference `ligpunkt' on page 4 undefined on input line 329.
-
-
-LaTeX Warning: Reference `ligseto1' on page 4 undefined on input line 335.
-
-
-LaTeX Warning: Reference `ligseto2' on page 4 undefined on input line 337.
-
-
-LaTeX Warning: Reference `ligprored' on page 4 undefined on input line 339.
-
-
-LaTeX Warning: Reference `opgligmedian' on page 4 undefined on input line 341.
-
-
-LaTeX Warning: Reference `opgelsereal' on page 4 undefined on input line 351.
-
-
-LaTeX Warning: Reference `opgser' on page 4 undefined on input line 357.
-
-
-Overfull \hbox (0.77452pt too wide) in paragraph at lines 357--364
-[][]    [][]\T1/lmr/m/n/12 a)[]  20000kr[] []b)[]  120000kr[] []c)[]  2400kr[] 
-[]d)[]  22400kr 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
- 
- []
-
-
-LaTeX Warning: Reference `opganu' on page 4 undefined on input line 365.
-
-
-LaTeX Warning: Reference `opgserogan' on page 4 undefined on input line 367.
-
-
-LaTeX Warning: Reference `opgspar' on page 4 undefined on input line 369.
-
-
-LaTeX Warning: Reference `1PV22D1opg1' on page 4 undefined on input line 371.
-
-
-LaTeX Warning: Reference `opgkred' on page 4 undefined on input line 373.
-
-
-LaTeX Warning: Reference `opgpensj' on page 4 undefined on input line 380.
-
-
-LaTeX Warning: Reference `opgmiraogborge' on page 4 undefined on input line 386
+LaTeX Warning: Reference `opgmiraogborge' on page 3 undefined on input line 293
 .
+
+
+LaTeX Warning: Reference `opgborge3' on page 3 undefined on input line 295.
+
+
+LaTeX Warning: Reference `borge4' on page 3 undefined on input line 298.
+
+
+LaTeX Warning: Reference `opgnora' on page 3 undefined on input line 300.
+
+[3]
+
+LaTeX Warning: Reference `Sannsyn' on page 4 undefined on input line 335.
+
+
+LaTeX Warning: Reference `klover' on page 4 undefined on input line 336.
+
+
+LaTeX Warning: Reference `klovog8' on page 4 undefined on input line 343.
+
+
+LaTeX Warning: Reference `LigningerAM' on page 4 undefined on input line 352.
+
+
+LaTeX Warning: Reference `lig6' on page 4 undefined on input line 353.
+
+
+LaTeX Warning: Reference `lig7' on page 4 undefined on input line 355.
+
+
+LaTeX Warning: Reference `ligvol' on page 4 undefined on input line 361.
+
+
+LaTeX Warning: Reference `ligpro1' on page 4 undefined on input line 367.
+
+
+LaTeX Warning: Reference `ligpro2' on page 4 undefined on input line 373.
 
 [4]
 
-LaTeX Warning: Reference `opgborge3' on page 5 undefined on input line 388.
+LaTeX Warning: Reference `eksu22opg7' on page 5 undefined on input line 383.
 
 
-LaTeX Warning: Reference `borge4' on page 5 undefined on input line 391.
+LaTeX Warning: Reference `frm4' on page 5 undefined on input line 385.
 
 
-LaTeX Warning: Reference `opgnora' on page 5 undefined on input line 393.
+LaTeX Warning: Reference `frmtra' on page 5 undefined on input line 391.
 
 
-LaTeX Warning: Reference `Sannsyn' on page 5 undefined on input line 428.
+LaTeX Warning: Reference `frm5' on page 5 undefined on input line 393.
 
 
-LaTeX Warning: Reference `klover' on page 5 undefined on input line 429.
+LaTeX Warning: Reference `ligindks' on page 5 undefined on input line 400.
 
 
-LaTeX Warning: Reference `klovog8' on page 5 undefined on input line 436.
+LaTeX Warning: Reference `ligskj1' on page 5 undefined on input line 402.
+
+
+LaTeX Warning: Reference `ligskj2' on page 5 undefined on input line 404.
+
+
+LaTeX Warning: Reference `ligmob' on page 5 undefined on input line 406.
+
+
+LaTeX Warning: Reference `1PV22D1opg4' on page 5 undefined on input line 412.
+
+
+LaTeX Warning: Reference `1PV22D1opg6' on page 5 undefined on input line 419.
+
+
+LaTeX Warning: Reference `ligpunkt' on page 5 undefined on input line 421.
+
+
+LaTeX Warning: Reference `ligseto1' on page 5 undefined on input line 427.
+
+
+LaTeX Warning: Reference `ligseto2' on page 5 undefined on input line 429.
+
+
+LaTeX Warning: Reference `ligprored' on page 5 undefined on input line 431.
+
+
+LaTeX Warning: Reference `opgligmedian' on page 5 undefined on input line 433.
 
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
  (./fas_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
-Package rerunfilecheck Info: File `fas_bm.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
 
+
+Package rerunfilecheck Warning: File `fas_bm.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fas_bm.out':
+(rerunfilecheck)             Before: 8FDCC66ECC24E8A63349F910673CFECA;53
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32814 strings out of 481239
- 634198 string characters out of 5920378
- 952871 words of memory out of 5000000
- 47239 multiletter control sequences out of 15000+600000
- 611857 words of font info for 98 fonts, out of 8000000 for 9000
+ 32747 strings out of 481239
+ 632957 string characters out of 5920378
+ 952595 words of memory out of 5000000
+ 47184 multiletter control sequences out of 15000+600000
+ 603704 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,8n,104p,875b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
-i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on fas_bm.pdf (5 pages, 254720 bytes).
+pdfTeX warning (dest): name{subsection.0.0.1} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/l
+mbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+sy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on fas_bm.pdf (5 pages, 224591 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 143 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

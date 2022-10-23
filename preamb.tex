@@ -21,13 +21,6 @@
 \raggedbottom
 \frenchspacing
 
-% Norwegian names of figures, chapters, parts and content
-\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
-\makeatletter
-\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
-\addto\captionsenglish{\renewcommand{\partname}{Del}}
-
-
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{subfig}
@@ -242,7 +235,7 @@ Rekn ut.
 }
 
 \newcounter{grub}
-\numberwithin{opg}{chapter}
+\numberwithin{opg}{section}
 \newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
 \newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
 
@@ -253,8 +246,8 @@ Rekn ut.
 }
 
 % License
-\newcommand{\lic}[1]{\textit{#1\; by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit\\ 
-		\net{http://creativecommons.org/licenses/by-nc-sa/4.0/}{http://creativecommons.org/licenses/by-nc-sa/4.0/}}}
+\newcommand{\lic}{
+This book is part of the OpenMathBooks project. OpenMathBooks © 2022 by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit \net{http://creativecommons.org/licenses/by-nc-sa/4.0/}{http://creativecommons.org/licenses/by-nc-sa/4.0/}}
 
 %referances
 \newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
@@ -296,7 +289,7 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 
 \newcommand{\g}[1]{\begin{center} {\tt #1} \end{center}}
 \newcommand{\gv}[1]{\begin{center} \vspace{-11 pt} {\tt #1}  \end{center}}
-\newcommand{\cmds}[2]{{\tt #1}\\[-3pt]
+\newcommand{\cmds}[2]{{\tt #1}\\
 	#2}
 
 % outline word

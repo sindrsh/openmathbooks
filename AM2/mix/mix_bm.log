@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  21 OCT 2022 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  23 OCT 2022 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,20 +1494,20 @@ Overfull \hbox (6.5749pt too wide) in paragraph at lines 107--108
 m/n/12 ha for at kastet skal bli lengst mulig?  
  []
 
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+[6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
  (./mix_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `mix_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 0F0660C2BE3F46FE69036124D131D032;88.
  ) 
 Here is how much of TeX's memory you used:
- 32707 strings out of 481239
- 634161 string characters out of 5920378
- 949003 words of memory out of 5000000
- 47242 multiletter control sequences out of 15000+600000
+ 32716 strings out of 481239
+ 634230 string characters out of 5920378
+ 949119 words of memory out of 5000000
+ 47244 multiletter control sequences out of 15000+600000
  619558 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,13n,104p,875b,894s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1524,10 +1524,10 @@ exmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr
 i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /esvect/vect10.pfb>
-Output written on mix_bm.pdf (6 pages, 356016 bytes).
+Output written on mix_bm.pdf (7 pages, 359638 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

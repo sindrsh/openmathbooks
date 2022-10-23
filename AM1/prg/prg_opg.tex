@@ -1,32 +1,39 @@
 \input{../../doc}
 \input{../../preamb}
+\input{../bm}
 
 \begin{document}
-\op{opgstascript}
-Lag et script som fra en liste med oddetalls antall tall finner
+\opgt
+\begin{comment}
+	\op{opgsortlist}
+	Definer listene 
+	\alg{
+	&\texttt{siffer = [2, 0, 3, 5, 7, 8, 6, 9, 4]}	\\
+	&\texttt{bokstaver = ['b', 'f', 'd', 'c', 'e', 'a', 'g']
+	}
+	}
+	Gjør følgende for hver av de to listene:
+	\abc{
+	\item Print elev
+	}
+\end{comment}
+	
+\op{opgstascriptodd}
+Lag et skript som fra en liste med oddetalls antall tall finner
 \abc{
 	\item gjennomsnittet.
 	\item medianen.
 }
-Bruk gjerne datasettet fra \refops{statsentrodd2} som et utgangspunkt.
+Bruk gjerne datasettet fra \refops{opgstatsentrodd2} som et utgangspunkt.
 
-\op{opgstascript}
-Lag et script som fra en liste med partalls antall tall finner
+\op{opgstascriptpar}
+Lag et skript som fra en liste med partalls antall tall finner
 \abc{
 	\item gjennomsnittet.
 	\item medianen.
 }
 Bruk gjerne datasettet fra \refops{opgstatsentrpar2} som utgangspunkt.
 
-\newpage
-\grubop{opgstatscriptparodd}
-Lag et skript som fra en liste med tall finner
-\abc{
-	\item gjennomsnittet.
-	\item medianen.
-	\item typetallet.	
-}
-Undersøk svarene fra {\color{blue}oppgave \ref{opgstatsentrodd1} - \ref{opgstatsentrpar2}} med sriptet.
 
 \end{document}
 

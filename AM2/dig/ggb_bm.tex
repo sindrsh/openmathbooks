@@ -39,7 +39,7 @@ De fleste uttrykkene vi jobber med i CAS inneholder et $ = $ tegn. Disse uttrykk
 	\includegraphics[scale=0.5]{fig/hoyre}
 \end{figure}
 \subsubsection{ByttUt}
-Noen ganger ønsker vi å endre en variabel i et utrykk. For å gjøre dette kan vi anvende \cms{ByttUt}{<Uttrykk>, <Liste med forandringer>}. La oss se på uttrykket
+Noen ganger ønsker vi å endre en variabel i et utrykk. For å gjøre dette kan vi anvende \texttt{{ByzttUt}{<Uttrykk>, <Liste med forandringer>}}. La oss se på uttrykket
 \[ \frac{a+b}{c} \]
 Vi ønsker nå å sette $ {a=d }$, $ {b=2} $ og $ {c=f} $. Dette kan vi gjør ved å skrive følgende:
 \begin{figure}
@@ -86,158 +86,158 @@ Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er 
 \newpage
 
 \subsubsection{Kommandoliste}
-\cm{abs}{<x>}
+\begin{itemize}
+\item \cmds{abs( <x> )}
 {Finner lengden til et objekt \textit{x}.
 }
-
-\cm{Asymptote}{<Funksjon>}
+\item \cmds{Asymptote( <Funksjon> )}
 {Finner asymptotene til en funksjon.}
 
-\cm{Avstand}{<Punkt>, <Objekt>}
+\item \cmds{Avstand( <Punkt>, <Objekt> )}
 {Gir avstanden fra et punkt til et objekt.}
 
-\cmc{ByttUt}{<Uttrykk>, <Liste med forandringer>}
+\item \cmds{ByttUt( <Uttrykk>, <Liste med forandringer> ) }
 {Viser et gitt uttrykk etter endring av variabler, gitt i en liste.}
 
-\cm{Deriverte}{<Funksjon>}	
-{Gir den deriverte av en funksjon.
-	
+\item \cmds{Deriverte( <Funksjon> )}{Gir den deriverte av en funksjon.\\	
 	\mers{
 		For en definert funksjon $ f(x) $, kan man like gjerne skrive \texttt{f'(x)}.
 }}
 
-\cm{Ekstremalpunkt}{<Funksjon>, <Start>, <Slutt> } {Finner lokale ekstremalpunkt og ekstremalverdier for en funksjon $ f $ på et gitt intervall.}
+\item \cmds{Ekstremalpunkt( <Funksjon>, <Start>, <Slutt> )}{Finner lokale ekstremalpunkt og ekstremalverdier for en funksjon $ f $ på et gitt intervall.}
 
-\cm{Ekstremalpunkt}{Polynom}
+\item \cmds{Ekstremalpunkt( <Polynom> )}
 {Finner lokale ekstremalpunkt og ekstremalverdier til et polynom.}
 
-\cm{Funksjon}{<Funksjon>, <Start>, <Slutt>}
+\item \cmds{Funksjon ( <Funksjon>, <Start>, <Slutt> )}
 {Tegner en funksjon på et gitt intervall.}
 
-\cm{Høyde}{<Objekt>}
-{Gir avstanden fra toppunkt til grunnflate i et objekt. 
+\item \cmds{Høyde( <Objekt> )}
+{Gir avstanden fra toppunkt til grunnflate i et objekt.\\ 
 	\mers{Avstanden har retning, og derfor kan den noen ganger være negativ. Tallverdien er den geometriske høyden.}}
 
-\cmc{HøyreSide}{<Likning>}
+\item \cmds{HøyreSide ( <Likning> )}
 {Gir høyresiden til en likning.}
 
-\cmc{HøyreSide}{<Liste med likninger>}
+\item \cmds{HøyreSide ( <Liste med likninger> )}
 {Gir en liste med høyresidene i en liste med ligninger.}
 
-\cm{Integral}{<Funksjon>}
-{Gir uttrykket til det ubestemte integralet av en funksjon. (Merk: Hvis kommandoen skrives i inntastingsfeltet, blir konstantleddet utelatt).}
-
-\cm{Integral}{<Funksjon>, <Start>, <Slutt>}
-{Gir det bestemte integralet av en funksjon på et intervall.}
-
-\cmc{Integral}{<Variabel>}
-{Gir uttrykket til det ubestemte integralet til en funksjon av gitt variabel. (Brukes dersom man ønsker å integrere funksjoner avhengig av en annen variabel enn $ x $).}
-
-\cm{Kule}{<Punkt>, <Radius>}
-{Viser en kule i Grafikkfelt 3D med sentrum i et gitt punkt og med en gitt radius.}
-
-\cm{Kurve}{<Uttrykk>, <Uttrykk>, <Uttrykk>, <Parametervariabel>, <Start>, <Slutt>}
-{Viser parameteriseringen av en kurve i Grafikkfelt 3D på et gitt intervall. Uttrykkene er henholdsvis uttrykkene for $ {x, y} $ og $ z $-koordinatene, bestemt av en gitt parametervariabel.
-	
-\mers{
-Med mindre et bestemt intervall av kurven er ønsket, er det bedre å skrive parameteriseringen direkte inn i inntastingsfeltet som \texttt{A+t*u}, hvor $ A $ er et punkt på linja og $ u$ er en retningsvektor.
-}}
-
-\cm{Linje}{<Punkt>, <Punkt>}{ Gir uttrykket til en linje mellom to punkt. Hvis punktene har tre koordinater besår uttrykket av et punkt på linja og en fri variabel $ \}lambda $ mulitplisert med en retningsvektor.}
-
-\cmc{Løs}{<Likning med x>}{
-Løser en likning med $ x $ som ukjent.
+\item \cmds{Integral ( <Funksjon> )}
+{Gir uttrykket til det ubestemte integralet av en funksjon. \\
+\mers{Hvis kommandoen skrives i inntastingsfeltet, blir konstantleddet utelatt}
 }
 
-\cmc{Løs}{<Liste med likninger>, <Liste med variabler>}
+\item \cmds{Integral( <Funksjon>, <Start>, <Slutt> )}
+{Gir det bestemte integralet av en funksjon på et intervall.}
+
+\item \cmds{Integral( <Variabel> )}
+{Gir uttrykket til det ubestemte integralet til en funksjon av gitt variabel. (Brukes dersom man ønsker å integrere funksjoner avhengig av en annen variabel enn $ x $).}
+
+\item \cmds{Kule( <Punkt>, <Radius> )}
+{Viser en kule i Grafikkfelt 3D med sentrum i et gitt punkt og med en gitt radius.}
+
+\item \cmds{Kurve( <Uttrykk>, <Uttrykk>, <Uttrykk>, <Parametervariabel>, <Start>, <Slutt> )}
+{Viser parameteriseringen av en kurve i Grafikkfelt 3D på et gitt intervall. Uttrykkene er henholdsvis uttrykkene for $ {x, y} $ og $ z $-koordinatene, bestemt av en gitt parametervariabel. \\
+\mers{
+	Med mindre et bestemt intervall av kurven er ønsket, er det bedre å skrive parameteriseringen direkte inn i inntastingsfeltet som \texttt{A+t*u}, hvor $ A $ er et punkt på linja og $ u$ er en retningsvektor.
+}}	
+
+\item \cmds{Linje ( <Punkt>, <Punkt> )}{ Gir uttrykket til en linje mellom to punkt. Hvis punktene har tre koordinater besår uttrykket av et punkt på linja og en fri variabel $ \}lambda $ mulitplisert med en retningsvektor.}	
+
+\item \cmds{Løs ( <Likning med x> )}{
+	Løser en likning med $ x $ som ukjent.
+}
+
+\item 
+\cmds{Løs( <Liste med likninger>, <Liste med variabler> )}
 {Finner alle løsninger av en liste med ligninger med gitte variabel som ukjente.}
 
-\cmc{Løs}{<Likning>, <Variabel>}
+\item \cmds{Løs( <Likning>, <Variabel> )}
 {Finner alle løsninger av en gitt likning med en gitt variabel som ukjent.}
 
-\cm{Maks}{<Funksjon>, <Start x-verdi>, <Slutt x-verdi>} {Finner absolutt maksimum og maskimalpunkt for en funksjon $ f $ på et gitt intervall.}
-\newpage
-\cm{Min}{<Funksjon>, <Start x-verdi>, <Slutt x-verdi>} {Finner absolutt minimum og minimumspunkt for en funksjon $ f $ på et gitt intervall.}
-\newpage
-\cm{Nullpunkt}{<Polynom> }
+\item \cmds{Maks( <Funksjon>, <Start x-verdi>, <Slutt x-verdi> )}{Finner absolutt maksimum og maskimalpunkt for en funksjon $ f $ på et gitt intervall.}
+
+\item \cmds{Min}( <Funksjon>, <Start x-verdi>, <Slutt x-verdi> ) {Finner absolutt minimum og minimumspunkt for en funksjon $ f $ på et gitt intervall.}
+
+\item \cmds{Nullpunkt( <Polynom> )}
 {Finner alle nullpunkter til et polynom.}
 
-\cm{NullpunktIntervall}{<Funksjon>, <Start>, <Slutt>}
+\item \cmds{NullpunktIntervall( <Funksjon>, <Start>, <Slutt> )}
 {Finner alle nullpunkter på et gitt intervall til en hvilken som helst funksjon.}
 
-\cm{Plan}{<Punkt>, <Punkt>, <Punkt>}
+\item \cmds{Plan( <Punkt>, <Punkt>, <Punkt> )}
 {Viser et plan i Grafikkfelt 3D, utspent av to av vektorene mellom tre gitte punkt.}
 
-\cm{Prisme}{<Punkt>, <Punkt>, ...}
+\item \cmds{Prisme( <Punkt>, <Punkt>, ... )}
 {Framstiller en prisme i Grafikkfelt 3D. {\tt Prisme[A,B,C,D]} lager en prisme med grunnflate $ ABC $ og tak $ DEF $, {\tt Prisme[A,B,C,D,E]} har grunnflate $ ABCD $ og tak $ EFG $. $ F, G$ og eventelt $ E $ blir konstruert av GeoGebra slik at hver sideflate er et parallellogram. Under kategorien \textsl{Prisme} i algebrafaltet finner man en konstant som oppgir volumet til pyramiden.}
 
-\cm{Punkt}{<Liste>} {Lager et punkt med koordinater gitt som liste. \\
+\item \cmds{Punkt( <Liste> )}{Lager et punkt med koordinater gitt som liste. \\
 	
 	\mers{For å lage punktet $ (x, y) $, kan man liksågodt skrive \texttt{(x,y)} i inntastingsfeltet. Skriver man \texttt{(x,y)} i CAS lager man vektoren $ [x, y] $.}
 }
 
-\cm{Pyramide}{<Punkt>, <Punkt>, ...}
+\item \cmds{Pyramide( <Punkt>, <Punkt>, ... )}
 {Framstiller en pyramide i Grafikkfelt 3D. {\tt Pyramide[A,B,C,D]} lager en pyramide med grunnflate ${ A, B, C} $ og toppunkt $ D $, mens {\tt Pyramide[A,B,C,D, E]} har grunnflate ${ A, B, C, D }$ og toppunkt $ E $. Under kategorien \textsl{Pyramide} i algebrafaltet finner man en konstant som oppgir volumet til pyramiden.}
 
-\cm{RegLin}{<Liste>}
+\item \cmds{RegLin( <Liste> )}
 {Bruker regresjon med en rett linje for å tilpasse punkt gitt i en liste.}
 
-\cm{RegEksp}{<Liste>}
+\item \cmds{RegEksp( <Liste> )}
 {Bruker regresjon med en eksponentialfunksjon for å tilpasse punkt gitt i en liste.}
 
-\cm{RegPoly}{<Liste>, <Grad>}
+\item \cmds{RegPoly( <Liste>, <Grad> )}
 {Bruker regresjon med et polynom av gitt grad for å tilpasse punkt gitt i en liste.}
 
-\cm{RegPot}{<Liste>}
+\item \cmds{RegPot( <Liste> )}
 {Bruker regresjon med en potensfunksjon for å tilpasse punkt gitt i en liste.}
 
-\cm{RegSin}{<Liste>}
+\item \cmds{RegSin( <Liste> )}
 {Bruker regresjon med en sinusfunksjon for å tilpasse punkt gitt i en liste.	}
 
-\cm{Skalarprodukt}{<Vektor>, <Vektor>} 
-{Finner skalarproduktet av to vektorer. 
-	
-	\mers{For to vektorer $u$ og $v$ kan man like gjerne skrive \texttt{u*v}.}}
+\item \cmds{Skalarprodukt( <Vektor>, <Vektor> )} 
+{Finner skalarproduktet av to vektorer. \\
+\mers{For to vektorer $u$ og $v$ kan man like gjerne skrive \texttt{u*v}.}}
 
-\cm{Skjæring}{<Objekt>, <Objekt>}
+\item \cmds{Skjæring( <Objekt>, <Objekt> )}
 {Finner skjæringspunktene mellom to objekter. 
 }
 
-\cm{Skjæring}{<Funksjon>, <Funksjon>, <Start>, <Slutt>}
+\item \cmds{Skjæring( <Funksjon>, <Funksjon>, <Start>, <Slutt> )}
 {Finner skjæringspunktene mellom to funksjoner på et gitt intervall.}
 
-\cmc{Sum}{<Uttrykk>, <Variabel>, <Start>, <Slutt>} {
-Finner summen av en rekke med en løpende variabel på et intervall.
+\item \cmds{Sum( <Uttrykk>, <Variabel>, <Start>, <Slutt> )}{
+	Finner summen av en rekke med en løpende variabel på et intervall.
 }
 
-\cm{TrigKombiner}{<Funksjon>}
+\item \cmds{TrigKombiner( <Funksjon> )}
 {Skriver om et uttrykk på formen $ a\sin (kx) + b\cos (kx) $ til et kombinert uttrykk på formen $ r\cos (kx-c) $.}
 
-\cm{TrigKombiner}{<Funksjon>, sin(x)}
-{Skriver om en funksjon på formen $ {a\sin (kx) + b\cos (kx) }$ til et kombinert uttrykk på formen $ r\sin (kx+c) $.}
+\item \cmds{TrigKombiner( <Funksjon>, sin(x) )}{Skriver om en funksjon på formen $ {a\sin (kx) + b\cos (kx) }$ til et kombinert uttrykk på formen $ r\sin (kx+c) $.}
 
-
-\cm{Vektor}{<Punkt>} {
-Lager vektoren fra origo til et gitt punkt. \\
-\mers{I CAS kan man lage vektoren $ {[x, y]} $ ved å skrive \texttt{(x,y)}, dette anbefales.}
+\item \cmds{Vektor( <Punkt> )}{
+	Lager vektoren fra origo til et gitt punkt. \\
+	\mers{I CAS kan man lage vektoren $ {[x, y]} $ ved å skrive \texttt{(x,y)}, dette anbefales.}
 }
 
-\cmc{Vektorprodukt}{<Vektor>, <Vektor>}
-{Finner vektorproduktet av to vektorer. \\
-\mers{Merk: For to vektorer $u$ og $v$ kan man like gjerne skrive \texttt{u}$ \otimes $\texttt{v}. }
+\item \cmds{Vektorprodukt( <Vektor>, <Vektor> )}{Finner vektorproduktet av to vektorer. \\
+	\mers{For to vektorer $u$ og $v$ kan man like gjerne skrive \texttt{u}$ \otimes $\texttt{v}. }
 }
 
-\cm{Vendepunkt}{<Polynom>}
+\item \cmds{Vendepunkt( <Polynom> )}
 {Finner vendepunktene til et polynom.}
 
-\cmc{VenstreSide}{<Likning>}
+\item \cmds{VenstreSide( <Likning> )}
 {Gir venstresiden til en likning.}
 
-\cmc{VenstreSide}{<Liste med likninger>}
+\item \cmds{VenstreSide( <Liste med likninger> )}
 {Gir en liste med venstresidene i en liste med ligninger.}
 
-\cm{Vinkel}{<Vektor>, <Vektor>}
+\item \cmds{Vinkel( <Vektor>, <Vektor> )}
 {Gir vinkelen mellom to vektorer. Kan også brukes for vinkel mellom plan/linjer, plan/plan og linje/linje}
+\end{itemize}
+
+
+
 \end{document}
 
 

@@ -100,16 +100,16 @@ True
 \spr{
 Sjekker som bruker de sammenlignende og de logiske operatorene, skal vi heretter kalle \outl{vilkår}.
 }
-\subsection{\pymet{if, else og elif} uttrykkene}
-Når vi ønsker å utføre handlinger bare \textsl{hvis} et vilkår er sant (\pytype{True}), bruker vi \pymet{if} uttrykket foran vilkåret. Koden vi skriver med innrykk under \pymet{if}-linjen, vil bare bli utført hvis vilkåret gir \pytype{True}. 
+\subsection{Uttrykkene \pymet{if, else og elif}}
+Når vi ønsker å utføre handlinger bare \textsl{hvis} et vilkår er sant (\pytype{True}), bruker vi uttrykket \pymet{if} foran vilkåret. Koden vi skriver med innrykk under \pymet{if}-linjen, vil bare bli utført hvis vilkåret gir \pytype{True}. 
 \pythonut{if.py}{
  Jepp, c er større enn b
 } 
-Hvis man først vil sjekke om et vilkår er sant, og så utføre handlinger hvis det \textsl{ikke} er det, kan vi bruke \pymet{else} uttrykket:
+Hvis man først vil sjekke om et vilkår er sant, og så utføre handlinger hvis det \textsl{ikke} er det, kan vi bruke uttrykket \pymet{else}:
 \pythonut{else.py}{
 Men denne kommer, fordi vilkåret i if-linja over var False
 }
-\pymet{else} uttrykket tar bare hensyn til (og gir ikke mening uten) \pymet{if} uttrykket like over seg. Hvis vi vil at handlinger skal utføres \textsl{bare} hvis ingen tidligere \pymet{if} uttrykk ga noe utslag, må vi bruke\footnote{\pymet{elif} er en forkortelse for \pymet{else if}, som også kan brukes.} \pymet{elif} uttrykket. Dette er et \pymet{if} uttrykk som slår inn hvis \pymet{if} uttrykket over \textsl{ikke} ga utslag.
+Uttrykket \pymet{else} tar bare hensyn til (og gir ikke mening uten) \pymet{if}-uttrykket like over seg. Hvis vi vil at handlinger skal utføres \textsl{bare} hvis ingen tidligere \pymet{if} uttrykk ga noe utslag, må vi bruke\footnote{\pymet{elif} er en forkortelse for \pymet{else if}, som også kan brukes.} uttrykket \pymet{elif}. Dette er et \pymet{if}-uttrykk som slår inn hvis \pymet{if}-uttrykket over \textsl{ikke} ga utslag.
 \pythonut{elif.py}{
 Nå er vi sikre på at 1 < b < 3
 }
