@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  21 OCT 2022 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  24 OCT 2022 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,69 +1425,92 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./strintfloat.py) (./opr.
-py) (./strintfloatfunk.py) [2]
-(./assign.py) (./aplus1.py) [3] (./func.py)
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+py) [2] (./strintfloatfunk.py)
+(./assign.py) [3] (./aplus1.py) (./rnd.py) [4] (./func.py)
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []\T1/lmtt/m/n/10 Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:
  []
 
-[4] (./bool1.py) (./bool2.py)
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[5] (./bool1.py) (./bool2.py)
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []\T1/lmr/m/n/10.95 Sjekker som bruker de sam-men-lig-nende og de lo-giske op-e
 r-a-
  []
 
-[5]
+[6]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 103.
+(hyperref)                removing `\@ifnextchar' on input line 112.
 
-(./if.py) (./else.py) (./elif.py) [6] [7] (./list1.py) (./list1.py)
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 112.
+
+(./if.py) (./else.py) (./elif.py)
+Overfull \hbox (14.56488pt too wide) in paragraph at lines 121--124
+[]\T1/lmr/m/n/10.95 Uttrykket []\T1/lmtt/m/n/10.95 else[] \T1/lmr/m/n/10.95 tar
+ bare hen-syn til (og gir ikke mening uten) []\T1/lmtt/m/n/10.95 if[]\T1/lmr/m/
+n/10.95 -uttrykket 
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/lmr/m/n/10.95 Når du job-ber med tall, kan noen vilkår du for-ven-ter ska
+l være
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/lmtt/m/n/10.95 True[] \T1/lmr/m/n/10.95 vise seg å være []\T1/lmtt/m/n/10
+.95 False[]\T1/lmr/m/n/10.95 . Dette han-dler ofte om avrund-ings-
+ []
+
+[8] (./list1.py) (./list1.py)
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 [][][][]\T1/lmr/m/n/9 Kort for-t-alt be-tyr det at det bare er noen typer ob-je
 k-ter som kan bruke denne
  []
 
-(./list3.py) [8] (./list4.py)
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+(./list3.py) [9] (./list4.py)
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []\T1/lmr/m/n/10.95 Hva er forskjellen på å skive \T1/lmtt/m/n/10.95 a = min_li
 ste[1] \T1/lmr/m/n/10.95 og å skrive \T1/lmtt/m/n/10.95 a =
  []
 
-(./list5.py) [9] (./list6.py) (./list7.py) [10] (./list8.py) [11]
+(./list5.py) [10] (./list6.py) (./list7.py) [11] (./list8.py) [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 175.
+(hyperref)                removing `\@ifnextchar' on input line 187.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 175.
+(hyperref)                removing `\@ifnextchar' on input line 187.
 
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 188.
 (./for.py)
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\T1/lmr/m/n/10.95 Å gå gjen-nom hvert el-e-ment i (for ek-sem-pel) en liste k
-alles []\T1/lmr/bx/n/10.95 å
+alles ''å
  []
 
-(./forrang.py) (./while1.py) [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+(./forrang.py) (./while1.py) [13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 222.
  (./py_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 222.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 222.
 Package rerunfilecheck Info: File `py_bm.out' has not changed.
-(rerunfilecheck)             Checksum: D5C2240AAFCB101CCF56E149AB3503E1;531.
+(rerunfilecheck)             Checksum: F3DBBA2C71E130485215B3C52A25CAF3;539.
  ) 
 Here is how much of TeX's memory you used:
- 33497 strings out of 481239
- 642982 string characters out of 5920378
- 1234943 words of memory out of 5000000
- 47764 multiletter control sequences out of 15000+600000
+ 33512 strings out of 481239
+ 643155 string characters out of 5920378
+ 1216126 words of memory out of 5000000
+ 47769 multiletter control sequences out of 15000+600000
  613347 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,7n,104p,874b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1502,10 +1525,10 @@ hare/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 tt9.pfb>
-Output written on py_bm.pdf (13 pages, 322235 bytes).
+Output written on py_bm.pdf (14 pages, 324588 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 233 named destinations out of 1000 (max. 500000)
+ 434 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 240 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
