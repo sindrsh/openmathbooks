@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1351,79 +1351,79 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write7
 \openout7 = `num_bm.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
 .
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
 .
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-8.
+9.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-8.
+9.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 8.
+(Font)              <10.95> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+(Font)              <6> on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 8
+LaTeX Font Info:    Trying to load font information for U+esint on input line 9
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-8.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
 File: uesvect.fd 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
 []\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/n/10.95 være skjærin
 gspunk-tet mel-lom $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen og tan-gen-t
 en til $\OML/lmm/m/it/10.95 f$
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 12.
+(Font)              <9> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 12.
+(Font)              <5> on input line 13.
 <../fig/newt1a.pdf, id=16, 170.7178pt x 142.26149pt>
 File: ../fig/newt1a.pdf Graphic file (type pdf)
 <use ../fig/newt1a.pdf>
-Package pdftex.def Info: ../fig/newt1a.pdf  used on input line 21.
+Package pdftex.def Info: ../fig/newt1a.pdf  used on input line 22.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
 <../fig/newt1b.pdf, id=17, 170.7178pt x 142.26149pt>
 File: ../fig/newt1b.pdf Graphic file (type pdf)
 <use ../fig/newt1b.pdf>
-Package pdftex.def Info: ../fig/newt1b.pdf  used on input line 24.
+Package pdftex.def Info: ../fig/newt1b.pdf  used on input line 25.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
 
-Overfull \hbox (14.52383pt too wide) in paragraph at lines 21--25
+Overfull \hbox (14.52383pt too wide) in paragraph at lines 22--26
 [][][][][][]  
  []
 
@@ -1432,44 +1432,44 @@ Overfull \hbox (14.52383pt too wide) in paragraph at lines 21--25
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/newt1a.pdf> <../fig
 /newt1b.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 []\T1/lmr/m/n/10.95 Gitt en fun-skjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 
 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 si at vi ønsker å
  finne et tall $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 slik at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--35
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 []$\T1/lmr/m/n/10.95 . Gitt $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -verdiene 
 $\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 x[]$ \T1/lm
 r/m/n/10.95 for $[]$. Ved å bruke
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []\T1/lmr/m/n/10.95 Newtons metode beskriver en it-erasjon-sprossess som man hå
 per
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 \T1/lmr/m/n/10.95 at nærmer seg en verdi. Hvis meot-den lykkes, vil $\OML/lmm/m
 /it/10.95 x[]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 x[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 \T1/lmr/m/n/10.95 et-ter-hvert være veldig like, og slik kan en grense for hvor
  liten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 []$ \T1/lmr/m/n/10.95 kan være fun-gere som et godt mål for når it-erasjon-
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 []\T1/lmr/m/n/10.95 Dele in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.9
 5 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i min-dre in-ter-vall. Disse 
 kaller vi
@@ -1479,38 +1479,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 	\subfloat
+l.68 	\subfloat
                [TilnÃ¦rming med 3\\ \hspace{0.55cm}delintervaller.]{\include...
 <../fig/trapmet.pdf, id=72, 136.57022pt x 113.81522pt>
 File: ../fig/trapmet.pdf Graphic file (type pdf)
 <use ../fig/trapmet.pdf>
-Package pdftex.def Info: ../fig/trapmet.pdf  used on input line 67.
+Package pdftex.def Info: ../fig/trapmet.pdf  used on input line 68.
 (pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 	\subfloat
+l.69 	\subfloat
                [TilnÃ¦rming med 20\\ \hspace{0.55cm}delintervaller]{\include...
 <../fig/trapmetb.pdf, id=73, 136.57022pt x 113.81522pt>
 File: ../fig/trapmetb.pdf Graphic file (type pdf)
 <use ../fig/trapmetb.pdf>
-Package pdftex.def Info: ../fig/trapmetb.pdf  used on input line 68.
+Package pdftex.def Info: ../fig/trapmetb.pdf  used on input line 69.
 (pdftex.def)             Requested size: 136.56989pt x 113.81493pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 69.
+(caption)                particular \caption on input line 70.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []\T1/lmr/m/n/10.95 Gitt en in-te-grerbar funksjon $\OML/lmm/m/it/10.95 f$\T1/l
 mr/m/n/10.95 . En tilnærmet verdi for $[][] \OML/lmm/m/it/10.95 f dx$ \T1/lmr/m
 /n/10.95 er
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []\T1/lmr/m/n/10.95 Slik [][]regel 0.2[][][] er for-mulert, vil $[]$ være delt 
 inn i $[]$ delin-
  []
@@ -1518,11 +1518,11 @@ inn i $[]$ delin-
 [3
 
  <../fig/trapmet.pdf> <../fig/trapmetb.pdf>] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./num_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `num_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 7F8C34C08F25C75F18DA17A35455323C;101.
  ) 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,11 +119,16 @@ Overfull \hbox (4.0245pt too wide) in paragraph at lines 245--246
  []
 
 
-Overfull \hbox (4.0245pt too wide) in paragraph at lines 264--265
+Overfull \hbox (2.46884pt too wide) in paragraph at lines 282--283
 [][]| 
  []
 
-[5] [6] [7] [8] (./pensum.aux) ) 
+[5]
+Overfull \hbox (4.0245pt too wide) in paragraph at lines 292--293
+[][]| 
+ []
+
+[6] [7] [8] (./pensum.aux) ) 
 Here is how much of TeX's memory you used:
  917 strings out of 481239
  14076 string characters out of 5920378
@@ -132,12 +137,12 @@ Here is how much of TeX's memory you used:
  533604 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,13n,25p,622b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
-10.pfb>
-Output written on pensum.pdf (8 pages, 67863 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.p
+fb>
+Output written on pensum.pdf (8 pages, 68786 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream

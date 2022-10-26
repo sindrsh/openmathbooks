@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  23 OCT 2022 21:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4678,208 +4678,225 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 (./prg/helloworld.py) [148
 
-] (./prg/strintfloat.py) (./prg/opr.py)
-(./prg/strintfloatfunk.py) [149] (./prg/assign.py) (./prg/aplus1.py) [150]
-(./prg/func.py)
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+] (./prg/strintfloat.py) (./prg/opr.py) [149]
+(./prg/strintfloatfunk.py) (./prg/assign.py) [150] (./prg/aplus1.py)
+(./prg/rnd.py) [151] (./prg/func.py)
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []\T1/lmtt/m/n/10 Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:
  []
 
-[151] (./prg/bool1.py) (./prg/bool2.py)
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[152] (./prg/bool1.py) (./prg/bool2.py)
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []\T1/lmr/m/n/10.95 Sjekker som bruker de sam-men-lig-nende og de lo-giske op-e
 r-a-
  []
 
-[152]
+[153]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 103.
+(hyperref)                removing `\@ifnextchar' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 112.
 
 (./prg/if.py) (./prg/else.py) (./prg/elif.py)
-Overfull \hbox (14.56488pt too wide) in paragraph at lines 112--115
+Overfull \hbox (14.56488pt too wide) in paragraph at lines 121--124
 []\T1/lmr/m/n/10.95 Uttrykket []\T1/lmtt/m/n/10.95 else[] \T1/lmr/m/n/10.95 tar
  bare hen-syn til (og gir ikke mening uten) []\T1/lmtt/m/n/10.95 if[]\T1/lmr/m/
 n/10.95 -uttrykket 
  []
 
-[153] [154] (./prg/list1.py) (./prg/list1.py)
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[154]
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/lmr/m/n/10.95 Når du job-ber med tall, kan noen vilkår du for-ven-ter ska
+l være
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/lmtt/m/n/10.95 True[] \T1/lmr/m/n/10.95 vise seg å være []\T1/lmtt/m/n/10
+.95 False[]\T1/lmr/m/n/10.95 . Dette han-dler ofte om avrund-ings-
+ []
+
+[155] (./prg/list1.py) (./prg/list1.py)
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 [][][][]\T1/lmr/m/n/9 Kort for-t-alt be-tyr det at det bare er noen typer ob-je
 k-ter som kan bruke denne
  []
 
-(./prg/list3.py) [155] (./prg/list4.py)
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+(./prg/list3.py) [156] (./prg/list4.py)
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []\T1/lmr/m/n/10.95 Hva er forskjellen på å skive \T1/lmtt/m/n/10.95 a = min_li
 ste[1] \T1/lmr/m/n/10.95 og å skrive \T1/lmtt/m/n/10.95 a =
  []
 
-(./prg/list5.py) [156] (./prg/list6.py) (./prg/list7.py) [157] (./prg/list8.py)
-[158]
+(./prg/list5.py) [157] (./prg/list6.py) (./prg/list7.py) [158] (./prg/list8.py)
+[159]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 175.
+(hyperref)                removing `\@ifnextchar' on input line 187.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 175.
+(hyperref)                removing `\@ifnextchar' on input line 187.
 
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 176.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 188.
 (./prg/for.py)
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\T1/lmr/m/n/10.95 Å gå gjen-nom hvert el-e-ment i (for ek-sem-pel) en liste k
-alles []\T1/lmr/bx/n/10.95 å
+alles ''å
  []
 
-(./prg/forrang.py) (./prg/while1.py) [159] [160]) (./exl/rgn.tex (../doc.tex)
-Overfull \hbox (10.18294pt too wide) in paragraph at lines 14--15
+(./prg/forrang.py) (./prg/while1.py) [160] [161]) (./exl/rgn_bm.tex (../doc.tex
+)
+Overfull \hbox (10.18294pt too wide) in paragraph at lines 12--13
 \T1/lmr/m/n/10.95 staver (A, B, C osv.). Hvor-dan radene og kolonnene brukes er
  avgjørende 
  []
 
-<exl/figs/B3.png, id=2317, 499.8675pt x 287.0725pt>
+<exl/figs/B3.png, id=2329, 499.8675pt x 287.0725pt>
 File: exl/figs/B3.png Graphic file (type png)
 <use exl/figs/B3.png>
-Package pdftex.def Info: exl/figs/B3.png  used on input line 18.
+Package pdftex.def Info: exl/figs/B3.png  used on input line 16.
 (pdftex.def)             Requested size: 124.96657pt x 71.76794pt.
-<exl/figs/ex2.png, id=2318, 243.15843pt x 143.78719pt>
+<exl/figs/ex2.png, id=2330, 243.15843pt x 143.78719pt>
 File: exl/figs/ex2.png Graphic file (type png)
 <use exl/figs/ex2.png>
-Package pdftex.def Info: exl/figs/ex2.png  used on input line 23.
+Package pdftex.def Info: exl/figs/ex2.png  used on input line 21.
 (pdftex.def)             Requested size: 85.10672pt x 50.32626pt.
-<exl/figs/ex3.png, id=2319, 322.20375pt x 188.705pt>
+<exl/figs/ex3.png, id=2331, 322.20375pt x 188.705pt>
 File: exl/figs/ex3.png Graphic file (type png)
 <use exl/figs/ex3.png>
-Package pdftex.def Info: exl/figs/ex3.png  used on input line 32.
+Package pdftex.def Info: exl/figs/ex3.png  used on input line 30.
 (pdftex.def)             Requested size: 96.66187pt x 56.61192pt.
-<exl/figs/ex4.png, id=2320, 327.2225pt x 188.705pt>
+<exl/figs/ex4.png, id=2332, 327.2225pt x 188.705pt>
 File: exl/figs/ex4.png Graphic file (type png)
 <use exl/figs/ex4.png>
-Package pdftex.def Info: exl/figs/ex4.png  used on input line 33.
+Package pdftex.def Info: exl/figs/ex4.png  used on input line 31.
 (pdftex.def)             Requested size: 98.1675pt x 56.61192pt.
-[161
+[162
 
  <./exl/figs/B3.png> <./exl/figs/ex2.png> <./exl/figs/ex3.png> <./exl/figs/ex4.
 png>]
-<exl/figs/intast.png, id=2329, 499.8675pt x 289.08pt>
+<exl/figs/intast.png, id=2343, 499.8675pt x 289.08pt>
 File: exl/figs/intast.png Graphic file (type png)
 <use exl/figs/intast.png>
-Package pdftex.def Info: exl/figs/intast.png  used on input line 38.
+Package pdftex.def Info: exl/figs/intast.png  used on input line 36.
 (pdftex.def)             Requested size: 124.96657pt x 72.26982pt.
 
-Overfull \hbox (4.2699pt too wide) in paragraph at lines 45--46
+Overfull \hbox (4.2699pt too wide) in paragraph at lines 43--44
 []\T1/lmr/m/n/10.95 Tallet tilhørende timeløn-nen (250) står i celle B2, mens t
 al-let tilhørende 
  []
 
-<exl/figs/ex5.png, id=2330, 321.2pt x 185.69376pt>
+<exl/figs/ex5.png, id=2344, 321.2pt x 185.69376pt>
 File: exl/figs/ex5.png Graphic file (type png)
 <use exl/figs/ex5.png>
-Package pdftex.def Info: exl/figs/ex5.png  used on input line 49.
+Package pdftex.def Info: exl/figs/ex5.png  used on input line 47.
 (pdftex.def)             Requested size: 96.36073pt x 55.70854pt.
 File: exl/figs/ex4.png Graphic file (type png)
 <use exl/figs/ex4.png>
-Package pdftex.def Info: exl/figs/ex4.png  used on input line 50.
+Package pdftex.def Info: exl/figs/ex4.png  used on input line 48.
 (pdftex.def)             Requested size: 98.1675pt x 56.61192pt.
-<exl/figs/ex6.png, id=2331, 321.2pt x 183.68625pt>
+<exl/figs/ex6.png, id=2345, 321.2pt x 183.68625pt>
 File: exl/figs/ex6.png Graphic file (type png)
 <use exl/figs/ex6.png>
-Package pdftex.def Info: exl/figs/ex6.png  used on input line 55.
+Package pdftex.def Info: exl/figs/ex6.png  used on input line 53.
 (pdftex.def)             Requested size: 96.36073pt x 55.1063pt.
 
-Overfull \hbox (0.22708pt too wide) in paragraph at lines 59--61
+Overfull \hbox (0.22708pt too wide) in paragraph at lines 57--59
 \T1/lmr/m/n/10.95 Kopiering av cel-lene er en metode som hin-drer deg i å skriv
 e de samme 
  []
 
-[162 <./exl/figs/intast.png> <./exl/figs/ex5.png> <./exl/figs/ex6.png>]
-<exl/figs/ex7.png, id=2341, 581.17125pt x 185.69376pt>
+[163 <./exl/figs/intast.png> <./exl/figs/ex5.png> <./exl/figs/ex6.png>]
+<exl/figs/ex7.png, id=2354, 581.17125pt x 185.69376pt>
 File: exl/figs/ex7.png Graphic file (type png)
 <use exl/figs/ex7.png>
-Package pdftex.def Info: exl/figs/ex7.png  used on input line 69.
+Package pdftex.def Info: exl/figs/ex7.png  used on input line 67.
 (pdftex.def)             Requested size: 174.35272pt x 55.70854pt.
-<exl/figs/ex8.png, id=2343, 717.68124pt x 186.6975pt>
+<exl/figs/ex8.png, id=2356, 717.68124pt x 186.6975pt>
 File: exl/figs/ex8.png Graphic file (type png)
 <use exl/figs/ex8.png>
-Package pdftex.def Info: exl/figs/ex8.png  used on input line 80.
+Package pdftex.def Info: exl/figs/ex8.png  used on input line 78.
 (pdftex.def)             Requested size: 215.30603pt x 56.00967pt.
-<exl/figs/ex15.png, id=2344, 581.17125pt x 181.67876pt>
+<exl/figs/ex15.png, id=2357, 581.17125pt x 181.67876pt>
 File: exl/figs/ex15.png Graphic file (type png)
 <use exl/figs/ex15.png>
-Package pdftex.def Info: exl/figs/ex15.png  used on input line 81.
+Package pdftex.def Info: exl/figs/ex15.png  used on input line 79.
 (pdftex.def)             Requested size: 174.35272pt x 54.50404pt.
 
-[163 <./exl/figs/ex7.png> <./exl/figs/ex8.png>]
-Overfull \hbox (16.26111pt too wide) in paragraph at lines 83--85
+[164 <./exl/figs/ex7.png> <./exl/figs/ex8.png>]
+Overfull \hbox (16.26111pt too wide) in paragraph at lines 81--83
 \T1/lmr/m/n/10.95 Av det vi har sett i [][]videoen[][] og fig-urene over kan vi
  ta med oss to generelle 
  []
 
 
-Overfull \hbox (1.9591pt too wide) in paragraph at lines 85--86
+Overfull \hbox (1.9591pt too wide) in paragraph at lines 83--84
 []\T1/lmr/m/n/10.95 Hver gang man kopierer en formel én celle \T1/lmr/m/sl/10.9
 5 bor-tover\T1/lmr/m/n/10.95 , vil kolonnene 
  []
 
 
-Overfull \hbox (4.89957pt too wide) in paragraph at lines 92--93
+Overfull \hbox (4.89957pt too wide) in paragraph at lines 90--91
 []\T1/lmr/m/n/10.95 Igjen merker vi oss at reg-neme-to-den for å finne årsløn-n
 en er den samme 
  []
 
-<exl/figs/ex12.png, id=2357, 706.64pt x 278.03876pt>
+<exl/figs/ex12.png, id=2369, 706.64pt x 278.03876pt>
 File: exl/figs/ex12.png Graphic file (type png)
 <use exl/figs/ex12.png>
-Package pdftex.def Info: exl/figs/ex12.png  used on input line 95.
+Package pdftex.def Info: exl/figs/ex12.png  used on input line 93.
 (pdftex.def)             Requested size: 211.99364pt x 83.41226pt.
-<exl/figs/ex13.png, id=2358, 636.3775pt x 278.03876pt>
+<exl/figs/ex13.png, id=2370, 636.3775pt x 278.03876pt>
 File: exl/figs/ex13.png Graphic file (type png)
 <use exl/figs/ex13.png>
-Package pdftex.def Info: exl/figs/ex13.png  used on input line 96.
+Package pdftex.def Info: exl/figs/ex13.png  used on input line 94.
 (pdftex.def)             Requested size: 190.91472pt x 83.41226pt.
-[164 <./exl/figs/ex15.png> <./exl/figs/ex12.png> <./exl/figs/ex13.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[165 <./exl/figs/ex15.png> <./exl/figs/ex12.png> <./exl/figs/ex13.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/lmr/m/n/10.95 Finner gjen-nom-snit-tet for alle ver-di-ene fra og med cel
 le1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/lmr/m/n/10.95 Finner me-di-a-nen for alle ver-di-ene fra og med celle1 ti
 l og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/lmr/m/n/10.95 Finner var-i-ansen for alle ver-di-ene fra og med celle1 ti
 l og
  []
 
-) (./ggb/ggb.tex (./ggb/../../doc.tex) [165]
-<ggb/ggbalgoggraf.png, id=2382, 2023.56pt x 1316.92pt>
+) (./ggb/ggb_bm.tex (./ggb/../../doc.tex) [166]
+<ggb/ggbalgoggraf.png, id=2394, 2023.56pt x 1316.92pt>
 File: ggb/ggbalgoggraf.png Graphic file (type png)
 <use ggb/ggbalgoggraf.png>
 Package pdftex.def Info: ggb/ggbalgoggraf.png  used on input line 11.
 (pdftex.def)             Requested size: 202.36784pt x 131.6997pt.
-<ggb/pointAandB.png, id=2383, 1312.905pt x 863.225pt>
+<ggb/pointAandB.png, id=2395, 1312.905pt x 863.225pt>
 File: ggb/pointAandB.png Graphic file (type png)
 <use ggb/pointAandB.png>
 Package pdftex.def Info: ggb/pointAandB.png  used on input line 24.
 (pdftex.def)             Requested size: 196.92725pt x 129.47816pt.
-<ggb/pointP.png, id=2384, 1324.95pt x 873.2625pt>
+<ggb/pointP.png, id=2396, 1324.95pt x 873.2625pt>
 File: ggb/pointP.png Graphic file (type png)
 <use ggb/pointP.png>
 Package pdftex.def Info: ggb/pointP.png  used on input line 30.
 (pdftex.def)             Requested size: 198.73392pt x 130.98372pt.
- [166
+ [167
 
  <./ggb/ggbalgoggraf.png> <./ggb/pointAandB.png>]
-<ggb/skrivf.png, id=2392, 388.45125pt x 67.25125pt>
+<ggb/skrivf.png, id=2404, 388.45125pt x 67.25125pt>
 File: ggb/skrivf.png Graphic file (type png)
 <use ggb/skrivf.png>
 Package pdftex.def Info: ggb/skrivf.png  used on input line 40.
@@ -4896,7 +4913,7 @@ Overfull \hbox (4.27533pt too wide) in paragraph at lines 45--48
 bra . Det an-dre er at vi ønsker 
  []
 
-<ggb/pfig.png, id=2393, 384.43625pt x 50.1875pt>
+<ggb/pfig.png, id=2405, 384.43625pt x 50.1875pt>
 File: ggb/pfig.png Graphic file (type png)
 <use ggb/pfig.png>
 Package pdftex.def Info: ggb/pfig.png  used on input line 52.
@@ -4913,65 +4930,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 ltså
  []
 
-[167 <./ggb/pointP.png> <./ggb/skrivf.png> <./ggb/pfig.png>]
-<ggb/23.png, id=2400, 452.69125pt x 330.23375pt>
+[168 <./ggb/pointP.png> <./ggb/skrivf.png> <./ggb/pfig.png>]
+<ggb/23.png, id=2413, 452.69125pt x 330.23375pt>
 File: ggb/23.png Graphic file (type png)
 <use ggb/23.png>
 Package pdftex.def Info: ggb/23.png  used on input line 67.
 (pdftex.def)             Requested size: 226.34506pt x 165.11646pt.
-<ggb/H.png, id=2401, 385.44pt x 135.50626pt>
+<ggb/H.png, id=2414, 385.44pt x 135.50626pt>
 File: ggb/H.png Graphic file (type png)
 <use ggb/H.png>
 Package pdftex.def Info: ggb/H.png  used on input line 79.
 (pdftex.def)             Requested size: 192.71953pt x 67.75294pt.
- [168 <./ggb/23.png>]
-<ggb/fglin1.png, id=2410, 396.48125pt x 103.38625pt>
+ [169 <./ggb/23.png>]
+<ggb/fglin1.png, id=2422, 396.48125pt x 103.38625pt>
 File: ggb/fglin1.png Graphic file (type png)
 <use ggb/fglin1.png>
 Package pdftex.def Info: ggb/fglin1.png  used on input line 93.
 (pdftex.def)             Requested size: 198.24013pt x 51.693pt.
-<ggb/fglin2.png, id=2411, 398.48875pt x 170.6375pt>
+<ggb/fglin2.png, id=2423, 398.48875pt x 170.6375pt>
 File: ggb/fglin2.png Graphic file (type png)
 <use ggb/fglin2.png>
 Package pdftex.def Info: ggb/fglin2.png  used on input line 98.
 (pdftex.def)             Requested size: 239.0951pt x 102.38327pt.
- [169 <./ggb/H.png> <./ggb/fglin1.png> <./ggb/fglin2.png>]
-<ggb/fig/pkt.png, id=2419, 47.17625pt x 45.16875pt>
+ [170 <./ggb/H.png> <./ggb/fglin1.png> <./ggb/fglin2.png>]
+<ggb/fig/pkt.png, id=2431, 47.17625pt x 45.16875pt>
 File: ggb/fig/pkt.png Graphic file (type png)
 <use ggb/fig/pkt.png>
 Package pdftex.def Info: ggb/fig/pkt.png  used on input line 108.
 (pdftex.def)             Requested size: 18.87015pt x 18.06717pt.
-<ggb/fig/lin.png, id=2420, 47.17625pt x 44.165pt>
+<ggb/fig/lin.png, id=2432, 47.17625pt x 44.165pt>
 File: ggb/fig/lin.png Graphic file (type png)
 <use ggb/fig/lin.png>
 Package pdftex.def Info: ggb/fig/lin.png  used on input line 109.
 (pdftex.def)             Requested size: 18.87015pt x 17.66566pt.
-<ggb/fig/ekst.png, id=2421, 46.1725pt x 44.165pt>
+<ggb/fig/ekst.png, id=2433, 46.1725pt x 44.165pt>
 File: ggb/fig/ekst.png Graphic file (type png)
 <use ggb/fig/ekst.png>
 Package pdftex.def Info: ggb/fig/ekst.png  used on input line 110.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<ggb/fig/nul.png, id=2422, 46.1725pt x 44.165pt>
+<ggb/fig/nul.png, id=2434, 46.1725pt x 44.165pt>
 File: ggb/fig/nul.png Graphic file (type png)
 <use ggb/fig/nul.png>
 Package pdftex.def Info: ggb/fig/nul.png  used on input line 111.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<ggb/fig/skj.png, id=2423, 49.18375pt x 45.16875pt>
+<ggb/fig/skj.png, id=2435, 49.18375pt x 45.16875pt>
 File: ggb/fig/skj.png Graphic file (type png)
 <use ggb/fig/skj.png>
 Package pdftex.def Info: ggb/fig/skj.png  used on input line 112.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<ggb/fig/vek.png, id=2424, 47.17625pt x 43.16125pt>
+<ggb/fig/vek.png, id=2436, 47.17625pt x 43.16125pt>
 File: ggb/fig/vek.png Graphic file (type png)
 <use ggb/fig/vek.png>
 Package pdftex.def Info: ggb/fig/vek.png  used on input line 113.
 (pdftex.def)             Requested size: 18.87015pt x 17.26418pt.
-<ggb/fig/tekst.png, id=2425, 49.18375pt x 45.16875pt>
+<ggb/fig/tekst.png, id=2437, 49.18375pt x 45.16875pt>
 File: ggb/fig/tekst.png Graphic file (type png)
 <use ggb/fig/tekst.png>
 Package pdftex.def Info: ggb/fig/tekst.png  used on input line 114.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<ggb/fig/flytt.png, id=2426, 45.16875pt x 44.165pt>
+<ggb/fig/flytt.png, id=2438, 45.16875pt x 44.165pt>
 File: ggb/fig/flytt.png Graphic file (type png)
 <use ggb/fig/flytt.png>
 Package pdftex.def Info: ggb/fig/flytt.png  used on input line 115.
@@ -4981,16 +4998,28 @@ Overfull \hbox (27.75099pt too wide) in paragraph at lines 107--118
 [][]  
  []
 
-[170 <./ggb/fig/pkt.png> <./ggb/fig/lin.png> <./ggb/fig/ekst.png> <./ggb/fig/nu
+[171 <./ggb/fig/pkt.png> <./ggb/fig/lin.png> <./ggb/fig/ekst.png> <./ggb/fig/nu
 l.png> <./ggb/fig/skj.png> <./ggb/fig/vek.png> <./ggb/fig/tekst.png> <./ggb/fig
-/flytt.png>]) (./prg/prg_opg.tex (./prg/../../doc.tex) [171])
-(./exl/rgn_opg.tex (./exl/../../doc.tex)
+/flytt.png>] [172]
+Overfull \hbox (3.94426pt too wide) in paragraph at lines 186--187
+[]\T1/lmr/m/n/10.95 Bruker re-gresjon med en ek-spo-nen-tial-funksjon for å til
+passe punkt 
+ []
+
+
+Overfull \hbox (3.7947pt too wide) in paragraph at lines 189--190
+[]\T1/lmr/m/n/10.95 Bruker re-gresjon med et poly-nom av gitt grad for å tilpas
+se punkt 
+ []
+
+) (./prg/prg_opg.tex (./prg/../../doc.tex) [173]) (./exl/rgn_opg.tex
+(./exl/../../doc.tex)
 Overfull \hbox (7.55827pt too wide) in paragraph at lines 26--27
 []\T1/lmr/bx/n/12 b) \T1/lmr/m/n/12 Hvor mye koster lånet to-talt? (Sum-men av 
 alle ter-min-beløpene.)  
  []
 
-[172
+[174
 
 ]
 Overfull \hbox (9.7507pt too wide) in paragraph at lines 34--35
@@ -5011,7 +5040,18 @@ mm/m/it/12 x\OT1/lmr/m/n/12 )$ \T1/lmr/m/n/12 blå og $\OML/lmm/m/it/12 y$ \T1/l
 mr/m/n/12 grønn. Hva ser du ut ifra grafen 
  []
 
-[173]) [174]
+[175]
+Overfull \hbox (10.7125pt too wide) in paragraph at lines 38--39
+[]\T1/lmr/m/n/12 I [][]MB[][] har vi vist at[][][][] hvis $\OML/lmm/m/it/12 s[]
+$ \T1/lmr/m/n/12 er side-leng-den til en reg-ulær mangekant 
+ []
+
+<ggb/../fig/sirktiln.pdf, id=2505, 114.3171pt x 114.3171pt>
+File: ggb/../fig/sirktiln.pdf Graphic file (type pdf)
+<use ggb/../fig/sirktiln.pdf>
+Package pdftex.def Info: ggb/../fig/sirktiln.pdf  used on input line 40.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+) [176 <./ggb/../fig/sirktiln.pdf>]
 Kapittel 8.
 (./mix/mix_bm.tex (./mix/../../doc.tex)
 Overfull \hbox (18.5483pt too wide) in paragraph at lines 6--6
@@ -5035,7 +5075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 \T1/lmr/m/n/12 gen når du hører tor-den. Gang an-tall sekun-der med 300, da
  []
 
-[175
+[177
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
@@ -5067,18 +5107,18 @@ Overfull \hbox (0.68124pt too wide) in paragraph at lines 36--40
 ler 
  []
 
-[176] [177]
+[178] [179]
 Overfull \hbox (0.22945pt too wide) in paragraph at lines 93--93
 []\T1/lmr/m/n/12 Gjenta spørsmålet fra opp-gave a), men hvor det blå tannhjulet
  
  []
 
-<mix/../fig/tannhjul.pdf, id=2525, 227.62039pt x 144.26898pt>
+<mix/../fig/tannhjul.pdf, id=2551, 227.62039pt x 144.26898pt>
 File: mix/../fig/tannhjul.pdf Graphic file (type pdf)
 <use mix/../fig/tannhjul.pdf>
 Package pdftex.def Info: mix/../fig/tannhjul.pdf  used on input line 94.
 (pdftex.def)             Requested size: 227.61983pt x 144.26862pt.
-[178 <./mix/../fig/tannhjul.pdf>]
+[180 <./mix/../fig/tannhjul.pdf>]
 Overfull \hbox (2.40382pt too wide) in paragraph at lines 102--103
 []\T1/lmr/m/n/12 Ifølge [][]WWF[][] kan en blåh-val veie opp til 200tonn, og if
 ølge [][]geno.no[][] 
@@ -5100,7 +5140,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--114
 \T1/lmr/m/sl/12 Amazonas-elven er nok til å fylle mer enn 83 slike per
  []
 
-[179]
+[181]
 Underfull \hbox (badness 10000) in paragraph at lines 127--127
 []\T1/lmr/m/n/12 The world lost 3.8 mil-lion hectares of trop-i-cal pri-mary fo
 r-est
@@ -5118,13 +5158,13 @@ Overfull \hbox (21.4728pt too wide) in paragraph at lines 128--129
 elsene ''hectares'' 
  []
 
-[180]
+[182]
 Overfull \hbox (1.45764pt too wide) in paragraph at lines 135--136
 []\T1/lmr/m/n/12 I spill-mo-toren [][]Godot[][] har noen ob-jek-ter egen-skapen
  ''Layer''. Dette 
  []
 
-<mix/../fig/godot_layers.png, id=2562, 134.37703pt x 88.45547pt>
+<mix/../fig/godot_layers.png, id=2588, 134.37703pt x 88.45547pt>
 File: mix/../fig/godot_layers.png Graphic file (type png)
 <use mix/../fig/godot_layers.png>
 Package pdftex.def Info: mix/../fig/godot_layers.png  used on input line 138.
@@ -5135,7 +5175,7 @@ Overfull \hbox (2.74123pt too wide) in paragraph at lines 140--147
 ruke 
  []
 
-[181 <./mix/../fig/godot_layers.png>]
+[183 <./mix/../fig/godot_layers.png>]
 Overfull \hbox (16.53667pt too wide) in paragraph at lines 156--157
 \T1/lmr/m/n/12 en bils kjør-eretning. Ifølge en rap-port[][][][] fra SIN-TEF ka
 n[][][][] $\OML/lmm/m/it/12 F$ \T1/lmr/m/n/12 tilnærmes 
@@ -5188,15 +5228,15 @@ Overfull \hbox (1.84639pt too wide) in paragraph at lines 185--185
 
  []
 
-[182]
+[184]
 Underfull \hbox (badness 10000) in paragraph at lines 201--201
 [][][][]\T1/lmr/m/n/9 Stille lengde btyr at man skal hoppe med sam-lede bein, o
 g uten å ta spring-fart
  []
 
-[183
+[185
 
-] [184]
+] [186]
 Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\T1/lmr/m/n/12 ''Den tradis-jonelle meto-den å es-timere mak-si-malpuls er å 
 ta
@@ -5212,7 +5252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--257
 []\T1/lmr/m/n/12 Tell hjertes-lag i 15 sekun-der umid-del-bart et-ter hop-pin-
  []
 
-[185]
+[187]
 Underfull \hbox (badness 10000) in paragraph at lines 269--269
 []\T1/lmr/m/n/12 ''2 ganger opp-trinn (trinnhøyde) pluss 1 gang in-ntrinn (trin
 -
@@ -5223,7 +5263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--269
 \T1/lmr/m/n/12 ndybde) bør bli 62 cen-time-ter (med et slin-gringsmonn på et
  []
 
-[186]
+[188]
 Underfull \hbox (badness 10000) in paragraph at lines 283--283
 []\T1/lmr/m/n/9 Dette er oppp-gaver som har blitt gitt ved sen-tralt ut-formet 
 ek-samen i Norge.
@@ -5235,15 +5275,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 r i parantes viser
  []
 
-[187
+[189
 
-] (./mix/python/1pv22d1opg5.py) [188]
-<mix/../fig/1pv22d1opg2.pdf, id=2669, 227.62039pt x 156.49466pt>
+] (./mix/python/1pv22d1opg5.py) [190]
+<mix/../fig/1pv22d1opg2.pdf, id=2695, 227.62039pt x 156.49466pt>
 File: mix/../fig/1pv22d1opg2.pdf Graphic file (type pdf)
 <use mix/../fig/1pv22d1opg2.pdf>
 Package pdftex.def Info: mix/../fig/1pv22d1opg2.pdf  used on input line 355.
 (pdftex.def)             Requested size: 227.61983pt x 156.49426pt.
-) [189 <./mix/../fig/1pv22d1opg2.pdf>] [190
+) [191 <./mix/../fig/1pv22d1opg2.pdf>] [192
 
 ] (./vdl/funk.tex (./vdl/../../doc.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
@@ -5286,12 +5326,12 @@ ene $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 b$\T1/lmr/m
 /n/10.95 , $\OML/lmm/m/it/10.95 c$
  []
 
-) (./vdl/tekster.tex (./vdl/../../doc.tex) [191
+) (./vdl/tekster.tex (./vdl/../../doc.tex) [193
 
-]) [192
+]) [194
 
 ] (./fas/fas_bm.tex
-(./fas/../../doc.tex) [193
+(./fas/../../doc.tex) [195
 
 ]
 Overfull \hbox (7.79253pt too wide) in paragraph at lines 135--135
@@ -5299,36 +5339,36 @@ Overfull \hbox (7.79253pt too wide) in paragraph at lines 135--135
  3 gir samme 
  []
 
-[194]
+[196]
 Underfull \hbox (badness 10000) in paragraph at lines 264--271
  
  []
 
-[195] [196]) [197]
+[197] [198]) [199]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (./AM1_bm.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `AM1_bm.out' has not changed.
-(rerunfilecheck)             Checksum: 00F614CD3D0013A618AD273D242AC0D5;6466.
+(rerunfilecheck)             Checksum: E3FB82950266B4CEFA41C17B4344A1A4;6475.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 35947 strings out of 481239
- 675665 string characters out of 5920378
- 1246585 words of memory out of 5000000
- 48961 multiletter control sequences out of 15000+600000
+ 35975 strings out of 481239
+ 676121 string characters out of 5920378
+ 1226747 words of memory out of 5000000
+ 48974 multiletter control sequences out of 15000+600000
  697294 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,20n,104p,872b,1759s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not ex
+pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
@@ -5360,10 +5400,10 @@ share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/l
 mtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on AM1_bm.pdf (198 pages, 2270791 bytes).
+Output written on AM1_bm.pdf (200 pages, 2276979 bytes).
 PDF statistics:
- 3320 PDF objects out of 3580 (max. 8388607)
- 2941 compressed objects within 30 object streams
- 1219 named destinations out of 1440 (max. 500000)
- 1190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3349 PDF objects out of 3580 (max. 8388607)
+ 2967 compressed objects within 30 object streams
+ 1229 named destinations out of 1440 (max. 500000)
+ 1195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
