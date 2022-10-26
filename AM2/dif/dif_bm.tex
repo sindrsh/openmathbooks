@@ -1,0 +1,263 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+\begin{document}
+\subsection[$ y '$ proporsjonal med $ y $]{\boldmath $ y '$ proporsjonal med $ y $}
+I mange sammenhenger vi finner i naturen studerer vi en størrelse $ y(t) $ som endrer seg med tiden $ t $. I enkelte tilfeller vil vi observere at den momentane endringen per tidsenhet, altså farten\index{fart}, er proporsjonal\index{proporsjonal} med størrelsen selv. Dette betyr at
+\[ y' = ky \]
+hvor $ k $ er en konstant. Fortegnet til $ k $ avhenger av om $ y $ er voksende ($ k>0 $) eller synkende ($ k<0 $).
+\regv
+\newpage
+\eks[1]{
+Hovedprinsippet bak karbondatering\index{karbondatering} (også kalt C-14 metoden) er at alle levende organismer innholder en tilnærmet konstant mengde med den radioaktive isotopen $ {}^{14} $C. Når organismen dør vil derimot innholdet av denne isotopen avta. Ved å sammenligne $ {}^{14} $C-innholdet i en død og en levende organisme av samme art, kan man med god presisjon fastslå alderen til den avdøde organismen. \vsk
+
+For en død organisme er det funnet at endringen i $ {}^{14} $C-mengde per tidsenhet er proporsjonal med mengden $ {}^{14} $C som til enhver tid er i organismen. Hvis vi lar $ y(t) $ være et mål på denne mengden, kan vi skrive
+\[ y'=ky \]
+hvor $ k $ er en konstant.
+Dette er en differensialligning med den generelle løsningen
+\[ y = De^{ky} \]
+Vi lar $ y $ betegne prosenten av den opprinnelig $ {}^{14} $C-mengde som er igjen i organismen etter $ t $ år. Dette betyr at $ {y(0)=100} $ og dermed at $ D=100 $:
+\[ y= 100 e^{ky} \]
+\textit{Halveringstiden}\index{halveringstid} til $ {}^{14} $C er 5730 år. Dette betyr at etter så mange år vil $ {}^{14} $C-mengden i en død organisme være halvert. Altså er
+\alg{
+	y(5730)	&= 50 \\
+	100 e^{5730k} &= 50 \\
+	5730k &= \ln \frac{1}{2} \br
+	k &= \frac{\ln \frac{1}{2}}{5730} \br
+	 &\approx -0.000121
+	}
+For å datere en organisme kan vi derfor bruke funksjonen
+\[ y = 100^{-0.000121t} \]\vs
+	}
+\newpage
+\eks[2]{
+I en bakteriekultur er økningen i antall bakterier per minutt lik 4\,\% av antallet bakterier. La $ y(t) $ betegne antall bakterier etter $ t $ minutter.\os
+
+\textbf{a)} Sett opp en differensialligning som relaterer $ y' $ til $ y $ og finn den generelle løsningen av denne.\os
+
+\textbf{b)} Sett $ y(0)=1 $. Når vil kulturen inneholde 30 bakterier?
+
+\sv
+\textbf{a)}	Differensialligningen blir
+\[ y' = 0.04y \]
+Dette er en seperabel differensialligning med generell løsning
+\[ y = Ce^{0.04t} \]
+
+\textbf{b)} Siden $ {y(0)=1} $, finner vi fort at $ {C=1} $, og derfor at \\$ y=e^{0.04t} $. Vi søker altså en løsning av ligningen
+\alg{
+ e^{0.04t} &= 30 \br
+ t 	&= \frac{\ln 30}{0.04} \br
+ &\approx 85.03
+	}
+Kulturen vil passere 30 bakterier i løpet av det 85. minuttet.
+
+}
+\subsection{Populasjonsmodeller}
+I en populasjonsmodell\footnote{Navnet populasjon assosieres gjerne med antall mennesker, dyr o.l., men metodene som ligger til grunn for populasjonsmodeller kan like gjerne brukes for å finne utviklingen av mengder som alkohol, medisin osv.} er det spesielt tre faktorer man må ta hensyn til for å beregne en størrelse $ y(x) $:
+\begin{itemize}
+	\item Hvor mye som, uavhengig av populasjonen, tilføres/fjernes per enhet $ x $.
+	\item Hvor stor andel av populasjonen som tilføres per enhet $ x $.
+	\item Hvor stor andel av populasjonen som fjernes per enhet $ x $.
+\end{itemize}
+Siden det er snakk om \textit{endringer per enhet} $ x $, gir punktene over bidrag til uttrykket for $ y' $.\regv
+\eks[1]{
+Ifølge SSB var netto innvandring\footnote{$\text{antall innvandret} - \text{antall utvandret}$ } til Norge i 2017 talt til 21\,349 mennesker. I tillegg utgjorde antall fødte ca. 1.05\% av folketallet, mens antall døde utgjorde ca. 0.76\% av folketallet. Det totale folketallet var 5\,295\,619\vsk
+
+Anta at netto innvandring per år, prosent fødte per år og prosent døde per år vil være det samme som i 2017 de kommende årene. Sett opp en differensialligning for folketallet $ y(t) $, $ t $ år etter 2017.
+
+\sv \vspace{-7pt}
+\begin{itemize}
+	\item Netto innvandring per år gir bidraget 21\,349 til $ y' $.
+	\item Antall fødte per år gir bidraget  $ 0.0105y $ til $ y' $ .
+	\item Antall døde per år gir bidraget  $ -0.0076y $ til $ y' $ .
+	\item Siden folketallet var 5\,295\,619 i 2017, er $ y(0)= 5\,295\,619 $.
+\end{itemize}
+Ligningen blir derfor
+\alg{
+y' &= 21\,349 + 0.0105y-0.0076y  \\
+&= 21\,349+0.0029y
+}\vs \vs
+} \newpage
+\subsection{Fjør-masse-system uten demping}\index{fjør-masse-system!uten demping}
+Tenk at vi har en klosse\index{klosse} med masse\index{masse} $ m $ som henger vertikalt i en stiv, masseløs fjør\index{fjør}. Vi plasserer en $ y $-akse vertikalt og definerer nedover som positiv retning.
+\begin{figure}
+	\centering
+	\subfloat[a)]{\includegraphics[]{\figp{fjor1}}}
+	\qquad\qquad
+	\subfloat[b)]{\includegraphics[]{\figp{fjor}}}
+	\caption{\textsl{a)} Fjøra i sin opprinnelige lengde. \textsl{b)} Fjøra og klossen i likevektsstilling. \label{fjorfig}}	
+\end{figure}
+Når fjøra ikke er påvirket av noen ytre krefter, altså før klossen festes, har den lengden $ L_0 $. Hvis fjøra blir strekt eller komprimert antar vi at fjøra adlyder \textit{Hooks lov}\index{Hooks lov}\footnote{Hooks lov er rimelig å anta så lenge utslaget er mye mindre enn originallengden til fjøra.}. Denne sier at kraften $ F_f $ fra fjøra er proporsjonal med, og motsatt rettet av, forlengelsen/forkortelsen:
+\[F_f = -k(L-L_0) \label{fjor}\]
+$ k $ er en konstant\index{fjør!-konstant}\footnote{$ k $ har SI-enhet N/m, altså Newton\index{Newton (enhet)} per meter.} bestemt ut ifra fjøras egenskaper, mens $ L $ er den endrede lengden til fjøra. \vsk
+
+Når klossen festes til fjøra, vil tyngdekraften\index{tyngdekraft}\footnote{$ g $ går under navnet \textit{tyngdeakselerasjonen}, verdien tilnærmes ofte til 9.81 m/s$ ^2 $} $ mg $ dra klossen nedover og fjøra strekkes. For en viss fjørlengde $ L_1 $ (se \fref{fjorfig}) vil fjørkraften være like stor, men motsatt rettet av tyngekraften. Dette betyr at
+\begin{align}
+mg &= -F_f\nonumber	\\
+mg &= k(L_1-L_0) \label{likevekt}
+\end{align}
+Posisjonen festepunktet mellom fjøra og klossen har i dette tilfellet kaller vi \textit{likevektspunktet}\index{likevektspunkt}. Her setter vi $ {y=0} $ (se igjen \fref{fjorfig}). \vsk
+
+\textit{Newtons andre lov}\index{Newtons andre lov} forteller oss at summen av alle krefter $ F_i $ som virker på klossen er lik massen ganger akselerasjonen $ a $:
+\[\phantom{testingcloservlo} \sum\limits_{i=1}^n F_i = ma \tag{Newtons andre lov\label{newt2lov}}\]
+Tenk nå at vi trekker i klossen slik at festepunktet mellom denne og fjøra blir forskjøvet fra likevektspunktet. Klossen vil da svinge opp og ned. Vi lar $ L(t) $ betegne lengden fjøra har til enhver tid $ t $. Hvis vi ser bort ifra luftmotstand\index{luftmotstand} og all annen form for friksjon\index{friksjon}\footnote{Når friksjonskrefter, altså krefter som alltid motvirker bevegelsen, er neglisjert, sier vi at vi har et system uten demping.}, blir summen av kreftene som virker på klossen følgende:
+\alg{
+\sum F	&= mg+F_f \\
+ &= mg - k(L(t)-L_0)
+}
+Videre erstatter vi $ mg $ med uttrykket fra (\ref{likevekt}), og anvender \hyperref[newt2lov]{Newtons andre lov}:
+\alg{
+\sum F &= k(L_1-L_0) - k(L(t)-L_0)	\\
+	ma&= -k(L(t)-L_1)
+	}
+Vi setter  ${y(t)=L(t)-L_1}$. Denne funksjonene beskriver forflytnigen til festepunktet relativt til likevektspunktet $ {y=0} $. Den relative forflytningen til $ y $ samsvarer med den relative forflytningen til massesenteret til klossen. Dette betyr at vi kan erstatte akselerasjonen $ a $ med $ y'' $:
+\alg{
+my''&= -ky \\
+my''+ ky &= 0
+	}
+\reg[Fjør-masse system uten demping]{For et fjør-masse system uten demping er forflytningen $ y(t) $, relativt til likevektspunktet ${ y=0} $, etter en tid $ t $ gitt ved ligningen
+	\begin{equation}\label{fjormass}
+		my''+ky = 0 
+	\end{equation}
+	hvor $ m>0 $ er massen og $ k>0 $ er en fjørkonstant.
+}
+\eks{
+En klosse med masse $ {m=0.1} $ henger vertikalt i ei fjør med fjørkonstant $ {k=10} $. Klossen forflyttes lengden $ 0.5 $ i positiv retning fra likevektspunktet $ {y=0} $, og blir etterpå sluppet. La $ y(t) $ være forflytningen relativt til likevektspunktet tiden $ t $ etter at bevegelsen har startet.\os
+
+\textbf{a)}  Finn et uttrykk for $ y $.\os
+
+\textbf{b)} Hvor lang tid tar det mellom hver gang klossen er i sitt høyeste punkt?
+
+\sv
+\textbf{a)} Vi gjenkjenner dette som et fjør-masse system uten demping, $ y(t) $ er derfor gitt ved ligningen
+\[ my''+ky =0 \]
+med karateristisk ligning
+\alg{
+mr^2+k&=0\\
+0.1r^2 + 10&=0 \\
+r^2 &= \sqrt{-100} \\
+&=\pm 10\sqrt{-1} 	
+	}
+Den generelle løsningen blir derfor (se (\ref{kompleks}))
+\[ C \cos(10t)+ D\sin(10 t) \]
+Videre vet vi at $ y(0)=0.5 $, som gir oss ligningen
+\alg{
+C\cos(10\cdot0)+D\sin(10\cdot0) &= 0.5 \\
+C &= 0.5
+	}
+Rett før bevegelsen starter har klossen hastighet 0, noe som betyr at $ y'(0)=0 $:
+\alg{
+-\frac{C}{10}\sin(10\cdot0) + \frac{D}{10}\cos(10\cdot0)&= 0 \\
+D &= 0	
+	}
+Endelig løsning blir derfor
+\[ y = 0.5 \cos(10t)  \]
+\textbf{b)} Tiden klossen bruker fra topp tilbake til topp er perioden $ P $ til svingebevegelsen. Denne er gitt som (se (\ref{ker2pioverP}))
+\[ P=\frac{2\pi}{10} \]
+Det tar klossen $ 0.2\pi $ tidsenheter å fullføre en svingebevegelse.
+	}
+
+\subsection{Fjør-masse system med demping}\index{fjør-masse-system!med demping}
+Vi har akkurat sett på et fjør-masse system hvor alle friksjonskrefter er neglisjert. Hvis slike krefter derimot tas med i betraktningen, sier vi at systemet er \textit{dempet}\index{demping}. Friksjon er en veldig krevende disiplin innen fysikk, og de matematiske tilnærmingene av fenomenet er mange og varierte. \vsk
+
+Av de enkleste tilnærmingene er å beskrive friksjonen ved størrelsen $ qv $, hvor $ v $ er farten\index{fart} til gjenstanden som ytes motstand og $ q $ er et friksjonstall\index{friksjonstall} med enhet kg/s. Hvis vi tilføyer dette leddet i (\ref{fjormass}), får vi at
+\[ my'' + qy'+ky = 0 \]
+hvor $ v $ er erstattet med $ y' $.\regv
+\reg[Fjør-masse system med demping]{For et fjør-masse system med demping er forflytningen $ y(t) $, relativt til likevektspunktet $ {y=0} $, etter en tid $ t $ gitt ved ligningen
+	\nreq{my''+qy'+ky = 0 \label{fjormassd}}	
+	hvor $ {m>0} $ er masssen, $ {k>0} $ er en fjørkonstant og $ {q>0} $ er et friksjonstall.
+}
+\newpage
+\eks{
+Gitt et fjør-masse system med $ {m=1} $, $ {k=5} $ og $ {q=4} $. Finn forflytningen $ y(t) $ relativt til likevektspunktet når massen initielt blir gitt en forflytning $ {y(0)= 1}$, og deretter sluppet.
+
+\sv
+Dette er et fjør-masse system med demping, $ y(t) $ er derfor gitt ved ligningen
+\[ my'' + qy'+ky = 0 \]
+som har karakteristisk ligning
+\alg{
+mr^2+qr+k&=0\\
+r^2 + 4r + 5 &= 0 \\
+r &= \frac{-4\pm\sqrt{4^2-4\cdot5}}{2} 	\br
+&= \frac{-4 \pm \sqrt{-4}}{2}\br
+&= \frac{-4\pm 2\sqrt{-1}}{2} \br
+&= -2 \pm \sqrt{-1}
+	}
+Den generelle løsningen blir derfor
+\[ y=e^{-2t}\left(C\cos t + D \sin t\right) \]
+Siden $ y(0)=1 $, får vi at
+\alg{
+e^{-2\cdot0}\left(C\cos 0 + D \sin 0\right) &= 1 \\
+C &= 1	
+	}
+Videre vet vi at massens hastighet må ha vært 0 idét den ble sluppet, altså at $ y'(0)=0 $:
+\alg{
+-2e^{-2\cdot0}(C\cos 0+ D\sin 0 )+ e^{-2\cdot0}(-C\sin 0+ D\cos 0 )&= 0 \\
+-2 C + D &= 0\\
+D &= 2C \\
+D &= 2	
+	}
+Altså er
+\[y= e^{-2t}\left(\cos t + 2 \sin t\right) \]\vs
+}
+\newpage
+\tsec{Forklaringer}
+\fork{\ref{andordlindif} \andordlindif}{
+I \refsec{sode} har vi sett at ligningen
+\begin{equation}
+	ay''+by'+cy = 0 \label{sodeforkl}
+\end{equation}
+har ${y= e^{rx}} $ som løsning hvis $ r $ oppfyller den karakteristiske ligningen
+\begin{equation}
+	ar^2 + br + c = 0 \label{kar}
+\end{equation}
+I tillegg ble det nevnt i seksjon \ref{difgen} at vi for disse typen ligninger forventer en generell løsning som består av to konstanter vi ikke kan slå sammen til én. Mer nøyaktig forventer vi at løsningen er en \textit{lineærkombinasjon}\index{lineærkombinasjon} av to \textit{lineært uavhengige}\index{lineært uavhengig} funksjoner, men hverken disse to begrepene eller et bevis for dette skal vi bruke tid på her. Isteden skal vi se noe overfladisk på hvorfor løsningene blir så forskjellige for de tre tilfellene av den karakteristiske ligningen. \vsk
+
+Vi starter med å vise at hvis $ {y=y_1} $ og $ {y=y_2} $ er to løsninger av (\ref{sodeforkl}), så er $ {y=y_1 + y_2 }$ også en løsning:
+\alg{
+	a(y_1+y_2)''+b(y_1+y_2)'+c(y_1+y_2) &= 0	 \\
+	ay_1''+ay_2''+ by_1'+by_2' + cy_1+cy_2 &= 0 \\
+	\underbrace{ay_1''+ by_1' + cy_1}_{0}+\underbrace{ay_2''+by_2'+cy_2}_{0} &= 0
+}
+Med samme framgangsmåte kan vi også vise (prøv selv!) at hvis $ {y=y_1} $ er en løsningen, må $ y=Cy_1 $ også være det. \vsk
+
+Av det som er drøftet over, er målet nå å finne to funksjoner $ y_1 $ og $ y_2 $ som begge oppfyller (\ref{sodeforkl}), og som er slik at $ {y_1\neq Dy_2} $. Da vil nemlig $ {y=Cy_1+Dy_2} $ være den komplette løsningen av differensialligningen.\vsk
+
+\textbf{To reelle røtter}\bs
+Når (\ref{kar}) har to distinkte og reelle røtter $ {r=r_1} $ og $ {r=r_2} $, betyr dette at både $ {y_1=e^{r_1x}} $ og $ {y_2=e^{r_2x} }$ er løsninger av (\ref{sodeforkl}). Da må også både $ {y_1=Ce^{r_1x}} $ og $ {y_2=De^{r_2x}}$ være løsninger av differensialligningen. Og fordi $ r_1\neq r_2 $, må vi ha at $ Ce^{r_1 x}\neq De^{r_2 x} $. Den generelle løsningen vi søker er dermed
+\[ y=Ce^{r_1}+De^{r_2}   \]
+
+\textbf{Én reell rot}\bs
+Hvis (\ref{kar}) har én rot $ {r=r_1} $, er $ {y=e^{r_1x}} $ en løsning av \eqref{sodeforkl}. Men om vi som i tilfellet av to reelle røtter legger sammen løsningene ${y_1 =Ce^{r_1x}} $ og ${y_2= De^{r_1x}} $, ender vi opp med løsningen $ {y=(C+D)e^{r_1 x} }$. Dette motstrider det løselig definerte kravet vårt om to konstanter som ikke kan slås sammen til én for å ha en komplett løsning.\vsk
+
+Dette motiverer oss til å søke en løsning på formen $ {y=u(x)e^{r_1x} }$, hvor $ u $ er en ukjent funksjon av $ x $.
+Når $ {r=r_1} $ er den eneste løsningen av den karakteristiske ligningen, må denne være på formen
+\[ (r-r_1)^2=r^2-2r_1r+r_1^2=0  \]
+Dette betyr at differensialligningen kan skrives som
+\[ y''-2r_1 y'+r_1^2y=0 \]
+Setter vi $ y=u(x)e^{r_1x} $ inn i ligningen over, får vi at
+\alg{
+	\left(ue^{r_1x}\right)''-2r_1 \left(ue^{r_1x}\right)'+r_1^2ue^{r_1x}&=0 \br
+	\left((u'+r_1u)e^{r_1x}\right)'-2r_1(u'+r_1u)e^{r_1x} + r_1^2ue^{r_1x} &=0 \br
+	\left((u''+r_1u')+r_1(u'+r_1u)-2r_1(u'+r_1u) + r_1^2u\right)e^{r_1x}&=0 \tag{$ e^{r_1x}\neq0 $}\br
+	u''+r_1u'+r_1(u'+r_1u)-2r_1(u'+r_1u) + r_1^2u &=0 \br
+	u'' &= 0
+}
+Ved integrasjon to ganger finner vi at $ u=C+Dx $, og dermed at 
+\[ y = (C+Dx)e^{r_1x} \]
+\textbf{To komplekse røtter}\bs
+Det kan kanskje virke litt rart at alle løsninger av (\ref{sodeforkl}) hittil har bestått av eksponentialfunksjonen\index{eksponentialfunksjon}, mens vi i tilfellet av to komplekse røtter ender opp med en kombinasjon av sinus og cosinus. Men for to komplekse røtter $ {r= p+\mathrm{i}q}$ og $ {r= p-\mathrm{i}q}$ får vi faktisk en generell løsning på akkurat samme formen som for tilfellet av to reelle røtter:
+\alg{y &= \hat{C}e^{(p+\mathrm{i}q)x}+\hat{D}e^{(p-\mathrm{i}q)x}\\&=e^{px}(\hat{C}e^{\mathrm{i}qx}+\hat{D}e^{-\mathrm{i}qx}) }
+Til forskjell tillates her komplekse verdier\index{kompleks!verdi} også for de vilkårlige konstantene, noe som er indikert ved symbolet '$ \;\hat{}\; $'. Men skal differensialligningen brukes til å modellere fysiske systemer fra virkeligheten, må vi sørge for at løsningen er reell. For å utrette dette anvender vi \textit{Eulers formel}:
+\[ \phantom{aaaaaa}e^{\mathrm{i}qx}=\cos(qx)+\mathrm{i}\sin(qx) \tag{\text{Eulers formel}}\]
+Av denne kan vi skrive (husk at $ {\cos(-x)=\cos x} $ og at $ {\sin(-x)=-\sin x} $)
+\small \alg{
+	\hat{C}e^{\mathrm{i}qx}+\hat{D}e^{-\mathrm{i}qx} &= \hat{C}(\cos(qx)+\mathrm{i}\sin(qx))+ \hat{D}(\cos(-qx)+\mathrm{i}\sin(-qx))	\\
+	&= (\hat{C}+\hat{D})\cos(qx)+\mathrm{i}(\hat{C}-\hat{D})\sin(qx)
+}
+\normalsize
+Ved riktig valg\footnote{Vi lar $ \hat{C}=a+\mathrm{i}b $ og $ \hat{D}=a-\mathrm{i}b $, hvor $ a $ og $ b $ er to reelle konstanter.} av $ \hat{C} $ og $ \hat{D} $ kan vi lage oss de reelle tallene $ {C=\hat{C}+\hat{D}}  $ og $ D=\hat{C}-\hat{D} $, og med det få den reelle løsningen
+\[ y =  e^{px}(Ccos (qx) + D \sin (qx))  \]
+}
+
+\end{document}

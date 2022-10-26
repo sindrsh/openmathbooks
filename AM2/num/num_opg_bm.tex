@@ -13,7 +13,7 @@ Gitt likningen
 \[ x^3+4x^2-5=0 \]
 \abc{
 \item Hvorfor vil ikke Newtons metode fungere viss du starter med $ x_0=0 $?
-\item Lag et script som finner tilnærminger for de tre løsningene av likningen. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. 
+\item Lag et skript som finner tilnærminger for de tre løsningene av likningen. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. 
 }
 
 \nes
@@ -22,11 +22,18 @@ Gitt likningen
 Forklar hvorfor \eqref{trapmeteq} også kan skrives som
 \[ \int_{a}^{b} f\,dx \approx \Delta x\left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}\left[f(x_i)+f(x_{i+1})\right]\right)  \]
 
+\op{opgintdef}
+I \tmto\ har vi sett at det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
+\begin{equation}
+	I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x 
+\end{equation}
+hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $. La $ I_n $ være tilnærmingen av $ I $ gitt ved å la $ n $ være et gitt tall. Implementer $ I_n $ i et skript, og bruk integralet $ \int\limits_{0}^1 3x^2\,dx $ til å sjekke at du får output som forventet.
 
 \op{opgnumtrapkonveks}
 Hvis funksjonen du skal integrere er konkav, vil trapesmetoden gi et overestimat eller et underestimat?
 
-\ekspop{1}
+\newpage
+\grubop{opgtrapeunordered}
 Trapesmetoden kan også implementeres slik at delintervallene ikke nødvendigvis har samme bredde. Forklar hvorfor \eqref{trapmeteq} da kan skrives som
 \[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right]  \]
 
@@ -40,9 +47,9 @@ også er gode kandidater til å være med i delintervallene.
 \item Bruk Newtons metode til å finne $ x $-verdiene du ønsker. Stopp søket når $ |x_n-x_{n+1}| \leq 10^{-6}$.
 }
 
-\ekspop{2}
+\grubop{opgtrapreg}
 Gitt integralet
-\[ I=\int\limits_0^2 x^3-5x+6\]
+\[ I=\int\limits_0^2 x^3-5x+6\,dx\]
 La $ I_n $ være intgralet tilnærmet ved trapesmetoden med $ n $ del-intervaller.
 \abc{
 	\item Beregn $ I_{10} $ og $ I_{100} $ og $ I_{1000} $

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  7 JUN 2022 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  25 OCT 2022 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**numopg_bm.tex
-(./numopg_bm.tex
+**num_opg_bm.tex
+(./num_opg_bm.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (../../doc.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -1039,11 +1039,11 @@ nous mode
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 ))
-\numopg_bm@idxfile=\write6
-\openout6 = `numopg_bm.idx'.
+\num_opg_bm@idxfile=\write6
+\openout6 = `num_opg_bm.idx'.
 
 
-Writing index file numopg_bm.idx
+Writing index file num_opg_bm.idx
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1076,27 +1076,28 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 )
 \c@rg=\count346
 \c@opg=\count347
-\c@vedl=\count348
-\c@vedleq=\count349
+\c@grub=\count348
+\c@vedl=\count349
+\c@vedleq=\count350
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count350
+\lst@mode=\count351
 \lst@gtempboxa=\box139
 \lst@token=\toks48
-\lst@length=\count351
+\lst@length=\count352
 \lst@currlwidth=\dimen330
-\lst@column=\count352
-\lst@pos=\count353
+\lst@column=\count353
+\lst@pos=\count354
 \lst@lostspace=\dimen331
 \lst@width=\dimen332
-\lst@newlines=\count354
-\lst@lineno=\count355
+\lst@newlines=\count355
+\lst@lineno=\count356
 \lst@maxwidth=\dimen333
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count356
-\lst@skipnumbers=\count357
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
 \lst@framebox=\box140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -1148,8 +1149,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen334
-\Hy@linkcounter=\count358
-\Hy@pagecounter=\count359
+\Hy@linkcounter=\count359
+\Hy@pagecounter=\count360
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -1162,8 +1163,8 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count360
-\pdfmajorversion=\count361
+\Hy@SavedSpaceFactor=\count361
+\pdfmajorversion=\count362
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1171,7 +1172,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count362
+\c@Hy@tempcnt=\count363
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -1187,7 +1188,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count363
+\Fld@menulength=\count364
 \Field@Width=\dimen336
 \Fld@charsize=\dimen337
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -1203,9 +1204,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count364
-\c@Item=\count365
-\c@Hfootnote=\count366
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -1215,8 +1216,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count367
-\c@bookmark@seq@number=\count368
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -1229,8 +1230,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip135
 )
-(../bm.tex) (./numopg_bm.aux)
-\openout1 = `numopg_bm.aux'.
+(../bm.tex) (./num_opg_bm.aux)
+\openout1 = `num_opg_bm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -1292,16 +1293,16 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
+\scratchcounter=\count370
 \scratchdimen=\dimen338
 \scratchbox=\box141
-\nofMPsegments=\count370
-\nofMParguments=\count371
+\nofMPsegments=\count371
+\nofMParguments=\count372
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count372
+\MPscratchCnt=\count373
 \MPscratchDim=\dimen339
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1327,7 +1328,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count375
+\c@lstlisting=\count376
 \AtBeginShipoutBox=\box142
 Package hyperref Info: Link coloring OFF on input line 6.
 
@@ -1340,15 +1341,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count376
+\c@section@level=\count377
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
 
-(./numopg_bm.out) (./numopg_bm.out)
+(./num_opg_bm.out) (./num_opg_bm.out)
 \@outlinefile=\write7
-\openout7 = `numopg_bm.out'.
+\openout7 = `num_opg_bm.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 3.
@@ -1357,7 +1358,6 @@ File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 3.
-
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1406,25 +1406,26 @@ File: uesvect.fd
 
 LaTeX Warning: Reference `trapmeteq' on page 1 undefined on input line 22.
 
+[1
 
-LaTeX Warning: Reference `trapmeteq' on page 1 undefined on input line 30.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `trapmeteq' on page 2 undefined on input line 37.
 
 
-Overfull \hbox (0.1676pt too wide) in paragraph at lines 41--41
+Overfull \hbox (0.1676pt too wide) in paragraph at lines 48--48
 \T1/lmr/m/n/12 at $[]$ og $[]$ er med i hvert sitt delin-ter-vall. Fork-lar hvo
 r- 
  []
 
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
- (./numopg_bm.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
-Package rerunfilecheck Info: File `numopg_bm.out' has not changed.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+ (./num_opg_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package rerunfilecheck Info: File `num_opg_bm.out' has not changed.
 (rerunfilecheck)             Checksum: 3352E68A8A61B27488E309A841133486;44.
 
 
@@ -1432,13 +1433,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32489 strings out of 481239
- 630613 string characters out of 5920378
- 949550 words of memory out of 5000000
- 47074 multiletter control sequences out of 15000+600000
+ 32499 strings out of 481239
+ 630742 string characters out of 5920378
+ 948650 words of memory out of 5000000
+ 47080 multiletter control sequences out of 15000+600000
  571909 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,5n,104p,878b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,5n,104p,879b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -1449,10 +1450,10 @@ b></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/
 share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on numopg_bm.pdf (2 pages, 123390 bytes).
+Output written on num_opg_bm.pdf (2 pages, 125763 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

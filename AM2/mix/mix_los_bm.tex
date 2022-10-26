@@ -7,12 +7,27 @@
 \abc{
 \item Når du har spart i 5 måneder betyr det at første innskudd har forrentet seg 4 ganger, andre beløp 3 ganger osv. Forrentingen tilsvarer en økning med $ 1.02 $. Medregnet det ferske innskuddet blir regnestykket
 \[ 1000\cdot1.02^4+1000\cdot1.02^3+1000\cdot1.02^2+1000\cdot1.02^1+1000 \]
-\item Av oppgave a) innse vi at $ P(n) $ er summen av en geometrisk rekke med $ a_1 = 1000 $ og $ k=1.02 $:
+\item Av oppgave a) innser vi at $ P(n) $ er summen av en geometrisk rekke med $ a_1 = 1000 $ og $ k=1.02 $:
 \alg{
 	P(n)&= 1000\cdot\frac{1-1.02^n}{1-1.02} \\
 	&= -50000(1-1.02^n) \\
 	&= 50000(1.02^n-1)
 }
+}
+
+
+\opr{opgfloogfjere}
+\abc{
+\item En cosinusfunksjon har lavest verdi når cosinusuttrykket har verdien $ -1 $. Den laveste verdien til $ f $ er derfor $ {128-80=48} $. Når det er fjære er altså vannstanden 48\,cm over sjåkartnull.\vsk
+
+\item Av \eqref{ker2pioverP} har vi at perioden $ P $ er gitt som
+\[ P=\frac{2\pi}{k} \]
+I dette tilfellet er $ k=\frac{3\pi}{37} $, altså er
+\alg{
+	P&=\frac{37}{3}\\
+	&=12+\frac{1}{3}
+}
+Følgelig er det 12 timer og 20 minutter mellom to etterfølgende tipspunkt for flo. Dette betyr at det er 6 timer og 10 minutter mellom flo og fjære.	
 }
 \end{document}
 

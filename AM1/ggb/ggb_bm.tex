@@ -135,21 +135,62 @@ Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er 
 \item \net{https://drive.google.com/file/d/1koy-ffEejtIt-YbIohoFN4gbMLi-95cb/view?usp=sharing}{Finne skjæringspunktene til to funksjoner}
 \item \net{https://drive.google.com/file/d/1Z8v05XjlqsSFpHEed5q4s0nGDjdQUfqs/view?usp=sharing}{Justere akser}
 \item \net{https://drive.google.com/file/d/1oKKDk084IEhy11rNhDk0-VykzXLuhthy/view?usp=sharing}{Endre tykkelse, farge o.l på graf}
-\item \net{https://drive.google.com/file/d/1568rRj2PxzwK6wSm7v4w3GWzDnGtSuuX/view?usp=sharing}{Tegne graf på gitt intervall}	\\[-5pt]
+\item \net{https://drive.google.com/file/d/1568rRj2PxzwK6wSm7v4w3GWzDnGtSuuX/view?usp=sharing}{Tegne graf på gitt intervall}	\\
 {\footnotesize I videoen tegner vi $f(x)= x^2-3x+2 $ på intervallet $ 0\leq x \leq 5 $}.
-\item \net{https://drive.google.com/file/d/1x7y7DJMJ-7rfpgapB48e5Nlq6UnXXcI2/view?usp=sharing}{Lage linje mellom to punkt.}	\\[-5pt]
+\item \net{https://drive.google.com/file/d/1x7y7DJMJ-7rfpgapB48e5Nlq6UnXXcI2/view?usp=sharing}{Lage linje mellom to punkt}	\\
 {\footnotesize Legg merke til hva som gjøres mot slutten av videoen for å få det vante uttrykket $ y=ax+b $}.
-\end{itemize}
+\item \net{https://drive.google.com/file/d/18cNeX3vJFEY7BpgrH_BFpI1q4c-bczyH/view?usp=sharing}{Utføre regresjon}\\
+{\footnotesize I videoen har vi på forhånd skrevet inn tallene i tabellen under, som viser elbilsalget i Norge antall år etter 2010. Disse tallene ble også brukt i \refsec{Regresjon}. \os
+Det utføres regresjon med en linje, en kvadratisk funksjon og en 4. grads funksjon.
+	
+\begin{tabular}{c|c}
+	\textbf{antall år} & \textbf{elbiler} \\ \hline
+	0 &	3347\\
+	1 &	5381\\
+	2 &	9565\\
+	3 &	19678\\
+	4 &	42356\\
+	5 &	73312\\
+	6 &	101126\\
+	7 &	138477\\
+	8 &	194900\\
+	9 &	260688\\
+	10 &337201\\
+	11 &	455271\\
+\end{tabular}
+}
 
+
+
+\end{itemize}
+\newpage
 \subsubsection{Kommandoliste}
 \mers{Mange av kommandoene har egne knapper, som blant annet vist i videoene over.}
 \begin{itemize}
 	\item \cmds{abs( <x> )}{Gir lengden til $ x $ (et tall, et linjestykke o.l.). Alternativt kan man skrive {\tt{|x|}}}.
+	
 	\item \cmds{Linje( <Punkt>, <Punkt> )}{Gir linjen mellom to punkt.}
+	
 	\item \cmds{Ekstremalpunkt( <Funksjon>, <Start>, <Slutt> )}{Finner lokale topp- og bunnpunkt for en funksjon på et gitt intervall.}
+	
 	\item \cmds{Funksjon( <Funksjon>, <Start>, <Slutt> )}{Tegner en funksjon innenfor et gitt intervall.}
+	
 	\item \cmds{Mangekant( <Punkt>, ..., <Punkt> )}{Tegner mangekanten mellom gitte punkt.}
+	
 	\item \cmds{Nullpunkt( <Funksjon>, <Start>, <Slutt> )}{Gir nullpunktene til en funksjon innenfor et gitt intervall}
+	
+	\item \cmds{RegLin( <Liste> )}
+	{Bruker regresjon med en rett linje for å tilpasse punkt gitt i en liste.}
+	
+	\item \cmds{RegEksp( <Liste> )}
+	{Bruker regresjon med en eksponentialfunksjon for å tilpasse punkt gitt i en liste.}
+	
+	\item \cmds{RegPoly( <Liste>, <Grad> )}
+	{Bruker regresjon med et polynom av gitt grad for å tilpasse punkt gitt i en liste.}
+	
+	\item \cmds{RegPot( <Liste> )}
+	{Bruker regresjon med en potensfunksjon for å tilpasse punkt gitt i en liste.}
+	
 	\item \cmds{Skjæring( <Objekt>, <Objekt> )}{Finner skjæringspunktene til to objekt (funksjoner, linjer o.l.)}
 	
 \end{itemize}

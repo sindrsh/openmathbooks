@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  23 OCT 2022 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  26 OCT 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1353,7 +1353,7 @@ LaTeX Info: Redefining \nameref on input line 10.
 
  (./kap0/framside.tex (./kap0/../../doc.tex)
 \GPT@outputbox=\box143
-<kap0/../fig/trapmet.pdf, id=55, 136.57022pt x 113.81522pt>
+<kap0/../fig/trapmet.pdf, id=59, 136.57022pt x 113.81522pt>
 File: kap0/../fig/trapmet.pdf Graphic file (type pdf)
 <use kap0/../fig/trapmet.pdf>
 Package pdftex.def Info: kap0/../fig/trapmet.pdf  used on input line 17.
@@ -1437,12 +1437,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 9.
-<dig/fig/fder.png, id=96, 309.155pt x 294.09875pt>
+<dig/fig/fder.png, id=101, 309.155pt x 294.09875pt>
 File: dig/fig/fder.png Graphic file (type png)
 <use dig/fig/fder.png>
 Package pdftex.def Info: dig/fig/fder.png  used on input line 12.
 (pdftex.def)             Requested size: 154.57712pt x 147.04901pt.
-<dig/fig/ref.png, id=97, 307.1475pt x 318.18875pt>
+<dig/fig/ref.png, id=102, 307.1475pt x 318.18875pt>
 File: dig/fig/ref.png Graphic file (type png)
 <use dig/fig/ref.png>
 Package pdftex.def Info: dig/fig/ref.png  used on input line 20.
@@ -1450,75 +1450,71 @@ Package pdftex.def Info: dig/fig/ref.png  used on input line 20.
  [3
 
  <./dig/fig/fder.png>]
-<dig/fig/liste.png, id=112, 306.14375pt x 305.14pt>
+<dig/fig/liste.png, id=117, 306.14375pt x 305.14pt>
 File: dig/fig/liste.png Graphic file (type png)
 <use dig/fig/liste.png>
 Package pdftex.def Info: dig/fig/liste.png  used on input line 27.
 (pdftex.def)             Requested size: 153.07149pt x 152.56961pt.
-<dig/fig/lign.png, id=113, 355.3275pt x 324.21124pt>
+<dig/fig/lign.png, id=118, 355.3275pt x 324.21124pt>
 File: dig/fig/lign.png Graphic file (type png)
 <use dig/fig/lign.png>
 Package pdftex.def Info: dig/fig/lign.png  used on input line 33.
 (pdftex.def)             Requested size: 177.6633pt x 162.10522pt.
  [4 <./dig/fig/ref.png> <./dig/fig/liste.png>]
-<dig/fig/hoyre.png, id=119, 342.27875pt x 435.6275pt>
+<dig/fig/hoyre.png, id=124, 342.27875pt x 435.6275pt>
 File: dig/fig/hoyre.png Graphic file (type png)
 <use dig/fig/hoyre.png>
 Package pdftex.def Info: dig/fig/hoyre.png  used on input line 39.
 (pdftex.def)             Requested size: 171.13895pt x 217.81322pt.
 
-! Undefined control sequence.
-l.42 ...k. For Ã¥ gjÃ¸re dette kan vi anvende \cms
-                                                  {ByttUt}{<Uttrykk>, <Liste...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (6.69908pt too wide) in paragraph at lines 42--43
+\T1/lmr/m/n/10.95 dette kan vi an-vende \T1/lmtt/m/n/10.95 ByzttUt<Uttrykk>, <L
+iste med forandringer>\T1/lmr/m/n/10.95 . 
+ []
 
 [5 <./dig/fig/lign.png> <./dig/fig/hoyre.png>]
-<dig/fig/cas2.png, id=125, 370.38374pt x 223.83624pt>
+<dig/fig/cas2.png, id=130, 370.38374pt x 223.83624pt>
 File: dig/fig/cas2.png Graphic file (type png)
 <use dig/fig/cas2.png>
 Package pdftex.def Info: dig/fig/cas2.png  used on input line 47.
 (pdftex.def)             Requested size: 185.1914pt x 111.91785pt.
  [6 <./dig/fig/cas2.png>]
-<dig/fig/pkt.png, id=132, 47.17625pt x 45.16875pt>
+<dig/fig/pkt.png, id=137, 47.17625pt x 45.16875pt>
 File: dig/fig/pkt.png Graphic file (type png)
 <use dig/fig/pkt.png>
 Package pdftex.def Info: dig/fig/pkt.png  used on input line 55.
 (pdftex.def)             Requested size: 18.87015pt x 18.06717pt.
-<dig/fig/lin.png, id=133, 47.17625pt x 44.165pt>
+<dig/fig/lin.png, id=138, 47.17625pt x 44.165pt>
 File: dig/fig/lin.png Graphic file (type png)
 <use dig/fig/lin.png>
 Package pdftex.def Info: dig/fig/lin.png  used on input line 56.
 (pdftex.def)             Requested size: 18.87015pt x 17.66566pt.
-<dig/fig/ekst.png, id=134, 46.1725pt x 44.165pt>
+<dig/fig/ekst.png, id=139, 46.1725pt x 44.165pt>
 File: dig/fig/ekst.png Graphic file (type png)
 <use dig/fig/ekst.png>
 Package pdftex.def Info: dig/fig/ekst.png  used on input line 57.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<dig/fig/nul.png, id=135, 46.1725pt x 44.165pt>
+<dig/fig/nul.png, id=140, 46.1725pt x 44.165pt>
 File: dig/fig/nul.png Graphic file (type png)
 <use dig/fig/nul.png>
 Package pdftex.def Info: dig/fig/nul.png  used on input line 58.
 (pdftex.def)             Requested size: 18.46866pt x 17.66566pt.
-<dig/fig/skj.png, id=136, 49.18375pt x 45.16875pt>
+<dig/fig/skj.png, id=141, 49.18375pt x 45.16875pt>
 File: dig/fig/skj.png Graphic file (type png)
 <use dig/fig/skj.png>
 Package pdftex.def Info: dig/fig/skj.png  used on input line 59.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<dig/fig/vek.png, id=137, 47.17625pt x 43.16125pt>
+<dig/fig/vek.png, id=142, 47.17625pt x 43.16125pt>
 File: dig/fig/vek.png Graphic file (type png)
 <use dig/fig/vek.png>
 Package pdftex.def Info: dig/fig/vek.png  used on input line 60.
 (pdftex.def)             Requested size: 18.87015pt x 17.26418pt.
-<dig/fig/tekst.png, id=138, 49.18375pt x 45.16875pt>
+<dig/fig/tekst.png, id=143, 49.18375pt x 45.16875pt>
 File: dig/fig/tekst.png Graphic file (type png)
 <use dig/fig/tekst.png>
 Package pdftex.def Info: dig/fig/tekst.png  used on input line 61.
 (pdftex.def)             Requested size: 19.67314pt x 18.06717pt.
-<dig/fig/flytt.png, id=139, 45.16875pt x 44.165pt>
+<dig/fig/flytt.png, id=144, 45.16875pt x 44.165pt>
 File: dig/fig/flytt.png Graphic file (type png)
 <use dig/fig/flytt.png>
 Package pdftex.def Info: dig/fig/flytt.png  used on input line 62.
@@ -1528,27 +1524,27 @@ Overfull \hbox (27.75099pt too wide) in paragraph at lines 54--65
 [][]  
  []
 
-<dig/fig/erlik.png, id=140, 47.17625pt x 45.16875pt>
+<dig/fig/erlik.png, id=145, 47.17625pt x 45.16875pt>
 File: dig/fig/erlik.png Graphic file (type png)
 <use dig/fig/erlik.png>
 Package pdftex.def Info: dig/fig/erlik.png  used on input line 67.
 (pdftex.def)             Requested size: 18.87015pt x 18.06717pt.
-<dig/fig/brin.png, id=141, 45.16875pt x 44.165pt>
+<dig/fig/brin.png, id=146, 45.16875pt x 44.165pt>
 File: dig/fig/brin.png Graphic file (type png)
 <use dig/fig/brin.png>
 Package pdftex.def Info: dig/fig/brin.png  used on input line 68.
 (pdftex.def)             Requested size: 18.06717pt x 17.66566pt.
-<dig/fig/caerlik.png, id=142, 43.16125pt x 45.16875pt>
+<dig/fig/caerlik.png, id=147, 43.16125pt x 45.16875pt>
 File: dig/fig/caerlik.png Graphic file (type png)
 <use dig/fig/caerlik.png>
 Package pdftex.def Info: dig/fig/caerlik.png  used on input line 69.
 (pdftex.def)             Requested size: 17.26418pt x 18.06717pt.
-<dig/fig/x.png, id=143, 43.16125pt x 46.1725pt>
+<dig/fig/x.png, id=148, 43.16125pt x 46.1725pt>
 File: dig/fig/x.png Graphic file (type png)
 <use dig/fig/x.png>
 Package pdftex.def Info: dig/fig/x.png  used on input line 70.
 (pdftex.def)             Requested size: 17.26418pt x 18.46866pt.
-<dig/fig/xca.png, id=144, 45.16875pt x 45.16875pt>
+<dig/fig/xca.png, id=149, 45.16875pt x 45.16875pt>
 File: dig/fig/xca.png Graphic file (type png)
 <use dig/fig/xca.png>
 Package pdftex.def Info: dig/fig/xca.png  used on input line 71.
@@ -1557,143 +1553,42 @@ Package pdftex.def Info: dig/fig/xca.png  used on input line 71.
 png> <./dig/fig/skj.png> <./dig/fig/vek.png> <./dig/fig/tekst.png> <./dig/fig/f
 lytt.png> <./dig/fig/erlik.png> <./dig/fig/brin.png> <./dig/fig/caerlik.png> <.
 /dig/fig/x.png> <./dig/fig/xca.png>]
-! Undefined control sequence.
-l.99 \cmc
-         {ByttUt}{<Uttrykk>, <Liste med forandringer>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.121 \cmc
-          {HÃ¸yreSide}{<Likning>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.124 \cmc
-          {HÃ¸yreSide}{<Liste med likninger>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.133 \cmc
-          {Integral}{<Variabel>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (23.43304pt too wide) in paragraph at lines 133--135
-\T1/lmr/m/n/10.95 funksjon av gitt vari-abel. (Brukes der-som man ønsker å in-t
-e-grere funksjoner 
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
+0.
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (17.02345pt too wide) in paragraph at lines 134--135
+\T1/lmr/m/n/10.95 vari-abel. (Brukes der-som man ønsker å in-te-grere funksjone
+r avhengig 
  []
 
 [8]
-Overfull \hbox (0.4382pt too wide) in paragraph at lines 139--141
-[]\T1/lmr/m/n/10.95 <Uttrykk>, <Ut-trykk>, <Ut-trykk>, <Pa-ram-e-ter-vari-abel>
-, <Start>, 
+Overfull \hbox (30.866pt too wide) in paragraph at lines 143--143
+[]\T1/lmtt/m/n/10.95 Kurve( <Uttrykk>, <Uttrykk>, <Uttrykk>, <Parametervariabel
+>, 
  []
 
-! Undefined control sequence.
-l.148 \cmc
-          {LÃ¸s}{<Likning med x>}{
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.152 \cmc
-          {LÃ¸s}{<Liste med likninger>, <Liste med variabler>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.155 \cmc
-          {LÃ¸s}{<Likning>, <Variabel>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9] [10]
-Overfull \hbox (52.15134pt too wide) in paragraph at lines 171--173
-[]\T1/lmr/m/n/10.95 <Punkt>, <Punkt>, ... Fram-stiller en prisme i Grafikkfelt 
-3D. \T1/lmtt/m/n/10.95 Prisme[A,B,C,D] 
+[9]
+Overfull \hbox (5.98842pt too wide) in paragraph at lines 172--173
+\T1/lmr/m/n/10.95 en prisme med grun-n-flate $\OML/lmm/m/it/10.95 ABC$ \T1/lmr/
+m/n/10.95 og tak $\OML/lmm/m/it/10.95 DEF$\T1/lmr/m/n/10.95 , \T1/lmtt/m/n/10.9
+5 Prisme[A,B,C,D,E] 
  []
 
 
-Overfull \hbox (5.39099pt too wide) in paragraph at lines 171--173
-\T1/lmr/m/n/10.95 lager en prisme med grun-n-flate $\OML/lmm/m/it/10.95 ABC$ \T
-1/lmr/m/n/10.95 og tak $\OML/lmm/m/it/10.95 DEF$\T1/lmr/m/n/10.95 , \T1/lmtt/m/
-n/10.95 Prisme[A,B,C,D,E] 
+Overfull \hbox (3.94426pt too wide) in paragraph at lines 186--187
+[]\T1/lmr/m/n/10.95 Bruker re-gresjon med en ek-spo-nen-tial-funksjon for å til
+passe punkt 
  []
 
-[11]
-! Undefined control sequence.
-l.209 \cmc
-          {Sum}{<Uttrykk>, <Variabel>, <Start>, <Slutt>} {
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (20.80824pt too wide) in paragraph at lines 216--218
-[]\T1/lmr/m/n/10.95 <Funksjon>, sin(x) Skriver om en funksjon på for-men $[]$ 
+Overfull \hbox (3.7947pt too wide) in paragraph at lines 189--190
+[]\T1/lmr/m/n/10.95 Bruker re-gresjon med et poly-nom av gitt grad for å tilpas
+se punkt 
  []
 
-! Undefined control sequence.
-l.225 \cmc
-          {Vektorprodukt}{<Vektor>, <Vektor>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.233 \cmc
-          {VenstreSide}{<Likning>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.236 \cmc
-          {VenstreSide}{<Liste med likninger>}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./dig/py_bm.tex (./dig/../../doc.tex)
-Overfull \hbox (6.13237pt too wide) in paragraph at lines 239--7
-[]\T1/lmr/m/n/10.95 <Vektor>, <Vek-tor> Gir vinke-len mel-lom to vek-torer. Kan
- også brukes 
- []
-
-[12]
+[10]) (./dig/py_bm.tex (./dig/../../doc.tex) [11]
 Overfull \hbox (0.93387pt too wide) in paragraph at lines 10--11
 \T1/lmr/m/n/10.95 bruker NumPy-arrays ist-e-den-for lis-ter går raskere, og at 
 NumPy-arrays 
@@ -1708,11 +1603,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 el-lom-rom
  []
 
-[13
+[12
 
-] (./dig/arrayopr.py) (./dig/skalkryss.py)) [14]
+] (./dig/arrayopr.py) (./dig/skalkryss.py)) [13]
 Chapter 2.
-[15
+[14
 
 ] (./num/num_bm.tex (./num/../../doc.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 11--11
@@ -1721,12 +1616,12 @@ gspunk-tet mel-lom $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen og tan-gen-t
 en til $\OML/lmm/m/it/10.95 f$
  []
 
-<num/../fig/newt1a.pdf, id=230, 170.7178pt x 142.26149pt>
+<num/../fig/newt1a.pdf, id=232, 170.7178pt x 142.26149pt>
 File: num/../fig/newt1a.pdf Graphic file (type pdf)
 <use num/../fig/newt1a.pdf>
 Package pdftex.def Info: num/../fig/newt1a.pdf  used on input line 21.
 (pdftex.def)             Requested size: 170.71738pt x 142.26112pt.
-<num/../fig/newt1b.pdf, id=231, 170.7178pt x 142.26149pt>
+<num/../fig/newt1b.pdf, id=233, 170.7178pt x 142.26149pt>
 File: num/../fig/newt1b.pdf Graphic file (type pdf)
 <use num/../fig/newt1b.pdf>
 Package pdftex.def Info: num/../fig/newt1b.pdf  used on input line 24.
@@ -1736,7 +1631,7 @@ Overfull \hbox (14.52383pt too wide) in paragraph at lines 21--25
 [][][][][][]  
  []
 
-[16
+[15
 
  <./num/../fig/newt1a.pdf> <./num/../fig/newt1b.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 35--35
@@ -1775,7 +1670,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []$ \T1/lmr/m/n/10.95 kan være fun-gere som et godt mål for når it-erasjon-
  []
 
-[17]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 50--50
 []\T1/lmr/m/n/10.95 Dele in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.9
 5 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i min-dre in-ter-vall. Disse 
@@ -1788,7 +1683,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2.1
                    \relax 
 l.67 	\subfloat
                [TilnÃ¦rming med 3\\ \hspace{0.55cm}delintervaller.]{\include...
-<num/../fig/trapmet.pdf, id=269, 136.57022pt x 113.81522pt>
+<num/../fig/trapmet.pdf, id=271, 136.57022pt x 113.81522pt>
 File: num/../fig/trapmet.pdf Graphic file (type pdf)
 <use num/../fig/trapmet.pdf>
 Package pdftex.def Info: num/../fig/trapmet.pdf  used on input line 67.
@@ -1799,7 +1694,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2.1
                    \relax 
 l.68 	\subfloat
                [TilnÃ¦rming med 20\\ \hspace{0.55cm}delintervaller]{\include...
-<num/../fig/trapmetb.pdf, id=270, 136.57022pt x 113.81522pt>
+<num/../fig/trapmetb.pdf, id=272, 136.57022pt x 113.81522pt>
 File: num/../fig/trapmetb.pdf Graphic file (type pdf)
 <use num/../fig/trapmetb.pdf>
 Package pdftex.def Info: num/../fig/trapmetb.pdf  used on input line 68.
@@ -1822,19 +1717,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
 inn i $[]$ delin-
  []
 
-[18
+[17
 
- <./num/../fig/trapmet.pdf> <./num/../fig/trapmetb.pdf>]) [19]
+ <./num/../fig/trapmet.pdf> <./num/../fig/trapmetb.pdf>]) [18]
 Chapter 3.
-[20
+[19
 
 ] (./funk/funk_bm.tex (./funk/../../doc.tex)
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-6.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
 Underfull \hbox (badness 10000) in paragraph at lines 16--16
 []\T1/lmr/m/n/10.95 stigningstallet til linja som går gjen-nom punk-tene $\OT1/
 lmr/m/n/10.95 (\OML/lmm/m/it/10.95 a; f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 
@@ -1889,7 +1778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
  a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 mot å
  []
 
-[21
+[20
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
@@ -1952,7 +1841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
 ant fart, måtte
  []
 
-<funk/../fig/ballb.pdf, id=322, 170.7178pt x 113.81522pt>
+<funk/../fig/ballb.pdf, id=323, 170.7178pt x 113.81522pt>
 File: funk/../fig/ballb.pdf Graphic file (type pdf)
 <use funk/../fig/ballb.pdf>
 Package pdftex.def Info: funk/../fig/ballb.pdf  used on input line 42.
@@ -2003,32 +1892,153 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
 a vil
  []
 
-[22 <./funk/../fig/ballb.pdf>]) [23]
+[21 <./funk/../fig/ballb.pdf>]) [22]
 Chapter 4.
+[23
+
+] (./mix/mix_bm.tex (./mix/../../doc.tex)
+Overfull \hbox (18.5483pt too wide) in paragraph at lines 6--6
+|[]\T1/lmr/bx/n/14.4 Oppgaver med tall og situ-asjoner fra virkelig-
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 18.
 [24
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\T1/lmr/m/n/12 Tenk deg at din bank sparer penger i en an-nen bank, som
+ []
 
-! LaTeX Error: File `mix_bm.tex' not found.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/lmr/m/n/12 tilbyr 3% årlig spar-erente. Da skal banken ende opp med
+ []
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.32 	\import{opg/}{mix_bm}
-                           	^^M
-*** (cannot \read from terminal in nonstop modes)
 
- 
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\T1/lmr/m/n/12 I løpet av 20 år til-føres sparekon-toen et årlig innskudd
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\T1/lmr/m/n/12 1500000 kro-ner settes på sparekonto og for-rentes i 20
+ []
+
+[25]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 45.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 45.
+
+Overfull \hbox (6.03906pt too wide) in paragraph at lines 45--49
+ [] 
+ []
+
+<mix/../fig/100mreg.png, id=377, 1174.3875pt x 845.1575pt>
+File: mix/../fig/100mreg.png Graphic file (type png)
+<use mix/../fig/100mreg.png>
+Package pdftex.def Info: mix/../fig/100mreg.png  used on input line 59.
+(pdftex.def)             Requested size: 234.87334pt x 169.0285pt.
+
+Overfull \hbox (28.46413pt too wide) in paragraph at lines 59--59
+\T1/lmr/m/n/12 for $[]$ og for $[]$. Sam-men-likn disse hastighetene 
+ []
+
+[26 <./mix/../fig/100mreg.png>]
+Overfull \hbox (12.43391pt too wide) in paragraph at lines 65--66
+\T1/lmr/m/n/12 veger[][] (ut-formet av Statens veg-vesen) er min-ste []\T1/lmr/
+bx/n/12 ho-risontalkurvera- 
+ []
+
+
+Overfull \hbox (13.41283pt too wide) in paragraph at lines 74--76
+\T1/lmr/m/n/12 La $\OML/lmm/m/it/12 r$ \T1/lmr/m/n/12 være ra-dien til sirke-le
+n som beskriver krumnin-gen til $\OML/lmm/m/it/12 f$\T1/lmr/m/n/12 . Statens 
+ []
+
+
+Overfull \hbox (5.4528pt too wide) in paragraph at lines 76--78
+\T1/lmr/m/n/12 som gir en god tilnærm-ing for ut-val-gte veistykker hvor farts-
+grensen 
+ []
+
+
+Overfull \hbox (5.15277pt too wide) in paragraph at lines 76--78
+\T1/lmr/m/n/12 dien til $\OML/lmm/m/it/12 f[]$\T1/lmr/m/n/12 . Un-der-søk om kr
+umnin-gen til veistykket opp-fyller kravet 
+ []
+
+<mix/fig/tab2_7.png, id=393, 1007.765pt x 186.6975pt>
+File: mix/fig/tab2_7.png Graphic file (type png)
+<use mix/fig/tab2_7.png>
+Package pdftex.def Info: mix/fig/tab2_7.png  used on input line 79.
+(pdftex.def)             Requested size: 322.4914pt x 59.74442pt.
+[27 <./mix/fig/tab2_7.png>] [28]
+Overfull \hbox (6.5749pt too wide) in paragraph at lines 107--108
+[]\T1/lmr/m/n/12 Ut ifra $[]$, hvilken verdi må $\OML/lmm/m/it/12 ^^R$ \T1/lmr/
+m/n/12 ha for at kastet skal bli lengst mulig?  
+ []
+
+[29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[][][][]\T1/lmr/m/n/9 Sjøkartnull er som regel satt til den laveste vann-stande
+n som kan opp-nås ut ifra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+\T1/lmr/m/n/9 as-tronomiske betingelser (flo og fjære er i stor grad betinget a
+v hvor-dan jorda, sola
+ []
+
+) [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+ (./AM2_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
+Package rerunfilecheck Info: File `AM2_bm.out' has not changed.
+(rerunfilecheck)             Checksum: FB8F74CF453A0C5FEAE51D8CAC67F2C5;794.
+ ) 
 Here is how much of TeX's memory you used:
- 33530 strings out of 481239
- 644054 string characters out of 5920378
- 1170682 words of memory out of 5000000
- 47916 multiletter control sequences out of 15000+600000
- 636276 words of font info for 101 fonts, out of 8000000 for 9000
+ 33668 strings out of 481239
+ 645664 string characters out of 5920378
+ 1171595 words of memory out of 5000000
+ 47983 multiletter control sequences out of 15000+600000
+ 664226 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,104p,872b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 70i,13n,104p,872b,1784s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/te
+xmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint
+-type1/esint10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
+i12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
+Output written on AM2_bm.pdf (32 pages, 761709 bytes).
+PDF statistics:
+ 586 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+
