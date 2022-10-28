@@ -1,5 +1,7 @@
-.aux
-.log
-.out
-.thm
-.idx
+*.aux
+*.log
+*.out
+*.thm
+*.idx
+*.synctex.gz
+*.toc
