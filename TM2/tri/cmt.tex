@@ -1,0 +1,26 @@
+\input{../doc}
+\input{../preamb}
+\begin{document}
+\section*{Kommentar}
+I enkelte tekster som omtaler trigonometriske funksjoner finner man formuleringer som denne:
+\alg{
+&f(x)=\sin x\quad,\quad x\in[0, 2\pi] \tag{I}\label{I}\\
+&g(x)=\sin x \quad,\quad x\in[0^\circ, 360^\circ] \tag{II} \label{II}.
+}
+Dette skaper det feilaktige bildet av at $ f $ og $ g $ er den samme funksjonen, med uttrykket $ \sin x $, men at det er opp til oss å velge om $ x $ er et tall eller vinkelmålet grader.\vsk
+
+Det er viktig å innse at de trigonometriske funskjonene vi nå har introdusert, er funksjoner som bare kan ha \textit{tall} som argumenter $ - $ $ x $ kan ikke bære enheter som grader, meter o.l. Men det kan selvfølgelig være at man ønsker å la $ x $ \textsl{representere} grader, en korrekt måte å skrive $ g $ på er da
+\[ g(x)=\sin^\circ x\quad,\quad x\in[0, 360]\]
+hvor $ ^\circ $ indikerer at $ g $ er sinusverdien til $ x $ grader. Relasjonen mellom $ \sin^\circ x $ og $ \sin x $ er
+\[ \sin^\circ x =\sin\left(\frac{\pi}{180}x\right) \]
+Selv om vi enda ikke har studert den deriverte av sinusfunksjoner, bør du allerede nå (via kjerneregelen) ane at $ (\sin^\circ x )'\neq(\sin x)'$. Å presentere $ f $ og $ g $ med like uttrykk, som i (\ref{I})  og (\ref{II}), blir derfor helt feil.\vsk
+
+Når det for eksempel skrives $ \sin 45^\circ $, menes det altså strengt tatt $ \sin^\circ 45 $. Likevel skal vi bruke denne skrivemåten i neste kapittel fordi den er så utbredt. For å ha alt på det tørre, definerer vi her og nå at symbolet $ ^\circ $ rett og slett ikke er noe annet enn brøken\footnote{Dette er i samsvar med (\ref{gradertilrad}).} $ \frac{\pi}{180} $. På denne måten blir:
+\[ \sin x^\circ= \sin\left(\frac{\pi}{180}x\right)=\sin^\circ x \]
+\small
+\begin{comment}
+	Før vi forlater pedanteriet må det også være nevnt at den utbredte introduksjonen av trigonometriske funksjoner via vinkelmål ikke må forlede en til å tro at funksjonene alltid har noe med konkrete vinkler å gjøre. For eksempel har trigonometriske funksjoner en enestående rolle i beskrivelsen av bølgefenomener og svingninger\footnote{Svingninger skal vi se på i kapittelref??}. Spenner du man genstand fast i en fjør og trekker i den slik at den svinger loddrett opp og ned, kan man modellere bevegelsen som en sinusfunksjon varierende med tiden. Det vil da ikke være noen slags vinkel med i denne beskrivelsen.
+\end{comment}
+\end{document}
+
+

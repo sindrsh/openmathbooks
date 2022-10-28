@@ -1,0 +1,24 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.21)  29 JUL 2017 07:33
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ncmd.tex
+(./ncmd.tex
+LaTeX2e <2017/01/01> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+)
+! Emergency stop.
+<*> ncmd.tex
+            
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 86 strings out of 493013
+ 548 string characters out of 6135682
+ 59022 words of memory out of 5000000
+ 3730 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 7i,0n,6p,506b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

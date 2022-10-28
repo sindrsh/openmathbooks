@@ -1,0 +1,398 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+\begin{document}
+
+\section{Følger}\index{følge}
+Følger er en oppramsing av tall, gjerne skilt med komma. I følgen 
+\begin{equation}
+2, 4, 8, 16  \label{folg}
+\end{equation}
+sier vi at vi har fire \outl{elementer}\index{element}. Element nr.\,1 har verdi 2, element nr.\,2 har verdi 4 og så videre. Hvert element i en rekke beskrives gjerne ved hjelp av en indeksert bokstav. Velger vi oss bokstaven $ a $ for følgen over, kan vi skrive $ {a_1 =2} $, $ {a_2=4} $ osv.\vsk
+
+Når vi lar $ a_i $ betegne elementene i en følge, bruker vi $ {i\in \mathbb{N}}$. I likhet med mengder, kan vi bruke \sym{$ \lbrace\rbrace $} for å indikere en følge, og \sym{$ \in $} for å vise at et element er inneholdt i en følge. For eksempel er \\$ 8\in\lbrace2, 4, 8, 16\rbrace $. \vsk
+
+Ofte kan tallene i en følge settes i sammenheng med hverandre. Multipliserer vi for eksempel et element i følgen fra \eqref{folg} med $ 2 $, så har vi funnet det neste elementet. Den \outl{rekursive} formelen\index{rekursiv formel} er da
+\[ a_i = 2\cdot a_{i-1} \]
+I den rekursive formelen bruker vi altså den forrige verdien for å finne den neste. \vsk
+
+Den nevnte følgen er en \outl{endelig}\index{følge!endelig} følge fordi den har et konkret antall element. Hadde vi brukt den rekursive formelen kunne vi lagt på stadig flere element og fått følgen
+\begin{equation}
+ 2, 4, 8, 16, 32, 64, ...  \label{folg1}
+\end{equation}
+'$ ... $' betyr at nye element fortsetter i det uendelige, følgen kalles da en \outl{uendelig}\index{følge!uendelig} følge. \vsk
+
+Hva om vi for denne følgen ønsker å finne element nr. 20, altså $ a_{20} $? Det vil da lønne seg å finne en \outl{eksplisitt} formel. For å gjøre dette skriver vi opp noen element, og ser om vi finner et mønster: 
+\alg{
+& a_1 = 2 = 2^1 \\
+& a_2 = 4 = 2^2 \\
+& a_3 = 8 = 2^3
+}
+Av ligningene over innser vi at vi for element nr.\,$ i $ kan skrive
+\[ a_i=2^i \] 
+Og slik kan vi fort finne element nr.\,20:
+\alg{
+a_{20}&=2^{20} \\
+&= 1048576
+}
+En eksplisitt formel gir oss altså et uttrykk der verdien til et element regnes ut direkte. Når man har et slikt uttrykk er det også vanlig å skrive dette som siste element i rekka, \eqref{folg1} blir da seende slik ut:
+%\footnote{Det er helt vilkårlig hvilken bokstav vi bruker i det eksplisitte uttrykket, i denne boka skal vi som regel bruke $ n $ om det siste elementet i en følge/rekke.}:
+\[  2, 4, 8, 16, 32, 64, ..., 2^i \]
+\subsection{Aritmetiske følger} \index{følge!aritmetisk}
+
+Følgen 
+\[ 2, 5, 8, 11, 14, 17 \]
+kalles en \textit{aritmetisk følge}. I en aritmetisk følge har to naboelement konstant differanse, i dette tilfellet 3. Skriver vi opp de tre første elementene kan vi finne mønsteret til en eksplisitt formel\index{eksplisitt formel}:
+\alg{
+& a_1 = 2 = 2+3\cdot0\\
+& a_2 = 5 = 2+3\cdot1\\
+& a_3 = 8 = 2 +3\cdot2
+}
+Av ligningene over observerer vi at
+\[ a_i=2+3\cdot(i-1) \]
+\reg[Aritmetisk følge]{
+	Et element $ a_i $  i en \outl{aritmetisk følge} er gitt ved den rekursive formelen
+	\begin{equation}\label{arrekeq}
+		a_i=a_{i-1}+d
+	\end{equation}
+	og den eksplisitte formelen
+	\begin{equation}
+		a_i=a_1+d(i-1) \label{ekspl}
+	\end{equation}
+	hvor $ d $ er den konstante differansen $ a_i-a_{i-1} $.}
+\newpage
+\eks[]{Finn den rekursive og den eksplisitte formelen til følgen
+	\[ 7, 13, 19, 25, ... \]	\vs
+	\sv
+	Følgen har konstant differanse $ {d=6} $ og første element $ {a_1=7} $. Den rekursive formelen blir da
+	\[ a_i = a_{i-1}+6 \]
+	Mens den eksplisitte formelen blir
+	\[ a_i=7+6(i-1) \]
+}
+\subsection{Geometriske følger} \index{følge!geometrisk}
+Følgen 
+\[ 2, 6, 18, 54, 162 \]
+kalles en \textit{geometrisk følge}. I en geometrisk følge har forholdet mellom to naboelement den samme kvotienten, i dette tilfellet 3. Også her kan vi gjenkjenne et fast mønster:
+\algv{
+	& a_1 = 2 = 2\cdot3^0\\
+	& a_2 = 6 = 2\cdot3^1\\
+	& a_3 = 18 = 2\cdot3^2
+}
+Den eksplisitte formelen blir derfor
+\[ a_i = 2\cdot3^{i-1} \]
+\reg[Geometrisk følge]{
+	Et element $ a_i $  i en \outl{geometrisk følge} med kvotient $ k $ er gitt ved den rekursive formelen
+	\begin{equation}\label{geofolgrek}
+		a_i=a_{i-1}\cdot k
+	\end{equation}
+	og den eksplisitte formelen
+	\begin{equation}\label{geofolgeks}
+		a_i=a_1\cdot k^{i-1}
+	\end{equation}
+}
+\eks[]{
+Finn den rekursive og den eksplisitte formelen til følgen
+\[ 5, 10, 20, 40, ... \]
+
+\sv
+Følgen har konstant kvotien $ {k=2} $, og første element $ {a_1=5} $. Den rekursive formelen blir da
+\[ a_i= a_{i-1}\cdot 2 \]
+Mens den eksplisitte formelen blir
+\[ a_i=5\cdot2^{i-1} \]
+}
+
+\eks{En geometrisk følge har $ {a_1 = 2} $ og $ {k=4} $. For hvilken $ i $ er $ {a_i=128 }$? \\
+
+\sv
+Vi får ligningen
+\algv{
+2\cdot4^{i-1}&=128 \\
+4^{i-1}&= 64 \\
+4^{i-1} &= 4^3 \\
+ i-1 &= 3\\
+ i &= 4
+}
+Altså er ${ a_4=128} $.
+}
+\section{Rekker}\index{rekke}
+En \textit{rekke} er strengt tatt det samme som et \textit{addisjonsstykke} (se \mb). For eksempel er
+\[ 2+6+18+54+162 \]
+en rekke. Vi bruker begrepet \textit{ledd} på samme måte som \textit{element} for en følge; i rekka over har ledd nr. 3 verdien 18, og i alt er det fem ledd.\vsk
+
+For en rekke er det naturlig at vi ikke bare ønsker å vite verdien til hvert enkelt ledd, men også hva summen av alle leddene er. Så lenge en rekke ikke er uendelig, kan man alltids legge sammen ledd for ledd, men for noen rekker finnes det uttrykk som gir oss summen etter mye mindre arbeid (og til og med for tilfeller av uendelige rekker).
+
+\subsection{Aritmetiske rekker}
+\reg[\sumarrek \label{sumarrek}]{
+	
+	\index{rekke!aritmetisk}
+	Hvis leddene i en rekke kan beskrives som en aritmetisk følge, kalles rekka en \outl{aritmetisk rekke}.\vsk
+	
+	Summen $ S_n $ av de $ n $ første leddene i en aritmetisk rekke er gitt som
+	\begin{equation}\label{arrek}
+		S_n = n\frac{a_1+a_n}{2}
+	\end{equation}
+	hvor $ a_1 $ er første element i rekka.
+} \regv
+
+\eks{ \label{arrekeks}
+	Gitt den uendelige rekka
+	\[ 3+7+11+... \] 
+	Finn summen av de ti første leddene \os
+		
+	\sv
+	Det $ i $-te leddet $a_i$ i rekka er gitt ved formelen
+	\[ a_i=3+4(i-1) \]
+	Dette er derfor en aritmetisk rekke, og summen av de $ n $ første  leddene er da gitt av ligning \eqref{arrek}. Ledd nr.\,10 blir da
+	\alg{
+		a_{10} &= 3+4(10-1) \\
+		&= 39	
+	} 
+	De ti første leddene er dermed gitt som
+	\alg{
+		S_{10} &= 10\cdot\frac{3+39}{2} \\
+		&= 210
+	}
+} \vsk
+\fork{\ref{sumarrek} \sumarrek}{
+	Ved å bruke den eksplisitte formelen fra \eqref{ekspl}, kan vi skrive summen av en aritmetisk rekke med $ n $ element som
+	\begin{equation}
+		S_n = a_1 + (a_1+d) + (a_1+ 2d)+...+ (a_1+d(n-1)) \label{a1}
+	\end{equation}
+	Men ledd i rekka kan også uttrykkes slik:
+	\[ a_i= a_n-(n-i)d \]
+	for $ 1\leq i\leq n $.
+	Og da kan vi skrive summen som (her står siste element først, deretter nest siste osv.)
+	\begin{equation}
+		S_n = a_n + (a_n-d)+(a_n-2d)+...+(a_n-d(n-1)) \label{a2}
+	\end{equation}
+	Adderer vi \eqref{a1} og \eqref{a2}, får vi $ 2S_n $ på venstre side. På høyre side blir alle \textit{d}-er kansellert, og vi ender opp med at
+	\alg{
+		2S_n &= na_1 + na_n \br
+		S_n&=n\frac{a_1+a_n}{2} 
+	}
+}
+\newpage
+\subsection{Geometriske rekker} 
+\reg[\sumgerek \label{geom} \index{rekke!geometrisk}]{
+Hvis ledd i en rekke kan beskrives som en geometrisk følge, kalles rekka en \outl{geometrisk rekke}.	\vsk
+
+Summen $ S_n $ av de $ n $ første leddene i en geometrisk rekke med kvotient $ k $ og første element $ a_1 $ er gitt som
+	\begin{equation}
+		S_n=a_1\frac{1-k^n}{1-k}\quad, \quad k\neq 1 \label{sumg}
+	\end{equation}
+	Hvis $ {k=1}, $ er
+	\begin{equation}
+		 S_n = na_1
+	\end{equation}
+}
+\eks{ \label{gerekeks}
+Gitt den uendelige rekka
+\[ 3+6+12+24+... \]	
+Finn summen av de 15 første leddene.
+
+\sv
+Dette er en geometrisk rekke med $ {a_1=3} $ og $ {k=2} $. Summen av de 15 første leddene blir da
+\alg{
+	S_{15}&= 3\cdot\frac{2^{15}-1}{1-2} \br
+	&= 	3\cdot\frac{1-32768}{-1} \br
+	&= 98301
+	}
+}
+\newpage
+\fork{\ref{geom} \sumgerek}{
+Summen $ S_n $ av en geometrisk rekke med $ n $ element er
+\begin{equation}
+	S_n = a_1 + a_1k + a_1k^2+...+a_1 k^{n-2}+a_1 k^{n-1} \label{geo1}
+\end{equation}
+Ganger vi denne summen med $ k $, får vi at
+\begin{equation}
+	kS_n = a_1k + a_1k^2 + a_1k^3+...+a_1 k^{n-1}+a_1 k^{n} \label{geo2}
+\end{equation}
+Uttrykket vi søker framkommer når vi trekker \eqref{geo2} ifra \eqref{geo1}:
+\alg{
+	S_n-kS_n &= a_1-a_1k^n \\
+	S_n(1-k) &= a_1(1-k^n) \\
+	S_n &= a_1\frac{(1-k^n)}{1-k}
+}
+}
+\subsection{Uendelige geometrisk rekker}
+Når en geometrisk rekke har uendelig mange element, merker vi oss dette:
+
+Hvis $ {|k|<1} $, er
+\alg{
+\lim\limits_{n\to\infty} S_n &=\lim\limits_{n\to\infty} a_1\frac{1-k^n}{1-k}  \\[5pt]
+&= a_1 \frac{1}{1-k}
+}
+Summen av uendelig mange element går altså mot en endelig (konkret) verdi! Når dette er et faktum sier vi at rekka \textit{konvergerer}\index{konvergere} og at rekka er konvergent\index{rekke!konvergent}. Hvis derimot $ |k|\geq 1$, går summen mot $ \pm \infty$. Da sier vi at rekka \textit{divergerer}\index{divergere} og at rekka er divergent\index{rekke!divergent}.\regv
+\reg[Summen av en uendelig geometrisk rekke]{
+	For en uendelig geometrisk rekke med kvotient $ {k<|1|} $ og første element $ a_1 $ er summen $ S_\infty $ av rekka gitt som
+	\begin{equation}
+		S_\infty = \frac{a_1}{1-k}
+	\end{equation}
+	
+	Hvis $ |k|\geq 1 $, vil summen gå mot $ \pm \infty $.
+}
+\newpage
+\eks{ \label{gerekueneks}
+Gitt den uendelige rekka 
+\[ 1+\frac{1}{x}+\frac{1}{x^2}+.... \]
+\textbf{a)} For hvilke $ x $ er rekka konvergent? \os
+
+\textbf{b)} Vis at \y{S_\infty=\frac{x}{x-1}} når rekka konvergerer.\os
+
+\textbf{c)} For hvilken $ x $ er summen av rekka lik $ \frac{3}{2} $?\os
+
+\textbf{d)} For hvilken $ x $ er summen av rekka lik $ -1 $?\\
+
+\sv
+\textbf{a)} Dette er en geometrisk rekke med $ {k=\frac{1}{x} }$ og ${ a_1 = 1} $. Rekka er konvergent når $ {|k|<1} $, vi krever derfor at
+\[ |x|>1  \] 
+
+\textbf{b)} Når $ |x|>1 $, har vi at
+\alg{
+S_\infty &= \frac{a_1}{1-k} \\
+&= \frac{1}{1-\frac{1}{x}} \\
+&= \frac{1}{\frac{x-1}{x}} \\
+&= \frac{x}{x-1}
+}
+Som er det vi skulle vise.\vsk
+}
+\newpage
+\subsection{Summetegnet}\index{summetegnet}
+Vi skal nå se på et symbol som forenkler skrivemåten av rekker betraktelig. Symbolet blir spesielt viktig i \refkap{Integrasjon}, hvor vi skal studere \textit{integrasjon}.\vsk
+
+Tidligere har vi skrevet rekkae mer eller mindre bent fram. For eksempel har vi sett på rekka
+\[ 2+6+18+54+162 \]
+med den eksplisitte formelen
+\[ a_n = 2\cdot3^{n-1} \]
+Ved hjelp av summetegnet $ \sum $ kan rekka vår komprimeres betratelig. Ved å skrive $ \sum\limits_{i=1}^5 $ indikerer vi at $ i $ er en løpende variabel som starter på 1 og deretter øker med 1 opp til 5. Hvis vi lar den eksplisitte formelen til rekka være uttrykt ved $ i $, kan vi skrive rekka som $ \sum\limits_{i=1}^5 2\cdot3^{i-1} $, underforstått at vi skal sette et plusstegn hver gang $ i $ øker med 1:
+\[ 2+6+18+54+162=\sum\limits_{i=1}^5 2\cdot3^{i-1} \]
+Den uendelige rekka 
+$ 2+6+18+... $ kan vi derimot skrive som
+\[ \sum\limits_{i=1}^\infty 2\cdot3^{i-1} \]
+
+For summetegnet har vi også noen regneregler verdt å nevne:\regv
+\reg[\regnregsum \label{regnregsum}]{
+For to følger $ \lbrace a_i\rbrace $ og $ \lbrace b_i\rbrace $ og en konstant $ c $ har vi at
+\begin{align}
+	\sum_{i=j}^{n} \left(a_i+b_i\right) &= \sum_{i=j}^{n} a_i + \sum_{i=j}^{n} b_i \label{sumreg1}\br
+	\sum_{i=j}^{n} c a_i &= c\sum_{i=j}^{n} a_i \label{sumreg2}
+\end{align}
+hvor $ {j, n \in \mathbb{N}} $ og $ {j<n} $.
+}
+\newpage
+\fork{\ref{regnregsum} \regnregsum}{
+Ved å skrive ut summen og omrokkere på rekkefølgen av addisjonene, innser vi at
+\alg{
+	\sum_{i=1}^{n} \left(a_i+b_i\right) &= a_1+b_1 + a_2+b_2 + ... + a_n + b_n \\
+	&= a_1+a_2+...+a_n + b_1+b_2+...+b_n \\
+	&= \sum_{i=1}^{n} a_i + \sum_{i=1}^{n} b_i 
+}
+Ved å skrive ut summen og faktorisere ut $ c $, innser vi også at
+\alg{
+	\sum_{i=1}^{n} c a_i &= ca_1 + ca_2 + ...+ ca_n \\
+	&= c(a_1+a_2+...+a_n) \\
+	&= c\sum_{i=1}^{n} a_i 
+}
+}
+\newpage
+\section{Induksjon} \index{induksjon}
+I teoretisk matematikk stilles det strenge krav til bevis av formler. En metode som brukes spesielt for formler med heltall, er \textit{induksjon}. Prinsippet er dette\footnote{Ordene formel og ligning vil bli brukt litt om hverandre. En formel er strengt tatt bare en ligning hvor vi kan finne den ukjente størrelsen direkte ved å sette inn kjente størresler.}:\vsk
+
+\textsl{Si vi har en ligning som er sann for et heltall $ n $. Hvis vi kan vise at ligningen også gjelder om vi adderer heltallet med 1, har vi vist at ligningen gjelder for alle heltall større eller lik} $ n $.\vsk
+
+Det kan være litt vanskelig i starten å få helt grep på induksjonsprinsippet, så la oss gå rett til et eksempel:\vsk
+
+Vi ønsker å vise at summen av de $ n $ første partallene er lik $ n(n+1) $:
+\begin{equation}
+2+4+6+...+2n=n(n+1) \label{induk}
+\end{equation}
+Vi starter med å vise at dette stemmer for $ {n=1} $:
+\alg{2 &= 1\cdot(1+1) \\
+	2&= 2}
+Nå vet vi altså om et heltall, nemlig $ {n=1} $, som formelen stemmer for. Videre antar vi at ligningen er gyldig helt opp til ledd nr. $ k $. Vi ønsker så å sjekke at den gjelder også for neste element, altså  når $ n=k+1 $. Summen blir da
+\[ 2+4+6+...+\quad\mathclap{\overbrace{2k}^{\text{element nr. }k} \;\;\;\,}+\quad\;\;\;\mathclap{\underbrace{2(k+1)}_{\text{ledd nr.. }k+1}}\qquad=(k+1)((k+1)+1) \]
+Men fram til ledd nr.. $ k $ er det tatt for gitt at \eqref{induk} gjelder, dermed får vi at\footnote{Det kan se litt merkelig ut å skrive $ {2+4+6+...+2k }$, og anta at formelen vår gjelder for denne summen. Det virker jo da som at vi antar den gjelder for $ {n=1 }$, $ {n=2 }$ osv. Men dette er bare en litt kunstig skrivemåte som blir brukt for summen fram til ledd nr.. $ k $. For etterpå sier vi at vi vet om et tall $ k $ som denne antakelsen er riktig for, nemlig $ {k=1} $, og da har vi jo bare ett element før ledd nr.. $ {k+1} $. 
+	
+I påfølgende eksempler skal vi for enkelthets skyld la ledd nr.. $ k $ være innbakt i symbolet ''$ ... $''. }
+\algv{
+	\underbrace{2+4+6+...+2k}_{k(k+1)}+2(k+1)&=(k+1)((k+1)+1) \\ 
+	k(k+1)+2(k+1)&=(k+1)(k+2)\br
+	(k+1)(k+2)&= (k+1)(k+2)
+	}
+Og nå kommer den briljante konklusjonen: Vi har vist at \eqref{induk} er sann for ${ n=1 }$. I tillegg har vi vist at hvis ligningen gjelder for et heltall ${n= k} $, gjelder den også for $ {n=k+1} $. På grunn av dette vet vi at \eqref{induk} gjelder for ${n= 1+1=2} $. Men når vi vet at den gjelder for $ {n=2} $, gelder den også for $ {n=2+1=3} $ og så videre, altså for alle heltall!\regv
+\reg[Induksjon]{
+	Når vi ved induksjon ønsker å vise at ligningen
+	\begin{equation}\label{induksjon}
+		A(n)=B(n)
+	\end{equation}
+	er sann for alle $ n\in\mathbb{N} $, gjør vi følgende:
+	\begin{enumerate}
+		\item Sjekker at \eqref{induksjon} er sann for $ {n=1} $.
+		\item Sjekker at \eqref{induksjon} er sann for $ {n=k+1} $, antatt at den er sann for $ {n=k} $.
+	\end{enumerate}
+}
+\eks[1]{
+Vis ved induksjon at summen av de $ n $ første oddetallene er gitt ved ligningen
+\[ 1+3+5+...+(2n-1) = n^2 \]	
+for alle $ n\in\mathbb{N} $.
+
+\sv
+Vi sjekker at påstanden stemmer for $ {n=1} $:
+\alg{
+	1 &= 1^2 \\
+	1 &= 1
+	}
+Vi tar det for gitt at påstanden gjelder for $ {n=k} $, og sjekker at den stemmer også for $ {n=k+1 }$:
+\alg{
+	\underbrace{1+3+5+...}_{k^2}+(2(k+1)-1) &=(k+1)^2 \\
+	k^2 + 2k+1 &= (k+1)^2 \br
+	(k+1)^2 &= (k+1)^2
+	}
+Dermed er påstanden vist for alle $ n\in\mathbb{N} $.\vsk
+
+\textsl{Merk:} Hvis du har problemer med å faktorisere venstresiden når du utfører induksjon, kan du som reserveløsning skrive ut høyresiden istedenfor, men helst bør du la være. Dett er litt for elegansens skyld (selv ikke matematikk kan fraskrive seg en porsjon forfengelighet), men også fordi sjansen for regnefeil blir mindre.
+	}
+\newpage
+\eks[2]{
+Vis ved induksjon at:
+\[ 1^3 + 2^3 + 3^3 + ... + n^3= \frac{n^2(n+1)^2}{4} \]
+for alle $ n\in\mathbb{N} $. \\
+
+\sv
+Vi starter med å sjekke for $ n=1 $:
+\alg{1 &= \frac{1^2\cdot(1+1)^2}{4} \\
+	1^3&= \frac{2^2}{4} \\
+	1 &= 1}
+Ligningen er altså sann for $ {n=1 }$. Vi antar videre at den også stemmer for $ {n=k} $, og sjekker for $ {n=k+1} $:
+\alg{\underbrace{1^3+2^3+3^3+...}_{\frac{k^2(k+1)^2}{4}}+(k+1)^3 &= \frac{(k+1)^2(k+1+1)^2}{4} \\
+	\frac{k^2(k+1)^2}{4} + (k+1)^3 &= \frac{(k+1)^2(k+2)^2}{4} \\
+	\frac{k^2(k+1)^2+4(k+1)^3}{4} &= \\
+	\frac{(k+1)^2(k^2+4(k+1))}{4} &= \\	
+	\frac{(k+1)^2(k^2+4k+4))}{4} &= \\	
+	\frac{(k+1)^2(k+2)^2}{4} &= \frac{(k+1)^2(k+2)^2}{4}
+}
+Påstanden er dermed vist for alle $ n\in\mathbb{N} $.		
+	}\newpage
+\eks[3]{\label{prodind}
+Vis ved induksjon at:
+\[ 3\cdot9\cdot27\cdot... \cdot 3^n= 3^{\frac{1}{2}n(n+1)}\]\vs
+\sv
+Vi sjekker at påstanden er sann for $ n=1 $:
+\alg{
+3 &= 3^{\frac{1}{2}\cdot1(1+1)} \\
+3 &= 3^1
+}
+Videre antar vi at påsanden stemmer også for $ {n=k}$, og sjekker for $ n=k+1 $:
+\alg{
+ \underbrace{3\cdot9\cdot27\cdot...}_{3^{\frac{1}{2}k(k+1)}} \cdot 3^{k+1} &= 3^{\frac{1}{2}(k+1)(k+1+1)} \br
+3^{\frac{1}{2}k(k+1)}\cdot  3^{k+1} &= 3^{\frac{1}{2}(k+1)(k+2)} \\
+3^{\frac{1}{2}k(k+1)+k+1} &= \\
+3^{\frac{1}{2}k(k+1)+\frac{2}{2}(k+1)} &= \\
+3^{\frac{1}{2}(k+1)(k+2)} &= 3^{\frac{1}{2}(k+1)(k+2)}
+}
+Påstanden er dermed vist for alle $ n\in \mathbb{N} $.
+}
+
+
+\end{document}

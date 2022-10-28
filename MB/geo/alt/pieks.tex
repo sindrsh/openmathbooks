@@ -1,0 +1,152 @@
+\input{../doc}
+\input{../preamb}
+
+
+\begin{document}
+
+\textit{Vi skal her bruke \textit{regulære} mangekantar langs vegen til ønska resultat. I regulære mangekantar har alle sidene lik lengde. Da det er utelukkande regulære mangekantar vi kjem til å bruke, vil dei bli omtala berre som mangekantar.}\vsk
+
+Vi skal starte med  sjå på tilnærmingar for å finne omkretsen $ O_1 $ av ein sirkel med radius 1. 
+\fig{geo9l} \vsk
+
+\textbf{Øvre og nedre grense}\os
+Ein god vane når ein skal prøve å finne ein størrelse er å spørre seg om ein kan vite noko om kor stor eller liten ein \textsl{forventar} at han er. Vi startar derfor med å omslutte sirkelen med eit kvadrat med sidelengde 2:
+\fig{geo9c}
+Omkretsen til sirkelen må vere mindre enn omkretsen til kvadratet, derfor veit vi at
+\alg{
+O_1&<2\cdot4  \\
+&< 8
+}
+Vidare innkskriv vi ein regulær 6-kant. Sekskanten kan delast inn i 6 likesida trekantar som alle må ha sidelengde 1. Omkretsen til sirkelen må vere større enn summen av dei 6 sidelengdene til mangekanten, noko som gir at
+\alg{
+O_1&>6\cdot1 \\
+&> 6
+}
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[]{\asym{geo9}}}\qquad
+	\subfloat{\includegraphics[]{\asym{geo9d2}}}
+\end{figure}
+Når vi no skal gå over til ei mykje meir nøyaktig jakt etter omkretsen 
+veit vi altså at vi søker ein verdi mellom 6 og 8.\vsk
+
+\textbf{Stadig betre tilnærmingar}\os
+Vi fortsett med tanken om å innskrive ein mangekant. Av figurane under let vi oss overbevise om at dess fleire sider mangekanten har, dess betre estimat vil summen av sidelengdene vere for omkretsen av sirkelen.
+\begin{figure}
+	\centering
+	\subfloat[6-kant]{\includegraphics[]{\asym{geo9}}}\qquad\qquad
+	\subfloat[12-kant]{\includegraphics[]{\asym{geo9a}}}	
+\end{figure}
+Sidan vi veit at sidelengda til ein 6-kant er 1, er det fristande å undersøke om vi kan bruke denne kunna til å finne sidelengda til andre mangekantar. Om vi innskriv også ein 12-kant i sirkelen vår, og i tillegg teiknar nokre hjelpetrekantar, får vi ein figur som denne:
+\begin{figure}
+	\centering
+	\subfloat[6-kant og 12-kant i lag, inndelt i trekantar.]{\includegraphics[]{\asym{geo9g}}}\qquad\qquad
+	\subfloat[Utklipp av trekant fra figur a.]{\includegraphics[]{\asym{geo9h}}}	
+\end{figure}
+Lat oss kalle sidelengda til 12-kanten for $ s_{12} $ og sidelengda til 6-kanten for $ s_6 $. Vidare legg vi merke til at punkta $ A $ og $ C $ ligg på sirkelboga og at både $ \triangle ABC $ og $ \triangle BSC $ er rettvinkla trekantar (forklar for deg sjølv kvifor!). Av dette finn vi at
+\alg{
+SC &= 1 \\
+BC &= \frac{s_6}{2} \\
+SB &= \sqrt{SC^2-BC^2} \\
+BA &= 1-SB \\
+AC &= s_{12}\\
+s_{12}^2 &= BA^2+BC^2
+}
+For å finne $ s_{12} $ må vi finne $ BA $, og for å finne $ BA $ må vi finne $ SB $. Vi startar derfor med å finne $ SB $. Sidan ${ SC=1} $ og $ {BC=\frac{s_6}{2}} $, er
+\alg{
+SB &=\sqrt{1-\left( \frac{s_6}{2}\right)^2} \\
+&= \sqrt{1-\frac{s_6^2}{4}} \\
+}
+Vi går så vidare til å finne $ s_{12} $:
+\alg{
+s_{12}^2 &= \left(1-SB\right)^2 + \left(\frac{s_6}{2}\right)^2 \\
+&= 1^2 - 2SB + SB^2 + \frac{s_6^2}{4}
+}
+Ved første augekast ser det ut som vi ikkje kan komme særleg lengre i å forenkle uttrykket på høgre side, men ein liten operasjon vil endre på dette. Hadde vi berre hatt $ -1 $ som eit ledd kunne vi slått saman $ -1 $ og $ \frac{s_6^2}{4} $ til å bli $ -SB^2 $. Derfor ''skaffar'' vi oss $ -1 $ ved å både legge til og trekke ifrå 1 på høgresida. Slik får vi inn ledet vi ønskar, utan å endre verdien på uttrykket:
+\alg{
+s_{12}^2&= 1 - 2SB + SB^2 + \frac{s_6^2}{4}-1+1\\
+&= 2-2SB+SB^2-\left(1-\frac{s_6^2}{4}\right) \\
+&= 2-2SB+SB^2-SB^2\\
+&= 2-2SB\\
+&= 2-2\sqrt{1-\frac{s_6^2}{4}} \\
+&= 2-\sqrt{4}\,\sqrt{1-\frac{s_6^2}{4}} \\
+&= 2- \sqrt{4-s_6^2}
+}
+Altså er
+\[ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} \]
+Sjølv om vi her har utleda relasjonen mellom sidelengdene $ s_{12} $ og $ s_6 $, er dette ein relasjon vi kunne vist for alle par av sidelengder der den eine er sida til ein mangekant med dobbelt så mange sider som den andre. Om vi kallar sidelengda til mangekanten med minst sider for $ s_n $ og den med dobbelt så mange for $ s_{2n} $, kan vi derfor skrive
+\begin{align}
+	s_{2n} = \sqrt{2- \sqrt{4-s_n^2}} \label{s2n}
+\end{align}
+
+Når vi kjenner sidelengda til ein innskriven mangekant, vil tilnærminga til omkretsen av sirkelen vere denne sidelengda ganga med antal lengder i mangekanten. Vid hjelp av \eqref{s2n} kan vi stadig finne sidelengda til ein mangekant med dobbelt så mange sider som den forrige, i tabellen under har vi funne sidelengda og tilnærminga til omkretsen av sirkelen opp til ein 96-kant:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|l}
+		\textit{Formel for sidelengde}&\textit{Verdi sidelengde} & \textit{Tilnærming til omkrets} \\
+	\hline
+		 & $s_6= 1 $ & $ \;\,6\cdot s_6\;\,=6 $ \\
+		 $ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} $ & $ s_{12}=0.517... $ & 		 $ 12\cdot s_{12}=6.211... $ \\
+		 $ s_{24} = \sqrt{2- \sqrt{4-s_{12}^2}} $ & $ s_{24}=0.261... $ & 		 $ 24\cdot s_{24}=6.265... $ \\
+		 $ s_{48} = \sqrt{2- \sqrt{4-s_{24}^2}} $ & $ s_{48}=0.130... $ & 		 $ 48\cdot s_{48}=6.278... $ \\		 
+		 $ s_{96} = \sqrt{2- \sqrt{4-s_{48}^2}} $ & $ s_{96}=0.065... $ & 		 $ 96\cdot s_{96}=6.282... $ \\		 		 
+	\end{tabular}
+\end{center}
+\begin{figure}
+	\centering
+	\subfloat[6-kant]{\includegraphics[scale=0.75]{\asym{geo9}}}\quad
+	\subfloat[12-kant]{\includegraphics[scale=0.75]{\asym{geo9a}}}\quad	
+		\subfloat[24-kant]{\includegraphics[scale=0.75]{\asym{geo9i}}}\quad	\\
+	\subfloat[48-kant]{\includegraphics[scale=0.75]{\asym{geo9j}}}\quad	
+		\subfloat[96-kant]{\includegraphics[scale=0.75]{\asym{geo9k}}}		
+\end{figure}
+Utrekningane over er faktisk like langt som matematikaren \net{https://no.wikipedia.org/wiki/Arkimedes}{Arkimedes} kom allereie ca 250 f. kr!\vsk
+
+For ei datamaskin er det ingen problem å rekne ut\footnote{For den datainteresserte skal det seiast at iterasjonsalgoritma må skrivast om for å unngå instabilitetar i utrekningane når antall sider blir mange.} dette for en mangekant med ekstremt mange sider. Reknar vi oss fram til ein 201\,326\,592-kant  finn vi at
+\[ \text{Omkrets av sirkel med radius 1}=6.283185307179586... \]
+(Ved hjelp av meir avansert matematikk kan det visast at verdien av omkretsen av ein sirkel med radius 1 er eit irrasjonelt\footnote{Det er til og med eit \textit{transcendentalt} tal} tal, men at alle desimalane vist over er korrekte $ - $ derav erlik-teiknet.) \vsk
+
+\textbf{Den endelege formelen og $\boldmath \pi $} \os
+Vi skal i denne seksjonen komme fram til den kjende formelen for omkretsen til ein sirkel. Også her skal vi ta for gitt at summen av sidelengdene til ein innskriven mangekant er ei tilnærming til omkretsen som blir betre og betre dess fleire sidelengder det er.\vsk
+
+For enkelheits skuld skal vi bruke innskrivne firkantar for å få fram poenget vårt. Vi teiknar to sirklar som er vilkårleg store, men den eine større enn den andre, og innskriv ein firkant i begge.
+\fig{geo9e2}
+Så ser vi at begge firkantar kan delast inn i 4 likebeinte trekantar:
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[scale=1]{\asym{geo9e}}}\qquad
+	\subfloat{\includegraphics[scale=1]{\asym{geo9f}}}	
+\end{figure}
+Då trekantane er formlike, har vi at
+\begin{align}
+	 \frac{A}{R} &=\frac{a}{r} \label{arogar}
+\end{align}
+Tilnærminga av omkretsen blir ${\tilde{o}= 4a} $ for den minste sirkelen og ${\tilde{O}= 4A }$ for den største sirkelen. Ved å gonge med 4 på begge sider av \eqref{arogar}, får vi at
+\begin{align}
+	\frac{4A}{R} &= \frac{4a}{r} \br
+	\frac{\tilde{O}}{R} &= \frac{\tilde{o}}{r} \label{arogarto}
+\end{align}
+Og no merker vi oss dette:\vsk
+
+\textsl{Sjølv om vi i kvar av dei to sirklane innskriv ein mangekant med 4, 100 eller kor mange sider det skulle vere, vil mangekantane alltid kunne delast inn i trekantar som oppfyller \eqref{arogar}. Og på same måte som vi har gjort i eksempelet over kan vi omskrive \eqref{arogar} til \eqref{arogarto} i staden. Lat oss derfor tenke oss mangekantar med så mange sider at vi godtek summen av alle sidane som sjølve omkretsen til sirklane våre. Om vi då skriv omkretsen av den lille som $ o $ og av den store som $ O $, får vi at}
+\[ \frac{O}{R}=\frac{o}{r} \]
+Sidan dei to sirklane våre er heilt vilkårleg valgt, har vi no komme fram til at \textit{alle sirklar har det same forholdet mellom omkretsen og radiusen}. Ei enda meir brukt formulering er at \textit{alle sirklar har det same forholdet mellom omkretsen og diameteren ($ D $ og $ d $)}:
+\alg{
+\frac{O}{2R}=\frac{o}{2r} \br
+\frac{O}{D}=\frac{o}{d}
+}
+Forholdstalet mellom omkretsen og diameteren i ein sirkel blir kalla $ \pi $ (uttalast ''pi''):
+\[ \frac{O}{D}=\pi \]
+Ligninga over fører oss til formelen for omkretsen av ein sirkel:
+\alg{
+O&= \pi D\\
+&=2\pi r
+}
+Tidlegare fann vi at omkretsen til ein sirkel med radius 1 (og diameter 2) er $ 6.283185307179586... $\,. Dette betyr at
+\alg{
+\pi&= \frac{6.283185307179586...}{2} \br
+\pi &= 3.141592653589793...
+}
+\end{document}
+

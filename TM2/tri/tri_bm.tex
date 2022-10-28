@@ -1,0 +1,937 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\section{Vinkler og enhetssirkelen}
+\subsection{Vinkel og vinkelmål}\index{vinkel}
+\regdef[Enhetssirkel]{
+	En sirkel med radius 1 kalles en \outl{enhetssirkel} \index{enhetssirkelen}.
+	\fig{enhetsirk}
+} 
+\info{\note}{
+Så lenge ikke annet er nevnt, tar vi det for gitt at alle sirkler som blir vist i dette kapitlet er enhetssirkler. 
+} \regv
+
+\regdef[Absolutt vinkelmål]{
+Gitt en vinkel $ v $ mellom to linjestykker, og en enhetssirkel plassert med sentrum i toppunktet til vinkelen. \vsk
+
+Den minste buelengden vi må gå (mot klokka) langs enhetssirkelen for å komme fra det éne linjestykket\footnote{Eventuelt forlengelsen av dem.} til det andre, er et \outl{absolutt vinkelmål} av $ v $. \vs
+\fig{raddef}
+}
+\newpage
+\info{Radianer}{
+Benevningen til absolutt vinkelmål er den dimensjonsløse\footnote{Det er jo bare en \textsl{tenkt} lengde.} enheten \outl{radianer}.
+Når man skriver vinkler i radianer er det vanligst å oppgi vinkelmålet bare ved et tall, men noen ganger skriver man 'radianer' eller 'rad' bak for å tydeliggjøre at det er snakk om en vinkel.
+}
+\newpage
+Som vi har sett i \mb, vil buen til en halvsirkel kunne deles inn i $ 180^\circ $. Lengden til denne buen er $ \pi $ (forklar for deg selv hvorfor), som betyr at 
+\[ 180^\circ = \pi \]
+\figc{radgrad}{}
+\reg[Grader og absolutt vinkelmål (radianer)]{\vspace{-5 pt}
+	\begin{equation}\label{gradertilrad}
+		1^\circ\ = \frac{\pi}{180}
+	\end{equation}
+}
+\eks[]{
+Tabellen under viser ekvivalente lengder målt i grader (øverst) og målt i radianer (nederst).
+\begin{center}
+	\renewcommand{\arraystretch}{2}	
+	\begin{tabular}{c|c|c|c|c}
+		$ 0^\circ $ & $ 30^\circ $& $45^\circ$ & $ 60^\circ $ & $ 90^\circ$ \\
+		\hline
+		0&$\dfrac{\pi}{6}$ & $\dfrac{\pi}{4}$ &$\dfrac{\pi}{3}$ & $\dfrac{\pi}{2}$    \\	 
+	\end{tabular}
+\end{center}
+} 
+\subsection{Enhetssirkelen som tallinje}
+Tenk at noen ber deg tegne hele tallinjen. Dette virker som en umulig oppgave siden tallinjen består av intervallet $ [-\infty, \infty] $. 
+\figc{hortal}{Horisontal tallinje på intervallet $ [-5, 5] $}
+
+Men hva med dette?\regv
+
+Vi tegner en enhetssirkel og den horisontale radien til denne. På enden av radien setter vi verdien 0. Videre sier vi at buelengden vi går \textit{mot} klokka har positivt fortegn, mens buelengden vi går \textit{med} klokka har negativt fortegn. 
+\figc{enhtl}{}
+Vi kan da se på sirkelen som et hjul som har startet på en horisontal tallinje i $ -\infty $ og deretter ''tatt'' alle verdier til seg mens det har rullet mot høyere tall.\vsk
+\figc{rullsirk}{}
+\newpage
+Enhetssirkelen som tallinje er selveste grunnlaget for de \textit{trignometriske uttrykkene} vi skal se på i kommende seksjon. Det vil da være noen verdier på interallet $ (-\pi, \pi] $ som blir spesielt viktige, disse er derfor tegnet inn i figuren under:
+
+\figc{unitcirc}{Intervallet  $ (-\pi, \pi] $ avbildet på enhetssirkelen.\label{enh}}
+
+Ekstra verdt å legge merke til i \fref{enh} er symmetrien om horisontallinjen, og at sektoren mellom 0 og et tall på øvre halvdel har en vinkel som, målt i radianer, har samme verdi som tallet.
+\section{Trigonometriske uttrykk}
+\subsection[Sinus, cosinus og tangens til $ x $]{Sinus, cosinus og tangens til $ \bm x $}\index{sinus}\index{cosinus}
+\regdef[Sinus og cosinus]{
+	La enhetssirkelen være tegnet inn i et koordinatsystem med sentrum i origo, som vist i figuren under. 
+	\fig{sincos}
+	La videre $ x $ representere en buelengde vandret i positiv (mot klokka) eller negativ retning fra punktet $ (1, 0) $ til et punkt $ (a_0, b_0) $. Da er\vs
+	\begin{align}
+		\cos x &= a_0 \label{sindef}\\
+		\sin x &= b_0\label{cosdef}
+	\end{align}
+}
+\info{Merk}{
+Definisjonene over er bare utvidete versjoner av de vi så på i \tmen.
+}
+\newpage
+\info{Forenklet figur}{
+Da enhetssirkelen befinner seg i intervallet $ [-1, 1] $ både langs horisontalaksen og vertikalaksen, skal vi i kommende figurer kutte akselinjene rett av i disse endepunktene. Og istedenfor å tegne både et punkt og buen som tar oss dit, nøyer vi oss med å skrive $ x $ i enden av buen. Med disse og noen flere små forenklinger blir figuren fra definisjonen på forrige side seende slik ut:
+\fig{forenk}{}
+}
+\info{Kjerne}{
+Etterhvert vil vi også bruke begrepet \outl{kjerne}\index{kjerne} om tallet vi finner den trigonometriske verdien av. For eksempel er $ x $ kjernen til cosinusuttrykket $ \cos x $, mens $ kx+c $ er kjernen til sinusutrykket $ \sin (kx+c) $.
+}
+\newpage
+\textbf{Tangens}\bs\index{tangens}
+Med $ \cos x $ og $ \sin x $ definert, er det fort gjort å definere \textit{tangens} til et tall $ x $, som vi skriver som $ \tan x $:\regv
+\reg[Tangens]{\vs	\vspace{-5pt}
+	\begin{equation}\label{tandef}
+		\tan x = \frac{\sin x}{\cos x} 
+	\end{equation}\vs}
+
+\subsection{Arcuscosinus, arcusinus og arcustangens}\index{arcuscosinus}\index{arcussinus }\index{arcustangens }
+Ut ifra figuren knyttet til \eqref{cosdef} og \eqref{sindef} kan vi slutte at $ {\cos \pi = -1}$ (og at $ {\sin \pi =0} $).
+\begin{figure}
+	\centering
+	\subfloat[a)]{\includegraphics[]{\figp{acospi}}}\qquad
+	\subfloat[b)]{\includegraphics[]{\figp{acospib}}}	
+	\caption{a) $ \pi $ plassert på enhetssirkelen som tallinje. b) I koordinatsystemet samsvarer verdien $ \pi $ med punktet $ (-1, 0) $ }
+\end{figure}
+Altså er $ \pi $ et tall som har $ -1 $ som cosinusverdi. Dette kan også uttrykkes ved begrepet arcuscosinus, som gjerne forkortes til\footnote{Noen forfattere bruker $ \arccos x$ eller $ \cos^{-1} x$ istedenfor $ \acos x$.} acos. Da skriver vi $ {\acos \pi =-1}$.\vsk
+
+Si videre vi har ligningen
+\begin{equation}\label{acosderx}
+\acos d=x 
+\end{equation}
+hvor \y{d\in[-1, 1]}. Å bestemme verdien til $ x $ uten bruk av hjelpemidler er ofte vrient, men vi kan likevel si noe om \textsl{hvor} på enhetssirkelen $ x $ befinner seg:\vsk
+
+Et koordinatsystem plassert i sentrum av enhetssirkelen gir en inndeling i fire sektorer. Disse sektorene kalles første, andre, tredje og fjerde \textit{kvadrant} \index{kvadrant}.\vs
+\subimport{fig/}{kvad}
+Det er helt avjørende å forstå at vi i trigonometri snakker om tre forskjellige tallinjer, nemlig enhetssirkelen, horisontalaksen og vertikalaksen. Mens \fref{enh} viser tall plassert langs buen til enhetssirkelen, er $ -1 $ og 1 i \fref{kvadr} plassert på horisontal- og vertikalaksen. 1 og $ -1 $ representerer ekstremverdiene til cosinus (horisontalaksen) og sinus (vertikalaksen).\vsk
+
+Av dette observerer vi at hvis \y{d\in[0,1]}, må $ x $ ligge\footnote{Tall med cosinusverdi lik $ -1, 0 $ eller 1 ligger i grensesjiktet mellom to kvadranter.} på buen til første eller fjerde kvadrant. På samme vis må $ x $ ligge på buen til andre eller tredje kvadrant hvis \y{d\in[-1, 0]}. \vsk
+
+Vi innser også at det må finnes flere verdier av $ x $ som kan oppfylle \eqref{acosderx}. For eksempel må det finnes et tall i 4. kvadrant som har samme cosinusverdi som et tall i 1. kvadrant. 
+For denne typen ligninger er det likevel vanlig å bare oppgi én løsning, altså en $ x $ liggende enten i første eller andre kvadrant. I denne boka, og på de fleste kalkulatorer, svarer dette til $ {x\in [0, \pi] }$.\vsk
+
+Prinsippet bak arcussinus og arcustangens er akkurat det samme som for arcuscosinus, bare at vi for $ {x=\asin d}$ eller $ {x=\atan d }$ bruker en løsning som ligger i første eller fjerde kvadrant. Vanligst er å oppgi en $ x $ på intervallet $ {\Big[-\frac{\pi}{2}, \frac{\pi}{2}\Big]} $.
+\newpage
+\reg[Arcusuttrykkene]{
+	Uttrykket
+	\begin{equation}
+		\text{atri}\;x = d
+	\end{equation}
+	hvor tri erstattes med $ \sin, \cos $ eller $ \tan $, betyr at
+	\begin{equation}
+		\text{tri}\;d=x
+	\end{equation}
+}
+\eks[]{\vs
+	\algv{
+		\asin \left(\frac{1}{2}\right)&=\frac{\pi}{6}\vn
+		\sin\left(\frac{\pi}{6}\right)&= \frac{1}{2}	
+	}	\vs
+}
+\subsection{Eksaktverdier \label{eksaktverdier}}
+Et lite utvalg av sinus-, cosinus- og tangensverdier\footnote{$ \tan x $ er ikke definert for $ {x=\frac{\pi}{2}} $, men $ {\lim\limits_{x\to\frac{\pi}{2} }\tan x =\infty} $} bør vi kjenne til, nemlig følgende\footnote{I \refved{husksincos} finner du et enkelt triks som kan hjelpe deg å huske tabellen.}:
+
+{\centering		\renewcommand{\arraystretch}{1.5}	
+		\begin{tabular}{l|c|c|c|c|c}
+			& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+			\hline
+			$\sin x$ & 0 &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 \\
+			$\cos x$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 \\
+			$\tan x$ & 0 &$\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & $ \infty  $
+		\end{tabular}
+\captionof{table}{Eksaktverdier for sinus, cosinus og tangens av $ x $ \label{eksakt}}} \vspace{12pt}
+Viktig å merke seg er at vi ut ifra denne tabellen også vet om eksaktverdiene for sinus, cosinus og tangens til mange flere tall. Tar vi et blikk tilbake til \fref{enh}, kan vi for eksempel se at $ \frac{\pi}{4} $ og $ \frac{3\pi}{4} $ har samme sinusverdi\footnote{Strengt tatt kan vi ikke være helt sikre på dette ut ifra øyemål, men det blir forklart i \refsec{linlig} at det stemmer.} og at $ {\cos \left(\frac{3\pi}{4}\right)=-\cos \left(\frac{\pi}{4}\right) }$. Slik kan vi ut ifra \reftab{eksakt} bestemme de eksakte sinus-, cosinus- og tangensverdiene til alle tallene i \fref{enh}.
+\newpage
+\subsection{Trigonometriske identiteter}
+Mange trigonometriske uttrykk kan skrives på flere måter, disse omskrivingene kalles gjerne \textit{trigonometriske identiteter}\index{trigonometrisk!identitet}. Et lite utvalg er listet opp under\footnote{For trigonometriske potenser er det vanlig å skrive eksponenten bak selve ''navnet''. For eksempel betyr  $ \sin^2 x $ det samme som $ (\sin x)^2 $. \\ 
+\textsl{Obs!} Som nevnt blir $ \sin^{-1}x $ brukt istedenfor $ \asin x $ i noen lærebøker. Da er $ \sin^{-1}x\neq(\sin x)^{-1} $.}:\regv
+\reg[\trid \label{trid}]{ 
+For $ x, u, v\in \mathbb{R} $ har vi at
+	\begin{align} 
+		\cos (u+v) &=\cos u \cos v - \sin u \sin v \label{cuv} \\
+		\cos (u-v) &=\cos u \cos v + \sin u \sin v \label{cu-v} \\
+		\sin (u+v) &= \sin u \cos v +\cos u \sin v \label{suv} \\
+		\sin (u-v) &= \sin u \cos v - \cos u \sin v \\
+		\cos(-x) &= \cos x \label{-cosxcosx}\\
+		\sin(-x) &= -\sin x \\
+		\cos(x\pm\pi)&=-\cos x \\
+		\sin(x\pm\pi)&=-\sin x \\
+		\sin (2x) &= 2\cos x \sin x \label{sin2x}\\			
+		\cos^2 x + \sin^2 x &= 1 \label{1}\br
+		\cos\left(u-\frac{\pi}{2}\right)&=\sin u \label{cossomsi}\br
+		\sin\left(u+\frac{\pi}{2}\right)&=\cos u \label{sinsomcos}		
+	\end{align}
+}
+\eks[1]{
+	Bruk de trigonometrisk identitetene til å finne eksaktverdien til $ \cos \left(\frac{\pi}{3}\right) $ og $ \sin \left(\frac{\pi}{3}\right) $ når du vet at $ {\sin\left(\frac{\pi}{6}\right)=\frac{1}{2}} $ og $ {\cos \left(\frac{\pi}{6}\right)=\frac{\sqrt{3}}{2}} $.\\
+	
+	\sv
+	Vi har at
+	\alg{
+		\cos\left(\frac{\pi}{3}\right)&=\cos\left(\frac{\pi}{6}+\frac{\pi}{6}\right) \\[5 pt]
+		&= \cos \left(\frac{\pi}{6}\right)\cos\left(\frac{\pi}{6}\right) - \sin \left(\frac{\pi}{6}\right)\sin\left(\frac{\pi}{6}\right) \\[5 pt]
+		&= \frac{3}{4} -\frac{1}{4} \\[5 pt]
+		&= \frac{1}{2}
+	}
+	og videre at
+	\alg{
+		\sin\left(\frac{\pi}{3}\right)&=\sin\left(\frac{\pi}{6}+\frac{\pi}{6}\right) \br
+		&= \sin \left(\frac{\pi}{6}\right)\cos\left(\frac{\pi}{6}\right) + \cos \left(\frac{\pi}{6}\right)\sin\left(\frac{\pi}{6}\right) \br
+		&= 2\left(\frac{\sqrt{3}}{4}\right) \br
+		&= \frac{\sqrt{3}}{2}
+	}\vs
+}
+\eks[2]{\label{trigkombeks}Skriv om
+\[ 2\sin\left(5x+\frac{2\pi}{3}\right) \]
+til et uttrykk bestående av både et cosinus- og et sinus-ledd.\\
+
+\sv
+Vi vet at $ {\cos \left(\frac{2\pi}{3}\right)=-\frac{1}{2} }$ og at $ {\sin \left(\frac{2\pi}{3}\right)=-\frac{\sqrt{3}}{2} }$, derfor kan vi skrive:
+\alg{
+	2\sin\left(5x+\frac{2\pi}{3}\right) &= 
+	2\left(\sin (5x) \cos \left(\frac{2\pi}{3}\right)+\cos(5x)\sin\left(\frac{2\pi}{3}\right)\right) \\
+	&= 2\left(\sin (5x)\cdot\left(-\frac{1}{2}\right)+\cos(5x)\frac{\sqrt{3}}{2}\right)\\
+	&= \sqrt{3}\cos(5x)-\sin(5x) 
+	}\vs
+	}
+\newpage
+\subsection{Sinus og cosinus kombinert \label{trigkomb}}%på side \pageref{trigkombeks} 
+Av \textsl{Eksempel 2} på forrige side merker vi oss at når et sinus-uttrykk kan skrives om til et kombinert sinus- og cosinusuttrykk, må det også gå an å gå andre veien:\regv
+\reg[\sincoskomb \label{sincoskomb} ]{
+	Vi kan skrive
+	\begin{equation}\label{rsin}
+		a \cos (kx) +b \sin (kx)= r\sin(kx+c)
+	\end{equation}
+	der $ r=\sqrt{a^2+b^2} $ og hvor
+	\begin{align}
+		\cos c &= \frac{b}{r}\\[5 pt]
+		\sin c &= \frac{a}{r}
+	\end{align}
+	\vs}
+\eks{
+	Skriv om $ \sqrt{3} \sin(\pi x)-\cos(\pi x) $ til et sinusuttrykk. \\
+	
+	\sv
+	Vi starter med å finne $ r $:
+	\begin{align*}
+		r&=\sqrt{\sqrt{3}^{\,2}+(-1)^2}  \\
+		&= \sqrt{4} \\
+		&= 2
+	\end{align*}
+	Videre krever vi at
+	\algv{
+		\cos c &= \frac{\sqrt{3}}{2}\\[5 pt]
+		\sin c &= -\frac{1}{2}}
+	Tallet $ {c=-\frac{\pi}{6}} $ oppfyller disse kravene, derfor er
+	\[ \sqrt{3} \sin(\pi x)-\cos(\pi x) = 2 \sin\left(\pi x-\frac{\pi}{6}\right) \]	
+	
+	Se \refved{lostriglig} for tips til hvordan å finne $ c $ når tallet ikke ligger i første kvadrant.		
+}
+\newpage
+\fork{\ref{sincoskomb} \sincoskomb}{
+Gitt uttrykket
+\begin{equation}
+	a \cos (kx) + b \sin (kx) \label{sc}
+\end{equation}
+Vi vet at (se (\ref{suv}))
+\begin{equation}
+	r \sin(kx+c)= r\sin c\cos (kx) + r\cos c \sin (kx)  \label{s}
+\end{equation}
+Uttrykkene fra ligning (\ref{sc}) og (\ref{s}) er like hvis
+\begin{align}
+	a &= r\sin c \label{a} \\
+	b &= r\cos c \label{b}
+\end{align}
+Kvadrerer vi ligning (\ref{a}) og (\ref{b}), får vi at
+\begin{align}
+	a^2 &= r^2\sin^2 c \label{ab1}\\
+	b^2 &= r^2\cos^2 c \label{ab2}
+\end{align}
+Hvis vi nå legger sammen ligning (\ref{ab1}) og (\ref{ab2}), finner vi et uttrykk for $r$:
+\alg{
+	r^2\sin^2 c+r^2\cos^2 c &= a^2 +b^2 \\
+	r^2(\sin^2 c+\cos^2 c) &= a^2 +b^2 \\
+	r^2 &= a^2+b^2 \\
+	r &= \pm \sqrt{a^2+b^2} 	
+}
+Hvis vi velger den positive løsningen for $ r $, får vi at
+\alg{r &=\sqrt{a^2+b^2} \br
+	\cos c &= \frac{b}{r} \br
+	\sin c &= \frac{a}{r}
+}
+}
+\newpage
+\section{Lineære ligninger \label{linlig}}
+I forrige seksjon så vi på sinus-, cosinus- og tangensverdiene til tall på intervallet $ [-\pi, \pi) $. Vi skal nå gå over til å løse trigonometriske ligninger. Da er det viktig å ta hensyn til at løsningene liksågodt kan ligge utenfor dette intervallet, og at mange forskjellige tall kan oppfylle samme ligning. \vsk
+
+De første ligningene vi skal se på kalles \textit{lineære} trigonometriske ligninger. \index{trigonometrisk!ligning!lineær} Navnet kommer av at de trigonometriske uttrykkene som $ \sin x $, $ \cos x $ osv. bare forekommer i første potens\footnote{Tallet $ a^1 $ er $ a $ i første potens, mens $ a^2 $ er $ a $ i andre potens osv.}. \vsk
+
+\info{\note}{
+Selv om \rref{coslig}, \rref{sinlig}, \rref{tanlig} er nyttige å vite om, vil lineære trigonometriske ligninger ofte kunne løses på en mer direkte metode enn via formlene som disse reglene gir. Når du skal løse oppgaver til denne seksjonen vil det derfor være lurt å først studere \refved{lostriglig} godt.
+}
+\newpage
+\subsection{Cosinus-ligninger}
+La\footnote{Når $ {d\in\{-1, 1\}} $ får vi to spesialtilfeller av ligningen, men resonnementet for å finne løsningene er helt analogt til det som gis ved $ {d\in(-1, 1)} $.} $ {d\in(-1, 1)} $. Vi ønsker å finne alle løsninger av ligningen
+\[ \cos x=d \label{cosslig} \]
+Hvis $ {0\leq d <1}$, må vi ha en løsning $ {x=v_1} $ i første kvadrant (se \fref{kvadr} og \textsl{\ref{cosligfig}}). Men om vi fra 0 går en buelengde $ v_1 $ i negativ retning, har vi kommet like langt langs horisontalaksen, derfor må også $ {x=-v_1} $ være en løsning.\vsk
+
+Hvis vi derimot har at $ {-1< d<0} $, må vi ha en løsning $ {x=v_2} $ i andre kvadrant, og da må også ${ x=-v_2} $ være en løsning.
+\subimport{fig/}{coslig}
+Og hva nå om vi står i punktet til den ene av løsningene og derifra vandrer $ 2\pi $ buelengder i enten negativ eller positiv retning? Jo, da er vi tilbake til det eksakt samme punktet. Har vi én løsning kan vi altså finne en ny løsning ved å legge til et heltalls antall $ 2\pi $. Alle heltallene, nemlig følgen $ \{...,-2, -1, 0, 1, 2, ... \} $, skriver vi som $ \mathbb{Z} $.\vsk
+
+Til slutt tar vi med oss at siden cosinusverdier handler om horisontalkoordinaten til et punkt på enhetssirkelen, vil vi ikke få svar hvis $ {d\not \in [1,1]} $.\regv
+
+\reg[Cosinusligninger \label{coslig}]{
+	Gitt ligningen
+	\begin{equation}
+		\cos x=d \label{cosligorig} 
+	\end{equation}
+	For ${n\in \mathbb{Z}} $ har vi at
+	\begin{itemize}
+		\item Hvis ${d\in (-1, 1)}$, har \eqref{cosligorig} løsningene
+		\begin{equation}
+			x=\pm\acos d+ 2\pi n \label{cosligeq}
+		\end{equation}
+		\item Hvis $ {d=1}$, har \eqref{cosligorig} løsningene
+		\begin{equation}
+			x=2\pi n \label{coslig1}
+		\end{equation}
+		\item Hvis $ {d=-1}$, har \eqref{cosligorig}  løsningene
+		\begin{equation}
+			x=\pi+2\pi n \label{coslig_1}
+		\end{equation}
+	\end{itemize}\vs
+}
+\eks[1]{
+	Løs ligningen:
+	\[ 4\cos x = 2\sqrt{3} \] \vs
+	\sv 
+	Vi starter med å isolere cosinusuttrykket:
+	\alg{
+		4\cos x &= 2\sqrt{3} \\
+		\cos x &= \frac{\sqrt{3}}{2}
+	}
+	Siden $ \acos\left(\frac{\sqrt{3}}{2}\right)=\frac{\pi}{6} $, har vi at
+	\[ x =\pm \frac{\pi}{6}+2\pi n \]\vsb
+}
+\newpage
+\eks[2]{
+	Finn løsningene til ligningen
+	\[ 4\cos \left(\frac{\pi}{6} x-\frac{\pi}{3}\right) = 2\sqrt{3} \qquad,\qquad x\in [-9,4]\] \vs
+	\sv
+	Fra svaret i \textit{Eksempel 1} på forrige side vet vi at kjernen må oppfylle kravet
+	\[ \frac{\pi}{6} x-\frac{\pi}{3} = \pm \frac{\pi}{6}+2\pi n \]
+	Vi må altså enten ha at
+	\alg{
+		\frac{\pi}{6} x &= \frac{\pi}{6}+\frac{\pi}{3}+2\pi n \br
+		\frac{\pi}{6} &= \frac{\pi}{2}+2\pi n \br
+		x &= 3+12n
+	}
+	eller at\vspace{-8 pt}
+	\alg{
+		\frac{\pi}{6} x &= \frac{\pi}{3}-\frac{\pi}{6}+2\pi n \br
+		\frac{\pi}{6} x &= \frac{\pi}{6}+2\pi n \br
+		x &= 1+12n
+	}
+	På intervallet $ [-9, 4] $ vil ${ x\in \{-9, 1, 3\}}$ oppfylle dette kravet.
+}
+\newpage
+\subsection{Sinusligninger}
+Gitt ligningen 
+\begin{equation}
+\sin x = d \label{slig}
+\end{equation}
+Hvis $ {0\leq d <1}$, må vi ha en løsning $ {x=v_1} $ i første kvadrant (se \fref{sinligfig}). Men om vi starter i $ \pi $ og går en buelengde $ x_1 $ i negativ retning, har vi kommet akkurat like høyt langs vertikalaksen, og dermed må også ${x=\pi-v_1} $ være en løsning.\vsk
+
+Er derimot $ {-1< d <0}$, må en løsning $ x=v_2 $ ligge i fjerde kvadrant. Da er også $ x=\pi-v_2 $ en løsning.
+\subimport{fig/}{sinlig}
+Og vandrer vi $ \pm 2\pi $ finner vi stadig nye løsninger.\regv
+\reg[Sinusligninger \label{sinlig}]{
+	
+	Gitt ligningen 
+	\begin{equation}
+		\sin x=d\ \label{silig} 
+	\end{equation}
+	For ${n\in \mathbb{Z}} $ har vi at
+	\begin{itemize}
+		\item 	Hvis ${d\in (-1, 1)}$ har \eqref{silig} løsningene
+	\begin{equation}
+		x=\asin d+ 2\pi n\quad\vee\quad x=\pi-\asin d + 2\pi n \label{sinligeq}
+	\end{equation}		
+		\item 	Hvis $ {d=1}$ har (\ref{silig}) løsningene
+		\begin{equation}
+				x=\frac{\pi}{2}+2\pi n	\label{sinlig1}
+		\end{equation}
+		\item 	Hvis $ {d=-1}$ har (\ref{silig}) løsningene
+		\begin{equation}
+			x=-\frac{\pi}{2}+2\pi n	\label{sinlig_1}
+		\end{equation}
+	\end{itemize}
+}
+\newpage
+\eks{
+	Løs ligningen
+	\[ 2 \sin x = \sqrt{2} \]\vs
+	\sv
+	Vi kan skrive
+	\algv{
+		\sin x = \frac{\sqrt{2}}{2}
+	}
+	$ \asin\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4} $, da er $ x $ enten gitt som
+	\[ x = \frac{\pi}{4}+2\pi n \]
+	eller som
+	\algv{
+		x &= \pi-\frac{\pi}{4} + 2\pi n \\
+		&= \frac{3\pi}{4} + 2\pi n
+	}
+	\mers{Det kan være praktisk å bli fortrolig med sinus- og cosinusverdiene til tallene i \fref{enh}. Da vil man direkte se at $ \frac{\pi}{4} $ og $ \frac{3\pi}{4} $ er tall med samme sinusverdi, men at de ligger i hver sin kvadrant. Legges $ 2\pi n$ til hver av dem, har man funnet alle løsninger. Man unngår da å regne ut $ \pi $ minus et tall, som er tidsbesparende og minsker sjansen for regnefeil.}
+}
+\newpage
+\subsection{Tangensligninger}
+Gitt ligningen
+\[ \tan x = d \]
+I én av kvadrantene må det finnes en løsning ${ x=v }$. Hvis vi vandrer en buelengde $ \pi $ fra denne løsningen, kommer vi til et tall som har sinusverdi $ {-\sin v} $ og cosinusverdi $ {-\cos v} $.
+\subimport{fig/}{tanlig}
+Dette tallet har altså samme tangensverdi som $ v $, og må derfor også være en løsning. Og vandrer vi $ \pm \pi $ herfra får vi stadig nye løsninger. \regv
+
+\reg[Tangensligninger \label{tanlig}]{
+	Ligningen \begin{equation}
+		\tan x=d\  \label{tanligeq}
+	\end{equation}har løsningene		
+	\begin{equation}
+		x=\atan d + \pi n \label{tansols}
+	\end{equation}
+	hvor $ {d\in\mathbb{R}} $ og ${n\in \mathbb{Z}} $.}
+\newpage
+\eks{
+	Løs ligningen
+	\[ \sqrt{3}\tan (2x) = 1 \]\vs
+	\sv
+	Vi starter med å isolere tangensuttrykket:
+	\alg{
+		\sqrt{3}\tan (2x) &= 1 \\
+		\tan (2x) &= \frac{1}{\sqrt{3}}	
+	}
+	Siden $ \atan \left(\frac{1}{\sqrt{3}}\right) = \frac{\pi}{6} $, får vi at
+	\alg{
+		2x &= \frac{\pi}{6}+\pi n \br
+		x &= \frac{1}{2}\left(\frac{\pi}{6} + \pi n\right)	
+	}\vs
+}
+\subsection[$ a\sin (kx) + b\cos (kx) =0 $]{\boldmath $ a\sin (kx) + b\cos (kx) =0 $}
+Vi har hittil sett på ligninger med ett sinus-, cosinus- eller tangensuttrykk, men ofte kommer vi ut for ligninger som har kombinasjoner av disse. La oss prøve å løse ligningen
+\begin{equation}\label{trikomblig0}
+a\sin (kx) + b\cos (kx) =0  
+\end{equation}
+hvor $ a $, $ b $ og $ k $ er konstanter forskjellige fra 0. \vsk
+
+Det første vi observerer er at hvis $ \cos(kx)=0 $, er\footnote{Se \eqref{cosligeq}.} $ x=\frac{1}{k}\left(\pm\frac{\pi }{2}+2\pi n\right) $. I så tilfelle er $ \sin
+(kx)=\pm 1 $, og da får vi at
+\alg{
+a\sin (kx) + b\cos (kx) =\pm a+0 \neq 0
+	}
+Dette funnet gjør at vi trygt kan dele (\ref{trikomblig0}) med $ \cos (kx) $:
+\alg{
+ \frac{a\sin (kx) + b\cos (kx)}{\cos (kx)} &=\frac{0}{\cos (kx)}	\br
+ \frac{a\sin (kx)}{\cos kx} + b &= 0 \br
+ a\tan (kx) &= -b \br
+ \tan (kx) &= -\frac{b}{a}
+	}
+Vi har nå endt opp med en tangensligning med løsninger gitt ved \eqref{tansols}.
+	\reg[\boldmath $ a\sin (kx) + b\cos (kx) =0 $]{
+	Ligningen
+	\begin{equation}
+		a\sin (kx) + b\cos (kx) =0 \label{asinbcos00}
+	\end{equation}
+	løses ved å dele begge sider med $ \cos (kx) $ og deretter løse den resulterende tangensligningen.
+}
+\eks{
+Løs ligningen
+\[ \sqrt{3}\sin (\pi x) + \cos (\pi x) = 0 \] \vs
+\sv
+Vi starter med å dele på $ \cos(kx) $:
+\alg{
+\frac{\sqrt{3}\sin (\pi x) + \cos (\pi x)}{\cos (\pi x)} &= \frac{0}{\cos(\pi x)} \br
+\sqrt{3}\tan (\pi x) + 1 &= 0 \br
+\tan (\pi x) &= -\frac{1}{\sqrt{3}}
+	}
+Siden $ \atan\left(-\frac{1}{\sqrt{3}}\right)=-\frac{\pi}{6} $, er
+\alg{
+\pi x &= -\frac{\pi}{6}+\pi n	\br
+x &= n - \frac{1}{6}
+}\vsb
+	}
+\subsection[$ a\sin (kx) + b\cos (kx) =d $]{\boldmath $ a\sin (kx) + b\cos (kx) =d $}
+En noe mer avansert utgave av \eqref{asinbcos00} får vi hvis høyresiden er en konstant $ d $ istedenfor 0. Da utnytter vi \eqref{rsin} for å omskrive ligningen til en form vi kan løse:\regv
+\reg[\boldmath $ a\sin (kx) + b\cos (kx) = d$]{
+	Ligningen 
+	\begin{equation}
+		a\sin (kx) + b\cos (kx) = d 
+	\end{equation}
+	kan løses ved å omforme venstresiden til et reint sinusuttrykk, og deretter løse den resulterende sinusligningen.
+}
+\eks{
+	Løs ligningen
+	\[ \sin (3x) + \cos (3x) = \sqrt 2 \]\vs
+	\sv
+	Vi starter med å finne det kombinerte sinusuttrykket for venstresiden av ligningen:\\
+\parbox[t][][t]{0.32\linewidth}{\alg{
+		r &= \sqrt{1^2 + 1^2}	\\
+		&= \frac{\sqrt{2}}{2}\br
+		&= \sqrt{2}
+}}
+\parbox[t][][t]{0.32\linewidth}{
+	\alg{		
+		\cos c &= \frac{1}{\sqrt{2}}\br
+		&= \frac{1}{\sqrt{2}}\frac{\sqrt{2}}{\sqrt{2}}\br
+		&= \frac{\sqrt{2}}{2}	
+}
+}
+\parbox[t][][t]{0.32\linewidth}{\alg{\sin c &= \frac{1}{\sqrt{2}}}}	
+	$c= \frac{\pi}{4} $ oppfyller kravene over, dermed er
+	\alg{
+		\sqrt{2}\sin\left(3x+\frac{\pi}{4}\right)&=\sqrt{2} \br
+		\sin\left(3x+\frac{\pi}{4}\right)&=1
+	}
+	Altså har vi at
+	\alg{
+		3x + \frac{\pi}{4} &= \frac{\pi}{2} + 2\pi n\br
+		x &= \frac{\pi}{3}\left(\frac{1}{4}+2n\right)
+	}\vs
+}
+\section{Kvadratiske ligninger}
+Vi skal nå se på to typer ligninger der sinus-, cosinus- eller tangensuttrykk opptrer i andre potens. Uttrykk i andre potens kalles \textit{kvadrerte}\index{kvadrert} uttrykk, derav navnet \textit{kvadratiske ligninger}\index{trigonometrisk!ligning!kvadratisk}.
+
+\subsection{Løsning ved abc-formelen}
+La oss forsøke å løse ligningen
+\begin{equation}
+2\sin^2 x -3\sin x-2 \label{sin2}=0
+\end{equation}
+Vi observerer at (\ref{sin2}) er en andregradsligning for $ \sin x $ (erstatt $ \sin x $ med $ u $ hvis du syns det er vanskelig å se). Vi kan derfor bruke \textit{abc}-formelen til å løse ligningen med hensyn på $ \sin x $, og finner da at:
+\[ \sin x = \frac{1}{2} \quad\vee\quad \sin x = -2 \]
+Altså har vi to sinusligninger vi nå må finne løsningene til. Vi vet at $ \asin \frac{1}{2} = \frac{\pi}{6} $, dermed er (se \eqref{sinligeq}):
+\[ x = \frac{\pi}{6}+2\pi n \quad \vee \quad x = \pi-\frac{\pi}{6}+\frac{2\pi}{n}=\frac{5\pi}{6}+\frac{2\pi}{n}\]
+Derimot er det ingen \textit{reelle} tall som kan oppfylle ligningen \\ $ {\sin x=-2} $, vi anser derfor (\ref{sin2}) som ferdig løst.\regv
+\newpage
+\reg[Kvadratiske ligninger I]{
+	Når vi skal løse ligninger av typen 
+	\begin{equation}
+		a\,\text{tri}^2\,x+b\,\text{tri}\,x+c = 0 
+	\end{equation}
+	hvor $ a $, $ b $ og $ c $ er konstanter og tri erstattes med sin, cos eller tan, gjør vi følgende:
+	\begin{enumerate}
+		\item løser ligningen mhp. $\text{tri}\, x $
+		\item løser de nye ligningene mhp. $ x $
+	\end{enumerate}\vs
+}
+\eks[1]{
+	Løs ligingen
+	\[ \cos^2 x -3 \cos x - 4=0 \]\vs
+	\sv
+	Vi starter med å løse andregradsligningen mhp. $ \cos x $. Da $ 1(-4)=-4 $ og $ 1-4=-3 $, får vi at (se \refved{abc})
+	\[ \cos x = -1 \quad \vee \quad \cos x = 4 \]
+	Siden $ {\cos x=4} $ ikke har noen reell løsning, trenger vi bare å løse ligningen $ {\cos x=-1 }$. Vi får da at
+	\[ x = \pi + 2\pi n \]\vs
+}
+\eks[2]{
+Løs ligningen
+\[ 4\cos^2 (\pi x) -\sqrt{48}\cos (\pi x) +  3=0 \]\vs
+\sv 
+Av $ abc $-formelen er
+\alg{
+	\cos x &= \frac{-(-\sqrt{48})+\sqrt{\sqrt{48}^2-4\cdot4\cdot3}}{2\cdot4} \br
+	&= \frac{\sqrt{48}}{8} \br
+	&= \frac{\sqrt{16}\sqrt{3}}{2\cdot 4} \br
+	&= \frac{\sqrt{3}}{2}
+}
+Fordi $ \acos\left(\frac{\sqrt{3}}{2}\right)=\frac{\pi}{6} $,  har vi at
+\alg{
+\pi x &= \pm \frac{\pi}{6}+2\pi n \\
+&= \pm \frac{1}{6}+2 n
+}\vsb
+}
+	
+\subsection{Kvadrater av sinus og cosinus kombinert}
+Vi går videre til å studere ligningen
+\begin{equation}
+3 \cos^2 (2x) + 5\sin^2 (2x) = 4 \label{kvadd2}
+\end{equation}
+Fra (\ref{1}) vet vi at $ 1 = \cos^2 (2x)+\sin^2 (2x) $, derfor kan vi skrive:
+\alg{
+	4 &= 4\cdot1 \\
+	&= 4\left(\cos^2 (2x)+\sin^2 (2x)\right)
+}
+Kanskje litt overraskende forenkler dette ligningen vi ønsker å løse:
+\alg{
+	3 \cos^2 (2x) + 5\sin^2 (2x) &= 4\left(\cos^2 (2x)+\sin^2 (2x)\right) \\
+	-\cos^2 (2x) + \sin^2 (2x) &= 0}
+Videre deler\footnote{Vi observerer at \eqref{kvadd2} ikke har en løsning (sjekk selv!) når $ {\cos (2x)=0} $. Derfor er vi sikre på å unngå nulldivisjon.} vi ligningen med $ \cos^2 (2x) $:
+\alg{
+	\frac{-\cos^2 (2x) + \sin^2 (2x)}{\cos^2 (2x)}&= \frac{0}{\cos^2(2x)} \\
+	-1 + \tan^2 (2x) &= 0 \\
+	\tan^2 (2x) &= 1 \\
+	\tan(2x)&= \pm 1
+}
+Siden $ {\atan 1 = \frac{\pi}{4}} $ og $ {\atan (-1) = -\frac{\pi}{4}} $, har vi at
+\alg{
+	2x &= \pm\frac{\pi}{4} + \pi n \br
+	x &= \frac{1}{2}\left(\pm\frac{\pi}{4} + \pi n\right)
+}
+
+\reg[Kvadratiske ligninger II]{For å løse ligninger på formen
+	\begin{equation}
+		a \cos^2 (kx) + b \sin^2 (kx) = d 
+	\end{equation}
+	utnytter vi at $ {d=d(\cos^2 (kx) + \sin^2 (kx))} $. Vi dividerer så ligningen med $ \cos^2 (kx) $, og løser den resulterende tangensligningen.
+}
+\eks{
+Løs ligningen
+\[ -3\cos^2(5 x)+\sin^2(5 x)=-2 \] \vs
+\sv \vs
+\algv{
+-3\cos^2(5 x)+\sin^2(5 x)&=-2(\cos^2 (5 x) + \sin^2 (5 x)) \\
+-\cos^2(5 x)+3\sin^2(5 x)&= 0 \\
+- 1 + 3 \tan^2 (5 x) &= 0 \\
+\tan^2(5 x) &=\frac{1}{3} \br
+\tan(5 x) &=\pm \frac{1}{\sqrt{3}}
+}
+Siden $ \atan\left(\frac{1}{\sqrt{3}}\right)=\frac{\pi}{6} $ og $ {\atan\left(-\frac{1}{\sqrt{3}}\right)}=\frac{\pi}{6} $, har vi at
+\alg{
+5 x &= \pm \frac{\pi}{6}+\pi n\br
+x &= \pm \frac{1}{5}\left(\frac{\pi}{6}+\pi n\right)
+}\vsb
+}
+
+\section{Trigonometriske funksjoner \label{trifunksjoner}}
+\subsection{Cosinusfunksjoner}\index{cosinus!-funksjon}
+La oss studere funksjonen
+\[ 	f(x) = a\cos (kx+c) + d  \]
+hvor $ a $, $ k $, $ c $ og $ d $ er konstanter. Dette kaller vi en \textit{cosinusfunksjon}. I \fref{fcosfig} vises grafen til
+\[ f(x)= 2\cos\left(\frac{\pi}{2}x-\pi \right)+1  \]
+\subimport{fig/}{fcos} 
+Av figuren merker vi oss følgende:
+\begin{itemize}
+	\item horisontalavstanden mellom to naboliggende toppunkt er 4. Denne avstanden kalles \textit{perioden}\index{periode} (eventuelt \textit{bølgelengden}\index{bølgelengde}).	
+	\item topp- og bunnpunktene har den samme vertikalavstanden til linja $ {y=1} $, som kalles  \textit{likevektslinja}\index{likevektslinje} til grafen. Verdien til likevektslinja samsvarer med konstantleddet\index{konstantledd} til $ f $.
+	\item vertikalavstanden fra likevektslinja til et toppunkt er $ 2 $, denne avstanden kalles \textit{amplituden}\index{amplitude}. Verdien til amplituden samsvarer med faktoren foran cosinusuttrykket.
+\end{itemize}
+Om vi ikke visste uttrykket til $ f $, kunne vi altså ut ifra  \fref{fcosfig} og punktene over sett at\footnote{Som vi straks skal se, kunne $ a $ også vært $ -2 $. Men når vi skal finne et cosinusuttrykk, kan vi alltid finne et uttrykk med ${ a>0} $ som vil samsvare med grafen.} $ {a=2} $ og $ {d=1} $. Men hva med $ k $ og $ c $? \vsk
+
+La oss starte med det enkleste: Når vi kjenner perioden $ {P=4 }$, kan vi finne \textit{bølgetallet}\index{bølgetall} $ k $ ut ifra følgende relasjon:
+\alg{
+	k &= \frac{2\pi}{P} \br
+	&= \frac{2\pi}{4} \br
+	&= \frac{\pi}{2}	
+}
+For å bestemme $ c $ gjør vi denne observasjonen: En cosinusfunksjon med positiv $ a $ må ha et toppunkt der hvor $ {kx+c=0} $ (fordi $ \cos 0=1 $). Da $ f $ har et toppunkt der $ {x=2} $, må vi ha at
+\alg{
+	\frac{\pi}{2}\cdot 2 +c &= 0 \\
+	c &= -\pi
+}
+En endring i $ c $ vil forskyve cosinusfunksjonen horisontalt, $ c $ kalles derfor \textit{faseforskyvningen}\index{faseforskyvning} (eventuelt bare \textit{fasen}\index{fase}).\vsk
+
+La oss også kort studere grafen til
+\[ {g(x) = -2\cos\left(\frac{\pi}{2}x-\pi\right)+1} \]
+\subimport{fig/}{gcos}
+
+Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktoren $ -2 $ foran cosinusuttrykket. Vertikalavstanden fra likevektslinja til et toppunkt er likevel 2 også for $ g $, som derfor har 2 som amplitude. For en hvilken som helst cosinusfunksjon er altså $ |a| $ lik verdien til amplituden. Fordi $ a $ er negativ, har $ g $ et toppunkt når $ {kx+c=\pi} $ (siden $ \cos \pi=-1 $).\newpage
+\reg[\cosfunk \label{cosfunk}]{
+	En funksjon $ f(x) $ på formen
+	\begin{equation}\label{cosinusfunksjonen}
+	f(x)= a \cos (kx+c) + d 
+	\end{equation}
+	kalles en cosinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $.
+	\fig{fcos2}
+	For to naboliggende ekstremalpunkt $ x_1 $ og $ x_2 $, er
+	\begin{equation}\label{perioden}
+	P=x_2-x_1
+	\end{equation}
+	og
+	\begin{equation}\label{ker2pioverP}
+	k = \frac{2\pi}{P} 
+	\end{equation}
+	Videre kan $ c $ finnes ut ifra ligningen
+	\begin{equation}\label{c}
+	k x_1+ c = 0 
+	\end{equation}
+	Ekstremalpunktene til $ f $ er gitt ved ligningen
+	\begin{equation}\label{cosmax}
+	kx +c = 2\pi n \quad \vee\quad kx+c = \pi + 2\pi n
+	\end{equation}
+	hvor $ n\in \mathbb{Z} $.
+}
+\newpage
+\fork{\ref{cosfunk} \cosfunk}{
+Vi skal nå vise hvorfor vi for en cosinusfunksjon har relasjonen $ {k=\frac{2\pi}{P}} $. Det samme resonnementet kan brukes for en sinusfunksjon, og et veldig lignende et kan brukes for å vise at $ {k=\frac{\pi}{P}} $ for en tangensfunksjon.\vsk
+
+La oss tenke oss en cosinusfunksjon med $ {kx+c} $ som kjerne. Si videre at $ x_1 $ og $ x_2 $ er $ x $-verdien til to naboliggende toppunkt. 
+\fig{fcos3}{}
+Siden et nytt toppunkt kommer for hver gang vi legger til $ 2\pi $ i kjernen, vet vi at
+\algv{
+	kx_1+c + 2\pi &=kx_2+c \\
+	k(x_2-x_1) &= 2\pi \\
+	k &= \frac{2\pi}{x_2-x_1}
+}
+Da $ {x_2-x_1} $ er det vi kaller for perioden $ P $, har vi vist det vi skulle.
+}
+\newpage
+\eks[1]{
+Grafen til cosinusfunksjonen $ f $ er skissert i figuren under.
+\subimport{fig/}{cosopg}
+Finn et uttrykk for $ f $. \\
+
+\sv
+Vi observerer at verdiene til $ f $ varierer mellom 1 og 5. Dette betyr at likevektslinja er $ {y=\frac{1+5}{2}=3} $ og at amplituden er $ {\frac{5-1}{2}=2} $. Vi legger også merke til at horisontalavstanden mellom to toppunkt er $ {2\pi-(-2\pi)=4\pi} $, som altså er bølgelengden. Dermed er\vspace{-5pt}
+\[f(x)= a\cos(kx+c)+d \]
+hvor $ {a=2} $, $ {d=3} $ og $ {k=\frac{2\pi}{4\pi}=\frac{1}{2}} $. Fasen $ c $ finner vi ved å observere at $ f $ har et toppunkt for $ {x=2\pi }$. Cosinusverdien til $ f $ må være 1 i dette punktet, og da er
+\alg{
+	kx+c&=0\\
+\frac{1}{2}\cdot2\pi +c&= 0 \\
+c&=-\pi 
+}
+Uttrykket til $ f $ blir da\vspace{-5pt}
+\[f(x)= 2\cos\left(\frac{1}{2}x-\pi\right)+3 \] \vs
+}
+
+\newpage
+\subsection{Sinusfunksjoner}\index{sinus!-funksjon}
+Funksjoner på formen
+\[ f(x) = a\sin (kx+c)+d\]
+kalles \textit{sinusfunksjoner}. Amplituden, bølgetallet og likevektslinjen finner vi på akkurat samme måte som for cosinusfunksjoner.\vsk
+
+Fasen finner vi derimot ved å observere at en sinusfunksjon må ha en maksimalverdi der \begin{itemize}
+	\item  $ {kx+c=\frac{\pi}{2}} $ hvis $ a $ er positiv \big(fordi $ {\sin \frac{\pi}{2}=1} $\big).
+	\item $ {{kx+c = -\frac{\pi}{2}} }$ hvis $ a $ er negativ \big(fordi $ \sin \left(-\frac{\pi}{2}\right)=-1 $\big).
+\end{itemize}
+\reg[Sinusfunksjonen]{
+	En funksjon $ f(x) $ på formen
+	\begin{equation}\label{sinfunk}
+		f(x)= a \sin (kx+c) + d
+	\end{equation}
+	kalles en sinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $. \vsk
+	
+	$ c $ er gitt ved ligningen
+	\begin{equation}\label{sinc}
+		k x_1+ c = \frac{\pi}{2}
+	\end{equation}
+	hvor $ x_1 $ er et maksimalpunkt. \vsk
+	
+	Ekstremalpunktene til $ f $ er gitt ved ligningen
+	\begin{equation}\label{sinmax}
+		kx +c = \pm \frac{\pi}{2}+2\pi n
+	\end{equation}
+	hvor $ n\in \mathbb{Z} $.
+}
+\newpage
+\eks{
+	Gitt funksjonen 
+	\[  f(x)= 2 \cos (3x+\pi)+1 \]
+	\textbf{a)} Skriv om $ f $ til en sinusfunksjon. \os
+	\textbf{b)} Finn $ x$-verdiene til toppunktene til $ f $.\\
+	
+	\sv
+	\textbf{a)} Det eneste vi må sørge for er å gjøre om cosinusuttrykket til et sinusuttrykk. Av \eqref{cossomsi} vet vi at
+	\alg{
+		\cos(3x+\pi)&= \cos\left(3x+\pi+\frac{\pi}{2}-\frac{\pi}{2}\right)\\
+		&= \sin\left(3x+\pi+\frac{\pi}{2}\right)	\\
+		&= \sin\left(3x+\frac{3\pi}{2}\right)
+	}
+	Dermed er
+	\[ f(x) = 2\sin\left(3x+\frac{3\pi}{2}\right)+1\]
+	\textbf{b)} Fordi sinusuttrykket multipliseres med det positive tallet 2, må toppunktene være der hvor sinusuttrykket blir 1. Da er $ x $ gitt ved ligningen
+	\alg{
+		kx + c &= \frac{\pi}{2}+2\pi n
+	}	
+	Vi får derfor at
+	\alg{
+		3x + \frac{3\pi}{2} &= \frac{\pi}{2}+2\pi n \br
+		3x &= 2\pi n -\pi \br
+		x &= \frac{\pi}{3}(2n-1)
+	}\vs
+}
+
+\subsection{Tangensfunksjoner}\index{tangens!-funksjon}
+Vi avslutter seksjonen om trigonometrisk funksjoner med \textit{tangensfunksjoner}, nemlig funksjoner $ f $ på formen
+\[ f(x)= a\tan(kx+c)+d \]
+Når $ x $ går mot $ \frac{\pi}{2}$, går $ \sin x $ mot 1 og $ \cos x $ mot 0. Siden $ {\tan x = \frac{\sin x}{\cos x}} $, vil $ f $ da vil gå mot uendelig. Derfor er det ikke mulig å angi noen amplitude for tangensfunksjonen. Dette betyr også at funksjonen vil oppføre seg asymptotisk.\vs
+\figc{tanf}{Grafen til $ {f(x)=\tan(\pi x) }$ på intervallet $ {x\in [-2, 2]} $.\label{ftan}}
+Det spesielle med tangensfunksjoner er at den asymptotiske oppførselen gjentar seg med den samme avstanden, altså en periode $ P $ (i \fref{ftan} er $ {P=1} $). Til forskjell fra  sinus- og cosinusfunskjoner er perioden her gitt av formelen
+\[ P=\frac{\pi}{k} \]
+Med en litt annen tolkning enn tidligere kan man også se på ${ y=d} $ som en likevektslinje, men for tangensfunksjoner er det asymptotetene og perioden som er av størst interesse. \regv
+\reg[Tangensfunksjoner]{
+	Funksjonen
+	\begin{equation}\label{tanfunk}
+		f(x)=a \tan(kx + c)+d
+	\end{equation}
+	har vertikale asymptoter for alle $ x $ der
+	\begin{equation}\
+		kx+c = \pm \frac{\pi}{2}+\pi n
+	\end{equation}
+	for $ n\in \mathbb{Z} $.\vsk\\
+	
+	Perioden $ P $ er gitt ved relasjonen
+	\begin{equation}\
+		P = \frac{\pi}{k}
+	\end{equation}\vs
+}
+\newpage
+\subsection{\deravtri \label{deravtri}}
+\reg[\deravtri]{ \vsb
+\begin{align}
+	& (\cos x)' = -\sin (x) \label{dercosx} \vn
+	& (\sin x)' = \cos (x) \label{dersinx} \vn
+	& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x \label{dertanx}
+\end{align}
+}\vsk
+
+\fork{\ref{deravtri} \deravtri}{
+Vi skal her anvende følgende to ligninger (se \refved{sinxcosxlim}):
+\alg{&\lim\limits_{x\to0} \frac{\sin x}{x}=1 \tag{I} \label{Isinxx}\br
+	&\lim\limits_{x\to0} \frac{\cos x-1}{x}=0\tag{II} \label{Icosxx}	
+}
+\textbf{Likning (\ref{dercosx})}\\
+Av definisjonen av den deriverte (se \tmen) har vi at
+\[ (\cos x)'= \lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h} \]
+Ved (\ref{cu-v}) kan vi skrive
+\alg{
+	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos h-\sin x\sin h-\cos x}{h} \\
+	&=\lim\limits_{h\to 0}\frac{\left[\cos h-1\right]\cos x-\sin x\sin h}{h} \\
+	&= \lim\limits_{h\to 0}\frac{\cos h-1}{h}\cos x- \lim\limits_{h\to 0} \frac{\sin h}{h}\sin x \\
+	&= 0-1\cdot\sin x \\
+	&= -\sin x
+}
+Mellom tredje og fjerde linje i likningen over brukte vi (\ref{Isinxx}) og (\ref{Icosxx}). \vsk
+
+\textbf{Likning (\ref{dersinx})}\\
+Av \eqref{cossomsi}, (\ref{sinsomcos}) og (\ref{-cosxcosx}) har vi at
+\alg{
+	\sin x &= \cos\left(x-\frac{\pi}{2}\right) \br
+	\sin\left(\frac{\pi}{2}-x\right)&= \cos x
+}
+Bruker vi det faktum at $ {(\cos x)'=-\sin x} $, i kombinasjon med kjerneregelen, får vi at
+\algv{
+	(\sin x)' &= \left(\cos\left(x-\frac{\pi}{2}\right)\right)' \\
+	&= -\sin\left(x-\frac{\pi}{2}\right)\cdot 1 \\
+	&= \sin\left(\frac{\pi}{2}-x\right) \\
+	&= \cos x
+}
+
+\textbf{Likning (\ref{dertanx})}\\
+Av kjerneregelen og produktregelen ved derivasjon (se \tmen) har vi at
+\alg{
+	(\tan x)' &= \left(\frac{\sin x}{\cos x}\right)' \\
+	&= \cos x \cos^{-1}x +\sin x\left(\cos^{-1}\right)'\\
+	&= 1 +\sin x(-\cos^{-2}x)(-\sin x) \\
+	&= 1+\tan^2 x\\
+	&= \frac{\cos^2 x+\sin^2 x}{\cos^2 x}  \\
+	&= \frac{1}{\cos^2 x}
+}
+}
+\newpage
+\tsec{Forklaringer}
+\fork{\ref{trid} \trid}{{\boldmath $ \cos(-x)=\cos x$ \textbf{og} $ \sin(-x)=-\sin x $} \bs
+Disse to identitetene følger direkte av definisjonen av sinus og cosinus, og symmetrien om horisontal- og vertikalaksen.\vsk
+
+{\boldmath $ \cos^2 x + \sin^2 x = 1 $}\bs
+I enhetssirkelen er $ \pm \cos x $ og $\pm  \sin x $ katetene i en rettvinklet trekant der hypotenusen har lengde 1. Identiteten følger altså direkte av Pytagoras’ setning. \vsk
+
+{\boldmath$  \cos(u-v)= \cos u\cos v + \sin u\sin v $} \bs
+Gitt de todimensjonale vektorene $ \vec{b} $ og $ \vec{r} $, begge med lengde 1. Disse tegner vi inn i enhetssirkelen med utspring i sentrum. Den horisontale diameteren danner vinkelen $ u$ med $ \vec{b} $ og vinkelen $ v $ med $ \vec{r} $. 
+\figc{cosuv}{Vektorene $ \vec{b}$ (blå) og $ \vec{r} $ (rød). \label{cosuvfig}}
+Husk nå at en vinkel oppgitt i radianer representerer en buelengde langs enhetssirkelen (selv om vi i \fref{cosuvfig} har indikert vinklene innenfor omkretsen for å unngå overlapping). Av definisjonen til sinus og cosinus (se ligning (\ref{sindef}) og (\ref{cosdef}))) har vi at
+\alg{
+	\vec{b}=[\cos u, \sin u]	\\
+	\vec{r}= [\cos v, \sin v]
+	} 
+Vinkelen $ \angle(\vec{b}, \vec{r}) $ dannet av to vektorer i planet (se \tmen) er gitt som
+\[ \cos \angle(\vec b, \vec r) = \frac{\vec{b}\cdot \vec{r}}{|\vec{b}||\vec{r}|} \]
+Hvis\footnote{Vinkelen mellom vektorer er bare definert på intervallet $ [0, \pi] $.} $ (u-v)\in[0, \pi] $, er $ \angle(\vec b, \vec r)=u-v $, og dermed er
+\alg{
+	\cos \angle(\vec b, \vec r) &= \cos (u-v)\br
+	&=\frac{[\cos u, \sin u] \cdot [\cos v, \sin v] }{1\cdot1} \br
+	&= \cos u\cos v + \sin u\sin v
+	}
+Det er fristende å si at vi er i mål, men vi har ikke
+sjekket hva som skjer hvis $ {\pi<u-v\leq2\pi} $. Det er
+heldigvis ingen radikal endring, for-skjellen blir bare at 
+$ {u-v=2\pi- \angle(\vec b, \vec r)}$. Og siden ${\cos
+(2\pi-x)=\cos x} $ (forklar for deg selv hvorfor), har vi at
+\alg{
+	\cos(u-v)&=\cos\left(2\pi- \angle(\vec a, \vec b)\right) \\
+	&= \cos \angle(\vec b, \vec r) \\
+	&= \cos u\cos v + \sin u\sin v
+}
+Nå har vi altså vist at (\ref{cuv}) gjelder for alle $ u-v\in[0, 2\pi] $. Hvis $ u-v $ ligger utenfor dette intervallet, må det finnes et tall $ 2\pi n $, hvor $ n\in \mathbb{Z} $, som er slik at $ (u-v+2\pi n) \in [0, 2\pi]$. Da kan vi skrive
+\alg{
+\cos(u-v)&=\cos(u-v+2\pi n) \\
+&= 	\cos u\cos (v+2\pi n) + \sin u\sin (v+2\pi n) \\
+&= \cos u\cos v + \sin u\sin v
+	}
+Dermed er (\ref{cuv}) vist for alle $ (u-v) \in \mathbb{R}$. \vsk
+
+\bm{$\cos (u+v)=\cos u \cos v - \sin u \sin v$}
+\begin{align*}
+\cos (u-v)&= \cos (u-(-v)) \\
+&= \cos u \cos (-v) + \sin u \sin (-v) \\
+&= \cos u \cos v - \sin u \sin v 
+\end{align*} \\
+
+{\boldmath $ \cos\left(u-\frac{\pi}{2}\right)=\sin u $}
+\alg{
+	\cos\left(u-\frac{\pi}{2}\right)
+	&=\cos u \cos\left(\frac{\pi}{2}\right)+\sin u \sin\left(\frac{\pi}{2}\right)\\
+	&= \sin u
+	}
+
+{\boldmath $ \sin \left(u + \frac{\pi}{2}\right)=\cos u $} 
+\alg{
+	\sin \left(u+\frac{\pi}{2}\right) &= \cos\left(u+\frac{\pi}{2}-\frac{\pi}{2}\right)	\\
+	&= \cos u
+	}
+\bm{$\sin (u+v)=\cos u\sin v + \sin u \cos v$}\bs
+Vi tar først med oss at (det får bli opp til leseren selv å bekrefte dette):
+\[ \cos \left(u+\frac{\pi}{2}\right)=-\sin u \]
+Da kan vi videre skrive
+\begin{align*}\
+\cos \left(u+ v+\frac{\pi}{2}\right) &= \cos u \cos \left(v+\frac{\pi}{2}\right) - \sin u \sin\left(v+\frac{\pi}{2}\right) \\
+&= -(\cos u \sin v + \sin u \cos v )
+\end{align*} 
+\\
+Siden  $ \cos \left(u+ \left(v+\frac{\pi}{2}\right)\right) = -\sin (u+v) $, har vi nå at
+\[\sin (u+v) = \sin u \cos v +\cos u \sin v \]
+
+\bm{$\sin (u-v)=\sin u \cos v-\cos u \sin v$} \label{sin2xbevis}
+\begin{align*}
+\sin(u-v) =&=\sin (u+(-v)) \\
+&= \sin u \cos (-v) + \cos u \sin (-v) \\
+&= \sin u \cos v - \cos u \sin v 
+\end{align*}
+
+{\boldmath $ \sin (2u)=2\sin u \cos u $}
+\alg{
+	\sin(2x) &= \sin(x+x) \\&= \sin x\cos x+\sin x + \cos x \\
+	&= 2\sin x \cos x
+}
+
+{\boldmath $ \cos\left(x-\frac{\pi}{2}\right)=\sin x $}
+\alg{
+	\cos\left(x-\frac{\pi}{2}\right) &= \cos x\cos\left(\frac{\pi}{2}\right)+\sin x \sin\left(\frac{\pi}{2}\right) \\
+	&= \sin x
+}
+
+{\boldmath $ \sin\left(x+\frac{\pi}{2}\right)=\cos x $}
+\alg{
+	\sin\left(x+\frac{\pi}{2}\right) &= \sin x\cos\left(\frac{\pi}{2}\right)+\cos x \sin\left(\frac{\pi}{2}\right) \\
+	&= \cos x
+}
+}
+
+
+\end{document}
+
+

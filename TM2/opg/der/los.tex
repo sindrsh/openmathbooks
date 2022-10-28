@@ -1,0 +1,73 @@
+\input{../../doc_pdf}
+\input{../../preamb_pdf}
+\usepackage{xr}
+\externaldocument{../../bokR2_PDF}
+\begin{document}
+
+\opr{dmhpx}\\
+\textbf{c)} Vi setter $ {u=-2\cos x} $ og $ v=\sin x $, og finner at:
+\alg{
+u' &= 2\sin x \\
+v' &=-\cos x 
+}
+Av produktregelen får vi at:
+\alg{
+f'(x) &= u'v+uv' \\
+&= 2\sin x \sin x + (-2\cos x) \cos x \\
+&= 2(\sin x^2-\cos x^2)
+}
+\textbf{d)} Vi setter $ u = \tan x $ og $ g(u)=u^\frac{1}{2} $. Vi har da at:
+\alg{
+u'(x) &= \frac{1}{\cos^2 x} \\
+g'(u) &=\frac{1}{2u^\frac{1}{2}}
+}
+Av kjerneregelen får vi:
+\alg{
+f'(x) &= g'(u)u'(x) \br
+&= \frac{1}{2u^\frac{1}{2}}\frac{1}{\cos^2 x} \br
+&= \frac{1}{2\tan^\frac{1}{2}x\cos^2 x}
+}
+
+\opr{vislncosx} \\
+\textbf{a)} Vi setter $ u(x)=\cos x $ og $ g(u)=\ln u $. Vi får da:
+\alg{
+u'(x)&=-\sin x \\
+g'(u) &= \frac{1}{u}
+}
+Av kjerneregelen kan vi da skrive:
+\alg{
+f'(x) &= g'(u)u'(x) \\
+&= \frac{1}{u}(-\sin x )\\
+&= -\frac{\sin x}{\cos x} \\
+&= -\tan x
+}
+
+\textbf{b)} Vi kan skrive (se (\ref{sin2x})):
+\[ f(x)= -\sin(2x)\]
+Av kjerneregelen får vi da at:
+\[ f'(x)=-2\cos(2x) \]
+
+\opr{xexpx} \se{maxmine} \vsk
+
+\opr{vendepkt}\\
+\textbf{a)} Vi starter med å finne $ f''(x) $:
+\alg{
+f'(x) &= -a\sin(kx+c)\cdot k \\
+f''(x) &= -ak^2\cos(kx+c)
+}
+Skal $ f''(x)=0 $, må $ \cos(kx+c)=0 $ og da blir $ f=d $. Siden alle punkt der $ f''(x)=0 $ er infleksjonspunkt, må alle vendepunktene ligge på linje $ y=d $.
+
+\textbf{b)} Infleksjonspunktene er alle verdier av $ x $ der $ f''(x)=0 $. Fra opg. a) vet vi at detter er tilfelle når $ \cos(kx+c )=0 $, altså når:
+\alg{kx+c &= \pm\frac{\pi}{2}+2\pi n \\
+kx &= \pm\frac{\pi}{2}+2\pi n-c \\
+x &= \frac{1}{2k}(\pi+4\pi n + 2c)
+} 
+\opr{antideropg} \\
+\textbf{a)} Av kjerneregelen får vi at: \alg{
+F'(x)&= 2x e^{x^2} \\
+&= f(x)
+}
+Siden $ F'(x)=f(x) $ er $ F $ en antiderivert av $ f $.
+
+\textbf{b)} Se opg. a).
+\end{document}

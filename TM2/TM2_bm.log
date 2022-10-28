@@ -1,0 +1,5394 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.6.9)  28 OCT 2022 06:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TM2_bm.tex
+(./TM2_bm.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (../doc.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count167
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count168
+\c@sapage=\count169
+
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count170
+\c@chapter=\count171
+\c@section=\count172
+\c@subsection=\count173
+\c@subsubsection=\count174
+\c@paragraph=\count175
+\c@subparagraph=\count176
+\c@figure=\count177
+\c@table=\count178
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)) (../preamb.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count179
+\Gm@cntv=\count180
+\c@Gm@tempcnt=\count181
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2018/03/26 v1.3a Package to include TeX sub-files with prea
+mbles
+
+(/usr/share/texlive/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2015/04/23 v0.7c Provides the file path elements of the curre
+nt input file
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2020/02/03 v0.7 Hooks for input files
+)
+\c@currfiledepth=\count182
+)
+(/usr/share/texlive/texmf-dist/tex/latex/gincltex/gincltex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box45
+)
+\tc@llx=\dimen145
+\tc@lly=\dimen146
+\tc@urx=\dimen147
+\tc@ury=\dimen148
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen149
+\adjbox@Height=\dimen150
+\adjbox@Depth=\dimen151
+\adjbox@Totalheight=\dimen152
+\adjbox@pwidth=\dimen153
+\adjbox@pheight=\dimen154
+\adjbox@pdepth=\dimen155
+\adjbox@ptotalheight=\dimen156
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count183
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box46
+\sift@deathcycles=\count184
+\@vwid@loff=\dimen157
+\@vwid@roff=\dimen158
+))
+\gincltex@box=\box47
+)
+(/usr/share/texlive/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen159
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen160
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count185
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count186
+\leftroot@=\count187
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count188
+\DOTSCASE@=\count189
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count190
+\c@MaxMatrixCols=\count191
+\dotsspace@=\muskip16
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
+\tag@help=\toks18
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
+\andhelp@=\toks19
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks20
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count197
+\U@D=\dimen168
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count198
+)
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language65) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language65) on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed) + inter
+mediate FMi
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen169
+\ar@mcellbox=\box50
+\extrarowheight=\dimen170
+\NC@list=\toks22
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box51
+)
+\c@taburow=\count199
+\tabu@nbcols=\count266
+\tabu@cnt=\count267
+\tabu@Xcol=\count268
+\tabu@alloc=\count269
+\tabu@nested=\count270
+\tabu@target=\dimen171
+\tabu@spreadtarget=\dimen172
+\tabu@naturalX=\dimen173
+\tabucolX=\dimen174
+\tabu@Xsum=\dimen175
+\extrarowdepth=\dimen176
+\abovetabulinesep=\dimen177
+\belowtabulinesep=\dimen178
+\tabustrutrule=\dimen179
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box52
+\tabu@arstrutbox=\box53
+\tabu@hleads=\box54
+\tabu@vleads=\box55
+\tabu@cellskip=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box56
+\beforetitleunit=\skip55
+\aftertitleunit=\skip56
+\ttl@plus=\dimen180
+\ttl@minus=\dimen181
+\ttl@toksa=\toks25
+\titlewidth=\dimen182
+\titlewidthlast=\dimen183
+\titlewidthfirst=\dimen184
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip57
+\RaggedLeftLeftskip=\skip58
+\RaggedRightLeftskip=\skip59
+\CenteringRightskip=\skip60
+\RaggedLeftRightskip=\skip61
+\RaggedRightRightskip=\skip62
+\CenteringParfillskip=\skip63
+\RaggedLeftParfillskip=\skip64
+\RaggedRightParfillskip=\skip65
+\JustifyingParfillskip=\skip66
+\CenteringParindent=\skip67
+\RaggedLeftParindent=\skip68
+\RaggedRightParindent=\skip69
+\JustifyingParindent=\skip70
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count271
+\float@exts=\toks26
+\float@box=\box57
+\@float@everytoks=\toks27
+\@floatcapt=\box58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen185
+\captionmargin@=\dimen186
+\captionwidth=\dimen187
+\caption@tempdima=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count272
+\c@continuedfloat=\count273
+Package caption Info: float package is loaded.
+)
+\c@KVtest=\count274
+\sf@farskip=\skip71
+\sf@captopadj=\dimen192
+\sf@capskip=\skip72
+\sf@nearskip=\skip73
+\c@subfigure=\count275
+\c@subfigure@save=\count276
+\c@lofdepth=\count277
+\c@subtable=\count278
+\c@subtable@save=\count279
+\c@lotdepth=\count280
+\sf@top=\skip74
+\sf@bottom=\skip75
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip76
+\fb@frw=\dimen193
+\fb@frh=\dimen194
+\FrameRule=\dimen195
+\FrameSep=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen197
+\WF@size=\dimen198
+\c@WF@wrappedlines=\count281
+\WF@box=\box59
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip77
+\cftbeforetoctitleskip=\skip78
+\cftaftertoctitleskip=\skip79
+\cftbeforepartskip=\skip80
+\cftpartnumwidth=\skip81
+\cftpartindent=\skip82
+\cftbeforechapskip=\skip83
+\cftchapindent=\skip84
+\cftchapnumwidth=\skip85
+\cftbeforesecskip=\skip86
+\cftsecindent=\skip87
+\cftsecnumwidth=\skip88
+\cftbeforesubsecskip=\skip89
+\cftsubsecindent=\skip90
+\cftsubsecnumwidth=\skip91
+\cftbeforesubsubsecskip=\skip92
+\cftsubsubsecindent=\skip93
+\cftsubsubsecnumwidth=\skip94
+\cftbeforeparaskip=\skip95
+\cftparaindent=\skip96
+\cftparanumwidth=\skip97
+\cftbeforesubparaskip=\skip98
+\cftsubparaindent=\skip99
+\cftsubparanumwidth=\skip100
+\cftbeforeloftitleskip=\skip101
+\cftafterloftitleskip=\skip102
+\cftbeforefigskip=\skip103
+\cftfigindent=\skip104
+\cftfignumwidth=\skip105
+\cftbeforelottitleskip=\skip106
+\cftafterlottitleskip=\skip107
+\cftbeforetabskip=\skip108
+\cfttabindent=\skip109
+\cfttabnumwidth=\skip110
+\cftbeforesubfigskip=\skip111
+\cftsubfigindent=\skip112
+\cftsubfignumwidth=\skip113
+\cftbeforesubtabskip=\skip114
+\cftsubtabindent=\skip115
+\cftsubtabnumwidth=\skip116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip117
+)
+\rownum=\count282
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen199
+\pgfutil@tempdimb=\dimen256
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen257
+\pgf@y=\dimen258
+\pgf@xa=\dimen259
+\pgf@ya=\dimen260
+\pgf@xb=\dimen261
+\pgf@yb=\dimen262
+\pgf@xc=\dimen263
+\pgf@yc=\dimen264
+\pgf@xd=\dimen265
+\pgf@yd=\dimen266
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count287
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen267
+\pgfmath@count=\count290
+\pgfmath@box=\box61
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen268
+\pgf@picmaxx=\dimen269
+\pgf@picminy=\dimen270
+\pgf@picmaxy=\dimen271
+\pgf@pathminx=\dimen272
+\pgf@pathmaxx=\dimen273
+\pgf@pathminy=\dimen274
+\pgf@pathmaxy=\dimen275
+\pgf@xx=\dimen276
+\pgf@xy=\dimen277
+\pgf@yx=\dimen278
+\pgf@yy=\dimen279
+\pgf@zx=\dimen280
+\pgf@zy=\dimen281
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen282
+\pgf@path@lasty=\dimen283
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen284
+\pgf@shorten@start@additional=\dimen285
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count292
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen286
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen287
+\pgf@pt@y=\dimen288
+\pgf@pt@temp=\dimen289
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen290
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen291
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box65
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box66
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen292
+\pgf@nodesepend=\dimen293
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks40
+\verbatim@line=\toks41
+\verbatim@in@stream=\read4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count295
+)
+\tcb@titlebox=\box67
+\tcb@upperbox=\box68
+\tcb@lowerbox=\box69
+\tcb@phantombox=\box70
+\c@tcbbreakpart=\count296
+\c@tcblayer=\count297
+\tcolorbox@number=\count298
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.22'
+\c@tcbrastercolumn=\count299
+\c@tcbrasterrow=\count300
+\c@tcbraster=\count301
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen294
+\pgffor@skip=\dimen295
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count302
+\pgfplotmarksize=\dimen296
+)
+\tikz@lastx=\dimen297
+\tikz@lasty=\dimen298
+\tikz@lastxsaved=\dimen299
+\tikz@lastysaved=\dimen300
+\tikz@lastmovetox=\dimen301
+\tikz@lastmovetoy=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count303
+\tikznumberofchildren=\count304
+\tikznumberofcurrentchild=\count305
+\tikz@fig@count=\count306
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count307
+\pgfmatrixcurrentcolumn=\count308
+\pgf@matrix@numberofcolumns=\count309
+)
+\tikz@expandcount=\count310
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+\tcb@waterbox=\box79
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+\tcb@testbox=\box80
+\tcb@totalupperbox=\box81
+\tcb@totallowerbox=\box82
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
+\tcbfitdim=\dimen305
+\tcb@lowerfitdim=\dimen306
+\tcb@upperfitdim=\dimen307
+\tcb@cur@hbadness=\count311
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count312
+\l__pdf_internal_box=\box83
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count313
+\g__xparse_grabber_int=\count314
+\l__xparse_m_args_int=\count315
+\l__xparse_v_nesting_int=\count316
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count317
+\mult@box=\box84
+\multicol@leftmargin=\dimen308
+\c@unbalance=\count318
+\c@collectmore=\count319
+\doublecol@number=\count320
+\multicoltolerance=\count321
+\multicolpretolerance=\count322
+\full@width=\dimen309
+\page@free=\dimen310
+\premulticols=\dimen311
+\postmulticols=\dimen312
+\multicolsep=\skip118
+\multicolbaselineskip=\skip119
+\partial@page=\box85
+\last@line=\box86
+\maxbalancingoverflow=\dimen313
+\mult@rightbox=\box87
+\mult@grightbox=\box88
+\mult@gfirstbox=\box89
+\mult@firstbox=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\c@minrows=\count323
+\c@columnbadness=\count324
+\c@finalcolumnbadness=\count325
+\last@try=\dimen314
+\multicolovershoot=\dimen315
+\multicolundershoot=\dimen316
+\mult@nat@firstbox=\box128
+\colbreak@box=\box129
+\mc@col@check@num=\count326
+)
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count327
+\loi_nestcnt=\count328
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count329
+\calc@Bcount=\count330
+\calc@Adimen=\dimen317
+\calc@Bdimen=\dimen318
+\calc@Askip=\skip120
+\calc@Bskip=\skip121
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count331
+\calc@Cskip=\skip122
+)
+\c@@stackindex=\count332
+\@boxshift=\skip123
+\stack@tmplength=\skip124
+\temp@stkl=\skip125
+\@stackedboxwidth=\skip126
+\@addedbox=\box130
+\@anchorbox=\box131
+\stackedbox=\box132
+\@centerbox=\box133
+\c@ROWcellindex@=\count333
+)
+(/usr/share/texlive/texmf-dist/tex/latex/esvect/esvect.sty
+Package: esvect 
+\symesvector=\mathgroup10
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip127
+\multirow@cntb=\count334
+\multirow@dima=\skip128
+\bigstrutjot=\dimen319
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip129
+\LTright=\skip130
+\LTpre=\skip131
+\LTpost=\skip132
+\LTchunksize=\count335
+\LTcapwidth=\dimen320
+\LT@head=\box134
+\LT@firsthead=\box135
+\LT@foot=\box136
+\LT@lastfoot=\box137
+\LT@cols=\count336
+\LT@rows=\count337
+\c@LT@tables=\count338
+\c@LT@chunks=\count339
+\LT@p@ftn=\toks44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count340
+\l_MT_multwidth_dim=\dimen321
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen322
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen323
+\l_MT_above_intertext_sep=\dimen324
+\l_MT_below_intertext_sep=\dimen325
+\l_MT_above_shortintertext_sep=\dimen326
+\l_MT_below_shortintertext_sep=\dimen327
+)
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+))
+\TM2_bm@idxfile=\write6
+\openout6 = `TM2_bm.idx'.
+
+
+Writing index file TM2_bm.idx
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks45
+\footnotemargin=\dimen328
+\c@pp@next@reset=\count341
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count342
+)
+\c@pp@a@footnote=\count343
+
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks46
+\labelindent=\skip134
+\enit@outerparindent=\dimen329
+\enit@toks=\toks47
+\enit@inbox=\box138
+\enit@count@id=\count344
+\enitdp@description=\count345
+)
+\c@rg=\count346
+\c@opg=\count347
+\c@grub=\count348
+\c@vedl=\count349
+\c@vedleq=\count350
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count351
+\lst@gtempboxa=\box139
+\lst@token=\toks48
+\lst@length=\count352
+\lst@currlwidth=\dimen330
+\lst@column=\count353
+\lst@pos=\count354
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count355
+\lst@lineno=\count356
+\lst@maxwidth=\dimen333
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
+\lst@framebox=\box140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2019/11/11 v1.5.5 (NLCT) date and time formats
+
+(/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2019/11/30 v1.4 (NLCT) Track Languages
+
+(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english.ld
+f
+File: datetime2-english.ldf 2019/10/21 v1.05 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english-ba
+se.ldf
+File: datetime2-english-base.ldf 2019/10/21 v1.05 (NLCT)
+)))) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen334
+\Hy@linkcounter=\count359
+\Hy@pagecounter=\count360
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count361
+\pdfmajorversion=\count362
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count363
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen335
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count364
+\Field@Width=\dimen336
+\Fld@charsize=\dimen337
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count365
+\c@Item=\count366
+\c@Hfootnote=\count367
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count368
+\c@bookmark@seq@number=\count369
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip135
+)
+(./bm.tex) (./TM2_bm.aux)
+\openout1 = `TM2_bm.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
+.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+*geometry* detected driver: pdftex
+
+Package geometry Warning: The marginal notes overrun the paper.
+     Add 17.78496pt and more to the right margin.
+
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(65.44142pt, 341.43307pt, 51.21504pt)
+* v-part:(T,H,B)=(51.21504pt, 574.74559pt, 56.9055pt)
+* \paperwidth=458.08954pt
+* \paperheight=682.86613pt
+* \textwidth=341.43307pt
+* \textheight=574.74559pt
+* \oddsidemargin=-6.82857pt
+* \evensidemargin=-6.82857pt
+* \topmargin=-58.05495pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count370
+\scratchdimen=\dimen338
+\scratchbox=\box141
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen339
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks50
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 12.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count376
+\AtBeginShipoutBox=\box142
+Package hyperref Info: Link coloring OFF on input line 12.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count377
+)
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
+
+(./TM2_bm.out) (./TM2_bm.out)
+\@outlinefile=\write7
+\openout7 = `TM2_bm.out'.
+
+\GPT@outputbox=\box143
+<fig/frpg.pdf, id=336, 170.7178pt x 142.26149pt>
+File: fig/frpg.pdf Graphic file (type pdf)
+<use fig/frpg.pdf>
+Package pdftex.def Info: fig/frpg.pdf  used on input line 27.
+(pdftex.def)             Requested size: 307.2918pt x 256.07045pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fig/frpg.pdf>]pdfTeX war
+ning (ext4): destination with the same identifier (name{page.1}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \newpage
+             	 [1] (./kap0/framside.tex (../doc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[] \T1/lmr/m/it/10.95 ''Wahrlich es ist nicht das Wis-sen, son-dern das Ler-nen
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\T1/lmr/m/it/10.95 nicht das Be-sitzen, son-dern das Er-wer-ben, nicht das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\T1/lmr/m/it/10.95 Da-Seyn, son-dern das Hinkom-men, was den grössten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[] \T1/lmr/m/it/10.95 ''Det er ikke kunnskapen, men lærin-gen, ikke be-sit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\T1/lmr/m/it/10.95 telsen, men ervervelsen, ikke op-pholdet, men ankom-sten
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
+2.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+2.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+42.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+42.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 42.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+esint on input line 4
+2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 
+42.
+
+(/usr/share/texlive/texmf-dist/tex/latex/esvect/uesvect.fd
+File: uesvect.fd 
+)
+Overfull \hbox (0.78621pt too wide) in paragraph at lines 45--45
+[]\T1/lmr/m/n/10.95 Alt innhold er lagd av Sin-dre Sogge Heggen. Tek-sten er sk
+revet i L[]T[]X  
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+7.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 \newpage
+              \phantom{} %\thispagestyle{empty} [1] (./kap0//intro.tex
+(../doc.tex) [2]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (9.5553pt too wide) in paragraph at lines 11--12
+[]\T1/lmr/m/n/10.95 En sen-tral del i skole-matem-atikken er å ha en brei over-
+sikt over ligninger 
+ []
+
+
+Overfull \hbox (4.16483pt too wide) in paragraph at lines 11--12
+\T1/lmr/m/n/10.95 uheldige myten om at ''matem-atikk er et sett med re-gler som
+ må læres'' 
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[][][][]\T1/lmr/m/n/9 Å \T1/lmr/m/sl/9 fork-lare \T1/lmr/m/n/9 re-g-lene ist-e-
+den-for å \T1/lmr/m/sl/9 be-vise \T1/lmr/m/n/9 dem er et be-visst valg. Et be-v
+is stiller sterke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\T1/lmr/m/n/9 matem-a-tiske krav som ofte må de-fineres både på forhånd og un-d
+er-veis i en ut-led-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\T1/lmr/m/n/9 ning av en lign-ing, noe som kan føre til at forståelsen av hov-e
+d-po-enget drukner i
+ []
+
+
+Overfull \hbox (3.50876pt too wide) in paragraph at lines 13--14
+\T1/lmr/m/n/10.95 Som et et kom-pro-miss mel-lom grundighet og tid-spress er de
+r-for teoride- 
+ []
+
+[3
+
+]
+Overfull \hbox (4.38217pt too wide) in paragraph at lines 20--21
+\T1/lmr/m/n/10.95 Ek-samen-skan-di-daten står fritt til å velge selv hvilket di
+g-i-talt hjelpemid- 
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\T1/lmr/m/n/10.95 Denne boka er i ut-gangspunk-tet gratis å bruke, men jeg hå
+per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 du forstår hvor mye tid og ressurser jeg har brukt på å lage 
+den.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 Jeg ønsker å fort-sette ar-bei-det med å lage lære-bøker som 
+er med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 på å gjøre matem-atikk lett tilgjen-ge-leg for alle, men det 
+kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 bli vanske-lig med min-dre ar-bei-det gir en viss in-ntekt. H
+vis du
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 en-der opp med å like boka, håper jeg der-for du kan donere 5
+0kr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 via Vipps til 90559730 eller via [][]Pay-Pal[][]. Vær vennlig
+ å markere
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+\T1/lmr/m/n/10.95 donasjo-nen med ''Før kalku-lus'' ved bruk av Vipps. På for-h
+and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]\T1/lmr/m/n/10.95 Boka blir op-p-datert så snart som råd et-ter at skrive-fei
+l og lig-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\T1/lmr/m/n/10.95 nende blir op-pdaget. Jeg vil der-for råde alle til å laste n
+ed en ny
+ []
+
+) [5] [6] (./kap0//sym.tex (../doc.tex)
+Overfull \hbox (34.09123pt too wide) in paragraph at lines 6--22
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--22
+ 
+ []
+
+)) [7
+
+] (./TM2_bm.toc [8])
+\tf@toc=\write8
+\openout8 = `TM2_bm.toc'.
+
+ [9]
+Kapittel 1.
+(./fol/fol_bm.tex (./fol/../../doc.tex)
+Overfull \hbox (0.26949pt too wide) in paragraph at lines 10--12
+\T1/lmr/m/n/10.95 nr.2 har verdi 4 og så videre. Hvert el-e-ment i en rekke bes
+krives gjerne 
+ []
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]\T1/lmr/m/n/10.95 Et el-e-ment $\OML/lmm/m/it/10.95 a[]$ \T1/lmr/m/n/10.95 i 
+en []\T1/lmr/bx/n/10.95 ar-it-metisk følge[] \T1/lmr/m/n/10.95 er gitt ved den 
+rekur-sive
+ []
+
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]\T1/lmr/m/n/10.95 Følgen har kon-stant dif-fer-anse $[]$ og første el-e-ment 
+$[]$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]\T1/lmr/m/n/10.95 Et el-e-ment $\OML/lmm/m/it/10.95 a[]$ \T1/lmr/m/n/10.95 i 
+en []\T1/lmr/bx/n/10.95 ge-ometrisk følge[] \T1/lmr/m/n/10.95 med kvo-tient $\O
+ML/lmm/m/it/10.95 k$ \T1/lmr/m/n/10.95 er gitt ved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]\T1/lmr/m/n/10.95 Følgen har kon-stant kvo-tien $[]$, og første el-e-ment $[]
+$.
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]\T1/lmr/m/n/10.95 En ge-ometrisk følge har $[]$ og $[]$. For hvilken $\OML/lm
+m/m/it/10.95 i$ \T1/lmr/m/n/10.95 er
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/lmr/m/n/10.95 Hvis led-dene i en rekke kan beskrives som en ar-it-metisk 
+følge,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]\T1/lmr/m/n/10.95 Summen $\OML/lmm/m/it/10.95 S[]$ \T1/lmr/m/n/10.95 av de $\
+OML/lmm/m/it/10.95 n$ \T1/lmr/m/n/10.95 første led-dene i en ar-it-metisk rekke
+ er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+\T1/lmr/m/n/10.95 Dette er der-for en ar-it-metisk rekke, og sum-men av de $\OM
+L/lmm/m/it/10.95 n$ \T1/lmr/m/n/10.95 første
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[]\T1/lmr/m/n/10.95 Ved å bruke den ek-splisitte forme-len fra [], kan vi skriv
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
+\T1/lmr/m/n/10.95 Adderer vi [] og [], får vi $\OT1/lmr/m/n/10.95 2\OML/lmm/m/i
+t/10.95 S[]$ \T1/lmr/m/n/10.95 på ven-stre side. På høyre
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\T1/lmr/m/n/10.95 Hvis ledd i en rekke kan beskrives som en ge-ometrisk følge
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\T1/lmr/m/n/10.95 Summen $\OML/lmm/m/it/10.95 S[]$ \T1/lmr/m/n/10.95 av de $\
+OML/lmm/m/it/10.95 n$ \T1/lmr/m/n/10.95 første led-dene i en ge-ometrisk rekke 
+med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]\T1/lmr/m/n/10.95 Dette er en ge-ometrisk rekke med $[]$ og $[]$. Sum-men av
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]\T1/lmr/m/n/10.95 For en uen-delig ge-ometrisk rekke med kvo-tient $[]$ og fø
+rste
+ []
+
+
+Overfull \hbox (0.57083pt too wide) in paragraph at lines 225--234
+\T1/lmr/m/n/10.95 Summen av uen-delig mange el-e-ment går altså mot en en-delig
+ (konkret) 
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 259--259
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 Dette er en ge-ometrisk rekke med $[]
+$ og $[]$. Rekka er
+ []
+
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]\T1/lmr/m/n/10.95 Ved å skrive ut sum-men og om-rokkere på rekke-føl-gen av a
+d-dis-
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+[][][][]\T1/lmr/m/n/9 Ordene formel og lign-ing vil bli brukt litt om hveran-dr
+e. En formel er strengt tatt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+\T1/lmr/m/n/9 bare en lign-ing hvor vi kan finne den uk-jente stør-relsen di-re
+kte ved å sette inn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[][][][]\T1/lmr/m/n/9 Det kan se litt merke-lig ut å skrive $[]$, og anta at fo
+rme-len vår
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+\T1/lmr/m/n/9 gjelder for denne sum-men. Det virker jo da som at vi an-tar den 
+gjelder for $[]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]$ \T1/lmr/m/n/9 osv. Men dette er bare en litt kun-stig skrivemåte som blir b
+rukt for sum-men
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+\T1/lmr/m/n/9 fram til ledd nr.. $\OML/lmm/m/it/9 k$\T1/lmr/m/n/9 . For et-terp
+å sier vi at vi vet om et tall $\OML/lmm/m/it/9 k$ \T1/lmr/m/n/9 som denne an-t
+akelsen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]\T1/lmr/m/n/9 I påføl-gende ek-sem-pler skal vi for enkel-thets skyld la ledd
+ nr.. $\OML/lmm/m/it/9 k$ \T1/lmr/m/n/9 være innbakt i
+ []
+
+[22
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+[]\T1/lmr/m/n/10.95 Sjekker at [] er sann for $[]$, an-tatt at den er
+ []
+
+
+Overfull \hbox (5.80643pt too wide) in paragraph at lines 322--334
+\T1/lmr/m/n/10.95 sann for $[]$. I til-legg har vi vist at hvis lignin-gen gjel
+der for et heltall 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]\T1/lmr/m/n/10.95 Vis ved in-duk-sjon at sum-men av de $\OML/lmm/m/it/10.95 n
+$ \T1/lmr/m/n/10.95 første odd-e-tal-lene er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\T1/lmr/m/n/10.95 Vi tar det for gitt at på-s-tanden gjelder for $[]$, og sjekk
+er at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]\T1/lmr/m/sl/10.95 Merk: \T1/lmr/m/n/10.95 Hvis du har prob-le-mer med å fak-
+toris-ere ven-stres-i-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\T1/lmr/m/n/10.95 når du ut-fører in-duk-sjon, kan du som re-serveløs-ning skri
+ve ut
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\T1/lmr/m/n/10.95 høyres-i-den ist-e-den-for, men helst bør du la være. Dett er
+ litt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\T1/lmr/m/n/10.95 for el-e-gansens skyld (selv ikke matem-atikk kan fraskrive s
+eg en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\T1/lmr/m/n/10.95 porsjon for-fen-ge-lighet), men også fordi sjansen for reg-ne
+-feil blir
+ []
+
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 376--376
+\T1/lmr/m/n/10.95 Ligningen er altså sann for $[]$. Vi an-tar videre at den ogs
+å
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/lmr/m/n/10.95 Videre an-tar vi at påsanden stem-mer også for $[]$, og sjekk
+er
+ []
+
+) [26] (./opg/fol/opg.tex (./opg/fol/../../../doc.tex)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 9.
+<opg/fol/../../fig/sum.pdf, id=637, 199.3849pt x 66.63896pt>
+File: opg/fol/../../fig/sum.pdf Graphic file (type pdf)
+<use opg/fol/../../fig/sum.pdf>
+Package pdftex.def Info: opg/fol/../../fig/sum.pdf  used on input line 47.
+(pdftex.def)             Requested size: 199.3844pt x 66.63878pt.
+ [27
+
+ <./opg/fol/../../fig/sum.pdf>] [28] [29] [30]) [31]
+Kapittel 2.
+(./tri/tri_bm.tex (./tri/../../doc.tex)
+<tri/../fig/enhetsirk.pdf, id=698, 114.3171pt x 114.3171pt>
+File: tri/../fig/enhetsirk.pdf Graphic file (type pdf)
+<use tri/../fig/enhetsirk.pdf>
+Package pdftex.def Info: tri/../fig/enhetsirk.pdf  used on input line 11.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]\T1/lmr/m/n/10.95 Så lenge ikke an-net er nevnt, tar vi det for gitt at alle 
+sirkler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]\T1/lmr/m/n/10.95 Gitt en vinkel $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 me
+l-lom to linjestykker, og en en-hetssirkel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]\T1/lmr/m/n/10.95 Den min-ste bue-leng-den vi må gå (mot klokka) langs en-het
+ssirke-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\T1/lmr/m/n/10.95 len for å komme fra det éne linjestykket[][][] til det an-dre
+, er et
+ []
+
+<tri/../fig/raddef.pdf, id=700, 121.5742pt x 135.8676pt>
+File: tri/../fig/raddef.pdf Graphic file (type pdf)
+<use tri/../fig/raddef.pdf>
+Package pdftex.def Info: tri/../fig/raddef.pdf  used on input line 21.
+(pdftex.def)             Requested size: 121.5739pt x 135.86725pt.
+[32
+
+ <./tri/../fig/enhetsirk.pdf>] [33 <./tri/../fig/raddef.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]\T1/lmr/m/n/10.95 Benevningen til ab-so-lutt vinkelmål er den di-men-sjon-slø
+se[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\T1/lmr/m/n/10.95 en-heten []\T1/lmr/bx/n/10.95 ra-di-aner[]\T1/lmr/m/n/10.95 .
+ Når man skriver vin-kler i ra-di-aner er det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\T1/lmr/m/n/10.95 van-ligst å oppgi vinkelmålet bare ved et tall, men noen gang
+er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\T1/lmr/m/n/10.95 skriver man 'ra-di-aner' eller 'rad' bak for å ty-delig-gjøre
+ at det er
+ []
+
+[34]
+<tri/../fig/radgrad.pdf, id=729, 287.03235pt x 69.47958pt>
+File: tri/../fig/radgrad.pdf Graphic file (type pdf)
+<use tri/../fig/radgrad.pdf>
+Package pdftex.def Info: tri/../fig/radgrad.pdf  used on input line 30.
+(pdftex.def)             Requested size: 287.03165pt x 69.4794pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 30.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]\T1/lmr/m/n/10.95 Tabellen un-der viser ek-vi-va-lente lengder målt i grader 
+(øverst)
+ []
+
+<tri/../fig/hortal.pdf, id=730, 284.02109pt x 18.60953pt>
+File: tri/../fig/hortal.pdf Graphic file (type pdf)
+<use tri/../fig/hortal.pdf>
+Package pdftex.def Info: tri/../fig/hortal.pdf  used on input line 49.
+(pdftex.def)             Requested size: 284.02039pt x 18.60947pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 49.
+See the caption package documentation for explanation.
+
+<tri/../fig/enhtl.pdf, id=731, 128.97185pt x 114.3171pt>
+File: tri/../fig/enhtl.pdf Graphic file (type pdf)
+<use tri/../fig/enhtl.pdf>
+Package pdftex.def Info: tri/../fig/enhtl.pdf  used on input line 54.
+(pdftex.def)             Requested size: 128.97151pt x 114.3168pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 54.
+See the caption package documentation for explanation.
+
+[35 <./tri/../fig/radgrad.pdf> <./tri/../fig/hortal.pdf>]
+<tri/../fig/rullsirk.pdf, id=763, 265.59225pt x 128.66068pt>
+File: tri/../fig/rullsirk.pdf Graphic file (type pdf)
+<use tri/../fig/rullsirk.pdf>
+Package pdftex.def Info: tri/../fig/rullsirk.pdf  used on input line 56.
+(pdftex.def)             Requested size: 265.59158pt x 128.66035pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 56.
+See the caption package documentation for explanation.
+
+[36 <./tri/../fig/enhtl.pdf> <./tri/../fig/rullsirk.pdf>]
+<tri/../fig/unitcirc.pdf, id=780, 143.49611pt x 146.27649pt>
+File: tri/../fig/unitcirc.pdf Graphic file (type pdf)
+<use tri/../fig/unitcirc.pdf>
+Package pdftex.def Info: tri/../fig/unitcirc.pdf  used on input line 60.
+(pdftex.def)             Requested size: 143.49574pt x 146.27612pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 60.
+See the caption package documentation for explanation.
+
+[37 <./tri/../fig/unitcirc.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]\T1/lmr/m/n/10.95 La en-hetssirke-len være teg-net inn i et ko-or-di-nat-sys-
+tem med
+ []
+
+<tri/../fig/sincos.pdf, id=801, 142.19122pt x 144.00801pt>
+File: tri/../fig/sincos.pdf Graphic file (type pdf)
+<use tri/../fig/sincos.pdf>
+Package pdftex.def Info: tri/../fig/sincos.pdf  used on input line 73.
+(pdftex.def)             Requested size: 142.19087pt x 144.00766pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/10.95 La videre $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 rep-re-se
+n-tere en bue-lengde van-dret i pos-i-tiv (mot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/10.95 klokka) eller neg-a-tiv ret-ning fra punk-tet $\OT1/lmr/m/n/1
+0.95 (1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0)$ \T1/lmr/m/n/10.95 til et pu
+nkt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+[]\T1/lmr/m/n/10.95 Definisjonene over er bare utvidete ver-sjoner av de vi så 
+på i
+ []
+
+[38
+
+ <./tri/../fig/sincos.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]\T1/lmr/m/n/10.95 Da en-hetssirke-len befinner seg i in-ter-val-let $\OT1/lmr
+/m/n/10.95 [\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ; \O
+T1/lmr/m/n/10.95 1]$ \T1/lmr/m/n/10.95 både langs ho-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\T1/lmr/m/n/10.95 rison-ta-lak-sen og ver-tikalak-sen, skal vi i kom-mende fig-
+urer kutte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\T1/lmr/m/n/10.95 ak-selin-jene rett av i disse en-depunk-tene. Og ist-e-den-fo
+r å tegne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\T1/lmr/m/n/10.95 både et punkt og buen som tar oss dit, nøyer vi oss med å skr
+ive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 i en-den av buen. Med disse og noen fl
+ere små foren-klinger blir
+ []
+
+<tri/../fig/forenk.pdf, id=820, 132.3344pt x 114.3171pt>
+File: tri/../fig/forenk.pdf Graphic file (type pdf)
+<use tri/../fig/forenk.pdf>
+Package pdftex.def Info: tri/../fig/forenk.pdf  used on input line 81.
+(pdftex.def)             Requested size: 132.33406pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]\T1/lmr/m/n/10.95 Etterhvert vil vi også bruke be-grepet []\T1/lmr/bx/n/10.95
+ kjerne[][] \T1/lmr/m/n/10.95 om tal-let vi finner
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\T1/lmr/m/n/10.95 den trigonometriske ver-dien av. For ek-sem-pel er $\OML/lmm/
+m/it/10.95 x$ \T1/lmr/m/n/10.95 kjer-nen til
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 84--84
+\T1/lmr/m/n/10.95 cos-i-nusut-trykket $[] \OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.
+95 , mens $\OML/lmm/m/it/10.95 kx \OT1/lmr/m/n/10.95 + \OML/lmm/m/it/10.95 c$ \
+T1/lmr/m/n/10.95 er kjer-nen til si-nusutrykket
+ []
+
+[39 <./tri/../fig/forenk.pdf>]
+<tri/../fig/acospi.pdf, id=833, 135.32558pt x 114.3171pt>
+File: tri/../fig/acospi.pdf Graphic file (type pdf)
+<use tri/../fig/acospi.pdf>
+Package pdftex.def Info: tri/../fig/acospi.pdf  used on input line 97.
+(pdftex.def)             Requested size: 135.32524pt x 114.3168pt.
+<tri/../fig/acospib.pdf, id=834, 180.39395pt x 114.3171pt>
+File: tri/../fig/acospib.pdf Graphic file (type pdf)
+<use tri/../fig/acospib.pdf>
+Package pdftex.def Info: tri/../fig/acospib.pdf  used on input line 98.
+(pdftex.def)             Requested size: 180.3935pt x 114.3168pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 99.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]\T1/lmr/m/sl/9 Figur 2.6: |[]\T1/lmr/m/n/9 a) $\OML/lmm/m/it/9 ^^Y$ \T1/lmr/m
+/n/9 plassert på en-hetssirke-len som tallinje. b) I ko-or-di-nat-sys-temet
+ []
+
+(./tri/fig/kvad.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 22.
+See the caption package documentation for explanation.
+
+[40 <./tri/../fig/acospi.pdf> <./tri/../fig/acospib.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]\T1/lmr/m/sl/9 Figur 2.7: |[]\T1/lmr/m/n/9 Enhetssirkelen in-ndelt i kvad-ran
+-ter, med ek-stremver-di-ene til cos-i-nus og
+ []
+
+)
+Overfull \hbox (13.1958pt too wide) in paragraph at lines 111--112
+[]\T1/lmr/m/n/10.95 Det er helt avjørende å forstå at vi i trigonometri snakker
+ om tre forskjel- 
+ []
+
+[41]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 147.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[][][][]\T1/lmr/m/n/9 Strengt tatt kan vi ikke være helt sikre på dette ut ifra
+ øyemål, men det blir fork-
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[][][][]\T1/lmr/m/n/9 For trigonometriske potenser er det van-lig å skrive ek-s
+po-nen-ten bak selve
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]\T1/lmr/m/sl/9 Obs! \T1/lmr/m/n/9 Som nevnt blir $[][] \OML/lmm/m/it/9 x$ \T1
+/lmr/m/n/9 brukt ist-e-den-for $[] \OML/lmm/m/it/9 x$ \T1/lmr/m/n/9 i noen lære
+-bøker. Da er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]\T1/lmr/m/n/10.95 Bruk de trigonometrisk iden-titetene til å finne ek-sak-tve
+r-dien til
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[]\T1/lmr/m/n/10.95 Vi vet at $[]$ og at $[]$, der-for kan vi
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]\T1/lmr/m/n/10.95 Se [][]ved-legg B[][][] for tips til hvor-dan å finne $\OML
+/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 når tal-let ikke lig-ger i
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+\T1/lmr/m/n/10.95 Hvis vi nå leg-ger sam-men lign-ing ([]2.27[]) og ([]2.28[]),
+ finner vi et
+ []
+
+[46]
+Overfull \hbox (10.50258pt too wide) in paragraph at lines 272--273
+[]\T1/lmr/m/n/10.95 De første lignin-gene vi skal se på kalles \T1/lmr/m/it/10.
+95 lineære \T1/lmr/m/n/10.95 trigonometriske ligninger. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]\T1/lmr/m/n/10.95 Selv om [][]regel 2.9[][][], [][]regel 2.10[][][], [][]rege
+l 2.11[][][] er nyt-tige å vite om, vil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+\T1/lmr/m/n/10.95 lineære trigonometriske ligninger ofte kunne løses på en mer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+\T1/lmr/m/n/10.95 di-rekte metode enn via form-lene som disse re-g-lene gir. Nå
+r du
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+\T1/lmr/m/n/10.95 skal løse opp-gaver til denne sek-sjo-nen vil det der-for vær
+e lurt å
+ []
+
+[47
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+[][][][]\T1/lmr/m/n/9 Når $[]$ får vi to spe-sialtil-feller av lignin-gen, men 
+reson-nementet for å
+ []
+
+(./tri/fig/coslig.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 24.
+See the caption package documentation for explanation.
+
+)
+Overfull \hbox (4.98184pt too wide) in paragraph at lines 287--288
+[]\T1/lmr/m/n/10.95 Til slutt tar vi med oss at siden cos-i-nusverdier han-dler
+ om ho-risontalko- 
+ []
+
+
+Overfull \hbox (5.93208pt too wide) in paragraph at lines 287--288
+\T1/lmr/m/n/10.95 or-di-naten til et punkt på en-hetssirke-len, vil vi ikke få 
+svar hvis $[]$.  
+ []
+
+[48] [49]
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]\T1/lmr/m/n/10.95 Fra svaret i \T1/lmr/m/it/10.95 Ek-sem-pel 1 \T1/lmr/m/n/10
+.95 på for-rige side vet vi at kjer-nen må
+ []
+
+[50] (./tri/fig/sinlig.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 31.
+See the caption package documentation for explanation.
+
+) [51]
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\T1/lmr/m/sl/9 Merk\T1/lmr/m/n/9 : Det kan være prak-tisk å bli fortrolig med s
+inus- og cos-i-nusver-di-ene
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\T1/lmr/m/n/9 til tal-lene i []\T1/lmr/m/sl/9 figur 2.5[][]\T1/lmr/m/n/9 . Da v
+il man di-rekte se at $[]$ og $[]$ er tall med samme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\T1/lmr/m/n/9 si-nusverdi, men at de lig-ger i hver sin kvad-rant. Legges $\OT1
+/lmr/m/n/9 2\OML/lmm/m/it/9 ^^Yn$ \T1/lmr/m/n/9 til hver av dem,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\T1/lmr/m/n/9 har man fun-net alle løs-ninger. Man un-ngår da å regne ut $\OML/
+lmm/m/it/9 ^^Y$ \T1/lmr/m/n/9 mi-nus et tall,
+ []
+
+[52] (./tri/fig/tanlig.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 21.
+See the caption package documentation for explanation.
+
+) [53]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 426.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 426.
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
+\T1/lmr/m/n/10.95 løses ved å dele begge sider med $[]\OT1/lmr/m/n/10.95 (\OML/
+lmm/m/it/10.95 kx\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 og deretter løse den
+ []
+
+
+Overfull \hbox (7.01923pt too wide) in paragraph at lines 444--452
+\T1/lmr/m/n/10.95 Vi har nå endt opp med en tan-genslign-ing med løs-ninger git
+t ved [].  
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathop' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathgroup' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\symoperators' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 469.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 469.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+\T1/lmr/m/n/10.95 kan løses ved å om-forme ven-stres-i-den til et reint si-nusu
+t-trykk,
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[]\T1/lmr/m/n/10.95 Vi starter med å finne det kom-bin-erte si-nusut-trykket fo
+r ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
+[][] [] []
+ []
+
+[56] [57
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 hvor $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.95 , $\OML/lmm/m/i
+t/10.95 b$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 er ko
+n-stan-ter og tri er-stat-tes med sin, cos eller
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+[]\T1/lmr/m/n/10.95 Vi starter med å løse an-dregrad-slignin-gen mhp. $[] \OML/
+lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 . Da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+\T1/lmr/m/n/10.95 Siden $[]$ ikke har noen reell løs-ning, trenger vi bare å lø
+se
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[][][][]\T1/lmr/m/n/9 Vi ob-serverer at [] ikke har en løs-ning (sjekk selv!) n
+år $[]$. Der-for er
+ []
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 591--591
+\T1/lmr/m/n/10.95 utnytter vi at $[]$. Vi di-viderer så lignin-
+ []
+
+[60] [61] (./tri/fig/fcos.tex (./tri/../../doc.tex)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 21.
+See the caption package documentation for explanation.
+
+)
+Overfull \hbox (5.65092pt too wide) in paragraph at lines 619--620
+[]\T1/lmr/m/n/10.95 horisontalavstanden mel-lom to naboliggende top-punkt er 4.
+ Denne 
+ []
+
+
+Overfull \hbox (1.26538pt too wide) in paragraph at lines 620--621
+\T1/lmr/m/n/10.95 linja $[]$, som kalles \T1/lmr/m/it/10.95 likevek-t-slinja[] 
+\T1/lmr/m/n/10.95 til grafen. Ver-dien til likevek- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+[][][][]\T1/lmr/m/n/9 Som vi straks skal se, kunne $\OML/lmm/m/it/9 a$ \T1/lmr/
+m/n/9 også vært $\OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 2$\T1/lmr/m/n/9 . Men når vi
+ skal finne et cos-i-nusut-
+ []
+
+[62
+
+] (./tri/fig/gcos.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 23.
+See the caption package documentation for explanation.
+
+) [63]
+Underfull \hbox (badness 10000) in paragraph at lines 667--667
+\T1/lmr/m/n/10.95 kalles en cos-i-nus-funksjon med am-pli-tude $\OMS/lmsy/m/n/1
+0.95 j\OML/lmm/m/it/10.95 a\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 , bøl-ge-tal
+l $\OML/lmm/m/it/10.95 k$\T1/lmr/m/n/10.95 , fase $\OML/lmm/m/it/10.95 c$
+ []
+
+<tri/../fig/fcos2.pdf, id=1105, 227.62039pt x 113.81522pt>
+File: tri/../fig/fcos2.pdf Graphic file (type pdf)
+<use tri/../fig/fcos2.pdf>
+Package pdftex.def Info: tri/../fig/fcos2.pdf  used on input line 667.
+(pdftex.def)             Requested size: 227.61983pt x 113.81493pt.
+[64 <./tri/../fig/fcos2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+[]\T1/lmr/m/n/10.95 Vi skal nå vise hvor-for vi for en cos-i-nus-funksjon har r
+e-lasjo-nen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+[]$\T1/lmr/m/n/10.95 . Det samme reson-nementet kan brukes for en si-nus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+\T1/lmr/m/n/10.95 funksjon, og et veldig lig-nende et kan brukes for å vise at 
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+[]\T1/lmr/m/n/10.95 La oss tenke oss en cos-i-nus-funksjon med $[]$ som kjerne.
+ Si
+ []
+
+<tri/../fig/fcos3.pdf, id=1126, 227.62039pt x 113.81522pt>
+File: tri/../fig/fcos3.pdf Graphic file (type pdf)
+<use tri/../fig/fcos3.pdf>
+Package pdftex.def Info: tri/../fig/fcos3.pdf  used on input line 681.
+(pdftex.def)             Requested size: 227.61983pt x 113.81493pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+\T1/lmr/m/n/10.95 Siden et nytt top-punkt kom-mer for hver gang vi leg-ger til 
+$\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ^^Y$ \T1/lmr/m/n/10.95 i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
+\T1/lmr/m/n/10.95 Da $[]$ er det vi kaller for pe-ri-o-den $\OML/lmm/m/it/10.95
+ P$\T1/lmr/m/n/10.95 , har vi vist det vi
+ []
+
+[65 <./tri/../fig/fcos3.pdf>] (./tri/fig/cosopg.tex (./tri/../../doc.tex))
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+[]\T1/lmr/m/n/10.95 Vi ob-serverer at ver-di-ene til $\OML/lmm/m/it/10.95 f$ \T
+1/lmr/m/n/10.95 vari-erer mel-lom 1 og 5. Dette be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 tyr at likevek-t-slinja er $[]$ og at am-pli-tu-den er $[]$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 Vi leg-ger også merke til at ho-rison-ta-lav-s-tanden mel-lom
+ to top-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 punkt er $[]$, som altså er bøl-ge-leng-den. Dermed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 hvor $[]$, $[]$ og $[]$. Fasen $\OML/lmm/m/it/10.95 c$ \T1/lm
+r/m/n/10.95 finner vi ved å ob-ser-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
+\T1/lmr/m/n/10.95 vere at $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 har et top-
+punkt for $[]$. Cos-i-nusver-dien til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95
+ må
+ []
+
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 729--729
+\T1/lmr/m/n/10.95 kalles en si-nus-funksjon med am-pli-tude $\OMS/lmsy/m/n/10.9
+5 j\OML/lmm/m/it/10.95 a\OMS/lmsy/m/n/10.95 j$\T1/lmr/m/n/10.95 , bøl-ge-tall $
+\OML/lmm/m/it/10.95 k$\T1/lmr/m/n/10.95 , fase $\OML/lmm/m/it/10.95 c$ \T1/lmr/
+m/n/10.95 og
+ []
+
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 Det en-este vi må sørge for er å gjør
+e om cos-i-nusut-trykket til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+\T1/lmr/bx/n/10.95 b) \T1/lmr/m/n/10.95 Fordi si-nusut-trykket mul-ti-plis-eres
+ med det pos-i-tive tal-let 2,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--756
+\T1/lmr/m/n/10.95 må top-punk-tene være der hvor si-nusut-trykket blir 1. Da er
+ $\OML/lmm/m/it/10.95 x$
+ []
+
+[68]
+<tri/../fig/tanf.pdf, id=1156, 173.71902pt x 113.03229pt>
+File: tri/../fig/tanf.pdf Graphic file (type pdf)
+<use tri/../fig/tanf.pdf>
+Package pdftex.def Info: tri/../fig/tanf.pdf  used on input line 762.
+(pdftex.def)             Requested size: 173.71858pt x 113.032pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 762.
+See the caption package documentation for explanation.
+
+[69 <./tri/../fig/tanf.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]\T1/lmr/bx/n/12 2.19Den de-riverte av de trigonometriske
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+[][]\T1/lmr/bx/n/12 2.5.4[] Den de-riverte av de trigonometriske
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+\T1/lmr/m/n/10.95 Mellom tredje og fjerde linje i liknin-gen over brukte vi ([]
+I[]) og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+\T1/lmr/m/n/10.95 Bruker vi det fak-tum at $[]$, i kom-bi-nasjon med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--834
+[]\T1/lmr/m/n/10.95 Av kjernerege-len og pro-duk-trege-len ved derivasjon (se [
+][]TM1[][]) har
+ []
+
+[70] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+[]\T1/lmr/m/n/10.95 Disse to iden-titetene føl-ger di-rekte av defin-isjo-nen a
+v si-nus og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+[]\T1/lmr/m/n/10.95 I en-hetssirke-len er $\OMS/lmsy/m/n/10.95 ^^F [] \OML/lmm/
+m/it/10.95 x$ \T1/lmr/m/n/10.95 og $\OMS/lmsy/m/n/10.95 ^^F [] \OML/lmm/m/it/10
+.95 x$ \T1/lmr/m/n/10.95 katetene i en rettvin-klet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 trekant der hy-potenusen har lengde 1. Iden-titeten føl-ger a
+ltså
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+[]\T1/lmr/m/n/10.95 Gitt de todi-men-sjonale vek-torene $[]$ og $[]$, begge med
+ lengde 1.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 Disse teg-ner vi inn i en-hetssirke-len med ut-spring i sen-t
+rum. Den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 ho-rison-tale di-am-e-teren dan-ner vinke-len $\OML/lmm/m/it/
+10.95 u$ \T1/lmr/m/n/10.95 med $[]$ og vinke-len $\OML/lmm/m/it/10.95 v$
+ []
+
+<tri/../fig/cosuv.pdf, id=1209, 114.3171pt x 114.3171pt>
+File: tri/../fig/cosuv.pdf Graphic file (type pdf)
+<use tri/../fig/cosuv.pdf>
+Package pdftex.def Info: tri/../fig/cosuv.pdf  used on input line 932.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 932.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 Husk nå at en vinkel oppgitt i ra-di-aner rep-re-sen-terer en
+ bue-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 lengde langs en-hetssirke-len (selv om vi i []\T1/lmr/m/sl/10
+.95 figur 2.14[][] \T1/lmr/m/n/10.95 har in-dik-ert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 vin-k-lene in-nen-for omkret-sen for å un-ngå over-lap-ping).
+ Av defin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 isjo-nen til si-nus og cos-i-nus (se lign-ing ([]2.2[]) og ([
+]2.3[]))) har vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 Vinkelen $\U/msa/m/n/10.95 \\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/
+it/10.95 ; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 dan-net av to vek-torer i 
+planet (se [][]TM1[][]) er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 Det er fris-tende å si at vi er i mål, men vi har ikke sjekke
+t hva
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 som skjer hvis $[]$. Det er heldigvis in-gen radikal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+\T1/lmr/m/n/10.95 en-dring, for-skjellen blir bare at $[]$. Og siden
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 932--932
+\OML/lmm/m/it/10.95 u \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 v$ \T1/lmr/m/
+n/10.95 lig-ger uten-for dette in-ter-val-let, må det finnes et tall $\OT1/lmr/
+m/n/10.95 2\OML/lmm/m/it/10.95 ^^Yn$\T1/lmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 932--932
+[]\T1/lmr/m/n/10.95 Vi tar først med oss at (det får bli opp til leseren selv å
+ bekrefte
+ []
+
+[72
+
+ <./tri/../fig/cosuv.pdf>] [73]) [74] (./opg/tri/opg.tex
+(./opg/tri/../../../doc.tex)
+<opg/tri/../../fig/rad.pdf, id=1241, 120.19907pt x 114.3171pt>
+File: opg/tri/../../fig/rad.pdf Graphic file (type pdf)
+<use opg/tri/../../fig/rad.pdf>
+Package pdftex.def Info: opg/tri/../../fig/rad.pdf  used on input line 14.
+(pdftex.def)             Requested size: 120.19876pt x 114.3168pt.
+ [75
+
+ <./opg/tri/../../fig/rad.pdf>] [76] [77]
+[78] [79] (./opg/tri/../../tri/fig/cosopg2.tex
+(./opg/tri/../../tri/fig/../../../doc.tex)) [80]) [81] (./tri/cmt.tex
+(../doc.tex)
+Overfull \hbox (7.37178pt too wide) in paragraph at lines 18--19
+[]\T1/lmr/m/n/10.95 Når det for ek-sem-pel skrives $[] \OT1/lmr/m/n/10.95 45[]$
+\T1/lmr/m/n/10.95 , menes det altså strengt tatt $[][] \OT1/lmr/m/n/10.95 45$\T
+1/lmr/m/n/10.95 . 
+ []
+
+) [82
+
+]
+Kapittel 3.
+(./vek/vek_bm.tex (./vek/../../doc.tex)
+<vek/../fig/vekt1.pdf, id=1315, 148.17357pt x 152.8912pt>
+File: vek/../fig/vekt1.pdf Graphic file (type pdf)
+<use vek/../fig/vekt1.pdf>
+Package pdftex.def Info: vek/../fig/vekt1.pdf  used on input line 9.
+(pdftex.def)             Requested size: 148.1732pt x 152.89082pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 9.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]\T1/lmr/m/n/10.95 En vek-tor $[]$ med start-punkt $[]$ og en-depunkt
+ []
+
+[83
+
+ <./vek/../fig/vekt1.pdf>] [84]
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\T1/lmr/m/n/10.95 Seksjon []3.2[]-[]3.4[] han-dler om visse egen-skaper og re
+g-nere-gler for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/lmr/m/n/10.95 tred-i-men-sjonale vek-torer. Det er mange likheter ved todi-
+men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/lmr/m/n/10.95 sjonale og tred-i-men-sjonale vek-torer, så i til-feller hvor
+ en regel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/lmr/m/n/10.95 man-gler fork-lar-ing, er det fordi fork-larin-gen for det to
+di-men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/lmr/m/n/10.95 sjonale til-fel-let (som du finner i [][]TM1[][]) enkelt kan 
+gen-er-alis-eres
+ []
+
+[85]
+<vek/../fig/vekt3.pdf, id=1533, 157.32777pt x 152.8912pt>
+File: vek/../fig/vekt3.pdf Graphic file (type pdf)
+<use vek/../fig/vekt3.pdf>
+Package pdftex.def Info: vek/../fig/vekt3.pdf  used on input line 32.
+(pdftex.def)             Requested size: 157.32738pt x 152.89082pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 32.
+See the caption package documentation for explanation.
+
+[86
+
+ <./vek/../fig/vekt3.pdf>] [87]
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]\T1/lmr/m/n/10.95 Gitt vek-torene $[]$ og $[]$, punk-tet
+ []
+
+<vek/../fig/uplusv.pdf, id=1745, 74.85968pt x 69.50969pt>
+File: vek/../fig/uplusv.pdf Graphic file (type pdf)
+<use vek/../fig/uplusv.pdf>
+Package pdftex.def Info: vek/../fig/uplusv.pdf  used on input line 79.
+(pdftex.def)             Requested size: 74.85948pt x 69.5095pt.
+<vek/../fig/uminusv.pdf, id=1746, 91.55203pt x 47.58778pt>
+File: vek/../fig/uminusv.pdf Graphic file (type pdf)
+<use vek/../fig/uminusv.pdf>
+Package pdftex.def Info: vek/../fig/uminusv.pdf  used on input line 79.
+(pdftex.def)             Requested size: 91.55179pt x 47.58765pt.
+[88
+
+ <./vek/../fig/uplusv.pdf> <./vek/../fig/uminusv.pdf>]
+<vek/../fig/par2.pdf, id=1777, 137.9253pt x 116.81642pt>
+File: vek/../fig/par2.pdf Graphic file (type pdf)
+<use vek/../fig/par2.pdf>
+Package pdftex.def Info: vek/../fig/par2.pdf  used on input line 120.
+(pdftex.def)             Requested size: 137.92494pt x 116.81612pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+\T1/lmr/m/n/10.95 Vis at mid-punk-tet $\OML/lmm/m/it/10.95 M$ \T1/lmr/m/n/10.95
+ til di-ag-o-nalen $\OML/lmm/m/it/10.95 AG$ \T1/lmr/m/n/10.95 også er midt-punk
+-tet til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/lmr/m/n/10.95 Skalarproduktet av to vek-torer $[]$ og $[]$
+ []
+
+[89 <./vek/../fig/par2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]\T1/lmr/m/n/10.95 En vek-tor $[]$ har lengde 3 og en vek-tor $[]$ har lengde 
+2. De ut-
+ []
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]\T1/lmr/m/n/10.95 Finn vinke-len $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 ut
+-spent av vek-torene $[]$ og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]\T1/lmr/m/n/10.95 Vi starter med å finne leng-dene og skalarpro-duk-tene av v
+ek-
+ []
+
+[91] [92]
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[]\T1/lmr/m/n/10.95 To vek-torer $[]$ og $[]$ står vinkel-rett på hveran-dre hv
+is skalarpro-
+ []
+
+[93
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\T1/lmr/m/n/10.95 Gitt vek-torene $[]$ og $[]$, finn \T1/lmr/m/it/10.95 t \T1
+/lmr/m/n/10.95 slik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\T1/lmr/m/n/10.95 Vi starter med å kreve at forholdet mel-lom ko-r-re-spon-de
+rende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/lmr/m/n/10.95 kom-po-nen-ter er likt. Vi di-viderer $\OML/lmm/m/it/10.95 x$
+\T1/lmr/m/n/10.95 - og $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 -komponenten i 
+$[]$ med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/lmr/m/n/10.95 Siden forholdet mel-lom de to $\OML/lmm/m/it/10.95 x$\T1/lmr/
+m/n/10.95 -komponentene og de to $\OML/lmm/m/it/10.95 y$\T1/lmr/m/n/10.95 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/lmr/m/n/10.95 koordinatene er 3, må dette også stemme for $\OML/lmm/m/it/10
+.95 z$\T1/lmr/m/n/10.95 -koordinatene
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]\T1/lmr/m/n/10.95 Vi ob-serverer at forholdet mel-lom $\OML/lmm/m/it/10.95 x$
+\T1/lmr/m/n/10.95 -komponeten i $[]$ og $[]$ er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]$\T1/lmr/m/n/10.95 . Hvis $[]$, er altså $[]$. Vi kan der-for sette opp
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 288--288
+[]\T1/lmr/m/n/10.95 Determinanten $[]\OT1/lmr/m/n/10.95 ([]\OML/lmm/m/it/10.95 
+; []; []\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 av tre vek-torer $[]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]\T1/lmr/m/n/10.95 Å gå rundt å huske ([]3.17[]) er ikke bare bare, så vi skal
+ her bruke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 et triks som gjør det en-klere for oss å komme fram til høyre
+s-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+[]\T1/lmr/m/n/10.95 Vi starter med å finne tal-let i første rad og kolonne, i v
+årt til-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 felle 1. Deretter dan-ner vi en $[]$ de-ter-mi-nant ved å ute
+lukke
+ []
+
+<vek/fig/331.pdf, id=1983, 66.68614pt x 48.89668pt>
+File: vek/fig/331.pdf Graphic file (type pdf)
+<use vek/fig/331.pdf>
+Package pdftex.def Info: vek/fig/331.pdf  used on input line 347.
+(pdftex.def)             Requested size: 66.68596pt x 48.89655pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 Når vi ganger 1 med denne de-ter-mi-nan-ten, har vi fun-net d
+et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 Vi går så over til tal-let i første rad og an-dre kolonne, al
+tså $\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 2$\T1/lmr/m/n/10.95 ,
+ []
+
+<vek/fig/332.pdf, id=1985, 66.68614pt x 48.89668pt>
+File: vek/fig/332.pdf Graphic file (type pdf)
+<use vek/fig/332.pdf>
+Package pdftex.def Info: vek/fig/332.pdf  used on input line 347.
+(pdftex.def)             Requested size: 66.68596pt x 48.89655pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 Når vi set-ter et mi-nustegn foran $\OMS/lmsy/m/n/10.95 ^^@\O
+T1/lmr/m/n/10.95 2$ \T1/lmr/m/n/10.95 ganger denne de-ter-mi-nan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 Vi avs-lut-ter med de-ter-mi-nan-ten vi får ved å utelukke fø
+rste rad
+ []
+
+<vek/fig/333.pdf, id=1987, 66.68614pt x 48.89668pt>
+File: vek/fig/333.pdf Graphic file (type pdf)
+<use vek/fig/333.pdf>
+Package pdftex.def Info: vek/fig/333.pdf  used on input line 347.
+(pdftex.def)             Requested size: 66.68596pt x 48.89655pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+\T1/lmr/m/n/10.95 Ganger vi denne med tal-let som står i både raden og kolon-ne
+n
+ []
+
+[95
+
+ <./vek/fig/331.pdf>] [96 <./vek/fig/332.pdf> <./vek/fig/333.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 372--372
+[]\T1/lmr/m/n/10.95 Vektorpruduktet av vek-torene $[]$ og $[]$ er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+[]\T1/lmr/m/n/10.95 For skalarpro-duk-tet får vi en skalar (et tall), mens vi f
+or vek-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+\T1/lmr/m/n/10.95 tor-pro-duk-tet får en vek-tor. Det er der-for veldig vik-tig
+ å skille
+ []
+
+[97
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 Vi bruker ut-trykket fra ([]3.19[]), 
+og reg-ner ut føl-gende $[]$
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 415.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 415.
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+\T1/lmr/bx/n/10 b) \T1/lmr/m/n/10 To vek-torer står nor-malt på hveran-dre der-
+som skalarpro-duk-tet av
+ []
+
+[98]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
+.3.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.430 	\subfloat
+                [Trekant]{\includegraphics[]{\figp{trk}}}\qquad
+<vek/../fig/trk.pdf, id=2061, 99.50174pt x 85.3589pt>
+File: vek/../fig/trk.pdf Graphic file (type pdf)
+<use vek/../fig/trk.pdf>
+Package pdftex.def Info: vek/../fig/trk.pdf  used on input line 430.
+(pdftex.def)             Requested size: 99.5015pt x 85.35869pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3.3
+.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.431 	\subfloat
+                [Parallellogram]{\includegraphics[]{\figp{parll}}}\\
+<vek/../fig/parll.pdf, id=2062, 113.81522pt x 85.25853pt>
+File: vek/../fig/parll.pdf Graphic file (type pdf)
+<use vek/../fig/parll.pdf>
+Package pdftex.def Info: vek/../fig/parll.pdf  used on input line 431.
+(pdftex.def)             Requested size: 113.81493pt x 85.2583pt.
+<vek/../fig/par.pdf, id=2063, 112.18913pt x 84.88713pt>
+File: vek/../fig/par.pdf Graphic file (type pdf)
+<use vek/../fig/par.pdf>
+Package pdftex.def Info: vek/../fig/par.pdf  used on input line 432.
+(pdftex.def)             Requested size: 112.18884pt x 84.8869pt.
+<vek/../fig/pyram.pdf, id=2064, 103.08513pt x 82.25731pt>
+File: vek/../fig/pyram.pdf Graphic file (type pdf)
+<use vek/../fig/pyram.pdf>
+Package pdftex.def Info: vek/../fig/pyram.pdf  used on input line 433.
+(pdftex.def)             Requested size: 103.08487pt x 82.25708pt.
+<vek/../fig/tetra.pdf, id=2065, 103.08513pt x 82.25731pt>
+File: vek/../fig/tetra.pdf Graphic file (type pdf)
+<use vek/../fig/tetra.pdf>
+Package pdftex.def Info: vek/../fig/tetra.pdf  used on input line 434.
+(pdftex.def)             Requested size: 103.08487pt x 82.25708pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 435.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+[]\T1/lmr/m/n/10.95 Arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 av et par
+-al-lel-logram ut-spent av vek-torene $[]$ og $[]$ er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\T1/lmr/m/n/10.95 Arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 av en treka
+nt ut-spent av vek-torene $[]$ og $[]$ er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\T1/lmr/m/n/10.95 Volumet $\OML/lmm/m/it/10.95 V$ \T1/lmr/m/n/10.95 av par-al-l
+ellepi-pedet ut-spent av vek-torene $[]$, $[]$ og $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\T1/lmr/m/n/10.95 Volumet $\OML/lmm/m/it/10.95 V$ \T1/lmr/m/n/10.95 av pyra-mi-
+den ut-spent av vek-torene $[]$, $[]$ og $[]$ er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
+\T1/lmr/m/n/10.95 Volumet $\OML/lmm/m/it/10.95 V$ \T1/lmr/m/n/10.95 til tetraed
+et ut-spent av vek-torene $[]$, $[]$ og $[]$ er gitt
+ []
+
+[99 <./vek/../fig/trk.pdf> <./vek/../fig/parll.pdf> <./vek/../fig/par.pdf> <./v
+ek/../fig/pyram.pdf> <./vek/../fig/tetra.pdf>] [100]
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+[]\T1/lmr/m/n/10.95 Ligning [] forteller oss at $[]$ tilsvarer arealet av par-a
+l-lel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T1/lmr/m/n/10.95 logramet ut-spent av $[]$ og $[]$. Dette arealet kan bare ha 
+ver-dien 0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T1/lmr/m/n/10.95 hvis $[]$ og $[]$ er par-al-lelle, og den en-este vek-toren m
+ed lengde 0 er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+\T1/lmr/m/n/10.95 nul-lvek-toren $\OT1/lmr/m/n/10.95 [0\OML/lmm/m/it/10.95 ; \O
+T1/lmr/m/n/10.95 0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0]$\T1/lmr/m/n/10.95
+ . Kom-binerer vi dette kravet med [], får
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]\T1/lmr/m/n/10.95 Hensikten med vek-tor-pro-duk-tet er å in-n-føre en reg-ne-
+op-erasjon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 som gir oss en vek-tor $[]$ som står nor-malt på to an-dre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 vek-torer $[]$ og $[]$. For at dette skal være sant,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 Vi har altså to forskjel-lige ligninger som kan hjelpe oss me
+d å
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 finne de tre uk-jente stør-relsene $\OML/lmm/m/it/10.95 x; y$
+ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 z$\T1/lmr/m/n/10.95 . Dette kalles a
+t man
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 har en lign-ing med \T1/lmr/m/it/10.95 én fri vari-abel\T1/lm
+r/m/n/10.95 . Hvis vi vel-ger $\OML/lmm/m/it/10.95 z$ \T1/lmr/m/n/10.95 som fri
+ vari-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 abel be-tyr dette kort for-t-alt at vi kan finne et ut-trykk 
+for $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 y$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 som vil opp-fylle ([]3.32[]) og ([]3.33[]) for et hvilket som
+ helst valg av
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]\T1/lmr/m/n/10.95 Vi starter med å finne et ut-trykk for $\OML/lmm/m/it/10.95
+ x$\T1/lmr/m/n/10.95 . Først mul-ti-plis-erer vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 ([]3.33[]) med $[]$, og sub-tra-herer deretter venstre- og hø
+yres-i-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 fra denne lignin-gen med hen-holdsvis venstre- og høyres-i-de
+n fra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 Med omtrent samme fram-gangsmåte og iden-tisk an-takelse finn
+er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 Som nevnt kan $\OML/lmm/m/it/10.95 z$ \T1/lmr/m/n/10.95 velge
+s fritt, og vi ser av ([]3.34[]) og ([]3.35[]) at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]\T1/lmr/m/n/10.95 For å komme fram til likhetene over har vi an-tatt at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]$\T1/lmr/m/n/10.95 , men det er fris-tende å sjekke om ut-trykkene
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 vi net-topp har fun-net opp-fyller ([]3.32[]) og ([]3.33[]) o
+gså når
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 Med $\OML/lmm/m/it/10.95 z$ \T1/lmr/m/n/10.95 som fri vari-ab
+el er altså ([]3.32[]) og ([]3.33[]) opp-fylt for alle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]$\T1/lmr/m/n/10.95 , dermed har vi fun-net et ut-trykk som alltid vil gi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]\T1/lmr/m/n/10.95 Så lenge man bruker ut-trykkene fra [] og [], vil $[]$ være
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 par-al-lell med vek-toren gitt ved ([]3.11[]), uansett valg a
+v $\OML/lmm/m/it/10.95 z$\T1/lmr/m/n/10.95 . I til-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 legg kan vi få ut-trykket fra ([]3.11[]) også om vi vel-ger $
+\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 eller $\OML/lmm/m/it/10.95 y$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 som fri vari-abel (det får bli opp til leseren å kon-statere 
+disse to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 på-s-tandene).[] Av dette kan vi kon-klud-ere med at alle vek
+-torer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/m/n/10.95 som står or-tog-onalt på både $[]$ og $[]$ er par-al-lelle me
+d vek-toren
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]\T1/lmr/m/n/10.95 For å komme fram til det vi ønsker, skal vi benytte oss av 
+[]\T1/lmr/bx/n/10.95 La-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/lmr/bx/n/10.95 granges iden-titet[][][][][]\T1/lmr/m/n/10.95 . Denne sier a
+t vi for to vek-torer $[]$ og $[]$ har
+ []
+
+[101
+
+] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+[][]\T1/lmr/bx/n/12 3.13[] Vek-tor-pro-duk-tet som areal og volum (fork-lar-
+ []
+
+<vek/../fig/parlb.pdf, id=2140, 137.85503pt x 97.75522pt>
+File: vek/../fig/parlb.pdf Graphic file (type pdf)
+<use vek/../fig/parlb.pdf>
+Package pdftex.def Info: vek/../fig/parlb.pdf  used on input line 600.
+(pdftex.def)             Requested size: 137.85468pt x 97.75496pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 600.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 Arealet av et par-alel-logram er gitt som grunnlinja ganger h
+øy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 den. For et par-al-lel-logram ut-spent av vek-torene $[]$ og 
+$[]$, tilsvarer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 dette pro-duk-tet $\OMS/lmsy/m/n/10.95 j[]jj[]j [] \OML/lmm/m
+/it/10.95 ^^R$\T1/lmr/m/n/10.95 , som er det samme som leng-den
+ []
+
+File: vek/../fig/par.pdf Graphic file (type pdf)
+<use vek/../fig/par.pdf>
+Package pdftex.def Info: vek/../fig/par.pdf  used on input line 600.
+(pdftex.def)             Requested size: 112.18884pt x 84.8869pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 600.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 Volumet $\OML/lmm/m/it/10.95 V$ \T1/lmr/m/n/10.95 av et par-a
+l-lellepi-det tilsvarer grun-n-flaten $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95
+ ganger
+ []
+
+<vek/../fig/vopar.pdf, id=2141, 120.70094pt x 116.9971pt>
+File: vek/../fig/vopar.pdf Graphic file (type pdf)
+<use vek/../fig/vopar.pdf>
+Package pdftex.def Info: vek/../fig/vopar.pdf  used on input line 600.
+(pdftex.def)             Requested size: 120.70064pt x 116.9968pt.
+<vek/../fig/voparb.pdf, id=2142, 120.70094pt x 116.9971pt>
+File: vek/../fig/voparb.pdf Graphic file (type pdf)
+<use vek/../fig/voparb.pdf>
+Package pdftex.def Info: vek/../fig/voparb.pdf  used on input line 600.
+(pdftex.def)             Requested size: 120.70064pt x 116.9968pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 600.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 I []\T1/lmr/m/sl/10.95 figur 3.5[][] \T1/lmr/m/n/10.95 er gru
+n-n-flaten $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 ut-spent av vek-torene $[]
+$ og $[]$, og vi
+ []
+
+
+Underfull \hbox (badness 2680) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 La $\OML/lmm/m/it/10.95 ^^R$ \T1/lmr/m/n/10.95 være vinke-len
+ mel-lom $[] \OMS/lmsy/m/n/10.95 ^^B []$ \T1/lmr/m/n/10.95 og $[]$. Hvis $[]$, 
+får vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+\T1/lmr/m/n/10.95 Er de-r-i-mot $[]$, får vi en figur som skissert i []\T1/lmr/
+m/sl/10.95 figur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+[]\T1/lmr/m/n/10.95 volumet av pyra-mi-den ut-spent av $[]$ og $[]$ er $[]$ av 
+vol-umet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--600
+[]\T1/lmr/m/n/10.95 volumet av tetraedet ut-spent av $[]$ og $[]$ er $[]$ av vo
+l-umet av
+ []
+
+[103] [104 <./vek/../fig/parlb.pdf> <./vek/../fig/vopar.pdf> <./vek/../fig/vopa
+rb.pdf>]) [105] (./opg/vek/opg.tex (./opg/vek/../../../doc.tex)
+Overfull \hbox (0.21165pt too wide) in paragraph at lines 15--16
+[]\T1/lmr/m/n/12 Hvilket av punk-tene $[]$ og $[]$ lig-ger nærmest 
+ []
+
+[106
+
+] [107] [108] [109]) [110]
+Kapittel 4.
+(./rom/rom_bm.tex (./rom/../../doc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]\T1/lmr/m/n/10.95 Ei linje \T1/lmr/m/it/10.95 l \T1/lmr/m/n/10.95 som går gje
+n-nom punk-tet $[]$ og har ret-
+ []
+
+<rom/../fig/lin.pdf, id=2238, 199.1741pt x 127.0848pt>
+File: rom/../fig/lin.pdf Graphic file (type pdf)
+<use rom/../fig/lin.pdf>
+Package pdftex.def Info: rom/../fig/lin.pdf  used on input line 21.
+(pdftex.def)             Requested size: 199.17361pt x 127.08447pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 Finn en pa-ram-e-teris-er-ing for lin
+ja $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 som går gjen-nom $\OML/lmm/m/it/10
+.95 A$ \T1/lmr/m/n/10.95 og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 Vi bruker den forko-rt-ede ret-ningsvek-toren i kom-bi-nasjon
+ med $\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/bx/n/10.95 b) \T1/lmr/m/n/10.95 Skal $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/
+n/10.95 ligge på $\OML/lmm/m/it/10.95 l$\T1/lmr/m/n/10.95 , må pa-ram-e-teris-e
+rin-gen gi oss ko-or-di-naten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 til $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 for rett valg a
+v $\OML/lmm/m/it/10.95 t$\T1/lmr/m/n/10.95 . Skal for ek-sem-pel $\OML/lmm/m/it
+/10.95 y$\T1/lmr/m/n/10.95 -koordinaten bli
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/lmr/m/n/10.95 For $[]$ blir $[]$, men $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10
+.95 -koordinaten til $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 er $\OMS/lmsy/m/
+n/10.95 ^^@\OT1/lmr/m/n/10.95 5$\T1/lmr/m/n/10.95 , altså lig-ger
+ []
+
+[111
+
+ <./rom/../fig/lin.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\T1/lmr/m/n/10.95 Det todi-men-sjonale til-fel-let som er vist i [][]TM1[][] 
+kan enkelt ut-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\T1/lmr/m/n/10.95 vides til det tred-i-men-sjonale til-fel-let. Dette er over-l
+att til leseren
+ []
+
+[112]
+<rom/../fig/vegg.pdf, id=2256, 194.79778pt x 166.44183pt>
+File: rom/../fig/vegg.pdf Graphic file (type pdf)
+<use rom/../fig/vegg.pdf>
+Package pdftex.def Info: rom/../fig/vegg.pdf  used on input line 59.
+(pdftex.def)             Requested size: 194.79729pt x 166.4414pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 59.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]\T1/lmr/m/sl/9 Figur 4.1: |[]$\OML/lmm/m/it/9 x$ \T1/lmr/m/n/9 og $\OML/lmm/m
+/it/9 y$ \T1/lmr/m/n/9 bor-tover langs veg-gene, $\OML/lmm/m/it/9 z$ \T1/lmr/m/
+n/9 rett opp. Gul-vet er et utk-lipp av $\OML/lmm/m/it/9 xy$\T1/lmr/m/n/9 -
+ []
+
+<rom/../fig/plan.pdf, id=2257, 258.87717pt x 92.78665pt>
+File: rom/../fig/plan.pdf Graphic file (type pdf)
+<use rom/../fig/plan.pdf>
+Package pdftex.def Info: rom/../fig/plan.pdf  used on input line 63.
+(pdftex.def)             Requested size: 258.87653pt x 92.7864pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 63.
+See the caption package documentation for explanation.
+
+[113 <./rom/../fig/vegg.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[]\T1/lmr/m/n/10.95 Et plan in-neholder punk-tene $[]$, $[]$ og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 En vek-tor mel-lom to av punk-tene $\
+OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10
+.95 og $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 er en ret-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\T1/lmr/m/n/10.95 ningsvek-tor for planet. Vi starter der-for med å finne to sl
+ike:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\T1/lmr/bx/n/10.95 b) \T1/lmr/m/n/10.95 Vi starter med å finne en $\OML/lmm/m/i
+t/10.95 s$ \T1/lmr/m/n/10.95 og en $\OML/lmm/m/it/10.95 t$ \T1/lmr/m/n/10.95 so
+m opp-fyller kravet for $\OML/lmm/m/it/10.95 x$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\T1/lmr/m/n/10.95 Av ([]II[]) er $[]$. Dette ut-trykket for $\OML/lmm/m/it/10.9
+5 s$ \T1/lmr/m/n/10.95 set-ter vi inn i ([]I[]), og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\T1/lmr/m/n/10.95 Kravet for $\OML/lmm/m/it/10.95 z$\T1/lmr/m/n/10.95 -koordina
+ten er altså opp-fylt, punk-tet $\OT1/lmr/m/n/10.95 (4\OML/lmm/m/it/10.95 ; \OT
+1/lmr/m/n/10.95 6\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.9
+5 6)$
+ []
+
+[114 <./rom/../fig/plan.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/lmr/m/n/10.95 Et plan $\OML/lmm/m/it/10.95 $ \T1/lmr/m/n/10.95 in-nehold
+er ei linje $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 og punk-tet $[]$. $\OML/l
+mm/m/it/10.95 A$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/lmr/m/n/10.95 lig-ger ikke på $\OML/lmm/m/it/10.95 l$\T1/lmr/m/n/10.95 . Fi
+nn en pa-ram-e-teris-er-ing til planet når $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/
+10.95 er gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]\T1/lmr/m/n/10.95 Siden $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 lig-ger i p
+lanet, må en ret-ningsvek-tor til $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 ogs
+å være en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/lmr/m/n/10.95 ret-ningsvek-tor for planet. Av pa-ram-e-teris-erin-gen ser v
+i at en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/lmr/m/n/10.95 ret-ningsvek-tor er $\OT1/lmr/m/n/10.95 [1\OML/lmm/m/it/10.95
+ ; \OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 4]$\T1/lmr/m/n/
+10.95 . Vi ser også at $\OT1/lmr/m/n/10.95 (0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n
+/10.95 5\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 6)$ \T1/lmr/m/n/10.95 er et pu
+nkt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/lmr/m/n/10.95 som lig-ger på linja, og der-for også i planet. Vek-toren mel
+-lom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og dette punk-tet må også være en ret-
+ningsvek-tor (og er ikke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+\T1/lmr/m/sl/10.95 Merk: \T1/lmr/m/n/10.95 Vi har her in-tro-dusert vari-abe-le
+n $\OML/lmm/m/it/10.95 q$ \T1/lmr/m/n/10.95 for å ty-deligjøre at
+ []
+
+[115]
+<rom/../fig/surf1.pdf, id=2641, 258.87717pt x 99.08015pt>
+File: rom/../fig/surf1.pdf Graphic file (type pdf)
+<use rom/../fig/surf1.pdf>
+Package pdftex.def Info: rom/../fig/surf1.pdf  used on input line 138.
+(pdftex.def)             Requested size: 258.87653pt x 99.0799pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 138.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+[]\T1/lmr/m/sl/9 Figur 4.3: |[]\T1/lmr/m/n/9 Punktene $[]$ og $[]$ i planet $\O
+ML/lmm/m/it/9 $ \T1/lmr/m/n/9 med nor-malvek-tor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]\T1/lmr/m/n/10.95 Et plan med nor-malvek-tor $[]$ kan ut-trykkes ved lignin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+\OT1/lmr/m/n/10.95 3\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1]$ \T1/lmr/m/n/10
+.95 og in-neholder punk-tet $[]$. Finn en lign-ing for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+\T1/lmr/m/n/10.95 Vi har nå en nor-malvek-tor og et punkt i planet, og får derm
+ed
+ []
+
+[116
+
+ <./rom/../fig/surf1.pdf>] [117]
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 For å finne en pa-ram-e-teris-er-ing 
+for et plan gitt av en lign-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+\T1/lmr/m/n/10.95 står vi fritt til selv å velge to av $[]$ og $\OML/lmm/m/it/1
+0.95 z$ \T1/lmr/m/n/10.95 som lik hver av pa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+\T1/lmr/m/n/10.95 ram-e-teris-er-ingsvari-ab-lene. Vi vel-ger her $[]$ og $[]$,
+ og får at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+\T1/lmr/bx/n/10.95 b) \T1/lmr/m/n/10.95 Ut ifra pa-ram-e-teris-erin-gen ser vi 
+at et punkt i planet må
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]\T1/lmr/m/n/10.95 Et plan $\OML/lmm/m/it/10.95 $ \T1/lmr/m/n/10.95 gitt ved 
+lignin-gen $[]$ møter ei
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+\T1/lmr/m/n/10.95 linje $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 i et punkt $\
+OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 . Finn ko-or-di-natene til $\OML/lmm/m/i
+t/10.95 A$ \T1/lmr/m/n/10.95 når $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 er g
+itt ved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]\T1/lmr/m/n/10.95 I punk-tet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 må pa-
+ram-e-teris-erin-gen til linja opp-fylle lignin-gen til
+ []
+
+[118]
+<rom/../fig/plskj.pdf, id=2772, 79.20592pt x 113.81522pt>
+File: rom/../fig/plskj.pdf Graphic file (type pdf)
+<use rom/../fig/plskj.pdf>
+Package pdftex.def Info: rom/../fig/plskj.pdf  used on input line 231.
+(pdftex.def)             Requested size: 79.2057pt x 113.81493pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 231.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+[]\T1/lmr/m/n/10.95 Gitt to ikke-parallelle plan, det ene med nor-malvek-tor $[
+]$ og det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+\T1/lmr/m/n/10.95 an-dre med nor-malvek-tor $[]$. Planene skjærer da hveran-dre
+ langs
+ []
+
+[119 <./rom/../fig/plskj.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 Planene skjærer hveran-dre langs ei linje $\OML/lmm/m/it/10.9
+5 l$\T1/lmr/m/n/10.95 , finn en pa-ram-e-teris-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]\T1/lmr/m/n/10.95 Vi starter med å finne en ret-nigsvek-tor for linja. Av lig
+nin-gene
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 til planene ser vi at $\OML/lmm/m/it/10.95 $ \T1/lmr/m/n/10.
+95 har nor-malvek-tor $\OT1/lmr/m/n/10.95 [\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/
+10.95 2\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ; \OT1/lmr
+/m/n/10.95 1]$\T1/lmr/m/n/10.95 , mens $\OML/lmm/m/it/10.95 ^^L$ \T1/lmr/m/n/10
+.95 har
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 nor-malvek-tor $\OT1/lmr/m/n/10.95 [1\OML/lmm/m/it/10.95 ; \O
+MS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ; \OMS/lmsy/m/n/10
+.95 ^^@\OT1/lmr/m/n/10.95 1]$\T1/lmr/m/n/10.95 . En ret-ningsvek-tor for linja 
+er der-for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 Nå gjen-står å finne et punkt som lig-ger i begge planene. Vi
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 bestem-mer da én av ko-or-di-natene og løser det re-sul-teren
+de lign-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 ingssys-temet. For enkel-hetsskyld er det naturlig å velge at
+ én av
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 ko-or-di-natene er 0, men vi må da være litt var-somme. Av li
+gnin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 gene til $\OML/lmm/m/it/10.95 $ \T1/lmr/m/n/10.95 og $\OML/l
+mm/m/it/10.95 ^^L$ \T1/lmr/m/n/10.95 ser vi for ek-sem-pel at hvis vi set-ter $
+[]$, får vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 et uløselig lign-ingssys-tem, mens $[]$ gir et løselig et. Fo
+r $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 Ved å løse dette lign-ingssys-temet finner vi at $[]$ og $[]$
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T1/lmr/m/n/10.95 altså lig-ger punk-tet $\OT1/lmr/m/n/10.95 (\OMS/lmsy/m/n/10.
+95 ^^@\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0\OML/lmm/m/
+it/10.95 ; \OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 2)$ \T1/lmr/m/n/10.95 i be
+gge planene. En pa-ram-e-ter-
+ []
+
+[120]
+<rom/../fig/kule.pdf, id=2792, 128.03835pt x 127.97812pt>
+File: rom/../fig/kule.pdf Graphic file (type pdf)
+<use rom/../fig/kule.pdf>
+Package pdftex.def Info: rom/../fig/kule.pdf  used on input line 265.
+(pdftex.def)             Requested size: 128.03802pt x 127.9778pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 265.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]\T1/lmr/m/sl/9 Figur 4.5: |[]\T1/lmr/m/n/9 Kule med sen-trum $[]$. Punk-tet $
+[]$ lig-ger på kule-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]\T1/lmr/m/n/10.95 Ligningen for en kule-flate med ra-dius $\OML/lmm/m/it/10.9
+5 r$ \T1/lmr/m/n/10.95 og sen-trum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\T1/lmr/bx/n/10.95 a) \T1/lmr/m/n/10.95 For å løse denne opp-gaven må vi finn
+e de full-s-tendige
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\T1/lmr/bx/n/10.95 b) \T1/lmr/m/n/10.95 Skal $\OML/lmm/m/it/10.95 A$ \T1/lmr/
+m/n/10.95 ligge på kule-flaten, må ko-or-di-natene til $\OML/lmm/m/it/10.95 A$ 
+\T1/lmr/m/n/10.95 opp-fylle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\T1/lmr/bx/n/10.95 c) \T1/lmr/m/n/10.95 Tan-gent-planet står nor-malt på kule
+-flaten i $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 og har der-for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+\T1/lmr/m/n/10.95 Altså er $\OT1/lmr/m/n/10.95 [2\OML/lmm/m/it/10.95 ; \OMS/lms
+y/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1]$
+ \T1/lmr/m/n/10.95 en nor-malvek-tor for tan-gent-planet. Av ([]4.2[])
+ []
+
+[121 <./rom/../fig/kule.pdf>] [122]
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]\T1/lmr/m/n/10.95 Vi skal her bruke to løs-ningsme-toder. Den første gir oss 
+di-rekte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 en an-dregrad-slign-ing som vi kan løse, mens den an-dre un-n
+går
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]\T1/lmr/m/n/10.95 Der hvor kule-flaten skjærer linja, må pa-ram-e-teris-erin-
+gen til linja
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 Altså er $[]$. For $[]$ får vi punk-tet $\OT1/lmr/m/n/10.95 (
+\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 4\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/1
+0.95 5\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 3)$ \T1/lmr/m/n/10.95 og for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]$\OT1/lmr/m/n/10.95 [\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 2\OML/lmm/m/it
+/10.95 ; \OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 1]$ \T1/l
+mr/m/n/10.95 er en ret-ningsvek-tor for linja og har leng-den $\OT1/lmr/m/n/10.
+95 3$\T1/lmr/m/n/10.95 . Vek-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 toren $[]\OT1/lmr/m/n/10.95 [\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/
+m/n/10.95 2\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ; \OT1
+/lmr/m/n/10.95 1]$ \T1/lmr/m/n/10.95 er der-for også en ret-ningsvek-tor, men h
+ar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 lengde 1. Siden skjæringspunk-tene lig-ger på kule-flaten, må
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 av-s-tanden fra $\OML/lmm/m/it/10.95 S$ \T1/lmr/m/n/10.95 til
+svare ra-diusen (altså $\OT1/lmr/m/n/10.95 3$\T1/lmr/m/n/10.95 ). De to punk-te
+ne må
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\T1/lmr/m/n/10.95 Regner man ut de to til-fel-lene $[]$, får man de samme
+ []
+
+[123]
+<rom/../fig/plin.pdf, id=2813, 199.08377pt x 124.96687pt>
+File: rom/../fig/plin.pdf Graphic file (type pdf)
+<use rom/../fig/plin.pdf>
+Package pdftex.def Info: rom/../fig/plin.pdf  used on input line 362.
+(pdftex.def)             Requested size: 199.08327pt x 124.96657pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 362.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--363
+[][][][]\T1/lmr/m/n/9 Når man snakker om av-s-tanden mel-lom ge-ome-trier, mene
+s den \T1/lmr/m/it/9 ko-rteste \T1/lmr/m/n/9 av-s-tanden
+ []
+
+
+Overfull \hbox (5.5913pt too wide) in paragraph at lines 364--368
+\T1/lmr/m/n/10.95 Men vi er også kjent med at arealet til en trekant er gitt so
+m grunnlinja 
+ []
+
+[124
+
+ <./rom/../fig/plin.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]\T1/lmr/m/n/10.95 Avstanden $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-lom
+ et punkt $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 og en linje gitt av punk-te
+t $\OML/lmm/m/it/10.95 A$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]\T1/lmr/m/n/10.95 Ei linje $\OML/lmm/m/it/10.95 l$ \T1/lmr/m/n/10.95 går gjen
+-nom punk-tene $[]$ og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]$\T1/lmr/m/n/10.95 . Finn av-s-tanden mel-lom $\OML/lmm/m/it/10.95 l$ \T1/lmr
+/m/n/10.95 og punk-tet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 Vi fort-set-ter med å finne leng-den til den fak-toris-erte r
+et-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+\T1/lmr/m/n/10.95 Nå har vi alle stør-relser vi trenger for å finne av-s-tanden
+ $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-
+ []
+
+[125]
+Overfull \hbox (3.27994pt too wide) in paragraph at lines 423--424
+[]\T1/lmr/m/n/10.95 treffer punk-tet og står nor-malt på planet. Leng-den av de
+tte linjestykket 
+ []
+
+<rom/../fig/pplan.pdf, id=2840, 258.87717pt x 102.73381pt>
+File: rom/../fig/pplan.pdf Graphic file (type pdf)
+<use rom/../fig/pplan.pdf>
+Package pdftex.def Info: rom/../fig/pplan.pdf  used on input line 424.
+(pdftex.def)             Requested size: 258.87653pt x 102.73355pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 424.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
+[]\T1/lmr/m/n/10.95 Avstanden $\OML/lmm/m/it/10.95 h$ \T1/lmr/m/n/10.95 mel-lom
+ et punkt $[]$ og et plan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--440
+[]\T1/lmr/m/n/10.95 Finn av-s-tanden mel-lom punk-tet $\OT1/lmr/m/n/10.95 (\OMS
+/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1\OML/lmm/m/it/10.95 ;\OT1/lmr/m/n/10.95 
+4\OML/lmm/m/it/10.95 ;\OT1/lmr/m/n/10.95 5)$ \T1/lmr/m/n/10.95 og planet gitt v
+ed
+ []
+
+[126 <./rom/../fig/pplan.pdf>]
+<rom/../fig/pktplan.pdf, id=2857, 88.82184pt x 70.33276pt>
+File: rom/../fig/pktplan.pdf Graphic file (type pdf)
+<use rom/../fig/pktplan.pdf>
+Package pdftex.def Info: rom/../fig/pktplan.pdf  used on input line 473.
+(pdftex.def)             Requested size: 88.82161pt x 70.33258pt.
+<rom/../fig/pktplanb.pdf, id=2858, 88.82184pt x 86.63367pt>
+File: rom/../fig/pktplanb.pdf Graphic file (type pdf)
+<use rom/../fig/pktplanb.pdf>
+Package pdftex.def Info: rom/../fig/pktplanb.pdf  used on input line 473.
+(pdftex.def)             Requested size: 88.82161pt x 86.63344pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 473.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+[]\T1/lmr/m/sl/9 Figur 4.8: |[]a) \T1/lmr/m/n/9 Vek-toren mel-lom $\OML/lmm/m/i
+t/9 P[]$ \T1/lmr/m/n/9 og $\OML/lmm/m/it/9 P[]$ \T1/lmr/m/n/9 har samme ret-nin
+g som $[]$. \T1/lmr/m/sl/9 b)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 Vi ønsker å finne av-s-tanden mel-lom et punkt $[]$ og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 I planet vel-ger vi oss punk-tet $[]$ slik at $[]$ er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 nor-malvek-tor til planet (se []\T1/lmr/m/sl/10.95 figur 4.8[
+][]\T1/lmr/m/n/10.95 ). Siden $\OML/lmm/m/it/10.95 P[]$ \T1/lmr/m/n/10.95 lig-g
+er i planet,
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 Normalvektoren gitt av lignin-gen til planet er $[] \OT1/lmr/
+m/n/10.95 = [\OML/lmm/m/it/10.95 a; b; c\OT1/lmr/m/n/10.95 ]$\T1/lmr/m/n/10.95 
+, ved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 La oss kalle vinke-len mel-lom $[]$ og $[]$ for $\OML/lmm/m/i
+t/10.95 v$\T1/lmr/m/n/10.95 . Fra defin-isjo-nen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 Siden begge vek-torene er nor-malvek-torer, må $\OML/lmm/m/it
+/10.95 v$ \T1/lmr/m/n/10.95 være en-ten $\OT1/lmr/m/n/10.95 0[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--473
+\T1/lmr/m/n/10.95 eller $\OT1/lmr/m/n/10.95 180[]$\T1/lmr/m/n/10.95 , altså er 
+$[]$. Tar vi tal-lver-dien av skalarpro-
+ []
+
+[127 <./rom/../fig/pktplan.pdf> <./rom/../fig/pktplanb.pdf>] [128]
+<rom/../fig/vinkell.pdf, id=2889, 128.03835pt x 85.34886pt>
+File: rom/../fig/vinkell.pdf Graphic file (type pdf)
+<use rom/../fig/vinkell.pdf>
+Package pdftex.def Info: rom/../fig/vinkell.pdf  used on input line 481.
+(pdftex.def)             Requested size: 128.03802pt x 85.34863pt.
+<rom/../fig/vinkellb.pdf, id=2890, 128.03835pt x 85.34886pt>
+File: rom/../fig/vinkellb.pdf Graphic file (type pdf)
+<use rom/../fig/vinkellb.pdf>
+Package pdftex.def Info: rom/../fig/vinkellb.pdf  used on input line 482.
+(pdftex.def)             Requested size: 128.03802pt x 85.34863pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 483.
+See the caption package documentation for explanation.
+
+[129
+
+ <./rom/../fig/vinkell.pdf> <./rom/../fig/vinkellb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 502--502
+[]\T1/lmr/m/n/10.95 Vinkelen $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 mel-lom 
+ei linje med ret-ningsvek-toren $[]$ og ei linje
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--528
+[]\T1/lmr/m/n/10.95 Finn vinke-len mel-lom ei linje med ret-nigsvek-tor $[]$ og
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--528
+[]\T1/lmr/m/n/10.95 Vi starter med å regne ut skalarpro-duk-tet og leng-dene av
+ ret-
+ []
+
+[130]
+<rom/../fig/vinkelpl.pdf, id=2923, 139.47105pt x 101.48917pt>
+File: rom/../fig/vinkelpl.pdf Graphic file (type pdf)
+<use rom/../fig/vinkelpl.pdf>
+Package pdftex.def Info: rom/../fig/vinkelpl.pdf  used on input line 535.
+(pdftex.def)             Requested size: 139.4707pt x 101.4889pt.
+<rom/../fig/vinkelplb.pdf, id=2924, 53.60025pt x 73.17337pt>
+File: rom/../fig/vinkelplb.pdf Graphic file (type pdf)
+<use rom/../fig/vinkelplb.pdf>
+Package pdftex.def Info: rom/../fig/vinkelplb.pdf  used on input line 537.
+(pdftex.def)             Requested size: 53.6001pt x 73.17317pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 538.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[][][][]\T1/lmr/m/n/9 Hvis vi roterer begge planene $\OT1/lmr/m/n/9 90[]$ \T1/l
+mr/m/n/9 til høyre, må vin-k-lene de ut-spen-ner for-bli de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+\T1/lmr/m/n/9 samme. Og ved dette til-fel-let lig-ger planene på linje med sine
+ op-prin-nelige nor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+[]\T1/lmr/m/n/10.95 Vinkelen $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 mel-lom 
+et plan med nor-malvek-toren $[]$ og et plan
+ []
+
+<rom/../fig/vinkel.pdf, id=2927, 113.52412pt x 90.05646pt>
+File: rom/../fig/vinkel.pdf Graphic file (type pdf)
+<use rom/../fig/vinkel.pdf>
+Package pdftex.def Info: rom/../fig/vinkel.pdf  used on input line 551.
+(pdftex.def)             Requested size: 113.52383pt x 90.05623pt.
+<rom/../fig/vinkelb.pdf, id=2928, 38.52393pt x 72.9927pt>
+File: rom/../fig/vinkelb.pdf Graphic file (type pdf)
+<use rom/../fig/vinkelb.pdf>
+Package pdftex.def Info: rom/../fig/vinkelb.pdf  used on input line 553.
+(pdftex.def)             Requested size: 38.52382pt x 72.99251pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 554.
+See the caption package documentation for explanation.
+
+[131 <./rom/../fig/vinkelpl.pdf> <./rom/../fig/vinkelplb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
+[]\T1/lmr/m/sl/9 Figur 4.11: |[]a) $[]$ \T1/lmr/m/n/9 og $[]$ ut-spen-ner vinke
+-len $[]$. \T1/lmr/m/sl/9 b) $[]$ \T1/lmr/m/n/9 og $[]$ ut-spen-ner vinke-len
+ []
+
+
+Overfull \hbox (8.34317pt too wide) in paragraph at lines 556--557
+\T1/lmr/m/n/10.95 Når ei linje med ret-ningsvek-tor $[]$ og et plan med nor-mal
+vek-tor $[]$ skjærer 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--568
+[]\T1/lmr/m/n/10.95 Vinkelen $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 mel-lom 
+et plan med nor-malvek-tor $[]$ og ei linje med
+ []
+
+) [132 <./rom/../fig/vinkel.pdf> <./rom/../fig/vinkelb.pdf>] (./opg/rom/opg.tex
+(./opg/rom/../../../doc.tex)
+Overfull \hbox (3.3737pt too wide) in paragraph at lines 9--9
+[]\T1/lmr/m/n/12 Ei linje går gjen-nom punk-tene $\OML/lmm/m/it/12 A \OT1/lmr/m
+/n/12 = (\OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 2\OML/lmm/m/it/12 ; \OT1/lmr/m/n/1
+2 3\OML/lmm/m/it/12 ; \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 5)$ \T1/lmr/m/n/12 og
+ $\OML/lmm/m/it/12 B \OT1/lmr/m/n/12 = (\OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 1\O
+ML/lmm/m/it/12 ; \OT1/lmr/m/n/12 1\OML/lmm/m/it/12 ; \OMS/lmsy/m/n/12 ^^@\OT1/l
+mr/m/n/12 4)$\T1/lmr/m/n/12 .  
+ []
+
+
+Overfull \hbox (7.09143pt too wide) in paragraph at lines 54--55
+[]\T1/lmr/m/n/12 Et plan er ut-spent av vek-torene $\OT1/lmr/m/n/12 [\OMS/lmsy/
+m/n/12 ^^@\OT1/lmr/m/n/12 4\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 2\OML/lmm/m/it/12
+ ; \OT1/lmr/m/n/12 0]$ \T1/lmr/m/n/12 og $\OT1/lmr/m/n/12 [\OMS/lmsy/m/n/12 ^^@
+\OT1/lmr/m/n/12 3\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 ; \OT1/lm
+r/m/n/12 3]$ \T1/lmr/m/n/12 og in-neholder 
+ []
+
+[133
+
+] [134] [135]
+<opg/rom/../../fig/plkul.pdf, id=3002, 209.12128pt x 114.3171pt>
+File: opg/rom/../../fig/plkul.pdf Graphic file (type pdf)
+<use opg/rom/../../fig/plkul.pdf>
+Package pdftex.def Info: opg/rom/../../fig/plkul.pdf  used on input line 122.
+(pdftex.def)             Requested size: 209.12076pt x 114.3168pt.
+) [136 <./opg/rom/../../fig/plkul.pdf>]
+Kapittel 5.
+(./int/int_bm.tex (./int/../../doc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som er pos-i-tiv o
+g kon-tin-uerlig for alle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]$\T1/lmr/m/n/10.95 . []\T1/lmr/bx/n/10.95 In-te-gralet[] $\OML/lmm/m/it/10.95
+ I$ \T1/lmr/m/n/10.95 til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 på in-ter-v
+al-let $[]$ tilsvarer da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+\T1/lmr/m/n/10.95 arealet av-grenset av $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.9
+5 -aksen, lin-jene $[]$ og $[]$, og grafen
+ []
+
+<int/../fig/intpos.pdf, id=3012, 170.70776pt x 113.7048pt>
+File: int/../fig/intpos.pdf Graphic file (type pdf)
+<use int/../fig/intpos.pdf>
+Package pdftex.def Info: int/../fig/intpos.pdf  used on input line 10.
+(pdftex.def)             Requested size: 170.70734pt x 113.70451pt.
+<int/../fig/int1a.pdf, id=3014, 170.7178pt x 142.24142pt>
+File: int/../fig/int1a.pdf Graphic file (type pdf)
+<use int/../fig/int1a.pdf>
+Package pdftex.def Info: int/../fig/int1a.pdf  used on input line 13.
+(pdftex.def)             Requested size: 170.71738pt x 142.24106pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 13.
+See the caption package documentation for explanation.
+
+[137
+
+ <./int/../fig/intpos.pdf>]
+<int/../fig/int1.pdf, id=3030, 170.7178pt x 142.24142pt>
+File: int/../fig/int1.pdf Graphic file (type pdf)
+<use int/../fig/int1.pdf>
+Package pdftex.def Info: int/../fig/int1.pdf  used on input line 20.
+(pdftex.def)             Requested size: 170.71738pt x 142.24106pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 20.
+See the caption package documentation for explanation.
+
+<int/../fig/int2.pdf, id=3031, 170.7178pt x 142.24142pt>
+File: int/../fig/int2.pdf Graphic file (type pdf)
+<use int/../fig/int2.pdf>
+Package pdftex.def Info: int/../fig/int2.pdf  used on input line 25.
+(pdftex.def)             Requested size: 153.64459pt x 128.01608pt.
+<int/../fig/int3.pdf, id=3032, 170.7178pt x 142.24142pt>
+File: int/../fig/int3.pdf Graphic file (type pdf)
+<use int/../fig/int3.pdf>
+Package pdftex.def Info: int/../fig/int3.pdf  used on input line 26.
+(pdftex.def)             Requested size: 153.64459pt x 128.01608pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 27.
+See the caption package documentation for explanation.
+
+[138 <./int/../fig/int1a.pdf> <./int/../fig/int1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]\T1/lmr/bx/n/10.95 Det bestemte in-te-gralet[] $\OML/lmm/m/it/10.95 I$ \T1/lm
+r/m/n/10.95 av en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m
+/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 over in-ter-val-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\T1/lmr/m/n/10.95 Finn det bestemte in-te-gralet av $[]$ på in-ter-val-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\T1/lmr/m/n/10.95 Vi har her at $[]$, hvor $[]$. Set-ter vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/lmr/m/sl/9 Merk\T1/lmr/m/n/9 : I over-gan-gen mel-lom første og an-dre linj
+e i lignin-gen over har vi
+ []
+
+[139 <./int/../fig/int2.pdf> <./int/../fig/int3.pdf>] [140]
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[][][][]\T1/lmr/m/n/9 Analyse i matem-a-tisk sam-men-heng kan, kort opp-sum-mer
+t, sies å være stu-dien av
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]\T1/lmr/m/n/10.95 Det bestemte in-te-gralet $\OML/lmm/m/it/10.95 I$ \T1/lmr/m
+/n/10.95 av en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it
+/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 over in-ter-val-let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\T1/lmr/m/n/10.95 I over-gan-gen mel-lom [] og [] har vi er-stat-tet $[] []$ 
+med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]\T1/lmr/m/n/10.95 Hvis $\OML/lmm/m/it/10.95 F\OT1/lmr/m/n/10.95 (\OML/lmm/m/i
+t/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er en de-river-bar funksjon og
+ $[]$, da er $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/10.95 en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+[]\T1/lmr/m/n/10.95 Undersøk om føl-gende funksjoner er en an-tiderivert til
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
+\T1/lmr/m/n/10.95 Siden $[]$, mens $[]$, er bare $\OML/lmm/m/it/10.95 g\OT1/lmr
+/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 og
+ []
+
+[141] [142]
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[]\T1/lmr/m/n/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 de-fin-ert på in-t
+er-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ]$\T
+1/lmr/m/n/10.95 . Hvis $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/10.95 er en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[][][][]\T1/lmr/m/n/9 Det kan kan-skje se litt rart ut at vi har skrevet $\OML/
+lmm/m/it/9 f\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 t\OT1/lmr/m/n/9 )$ \T1/lmr/m/n/9 i 
+in-te-gralet når vi snakker om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+\OML/lmm/m/it/9 f\OT1/lmr/m/n/9 (\OML/lmm/m/it/9 x\OT1/lmr/m/n/9 )$\T1/lmr/m/n/
+9 , men dette gjøres bare for å skille mel-lom de to vari-erende ver-di-ene $\O
+ML/lmm/m/it/9 x$ \T1/lmr/m/n/9 og $\OML/lmm/m/it/9 t$\T1/lmr/m/n/9 . $\OML/lmm/
+m/it/9 x$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+\T1/lmr/m/n/9 kan være en hvilken som helst verdi, men for det ubestemte in-te-
+gralet ser vi på $\OML/lmm/m/it/9 f$
+ []
+
+[143]
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]\T1/lmr/m/n/10.95 Når ikke an-net er nevnt, tar vi det heretter for gitt at s
+tør-relser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+\T1/lmr/m/n/10.95 skrevet som store bok-staver er vilkårlige kon-stan-ter som r
+e-sul-tat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]\T1/lmr/m/n/10.95 Ved derivasjon vet vi at $[]$. Bruk dette til å å finne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
+[]\T1/lmr/m/n/10.95 Fra derivasjo-nen ser vi at $\OML/lmm/m/it/10.95 x[]$ \T1/l
+mr/m/n/10.95 er en an-tiderivert til $\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 x
+$\T1/lmr/m/n/10.95 . Vi kan
+ []
+
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T1/lmr/m/n/10.95 Ved derivasjon vet vi at $[]$. Bruk dette til å finne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T1/lmr/m/n/10.95 Fra derivasjo-nen ser vi at $[]$ er en an-tiderivert til $\
+OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 . Vi kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/lmr/m/n/10.95 Men siden $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 er en vil
+kårlig kon-stant, kan vi lik-så-godt lage oss
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/lmr/m/sl/10.95 Merk\T1/lmr/m/n/10.95 : Siden in-te-grasjon-skon-stan-ter er
+ vilkårlige, kan vi tillate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/lmr/m/n/10.95 oss å kom-primere flere kon-stan-ter til én. I utreg-nin-gen 
+over
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/lmr/m/n/10.95 kunne vi skrevet $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 op
+p igen, un-der-forstått at 3 var ''trekt inn'' i
+ []
+
+[145] [146
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]\T1/lmr/m/n/10.95 Vi starter med å ob-ser-vere at $[]$. I til-legg vet vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+\T1/lmr/m/n/10.95 fra ([]5.7[]) at kon-stan-ten 8 kan trekkes uten-for in-te-gr
+alet. Vi kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[][][][]\T1/lmr/m/n/9 Forklar for deg selv hvor-for vi ikke trenger å ta hen-sy
+n til kon-stan-ten når
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+\T1/lmr/m/n/10.95 Fra ([]5.12[]) vet vi at $[] \OML/lmm/m/it/10.95 x$ \T1/lmr/m
+/n/10.95 er en an-tiderivert til $[]$. Når vi har
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]\T1/lmr/m/sl/10.95 Merk\T1/lmr/m/n/10.95 : Bruken av klam-meparantes er bare 
+en an-nen måte å
+ []
+
+[147]
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/lmr/m/n/10.95 Vi ut-nyt-ter at $[]$ og at $[]$. Ved ([]5.6[]) og ([]5.8[]
+) kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]\T1/lmr/m/n/10.95 Ut ifra defin-isjo-nen av det ubestemte in-te-gralet (se ([
+]5.5[])) har vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\T1/lmr/m/n/10.95 hvis $[]$. For alle ubestemte in-te-graler gitt i ([]5.8[])-(
+[]5.12[])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+\T1/lmr/m/n/10.95 kan dette sjekkes via en-kle derivasjon-op-erasjoner og er de
+r-for
+ []
+
+[148]
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+[][][][]\T1/lmr/m/n/9 Det er flere fram-gangsmåter for denne meto-den. Den vi h
+er pre-sen-terer er, et-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+\T1/lmr/m/n/9 ter for-fat-terens mening, den raskeste for in-te-graler som er p
+en-sum i R2. For mer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]\T1/lmr/m/n/10.95 Gitt funksjonene $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10
+.95 u\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n
+/10.95 og $\OML/lmm/m/it/10.95 g\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 u\OT1/l
+mr/m/n/10.95 )$\T1/lmr/m/n/10.95 . Hvis $[] \OML/lmm/m/it/10.95 f\OT1/lmr/m/n/1
+0.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 ) \OML/lmm/m/it/10.95 dx$ \T1/lmr
+/m/n/10.95 kan skrives
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+[]\T1/lmr/m/n/10.95 Vi set-ter $[]$ og $[]$. Dermed blir $[]$, og da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/lmr/m/sl/10.95 Merk\T1/lmr/m/n/10.95 : Når in-te-gralet vi skal finne er mh
+p. $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 , er det vik-tig at
+ []
+
+[149]
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]\T1/lmr/m/n/10.95 Vi set-ter $[]$ og $[]$, da blir $[]$. I in-te-gralet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+\T1/lmr/m/n/10.95 vi skal løse man-gler vi altså fak-toren 6 for å kunne an-ven
+de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+\T1/lmr/m/n/10.95 oss av []. Men vi kan alltids gange in-te-gralet vårt med 1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+\T1/lmr/m/n/10.95 skrevet som $[]$. Da kan vi trekke 6-tallet vi ønsker inn i i
+n-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+\T1/lmr/m/n/10.95 Det finnes også en al-ter-na-tiv måte for å regne ut bestemte
+ in-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]\T1/lmr/m/n/10.95 Buelengden til grafen til en funksjon $\OML/lmm/m/it/10.95 
+f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.
+95 på in-ter-val-let $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\OT1/lmr/m/n/
+10.95 ]$ \T1/lmr/m/n/10.95 er
+ []
+
+[150] [151]
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[][][][]\T1/lmr/m/n/9 Når vi har flere ubestemte ite-graler, trenger vi bare ta
+ med in-te-grasjon-skon-stan-ten
+ []
+
+[152]
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/lmr/m/n/10.95 Vi ob-serverer at $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 
+(\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er sam-men-satt a
+v $\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/10.95 og $[] \OML/lmm/m/it/10.95 x$\T1/lm
+r/m/n/10.95 . Trik-set bak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\T1/lmr/m/n/10.95 delvis in-te-grasjon er å sette én av disse til å være funksj
+o-nen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\OML/lmm/m/it/10.95 u\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.9
+5 )$ \T1/lmr/m/n/10.95 og den an-dre til å være den de-riverte av $\OML/lmm/m/i
+t/10.95 v\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/
+m/n/10.95 , altså $\OML/lmm/m/it/10.95 v[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.
+95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\T1/lmr/m/n/10.95 Da har vi en lign-ing som i ([]5.15[]) og kan (forhåpentligvi
+s) bruke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/lmr/m/n/10.95 Vi må in-te-grere $\OML/lmm/m/it/10.95 v[]$ \T1/lmr/m/n/10.
+95 for å finne $\OML/lmm/m/it/10.95 v$ \T1/lmr/m/n/10.95 og de-ri-vere $\OML/lm
+m/m/it/10.95 u$ \T1/lmr/m/n/10.95 for å finne $\OML/lmm/m/it/10.95 u[]$\T1/lmr/
+m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/lmr/m/n/9 Hvis vi lar $\OML/lmm/m/it/9 V$ \T1/lmr/m/n/9 betegne en an-tid
+erivert til $\OML/lmm/m/it/9 v[]$\T1/lmr/m/n/9 , kan vi skrive $[]$. Av
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\T1/lmr/m/n/9 Vi har endt opp med et ut-trykk hvor $\OML/lmm/m/it/9 C$ \T1/lmr/
+m/n/9 ikke lenger deltar. Vi får altså
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\T1/lmr/m/n/9 det samme svaret uansett hva ver-dien til $\OML/lmm/m/it/9 C$ \T1
+/lmr/m/n/9 er, og da vel-ger vi selvsagt fra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+\T1/lmr/m/n/10.95 Altså kan vi skrive (rekke-føl-gen på $\OML/lmm/m/it/10.95 v[
+]$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 u$ \T1/lmr/m/n/10.95 har selvsagt 
+in-gent-
+ []
+
+[153] [154]
+Overfull \vbox (0.87685pt too high) has occurred while \output is active []
+
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+[][][][]\T1/lmr/m/sl/9 Obs! \T1/lmr/m/n/9 I søken et-ter $\OML/lmm/m/it/9 A$ \T
+1/lmr/m/n/9 og $\OML/lmm/m/it/9 B$ \T1/lmr/m/n/9 val-gte vi ver-di-ene $[]$ og 
+$[]$. I lignin-gene hvor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/lmr/m/n/9 vi satte inn disse ver-di-ene var dette helt uskyldig, men i in-t
+e-gralet må vi være
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/lmr/m/n/9 ob-ser-vante. Vi får nem-lig 0 i nevner hvis én av disse ver-di-e
+ne lig-ger i in-ter-val-let vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+\T1/lmr/m/n/9 skal in-te-gere over. Er det snakk om et bestemt in-te-gral må vi
+ der-for passe på at
+ []
+
+[156]
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+\T1/lmr/m/n/10.95 For å finne $\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 , $\OML/
+lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 C$\T1/lmr/m/n/10.95
+ , om-skriver vi lignin-gen ved å gange med
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+\T1/lmr/m/n/10.95 Ligningen må holde for alle verdier av $\OML/lmm/m/it/10.95 x
+$\T1/lmr/m/n/10.95 . Vi set-ter først $[]$,
+ []
+
+[157]
+Underfull \hbox (badness 10000) in paragraph at lines 469--469
+[]\T1/lmr/m/n/10.95 Hvis telleren har potenser av høyere or-den[][][] enn nevne
+ren, må vi
+ []
+
+
+Overfull \hbox (8.66594pt too wide) detected at line 469
+[] []  \OML/lmm/m/it/10.95 dx \OT1/lmr/m/n/10.95 = []\OML/lmm/m/it/10.95 x[] \O
+T1/lmr/m/n/10.95 + 4\OML/lmm/m/it/10.95 x \OT1/lmr/m/n/10.95 + [] \OMS/lmsy/m/n
+/10.95 j\OML/lmm/m/it/10.95 x \OMS/lmsy/m/n/10.95 ^^@ \OT1/lmr/m/n/10.95 1\OMS/
+lmsy/m/n/10.95 j ^^@ \OT1/lmr/m/n/10.95 2 [] \OMS/lmsy/m/n/10.95 j\OML/lmm/m/it
+/10.95 x \OT1/lmr/m/n/10.95 + 2\OMS/lmsy/m/n/10.95 j \OT1/lmr/m/n/10.95 + \OML/
+lmm/m/it/10.95 C
+ []
+
+[158] [159]
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+[]\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$, er arealet $\OML/lmm/m/it/10.95 A$ \T1/
+lmr/m/n/10.95 av-grenset av $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 på dette
+ []
+
+File: int/../fig/intpos.pdf Graphic file (type pdf)
+<use int/../fig/intpos.pdf>
+Package pdftex.def Info: int/../fig/intpos.pdf  used on input line 488.
+(pdftex.def)             Requested size: 170.70734pt x 113.70451pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$, er arealet $\OML/lmm/m/it/10.95 A$ \T1/lm
+r/m/n/10.95 av-grenset av $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 på dette
+ []
+
+<int/../fig/intneg.pdf, id=3238, 170.70776pt x 113.7048pt>
+File: int/../fig/intneg.pdf Graphic file (type pdf)
+<use int/../fig/intneg.pdf>
+Package pdftex.def Info: int/../fig/intneg.pdf  used on input line 488.
+(pdftex.def)             Requested size: 170.70734pt x 113.70451pt.
+[160
+
+ <./int/../fig/intneg.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+[]\T1/lmr/m/n/10.95 Gitt to kon-tin-uerlige funksjoner $\OML/lmm/m/it/10.95 f\O
+T1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 
+og $\OML/lmm/m/it/10.95 g\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/
+10.95 )$ \T1/lmr/m/n/10.95 og tre tall $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.95
+ , $\OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 og $\OML/lmm/m/it/10.95 c$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+[]\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$, er arealet $\OML/lmm/m/it/10.95 A$ \T1/
+lmr/m/n/10.95 av-grenset mel-lom $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $
+\OML/lmm/m/it/10.95 g$
+ []
+
+<int/../fig/foggint.pdf, id=3254, 170.7178pt x 113.73491pt>
+File: int/../fig/foggint.pdf Graphic file (type pdf)
+<use int/../fig/foggint.pdf>
+Package pdftex.def Info: int/../fig/foggint.pdf  used on input line 511.
+(pdftex.def)             Requested size: 170.71738pt x 113.7346pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+\T1/lmr/m/n/10.95 Hvis $[]$ for $[]$ og $[]$ for $[]$, er arealet $\OML/lmm/m/i
+t/10.95 A$
+ []
+
+<int/../fig/foggint2.pdf, id=3255, 170.7178pt x 113.73491pt>
+File: int/../fig/foggint2.pdf Graphic file (type pdf)
+<use int/../fig/foggint2.pdf>
+Package pdftex.def Info: int/../fig/foggint2.pdf  used on input line 511.
+(pdftex.def)             Requested size: 170.71738pt x 113.7346pt.
+[161 <./int/../fig/foggint.pdf> <./int/../fig/foggint2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
+[]\T1/lmr/m/n/10.95 Gitt funksjonene $[]$ og $[]$. Vi har da at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
+[]$ \T1/lmr/m/n/10.95 for $[]$ og at $[]$ for $[]$. Finn arealet $\OML/lmm/m/it
+/10.95 A$ \T1/lmr/m/n/10.95 av-grenset
+ []
+
+[162]
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+[]\T1/lmr/m/n/10.95 Gitt en tred-i-men-sjonal figur plassert i et ko-or-di-nat-
+sys-tem, med
+ []
+
+<int/../fig/test222.pdf, id=3277, 153.57375pt x 124.44493pt>
+File: int/../fig/test222.pdf Graphic file (type pdf)
+<use int/../fig/test222.pdf>
+Package pdftex.def Info: int/../fig/test222.pdf  used on input line 549.
+(pdftex.def)             Requested size: 107.50089pt x 87.11084pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+\T1/lmr/m/n/10.95 La videre $\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.95 (\OML/lmm/
+m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 være tverrsnittsarealet av 
+fig-uren for ver-dien $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
+[]\T1/lmr/m/n/10.95 Vi plasserer kjegla inn i et ko-or-di-nat-sys-tem med høy-d
+en langs
+ []
+
+<int/../fig/kjegle.pdf, id=3278, 167.08423pt x 85.10796pt>
+File: int/../fig/kjegle.pdf Graphic file (type pdf)
+<use int/../fig/kjegle.pdf>
+Package pdftex.def Info: int/../fig/kjegle.pdf  used on input line 574.
+(pdftex.def)             Requested size: 167.08382pt x 85.10773pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
+\T1/lmr/m/n/10.95 Radiusen $\OML/lmm/m/it/10.95 r[]\OT1/lmr/m/n/10.95 (\OML/lmm
+/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 kan beskrives som en rett 
+linje med stign-ingstall
+ []
+
+[163 <./int/../fig/test222.pdf> <./int/../fig/kjegle.pdf>] [164]
+<int/../fig/omdr2.pdf, id=3297, 167.08423pt x 68.15463pt>
+File: int/../fig/omdr2.pdf Graphic file (type pdf)
+<use int/../fig/omdr2.pdf>
+Package pdftex.def Info: int/../fig/omdr2.pdf  used on input line 582.
+(pdftex.def)             Requested size: 167.08382pt x 68.15446pt.
+<int/../fig/omdr3.pdf, id=3298, 167.08423pt x 70.88483pt>
+File: int/../fig/omdr3.pdf Graphic file (type pdf)
+<use int/../fig/omdr3.pdf>
+Package pdftex.def Info: int/../fig/omdr3.pdf  used on input line 585.
+(pdftex.def)             Requested size: 167.08382pt x 70.88464pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 586.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+[]\T1/lmr/m/n/10.95 Volumet $\OML/lmm/m/it/10.95 V$ \T1/lmr/m/n/10.95 av om-dre
+in-ingslegemet til $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.9
+5 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 på in-ter-val-let $\OT1/lmr/m/n/10.9
+5 [\OML/lmm/m/it/10.95 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 er
+ []
+
+[165 <./int/../fig/omdr2.pdf> <./int/../fig/omdr3.pdf>] [166]
+<int/../fig/int5.pdf, id=3319, 170.70776pt x 142.24142pt>
+File: int/../fig/int5.pdf Graphic file (type pdf)
+<use int/../fig/int5.pdf>
+Package pdftex.def Info: int/../fig/int5.pdf  used on input line 665.
+(pdftex.def)             Requested size: 170.70734pt x 142.24106pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 665.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 La oss ta ut-gangspunkt i funksjo-nen $\OML/lmm/m/it/10.95 f\
+OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 
+, med en graf som vist
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\T1/lmr/m/n/10.95 Vi starter med å splitte $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it
+/10.95 a; b\OT1/lmr/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i $\OML/lmm/m/it/10.95 n
+$ \T1/lmr/m/n/10.95 min-dre delin-ter-valler, alle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 med bred-den $[]$. I til-legg lar vi $\OML/lmm/m/it/10.95 x[]
+$ \T1/lmr/m/n/10.95 for $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 betegne den $\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -verdien
+ som er slik at $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x
+[]\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er den laveste ver-dien
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 665--665
+[]\T1/lmr/m/n/10.95 Arealet av-grenset av delin-ter-val-let og $\OML/lmm/m/it/1
+0.95 f$ \T1/lmr/m/n/10.95 tilnærmer vi som $\OML/lmm/m/it/10.95 s[] \OT1/lmr/m/
+n/10.95 =
+ []
+
+<int/../fig/int4.pdf, id=3322, 170.70776pt x 142.24142pt>
+File: int/../fig/int4.pdf Graphic file (type pdf)
+<use int/../fig/int4.pdf>
+Package pdftex.def Info: int/../fig/int4.pdf  used on input line 665.
+(pdftex.def)             Requested size: 170.70734pt x 142.24106pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 665.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\T1/lmr/m/sl/9 Figur 5.6: |[]\T1/lmr/m/n/9 Arealene av $\OML/lmm/m/it/9 s[]$ 
+\T1/lmr/m/n/9 mark-ert som grønne søyler og area-lene av $\OML/lmm/m/it/9 c[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Videre må det finnes et tall $[]$ som er slik at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x[] \OT1/lmr/m/n/1
+0.95 + \OML/lmm/m/it/10.95 h[]\OT1/lmr/m/n/10.95 ^^A\OML/lmm/m/it/10.95 x\OT1/l
+mr/m/n/10.95 )$ \T1/lmr/m/n/10.95 er den høyeste ver-dien til $\OML/lmm/m/it/10
+.95 f$ \T1/lmr/m/n/10.95 på delin-ter-val-let.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Vi lar $\OML/lmm/m/it/10.95 c[]$ \T1/lmr/m/n/10.95 betegne ar
+ealet til søylen med $\OT1/lmr/m/n/10.95 ^^A\OML/lmm/m/it/10.95 x$ \T1/lmr/m/n/
+10.95 som bredde og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Hvis vi leg-ger til alle $\OML/lmm/m/it/10.95 c[]$ \T1/lmr/m/
+n/10.95 i det første es-ti-matet vårt, får vi en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 tilnærm-ing som må være større eller lik det egentlige areale
+t.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Én av $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 -verdiene må v
+ære større eller lik alle an-dre $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 -verd
+ier. Vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 lar $\OML/lmm/m/it/10.95 m$ \T1/lmr/m/n/10.95 betegne in-dek-
+sen til net-topp denne $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 -verdien. Da må
+ vi ha
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Det vi har kom-met fram til nå er vel og bra, men skal vi reg
+ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 ut et in-te-gral blir det slit-somt å in-spis-ere $\OML/lmm/m
+/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/l
+mr/m/n/10.95 på uen-delig
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 mange delin-ter-valler for å finne de laveste funksjonsver-di
+-ene i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 hver av dem! Vi merker oss der-for at ven-stres-i-den i ([]5.
+21[]), i vårt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 til-felle, rep-re-sen-terer det kraftig-ste un-der-es-ti-mate
+t av $\OML/lmm/m/it/10.95 I$\T1/lmr/m/n/10.95 , mens
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 høyres-i-den er det kraftig-ste over-es-ti-matet. I ([]5.21[]
+)-([]5.23[]) har vi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 vist at begge disse es-ti-matene går mot $\OML/lmm/m/it/10.95
+ I$ \T1/lmr/m/n/10.95 når $[]$, dette be-tyr
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 at vi for an-dre valg av $\OML/lmm/m/it/10.95 x[]$ \T1/lmr/m/
+n/10.95 på hvert in-ter-vall også kom-mer fram
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 til øns-ket re-sul-tat. Reg-neteknisk vil det ofte være lurt 
+å velge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\T1/lmr/m/n/10.95 Hva nå om vi ist-e-den skulle finne arealet av-grenset av $
+\OML/lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\T1/lmr/m/n/10.95 Grafene til $\OML/lmm/m/it/10.95 f$ \T1/lmr/m/n/10.95 og $\
+OML/lmm/m/it/10.95 g$ \T1/lmr/m/n/10.95 er full-s-tendig sym-metriske om $\OML/
+lmm/m/it/10.95 x$\T1/lmr/m/n/10.95 -aksen, dette
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 må bety at arealet $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 
+de av-grenser på et in-ter-vall må være helt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+\T1/lmr/m/n/10.95 Av dette kan vi ut-vide den ge-ometriske defin-isjo-nen av in
+-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]\T1/lmr/m/sl/10.95 Gitt en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 
+(\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/sl/10.95 som er neg-a-tiv
+ og kon-tiunerlig for alle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--665
+[]$\T1/lmr/m/sl/10.95 . In-te-gralet $\OML/lmm/m/it/10.95 I$ \T1/lmr/m/sl/10.95
+ mul-ti-plis-ert med $\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1$ \T1/lmr/m/sl
+/10.95 tilsvarer arealet
+ []
+
+[167
+
+ <./int/../fig/int5.pdf>] [168 <./int/../fig/int4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]\T1/lmr/m/n/10.95 Vi ønsker å vise at in-te-gralet $\OML/lmm/m/it/10.95 I$ \T
+1/lmr/m/n/10.95 av en funksjon $\OML/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/l
+mm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 på in-ter-val-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 hvor $\OML/lmm/m/it/10.95 F$ \T1/lmr/m/n/10.95 er en an-tider
+ivert til $\OML/lmm/m/it/10.95 f$\T1/lmr/m/n/10.95 . For å vise dette skal vi a
+n-vende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 oss av []. Spe-sielt verdt å merke seg er at $\OML/lmm/m/it/1
+0.95 x[] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 og at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+[]\T1/lmr/m/n/10.95 Fra tidligere vet vi at den de-riverte av en funksjon $\OML
+/lmm/m/it/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$
+ \T1/lmr/m/n/10.95 er gitt
+ []
+
+
+Overfull \hbox (12.12494pt too wide) detected at line 692
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
+\T1/lmr/m/n/10.95 Av dette leg-ger vi merke til at alle $\OML/lmm/m/it/10.95 F\
+OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x[]\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.
+95 kansellerer hveran-dre,
+ []
+
+[169]
+Underfull \hbox (badness 10000) in paragraph at lines 713--713
+\T1/lmr/m/n/10.95 La oss nå skrive $\OML/lmm/m/it/10.95 F[]\OT1/lmr/m/n/10.95 (
+\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som $\OML/lmm/m/it
+/10.95 f\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/
+m/n/10.95 og $\OML/lmm/m/it/10.95 G[]\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 u\
+OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som $\OML/lmm/m/it/10.95 g\OT1/lmr/m/n/1
+0.95 (\OML/lmm/m/it/10.95 u\OT1/lmr/m/n/10.95 )$\T1/lmr/m/n/10.95 . For to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--713
+\T1/lmr/m/n/10.95 Når vi ut-fører in-te-grasjo-nen på en-ten ven-stre eller høy
+re side,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--713
+\T1/lmr/m/n/10.95 får vi en ny kon-stant som vi kan slå sam-men med $\OML/lmm/m
+/it/10.95 E$\T1/lmr/m/n/10.95 . I prak-sis
+ []
+
+[170] [171]
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+[]\T1/lmr/m/n/10.95 Vi set-ter ge-ome-trien vår inn i et ko-or-di-nat-sys-tem, 
+og tar for gitt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 at vi har en funksjon $\OML/lmm/m/it/10.95 A\OT1/lmr/m/n/10.9
+5 (\OML/lmm/m/it/10.95 x\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 som gir oss tve
+rrsnittsarealet for alle
+ []
+
+<int/../fig/test22.pdf, id=3374, 162.6075pt x 159.57617pt>
+File: int/../fig/test22.pdf Graphic file (type pdf)
+<use int/../fig/test22.pdf>
+Package pdftex.def Info: int/../fig/test22.pdf  used on input line 725.
+(pdftex.def)             Requested size: 162.6071pt x 159.57576pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 725.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+[]\T1/lmr/m/sl/9 Figur 5.7: |[]\T1/lmr/m/n/9 Volumet av ge-ome-trien (gul) tiln
+ærmes ved sum-men av hver
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+[][][][]\T1/lmr/m/n/9 Argumentasjonen for denne på-s-tanden blir iden-tisk med 
+den gitt i fork-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 Vi deler $\OT1/lmr/m/n/10.95 [\OML/lmm/m/it/10.95 a; b\OT1/lm
+r/m/n/10.95 ]$ \T1/lmr/m/n/10.95 inn i $\OML/lmm/m/it/10.95 n$ \T1/lmr/m/n/10.9
+5 delin-ter-valler, der hvert in-ter-vall har
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 leng-den $[]$ og startverdi $[]$ for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+[]$\T1/lmr/m/n/10.95 . Vi tilnærmer vol-umet til ge-ome-trien ved å
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 legge sam-men vol-umene på for-men $\OML/lmm/m/it/10.95 A\OT1
+/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x[]\OT1/lmr/m/n/10.95 )^^A\OML/lmm/m/it/10.
+95 x$\T1/lmr/m/n/10.95 . Når vi lar $\OML/lmm/m/it/10.95 n$ \T1/lmr/m/n/10.95 g
+å
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 mot uen-delig vil sum-men gå mot vol-umet til gjen-standen[][
+][], dette
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--725
+\T1/lmr/m/n/10.95 Uttrykket over er analogt til defin-isjo-nen av det bestemte 
+in-te-
+ []
+
+) [172 <./int/../fig/test22.pdf>] (./opg/int/opg.tex
+(./opg/int/../../../doc.tex) [173
+
+] [174]
+<opg/int/../../fig/int6a.pdf, id=3406, 131.81245pt x 124.3044pt>
+File: opg/int/../../fig/int6a.pdf Graphic file (type pdf)
+<use opg/int/../../fig/int6a.pdf>
+Package pdftex.def Info: opg/int/../../fig/int6a.pdf  used on input line 91.
+(pdftex.def)             Requested size: 118.6301pt x 111.87291pt.
+<opg/int/../../fig/int6b.pdf, id=3407, 142.82358pt x 146.0356pt>
+File: opg/int/../../fig/int6b.pdf Graphic file (type pdf)
+<use opg/int/../../fig/int6b.pdf>
+Package pdftex.def Info: opg/int/../../fig/int6b.pdf  used on input line 92.
+(pdftex.def)             Requested size: 128.54002pt x 131.43082pt.
+ [175 <./opg/int/../../fig/int6a.pdf> <./opg/int/../../fig/int6b.pdf>]
+<opg/int/../../fig/faropg.pdf, id=3425, 170.7178pt x 142.26149pt>
+File: opg/int/../../fig/faropg.pdf Graphic file (type pdf)
+<use opg/int/../../fig/faropg.pdf>
+Package pdftex.def Info: opg/int/../../fig/faropg.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64459pt x 128.03413pt.
+ [176 <./opg/int/../../fig/faropg.pdf>])
+[177] (./tips/tips.tex (./tips/../../doc.tex)
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 9.
+
+[178
+
+]
+<tips/../fig/unitcirc.pdf, id=3458, 143.49611pt x 146.27649pt>
+File: tips/../fig/unitcirc.pdf Graphic file (type pdf)
+<use tips/../fig/unitcirc.pdf>
+Package pdftex.def Info: tips/../fig/unitcirc.pdf  used on input line 68.
+(pdftex.def)             Requested size: 143.49574pt x 146.27612pt.
+
+Overfull \hbox (0.8342pt too wide) in paragraph at lines 68--68
+[][] 
+ []
+
+
+Overfull \hbox (3.65pt too wide) in paragraph at lines 68--68
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/lmr/m/n/10.95 Av tabellen ser vi at $[]$. Av fig-uren ser vi at $[]$ er $[]
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/lmr/m/n/10.95 speilet gjen-nom ver-tikalak-sen. Altså har cos-i-nusver-dien
+ til $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/lmr/m/n/10.95 og $[]$ samme tal-lverdi, men mot-satt fortegn. Dermed er $[]
+$ en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/lmr/m/n/10.95 løs-ning av []. Av fig-uren ser vi at $\OMS/lmsy/m/n/10.95 ^^
+@[]$ \T1/lmr/m/n/10.95 er $[]$ speilet gjen-nom
+ []
+
+[179
+
+ <./tips/../fig/unitcirc.pdf>]
+File: tips/../fig/unitcirc.pdf Graphic file (type pdf)
+<use tips/../fig/unitcirc.pdf>
+Package pdftex.def Info: tips/../fig/unitcirc.pdf  used on input line 92.
+(pdftex.def)             Requested size: 143.49574pt x 146.27612pt.
+
+Overfull \hbox (0.8342pt too wide) in paragraph at lines 92--92
+[][] 
+ []
+
+
+Overfull \hbox (3.65pt too wide) in paragraph at lines 92--92
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 Av tabellen ser vi at $[]$. Av fig-uren ser vi at $[]$ er $[]
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 speilet gjen-nom ver-tikalak-sen. Altså har cos-i-nusver-dien
+ til $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 og $[]$ samme tal-lverdi, men mot-satt fortegn. Dermed er $[]
+$ en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 løs-ning av []. Av fig-uren ser vi at $\OMS/lmsy/m/n/10.95 ^^
+@[]$ \T1/lmr/m/n/10.95 er $[]$ speilet gjen-nom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 ho-rison-ta-lak-sen. Føl-gelig er ogå $\OMS/lmsy/m/n/10.95 ^^
+@[]$ \T1/lmr/m/n/10.95 en løs-ning av []. Så
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 leg-ger vi merke til at om vi starter på $[]$, og går en hel 
+runde
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+\T1/lmr/m/n/10.95 rundt sirke-len, så kom-mer vi til et tall med samme cos-i-nu
+sverdi
+ []
+
+[180]pdfTeX warning (ext4): destination with the same identifier (name{vedleq.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 ...quad \text{ og } \quad x_1+x_2=b  \nreqvd
+                                                  \label{and} \]pdfTeX warning 
+(ext4): destination with the same identifier (name{vedleq.1}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 ...quad \text{ og } \quad x_1+x_2=b  \nreqvd
+                                                  \label{and} \]pdfTeX warning 
+(ext4): destination with the same identifier (name{vedleq.1}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 ...quad \text{ og } \quad x_1+x_2=b  \nreqvd
+                                                  \label{and} \]pdfTeX warning 
+(ext4): destination with the same identifier (name{vedleq.1}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 ...quad \text{ og } \quad x_1+x_2=b  \nreqvd
+                                                  \label{and} \] [181
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]\T1/lmr/m/n/10.95 Siden $[]$ og $[]$ er kravet fra ([]C1[])
+ []
+
+[182]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 128.
+<tips/../fig/sinx.pdf, id=3499, 170.7178pt x 110.91437pt>
+File: tips/../fig/sinx.pdf Graphic file (type pdf)
+<use tips/../fig/sinx.pdf>
+Package pdftex.def Info: tips/../fig/sinx.pdf  used on input line 135.
+(pdftex.def)             Requested size: 170.71738pt x 110.91408pt.
+pdfTeX warning (ext4): destination with the same identifier (name{vedleq.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \[ \frac{\sin x}{x}< 1 \nreqvd
+                                    \label{sinx} \]pdfTeX warning (ext4): desti
+nation with the same identifier (name{vedleq.1}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.138 \[ \frac{\sin x}{x}< 1 \nreqvd
+                                    \label{sinx} \]pdfTeX warning (ext4): desti
+nation with the same identifier (name{vedleq.1}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.138 \[ \frac{\sin x}{x}< 1 \nreqvd
+                                    \label{sinx} \]pdfTeX warning (ext4): desti
+nation with the same identifier (name{vedleq.1}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.138 \[ \frac{\sin x}{x}< 1 \nreqvd
+                                    \label{sinx} \]
+Overfull \hbox (21.44798pt too wide) in paragraph at lines 138--141
+\T1/lmr/m/n/10.95 Videre ob-serverer vi at trekan-ten med $[] \OML/lmm/m/it/10.
+95 x$ \T1/lmr/m/n/10.95 som høyde og 1 som grunnlinje 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{vedleq.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{align*}
+                   [183
+
+ <./tips/../fig/sinx.pdf>] [184]pdfTeX warning (ext4): destination with the sam
+e identifier (name{vedleq.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{align*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{vedleq.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{align*}
+                   [185
+
+]
+Overfull \hbox (13.84065pt too wide) in paragraph at lines 188--188
+|\T1/lmr/bx/n/14.4 Vedlegg F: Bytte av vari-abel ved Leibniz-notasjon[]| 
+ []
+
+[186
+
+] [187]
+Overfull \hbox (10.63306pt too wide) in paragraph at lines 215--215
+|\T1/lmr/bx/n/14.4 Vedlegg G: Bytte av vari-abel for bestemt in-te-gral[]| 
+ []
+
+) [188
+
+]
+runsystem(makeindex TM2_bm.idx)...executed safely (allowed).
+
+ (./TM2_bm.ind [189
+
+
+]) [190] (./opg/fol/fas.tex
+(./opg/fol/../../../doc.tex)) (./opg/tri/fas.tex (./opg/tri/../../../doc.tex)
+[191
+
+] [192]
+Overfull \hbox (32.59224pt too wide) in paragraph at lines 58--60
+[][]\T1/lmr/bx/n/9 2.4.1[] a) $[]$ b) $[]$ c) $[]$ 
+ []
+
+
+Overfull \hbox (3.37895pt too wide) in paragraph at lines 66--67
+[][]\T1/lmr/bx/n/9 2.5.2[] a) $\OML/lmm/m/it/9 P \OT1/lmr/m/n/9 = []$ \T1/lmr/b
+x/n/9 b) $\OML/lmm/m/it/9 f[] \OT1/lmr/m/n/9 = 9$\T1/lmr/m/n/9 , $\OML/lmm/m/it
+/9 f[] \OT1/lmr/m/n/9 = \OMS/lmsy/m/n/9 ^^@\OT1/lmr/m/n/9 1$ \T1/lmr/bx/n/9 c) 
+$\OML/lmm/m/it/9 f$ \T1/lmr/m/n/9 har mak-si-mum for $\OML/lmm/m/it/9 x \OT1/lm
+r/m/n/9 = [] []$ 
+ []
+
+<opg/tri/skissin.pdf, id=3704, 223.83624pt x 135.50626pt>
+File: opg/tri/skissin.pdf Graphic file (type pdf)
+<use opg/tri/skissin.pdf>
+Package pdftex.def Info: opg/tri/skissin.pdf  used on input line 72.
+(pdftex.def)             Requested size: 223.8357pt x 135.5059pt.
+) [193 <./opg/tri/skissin.pdf>] (./opg/vek/fas.tex (./opg/vek/../../../doc.tex)
+
+LaTeX Warning: Reference `lengdvekforkl' on page 194 undefined on input line 50
+.
+
+) (./opg/rom/fas.tex (./opg/rom/../../../doc.tex) [194]) (./opg/int/fas.tex
+(./opg/int/../../../doc.tex) [195]) [196] [197] (./kap0/bakside.tex (../doc.tex
+)) [198]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
+ (./TM2_bm.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
+Package rerunfilecheck Info: File `TM2_bm.out' has not changed.
+(rerunfilecheck)             Checksum: 13124AB5BE3FA82426954CF8AA4C13EF;5707.
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 35236 strings out of 481239
+ 673296 string characters out of 5920378
+ 990271 words of memory out of 5000000
+ 48764 multiletter control sequences out of 15000+600000
+ 680822 words of font info for 145 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 70i,23n,104p,1028b,1219s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
+12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmro9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/esvect/vect10.pfb>
+Output written on TM2_bm.pdf (200 pages, 1817324 bytes).
+PDF statistics:
+ 4115 PDF objects out of 4296 (max. 8388607)
+ 3227 compressed objects within 33 object streams
+ 786 named destinations out of 1000 (max. 500000)
+ 1029 words of extra memory for PDF output out of 10000 (max. 10000000)
+

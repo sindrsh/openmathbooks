@@ -1,0 +1,30 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+	\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=2]
+	\draw[-latex] (-1.5,0) -- (1.5,0) node[anchor=west] {$ x $};
+	\draw[-latex] (0,-1.5) -- (0,1.5) node[anchor=south] {$ y $};	
+	\draw [black] ($({cos(45)},-0.05 ) $)--($({cos(45)},0.05) $) node[anchor=south]{$ \cos a $};
+	\draw [black] ($(0.05,{-sin(45)}) $)--($(-0.05, {-sin(45)}) $) node [anchor=east]{$ \sin a $};			
+	\draw (0,0) circle (1cm);
+	\draw (-1,0) -- (1,0);
+	\draw [blue] (0,0)--(-45:1); %node [black, midway, anchor=north east] {$ 1 $};	
+	\draw [blue] ($({cos(45)},0 ) $)--($({cos(45)}, {-sin(45)}) $);	
+	\draw [densely dotted] ($(0,{-sin(45)}) $)--($({cos(45)}, {-sin(45)}) $);
+	\draw [blue] (0,0)--($({cos(45)},0 ) $);	
+	\draw ($(0:{cos(45)-0.1}) $) rectangle ($({cos(45)},-0.1) $) ;
+%	\draw (-45:0.2) arc (-45:0:0.2);
+%	\draw (-22:0.3) node{ $v$};	
+	\draw (135:0.15) node[]{ $O$};	
+%	\draw [->,>=stealth'] (1.1,0) arc (0:-45:1.1);
+\draw (-45:1.1) node{$ a $}	;	
+	\end{tikzpicture}
+	\caption{}
+\end{figure}
+\end{document}

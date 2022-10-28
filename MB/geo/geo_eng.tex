@@ -1,0 +1,404 @@
+\input{../doc}
+\input{../preamb_eng}
+
+
+\begin{document}
+\newpage
+\section{\omgr}
+\textbf{Point}\os
+A given position is called a\footnote{See also \refsec{Koord}.} \textit{point}\index{point}. We mark a point by drawing a dot, which we preferably name by a letter. Below we have drawn the points $ A $ and $ B $.
+\fig{punkt1}
+\textbf{Line and segment}\os
+A straight dash with infinite length (!) is called a \textit{line}\index{line}. The fact that a line has infinite length, makes \textsl{drawing} a line impossible, we can only \textsl{imagine} a line. Imagining a line can be done by drawing a straight dash and think of its ends as wandering out in each direction.
+\fig{linj1}
+A straight dash between two points is called a \textit{segment}\index{segment}.
+\fig{linjstk1}
+We write the segment between the points $ A $ and $ B $ as $ AB $.  \vsk
+\info{Notice}{
+A segment is a part of a line, therefore a line and a segment have a lot of attributes in common. When writing about lines, it will be up to the reader to confirm whether the same applies for segments. Hence we avoid the need of writing ''lines/segments''.
+}
+
+\newpage
+\info{Segment or length?}{ 
+\fig{linjstk3}
+The segments $ AB $ and $ CD $ have equal length, but they are not the same segment. Still we'll write $ {AB=CD} $. That is, we'll use the same names for the line segments and their lengths (the same applies for angles and their values, see page \pageref{vinklar}\,-\,\pageref{vinkelend}). We'll do this by the following reasons:
+\begin{itemize}
+\item The context will make it clear weather we are talking about a segment or a length.
+\item Finding it necessary to write e.g. ''the length of $ AB $'' would make sentences less readable.
+\end{itemize}
+}
+\newpage
+\textbf{Distance}\os
+There are infinite ways one can move from one point to another and some ways will be longer than others. When talking about a distance in geometry, we usually mean the \textsl{shortest} distance. For geometries studied in this book the shortest distance between two points will always equal the length of the segment (blue in the below figure) connecting them.
+\fig{linjstk2}
+\textbf{Circle; center, radius and diameter} \os
+If we make an enclosed curve where all points on this curve have the same distance to a given point, we have a \textit{circle}\index{circle}. The point which all the points on the curve have an equal distance to is the \textit{center}\index{circle!center} of the circle. A segment between a point on the curve and the center is called a \textit{radius}\index{radius}. A segment between two points on the curve, passing through the circle center, is called a \textit{diameter}\index{diameter}\footnote{As mentioned, \textit{radius} and \textit{diameter} can just as well indicate the length of the segments.}.
+\fig{sirk1_eng}
+\textbf{Arcs and sectors} \os
+A part of a circular curve is called an \textit{arc}\index{arc}. The shape formed by an arc and two associated radii is called a \textit{sector}\index{sector}. The below figure shows three different sectors.
+\fig{sirk3}
+\newpage
+\textbf{Parallel lines}\os
+Lines aligned in the same direction are \textit{parallel}\index{parallel}. The below figure shows two pairs of parallel lines.
+\fig{parl1}
+We use the symbol \sym{$ \parallel $} to indicate that two lines are parallel.
+\[ AB\parallel CD \]
+\fig{parl1a}
+\textbf{Angles} \label{vinklar}\os
+Non-parallel lines will sooner or later intersect. The gap formed  by two non-parallel lines is called an \textit{angle}\index{angle}. We draw angles as small circular curves:
+\fig{vink1}
+Lines creating an angle are called the \textit{sides}\index{angle!side} of the angle. The intersection point of the lines are called the  \textit{vertex}\index{angle!vertex} of the angle. It is common to use the symbol \sym{$ \angle $} to underline the angle in question. In the below figure we have the following:
+\begin{itemize}
+\item the angle $ \angle BOA $  has angle sides $ OB $ and $ OA $ and vertex $ O $.
+\item the angle $ \angle AOD $  has angle sides $ OA $ and $ OD $ and vertex $ O $.	
+\end{itemize}
+\fig{vink2}
+\newpage
+\textbf{Measure of angles in degrees}\os
+When measuring an angle in degrees, we imagine a circular curve divided into 360 equally long pieces. We call one such piece 1 \textit{degree}\index{degree}, indicated by the symbol \sym{$ ^\circ $}. 
+\fig{vink3} \vsk
+Notice that an angle with measure $ 90^\circ $ is indicated by the symbol \sym{$ \square $}. Such an angle is called a \textit{right}\index{angle!right} angle. Lines which form right angles are said to be \textit{perpendicular}\index{segment!perpendicular} to one another, indicated by the symbol $ \sym{$ \perp $} $.
+\[ AB\perp CD \]
+\fig{vink3a}
+\newpage
+\info{What angle?}{
+	Strictly speaking, when two segments (or lines) intersect, they form two angles; the one larger than $ 180^\circ $ and the other smaller than $ 180^\circ $. Usually it is the smaller angle we wish to study, therefore it is common to define $ \angle AOB $ as the \textsl{smaller} angle formed by the segments $ OA $ and $ OB $.
+	\fig{vink2a}
+	As long as there are only two segments/lines present, it is\\ common using only one letter to indicate the angle:
+	\fig{vink2b}
+}\vsk
+\label{vinkelend}
+\newpage
+\reg[\topv \label{toppv}]{
+	Two opposite angles with a common vertex is called \textit{vertical angles}\index{angle!vertical}. Vertical angles are of equal measure.
+	\fig{vink4a}
+}
+\fork{\ref{toppv} \topv}{\vspace{-10pt}
+	\fig{vink4aa}
+	We have
+	\algv{
+		\angle BOC+\angle DOB=180^\circ	\\[5pt]
+		\angle AOD+\angle DOB=180^\circ
+	}	
+	Hence, $ {\angle BOC = \angle AOD} $. Similarly, $ {\angle COA=\angle DOB} $.	
+}
+
+\begin{comment}
+\reg[Samsvarande vinklar]{
+	Vinkler med eit høgre eller venstre vinkelbein felles, kallast \textit{samsvarende vinkler}. I figuren under er dei markerte vinklane samsvarande fordi alle tre har den raude linja som venstre vinkelbein.
+\fig{vink4}
+	Vinklar med parvis parallelle høgre og venstre vinkelbein er like store.
+\fig{vink4b}
+}
+\end{comment}
+\newpage
+\textbf{Sides and vertices} \os
+When line segments form an enclosed shape, they form a \textit{polygon}\index{polygon}. The below figure shows, from left to right, a triangle\index{triangle} (3-gon), a quadrilateral\index{quadrilateral} (4-gon) and a pentagon (5-gon).
+\fig{kant1}
+The segments of a polygon are called \textit{edges}\index{edge} or \textit{sides}\index{side!of polygon}. The respective intersection points of the segments are the \textit{vertices}\index{polygon!vertices of} of the polygon. That is, the triangle below has vertices $ A $, $ B $ and $ C $ and sides (edges) $ AB $, $ BC $ and $ AC $.
+\fig{kant2}
+\info{\merk}{
+Often we'll write a letter only to indicate a vertex of a polygon.
+\fig{kant2b}
+} \vsk
+
+\textbf{Diagonals} \os
+Segments between two vertices not belonging to the same side of a polygon is called a \textit{diagonal}. The below figure shows the diagonals $ AC $ and $ BD $.
+\fig{kant7_eng}
+\newpage
+\subsubsection{Altitudes and base lines}
+In \refsec{Areal}, the terms \textit{base}\index{base} and \textit{height}\index{height} (\textit{altitude}\index{altitude}) play an important role. To find the height of a triangle, we choose one of the sides to be the base. In the below figure, let's start with $ AB $ as the base. Then the height is the segment from $ AB $  (potentially, as is the case here, the extension of $ AB $) to $ C $, perpendicular to $ AB $.
+\fig{tri15_eng}
+Since there are three sides which can be bases, a triangle has three heights.
+\fig{tri15b_eng}
+\info{Notice}{The terms altitude and base also applies to other polygons.}
+\section{\eignsk}
+In addition to having a certain number of sides and vertices, polygons have other attributes, such as sides or angles of equal measure, or parallel sides. There are specific names of polygons with special attributes, and these names can be put into an overview where some ''inherit''\footnote{In \rref{trekantar} and \rref{firkantar} this is indicated by arrows.} attributes from others.\regv
+
+
+\reg[Triangles \label{trekantar}]{
+\fig{kant4e_eng}	
+\parbox[l][][l]{0.35\linewidth}{
+	\centering
+	\fig{kant4a}	
+}
+\parbox[r][][l]{0.65\linewidth}{
+	\textbf{Triangle}\\
+	Have three sides and three vertices.	
+}
+
+\parbox[l][][l]{0.35\linewidth}{
+	\centering
+	\fig{kant4b}	
+}
+\parbox[r][][l]{0.65\linewidth}{
+	\textbf{Right triangle} \\
+	Have an angle of $ 90^\circ $.
+}
+
+\parbox[l][][l]{0.35\linewidth}{
+	\fig{kant4c}	
+}
+\parbox[r][][l]{0.65\linewidth}{
+	\textbf{Isosceles triangle} \\
+	At least two sides are of equal length. \\
+	At least two angles are of equal measure.
+}
+
+\parbox[l][][l]{0.35\linewidth}{
+	\fig{kant4d}	
+}
+\parbox[r][][l]{0.65\linewidth}{
+	\textbf{Equilateral triangle}\\
+	The sides are of equal length.\\
+	Each of the angles equals $ 60^\circ $.
+}
+}
+\eks{
+Since an equilateral triangle have three sides of equal length and three angles equal to $ 60^\circ $, it is also an isosceles triangle.
+}
+\spr{
+	The longest side of a right triangle is called the \textit{hypotenuse}\index{hypotenuse} and the shorter sides are called \textit{legs}\index{legs}.
+}
+\reg[\trisum \label{180}]{In a triangle, the sum of the angles equals $ 180^\circ $.
+	\[ \angle A +\angle B + \angle C= 180^\circ \]
+	\fig{kant5}	
+}\regv
+\fork{\ref{180} \trisum}{
+	\fig{geo10}	
+	We draw a segment $ FG $ passing through $ C $ and parallel to $ AB $. Moreover, we place $ E $ and $ D $ on the extension of $ AC $ and $ BC $, respectively. Then $ {\angle A=\angle GCE} $ and $ {\angle B=\angle DCF} $. $ {\angle ACB=\angle ECD}  $ because they are vertical angles. Now
+	\[ \angle DCF+\angle ECD=\angle GCE=180^\circ \]
+	Hence
+	\[ \angle CBA+\angle ACB+\angle BAC=180^\circ \]
+} \vsk
+
+\reg[Quadrilaterals \label{firkantar}]{ \vs
+\fig{kant3g_eng}
+\begin{figure}
+	\parbox[l][][l]{0.45\linewidth}{
+		\fig{kant3a}	
+	}		
+	\parbox[r][][l]{0.55\linewidth}{ \vsk \vsk
+		\textbf{Quadrilateral} \\
+		Have four sides and four vertices.
+	}
+\end{figure} \vs \vs
+
+\begin{figure}
+	\parbox[l][][l]{0.45\linewidth}{
+		\fig{kant3b}	
+	}
+	\parbox[r][][l]{0.55\linewidth}{
+		\textbf{Trapezoid} \\
+		Have at least one pair of parallel sides.
+	}
+\end{figure}
+
+\begin{figure}
+	\parbox[l][][l]{0.45\linewidth}{
+		\fig{kant3c}	
+	}
+	\parbox[r][][l]{0.55\linewidth}{
+		\textbf{Parallelogram} \\
+		Have two pairs of parallel sides. \\
+		Have two pairs of equal angles.
+	}
+\end{figure}
+
+\parbox[l][][l]{0.45\linewidth}{
+	\fig{kant3d}	
+}
+\parbox[r][][l]{0.55\linewidth}{
+	\textbf{Rhombus} \\
+	All sides are of equal length.\\ 
+}
+
+\parbox[l][][l]{0.45\linewidth}{
+	\fig{kant3e}	
+}
+\parbox[r][][l]{0.55\linewidth}{
+	\textbf{Rectangle} \\
+	All angles equals $ 90^\circ $. 
+}
+
+\parbox[l][][l]{0.45\linewidth}{
+	\fig{kant3f}	
+}
+\parbox[r][][l]{0.55\linewidth}{
+	\textbf{Square} 
+}
+}
+\eks{
+The square is both a rhombus and a rectangle, which means it ''inherits'' their attributes. From this it follows that, in a square,
+\begin{itemize}
+	\item all sides are of equal length.
+	\item all angles equals $ 90^\circ $.
+\end{itemize}
+}
+
+
+
+
+\reg[\firsum \label{360}]{In a quadrilateral, the sum of the angles equals $ 360^\circ $.
+	\[ \angle A +\angle B + \angle C+\angle D= 360^\circ \]
+	\fig{kant6}
+}
+\fork{\ref{360} \firsum}{
+	The total sum of angles of $ \triangle ABD $ and $ \triangle BCD $ equals the sum of the angles in $ \square ABCD $. By \rref{180}, the sum of angles of triangles $ 180^\circ $, therefore the sum of the angles of $ \square ABCD $ equals $ 2\cdot180^\circ=360^\circ $.
+	\fig{kant6a}
+}
+\section{\omkr}
+When we measure the length around an enclosed shape, we find its \textit{perimeter}\index{perimeter}. Let's find the perimeter of this rectangle:
+\fig{geo1}
+The rectangle has two sides of length 4 and two sides of length 5.
+\fig{geo1a}
+Hence
+\alg{
+\text{The perimeter of the rectangle} &= 4+4+5+5 \\
+&= 18
+}
+\reg[Perimeter]{A perimeter is the length around a closed shape.}
+\eks[]{ \vsb \vs
+	\begin{figure}
+		\centering
+\subfloat[]{\includegraphics[]{\asym{tri23a}}}
+\subfloat[]{\includegraphics[]{\asym{tri23c}}}		
+	\end{figure}
+In figure \textsl{(a)} the perimeter equals $ {5+2+4=11} $. \vsk
+
+In figure \textsl{(b)} the perimeter equals $ 4+5+3+1+6+5=24 $.	
+} 
+
+
+\section{\area \label{Areal}}
+Our surroundings are full of \textit{surfaces}\index{surface}, for example on a floor or a sheet. When measuring surfaces, we find their \textit{area}\index{area}. The concept of area is the following:\regv
+
+\st{We imagine a square with sides of length 1. We call this the \textit{unit square}.
+	\fig{tri_10}
+	Then, regarding the surface for which we seek the area of, we ask:\os
+	\begin{center}
+		''How many unit squares does this surface contain?''
+\end{center}}
+\subsubsection{\arrekt \label{arrekt}}
+Let's find the area of a rectangle with baseline 3 and altitude 2.
+\fig{tri11a}
+Simply by counting, we find that the rectangle contains 6 unit squares:
+\[ \text{The area of the rectangle}=6 \]
+\fig{tri11}
+Looking back at \refsec{Gonging}, we notice that
+\alg{
+	\text{The area of the rectangle} &= 3\cdot 2 \\
+	&= 6 
+}
+\newpage
+\reg[\arrekt \label{arfir}]{
+\vs
+	\[ \text{Area}=\text{baseline}\cdot\text{altitude} \]
+	\fig{tri12_eng}
+}
+\info{Width and length}{In a rectangle, the baseline and the altitude are also referred to as (in random order) the \textit{width}\index{width} and the \textit{length}\index{length}.}
+\eks[1]{
+	Find the area of the rectangle\footnotemark.
+	\fig{tri12b} \vsb \vspace{-5pt}
+	\sv \vs
+	\[ \text{The area of the rectangle} =4\cdot 2 =8 \]	
+}
+\eks[2]{ 
+	Find the area of the square.
+	\fig{tri12c} \vsb \vspace{-5pt}
+	\sv \vs
+	\[ \text{The area of the square} =3\cdot 3 =9 \]	
+}
+\footnotetext{\mer The lengths used in one figure will not necessarily correspond to the lengths in another figure. That is, a side of length 1 in one figure can might as well be shorter than a side of length 1 in another figure.}
+\newpage
+\subsubsection{\artri \label{artri}}
+Concerning triangles, there are three different cases to study: \vsk
+
+\textit{1) The baseline and the altitude have a common end point} \os
+Let's find the area of a right triangle with baseline $ 5 $ and altitude $ 3 $.
+\fig{tri16}
+We can make a rectangle by copying our triangle and joining the \\hypotenuses:
+\fig{tri17}
+By \rref{arfir}, the area of the rectangle equals $ {5\cdot 3} $. The area of one of the triangles makes up half the area of the rectangle, so
+\[ \text{The area of the blue triangle} = \frac{5\cdot 3}{2} \]
+Regarding the blue triangle we have
+\[\frac{5\cdot3}{2}= \frac{\text{baseline}\cdot \text{height}}{2} \]
+\newpage
+\textit{2) The altitude is placed inside the triangle, but have no common end point with the baseline} \os
+The below triangle has baseline 5 and altitude 4.
+\fig{tri20}
+We make a rectangle containing the blue triangle (split into the red triangle and the yellow triangle):
+\fig{tri20a}
+Observe that
+\begin{itemize}
+	\item the area of the red triangle makes up half the area of the rectangle formed by the red and the yellow triangle.
+	\item the area of the yellow triangle makes up half the area of the rectangle formed by the yellow and the green triangle.
+\end{itemize}
+It now follows that the sum of the areas of the yellow triangle and the red triangle makes up half the area of the rectangle formed by the four colored triangles. The area of this rectangle equals $ 5\cdot4 $, and since our original triangle (the blue) includes the red triangle and the orange triangle, we have
+\[ \text{The area of the blue triangle}=\frac{5\cdot4}{2}=\frac{\text{baseline}\cdot\text{height}}{2} \] 
+\newpage
+\textit{2) The altitude is placed outside the triangle} \os
+The below triangle has baseline 4 and altitude 3. 
+\fig{tri18}
+We now make a rectangle containing the blue triangle:
+\fig{tri18a}
+Now we introduce the following names:
+\alg{
+	\text{The area of the rectangle}= R \\	\text{The area of the blue triangle} = B\\
+	\text{The area of the orange triangle} = O \\  \text{The area of the green triangle} = G
+}
+We have
+\alg{
+	R&= 3\cdot10=30\vn
+	O&= \frac{3\cdot10}{2}=15\vn
+	G &= \frac{3\cdot 6}{2}=9
+}
+Moreover,
+\algv{
+	B &=R-O-G \\
+	&=30-15-9\\
+	&=6
+}
+Observe that we can write
+\[ 6=\frac{4\cdot3}{2} \]
+Regarding the blue triangle we recognize this as 
+\[ \frac{4\cdot3}{2}=\frac{\text{base}\cdot\text{height}}{2} \]
+\newpage
+\textit{The three cases summarized}\os
+For a chosen baseline in a triangle, one of the cases discussed will always be valid. All cases resulted in the same expression for the area of the triangle.\regv
+
+\reg[The area of a triangle]{
+	\[ \text{Area}=\frac{\text{base}\cdot\text{height}}{2} \]
+\fig{triar00_eng}
+}
+\eks[1]{
+Find the area of the triangle.
+\fig{geo16a} \vs
+\sv \vsb
+
+\algv{
+	\text{The area of the triangle}&=\frac{4\cdot 3}{2} \br&=6
+}
+}
+\newpage
+\eks[2]{
+Find the area of the triangle.
+\fig{geo16b} \vs
+\sv \vsb
+
+\algv{
+	\text{The area of the triangle}=\frac{6\cdot 5}{2}=15
+}
+}
+
+\eks[3]{
+Find the area of the triangle.
+\fig{geo16c} \vs
+\sv \vsb
+
+\algv{
+	\text{The area of the triangle}=\frac{7\cdot 3}{2}=\frac{21}{2}
+}
+}
+\end{document}
+

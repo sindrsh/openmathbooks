@@ -1,0 +1,33 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\footnotesize
+\opgt 	
+
+\opr{opggeoqrst}
+\fig{opggeoqrst_lf}	
+$ {\triangle EFC \sim \triangle DFB} $ fordi begge er rettvinklede, og $ {\angle CFE = \angle BFD}$ (de er toppvinkler). Dermed har vi at
+\begin{equation}\label{opggeoqrsteq1}
+	\frac{EF}{CE}=\frac{FD}{BC} 
+\end{equation}
+Videre er
+\begin{equation}\label{opggeoqrsteq2}
+	EF+FD= AD-AE
+\end{equation}
+Ved å løse likningssettet vi får av \eqref{opggeoqrsteq1} og \eqref{opggeoqrsteq2}, med hensyn på $ EF $ og $ ED $, får vi at
+\[ 
+EF = \frac{AD-AE}{CE+BC}CE\qquad,\qquad  ED=\frac{AD-AE}{CE+BC}BC
+\]
+Det doble arealet til $ \triangle ABC $ er gitt som
+\begin{multline*}
+(AE+EF)CE+(AD-FD)BC \\=\left(AE+\frac{AD-AE}{CE+BC}CE\right)CE+\left(AD-\frac{AD-AE}{CE+BC}BC\right)BC	
+\end{multline*}
+\alg{
+&=\frac{1}{CE+BC}\left[\left(AE\cdot BC+AD\cdot CE\right)CE+\left(AD\cdot CE+AE\cdot BC\right)BC\right]\br
+&=AD\cdot CE+ AE\cdot BC
+}
+\end{document}
+

@@ -1,0 +1,223 @@
+%\documentclass[english, 11 pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{babel}
+\usepackage{xr-hyper}
+
+\usepackage{geometry}
+%\geometry{verbose,margin=1.5cm,bmargin=2.5cm,lmargin=4.5cm,rmargin=4.5cm,headheight=10cm,headsep=1cm,footskip=1cm}
+\geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
+\setlength{\parindent}{0bp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+%\makeatletter
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{calc}
+\usepackage{cancel}
+\usepackage{color}
+\definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{bm}
+\usepackage{ntheorem}
+\usepackage{ragged2e}
+\RaggedRight
+\raggedbottom
+\frenchspacing
+
+\newcounter{lign}[chapter]
+\newenvironment{lign}[1][]{\Large \refstepcounter{lign} \large
+   \textbf{\thelign #1} \rmfamily}{\par\medskip}
+\numberwithin{lign}{chapter}
+\numberwithin{equation}{chapter}
+\usepackage{xcolor}
+\usepackage{icomma}
+\usepackage{mathtools}
+\usepackage{lmodern} % load a font with all the characters
+\makeatother
+\usepackage[many]{tcolorbox}
+
+\newcommand{\parskiplength}{11pt}
+%\setlength{\parskip}{\parskiplength}
+
+\newcommand\eks[2][]{\begin{tcolorbox}[arc=0mm,enhanced jigsaw,breakable,colback=green!8,boxrule=0.3 mm] {\large \textbf{Eksempel #1} \vspace{5 pt}\newline} #2 \vspace{1pt} \end{tcolorbox}\vspace{-4pt}}
+\newcommand\tit[2][]{\large \textbf{#2 - Eksempel #1} \\}
+\newcommand\lig[1]{\begin{lign} \large \normalfont #1 \end{lign}}
+\newcommand\hrds[1]{\hyperref[#1]{\textsl{delseksjon \ref*{#1}}}}
+\newcommand\hr[2][]{\hyperref[#2]{\textsl{#1}}}
+\newcommand\hrs[2][]{\hyperref[#2]{\textsl{\textsl{#1} \ref*{#2}}}}
+\newcommand\hrv[1]{\hyperref[#1]{\textsl{\textsl{vedlegg} \ref*{#1}}}}
+\newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
+\newcommand\hrss[2][]{\hyperref[#2]{\textsl{#1}}}
+\newcommand\ligg[1]{{\large \normalfont \textbf{#1}} \vspace{5 pt}\\}
+%\newcommand\rg[2][]{\begin{tcolorbox}[colback=blue!15] \ligg{#1} #2  %\end{tcolorbox}}
+\newcommand\rg[2][]{\begin{tcolorbox}[arc=0mm,colback=blue!5,enhanced jigsaw,breakable, boxrule=0.3 mm]{\large \normalfont \textbf{#1} \vspace{5 pt}\newline} #2 \vspace{1pt} \end{tcolorbox}\vspace{-4pt}}
+\newcommand\rgg[2][]{\begin{tcolorbox}[colback=orange!55] #2 \vspace{1pt} \end{tcolorbox}\vspace{-9pt}}
+\newcommand\alg[1]{\begin{align*} #1 \end{align*}}
+\newcommand{\algv}[1]{\vspace{-9 pt} \begin{align*} #1 \end{align*}}
+\newcommand{\algb}[1]{\vspace{-9 pt} \begin{align*} #1 \end{align*}}
+\newcommand\vs{\vspace{-\parskiplength}}
+\newcommand\vsb{\vspace{-13pt}}
+\newcommand\vds{\vs\vs}
+\newcommand\g[1]{\begin{center} \vspace{-11 pt} {\tt #1} \vspace{-11 pt} \end{center}}
+\newcommand\gv[1]{\begin{center} \vspace{-22 pt} {\tt #1} \vspace{-11 pt} \end{center}}
+\newcommand\vsk{\vspace{11 pt}}
+%\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag tentamen R2 H2015}}
+
+% Farger
+%\pagecolor{yellow!3}
+\colorlet{shadecolor}{blue!30} 
+
+% Figur
+\usepackage{float}
+\usepackage{subfig}
+\captionsetup[subfigure]{labelformat=empty}
+\newcommand{\fig}[2]{\begin{figure}
+		\centering
+		\includegraphics[]{\asym{#1}}
+		\caption{#2}
+\end{figure}}
+
+\usepackage{esvect}
+\usepackage[font=footnotesize,labelfont=sl]{caption}
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+
+\newcommand{\sss}[1]{\subsection*{#1}   \addcontentsline{toc}{subsection}{#1}}
+\newcommand\sv{\vsk \textbf{Svar:} \vspace{4 pt}\\}
+\newcommand{\bs}{\\[4 pt]}
+\newcommand{\os}{\\[4 pt]}
+%Tableofconents
+%\setlength{\cftsubsecindent}{1 cm}
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}
+\setlength{\cftaftertoctitleskip}{0 pt}
+\setlength{\cftbeforetoctitleskip}{0 pt}
+\renewcommand\cftchapfont{\footnotesize\bfseries}
+\renewcommand\cftsecfont{\footnotesize}
+\renewcommand\cftsubsecfont{\footnotesize}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\newcommand\tocskip{3 pt}
+\setlength{\cftbeforechapskip}{12 pt}
+\setlength{\cftbeforesecskip}{\tocskip}
+\setlength{\cftbeforesubsecskip}{\tocskip}
+
+%Seksjoner
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+{\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing{\chapter}{0pt}{0pt}{0pt}
+%\titlespacing{\subsection}{0pt}{\parskip}{0pt}
+%\titlespacing{\section}{0pt}{\parskip}{0pt}
+
+% Gjem tekst
+\newcommand\gj[1]{\begin{comment} #1 \end{comment}}
+
+%Footnote:
+\usepackage[bottom, hang, flushmargin]{footmisc}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+\addtolength{\footnotesep}{2mm}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand\footnoterule{\rule{\linewidth}{0.4pt}}
+
+%asin, atan, acos
+\DeclareMathOperator{\atan}{atan}
+\DeclareMathOperator{\acos}{acos}
+\DeclareMathOperator{\asin}{asin}
+
+%Tabell
+\addto\captionsenglish{\renewcommand{\tablename}{Tabell}}
+
+% Tikz
+\usetikzlibrary{calc}
+\usepackage{tkz-euclide}
+\tikzset{
+	font={\fontsize{11pt}{12}\selectfont}}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix}
+
+%Nummererte ligninger
+%\newcommand\nreq[1]{\begin{equation*} #1 \end{equation*}}
+\newcommand\nreq[1]{\begin{equation} #1 \end{equation}}
+%Asymptote
+\usepackage[attach]{asymptote}
+% Enable this line to support the attach option:
+\usepackage[dvips]{attachfile2}
+
+
+\newcommand{\scr}[1]{/home/sindre/R/scr/#1}
+\newcommand{\asym}[1]{../asymptote/#1}
+%Toc for seksjoner
+\newcommand\tsec[1]{\phantomsection \addcontentsline{toc}{section}{#1}
+	\section*{#1}}
+%\newcommand\tssec[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand\tssec[1]{\subsection{#1}}
+
+% GeoGebra
+\newcommand\cm[1]{{\large \tt #1} \gvs\\}
+\newcommand\cmc[1]{{\large \tt #1} {\large (CAS)} \gvs\\}
+\newcommand\cmk[1]{{\large \tt #1} {\large (Inntastingsfelt)} \gvs\\}
+\newcommand\gvs{\vspace{\parskip}}
+
+% Brok
+\newcommand\br{\\[5 pt]}
+
+% Opg
+\newcommand{\opgt}{\phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}}
+\newcounter{opg}
+\numberwithin{opg}{section}
+\newcommand{\op}{\refstepcounter{opg} \textbf{\theopg} \vspace{2 pt} \\}
+\newcommand{\opl}[1]{\vsk \refstepcounter{opg} \textbf{\theopg} \vspace{2 pt} \label{#1} \\}
+\newcommand{\ekspop}{\vsk\textbf{Gruble \thechapter}\vspace{2 pt} \\}
+\newcommand{\nes}{\stepcounter{section}
+	\setcounter{opg}{0}}
+\newcommand{\ness}{\stepcounter{subsection}
+	\setcounter{opg}{0}}
+\newcommand{\opr}[1]{\textbf{\ref{#1}}}
+\newcommand{\se}[1]{Se eksempel s. {\pageref{#1}}}
+\newcommand{\sel}{Se løsningsforslag.}
+\newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
+% Kolonner
+%\usepackage{multicol}
+
+%Vedlegg
+\newcounter{vedl}
+\newcounter{vedleq}
+\renewcommand\thevedl{\Alph{vedl}}	
+\newcommand{\vedlegg}[1]{\refstepcounter{vedl}\section*{Vedlegg \thevedl: #1}  \setcounter{vedleq}{0}}
+\newcommand{\nreqvd}{\refstepcounter{vedleq}\tag{\thevedl \thevedleq}}
+
+%page number
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrule}{}
+\fancyhead[RO, LE]{\thepage}
+
+%more spaces
+\newcommand{\regv}{\vspace{5pt}}
+
+%equation
+\newcommand{\y}[1]{$ {#1} $}
+
+% index
+\usepackage{imakeidx}
+\makeindex[title=Indeks]
+
+%fotnoter i tekstbokser med arabiske nummer
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+\usepackage[]{hyperref}
+
+
+\newcommand{\los}{
+\footnotesize
+\setlength{\parskip}{5pt}
+}
+
+\usepackage{datetime2}

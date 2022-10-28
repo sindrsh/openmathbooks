@@ -1,0 +1,227 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+%\newpage
+\section{\rrek}
+\subsection*{Prioriteringen av regneartene}
+Se på følgende regnestykke:
+\[ 2+3\cdot4 \]
+Et slikt regnestykke \textsl{kunne} man tolket på to måter:
+\begin{enumerate}[label=(\roman*)]
+	\item ''2 pluss 3 er 5. 5 ganget med 4 er 20. Svaret er 20.''
+	\item ''3 ganget med 4 er 12. 2 pluss 12 er 14. Svaret er 14.''
+\end{enumerate}
+Men svarene blir ikke like! Det er altså behov for å ha noen regler om hva vi skal regne ut først. Den ene regelen er at vi må regne ut ganging eller deling \textsl{før} vi legger sammen eller trekker ifra, dette betyr at \regv
+\st{ \vs
+\alg{
+	2+3\cdot 4&=\text{''Regn ut }3\cdot4\text{, og legg sammen med 2''}  \\
+	&= 2+12 \\
+	&= 14
+}
+}
+Men hva om vi ønsket å legge sammen $ 2 $ og $ 3 $ først, og så gange summen med 4? Å fortelle at noe skal regnes ut først gjør vi ved hjelp av parenteser: \regv
+\st{\vs
+\alg{
+(2+3)\cdot4&=\text{''Legg sammen 2 og 3, og gang med 4 etterpå''} \\
+&= 5\cdot 4 \\
+&= 20
+}
+}\regv
+
+\reg[Regnerekkefølge \label{rrek}]{ \vspace{-5pt}
+\begin{enumerate}
+	\item Uttrykk med parentes
+	\item Multiplikasjon eller divisjon
+	\item Addisjon eller subtraksjon
+\end{enumerate}
+} 
+\newpage
+\eks[1]{
+Regn ut
+\[ 23-(3+9)+4\cdot 7 \]
+\sv \vs \vs
+\algv{
+&& 23-(3+9)+4\cdot 7&=23-12+4\cdot7 &&\text{Parentes} \\
+&&&=23-12+28 &&\text{Ganging} \\
+&&&=39 &&\text{Addisjon og subtraksjon}
+}
+}
+\eks[2]{
+	Regn ut
+	\[ 18:(7-5)-3 \]
+	\sv \vs \vs
+	\algv{
+		&& 18:(7-5)-3&=18:2-3 &&\text{Parentes} \\
+		&&&=9-3 &&\text{Deling} \\
+		&&&=6 &&\text{Addisjon og subtraksjon}
+	}
+}
+\subsection*{Ganging med parentes}
+Hvor mange ruter ser vi i figuren under?
+\fig{gang}
+To måter man kan tenke på er disse:
+\begin{enumerate}[label=(\roman*)]
+	\item Det er $ 2\cdot4 =8 $ lilla ruter og $ 3\cdot4=12 $ grønne ruter. Til sammen er det $ 8+12 =20 $ ruter. Dette kan vi skrive som
+\[ 2\cdot 4 + 3\cdot 4 = 20  \]
+	\item Det er $ 2+3=5 $ ruter bortover og 4 ruter oppover. Altså er det $ 5\cdot4 =20 $ ruter totalt. Dette kan vi skrive som
+	\[ (2+3)\cdot 4 = 20 \]
+\end{enumerate}
+Av disse to utregningene har vi at
+\[ (2+3)\cdot4 = 2\cdot 4+ 3\cdot4 \]
+\reg[\gangpar \label{gangpar}]{
+Når et parentesuttrykk er en faktor, kan vi gange de andre faktorene med hvert enkelt ledd i parentesuttrykket.	 
+%\fig{gang1}
+}
+\eks[1]{
+\vs
+\[ ({\color{orange}4}+{\color{ForestGreen}7})\cdot {\color{blue}8}={\color{orange}4}\cdot{\color{blue}8}+{\color{ForestGreen}7}\cdot{\color{blue}8} \]	
+}
+\eks[2]{ \vsb \vs
+\alg{
+(10-7)\cdot2 &= 10\cdot 2-7\cdot2\\
+&=20-14 \\
+&=6
+}	
+\mer Her vil det selvsagt være raskere å regne slik:
+\[ (10-7)\cdot 2=3\cdot 2 =6 \]
+}
+\eks[2]{
+Regn ut $ 12\cdot 3 $.
+
+\sv
+\vsb \vsb
+\alg{
+12\cdot 3&= (10+2)\cdot 3 \\
+&=10\cdot 3 +2\cdot 3 \\
+&=30 +6 \\
+&=36
+}	
+}
+\info{\note}{
+Vi introduserte parenteser som en indikator på hva som skulle regnes ut først, men \rref{gangpar} gir en alternativ og likeverdig betydning av parenteser.
+}
+\newpage
+\subsubsection{Å gange med 0}
+Vi har tidligere sett at 0 kan skrives som en differanse mellom to tall, og dette kan vi nå utnytte til å finne produktet når vi ganger med 0. La oss se på regnestykket
+\[ (2-2)\cdot3 \]
+Av \rref{gangpar} har vi at
+\alg{
+	(2-2)\cdot3 &= 2\cdot3-2\cdot3\\&=6-6\\&=0
+}
+Siden $ 0=2-2 $, må dette bety at
+\[ 0\cdot3=0 \]
+
+\reg[Gonging med 0]{
+	Viss 0 er en faktor, er produktet lik 0.
+}
+\eks[1]{ \vsb \vs
+	\alg{
+		7\cdot0&=0\vn
+		0\cdot219 &=0
+	}
+}
+\subsection*{Assosiative lover}
+\reg[Assosiativ lov ved addisjon]{
+Plasseringen av parenteser mellom ledd har ingen påvirkning på summen.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2+3)+4&=5+3=9 \vn
+2+(3+4)&=2+7=9
+}
+\fig{asso0}
+}
+\vsk \vsk
+
+\reg[Assosiativ lov ved multiplikasjon]{
+Plasseringen av parenteser mellom faktorer har ingen påvirkning på produktet.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2\cdot3)\cdot4 &=6\cdot 4=24 \vn
+2\cdot(3\cdot4)&=2\cdot 12 =24
+}
+\fig{asso1}
+}  \vsk
+
+I motsetning til addisjon og multiplikasjon, er hverken subtraksjon eller divisjon assosiative:
+\alg{
+(12-5)-4&=7-4=3 \vn
+12-(5-4)&=12-1=11
+}
+\alg{
+	(80:10):2&=8:2=4 \vn
+	80:(10:2)&=80:5=16
+}
+Vi har sett at parentesene hjelper oss med å si noe om \textsl{prioriteringen} av regneartene, men det at subtraksjon og divisjon ikke er assosiative fører til at vi også må ha en regel for hvilken \textsl{retning} vi skal regne i. \regv
+
+\reg[Retning på utregninger \label{rret}]{
+Regnearter som ut ifra \rref{rrek} har lik prioritet, skal regnes fra venstre mot høyre.
+}
+\eks[1]{ \vsb \vsb
+	\alg{
+		12-5-4&=(12-5)-4 \\
+		&=7-4\\
+		&=3
+	}
+}
+\eks[2]{ \vsb \vsb
+	\alg{
+		80:10:2&=(80:10):2 \\
+		&=8:2 \\
+		&=4
+	}
+}
+\eks[3]{ \vsb \vs
+	\alg{
+		6: 3\cdot 4 &= (6:3)\cdot4\\ 
+		&=2\cdot4 \\
+		&= 8
+	}
+}
+
+\section{\fak \label{Faktorisering}}
+Når en heltalls dividend og en heltalls divisor resulterer i en heltalls \\kvotient, sier vi at dividenden er \outl{delelig} med divisoren. For eksempel er $ 6 $ delelig med $ 3 $ fordi $ {6:3=2} $, og $ 40 $ er delelig med $ 10 $ fordi $ {40:10=4} $. Begrepet delelig er med på å definere \outl{primtall}\index{primtall}:\regv
+
+\regdef[Primtall]{
+	Et naturlig tall som er større enn 1, og som bare er delelig med seg selv og 1, er et primtall.
+}
+\eks[]{
+	De fem første primtallene er $ 2, 3, 5 , 7  $ og $ 11 $.
+} \vsk \vsk
+
+\regdef[Faktorisering]{\index{faktorisering}
+	Faktorisering innebærer å skrive et tall som et produkt av andre tall.
+}
+\eks{
+	Faktoriser 24 på tre forskjellige måter.
+	
+	\sv  \vsb \vs 
+	\alg{
+		24&=2\cdot 12 \br
+		24&=3\cdot 8 \br
+		24&=2\cdot 3 \cdot 4
+	}
+} 
+\spr{
+	Da 12 er delelig med 4, sier vi at 4 er en faktor i 12.
+}
+\newpage
+\reg[Primtallsfaktorisering]{\index{primtallsfaktorisering}
+	Faktorisering med bare primtall som faktorer kalles \\\outl{primtallsfaktorisering}.
+}
+\eks[]{
+	Skriv 12 på primtallsfaktorisert form.
+	
+	\sv \vs \vs
+	\[ 12= 2 \cdot2\cdot3 \]
+}
+\info{Primtallene mellom 1-100}{
+	\label{primtalfig}
+	\fig{primn100}
+}
+
+\end{document}
+

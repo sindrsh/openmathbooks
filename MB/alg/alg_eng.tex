@@ -1,0 +1,141 @@
+\input{../doc}
+\input{../preamb_eng}
+
+\begin{document}
+\section{\algintro}
+Simply said, \textit{algebra}\index{algebra} is mathematics where letters represent numbers. This makes it easier working with \textsl{general} cases. For example, $ 3\cdot 2=2\cdot3 $ and $ {6\cdot7=7\cdot6} $ but these are only two of the infinitely many examples of the commutative property of multiplication! One of the aims of algebra is giving \textsl{one} example that explains \textsl{all} cases, and since our digits (0-9) are inevitably connected to specific numbers, we apply letters to reach this target. \vsk
+
+The value of the numbers represented by letters will often vary, in that case we call the letter-numbers \textit{variables}\index{variable}. If letter-numbers on the other hand have a specific value, they are called \textit{constants}\index{constant}.
+
+\vsk
+
+In \hrs{Del1}{Part}, we studied calculations through examples with specific numbers, however, most of these rules are \textsl{general}; they are valid for all numbers. On page \pageref{regstart}\,-\,\pageref{regslutt}, many of these rules are reproduced in a general form. A good way of getting acquainted with algebra is comparing the rules here presented by the way they are expressed in\footnote{The number of the rules as found in \hrs{Del1}{Part} are written inside parentheses.} \hrs{Del1}{Part}. \vsk
+
+\regv
+\label{regstart}
+\reg[\adkom\;(\ref{adkom}) \label{adkomalg}]{\vs
+\[ a+ b =b+a \]
+}
+\eks{ \vsb
+\[ 7+ 5=5+7 \]
+} \vsk \vsk
+
+\reg[\gangkom\;(\ref{gangkom})]{\vs
+	\[ a\cdot b =b\cdot a \]
+}
+\eks[1]{ \vsb
+	\[ 9\cdot 8=8\cdot9 \]
+}
+\eks[2]{ \vsb
+\[  8\cdot a= a\cdot 8  \]
+}
+\newpage
+\info{Multiplication involving letters}{When multiplication involves letters, it is common to omit the symbol of multiplication. If a specific number and a letter are multiplied together, the specific number is written first. For example,
+	\[ a\cdot b= ab \]
+	and
+	\[ a\cdot 8 =8a \]
+We also write
+\[ 1\cdot a=a \]
+In addition, it is common to omit the symbol of multiplication when an expression with parentheses is involved:
+\[ 
+3\cdot(a+b)=3(a+b) \]
+}
+\vsk 
+
+\reg[\brdef\;(\ref{brdef})]{
+\[ a:b=\frac{a}{b} \]
+}
+\eks[]{ \vs
+\[a:2= \frac{a}{2} \]
+}
+ \vsk 
+
+\reg[\brtbr\; (\ref{brtbr})]{
+\[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
+}
+\eks[1]{ \vs
+\algv{
+\frac{2}{11}\cdot \frac{13}{21}&=\frac{2\cdot 13}{11\cdot21} =\frac{26}{231}
+}
+}
+\eks[2]{ \vs
+	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
+}
+\newpage
+\reg[\brdelmbr\;(\ref{delmbr})]{ 
+\[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
+}
+\eks[1]{ \vs
+\[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
+}
+\eks[2]{ \vsb \vs
+\alg{
+\frac{a}{13}:\frac{b}{3}&=\frac{a}{13}\cdot \frac{3}{b} \br
+&=\frac{3a}{13b}
+}
+} \vsk \vsk
+
+\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{ \vs
+\[ (a+b)c = a c + b c \]
+} 
+\eks[1]{ \vs
+\[ (2+a)b =2b+ab \]
+}
+\eks[2]{\vs
+\[ a(5b-3)=5ab-3a \]
+} 
+\vsk \vsk
+\reg[\gangmnegto\;(\ref{gangmnegto})]{
+\[ a\cdot(-b)=-(a\cdot b) \]
+}
+\eks[1]{ \vsb \vs
+\alg{
+3\cdot(-4)&=-(3\cdot 4) \\
+&= 	-12
+}
+}
+\eks[2]{ \vsb
+	\algv{
+	(-a)\cdot7&=-(a\cdot 7)\\
+	&=-7a 
+}
+} \vsk \vsk
+
+\reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{
+\[ (-a)\cdot(-b)=a\cdot b \]
+}
+\eks[1]{ \vs \vs
+\alg{
+(-2)\cdot(-8)&=2\cdot 8 \\
+&= 	16
+}	
+}
+\eks[2]{ \vs 
+\[ (-a)\cdot(-15)=15a \]
+}
+\label{regslutt}
+\vsk \vsk
+
+\newpage
+\info{Extensions of the rules}{
+One of the strengths of algebra is that we can express compact rules which are easily extended to apply for other cases. Let's, as an example, find another expression of
+	\[ (a+b+c)d \]
+\rref{gangpara} does not directly imply how to calculate between the expression inside the parentheses and $ d $, but there is no wrongdoing in defining $ a+b $ as $ k $:
+\[ a+b=k \]
+Then
+\[ (a+b+c)d=(k+c)d \]
+Now, by \rref{gangpara}, we have
+\[ (k+c)d = kd+cd \]
+Inserting the expression for $ k $, we have 
+\[ kd+cd=(a+b)d+cd \]
+By applying \rref{gangpara} once more we can write
+\[ (a+b)d+cd=ad+bc+cd \]
+Then
+\[ (a+b+c)d=ad+bc+cd \]
+\it Notice! This example is \textsl{not} meant to show how to handle expressions not directly covered by \textsl{Rule} \ref{adkomalg}\,-\,\ref{gangmnegtrea}, but to emphasize why it's always sufficient to write rules with the least amount of terms, factors etc. Usually you apply extension of the rules without even thinking about it, and surely not in such meticulous manner as here provided.
+}
+
+
+\end{document}
+
+

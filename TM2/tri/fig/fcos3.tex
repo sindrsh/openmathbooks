@@ -1,0 +1,25 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+
+
+\begin{document}
+\begin{figure}
+		\centering
+	\begin{tikzpicture}[x=0.75 cm, y=0.75 cm]
+	%\draw [color=black!5, xstep=1.0cm,ystep=1.0cm] (-5.5,-1.5) grid (5.5,3.5);		
+	\draw[color=blue,smooth,samples=100,domain=-1:6] plot(\x,{1+2*cos((0.5*pi*(\x)-pi/4)*180/pi)});
+	\draw [-latex] (-1.5,0) --(6.5,0)node[anchor=west]{$ x $};
+	\draw [-latex] (0,-1.5) --(0,4) node[anchor=south]{$ f(x) $};
+	\foreach \y in {-1,1,2,3}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+	\foreach \x in {0,-1,1,2,3,4,5}
+	\draw[shift={($ (\x+0.5,0) $)},color=black] (0pt,2pt) -- (0pt,-2pt);
+	\draw[densely dotted] (0.5,3) -- (0.5,0) node[anchor=north]{$ x_1 $};
+	\draw[densely dotted] (4.5,3) -- (4.5,0) node[anchor=north]{$ x_2 $};
+	\end{tikzpicture}
+	\caption{}
+\end{figure}
+
+\end{document}

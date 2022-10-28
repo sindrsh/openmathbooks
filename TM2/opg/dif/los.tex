@@ -1,0 +1,199 @@
+\input{../../doc_pdf}
+\input{../../preamb_pdf}
+\usepackage{xr}
+\externaldocument{../../bokR2_PDF}
+\begin{document}
+
+\opr{veiformel2}
+\textbf{a)} \algv{
+\int y''\,dt &= \int -g\,dt \\
+\int y' \,dt&= -\int (gt + C)\,dt \\
+y &= -\frac{1}{2}gt^2+Ct+D
+}
+\textbf{b)} \algv{y(0)&=-\frac{1}{2}g\cdot0+C\cdot 0 + D \\
+0 &= D \\
+&\\
+y'(0)&= -g\cdot0+C \\
+v_0 &= C}
+Den spesifikke løsningen er derfor $ y=v_0-\frac{1}{2}gt^2 $, ofte nevnt som én av \textit{veiformlene} i fysikk.
+
+\opr{kjernederye}\\
+Av kjerneregelen ved derivasjon har vi at:
+\alg{
+\left(e^{F(x)}\right)'= e^{F(x)}f(x)
+}
+Av produktregelen ved derivasjon har vi da at:
+\alg{
+\left(y(x) e^{F(x)}\right)' &= y'(x)e^{F(x)}+y(x)e^{F(x)}f(x) 
+}
+Altså har vi vist det vi skulle.
+
+\opr{FODE}
+\textbf{a)} Vi har at:
+\alg{
+	\int 4\,dx &= 4x+ C
+}
+Den integrerende faktoren er derfor $ e^{4x}=$:
+\alg{
+(y'+4y)e^{4x}&=8e^{4x} \\
+\left(ye^{4x}\right)' &= 8e^{4x} \\
+\int \left(ye^{4x}\right)'\,dx &= \int  8e^{4x} \,dx \\
+y  e^{4x} &= 2e^{4x} + C \\
+y &= 2+Ce^{-4x}
+}
+\vsk
+\textbf{b)} Vi har at:
+\alg{
+	\int \frac{1}{x}\,dx &= \ln x+ C
+}
+Den integrerende faktoren er derfor $ e^{\ln x}=x $:
+\alg{
+\left(y' + \frac{1}{x}y \right)x&= x\cos x \\
+(yx)' &= x\cos x \\
+\int (yx)'\,dx &= \int x\cos x\,dx \\
+yx &= x\sin x+\int \sin x \,dx \\
+yx &= x\sin x-\cos x + C \\
+y &=\sin x + x^{-1}(\cos x+C)
+}
+\vsk
+\textbf{c)}
+Vi har at:
+\alg{
+\int \frac{3}{x}\,dx &= 3\ln x+ C
+}
+Den integrerende faktoren er derfor $ e^{3\ln x}=x^3 $:
+\alg{
+y'x^3 + \frac{3}{x}yx^3 &= x^3(15x +4) \\
+\left(yx^3\right)' &= (15x^4+4x^3) \\\
+\int \left(yx^3\right)' \,dx &=\int (15x^4+4x^3)\, dx \\
+yx^3 &= 3x^5+x^3+C \\
+y &= 3x^2+x+Cx^{-3}
+}
+\textbf{d)} Vi har at:
+\alg{
+	\int 3x^2\,dx &= x^3+ C
+}
+Den integrerende faktoren er derfor $ e^{x^3} $:
+\alg{
+(y'+3x^2 y)e^{x^3} &=(1+3x^2)e^x e^{x^3} \\
+\left(ye^{x^3}\right)' &= (1+3x^2)e^{x^3+x} \\
+\int \left(ye^{x^3}\right)' \,dx &= \int (1+3x^2)e^{x^3+x}\,dx\\
+}
+Vi setter $ {u=x^3+x} $, og får at:
+\alg{
+ye^{x^3} &= \int u' e^u\,dx \\
+	&= \int e^u \,du \\
+	&= e^u \\
+ye^{x^3} &= e^{x^3+x} + C \\
+y &= e^x + Ce^{-x^3}	
+}
+
+\opr{folketall}\\
+\textbf{a)} Hvis vi lar $ y $ betegne folketallet, får vi ligningen:
+\[ y'=ky \]
+hvor $ k>0 $ siden $ y $ hele tiden er voksende.
+
+\textbf{b)} Den generelle løsningen av ligningen i a) er $ y=Ce^{kt} $. Videre har vi at:
+\alg{
+y(0)&= Ce^{k\cdot0}\\
+100 &=C
+}
+og at:
+\alg{
+y(1)&=100e^{k\cdot1} \\
+\ln 101 &= \ln \left(100e^{k}\right) \\
+\ln 101 &= \ln 100+\ln e^k\\
+\ln\left(\frac{101}{100}\right)&= k 
+}
+Altså kan vi skrive:
+\alg{
+y &= 100e^{\ln\left(\frac{101}{100}\right)t} \\
+&= 100\cdot1.01^t
+}
+
+\opr{newtavkj}
+\textbf{a)}
+\alg{
+T'+kT&=kT_a \\
+T'e^{kt}+kTe^{kt}&= kT_ae^{kt} \\
+\left(Te^{kt}\right)'&= kT_ae^{kt} \\
+\int \left(Te^{kt}\right)'\,dt&= \int kT_ae^{kt}\,dt \\
+Te^{kt} &= T_ae^{kt} + C \\
+T&= T_a+Ce^{-kt}
+}
+\textbf{b)} Siden $ T(0)=95 $ og $ T_a=15 $, har vi at:
+\alg{
+T(0)&= 15+Ce^{-k\cdot0} \\
+95 &= 15+C \\
+80 &= C 
+}
+Altså får vi at:
+\[ T = 15+80e^{-\frac{\ln 2}{5}t} \]
+
+\textbf{c)} \alg{
+T(15) &= 15+80e^{-\frac{\ln 2}{5}\cdot15} \\
+&= 15+80e^{-3\ln 2}\\
+&= 15+80\cdot 2^{-3}\\
+&= 25
+}
+\textbf{d)} $\lim\limits_{t\to\infty} e^{-kt}= 0 $, derfor vil temperaturen til gjenstanden gå må mot romtemperaturen.
+
+\opr{sepode} \\
+\textbf{a)} \se{arg1} og opg. b)
+
+\textbf{b)} \algv{2\sqrt{x}y'&=\cos^2 y \\
+\frac{y'}{\cos^2 y}&= \frac{1}{2\sqrt{x}} \\
+\int \frac{y'}{\cos^2 y}\,dx&=\int \frac{1}{2\sqrt{x}}\,dx \\
+\int \frac{1}{\cos^2 y}\,dy &=\frac{1}{2}\int x^{-\frac{1}{2}} \\
+\tan y &= \sqrt{x}+ C \\
+y &= \atan(\sqrt{x}+C)
+}
+\alg{
+y(4)&= \atan(\sqrt{4}+C) \\
+\frac{\pi}{4}&=\atan(2+C)
+}
+Siden $ \atan 1 = \frac{\pi}{4} $ må $ C=-1 $, altså har vi at:
+\[ y =\atan(\sqrt{x}+1) \]
+
+\opr{fjormassopg}\\
+Et fjør-masse system uten demping er beskrevet av ligningen
+\[ my''+ky =0 \]
+hvor $ k>0 $. Den karakteristiske ligningen blir da:
+\alg{
+mr^2+k&=0 \\
+r^2 &= -\frac{k}{m} \\
+r &= \pm \text{i}\sqrt{\frac{k}{m}}
+}
+For to konstanter $ C $ og $ D $ er derfor den generelle løsningen gitt som:
+\[y= C\cos\left(\sqrt{\frac{k}{m}}t\right)+D \sin\left(\sqrt{\frac{k}{m}}t\right)\]
+Og dermed har vi vist det vi skulle.
+
+\opr{fjormassmeddemp}\\
+Et fjør-masse system med demping er beskrevet av ligningen
+\[ my''+by'+ky=0 \]
+Som vi kan omskrive til
+\[ y'' +\frac{b}{m}y'+\frac{k}{m}y = 0 \]
+Setter vi  $ \frac{b}{m}=2\alpha $ og $ \sqrt{\frac{k}{m}}=\omega $ får vi
+\[ y''+2\alpha y'+\omega^2y=0 \]
+som var det vi skulle vise.
+
+\textbf{b)} Den karakteistiske ligninen blir:
+\[  r^2+2\alpha r+\omega^2=0 \]
+Løser vi denne ved abc-formelen får vi:
+\alg{
+r&= \frac{-2\alpha\pm\sqrt{(2\alpha)^2-4\cdot1\cdot \omega^2}}{2\cdot1} \\
+&= \frac{-2\alpha\pm2\sqrt{\alpha^2-\omega^2}}{2\cdot1} \\
+&= -\alpha\pm \sqrt{\alpha^2-\omega^2}
+}
+som var det vi skulle vise.
+
+\textbf{c)}\vs \begin{itemize}
+	\item Når $ \alpha>\omega $ får den karakteristiske ligningen to reelle løsninger siden uttrykket i kvadratroten blir et tall større enn 0. Løsningen av differensialligningen er dermed gitt ved (\ref{tore}).
+	\item Når $ \alpha=\omega $ får den karakteristiske ligningen én reell løsning siden uttrykket i kvadratroten blir 0. Løsningen av differensialligningen er dermed gitt ved (\ref{enre}).
+	\item Når $ \alpha<\omega $ får den karakteristiske ligningen to komplekse løsninger siden uttrykket i kvadratroten blir et negativt tall forskjellig fra 0. Løsningen av differensialligningen er dermed gitt ved (\ref{kompleks}).	
+\end{itemize}
+\textbf{d)} Vi faktoriserer den karakteristiske ligningen for enklere å avsløre oppførselen til uttrykket:
+\[  -\alpha\pm \sqrt{\alpha^2-\omega^2} = -\alpha\pm\alpha \sqrt{1-\frac{\omega^2}{\alpha^2}}\]
+
+Siden $ m $, $ q $ og $ k $ alle er positive tall forskjellige fra null, må også $ \alpha $ og $ \omega $ være det. Av ligningen over ser vi at hvis $ {\alpha>\omega} $, blir løsningen av den karakteristiske ligningen lik $ -\alpha $ pluss/minus et tall som er mindre enn $ \alpha $. Altså må begge løsninger bli negative og $ y $ blir da synkende for alle $ t>0 $. Videre ser vi at hvis $ {\alpha=\omega} $, blir løsningen av den karakteristiske ligningen lik $ -\alpha $. $ y $ består da av et ledd som er synkende for alle $ t $ og et ledd som går mot 0 når $ {t\to\infty} $. Til slutt ser vi at når $ {\alpha<\omega }$, gir rotutrykket opphav til en kompleks løsning. $ y $ består da av et sinus og cosinusuttrykk, som begge er multiplisert med $ e^{-\alpha t} $. Også da vil altså $ y $ gå mot 0 når $ t\to\infty $.
+\end{document}

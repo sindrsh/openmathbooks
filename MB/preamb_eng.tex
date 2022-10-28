@@ -1,0 +1,252 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{geometry}
+\geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
+\setlength{\parindent}{0bp}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{babel}
+\usepackage{tabu}
+\makeatother
+\makeatletter
+
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\RaggedRight
+\raggedbottom
+\frenchspacing
+
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figure}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
+%\addto\captionsenglish{\renewcommand{\partname}{Part}}
+
+%\addto\captionsenglish{\renewcommand{\contentsname}{Content}}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{placeins}
+\usepackage{cancel}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage[subfigure]{tocloft}
+\usepackage[font=footnotesize,labelfont=sl]{caption} % Figure caption
+\usepackage{bm}
+\usepackage[dvipsnames, table]{xcolor}
+\definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\colorlet{shadecolor}{Emerald!15} 
+\usepackage{icomma}
+\makeatother
+\usepackage[many]{tcolorbox}
+\usepackage{multicol}
+\usepackage{stackengine}
+
+% For tabular
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable} %breakable table
+
+% Ligningsreferanser
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs}
+
+% index
+\usepackage{imakeidx}
+\makeindex[title=Index]
+
+%Footnote:
+\usepackage[bottom, hang, flushmargin]{footmisc}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+\addtolength{\footnotesep}{2mm}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand\footnoterule{\rule{\linewidth}{0.4pt}}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+%colors
+\definecolor{c1}{cmyk}{0,0.5,1,0}
+\definecolor{c2}{cmyk}{1,0.25,1,0}
+\definecolor{n3}{cmyk}{1,0.,1,0}
+\definecolor{neg}{cmyk}{1,0.,0.,0}
+
+% Lister med bokstavar
+\usepackage{enumitem}
+
+\newcounter{rg}
+\numberwithin{rg}{chapter}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+
+\newcommand\alg[1]{\begin{align} #1 \end{align}}
+
+\newcommand\eks[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=green!3] {\large \textbf{Example #1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand{\st}[1]{\begin{tcolorbox}[boxrule=0.0 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!12]{ #1} \end{tcolorbox}}
+
+\newcommand{\spr}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{The language box} \vspace{5 pt}\\} #1 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand{\sym}[1]{\colorbox{blue!15}{#1}}
+
+\newcommand{\info}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=cyan!6] {\large \textbf{#1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+\newcommand\algv[1]{\vspace{-11 pt}\begin{align*} #1 \end{align*}}
+
+\newcommand{\regv}{\vspace{5pt}}
+\newcommand{\mer}{\textsl{Note}: }
+\newcommand{\merk}{Note}
+\newcommand\vsk{\vspace{11pt}}
+\newcommand\vs{\vspace{-11pt}}
+\newcommand\vsb{\vspace{-16pt}}
+\newcommand\sv{\vsk \textbf{Answer} \vspace{4 pt}\\}
+\newcommand\br{\\[5 pt]}
+\newcommand{\asym}[1]{../fig/#1}
+\newcommand\algvv[1]{\vs\vs\begin{align*} #1 \end{align*}}
+\newcommand{\y}[1]{$ {#1} $}
+\newcommand{\os}{\\[5 pt]}
+\newcommand{\prbxl}[2]{
+\parbox[l][][l]{#1\linewidth}{#2
+	}}
+\newcommand{\prbxr}[2]{\parbox[r][][l]{#1\linewidth}{
+		\setlength{\abovedisplayskip}{5pt}
+		\setlength{\belowdisplayskip}{5pt}	
+		\setlength{\abovedisplayshortskip}{0pt}
+		\setlength{\belowdisplayshortskip}{0pt} 
+		\begin{shaded}
+			\footnotesize	#2 \end{shaded}}}
+
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}
+\setlength{\cftaftertoctitleskip}{0 pt}
+\setlength{\cftbeforetoctitleskip}{0 pt}
+
+\newcommand{\bs}{\\[3pt]}
+\newcommand{\vn}{\\[6pt]}
+\newcommand{\fig}[1]{\begin{figure}
+		\centering
+		\includegraphics[]{\asym{#1}}
+\end{figure}}
+
+\newcommand{\sectionbreak}{\clearpage} % New page on each section
+
+% Equation comments
+\newcommand{\cm}[1]{\llap{\color{blue} #1}}
+
+\newcommand\fork[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{#1 (explanation)} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+
+% Colors
+\newcommand{\colr}[1]{{\color{red} #1}}
+\newcommand{\colb}[1]{{\color{blue} #1}}
+\newcommand{\colo}[1]{{\color{orange} #1}}
+\newcommand{\colc}[1]{{\color{cyan} #1}}
+\definecolor{projectgreen}{cmyk}{100,0,100,0}
+\newcommand{\colg}[1]{{\color{projectgreen} #1}}
+
+%%% SECTION HEADLINES %%%
+
+% Our numbers
+\newcommand{\likteikn}{The equal sign}
+\newcommand{\talsifverd}{Numbers, digits and values}
+\newcommand{\koordsys}{Coordinate systems}
+
+% Calculations
+\newcommand{\adi}{Addition}
+\newcommand{\sub}{Subtraction}
+\newcommand{\gong}{Multiplication}
+\newcommand{\del}{Division}
+
+%Factorization and order of operations
+\newcommand{\fak}{Factorization}
+\newcommand{\rrek}{Order of operations}
+
+%Fractions
+\newcommand{\brgrpr}{Introduction}
+\newcommand{\brvu}{Values, expanding and simplifying}
+\newcommand{\bradsub}{Addition and subtraction}
+\newcommand{\brgngheil}{Fractions multiplied by integers}
+\newcommand{\brdelheil}{Fractions divided by integers}
+\newcommand{\brgngbr}{Fractions multiplied by fractions}
+\newcommand{\brkans}{Cancelation of fractions}
+\newcommand{\brdelmbr}{Division by fractions}
+\newcommand{\Rasjtal}{Rational numbers}
+
+%Negative numbers
+\newcommand{\negintro}{Introduction}
+\newcommand{\negrekn}{The elementary operations}
+\newcommand{\negmeng}{Negative numbers as amounts}
+
+% Geometry 1
+\newcommand{\omgr}{Terms}
+\newcommand{\eignsk}{Attributes of triangles and quadrilaterals}
+\newcommand{\omkr}{Perimeter}
+\newcommand{\area}{Area}
+
+%Algebra 
+\newcommand{\algintro}{Introduction}
+\newcommand{\pot}{Powers}
+\newcommand{\irrasj}{Irrational numbers}
+
+%Equations
+\newcommand{\ligintro}{Introduction}
+\newcommand{\liglos}{Solving with the elementary operations}
+\newcommand{\ligloso}{Solving with elementary operations summarized}
+
+%Functions
+\newcommand{\fintro}{Introduction}
+\newcommand{\lingraf}{Linear functions and graphs}
+
+%Geometry 2
+\newcommand{\geoform}{Formulas of area and perimeter}
+\newcommand{\kongogsim}{Congruent and similar triangles}
+\newcommand{\geofork}{Explanations}
+
+% Names of rules
+\newcommand{\adkom}{Addition is commutative}
+\newcommand{\gangkom}{Multiplication is commutative}
+\newcommand{\brdef}{Fractions as rewriting of division}
+\newcommand{\brtbr}{Fractions multiplied by fractions}
+\newcommand{\delmbr}{Fractions divided by fractions}
+\newcommand{\gangpar}{Distributive law}
+\newcommand{\gangparsam}{Paranthesis multiplied together}
+\newcommand{\gangmnegto}{Multiplication by negative numbers I}
+\newcommand{\gangmnegtre}{Multiplication by negative numbers II}
+\newcommand{\konsttre}{Unique construction of triangles}
+\newcommand{\kongtre}{Congruent triangles}
+\newcommand{\topv}{Vertical angles}
+\newcommand{\trisum}{The sum of angles in a triangle}
+\newcommand{\firsum}{The sum of angles in a quadrilateral}
+\newcommand{\potgang}{Multiplication by powers}
+\newcommand{\potdivpot}{Division by powers}
+\newcommand{\potanull}{The special case of \boldmath $a^0$}
+\newcommand{\potneg}{Powers with negative exponents}
+\newcommand{\potbr}{Fractions as base}
+\newcommand{\faktgr}{Factors as base}
+\newcommand{\potsomgrunn}{Powers as base}
+\newcommand{\arsirk}{The area of a circle}
+\newcommand{\artrap}{The area of a trapezoid}
+\newcommand{\arpar}{The area of a parallelogram}
+\newcommand{\pyt}{Pythagoras's theorem}
+\newcommand{\forform}{Ratios in similar triangles}
+\newcommand{\vilkform}{Terms of similar triangles}
+\newcommand{\omkrsirk}{The perimeter of a circle (and the value of $ \bm \pi $)}
+\newcommand{\artri}{The area of a triangle}
+\newcommand{\arrekt}{The area of a rectangle}
+\newcommand{\liknflyt}{Moving terms across the equal sign}
+\newcommand{\funklin}{Linear functions}
+
+%License
+\newcommand{\lic}{\textit{First Principles of Math by Sindre Sogge Heggen is licensed under CC BY-NC-SA 4.0. To view a copy of this license, visit\\ 
+		\net{http://creativecommons.org/licenses/by-nc-sa/4.0/}{http://creativecommons.org/licenses/by-nc-sa/4.0/}}}
+
+%referances
+\newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
+\newcommand{\hrs}[2]{\hyperref[#1]{\color{blue}\textsl{#2 \ref*{#1}}}}
+\newcommand{\rref}[1]{\hrs{#1}{Rule}}
+\newcommand{\refkap}[1]{\hrs{#1}{Chapter}}
+\newcommand{\refsec}[1]{\hrs{#1}{Section}}
+
+\usepackage{datetime2}
+\usepackage[]{hyperref}

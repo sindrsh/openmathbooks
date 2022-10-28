@@ -1,0 +1,15 @@
+\documentclass[english, 11 pt]{report}
+\input{../../preamb}
+
+\begin{document}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=0.5]
+		\draw[-triangle 45,color=black] (0,0) -- (2,3) node[midway, anchor = south east] {\large $ \vec{u}$}; 
+		\draw[-triangle 45,color=black] (0,0) -- (4,1) node[midway, anchor = north west] {\large $ \vec{v}$}; 			
+		\draw (35:3.5) node{$ A $} ;		
+		\draw[dashed,color=black] (2,3)--(6,4); 		
+		\draw[dashed,color=black] (4,1)--(6,4); 								
+		\end{tikzpicture} 
+	\end{figure}
+\end{document}

@@ -1,0 +1,229 @@
+\input{../doc}
+\input{../preamb_eng}
+
+\begin{document}
+%\newpage
+\section{\rrek}
+\subsection*{Priority of the operations}
+Look at the following calculation:
+\[ 2+3\cdot4 \]
+This \textsl{could} have been interpreted in two ways:
+\begin{enumerate}
+	\item ''2 plus 3 equals 5. 5 times 4 equals 20. The answer is 20.''
+	\item ''3 times 4 equals 12. 2 plus 12 equals 14. The answer is.''
+\end{enumerate}
+But the answers are not the same! This points out the need to have rules for what to calculate first. One of these rules is that multiplication and division is to be calculated \textsl{before} addition or subtraction, which means that \regv
+\st{ \vs
+\alg{
+	2+3\cdot 4&=\text{''Calculate }3\cdot4\text{, then add 2''}  \\
+	&= 2+12 \\
+	&= 14
+}
+}
+But what if we wanted to calculate $ 2+3 $ first, then multiply the sum by 4? We use parentheses to tell that something is to be calculated first: \regv
+\st{\vs
+\alg{
+(2+3)\cdot4&=\text{''Calculate }2+3\text{, multiply by 4 afterwards''} \\
+&= 5\cdot 4 \\
+&= 20
+}
+}\regv
+
+\reg[Order of operations \label{rrek}]{ \vspace{-5pt}
+\begin{enumerate}
+	\item Expressions with parentheses
+	\item Multiplication or division
+	\item Addition or subtraction
+\end{enumerate}
+} 
+\newpage
+\eks[1]{
+Calculate
+\[ 23-(3+9)+4\cdot 7 \]
+\sv \vs \vs
+\algv{
+&& 23-(3+9)+4\cdot 7&=23-12+4\cdot7 &&\text{Parentheses} \\
+&&&=23-12+28 &&\text{Multiplication} \\
+&&&=39 &&\text{Addition and subtraction}
+}
+}
+\eks[2]{
+	Calculate
+	\[ 18:(7-5)-3 \]
+	\sv \vs \vs
+	\algv{
+		&& 18:(7-5)-3&=18:2-3 &&\text{Parentheses} \\
+		&&&=9-3 &&\text{Division} \\
+		&&&=6 &&\text{Addition and subtraction}
+	}
+}
+\subsection*{Multiplication involving parentheses}
+How many boxes are present in this figure?
+\fig{gang}
+Two correct interpretations include:
+\begin{enumerate}
+	\item It is $ 2\cdot4 =8 $ purple boxes and $ 3\cdot4=12 $ green boxes. In total there are $ 8+12 =20 $ boxes. This we can write as
+\[ 2\cdot 4 + 3\cdot 4 = 20  \]
+	\item It is $ 2+3=5 $ boxes horizontally and 4 boxes vertically, so there are $ 5\cdot4 =20 $ boxes in total. This we can write as
+	\[ (2+3)\cdot 4 = 20 \]
+\end{enumerate}
+From these two calculations it follows that
+\[ (2+3)\cdot4 = 2\cdot 4+ 3\cdot4 \]
+\reg[\gangpar \label{gangpar}]{
+When an expression enclosed by parentheses is a factor, we can multiply the other factors with each term inside the parentheses.	 
+%\fig{gang1}
+}
+\eks[1]{
+\vs
+\[ ({\color{orange}4}+{\color{ForestGreen}7})\cdot {\color{blue}8}={\color{orange}4}\cdot{\color{blue}8}+{\color{ForestGreen}7}\cdot{\color{blue}8} \]	
+}
+\eks[2]{ \vsb \vs
+\alg{
+(10-7)\cdot2 &= 10\cdot 2-7\cdot2\\
+&=20-14 \\
+&=6
+}	
+\mer Obviously, it would be easier to calculate like this:
+\[ (10-7)\cdot 2=3\cdot 2 =6 \]
+}
+\eks[2]{
+Calculate $ 12\cdot 3 $.
+
+\sv
+\vsb \vsb
+\alg{
+12\cdot 3&= (10+2)\cdot 3 \\
+&=10\cdot 3 +2\cdot 3 \\
+&=30 +6 \\
+&=36
+}	
+}
+\info{\merk}{
+We introduced parentheses as an indicator of what to calculate first, but \rref{gangpar} gives an alternative and equivalent interpretation of parentheses . The rule is especially useful when working with algebra (see \hrs{Del2}{Part}\,).
+}
+\newpage
+\subsubsection{Multiplying by 0}
+Earlier we have seen that 0 can be expressed as the difference between two numbers, and this can help us calculate when multiplying by 0. Let's look at the calculation
+\[ (2-2)\cdot3 \]
+By \rref{gangpar}, we get
+\alg{
+ (2-2)\cdot3 &= 2\cdot3-2\cdot3\\&=6-6\\&=0
+}
+Since $ 0=2-2 $, this means that
+\[ 0\cdot3=0 \]
+
+\reg[Multiplication by 0]{
+	If 0 is a factor, the product equals 0.
+}
+\eks[1]{ \vsb \vs
+	\alg{
+		7\cdot0&=0\vn
+		0\cdot219 &=0
+	}
+}
+
+\subsection*{Associative laws}
+\reg[Associative law for addition]{
+The placement of parentheses between terms has no impact on the sum.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2+3)+4&=5+4=9 \vn
+2+(3+4)&=2+7=9
+}
+\fig{asso0}
+}
+\vsk \vsk
+
+\reg[Associative law for multiplication]{
+The placement of parentheses between factors has no impact on the product.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2\cdot3)\cdot4 &=6\cdot 4=24 \vn
+2\cdot(3\cdot4)&=2\cdot 12 =24
+}
+\fig{asso1}
+}  \vsk
+
+Opposite to addition and multiplication, neither subtraction nor divison is associative:
+\alg{
+(12-5)-4&=7-4=3 \\
+12-(5-4)&=12-1=11
+}
+\alg{
+	(80:10):2&=8:2=4 \\
+	80:(10:2)&=80:5=16
+}
+We have seen how parentheses helps indicating the \textsl{priority} of operations, but the fact that subtraction and division are non-associative brings the need of having a rule of in which \textsl{direction} to calculate. \regv
+
+\reg[Direction of calculations \label{rret}]{
+Operations which by \rref{rrek} have equal priority, are to be calculated from left to right.
+}
+\eks[1]{ \vsb \vsb
+	\alg{
+		12-5-4&=(12-5)-4 \\
+		&=7-4\\
+		&=3
+	}
+}
+\eks[2]{ \vsb \vsb
+	\alg{
+		80:10:2&=(80:10):2 \\
+		&=8:2 \\
+		&=4
+	}
+}
+\eks[3]{ \vsb \vs
+	\alg{
+		6: 3\cdot 4 &= (6:3)\cdot4\\ 
+		&=2\cdot4 \\
+		&= 8
+	}
+}
+
+\section{\fak \label{Faktorisering}}
+If an integer dividend and an integer divisor results in an integer \\quotient, we say that the dividend is \textit{divisible} by the divisor. For example is $ 6 $ divisible with $ 3 $ because $ {6:3=2} $, and $ 40 $ is divisible with $ 10 $ because $ {40:10=4} $. The concept of divisibility contributes to the definition of \textit{prime numbers}:\regv
+
+\reg[Primtal \index{number!prime}]{
+	A natural number larger than 1, and only divisible by itself and 1, is a prime number.
+}
+
+\eks[]{
+	The first five prime numbers are $ 2, 3, 5 , 7  $ and $ 11 $.
+} \vsk \vspace{5pt}
+
+\reg[Factorization]{\index{factorization}
+	Factorization involves writing a number as the product of other numbers.
+}
+\eks{
+	Factorize 24 in three different ways.
+	
+	\sv  \vsb \vsb 
+	\alg{
+		24&=2\cdot 12 \br
+		24&=3\cdot 8 \br
+		24&=2\cdot 3 \cdot 4
+	}
+}  \vsk
+
+\spr{
+	Since 12 is divisible by 4, we say that 4 is a factor of 12.
+}
+\newpage
+\reg[Prime factorization]{\index{prime factorization}
+	Factorization involving prime factors only is called prime\\ factorization.
+}
+\eks[]{
+	Prime factorize 12.
+	
+	\sv \vs \vs
+	\[ 12= 2 \cdot2\cdot3 \]
+}
+\info{The prime numbers from 1-100}{
+\fig{primn100}
+}
+
+
+\end{document}
+

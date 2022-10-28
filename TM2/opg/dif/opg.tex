@@ -1,0 +1,126 @@
+\input{../../doc}
+\input{../../preamb}
+
+\begin{document}
+\opgt
+
+\nes
+	\opl{kjernederye}
+	Vis at vi for enhver funksjon $ f(x) $ har at
+	\[ \left(y(x) e^{F(x)}\right)' = y'(x)e^{F(x)}+f(x)y(x)e^{F(x)} \]
+	hvor $ F $ er en antiderivert til $ f $.
+	
+	\opl{FODE}
+	Løs ligningen:\os
+	
+	\begin{tabular}{@{}l l }
+		\textbf{a)} $ y'+4y=8 $	\quad
+		&\textbf{b)} $\displaystyle y' + \frac{1}{x}y - \cos x=0$  \\[11 pt]
+		\textbf{c)} $\displaystyle y' + \frac{3}{x}y = 6x +2 $		
+		&\textbf{d)} $\displaystyle y'+3x^2 y =(1+3x^2)e^x$ 
+	\end{tabular}
+
+\nes	
+\opl{sepode}
+Finn den generelle løsningen av ligningen:\os
+
+\begin{tabular}{@{}l l l}	
+	\textbf{a)} $\displaystyle y'=ye^x \cos x$\quad	
+	\textbf{b)} $\displaystyle y'=\frac{1}{y}3x^2(y^2+1) $ 	
+\end{tabular}
+
+\opl{sepode2}
+Løs ligningen:\os
+
+\textbf{a)} $\displaystyle xy'-y=2x^2y\quad,\quad y(1)=1$\os
+\textbf{b)} $2\sqrt{x}y'=\cos^2 y\quad,\quad y(4)=\frac{\pi}{4}$ 
+\newpage
+\nes
+\opl{retnopg}
+Figuren under viser et retningsdiagram for en differensialligning.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85]{retn}
+\end{figure}
+\textbf{a)} Skisser integralkurven som går gjennom punket $ (0, 4) $ og integralkurven som går gjennom punktet $ (0, -4) $.\os
+
+\textbf{b)} Bruk figuren til å anslå stigningstallet til alle integralkurvene for $ x=0 $.\vsk
+
+Integralkurvene er løsninger av ligningen $ y' + 4x y = 3x$. 
+\os
+\textbf{c)} Bruk ligningen til å verifisere anslaget fra oppgave b).\os
+
+\textbf{b)} Finn stigningstallet i punktene $ (-3, 5) $ og $ (4, 2) $.
+
+\nes
+\opl{SODEopg}
+Finn den generelle løsningen av ligningen:\os
+
+\textbf{a)} $ y''-y'-2y =0 $\os
+
+\textbf{b)} $ 2y''-12y'+18y=0 $\os
+
+\textbf{c)} $ y''-4y'+13y=0 $
+
+\opl{speslos}
+Finn løsningen av differensialligningen:\os
+
+\textbf{a)} $ y''-2y'-15y=0\quad,\quad y(0)=-1,\,y'(0)=2 $\os
+
+\textbf{b)} $ y''+10y'+25y=0\quad,\quad y(0)=2,\,y'(0)=1  $\os
+
+\textbf{c)} $ y''-2y'+5y=0\quad,\quad y(0)=1,\,y'(0)=1  $
+
+\nes
+\opl{folketall}
+I året 2015 var tallet på en populasjon 100 millioner. Fra og med dette året er det forventet at folkeveksten vil være proporsjonal med folketallet.\os
+
+\textbf{a)} Sett opp en differensialligning som beskriver situasjonen over.\os
+
+\textbf{b)} I 2016 var folketallet 101 millioner. Bruk denne informasjonen til å finne uttrykket $ y(t) $ som gir folketallet (i millioner) $ t $ år etter 2015.
+
+\opl{newtavkj}
+En gjenstand med temperaturen $ T$ befinner seg i et rom med temperaturen $ T_r $. Det antas at temperaturen til gjenstanden er likt fordelt hele tiden og at romtemperaturen ikke blir påvirket av gjenstandens temperatur. Når $ T$ er høyere enn $ T_r $ kan vi bruke \textit{Newtons avkjølingslov} for å tilnærme hvordan $ T $ vil utvikle seg med tiden $ t $:
+\[ T'=-k(T-T_r) \]
+$ k $ er en konstant som må bestemmes ut ifra gjenstandens termodynamiske egenskaper. \os
+
+\textbf{a)} Finn den generelle løsningen av ligningen over.
+
+En gjenstand med temperaturen 95\,$ ^\circ $C blir plassert i et rom med temperaturen 15\,$ ^\circ $C. Vi bruker Newtons avkjølingslov til å anslå gjenstandens temperatur $ T $ etter $ t $ minutter. $ k $ har verdien $ \frac{\ln 2}{5} $. \os
+
+\textbf{b)} Finn et uttrykk for $ T $.\os
+
+\textbf{c)} Bestem $ T(15) $.\os
+
+\textbf{d)} Hva skjer når vi lar tiden gå mot uendelig?
+
+\opl{fjormassopg}
+Gitt en funksjon $ y(t) $ på formen
+\[y(t) =a\cos (\omega t) +b\sin (\omega t) \] 
+hvor $ a $, $ b $ og $ \omega $ er konstanter (når $ t $ er en tidsvariabel, kaller vi gjerne $ \omega $ for \textit{vinkelfrekvensen}\index{vinkel!-frekvens}). Vis at vi for alle fjør-masse systemer uten demping har at
+\[ \omega=\sqrt{\frac{k}{m}} \] 
+
+\opl{demfjoropg}
+En klosse med masse $ {m=1} $ henger vertikalt i en fjør med fjørkonstant $ {k=25} $. Klossen strekkes slik at den forflyttes en lengde $ 0.5 $ fra likevektspunktet $ {y=0} $, og blir etterpå sluppet. La $ y(t) $ være forflytningen relativt til likevektspunktet tiden $ t $ etter at bevegelsen har startet.\os
+
+\textbf{a)} Finn et uttrykk for $ y $.\os
+
+\textbf{b)} Finn perioden til $ y $.
+
+Klossen og fjøren blir plassert i en omgivelse der dempingskonstanten er funnet å være $ {q=6} $. Ved et tidspunkt satt til $ {t=0} $ passerer klossen likevektspunktet med en fart $ y'(0)=4 $.\os
+
+\textbf{c)} Finn det nye uttrykket for $ y $. 
+
+\ekspop
+\textbf{a)} Vis at vi kan omskrive et fjør-masse system med demping til ligningen
+\[ y''+2\alpha y'+\omega^2y=0 \tag{I}\label{kritisk} \]
+hvor $ 2\alpha=\frac{b}{m} $ og $ \omega=\sqrt{\frac{k}{m}} $.\os
+
+\textbf{b)} Vis at løsningen av den karakteristiske ligningen av (\ref{kritisk}) kan skrives som
+\[ r=-\alpha\pm\sqrt{\alpha^2-\omega^2} \]
+\textbf{c)} For de tre tilfellene $ \alpha>\omega $, $ \alpha=\omega $ og $ \alpha<\omega $, hvilket uttrykk antar løsningen av (\ref{kritisk})? \os
+
+\textsl{Hint}: Se (\ref{tore})-(\ref{kompleks}).\os%(Oppgaven fortsetter på neste side).
+
+\textbf{d)} La $ y(t) $ være løsningen av (\ref{kritisk}). Forklar hvorfor $ \lim\limits_{t\to\infty}y(t) =0 $. (Ta det for gitt at $ \lim\limits_{t\to \infty} te^{-at}=0 $ når $ a>0 $).
+\end{document}

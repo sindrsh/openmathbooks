@@ -1,0 +1,25 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+\begin{tikzpicture}[scale=2]
+\draw (0,0) circle (1cm);
+\draw (-1,0) -- (1,0) node[anchor= west]{$ 1 $};
+\draw (-1,0) node[anchor=east]{-1};
+\draw (0,-1) -- (0,1) node[anchor= south]{$ 1 $};	
+\draw (0,-1) node[anchor=north]{-1};
+\draw (45:0.6) node{\scriptsize 1. kvadrant};	
+\draw (135:0.6) node{\scriptsize 2. kvadrant};	
+\draw (-45:0.6) node{\scriptsize 4. kvadrant};	
+\draw (-135:0.6) node{\scriptsize 3. kvadrant};		
+\end{tikzpicture}
+\caption{Enhetssirkelen inndelt i kvadranter, med ekstremverdiene til cosinus og sinus i endene. \label{kvadr}}
+\end{figure}
+
+\end{document}

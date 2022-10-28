@@ -1,0 +1,30 @@
+\documentclass[english, 11 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/sindre/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+	\begin{figure}[H]
+	\centering		
+\subfloat[a)]{\begin{tikzpicture}[scale=1]
+	\draw[-triangle 45,color=black] (0,0) -- (45:3) node[midway, anchor=north west]{$ \vec{w}$}	;			
+	\draw[-triangle 45,color=black] (0,0) -- (90:2.5) node[midway, anchor=east]{$ \vec{u}\times\vec{v} $}	;					
+	\draw (90:0.4) arc (90:45:0.4);
+	\draw (70:0.6) node {$ \theta $};
+	\draw ($(0:{3*cos(45)-0.2}) $) rectangle ($({3*cos(45)},0.2) $) ;	
+	\draw [densely dotted] ($(0:{3*cos(45)}) $) -- (45:3) node[midway, anchor=west]{$ h $};	
+	\draw (45:2.5) arc(225:270:0.5) ;	
+	\draw(37:2.3) node {$ \theta $};	
+	\draw(-0.5,0) --(3,0) node[anchor=west]{$ uv $}	;
+	\end{tikzpicture} } \qquad \qquad
+\subfloat[b)]{\begin{tikzpicture}[scale=1]
+	\draw[-triangle 45,color=black] (0,0) -- (45:3) node[midway, anchor=north west]{$ \vec{w}$}	;			
+	\draw[-triangle 45,color=black] (0,0) -- (-90:2.5) node[midway, anchor=east]{$ \vec{u}\times\vec{v} $}	;					
+	\draw (-90:0.3) arc (-90:45:0.3);
+	\draw (-35:0.5) node {$ \theta $};
+	\end{tikzpicture} }
+\caption{\label{vopar}}
+\end{figure}
+	
+\end{document}

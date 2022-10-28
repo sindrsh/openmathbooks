@@ -1,0 +1,85 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Følger og rekker}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Følger}{10}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Aritmetiske følger}{11}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Geometriske følger}{13}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Rekker}{15}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Aritmetiske rekker}{15}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Geometriske rekker}{17}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Uendelige geometrisk rekker}{18}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Summetegnet}{20}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Induksjon}{22}{section.1.3}%
+\contentsline {section}{Oppgaver}{27}{section*.8}%
+\contentsline {chapter}{\numberline {2}Trigonometri}{32}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Vinkler og enhetssirkelen}{32}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Vinkel og vinkelmål}{32}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Enhetssirkelen som tallinje}{35}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Trigonometriske uttrykk}{38}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Sinus, cosinus og tangens til $ x $}{38}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Arcuscosinus, arcusinus og arcustangens}{40}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Eksaktverdier }{42}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Trigonometriske identiteter}{43}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Sinus og cosinus kombinert }{45}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Lineære ligninger }{47}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cosinus-ligninger}{48}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Sinusligninger}{51}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Tangensligninger}{53}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}$ a\qopname \relax o{sin}(kx) + b\qopname \relax o{cos}(kx) =0 $}{54}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}$ a\qopname \relax o{sin}(kx) + b\qopname \relax o{cos}(kx) =d $}{56}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Kvadratiske ligninger}{57}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Løsning ved abc-formelen}{57}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Kvadrater av sinus og cosinus kombinert}{59}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Trigonometriske funksjoner }{62}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Cosinusfunksjoner}{62}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Sinusfunksjoner}{67}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Tangensfunksjoner}{68}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Den deriverte av de trigonometriske funksjonene}{70}{subsection.2.5.4}%
+\contentsline {section}{Forklaringer}{72}{section*.33}%
+\contentsline {section}{Oppgaver}{75}{section*.34}%
+\contentsline {chapter}{\numberline {3}Vektorer i rommet}{83}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Vektorer i rommet}{83}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lengden til en vektor }{86}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Regneregler og skalarprodukt}{88}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Vinkelrette og parallelle vektorer }{93}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Determinanter}{95}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Vektorproduktet}{97}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Vektorprodukt som areal og volum}{99}{subsection.3.6.1}%
+\contentsline {section}{Forklaringer}{101}{section*.52}%
+\contentsline {section}{Oppgaver}{106}{section*.54}%
+\contentsline {chapter}{\numberline {4}Romgeometrier}{111}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Parameteriseringer}{111}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Linje i rommet}{111}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Plan i rommet}{113}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Ligninger til geometrier}{116}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Ligningen til et plan}{116}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Linja mellom to plan}{119}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Kuleligningen}{121}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Avstander mellom geometrier}{124}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Avstand mellom punkt og linje}{124}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Avstand mellom punkt og plan}{126}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Vinkler mellom geometrier}{129}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Vinkelen mellom to linjer }{129}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Vinkelen mellom to plan}{131}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Vinkelen mellom plan og linje}{132}{subsection.4.4.3}%
+\contentsline {section}{Oppgaver}{133}{section*.72}%
+\contentsline {chapter}{\numberline {5}Integrasjon }{137}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bestemt og ubestemt integral }{137}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Den antideriverte}{141}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Analysens fundamentalteorem}{143}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Ubestemte integral}{143}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Integralregning}{146}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Integralet av utvalge funksjoner}{146}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Bytte av variabel}{149}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Delvis integrasjon}{152}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Delbrøksoppspaltning}{155}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Areal og volum}{160}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Avgrenset areal}{160}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Volumet av en figur}{163}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Volum av omdreiningslegemer}{165}{subsection.5.3.3}%
+\contentsline {section}{Forklaringer}{167}{section*.88}%
+\contentsline {section}{Oppgaver}{173}{section*.89}%
+\contentsline {chapter}{Vedlegg A-F}{178}{chapter*.90}%
+\vspace {-5pt}
+\contentsline {chapter}{Indeks}{190}{chapter*.105}%
+\vspace {-5pt}
+\contentsline {chapter}{Fasit}{191}{chapter*.107}%

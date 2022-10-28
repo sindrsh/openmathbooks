@@ -1,0 +1,23 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\textbf{Skal bli oppgave}\\
+Finn den deriverte av funksjonen $ f(x)=\frac{\cos x}{x^4} $.
+
+\sv
+Vi setter $ u(x)=\cos x $ og $ v(x)=x^4 $, da er
+\alg{
+	f&=\frac{u}{v} & u'&=-\sin x & v' &= 4x^3
+}
+Altså er
+\alg{
+	f' &= \frac{-\sin x\cdot x^4-\cos x\cdot 4x^3}{x^8} \br
+	&= -\frac{x\sin x+4\cos x}{x^5}
+}
+\notesm{Vi kan også finne $ f $' ved å sette $ {u(x)=\cos x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
+
+\end{document}
+
+

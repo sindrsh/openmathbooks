@@ -1,0 +1,25 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+
+\begin{document}
+	\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=2]
+	\draw (0,0) circle (1cm);
+	\draw (-1,0) -- (1,0);
+	\draw [blue] (0,0)--(45:1) node [black, midway, anchor=south east] {$ 1 $};	
+	\draw [blue] ($({cos(45)},0 ) $)--($({cos(45)}, {sin(45)}) $); %node [black,midway, anchor=west] {$ b $};	
+%	\draw [blue] (0,0)--($({cos(45)},0 ) $) node [black, midway, anchor=north] {$ a $};	
+	\draw ($(0:{cos(45)-0.1}) $) rectangle ($({cos(45)},0.1) $) ;
+%	\draw (45:0.2) arc (45:0:0.2);
+%	\draw (22:0.3) node{ $v$};	
+\draw [blue,thick ,->,>=stealth'] (1,0) arc (0:45:1);
+	\draw (22.5:1.1) node{$ x $};	
+	\end{tikzpicture}
+\caption{Trekant dannet av linjen fra sentrum til enden av buen med lengde $ x $, horisontallinjen gjennom sentrum, og en linje vinkelrett på denne. \label{trk}}
+\end{figure}
+\end{document}

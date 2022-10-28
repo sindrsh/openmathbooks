@@ -1,0 +1,167 @@
+\input{../doc}
+\input{../preamb}
+
+\begin{document}
+\subimport{/home/sindre/R/ggb/}{ncmd}
+
+\tsec{Knapper}
+\renewcommand{\arraystretch}{1.5}	
+\subsection*{Grafikkfelt}
+Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er fra venstre.\vsk
+
+\begin{tabular}{@{}l}
+	\,\includegraphics[scale=0.4]{fig/pkt} Lager et nytt punkt. (Meny nr. 1) \\
+	\,\includegraphics[scale=0.4]{fig/lin} Lager linje mellom to punkt. (Meny nr. 2)\\	
+	\,\includegraphics[scale=0.4]{fig/ekst} Finner topp- og bunnpunkt til en funksjon. (Meny nr. 2)\\
+	\,\includegraphics[scale=0.4]{fig/nul} Finner nullpunktene til en funksjon. (Meny nr. 2)	\\
+	\,\includegraphics[scale=0.4]{fig/skj} Finner skjæringspunkt mellom to objekt. (Meny nr. 3)\\	
+	\,\includegraphics[scale=0.4]{fig/skj} Lager vektoren mellom to punkt (Meny nr. 3)\\		
+	\,\includegraphics[scale=0.4]{fig/tekst} Lager en tekstboks. (Meny nr. 10)\\		
+	\,\includegraphics[scale=0.4]{fig/flytt} Flytter grafikkfeltet. Endrer verdiavstanden hvis man peker på aksene. (Meny nr. 10)\\			
+\end{tabular}
+\subsection*{CAS}
+\begin{tabular}{@{}l}
+	\;\includegraphics[scale=0.4]{fig/erlik} Gjengir uttrykket som er inntastet, ofte i forkortet form.\\	
+	\;\includegraphics[scale=0.4]{fig/brin} Gjengir uttrykket som er inntastet.\\	
+	\;\includegraphics[scale=0.4]{fig/caerlik} Gir tilnærmet verdi av et uttrykk (som desimaltall). \\	
+	\;\includegraphics[scale=0.4]{fig/x} Gir eksaktløsningen av en ligning.\\
+	\;\includegraphics[scale=0.4]{fig/xca} Gir tilnærmet løsning av en ligning som desimaltall.\\
+
+\end{tabular}
+
+\tsec{Hurtigtaster}
+\begin{tabular}{@{}c | c |c | c }
+	&\textbf{Beskrivelse} & \textbf{PC }& \textbf{Mac} \\ \hline
+	$ \sqrt{} $	& kvadratrot& \texttt{alt\,+\,r} &\texttt{alt\,+\,r} \\\hline
+	$ \pi $	& pi& \texttt{alt\,+\,p} & \texttt{alt\,+\,p}\\\hline
+	$ \infty $ &uendelig& \texttt{alt\,+\,u} &\texttt{alt\,+\,,}  \\\hline
+	$ \otimes $&kryssprodukt & \texttt{alt\,+\,shift\,+\,8}&\texttt{ctrl\,+\,shift\,+\,8} \\\hline
+	$ e $&eulers tall & \texttt{alt\,+\,e}& \texttt{alt\,+\,e}\\\hline
+	$ {}^\circ $&gradtegnet ($ \frac{\pi}{180} $) & \texttt{alt\,+\,o}& \texttt{alt\,+\,o}
+	\\\hline	
+\end{tabular}
+
+\tsec{Kommandoliste}\vs
+\setlength{\parskip}{12 pt}
+\renewcommand{\vsk}{\vspace{0 pt}}
+\renewcommand\gvs{\vspace{1 pt}}
+\cm{abs}{<x>}
+Finner lengden til et objekt \textit{x}. (Merk: kan brukes til å finne lengden av en vektor).
+
+\cm{Asymptote}{<Funksjon>}
+Finner asymptotene til en funksjon.
+
+\avst
+
+\cmc{ByttUt}{<Uttrykk>, <Liste med forandringer>}
+Viser et gitt uttrykk etter endring av variabler, gitt i en liste.
+
+\der
+
+\ekstpkt
+
+\cm{Ekstremalpunkt}{Polynom}
+Finner alle ekstremalpunkt og ekstremalverdier til et polynom.
+
+\funk
+
+\cmc{HøyreSide}{<Likning>}
+Gir høyresiden til en likning.
+
+\cmc{HøyreSide}{<Liste med likninger>}
+Gir en liste med høyresidene i en liste med ligninger.
+
+\intu
+
+\intb
+
+\cmc{Integral}{<Variabel>}
+Gir uttrykket til det ubestemte integralet til en funksjon av gitt variabel. (Brukes dersom man ønsker å integrere funksjoner avhengig av en annen variabel enn $ x $).
+
+\kurve
+
+\kuler
+
+\los
+
+\cmc{Løs}{<Liste med likninger>, <Liste med variabler>}
+Finner alle løsninger av en liste med ligninger med gitte variabel som ukjente.
+
+\cmc{Løs}{<Likning>, <Variabel>}
+Finner alle løsninger av en gitt likning med en gitt variabel som ukjent.
+
+\dif
+
+\diff
+
+\absmaks
+
+\absmin
+
+\cm{Nullpunkt}{<Polynom> }
+Finner alle nullpunkter til et polynom.
+
+\cm{NullpunktIntervall}{<Funksjon>, <Start>, <Slutt>}
+Finner alle nullpunkter på et gitt intervall til en hvilken som helst funksjon.
+
+\plan
+
+\pris
+
+\punkt
+
+\pyr
+
+\cm{RegLin}{<Liste>}
+Bruker regresjon med en rett linje for å tilpasse punkt gitt i en liste.
+
+\cm{RegEksp}{<Liste>}
+Bruker regresjon med en eksponentialfunksjon for å tilpasse punkt gitt i en liste.
+
+\cm{RegPoly}{<Liste>, <Grad>}
+Bruker regresjon med et polynom av gitt grad for å tilpasse punkt gitt i en liste.
+
+\cm{RegPot}{<Liste>}
+Bruker regresjon med en potensfunksjon for å tilpasse punkt gitt i en liste.
+
+\regsin
+
+\retn
+
+\skalar
+
+\cm{Skjæring}{<Objekt>, <Objekt>}
+Finner skjæringspunktene mellom to objekter. 
+
+\merk Fungerer ikke for vektorer, og gir bare ett av punktene dersom funksjonene har flere skjæringspunkt.
+
+\cm{Skjæring}{<Funksjon>, <Funksjon>, <Start>, <Slutt>}
+Finner skjæringspunktene mellom to funksjoner på et gitt intervall.
+
+\summ
+
+\cm{TrigKombiner}{<Funksjon>}
+Skriver om et uttrykk på formen $ a\sin (kx) + b\cos (kx) $ til et kombinert uttrykk på formen $ r\cos (kx-c) $
+
+\trikomb
+
+\vektor
+
+\vekpro
+
+\vend
+
+\cmc{VenstreSide}{<Likning>}
+Gir venstresiden til en likning.
+
+\cmc{VenstreSide}{<Liste med likninger>}
+Gir en liste med venstresidene i en liste med ligninger.
+
+\vink
+
+
+
+
+
+
+\end{document}

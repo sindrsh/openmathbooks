@@ -1,0 +1,762 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../nn}
+
+\begin{document}
+\section{Addisjon}
+
+\subsubsection{Oppstilling}
+Denne metoden baserer seg på plassverdisystemet, der ein trinnvis reknar ut summen av einarane, tiarane, hundrerane, o.l.
+
+\begin{center}
+	\parbox{0.3\linewidth}{
+\eks[1]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/plus1}
+	\end{figure}
+}
+}\qquad
+\parbox{0.3\linewidth}{
+\eks[2]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/plus2}
+	\end{figure}
+}
+}\\[12pt]
+\parbox{0.3\linewidth}{
+\eks[3]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/plus3}
+	\end{figure}
+}}\qquad
+\parbox{0.3\linewidth}{
+\eks[4]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/plus4}
+	\end{figure}
+}}
+\end{center}
+\fork{Eksempel 1}{
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{rekfig/plus1a}}\qquad
+	\subfloat[]{\includegraphics{rekfig/plus1b}}\qquad
+	\subfloat[]{\includegraphics{rekfig/plus1c}}
+\end{figure}
+
+\begin{enumerate}[label=\alph*)]
+	\item Vi legg saman einarane: $ 4+2=6 $
+	\item Vi legg saman tiarane: $ 3+1=4 $
+	\item Vi legg saman hundra: $ 2+6=8 $
+\end{enumerate}
+} \newpage
+\fork{Eksempel 2}{
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics{rekfig/plus2a}}\qquad
+		\subfloat[]{\includegraphics{rekfig/plus2b}}\qquad
+		\subfloat[]{\includegraphics{rekfig/plus2c}}
+	\end{figure}
+	
+	\begin{enumerate}[label=\alph*)]
+		\item Vi legg saman einarane: $ 3+6=9 $
+		\item Vi legg saman tiarane: $ {7+8=15} $. Sidan 10 tiarar er det same som 100, legg vi til 1 på hundreplassen, og skriv opp dei resterande 5 tiarane på tiarplassen.
+		\item Vi legg saman hundra: $ 1+2=3 $.
+	\end{enumerate}
+} \vsk
+
+\spr{
+Det å skrive 1 på neste sifferplass kallast ''å skrive 1 i mente''.
+}
+\subsubsection{Tabellmetoden}
+Denne metoden tar utgangspunkt i det éine leddet, og summerer fram til det andre leddet er nådd. Det som i starten kan vere litt rart med denne metoden, er at du sjølv velg fritt kva tall du skal legge til, så lenge du når det andre leddet til slutt.
+\begin{center}
+	\parbox{0.3\linewidth}{
+		\eks[1]{
+			$ \colb{273}+\colc{86} = \colo{359} $ \vsk
+			
+			\begin{tabular}{r|r|r}
+				&&\colb{273} \\ \hline
+				6 & 6 & 279 \\
+				30& 36 & 309 \\
+				50& \colc{86} & \colo{359}
+			\end{tabular}
+		}
+	} \qquad
+	\parbox{0.3\linewidth}{
+		\eks[2]{
+			$ \colb{85}+\colc{79}=\colo{164} $  \vsk
+			
+			\begin{tabular}{r|r|r}
+				& & \colb{85} \\ \hline 
+				5 & 5 & 90 \\
+				10 & 15 &100 \\
+				64 & \colc{79} & \colo{164} \\
+			\end{tabular} \vsk
+		}
+	}
+\end{center}
+\newpage
+\fork{Eksempel 1}{
+\begin{figure}
+	\centering
+\subfloat[]{
+\begin{tabular}{r|r|r}
+	&&\colb{273} \\ \hline
+	 &  &  \\
+	\phantom{30}& \phantom{36} &  \\
+	&  & 
+\end{tabular}
+} \qquad
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		&&\colb{273} \\ \hline
+		6& 6 & 279 \\
+		\phantom{30}& \phantom{36} &  \\
+		&  & 
+	\end{tabular}
+}\vsk 
+
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		&&\colb{273} \\ \hline
+		6& 6 & 279 \\
+		30& 36 & 309  \\
+		&  & 
+	\end{tabular}
+}
+\qquad
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		&&\colb{273} \\ \hline
+		6& 6 & 279 \\
+		30& 36 & 309  \\
+		50& \colc{86} & \colo{359}
+	\end{tabular}
+}
+\end{figure}
+\begin{enumerate}[label=(\alph*)]
+\item Vi startar med det leddet vi sjølv ønsker, ofte er det lurt å starte med det største leddet.
+\item Vi legg til $ 6 $. Da har vi totalt lagt til $ 6 $, og vidare er $ {273+6=279} $.
+\item Vi legg til 30. Da har vi så totalt lagt til 36, og vidare er $ 279+30=309 $.
+\item Vi legg til 50. Da har vi totalt lagt til 86, altså har vi nådd det andre leddet, og vidare er $ 309+50=359 $.
+\end{enumerate}
+} \vsk
+
+\info{Oppstilling versus tabellmetoden}{
+	Ved første augekast kan kanskje tabellmetoden sjå ut som ein innvikla måte å rekne addisjon på samanlikna med oppstilling, men med øving vil mange oppdage at tabellmetoden betrer evnen til hoderekning.   
+}
+
+\section{Subtraksjon}
+\subsubsection{Oppstilling}
+Subtraksjon med oppstilling baserer seg på plassverdisystemet, der ein trinnvis reknar differansen mellom einarane, tiarane, hundra, o.l. Metoden tar også utgangspunkt i eit mengdeperspektiv, og tillet derfor ikkje differansar med negativ verdi (sjå forklaringa til \textsl{Eksempel 2}).
+\begin{center}
+	\parbox{0.3\linewidth}{
+\eks[1]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/min1}
+	\end{figure}
+}} \qquad
+\parbox{0.3\linewidth}{
+\eks[2]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/min2}
+	\end{figure}
+}} \\[12pt]
+\parbox{0.3\linewidth}{
+\eks[3]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/min3}
+	\end{figure}
+}}\qquad
+\parbox{0.3\linewidth}{
+\eks[4]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/min4}
+	\end{figure}
+}}
+
+\end{center}
+\fork{Eksempel 1}{ \vs
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{rekfig/min1a}}\qquad
+	\subfloat[]{\includegraphics{rekfig/min1b}}\qquad
+	\subfloat[]{\includegraphics{rekfig/min1c}}
+\end{figure}
+
+\begin{enumerate}[label=(\alph*)]
+	\item Vi finn differansen mellom einarane: $ {9-4=5} $
+	\item Vi finn differansen mellom tiarane: $ {8-2=6} $. 
+	\item Vi finn differansen mellom hundra: $ {7-3=4} $.
+\end{enumerate}
+}
+\newpage
+\fork{Eksempel 2}{ \vs
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics{rekfig/min2a}}\qquad
+		\subfloat[]{\includegraphics{rekfig/min2b}}
+	\end{figure}
+	
+	\begin{enumerate}[label=(\alph*)]
+		\item Vi merkar oss at 7 er større enn 3, derfor tar vi 1 tiar frå dei 8 på tiarplassen. Dette markerer vi ved å sette ein strek over 8. Så finn vi differansen mellom einarane: $ {13-7=6} $
+		\item Sidan vi tok 1 frå dei 8 tiarane, er der no berre 7 tiarar. Vi finn differansen mellom tiarane: $ {7-6=1} $.
+	\end{enumerate}
+}
+\subsubsection{Tabellmetoden}
+Tabellmetoden for subtraksjon tek utgangspunkt i at subtraksjon er ein omvend operasjon av addisjon. For eksempel, svaret på spørsmålet ''Kva er $ 789-324 $?'' er det same som svaret på spørsmålet ''Kor mykje må eg legge til på 324 for å få 789?''. Med tabellmetoden følg du ingen spesiell regel underveis, men velg sjølv talla du meiner passar best for å nå målet.\\
+\begin{center}
+\parbox{0.35\linewidth}{
+\eks[1]{
+$ \colb{789}-\colr{324}=\colc{465} $	 \vsk
+
+\begin{tabular}{r|r}
+	& \colr{324} \\ \hline
+	6&330 \\
+	70&400 \\
+	389&\colb{789} \\ \hline
+	\colc{465}
+\end{tabular}
+}} \qquad
+\parbox{0.35\linewidth}{
+	\eks[2]{
+		$ \colb{83}-\colr{67}=\colc{16} $	 \vsk
+		
+		\begin{tabular}{r|r}
+			& \colr{67} \\ \hline
+			3&70 \\
+			13&\colb{83} \\ \hline
+			\colc{16}
+		\end{tabular} \vspace{14pt}
+}} \\[12pt]
+\parbox{0.35\linewidth}{
+	\eks[3]{
+		$ 564-478=86 $\vsk
+		
+		\begin{tabular}{r|r}
+			& 478 \\ \hline
+			2&480 \\
+			20&500 \\ 
+			64&564\\ \hline
+			86
+		\end{tabular}
+}} \qquad 
+\parbox{0.4\linewidth}{
+	\eks[4]{
+		$ {206,1-31,7=174,4} $\vsk
+		
+		\begin{tabular}{r|r}
+			& 31,7 \\ \hline
+			0,3& 32\phantom{,0} \\
+			70\phantom{,0}&102\phantom{,0} \\ 
+			104,1&206,1\\ \hline
+			174,4
+		\end{tabular}
+}}
+\end{center}
+\fork{Eksempel 1}{
+	\[ \colb{789}-\colr{324}=\colo{465} \]
+\begin{figure}
+	\centering
+	\subfloat[]{
+	\begin{tabular}{r|r}
+		& \colr{324} \\ \hline
+		& \\
+		& \\
+		& \\ \hline
+		&
+	\end{tabular}	
+} \qquad
+	\subfloat[]{
+	\begin{tabular}{r|r}
+		& \colb{324} \\ \hline
+	   \colb{6}& \colc{330}\\
+		& \\
+		& \\ \hline
+		&
+	\end{tabular}
+}\qquad
+	\subfloat[]{
+	\begin{tabular}{r|r}
+		& 324 \\ \hline
+		6& \colb{330}\\
+		\colb{70}& \colc{400} \\
+		& \\ \hline
+		&
+	\end{tabular}	
+}  \\[12pt]
+\subfloat[]{
+	\begin{tabular}{r|r}
+		& 324 \\ \hline
+		6& 330\\
+		70& \colb{400} \\
+		\colb{389}& \colc{789}\\ \hline
+		&
+	\end{tabular}	
+}\qquad
+\subfloat[]{
+	\begin{tabular}{r|r}
+		& 324 \\ \hline
+		\colb{6}& 330\\
+		\colb{70}& 400 \\
+		\colb{389}& 789\\ \hline
+		\colo{465}&
+	\end{tabular}	
+}
+\end{figure}
+\begin{enumerate}[label=(\alph*)]
+	\item Vi startar med 324.
+	\item Vi legg til 6, og får $ {324+6=330} $
+	\item Vi legg til 70, og får $ {70+330=400} $
+	\item Vi legg til 389, og får $ {389+400=789} $. Da er vi framme på 789.
+	\item Vi summerer tala vi har lagt til:  $ {6+70+389=465} $
+\end{enumerate}
+}
+\section{Ganging} \label{rekGanging}
+\subsubsection{Ganging med 10, 100, 1\,000 osv.}
+\reg[Å gonge heiltal med 10, 100 osv. \label{gangheiltalmed10100}]{
+	\vs
+	\begin{itemize}
+		\item Når ein gongar eit heiltal med 10, får ein svaret ved å legge til sifferet 0 bak heiltalet.
+		\item Når ein gongar eit heiltal med 100, får ein svaret ved å legge til sifra 00 bak heiltalet.
+		\item Det same mønsteret gjelder for talla 1\,000, 10\,000 osv.
+	\end{itemize}
+}
+\eks[1]{\vsb \vsb
+	\alg{
+		6\cdot \colb{10} &= 6\colb{0}\vn
+		79\cdot \colb{10} &= 79\colb{0} \vn
+		802\cdot\colb{10}&=802\colb{0}
+	}
+}
+\eks[2]{ \vsb \vsb
+\alg{ 
+6\cdot\colb{100} &= 6\colb{00} \vn
+79\cdot\colb{100} &= 7\,9\colb{00} \vn
+802\cdot\colb{100} &=80\,2\colb{00}
+}
+}
+\eks[3]{ \vsb \vsb
+\alg{ 
+	6\cdot\colb{1\,000} &= 6\,\colb{000} \vn
+	79\cdot\colb{10\,000} &= 79\colb{0\,000} \vn
+	802\cdot\colb{100\,000} &=80\,2\colb{00\,000}
+}
+}
+\newpage
+\reg[Å gonge desimaltal med 10, 100 osv. \label{gangdesmed10100}]{
+	\vs
+	\begin{itemize}
+		\item Når ein gongar  eit  desimaltal med 10, får ein svaret ved å flytte komma en plass til høgre.
+		\item Når ein gongar eit heiltal med 100, får ein svaret ved å flytte komma to plasser til høgre.
+		\item Det same mønsteret gjelder for tallene 1\,000, 10\,000 osv.
+	\end{itemize}
+}
+\eks[1]{\vsb \vsb
+	\alg{
+		7\colr{,}9\cdot 10 &= 79\colr{,}=79 \vn
+		38\colr{,}02\cdot10&=380\colr{,}2 \vn
+		0\colr{,}57\cdot 10 &=05\colr{,}7=5\colr{,}7 \vn
+		0\colr{,}194\cdot 10&= 01\colr{,}94=1\colr{,}94
+	}
+}
+\eks[2]{ \vsb \vsb
+	\alg{
+		7\colr{,}9\cdot 100 &= 790\colr{,}=790 \vn
+		38\colr{,}02\cdot100&=3802\colr{,}=3\,802 \vn
+		0\colr{,}57\cdot 100 &=057\colr{,}=57 \vn
+		0\colr{,}194\cdot 100&= 019\colr{,}4=19\colr{,}4
+	}
+}
+\eks[3]{ \vsb \vsb
+	\alg{
+	7\colr{,}9\cdot 1\,000 &= 7900\colr{,}=7\,900 \vn
+	38\colr{,}02\cdot10\,000&=380200\colr{,}=380\,200 \vn
+	0\colr{,}57\cdot 100\,000 &=57000\colr{,}=57\,000
+}
+}
+\info{Merk}{
+\rref{gangheiltalmed10100} er berre  eit  spesialtilfelle av \rref{gangdesmed10100}. For eksempel, å bruke \rref{gangheiltalmed10100} på reknestykket $ {7\cdot 10} $ gir same resultat som å bruke \rref{gangdesmed10100} på reknestykket $ {7,0\cdot 10} $. 
+}
+\newpage
+\fork{Å gonge tall med 10, 100 osv.}{
+Titalsystemet baserer seg på grupper av ti, hundre, tusen osv., og tidelar, hundredelar og tusendelar osv. (sjå \rref{titalsys}). Når ein gongar  eit  tall med 10, vil alle einarane i talet bli til tiarar, alle tiarar bli til hundra osv. Kvart siffer forskyvast altså éin plass mot venstre. Tilsvarende forskyvast kvart siffer to plassar mot venstre når ein gongar med 100, tre plassar når ein gongar med 1\,000 osv.
+}
+\subsubsection{Utvida form}
+Gonging på utvida form bruker vi for å rekne multiplikasjon mellom fleirsifra tall. Metoden baserer seg på distributiv lov (sjå \rref{gangpar}). \regv
+\eks[1]{ \vs
+\begin{figure}
+	\centering
+	\includegraphics[]{rekfig/gang1}
+\end{figure}
+}
+\eks[2]{ \vs
+\begin{figure}
+	\centering
+	\includegraphics[]{rekfig/gfleirsif}
+\end{figure}
+}
+\fork{Eksempel 1}{
+24 kan skrivast som $ 20+4 $, altså er
+\[ 24\cdot3 =(20+4)\cdot3 \]
+Vidare er 
+\algv{
+(20+4)\cdot 3 &=20\cdot 3 + 4\cdot 3 \\
+&= 60+12 \\
+&= 72
+}
+}
+\newpage
+\fork{Eksempel 2}{
+Vi har at
+\alg{
+279&=200+70+9 \\
+34 &=30+4 	
+}
+Altså er
+\alg{
+279\cdot34&= (200+70+9)\cdot (30+4) 
+}
+Vidare er 
+{
+\footnotesize
+\alg{
+(200+70+9)\cdot (30+4) &=200\cdot 30+70\cdot30+9\cdot30+200\cdot4+70\cdot4+9\cdot4
+\\
+&=9486}
+} \vs
+}
+\subsubsection{Kompaktmetoden}
+Kompaktmetoden bygger på dei same prinsippa som gonging på utvida form, men har ein skrivemåte som gjer utrekninga kortare. \regv
+
+\eks[1]{
+	\begin{figure}
+		\centering
+		\includegraphics[]{rekfig/gfleirsifa}
+	\end{figure}
+}
+\newpage
+\fork{Eksempel 1}{
+Vi startar med å gonge sifra i 279 enkeltvis med 4:
+\begin{itemize}
+	\item $ 9\cdot 6=36 $, da skriv vi 6 på einarplassen og 3 i mente.
+	\item $ 7\cdot4 =28$, da skriv vi 8 på tiarplassen og 2 i mente.
+	\item $ 2\cdot 4=8 $, da skriv vi 8 på hundrerplassen.
+\end{itemize}
+Så gongar vi sifra i 279 enkeltvis med 30. Dette kan forenklast til å gonge med 3, så lenge vi plasserer sifra én plass forskyvde til venstre i forhold til da vi gonga med 4:
+\begin{itemize}
+	\item $ 9\cdot 3=27 $, da skriv vi 7 på tiarplassen og 2 i mente. 
+	\item $ 7\cdot3=21 $, da skriv vi 1 på hundrerplassen og 2 i mente.
+	\item $ 2\cdot3=6 $, da skriv vi 6 på tusenplassen.
+\end{itemize} 
+}
+\section{Divisjon} \label{rekDivisjon}
+\subsubsection{\delmedtihundre}
+\reg[Deling med 10, 100, 1\,000 osv. \label{deledesmed10100}]{ \vs
+\begin{itemize}
+	\item Når ein deler  eit  desimaltal med 10, får ein svaret ved å flytte komma en plass til venstre.
+	\item Når ein deler  eit  desimaltal med 10, får ein svaret ved å flytte komma to plasser til venstre.
+	\item Det same mønsteret gjelder for tallene 1\,000, 10\,000 osv.
+\end{itemize}
+}
+\eks[1]{ \vsb \vsb
+	\alg{
+200:10&=200\colr{,}0:10 \\&=20\colr{,}00\\&=20	\vn
+45:10&=45\colr{,}0:10 \\&= 4\colr{,}50 \\&=4\colr{,}5
+}
+}
+\eks[2]{ \vsb \vsb
+	\alg{
+		200:100&=200\colr{,}0:100 \\&=2\colr{,}000\\&=2	\vn
+		45:100&=45\colr{,}0:100 \\&= 0\colr{,}450 \\&=0\colr{,}45
+	}
+}
+\newpage
+\eks[3]{ \vsb \vsb
+\alg{
+143\colr{,}7 :10 &= 14\colr{,}37 \vn
+143\colr{,}7 :100 &= 1\colr{,}437 \vn
+143\colr{,}7 :1\,000 &= 0\colr{,}1437 \vn
+93\colr{,}6:10 &= 9\colr{,}36 \vn
+93\colr{,}6:100 &= 0\colr{,}936 \vn
+93\colr{,}6:1\,000 &= 0\colr{,}0936
+}
+}
+\fork{Deling med 10, 100, 1\,000 osv.}{
+Titalsystemet baserer seg på grupper av ti, hundre, tusen osv., og tideler, hundredeler og tusendeler osv (sjå \rref{titalsys}). Når ein deler  eit  tall med 10, vil alle einare i tallet bli til tidelar, alle tiarar bli til einarar osv. Kvart siffer forskyvast altså éin plass mot høgre. Tilsvarande forskyvast kvart siffer to plassar mot høgre når ein deler med 100, tre plassar når ein deler med 1\,000 osv.
+}
+
+\subsubsection{Oppstilling}
+Divisjon med oppstilling baserer seg på divisjon tolka som inndeling av mengder (sjå s.\pageref{Divisjon})
+
+\begin{center}
+	\parbox{0.3\linewidth}{
+	\eks[1]{ \vsb
+		\begin{figure}
+			\centering
+			\includegraphics[]{rekfig/del1}
+		\end{figure} \vspace{18pt}
+	}
+}\qquad
+\parbox{0.45\linewidth}{
+	\eks[2]{ \vspace{-5pt}
+		\begin{figure}
+			\centering
+			\includegraphics[]{rekfig/del2}
+		\end{figure}
+	}
+}
+\end{center}
+\newpage
+\fork{Eksempel 1}{ \vs \vs
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics{\figp{delalg}}}
+	\qquad \subfloat{\includegraphics[angle=90]{\figp{delalg0}}}
+\end{figure}
+Figuren over illustrerer mengda 92, som vi skal dele inn i 4 like store grupper. 
+\begin{itemize}
+	\item Vi startar med å fordele så mange av tiarane som mogleg. Av dei 9 tiarane, kan kvar gruppe få 2. Da har vi totalt fordelt $ 2\cdot 4=8 $ tiarar.
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics{\figp{delalgaa}}}
+	\qquad \subfloat{\includegraphics[angle=90]{\figp{delalga}}}
+\end{figure}
+\item Vi står no igjen med 1 tiar og 2 einarar, altså 12 einarar. Av dei 12 einarane, kan kvar gruppe få 3. Da har vi totalt fordelt $ 3\cdot 4= 12 $ einarar.
+\begin{figure}
+	\centering
+	\includegraphics[angle=90]{\figp{delalgb}}
+\end{figure}
+\item No er heile mengda 92 fordelt, og da er vi ferdige med utrekninga. I kvar gruppe endte vi opp med mengda 23.
+\end{itemize}
+}
+\newpage
+\subsubsection{Tabellmetoden}
+Tabellmetoden baserer seg på divisjon som omvend operasjon av gonging. For eksempel er svaret på spørsmålet ''Kva er $ {76:4} $'' det same som svaret på spørsmålet ''Kva tal må eg gonge 4 med for å få 76?''. På same vis som for tabellmetoden ved subtraksjon, er det opp til ein sjølv å velge passande tal for å nå målet.
+\begin{center}
+	\parbox{0.35\linewidth}{
+		\eks[1]{
+			$ \colg{92}:\colb{4}=\colo{23} $	 \vsk
+			
+			\begin{tabular}{r|r|r}
+				$ \cdot\, \colb{4} $&\\ \hline
+				10&40&40 \\
+				10&40&80 \\
+				3& 12 &\colg{92} \\ \hline
+				\colo{23}&
+			\end{tabular}
+		\vspace{28pt}
+	}} \qquad
+\parbox{0.35\linewidth}{
+	\eks[2]{
+		$ \colg{894}:\colb{3}=\colo{298} $	 \vsk
+		
+		\begin{tabular}{r|r|r}
+			$ \cdot\, \colb{3} $&\\ \hline
+			200& 600 &600 \\
+			30& 90 &690 \\
+			30& 90 &780 \\
+			30& 90&870 \\
+			8&24 &\colg{894} \\ \hline
+			\colo{298} &
+		\end{tabular}
+}} \vsk
+
+\parbox{0.415\linewidth}{
+	\eks[3]{		
+		$ 894:3=298 $	 \vsk
+		
+		\begin{tabular}{r|r|r}
+			$ \cdot\, 3 $&\\ \hline
+			300& 900&900 \\
+			$ -2 $& $ -6 $ &894 \\ \hline
+			298&
+		\end{tabular} \vsk
+	
+\footnotesize	
+\mer same reknestykke som i \textsl{Eksempel 2}, men ei anna utrekning.
+}
+}
+\end{center}
+\newpage
+\fork{Eksempel 1}{
+Sidan vi skal dele \colg{92} med \colb{4}, gongar vi med \colb{4} fram til vi når \colg{92}.
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\begin{tabular}{r|r|r}
+			$ \cdot\, \colb{4} $&\\ \hline
+			10&40&40 \\
+			&& \\
+			& &\\ \hline
+			&
+		\end{tabular}	
+	} \qquad
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		$ \cdot\, \colb{4} $&\\ \hline
+		10&40&40 \\
+		10&40&80 \\
+		&  & \\ \hline
+		&
+	\end{tabular}	
+} \\
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		$ \cdot\, \colb{4} $&\\ \hline
+		10&40&40 \\
+		10&40&80 \\
+		3& 12 &\colg{92} \\ \hline
+		&
+	\end{tabular}	
+} \qquad
+\subfloat[]{
+	\begin{tabular}{r|r|r}
+		$ \cdot\, \colb{4} $&\\ \hline
+		10&40&40 \\
+		10&40&80 \\
+		3& 12 &\colg{92} \\ \hline
+		\colo{23}&
+	\end{tabular}	
+}
+\end{figure}
+\begin{enumerate}[label=(\alph*)]
+	\item Vi gongar 10 med 4, som er lik 40. Da har vi så langt komme til 40.
+	\item Vi gongar 10 med 4, som er lik 40. Da har vi så langt komme til $ {40+40=80} $.
+	\item Vi gongar 3 med 4, som er lik 12. Da har vi komme til $ {80+12=92} $, som var målet.
+	\item Vi legg saman tala vi gonga med, og får $ {10+10+3=23} $.
+\end{enumerate}
+}
+\info{Tips}{
+Det kan vere lurt å sjå tilbake på utrekningar gjort med tabellmetoden for å tenke over om ein kunne valt tal på ein betre måte. For eksempel, i \textsl{Eksempel 1} over kunne vi starta med å gonge med 20. Dette er omlag like enkelt som å gonge med 10, og det ville ha bringa oss nærare målet.
+}
+\newpage
+\subsubsection{Divisjon med rest}
+Det er langt ifrå alltid at svaret ved divisjon blir eit heiltal. Ein måte å uttrykke slike svar på, er å ved å bruke omgrepet \textit{rest}\index{rest}. Omgrepet er best forklart ved eksempel: \regv
+\eks[1]{
+Rekn ut $ 11:4 $ med rest.
+
+\sv
+Det største heiltalet vi kan gonge med 4 utan at produktet blir større enn
+11, er 2. $ {2\cdot 4 = 8} $, så da har vi $ 11-8=3 $ i rest.
+\[ 11= \colb{2}\cdot 4 +\colc{3} \]	
+\fig{mod1}
+Dette betyr at
+\[ 11:4 =\text{\colb{2} og \colc{3} i rest}\]
+}
+\eks[2]{
+	Rekn ut $ 19:3 $ med rest.
+	
+	\sv
+	Det største heiltalet vi kan gonge med 3 utan at produktet blir større enn
+	19, er 6. $ {6\cdot 3 = 18} $, så da har vi $ 19-8=1 $ i rest.
+	\[ 19= \colb{6}\cdot 3 +\colc{1} \]	
+	\fig{mod2}
+	Dette betyr at
+	\[ 19:3 =\text{\colb{6} og \colc{1} i rest}\]
+}
+\newpage
+\eks[3]{
+Rekn ut $ 94:4 $ med rest.
+
+\sv
+\metode{Med oppstilling}{3.75cm}
+\[ 94:4 = \text{23 og 2 i rest} \]
+\begin{figure}
+	\centering
+	\includegraphics[]{rekfig/mod3}
+\end{figure}
+\mers{Da det blir feil å bruke \sym{$ = $} i figuren over, har vi valt å bruke \sym{$  \rightarrow$}. 
+}\vsk 
+
+\metode{Med tabellmetoden}{3.75cm}
+\[ 94:4 = \text{23 og 2 i rest} \]
+\begin{center}
+		\begin{tabular}{r|r|r}
+		$ \cdot\, 4$&\\ \hline
+		20&80&80 \\
+		3& 12 &92 \\ \hline
+		23&
+	\end{tabular} \qquad $ 94-92=2 $
+\end{center}
+}
+\spr{
+Viss vi utfører ein \textit{modulo-operasjon}, finn vi resten i eit delestykke. Dette blir ofte vist ved forkortinga \sym{mod}. For eksempel er
+\[ 11\text{ mod } 4= 3\qquad , \qquad 19\text{ mod 3} =1 \]
+I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{\string \\}}} brukt som symbol for denne operasjonen i programmeringsspråk.
+}
+\newpage
+\subsubsection{Divisjon med blanda tal som svar}
+\eks[1]{
+Rekn ut $ 11:4 $. Skriv svaret som eit blanda tal.
+
+\sv \vsb
+\[ 11:4 = \text{2 og 3 i rest}=2+\frac{3}{4} \]
+}
+\eks[2]{
+Rekn ut $ 19:3 $. Skriv svaret som eit blanda tal.
+
+\sv \vsb
+\[ 19:3=\text{6 og 1 i rest}=6+\frac{1}{3} \]
+}
+\fork{Eksempel 1}{
+Vi startar med å legge merke til at $ 4=\frac{4}{1} $. Dette betyr at
+\[ 11:4 = 11:\frac{4}{1} \]
+Av \rref{delmbr} har vi at
+\[ 11:\frac{4}{1} = 11\cdot \frac{1}{4} \]
+Vidare er $ 11=2\cdot 4+ 3 $, og da er
+\[ 11\cdot \frac{1}{4}=(2\cdot 4+3)\cdot\frac{1}{4} \]
+Av \rref{gangpar} har vi at
+\alg{
+(2\cdot 4+3)\cdot\frac{1}{4}&=2\cdot4\cdot\frac{1}{4}+3\cdot \frac{1}{4} \\
+&= 2+\frac{3}{4}
+}
+}
+\newpage
+\subsection{Divisjon med desimaltal som svar}
+\eks[1]{
+Rekn ut $ 11:4 $. Oppgi svaret som desimaltal.	
+
+\sv
+
+\metode{Med oppstilling}{3.75cm} \vs
+\[ 11:4=2,75 \]
+\begin{figure}
+	\centering
+	\includegraphics{rekfig/deldes1}
+\end{figure}
+\metode{Med tabellmetoden}{3.75cm} \vs
+\[ 11:4 = 2,75\]
+\begin{center}
+	\begin{tabular}{r|r|r}
+		$ \cdot\, 4$&\\ \hline
+		2&8&8 \\
+		0,5& 2 &10 \\
+		0,25& 1 &11\\ \hline
+		2,75&
+	\end{tabular}
+\end{center}
+}
+\fork{Eksempel 1; oppstilling}{
+Sidan vi deler med 4, er det snakk om å fordele 11 likt i 4 grupper.
+\begin{itemize}
+	\item 8 av dei 11 einarane kan vi fordele likt i 4 grupper. Da har vi igjen 3 einarar. Dette er det same som 30 tidelar.
+	\item 28 av dei 30 tidelane kan vi fordele likt i 4 grupper. Da har vi igjen 2 tidelar. Dette er det same som 20 hundredelar.
+	\item 20 av dei 20 hundredelane kan vi fordele likt i 4 grupper.
+	\item Heile mengda 11 er no fordelt, og da er vi ferdige med utrekninga.
+\end{itemize}
+}
+\newpage
+
+
+\end{document}
+

@@ -1,0 +1,165 @@
+\documentclass[english,hidelinks,pdftex, 11 pt, class=report,crop=false]{standalone}
+\input{/home/sindre/R/preamb}
+
+\usepackage{xr}
+\externaldocument{/home/sindre/R/bokR2_PDF}
+\usepackage{chngcntr}
+\counterwithout{equation}{chapter}
+\newcommand{\lst}[2]{
+\textbf{Formål}\\ #1  \vsk
+
+\textbf{Utstyr}\\ #2 \vsk
+}
+
+\newcommand{\fork}{\textbf{Forkunnskaper}\\}
+\newcommand{\forb}{\textbf{Forberedelser}\\}
+\newcommand{\opgvr}{\textbf{Oppgaver}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Undervisningsopplegg}}
+
+\newcounter{opl}
+\renewcommand\theopl{\Alph{opl}}
+\newcommand{\oplt}[1]{
+	\newpage
+	\refstepcounter{opl}\phantomsection\section*{\thechapter.\theopl\;#1}  \addcontentsline{toc}{section}{\thechapter.\theopl\;#1} }
+
+\begin{document}
+\tableofcontents
+
+\setcounter{chapter}{1}
+\oplt{Summen av de 100 første heltallene}
+\lst{Skape diskusjon rundt begrepene \textit{følge} og \textit{rekke}, og se nytteverdien av å finne formler for summer av rekker.}{Ingen spesielle.}
+
+\fork
+\net{https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss}{Carl Friedrich Gauss} (1777-1855) er en av de største matematikerne gjennom tidene.  Hans talent for matematikk viste seg i tidlig alder, og det er knyttet mange historier og myter til dette. Én av påstandene er at da Carl Friedrich gikk på barneskolen løste han alle oppgavene så raskt at læreren ville gi ham et skikkelig langt regnestykke. Han ba derfor gutten om å finne summen av de første 100 heltallene:
+\begin{equation}\label{gauss}
+1+2+3+...+100 =\;? 
+\end{equation}
+Til lærerens stor forundring kom eleven med sitt (korrekte) svar etter bare noen sekunder.\vsk
+
+\opgvr
+\begin{enumerate}
+	\item Finn en metode for å finne summen i \eqref{gauss} og del metoden med klassen.\\
+	\item Kan noen av metodene brukes til å lage en generell formel for summen av de $ n $ første heltallene?
+\end{enumerate}
+
+\setcounter{chapter}{2}
+\setcounter{opl}{0}
+
+\oplt{Enhetssirkelen}
+\lst{Gi en innføring av radianer og enhetssirkelens egenskaper.}{Ruteark}
+
+\fork 
+En sirkel med radius 1 kalles \textit{enhetssirkelen}. I figuren under er denne sirkelen tegnet inn i et koordinatsystem.
+\fig{sincos0}{}
+
+\opgvr
+\begin{enumerate}
+	\item Tegn enhetssirkelen inn i et ruteark. Tegn deretter inn så mange punkt som mulig langs sirkelbuen.
+	\item Hva er avstanden mellom punktet $ (1, 0)$ og de andre punktene funnet?
+\end{enumerate}
+
+\oplt{Trigonometriske identiteter}\vsk
+
+\lst{Vise hvordan man ut ifra funnet av én spesifikk identitet kan komme fram til flust av andre identiteter.}{}
+
+\fork
+Gitt to vektorer $ \vec{b} $ og $ \vec{r} $ som kan tegnes inn i enhetssirkelen med utspring i sentrum, hvor grunnlinja utspenner vinkelen $ u$ med $ \vec{b} $ og vinkelen $ v $ med $ \vec{r} $. 
+\fig{cosuv}{Vektorene $ \vec{b}$ (blå) og $ \vec{r} $ (rød)}
+
+\textbf{Oppgaver}
+\begin{enumerate}
+	\item Skriv ned så mye som mulig informasjon om $ \vec{b} $ og $ \vec{r} $.
+	\item Finn den trigonometriske identiteten:
+	\begin{equation}\label{cosuv}
+	\cos(u-v) =  
+	\end{equation}
+	\item Bruk blant annet \eqref{cosuv} til å finne også disse identitetene: 
+		\begin{align} 
+\cos (u-v) &= \\
+\cos (u+v) &= \\
+\cos\left(u-\frac{\pi}{2}\right)&=\br
+\sin\left(u+\frac{\pi}{2}\right)&=\br
+\sin (u+v) &=  \\
+\sin (u-v) &=  \\
+\sin (2x) &= 
+\end{align}
+\end{enumerate}
+
+
+\setcounter{chapter}{3}
+\setcounter{opl}{0}
+\begin{comment}
+	\oplt{Moment}
+\end{comment}
+
+\setcounter{chapter}{4}
+\setcounter{opl}{0}
+\oplt{Treffe punkt i et plan}
+\lst{Gi en forståelse av hva som menes med å følge en vektor en viss lengde og parameteriseringen av et plan.}{Målband, snor e.l.}
+
+\forb
+Mål opp og frigjør et rom/område på minmimum $ 6 $m$ \times 6 $m og definer en $ x $-retning $ y $-retning parallell med hver sin sidekant. Lag med snor et grid for et koordinatsystem hvor ${ x \in[-6,6] }$ og $ y\in[0,12] $ og hvor 0.5\,m tilsvarer en enhets lengde.\vsk 
+
+Klassen deles inn i grupper. Hver gruppe må anskaffe seg en gjenstand som er godt synlig og som kan flyttes på (f. eks en sko). Del videre ut to forskjellige vektorer (to-dimensjonale) til hver gruppe. Alle vektorene må ligge innnenfor koordinatsystemets grenser. Hver gruppe kan ha én felles vektor, men ikke to like.
+\vsk
+
+\textbf{Oppgave}
+\begin{itemize}
+	\item Målet for hver gruppe er å starte med sin gjenstand et vilkårlig sted på $ x $-aksen og komme så nært punktet $ {(0, 12)} $ som mulig.
+	\item  Én runde består av at gruppene flytter sin gjenstand én gang hver.
+	\item Gjenstanden kan bare flyttes \textsl{langs} én av de utdelte vektorene, men i valgfri lengde.
+	\item Hver gruppe må annonsere hvilken vektor og lengde de har valgt \textsl{før} de flytter gjenstanden. De andre gruppene evaluerer etterpå om flyttet samsvarer med vektor og lengde annonsert.
+	\item Om en gruppe flytter noe annet enn annonsert, må gruppa legge gjenstanden tilbake til forrige utgangspunkt.
+	\item Havner gjenstanden utenfor koordinatsystemet, må gruppa legge gjenstanden tilbake til forrige utgangspunkt.
+	\item Hver gruppe får 5 minutter til planlegging før første flytt, og 1 minutt før påfølgende.
+	\item Spillet er over etter 10 flytt fra hver gruppe eller når en gruppe når punktet $ (0, 12) $.
+\end{itemize}
+
+\setcounter{chapter}{5}
+\setcounter{opl}{0}
+\begin{comment}
+	\oplt{Derivasjon}
+\end{comment}
+
+\setcounter{chapter}{6}
+\setcounter{opl}{0}
+\oplt{Integrasjon}
+\lst{Gi en forståelse av integral som sum av delintervaller.}{Ingen spesielle.}
+
+\fork
+Tenk at klassen kjører i en buss som holder farten $ v(t) $, hvor $ t $ er antall timer og $ v $ angir km/t. Bussturen varer i alt tre timer, og $ v $ er gitt ved:
+			\[v(t) =\left\lbrace{
+	\begin{array}{ll}
+	20  & \quad x\in[0, 1)\\
+	20+5t^2 &\quad x\in[1, 3]
+	\end{array}
+}\right. \]	
+
+\textbf{Oppgave}
+\begin{enumerate}
+	\item Hvor langt har bussen kjørt etter 1 time? Lag (for hånd) en grafisk framstilling av utregningen.
+	\item Hvor langt kjører bussen mellom 1. og 3. time? Forsøk å lage en grafisk framstilling av utregningen. (Digitale hjelpemidler kan brukes for å tegne grafen, men ikke noe mer).
+	\item Del utregninger og figurer med andre, og diskuter hvilke metoder som trolig er mest nøyaktig.
+\end{enumerate}
+
+\setcounter{chapter}{7}
+\setcounter{opl}{0}
+\begin{comment}
+	\oplt{Differensialligninger}
+	\lst{Gi et innblikk i hvordan differensialligninger kan brukes for å tilnærme virkeligheten.}{1.5L flaske, linjal, kjøkkenvekt, videokamera (mobiltlf.), syl e.l.}
+\end{comment}
+
+\oplt{Oppstart med differensialligninger}
+\begin{enumerate}
+	
+\item Gi eksempler på funksjoner som oppfyller ligningen $ y' = 0. $
+\item Hvor mange løsninger har ligningen fra spm. 1?
+\item Gi eksempler på funksjoner som oppfyller ligingen $  y'' = 0. $
+\item Hvor mange løsninger har ligningen fra spm. 3?
+\item Gi eksempler på funksjoner som oppfyller ligningen $ y'-y=0 $
+\item Gi eksempler på funksjoner som oppfyller ligningen $ y'-ky=0 $
+\item Gi eksempler på funksjoner som oppfyller ligningen $ y''+y=0 $
+\item Gi eksempler på funksjoner som oppfyller ligningen $ y''+k^2 y = 0 $
+\item Hvor mange løsninger har ligningene fra spm. 5-8?
+\end{enumerate}
+\end{document}

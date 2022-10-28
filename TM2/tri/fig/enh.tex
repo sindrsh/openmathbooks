@@ -1,0 +1,41 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+	\begin{figure}[H]
+\newcommand{\minus}{\scalebox{0.6}[1]{$-$}}		
+		\centering
+		\begin{tikzpicture}[scale=4]	
+		\draw (0,0) circle (1cm);
+		\draw (-1,0) -- (1,0) node[anchor=west]{$ 0 $};
+		\draw[blue] (-150:1)--(30:1);	
+		\draw[blue] (150:1)--(-30:1);
+		\draw[blue] (240:1) -- (60:1);
+		\draw[blue] (210:1) -- (30:1);
+		\draw[blue] (90:1) -- (270:1);	
+		\draw[blue] (120:1)-- (-60:1);	
+		\draw[blue] (-135:1) -- (45:1);				
+		\draw[blue] (135:1) -- (-45:1);						
+		\draw (-1,0) node[anchor=east] {$\pi$};		
+		\draw (30:1.1) node {\large $\frac{\pi}{6}$};
+		\draw (45:1.1) node {\large $\frac{\pi}{4}$};	
+		\draw (60:1.1) node {\large $\frac{\pi}{3}$};	
+		\draw (90:1.1) node {\large $\frac{\pi}{2}$};		
+		\draw (-90:1.12) node {\large $\minus\frac{\pi}{2}$};							
+		\draw (-30:1.12) node {\large \minus $\frac{\pi}{6}$};		
+		\draw (150:1.1) node {\large $ \frac{5\pi}{6}$};		
+		\draw (135:1.1) node {\large $ \frac{3\pi}{4}$};		
+		\draw (120:1.1) node {\large $ \frac{2\pi}{3}$};			
+		\draw (-150:1.15) node{\large \minus$\frac{5\pi}{6}$};		
+		\draw (-120:1.15) node{\large \minus$\frac{2\pi}{3}$};
+		\draw (-60:1.12) node {\large \minus $\frac{\pi}{3}$};				
+		\draw (-45:1.12) node {\large \minus $\frac{\pi}{4}$};		
+		\draw (-135:1.15) node {\large \minus $\frac{3\pi}{4}$};				
+		\end{tikzpicture}
+		\caption{Enhetssirkelen (radius er lik 1) med sentrale verdier inntegnet. Verdiene tilsvarer buelengden vandret i positiv eller negativ retning fra verdien 0. \label{enh}}
+	\end{figure}	
+	
+\end{document}

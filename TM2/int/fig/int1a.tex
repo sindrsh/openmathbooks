@@ -1,0 +1,30 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+
+
+\begin{document}
+	\begin{figure}[H]
+	\centering
+		\begin{tikzpicture}
+		\begin{axis}[
+		xmax=4,xmin=-0.3,ymax=8, ymin=-0.1,
+		enlargelimits=true,
+		axis lines=middle,
+		clip=false,
+		domain=0:3.5,
+		axis on top,
+		xtick = \empty,
+		ytick= \empty,
+		extra x ticks={0,0.5,3.5},
+		extra x tick labels={0,$ a $, $ b $},
+		]
+		\addplot[domain=0:3.7,smooth]{1+0.5*x^2};
+		\node at (axis cs:4.3,0) {$ x$};
+		\node at (axis cs:0,8.6) {$ f(x)$};
+		\end{axis}
+		\end{tikzpicture}
+	\caption{\label{fart}}
+	\end{figure}
+\end{document}

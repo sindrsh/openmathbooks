@@ -1,0 +1,211 @@
+\input{../doc}
+\input{../preamb_eng}
+
+
+\begin{document}
+
+\newpage
+\section{\fintro}
+Variables are values that change. A value which changes in compliance with a variable is called a \textit{function}\index{function}.\vsk
+\fig{funk1_eng}
+In the above figure, the amount of boxes follows a specific pattern. Mathematically we can describe the pattern like this:
+\alg{
+\text{Number of boxes in \textsl{Figure \color{blue}1}}= 2\cdot {\color{blue}1}+1=3 \\ 
+\text{Number of boxes in \textsl{Figure \color{blue}2}}= 2\cdot {\color{blue}2}+1=5 \\ 
+\text{Number of boxes in \textsl{Figure \color{blue}3}}= 2\cdot {\color{blue}3}+1=7 \\ 
+\text{Number of boxes in \textsl{Figure \color{blue}4}}= 2\cdot {\color{blue}4}+1=9
+}
+Hence, for a figure of a random number $ x $, we have
+\[ \text{Number of boxes in \textsl{Figure }}{\color{blue}x}=2{\color{blue}x}+1 \]
+The amount of boxes changes in compliance with the change of $ x $, in this case we say that\regv
+\st{\text{''Number of boxes in \textsl{Figure }$ x $'' is a function of $ x $.}}\regv
+
+\st{$ {2x+1} $ is the expression of the function ''Number of boxes in \textsl{Figure }$ x $''.}
+\newpage
+\textbf{General expressions} \os
+If we were to continue working with the function just studied, writing ''Number of boxes in \textsl{Figure }$ x $'' all the time would be very cumbersome. It is common to let letters indicate functions and to write the associated variable inside parentheses. Let's rename ''Number of boxes in \textsl{Figure} $ x $'' to $ a(x) $. Then
+\[ \text{Number of boxes in \textsl{Figure }}x=a(x)=2x+1 \]
+If we write $ a(x) $, but substitute $ x $ by a specific number, we substitute $ x $ by this number in the expression of our function:
+\alg{
+a({\color{blue}1})&=2\cdot{\color{blue}1} +1=3 \\
+a({\color{blue}2})&=2\cdot{\color{blue}2}+1=5 \\
+a({\color{blue}3})&=2\cdot{\color{blue}3}+1=7\\
+a({\color{blue}4})&=2\cdot{\color{blue}4}+1=9
+}
+\fig{funk1a}
+\newpage
+\eks{
+Let the number of boxes in the below pattern be given by $ a(x) $.
+\fig{funk2}
+\textbf{a)} Find the expression of $ a(x) $.\bs
+\textbf{b)} How many boxes are there when $ x=10 $? \bs
+\textbf{c)} What is the value of $ x $ when $ a(x)=628 $? 
+
+\sv
+\textbf{a)} We notice that
+\begin{itemize}
+	\item When $ x=1 $, there are $ 1\cdot1+3=4 $ boxes.
+	\item When $ x=2 $, there are $ 2\cdot2+3=7 $ boxes.
+	\item When $ x=3 $, there are $ 3\cdot3+3=12 $ boxes.
+	\item When $ x=4 $, there are $ 4\cdot4+3=17 $ boxes.
+\end{itemize} 
+Therefore
+\[ a(x)=x\cdot x +3 =x^2+3 \]
+\textbf{b)}
+\[ a(10)=10^2+3=100+3=103 \]
+When $ x=10 $, there are 103 boxes.\vsk
+
+\textbf{c)} We have the equation
+\alg{
+x^2+3&=628 \\
+x^2&=625
+}	
+Hence
+\[ x=15\qquad\vee\qquad x=-15 \]
+Since we seek a positive value of $ x $, we have $ x=15 $.	
+}
+\section{\lingraf}
+When a variable $ x $ and a function $ f(x)  $ are present, we have two values; the value of $ x $ and the associated value of $ f(x) $. These pairs of values can be put into a coordinate system (see \refsec{Koord}) to form the  \textit{graph}\index{function!graph} of $ f(x) $. \vsk
+
+Let's use the function
+\[ f(x)=2x-1 \]
+as an example. We have
+\alg{
+f(0)&=2\cdot0-1=-1 \vn
+f(1)&=2\cdot1-1=1 \vn
+f(2)&=2\cdot2-1=3 \vn
+f(3)&=2\cdot3-1=5
+} 
+These pairs of values can be put into a table:
+	\begin{center}
+	\begin{tabular}{c | c |c |c|c}
+		$ x $ & 0 & 1 & 2 & 3 \\ \hline
+		$ f(x) $ &$  -1 $ & 1&3 &5
+	\end{tabular}
+\end{center}
+The above table yields the points
+\[ (0, -1)\quad\quad(1, 1)\quad\quad(2, 3)\quad\quad(3, 5) \]
+Now we place these points into a coordinate system (see the figure on page \pageref{funkfig}). Concerning functions, it is common to name the horizontal and the vertical axis the $ x $-axis and the $ y $-axis, respectively. 
+Now the graph of $ f(x) $ is the curve passing through all the infinite many points we can create by the $ x$-values and their associated $ f(x) $-values. Our function is a \textit{linear}\index{function!linear} function, which means its graph is a straight line. Hence, the graph is created by drawing the line going through the points we found.\vsk
+
+As earlier mentioned, we can never draw a line, only a part of it. This also applies to graphs. In the figure on page \pageref{funkfig} we have drawn the graph of $ f(x) $ for $ x $-values in the range $ -2 $ to $ 4 $. That $ x $ is included in this \textit{interval}\index{interval} we write as\footnote{Consult the list of symbols on page \pageref{Symbol}.} $ -2\leq x\leq 4 $ or $ x\in[-2, 4] $.
+\newpage
+
+\fig{funk3} \label{funkfig} \vspace{-18pt}
+
+\reg[\funklin \label{funklin}]{
+	A function with the expression 
+	\[ f(x)=ax+b \]
+	where $ a $ and $ b $ are constants, is a \textit{linear} function with \textit{slope}\index{slope} $ a $ and \textit{intercept}\index{intercept} $ b $. \vsk 
+	
+	The graph of a linear function is a straight line passing through the point $ (0, b) $. \vsk
+	
+	For two distinct $ x $-values, $ x_1 $ and $ x_2 $, we have
+	\[ a=\frac{f(x_2)-f(x_1)}{x_2-x_1} \] \vspace{-20pt}
+	\fig{funk6}
+}
+
+\eks[1]{Find the slope and the intercept of the functions.
+	\alg{
+		f(x)&=2x+1 \vn
+		g(x)&=-3+\frac{7}{2}	\vn
+		h(x)&=\frac{1}{4}x-\frac{5}{6}\vn
+		j(x)&=4-\frac{1}{2}x
+	}
+	\sv \vs \vs
+	\begin{itemize}
+		\item $ f(x) $ have slope 2 and intercept 1.
+		\item $ g(x) $ have slope $ -3 $ and intercept $ \frac{7}{2} $.
+		\item $ h(x) $ have slope $ \frac{1}{4} $ and intercept $ -\frac{5}{6} $.
+		\item $ j(x) $ have slope $ -\frac{1}{2} $ and intercept 4.		
+	\end{itemize}	
+}
+\newpage
+\eks[2]{
+	Draw the graph of
+	\[ f(x)=\dfrac{3}{4}x-2 \]
+	for $ x\in[-5, 6] $.
+	
+	\sv
+	To draw the graph of a linear function, we only need to know two points lying on it. The points are free to choose, therefore, in order to make calculations as simple as possible, we start off by finding the point where $ x=0 $:
+	\[ f(0)=\frac{3}{4}\cdot0-2=-2 \] 
+	Further on, we choose $ {x=4} $, since this also results in easy calculations:
+	\[ f(4)=\frac{3}{4}\cdot4-2=1 \]
+	Now we have all the information we need and for the record we put it into a table:
+	\begin{center}
+		\begin{tabular}{c | c |c }
+			$ x $ & 0 & 4 \\ \hline
+			$ f(x) $ &$  -2 $ & 1
+		\end{tabular}
+	\end{center}
+Now we place the points in a coordinate system and draw the line passing through them:
+	\begin{figure}
+		\centering
+		\fig{funk4}
+	\end{figure}
+}
+\eks[3]{
+Find the respective expressions of $ f(x) $ and $ g(x) $.	
+\fig{funk5} \vs
+\sv
+Firstly, we find the expression of $ f(x) $. The point $ (0, 3) $ lies on the graph of $ f(x) $ (also see the figure on the next page). It then follows that $ {f(0)=3} $, and hence $ 3 $ is the intercept of $ f(x) $. Moreover, we observe that $ (1, 2) $ also lies on the graph of $ f(x) $. The slope of $ f(x) $ is then expressed by the fraction
+\[\frac{2-3}{1-0}=-1 \] 
+Therefore
+\[  f(x)=-x+3 \]
+\newpage
+\fig{funk5a}
+We now move our attention to finding the expression of $ g(x) $. The point $ (0, -1) $ lies on the graph of $ g(x) $. It then follows that $ {f(0)=-1} $, and hence $ -1 $ is the intercept of $ g(x) $. Moreover, we observe that $ (5, 2) $ also lies on the graph of $ g(x) $. The slope $ g(x) $ is then expressed by the fraction
+\[ \frac{2-(-1)}{5-0}=\frac{3}{5} \]
+Therefore
+\[ g(x)=\frac{3}{5}x+1 \]
+}
+
+\newpage
+\fork{\ref{funklin} \funklin}{
+\textbf{The expression of $ \bm a$}\os	
+Given a linear function
+\[ f(x)=ax+b \]
+For two distinct $ x $-values, $ x_1 $ and $ x_2 $, we have
+\begin{equation}
+f(x_1)=ax_1+b \label{funkfork}
+\end{equation}
+\begin{equation}
+	f(x_2)=ax_2+b \label{funkfork1}
+\end{equation}
+Subtracting \eqref{funkfork} from \eqref{funkfork1}, we get 
+\alg{
+f(x_2)-f(x_1)&=ax_2+b-(ax_1+b) \br
+f(x_2)-f(x_1)&=ax_2-ax_1\\
+f(x_2)-f(x_1)&=a(x_2-x_1) \\
+\frac{f(x_2)-f(x_1)}{x_2-x_1}&=a \label{funka}
+}\vsk
+
+\textbf{The graph of a linear function is a straight line}\os
+Given a linear function $ {f(x)=ax+b} $ and two distinct $ x $-values $ x_1 $ and $ x_2 $. Let $ {A=(x_1, b)} $, $ {B=(x_2, b)} $, $ {C=(b, f(x_1))} $, $ {D=(0, f(x_2))} $ and $ {E=(0, b)} $.
+\fig{funk6a}
+By \eqref{funka}, we obtain
+\alg{
+\frac{f(x_1)-f(0)}{x_1-0}&=a\br
+\frac{ax_1+b-b}{x_1}&=a\br
+\frac{ax_1}{x_1}=a \label{funkx1}
+}
+Similarly, 
+\begin{equation} \label{funkx2}
+\frac{ax_2}{x_2}=a 
+\end{equation}
+Moreover,
+\alg{
+AC&=f(x_1)-b = ax_1 \vn
+BD&=f(x_2)-b = ax_2 \vn
+EA&= x_1 \vn
+EB&= x_2
+}
+From \eqref{funkx1} and \eqref{funkx2} it follows that
+\[ \frac{ax_1}{x_1}=\frac{ax_2}{x_2} \]
+Hence
+\[ \frac{AC}{BD}=\frac{EA}{EB} \]
+In addition, $ {\angle A=\angle B} $, so $ \triangle EAC $ and $ \triangle EBD $ satisfy term iii from \rref{vilkform}, and hence the triangles are similar. Consequently, $ C $ and $ D $ lies on the same line, which must be the graph of $ f(x) $.
+}
+
+
+\end{document}

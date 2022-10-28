@@ -1,0 +1,22 @@
+\input{../../../doc}
+\input{../../../preamb}
+
+
+\begin{document}
+	\begin{figure}[H]
+	\centering
+		\begin{tikzpicture}[x=0.75 cm ,y=0.5 cm]
+\draw [color=black!5, xstep=0.75cm,ystep=0.5cm] (-5.5,-1.5) grid (5.5,5.5);		
+\draw[color=blue,smooth,samples=100,domain=-5.333:5.333] plot(\x,{2+3 *cos((1*pi*(\x)-pi)*180/pi)});
+\draw [-latex] (-6,0) --(6,0)node[anchor=west]{$ x $};
+\draw [-latex] (0,-1) --(0,6) node[anchor=south]{$ f(x) $};
+\foreach \y in {1,2,3,4,5}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\foreach \x in {-5,-4,-3,-2,-1, 1,2,3,4,5}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x $};
+
+%\draw [densely dotted] (-6,1) --(6,1);
+
+		\end{tikzpicture}
+	\end{figure}
+\end{document}

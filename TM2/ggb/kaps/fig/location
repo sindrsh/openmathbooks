@@ -1,0 +1,1 @@
+gsettings set org.gnome.gnome-screenshot auto-save-directory '/home/sindre/R/ggb/kaps/fig/'

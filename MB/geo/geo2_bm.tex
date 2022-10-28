@@ -1,0 +1,790 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\section{\geoform}
+
+En \outl{formel}\index{formel} er en likning der en variabel (som oftest) står alene på én side av likhetstegnet. I \hrs{Areal}{seksjon} har vi allerede sett på formler for arealet til rektangel og trekanter, men der brukte vi ord i steden for symboler. Her skal vi gjengi disse to formlene i en mer algebraisk form, etterfulgt av andre klassiske formler for areal, omkrets og volum.\regv
+
+\reg[\arrekt\; (\ref{arrekt}) \label{arrekt2}]{ \index{areal!til rektangel}
+Arealet $ A $ til et rektangel med grunnlinje $ g $ og høgde $ h $ er
+	\[A = g h \]
+	\fig{tri12_alg}
+}
+\eks[1]{
+	Finn arealet til rektangelet.
+	\fig{tri12ba} \vsb
+	\sv
+	Arealet $ A $ til rektangelet er 
+	\[ A =b\cdot 2 =2b \]	
+}
+\eks[2]{
+	Finn arealet til kvadratet.
+	\fig{tri12ca} \vsb
+	\sv
+	Arealet $ A $ til kvadratet er 
+	\[ A =a\cdot a =a^2 \]	
+}
+
+\reg[\artri\;(\ref{artri})]{ \index{til trekant}
+	Arealet $ A $ til en trekant med grunnlinje $ g $ og høyde $ h $ er
+	\[ A = \frac{g h}{2} \]
+\fig{triar0}
+}
+\eks{
+Hvilken av trekantene har størst areal? \vs
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[]{\figp{triar0b}}}\qquad
+	\subfloat{\includegraphics[]{\figp{triar0a}}}
+	\qquad
+	\subfloat{\includegraphics[]{\figp{triar0c}}}
+\end{figure}
+\sv
+
+Vi lar $ A_1 $, $ A_2 $ og $ A_3 $ være arealene til henholdsvis trekanten til venstre, i midten og til høgre. Da har vi at
+\alg{
+A_1 &=\frac{4\cdot3}{2}=6 \vn
+A_2 &=\frac{2\cdot 3}{2}=3\vn
+A_3&=\frac{2\cdot5}{2}=5
+}	
+Altså er det trekanten til venstre som har størst areal.
+}
+
+\reg[\arpar \label{arpar}]{\index{til parallellogram}
+	Arealet $ A $ til et parallellogram med grunnlinje $ g $ og høgde $ h $ er
+	\[ A = g h  \]
+	\fig{tri21}
+}
+\eks{
+Finn arealet til parallellogrammet
+\fig{tri21b} \vsb
+\sv
+Arealet $ A $ til parallellogrammet er
+\alg{
+A&=5\cdot 2=10
+}		
+}
+\fork{\ref{arpar} \arpar}{
+	Av et parallellogram kan vi alltid lage oss to trekanter ved å tegne inn én av diagonalene:
+	\fig{tri21c}
+	De fargede trekantene på figuren over har begge grunnlinje $ g $ og høgde $ h $. Da vet vi at begge har areal lik $ \frac{g h}{2} $.
+	Arealet $ A $ til parallelogrammet blir dermed
+	\alg{
+		A&=\frac{g h}{2}+\frac{g h}{2} \\
+		&=g\cdot h	
+	}	
+}
+\reg[\artrap \label{artrap}]{\index{areal!til trapes}
+	Arealet $ A $ til et trapes med parallelle sider $ a $ og $ b $ og høgde $ h $ er
+	\[ A = \frac{h(a+b)}{2}\]
+	\fig{tri21a}
+}
+\eks{
+Finn arealet til trapeset.
+\fig{tri21e} \vsb
+\sv 
+Arealet $ A $ til trapeset er
+\alg{
+A&=\frac{3(6+4)}{2}\br
+&=\frac{3\cdot10}{2}\br
+&=15
+}	
+}
+\info{Merk}{
+Når man tar utgangspunkt i en grunnlinje og en høgde, er arealformlene for et parallellogram og et rektangel identiske. Å anvende \rref{artrap} på et parallellogram vil også resultere i et uttrykk tilsvarende $ gh $. Dette er fordi et parallellogram bare er et spesialtilfelle av et trapes (og et rektangel er bare et spesialtilfelle av et parallellogram).
+}
+\newpage
+\fork{\ref{artrap} \artrap}{
+	Også for et trapes får vi to trekanter hvis vi tegner én av diagonalene:
+	\fig{tri21d}
+	I figuren over er
+	\alg{
+		\text{Arealet til den blå trekantet}&= \frac{a h}{2} \br
+		\text{Arealet til den grønne trekanten}&= \frac{b  h}{2}
+	}
+	Arealet $ A $ til trapeset blir dermed
+	\alg{
+		A&=\frac{ah}{2}+\frac{bh}{2}\br &=\frac{h(a+b)}{2} 	
+	}	
+}
+\newpage
+\reg[\omkrsirk \label{omkrsirk}]{\index{omkrins!til sirkel}
+	Omkretsen $ O $ til en sirkel med radius $ r $ er
+	\[ O = 2\pi r \]
+	\fig{tri22}
+	hvor $ \pi = 3.141592653589793...
+	$.
+}
+\eks[1]{
+	Finn omkretsen til sirkelen.
+	\fig{tri22b}
+	\sv 
+	Omkretsen $ O $ er 
+	\algv{
+		O &= 2 \pi \cdot 3 \\
+		&= 6\pi 
+	}
+} \vsk
+
+\reg[\arsirk \label{arsirk}]{ \index{areal!til sirkel}
+	Arealet $ A $ til en sirkel med radius $ r $ er
+	\[ A = \pi r^2 \]
+	\fig{tri22a}
+}
+\eks{
+	Finn arealet til sirkelen.
+	\fig{tri22c} \vsb
+	\sv
+	Arealet $ A $ til sirkelen er 
+	\[ A=\pi\cdot 5^2 =25\pi \]
+}
+\newpage
+\fork{\ref{arsirk} \arsirk}{
+	I figuren under har vi delt opp en sirkel i 4, 10 og 50 (like store) sektorer, og lagt disse bitene etter hverandre.
+	\fig{tri19}
+	\fig{tri19a}
+	\fig{tri19b}
+	I hvert tilfelle må de små sirkelbuene til sammen utgjøre hele buen, altså omkretsen, til sirkelen. Hvis sirkelen har radius $ r $, betyr dette at summen av buene er $ 2\pi r $. Og når vi har like mange sektorer med buen vendt opp som sektorer med buen vendt ned, må totallengden av buene være $ \pi r $ både oppe og nede. \vsk
+	
+	Men jo flere sektorer vi deler sirkelen inn i, jo mer ligner sammensetningen av dem på et rektangel (i figuren under har vi 100 sektorer). Grunnlinja $ g $ til dette ''rektangelet'' vil være tilnærmet lik $ \pi r $, mens høgda vil være tilnærmet lik $ r $.
+	\fig{tri19c}
+	Arealet  $ A $ til ''rektangelet'', altså sirkelen, blir da
+	\[ A\approx g h \approx \pi r\cdot r = \pi r^2 \]
+}
+\reg[\pyt \label{pyt}]{
+	I en rettvinklet trekant er arealet til kvadratet dannet av \\hypotenusen lik summen av arealene til kvadratene dannet av\\ katetene.\regv
+	
+	\parbox[l][][l]{0.7\linewidth}{\[ a^2+b^2=c^2 \]
+	}
+	\parbox[r]{0.2\linewidth}{\includegraphics[]{\figp{tri26g}}} \vs
+	\fig{tri26j}
+}
+\eks[1]{
+	Finn verdien til $ c $.
+	\fig{tri26h} \vs \vs
+	\sv
+	Vi vet at
+	\[ c^2=a^2+b^2 \]
+	der $ a $ og $ b $ er lengdene til de korteste sidene i trekanten. Dermed er
+	\algv{
+		c^2 &= 4^2 + 3^2 \\
+		&= 16+9 \\
+		&=25
+	}
+	Altså har vi at
+	\[ c=5\qquad\vee\qquad c=-5 \]
+	Da $ c $ er en lengde, er $ c=5 $.
+}
+\newpage
+\fork{\ref{pyt} \pyt}{ \label{pytforklaringintro}
+	Under har vi tegnet to kvadrat som er like store, men som er inndelt i forskjellige former.
+	\fig{tri26d}
+	Vi observerer nå følgende:
+	\begin{enumerate}
+		\item Arealet til det røde kvadratet er $ a^2 $, arealet til det lilla kvadratet er $ b^2 $ og arealet til det blå kvadratet er $ c^2 $.
+		\item Arealet til et oransje rektangel er $ ab $ og arealet til en grønn trekant er $ \frac{ab}{2} $.
+		\item Om vi tar bort de to oransje rektanglene og de fire grønne trekantane, er det igjen (av pkt. 2) et like stort areal til venstre som til høyre.
+		\fig{tri26e}
+		Dette betyr at
+		\begin{equation}\label{pytforkl}
+		a^2+b^2=c^2
+		\end{equation}
+	\end{enumerate}
+	Gitt en trekant med sidelengder $ a, b $ og $ c $, der $ c $ er den lengste sidelengden.
+	Så lenge trekanten er rettvinklet, kan vi alltid lage to kvadrat med sidelengder $ {a+b} $, slik som i første figur. \eqref{pytforkl} gjelder dermed for alle rettvinklede trekanter.
+}
+\newpage
+\reg[\pytomv \label{pytomv}]{
+	Gitt en trekant med sidelengder $ a, b $ og $ c $, der $ c $ er den lengste siden. Da er trekanten rettvinklet bare hvis $ a^2+b^2=c^2 $.
+}
+\eks[]{
+	Undersøk om en trekant er rettvinklet når den har
+	\abc{
+		\item sidelengder 2, 4 og 9.
+		\item sidelengder 6, 8 og 10.
+	}
+	\sv
+	\abc{
+		\item 
+		\[ 2^2+4^2=20 \neq 9^2=81 \]
+		Altså er ikke trekanten rettvinklet i dette tilfellet.
+		\item 
+		\[ 6^2+8^2=100 = 10^2 \]
+		Altså er trekanten rettvinklet i dette tilfellet.
+	}
+}
+
+\newpage
+\reg[\volforml \label{volforml}]{ 
+	Volumet $ V $ til en firkantet prisme eller en sylinder med grunnflate $ G $ og høgde $ h $ er
+	\[ V = G\cdot h \]
+	\begin{figure}
+		\centering
+		\footnotesize
+		\stackunder[6pt]{\includegraphics[scale=0.7]{\figp{vol3c}}}{Firkantet prisme}\qquad\qquad
+		\stackunder[6pt]{\includegraphics[scale=0.7]{\figp{vol3b}}}{Sylinder}
+	\end{figure}
+	Volumet $ V $ til en kjegle eller en pyramide med grunnflate $ G $ og høgde $ h $ er
+	\[ V = \frac{G\cdot h}{3} \]
+	\begin{figure}
+		\centering
+		\footnotesize
+		\stackunder[6pt]{\includegraphics[scale=0.7]{\figp{vol3}}}{Kjegle}\qquad \qquad    
+		\stackunder[6pt]{\includegraphics[scale=0.7]{\figp{vol3a}}}{Firkantet pyramide}
+	\end{figure}
+}\vsk
+\info{Merk}{
+	Formlene fra \rref{volforml} gjelder også for prismer, sylindre, kjegler og pyramider som heller (er skeive). Hvis grunnflaten er plassert horisontalt, er høgden den vertikale avstanden mellom grunnflaten og toppen til figuren.
+	\fig{vol4} 
+	(For spisse gjenstander som kjegler og pyramider finnes det selvsagt bare ett valg av grunnflate.)
+}
+\newpage
+\eks[1]{
+	\fig{vol5}
+	En sylinder har radius 7 og høgde 5. 
+	\abc{
+		\item Finn grunnflaten til sylinderen.
+		\item Finn volumet til sylinderen.
+	}
+	
+	\sv \vs
+	\abc{
+		\item Av \rref{arrekt2} har vi at
+		\algv{
+			\text{grunnflate}&= \pi \cdot 7^2  \\
+			&= 49 \pi
+		} 
+		\item Dermed er
+		\algv{
+			\text{volumet til sylinderen}&= 49\pi\cdot 6 \\
+			&= 294\pi
+		}
+	}
+}
+\newpage
+\eks[2]{
+	En firkantet pyramide har lengde 2, bredde 3 og høgde 5.
+	\fig{vol6}
+	\abc{
+		\item Finn grunnflaten til pyramiden.
+		\item Finn volumet til pyramiden.
+	}
+	\sv  \vs
+	\abc{
+		\item Av \rref{arrekt2} har vi at
+		\algv{
+			\text{grunnflate}&=2\cdot 3 \\
+			&= 6 
+		}
+		\item Dermed er
+		\algv{
+			\text{volumet til pyramiden}&= 6\cdot 5 \\
+			&= 30
+		}
+	}
+} \vsk
+
+\reg[\volkule \label{volkule}]{
+	Volumet $ V $ til en kule med radius $ r $ er
+	\[ V = \frac{4\cdot\pi\cdot r^3}{3} \]
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.7]{\figp{vol3d}}
+	\end{figure}
+}
+	
+\section{\kongogsim}
+\reg[\konsttre \label{konsttre}]{
+En trekant $ \triangle ABC $, som vist i figuren under, kan bli unikt konstruert hvis ett av følgende vilkår er oppfylt:
+\prbxl{0.6}{\begin{enumerate}[label=\roman*)]
+		\item $ c $, $ \angle A $ og $ \angle B $ er kjente.
+		\item $ a $, $ b $ og $ c $ er kjente.
+		\item $ b $, $ c $ og $ \angle A $ er kjente.
+\end{enumerate}}
+\parbox[r][][l]{0.3\linewidth}{
+\fig{geo13}
+}
+}
+\reg[\kongtre \label{kongtre}]{ \index{trekant!kongruet}
+To trekanter som har samme form og størrelse er kongruente.
+\fig{geo14}
+At trekantane i figuren over er kongruente skrives
+\[ \triangle ABC\cong\triangle DEF \]
+}
+\reg[Formlike trekanter \index{trekant!formlik}]{Formlike trekanter har tre vinkler som er parvis like store.
+\fig{geo8}
+At trekantane i figuren over er formlike skrives \[ \triangle ABC\sim \triangle DEF \]
+} \vsk
+\newpage
+\textbf{Samsvarende sider}\os
+Når vi studerer formlike trekanter er \outl{samsvarende sider}\index{side!samsvarende} et viktig begrep. Samsvarende sider er sider som i formlike trekanter står \outl{motstående} den samme vinkelen.
+\fig{tri1}
+For de formlike trekantane $ \triangle ABC $ og $ \triangle DEF $ har vi at
+\begin{multicols}{2}
+	\quad I $ \triangle ABC $ er
+	\begin{itemize}
+		\item $ BC $ motstående til $u$.
+		\item $ AC $ motstående til $ v$
+		\item $ AB$ motstående til $ w $.
+	\end{itemize}
+	\quad I $ \triangle DEF $ er
+	
+	\begin{itemize}
+		\item $ FE $ motstående til $u$.
+		\item $ FD $ motstående til $ v$
+		\item $ ED$ motstående til $ w $.
+	\end{itemize}
+\end{multicols}
+Dette betyr at disse er samsvarende sider:
+\begin{itemize}
+	\item $ BC $ og $ FE $\\
+	\item $ AC $ og $ FD $ \\
+	\item $ AB $ og $ ED $
+\end{itemize}
+
+\reg[\forform \label{forform}]{
+	Når to trekanter er formlike, er forholdet mellom samsvarende\footnote{Vi tar det her for gitt at hvilke sider som er samsvarende kommer fram av figuren.} sider det samme.
+	\[ \frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} \]
+\fig{geo8b}
+}
+\eks[]{
+	Trekantene i figuren under er formlike. Finn lengden til $EF $.
+	\begin{figure}
+		\centering
+		\includegraphics[scale=1]{\figp{tri3a}}\quad
+		\includegraphics[scale=1]{\figp{tri3b}}
+	\end{figure}
+	\sv
+	Vi observerer at $ AB $ samsvarer med $ DE $, $ BC $ med $ EF $ og $ AC $ med $ DF $. Det betyr at
+	\alg{
+		\frac{DE}{AB} &= \frac{EF}{BC} \br
+		\frac{10}{5}&= \frac{EF}{3} \br
+		2\cdot3&=\frac{EF}{\cancel{3}}\cdot\cancel{3}\\
+		6 &= EF
+	}
+}
+\info{Merk}{
+Av \rref{forform} har vi at for to formlike trekanter $ \triangle ABC $ og $ \triangle DEF $ er
+	\[ \frac{AB}{BC}=\frac{DE}{EF}\quad,\quad \frac{AB}{AC}=\frac{DE}{DF}\quad,\quad\frac{BC}{AC}=\frac{EF}{DF} \]
+}
+\reg[\vilkform \label{vilkform}]{
+To trekanter $ \triangle ABC $ og $ \triangle DEF $ er formlike hvis ett av følgende vilkår er oppfylt:
+\begin{enumerate}[label=(\roman*)]
+	\item To vinkler i trekantene er parvis like store.
+	\item $ \displaystyle \frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} $
+	\item $ \dfrac{AB}{DE}=\dfrac{AC}{DF} $ og $ \angle A=\angle D $.
+\end{enumerate}
+
+\fig{geo8b}
+}
+\eks[1]{
+$ \angle ACB =90^\circ $. 
+Vis at $ \triangle ABC \sim ACD $.
+\fig{geo15} \vs
+\sv
+$ \triangle ABC $ og $ \triangle ACD $ er begge rettvinklede, og de har $ \angle DAC $ felles. Dermed er vilkår (i) fra \rref{vilkform} oppfylt, og trekantene er da formlike.\vsk
+
+\mers{
+På en tilsvarende måte kan det vises at $ \triangle ABC \sim CBD$.
+}
+}
+\newpage
+\eks[2]{
+Undersøk om trekantene er formlike.
+\fig{geo15a} \vs
+\sv
+Vi har at
+\alg{
+\frac{AC}{FD}=\frac{18}{12}=\frac{3}{2}\quad,\quad\frac{BC}{FE}=\frac{9}{6}=\frac{3}{2}\quad,\quad\frac{AB}{DE}=\frac{12}{10}=\frac{6}{5}
+}
+\alg{
+\frac{AC}{IG}=\frac{18}{12}=\frac{3}{2}\quad,\quad\frac{BC}{IH}=\frac{9}{6}=\frac{3}{2}\quad,\quad \frac{AC}{IG}=\frac{18}{12}=\frac{3}{2}
+}
+Dermed oppfyller $ \triangle ABC $ og $ \triangle GHI $ vilkår (ii) fra \rref{vilkform}, og trekantene er da formlike.	
+}
+\eks[3]{
+Undersøk om trekantene er formlike.	\vs
+\fig{geo15b}
+\sv
+Vi har at $ {\angle BAC=\angle EDF} $ og at
+\[ \frac{ED}{AB}=\frac{8}{4}=2\quad,\quad \frac{FD}{AC}=\frac{14}{7}=2 \]
+Altså er vilkår (iii) fra \rref{vilkform} oppfylt, og da er trekantene formlike.
+}
+
+\newpage
+\section{\geofork}
+\fork{\ref{omkrsirk} \omkrsirk}
+{
+\textit{Vi skal her bruke \textit{regulære} mangekanter langs veien til ønsket resultat. I regulære mangekanter har alle sidene lik lengde. Da det er utelukkande regulære mangekanter vi kommer til å bruke, vil de bli omtalt bare som mangekanter.}\vsk
+
+Vi skal starte med se på tilnærminger for å finne omkretsen $ O_1 $ av en sirkel med radius 1. 
+\fig{geo9l} \vsk
+
+\textbf{Øvre og nedre grense}\os
+En god vane når man skal prøve å finne en størrelse, er å spørre seg om man kan vite noe om hvor stor eller liten man \textsl{forventer} at den er. Vi starter derfor med å omslutte sirkelen med et kvadrat med sidelengde 2:
+\fig{geo9c}
+Omkretsen til sirkelen må vere mindre enn omkretsen til kvadratet, derfor vet vi at
+\alg{
+	O_1&<2\cdot4  \\
+	&< 8
+}
+Videre innskriver vi en sekskant. Sekskanten kan deles inn i 6 likesidede trekanter som alle må ha sidelengde 1. Omkretsen til sirkelen må være større enn omkretsen til sekskanten, noe som gir at
+\alg{
+	O_1&>6\cdot1 \\
+	&> 6
+}
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[]{\figp{geo9}}}\qquad
+	\subfloat{\includegraphics[]{\figp{geo9d2}}}
+\end{figure}
+Når vi nå skal gå over til en mye mer nøyaktig jakt etter omkretsen, vet vi altså at vi søker en verdi mellom 6 og 8.\vsk
+
+\textbf{Stadig bedre tilnærminger}\os
+Vi fortsetter med tanken om å innskrive en mangekant. Av figurene under lar vi oss overbevise om at dess flere sider mangekanten har, dess bedre estimat vil omkretsen til mangekanten være for omkretsen til sirkelen.
+\begin{figure}
+	\centering
+	\subfloat[6-kant]{\includegraphics[]{\figp{geo9}}}\qquad\qquad
+	\subfloat[12-kant]{\includegraphics[]{\figp{geo9a}}}	
+\end{figure}
+Da vi vet at sidelengden til en 6-kant er 1, er det fristende å undersøke om vi kan bruke denne kunnskapen til å finne sidelengden til andre mangekanter. Om vi innskriver også en 12-kant i sirkelen vår (og i tillegg tegner en trekant) får vi en figur som denne:
+\begin{figure}
+	\centering
+	\subfloat[En 6-kant og en 12-kant i lag med en trekant dannet av sentrum i sirkelen og en av sidene i 12-kanten.]{\includegraphics[]{\figp{geo9g}}}\qquad\qquad
+	\subfloat[Trekanten fra figur \textsl{(a)}.]{\includegraphics[]{\figp{geo9h}}}	
+\end{figure}
+La oss kalle sidelengden til 12-kanten for $ s_{12} $ og sidelengden til 6-kanten for $ s_6 $. Videre legger vi merke til at punktene $ A $ og $ C $ ligger på sirkelbuen og at både $ \triangle ABC $ og $ \triangle BSC $ er rettvinklede trekanter (forklar for deg selv hvorfor!). Vi har at
+\alg{
+	SC &= 1 \\
+	BC &= \frac{s_6}{2} \\
+	SB &= \sqrt{SC^2-BC^2} \\
+	BA &= 1-SB \\
+	AC &= s_{12}\\
+	s_{12}^2 &= BA^2+BC^2
+}
+For å finne $ s_{12} $ må vi finne $ BA $, og for å finne $ BA $ må vi finne $ SB $. Vi starter derfor med å finne $ SB $. Da ${ SC=1} $ og $ {BC=\frac{s_6}{2}} $, er
+\alg{
+	SB &=\sqrt{1-\left( \frac{s_6}{2}\right)^2} \\
+	&= \sqrt{1-\frac{s_6^2}{4}}
+}
+Vi går så videre til å finne $ s_{12} $:
+\alg{
+	s_{12}^2 &= \left(1-SB\right)^2 + \left(\frac{s_6}{2}\right)^2 \\
+	&= 1^2 - 2SB + SB^2 + \frac{s_6^2}{4}
+}
+Ved første øyekast ser det ut som vi ikke kan komme særlig lengre i å forenkle uttrykket på høyre side, men en liten operasjon vil endre på dette. Hadde vi hatt $ -1 $ som et ledd, kunne vi slått sammen $ -1 $ og $ \frac{s_6^2}{4} $ til å bli $ -SB^2 $. Derfor ''skaffer'' vi oss $ -1 $ ved å både addere og subtrahere 1 på høgresiden:
+\alg{
+	s_{12}^2&= 1 - 2SB + SB^2 + \frac{s_6^2}{4}-1+1\\
+	&= 2-2SB+SB^2-\left(1-\frac{s_6^2}{4}\right) \\
+	&= 2-2SB+SB^2-SB^2\\
+	&= 2-2SB\\
+	&= 2-2\sqrt{1-\frac{s_6^2}{4}} \\
+	&= 2-\sqrt{4}\,\sqrt{1-\frac{s_6^2}{4}} \\
+	&= 2- \sqrt{4-s_6^2}
+}
+Altså er
+\[ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} \]
+Selv om vi her har utledet relasjonen mellom sidelengdene $ s_{12} $ og $ s_6 $, er dette en relasjon vi kunne vist for alle par av sidelengder der den ene er sidelengden til en mangekant med dobbelt så mange sider som den andre. La $ s_n $ være sidelengden til en mangekant med $ n $ sider. Da er
+\begin{align}
+s_{2n} = \sqrt{2- \sqrt{4-s_n^2}} \label{s2n}
+\end{align}
+
+Når vi kjenner sidelengden til en innskrevet mangekant, vil tilnærmingen til omkretsen til sirkelen være denne sidelengden ganget med antall sidelengder i mangekanten. Ved hjelp av \eqref{s2n} kan vi stadig finne sidelengden til en mangekant med dobbelt så mange sider som den forrige, og i tabellen under har vi funnet sidelengden og tilnærmingen for omkretsen til sirkelen opp til en 96-kant:
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|l}
+		\textit{Formel for sidelengde}&\textit{Sidelengde} & \textit{Tilnærming for omkrets} \\
+		\hline
+		& $s_6= 1 $ & $ \;\,6\cdot s_6\;\,=6 $ \\
+		$ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} $ & $ s_{12}=0.517... $ & 		 $ 12\cdot s_{12}=6.211... $ \\
+		$ s_{24} = \sqrt{2- \sqrt{4-s_{12}^2}} $ & $ s_{24}=0.261... $ & 		 $ 24\cdot s_{24}=6.265... $ \\
+		$ s_{48} = \sqrt{2- \sqrt{4-s_{24}^2}} $ & $ s_{48}=0.130... $ & 		 $ 48\cdot s_{48}=6.278... $ \\		 
+		$ s_{96} = \sqrt{2- \sqrt{4-s_{48}^2}} $ & $ s_{96}=0.065... $ & 		 $ 96\cdot s_{96}=6.282... $ \\		 		 
+	\end{tabular}
+\end{center}
+\begin{figure}
+	\centering
+	\subfloat[6-kant]{\includegraphics[scale=0.75]{\figp{geo9}}}\quad
+	\subfloat[12-kant]{\includegraphics[scale=0.75]{\figp{geo9a}}}\quad	
+	\subfloat[24-kant]{\includegraphics[scale=0.75]{\figp{geo9i}}}\quad	\\
+	\subfloat[48-kant]{\includegraphics[scale=0.75]{\figp{geo9j}}}\quad	
+	\subfloat[96-kant]{\includegraphics[scale=0.75]{\figp{geo9k}}}		
+\end{figure}
+Utregningene over er faktisk like langt som matematikeren \net{https://no.wikipedia.org/wiki/Arkimedes}{Arkimedes} kom allerede ca 250 f. kr!\vsk
+
+Med en datamaskin er det lett å regne ut\footnote{For den datainteresserte skal det sies at iterasjonsalgoritmen må skrives om for å unngå instabiliteter i utregningene når antall sider blir mange.} dette for en mangekant med ekstremt mange sider. Regner vi oss fram til en 201\,326\,592-kant  finner vi at
+\[ \text{omkretsen til sirkel med radius 1}=6.283185307179586... \]
+(Ved hjelp av mer avansert matematikk kan det vises at omkretsen til en sirkel med radius 1 er et irrasjonalt tal, men at alle desimalene vist over er korrekte, derav likhetstegnet.) \vsk
+\newpage
+\textbf{Den endelige formelen og $\bm \pi $} \os
+Vi skal nå komme fram til den kjente formelen for omkretsen til en sirkel. Også her skal vi ta for gitt at summen av sidelengdene til en innskrevet mangekant er en tilnærming til omkrinsen som blir bedre og bedre dess flere sidelengder det er.\vsk
+
+For enkelhets skyld skal vi bruke innskrevne firkanter for å få fram poenget vårt. Vi tegner to sirkler som er vilkårlig store, men der den ene er større enn den andre, og innskriver en firkant (et kvadrat) i begge. Vi lar $ R $ og $ r $ være radiene til henholdsvis den største og den minste sirkelen, og $ K $ og $ k $ vere sidelengdene til henholdsvis den største og den minste firkanten.
+\fig{geo9e2}
+Begge firkantene kan deles inn i fire likebeinte trekanter:
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[scale=1]{\figp{geo9e}}}\qquad
+	\subfloat{\includegraphics[scale=1]{\figp{geo9f}}}	
+\end{figure}
+Da trekantene er formlike, har vi at
+\begin{align}
+\frac{K}{R} &=\frac{k}{r} \label{arogar}
+\end{align}
+Vi lar $ {\tilde{O}=4K} $ og $ {\tilde{o}=4k} $ være tilnærmingen av omkretsen til henholdsvis den største og den minste sirkelen.
+Ved å gange med 4 på begge sider av \eqref{arogar} får vi at
+\begin{align}
+\frac{4A}{R} &= \frac{4a}{r} \br
+\frac{\tilde{O}}{R} &= \frac{\tilde{o}}{r} \label{arogarto}
+\end{align}
+Og nå merker vi oss dette:\vsk
+
+\textsl{Selv om vi i hver av de to sirklene innskriver en mangekant med 4, 100 eller hvor mange sider det skulle vere, vil mangekantene alltid kunne deles inn i trekanter som oppfyller \eqref{arogar}. Og på samme måte som vi har gjort i eksempelet over kan vi omskrive \eqref{arogar} til \eqref{arogarto} i stedet.} \vsk
+
+La oss derfor tenke oss mangekanter med så mange sider at vi godtar omkretsene deres som lik omkretsene til sirklene. Om vi da skriver omkretsen til den største og den minste sirkelen henholdsvis som $ O $ og $ o $, får vi at 
+\[ \frac{O}{R}=\frac{o}{r} \]
+Da de to sirklene våre er helt vilkårlig valgt, har vi nå kommet fram til at \textit{alle sirkler har det samme forholdet mellom omkretsen og radien}. En enda vanligere formulering er at \textit{alle sirkler har det samme forholdet mellom omkretsen og diameteren}. Vi lar $ D $ og $ d $ være diameteren til henholdsvis sirkelen med radius $ R $ og $ r $. Da har vi at
+\algv{
+	\frac{O}{2R}=\frac{o}{2r} \br
+	\frac{O}{D}=\frac{o}{d}
+}
+Forholdstalet mellom omkretsen og diameteren i en sirkel blir kalt $ \pi $ \index{$ \pi $}(uttales ''pi''):
+\[ \frac{O}{D}=\pi \]
+Likningen over fører oss til formelen for omkretsen til en sirkel:
+\alg{
+	O&= \pi D\\
+	&=2\pi r
+}
+Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6.283185307179586... $\,. Dette betyr at
+\alg{
+	\pi&= \frac{6.283185307179586...}{2} \br
+	&= 3.141592653589793...
+}
+}
+
+\newpage
+\fork{\ref{pytomv} \pytomv}{
+	Samme hva verdien til $ a $ og $ b $ måtte være, kan man åpenbart alltid lage en rettvinklet trekant med kateter $ a $ og $ b $. Av \pyt\;er hypotenusen da $ \sqrt{a^2+b^2} $. Av vilkår (ii) i \rref{konsttre} er dette en unik trekant, og det betyr at alle trekanter med sidelengder $ a $, $ b $ og $ \sqrt{a^2+b^2} $ er rettvinklet.
+} \regv
+
+\fork{\ref{volforml} \volforml}{
+	Se boka \textit{Elementary geometry from an advanced standpoint}	av E. E. Moise.
+} \regv
+\newpage
+\fork{\ref{volkule} \volkule }{
+	\textbf{Førkunnskapar}\os
+	For å finne formelen for volumet til en kule, introduserer vi tre begrep: \outl{vertikalt tverrsnitt}, \outl{horisontalt tverrsnitt} og \outl{Cavalieris prinsipp}. Et tverrsnitt er en tenkt overflate som kommer til syne når man skjærer i en tredimensjonal form. Et vertikalt/horisontalt tverrsnitt er en tenkt overflate som kommer til syne hvis vi skjærer en tredimensjonal form enten rett vertikalt eller rett horisontalt.\vspace{-8pt}
+	\fig{tverrsnitt}
+	Cavalieris prinsipp lyder slik:\os
+	
+	\textsl{Hvis tverrsnittsarealene til to tredimensjonale former er de samme langs den samme høgda, har formene samme volum. } \os
+	
+	Dette prinsippet er illustrert i figuren under, som viser et vertikalt tverrsnitt av to former bygd av fem prismer. Prismene i de to formene er parvis like. 
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\includegraphics{\figp{cav}}	
+		} \qquad
+		\subfloat[]{
+			\includegraphics{\figp{cavb}}	
+		}
+	\end{figure}
+	Det er opplagt at hvis man startar med formen vist i \textsl{(a)}, så vil ikke volumet endre seg om man forskyver prismene mot høgre, slik som i \textsl{(b)}.\newpage
+	
+	\textbf{Volumet til en kule}\os
+	Vi starter med å se for oss en kule eksakt omsluttet av en  sylinder. La radiusen til kula og sylinderen vere $ r $, da er høgda til sylinderen $ 2r $.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule1}}
+		\caption{\label{figkule}}
+	\end{figure}
+	Vi innfører følgende størrelser:
+	\alg{
+		V_s &= \text{volumet til sylinderen}\\
+		V_k &= \text{volumet til kula}\\
+		V_i &= \text{volumet til formen inneklemt mellom sylinderen og kula}
+	}
+	Da har vi at
+	\begin{equation}
+		V_k=V_s-V-i \label{volkule_Vk}
+	\end{equation}
+	Tenk nå at vi skjærer formen fra \hrs{figkule}{figur} fra toppen og rett ned gjennom sentrum av kula. Da får vi et vertikalt tverrsnitt. Ser vi på dette tverrsnittet rett horisontalt, vil sylinderen se ut som en firkant, og kula som en sirkel. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule2}}
+		\caption{}
+	\end{figure}
+	På dette tverrsnittet vandrer vi en lengde $ k $ rett opp fra sentrum til et punkt $ P $. Den halve bredden til kula i dette punktet kaller vi $ s $. Av Pytagoras' setning har vi at
+	\begin{equation} \label{volkule_s2}
+		s^2 = r^2-k^2
+	\end{equation}
+	Videre forestiller vi oss at vi igjen skjærer formen i \hrs{figkule}{figur}, men denne gangen rett fra siden og gjennom punktet $ P $. Da får vi et horisontalt tverrsnitt. Studerer vi dette tverrsnittet rett ovenfra, får vi en figur som dette:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule3}}
+		\caption{\centering Horisontalt tverrsnitt. Den svarte sirkelen er buen til sylinderen\newline og den blå er buen til kula.\label{figtverrar}}
+	\end{figure}
+	Vi definerer følgende:
+	\alg{
+		A_s &= \text{arealet til tverrsnittsoverflaten til sylinderen} \\
+		A_k &= \text{arealet til tverrsnittsoverflaten til kula} \\
+		A_i &= \text{arealet til tverrsnittsoverflaten mellom } \\
+		&\hspace{12pt} \text{ sylinderen og kula (grønn i figuren over)}
+	}
+
+	Da er
+	\begin{equation} \label{volkule_Ai}
+		A_i=A_s-A_k
+	\end{equation}
+	Av \rref{arsirk} har vi at ${A_s= \pi r^2} $ og $ {A_k=\pi s^2} $. Av \eqref{volkule_s2} og \eqref{volkule_Ai} er
+	\begin{align*}
+		A_i &= \pi r^2 - \pi s^2 \\
+		&= \pi r^2 - \pi(r^2-k^2)\\
+		&= \pi r^2 - \pi r^2+\pi k^2\\
+		&= \pi k^2
+	\end{align*} 
+\newpage
+	$ A_i $ tilsvarer altså arealet til en sirkel med radius $ k $.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule6}}
+		\caption{Overflate med same areal som den grøne overflata i \hrs{figtverrar}{figur}.}
+	\end{figure}
+	Vi tenker oss nå to kjegler, begge med høyde og radius lik $ r $, satt med spissene mot hverandre. Denne formen vil være like høg som formen fra \hrs{figkule}{figur}, og kan plasseres slik at punktet hvor spissene møtes sammenfaller med $ S $.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule4}}
+		\caption{\label{kjegle}}
+	\end{figure}
+	Det vertikale tverrsnittet gjennom $ S $ av denne formen ser slik ut:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{volkule5}}
+		\caption{\label{figkjegler}}
+	\end{figure}
+	Om vi vandret $ k $ rett opp eller ned fra $ S $, så er den horisontale avstanden ut til siden også $ k $ (dette er overlatt til leseren å vise). Dette betyr at det horisontale tverrsnittsarealet til kjeglene er $ {\pi k^2=A_i} $. Altså har den inneklemte formen fra \hrs{figkule}{figur} og formen fra \hrs{figkjegler}{figur} samme tverrsnittsareal langs den samme høgden (begge har høgde $ 2r $). Av Cavalieris prinsipp og \rref{volforml} har vi da at 
+	\begin{align}
+		V_i &= \frac{2(\pi r^2\cdot r)}{3}\nonumber \\
+		&= \frac{2\pi r^3}{3} \label{volkule_Vi}
+	\end{align}
+	Av \eqref{volkule_Vk}, \eqref{volkule_Vi} og \rref{volforml} har vi nå at
+	\begin{align*}
+		V_k&=2\pi r^3- \frac{2\pi r^2}{3} \\
+		&= \frac{6\pi r^3}{3}-\frac{2\pi r^3}{3} \\
+		&= \frac{4\pi r^3}{3}
+	\end{align*}
+}
+\newpage
+
+\fork{\ref{forform} \forform}{
+	I figuren under er $ BB'||CC' $. Arealet til en trekant $ \triangle ABC $ skriver vi her som $ ABC $. \vspace{-1pt}
+	\fig{forml0}
+	Med $ BB' $ som grunnlinje har både $ \triangle CBB' $ og $ \triangle CBB' $ $ HB' $ som høyde, derfor er
+	\begin{equation}\label{a}
+	CBB' = C'BB'
+	\end{equation}
+	Videre har vi at
+	\alg{
+		ABB' &= AB\cdot HB' \vn
+		CBB' &= BC\cdot HB'
+	}
+	Altså er
+	\begin{equation}\label{b}
+	\frac{ABB'}{CBB'}=\frac{AB}{BC}
+	\end{equation}
+	På lignende vis er
+	\begin{equation}\label{c}
+	\frac{ABB'}{C'BB'}=\frac{AB'}{B'C'}
+	\end{equation}
+	Av \eqref{a}, \eqref{b} og \eqref{c} følger det at
+	\begin{equation}\label{form}
+	\frac{AB}{BC}=\frac{ABB'}{CBB'}\frac{ABB'}{C'BB'}=\frac{AB'}{B'C'}
+	\end{equation}
+	For de formlike trekantene $ \triangle ACC' $ og $\triangle ABB' $ er
+	\alg{
+		\frac{AC}{AB} &= \frac{AB+BC}{AB} = 1+\frac{BC}{AB} \\
+		& \\
+		\frac{AC'}{AB'}&=\frac{AB'+B'C'}{AB'}= 1+\frac{B'C'}{AB'}
+	} 
+	Av \eqref{form} er dermed forholdet mellom de samsvarande sidene like.
+}\vsk
+
+\info{Merk}{
+I de kommnde forklaringene av vilkårene \textsl{ii} og \textsl{iii} fra \rref{konsttre} tar man utgangspunkt i følgende:
+	\begin{itemize}
+		\item To sirkler skjærer kvarandre i maksimalt to punkt.
+		\item Gitt at et koordinatsystem blir plassert med origo i senteret til den ene sirkelen, og slik at horisontalaksen går gjennom begge sirkelsentrene. Hvis $ (a, b) $ er det éne skjæringspunktet, er $ (a, -b) $ det andre skjæringspunktet.
+	\end{itemize}
+	\fig{sirk2} 
+		Punktene over kan enkelt vises, men er såpass intuitivt sanne at vi tar dem for gitt. Punktene forteller oss at trekanten som består av de to sentrene og det éne skjæringspunktet er kongruent med trekanten som består av de to sentrene og det andre skjæringspunktet. Med dette kan vi studere egenskaper til trekanter ved hjelp av halvsirkler.
+} \vsk
+
+\fork{\ref{konsttre} \konsttre}{
+\textbf{Vilkår (i)}\os
+Gitt en lengde $ c $ og to vinkler $u $ og $ v $.
+Vi lager et linjestykke $ AB $ med lengde $ c $. Så stipler vi to vinkelbein slik at $ \angle {A= u} $ og $ {B=v} $. Så lenge disse vinkelbeina ikke er parallelle, må de nødvendigvis skjære hverandre i ett, og bare ett, punkt ($ C $ i figuren). I lag med $ A $ og $ B $ vil dette punktet danne en trekant som er unikt gitt av $ c $, $ u $ og $ v $.
+\fig{geo13c}	
+\newpage	
+\textbf{Vilkår (ii)}\os
+Gitt tre lengder $ a $, $ b $ og $ c $. Vi lager et linjestykket $ AB $ med lengde $ c $. Så lager vi to halvsirkler med henholdsvis radius $ a $ og $ b $ og sentrum $ B $ og $ A $. Skal nå en trekant $ \triangle ABC $ ha sidelengder $ a $, $ b $ og $ c $, må $ C $ ligge på begge sirkelbuene. Da buene bare kan møtes i ett punkt, er formen og størrelsen til $ \triangle ABC $ unikt gitt av $a$, $ b $ og $ c $.
+\fig{geo13a}	
+
+\textbf{Vilkår (iii)} \os
+Gitt to lengder $ b $ og $ c $ og en vinkel $ u $. Vi starter med følgende:
+\begin{enumerate}
+	\item Vi lager et linjestykke $ AB $ med lengde $ c $.
+	\item I $ A $ tegner vi en halvsirkel med radius $ b $. 
+\end{enumerate}
+Ved å la $ C $ vere plassert hvor som helst på denne sirkelbuen, har vi alle mulige varianter av en trekant $ \triangle ABC $ med sidelengdene $ {AB=c} $ og $ {AC=b} $. Å plassere $ C $ langs buen til halvsirkelen er det samme som å gi $ \angle A $ en bestemt verdi. Det gjenstår nå å vise at hver plassering av $ C $ gir en unik lengde av $ BC $.
+\fig{geo13b}
+Vi lar $ C_1 $ og $ C_2 $ være to potensielle plasseringer av $ C $, der $ C_2 $, langs halvsirkelen, ligger nærmere $ E $ enn $ C_1 $. Videre stipler vi en sirkelbue med radius $ BC_1 $ og sentrum $ B $. Da den stiplede sirkelbuen og halvsirkelen bare kan skjære hverandre i $ C_1 $, vil alle andre punkt på halvsirkelen ligge enten innenfor eller utenfor den stiplede sirkelbuen. Slik vi har definert $ C_2 $, må dette punktet ligge utenfor den stiplede sirkelbuen, og dermed er $ BC_2 $ lengre enn $ BC_1 $. Av dette kan vi konkludere med at $ BC $ blir lengre dess nærmere $ C $ beveger seg mot $ E $ langs halvsirkelen. Å sette $ {\angle A=u} $ vil altså gi en unik verdi for $ BC $, og da en unik trekant $ \triangle ABC $ der $ AC=b $, $ c=AB $ og $ \angle BAC=u $.
+}\vsk
+
+\fork{\ref{vilkform} \vilkform}{
+\textbf{Vilkår (i)}\os
+Gitt to trekanter $ \triangle ABC $ og $ \triangle DEF $. Av \rref{180} har vi at
+\alg{
+\angle A+ \angle B+\angle C=\angle D+\angle E+\angle F
+}	
+Hvis $ \angle A=\angle D $ og $ \angle B=\angle E $, følger det at $ \angle C=\angle E $.\vsk
+
+\textbf{Vilkår (ii)}\os
+Vi tar utgangspunkt i trekantene $ \triangle ABC $ og $ \triangle DEF $ der
+\begin{equation}
+\dfrac{AC}{DF}=\dfrac{BC}{EF}\qquad,\qquad \angle C = \angle F\label{vilkforma}
+\end{equation}
+\fig{geo12}
+Vi setter $ a=BC $, $ b=AC $, $ d=EF $ og $ e=DF $. Vi plasserer $ D' $ og $ E' $ på henholdsvis $ AC $ og $ BC $, slik at $ D'C=e $ og $ AB\parallel D'E' $. Da er $ \triangle ABC \sim \triangle D'E'C$, altså har vi at
+\alg{
+\frac{E'C}{BC}&=\frac{D'C}{AC}\br
+E'C&=\frac{ae}{b}
+}
+Av \eqref{vilkforma} har vi at
+\[ EF=\frac{ae}{b} \]	
+Altså er $ {E'C = EF} $. Nå har vi av vilkår (ii) fra \rref{kongtre} at $ \triangle D'E'C\cong\triangle DEF $. Dette betyr at $ \triangle ABC\sim \triangle DEF $.\vsk
+
+\textbf{Vilkår iii}\os
+Vi tar utgangspunkt i to trekanter $ \triangle ABC $ og $ \triangle DEF $ der
+\begin{equation}
+\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} \label{vilkformb}
+\end{equation}
+Vi plasserer $ D' $ og $ E' $ på henholdsvis $ AC $ og $ BC $, slik at $ D'C=e $ og $ E'C=d $. Av vilkår (i) fra \rref{vilkform} har vi da at $ \triangle ABC\sim\triangle D'E'C $. Altså er
+\alg{
+\frac{D'E'}{AB}&=\frac{D'C}{AC} \br
+D'E'&=\frac{ae}{c}
+} 
+Av \eqref{vilkformb} har vi at
+\alg{
+f&=\frac{ae}{c}
+}
+Altså har $ \triangle D'E'C $ og $ \triangle DEF $ parvis like sidelengder, og av vilkår (i) fra \rref{kongtre} er de da kongruente. Dette betyr at $ {\triangle ABC \sim \triangle DEF}$.
+\fig{geo12b}
+}
+
+
+
+\end{document}
+

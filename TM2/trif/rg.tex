@@ -1,0 +1,76 @@
+\newcommand{\cosf}{\rg[Cosinusfunksjonen]{
+		En funksjon $ f(x) $ på formen
+		\[f(x)= a \cos (kx+c) + d \]
+		kalles en cosinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ d $.
+		\subimport{fig/}{fcos2} 
+		$ k $ er gitt ved relasjonen:
+		\[ k = \frac{2\pi}{P} \]
+		hvor $ P $ er perioden til $ f $. Videre kan $ c $ finnes ut ifra ligningen:
+		\[ k x_1+ c = 0 \]
+		hvor $ x_1 $ er $ x $-verdien til et toppunkt. \\
+		
+		Funksjonen har ekstremalpunkter der hvor: 
+		\[ kx +c = 2\pi n \quad \vee\quad kx+c = \pi + 2\pi n \]
+		for alle $ n\in \mathbb{Z} $.
+	}}
+\newcommand{\sinf}{\rg[Sinusfunksjonen]{
+		En funksjon $ f(x) $ på formen
+		\[f(x)= a \sin (kx+c) + d \]
+		kalles en sinusfunksjon med amplitude $ |a| $, bølgetall $ b $, fase $ c $ og likevektslinje $ d $. \\
+		
+		$ k $ er gitt ved relasjonen:
+		\[ k = \frac{2\pi}{P} \]
+		hvor $ P $ er perioden til $ f $. Videre kan $ c $ finnes ut ifra ligningen:
+		\[ k x_1+ c = \frac{\pi}{2} \]
+		hvor $ x_1 $ er $ x $-verdien til et toppunkt. \\
+		
+		Funksjonen har ekstremalpunkter der hvor: 
+		\[ kx +c = \pm \frac{\pi}{2}+2\pi n \]
+		for alle $ n\in \mathbb{Z} $.
+	}}
+\newcommand{\rel}{\rg[Relasjonene mellom sinus- og cosinusfunksjoner]{
+		\vspace{-11 pt}
+		\begin{align}
+		&\cos \left(kx+c -\frac{\pi}{2}\right)= \sin(kx+c)	\\[5 pt]
+		& \sin\left(kx +c + \frac{\pi}{2}\right)= \cos(kx+c)
+		\end{align}
+	}}
+\newcommand{\rele}{\eks{
+		Skriv om funksjonen $ f(x)= 2 \cos (3x+\pi)+1 $ til en sinusfunksjon. \\
+		
+		\sv
+		Det eneste vi må sørge for er å gjøre om cosinusuttrykket til et sinusuttrykk. Og vi vet at:
+		\alg{
+			\cos(3x+\pi)&= \cos\left(3x+\pi+\frac{\pi}{2}-\frac{\pi}{2}\right)\\
+			&= \sin\left(3x+\pi+\frac{\pi}{2}\right)	\\
+			&= \sin\left(3x+\frac{3\pi}{2}\right)
+		}
+		Dermed får vi:
+		\[ f(x) = 2\sin\left(3x+\frac{3\pi}{2}\right)+1\]	
+	}}
+\newcommand{\komb}{\rg[Sinus og cosinus kombinert \label{rsin}]{
+		Vi kan skrive:
+		\algv{a \cos kx +b \sin kx= r\sin(kx+c) }
+		der $ r=\sqrt{a^2+b^2} $ og hvor:
+		\algv{
+			\cos c &= \frac{b}{r}\\[5 pt]
+			\sin c &= \frac{a}{r}
+		}}}
+\newcommand{\kombe}{	
+	\eks{
+		Skriv om $ \sqrt{3} \sin(\pi x)-\cos(\pi x) $ til et sinusuttrykk. \\
+		
+		\sv
+		Vi starter med å finne $ r $:
+		\begin{align*}
+		R&=\sqrt{\sqrt{3}^{\,2}+(-1)^2}  \\
+		&= \sqrt{4} \\
+		&= 2
+		\end{align*}
+		Videre krever vi at:
+		\algv{
+			\cos c &= \frac{\sqrt{3}}{2}\\[5 pt]
+			\sin c &= -\frac{1}{2}}
+		Tallet $ c=-\frac{\pi}{6} $ oppfyller dette kravet, og dermed har vi funnet at: 
+		\[ \sqrt{3} \sin(\pi x)-\cos(\pi x) = 2 \sin\left(\pi x-\frac{\pi}{6}\right) \]			
+		}}

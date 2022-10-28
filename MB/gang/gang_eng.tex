@@ -1,0 +1,78 @@
+\input{../doc}
+\input{../preamb_eng}
+
+\begin{document}
+
+\section{\gong \label{Gonging} }
+
+\subsection*{Multiplication by integers: initial definition }
+When adding equal numbers, we can use the multiplication symbol \sym{$ \cdot $}\; to write our calculations more compact: \regv
+\eks[]{\vsb \vs
+\alg{
+4+4+4 &= 4\cdot 3 \vn
+8+8 &=8\cdot 2 \vn
+ 1+1+1+1+1&= 1\cdot5 
+}
+} \regv
+\spr{
+	A calculation involving multiplication includes several \textit{factors}\index{factor} and one \textit{product}\index{product}. In the calculation
+	\[ {4\cdot 3=12} \]
+	both $ 4 $ and $ 3 $ are factors, while $ 12 $ is the product. \vsk
+	
+	Common ways of saying $ 4\cdot3 $ include
+	\begin{itemize}
+		\item ''4 times 3''  \\
+		\item ''4 multiplied by 3''
+		\item ''4 and 3 multiplied together''
+	\end{itemize}
+	
+	A lot of texts use \sym{$ \times $} instead of \sym{$ \cdot $}. In computer programming, \sym{*} is the most common symbol for multiplication.
+}
+\subsection*{Multiplication involving amounts}
+Let us illustrate $ 2\cdot3 $:
+\fig{2t3}
+Now notice the product of $ 3\cdot 2 $:
+\fig{3t2}
+\reg[\gangkom \label{gangkom}]{
+The order of the factors has no impact on the product.
+}
+\eks[]{\vsb \vs
+\alg{
+3\cdot 4 &=12= 4\cdot 3 \vn
+6\cdot 7 &=42= 7\cdot6 \vn
+8\cdot 9 &=72= 9\cdot8
+}
+}
+
+\subsection*{Multiplication on the number line}
+We can also use the number line to calculate multiplications. In the case of $ 2\cdot4 $ we can think like this:
+\[\text{''} 2\cdot 4 \text{ means moving 2 places to the right, 4 times.}\text{''} \]
+\[ 2\cdot4=8 \]
+\fig{2t4l}
+We can also use the number line to prove to ourselves that multiplication is commutative:
+\[\text{''} 4\cdot 2 \text{ means moving 4 places to the right, 2 times.}\text{''} \]
+\[ 4\cdot2=8 \]
+\fig{4t2l}
+
+
+\subsection*{Final definition of multiplication by positive integers}
+It may be the most intuitive to interpret ''2 times 3'' as ''3, 2 times''. Then it follows:
+\[ \text{''2 times 3''}=3+3 \]
+In this section we introduced $ {2\cdot3} $, that is ''2 times 3'', as $ {2+2+2} $. With this interpretation, $ {3+3} $ corresponds to $ {3\cdot2} $, but the fact that multiplication is a commutative operation (\rref{gangkom}) ensures that the one interpretation does not exclude the other; $ {2\cdot3 =2+2+2} $ and $ {2\cdot3=3+3} $ are two expressions of same value.\regv
+
+\reg[Multiplication as repeated addition  \label{ganggjad2}]{
+Multiplication involving a positive integer can be expressed as repeated addition.
+}
+\eks[1]{\vsb \vs
+	\alg{
+		4+4+4 &= 4\cdot 3=3+3+3+3 \vn
+		8+8 &=8\cdot 2=2+2+2+2+2+2+2 \vn
+		1+1+1+1+1&= 1\cdot5 =5
+	}
+}
+\info{Notice}{
+The fact that multiplication with positive integers can be expressed as repeated addition does not exclude other expressions. There's nothing wrong with writing $ {2\cdot 3=1+5} $.
+}
+
+\end{document}
+

@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}
+	\matrix (mat) [%
+	matrix of nodes, left delimiter={|},right delimiter={|}
+	]
+	{%
+1 & $ -2 $ & 2 \\
+2 & 2 & $ -3 $ \\
+4 & $ -1 $ & 2 \\
+	};
+	% do the strike out thing
+	\draw[black] (mat-1-1.west)  -- (mat-1-3.east);
+	\draw[black] (mat-1-3.north) -- (mat-3-3.south);
+	\end{tikzpicture}
+\end{document}

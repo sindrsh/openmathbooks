@@ -1,0 +1,315 @@
+\input{../../doc}
+\input{../../preamb}
+%\addto\captionsenglish{\renewcommand{\contentsname}{GeoGebra}}
+
+\begin{document}
+\begin{comment}
+	\chapter*{Vedlegg A-H \label{Tips} \addcontentsline{toc}{chapter}{Vedlegg A-H}}
+	\vspace{20 pt}
+\end{comment}	
+\vedlegg{Eksakte sinus- og cosinus-verdier\label{husksincos}}	
+For å finne eksakte verdier av sinus til et tall $ x $, kan vi sette opp følgende tabell:\vs \renewcommand{\arraystretch}{1.5}	
+\begin{center}
+	\begin{tabular}{l|c|c|c|c|c|}
+		& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+		\hline
+		$\sin x$ & 0 &$\frac{\sqrt{1}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $ \frac{\sqrt{4}}{2} $ \\
+	\end{tabular}
+\end{center}
+For cosinus setter vi opp mønsteret andre veien:
+\begin{center}
+	\begin{tabular}{l|c|c|c|c|c}
+		$\cos x$ & $\frac{\sqrt{4}}{2}  $ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{1}}{2}$ & 0 \\
+	\end{tabular}
+\end{center}
+Erstatter vi $ {\frac{\sqrt{1}}{2}} $ med $ \frac{1}{2} $ og $ \frac{\sqrt{4}}{2} $ med 1, får vi dette:
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}	
+	\begin{tabular}{l|c|c|c|c|c}
+		& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+		\hline
+		$\sin x$ & 0 &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 \\
+		$\cos x$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 \\
+	\end{tabular}
+\end{center}
+Av tabellen over kan vi enkelt finne $\tan x= \frac{\sin x}{\cos x} $:
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}	
+	\begin{tabular}{l|c|c|c|c|c}
+		& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+		\hline
+		$\sin x$ & 0 &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 \\
+		$\cos x$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 \\
+		$\tan x$ & 0 &$\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & $ \infty  $
+	\end{tabular}
+\end{center}
+
+\newpage
+\vedlegg{Løsning av trigonometriske \\ ligninger\label{lostriglig}}
+\eks[1]{
+Løs ligningen
+\[ \cos x=-\frac{\sqrt{2}}{2} \nreqvd \label{costip} \qquad,\qquad x\in[-\pi, \pi]\]
+\sv
+\begin{minipage}{0.5\linewidth}
+	\includegraphics[]{\figp{unitcirc}}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+	\renewcommand{\arraystretch}{1.5}	
+	\begin{tabular}{l|c|c|c|c|c}
+		& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+		\hline
+		$\sin x$ & 0 &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 \\
+		$\cos x$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 \\
+		$\tan x$ & 0 &$\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & $ \infty  $
+	\end{tabular}
+\end{minipage}
+Av tabellen ser vi at $ {\cos \frac{\pi}{4}=\frac{\sqrt{2}}{2}} $. Av figuren ser vi at $ \frac{3\pi}{4} $ er $ \frac{\pi}{4} $ speilet gjennom vertikalaksen. Altså har cosinusverdien til $ \frac{\pi}{4} $ og $ \frac{3\pi}{4} $ samme tallverdi, men motsatt fortegn. Dermed er $ \frac{3\pi}{4} $ en løsning av \eqref{costip}. Av figuren ser vi at $ -\frac{3\pi}{4} $ er $ \frac{3\pi}{4} $ speilet gjennom horisontalaksen. Følgelig er ogå $ -\frac{3\pi}{4} $ en løsning av \eqref{costip}.
+}
+\newpage
+\eks[2]{
+	Løs likningen 
+	\[ \cos x = -\frac{\sqrt{3}}{2} \nreqvd \label{costip2} \]
+	\sv
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[]{\figp{unitcirc}}
+	\end{minipage}
+	\begin{minipage}{0.5\linewidth}
+		\renewcommand{\arraystretch}{1.5}	
+		\begin{tabular}{l|c|c|c|c|c}
+			& 0&$\frac{\pi}{6}$ & $\frac{\pi}{4}$ &$\frac{\pi}{3}$ & $\frac{\pi}{2}$    \\
+			\hline
+			$\sin x$ & 0 &$\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 \\
+			$\cos x$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 \\
+			$\tan x$ & 0 &$\frac{1}{\sqrt{3}}$ & $1$ & $\sqrt{3}$ & $ \infty  $
+		\end{tabular}
+	\end{minipage}
+	Av tabellen ser vi at $ {\cos \frac{\pi}{6}=\frac{\sqrt{3}}{2}} $. Av figuren ser vi at $ \frac{5\pi}{6} $ er $ \frac{\pi}{6} $ speilet gjennom vertikalaksen. Altså har cosinusverdien til $ \frac{\pi}{6} $ og $ \frac{5\pi}{6} $ samme tallverdi, men motsatt fortegn. Dermed er $ \frac{5\pi}{6} $ en løsning av \eqref{costip2}. Av figuren ser vi at $ -\frac{5\pi}{6} $ er $ \frac{5\pi}{6} $ speilet gjennom horisontalaksen. Følgelig er ogå $ -\frac{5\pi}{6} $ en løsning av \eqref{costip2}. Så legger vi merke til at om vi starter på $ \frac{5\pi}{6} $, og går en hel runde rundt sirkelen, så kommer vi til et tall med samme cosinusverdi som $ \frac{5\pi}{6} $. Det samme gjelder for $ -\frac{5\pi}{6} $.
+	Altså er
+	\[ x=\frac{5\pi}{6}+2\pi n\qquad\vee\qquad -\frac{5\pi}{6}+2\pi n \]
+	hvor $ n\in \mathbb{N} $. Dette kan vi kortere skrive som 
+	\[ x=\pm \frac{5\pi}{6}+2\pi n \]
+}
+
+
+\vedlegg{Løsning av andregradsligninger\label{abc}}
+Andregradssuttrykket 
+\[ x^2+bx+c  \]
+kan vi skrive som 
+\[ (x+x_1)(x+x_2) \]
+hvor ${x= -x_1}$ og $ x=-x_2 $ er løsningene av ligningen $ x^2+bc+c=0 $. Dette betyr at 
+\algv{
+	x^2+bx+c &= (x+x_1)(x+x_2) \\
+	&= x^2 + x_1x + x_2 x + x_1x_2 \\
+	&= x^2 +(x_1+x_2)x + x_1x_2
+}
+Venstre og høyre side i ligningen over er lik for alle $ x $ bare hvis
+\[ x_1x_2=c\quad \text{ og } \quad x_1+x_2=b  \nreqvd\label{and} \]
+\newpage
+\eks[1]{
+	Faktoriser uttrykket $ x^2-5x+4 $.
+	
+	\sv
+	Siden ${(-4)( -1)=4} $ og ${ (-4)+(-1)=-5} $ er kravet fra (\ref{and}) oppfylt, og vi kan skrive
+	\[ x^2-5x+4 =(x-4)(x-1) \] \vs
+}
+\eks[2]{
+	Løs ligningen\[ x^2-x-6=0 \]
+	
+	\sv
+	Siden $ { (-3)2=-6 }$ og $ {(-3)+2=-1} $, kan vi skrive
+	\alg{
+		x^2-x-6 &=0 \\
+		(x-3)(x+2)	&= 0
+	}
+	Altså har vi løsningene $ {x=3} $ eller ${ x=-2} $.
+}
+
+\vedlegg{Grensen av \boldmath $\sin x $  og $ {\cos x-1 }$ over $ x $}
+{\boldmath $ \lim\limits_{x\to 0} \frac{\sin x}{x} =1 $\label{sinxcosxlim}}\bs 
+Vi nøyer oss med å se på grensen når $ {x^+\to 0} $, da resonnementet blir helt symmetrisk for $ {x^-+\to 0} $.\vsk
+
+I figuren under ser vi bl.\,a. en rett trekant med katetene $ \cos x $ og $ \sin x $. Av formlikhet kan det vises at vi kan lage en forstørret trekant med katetene 1 og $ \tan x $.
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{sinx}}
+\end{figure}
+Bulengden $ x $ må alltid være større enn $ \sin x $, altså må vi ha at
+\[ \frac{\sin x}{x}< 1 \nreqvd\label{sinx} \]
+Videre observerer vi at trekanten med  $ \tan x $ som høyde og 1 som
+grunnlinje må ha et større areal enn sektoren til $ x $. Fordi $ x $ utgjør $ \frac{x}{2\pi} $ av omkretsen til enhetssirkelen, må den utgjøre den samme brøkdelen av arealet (forklar for deg selv hvorfor!). Arealet til enhetssirkelen er $ \pi $, og da er arealet til sektoren $ {\pi\cdot \frac{x}{2\pi}=\frac{x}{2}} $. Vi kan derfor skrive
+\begin{align*}
+	\frac{1}{2}x &< \frac{1}{2}\tan x\nonumber\\
+	x &< \frac{\sin x}{\cos x} \nonumber\\[5 pt]
+	\cos x &<\frac{\sin x}{x}\nreqvd \label{sinx1}
+\end{align*}
+Fra (\ref{sinx}) og (\ref{sinx1}) har vi at
+\[ \cos x < \frac{\sin x}{x}<1 \]
+Når $ x $ går mot 0, går $ \cos x $ mot 1. I denne grensen blir altså $ \frac{\sin x}{x} $ klemt i mellom et tall uendelig nærme (men mindre enn) 1 på den ene siden og 1 på den andre. Derfor må vi ha at
+\[ \lim\limits_{x\to 0} \frac{\sin x}{x} =1 \]
+{\boldmath ${\lim\limits_{x\to 0} \frac{\cos x-1}{x}=0} $}\bs
+Siden $ {\lim\limits_{x\to 0} \frac{\sin x}{x} =1} $, har vi at 
+\alg{
+	\lim\limits_{x\to 0} \frac{\cos x-1}{x} &= \lim\limits_{x\to 0} \frac{(\cos x-1)}{x}\frac{(\cos x+1)}{(\cos x+1)} \\
+	&= \lim\limits_{x\to 0} \frac{\cos^2 x-1}{x(\cos x +1)} \br
+	&= \lim\limits_{x\to 0} \frac{\sin^2 x}{x(\cos x+1)}	 \br
+	&= \left(\lim\limits_{x\to 0} \frac{\sin x}{x}\right) \left(\lim\limits_{x\to 0} \frac{\sin x}{\cos x+1}\right) \\ 
+	&= 1\cdot0 \\
+	&= 0
+}
+\newpage
+\vedlegg{Lagranges identitet \label{lagrange}}
+Vi ønsker å vise Lagranges identitet for to vektorer $ {\vec{a}=[a_1,a_2,a_3]} $ og $ {\vec{b}=[b_1, b_2, b_3] }$:
+\[ |\vec{a}\times\vec{b}|^2=|\vec{a}|^2|\vec{b}|^2-(\vec{a}\cdot\vec{b})^2 \]
+La oss starte med å skrive ut venstresiden. Vi ser at dette blir en tung oppgave, men kan lette litt på trykket ved å skrive:
+\[ c_{ij} = a_ib_j \]
+Vi får da at
+\small
+\begin{align*}
+	|\vec{a}\times\vec{b}|^2 &= 
+	(c_{23}-c_{32})^2+(c_{31}-c_{13})^2+(c_{12}-c_{21})^2\nonumber \\
+	&=c_{23}^2 - 2c_{23}c_{32}+c_{32}^2+ 
+	c_{31}^2 - 2c_{31}c_{13}+c_{13}^2+
+	c_{12}^2 - 2c_{12}c_{21}+c_{21}^2\nreqvd \label{lid1}
+\end{align*}
+\normalsize
+Tiden er nå inne for å observere to ting:
+\begin{align*}
+	|\vec{a}|^2|\vec{b}|^2 &= (a_1^2+a_2^2+a_3^2)(b_1^2+b_2^2+b_3^2) \nonumber\\
+	&= c_{11}^2 + c_{12}^2 + c_{13}^2 + c_{21}^2 + c_{22}^2 + c_{23}^2 + c_{31}^2 + c_{32}^2 + c_{33}^2\nreqvd \label{lid2} \\
+	\nonumber \\
+	(\vec{a}\cdot\vec{b})^2&=(a_1b_1+a_2b_2+a_3b_3)^2 \nonumber \\
+	&=(c_{11}+c_{22}+c_{33})^2\nonumber\\
+	&= (c_{11}+c_{22})^2+2(c_{11}+c_{22})c_{33}+ c_{33}^2\nonumber \\
+	&= c_{11}^2+ c_{22}^2 + c_{33}^2 + 2c_{11}c_{22} + 2c_{11}c_{33} + 2c_{22}c_{33}\nreqvd\label{lid3}
+\end{align*}
+Vi legger nå merke til at $ {c_{ii}c_{jj}=c_{ij}c_{ij} }$. Om vi studerer høyresidene til (\ref{lid1}), (\ref{lid2}) og (\ref{lid3}), ser vi at vi kan skrive \[ \text{(\ref{lid1})}=\text{(\ref{lid2})}-\text{(\ref{lid3})} \]
+Dermed har vi vist det vi skulle.
+\vedlegg{Bytte av variabel ved Leibniz-notasjon\label{intleibn}}
+En annen måte å utføre bytte av variabel på, er å anvende seg av \textit{Leibniz-notasjon}. For en funksjon $ u(x) $ skriver man da at
+\[ u'=\frac{du}{dx} \]
+$ du $ og $ dx $ betegner infinitesimale størrelser av $ u $ og $ x $, begge størrelsene går altså mot 0. Strengt tatt kan vi ikke behandle høyresiden som en vanlig brøk. Men hvis vi \textit{likevel} gjør det, kan vi skrive
+\[ dx = \frac{du}{u'} \]
+Og når vi først er i gang med manipulasjoner som egentlig ikke gir mening, kan vi sette dette uttrykket inn i et integral vi ønsker å løse:\regv
+\eks{
+Finn det ubestemte integralet
+\[\int x^4 e^{x^5}\, dx \]\vs
+\sv
+Vi setter $ {u=x^5} $, og får da at
+\alg{
+u' &= \frac{du}{dx} \br
+5x^4 &= \frac{du}{dx} \br
+dx &= \frac{du}{5 x^4}
+}
+Setter vi dette inn i integralet, kan vi skrive
+\alg{
+\int x^4 e^{x^5}\, dx &= \int x^4 e^{u}\, \frac{du}{5 x^4} \br
+&= \frac{1}{5}\int e^u \, du \br
+&= \frac{1}{5} e^u \,du \br
+&= \frac{1}{5}+e^u+C \br
+&= \frac{1}{5}e^{x^5} + C
+}
+}\vsk
+\textsl{Kommentar}: I eksempelet over kom vi fram til rett svar, selv om regneoperasjonene med de infinitesimale størrelsene ikke kan forsvares rent matematisk. Derimot kan det vises matematisk at denne metoden alltid vil gi oss korrekte uttrykk! Å bruke regneoperasjoner som i seg selv er meningsløse, men som beviselig fører til riktige uttrykk, kalles \textit{formell regning}.
+
+\vedlegg{Bytte av variabel for bestemt integral\label{bestbyt}}
+\reg[Bytte av variabel for bestemt integral]{
+	Gitt funksjonene $ u(x) $ og $ g(u) $. Da har vi at
+	\begin{equation}
+	\int\limits_a^b g(u) u'\, dx=\int\limits_{u(a)}^{u(b)}  g(u) \, du \label{bytvarb}
+	\end{equation}\vs
+}
+\eks[1]{
+	Finn det bestemte integralet
+	\[\int\limits_1^2 \frac{6x^2 + 4x}{x^3+x^2}\,dx \] \vs
+	\sv
+	Vi setter $ u(x)=x^3+x^2 $ og $ g(u)=\frac{1}{u} $. Da blir $u'= 3x^2+2x $, og vi kan skrive
+	\alg{
+		\int \frac{6x^2 + 4x}{x^3+x^2}\,dx  &= 2\int(3x^2 + 2x) \frac{1}{x^3+x^2}\,dx \\
+		&= 2\int u'\frac{1}{u}\,dx \\
+		&= 2 \int \frac{1}{u}\,du \\
+		&= 2\ln |u|+C
+	}
+	Siden $ {u(1)=1^3+1^2=2} $ og $ {u(2)=2^3+2^2=12} $, får vi at
+	\alg{
+		\int\limits_1^2 \frac{6x^2 + 4x}{x^3+x^2}\,dx  &= \big[2\ln |u|\big]_2^{12} \\
+		&= 2(\ln 12 - \ln 2) \\
+		&= 2\ln \left(\frac{12}{2}\right) \\
+		&= 2\ln 6
+	}
+	\vs
+}
+\begin{comment}
+
+
+\vedlegg{Bestemt integral (fortsettelse)}
+I figuren under har vi tegnet grafen til en funksjon $ f(x) $ som antar både positive og negative verdier for $ x\in[a, b] $. For dette intervallet har vi også tegnet inn arealene $ A $ og $ B $:
+\begin{figure}[H]
+\centering
+\includegraphics[]{\asym{int6a}}
+\caption{\label{int6a}Arealene $ A $ (grønn) og $ B $ (blå) avgrenset av $ x $-aksen, de hendholdsvis positive eller negative verdiene til $ f $ og de loddrette linjene i endepunktene og nullpunktet.}
+\end{figure}
+Vi ønsker å finne integralet av $ f $ på intervallet $ [a, b] $, som vi kaller for $ I_f $. Av det vi hittil vet om integraler kan vi skrive:
+\begin{equation}\label{ifint}
+I_f = A-B 
+\end{equation}
+Vi søker videre en formulering som gjør at vi kan regne ut $ I_f $ når vi kjenner $ f(x) $. Vi har sett at for en funksjon $ F $ som er positiv over et helt intervall $ [a, b] $, så er integralet $ I_F $ gitt som:
+\begin{equation}\label{fbestint}
+I= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} F(x_{i})\Delta x 
+\end{equation}
+hvor $ x_i=a+i\Delta x$ og $ \Delta x=\frac{b-a}{n} $.
+
+Men funksjonen $ f $ må ha en minimumsverdi $ c $ på $ [a, b] $, og via denne kan vi lage funksjonen $ F $ som er positiv over over hele intervallet:
+\[ F(x)=f(x)+c\quad,\quad x\in[a, b] \]
+Under har vi tegnet grafen til $ F $ og linja $ y=d $ sammen med arealene $ A $ og $ B $ \fref{int6a} i tillegg til arealet $ C $.
+\begin{figure}[H]
+\centering
+\includegraphics[]{\asym{int6b}}
+\caption{\label{int6b}Arealene $ A $ (grønn), $ B $ (blå) og $ C $ (oransje).}
+\end{figure}
+Vi innser av figuren og (\ref{ifint}) at:
+\alg{
+I_F &= A+C \\
+&= A+C+B-B \\
+&= I_f + C+B
+}
+Et annet uttrykk for $ I_f $ blir altså:
+\[ I_f = I_F-(C+B) \]
+Vi ser fort at $ C+B =d(b-a)$, av dette og (\ref{fbestint}) kan vi skrive:
+\alg{
+I_f &= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} F(x_{i})\Delta x - (C+B) \\
+&= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} (f(x_{i})+d)\Delta x -(C+B) \\
+&= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} f(x_{i})\Delta x + n\Delta x - (C+B) \\
+&= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} f(x_{i})\Delta x + d(b-a) - (C+B) \\
+&= \lim\limits_{n\to \infty}\sum\limits_{i=0}^{n-1} f(x_{i})\Delta x 
+}
+
+	\section{Alternativ til polynomdivisjon}
+	Noen ganger kommer vi ut for oppgaver der graden til teller og nevner er like stor. I slike tilfeller er vi oppfordret til å utføre en polynomdivisjon. Dette er en langtekkelig øvelse, så vi skal nå se på et triks som ofte er raskere.
+	
+	La oss bruke brøken  \[ \dfrac{2x^2+5x+1}{x^2+x} \] som eksempel. Vi bruker faktorisering for å få uttrykket i nevneren til å dukke opp i telleren:
+	\[ \frac{2(x^2+x)+3x+1}{x^2+x} \]
+	Altså kan vi skrive:
+	\[1+ \frac{3x+1}{x^2+x} \]
+	Så faktoriserer vi nevneren og får dette uttrykket fram i teller:
+	\[1+ \frac{x+1+2x}{x(x+1)} \]
+	Altså får vi:
+	\[1+\frac{1}{x}+\frac{2}{x+1 } \]
+	
+	\eks{
+	Skriv uttrykket $ \dfrac{x^2+x-1}{x^2-x} $ som en sum av brøker.\\
+	
+	\textbf{Svar:} 
+	\vspace{-10 pt}
+	\alg{
+	\frac{x^2+x-1}{x^2-x} &= \frac{x^2-x +2x-1}{x^2-x} \\
+	&= 1+\frac{2x-1}{x^2-x} \\
+	&= 1+ \frac{x+x-1}{x(x-1)} \\
+	&= 1+ \frac{1}{x-1}+\frac{1}{x}
+	}
+	}
+	
+\end{comment}
+\end{document}
+
+

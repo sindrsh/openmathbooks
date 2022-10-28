@@ -1,0 +1,141 @@
+%\documentclass[english, 11 pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{babel}
+\usepackage[hidelinks, bookmarks]{hyperref}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=3cm,lmargin=4cm,rmargin=4cm,headheight=3cm,headsep=1cm,footskip=1cm}
+\setlength{\parindent}{0bp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+%\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\makeatother
+\usepackage{tocloft}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+\usepackage{graphicx}
+\usepackage{placeins}
+\raggedbottom
+\usepackage{calc}
+\usepackage{cancel}
+\makeatletter
+\usepackage{color}
+\definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{bm}
+\usepackage{ntheorem}
+
+\usepackage{ragged2e}
+\RaggedRight
+\raggedbottom
+\frenchspacing
+
+\newcounter{lign}[section]
+\newenvironment{lign}[1][]{\Large \refstepcounter{lign} \large
+	\textbf{\thelign #1} \rmfamily}{\par\medskip}
+\numberwithin{lign}{section}
+\numberwithin{equation}{section}
+\usepackage{xcolor}
+\usepackage{icomma}
+\usepackage{mathtools}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{xr-hyper}
+\makeatother
+\usepackage[many]{tcolorbox}
+
+%\setlength{\parskip}{\medskipamount}
+\newcommand{\parskiplength}{11pt}
+%\setlength{\parskip}{0 pt}
+\newcommand\eks[2][]{\begin{tcolorbox}[enhanced jigsaw,boxrule=0.3 mm, arc=0mm,breakable,colback=green!30] {\large \textbf{Eksempel #1} \vspace{\parskiplength}\\} #2 \vspace{1pt} \end{tcolorbox}\vspace{1pt}}
+
+\newcommand\fref[2][]{\hyperref[#2]{\textsl{Figur \ref*{#2}#1}}}
+\newcommand{\hr}[2]{\hyperref[#2]{\color{blue}\textsl{#1}}}
+
+\newcommand\rgg[2][]{\begin{tcolorbox}[boxrule=0.3 mm, arc=0mm,colback=orange!55] #2 \vspace{1pt} \end{tcolorbox}\vspace{-2pt}}
+\newcommand\alg[1]{\begin{align*} #1 \end{align*}}
+\newcommand\algv[1]{\vspace{-11 pt} \begin{align*} #1 \end{align*}}
+\newcommand\vs{\vspace{-11 pt}}
+\newcommand\g[1]{\begin{center} {\tt #1}  \end{center}}
+\newcommand\gv[1]{\begin{center} \vspace{-22 pt} {\tt #1} \vspace{-11 pt} \end{center}}
+%\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag tentamen R2 H2015}}
+
+% Farger
+\colorlet{shadecolor}{blue!30} 
+
+% Figur
+\usepackage{float}
+\usepackage{subfig}
+\captionsetup[subfigure]{labelformat=empty}
+\usepackage{esvect}
+
+\newcommand\sv{\textbf{Svar:} \vspace{5 pt} \\}
+
+%Tableofconents
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}
+\setlength{\cftsubsecindent}{2 cm}
+\newcommand\tocskip{6 pt}
+\setlength{\cftaftertoctitleskip}{30 pt}
+\setlength{\cftbeforesecskip}{\tocskip}
+%\setlength{\cftbeforesubsecskip}{\tocskip}
+
+%Footnote:
+\usepackage[bottom, hang, flushmargin]{footmisc}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+\addtolength{\footnotesep}{2mm}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\renewcommand\footnoterule{\rule{\linewidth}{0.4pt}}
+
+%asin, atan, acos
+\DeclareMathOperator{\atan}{atan}
+\DeclareMathOperator{\acos}{acos}
+\DeclareMathOperator{\asin}{asin}
+
+%Tabell
+\addto\captionsenglish{\renewcommand{\tablename}{Figur}}
+
+% Figur
+\usepackage[font=footnotesize,labelfont=sl]{caption}
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+
+% Figurer
+\newcommand\scr[1]{../scr/#1}
+\newcommand\asym[1]{../asymptote/#1}
+
+%Toc for seksjoner
+\newcommand\tsec[1]{\phantomsection\addcontentsline{toc}{section}{#1}
+	\section*{#1}}
+%\newcommand\tssec[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand\tssec[1]{\subsection*{#1}}
+% GeoGebra
+\newcommand{\cms}[2]{{\tt #1( #2 )}}
+\newcommand{\cm}[2]{{\large \tt #1( #2 )} \gvs \\}
+\newcommand{\cmc}[2]{{\large \tt #1( #2 )} \large (CAS)  \gvs \\ \normalsize}
+\newcommand{\cmk}[2]{{\large \tt #1( #2 )} \large (Inntastingsfelt)  \gvs \\ \normalsize}
+
+\newcommand\gvs{\vspace{11 pt}}
+
+\newcommand\vsk{\vspace{11 pt}}
+\newcommand{\merk}{\vsk \textsl{Merk}: }
+\newcommand{\fig}[1]{
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{fig/#1}
+\end{figure}
+}
+\newcommand{\figc}[1]{
+		\centering
+		\includegraphics[scale=0.5]{fig/#1}
+}
+
+% Opg
+%\newcommand{\opgt}{\phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}}
+\newcounter{opg}
+\numberwithin{opg}{section}
+
+\newcommand{\opl}[1]{\vspace{15pt} \refstepcounter{opg} \textbf{\theopg} \vspace{2 pt} \label{#1} \\}
+

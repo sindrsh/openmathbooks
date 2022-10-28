@@ -1,0 +1,137 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\newpage
+\section{Likhetstegnet, mengder og tallinjer}
+\index{tall}
+\subsection*{\likteikn}
+Som navnet tilsier, viser \outl{likhetstegnet} \index{likhetstegnet} \sym{$ = $} til at noe er likt. I hvilken grad og når man kan si at noe er likt er en filosofisk diskusjon, og innledningsvis er vi bare prisgitt dette: \textsl{Hvilken likhet \sym{$=$} sikter til må bli forstått ut ifra konteksten tegnet blir brukt i}. Med denne forstelsen av \sym{$ = $} kan vi studere noen grunnleggende egenskaper for tallene våre, og så komme tilbake til mer presise betydninger av tegnet. \regv
+\spr{
+Vanlige måter å si \sym{$=$} på er
+\begin{itemize}
+	\item ''er lik'' \\
+	\item ''er det samme som''
+\end{itemize}
+}
+\subsection*{Mengder og tallinjer}
+Tall kan representere så mangt. I denne boka skal vi holde oss til to måter å tolke tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utganspunkt i hva forståelsen er av tallene 0 og 1.
+
+\subsubsection*{Tall som mengde}
+	Når vi snakkar om en mengde, vil tallet 0 være\footnote{I \hrs{Rekneartane}{kapittel} skal vi se at det også er andre tolkninger av 0.} knyttet til ''ingenting''. En figur der det ikke er noe til stede vil slik være det samme som 0:
+	\[ =0 \]
+	1 vil vi tegne som en rute:
+	\fig{rut1}
+
+Andre tall vil da være definert ut ifra hvor mange ''enerruter'' (''enere'') vi har:
+	\fig{rut2}
+\newpage	
+\subsubsection*{Tall som plassering på ei linje}
+	Når vi plasserer tall på en linje, vil 0 være utgangspunket vårt:
+	\fig{lin0a}
+	Så plasserer vi 1 en viss lengde til høyre for 0:
+	\fig{lin0b}
+	Andre tall vil da være definert ut ifra hvor mange enerlengder (enere) vi er unna 0:
+	\fig{lin1}
+\subsection*{Positive heltall}
+Vi skal straks se at tall ikke nødvendigvis trenger å være \textsl{hele} antall enere, men tallene som \textsl{er} det har et eget navn:\regv
+
+\reg[Positive heltall]{
+Tall som er et helt antall enere kalles \outl{positive\footnotemark heltall}\index{positive heltall}. De\\ positive heltallene er
+\[ 1, 2, 3, 4, 5 \text{ og så videre.} \]
+Positive heltall blir også kalt \outl{naturlige tal}\index{tall!naturlige}.
+}
+\info{Hva med 0?}{
+Noen forfattere inkluderer også 0 i begrepet naturlige tal. I noen sammenhenger vil dette lønne seg, i andre ikke.
+}
+\footnotetext{Hva ordet 'positiv' innebærer skal vi se i \hrs{Negtal}{kapittel}.}
+
+\newpage
+\section{\talsifverd}
+Tallene våre er bygd opp av \outl{sifrene}\index{siffer} $ 0, 1, 2 , 3, 4, 5, 6, 7, 8 $ og $ 9 $, og \textsl{plasseringen} av dem. Sifrene og deres plassering definerer\footnote{Etter hvert skal vi også se at \textit{fortegn} er med på å definere verdien til tallet (se \hrs{Negtal}{kapittel}).} \outl{verdien} \index{verdi} til tallet.
+\subsection*{Heltall større enn 9}
+La oss som et eksempel skrive tallet 'fjorten' ved hjelp av sifrene våre.
+\fig{tel}
+En gruppe med ti enere kaller vi en ''tier''. Av fjorten kan vi lage 1 tier, og i tillegg har vi da 4 enere. Da skriver vi 'fjorten' slik:
+\[ \text{fjorten}=14 \]
+\fig{tel2_bm}\vsk
+
+\fig{tel2t}
+\newpage
+\subsection*{Desimaltall}
+I mange tilfeller har vi ikke et helt antall enere, og da vil det være behov for å dele 1 inn i mindre biter. La oss starte med å tegne en ener:
+\fig{maal}
+\fig{des1}
+Så deler vi eneren vår inn i 10 mindre biter:
+\fig{maal1}
+\fig{des1a}
+Siden vi har delt 1 inn i 10 biter, kaller vi en slik bit for ''en tidel'':
+\fig{maal1a_bm}
+\fig{des1b_bm}
+\begin{comment}
+\eks{\vs
+	\fig{maal2}
+	\fig{des2}
+}\vsk
+\end{comment}
+Tideler skriver vi ved hjelp av  \outl{desimaltegnet} \sym{,}  :
+\fig{maal1b}
+\fig{des1c}
+\eks[]{\vs 
+	\fig{maal2a}
+	\fig{des3}
+}\regv
+\spr{
+På engelsk bruker man punktum \sym{.} som desimaltegn:
+\alg{
+	3,5&\quad(norsk) \\
+	3.5&\quad (english)
+}
+}
+\newpage
+\subsection*{Titallsystemet}
+Vi har nå sett hvordan vi kan uttrykke verdien til tall ved å plassere \\siffer etter antall tiere, enere og tideler, og det stopper selvsagt ikke der: \regv
+
+\reg[Titallsystemet \label{titalsys}]{
+Verdien til et tall er gitt av sifrene $ 0, 1, 2, 3, 4, 5, 6, 7, 8  $ og $ 9 $, og plasseringen av dem. Med sifferet som angir enere som utgangspunkt vil
+\begin{itemize}
+	\item siffer til venstre (i rekkefølge) indikere antall tiere, \\hundrere, tusener og så videre.
+	\item siffer til høyre (i rekkefølge) indikere antall tideler, \\hundredeler, tusendeler og så videre.
+\end{itemize}
+}
+\eks[1]{\vs 
+	\fig{maal3_bm}
+}
+\eks[2]{ \vs \vs
+\fig{titalsys_bm}
+}
+\newpage
+\reg[Partall og oddetall \label{parogodd}]{
+Heltall som har 0, 2, 6 eller 8 på enerplassen kalles \outl{partall}\index{partall}.\vsk
+
+Heltall som har 1, 3, 5, 7 eller 9 på enerplassen kalles \outl{oddetall}\index{oddetall}.
+}
+\eks{
+De ti første (positive) partallene er
+\[ \text{0, 2, 4, 6, 8, 10, 12, 14, 16, og 18} \]
+De ti første (positive) oddetallene er
+\[ \text{1, 3, 5, 7, 9, 11, 13, 15, 17, og 19} \]
+}
+
+\newpage
+\section{\koordsys \label{Koord}}
+
+\prbxl{0.5}{I mange tilfeller er det nyttig å bruke to tallinjer samtidig. Dette kaller vi et \outl{koordinatsystem}\index{koordinatsystem}. Vi plasserer da én tallinje (en akse) som går \textsl{horisontalt} og én som går \textsl{vertikalt}. En plassering i et koordinatsystem kaller vi et \outl{punkt}\index{punkt}. 
+ }\qquad
+\prbxr{0.4}{Strengt tatt finnes det mange typer koordinatsystem, men i denne boka bruker vi ordet om bare én sort, nemlig det \outl{kartesiske koordinatsystem}. Det er oppkalt etter den franske filosofen og matematikeren René Descartes.}
+\st{Et punkt skriver vi som to tall inni en parentes. De to tallene blir kalt \outl{førstekoordinaten} og \outl{andrekoordinaten} til punktet.
+	\begin{itemize}
+		\item Førstekoordinaten forteller oss hvor langt vi skal gå langs horisontalaksen.
+		\item Andrekoordinaten forteller oss hvor langt vi skal gå langs vertikalaksen.
+\end{itemize}
+I figuren ser vi punktene $ (2, 3) $, $ (5, 1) $ og $ (0, 0) $. Punktet der aksene møtes, altså $ (0, 0) $, kalles \outl{origo}\index{origo}.
+\fig{kord}
+}
+
+\end{document}

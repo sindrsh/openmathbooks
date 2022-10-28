@@ -1,0 +1,29 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+
+
+\begin{document}
+	\begin{tikzpicture}
+\begin{axis}[
+    xmax=3.5,xmin=-0.3,ymax=6.5, ymin=-0.1,
+    enlargelimits=true,
+    axis lines=middle,
+    clip=false,
+    domain=0:3,
+    axis on top,
+    xtick = \empty,
+    ytick= \empty,
+    extra x ticks={3},
+    extra x tick labels={$ b $},
+    ]
+\addplot [draw=green, fill=green!20, ybar interval, samples=20]
+    {1+0.5*x^2}\closedcycle;
+\addplot[smooth]{1+0.5*x^2};
+\node at (axis cs:3.7,0) {$ x$};
+\node at (axis cs:0,7) {$ f(x)$};
+		\addplot[dashed,very thin,color=black] coordinates { (0,5.5) (3,5.5) (3,0) };
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,590 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\newpage
+\section{Begrep}
+\textbf{Punkt}\os
+En bestemt plassering kalles et\footnote{Se også \refsec{Koord}.} \outl{punkt}\index{punkt}. Et punkt markerer vi ved å tegne en prikk, som vi gjerne setter navn på med en bokstav. Under har vi tegnet punktene $ A $ og $ B $.
+\fig{punkt1}
+\textbf{Linje og linjestykke}\os
+En rett strek som er uendeleg lang (!) kaller vi en \outl{linje}\index{linje}. At linja er uendelig lang, gjør at vi aldri kan \textsl{tegne} en linje, vi kan bare \textsl{tenke} oss en linje. Å tenke seg en linje kan man gjøre ved å lage en rett strek, og så forestille seg at endene til streken vandrer ut i hver sin retning.
+\fig{linj1}
+En rett strek som går mellom to punkt kaller vi et \outl{linjestykke}\index{linjestykke}.
+\fig{linjstk1}
+Linjestykket mellom punktene $ A $ og $ B $ skriver vi som $ AB $. \outl{Lengden} til $ AB $ er lengden vi må vandre langs linjestykket for å gå fra $ A $ til $ B $. \regv
+
+\info{Merk}{
+	Et linjestykke er et utklipp (et stykke) av en linje, derfor har en linje og et linjestykke mange felles egenskaper. Når vi skriver om linjer, vil det bli opp til leseren å avgjøre om det samme gjelder for linjestykker, slik sparer vi oss for hele tiden å skrive ''linjer/linjestykker''.
+}
+\newpage
+\info{Linjestykke eller lengde? \label{linlen?}}{ 
+\fig{linjstk3}
+Linjestykkene $ AB $ og $ CD $ har lik lengde, men de er ikke det samme linjestykket. Likevel kommer vi til å skrive $ {AB=CD} $ for å vise til at linjestykkene har lik lengde. Da bruker vi altså de samme navnene på linjestykkene som på lengdene deres\footnote{Det samme gjelder for vinkler og vinkelverdier, se side \pageref{vinklar}\,-\,\pageref{vinkelend}.}. Dette gjør vi av følgende grunner:
+\begin{itemize}
+\item Til hvilken tid vi snakkar om et linjestykke og hvilken tid vi snakker om en lengde vil komme tydelig fram av sammenhengen begrepet blir brukt i.
+\item Å hele tiden måtte ha skrevet ''lengden til $ AB $'' og lignende ville gitt mindre leservennlige setninger.
+\end{itemize}
+}
+\newpage
+\textbf{Avstand}\os
+Det er uendelig med veier man kan gå fra ett punkt til et annet, og noen veier vil være lengre enn andre. Når vi snakkar om avstand i \\geometri, mener vi helst den \textsl{korteste} avstanden. For geometrier vi skal ha om i denne boka, vil den korteste avstanden mellom to punkt alltid være lengden til linjestykket (blått i figuren under) som går mellom punktene.
+\fig{linjstk2}
+\textbf{Sirkel; sentrum, radius og diameter} \os
+Om vi lager en lukket bue der alle punktene på buen har samme av-stand til ett punkt, har vi en \outl{sirkel}\index{sirkel}. Punktet som alle punktene på buen har lik avstand til er \outl{sentrum}\index{sirkel!sentrum i} i sirkelen. Et linjestykke mellom sentrum og et punkt på buen kaller vi en \outl{radius}\index{radius}. Et linjestykke mellom to punkt på buen, og som går via sentrum, kaller vi en\\ \outl{diameter}\index{diameter}\footnote{Som nevnt på side \pageref{linlen?} kan \textit{radius} og \textit{diameter} like gjerne bli brukt om lengden til linjestykkene.}.
+\fig{sirk1}
+\textbf{Sektor} \os
+En bit som består av en sirkelbue og to tilhørende radier kalles en\\ \outl{sektor}\index{sektor}. Bildet under viser tre forskjellige sektorer.
+\fig{sirk3}
+\newpage
+\textbf{Parallelle linjer}\os
+Når linjer går i samme retning, er de \outl{parallelle}\index{parallell}. I figuren under vises to par med parallelle linjer.
+\fig{parl1}
+Vi bruker symbolet \sym{$ \parallel $} for å vise til at to linjer er parallelle.
+\[ AB\parallel CD \]
+\fig{parl1a}
+\textbf{Vinkler} \label{vinklar}\os
+To linjer som ikke er parallelle, vil før eller siden krysse hverandre. Gapet to linjer danner seg imellom kalles en \outl{vinkel}\index{vinkel}. Vinkler tegner vi som små sirkelbuer:
+\fig{vink1}
+Linjene som danner en vinkel kalles \outl{vinkelbein}\index{vinkelbein}. Punktet der linjene møtes kalles \outl{toppunktet}\index{vinkel!toppunkt til} til vinkelen. Ofte bruker vi punktnavn og vinkelsymbolet \sym{$ \angle $} for å tydeliggjøre hvilken vinkel vi mener. I figuren under er det slik at
+\begin{itemize}
+\item vinkelen $ \angle BOA $  har vinkelbein $ OB $ og $ OA $, og toppunkt $ O $.
+\item vinkelen $ \angle AOD $  har vinkelbein $ OA $ og $ OD $, og toppunkt $ O $.	
+\end{itemize}
+\fig{vink2}
+\newpage
+\textbf{Mål av vinkler i grader}\os
+Når vi skal måle en vinkel i grader, tenker vi oss at en sirkelbue er delt inn i 360 like lange biter. Én slik bit kaller vi én \outl{grad}\index{grad}, som vi skriver som tegnet \sym{$ ^\circ $}. 
+\fig{vink3} \vsk
+Legg merke til at en $ 90^\circ $ vinkel markeres med symbolet \sym{$ \square $}. En vinkel som måler $ 90^\circ $ kalles en \outl{rett  vinkel}\index{vinkel!rett}. Linjer som danner rette vinkler sier vi står \outl{vinkelrette}\index{vinkelrett} på hverandre. Dette indikerer vi med symbolet $ \sym{$ \perp $} $.
+\[ AB\perp CD \]
+\fig{vink3a}
+\newpage
+\info{Hvilken vinkel?}{
+	Når to linjestykker møtes i et felles punkt, danner de strengt tatt to vinkler; den ene større eller lik $ 180^\circ $, den andre mindre eller lik $ 180^\circ $. I de aller fleste sammenhenger er det den minste vinkelen vi ønsker å studere, og derfor er det vanlig å definere $ \angle AOB $ som den \textsl{minste} vinkelen dannet av linjestykkene $ OA $ og $ OB $.
+	\fig{vink2a}
+	Så lenge det bare er to linjestykker/linjer tilstede, er det også vanlig å bruke bare én bokstav for å vise til vinkelen:
+	\fig{vink2b}
+}\vsk
+\label{vinkelend}
+\newpage
+\reg[\topv \label{toppv}]{
+	To motstående vinkler med felles toppunkt kalles \outl{toppvinkler}\index{toppvinkel}. Toppvinkler er like store.
+	\fig{vink4a}
+}
+\fork{\ref{toppv} \topv}{\vspace{-10pt}
+	\fig{vink4aa}
+	Vi har at 
+	\algv{
+		\angle BOC+\angle DOB=180^\circ	\\[5pt]
+		\angle AOD+\angle DOB=180^\circ
+	}	
+	Dette må bety at $ {\angle BOC = \angle AOD} $. Tilsvarende er $ {\angle COA=\angle DOB} $.	
+}
+
+\begin{comment}
+\reg[Samsvarande vinklar]{
+	Vinkler med eit høgre eller venstre vinkelbein felles, kallast \textit{samsvarende vinkler}. I figuren under er dei markerte vinklane samsvarande fordi alle tre har den raude linja som venstre vinkelbein.
+\fig{vink4}
+	Vinklar med parvis parallelle høgre og venstre vinkelbein er like store.
+\fig{vink4b}
+}
+\end{comment}
+\newpage
+\textbf{Kanter og hjørner} \os
+Når linjestykker danner en lukket form, har vi en \outl{mangekant}\index{mangekant}. Under ser du (fra venstre mot høyre) en \outl{trekant}\index{trekant}, en \outl{firkant}\index{firkant} og en \outl{femkant}.
+\fig{kant1}
+Linjestykkene en mangekant består av kalles \outl{kanter}\index{kant} eller \outl{sider}\index{side!i mangekant}. Punktene der kantene møtes kaller vi \outl{hjørner}\index{mangekant!hjørner i}. Trekanten under har altså hjørnene $ A $, $ B $ og $ C $, og sidene (kantene) $ AB $, $ BC $ og $ AC $.
+\fig{kant2}
+\info{Merk}{
+ Ofte kommer vi til å skrive bare en bokstav for å markere et hjørne i en mangekant.
+\fig{kant2b}
+} \vsk
+
+\textbf{Diagonaler} \os
+Et linjestykke som går mellom to hjørner som ikke hører til samme side av en mangekant kalles en \outl{diagonal}. I figuren under ser vi \\diagonalene $ AC $ og $ BD $.
+\fig{kant7}
+\newpage
+\subsubsection{Høgde og grunnlinje \label{grunnlinje}}
+Når vi i \hrs{Areal}{seksjon} skal finne areal, vil begrepene \textit{grunnlinje}\index{grunnlinje} og \textit{høgde}\index{høgde} være viktige. For å finne en høgde i en trekant, tar vi utgangspunkt i én av sidene. Siden vi velger kaller vi \outl{grunnlinja}. La oss starte med $ AB $ i figuren under som grunnlinje. Da er \outl{høgda} linjestykket som går fra $ AB $ (eventuelt, som her, forlengelsen av $ AB $) til $ C $, og som står vinkelrett på $ AB $.
+\fig{tri15}
+Da det er tre sider vi kan velge som grunnlinje, har en trekant tre høgder.
+\fig{tri15b}
+\info{Merk}{Høgde og grunnlinje kan også på lignende vis bli brukt i forbindelse med andre mangekanter.}
+\section{Egenskaper for trekanter og firkanter}
+I tillegg til å ha et bestemt antall sider og hjørner, kan mangekanter også ha andre egenskaper, som for eksempel sider eller vinkler av lik størrelse, eller sider som er parallelle. Vi har egne navn på mangekanter med spesielle egenskaper, og disse kan vi sette opp i en oversikt der noen ''arver''\footnote{I \rref{trekantar} og \rref{firkantar} er dette indikert med piler.} egenskaper fra andre.\regv
+
+
+\regdef[Trekanter \label{trekantar}]{
+\fig{kant4e_bm}	
+\parbox[l][][l]{0.5\linewidth}{
+	\centering
+	\fig{kant4a}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Trekant}\\
+	Har tre sider og tre hjørner.	
+}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\centering
+	\fig{kant4b}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Rettvinklet trekant} \\
+	Har en vinkel som er $ 90^\circ $.
+}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\fig{kant4c}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Likebeint trekant} \\
+	Minst to sider er like lange. \\
+	Minst to vinkler er like store.
+}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\fig{kant4d}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Likesidet trekant}\\
+	Sidene er like lange.\\
+	Alle vinklene er $ 60^\circ $.
+}
+}
+\eks{
+Da en likesidet trekant har tre sider som er like lange og tre vinkler som er $ 60^\circ $, er den også en likebeint trekant.
+}
+\spr{
+	Den lengste siden i en rettvinklet trekant blir gjerne kalt \textit{hypotenus}\index{hypotenus}. De korteste sidene blir gjerne kalt \textit{kateter}\index{katet}.
+}
+
+\reg[\trisum \label{180}]{I en trekant er summen av vinkelverdiene $ 180^\circ $.
+	\[ \angle A +\angle B + \angle C= 180^\circ \]
+	\fig{kant5}	
+}\regv
+\fork{\ref{180} \trisum}{
+	\fig{geo10}	
+	Vi tegner et linjestykke $ FG $ som går gjennom $ C $ og som er parallell med $ AB $. Videre setter vi punktet $ E $ og $ D $ på forlengelsen av henholdsvis $ AC $ og $ BC $. Da er $ {\angle A=\angle GCE} $ og $ {\angle B=\angle DCF} $. $ {\angle ACB=\angle ECD}  $ fordi de er toppvinkler. Vi \\har at
+	\[ \angle DCF+\angle ECD=\angle GCE=180^\circ \]
+	Altså er
+	\[ \angle CBA+\angle ACB+\angle BAC=180^\circ  \]
+} 
+
+\regdef[Firkanter \label{firkantar}]{
+\fig{kant3g}
+\begin{figure}
+	\parbox[l][][l]{0.5\linewidth}{
+		\fig{kant3a}	
+	}		
+	\parbox[r][][l]{0.5\linewidth}{ \vsk \vsk
+		\textbf{Firkant} \\
+		Har fire sider og fire hjørner.
+	}
+\end{figure} \vs \vs
+
+\begin{figure}
+	\parbox[l][][l]{0.5\linewidth}{
+		\fig{kant3b}	
+	}
+	\parbox[r][][l]{0.5\linewidth}{
+		\textbf{Trapes} \\
+		Har minst to sider som er \\parallelle.
+	}
+\end{figure}
+
+\begin{figure}
+	\parbox[l][][l]{0.5\linewidth}{
+		\fig{kant3c}	
+	}
+	\parbox[r][][l]{0.5\linewidth}{
+		\textbf{Parallellogram} \\
+		Har to par med parallelle sider. \\
+		Har to par med like vinkler.
+	}
+\end{figure}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\fig{kant3d}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Rombe} \\
+	Sidene er like lange.\\ 
+}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\fig{kant3e}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Rektangel} \\
+	Alle vinklene er $ 90^\circ $. 
+}
+
+\parbox[l][][l]{0.5\linewidth}{
+	\fig{kant3f}	
+}
+\parbox[r][][l]{0.5\linewidth}{
+	\textbf{Kvadrat} 
+}
+}
+\eks{
+Kvadratet er både en rombe og et rektangel, og ''arver'' derfor egenskapene til disse. Dette betyr at i et kvadratet er
+\begin{itemize}
+	\item alle sidene like lange.
+	\item alle vinklene $ 90^\circ $.
+\end{itemize}
+}
+
+\reg[\firsum \label{360}]{I en firkant er summen av vinkelverdiene $ 360^\circ $.
+	\[ \angle A +\angle B + \angle C+\angle D= 360^\circ \]
+	\fig{kant6}
+}
+\fork{\ref{360} \firsum}{
+	Den samlede vinkelsummen i $ \triangle ABD $ og $ \triangle BCD $ utgjør vinkelsummen i $ \square ABCD $. Av \rref{180} vet vi at vinkelsummen i alle trekanter er $ 180^\circ $, altså er vinkelsummen i $ \square ABCD $ lik $ 2\cdot180^\circ=360^\circ $.
+	\fig{kant6a}
+}
+\section{\omkr}
+Når vi måler hvor langt det er rundt en lukket form, finner vi \textit{omkretsen}\index{omkrets} til figuren. La oss starte med å finne omkretsen til dette rektangelet:
+\fig{geo1}
+Rektangelet har to sider med lengde 4 og to sider med lengde 5:
+\fig{geo1a}
+Dette betyr at
+\alg{
+\text{Omkretsen til rektangelet} &= 4+4+5+5 \\
+&= 18
+}
+\reg[Omkrets]{\outl{Omkretsen} er lengden rundt en lukket figur.}
+\eks[]{ \vsb \vs
+	\begin{figure}
+		\centering
+\subfloat[]{\includegraphics[]{\figp{tri23a}}}
+\subfloat[]{\includegraphics[]{\figp{tri23c}}}		
+	\end{figure}
+I figur \textsl{(a)} er omkretsen $ {5+2+4=11} $. \vsk
+
+I figur \textsl{(b)} er omkretsen $ 4+5+3+1+6+5=24 $.	
+} 
+
+
+\section{\area \label{Areal}}
+Overalt rundt oss kan vi se \textit{overflater}\index{overflate}, for eksempel på et gulv eller et ark. Når vi ønsker å si noe om hvor store overflater er, må vi finne \textit{arealet}\index{areal} deres. Idéen bak begrepet areal er denne:\regv
+
+\st{Vi tenker oss et kvadrat med sidelengder 1. Dette kaller vi \\\textit{enerkvadradet}.
+	\fig{tri_10}
+	Så ser vi på overflaten vi ønsker å finne arealet til, og spør:\os
+	\begin{center}
+		''Hvor mange enerkvadrat er det plass til på denne overflata?''
+\end{center}}
+\subsubsection{\arrekt \label{arrekt}}
+La oss finne arealet til et rektangel som har grunnlinje 3 og høgde 2.
+\fig{tri11a}
+Vi kan da telle oss fram til at rektangelet har plass til 6 enerkvadrat:
+\[ \text{Arealet til rektangelet}=6 \]
+\fig{tri11}
+Ser vi tilbake til \hrs{Gonging}{seksjon}, legger vi merke til at
+\alg{
+	\text{Arealet til rektangelet} &= 3\cdot 2 \\
+	&= 6 
+}
+\newpage
+\reg[\arrekt \label{arfir}]{
+\vs
+	\[ \text{areal}=\text{grunnlinje}\cdot\text{høgde} \]
+	\fig{tri12}
+}
+\info{Bredde og lengde}{Ofte blir ordene \outl{bredde}\index{bredde} og \outl{lengde}\index{lengde} brukt om grunnlinja og høgda i et rektangel.}
+\eks[1]{
+	Finn arealet til rektangelet\footnotemark.
+	\fig{tri12b} \vsb \vspace{-5pt}
+	\sv \vs
+	\[ \text{Arealet til rektangelet} =4\cdot 2 =8 \]	
+}
+\eks[2]{ 
+	Finn arealet til kvadratet.
+	\fig{tri12c} \vsb \vspace{-5pt}
+	\sv \vs
+	\[ \text{Arealet til kvadratet} =3\cdot 3 =9 \]	
+}
+\footnotetext{\mer Lengdene vi bruker som eksempel i en figur vil ikke nødvendigvis samsvare med lengdene i en annen figur. En sidelengde lik 1 i én figur kan altså være kortere enn en sidelengde lik 1 i en annen figur.}
+\newpage
+\subsubsection{\artri \label{artri}}
+For trekanter er det tre forskjellige tilfeller vi må se på: \vsk
+
+\textit{1) Tilfellet der grunnlinja og høgda har et felles endepunkt} \os
+La oss finne arealet til en rettvinklet trekant med grunnlinje $ 5 $ og høgde $ 3 $.
+\fig{tri16}
+Vi kan nå lage et rektangel ved å ta en kopi av trekanten vår, og så legge langsidene til de to trekantene sammen:
+\fig{tri17}
+Av \rref{arfir} vet vi at arealet til rektangelet er $ {5\cdot 3} $. Arealet til én av trekantane må utgjøre halvparten av arealet til rektangelet, altså er
+\[ \text{Arealet til den blå trekanten} = \frac{5\cdot 3}{2} \]
+For den blå trekanten\footnote{Og selvsagt også den grønne.} er 
+\[\frac{5\cdot3}{2}= \frac{\text{grunnlinje}\cdot\text{høgde}}{2} \]
+\newpage
+\textit{2) Tilfellet der høgda ligger inni trekanten, men ikke har felles\\ endepunkt med grunnlinja} \os
+Trekanten under har grunnlinje 5 og høgde 4.
+\fig{tri20}
+Med denne trekanten (og høgda) som utgangspunkt, danner vi denne figuren:
+\fig{tri20a}
+Vi legger nå merke til at
+\begin{itemize}
+	\item arealet til den røde trekanten utgjør halve arealet til rektangelet som består av den røde og den gule trekanten.
+	\item arealet til den gule trekanten utgjør halve arealet til rektangelet som består av den gule og den grønne trekanten.
+\end{itemize}
+Summen av arealene til den gule og den røde trekanten utgjør altså halvparten av arealet til rektangelet som består av alle de fire fargede trekantene. Arealet til dette rektangelet er $ 5\cdot4 $, og da vår opprinnelige trekant (den blå) består av den røde og den oransje trekanten, har vi at
+\[ \text{Arealet til den blå trekanten}=\frac{5\cdot4}{2}=\frac{\text{grunnlinje}\cdot\text{høgde}}{2} \] 
+\newpage
+\textit{3) Tilfellet der høgda ligg utenfor trekanten} \os
+Trekanten under har grunnlinje 4 og høgde 3. 
+\fig{tri18}
+Med denne trekanten som utgangspunkt, danner vi et rektangel:
+\fig{tri18a}
+Vi gir nå arealene følgende navn:
+\alg{
+	\text{Arealet til rektangelet}= R \\	\text{Arealet til den blå trekanten} = B\\
+	\text{Arealet til den oransje trekanten} = O \\  \text{Arealet til den grønne trekanten} = G
+}
+Da har vi at
+\alg{
+	R&= 3\cdot10=30\vn
+	O&= \frac{3\cdot10}{2}=15\vn
+	G &= \frac{3\cdot 6}{2}=9
+}
+Videre er
+\algv{
+	B &=R-O-G \\
+	&=30-15-9\\
+	&=6
+}
+Legg nå merke til at vi kan skrive
+\[ 6=\frac{4\cdot3}{2} \]
+I den blå trekanten gjenkjenner vi dette som 
+\[ \frac{4\cdot3}{2}=\frac{\text{grunnlinje}\cdot\text{høgde}}{2} \]
+\newpage
+\textit{Alle tilfellene oppsummert}\os
+Ett av de tre tilfellene vi har studert vil alltid  gjelde for en valgt grunnlinje i en trekant, og alle tilfellene resulterer i det samme uttrykket.\regv
+
+\reg[Arealet til en trekant]{
+	\[ \text{Areal}=\frac{\text{grunnlinje}\cdot\text{høgde}}{2} \]
+\fig{triar00}
+}
+\eks[1]{
+Finn arealet til trekanten.
+\fig{geo16a} \vs
+\sv \vsb
+
+\algv{
+	\text{Arealet til trekanten}&=\frac{4\cdot 3}{2} \br&=6
+}
+}
+\newpage
+\eks[2]{
+Finn arealet til trekanten.
+\fig{geo16b} \vs
+\sv \vsb
+
+\algv{
+	\text{Arealet til trekanten}=\frac{6\cdot 5}{2}=15
+}
+}
+
+\eks[3]{
+Finn arealet til trekanten.
+\fig{geo16c} \vs
+\sv \vsb
+
+\algv{
+	\text{Arealet til trekanten}=\frac{7\cdot 3}{2}=\frac{21}{2}
+}
+}
+\section{Tredimensjonal geometri}
+Så langt har vi sett på \outl{todimensjonale} figurer som trekanter, fir-kanter, sirkler og lignende. Alle todimensjonale figurer kan tegnes inn i et koordinatsystem med to akser.
+\fig{3da}
+For å tegne \outl{tredimensjonale} figurer trengs derimot tre akser:
+\fig{3db}
+Mens et rektangel sies å ha en bredde og en høgde, kan vi si at boksen over har en bredde, en høgde \textsl{og} en lengde (dybde). \vsk
+
+Området som ''ligger utenpå'' en tredimensjonal figur kaller vi \outl{overflaten}. Overflaten til boksen over består av 6 rektangler. Mangekanter som er deler av en overflate kalles \outl{sideflater}.
+
+\reg[Tredimensjonale figurer]{
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{fprism}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Firkantet prisme}\\
+		Har to like og fire like rektangler som sideflater. Alle sideflatene som er i kontakt, står vinkelrette på hverandre.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{kube}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Kube}\\
+		Firkantet prisme med kvadrater som sideflater.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{tprism}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Trekantet prisme}\\
+		To av sideflatene er like trekanter som er parallelle. Har tre sideflater som er trekanter.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{fpyr}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Firkantet pyramide}\\
+		Har ett rektangel og fire trekanter\\som sideflater.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{tpyr}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Trekantet pyramide}\\
+		Har fire trekanter som sideflater.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{kjegle}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Kjegle}\\
+		En del av overflaten er en sirkel, den resterende delen er en sammenbrettet sektor.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+	\centering
+	\fig{kule}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Kule}\\
+		Alle punkt på overflaten har lik avstand til sentrum.
+	}
+}
+\newpage
+\info{Tips}{Det er ikke så lett å se for seg hva en \textsl{sammenbrettet sektor} er, men prøv dette: \vsk
+
+\textsl{Tegn en sektor på et ark. Klipp ut sektoren, og føy sammen de to kantene på sektoren. Da har du en kjegle uten bunn.}
+}
+\section{Volum}
+Når vi ønsker å si noe om hvor mye det er plass til inni en gjenstand, snakker vi om \outl{volumet} til den. Som et mål på volum tenker vi oss en kube med sidelengde 1.
+\fig{vol1}
+Ei slik kube kan vi kalle ''enerkuben''. Si vi har en firkantet prisme med bredde 3, lengde 4 og høgde 2.
+\fig{vol2}
+I denne er det plass til akkurat 24 enerkuber.
+\fig{vol2a}
+Dette kunne vi ha regnet slik:
+\[ 3\cdot 4\cdot 2=24\]
+\reg[Volumet til en firkantet prisme I]{
+	\fig{vol2c}
+	\[\text{volum}=\text{bredde}\cdot\text{lengde}\cdot\text{høgde} \]
+}
+\newpage
+\subsubsection{Grunnflate}
+For å regne ut volumet til de mest elementære formene vi har, er det lurt å bruke omgrepet \outl{grunnflate}\index{grunnflate}. Slik som for en grunnlinje\footnote{Se side \pageref{grunnlinje}.}, er det vårt valg av grunnflate som avgjør hva som er høgda. For prismen fra forrige side er det naturlig å velge den flaten som ligger horisontalt til å være grunnflata. For å indikere dette skriver man ofte bokstaven $ G $:
+\fig{vol2b}
+Grunnflaten har arealet $ 3\cdot4=12 $, mens høgda er 2. Volumet til hele prismen er grunnflaten sitt areal ganget med høgda:
+\alg{
+	V &= \colb{3\cdot 4} \cdot 2 \\
+	&= \colb{G}\cdot 2\\
+	&= 24
+}
+\reg[Volumet til en firkantet prisme II]{
+	\fig{vol2d}
+	\[ \text{volum}=G\cdot \text{høgde} \]
+}
+\info{Grunnflaten eller grunnflatearealet?}{
+	I teksten over har vi først kalt selve grunnflaten for $ G $, og så brukt $ G $ for \textsl{grunnflatearealet}. I denne boka er begrepet \textit{grunnflate} så sterkt knyttet til \textit{grunnflatearealet} at vi ikke skiller mellom disse to.
+}
+
+\section{Symmetri}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.19]{\figp{sym}}\;
+	\includegraphics[scale=0.16]{\figp{symb}}\;
+	\includegraphics[scale=0.16]{\figp{symc}}
+	\caption*{Bilder hentet fra \net{https://freesvg.org}{freesvg.org}.}
+\end{figure}
+Mange figurer kan deles inn i minst to deler hvor den éne delen bare er en forskjøvet, speilvendt eller rotert utgave av den andre. Dette kalles \outl{symmetri}\index{symmetri}. De tre kommende regelboksene definerer de tre variantene for symmetri, men merk dette: Symmetri blir som regel intuitivt forstått ved å studere figurer, men er omstendelig å beskrive med ord. Her vil det derfor, for mange, være en fordel å hoppe rett til eksemplene. \vsk
+
+\regdef[Translasjonssymmetri (parallellforskyvning)]{
+	En symmetri hvor minst to deler er forskjøvne utgaver av hverandre kalles en \outl{translasjonssymmetri}. \vsk
+	
+	Når en form forskyves, blir hvert punkt på formen flyttet langs den samme \vs \text{vektoren}\footnote{En vektor er et linjestykke med retning.}.
+}
+\eks[1]{
+	Figuren under viser en translasjonssymmetri som består av to sommerfugler.
+	\begin{figure}
+		\centering
+		\subfloat{\includegraphics[scale=0.2]{\figp{btfly0}}}\quad
+		\subfloat{\includegraphics[scale=0.2]{\figp{btfly0}}}
+		\caption*{Bilde hentet fra \net{https://freesvg.org}{freesvg.org}.}
+	\end{figure}
+}
+\newpage
+\eks[2]{
+	Under vises $ \triangle ABC $ og en blå vektor.
+	\fig{trans1a}
+	Under vises $ \triangle ABC $ forskjøvet med den blå vektoren. 
+	\fig{trans1}
+}
+\reg[Speiling]{En symmetri hvor minst to deler er vendte utgaver av hverandre kalles en \outl{speilingssymmetri} og har minst én \outl{symmetrilinje} (\outl{symmetriakse}).\vsk
+	
+	Når et punkt speiles, blir det forskjøvet vinkelrett på symmetrilinja, fram til det nye og det opprinnelige punktet har samme avstand til symmetrilinja.
+} 
+\newpage
+\eks[1]{
+	Sommerfuglen er en speilsymmetri, med den røde linja som symmetrilinje.
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.3]{\figp{btfly}}
+	\end{figure}
+}
+\eks[2]{
+	Den røde linja og den blå linja er begge symmetrilinjer til det grønne rektangelet.
+	\fig{sym2}
+}
+\eks[3]{
+	Under vises en form laget av punktene $ A, B, C, D, E $ og $ F $, og denne formen speilet om den blå linja.
+	\fig{sym3}
+}
+\reg[Rotasjonssymmetri]{
+	En symmetri hvor minst to deler er en rotert utgave av hverandre kalles en \outl{rotasjonssymmetri} og har alltid et tilhørende \outl{rotasjonspunkt} og en \outl{rotasjonsvinkel}. \vsk
+	
+	Når et punkt roteres vil det nye og det opprinnelige punktet
+	\begin{itemize}
+		\item ligge langs den samme sirkelbuen, som har sentrum i rotasjonspunktet. 
+		\item med rotasjonspunktet som toppunkt danne rotasjonsvinkelen.
+	\end{itemize} 
+	Hvis rotasjonsvinkelen er et positivt tall, vil det nye punktet forflyttes langs sirkelbuen \textsl{mot} klokka. Hvis rotasjonsvinkelen er et negativt tall, vil det nye punktet forflyttes langs sirkelbuen \textsl{med} klokka.
+}
+\eks[1]{
+	Mønsteret under er rotasjonssymmetrisk. Rotasjonssenteret er i midten av figuren og rotasjonsvinkelen er $ 120^\circ $
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.2]{\figp{rot0}}
+		\caption*{Bilde hentet fra \net{https://freesvg.org}{freesvg.org}.}
+	\end{figure}
+}
+\newpage
+\eks[2]{
+	Figuren under viser $ \triangle ABC $ rotert $ 80^\circ $ om rotasjonspunktet $ P $.
+	\fig{rot1}
+	Da er
+	\[ PA='PA \quad,\quad PB=PB'\quad,\quad PC=PC' \]
+	og
+	\[ \angle APA'=\angle BPB'=\angle CPC'=80^\circ \]
+} \vsk
+
+\spr{
+	En form som er en forskjøvet, speilvendt eller rotert utgave av en annen form, kalles en \outl{kongruensavbilding}.
+}
+
+\end{document}
+

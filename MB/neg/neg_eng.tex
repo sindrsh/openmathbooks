@@ -1,0 +1,247 @@
+\input{../doc}
+\input{../preamb_eng}
+
+\begin{document}
+
+\section{\negintro}
+Earlier we have seen that e.g. 5 on a number line is placed 5 units to the right of 0. 
+\fig{neg1}
+But what if we move in the other direction, that is to the left? The question is answered by introducing \textit{negative numbers}\index{number!negative}\index{number!positive}.\regv
+
+\reg[Positive and negative numbers]{
+On a number line, the following applies:
+\begin{itemize}
+	\item Numbers placed to \textsl{the right} of 0 are positive numbers.
+	\item Numbers placed to \textsl{the left} of 0 are negative numbers.
+\end{itemize}
+\fig{neg2_eng}
+}\vsk 
+However, relying on the number line every time negative numbers are involved would be very inconvenient, therefore we use a symbol to indicate negative numbers. This is \sym{$ - $}, simply the same as the symbol of subtraction. From this it follows that $ 5 $ is a positive number, while $ -5 $ is a negative number. On the number line,
+\begin{itemize}
+	\item 5 is placed 5 units to \textsl{the right} of 0.
+	\item $ -5 $ is placed 5 units to \textsl{the left} of 0.
+\end{itemize}
+\fig{neg3}
+Hence, the big difference between $ 5 $ and $ -5 $ is on which side of 0 the numbers are placed. Since $ 5 $ and $ -5 $ have the same distance from 0, we say that $ 5 $ and $ -5 $ have equal \textit{length}\index{length}. \regv
+
+\reg[Length (absolute value/modulus/magnitude)\index{magnitude}\index{number!length of}\index{absolute value}]{
+The length of a number is expressed by the symbol \sym{| |}.\vsk	
+	
+The length of a positive number equals the value of the number.\vsk
+	
+The length of a negative number equals the value of the positive number with corresponding digits.
+} 
+\eks[1]{ \vs \vs
+\[ |27|=27 \]
+}
+\eks[2]{ \vs \vs
+\[ |-27|=27 \]
+}
+\info{Sign}{
+\textit{Sign}\index{sign} is a collective name of \sym{$ + $} and \sym{$ - $}. \sym{$ + $} is the sign of $ 5 $ and \sym{$ - $} is the sign of $ -5 $.
+}
+\newpage
+\section{\negrekn \label{rekmneg}}
+The introduction of negative numbers brings new aspects to the elementary operations. When adding, subtracting, multiplying or dividing by negative numbers, we'll frequently, for clarity, enclose negative numbers by parentheses. Then we'll write e.g. $ -4 $ as $ (-4) $. 
+
+\subsection*{Addition}
+When adding in \refsec{Addisjon} \sym{$ + $} implied moving to \textsl{the right}. Negative numbers bring an alternation of the interpretation of \sym{$ + $}\,: \regv
+\st{\begin{center}
+		\begin{tabular}{cl}
+			$ + $&''As long and in \textsl{the same} direction as''	
+		\end{tabular}
+\end{center}}
+Let's study the calculation
+\[ 7+(-4) \]
+Our alternated definition of \sym{$ + $} implies that
+\[ 7+(-4)=\text{''}7 \text{ and as long and in the \textsl{same} direction as } (-4)\text{''} \]
+$ (-4) $ has length 4 and direction to \textsl{the left}. Hence, the calculation tells us to start at 7 and then move the length of 4 to \textsl{the left}.
+\[ 7+(-4)=3 \]
+\fig{neg6}
+
+\reg[Addition involving negative numbers]{
+Adding a negative number is the same as subtracting the number of equal magnitude.
+}
+\eks[1]{ \vs
+	\[ 4+(-3)=4-3=1 \]
+}
+\eks[2]{ \vs
+	\[ -8+(-3)=-8-3=-11 \]
+}
+\info{Notice}{
+\rref{adkom} declares that addition is commutative. This also applies after introducing negative numbers, for example is	
+\[ 7+(-3)=4=-3+7 \]	
+}
+
+\subsection*{Subtraction}
+In \refsec{Subtraksjon}, \sym{$ - $} implied moving to \textsl{the left}. The interpretation of \sym{$ - $} also needs an alternation when working with negative numbers:\regv
+
+\st{\begin{center}
+	\begin{tabular}{cl}
+		$ - $&''As long and in the \textsl{opposite} direction as''	
+	\end{tabular}
+\end{center}}
+Let's study the calculation
+\[ 2-(-6) \]
+Our alternated definition of \sym{$-$} implies that
+\[ 2-(-6)=\text{''}2 \text{ and as long and in the \textsl{opposite} direction as } (-6)\text{''} \]
+$ -6 $ have length 6 and direction to \textsl{the left}. When moving an equal length, but in the \textsl{opposite} direction, we have to move the length of 6 to \textsl{the right}\footnote{Once again, recall that the red colored arrow indicates starting at the arrowhead, then moving to the other end.}. This is equivalent to adding 6:
+\[ 2-(-6)=2+6=8 \] \vs
+\fig{neg7}
+\reg[Subtraction involving negative numbers]{
+Subtracting a negative number is the same as adding the \\positive number of equal magnitude.
+}
+\eks[1]{ \vs
+\[ 11-(-9)=11+9=20 \]
+}
+\eks[2]{ \vs
+	\[ -3-(-7)=-3+7=4 \]
+}
+\begin{comment}
+	\info{Notice}{
+	Subtraction can be interpreted as addition of negative numbers. For expample is $ {7-3=7+(-3)} $ and $ {2-7=2+(-7)} $.
+}
+\end{comment}
+
+\subsection*{Multiplication}
+In \refsec{Gonging}, multiplication by positive integers were introduced as repeated addition. By our alternated interpretations of addition and subtraction we can now also alternate the interpretation of multiplication: \regv
+
+\reg[Multiplication by positive and negative integers\label{gongneg}]{ \vs
+\begin{itemize}
+		\item Multiplication by a positive integer corresponds to \\[-4pt] repeated addition.
+		\item Multiplication by a negative integer corresponds to\\[-4pt] repeated subtraction.
+\end{itemize}}
+\eks[1]{ \vs \vs \label{negeksempel}
+\alg{
+	2\cdot3 &=\text{''As long and in the \textsl{same} direction as 2, 3 times''}\\
+	&=2+2+2 \\
+	&=6
+}
+}
+\eks[2]{ \vs \vs
+\alg{
+	(-2)\cdot3&=\text{''As long and in the \textsl{same} direction as }(-2) \text{, 3 times''} \\[-12pt]
+	&=-2-2-2\\
+	&=-6
+}
+}
+\eks[3]{ \vs \vs
+\alg{
+	2\cdot(-3)&=\text{''As long and in the \textsl{opposite} direction as 2, 3 times''} \\[-12pt]
+	&=-2-2-2 \\
+	&=-6
+}
+}
+\newpage
+\eks[4]{ \vs \vs
+	\alg{
+		(-3)\cdot(-4)&=\text{\small ''As long and in the \textsl{opposite} direction as $ -3 $, 4 times''}\\[-12pt] 
+		&=3+3+3+3\\
+		&=12
+	}	 	 
+}
+\info{Multiplication is commutative}{
+\textsl{Example 2} and \textsl{Example 3} on page \pageref{negeksempel} illustrates that \rref{gangkom} also implies after introducing negative numbers:
+\[ (-2)\cdot3=3\cdot(-2) \]
+}  \vsk
+It would be laborious to calculate multiplication by repeated addition/subtraction every time a negative number were involved, however, as a direct consequence of \rref{gongneg} we can make the two following rules: \regv
+
+\reg[\gangmnegto \label{gangmnegto}]{
+The product of a negative number and a positive number is a negative number. \vsk
+
+The magnitude of the factors multiplied together yields the magnitude of the product.
+}
+\eks[1]{
+Calculate $ (-7)\cdot8 $
+
+\sv
+Since $ 7\cdot8=56 $, we have $ (-7)\cdot8=-56 $
+}
+\eks[2]{
+	Calculate $ 3\cdot(-9) $.
+	
+	\sv
+	Since $ 3\cdot9=27 $, we have $ 3\cdot(-9)=-27 $
+}
+\vsk
+
+\reg[\gangmnegtre \label{gangmnegtre}]{
+The product of two negative numbers is a positive number. \vsk
+
+The magnitude of the factors multiplied together yields the value of the product.
+} 
+\eks[1]{ \vsb
+\[ (-5)\cdot(-10)=5\cdot10=50 \]
+}
+\eks[2]{
+\vsb
+\[ (-2)\cdot(-8)=2\cdot8=16 \]
+}
+\subsection*{Division}
+From the definition of division (see \refsec{Divisjon}), combined with what we now know about multiplication involving negative numbers, it follows that\regv
+
+\st{\begin{center}
+		\algv{
+			-18:6=\text{''The number which yields $ -18 $ when multiplied by 6  ''}
+		}
+		$ 6\cdot(-3)=-18 $, hence $ -18:6=-3 $
+\end{center}} \vsk
+\st{
+\begin{center}
+	\algv{
+		42:(-7)=\text{''The number which yields $ 42 $ when multiplied by $ -7 $''}
+	}
+	$ (-7)\cdot(-8)=42 $, hence $ 42:(-7)=-8 $
+\end{center}
+}\vsk
+\st{
+\begin{center}
+	\algv{
+		-45:(-5)&=\text{''The number which yields $ -45 $ when multiplied}\\
+		&\phantom{=''}\text{by $ -5 $''}
+	}
+	$ (-5)\cdot9=-45 $, hence $ -45:(-5)=9 $
+\end{center}
+ }\vsk
+\reg[Division involving negative numbers]{
+Division between a positive number and a negative number yields a negative number.\vsk
+
+Division between two negative numbers yields a positive\\ number. \vsk
+
+The magnitude of the dividend divided by the magnitude of the divisor yields the magnitude of the quotient. 
+}
+\eks[1]{ \vsb
+	\[ -24:6=-4 \]
+}
+\eks[2]{ \vsb
+	\[ 24:(-2)=-12 \]
+}
+\eks[3]{ \vsb
+	\[ -24:(-3)=8 \]
+}
+\eks[4]{ \vs
+\[ \frac{2}{-3}=-\frac{2}{3} \]
+}
+\eks[5]{ \vs
+	\[ \frac{-10}{7}=-\frac{10}{7} \]
+}
+\newpage
+
+\newpage
+\section{\negmeng \label{negmeng}}
+\textit{Notice: This view of negative numbers will first come into use in \refsec{likloysfire}, a section a lot of readers can skip without loss of understanding.}\vsk
+
+So far, we have studied negative number by the aid of number lines. Studying negative numbers as amounts is at first difficult because negative amounts makes no sense! To make an interpretation of negative numbers through the perspective of amounts, we'll use what we shall call the \textit{weight principle}. Then we look upon the numbers as amounts of forces. The positive numbers are amounts of forces acting downwards while the negative numbers are amounts of forces working upwards\footnote{From reality one can look upon the positive and the negative numbers as balloons filled with air and helium, respectively. Balloons filled with air acts with a force downwards (they fall), while balloons filled with helium acts with a force upwards (they rise).}. In this way, the results of calculations involving positive and negative numbers can be looked upon as the result of weighing the amounts. Hence, a positive number and a negative number of equal magnitude will cancel each other.
+\vsk
+
+\reg[Negative numbers as amounts]{
+Negative numbers will be illustrated as a light blue amount:
+\fig{negm1}
+}
+\eks[]{
+\[ 1+(-1)=0 \]
+\fig{negm2}
+}
+
+\end{document}
+

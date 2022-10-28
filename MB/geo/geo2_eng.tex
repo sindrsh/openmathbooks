@@ -1,0 +1,578 @@
+\input{../doc}
+\input{../preamb_eng}
+
+\begin{document}
+\section{\geoform}
+
+A \textit{formula}\index{formula} is an equation where (usually) one variable is isolated on one side of the equal sign. In \refsec{Areal} we have already looked at the formulas for the area of rectangles and triangles, but there using words instead of symbols. Here we shall reproduce these two formulas, followed by other classical formulas for area and perimeter.\regv
+
+\reg[\arrekt\; (\ref{arrekt})]{ \index{areal!of a rectangle}
+The area $ A $ of a rectangle with base $ g $ and height $ h $ is
+	\[A = g h \]
+	\fig{tri12_alg}
+}
+\eks[1]{
+	Find the area of the rectangle.
+	\fig{tri12ba} \vsb
+	\sv
+	The area $ A $ of the rectangle is 
+	\[ A =b\cdot 2 =2b \]	
+}
+\eks[2]{
+	Find the area of the square.
+	\fig{tri12ca} \vsb
+	\sv
+	The area $ A $ of the square is 
+	\[ A =a\cdot a =a^2 \]	
+}
+
+\reg[\artri\;(\ref{artri})]{ \index{of a triangle}
+	The area $ A $ of a triangle with base $ g $ and height $ h $ is
+	\[ A = \frac{g h}{2} \]
+\fig{triar0}
+}
+\eks{
+Which one of the triangles have the largest area? \vs
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[]{\asym{triar0b}}}\qquad
+	\subfloat{\includegraphics[]{\asym{triar0a}}}
+	\qquad
+	\subfloat{\includegraphics[]{\asym{triar0c}}}
+\end{figure}
+\sv
+
+Let $ A_1 $, $ A_2 $ and $ A_3 $ donate the areas of, respectively, the triangle to the left, in the middle and to the right. Then
+\alg{
+A_1 &=\frac{4\cdot3}{2}=6 \vn
+A_2 &=\frac{2\cdot 3}{2}=3\vn
+A_3&=\frac{2\cdot5}{2}=5
+}	
+Hence, it is the triangle to the left which has the largest area.
+}
+
+\reg[\arpar \label{arpar}]{\index{of a parallelogram}
+	The area $ A $ of a parallelogram with base $ g $ and height $ h $ is
+	\[ A = g h  \]
+	\fig{tri21}
+}
+\eks{
+Find the area of the parallelogram
+\fig{tri21b} \vsb
+\sv
+The area $ A $ of the parallelogram is
+\alg{
+A&=5\cdot 2=10
+}		
+}
+\fork{\ref{arpar} \arpar}{
+	From a parallelogram we can always, by drawing one of its diagonals, form two triangles which both have base $ g $ and height $ h $.
+	\fig{tri21c}
+	Hence, both triangles have an area equal to $ \frac{g h}{2} $.
+	Therefore, the area $ A $ of the parallelogram is 
+	\alg{
+		A&=\frac{g h}{2}+\frac{g h}{2} \\
+		&=g\cdot h	
+	}	
+}
+\reg[\artrap \label{artrap}]{\index{areal!of a trapezoid}
+	The area $ A $ of a trapezoid with parallel sides $ a $ and $ b $ and height $ h $ is
+	\[ A = \frac{h(a+b)}{2}\]
+	\fig{tri21a}
+}
+\eks{
+Find the area of the trapezoid.
+\fig{tri21e} \vsb
+\sv 
+The area $ A $ of the trapezoid is
+\alg{
+A&=\frac{3(6+4)}{2}\br
+&=\frac{3\cdot10}{2}\br
+&=15
+}	
+}
+\info{\merk}{
+In respect of a base and a height, the area formulas for a parallelogram and a rectangle are identical. Applying \rref{artrap} on a parallelogram also results in an expression equal to $ gh $. This follows from the fact that a parallelogram is just a special case of a trapezoid (and a rectangle is just a special case of a parallelogram).
+}
+\newpage
+\fork{\ref{artrap} \artrap}{
+	In a trapezoid, we can, by drawing one of the diagonals, create two triangles:
+	\fig{tri21d}
+	In the above figure we have
+	\alg{
+		\text{The area of the blue triangle}&= \frac{a h}{2} \br
+		\text{The area of the green triangle}&= \frac{b  h}{2}
+	}
+	Therefore, the area $ A $ of the trapezoid is
+	\alg{
+		A&=\frac{ah}{2}+\frac{bh}{2}\br &=\frac{h(a+b)}{2} 	
+	}	
+}
+\newpage
+\reg[\omkrsirk \label{omkrsirk}]{\index{perimeter!of a circle}
+	The perimeter (the circumference)\index{circumference} $ O $ of a circle with radius $ r $ is
+	\[ O = 2\pi r \]
+	\fig{tri22}
+	$ \pi = 3.141592653589793...
+	$.
+}
+\eks[1]{
+	Find the circumference of the circle.
+	\fig{tri22b}
+	\sv 
+	The circumference $ O $ is 
+	\algv{
+		O &= 2 \pi \cdot 3 \\
+		&= 6\pi 
+	}
+} \vsk
+
+\reg[\arsirk \label{arsirk}]{ \index{areal!of a circle}
+	The area $ A $ of a circle with radius $ r $ is
+	\[ A = \pi r^2 \]
+	\fig{tri22a}
+}
+\eks{
+	Find the area of the circle.
+	\fig{tri22c} \vsb
+	\sv
+	The area $ A $ of the circle is 
+	\[ A=\pi\cdot 5^2 =25\pi \]
+}
+\newpage
+\fork{\ref{arsirk} \arsirk}{
+	In the below figure, we have divided a circle into 4, 10 and 50 (equal-sized) sectors, and placed them consecutively.
+	\fig{tri19}
+	\fig{tri19a}
+	\fig{tri19b}
+	In each case, the arcs make up the circumference of the circle. If the circle has radius $ r $, the sum of the arcs equals $ 2\pi r $. And when there are equally many sectors turned upwards as downwards, the total length of the arcs equals $ \pi r $ on both the bottom and the top. \vsk
+	
+	The more sectors the circle is divided into, the more the composition takes the form of a rectangle (in the figure below there are 100 sectors). The base $ g $ of this ''rectangle'' approximately equals  $ \pi r $, while the height $ h $ approximately equals $ r $.
+	\fig{tri19c}
+	Hence, the area $ A $ of the ''rectangle'', that is, the circle, is
+	\[ A\approx g h \approx \pi r\cdot r = \pi r^2 \]
+}
+\reg[\pyt \label{pyt}]{
+	In a right triangle, the area of the square formed by the hypotenuse equals the sum of the areas of the squares formed by the legs.\regv
+	
+	\parbox[l][][l]{0.7\linewidth}{\[ a^2+b^2=c^2 \]
+	}
+	\parbox[r]{0.2\linewidth}{\includegraphics[]{\asym{tri26g}}} \vs
+	\fig{tri26j}
+}
+\eks[1]{
+	Find the length of $ c $.
+	\fig{tri26h} \vs \vs
+	\sv
+	We know that
+	\[ c^2=a^2+b^2 \]
+	where $ a $ and $ b $ are the legs of the right triangle. Therefore
+	\alg{
+		c^2 &= 4^2 + 3^2 \\
+		&= 16+9 \\
+		&=25
+	}
+	Hence, 
+	\[ c=5\qquad\vee\qquad c=-5 \]
+	Since $ c $ is a length, $ c=5 $.
+}
+\newpage
+\fork{\ref{pyt} \pyt}{ \label{pytforklaringintro}
+	The below figure shows equal-sized squares divided into different shapes.
+	\fig{tri26d}
+	We observe the following:
+	\begin{enumerate}
+		\item The area of the red square is $ a^2 $, the area of the purple square is $ b^2 $ and the area of the blue square is $ c^2 $.
+		\item The area of an orange square is $ ab $ and the area of a green triangle is $ \frac{ab}{2} $.
+		\item If we remove the two orange rectangles and the four green triangles, the remaining area to the left equals the remaining area to the right (by remark 2).
+		\fig{tri26e}
+		Hence
+		\begin{equation}\label{pytforkl}
+		a^2+b^2=c^2
+		\end{equation}
+	\end{enumerate}
+	Given a triangle with sides of length $ a, b $ and $ c $, of which $ c $ is the longest.
+	As long as the triangle is right, we can always form two squares with sides of length $ {a+b} $, as in the initial figure. Therefore, \eqref{pytforkl} is valid for alle right triangles.
+}
+\newpage
+	
+\section{\kongogsim}
+\reg[\konsttre \label{konsttre}]{
+A triangle $ \triangle ABC $, as shown in the below figure, can be uniquely constructed if one of the following terms are satisfied:
+\prbxl{0.6}{\begin{enumerate}[label=\roman*)]
+		\item $ c $, $ \angle A $ and $ \angle B $ are known.
+		\item $ a $, $ b $ and $ c $ are known.
+		\item $ b $, $ c $ and $ \angle A $ are known.
+\end{enumerate}}
+\parbox[r][][l]{0.3\linewidth}{
+\fig{geo13}
+}
+}
+\reg[\kongtre \label{kongtre}]{ \index{triangle!congruent}
+Two triangles of equal shape and size are congruent.
+\fig{geo14}
+The congruence in the above figure is written 
+\[ \triangle ABC\cong\triangle DEF \]
+}
+\reg[Similar triangles \index{triangle!similar}]{Similar triangles constitute three pairs of equal angles.
+\fig{geo8}
+The similarity in the above figure is written
+\[ \triangle ABC\sim \triangle DEF \]
+} \vsk
+\newpage
+\textbf{Corresponding sides}\os
+When studying similar triangles, \textit{corresponding}\index{side!corresponding} sides plays an important role. Corresponding sides are sides in similar triangles adjacent to the same angle.
+\fig{tri1}
+Regarding the similar triangles $ \triangle ABC $ and $ \triangle DEF $ we have
+\begin{multicols}{2}
+	\quad In $ \triangle ABC $ is
+	\begin{itemize}
+		\item $ BC $ adjacent to $u$.
+		\item $ AC $ adjacent to $ v$
+		\item $ AB$ adjacent to $ w $.
+	\end{itemize}
+	\quad I $ \triangle DEF $ is
+	
+	\begin{itemize}
+		\item $ FE $ adjacent to $u$.
+		\item $ FD $ adjacent to $ v$
+		\item $ ED$ adjacent to $ w $.
+	\end{itemize}
+\end{multicols}
+This means that these are corresponding sides:
+\begin{itemize}
+	\item $ BC $ and $ FE $\\
+	\item $ AC $ and $ FD $ \\
+	\item $ AB $ and $ ED $
+\end{itemize}
+
+\reg[\forform \label{forform}]{
+	If two triangles are similar, the ratios of corresponding sides are equal\footnote{Here, we take it for granted that corresponding sides are apparent from the figure.}.
+	\[ \frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} \]
+\fig{geo8b}
+}
+\info{Notice}{
+	From \rref{forform} it follows that
+	\[ \frac{AB}{BC}=\frac{DE}{EF}\quad,\quad \frac{AB}{AC}=\frac{DE}{DF}\quad,\quad\frac{BC}{AC}=\frac{EF}{DF} \]
+} \vsk \vsk
+
+\eks[]{
+	The triangles are similar. Find the length of $EF $.
+	\begin{figure}
+		\centering
+		\includegraphics[scale=1]{\asym{tri3a}}\quad
+		\includegraphics[scale=1]{\asym{tri3b}}
+	\end{figure}
+	\sv
+	We observe that $ AB $ corresponds to $ DE $, $ BC $ to $ EF $ and $ AC $ to $ DF $. Therefore
+	\alg{
+		\frac{DE}{AB} &= \frac{EF}{BC} \br
+		\frac{10}{5}&= \frac{EF}{3} \br
+		2\cdot3&=\frac{EF}{\cancel{3}}\cdot\cancel{3}\\
+		6 &= EF
+	}
+}
+
+\reg[\vilkform \label{vilkform}]{
+Two triangles $ \triangle ABC $ and $ \triangle DEF $ are similar if one of these terms are satisfied:
+\begin{enumerate}[label=\roman*)]
+	\item They constitute two pairs of equal angles.
+	\item $ \displaystyle \frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} $
+	\item $ \dfrac{AB}{DE}=\dfrac{AC}{DF} $ and $ \angle A=\angle D $.
+\end{enumerate}
+
+\fig{geo8b}
+}
+\eks[1]{
+$ \angle ACB =90^\circ $. 
+Show that $ \triangle ABC \sim ACD $.
+\fig{geo15} \vs
+\sv
+$ \triangle ABC $ and $ \triangle ACD $ are both right and they have $ \angle DAC $ in common. Hence, the triangles satisfy term \textsl{i} from \rref{vilkform}, and therefore they are similar.\vsk
+
+\mer Similarly it can be shown that $ \triangle ABC \sim CBD$.
+}
+\newpage
+\eks[2]{
+Examine whether the triangles are similar.
+\fig{geo15a} \vs
+\sv
+We have
+\alg{
+\frac{AC}{FD}=\frac{18}{12}=\frac{3}{2}\quad,\quad\frac{BC}{FE}=\frac{9}{6}=\frac{3}{2}\quad,\quad\frac{AB}{DE}=\frac{12}{10}=\frac{6}{5}
+}
+\alg{
+\frac{AC}{IG}=\frac{18}{12}=\frac{3}{2}\quad,\quad\frac{BC}{IH}=\frac{9}{6}=\frac{3}{2}\quad,\quad \frac{AC}{IG}=\frac{18}{12}=\frac{3}{2}
+}
+Hence, $ \triangle ABC $ and $ \triangle GHI $ satisfy term \textsl{ii} from \rref{vilkform}, and therefore they are similar. (Hence, $\triangle GHI  $ and $ \triangle FED $ are not similar.)
+}
+\eks[3]{
+Examine whether the triangles are similar.	\vs
+\fig{geo15b}
+\sv
+We have $ {\angle BAC=\angle EDF} $. Also,
+\[ \frac{ED}{AB}=\frac{8}{4}=2\quad,\quad \frac{FD}{AC}=\frac{14}{7}=2 \]
+Hence, term \textsl{iii} from \rref{vilkform} is satisfied, and therefore the triangles are similar.
+}
+
+\newpage
+\section{\geofork}
+\fork{\ref{omkrsirk} \omkrsirk}
+{
+\textit{Here we shall use \textit{regular} polygons along the path to our wanted result. In regular polygons, all sides are of equal length. Since all polygons here to be mentioned are regular, we'll mention them simply as polygons.}\vsk
+
+We'll start off by examining some approximations of the circumference $ O_1 $ of a circle with radius 1. 
+\fig{geo9l} \vsk
+
+\textbf{Upper and lower boundary}\os
+When seeking a value, it is a good habit to conclude how large or small you \textsl{expect} it to be. With this target, we enclose the circle by a square with sides of length 2:
+\fig{geo9c}
+Clearly, the circumference of the circle is smaller than the perimeter of the square, therefore
+\alg{
+	O_1&<2\cdot4  \\
+	&< 8
+}
+Now we inscribe a 6-gon (hexagon). The hexagon can be divided into 6 equilateral triangles with, necessarily, sides of length 1. The circumference of the circle must be larger than the perimeter of the hexagon, so
+\alg{
+	O_1&>6\cdot1 \\
+	&> 6
+}
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[]{\asym{geo9}}}\qquad
+	\subfloat{\includegraphics[]{\asym{geo9d2}}}
+\end{figure}
+Now advancing to a more sophisticated hunt for the circumference, we know that we seek a value between 6 and 8. 
+\vsk
+
+\textbf{Increasingly better approximations}\os
+The idea of inscribing polygons carries on. We let the below figures work as a sufficient prove of the fact that the more sides of the polygon, the better estimate its perimeter makes of the circumference of the circle.
+\begin{figure}
+	\centering
+	\subfloat[6-gon]{\includegraphics[]{\asym{geo9}}}\qquad\qquad
+	\subfloat[12-gon]{\includegraphics[]{\asym{geo9a}}}	
+\end{figure}
+Since a 6-gon has sides of length 1, it is tempting to examine if this can help us find the side lengths of other polygons. By inscribing both a 6-gon and a 12-gon (and drawing a triangle) we have a figure like this:
+\begin{figure}
+	\centering
+	\subfloat[A 6-gon and a 12-gon together with a triangle formed by the circle center and one side of the 12-gon.]{\includegraphics[]{\asym{geo9g}}}\qquad\qquad
+	\subfloat[The triangle from figure \textsl{(a)}.]{\includegraphics[]{\asym{geo9h}}}	
+\end{figure}
+Let $ s_{12} $ and $ s_6 $ denote the side lengths of the 12-gon and the 6-gon, respectively. Moreover, we observe that both $ A $ and $ C $ lies on the circular arc and that both $ \triangle ABC $ and $ \triangle BSC $ are right-angled (explain to yourself why!). We have
+\alg{
+	SC &= 1 \\
+	BC &= \frac{s_6}{2} \\
+	SB &= \sqrt{SC^2-BC^2} \\
+	BA &= 1-SB \\
+	AC &= s_{12}\\
+	s_{12}^2 &= BA^2+BC^2
+}
+To find $ s_{12} $, we need to know $ BA $, and to find $ BA $ we need to know $ SB $. Hence, we start off finding $ SB $. Since ${ SC=1} $ and $ {BC=\frac{s_6}{2}} $,
+\algv{
+	SB &=\sqrt{1-\left( \frac{s_6}{2}\right)^2} \\
+	&= \sqrt{1-\frac{s_6^2}{4}}
+}
+Now we focus on finding $ s_{12} $:
+\alg{
+	s_{12}^2 &= \left(1-SB\right)^2 + \left(\frac{s_6}{2}\right)^2 \\
+	&= 1^2 - 2SB + SB^2 + \frac{s_6^2}{4}
+}
+At first, it looks like the expression to the right cannot be simplified, but a small operation can change this. If $ -1 $ was a term present, we could have combined $ -1 $ and $ \frac{s_6^2}{4} $ to become $ -SB^2 $. We obtain $ -1 $ by both adding and subtracting it on the right side of the equation:
+\alg{
+	s_{12}^2&= 1 - 2SB + SB^2 + \frac{s_6^2}{4}-1+1\\
+	&= 2-2SB+SB^2-\left(1-\frac{s_6^2}{4}\right) \\
+	&= 2-2SB+SB^2-SB^2\\
+	&= 2-2SB\\
+	&= 2-2\sqrt{1-\frac{s_6^2}{4}} \\
+	&= 2-\sqrt{4}\,\sqrt{1-\frac{s_6^2}{4}} \\
+	&= 2- \sqrt{4-s_6^2}
+}
+Hence
+\[ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} \]
+Even though we have derived a relation between the side lengths $ s_{12} $ and $ s_6 $, this relation is valid for all pairs of side lengths where one is the side length of a polygon with twice as many sides as the other. Now let $ s_n $ and $ s_{2n} $, respectively, denote the side lengths of a polygon and a polygon with twice as many sides. Then
+\begin{align}
+s_{2n} = \sqrt{2- \sqrt{4-s_n^2}} \label{s2n}
+\end{align}
+The perimeter of a polygon inscribed in the circle is an estimate of the circumference. Applying \eqref{s2n}, we can successively find the side length of a polygon with twice as many sides as the previous. The below table shows the side length and the associated estimate of the circumference up to a 96-gon:
+
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|l}
+		\textit{Side length formula}&\textit{Side length} & \textit{Estimate, circumference} \\
+		\hline
+		& $s_6= 1 $ & $ \;\,6\cdot s_6\;\,=6 $ \\
+		$ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} $ & $ s_{12}=0.517... $ & 		 $ 12\cdot s_{12}=6.211... $ \\
+		$ s_{24} = \sqrt{2- \sqrt{4-s_{12}^2}} $ & $ s_{24}=0.261... $ & 		 $ 24\cdot s_{24}=6.265... $ \\
+		$ s_{48} = \sqrt{2- \sqrt{4-s_{24}^2}} $ & $ s_{48}=0.130... $ & 		 $ 48\cdot s_{48}=6.278... $ \\		 
+		$ s_{96} = \sqrt{2- \sqrt{4-s_{48}^2}} $ & $ s_{96}=0.065... $ & 		 $ 96\cdot s_{96}=6.282... $ \\		 		 
+	\end{tabular}
+\end{center}
+\begin{figure}
+	\centering
+	\subfloat[6-gon]{\includegraphics[scale=0.75]{\asym{geo9}}}\quad
+	\subfloat[12-gon]{\includegraphics[scale=0.75]{\asym{geo9a}}}\quad	
+	\subfloat[24-gon]{\includegraphics[scale=0.75]{\asym{geo9i}}}\quad	\\
+	\subfloat[48-gon]{\includegraphics[scale=0.75]{\asym{geo9j}}}\quad	
+	\subfloat[96-gon]{\includegraphics[scale=0.75]{\asym{geo9k}}}		
+\end{figure}
+In fact, the mathematician \net{https://en.wikipedia.org/wiki/Archimedes}{Archimedes} reached as far as the above calculation approximately 250 b.c!\vsk
+
+A computer has no problems performing calculations\footnote{For those interested in computer programming, the iteration algorithm must be alternated in order to avoid instabilities when the number of sides are large.} on a polygon with extremely    many sides. Calculating the perimeter of a 201\,326\,592-gong yields
+\[ \text{Circumference of a circle with radius 1}=6.283185307179586... \]
+(With the aid of more advanced mathematics it can be proved that the circumference of a circle with radius 1 is an irrational number, but that the digits shown above are correct, thereby the equal sign.) \vsk
+\newpage
+\textbf{The formula and $\bm \pi $} \os
+We shall now derive the famous formula for the circumference of any circle. Here as well, we take it for granted that the perimeter of an inscribed polygon yields an estimate of the circumference which gets more accurate the more sides the polygon has.\vsk
+
+For the sake of simplicity, we shall use inscribed squares to illustrate the outline. We draw two circles of random size, but the one larger than the other, and inscribe a square in both. Let $ R $ and $ r $ denote the radius of the larger and the smaller circle, respectively. Also, let $ K $ and $ k $ denote the side length of the larger and the smaller square, respectively.
+\fig{geo9e2}
+Both squares can be divided into four isosceles triangles:
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[scale=1]{\asym{geo9e}}}\qquad
+	\subfloat{\includegraphics[scale=1]{\asym{geo9f}}}	
+\end{figure}
+Since these triangles are similar,
+\begin{align}
+\frac{K}{R} &=\frac{k}{r} \label{arogar}
+\end{align}
+Let $ {\tilde{O}=4K} $ and $ {\tilde{o}=4k} $ denote the estimated circumferences of the larger and the smaller circle, respectively.
+Multiplying both sides of \eqref{arogar} by 4 yields
+\begin{align}
+\frac{4A}{R} &= \frac{4a}{r} \br
+\frac{\tilde{O}}{R} &= \frac{\tilde{o}}{r} \label{arogarto}
+\end{align}
+Now we observe this:\vsk
+
+\textsl{If we were to inscribe polygons with 4, 100 or any number of sides, the polygons could still be divided into triangles obeying \eqref{arogar}. And in the same way as we did in the above example, we could then rewrite \eqref{arogar} into \eqref{arogarto}.} \vsk 
+
+Let's therefore imagine polygons with such a large number of sides that we accept their respective perimeters as equal to the respective circumferences of the circles. Letting $ O $ and $ o $ denote the circumferences of the larger and smaller circle respectively, we have
+\[ \frac{O}{R}=\frac{o}{r} \]
+Since the circles are randomly chosen, we conclude that \textit{all circles have the same ratio of the circumference to the radius}. An equivalent statement is that \textit{all circles have the same ratio of the circumference to the diameter}. \vsk
+
+The ratio of the circumference $ O $ to the diameter $ d $ in a circle is named $ \pi $ \index{$ \pi $}(pronounced ''pi''):
+\[ \frac{O}{d}=\pi \]
+The above equation yields the formula for the circumference of a circle with diameter $ d $ and radius $ r $:
+\alg{
+	O&= \pi d\\
+	&=2\pi r
+}
+Earlier we found that the circumference of a circle with radius 1 (and diameter 2) equals $ 6.283185307179586... $\,. Hence
+\alg{
+	\pi&= \frac{6.283185307179586...}{2} \br
+	&= 3.141592653589793...
+}
+} \vsk
+
+\fork{\ref{forform} \forform}{
+	Here, we shall write the area of a triangle $ \triangle ABC $ as $ ABC $.
+	\fig{forml0}
+	In the figure above, we have $ BB'||CC' $. With $ BB' $ as base, $ HB' $ is the height of both $ \triangle CBB' $ and $ \triangle CBB' $. Therefore
+	\begin{equation}\label{a}
+	CBB' = C'BB'
+	\end{equation}
+Moreover,
+	\algv{
+		ABB' &= AB\cdot HB' \vn
+		CBB' &= BC\cdot HB'
+	}
+	Hence
+	\begin{equation}\label{b}
+	\frac{ABB'}{CBB'}=\frac{AB}{BC}
+	\end{equation}
+	Similarly,
+	\begin{equation}\label{c}
+	\frac{ABB'}{C'BB'}=\frac{AB'}{B'C'}
+	\end{equation}
+	From \eqref{a}, \eqref{b} and \eqref{c} it follows that
+	\begin{equation}\label{form}
+	\frac{AB}{BC}=\frac{ABB'}{CBB'}=\frac{ABB'}{C'BB'}=\frac{AB'}{B'C'}
+	\end{equation}
+	For the similar triangles $ \triangle ACC' $ and $\triangle ABB' $,
+	\alg{
+		\frac{AC}{AB} &= \frac{AB+BC}{AB} \\[5pt]
+		&= 1+\frac{BC}{AB} \\
+		& \\
+		\frac{AC'}{AB'}&=\frac{AB'+B'C'}{AB'}\\[5pt]
+		&= 1+\frac{B'C'}{AB'}
+	}
+	By \eqref{form}, the ratio of corresponding sides in the two triangles are equal.
+}\vsk
+
+\info{\merk}{
+In the following explanations of term \textsl{ii} and \textsl{iii} from \rref{konsttre} we assume this:
+	\begin{itemize}
+		\item Two circles intersect in maximum two points.
+		\item Given a coordinate system placed in the center of one of the circles, such that the horizontal axis passes through both circle centers. If $ (a, b) $ is one of the intersection points, $ (a, -b) $ is the other.
+	\end{itemize}
+	\fig{sirk2} 
+		The remarks above are quite easy to prove, but since they are largely intuitively true, we hold them as granted. This implies that the triangle formed by the two centers and one of the intersection points is congruent to the triangle formed by the two centers and the other intersection point. By this, we can study attributes of triangles with the aid of semi-circles.
+} \vsk
+
+\fork{\ref{konsttre} \konsttre}{
+\textbf{Term i}\os
+Given a length $ c $ and two angles $u $ and $ v $.
+We make a segment $ AB $ with length $ c $. Then we dot two angle sides, such that $ \angle {A= u} $ and $ {B=v} $. As long as these angle sides are not parallel, they must intersect in one, and one only, point ($ C $ in the figure). Together with $ A $ and $ B $, this point will form a triangle uniquely determined by $ c $, $ u $ and $ v $.
+\fig{geo13c}	
+	
+\textbf{Term ii}\os
+Given three lengths $ a $, $ b $ and $ c $. We make a segment $ AB $ with length $ c $. Then we make two semi-circles with respective radii $ a $ and $ b $ and centers $ B $ and $ A $. If a triangle $ \triangle ABC $ is to have sides of length $ a $, $ b $ and $ c $, $ C $ must lie on both of the semi-circles. Since the semi-circles intersect in one point only, $ \triangle ABC $ is uniquely determined by $a$, $ b $ and $ c $.
+\fig{geo13a}	
+
+\textbf{Term iii} \os
+Given two lengths $ b $ and $ c $ and an angel $ u $. We begin as follows:
+\begin{enumerate}
+	\item We make a segment $ AB $ with length $ c $.
+	\item In $ A $ we draw a semi-circle with radius $ b $. 
+\end{enumerate}
+By placing $ C $ randomly on the arc of the semi-circle, we get all instances of a triangle $ \triangle ABC $ with sides of length $ {AB=c} $ and $ {AC=b} $. Specifically placing $ C $ on the arc of the semi-circle is equivalent to setting a specific value of $ \angle A $. Now it remains to show that every placement of $ C $ implies a unique length of $ BC $.
+\fig{geo13b}
+Let $ C_1 $ and $ C_2 $ denote two potential placements of $ C $, where $ C_2 $, along the semicircle, lies closer to $ E $ than $ C_1 $. Now we dot a circular arc with radius $ BC_1 $ and center $ B $. Since the dotted arc and the semi-circle only intersects in $ C_1 $, other points will either lie inside or outside the dotted arc. Necessarily, $ C_2 $ lies outside the dotted arc, and therefore $ BC_2 $ is longer than $ BC_1 $. From this we can conclude that the length of $ BC $ increases as $ C $ moves against $ E $ along the semi-circle. Therefore, specifying $ {\angle A=u} $ yields a unique value of $ BC $, and hence a unique triangle $ \triangle ABC $ where $ AC=b $, $ c=AB $ and $ \angle BAC=u $.
+}\vsk
+
+\fork{\ref{vilkform} \vilkform}{
+\textbf{Term i}\os
+Given two triangles $ \triangle ABC $ and $ \triangle DEF $. By \rref{180},
+\alg{
+\angle A+ \angle B+\angle C=\angle D+\angle E+\angle F
+}	
+If $ \angle A=\angle D $ and $ \angle B=\angle E $, it follows that $ \angle C=\angle E $.\vsk
+
+	
+\textbf{Term ii}\os
+Given two triangles $ \triangle ABC $ and $ \triangle DEF $, where
+\begin{equation}
+\dfrac{AC}{DF}=\dfrac{BC}{EF}\qquad,\qquad \angle C = \angle F\label{vilkforma}
+\end{equation}
+\fig{geo12}
+Let $ a=BC $, $ b=AC $, $ d=EF $ and $ e=DF $. We place $ D' $ and $ E' $ on $ AC $ and $ BC $, respectively, such that $ {D'C=e} $ and $ AB\parallel D'E' $. Then $ \triangle ABC \sim \triangle D'E'C$, and hence
+\alg{
+\frac{E'C}{BC}&=\frac{D'C}{AC}\br
+E'C&=\frac{ae}{b}
+}
+By \eqref{vilkforma}, 
+\[ EF=\frac{ae}{b} \]	
+Hence $ {E'C = EF} $. From term \textsl{ii} of \rref{konsttre} it now follows that $ \triangle D'E'C\cong\triangle DEF $. This implies that $ \triangle ABC\sim \triangle DEF $.\vsk
+
+\textbf{Term iii}\os
+Given two triangles $ \triangle ABC $ and $ \triangle DEF $, where
+\begin{equation}
+\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} \label{vilkformb}
+\end{equation}
+We place $ D' $ and $ E' $ on $ AC $ and $ BC $, respectively, such that $ {D'C=e} $ and $ {E'C=d} $. From term \textsl{i} of \rref{vilkform} we have $ \triangle ABC\sim\triangle D'E'C $. Therefore
+\alg{
+\frac{D'E'}{AB}&=\frac{D'C}{AC} \br
+D'E'&=\frac{ae}{c}
+} 
+By \eqref{vilkformb},
+\alg{
+f&=\frac{ae}{c}
+}
+Hence, the side lengths of $ \triangle D'E'C $ and $ \triangle DEF $ are pairwise equal, and then, from term \textsl{i} of \rref{konsttre}, they are congruent. This implies that $ {\triangle ABC \sim \triangle DEF}$.
+\fig{geo12b}
+}
+
+
+
+\end{document}
+

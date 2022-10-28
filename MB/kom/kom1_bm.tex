@@ -1,0 +1,49 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+	
+\section*{Kommentar (for den spesielt interesserte) \label{Kommentar1}}
+Matematikk er såkalt \outl{aksiomatisk} oppbygd. Dette betyr at vi erklærer noen\footnote{Helst så få som mulig.} påstander for å vere sanne, og disse kaller vi for \outl{aksiom} eller \outl{postulat}. I regning har man omtrent 12 aksiom\footnote{Tallet avhenger litt av hvordan man formulerer påstandene.}, men i denne boka har vi holdt oss til å nevne disse 6:
+\regv 
+
+\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!5] {\large \textbf{Aksiom} \vspace{5 pt}}\newline
+For tallene $ a $, $ b $ og $ c $ har vi at
+\alg{
+a+(b+c)&=(a+b)+c \tag{A1} \label{a1}\\
+a+b&=b+a \tag{A2}\label{a2}\\
+a(bc)&=(ab)c \tag{A3}\label{a3}\\
+ab&=ba \tag{A4}\label{a4}\\
+a(b+c)&=ab+ac \tag{A5} \label{a5}\\
+a\cdot\frac{1}{a}&=1 &&(a\neq0) \tag{A6} \label{a6}
+} 
+\rule{1\linewidth}{0.75bp}
+\begin{center}
+	\begin{tabular}{rl}
+		\eqref{a1} &Assosiativ lov ved addisjon\\
+		\eqref{a2} & Kommutativ lov ved addisjon \\	
+		\eqref{a3} & Assosiativ lov ved multiplikasjon \\
+		\eqref{a4} & Kommutativ lov ved multiplikasjon \\		
+		\eqref{a5} & Distributiv lov\\	
+		\eqref{a6} & Eksistens av multiplikativ identitet
+	\end{tabular}
+\end{center}
+\end{tcolorbox}
+\vsk
+Aksiomene legger selve fundamentet i et matematisk system. Ved hjelp av dem finner vi flere og mer komplekse sannheter som vi kaller \outl{teorem}. I denne boka har vi valgt å kalle både aksiom, definisjoner og teorem for \textsl{regler}. Dette fordi aksiom, definisjoner og teorem alle i praksis gir føringer (regler) for handlingsrommet vi har innenfor det matematiske systemet vi opererer i.\vsk
+\newpage
+I \textsl{Del I} har vi forsøkt å presentere \textsl{motivasjonen} bak aksiomene, for de er selvsagt ikke tilfeldig utvalgte. Tankerekken som leder oss fram til de nevnte aksiomene kan da oppsummeres slik:
+\begin{enumerate}
+	\item Vi definerer positive tall som representasjoner av enten en mengde eller en plassering på en tallinje.
+	\item Vi definerer hva addisjon, subtraksjon, multiplikasjon og divisjon innebærer for positive heltall (og 0).
+	\item Ut ifra punktene over tilsier all fornuft at \eqref{a1}\,-\,\eqref{a6} må gjelde for alle positive heltall.
+	\item Vi definerer også brøker som representasjoner av en mengde eller som en plassering på en tallinje. Hva de fire regneartene innebærer for brøker bygger vi på det som gjelder for positive heltall.
+	\item Ut ifra punktene over finner vi at \eqref{a1}\,-\,\eqref{a6} gjelder for alle positive, rasjonale tall.
+	\item Vi innfører negative heltall, og utvider tolkningen av addisjon og subtraksjon. Dette gir så en tolkning av multiplikasjon og divisjon med negative heltall.
+	\item \eqref{a1}\,-\,\eqref{a6} gjelder også etter innføringen av negative heltall. Å vise at de også gjelder for negative, rasjonale tall er da en ren formalitet.
+	\item Vi kan aldri skrive verdien til et irrasjonalt tall helt eksakt, men verdien kan tilnærmes ved et rasjonalt tall\footnote{For eksempel kan man skrive $ \sqrt{2}=1.414213562373...\approx\frac{1414213562373}{1000000000000} $}. Alle utregninger som innebærer irrasjonale tall er derfor \textsl{i praksis} utregninger som inneberærer rasjonale tall, og slik kan vi si at\footnote{\textit{Obs!} Denne forklaringen er god nok for boka sitt formål, men er en ekstrem\qquad forenkling. Irrasjonale tall er et komplisert tema som mange bøker for avansert matematikk bruker opptil flere kapitler på å forklare i full dybde.} \eqref{a1}\,-\,\eqref{a6} gjelder også for irrasjonale tall.
+\end{enumerate}
+En lignende tankerekke kan brukes for å argumentere for potensreglene vi fant i \hrs{Potensar}{seksjon}. 
+\end{document}
+

@@ -1,0 +1,28 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+\begin{tikzpicture}[scale=2]
+\draw[-latex] (0,-1) -- (3.55,-1);
+\draw (0,0) circle (1cm);
+\draw (180:0.95) -- (180:1.05);
+\draw (225:0.95) -- (224:1.05);	
+\draw (270:0.95) -- (270:1.05);	
+\draw (0,0) -- (-45:1);	
+\foreach \x in {1,2,3,4}
+\draw ($ (3.141593*\x/4,-1.05) $) -- ($ (3.141593*\x/4,-0.95) $);
+\draw[densely dotted] (-45:1) -- ($ (3.141593/4, -1) $);	
+\draw[densely dotted] (0:1) -- ($ (3.141593*2/4, -1) $);			
+\draw ($ (3.141593/4,-1.05) $) node[anchor=north]{$ 0 $};	
+\draw[densely dotted] (45:1) -- ($ (3.141593*3/4, -1) $);		
+\end{tikzpicture}
+\caption{Sirkel som rullende hjul over tallinjen.}
+\end{figure}
+
+\end{document}

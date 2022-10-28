@@ -1,0 +1,82 @@
+\newcommand{\bint}{\rg[Bestemt integral I]{Det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
+		\nreq{I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{bint}}
+		hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $.
+	}}
+\newcommand{\anfndto}{\rg[Analysens fundamentalteorem]{\index{analysens fundamentalteorem}
+		Gitt en funksjon $ f(x) $ definert på intervallet $ [a, b] $. Hvis $ F $ er en antiderivert til $ f $, er
+		\begin{equation}
+		\int\limits_a^b f(x)\, dx = F(b)-F(a) \label{anfund2}
+		\end{equation}\vs
+	}}
+\newcommand{\anfndtoe}{\eks{
+Gitt funksjonen $ f(x)= e^{\sin x}  $. Finn $ \int\limits_0^\frac{\pi}{2} f'(x)\,dx $ .
+
+\sv
+Siden $ f $ er en antiderivert til $ f'(x) $, må vi ha at
+\alg{\int\limits_0^\frac{\pi}{2} f'(x)\,dx &= f\left(\frac{\pi}{2}\right)-f(0)\\
+	&= e^{\sin \frac{\pi}{2}}-e^{\sin 0} \\
+	&= e-1
+		}\vds
+}}
+\newcommand{\uint}{\rg[Ubestemt integral]{
+		Det ubestemte integralet av $ f(x) $ er gitt som
+		\begin{equation}
+		\int f(x)\, dx  = F(x)+ C \label{uint}
+		\end{equation}
+		Hvor $ F $ er en antiderivert til $ f $ og $ C $ er en vilkårlig konstant.
+	}}
+\newcommand{\uinte}{}
+\newcommand{\uinteto}{}
+\newcommand{\anfnden}{\rg[Analysens fundamentalteorem (del 1)]{
+		For enhver kontinuerlig funksjon $ f(x) $ har vi at
+		\[ \left(\int f(x)\,dx\right)'=f(x)  \]	}
+}
+\newcommand{\anfndene}{	\eks{	
+		Vi har at $ \int f(x) \, dx= e^{x^2}+C $. Hva er $ f(x) $? \\
+		
+		\sv 
+		Fra analysens fundamentalteorem vet vi at vi kan finne $ f(x) $ ved å derivere det ubestemte integralet. Vi bruker da kjerneregelen, og finner at
+		\[ \left(e^{x^2}\right)'=2xe^{x^2} \]
+		Derfor er \[ f(x)=2xe^{x^2} \]
+	}}
+\newcommand{\uints}{}
+\newcommand{\uintse}{}
+\newcommand{\dint}{
+	}
+\newcommand{\dinte}{}
+\newcommand{\dinteto}{}
+\newcommand{\byt}{}
+\newcommand{\byte}{}
+\newcommand{\byteto}{}
+\newcommand{\dbr}{}
+\newcommand{\dbre}{}
+\newcommand{\iar}{\rg[Integral som areal I]{\index{integral!som areal}Gitt en kontinuerlig funksjon $ f(x) $ og to tall $ a $ og $ b $ der $ {a<b }$. \vsk
+
+	Hvis $ {f\geq0} $ for  ${x\in [a, b]} $, er arealet $ A $ avgrenset av $ f $ på dette intervallet gitt som
+	\[ A=\int\limits_a^b f \,dx \]
+	\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{intpos}}
+\end{figure}
+	Hvis $ {f\leq0 }$ for ${x\in [a, b]} $, er arealet $ A $ avgrenset av $ f $ på dette intervallet gitt som
+	\[ A=-\int\limits_a^b f \,dx \]
+	\begin{figure}[H]
+	\centering
+	\includegraphics[]{\asym{intneg}}
+\end{figure}\vs
+	}}
+\newcommand{\ivo}{}
+\newcommand{\ivoe}{}
+\newcommand{\omdr}{}}
+\newcommand{\omdre}{}
+\newcommand{\bintto}{\rg[Bestemt integral II]{
+		Det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ skrives som
+		\nreq{I = \int\limits_{a}^b f(x)\,dx \label{bintint}}\vs
+}}
+\newcommand{\bytb}{\rg[Bytte av variabel for bestemt integral]{
+		Gitt funksjonene $ u(x) $ og $ g(u) $. Da har vi at
+		\begin{equation}
+		\int\limits_a^b g(u) u'\, dx=\int\limits_{u(a)}^{u(b)}  g(u) \, du \label{bytvarb}
+		\end{equation}\vs
+}}
+\newcommand{\iarto}{}

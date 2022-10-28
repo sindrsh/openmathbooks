@@ -1,0 +1,430 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\section{\algintro}
+\outl{Algebra}\index{algebra} er matematikk der bokstaver representerer tall. Dette gjør at vi lettere kan jobbe med \textsl{generelle} tilfeller. For eksempel er $ {3\cdot 2=2\cdot3} $ og $ 6\cdot7=7\cdot6 $, men disse er bare to av de uendelig mange eksemplene på at multiplikasjon er kommutativ! En av hensiktene med algebra er at vi ønsker å gi \textsl{ett} eksempel som forklarer \textsl{alle} tilfeller, og siden sifrene våre (0-9) er uløselig knyttet til bestemte tall, bruker vi bokstaver for å nå dette målet. \vsk
+
+Verdien til tallene som er representert ved bokstaver vil ofte variere ut ifra en sammenheng, og da kaller vi disse bokstavtallene for \outl{variabler}\index{variabel}. Hvis bokstavtallene derimot har en bestemt verdi, kaller vi dem for \outl{konstanter}\index{konstant}.
+
+\vsk
+
+I \textsl{Del I} av boka har vi sett på regning med konkrete tal, likevel er de fleste reglene vi har utledet \textsl{generelle}; de gjelder for alle tall. På side \pageref{regstart}\,-\,\pageref{regslutt} har vi gjengitt mange av disse reglene på en mer generell form. En fin introduksjon til algebra er å sammenligne reglene du finner her med slik du finner dem\footnote{Reglene sine nummer i \textsl{Del I} står i parentes.} i \textsl{Del I}. \vsk
+
+\regv
+\label{regstart}
+\reg[\adkom\;(\ref{adkom}) \label{adkomalg}]{\vs
+\[ a+ b =b+a \]
+}
+\eks{ \vsb
+\[ 7+ 5=5+7 \]
+} \vsk \vsk
+
+\reg[\gangkom\;(\ref{gangkom})]{\vs
+	\[ a\cdot b =b\cdot a \]
+}
+\eks[1]{ \vsb
+	\[ 9\cdot 8=8\cdot9 \]
+}
+\eks[2]{ \vsb
+\[  8\cdot a= a\cdot 8  \]
+}
+\newpage
+\info{Ganging med bokstavuttrykk}{Når man ganger sammen bokstaver, er det vanlig å utelate gangetegnet. Og om man ganger sammen en bokstav og et konkret tal, skriver man det konkrete tallet først. Dette betyr for eksempel at
+	\[ a\cdot b= ab \]
+	og at
+	\[ a\cdot 8 =8a \]
+I tillegg skriver vi også
+\[ 1\cdot a=a \]
+Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[ 
+3\cdot(a+b)=3(a+b) \]
+}
+\vsk 
+
+\reg[\brdef\;(\ref{brdef})]{
+\[ a:b=\frac{a}{b} \]
+}
+\eks[]{ \vs
+\[a:2= \frac{a}{2} \]
+}
+ \vsk 
+
+\reg[\brtbr\; (\ref{brtbr})]{
+\[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
+}
+\eks[1]{ \vs
+\algv{
+\frac{2}{11}\cdot \frac{13}{21}&=\frac{2\cdot 13}{11\cdot21} =\frac{26}{231}
+}
+}
+\eks[2]{ \vs
+	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
+}
+\newpage
+\reg[\brdelmbr\;(\ref{delmbr})]{ 
+\[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
+}
+\eks[1]{ \vs
+\[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
+}
+\eks[2]{ \vsb \vs
+\alg{
+\frac{a}{13}:\frac{b}{3}&=\frac{a}{13}\cdot \frac{3}{b} \br
+&=\frac{3a}{13b}
+}
+} \vsk \vsk
+
+\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{ \vs
+\[ (a+b)c = a c + b c \]
+} 
+\eks[1]{ \vs
+\[ (2+a)b =2b+ab \]
+}
+\eks[2]{\vs
+\[ a(5b-3)=5ab-3a \]
+} 
+\vsk \vsk
+\reg[\gangmnegto\;(\ref{gangmnegto})]{\vs
+\[ a\cdot(-b)=-(a\cdot b) \]
+}
+\eks[1]{ \vsb \vs
+\alg{
+3\cdot(-4)&=-(3\cdot 4) \\
+&= 	-12
+}
+}
+\newpage
+\eks[2]{ \vsb
+	\algv{
+	(-a)\cdot7&=-(a\cdot 7)\\
+	&=-7a 
+}
+} \vsk \vsk
+
+\reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{\vs
+\[ (-a)\cdot(-b)=a\cdot b \]
+}
+\eks[1]{ \vs \vs
+\alg{
+(-2)\cdot(-8)&=2\cdot 8 \\
+&= 	16
+}	
+}
+\eks[2]{ \vs 
+\[ (-a)\cdot(-15)=15a \]
+}
+\label{regslutt}
+\vsk \vsk
+
+\info{Utvidelser av reglene}{
+Noe av styrken til algebra er at vi kan lage oss kompakte regler som det er lett å utvide også til andre tilfeller. La oss som et eksempel finne et annet uttrykk for
+	\[ (a+b+c)d \]
+\hrs{gangpara}{Regel} forteller oss ikke direkte hvordan vi kan regne mellom parentesuttrykket og $ d $, men det er ingenting som hindrer oss i å omdøpe $ a+b $ til $ k $:
+\[ a+b=k \]
+Da er
+\[ (a+b+c)d=(k+c)d \]
+Av \rref{gangpara} har vi nå at
+\[ (k+c)d = kd+cd \]
+Om vi setter inn igjen uttrykket for $ k $, får vi 
+\[ kd+cd=(a+b)d+cd \]
+Ved å utnytte \rref{gangpara} enda en gang kan vi skrive
+\[ (a+b)d+cd=ad+bc+cd \]
+Altså er
+\[ (a+b+c)d=ad+bc+cd \]
+{\footnotesize
+\it Obs! Dette eksempelet er \textsl{ikke} ment for å vise hvordan man skal gå fram når man har uttrykk som ikke direkte er omfattet av regel \ref{adkomalg}\,-\,\ref{gangmnegtrea}, men for å vise hvorfor det alltid er nok å skrive regler med færrest mulige ledd, faktorer og lignende. Oftest vil man bruke utvidelser av reglene uten engang å tenke over det, og i alle fall langt ifra så pertentlig som det vi gjorde her.}
+}
+
+\section{\pot \label{Potensar}}
+\fig{pot}
+En potens består av et \outl{grunntall}\index{grunntall} og en \outl{eksponent}\index{eksponent}. For eksempel er $2^{3}$ en potens med grunntall 2 og
+eksponent 3. En positiv, heltalls eksponent sier hvor mange eksemplar
+av grunntallet som skal ganges sammen, altså er
+\[ 2^3 =2\cdot2\cdot2 \]
+
+\reg[Potenstall]{
+	$ {a^n} $ er et potenstall med grunntall $ a $ og eksponent $ n $. 
+	\vsk
+	
+	Hvis $ n $ er et naturlig tall, vil $ a^n $ svare til $ n $ eksemplar av $ a $\\ multiplisert med hverandre.
+}
+\eks[1]{\vs \vs
+	\algv{
+		5^3 &= 5\cdot5\cdot5 \\
+		&= 125
+	}
+}
+\eks[2]{\vs \vs
+	\[ c^4 = c\cdot c \cdot c \cdot c \]
+}
+\eks[3]{ \vs \vs
+	\algv{
+		(-7)^2 &= (-7)\cdot(-7) \\
+		&= 49
+	}
+} 
+\eks[4]{\vs \vs
+	\[ a^1=a \]
+}
+\spr{
+	Vanlige måter å si $ 2^3 $ på er
+	\begin{itemize}
+		\item ''2 i tredje''
+		\item ''2 opphøyd i 3''
+	\end{itemize}
+	I programmeringsspråk brukes gjerne symbolet \sym{\^{}} eller symbolene \sym{**} mellom grunntall og eksponent.
+}
+\newpage
+\info{Merk}{
+	De kommende sidene vil inneholde regler for potenser med tilhørende forklaringer. Selv om det er ønskelig at de har en så generell form som mulig, har vi i forklaringene valgt å bruke eksempel der eksponentene ikke er variabler. Å bruke variabler som eksponenter ville gitt mye mindre leservennlige uttrykk, og vi vil påstå at de generelle tilfellene kommer godt til synes også ved å studere konkrete tilfeller. 
+} \vsk \vsk
+
+\reg[\potgang \label{potgang}]{
+	\begin{equation}
+		a^{m}\cdot a^{n}=a^{m+n}	
+	\end{equation}
+}
+\eks[1]{\vs \vs
+	\algv{3^{5}\cdot3^{2}&=3^{5+2}\\&=3^{7}}
+}
+\eks[2]{\vs \vs
+	\algv{
+		b^4\cdot b^{11}&= b^{3+11}\\
+		&=b^{14}
+	}
+}
+\eks[3]{ \vs \vs
+	\algv{
+		a^5\cdot a^{-7} &= a^{5+(-7)} \\
+		&=a^{5-7} \\
+		&= a^{-2} 
+	}
+	(Se \rref{potneg} for hvordan en potens med negativ eksponent kan tolkes.)	
+} 
+\newpage
+\fork{\ref{potgang} \potgang}{
+	La oss se på tilfellet 
+	\[ a^{2}\cdot a^{3} \]
+	Vi har at
+	\algv{
+		a^{2} & =2\cdot2\vn
+		a^{3} & =2\cdot2\cdot2
+	}
+	Med andre ord kan vi skrive 
+	\begin{align*}
+		a^{2}\cdot a^{3} & =\overbrace{a \cdot a}^{a^{2}}\cdot\overbrace{a\cdot a\cdot a}^{a^{3}}\\
+		& =a^{5}
+	\end{align*}
+}
+\reg[\potdivpot \label{potdivpot}]{\vs
+	\[ \frac{a^{m}}{a^{n}}=a^{m-n} \] }
+
+\eks[1]{\vspace{-20 pt}
+	\[
+	\frac{3^{5}}{3^{2}}=3^{5-2}=3^{3}
+	\]
+} 
+\eks[2]{ \vs \vsb
+	\alg{
+		\frac{2^{4}\cdot a^{7}}{a^{6}\cdot2^{2}}&=2^{4-2}\cdot a^{7-6}\\
+		&=2^{2}a \\
+		&=4a
+	}
+}
+\newpage
+\fork{\ref{potdivpot} \potdivpot}{
+	La
+	oss undersøke brøken
+	\[ \frac{a^{5}}{a^{2}} \]
+	Vi skriver
+	ut potensene i teller og nevner: 
+	\begin{align*}
+		\frac{a^{5}}{a^{2}} & =\frac{a\cdot a\cdot a\cdot a\cdot a}{a\cdot a}\br
+		& =\frac{\bcancel{a}\cdot\bcancel{a}\cdot a\cdot a\cdot a}{\bcancel{a}\cdot\bcancel{a}}\\
+		& =a\cdot a\cdot a\\
+		& =a^{3}
+	\end{align*}
+	Dette kunne vi ha skrevet som
+	\begin{align*}
+		\frac{a^{5}}{a^{2}} & =a^{5-2}\\
+		& =a^{3}
+	\end{align*}
+} \vsk \vsk
+
+\reg[\potanull \label{pota0}]{\vs \vs
+	\[
+	a^{0}=1
+	\]
+}
+\eks[1]{\vs \vs\[
+	1000^{0}=1
+	\]}
+\eks[2]{\vs \vs\[
+	(-b)^{0}=1
+	\]}
+\fork{\ref{pota0} \potanull}{
+	Et tall delt på seg selv er alltid lik 1, derfor er 
+	\[
+	\frac{a^{n}}{a^{n}}=1
+	\]
+	Av dette, og \rref{potdivpot}, har vi at
+	\algv{
+		1&=\frac{a^{n}}{a^{n}}
+		\\& =a^{n-n}\\
+		& =a^{0}
+	}
+} \vsk \vsk
+
+\reg[\potneg \label{potneg}]{
+	\[ a^{-n}=\frac{1}{a^n} \]
+}
+\eks[1]{ \vs \vs
+	\alg{
+		a^{-8}&=\frac{1}{a^8}  
+	}	
+}
+\eks[2]{ \vs \vs
+	\alg{
+		(-4)^{-3}&=\frac{1}{(-4)^3} 
+		=-\frac{1}{64}
+	}
+}
+\fork{\ref{potneg} \potneg}{
+	Av \rref{pota0} har vi at $ a^0=1 $. Altså er
+	\alg{
+		\frac{1}{a^n}=\frac{a^0}{a^n}
+	}
+	Av \rref{potdivpot}  er
+	\algv{
+		\frac{a^0}{a^n}&=a^{0-n} \\
+		&=a^{-n}
+	}
+} \vsk \vsk
+
+
+\reg[\potbr \label{potbr}]{\vs
+	\begin{equation}\label{pbrg}
+		\left(\frac{a}{b}\right)^{m}=\frac{a^{m}}{b^{m}}
+\end{equation}} 
+\eks[1]{ \vs \vs
+	\alg{
+		\left(\frac{3}{4}\right)^2=\frac{3^2}{4^2} 
+		=\frac{9}{16}
+	}
+}
+\eks[2]{ \vs \vs
+	\alg{
+		\left(\frac{a}{7}\right)^3=\frac{a^3}{7^3} 
+		=\frac{a^3}{343}
+	}
+}
+\fork{\ref{potbr} \potbr}{
+	La oss studere
+	\[ \left(\frac{a}{b}\right)^3 \]
+	Vi har at
+	\begin{align*}
+		\left(\frac{a}{b}\right)^3 	&=\frac{a}{b}\cdot \frac{a}{b}\cdot \frac{a}{b}\br
+		& =\frac{a\cdot a\cdot a}{b\cdot b\cdot b}\br
+		& =\frac{a^{3}}{b^{3}}
+	\end{align*}
+}\vsk \vsk
+
+\reg[\faktgr \label{faktgr}]{
+	\begin{equation}\label{key}
+		\left(ab\right)^{m}=a^{m}b^{m}
+	\end{equation}
+}
+\eks[1]{ \vs \vs \vs
+	\alg{
+		(3a)^5&=3^5a^5 \\
+		&=243a^5 
+	}	
+}
+\eks[2]{\vs\vs
+	\[
+	(ab)^{4}=a^{4}b^{4}
+	\]
+}
+\fork{\ref{faktgr} \faktgr}{
+	La oss
+	bruke ${(a\cdot b)^{3}}$ som eksempel. Vi har at
+	\alg{
+		(a\cdot b)^{3}&=(a\cdot b)\cdot(a\cdot b)\cdot(a\cdot b) \\
+		&=a\cdot a\cdot a \cdot b \cdot b \cdot b \\
+		&=a^3b^3
+	}
+}\vsk \vsk
+
+\newpage
+\reg[\potsomgrunn \label{potsomgrunn}]{\vs
+	\begin{equation}
+		\left(a^{m}\right)^{n}=a^{m\cdot n}
+\end{equation}}
+\eks[1]{ \vs \vs
+	\alg{
+		\left(c^4\right)^5&=c^{4\cdot5}\\
+		&=c^{20}	
+	}	
+}
+\eks[2]{ \vs \vs 
+	\alg{
+		\left(3^\frac{5}{4}\right)^8&=3^{\frac{5}{4}\cdot8} \\
+		&=3^{10}
+	}	
+}
+\fork{\ref{potsomgrunn} \potsomgrunn}{
+	La oss bruke $\left(a^{3}\right)^{4}$ som eksempel. Vi har at
+	\begin{align*}
+		\left(a^{3}\right)^{4} & =a^{3}\cdot a^{3}\cdot a^{3}\cdot a^{3}
+	\end{align*}
+	
+	
+	Av \rref{potgang} er
+	\algv{
+		a^{3}\cdot a^{3}\cdot a^{3}\cdot a^{3} & =a^{3+3+3+3}\\
+		& =a^{3\cdot4}\\
+		&=a^{12}
+	}	
+}
+
+\newpage
+\reg[\textit{n}-rot]{ \vs
+	\[ a^\frac{1}{n}=\sqrt[n]{a} \]
+	Symbolet \sym{$ \sqrt{\phantom{a}} $} kalles et \outl{rottegn}\index{rottegn}. For eksponenten $ \frac{1}{2} $ er det vanlig å utelate 2 i rottegnet:
+	\[ a^\frac{1}{2}=\sqrt{a} \]
+}
+\eks{
+	Av \rref{potsomgrunn} har vi at
+	\alg{
+		\left(a^b\right)^\frac{1}{b}&=a^{b\cdot \frac{1}{b}} \\
+		&=a	
+	}
+	For eksempel er	
+	\algv{
+		9^\frac{1}{2}=\sqrt{9}=3 &\text{, siden } 3^2 =9 \vn
+		125^\frac{1}{3}=\sqrt[3]{125}=5 &\text{, siden } 5^3 =125 \vn	
+		16^\frac{1}{4}=\sqrt[4]{16}=2 &\text{, siden } 2^4 =16
+	}	
+}
+\spr{
+	$\sqrt{9} $ kalles ''kvadratrota til 9'' \vsk
+	
+	$ \sqrt[5]{9} $ kalles ''femterota til 9''.
+}
+\newpage
+\section{\irrasj}
+\reg[Irrasjonale tall]{
+	Et tall som \textsl{ikke} er et rasjonalt tall, er et irrasjonalt tall\index{tall!irrasjonalt}\footnotemark.\vsk
+	
+	Verdien til et irrasjonalt tall har uendelig mange desimaler med et ikke-repeterende mønster.
+}
+\footnotetext{Strengt tatt er irrasjonale tall alle \textit{reelle} tall som ikke er rasjonale tall. Men for å forklare hva \textit{reelle} tall er, må vi forklare hva \textit{imaginære} tall er, og det har vi valgt å ikke gjøre i denne boka. }
+\eks[1]{
+	$ \sqrt{2} $ er et irrasjonalt tall.
+	\[ \sqrt{2}=1.414213562373... \]
+}
+
+\end{document}
+
+

@@ -1,0 +1,552 @@
+\input{../doc}
+\input{../preamb}
+
+\begin{document}
+\section{\brgrpr \label{brgrpr}}
+\reg[\brdef \label{brdef}]{
+	Ein brøk\index{brøk} er ein annan måte å skrive eit delestykke på. I ein brøk kallar vi dividenden for \textit{tellar}\index{tellar} og divisoren for nemnar\index{nemnar}.
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{br0_nn}}
+	\end{figure}
+}\vsk
+
+\spr{
+Vanlege måtar å seie $ \frac{1}{4} $ på er\footnote{I tillegg har vi utsegna fra språkboksen på side \pageref{sprakdiv}. }
+\begin{itemize}
+	\item ''éin firedel''
+	\item ''1 av 4''
+	\item ''1 over 4''
+\end{itemize}
+}
+\subsubsection{Brøk som mengde}
+La oss sjå for på brøken $ \frac{1}{4} $ som ei mengde. Vi startar da med å tenke på talet 1 som ei rute\footnote{Av praktiske årsakar velg vi oss her ei einarrute som er større enn den vi brukte i \hrs{Talavare}{Kapittel}.}: 
+\begin{figure}[hbt]
+	\centering
+	\includegraphics{\figp{br1}}
+\end{figure}
+\newpage
+Så  deler vi denne ruta inn i fire mindre ruter som er like store. Kvar av desse rutene blir da $ \frac{1}{4} $ (1 av 4):
+\begin{figure}[hbt]
+	\centering
+	\includegraphics{\figp{br2}}
+\end{figure} 
+Har vi éi slik rute, har vi altså 1 firedel:
+\begin{figure}[hbt]
+	\centering
+	\includegraphics{\figp{br3a}}
+\end{figure} 
+Men skal ein berre ut ifrå ein figur kunne sjå kor stor ein brøk er, må ein vite kor stor 1 er, og for å få dette lettare til syne skal vi også ta med dei ''tomme'' rutene:
+\fig{br3}
+Slik vil dei blå og dei tomme rutene fortelje oss kor mange bitar 1 er delt inn i, mens dei blå rutene aleine fortel oss kor mange slike bitar det \textsl{eigentleg} er. Slik kan vi seie at\regv
+ 
+\st{ \vs
+\alg{
+	\text{antal blå ruter}&=\text{tellar} 	\\
+	\text{antal blå ruter}+\text{antal tommme ruter}&=\text{nemnar}
+}
+\fig{br0a}
+}
+
+\newpage
+\subsubsection{Brøk på tallinja}
+På tallinja deler vi lengda mellom 0 og 1 inn i like mange lengder som nemnaren angir. Har vi ein brøk med 4 i nemnar, deler vi lengda mellom 0 og 1 inn i 4 like lengder:
+\fig{br9}
+Tallinja er også fin å bruke for å teikne inn brøkar som er større enn 1:
+\fig{br9a}
+\subsubsection{Tellar og nemnar oppsummert}
+Sjølv om vi har vore innom det allereie, er det så avgjerande å forstå kva tellaren og nemnaren seier oss at vi tek ei kort oppsummering:
+\begin{itemize}
+	\item Nemnaren fortel kor mange bitar 1 er delt inn i.
+	\item Tellaren fortel kor mange slike bitar det er.
+\end{itemize}
+\newpage
+\section{\brvu}
+\reg[Verdien til ein brøk]{Verdien til ein brøk finn vi ved å dele tellaren med nemnaren.}
+\eks{
+Finn verdien til $ \dfrac{1}{4} $.
+
+\sv \vsb
+\[ \frac{1}{4}=0,25 \]
+}
+\subsubsection{Brøkar med same verdi}
+
+Brøkar kan ha same verdi sjølv om dei ser forskjellige ut. Viss du reknar ut $ 1:2 $, $ 2:4 $ og $ 4:8 $, får du i alle tilfelle 0,5 som svar. Dette betyr at
+\alg{
+\frac{1}{2}=\frac{2}{4}=\frac{4}{8}=0,5
+} \\[5pt]
+\fig{br12} \vsk
+\fig{br12a}
+\subsubsection{Utviding}
+At brøkar kan sjå forskjellige ut, men ha same verdi, betyr at vi kan endre på utsjånaden til ein brøk utan å endre verdien. La oss som eksempel gjere om $ \frac{3}{5} $ til ein brøk med same verdi, men med 10 som nemnar:
+\begin{itemize}
+	\item $ \frac{3}{5} $ kan vi gjere om til ein brøk med 10 i nemnar om vi deler kvar femdel inn i 2 like bitar, for da blir 1 til saman delt inn i $ {5\cdot2=10} $ bitar.
+	\item Tellaren i $ \frac{3}{5} $ fortel at der er 3 femdelar. Når desse blir delt i to, blir dei totalt til $ 3\cdot2=6 $ tidelar. Altså har $ \frac{3}{5} $ same verdi som $ \frac{6}{10} $.
+\end{itemize}
+\[ \frac{3}{5}=\frac{3\cdot2}{5\cdot2}=\frac{6}{10} \]
+\fig{br13}
+\fig{br13a}
+
+\subsubsection{Forkorting}
+Legg no merke til at vi også kan gå ''andre vegen''. $ \frac{6}{10} $ kan vi gjere om til ein brøk med 5 i nemnar ved å dele både tellar og nemnar med 2:
+\[ \frac{6}{10}=\frac{6:2}{10:2}=\frac{3}{5} \]
+
+\reg[Utviding og forkorting av brøk]{
+Vi kan gonge eller dele tellar og nemnar med det same talet utan at brøken endrar verdi. \vsk
+
+Å gonge med eit tal større enn 1 kallast å \textit{utvide}\index{brøk!utviding av} brøken. Å dele med eit tal større enn 1 kallast å \textit{forkorte}\index{brøk!forkorting av} brøken.
+}
+\eks[1]{Utvid $ \frac{3}{5} $ til ein brøk med 20 som nemnar.
+	
+	\sv
+	Da $ {5\cdot4=20} $, gongar vi både tellar og nemnar med 4:
+	\alg{
+		\frac{3}{5} &= \frac{3\cdot4}{5\cdot4} \br
+		&= \frac{12}{20}
+	}
+}
+\eks[2]{
+	Utvid $ \frac{150}{50} $ til ein brøk med 100 som nemnar.\os
+	
+	\sv
+	Da $ {50\cdot2=100} $, gongar vi både tellar og nemnar med 2:
+	\alg{
+		\frac{150}{50} &= \frac{150\cdot2}{50\cdot2} \br
+		&= \frac{300}{100}
+	}
+	
+}
+\eks[3]{
+Forkort $ \frac{18}{30} $ til ein brøk med 5 som nemnar.
+
+\sv
+Da $ 30:6=5 $, deler vi både tellar og nemnar med 6:
+\alg{
+\frac{18}{30}&=\frac{18:6}{30:6} \br
+&=\frac{3}{5}
+} 
+}
+\newpage
+\section{\bradsub}
+Addisjon og subtraksjon av brøkar handlar i stor grad om nemnarane. Husk no at nemnarane fortel oss om inndelinga av 1. Viss brøkar har lik nemnar, representerer dei eit antal bitar med lik størrelse. Da gir det meining å rekne addisjon eller subtraksjon mellom tellarane. Viss brøkar har ulike nemnarar, representerer dei eit antal bitar med ulik størrelse, og da gir ikkje addisjon eller subtraksjon mellom tellerane direkte meining.
+\subsubsection{Lik nemnar}
+Om vi for eksempel har 2 seksdelar og adderer 3 seksdelar, endar vi opp med 5 seksdelar:
+\[ \frac{2}{6}+\frac{3}{6}=\frac{5}{6} \]
+\fig{br4}
+\fig{br4a}
+\regv
+\reg[Addisjon/subtraksjon av brøkar med lik nemnar \label{bradliknemn}]{ \vs
+Når vi reknar addisjon/subtraksjon mellom brøkar med lik nemnar, finn vi summen/differansen av tellarane og beheld nemnaren.
+}
+\eks[1]{\vsb \vs
+\alg{
+\frac{2}{7}+\frac{8}{7}&=\frac{2+8}{7} \br
+&= \frac{10}{7}
+}
+}
+\newpage
+\eks[2]{\vsb \vs
+	\alg{
+		\frac{7}{9}-\frac{5}{9}&=\frac{7-5}{9} \br
+		&= \frac{2}{9}
+	}
+}
+\subsection*{Ulike nemnarar}
+La oss sjå på reknestykket\footnote{Vi minner om at raudfarga på pila indikerer at ein skal vandre fra pilspissen til andre enden.}
+\[ \frac{3}{5}-\frac{1}{2} \]
+\fig{br7}
+\fig{br7t}
+
+Skal vi skrive differansen som ein brøk, må vi sørge for at brøkane har same nemnar. Dei to brøkane våre kan begge ha 10 som nemnar:
+\alg{
+\frac{3}{5}=\frac{3\cdot2}{5\cdot2}=\frac{6}{10}\qquad\quad\qquad \frac{1}{2}=\frac{1\cdot5}{2\cdot5}=\frac{5}{10}
+}
+Dette betyr at
+\[ \frac{3}{5}-\frac{1}{2}=\frac{6}{10}-\frac{5}{10} \]
+\fig{br7a}
+\fig{br7ta}
+Det vi har gjort, er å utvide begge brøkane slik at dei har same nemnar, nemleg 10. Når nemnarene i brøkane er like, kan vi rekne ut subtraksjonsstykket for tellarane:
+\alg{
+\frac{3}{5}-\frac{1}{2}&=\frac{6}{10}-\frac{5}{10}\br
+&=\frac{1}{10}
+}
+\reg[Addisjon/subtraksjon av brøkar med ulik\\ nemnar \label{braduliknemn}]{
+Når vi reknar addisjon/subtraksjon mellom brøkar med ulik nemnar, må vi utvide brøkane slik at dei har lik nemnar, for så å bruke \rref{bradliknemn}.
+}
+\eks[1]{
+Rekn ut
+\[ \frac{2}{\colb{9}}+\frac{6}{\colo{7}} \]
+Begge nemnarane kan bli $ 63 $ viss vi gongar med rett heiltal. Vi utvider derfor til brøkar med 63 i nemnar:
+\alg{
+\frac{2\cdot\colo{7}}{9\cdot \colo{7}}+\frac{6\cdot\colb{9}}{7\cdot\colb{9}}&=\frac{14}{63}+\frac{54}{63} \br
+&=\frac{68}{63}
+}
+}
+\newpage
+\info{Fellesnemnar}{
+I \textsl{Eksempel 1} over blir 63 kalla ein \textit{fellesnemnar}\index{fellesnemnar}. Dette fordi det finst heiltal vi kan gonge nemnarane med som gir oss talet 63:
+\alg{
+	9\cdot7 &= 63 \\
+	7\cdot 9 &= 63 
+}
+Viss vi gongar saman alle nemnarane i eit reknestykke, finn vi alltid ein fellesnemnar, men vi sparer oss for store tal om vi finn den \textsl{minste} fellesnemnaren. Ta for eksempel reknestykket
+\[ \frac{7}{6}+\frac{5}{3} \]
+Her kan vi bruke fellesnemnaren $ {6\cdot3=18} $, men det er betre å merke seg at $ 6\cdot1=3\cdot2=6 $ også er ein fellesnemnar. Altså er
+\alg{
+\frac{7}{6}+\frac{5}{3}&=\frac{7}{6}+\frac{5\cdot2}{3\cdot2}\br
+&=\frac{7}{6}+\frac{10}{6}\br
+&=\frac{17}{6}
+}
+}
+
+\eks[2]{
+	Rekn ut
+	\[ \frac{3}{2}-\frac{5}{8}+\frac{10}{4} \]
+	
+	\sv
+	Alle nemnarane kan bli 8 viss vi gongar med rett heiltall. Vi utvider derfor til brøkar med 8 i nemnar:
+	\alg{
+		\frac{3}{2}-\frac{5}{8}+\frac{10}{4} &= \frac{3\cdot4}{2\cdot4}-\frac{5}{8}+\frac{10\cdot2}{4\cdot2} \br
+		&= \frac{12}{8}-\frac{5}{8}+\frac{20}{8} \br
+		&= \frac{27}{8}
+	}
+}
+\newpage
+\section{\brgngheil}
+I \hrs{Gonging}{seksjon} såg vi at gonging med heiltal er det same som gjentatt addisjon. Skal vi for eksempel rekne ut $ \frac{2}{5}\cdot 3 $, kan vi derfor rekne slik:
+\alg{
+\frac{2}{5}\cdot 3 &= \frac{2}{5}+\frac{2}{5}+\frac{2}{5}\br
+&= \frac{2+2+2}{5} \br
+&= \frac{6}{5}
+}
+\fig{br14}
+Men vi veit også at \y{2+2+2=2\cdot3}, og derfor kan vi forenkle reknestykket vårt:
+\alg{
+	\frac{2}{5}\cdot 3 &= \frac{2\cdot3}{5}\br
+	&= \frac{6}{5} \label{brok5o61}
+}
+Multiplikasjon mellom heiltal og brøk er også kommutativ\footnote{Hugs at $ \frac{2}{5} $ berre er ei omskriving av $ 2:5 $. }:
+\alg{
+3\cdot\frac{2}{5}&=3\cdot2:5 \\
+&=6:5 \\
+&=\frac{6}{5}
+}
+
+\reg[\label{brhel}Brøk gonga med heiltal]{
+Når vi gongar ein brøk med eit heiltal, gongar vi heiltalet med tellaren i brøken.
+}
+\newpage
+\eks[1]{\vsb \vs
+\alg{
+\frac{1}{3}\cdot 4&=\frac{1\cdot 4}{3} \br &=\frac{4}{3}
+}
+}
+\eks[2]{ \vs
+\vsb
+\alg{
+3\cdot\frac{2}{5}&=\frac{3\cdot 2}{5} \br &=\frac{6}{5}
+}
+}
+\info{Ei tolking av gonging med brøk \label{brtolk}}{
+Av \rref{brhel} kan vi også danne ei tolking av kva å gonge med ein brøk inneber. For eksempel, å gonge $ 3 $ med $ \frac{2}{5} $ kan tolkast på desse to måtane:
+\begin{itemize}
+	\item Vi gongar $ 3 $ med $ 2 $, og deler produktet med $ 5 $:
+	\[ 3\cdot2=6\quad,\quad 6:5=\frac{6}{5}\]
+	\item Vi deler $ 3 $ med $ 5 $, og gongar kvotienten med $ 2 $:
+	\[ 3:5=\frac{3}{5} \quad,\quad \frac{3}{5}\cdot2=\frac{3\cdot2}{5}=\frac{6}{5}\]
+	
+\end{itemize}
+}
+
+\newpage
+\section{\brdelheil}
+Det er no viktig å huske på to ting:
+\begin{itemize}
+	\item Deling kan ein sjå på som ei lik fordeling av eit antal
+	\item I ein brøk er det tellaren som fortel noko om antalet (nemnaren fortel om inndelinga av 1)
+\end{itemize}
+\subsubsection{Tilfellet der tellaren er deleleg med divisoren}
+La oss rekne ut 
+\[ \frac{6}{8}:2 \]
+\fig{br15}
+\fig{br15t}
+Vi har her 6 åttedelar som vi skal fordele likt på 2. Dette blir $ 6:2=2 $ åttedelar.
+\fig{br15a}
+\fig{br15ta}
+Altså er
+\[ \frac{6}{8}:2=\frac{3}{8} \]
+%\fig{br15b}
+\newpage
+\subsubsection{Tilfellet der tellaren ikkje er deleleg divisoren}
+Kva no om vi skal dele $ \frac{3}{4} $ på 2? 
+\[ \frac{3}{4}:2 \]
+\fig{br5}
+\fig{br5t}
+Saka er at vi alltid kan utivde brøken vår slik at tellaren blir deleleg med divisoren. Sidan vi skal dele med 2, utvidar vi altså brøken vår med 2:
+\[ \frac{3}{4}=\frac{3\cdot2}{4\cdot2}=\frac{6}{8} \]
+\fig{br5c}
+\fig{br5ct}
+No har vi 6 åttedelar. 6 åttedelar delt på 2 blir 3 åttedelar:
+\fig{br5a}
+\fig{br5at}
+Altså er
+\[ \frac{3}{4}:2=\frac{3}{8} \]
+%\fig{br5b}
+Reint matematisk har vi rett og slett gonga nemnaren til $ \frac{3}{4} $ med 2:
+\alg{
+\frac{3}{4}:2 &= \frac{3}{4\cdot2} \br
+&= \frac{3}{8}
+}
+\reg[Brøk delt med heiltal \label{brdeenk}]{
+Når vi delar ein brøk med eit heiltal, gongar vi nemnaren med heiltalet.
+}
+\eks[1]{\vsb
+\algv{
+\frac{5}{3}:6 &= \frac{5}{3\cdot 6} \br
+&= \frac{5}{18}
+}
+}
+\info{Unntak}{
+Innleiingsvis av denne seksjonen fann vi at
+\[ \frac{4}{8}:2=\frac{2}{8} \]
+Da gonga vi ikkje nemnaren med 2, slik \rref{brdeenk} tilseier. Om vi gjer det, får vi 
+\alg{
+\frac{4}{8}:2=\frac{4}{8\cdot2}=\frac{4}{16}
+}
+Men 
+\[ \dfrac{2}{8}=\dfrac{2\cdot2}{8\cdot2}=\dfrac{4}{16} \]
+Dei to svara har altså same verdi. Saka er at skal vi dele ein brøk på eit heiltal, og tellaren er deleleg med heiltalet, kan vi direkte dele tellaren på heiltalet. I slike tilfelle er det altså ikkje feil, men heller ikkje naudsynt å bruke \rref{brdeenk}.
+}
+\section{\brgngbr \label{brgngbr}}		
+Vi har sett\footnote{Sjå tekstboksen med tittelen \textit{Ei tolking av gonging med brøk} på s. \pageref{brtolk}.} korleis å gonge med ein brøk inneber å gonge det andre talet med tellaren, og så dele produktet med nemnaren. La oss bruke dette til å rekne ut
+\[  {\frac{5}{4}\cdot\frac{3}{2}}\] 
+Med tolkinga akkurat nemnt, skal vi no gonge $ \frac{5}{4} $ først med 3, og så dele produktet med 2. Av \rref{brhel} er
+\alg{
+\frac{5}{4}\cdot3 =\frac{5\cdot 3}{4}
+}
+Og av \rref{brdeenk} er
+\alg{
+\frac{5\cdot3}{4}:2=\frac{5\cdot3}{4\cdot2}
+}
+Altså er 
+\alg{
+\frac{5}{4}\cdot \frac{3}{2}=\frac{5\cdot 3}{4\cdot2}
+}
+\reg[\brtbr\label{brtbr}]{
+Når vi gongar to brøkar med kvarandre, gongar vi tellar med tellar og nemnar med nemnar.
+}
+\eks[1]{
+\algvv{
+\frac{4}{7}\cdot \frac{6}{9}&= \frac{4\cdot6}{7\cdot9} \br
+&= \frac{24}{63}
+}
+}
+\eks[2]{
+\algvv{
+	\frac{1}{2}\cdot\frac{9}{10}&=\frac{1\cdot9}{2\cdot10} \br
+		&=\frac{9}{20}
+	}
+
+}
+\newpage
+\section{\brkans}
+Når tellaren og nemnaren har lik verdi, er verdien til brøken alltid 1. For eksempel er \y{\frac{3}{3}=1}, \y{\frac{25}{25}=1} osv. Dette kan vi utnytte for å forenkle brøkuttrykk. \vsk
+
+La oss forenkle brøkuttrykket
+\[ \frac{8\cdot 5}{9\cdot8} \]
+Da $ {8\cdot5}={5\cdot8} $, kan vi skrive
+\[ \frac{8\cdot5}{9\cdot8}=\frac{5\cdot8}{9\cdot8} \]
+Og som vi nylig har sett (\rref{brtbr}) er
+\[\frac{5\cdot8}{9\cdot8}= \frac{5}{9}\cdot\frac{8}{8}\]
+Sidan $ {\frac{8}{8}=1} $, har vi at
+\alg{
+	\frac{5}{9}\cdot\frac{8}{8} &= \frac{5}{9}\cdot1 \br
+	&= \frac{5}{9}
+}
+Når berre gonging er til stades i brøkar, kan ein alltid omrokkere slik vi har gjort over, men når ein har forstått kva omrokkeringa ender med, er det betre å bruke \textit{kansellering}\index{kansellering}. Ein set da ein strek over to og to like faktorar for å indikere at dei utgjer ein brøk med verdien 1. Tilfellet vi akkurat såg på skriv vi da som 
+\[ \frac{\cancel{8}\cdot 5}{9\cdot\cancel{8}}=\frac{5}{9} \]
+\newpage
+\reg[Kansellering av faktorar\label{kans}]{Når berre gonging er til stades i ein brøk, kan vi kansellere par av like faktorar i tellar og nemnar.}
+\eks[1]{
+	Kanseller så mange faktorar som mogleg i brøken
+	\[ \frac{3\cdot12\cdot7}{7\cdot 4 \cdot 12} \]
+	\sv \vsb
+	\algvv{
+		\frac{3\cdot\cancel{12}\cdot\cancel{7}}{\cancel{7}\cdot 4 \cdot \cancel{12}} &= \frac{3}{4} 
+	}
+}
+\eks[2]{
+	Forkort brøken $ \frac{12}{42} $.
+	
+	\sv 
+	Vi legg merke til at $ 6 $ er ein faktor i både $ 12 $ og $ 42 $, altså er
+	\alg{
+		\frac{12}{42} &= \frac{\cancel{6}\cdot2}{\cancel{6}\cdot7}\br
+		&= \frac{2}{7}
+	}
+}
+\eks[3]{
+	Forkort brøken $ \frac{48}{16}  $.
+	
+	\sv
+	Vi legg merke til at $ 16 $ er ein faktor i $ 48 $, altså er
+	\alg{
+		\frac{48}{16}&=
+		\frac{3\cdot\cancel{16}}{\cancel{16}}\br
+		&= \frac{3}{1}\br
+		&= 3
+	}
+	\textsl{Merk}: Viss alle faktorar er kansellert i tellar eller nemnar, er dette det same som at talet 1 står der.
+}
+\newpage
+\info{Forkorting via primtalsfaktorisering}{
+Det er ikkje alltid like lett å legge merke til ein felles faktor, slik vi har gjort i \textsl{Eksempel 2} og \textsl{Eksempel 3} over. Vil ein vere heilt sikker på at ein ikkje har oversett felles faktorar, kan ein alltid primtalsfaktorisere (sjå \refsec{primtalsfakt}) både tellar og nemnar. For eksempel har vi at
+\alg{
+\frac{12}{42}&=\frac{\cancel{2}\cdot2\cdot\cancel{3}}{\cancel{2}\cdot\cancel{3}\cdot7}\br
+&=\frac{2}{7}
+}
+}
+
+\info{Brøkar forenklar utrekningar}{
+	Desmialtalet $ 0,125 $ kan vi skrive som brøken $ \frac{1}{8} $. Reknestykket
+	\[ 0,125\cdot16 \]
+	vil for dei fleste av oss ta ei stund å løyse for hand med vanlege multiplikasjonsreglar. Men bruker vi brøkuttrykket får vi at
+	\alg{
+		0,125\cdot16 &= \frac{1}{8}\cdot16 \br
+		&= \frac{2 \cdot\cancel{8}}{\cancel{8}}\\
+		&= 2
+	}
+}
+\newpage
+\info{''Å stryke nullar''}{
+	Eit tal som 3000 kan vi skrive som $ 3\cdot10\cdot10\cdot10 $, mens 700 kan vi skrive som $ 7\cdot10\cdot10 $. Brøken $ \frac{3000}{700} $ kan vi derfor forkorte slik:
+	\alg{
+		\frac{3000}{700}&= \frac{3\cdot\cancel{10}\cdot\cancel{10}\cdot10}{7\cdot\cancel{10}\cdot\cancel{10}}\br
+		&= \frac{3\cdot10}{7} \br
+		&= \frac{30}{7}
+	}
+	I praksis er dette det same som ''å stryke nullar'':
+	\alg{
+		\frac{30\cancel{00}}{7\cancel{00}}&= \frac{30}{7}
+	}
+	\textsl{Obs!} Nullar er dei einaste sifra vi kan ''stryke'' på denne måten, for eksempel kan vi ikkje forkorte $ \frac{123}{13} $ på nokon som helst måte. I tillegg kan vi berre ''stryke'' nullar som står som bakerste siffer, for eksempel kan vi ikkje ''stryke'' nullar i brøken $ \frac{101}{10} $.  
+}
+\newpage
+\section{\brdelmbr}
+\subsubsection{Deling ved å sjå på tallinja}
+La oss rekne ut $ 4:\frac{2}{3}  $. Sidan brøken vi deler 4 på har 3 i nemnar, kan det vere ein idé å gjere om også 4 til ein brøk med $ 3 $ i nemnar. Vi har at 
+\[ 4=\dfrac{12}{3} \]
+\fig{br10c4}
+Husk no at ei tyding av $ 4:\frac{2}{3} $ er
+\begin{center}
+	''Kor mange gonger $ \frac{2}{3} $ går på 4.''
+\end{center}
+Ved å sjå på tallinja, finn vi at $ \frac{2}{3} $ går 6 gongar på 4. Altså er
+\[ 4:\frac{2}{3}=6 \]
+\fig{br10c}
+\newpage
+\subsubsection{Ein generell metode}
+Vi kan ikkje sjå på ei tallinje kvar gong vi skal dele med brøkar, så no skal vi komme fram til ein generell reknemetode ved igjen å bruke $ 4:\frac{2}{3} $ som eksempel. For denne metoden bruker vi denne tydinga av divisjon:
+\begin{center}
+	$  4:\dfrac{2}{3}= $ ''Talet vi må gonge $ \frac{2}{3} $ med for å få 4.''
+\end{center}
+
+For å finne dette talet startar vi med å gonge $ \frac{2}{3} $ med talet som gjer at produktet blir 1. Dette talet er \textit{den omvende brøken}\index{brøk!omvend} av $ \frac{2}{3} $, som er $ \frac{3}{2} $:
+\[ \frac{2}{3}\cdot\frac{3}{2}=1 \]
+No gjenstår det berre å gonge med 4 for å få 4:
+\[ \frac{2}{3}\cdot\frac{3}{2}\cdot4=4 \]
+For å få 4, må vi altså gonge $ \dfrac{2}{3} $ med $ \dfrac{3}{2}\cdot4 $. Dette betyr at
+\alg{
+4:\frac{2}{3}&=\frac{3}{2}\cdot4 \br
+&=6
+}
+\reg[\delmbr \label{delmbr}]{
+Når vi deler eit tal med ein brøk, gongar vi talet med den omvende brøken.
+}
+\eks[1]{\vsb
+	\algv{
+			6:\frac{\color{c1}2}{\color{c2}9}&=6\cdot\frac{\color{c2}9}{\color{c1}2}\\
+		&=27
+	}
+}
+\eks[2]{\vsb
+	\algv{
+		\frac{4}{3}:\frac{\color{c1}5}{\color{c2}8}&= \frac{4}{3}\cdot\frac{\color{c2}8}{\color{c1}5} \br
+		&= \frac{32}{15}
+	}
+}
+\newpage
+\eks[3]{\vsb
+	\algv{
+		\frac{3}{5}:\frac{3}{10}&= \frac{3}{5}\cdot\frac{10}{3} \br
+		&= \frac{30}{15} }
+	Her bør vi også sjå at brøken kan forkortast:
+	\alg{
+		\frac{30}{15}&= \frac{2\cdot\cancel{15}}{ \cancel{15}} \br
+		&= 2
+	}
+\mer Vi kan spare oss for store tal viss vi kansellerer faktorar undervegs i utrekningar:
+	\alg{
+		\frac{3}{5}\cdot\frac{10}{3}  &= \frac{\cancel{3}\cdot2\cdot\cancel{5}}{\cancel{5}\cdot\cancel{3}} \br
+		&= 2 
+	}
+}
+\newpage
+\section{\Rasjtal \label{Rasjtal}}
+\reg[Rasjonale tal]{
+Eit kvart tal som kan bli skriven som ein brøk med heiltals tellar og nemnar, er eit \textit{rasjonalt tal}\index{tal!rasjonalt}.
+}
+\info{Merk}{Rasjonale tal gir oss ei samlenemning for
+\begin{itemize}
+	\item \textbf{Heiltal} \\
+	For eksempel $ 4=\frac{4}{1} $.
+	\item \textbf{Desimaltal med endeleg antal desimalar}\\
+	For eksempel $ 0,2=\frac{1}{5} $.
+	\item \textbf{Desimaltal med repeterande desimalmønster} \\
+	For eksempel \footnote{\sym{$ \bar{3} $} indikerer at 3 fortsett i det uendelege. Ein annan måte å indikere dette på er å bruke symbolet \sym{...}\,. Altså er $ 0,08\bar{3}=0,08333333 ... $} $ 0,08\bar{3}=\frac{1}{12} $. 
+\end{itemize}} \vsk
+
+\reg[Blanda tal\index{tal!blanda}]{
+Om vi adderer eit heiltal med ein brøk der tellaren er mindre enn nemnaren, får vi eit \textit{blanda tal}.
+}
+\eks[1]{
+Tre forskjellige blanda tal:
+\[   2+\dfrac{5}{7} \qquad\qquad
+ 8+\dfrac{2}{7} \qquad\qquad
+ \dfrac{1}{10}+4  \]
+}
+\info{Obs!}{
+I mange bøker vil du finne tal som dei fra \textsl{Eksempel 1} over skrivne slik
+\[   2\dfrac{5}{7} \qquad\qquad
+8\dfrac{2}{7} \qquad\qquad
+4\dfrac{1}{10}  \]
+}
+\newpage
+\eks[2]{
+Skriv om brøken $ \frac{17}{3} $ til eit blanda tal.
+
+\sv 
+Vi legg merke til at tellaren er 17 og nemnaren er 3. Det største heiltalet vi kan gonge med 3 utan at produktet blir større enn 17, er 5. Altså kan vi skrive
+\alg{
+\frac{17}{\colb{3}}&=\frac{5\cdot\colb{3}+2}{\colb{3}}\br
+&= \frac{5\cdot\colb{\cancel{3}}}{\colb{\cancel{3}}}+\frac{2}{\colb{3}} \\
+&=5+\frac{2}{3}
+}
+}
+\eks[3]{
+Skriv om $ 3+\frac{4}{5} $ til ein brøk.
+
+\sv
+
+Vi har at $ 3=\frac{3}{1} $, altså er
+\[ 3+\frac{4}{5}=\frac{3}{1}+\frac{4}{5} \]
+Vidare har vi at\footnote{Sjå \rref{braduliknemn}.}
+\alg{
+\frac{3}{1}+\frac{4}{5}&= \frac{3\cdot5}{1\cdot5}+\frac{4}{5} \br
+&= \frac{15}{5}+\frac{4}{5}\br
+&= \frac{19}{5}
+}
+}
+\end{document}
+
+

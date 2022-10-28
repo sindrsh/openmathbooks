@@ -1,0 +1,28 @@
+\newcommand{\fode}{}
+\newcommand{\fodee}{}
+\newcommand{\sep}{}
+\newcommand{\sepe}{\eks{
+		Finn den generelle løsningen for differensialligningen
+		\[ y' + 8xy=0 \]
+		
+		\sv
+		Vi starter med å separere ligningen:
+		\alg{
+			y' + 8xy &=0 \\
+			\frac{y'}{y}&=-8x
+		}
+		Vi integrerer så på begge sider mhp. $ x $, og løser deretter for $ y $:
+		\alg{\int \frac{y'}{y} \,dx&=\int-8x\, dx \\
+			\int \frac{1}{y}\, dx &= -4x^2 +C\\
+			\ln |y| &= -4x^2 +C \\
+			e^{\ln |y|} &= e^{-4x^2 + C} \\
+			|y| &= e^{-4x^2 + C} \\
+			y &= \pm e^{-4x^2 + C} \\
+			&= \pm e^{-4x^2}e^C\\
+			 &= De^{-4x^2}
+		}
+ \textsl{Merk}: $ {D=\pm e^C} $.
+	}}
+
+\newcommand{\fjmas}{}
+\newcommand{\fjmasd}{}

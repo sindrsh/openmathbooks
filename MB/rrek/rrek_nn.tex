@@ -1,0 +1,225 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../nn}
+
+\begin{document}
+%\newpage
+\section{\rrek}
+\subsection*{Prioriteringa av rekneartane}
+Sjå på følgande reknestykke:
+\[ 2+3\cdot4 \]
+Eit slikt reknestykke \textsl{kunne} ein tolka på to måtar:
+\begin{enumerate}
+	\item ''2 pluss 3 er 5. 5 gonga med 4 er 20. Svaret er 20.''
+	\item ''3 gonga med 4 er 12. 2 pluss 12 er 14. Svaret er 14.''
+\end{enumerate}
+Men svara blir ikkje like! Det er altså behov for å ha nokre reglar om kva vi skal rekne ut først. Den eine regelen er at vi må rekne ut gonging eller deling \textsl{før} vi legg saman eller trekk ifrå, dette betyr at \regv
+\st{ \vs
+\alg{
+	2+3\cdot 4&=\text{''Rekn ut }3\cdot4\text{, og legg saman med 2''}  \\
+	&= 2+12 \\
+	&= 14
+}
+}
+Men kva om vi ønska å legge saman $ 2 $ og $ 3 $ først, og så gonge summen med 4? Å fortelle at noko skal reknast ut først gjer vi ved hjelp av parentesar: \regv
+\st{\vs
+\alg{
+(2+3)\cdot4&=\text{''Legg saman 2 og 3, og gong med 4 etterpå''} \\
+&= 5\cdot 4 \\
+&= 20
+}
+}\regv
+
+\reg[Reknerekkefølge \label{rrek}]{ \vspace{-5pt}
+\begin{enumerate}
+	\item Uttrykk med parentes
+	\item Multiplikasjon eller divisjon
+	\item Addisjon eller subtraksjon
+\end{enumerate}
+} 
+\newpage
+\eks[1]{
+Rekn ut
+\[ 23-(3+9)+4\cdot 7 \]
+\sv \vs \vs
+\algv{
+&& 23-(3+9)+4\cdot 7&=23-12+4\cdot7 &&\text{Parentes} \\
+&&&=23-12+28 &&\text{Gonging} \\
+&&&=39 &&\text{Addisjon og subtraksjon}
+}
+}
+\eks[2]{
+	Rekn ut
+	\[ 18:(7-5)-3 \]
+	\sv \vs \vs
+	\algv{
+		&& 18:(7-5)-3&=18:2-3 &&\text{Parentes} \\
+		&&&=9-3 &&\text{Deling} \\
+		&&&=6 &&\text{Addisjon og subtraksjon}
+	}
+}
+\subsection*{Gonging med parentes}
+Kvor mange ruter ser vi i figuren under?
+\fig{gang}
+To måter ein kan tenke på er desse:
+\begin{enumerate}
+	\item Det er $ 2\cdot4 =8 $ lilla ruter og $ 3\cdot4=12 $ grøne ruter. Til saman er det $ 8+12 =20 $ ruter. Dette kan vi skrive som
+\[ 2\cdot 4 + 3\cdot 4 = 20  \]
+	\item Det er $ 2+3=5 $ ruter bortover og 4 ruter oppover. Altså er det $ 5\cdot4 =20 $ ruter totalt. Dette kan vi skrive som
+	\[ (2+3)\cdot 4 = 20 \]
+\end{enumerate}
+Av desse to utrekningane har vi at
+\[ (2+3)\cdot4 = 2\cdot 4+ 3\cdot4 \]
+\reg[\gangpar \label{gangpar}]{
+Når eit parentesuttrykk er ein faktor, kan vi gonge dei andre faktorane med kvart enkelt ledd i parentesuttrykket.	 
+%\fig{gang1}
+}
+\eks[1]{
+\vs
+\[ ({\color{orange}4}+{\color{ForestGreen}7})\cdot {\color{blue}8}={\color{orange}4}\cdot{\color{blue}8}+{\color{ForestGreen}7}\cdot{\color{blue}8} \]	
+}
+\eks[2]{ \vsb \vs
+\alg{
+(10-7)\cdot2 &= 10\cdot 2-7\cdot2\\
+&=20-14 \\
+&=6
+}	
+\mer Her vil det sjølvsagt vere raskare å rekne slik:
+\[ (10-7)\cdot 2=3\cdot 2 =6 \]
+}
+\eks[2]{
+Rekn ut $ 12\cdot 3 $.
+
+\sv
+\vsb \vsb
+\alg{
+12\cdot 3&= (10+2)\cdot 3 \\
+&=10\cdot 3 +2\cdot 3 \\
+&=30 +6 \\
+&=36
+}	
+}
+\info{Obs!}{
+Vi introduserte parentesar som ein indikator på kva som skulle reknast ut først, men \rref{gangpar} gir ei alternativ og likeverdig tyding av parentesar. Regelen kjem spesielt til nytte i algebrarekning (sjå \hrs{Del2}{Del}).
+}
+\newpage
+\subsubsection{Å gonge med 0}
+Vi har tidlegare sett at 0 kan skrivast som ein differanse mellom to tal, og dette kan vi no utnytte til å finne produktet når vi gongar med 0. La oss sjå på reknestykket
+\[ (2-2)\cdot3 \]
+Av \rref{gangpar} har vi at
+\alg{
+ (2-2)\cdot3 &= 2\cdot3-2\cdot3\\&=6-6\\&=0
+}
+Sidan $ 0=2-2 $, må dette bety at
+\[ 0\cdot3=0 \]
+
+\reg[Gonging med 0]{
+	Viss 0 er ein faktor, er produktet lik 0.
+}
+\eks[1]{ \vsb \vs
+	\alg{
+		7\cdot0&=0\vn
+		0\cdot219 &=0
+	}
+}
+
+\subsection*{Assosiative lover}
+\reg[Assosiativ lov ved addisjon]{
+Plasseringa av parentesar mellom ledd har inga påverknad på summen.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2+3)+4&=5+4=9 \vn
+2+(3+4)&=2+7=9
+}
+\fig{asso0}
+}
+\vsk \vsk
+
+\reg[Assosiativ lov ved multiplikasjon]{
+Plasseringa av parentesar mellom faktorar har inga påverknad på produktet.
+}
+\eks[]{ \vsb \vs
+\alg{
+(2\cdot3)\cdot4 &=6\cdot 4=24 \vn
+2\cdot(3\cdot4)&=2\cdot 12 =24
+}
+\fig{asso1}
+}  \vsk
+
+I motsetnad til addisjon og multiplikasjon, er verken subtraksjon eller divisjon assosiative:
+\alg{
+(12-5)-4&=7-4=3 \\
+12-(5-4)&=12-1=11
+}
+\alg{
+	(80:10):2&=8:2=4 \\
+	80:(10:2)&=80:5=16
+}
+Vi har sett at parentesane hjelp oss med å seie noko om \textsl{prioriteringa} av rekneartane, men det at subtraksjon og divisjon er ikkje-assosiative fører til at vi også må ha ein regel for kva \textsl{retning} vi skal rekne i. \regv
+
+\reg[Retning på utrekningar \label{rret}]{
+Rekneartar som ut ifrå \rref{rrek} har lik prioritet, skal reknast frå venstre mot høgre.
+}
+\eks[1]{ \vsb \vsb
+	\alg{
+		12-5-4&=(12-5)-4 \\
+		&=7-4\\
+		&=3
+	}
+}
+\eks[2]{ \vsb \vsb
+	\alg{
+		80:10:2&=(80:10):2 \\
+		&=8:2 \\
+		&=4
+	}
+}
+\eks[3]{ \vsb \vs
+	\alg{
+		6: 3\cdot 4 &= (6:3)\cdot4\\ 
+		&=2\cdot4 \\
+		&= 8
+	}
+}
+
+\section{\fak \label{Faktorisering}}
+Når ein heiltalls dividend og ein heiltals divisor resulterer i ein heiltals \\kvotient, seier vi at dividenden er \outl{deleleg} med divisoren. For eksempel er $ 6 $ deleleg med $ 3 $ fordi $ {6:3=2} $, og $ 40 $ er deleleg med $ 10 $ fordi $ {40:10=4} $. Omgrepet deleleg er med på å definere primtal:\regv
+
+\reg[Primtal]{\index{primtal}
+	Eit naturleg tal som er større enn 1, og som berre er deleleg med seg sjølv og 1, er eit \outl{primtal}.
+}
+
+\eks[]{
+	Dei fem første primtala er $ 2, 3, 5 , 7  $ og $ 11 $.
+} \vsk \vsk
+
+\reg[Faktorisering]{\index{faktorisering}
+	\outl{Faktorisering} inneber å skrive eit tal som eit produkt av andre tal.
+}
+\eks{
+	Faktoriser 24 på tre forskjellige måtar.
+	
+	\sv  \vsb \vs 
+	\alg{
+		24&=2\cdot 12 \br
+		24&=3\cdot 8 \br
+		24&=2\cdot 3 \cdot 4
+	}
+}  
+\spr{
+	Da 12 er deleleg med 4, seier vi at ''4 er ein faktor i 12''.
+}
+\newpage
+\reg[Primtalsfaktorisering]{\index{primtalsfaktorisering}
+	Faktorisering med berre primtal som faktorar kallast \\ \outl{primtalsfaktorisering}.
+}
+\eks[]{
+	Skriv 12 på primtalsfaktorisert form.
+	
+	\sv \vs \vs
+	\[ 12= 2 \cdot2\cdot3 \]
+}
+
+\end{document}
+

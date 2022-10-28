@@ -1,0 +1,26 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+	\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=2]
+	\draw (0,-1) --(0,1);
+	\draw [black] ($({cos(45)},0.05 ) $)--($({cos(45)},-0.05) $) node[anchor=north]{$ \cos x $};
+	\draw [black] ($(0.05,{sin(45)}) $)--($(-0.05, {sin(45)}) $) node [anchor=east]{$ \sin x $};			
+	\draw (0,0) circle (1cm);
+	\draw (-1,0) -- (1,0);
+	\draw [densely dotted] ($({cos(45)},0 ) $)--($({cos(45)}, {sin(45)}) $);	
+	\draw [densely dotted] ($(0,{sin(45)}) $)--($({cos(45)}, {sin(45)}) $);
+	\draw [blue] (0,0) -- (45:1);
+%	\draw (-45:0.2) arc (-45:0:0.2);
+%	\draw (-22:0.3) node{ $v$};	
+\draw (45:1.12) node{$x$};
+%\draw (45:0.95) -- (45:1.05);	
+	\end{tikzpicture}
+	\caption{}
+\end{figure}
+\end{document}

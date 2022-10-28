@@ -1,0 +1,45 @@
+settings.outformat="pdf";
+defaultpen(fontsize(11pt));
+
+import three;
+size(6cm,0);
+
+draw(O -- 5X, L=Label("$x$",
+position=EndPoint), arrow=Arrow3(HookHead2, emissive(black)));
+draw(O -- 5Y, L=Label("$y$",
+position=EndPoint), arrow=Arrow3(HookHead2, emissive(black)));
+draw(O -- 4Z, L=Label("$z$",
+position=EndPoint), arrow=Arrow3(HookHead2));
+
+int a = 2;
+int b = 3;
+int c = 3;
+
+triple A = (a,b,c);
+draw(O -- A, L=Label("$\vec u$",
+position=EndPoint), arrow=Arrow3(DefaultHead2));
+
+draw(b*Y -- a*X+b*Y, dotted);
+draw(a*X -- a*X+b*Y, dotted);
+draw(c*Z -- A, dotted);
+draw(a*X+b*Y -- A, dotted);
+
+triple proj = (1,-1,0.5);
+triple z = (0,-0.5,0.5);
+triple N = proj*abs(z);
+
+
+for (int n = 1; n <= 4; ++n) {
+string x = (string) n;
+draw(n*X+0.1Y -- n*X-0.1Y, L=Label(x, position=EndPoint));
+}
+for (int n = 1; n <= 4; ++n) {
+string x = (string) n;
+draw(n*Y+0.1X -- n*Y-0.1X, L=Label(x, position=EndPoint));
+}
+for (int n = 1; n <= 3; ++n) {
+string x = (string) n;
+draw(n*Z-0.1*z -- n*Z+0.1*z, L=Label(x, position=EndPoint));
+}
+currentprojection=orthographic(proj);
+

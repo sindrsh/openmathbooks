@@ -1,0 +1,25 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+%\input{/Users/sindre/Desktop/akademiet/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+
+\begin{document}
+
+\begin{figure}
+	\centering
+\begin{tikzpicture}[scale=2]
+\draw (0,0) -- (80:1.4);
+\draw [densely dotted] (80:0.5) -- (80:1);
+\draw (0,0) -- (20:1.2);
+\draw (20:0.2) arc (20:80:0.2);
+\draw (50:0.3) node{$ v $} ;
+\draw (0,0) circle (1);
+\draw [thick,blue, ->,>=stealth'] (20:1) arc (20:80:1);	
+\draw (50:1.2) node{$ 60^\circ $};	
+\end{tikzpicture}
+
+\caption{Vinkelen $ v $ målt i grader.}
+\end{figure}
+
+\end{document}

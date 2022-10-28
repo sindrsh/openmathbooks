@@ -1,0 +1,729 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\section{Bestemt og ubestemt integral \label{BestemtogubestemtI}}
+\regdef[Integral som areal]{
+Gitt en funksjon $ f(x) $ som er positiv og kontinuerlig for alle $ {x\in[a, b] }$. \outl{Integralet} $ I $ til $ f $ på intervallet $ {x\in[a, b]} $  tilsvarer da arealet avgrenset av $ x $-aksen, linjene $ {x=a} $ og ${ x= b} $, og grafen til $ f $.
+\fig{intpos}
+}\vsk
+
+Gitt en funksjon $ f(x) $, som vist i \fref{fartvar}. Vi ønsker nå å finne  en tilmærming for integralet $ I $ til $ f $ på intervallet $ [a, b] $.
+\figc{int1a}{\label{fartvar}}
+Vi starter med å dele $ [a, b] $ inn i tre delintervaller, som da får bredden $ \Delta x=\frac{b-a}{3} $. Videre bruker vi $ f(x) $ i starten av hvert delintervall som høgden i et rektangel. $ x $-verdiene dette gjelder kaller vi $ {x_1=a} $, $ x_2 $ og $ x_3 $. Vi kan nå tilnærme $ I $ som summen av tre areal, $ s_1 $, $ s_2 $ og $ s_3 $:
+\alg{
+	I &\approx s_1 + s_2 + s_3 \\
+	&\approx f(a)\Delta x + f(x_2)\Delta x + f(x_3)\Delta x \\
+	&\approx \left[f(a) +f(x_2) +f(x_3)\right]\Delta x
+}
+\figc{int1}{\label{binttreint}}
+
+Intuitivt vil vi tenke at jo mindre intervaller vi bruker, jo bedre må tilnærmingen være.
+\begin{figure}[H]
+	\centering
+	\subfloat[]{\includegraphics[scale=0.9]{\figp{int2}}}\quad
+	\subfloat[]{\includegraphics[scale=0.9]{\figp{int3}}}	
+	\captionof{figure}{\textsl{a)} 10 intervaller \textsl{b)} 20 intervaller \label{toints}}
+\end{figure}
+Lar vi $ n $ være antall delintervaller, og $ {n\to \infty} $, får vi at
+\begin{align}
+	I&\approx\lim\limits_{n\to \infty}\left[f(x_1)+fv(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
+	&\approx \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{intdefpreeq}
+\end{align}
+hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ t_1=a $). Det kan vises at grenseverdien i \eqref{intdefpreeq} er lik $ I $, og det fører oss til følgende definisjon:
+\regdef[\bestminten \label{bestminten}]{\outl{Det bestemte integralet} $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
+	\begin{equation}
+		I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{bint}
+	\end{equation}
+	hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $.
+}
+\eks{
+Finn det bestemte integralet av ${ f(x)=x }$ på intervallet $ {x\in[0, 4]} $.
+
+\sv
+Vi har her at $ {f(x_i)=x_i=(i-1)\Delta x} $, hvor $ {\Delta x=\frac{4}{n}} $. Setter vi dette inn i \eqref{bint}, får vi at
+\alg{
+I&= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n}(i-1)\left(\frac{4}{n}\right)^2 \\
+&=4^2 \lim\limits_{n\to \infty} \frac{1}{n^2}\left(\frac{n(n+1)}{2}-n \right) \\
+&= 4^2 \lim\limits_{n\to \infty}\frac{1}{n^2} \left(\frac{n^2+n}{2}-n \right) \\
+&= 16\cdot\frac{1}{2} \\
+&= 8
+}
+\mers{I overgangen mellom første og andre linje i ligningen over har vi brukt summen av en aritmetisk rekke.}
+}
+\newpage
+I kommende seksjoner skal vi finne integraler på en helt annen måte enn i eksempelet over. Læresetningen som sørger for dette er så viktig at den rett og slett kalles \outl{analysens fundamentalteorem}\footnote{Analyse i matematisk sammenheng kan, kort oppsummert, sies å være studien av funksjoner. Et teorem er en læresetning som kan bevises.}. Da teoremet gir oss en metode som omgår utregning av summer, lønner det seg å skrive integralet på en mer kompakt form:\regv
+\reg[Bestemt integral II]{
+	Det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ skrives som
+\begin{equation}
+	I = \int\limits_{a}^b f(x)\,dx \label{bintint}
+\end{equation}
+}
+\info{Omskriving}{ \vspace{-5pt}
+I overgangen mellom \eqref{bint} og \eqref{bintint} har vi erstattet $ \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} $ med $ \int\limits_{a}^b $, $ \Delta x $ med $ dx $, og i tillegg fjernet alle indekser.
+}
+\label{bestmintend}
+
+\subsection{Den antideriverte}\index{antiderivert}
+Vi skal nå se på en definisjon som kan virke veldig triviell, men som viser seg å være svært viktig i neste delseksjon. \vsk
+
+La oss starte med å se på funksjonen $ {f(x)=x^2}  $.
+Å derivere $ f $ mhp. $ x $ byr på få problemer:
+\[ f'=2x \]
+Hva nå med den deriverte av $ {g(x)=x^2+1} $? Svaret blir det samme som for $ f'$:
+\[ g'=2x \]
+Allerede nå innser vi at det finnes en haug av funksjoner, rett og slett uendelig mange, som har $ 2x $ som sin deriverte. Tiden er derfor inne for å lage en samlebetegnelse for alle funksjoner med samme deriverte:\regv
+\reg[Den antideriverte]{Hvis $ F(x) $ er en deriverbar funksjon og $ {F'(x)=f(x) }$, da er $ F $ en antiderivert av $ f $.}
+\eks{
+	Undersøk om følgende funksjoner er en antiderivert til ${f(x)=2x+e^x } $:
+	\alg{
+		g(x)&=x^2 +e^x  \\[5 pt]
+		h(x)&=x^2 +e^{2x}\\[5 pt]
+		k(x)&=x^2+e^x+4 
+	}\vs
+	
+	\sv
+	Vi finner de deriverte av $ g $, $ h $ og $ k $:
+	\alg{
+		g'(x)&=2x+e^x  \os 
+		h'(x)&=2x+2e^{2x} \os
+		k(x)&=2x+e^x
+	}
+	Siden $ {g'(x)=k'(x)=f(x)} $, mens $ { h'(x)\neq f(x)} $, er bare $ g(x) $ og $ k(x) $ en antiderivert til $ f $.
+}
+\newpage
+\subsection{\anfundteo \label{anfundteo}}	
+\reg[Analysens fundamentalteorem]{\index{analysens fundamentalteorem}
+		Gitt en funksjon $ f(x) $ definert på intervallet $ [a, b] $. Hvis $ F $ er en antiderivert til $ f $, er
+		\begin{equation}
+			\int\limits_a^b f(x)\, dx = F(b)-F(a) \label{anfund2}
+		\end{equation}\vs
+	}
+\eks[]{
+	Gitt funksjonen $ f(x)= e^{\sin x}  $. Finn $ \int\limits_0^\frac{\pi}{2} f'(x)\,dx $ .
+	
+	\sv
+	Siden $ f $ er en antiderivert til $ f'(x) $, har vi at
+	\alg{\int\limits_0^\frac{\pi}{2} f'(x)\,dx &= f\left(\frac{\pi}{2}\right)-f(0)\\
+		&= e^{\sin \frac{\pi}{2}}-e^{\sin 0} \\
+		&= e-1
+	}
+}
+\subsection{Ubestemte integral}\index{integral!ubestemt}
+Vi har hittil sett på det \outl{bestemte integralet}, som har sitt navn fordi integralet er over et intervall der start- og sluttverdien er gitt. Det \textit{ubestemte} integralet til en funksjon $ f(x) $ skriver vi derimot som
+\[ \int\limits_c^x f(t)\, dt \]
+Navnet ubestemt kommer av at $ c $ er en vilkårlig konstant og at $ x $ er en varierende verdi\footnote{Det kan kanskje se litt rart ut at vi har skrevet $ f(t) $ i integralet når vi snakker om $ f(x) $, men dette gjøres bare for å skille mellom de to varierende verdiene $ x $ og $ t $. $ x $ kan være en hvilken som helst verdi, men for det ubestemte integralet ser vi på $ f $ for verdiene $ {t\in [a, x]} $, altså $ f(t) $. Og da er det ikke $ x $ som varierer, men $ t $, derav $ dt $.}.\vsk
+
+Hvis vi lar $ F$ være en antiderivert til $ f $, har vi fra (\ref{anfund2}) at:
+\[ \int\limits_c^x f(t)\, dt = F(x)-F(c)  \]
+Siden $ c $ er en konstant, må $ -F(c) $ også være det. Denne kalles \outl{integrasjonskonstanten}, og omdøpes gjerne til $ C $. Det er også vanlig å forenkle skrivemåten til det ubestemte integralet ved å fjerne grensene og bare skrive $ f(x)\,dx $ etter integraltegnet.\regv
+\reg[Ubestemt integral]{
+	Det ubestemte integralet av $ f(x) $ er gitt som
+	\begin{equation}
+		\int f(x)\, dx  = F(x)+ C \label{uint}
+	\end{equation}
+	Hvor $ F $ er en antiderivert til $ f $ og $ C $ er en vilkårlig konstant.
+}
+\info{\note}{
+Når ikke annet er nevnt, tar vi det heretter for gitt at størrelser skrevet som store bokstaver er vilkårlige konstanter som resultat av integrasjon.
+}
+\eks[1]{
+	Ved derivasjon vet vi at $ {(x^2)'=2x} $. Bruk dette til å å finne $ \int 2x \,dx$. \\ 	
+	
+	\sv
+	Fra derivasjonen ser vi at $ x^2 $ er en antiderivert til $ 2x $. Vi kan dermed skrive
+	\[ \int 2x \,dx =  x^2 + C  \]\vs
+}
+\newpage
+\eks[2]{
+	Ved derivasjon vet vi at $ {(x^2+3)'=2x} $. Bruk dette til å finne $ \int 2x \,dx$. \\ 	
+	
+	\sv
+	Fra derivasjonen ser vi at $ {x^2+3 }$ er en antiderivert til $ 2x $. Vi kan dermed skrive
+	\[ \int 2x \,dx =  x^2 +3 +C  \]
+	Men siden $ C $ er en vilkårlig konstant, kan vi liksågodt lage oss en ny konstant $ D=C+3 $, og får da at
+	\[ \int 2x \,dx =  x^2 + D  \]
+	\textsl{Merk}: Siden integrasjonskonstanter er vilkårlige, kan vi tillate oss å komprimere flere konstanter til én. I utregningen over kunne vi skrevet $ C $ opp igen, underforstått at 3 var ''trekt inn'' i denne konstanten:
+	\[ \int 2x\,dx=x^2+3+C=x^2+C \]	
+}
+\section{Integralregning}
+Å finne bestemte og ubestemte integraler er et stort og viktig felt innenfor matematikken. Analysens fundamentalteorem forteller oss at nøkkelen er å finne en antiderivert til funksjonen vi ønsker å integrere.
+\subsection{\intuf \label{intuf}}
+Vi skal etterhvert se at å finne integraler ofte krever spesielle metoder, men noen grunnleggende relasjoner bør vi huske: \regv
+\reg[Ubestemte integraler]{
+	For to funksjoner $ f(x) $ og $ g(x) $, og to konstanter $ k $ og $ C $, er
+	\begin{align}
+		& \int \left[f(x)+g(x)\right]\,dx= \int f(x)\,dx + \int g(x)\,dx \label{intfplusg}\\
+		& \int kf(x)\,dx = k\int f(x)\, dx \label{konstint} \\ 
+		& \int x^k \, dx = \frac{1}{k+1}x^{k+1} \label{xhatr}  + C \qquad (k\neq -1) \\
+		& \int \sin (kx) \, dx = -\frac{1}{k}\cos (kx) + C \\
+		& \int \cos (kx) \, dx = \frac{1}{k}\sin (kx) + C \\
+		& \int e^{kx} \, dx = \frac{1}{k}e^{kx} + C \\
+		& \int \frac{1}{\cos^{2}x} \, dx  =\tan x +C \label{tanint} \\
+		& \int \frac{1}{x+k} \, dx = \ln|x+k| + C \label{lnint} 
+	\end{align}\vs
+}
+\newpage
+\eks[1]{
+	Finn det bestemte integralet $ \displaystyle \int\limits_{0}^{\frac{\pi}{4}} \frac{8}{1-\sin^2 x}\,dx $.
+	
+	\sv
+	Vi starter med å observere at $ {1-\sin^2 x= \cos^2 x} $. I tillegg vet vi fra (\ref{konstint}) at konstanten 8 kan trekkes utenfor integralet. Vi kan derfor skrive integralet vårt som
+	\[ 8\int\limits_{0}^{\frac{\pi}{4}} \frac{1}{\cos^2 x}\,dx \]
+	Fra (\ref{tanint}) vet vi at $ \tan x $ er en antiderivert til $ \frac{1}{\cos^2 x} $. Når vi har funnet en antiderivert fører vi gjerne slik\footnote{Forklar for deg selv hvorfor vi ikke trenger å ta hensyn til konstanten når vi skal finne et bestemt integral.}:
+	\alg{
+		8\int\limits_{0}^{\frac{\pi}{4}} \frac{1}{\cos^2 x}\,dx &= 8\big[\tan x\big]_0^{\frac{\pi}{4}}	\\
+		&= 8\left[\tan \frac{\pi}{4}-\tan 0\right] \br
+		&= 8[1-0] \\
+		&= 8
+	}
+	
+	\textsl{Merk}: Bruken av klammeparantes er bare en annen måte å skrive (\ref{anfund2}) på.\vs
+}
+\newpage
+\eks[2]{
+Finn det ubestemte integralet $ \displaystyle \int \left(\frac{1}{x^4}+\sqrt[3]{x}\right)dx $.
+
+\sv
+Vi utnytter at $ {\frac{1}{x^4}=x^{-4}} $ og at $ {\sqrt[3]{x}=x^{\frac{1}{3}}} $. Ved (\ref{intfplusg}) og (\ref{xhatr}) kan vi skrive:
+\alg{
+\int \left(\frac{1}{x^4}+\sqrt[3]{x}\right)dx &= \int \left(x^{-4} +x^{\frac{1}{3}}\right)\,dx \\
+&= \frac{1}{-4+1}x^{-4+1}+\frac{1}{\frac{1}{3}+1}x^{\frac{1}{3}+1}+C \br
+&= -\frac{1}{3}x^{-3}+\frac{3}{4}x^{\frac{4}{3}}+C
+}
+\vs
+}
+\fork{\ref{intuf} \intuf}{
+(\ref{intfplusg}) og (\ref{konstint}) følger direkte av (\ref{sumreg1}) og (\ref{sumreg2}).\vsk
+
+Ut ifra definisjonen av det ubestemte integralet (se (\ref{uint})) har vi at
+\[ \int f(x)\,dx = F(x)+C \]
+hvis $ {F'=f}  $. For alle ubestemte integraler gitt i (\ref{xhatr})-(\ref{tanint}) kan dette sjekkes via enkle derivasjonoperasjoner og er derfor overlatt til leseren.
+
+}
+
+
+\newpage
+\subsection{Bytte av variabel}
+Vi skal nå se på en metode som kalles \textit{bytte av variabel}\footnote{Det er flere framgangsmåter for denne metoden. Den vi her presenterer er, etter forfatterens mening, den raskeste for integraler som er pensum i R2. For mer avanserte integraler bør man kjenne til framgangsmåten presentert i \refved{intleibn}.}\index{integrasjon!bytte av variabel} (også kalt \textit{substutisjon}). Med denne kan vi ofte forenkle integralregningen betraktelig.\regv
+\reg[\bytvar \label{bytvar}]{
+	Gitt funksjonene $ f(x) $, $ u(x) $ og $ g(u) $. Hvis $ \int f(x) \, dx $ kan skrives om til $ \int g(u) u'\, dx  $, kan integralet løses med $ u $ som variabel:  
+	\begin{equation}
+		\int g(u) u'\, dx=\int g(u) \, du \label{bytvareq}
+	\end{equation}\vs
+}
+\eks[1]{
+	Finn det ubestemte integralet 
+	\[ \int 8x \sin \left(4x^2 \right) \, dx \] \vs
+	\sv
+	Vi setter $ {u(x)=4x^2 }$ og ${g(u)=\sin u }$. Dermed blir $ {u'=8x }$, og da er
+	\alg{
+		\int 8x \sin \left(4x^2 \right)\, dx &= \int u'g(u) \, dx \\
+		&= \int g(u) \,du \\
+		&= \int \sin u \, du \\
+		&= -\cos u + C\\
+		&= -\cos \left(4x^2\right) + C
+	}
+	\textsl{Merk}: Når integralet vi skal finne er mhp. $ x $, er det viktig at sluttuttrykket har $ x $ som eneste variabel.
+}
+\newpage
+\eks[2]{
+	Finn det bestemte integralet
+	\[\int\limits_0^2 x^2 e^{2x^3}\, dx \] \vs
+	\sv 
+	Vi setter $ {u(x)=2x^3} $ og $ {g(u)=e^u} $, da blir $ {u'=6x^2 }$. I integralet vi skal løse mangler vi altså faktoren 6 for å kunne anvende oss av \eqref{bytvareq}. Men vi kan alltids gange integralet vårt med 1, skrevet som $ \frac{6}{6} $. Da kan vi trekke 6-tallet vi ønsker inn i integralet, og la resten av brøken forbli utenfor:
+	\alg{
+		\int\limits_0^2 x^2 e^{2x^3} \, dx &= \frac{6}{6}\int\limits_0^2 x^2 e^{2x^3} \, dx \\
+		&= \frac{1}{6}\int\limits_0^2 6x^2 e^{2x^3} \, dx
+	}
+	Nå ligger alt til rette for å bytte variabel:
+	\alg{
+		\frac{1}{6}\int\limits_0^2 6x^2 e^{2x^3} \, dx&= \frac{1}{6}\int\limits_0^2 u'g(u) \,dx \\
+		&= \frac{1}{6} \int\limits_0^2 g(u)\, du \\
+		&= \frac{1}{6} \int\limits_0^2 e^u \, du \\
+		&= \frac{1}{6}\big[e^u\big]_0^2 \\
+		&= \frac{1}{6}\big[e^{2x^3}\big]_0^2 \\
+		&= \frac{1}{6}\left(e{2\cdot2^3-e^{2\cdot0^2}}\right) \\
+		&= \frac{1}{6}\left(e^{16}-1\right)
+	}
+	Det finnes også en alternativ måte for å regne ut bestemte integral ved bytte av variabel, se \refved{bestbyt} for denne.
+}
+\eks[3]{
+	Buelengden til grafen til en funksjon $ f(x) $ på intervallet $ [a, b] $ er gitt som
+	\[ \int\limits_a^b\sqrt{1+(f')^2}\,dx \tag{I}\label{Ieks3} \]
+	Finn lengden til funksjonen
+	\[ f(x)=\frac{1}{3}x^\frac{3}{2}\qquad,\qquad x\in[0, 5] \]
+	
+	\sv
+	Vi har at
+	\algv{
+	f'= \frac{1}{2}x^{\frac{1}{2}}	
+	}
+Og videre at
+\alg{
+	(f')^2=\frac{1}{4}x
+}
+	Det ubestemte integralet i \eqref{Ieks3} blir da
+	\alg{
+	\int\limits\sqrt{1+\frac{1}{4}x}\,dx		}
+Vi setter $ u=1+\frac{1}{4}x $ og $ g(u)=u^\frac{1}{2} $. Da er $ u'=\frac{1}{4} $. Nå har vi at
+	\alg{
+	\int\limits\sqrt{1+\frac{1}{4}x}\,dx
+	&= 4\int  u^{\frac{1}{2}} u'\,dx \\
+	&=4\int u^{\frac{1}{2}}\,du \br
+	&=\frac{8}{3}u^{\frac{3}{2}}+C\br
+	&=\frac{8}{3}\left(1+\frac{1}{4}x\right)^{\frac{3}{2}}+C
+}
+Altså er
+\alg{
+\int\limits_0^5 \sqrt{1+(f')^2}\,dx&=	\frac{8}{3}\left[\left(1+\frac{1}{4}x\right)^{\frac{3}{2}}\right]_0^{5}\br
+&=\frac{8}{3}\left(\left(1+\frac{5}{4}\right)^{\frac{3}{2}}-1\right) \br
+&=\frac{8}{3}\left(\left(\frac{9}{4}\right)^{\frac{3}{2}}-1\right) \br
+&=\frac{8}{3}\left(\frac{27}{8}-1\right)\br
+&=\frac{19}{3}
+}
+\textsl{Merk:} En litt lettere utrekning kunne vi fått ved å observere at
+\[ \sqrt{1+\frac{1}{4}x}=
+ \frac{1}{2}\sqrt{4+x} \]
+Med denne omskrivingen kunne vi valgt substutisjonen \\$ u=4+x $, og dermed fått at $ u'=1 $.
+}
+
+\subsection{Delvis integrasjon}
+Hvis vi ikke finner et passende bytte av variabel for å løse et integral, kan vi isteden prøve med \textit{delvis integrasjon}\index{integrasjon!delvis}. Vi starter med å utlede ligningen som legger grunnlaget for metoden.\vsk
+
+Gitt produktet av to funksjoner $ u(x) $ og $ v(x) $, altså $ uv $. Av produktregelen ved derivasjon (se \tmen) har vi at
+\[ (uv)'=u'v+uv' \]
+Videre integrerer\footnote{Når vi har flere ubestemte itegraler, trenger vi bare ta med integrasjonskonstanten for én av dem. Derfor er ikke konstanten fra integrasjonen av $ (uv)' $ tatt med.} vi begge sider av ligningen over mhp. $ x $:
+\alg{
+	\int (uv)' \, dx &=\int \left(u'v+uv'\right) \, dx \\
+	uv &= \int \left(u'v+uv'\right) \, dx \\
+	uv -\int u'v \, dx &= \int uv' \, dx
+}
+\reg[Delvis integrasjon]{ For to funksjoner $ u(x) $ og $ v(x) $ har vi at
+	\begin{equation}
+		\int uv' \, dx = uv -\int u'v \, dx \label{delvint}
+	\end{equation} \vs
+}
+\eks[1]{
+	Integrer funksjonen ${f(x)= x \ln x }$. 
+	
+	\sv
+	Vi observerer at $ f(x) $ er sammensatt av $ x $ og $ \ln x $. Trikset bak delvis integrasjon er å sette én av disse til å være funksjonen $ u(x) $ og den andre til å være den deriverte av $ v(x) $, altså $ v'(x) $. Da har vi en ligning som i (\ref{delvint}) og kan (forhåpentligvis) bruke denne til å finne integralet vi søker.\vsk
+	
+	Vi må integrere $ v' $ for å finne $ v $ og derivere $ u $ for å finne $ u' $. Siden $ \ln x $ er lett å derivere, men vanskelig å integrere, setter vi
+	\alg{
+		u &=\ln x \\
+		v'&=x
+	} 
+	Da må vi ha at\footnote{Hvorfor ikke $ {v=\frac{1}{2}x^2 +C} $? Vi hadde jo da fått samme $ v' $. \newline
+		
+		Hvis vi lar $ V $ betegne en antiderivert til $ v' $, kan vi skrive $ {v=V+C }$. Av (\ref{delvint}) har vi da at
+		\alg{
+			\int uv'\, dx&=  u(V+C) -\int u'(V+C) \, dx \\
+			&=  u(V+C) -\int u'V \, dx-\int Cu' \, dx \\
+			&=  uV+Cu -\int u'V \, dx- Cu \\
+			&= uV- \int u'V \, dx
+		}
+		Vi har endt opp med et uttrykk hvor $ C $ ikke lenger deltar. Vi får altså det samme svaret uansett hva verdien til $ C $ er, og da velger vi selvsagt fra starten av at $ {C=0} $.}
+	\algv{
+		u'&=\frac{1}{x} \br
+		v&=\frac{1}{2}x^2 
+	}
+	Altså kan vi skrive (rekkefølgen på $ v' $ og $ u $ har selvsagt ingenting å si i (\ref{delvint}))
+	\alg{
+		\int x \ln x \, dx &= \int v'u \, dx \\
+		& = uv -\int u'v \, dx \\
+		&= \ln x \cdot \frac{1}{2}x^2 - \int \frac{1}{x}\cdot\frac{1}{2}x^2 \, dx \\
+		&=  \frac{1}{2}x^2 \ln x- \int \frac{1}{2}x \, dx \\
+		&= \frac{1}{2}x^2 \ln x - \frac{1}{4}x^2 + C
+	}\vsb
+}
+\newpage
+\eks[2]{
+	Integrer funksjonen $f(x)=\ln x $. \\
+	
+	\sv 
+	Vi starter med å skrive $ f(x)=\ln x\cdot 1  $, og setter
+	\alg{
+		u &= \ln x \\
+		v' &= 1
+	}
+	Vi får da at
+	\algv{
+		u'&= \frac{1}{x} \\
+		v &= x		
+	}
+	$\int f \,dx$ finner vi nå ved delvis integrasjon:
+	\alg{
+		\int \ln x\cdot1 \, dx &= \int u v' \,dx \\
+		&= uv -\int u'v \, dx \\
+		&= x\ln x  - \int x\cdot\frac{1}{x} \, dx \\
+		&= x\ln x - x + C \\
+		&= x(\ln x- 1)+C
+	}\vs
+}
+\subsection{Delbrøksoppspaltning}
+Gitt integralet
+\[\int  \frac{4x+5}{(x+1)(x+2)} \,dx \]
+Etter litt testing vil vi finne at både delvis integrasjon og bytte av variabel kommer til kort i vår søken etter en antiderivert. Hva vi heller kan gjøre, er å ta i bruk \textit{delbrøksoppspaltning}\index{integrasjon!delbrøksoppspaltning}. \vsk
+
+Vi merker oss da at integranden\index{integrand}\footnote{For $ \int f(x)\,dx $ sier vi at $ f $ er \textit{integranden}.} er en brøk med nevneren $ (x+1)(x+2) $. Dette betyr at den kan skrives som to separate brøker med $ (x+1) $ og $ (x+2) $ som nevnere:
+\begin{equation}
+\frac{4x+5}{(x+1)(x+2)} = \frac{A}{x+1}+\frac{B}{x+2} \label{delbr}
+\end{equation}
+$ A $ og $ B $ er to konstanter, vår oppgave blir nå å bestemme verdien til disse.\vsk
+
+Vi starter med å gange begge sider av (\ref{delbr}) med fellesnevneren:
+\alg{
+	\frac{4x+5}{(x+1)(x+2)}(x+1)(x+2) &= \left(\frac{A}{x+1}+\frac{B}{x+2}\right)(x+1)(x+2) \br
+	4x+5 &= A(x+2)+B(x+1)
+	}
+For det rette valget av $ A $ og $ B $ er uttrykkene over like for alle verdier av $ x $. Når $ {x=-1} $, har vi bare $ A $ som ukjent:
+\alg{
+	4\cdot(-1)+5 &= A(-1+2)+B(-1+1)\\
+	1 &= A	
+	}
+Og ved å sette $ x=-2 $, finner vi $ B $:
+\alg{
+	4\cdot(-2) +5&= A(-2+2)+B(-2+1) \\
+	-3 &= -B \\
+	3 &= B	
+	}
+Nå kan vi altså skrive
+\[ \frac{4x+5}{(x+1)(x+2)} = \frac{1}{x+1}+\frac{3}{x+2}  \]
+Dette er to brøker vi kan å integrere\footnote{\textsl{Obs!} I søken etter $ A $ og $ B $ valgte vi verdiene ${ x=-1 }$ og $ {x=-2} $. I ligningene hvor vi satte inn disse verdiene var dette helt uskyldig, men i integralet må vi være observante. Vi får nemlig 0 i nevner hvis én av disse verdiene ligger i intervallet vi skal integere over. Er det snakk om et bestemt integral må vi derfor passe på at dette ikke er tilfelle.} (se (\ref{lnint})):
+\alg{
+\int \frac{4x+5}{(x+1)(x+2)}\,dx &= \int \left(\frac{1}{x+1}+\frac{3}{x+2}\right)\,dx \\
+&= \ln |x+1| + 3\ln|x+2| 	
+	}
+\newpage
+\reg[Integrasjon ved delbrøksoppspaltning ]{
+	For integraler på formen
+	\[ \int \frac{a+bx+cx^2+...}{(x-d)(x-e)(x-f)...}\,dx\]
+	hvor $ a, b, c, ... $ er konstanter, skriver vi om integranden til
+	\[ \frac{A}{(x-d)}+\frac{B}{(x-e)}+\frac{C}{(x-f)}+... \]
+	og finner så de ukjente konstantene $ A, B, C, ... $
+}
+\eks[1]{
+	Finn det ubestemte integralet
+	\[ \int \frac{3x^2+3x+2}{x^3-x}\,dx \]	\vs
+	\sv
+	Vi starter med å faktorisere nevneren i integranden, og får at
+	\[ \frac{3x^2+3x+2}{x^3-x} = \frac{3x^2+3x+2}{x(x+1)(x-1)} \]
+	Denne brøken ønsker vi å skrive som
+	\[ \frac{3x^2+3x+2}{x(x+1)(x-1)} =  \frac{A}{x}+\frac{B}{x+1}+\frac{C}{x-1} \]
+	For å finne $ A $, $ B $ og $ C $, omskriver vi ligningen ved å gange med fellesnevneren $ x(x+1)(x-1) $:
+	\[ 	3x^2+3x+2 =  A(x+1)(x-1)+ Bx(x-1)+ Cx(x+1)	 \]
+	Ligningen må holde for alle verdier av $ x $. Vi setter først $ {x=0 }$, og får at
+	\alg{
+		2 &= A\cdot(-1) \\
+		-2&=A 
+	}
+	Videre setter vi $ {x=-1 }$:
+	\alg{
+		3\cdot(-1)^2+3(-1)+2 &= B\cdot(-1)(-1-1) 	\\
+		1 &= B
+	}
+	Til slutt setter vi $ {x=1} $:
+	\alg{
+		3\cdot1^2+3\cdot1+2 &= C(1+1)	\\
+		4&= C
+	}
+	Integralet vi skal finne kan vi derfor skrive som
+	\small
+	\[ \int \left(-\frac{2}{x}+\frac{1}{x+1}+\frac{4}{x-1}\right)\,dx = -2\ln |x|+\ln|x+1|+4\ln|x-1|+D \] \vs
+}
+\eks[2]{\label{delbre2}
+Finn det ubestemte integralet
+\[ \int \frac{x^3 + 5 x^2 + x - 4}{x^2+x-2}\,dx\] \vs
+\sv
+
+Hvis telleren har potenser av høyere orden\footnote{Her har telleren tre som høyeste orden, mens nevneren har to.} enn nevneren, må vi starte med en polynomdivisjon:
+
+\begin{align*}
+\phantom{-}&(x^3 + 5 x^2 + x - 4):(x^2+x-2) =x+4+\frac{-x+4}{x^2+x-2} \\ 
+-&\underline{(x^3+x^2-2x)} \\
+&\phantom{(x^3)}4x^2+3x-4 \\
+&\phantom{\,}-\underline{(4x^2+4x-8)}\\
+&\phantom{aaaaaaa\,}-x+4
+\end{align*}
+Vi observerer videre at nevneren i brøken kan omskrives til $ (x-1)(x+2) $, for to konstanter $ A $ og $ B $ har vi altså at
+\alg{
+	\frac{A}{x-1}+\frac{B}{x+2}&=\frac{-x+4}{x^2+x-2}  \br
+	A(x+2)+B(x-1)&=-x+4
+}
+Når $ {x=-2} $, får vi at
+\alg{
+	B(-2-1)&=-(-2)+4 \\
+	B &= -2
+}
+Og når ${ x=1} $, er
+\alg{
+	A(1+2) &= -1+4 \\
+	A &= 1
+}
+Integralet blir derfor
+\[ \int \left(x+4+\frac{1}{x-1}-\frac{2}{x+2}\right)\,dx
+= \frac{1}{2}x^2+4x + \ln |x-1|-2\ln|x+2|+C \] \vs
+}
+\begin{comment}
+\begin{multline*}
+\int \left(x+4+\frac{1}{x-1}-\frac{2}{x+2}\right)\,dx
+= \frac{1}{2}x^2+4x + \ln (x-1)\\-2\ln(x+2)+C
+\end{multline*}
+\end{comment}
+\section{Areal og volum}
+\subsection{Avgrenset areal}
+Arealet avgrenset av grafen til $ f $, $ x $-aksen, og linjene $ {x=a} $ og $ {x=b} $ skal vi for enkelhetsskyld kalle \outl{arealet avgrenset av $ f $ for $x\in [a, b] $}. I \refsec{BestemtogubestemtI} har vi sett at det er en sterk sammenheng mellom dette arealet og det bestemte ingegralet av $ f $:\regv
+ 
+\reg[Integral som areal I]{\index{integral!som areal}Gitt en kontinuerlig funksjon $ f(x) $ og to tall $ a $ og $ b $ der $ {a<b }$. \vsk
+	
+	Hvis $ {f\geq0} $ for  ${x\in [a, b]} $, er arealet $ A $ avgrenset av $ f $ på dette intervallet gitt som
+	\[ A=\int\limits_a^b f \,dx \] \vsb
+	\fig{intpos}
+	Hvis $ {f\leq0 }$ for ${x\in [a, b]} $, er arealet $ A $ avgrenset av $ f $ på dette intervallet gitt som
+	\[ A=-\int\limits_a^b f \,dx \] \vsb
+	\fig{intneg}
+}
+\newpage
+\textbf{Areal avgrenset av to funksjoner}\bs
+Noen ganger ønsker vi også å finne arealet avgrenset av to funksjoner. Da må vi sørge for at vi har tilstrekkelig med informasjon om disse før vi utfører integrasjonen:\regv
+\reg[Integral som areal II]{
+	Gitt to kontinuerlige funksjoner $ f(x) $ og $ g(x) $ og tre tall $ a $, $ b $ og $ c $ der $ {a<c<b }$. \vsk
+	
+	Hvis $ {f>g} $ for ${x\in [a, b]} $, er arealet $ A $ avgrenset mellom $ f $ og $ g $ på dette intervallet gitt ved
+	\begin{equation}\label{foggintr}
+		A = \int\limits_{a}^{b} (f-g)\,dx
+	\end{equation} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{foggint}}	
+	\end{figure}
+	Hvis $ {f\geq g} $ for ${x\in [a, c]} $ og $ {g\geq f} $ for ${x\in [c, b]} $, er arealet $ A $ avgrenset mellom $ f $ og $ g $ for ${x\in [a, b]} $ gitt ved
+	\begin{equation}\label{foggintr2}
+		A = \int\limits_{a}^{c} (f-g)\,dx + \int\limits_{c}^{b} (g-f)\,dx
+	\end{equation} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{foggint2}}	
+	\end{figure}
+}
+\newpage
+\eks{
+Gitt funksjonene $ {f(x)=\sin\left(\frac{\pi}{2}x\right)} $ og $ {g(x)=2x-1} $. Vi har da at $ {f\geq g} $ for ${ x\leq 1} $ og at $ {g\geq f} $ for $ {x\geq1} $. Finn arealet $ A $ avgrenset av $ f $ og $ g $ for $ x\in [0, 2] $.  \\
+
+\sv
+Ut ifra informasjonen over er arealet gitt ved ligningen
+\alg{
+A &= \int\limits_{0}^{1} (f-g)\,dx + \int\limits_{1}^{2} (g-f)\,dx 
+}
+Vi starter med å regne ut de to integralene hver for seg:
+\alg{
+\int\limits_{0}^{1} (f-g)\,dx&= \left[-\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)-(x^2-x)\right]_0^1\\
+&= -\left[\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)+(x^2-x)\right]_0^1\br
+&= \frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)+(1^2-1) \\ &\qquad\qquad-\left(\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot0\right)+(0^2-0)\right)\\
+&= \frac{2}{\pi}
+} \vs
+\alg{
+\int\limits_{1}^{2} (g-f)\,dx&=\left[(x^2-x)+\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)\right]_1^2\\
+&=(2^2-2)+\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot2\right) \\ &\qquad\qquad-\left(-\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)-(1^2-1)\right) \\
+&=2 -\frac{2}{\pi}
+}
+Summen av disse to integralene er $ 2 $, som altså er arealet.
+}
+
+\newpage
+\subsection{Volumet av en figur}
+Vi har sett hvordan integraler kan brukes til å finne arealer, men de kan også brukes til å finne volumer:\regv
+\reg[\intvol \label{intvol}]{\index{integral!som volum}
+	Gitt en tredimensjonal figur plassert i et koordinatsystem, med endepunktene satt til verdiene $ a $ og $ b $ langs $ x $-aksen.
+	\begin{center}
+		\centering
+		\includegraphics[scale=0.7]{\figp{test222}}
+	\end{center}
+	La videre $ A(x) $ være tverrsnittsarealet av figuren for verdien $ x $. Volumet $ V $ av figuren er da gitt som
+	\begin{equation}
+		V = \int\limits_a^b A\,dx	\label{intvoleq}
+	\end{equation}
+}
+\eks[]{
+	Vis at volumet $ V $ av ei rett kjegle er gitt som
+	\[ V=\frac{1}{3}\pi h r^2 \]
+	hvor $ r $ er radiusen til grunnflata og $ h $ er høgden til kjegla.\\	
+	
+	\sv
+	Vi plasserer kjegla inn i et koordinatsystem med høyden langs $ x $-aksen og spissen plassert i origo. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[]{\figp{kjegle}}
+	\end{figure}
+	Radiusen $ r_t(x) $ kan beskrives som en rett linje med stigningstall $ \frac{r}{h} $: 
+	\[ r_t(x) = \frac{r}{h}x \]
+	Arealet $ A(x) $ av tverrsnittet blir da
+	\alg{A(x) &= \pi r_t^2 \\
+		&= \pi\left(\frac{r}{h}\right)^2x^2
+	}
+	Altså er volumet av kjegla gitt som
+	\alg{
+		\int\limits_0^h A\, dx &=\int\limits_0^h \pi \left(\frac{r}{h}\right)^2 x^2\, dx  \\
+		&=\pi\frac{r^2}{h^2}\int\limits_0^h x^2\, dx \\
+		&= \pi\frac{r^2}{h^2}\left[\frac{1}{3}x^3\right]_0^h	\\
+		&= \frac{1}{3}\pi h r^2
+	}\vs
+}
+\newpage
+\subsection{Volum av omdreiningslegemer}
+Si vi har en funksjon $ f(x) $ gitt på intervallet $ [a, b] $, med en graf som vist i \fref[a]{omdr}. Tenk nå at vi dreier linjestykket $ 360^\circ $ om $ x $-aksen. Formen vi da har ''skjært'' ut, vist i \fref[b]{omdr}, er det vi kaller \textit{omdreiningslegemet}\index{omdreiningsleme} til $ f(x) $ på intervallet $ [a, b] $.
+\begin{figure}[H]
+	\centering
+\subfloat[a)]{
+	\includegraphics[]{\figp{omdr2}}
+} \\
+\subfloat[b)]{
+	\includegraphics[]{\figp{omdr3}}
+	}
+	\captionof{figure}{\textsl{a)} Grafen til $ f $. \textsl{b)} Omdreiningslegemet til $ f $. \label{omdr}}
+\end{figure}
+
+Tverrsnittet (langs $ x $-aksen) til en slik figur er alltid sirkelformet,\\ tverrsnittsarealet er derfor $ \pi r^2 $, hvor $ r(x) $ er radiusen til tverrsnittet. Men siden radiusen tilsvarer høyden fra $ x $-aksen opp til $ f $, er $ {r=f}$. Av \eqref{intvoleq} kan vi da skrive
+\[ V = \int\limits_a^b A \,dx 
+=\int\limits_a^b \pi f^2 \,dx =
+\pi\int\limits_a^b f^2 \,dx \]
+\reg[Volum av omdreiningslegemer]{\index{omdreiningslegeme!volumet av}Volumet $ V $ av omdreiningslegemet til $ f(x) $ på intervallet $ [a, b] $ er gitt som
+	\begin{equation}
+		V = \pi\int\limits_a^b f^2\,dx 
+	\end{equation}	\vs
+}
+\newpage
+\eks{
+	Gitt funksjonen \[ f(x)=\sqrt{x} \]
+	finn volumet av omdreiningsleget til $ f $ på intervallet $ [1, 3] $. 
+	
+	\sv
+	Volumet vi søker er gitt som
+	\alg{
+		\pi\int\limits_1^3 f^2\,dx &= \pi\int\limits_1^3 \left(\sqrt{x}\right)^2\,dx \\
+		&= \pi\int\limits_1^3 x\,dx \\
+		&= \pi\left[\frac{1}{2}x^2\right]_1^3 \\
+		&= \frac{\pi}{2} \left[9-1\right] \\
+		&= 4\pi
+	}\vs
+}
+\newpage
+\tsec{Forklaringer}
+\fork{\ref{bestminten} \bestminten}{
+\label{bintforklaring}
+\figc{int5}{\label{Ifig} Integralet $ I $ tilsvarer det avgrensede arealet i grønt.}
+La oss ta utgangspunkt i funksjonen $ f(x) $, med en graf som vist i \fref{Ifig}. Vårt mål er nå å finne $ I $.\vsk
+
+Vi starter med å splitte $ [a, b] $ inn i $ n $ mindre delintervaller, alle med bredden $ {\Delta x = \frac{b-a}{n}} $. I tillegg lar vi $ x_i $ for $ {i\in\lbrace 1, 2,\,...\,, n\rbrace} $ betegne den $ x $-verdien som er slik at $ f(x_i) $ er den laveste verdien til $ f$ på delintervall nr. $ i $. \vsk
+
+Arealet avgrenset av delintervallet og $ f $ tilnærmer vi som $s_i= f(x_i)\Delta x $, da har vi at (se \fref{bintforkl})
+\alg{
+I &\geq s_1+s_2+...+s_i\\
+I&\geq f(x_1)\Delta x + f(x_2)\Delta x +...+f(x_n)\Delta x  \\
+I &\geq \sum\limits_{i=i}^{n} f(x_i)\Delta x	
+}
+\figc{int4}{Arealene av $ s_i $ markert som grønne søyler og arealene av $ c_i $ markert som blå søyler. Bredden til hver søyle er $ \Delta x = \frac{b-a}{n} $ (her er \y{n=4 }).\label{bintforkl}}
+Videre må det finnes et tall $ {h_i\in [0, 1)} $ som er slik at $ f(x_i+h_i\Delta x) $ er den høyeste verdien til $ f $ på delintervallet. Vi lar $ c_i $ betegne arealet til søylen med $ \Delta x $ som bredde og  $ f(x_i+h_i\Delta x)-f(x_i)$ som høyde:
+\[ c_i = (f(x_i+h_i\Delta x)-f(x_i))\Delta x \]
+Hvis vi legger til alle $ c_i $ i det første estimatet vårt, får vi en tilnærming som må være større eller lik det egentlige arealet. Derfor kan vi skrive
+\[\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq I \leq \sum\limits_{i=1}^{n} f(x_i)\Delta x+ \sum\limits_{i=1}^{n} c_i \]
+Én av $ c $-verdiene må være større eller lik alle andre $ c $-verdier. Vi lar $ m $ betegne indeksen til nettopp denne $ c $-verdien. Da må vi ha at
+\[0\leq \sum\limits_{i=1}^{n} c_i \leq nc_{m} \]  
+Men når \y{n\to\infty}, går summen $ nc_m $ mot 0:
+\alg{
+\lim\limits_{n\to\infty}  n c_{m}&=\lim\limits_{n\to\infty} n(f(x_{m}+h_{m}\Delta x)-f(x_{m}))\Delta x	\\
+&= \lim\limits_{n\to\infty} n(f(x_{m}+h_{m}\Delta x)-f(x_{m}))\frac{b-a}{n} \\
+&= \lim\limits_{n\to\infty} (f(x_{m}+h_{m}\Delta x)-f(x_{m}))(b-a)\\
+&= \lim\limits_{n\to\infty} (f(x_{m})-f(x_{m}))(b-a) \\
+&= 0	
+}
+\newpage
+Følgelig er $ \lim\limits_{x\to\infty} \sum\limits_{i=1}^{n} c_i =0,$ og da er
+\begin{align}
+\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq &I \leq \lim\limits_{n\to\infty}\left(\,\sum\limits_{i=1}^{n} f(x_i)\Delta x+ \sum\limits_{i=1}^{n} c_i\right) \label{bintforkl1} \br
+\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq &I\leq \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \\
+&I= \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x	\label{bintforkl2}
+\end{align}
+Det vi har kommet fram til nå er vel og bra, men skal vi regne ut et integral blir det slitsomt å inspisere $ f(x) $ på uendelig mange delintervaller for å finne de laveste funksjonsverdiene i hver av dem! Vi merker oss derfor at venstresiden i (\ref{bintforkl1}), i vårt tilfelle, representerer det kraftigste underestimatet av $ I $, mens høyresiden er det kraftigste overestimatet. I (\ref{bintforkl1})-(\ref{bintforkl2}) har vi vist at begge disse estimatene går mot $ I $ når $ {n\to\infty} $, dette betyr at vi for andre valg av $ x_i $ på hvert intervall også kommer fram til ønsket resultat. Regneteknisk vil det ofte være lurt å velge $ x_i=a+(i-1)\Delta x $ for $ {i\in\lbrace 1, 2,\,...\,, n\rbrace} $, slik som i (\ref{bint}).\vsk
+
+\textbf{Integral som areal for negative funksjoner}\bs
+Hva nå om vi isteden skulle finne arealet avgrenset av $ x $-aksen, linjene $ {x=a} $ og $ {x= b }$ og grafen til $ {g(x) = -f(x)} $? \vsk
+
+Grafene til $ f $ og $ g $ er fullstendig symmetriske om $ x$-aksen, dette må bety at arealet $ A $ de avgrenser på et intervall må være helt likt. Og vi vet at\vs
+\alg{
+A &= \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \\
+&= 	\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} -g(x_i)\Delta x \\
+&= -\lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} g(x_i)\Delta x
+}
+Av dette kan vi utvide den geometriske definisjonen av integralet:\vsk
+
+\textsl{Gitt en funksjon $ f(x) $ som er negativ og kontiunerlig for alle $ {x\in[a, b] }$. Integralet $ I $ multiplisert med $ -1 $ tilsvarer arealet avgrenset av $ x $-aksen, linjene $ {x=a} $ og ${ x= b} $ og grafen til $ f $.}
+\label{bintslutt}
+} \vsk
+
+\fork{\ref{anfundteo} \anfundteo}{
+Vi ønsker å vise at integralet $ I $ av en funksjon $ f(x) $ på intervallet $ [a, b] $ er gitt som
+\[ I = F(b)-F(a) \]
+hvor $ F $ er en antiderivert til $ f $. For å vise dette skal vi anvende oss av \eqref{bint}. Spesielt verdt å merke seg er at $ x_1=a $ og at $ x_{n+1}=b $.\vsk
+
+Fra tidligere vet vi at den deriverte av en funksjon $ f(x) $ er gitt som
+\[ f'(x) = \lim\limits_{\Delta x\to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x} \]
+Med vår $ \Delta x=\frac{b-a}{n} $ kan vi omskrive grensen:
+\[  f'(x)=\lim\limits_{n\to \infty}\frac{f(x+\Delta x)-f(x)}{\Delta x} \]
+La $ F(x) $ være en antiderivert til $ f(x) $, da er
+\[ F'(x)=f(x)=\lim\limits_{n\to \infty}\frac{F(x+\Delta x)-F(x)}{\Delta x}  \]
+Vi erstatter $ f $ i \eqref{bint} med uttrykket over, og får at
+\alg{I=
+	\lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} \frac{F(x_i+\Delta x)-F(x_i)}{\Delta x} \Delta x 
+}
+Fordi $ {x_{i+1}=x_i+\Delta x} $, har vi videre at
+\alg{
+	I&=	\lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} \left(F(x_{i+1})-F(x_i)\right) \\
+	&= \lim\limits_{n\to\infty} \left(F(x_2)-F(x_1)+F(x_3)-F(x_2)+...+F(x_{n+1})-F(x_{n})\right)
+}
+Av dette legger vi merke til at alle $ F(x_i) $ kansellerer hverandre, bortsett fra i endepunktene. Vi sitter altså igjen med summen
+\alg{
+	I &=\lim\limits_{n\to\infty}\left(-F(x_1)+ F(x_{n+1})\right) \\
+	&= F(b)-F(a)
+}
+}
+
+
+\fork{\ref{bytvar} \bytvar}{
+Gitt en funksjon $ F(x) $ som vil anta samme verdier som $ G(u(x)) $:
+\begin{equation}
+	F(x)=G(u)  
+\end{equation}
+La oss nå skrive $ F'(x) $ som $ f(x) $ og $ G'(u) $ som $ g(u) $. For to konstanter $ C $ og $ D $ må vi ha at
+\alg{
+	\int f(x)\, dx &= F(x)+C \\
+	&\text{og} \\
+	\int g(u)\, du &= G(u)+D 
+} Det må derfor finnes en konstant $ E $ som er slik at
+\[ \int f(x)\, dx+E=\int g(u)\, du\]
+
+Men av kjerneregelen (se \tmen) har vi følgende relasjon:
+\[ f(x)= g(u)u'   \]
+Vi kan derfor skrive
+\[ \int g(u)u' \, dx+E =\int g(u)\, du\]
+Når vi utfører integrasjonen på enten venstre eller høyre side, får vi en ny konstant som vi kan slå sammen med $ E $. I praksis kan vi derfor utelate $ E $, noe som er gjort i (\ref{bytvar}).
+}
+\newpage
+\fork{\ref{intvol} \intvol}{
+Vi setter geometrien vår inn i et koordinatsystem, og tar for gitt at vi har en funksjon $ A(x) $ som gir oss tverrsnittsarealet for alle gyldige $ x $.
+\figc{test22}{Volumet av geometrien (gul) tilnærmes ved summen av hver $ A(x_i)\Delta x $ (blå).\label{volgjen}}
+Vi deler $ [a, b] $ inn i $ n $ delintervaller, der hvert intervall har lengden $ {\Delta x=\frac{b-a}{n}} $ og startverdi $ {x_i=a+(i-1)\Delta x}$ for $ {i\in\lbrace 1, 2, ...\, , n\rbrace }$. Vi tilnærmer volumet til geometrien ved å legge sammen volumene på formen $ A(x_i)\Delta x  $. Når vi lar $ n $ gå mot uendelig vil summen gå mot volumet til gjenstanden\footnote{Argumentasjonen for denne påstanden blir identisk med den gitt i forklaringen for det bestemte integralet (se side \pageref{bintforklaring}).}, dette kan vi skrive som
+\alg{
+	V &=\lim\limits_{x\to \infty} \left(A(x_0)\Delta x + A(x_1)\Delta x +  ... +A(x_{n})\Delta x\right) \\
+	&=\lim\limits_{x\to \infty} \left(A(x_0)+ A(x_1) +  ... +A(x_{n})\right)\Delta x \\
+	&= \lim\limits_{x\to \infty} \sum\limits_{i=1}^{n} A(x_i) \Delta x
+}
+Uttrykket over er analogt til definisjonen av det bestemte integralet fra ligning (\ref{bint}).
+}
+
+
+
+\end{document}

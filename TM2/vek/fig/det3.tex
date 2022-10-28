@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+% Use this form to include EPS (latex) or PDF (pdflatex) files:
+%\usepackage{asymptote}
+% Use this form with latex or pdflatex to include inline LaTeX code by default:
+%\usepackage[inline]{asymptote}
+% Use this form with latex or pdflatex to create PDF attachments by default:
+\usepackage[attach]{asymptote}
+% Enable this line to support the attach option:
+\usepackage[dvips]{attachfile2}
+\begin{document}
+	% Optional subdirectory for asy files (no spaces):
+%	\def\asydir{}
+	\begin{asydef}
+		// Global Asymptote definitions can be put here.
+		import three;
+		usepackage("bm");
+		texpreamble("\def\V#1{\bm{#1}}");
+		// One can globally override the default toolbar settings here:
+		// settings.toolbar=true;
+	\end{asydef}
+
+	\begin{figure}
+		\begin{center}
+			\begin{asy}
+settings.outformat="pdf";
+defaultpen(fontsize(11pt));
+
+size(3cm,0);
+//draw(O--2X ^^ O--2Y ^^ O--2Z, black);
+triple A = 2X;
+triple B = 2Y;
+triple C = 2*(1, 0, 1.2);
+draw(plane(O=O, A, B), blue);
+draw(plane(O=C, A, B), blue);
+draw(plane(O=O, A, C), blue);
+draw(plane(O=B, A, C), blue);
+draw(plane(O=O, A, C), blue);
+
+draw(O -- A, arrow=Arrow3(DefaultHead2), L=Label("$\vec a$", position=Relative(0.3)));
+draw(O -- B, arrow=Arrow3(DefaultHead2), L=Label("$\vec b$", position=Relative(0.5)));
+draw(O -- C, arrow=Arrow3(DefaultHead2), L=Label("$\vec c$", position=Relative(0.5)));
+
+
+currentprojection=orthographic(1,-0.5,0.5);
+			\end{asy}
+			%\caption{Venn diagram}\label{venn}
+		\end{center}
+	\end{figure}
+\end{document}

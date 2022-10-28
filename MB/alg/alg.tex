@@ -1,0 +1,138 @@
+\input{../doc}
+\input{../preamb}
+\begin{document}
+\section{\algintro}
+\textit{Algebra}\index{algebra} er kort og godt matematikk der bokstavar representerer tal. Dette gjer at vi lettare kan jobbe med \textsl{generelle} tilfelle. For eksempel er $ {3\cdot 2=2\cdot3} $ og $ 6\cdot7=7\cdot6 $, men desse er berre to av dei uendeleg mange eksempla på at multiplikasjon er kommutativ! Ei av hensiktene med algebra er at vi ønsker å gi \textsl{eitt} eksempel som forklarer \textsl{alle} tilfelle, og sidan sifra våre (0-9) er uløseleg knytta til bestemde tal, bruker vi bokstavar for å nå dette målet. \vsk
+
+Verdien til tala som er representert ved bokstavar vil ofte variere ut ifrå ein samanheng, og da kallar vi desse bokstavtala for \textit{variablar}\index{variabel}. Viss bokstavtala derimot har ein bestemd verdi, kallar vi dei for \textit{konstantar}\index{konstant}.
+
+\vsk
+
+I \textsl{Del I} av boka har vi sett på rekning med konkrete tal, likevel er dei fleste reglane vi har utleda \textsl{generelle}; dei gjeld for alle tal. På side \pageref{regstart}\,-\,\pageref{regslutt} har vi gjengitt mange av desse reglane på ei meir generell form. Ein fin introduksjon til algebra er å samanlikne reglane du finn her med slik du finn dei\footnote{Reglane sine nummer i \textsl{Del I} står i parentes.} i \textsl{Del I}. \vsk
+
+\regv
+\label{regstart}
+\reg[\adkom\;(\ref{adkom}) \label{adkomalg}]{\vs
+\[ a+ b =b+a \]
+}
+\eks{ \vsb
+\[ 7+ 5=5+7 \]
+} \vsk \vsk
+
+\reg[\gangkom\;(\ref{gangkom})]{\vs
+	\[ a\cdot b =b\cdot a \]
+}
+\eks[1]{ \vsb
+	\[ 9\cdot 8=8\cdot9 \]
+}
+\eks[2]{ \vsb
+\[  8\cdot a= a\cdot 8  \]
+}
+\newpage
+\info{Gonging med bokstavuttrykk}{Når ein gongar saman bokstavar, er det vanleg å utelate gongeteiknet. Og om ein gongar saman ein bokstav og eit konkret tal, skriv ein det konkrete talet først. Dette betyr for eksempel at
+	\[ a\cdot b= ab \]
+	og at
+	\[ a\cdot 8 =8a \]
+I tillegg skriv vi også
+\[ 1\cdot a=a \]
+Det er også vanleg å utelate gongeteikn der parentesuttrykk er ein faktor:\[ 
+3\cdot(a+b)=3(a+b) \]
+}
+\vsk 
+
+\reg[\brdef\;(\ref{brdef})]{
+\[ a:b=\frac{a}{b} \]
+}
+\eks[]{ \vs
+\[a:2= \frac{a}{2} \]
+}
+ \vsk 
+
+\reg[\brtbr\; (\ref{brtbr})]{
+\[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
+}
+\eks[1]{ \vs
+\algv{
+\frac{2}{11}\cdot \frac{13}{21}&=\frac{2\cdot 13}{11\cdot21} =\frac{26}{231}
+}
+}
+\eks[2]{ \vs
+	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
+}
+\newpage
+\reg[\brdelmbr\;(\ref{delmbr})]{ 
+\[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
+}
+\eks[1]{ \vs
+\[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
+}
+\eks[2]{ \vsb \vs
+\alg{
+\frac{a}{13}:\frac{b}{3}&=\frac{a}{13}\cdot \frac{3}{b} \br
+&=\frac{3a}{13b}
+}
+} \vsk \vsk
+
+\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{ \vs
+\[ (a+b)c = a c + b c \]
+} 
+\eks[1]{ \vs
+\[ (2+a)b =2b+ab \]
+}
+\eks[2]{\vs
+\[ a(5b-3)=5ab-3a \]
+} 
+\vsk \vsk
+\reg[\gangmnegto\;(\ref{gangmnegto})]{
+\[ a\cdot(-b)=-(a\cdot b) \]
+}
+\eks[1]{ \vsb \vs
+\alg{
+3\cdot(-4)&=-(3\cdot 4) \\
+&= 	-12
+}
+}
+\eks[2]{ \vsb
+	\algv{
+	(-a)\cdot7&=-(a\cdot 7)\\
+	&=-7a 
+}
+} \vsk \vsk
+
+\reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{
+\[ (-a)\cdot(-b)=a\cdot b \]
+}
+\eks[1]{ \vs \vs
+\alg{
+(-2)\cdot(-8)&=2\cdot 8 \\
+&= 	16
+}	
+}
+\eks[2]{ \vs 
+\[ (-a)\cdot(-15)=15a \]
+}
+\label{regslutt}
+\vsk \vsk
+
+\info{Utvidingar av reglane}{
+Noko av styrken til algebra er at vi kan lage oss kompakte reglar som det er lett å utvide også til andre tilfelle. La oss som eit eksempel finne eit anna uttrykk for
+	\[ (a+b+c)d \]
+\rref{gangpara} fortel oss ikkje direkte korleis vi kan rekne mellom parentesuttrykket og $ d $, men det er ingenting som hindrar oss i å omdøpe $ a+b $ til $ k $:
+\[ a+b=k \]
+Da er
+\[ (a+b+c)d=(k+c)d \]
+Av \rref{gangpara} har vi no at
+\[ (k+c)d = kd+cd \]
+Om vi sett inn att uttrykket for $ k $, får vi 
+\[ kd+cd=(a+b)d+cd \]
+Ved å utnytte \rref{gangpara} enda ein gong kan vi skrive
+\[ (a+b)d+cd=ad+bc+cd \]
+Altså er
+\[ (a+b+c)d=ad+bc+cd \]
+\it Obs! Dette eksempelet er \textsl{ikkje} meint for å vise korleis ein skal gå fram når ein har uttrykk som ikkje direkte er omfatta av \textsl{Regel} \ref{adkomalg}\,-\,\ref{gangmnegtrea}, men for å vise kvifor det alltid er nok å skrive reglar med færrast moglege ledd, faktorar og liknande. Oftast vil ein bruke utvidingar av reglane utan eingong å tenke over det, og i alle fall langt ifrå så pertentleg som det vi gjorde her.
+}
+
+
+\end{document}
+
+

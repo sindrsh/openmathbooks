@@ -1,0 +1,35 @@
+%\input{/media/sindre/TR2/R/doc}
+%\input{/media/sindre/TR2/R/preamb}\\
+\input{/home/sindre/R/doc}
+\input{/home/sindre/R/preamb}
+
+
+\begin{document}
+\begin{figure}[H]
+	\centering
+		\begin{tikzpicture}
+\begin{axis}[
+    xmax=5.5,xmin=-0.3,ymax=1.15, ymin=-0.1,
+    enlargelimits=true,
+    axis lines=middle,
+    clip=false,
+    domain=0.5:5,
+    axis on top,
+    xtick = \empty,
+    ytick= \empty,
+	extra x ticks={0.5, 5},
+	extra x tick labels={$ a $,$ b $},
+	extra y ticks={1},
+	extra y tick labels={$ c $},	
+    %yticklabel=\empty    
+    ]
+\addplot [draw=green, fill=green!20, ybar interval, samples=2]
+    {1}\closedcycle;
+\addplot[smooth, domain=0:5]{1};
+\node at (axis cs:2.5,0.5) {$ s=c(b-a) $};
+\end{axis}
+
+\end{tikzpicture}
+\caption{}
+\end{figure}
+\end{document}

@@ -1,0 +1,57 @@
+\newcommand{\plro}{\reg[Parameteriseringen av et plan i rommet]{
+		Et plan $ \alpha $ som med inneholder punktet $ {P=(x_0, y_0, z_0)} $ og to ikke-parallelle vektorer $ {\vec{u}=[a_1, b_1, c_1]} $ og ${ \vec{v}=[a_2, b_2, c_3]} $ kan parameteriseres ved
+			\[\alpha: \left\lbrace{
+		\begin{array}{lll}
+		x= x_0 + a_1s+ a_2t   \\
+		y= y_0 + b_1s+ b_2t    \\
+		z= z_0 + c_1s+ c_2t 
+		\end{array}
+	}\right. \]	
+	hvor $ s, t \in \mathbb{R}$. 
+	}}
+\newcommand{\plroe}{}
+\newcommand{\liro}{}
+\newcommand{\liroe}{
+\newcommand{\plaro}{\reg[Ligningen til et plan i rommet]{
+		Et plan med normalvektor $ {n=[a, b, c]} $ kan uttrykkes ved ligningen
+		\begin{equation}\label{planlig}
+		a(x-x_0) + b(y-y_0) + c(z-z_0)=0
+		\end{equation}
+		hvor $ A=(x_0, y_0, z_0) $ er et vilkårlig punkt i planet. \vsk\\
+		
+		Eventuelt kan man skrive
+		\begin{equation}\label{planlig2}
+		ax + by + zc + d=0
+		\end{equation}
+		hvor $ -(ax_0 + by_0 +cz_0)=d $.
+	}}	
+\newcommand{\plaroe}{\eks[1]{\label{plroe1}
+		Et plan er utspent av vektorene $ {\vec{u}=[1, -2, 2] }$ og $ \vec{v}=[-3, \\3, 1] $ og inneholder punktet $ {A=(-3, 3, 4)} $. Finn en ligning for planet.
+		
+		\sv
+		En normalvektor til planet kan vi finne ved
+		\footnotesize
+		\alg{\vec{u}\times\vec{v} &= \begin{vmatrix}
+				\vec{e}_1 & \vec{e}_2 & \vec{e}_3 \\
+				1 & -2 & 2 \\
+				-3 & 3 & 1
+			\end{vmatrix} \\
+			&= (-2\cdot1-3\cdot2)\vec{e}_1 -(1\cdot1-(-3)\cdot2)\vec{e}_2 + (1\cdot3-(-2)\cdot(-3))\vec{e}_3 \\
+			&= [-8, -7, -3] \\
+			&= -[8, 7, 3]
+		} \normalsize
+		Vi har nå en normalvektor og et punkt i planet, og får dermed ligningen
+		\alg{
+			8(x+3)+7(y-3)+3(z-4) &=0 \\
+			8x+24+7y-21+3z-12 &= 0 \\
+			8x+7y+3z-9=0
+		}\vs
+	}}	
+\newcommand{\kule}{}	
+\newcommand{\kulee}{}
+\newcommand{\avpli}{}
+\newcommand{\avplp}{}
+\newcommand{\limtpl}{}
+\newcommand{\vtolin}{}
+\newcommand{\vtopl}{}
+\newcommand{\vplli}{}

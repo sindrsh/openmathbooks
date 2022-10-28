@@ -1,0 +1,56 @@
+\input{/home/sindre/G/doc}
+\input{/home/sindre/G/preamb}
+
+\begin{document}
+
+\fork{}{
+	Vi tar utgangspunkt i trekantene $ \triangle ABC $ og $ \triangle DEF $ der
+	\begin{equation}
+	\dfrac{AC}{DF}=\dfrac{BC}{EF} \label{vilkforma}
+	\end{equation}
+	og $ {\angle C =\angle F} $. Altså kan vi plassere $ \triangle DEF $ inn i $ \triangle ABC $, slik at $ C $ og $ F $ blir sammenfallende punkt. Av
+	\begin{figure}
+		\centering
+		\includegraphics[]{geo12}
+	\end{figure}
+	Vi setter $ a=BC $, $ a'=CE $, $ b=AC $ og $ b'=DC $. Av \eqref{vilkforma} har vi no at
+	\begin{equation}
+	\frac{a}{b}=\frac{a'}{b'} \label{vilkformb}
+	\end{equation}
+	$ \triangle AGD\sim\triangle AHC $, altså er
+	\alg{
+		\frac{CH}{AC}=\frac{GD}{AD} \br
+		CH&=\frac{GD\cdot AC}{AD}\br
+		&=\frac{GD\cdot b}{b-b'}
+	}
+	$ \triangle HBC\sim\triangle JBE $, altså er
+	\alg{
+		\frac{CH}{BC}&=\frac{EJ}{BE}\br
+		CH&=\frac{JE\cdot BC}{BE} \br
+		&=\frac{JE\cdot a}{a-a'}
+	}
+	Vi sett dei to uttrykkene for $ CH $ lik hverandre:
+	\alg{
+		\frac{GD\cdot b}{b-b'}=\frac{JE\cdot a}{a-a'}
+	}	
+	Av \eqref{vilkformb} har vi at $ a'=\frac{ab'}{b} $ og $ b'=\frac{a'b}{a} $. Altså er
+	\alg{
+		\frac{GD\cdot b}{b-\frac{a'b}{a}}=\frac{JE\cdot a}{a-\frac{ab'}{b}} \br
+		\frac{GD}{1-\frac{a'}{a}}=\frac{JE}{1-\frac{b'}{b}} 
+	}
+	Av \eqref{vilkformb} har vi også at $ {\frac{a'}{a}=\frac{b'}{b}}$, altså er $ GD $ og $ JE $ dividert med den samme verdien i likninga over. Dette betyr at $ {GD=JE} $, dermed er $ DE\parallel AB $, og da er $ \triangle ABC \sim \triangle DEF$.
+} \vsk
+
+\fork{}{\textbf{Vilkår iii} \os
+	Gitt to lengder $ b $ og $ c $ og ein vinkel $ u $. Vi startar med følgande:
+	\begin{enumerate}
+		\item Vi lagar eit linjestykke $ AB $ med lengde $ c $.
+		\item I $ A $ teiknar vi ein halvsirkel med radius $ b $. 
+	\end{enumerate}
+	Ved å la $ C $ vere plassert kor som helst på denne sirkelbua, har vi alle moglege variantar av ein trekant $ \triangle ABC $ med sidelengdene $ {AB=c} $ og $ {AC=b} $. Å plassere $ C $ langs boga til halvsirkelen er det same som å gi $ \angle A $ ein bestemt verdi. Det gjenstår no å vise at kvar plassering av $ C $ gir ei unik lengde av $ BC $.
+	\fig{geo13b}
+	Vi let $ C_1 $ og $ C_2 $ vere to potensielle plasseringar av $ C $, der $ C_2 $ langs halvsirkelen ligg nærare $ E $ (sjå figur over)  enn $ C_1 $. I $ C_1 $ stiplar vi ei sirkelboge med radius $ BC_1 $ og sentrum i $ B $. Da den stipla sirkelboga og halvsirkelen berre kan skjære kvarandre i $ C_1 $, vil alle andre punkt på halvsirkelen ligge enten innanfor eller utanfor den stipla sirkelboga. Slik vi har definert $ C_2 $, må dette punktet ligge utanfor den stipla sirkelboga, og dermed er $ BC_2 $ større enn $ BC_1 $. Av dette kan vi konkludere med at $ BC $ blir lengre dess nærare $ C $ beveger seg mot $ E $ langs halvsirkelen. Å sette $ {\angle A=u} $ vil altså gi ein unik verdi for $ BC $, og da ein unik trekant $ \triangle ABC $ der  $ AC=b $, $ c=AB $ og $ \angle BAC=u $.
+	
+}
+\end{document}
+

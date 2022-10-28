@@ -1,0 +1,38 @@
+\documentclass[english, 12 pt]{report}
+%\input{/home/sindre/akademiet/R/preamb}
+\input{/media/sindre/TR2/R/preamb}
+%\input{/Volumes/TR2/R/preamb}
+
+
+\begin{document}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+xmax=4.3,xmin=-0.3,ymax=8, ymin=-0.1,
+enlargelimits=true,
+axis lines=middle,
+clip=false,
+domain=0.5:3.5,
+axis on top,
+xtick = \empty,
+ytick= \empty,
+extra x ticks={0.5,2.5,3.5},
+extra x tick labels={$ a $,$ x $,$ x+\Delta x $},
+extra x tick style={ text height=4 pt}
+]
+\addplot [domain=0.5:2.5,draw=green, fill=green!20]
+{1+0.5*x^2}\closedcycle;
+\addplot [domain=2.5:3.5,draw=green, fill=green!5]
+{1+0.5*x^2}\closedcycle;
+\addplot[domain=0:3.7 ,smooth]{1+0.5*x^2};
+\addplot[dashed,very thin,color=black] coordinates {   (3.5,7.125) (0,7.125)} node[anchor=east]{$ f(x+\Delta x) $};
+\addplot[dashed,very thin,color=black] coordinates {   (3.5,4.125) (0,4.125)} node[anchor=east]{$ f(x)$};	
+\node at (axis cs:3,2.4) {$ f(x)\Delta x $};
+\node at (axis cs:3.2,5) {$ c $};
+\node at (axis cs:1.6,1.1) {$A(x)$};
+\end{axis}
+\end{tikzpicture}
+\caption{\label{fund}}
+\end{figure}
+\end{document}

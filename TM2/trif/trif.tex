@@ -1,0 +1,161 @@
+\input{../doc}
+\input{../preamb}
+
+\begin{document}
+\subimport{}{rg}
+
+Mål for opplæringen er at eleven skal kunne
+\begin{itemize}
+	\item forenkle og løse lineære og kvadratiske likninger i trigonometriske uttrykk ved å bruke sammenhenger mellom de trigonometriske funksjonene
+	\item omforme trigonometriske uttrykk av typen $ a \sin kx + b \cos kx $ , og bruke dem til å modellere periodiske fenomener
+\end{itemize}
+\newpage
+\section{Trigonometriske funksjoner}
+\tssec{Cosinusfunksjoner}
+La oss nå ta en titt på funksjonen
+\nreq{
+f(x) = a\cos (kx+c) + d 	
+	}
+hvor $ a $, $ k $, $ c $ og $ d $ er konstanter. Dette kaller vi en \textit{cosinusfunksjon}. Under ser vi grafen til $ f(x)= 2\cos\left(\frac{\pi}{2} x\right)+1 $:
+\subimport{fig/}{fcos} 
+Og vi noterer oss dette: \vs
+\begin{itemize}
+	\item grafen er symmetrisk om linja $ y=1 $, som vi derfor kaller for \textit{likevektslinja} til grafen. Verdien til likevektslinja samsvarer med konstantleddet til $ f $.
+	\item vertikalavstanden fra likevektslinja til et toppunkt er $ 2 $, noe som samsvarer med faktoren foran cosinusuttrykket. Dette tallet kalles \textit{amplituden}.
+	\item horisontalavstanden fra et toppunkt til et annet er 4, denne avstanden kalles \textit{perioden} (eventuelt \textit{bølgelengden}). 
+\end{itemize}
+Om vi ikke visste uttrykket til $ f $, kunne vi altså likevel ut ifra  \fref{fcos} og punktene over sett at $ a=2 $ og $ d=1 $. Men hva med $ b $ og $ c $? 
+
+La oss starte med det enkleste: Når vi kjenner perioden $ P=4 $, kan vi finne $ k $ ut ifra følgende relasjon:
+\algv{
+k &= \frac{2\pi}{P} \\[5 pt]
+&= \frac{2\pi}{4} \\[5 pt]
+&= \frac{\pi}{2}	
+	}
+
+For å finne $ c $ gjør vi denne observasjonen: En cosinusfunksjon med positiv $ a $ må ha et toppunkt der hvor $ kx+c=0 $ (fordi $ \cos 0=1 $). Siden $ f $ har et toppunkt der hvor $ x=2 $, må vi ha at:
+\alg{
+	\frac{\pi}{2}\cdot 2 +c &= 0 \\
+	c &= -\pi
+	}
+
+Før vi tar en liten oppsummering skal vi kort studere grafen til $ g = -2\cos(\frac{\pi}{2}x-\pi) $
+\subimport{fig/}{gcos}
+Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktoren $ -2 $ foran cosinusuttrykket. Vertikalavstanden fra likevektslinja til et toppunkt er likevel 2 også for $ g $, som derfor har 2 som amplitude. For en hvilken som helst cosinusfunksjon er altså $ |a| $ lik verdien til amplituden. Men fordi $ a $ er negativ har $ g $ et toppunkt når $ kx+c=\pi $ (siden $ \cos \pi=-1 $).
+\cosf
+
+\tssec{Sinusfunksjoner}
+Om du har lest forrige delseksjon, har du kanskje allerede tenkt deg fram til at funksjoner på formen
+\[ f(x) = a\sin (kx+c)+d\]
+kalles \textit{sinusfunksjoner}. Amplituden, bølgetallet og likevektslinjen finner vi på akkurat samme måte som for cosinusfunksjoner. 
+
+Fasen finner vi derimot ved å observere at en sinusfunksjon må ha en maksimalverdi der hvor $ kx+c=\frac{\pi}{2} $ hvis $ a $ er positiv \big(fordi $ \sin \frac{\pi}{2}=1 $\big), og der hvor $ kx+c = -\frac{\pi}{2} $ hvis $ a $ er negativ \big(fordi $ \sin -\frac{\pi}{2}=-1 $\big).
+
+\sinf
+\rele
+
+\tssec{Sinus og cosinus kombinert}
+Vi skal nå se på funksjoner av typen
+\[ f(x) = a \cos kx + b \sin kx \]
+og hvordan vi kan skrive om disse til én enkelt sinusfunksjon.
+
+Under ser vi grafene til $ f(x) = \cos(\pi x) + \sqrt{3}\sin(\pi x)$
+og\, $ g(x) = 2 \sin\left(\pi x +\frac{\pi}{6}	\right)$:
+\subimport{fig/}{sincos} 
+Disse grafene ser jo fullstendig identiske ut, og det er de også. Saken er at vi kan omskrive $ f $ til $ g $ eller omvendt:
+
+\komb
+\kombe
+
+I kapittel ref!! så vi på mange forskjellige trigonometriske ligninger. Nå som vi har lært å kombinere sinus- og cosiunusuttrykk skal vi her se på en siste variant:
+\rg[\boldmath $ a\sin kx + b\cos kx = d$]{
+Ligningen 
+\[ a\sin kx + b\cos kx = d \]	
+hvor $ a $, $ b $ og $ c $ er konstanter kan løses ved å omforme venstresiden til et rent sinusuttrykk og deretter løse den resulterende sinusligningen.
+	}
+\eks{
+Løs ligningen
+\[ \sin 3x + \cos 3x = \sqrt 2 \]	
+\sv
+Vi starter med å finne det kombinerte sinusuttrykket for venstresiden av ligningen:
+\alg{
+R &= \sqrt{1^2 + 1^2}	\\
+&= \sqrt{2}
+	}
+\alg{
+	\cos c &= \frac{1}{\sqrt{2}}\br
+	&= \frac{\sqrt{2}}{2}\br
+	\sin c &= \frac{1}{\sqrt{2}}
+	}
+$c= \frac{\pi}{4} $ oppfyller kravene over, og vi kan derfor skrive:
+\alg{
+	\sqrt{2}\sin\left(3x+\frac{\pi}{4}\right)&=\sqrt{2} \br
+	\sin\left(3x+\frac{\pi}{4}\right)&=1
+	}
+Altså har vi at:
+\alg{
+	3x + \frac{\pi}{4} &= \frac{\pi}{2} + 2\pi n\br
+	x &= \frac{1}{3}\left(\frac{\pi}{4}+2\pi n\right)
+	}
+}
+
+
+\newpage
+\tsec{Forklaringer}
+\subsection*{Tallet \boldmath$ k $}
+Vi skal nå vise hvorfor vi har relasjonen $ k=\dfrac{2\pi}{P} $.
+
+La oss tenke oss en cosinus- eller sinusfunksjon med $ kx+c $ som argument. Si videre at $ x_1 $ og $ x_2 $ er $ x $-verdien til to naboliggende toppunkt. 
+\subimport{fig/}{fcos3} 
+Siden et nytt toppunkt kommer for hver gang vi legger til $ 2\pi $ i argumentet, vet vi at:
+\algv{
+	kx_1+c + 2\pi &=kx_2+c \\
+	k(x_2-x_1) &= 2\pi \\
+	k &= \frac{2\pi}{x_2-x_1}
+	}
+Siden $ x_2-x_1 $ er det vi kaller for perioden $ P $, har vi vist det vi skulle.
+
+\subsection*{Sinus og cosinus kombinert}
+Vi har uttrykket:
+\begin{equation}
+a \cos kx + b \sin kx \label{sc}
+\end{equation}
+Videre vet vi at (se (\ref{suv}))
+\begin{equation}
+r \sin(kx+c)= r\sin c\cos kx + r\cos c \sin kx  \label{s}
+\end{equation}
+Uttrykkene fra ligning (\ref{sc}) og (\ref{s}) er like hvis:
+\begin{align}
+a &= r\sin c \label{a} \\
+b &= r\cos c \label{b}
+\end{align}
+Kvadrerer vi ligning (\ref{a}) og (\ref{b}), får vi:
+\begin{align}
+a^2 &= r^2\sin^2 c \label{a2}\\
+b^2 &= r^2\cos^2 c \label{b2}
+\end{align}
+Hvis vi nå legger sammen ligning (\ref{a2}) og (\ref{b2}), finner vi et uttrykk for $a$:
+\alg{
+r^2\sin^2 c+r^2\cos^2 c &= a^2 +b^2 \\
+r^2(\sin^2 c+\cos^2 c) &= a^2 +b^2 \\
+r^2 &= a^2+b^2 \\
+r &= \pm \sqrt{a^2+b^2} 	
+	}
+Dersom vi velger den positive løsningen for $ r $, får vi at:
+\alg{r &=\sqrt{a^2+b^2} \\
+	\cos c &= \frac{b}{r} \\[5 pt]
+	\sin c &= \frac{a}{r}}
+
+\end{document}
+
+\begin{comment}
+\subsection*{Relasjoner}
+Fra (\ref{suv}) har vi at:
+\alg{\sin \left(kx + c +\frac{\pi}{2}\right) &= \sin (kx +c)\cos \left(\frac{\pi}{2}\right) +\cos (kx +c)\sin \left(\frac{\pi}{2}\right) \\
+&= \cos(kx+c)
+}
+Fra (\ref{cuv}) har vi at:
+\alg{\cos \left(kx + c -\frac{\pi}{2}\right) &= \cos (kx +c)\cos \left(-\frac{\pi}{2}\right) -\sin (kx +c)\sin \left(-\frac{\pi}{2}\right) \\
+&= \sin(kx+c)
+}
+\end{comment}

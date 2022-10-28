@@ -1,0 +1,3232 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.11)  5 APR 2021 23:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**geo2_eng.tex
+(./geo2_eng.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(../doc.tex) (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2015/07/15 v1.2 Class to compile TeX sub-files stand
+alone
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count79
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count80
+\c@sapage=\count81
+
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2015/07/15 v1.2 Default configuration file for 'standalone
+' class
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@chapter=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\c@figure=\count89
+\c@table=\count90
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)) (../preamb_eng.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/lualatex/luainputenc/luainputenc.sty
+Package: luainputenc 2010/11/19 v0.973 inputenc package for LuaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.sty
+Package: standalone 2015/07/15 v1.2 Package to include TeX sub-files with pream
+bles
+
+(/usr/share/texlive/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2015/04/23 v0.7c Provides the file path elements of the curre
+nt input file
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)
+\c@currfiledepth=\count94
+)
+(/usr/share/texlive/texmf-dist/tex/latex/gincltex/gincltex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+Package: svn-prov 2010/04/24 v3.1862 Package Date/Version from SVN Keywords
+)
+Package: gincltex 2011/09/04 v0.3 Include external LaTeX files like graphics
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen113
+\tc@lly=\dimen114
+\tc@urx=\dimen115
+\tc@ury=\dimen116
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen117
+\adjbox@Height=\dimen118
+\adjbox@Depth=\dimen119
+\adjbox@Totalheight=\dimen120
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count95
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count96
+\@vwid@loff=\dimen121
+\@vwid@roff=\dimen122
+))
+\gincltex@box=\box28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/filemod/filemod-expmin.sty
+Package: filemod-expmin 2011/09/19 v1.2 Get and compare file modification times
+ (expandable; minimal)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen123
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count97
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count98
+\leftroot@=\count99
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count100
+\DOTSCASE@=\count101
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen125
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count102
+\c@MaxMatrixCols=\count103
+\dotsspace@=\muskip10
+\c@parentequation=\count104
+\dspbrk@lvl=\count105
+\tag@help=\toks20
+\row@=\count106
+\column@=\count107
+\maxfields@=\count108
+\andhelp@=\toks21
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
+\@envbody=\toks22
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count109
+\U@D=\dimen132
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count110
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen133
+\extrarowheight=\dimen134
+\NC@list=\toks24
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+\c@taburow=\count111
+\tabu@nbcols=\count112
+\tabu@cnt=\count113
+\tabu@Xcol=\count114
+\tabu@alloc=\count115
+\tabu@nested=\count116
+\tabu@target=\dimen135
+\tabu@spreadtarget=\dimen136
+\tabu@naturalX=\dimen137
+\tabucolX=\dimen138
+\tabu@Xsum=\dimen139
+\extrarowdepth=\dimen140
+\abovetabulinesep=\dimen141
+\belowtabulinesep=\dimen142
+\tabustrutrule=\dimen143
+\tabu@thebody=\toks25
+\tabu@footnotes=\toks26
+\tabu@box=\box31
+\tabu@arstrutbox=\box32
+\tabu@hleads=\box33
+\tabu@vleads=\box34
+\tabu@cellskip=\skip48
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box35
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen144
+\ttl@minus=\dimen145
+\ttl@toksa=\toks27
+\titlewidth=\dimen146
+\titlewidthlast=\dimen147
+\titlewidthfirst=\dimen148
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip51
+\RaggedLeftLeftskip=\skip52
+\RaggedRightLeftskip=\skip53
+\CenteringRightskip=\skip54
+\RaggedLeftRightskip=\skip55
+\RaggedRightRightskip=\skip56
+\CenteringParfillskip=\skip57
+\RaggedLeftParfillskip=\skip58
+\RaggedRightParfillskip=\skip59
+\JustifyingParfillskip=\skip60
+\CenteringParindent=\skip61
+\RaggedLeftParindent=\skip62
+\RaggedRightParindent=\skip63
+\JustifyingParindent=\skip64
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks28
+\float@box=\box36
+\@float@everytoks=\toks29
+\@floatcapt=\box37
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen149
+\captionmargin@=\dimen150
+\captionwidth=\dimen151
+\caption@tempdima=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
+)
+\c@ContinuedFloat=\count118
+Package caption Info: float package is loaded.
+)
+\c@KVtest=\count119
+\sf@farskip=\skip65
+\sf@captopadj=\dimen156
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\c@subfigure=\count120
+\c@subfigure@save=\count121
+\c@lofdepth=\count122
+\c@subtable=\count123
+\c@subtable@save=\count124
+\c@lotdepth=\count125
+\sf@top=\skip68
+\sf@bottom=\skip69
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip70
+\fb@frw=\dimen157
+\fb@frh=\dimen158
+\FrameRule=\dimen159
+\FrameSep=\dimen160
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen161
+\WF@size=\dimen162
+\c@WF@wrappedlines=\count126
+\WF@box=\box38
+\WF@everypar=\toks30
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip71
+\cftbeforetoctitleskip=\skip72
+\cftaftertoctitleskip=\skip73
+\cftbeforepartskip=\skip74
+\cftpartnumwidth=\skip75
+\cftpartindent=\skip76
+\cftbeforechapskip=\skip77
+\cftchapindent=\skip78
+\cftchapnumwidth=\skip79
+\cftbeforesecskip=\skip80
+\cftsecindent=\skip81
+\cftsecnumwidth=\skip82
+\cftbeforesubsecskip=\skip83
+\cftsubsecindent=\skip84
+\cftsubsecnumwidth=\skip85
+\cftbeforesubsubsecskip=\skip86
+\cftsubsubsecindent=\skip87
+\cftsubsubsecnumwidth=\skip88
+\cftbeforeparaskip=\skip89
+\cftparaindent=\skip90
+\cftparanumwidth=\skip91
+\cftbeforesubparaskip=\skip92
+\cftsubparaindent=\skip93
+\cftsubparanumwidth=\skip94
+\cftbeforeloftitleskip=\skip95
+\cftafterloftitleskip=\skip96
+\cftbeforefigskip=\skip97
+\cftfigindent=\skip98
+\cftfignumwidth=\skip99
+\cftbeforelottitleskip=\skip100
+\cftafterlottitleskip=\skip101
+\cftbeforetabskip=\skip102
+\cfttabindent=\skip103
+\cfttabnumwidth=\skip104
+\cftbeforesubfigskip=\skip105
+\cftsubfigindent=\skip106
+\cftsubfignumwidth=\skip107
+\cftbeforesubtabskip=\skip108
+\cftsubtabindent=\skip109
+\cftsubtabnumwidth=\skip110
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup7
+\symboldletters=\mathgroup8
+\symboldsymbols=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks31
+\minrowclearance=\skip111
+)
+\rownum=\count127
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2018/01/12 version 4.12 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box39
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count128
+\c@pgf@countb=\count129
+\c@pgf@countc=\count130
+\c@pgf@countd=\count131
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count132
+\pgfsyssoftpath@bigbuffer@items=\count133
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen173
+\pgfmath@count=\count134
+\pgfmath@box=\box40
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count135
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen174
+\pgf@picmaxx=\dimen175
+\pgf@picminy=\dimen176
+\pgf@picmaxy=\dimen177
+\pgf@pathminx=\dimen178
+\pgf@pathmaxx=\dimen179
+\pgf@pathminy=\dimen180
+\pgf@pathmaxy=\dimen181
+\pgf@xx=\dimen182
+\pgf@xy=\dimen183
+\pgf@yx=\dimen184
+\pgf@yy=\dimen185
+\pgf@zx=\dimen186
+\pgf@zy=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen188
+\pgf@path@lasty=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen190
+\pgf@shorten@start@additional=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box41
+\pgf@hbox=\box42
+\pgf@layerbox@main=\box43
+\pgf@picture@serial@count=\count136
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen192
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen193
+\pgf@pt@y=\dimen194
+\pgf@pt@temp=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen197
+\pgf@sys@shading@range@num=\count137
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box44
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box45
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen198
+\pgf@nodesepend=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks42
+\verbatim@line=\toks43
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count138
+)
+\tcb@titlebox=\box46
+\tcb@upperbox=\box47
+\tcb@lowerbox=\box48
+\tcb@phantombox=\box49
+\c@tcbbreakpart=\count139
+\c@tcblayer=\count140
+\tcolorbox@number=\count141
+\tcb@temp=\box50
+\tcb@temp=\box51
+\tcb@temp=\box52
+\tcb@temp=\box53
+\tcb@out=\write4
+\tcb@record@out=\write5
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.12'
+\c@tcbrastercolumn=\count142
+\c@tcbrasterrow=\count143
+\c@tcbraster=\count144
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count145
+\pgfplotmarksize=\dimen258
+)
+\tikz@lastx=\dimen259
+\tikz@lasty=\dimen260
+\tikz@lastxsaved=\dimen261
+\tikz@lastysaved=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
+\tikztreelevel=\count146
+\tikznumberofchildren=\count147
+\tikznumberofcurrentchild=\count148
+\tikz@fig@count=\count149
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count150
+\pgfmatrixcurrentcolumn=\count151
+\pgf@matrix@numberofcolumns=\count152
+)
+\tikz@expandcount=\count153
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\tcb@waterbox=\box58
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.12'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.12'
+\tcb@testbox=\box59
+\tcb@totalupperbox=\box60
+\tcb@totallowerbox=\box61
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.12'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.12'
+\tcbfitdim=\dimen265
+\tcb@lowerfitdim=\dimen266
+\tcb@upperfitdim=\dimen267
+\tcb@cur@hbadness=\count154
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.12'
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count155
+\l_tmpa_int=\count156
+\l_tmpb_int=\count157
+\g_tmpa_int=\count158
+\g_tmpb_int=\count159
+\g__intarray_font_int=\count160
+\g__prg_map_int=\count161
+\c_log_iow=\count162
+\l_iow_line_count_int=\count163
+\l__iow_line_target_int=\count164
+\l__iow_one_indent_int=\count165
+\l__iow_indent_int=\count166
+\c_zero_dim=\dimen268
+\c_max_dim=\dimen269
+\l_tmpa_dim=\dimen270
+\l_tmpb_dim=\dimen271
+\g_tmpa_dim=\dimen272
+\g_tmpb_dim=\dimen273
+\c_zero_skip=\skip112
+\c_max_skip=\skip113
+\l_tmpa_skip=\skip114
+\l_tmpb_skip=\skip115
+\g_tmpa_skip=\skip116
+\g_tmpb_skip=\skip117
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count167
+\c__fp_leading_shift_int=\count168
+\c__fp_middle_shift_int=\count169
+\c__fp_trailing_shift_int=\count170
+\c__fp_big_leading_shift_int=\count171
+\c__fp_big_middle_shift_int=\count172
+\c__fp_big_trailing_shift_int=\count173
+\c__fp_Bigg_leading_shift_int=\count174
+\c__fp_Bigg_middle_shift_int=\count175
+\c__fp_Bigg_trailing_shift_int=\count176
+\c__fp_rand_size_int=\count177
+\c__fp_rand_four_int=\count178
+\c__fp_rand_eight_int=\count179
+\l__sort_length_int=\count180
+\l__sort_min_int=\count181
+\l__sort_top_int=\count182
+\l__sort_max_int=\count183
+\l__sort_true_max_int=\count184
+\l__sort_block_int=\count185
+\l__sort_begin_int=\count186
+\l__sort_end_int=\count187
+\l__sort_A_int=\count188
+\l__sort_B_int=\count189
+\l__sort_C_int=\count190
+\l__tl_build_start_index_int=\count191
+\l__tl_build_index_int=\count192
+\l__tl_analysis_normal_int=\count193
+\l__tl_analysis_index_int=\count194
+\l__tl_analysis_nesting_int=\count195
+\l__tl_analysis_type_int=\count196
+\l__regex_internal_a_int=\count197
+\l__regex_internal_b_int=\count198
+\l__regex_internal_c_int=\count199
+\l__regex_balance_int=\count266
+\l__regex_group_level_int=\count267
+\l__regex_mode_int=\count268
+\c__regex_cs_in_class_mode_int=\count269
+\c__regex_cs_mode_int=\count270
+\l__regex_catcodes_int=\count271
+\l__regex_default_catcodes_int=\count272
+\c__regex_catcode_D_int=\count273
+\c__regex_catcode_S_int=\count274
+\c__regex_catcode_L_int=\count275
+\c__regex_catcode_O_int=\count276
+\c__regex_catcode_A_int=\count277
+\c__regex_all_catcodes_int=\count278
+\l__regex_show_lines_int=\count279
+\l__regex_min_state_int=\count280
+\l__regex_max_state_int=\count281
+\l__regex_left_state_int=\count282
+\l__regex_right_state_int=\count283
+\l__regex_capturing_group_int=\count284
+\l__regex_min_pos_int=\count285
+\l__regex_max_pos_int=\count286
+\l__regex_curr_pos_int=\count287
+\l__regex_start_pos_int=\count288
+\l__regex_success_pos_int=\count289
+\l__regex_curr_char_int=\count290
+\l__regex_curr_catcode_int=\count291
+\l__regex_last_char_int=\count292
+\l__regex_case_changed_char_int=\count293
+\l__regex_curr_state_int=\count294
+\l__regex_step_int=\count295
+\l__regex_min_active_int=\count296
+\l__regex_max_active_int=\count297
+\l__regex_replacement_csnames_int=\count298
+\l__regex_match_count_int=\count299
+\l__regex_min_submatch_int=\count300
+\l__regex_submatch_int=\count301
+\l__regex_zeroth_submatch_int=\count302
+\g__regex_trace_regex_int=\count303
+\c_empty_box=\box62
+\l_tmpa_box=\box63
+\l_tmpb_box=\box64
+\g_tmpa_box=\box65
+\g_tmpb_box=\box66
+\l__box_top_dim=\dimen274
+\l__box_bottom_dim=\dimen275
+\l__box_left_dim=\dimen276
+\l__box_right_dim=\dimen277
+\l__box_top_new_dim=\dimen278
+\l__box_bottom_new_dim=\dimen279
+\l__box_left_new_dim=\dimen280
+\l__box_right_new_dim=\dimen281
+\l__box_internal_box=\box67
+\l__coffin_internal_box=\box68
+\l__coffin_internal_dim=\dimen282
+\l__coffin_offset_x_dim=\dimen283
+\l__coffin_offset_y_dim=\dimen284
+\l__coffin_x_dim=\dimen285
+\l__coffin_y_dim=\dimen286
+\l__coffin_x_prime_dim=\dimen287
+\l__coffin_y_prime_dim=\dimen288
+\c_empty_coffin=\box69
+\l__coffin_aligned_coffin=\box70
+\l__coffin_aligned_internal_coffin=\box71
+\l_tmpa_coffin=\box72
+\l_tmpb_coffin=\box73
+\l__coffin_display_coffin=\box74
+\l__coffin_display_coord_coffin=\box75
+\l__coffin_display_pole_coffin=\box76
+\l__coffin_display_offset_dim=\dimen289
+\l__coffin_display_x_dim=\dimen290
+\l__coffin_display_y_dim=\dimen291
+\l__coffin_bounding_shift_dim=\dimen292
+\l__coffin_left_corner_dim=\dimen293
+\l__coffin_right_corner_dim=\dimen294
+\l__coffin_bottom_corner_dim=\dimen295
+\l__coffin_top_corner_dim=\dimen296
+\l__coffin_scaled_total_height_dim=\dimen297
+\l__coffin_scaled_width_dim=\dimen298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count304
+\l__driver_tmp_box=\box77
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count305
+\g__xparse_grabber_int=\count306
+\l__xparse_m_args_int=\count307
+\l__xparse_mandatory_args_int=\count308
+\l__xparse_v_nesting_int=\count309
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcboxverb with sig. ' O{} v ' on line 128.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tcbsidebyside with sig. ' +O{} +m +m ' on line 280.
+.................................................
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count310
+\mult@box=\box78
+\multicol@leftmargin=\dimen299
+\c@unbalance=\count311
+\c@collectmore=\count312
+\doublecol@number=\count313
+\multicoltolerance=\count314
+\multicolpretolerance=\count315
+\full@width=\dimen300
+\page@free=\dimen301
+\premulticols=\dimen302
+\postmulticols=\dimen303
+\multicolsep=\skip118
+\multicolbaselineskip=\skip119
+\partial@page=\box79
+\last@line=\box80
+\maxbalancingoverflow=\dimen304
+\mult@rightbox=\box81
+\mult@grightbox=\box82
+\mult@gfirstbox=\box83
+\mult@firstbox=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\c@columnbadness=\count316
+\c@finalcolumnbadness=\count317
+\last@try=\dimen305
+\multicolovershoot=\dimen306
+\multicolundershoot=\dimen307
+\mult@nat@firstbox=\box102
+\colbreak@box=\box103
+\mc@col@check@num=\count318
+)
+(/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_nestcnt=\count319
+)
+Package: listofitems 2018/01/13 v1.52 Grab items in lists using user-specified 
+sep char (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count320
+\calc@Bcount=\count321
+\calc@Adimen=\dimen308
+\calc@Bdimen=\dimen309
+\calc@Askip=\skip120
+\calc@Bskip=\skip121
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count322
+\calc@Cskip=\skip122
+)
+\c@@stackindex=\count323
+\@boxshift=\skip123
+\stack@tmplength=\skip124
+\temp@stkl=\skip125
+\@stackedboxwidth=\skip126
+\@addedbox=\box104
+\@anchorbox=\box105
+\stackedbox=\box106
+\@centerbox=\box107
+\c@ROWcellindex@=\count324
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip127
+\multirow@cntb=\count325
+\multirow@dima=\skip128
+\bigstrutjot=\dimen310
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip129
+\LTright=\skip130
+\LTpre=\skip131
+\LTpost=\skip132
+\LTchunksize=\count326
+\LTcapwidth=\dimen311
+\LT@head=\box108
+\LT@firsthead=\box109
+\LT@foot=\box110
+\LT@lastfoot=\box111
+\LT@cols=\count327
+\LT@rows=\count328
+\c@LT@tables=\count329
+\c@LT@chunks=\count330
+\LT@p@ftn=\toks46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count331
+\l_MT_multwidth_dim=\dimen312
+\origjot=\skip133
+\l_MT_shortvdotswithinadjustabove_dim=\dimen313
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen314
+\l_MT_above_intertext_sep=\dimen315
+\l_MT_below_intertext_sep=\dimen316
+\l_MT_above_shortintertext_sep=\dimen317
+\l_MT_below_shortintertext_sep=\dimen318
+)
+(/usr/share/texlive/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+)
+\geo2_eng@idxfile=\write6
+\openout6 = `geo2_eng.idx'.
+
+
+Writing index file geo2_eng.idx
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks47
+\footnotemargin=\dimen319
+\c@pp@next@reset=\count332
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count333
+)
+\c@pp@a@footnote=\count334
+
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks48
+\labelindent=\skip134
+\enit@outerparindent=\dimen320
+\enit@toks=\toks49
+\enit@inbox=\box112
+\enitdp@description=\count335
+)
+\c@rg=\count336
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2/datetime2.sty
+Package: datetime2 2016/07/12 v1.5.2 (NLCT) date and time formats
+
+(/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2018/02/21 v1.3.5 (NLCT) Track Languages
+
+(/usr/share/texlive/texmf-dist/tex/generic/tracklang/tracklang.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english.ld
+f
+File: datetime2-english.ldf 2016/03/09 v1.04 (NLCT)
+
+(/usr/share/texlive/texmf-dist/tex/latex/datetime2-english/datetime2-english-ba
+se.ldf
+File: datetime2-english-base.ldf 2016/03/09 v1.04 (NLCT)
+)))) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen321
+\Hy@linkcounter=\count337
+\Hy@pagecounter=\count338
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count339
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count340
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen322
+\Fld@menulength=\count341
+\Field@Width=\dimen323
+\Fld@charsize=\dimen324
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count342
+\c@Item=\count343
+\c@Hfootnote=\count344
+)
+Package hyperref Info: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count345
+\c@bookmark@seq@number=\count346
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip135
+)
+(./geo2_eng.aux)
+\openout1 = `geo2_eng.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 4.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+*geometry* detected driver: pdftex
+
+Package geometry Warning: The marginal notes overrun the paper.
+     Add 17.78496pt and more to the right margin.
+
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(65.44142pt, 341.43307pt, 51.21504pt)
+* v-part:(T,H,B)=(51.21504pt, 574.74559pt, 56.9055pt)
+* \paperwidth=458.08954pt
+* \paperheight=682.86613pt
+* \textwidth=341.43307pt
+* \textheight=574.74559pt
+* \oddsidemargin=-6.82857pt
+* \evensidemargin=-6.82857pt
+* \topmargin=-58.05495pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count347
+\scratchdimen=\dimen325
+\scratchbox=\box113
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen326
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks51
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 4.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box114
+Package hyperref Info: Link coloring OFF on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count353
+)
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+
+(./geo2_eng.out) (./geo2_eng.out)
+\@outlinefile=\write7
+\openout7 = `geo2_eng.out'.
+
+
+
+LaTeX Warning: Hyper reference `Areal' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Reference `Areal' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Reference `arrekt' on page 1 undefined on input line 13.
+
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 13.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 13.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 13.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 13.
+
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 13.
+LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+esint on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+)
+<../fig/tri12_alg.pdf, id=19, 75.28125pt x 54.47351pt>
+File: ../fig/tri12_alg.pdf Graphic file (type pdf)
+<use ../fig/tri12_alg.pdf>
+Package pdftex.def Info: ../fig/tri12_alg.pdf  used on input line 13.
+(pdftex.def)             Requested size: 75.28105pt x 54.47336pt.
+<../fig/tri12ba.pdf, id=20, 90.0966pt x 52.38571pt>
+File: ../fig/tri12ba.pdf Graphic file (type pdf)
+<use ../fig/tri12ba.pdf>
+Package pdftex.def Info: ../fig/tri12ba.pdf  used on input line 20.
+(pdftex.def)             Requested size: 90.09637pt x 52.38557pt.
+<../fig/tri12ca.pdf, id=21, 34.64944pt x 43.81369pt>
+File: ../fig/tri12ca.pdf Graphic file (type pdf)
+<use ../fig/tri12ca.pdf>
+Package pdftex.def Info: ../fig/tri12ca.pdf  used on input line 27.
+(pdftex.def)             Requested size: 34.64934pt x 43.81357pt.
+
+
+LaTeX Warning: Reference `artri' on page 1 undefined on input line 33.
+
+<../fig/triar0.pdf, id=22, 295.16272pt x 63.01543pt>
+File: ../fig/triar0.pdf Graphic file (type pdf)
+<use ../fig/triar0.pdf>
+Package pdftex.def Info: ../fig/triar0.pdf  used on input line 33.
+(pdftex.def)             Requested size: 295.162pt x 63.01526pt.
+<../fig/triar0b.pdf, id=23, 68.78699pt x 63.22621pt>
+File: ../fig/triar0b.pdf Graphic file (type pdf)
+<use ../fig/triar0b.pdf>
+Package pdftex.def Info: ../fig/triar0b.pdf  used on input line 52.
+(pdftex.def)             Requested size: 68.7868pt x 63.22604pt.
+<../fig/triar0a.pdf, id=24, 61.64029pt x 46.15242pt>
+File: ../fig/triar0a.pdf Graphic file (type pdf)
+<use ../fig/triar0a.pdf>
+Package pdftex.def Info: ../fig/triar0a.pdf  used on input line 52.
+(pdftex.def)             Requested size: 61.64014pt x 46.1523pt.
+<../fig/triar0c.pdf, id=25, 112.85161pt x 97.36375pt>
+File: ../fig/triar0c.pdf Graphic file (type pdf)
+<use ../fig/triar0c.pdf>
+Package pdftex.def Info: ../fig/triar0c.pdf  used on input line 52.
+(pdftex.def)             Requested size: 112.85132pt x 97.3635pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]\T1/lmr/m/n/10.95 Let $\OML/lmm/m/it/10.95 A[]$\T1/lmr/m/n/10.95 , $\OML/lmm/
+m/it/10.95 A[]$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 A[]$ \T1/lmr/m/n/10.
+95 do-nate the ar-eas of, re-spec-tively, the tri-an-gle
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../fig/tri12_alg.pdf> <../
+fig/tri12ba.pdf> <../fig/tri12ca.pdf>]
+<../fig/tri21.pdf, id=64, 114.3171pt x 68.69666pt>
+File: ../fig/tri21.pdf Graphic file (type pdf)
+<use ../fig/tri21.pdf>
+Package pdftex.def Info: ../fig/tri21.pdf  used on input line 58.
+(pdftex.def)             Requested size: 114.3168pt x 68.69647pt.
+<../fig/tri21b.pdf, id=65, 199.67598pt x 68.91748pt>
+File: ../fig/tri21b.pdf Graphic file (type pdf)
+<use ../fig/tri21b.pdf>
+Package pdftex.def Info: ../fig/tri21b.pdf  used on input line 67.
+(pdftex.def)             Requested size: 199.67548pt x 68.9173pt.
+ [2 <../fig/triar0.pdf> <../fig/triar0b.pdf> <../fig/triar0a.pdf> <../fig/triar
+0c.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]\T1/lmr/m/n/10.95 From a par-al-lel-o-gram we can al-ways, by draw-ing one of
+ its di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\T1/lmr/m/n/10.95 ag-o-nals, form two tri-an-gles which both have base $\OML/lm
+m/m/it/10.95 g$ \T1/lmr/m/n/10.95 and height
+ []
+
+<../fig/tri21c.pdf, id=97, 114.3171pt x 68.69666pt>
+File: ../fig/tri21c.pdf Graphic file (type pdf)
+<use ../fig/tri21c.pdf>
+Package pdftex.def Info: ../fig/tri21c.pdf  used on input line 77.
+(pdftex.def)             Requested size: 114.3168pt x 68.69647pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\T1/lmr/m/n/10.95 Hence, both tri-an-gles have an area equal to $[]$. There-for
+e, the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
+[]\T1/lmr/m/n/10.95 The area $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 of a tra
+pe-zoid with par-al-lel sides $\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 and $\O
+ML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 and height
+ []
+
+<../fig/tri21a.pdf, id=98, 142.76335pt x 78.62373pt>
+File: ../fig/tri21a.pdf Graphic file (type pdf)
+<use ../fig/tri21a.pdf>
+Package pdftex.def Info: ../fig/tri21a.pdf  used on input line 82.
+(pdftex.def)             Requested size: 142.76299pt x 78.62354pt.
+<../fig/tri21e.pdf, id=99, 170.7178pt x 96.46037pt>
+File: ../fig/tri21e.pdf Graphic file (type pdf)
+<use ../fig/tri21e.pdf>
+Package pdftex.def Info: ../fig/tri21e.pdf  used on input line 93.
+(pdftex.def)             Requested size: 170.71738pt x 96.46013pt.
+[3 <../fig/tri21.pdf> <../fig/tri21b.pdf> <../fig/tri21c.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]\T1/lmr/m/n/10.95 In re-spect of a base and a height, the area for-mu-las for
+ a par-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/lmr/m/n/10.95 al-lel-o-gram and a rect-an-gle are iden-ti-cal. Ap-ply-ing [
+][]\T1/lmr/m/sl/10.95 Rule 0.4[][][] \T1/lmr/m/n/10.95 on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/lmr/m/n/10.95 a par-al-lel-o-gram also re-sults in an ex-pres-sion equal to
+ $\OML/lmm/m/it/10.95 gh$\T1/lmr/m/n/10.95 . This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/lmr/m/n/10.95 fol-lows from the fact that a par-al-lel-o-gram is just a spe
+-cial case
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/lmr/m/n/10.95 of a trape-zoid (and a rect-an-gle is just a spe-cial case of
+ a par-al-
+ []
+
+[4 <../fig/tri21a.pdf> <../fig/tri21e.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]\T1/lmr/m/n/10.95 In a trape-zoid, we can, by draw-ing one of the di-ag-o-nal
+s, cre-ate
+ []
+
+<../fig/tri21d.pdf, id=141, 142.76335pt x 78.62373pt>
+File: ../fig/tri21d.pdf Graphic file (type pdf)
+<use ../fig/tri21d.pdf>
+Package pdftex.def Info: ../fig/tri21d.pdf  used on input line 110.
+(pdftex.def)             Requested size: 142.76299pt x 78.62354pt.
+[5 <../fig/tri21d.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 118.
+<../fig/tri22.pdf, id=153, 85.86078pt x 85.86078pt>
+File: ../fig/tri22.pdf Graphic file (type pdf)
+<use ../fig/tri22.pdf>
+Package pdftex.def Info: ../fig/tri22.pdf  used on input line 118.
+(pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
+<../fig/tri22b.pdf, id=154, 100.08391pt x 100.08391pt>
+File: ../fig/tri22b.pdf Graphic file (type pdf)
+<use ../fig/tri22b.pdf>
+Package pdftex.def Info: ../fig/tri22b.pdf  used on input line 128.
+(pdftex.def)             Requested size: 100.08365pt x 100.08365pt.
+<../fig/tri22a.pdf, id=155, 85.86078pt x 85.86078pt>
+File: ../fig/tri22a.pdf Graphic file (type pdf)
+<use ../fig/tri22a.pdf>
+Package pdftex.def Info: ../fig/tri22a.pdf  used on input line 134.
+(pdftex.def)             Requested size: 85.86057pt x 85.86057pt.
+<../fig/tri22c.pdf, id=156, 100.08391pt x 100.08391pt>
+File: ../fig/tri22c.pdf Graphic file (type pdf)
+<use ../fig/tri22c.pdf>
+Package pdftex.def Info: ../fig/tri22c.pdf  used on input line 141.
+(pdftex.def)             Requested size: 100.08365pt x 100.08365pt.
+ [6 <../fig/tri22.pdf> <../fig/tri22b.pdf>] [7 <../fig/tri22a.pdf> <../fig/tri2
+2c.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\T1/lmr/m/n/10.95 In the be-low fig-ure, we have di-vided a cir-cle into 4, 1
+0 and 50
+ []
+
+<../fig/tri19.pdf, id=190, 215.78616pt x 74.17712pt>
+File: ../fig/tri19.pdf Graphic file (type pdf)
+<use ../fig/tri19.pdf>
+Package pdftex.def Info: ../fig/tri19.pdf  used on input line 154.
+(pdftex.def)             Requested size: 215.78563pt x 74.17693pt.
+<../fig/tri19a.pdf, id=191, 225.46233pt x 74.17712pt>
+File: ../fig/tri19a.pdf Graphic file (type pdf)
+<use ../fig/tri19a.pdf>
+Package pdftex.def Info: ../fig/tri19a.pdf  used on input line 154.
+(pdftex.def)             Requested size: 225.46176pt x 74.17693pt.
+<../fig/tri19b.pdf, id=192, 227.28915pt x 74.17712pt>
+File: ../fig/tri19b.pdf Graphic file (type pdf)
+<use ../fig/tri19b.pdf>
+Package pdftex.def Info: ../fig/tri19b.pdf  used on input line 154.
+(pdftex.def)             Requested size: 227.28859pt x 74.17693pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 In each case, the arcs make up the cir-cum-fer-ence of the ci
+r-cle.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 If the cir-cle has ra-dius $\OML/lmm/m/it/10.95 r$\T1/lmr/m/n
+/10.95 , the sum of the arcs equals $\OT1/lmr/m/n/10.95 2\OML/lmm/m/it/10.95 ^^
+Yr$\T1/lmr/m/n/10.95 . And
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 when there are equally many sec-tors turned up-wards as down-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 wards, the to-tal length of the arcs equals $\OML/lmm/m/it/10
+.95 ^^Yr$ \T1/lmr/m/n/10.95 on both the bot-tom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\T1/lmr/m/n/10.95 The more sec-tors the cir-cle is di-vided into, the more th
+e com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 po-si-tion takes the form of a rect-an-gle (in the fig-ure be
+-low there
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/lmr/m/n/10.95 are 100 sec-tors). The base $\OML/lmm/m/it/10.95 g$ \T1/lmr/m
+/n/10.95 of this ''rect-an-gle'' ap-prox-i-mately
+ []
+
+<../fig/tri19c.pdf, id=193, 149.04684pt x 49.74585pt>
+File: ../fig/tri19c.pdf Graphic file (type pdf)
+<use ../fig/tri19c.pdf>
+Package pdftex.def Info: ../fig/tri19c.pdf  used on input line 154.
+(pdftex.def)             Requested size: 149.04646pt x 49.74571pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]\T1/lmr/m/n/10.95 In a right tri-an-gle, the area of the square formed by the
+ hy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+\T1/lmr/m/n/10.95 potenuse equals the sum of the ar-eas of the squares formed b
+y
+ []
+
+<../fig/tri26g.pdf, id=194, 65.13333pt x 52.34557pt>
+File: ../fig/tri26g.pdf Graphic file (type pdf)
+<use ../fig/tri26g.pdf>
+Package pdftex.def Info: ../fig/tri26g.pdf  used on input line 162.
+(pdftex.def)             Requested size: 65.13316pt x 52.34543pt.
+
+Overfull \hbox (2.87947pt too wide) in paragraph at lines 162--162
+[][] 
+ []
+
+<../fig/tri26j.pdf, id=195, 141.34808pt x 154.14589pt>
+File: ../fig/tri26j.pdf Graphic file (type pdf)
+<use ../fig/tri26j.pdf>
+Package pdftex.def Info: ../fig/tri26j.pdf  used on input line 162.
+(pdftex.def)             Requested size: 141.34772pt x 154.14551pt.
+<../fig/tri26h.pdf, id=196, 67.33156pt x 54.6843pt>
+File: ../fig/tri26h.pdf Graphic file (type pdf)
+<use ../fig/tri26h.pdf>
+Package pdftex.def Info: ../fig/tri26h.pdf  used on input line 178.
+(pdftex.def)             Requested size: 67.33138pt x 54.68414pt.
+[8 <../fig/tri19.pdf> <../fig/tri19a.pdf> <../fig/tri19b.pdf> <../fig/tri19c.pd
+f>] [9 <../fig/tri26g.pdf> <../fig/tri26j.pdf> <../fig/tri26h.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/lmr/m/n/10.95 The be-low fig-ure shows equal-sized squares di-vided into 
+dif-fer-ent
+ []
+
+<../fig/tri26d.pdf, id=251, 251.4494pt x 122.76866pt>
+File: ../fig/tri26d.pdf Graphic file (type pdf)
+<use ../fig/tri26d.pdf>
+Package pdftex.def Info: ../fig/tri26d.pdf  used on input line 196.
+(pdftex.def)             Requested size: 251.44878pt x 122.76834pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/lmr/m/n/10.95 The area of the red square is $\OML/lmm/m/it/10.95 a[]$\T1/
+lmr/m/n/10.95 , the area of the pur-ple
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/lmr/m/n/10.95 The area of an or-ange square is $\OML/lmm/m/it/10.95 ab$ \
+T1/lmr/m/n/10.95 and the area of a green
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/lmr/m/n/10.95 If we re-move the two or-ange rect-an-gles and the four gre
+en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/lmr/m/n/10.95 tri-an-gles, the re-main-ing area to the left equals the re-m
+ain-
+ []
+
+<../fig/tri26e.pdf, id=252, 230.97292pt x 98.66862pt>
+File: ../fig/tri26e.pdf Graphic file (type pdf)
+<use ../fig/tri26e.pdf>
+Package pdftex.def Info: ../fig/tri26e.pdf  used on input line 196.
+(pdftex.def)             Requested size: 230.97234pt x 98.66838pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/lmr/m/n/10.95 Given a tri-an-gle with sides of length $\OML/lmm/m/it/10.95 
+a; b$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 , of which
+ $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/lmr/m/n/10.95 the longest. As long as the tri-an-gle is right, we can al-wa
+ys form
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/lmr/m/n/10.95 two squares with sides of length $[]$, as in the ini-tial fig
+-ure.
+ []
+
+[10 <../fig/tri26d.pdf> <../fig/tri26e.pdf>]
+<../fig/geo13.pdf, id=281, 113.81522pt x 72.61127pt>
+File: ../fig/geo13.pdf Graphic file (type pdf)
+<use ../fig/geo13.pdf>
+Package pdftex.def Info: ../fig/geo13.pdf  used on input line 210.
+(pdftex.def)             Requested size: 113.81493pt x 72.61108pt.
+
+Overfull \hbox (20.43202pt too wide) in paragraph at lines 210--210
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]\T1/lmr/m/n/10.95 A tri-an-gle $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$
+\T1/lmr/m/n/10.95 , as shown in the be-low fig-ure, can be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/lmr/m/n/10.95 uniquely con-structed if one of the fol-low-ing terms are sat
+-is-fied:
+ []
+
+<../fig/geo14.pdf, id=282, 227.62039pt x 65.40436pt>
+File: ../fig/geo14.pdf Graphic file (type pdf)
+<use ../fig/geo14.pdf>
+Package pdftex.def Info: ../fig/geo14.pdf  used on input line 216.
+(pdftex.def)             Requested size: 227.61983pt x 65.40417pt.
+<../fig/geo8.pdf, id=283, 308.92413pt x 66.649pt>
+File: ../fig/geo8.pdf Graphic file (type pdf)
+<use ../fig/geo8.pdf>
+Package pdftex.def Info: ../fig/geo8.pdf  used on input line 221.
+(pdftex.def)             Requested size: 308.92337pt x 66.64882pt.
+[11
+
+ <../fig/geo13.pdf> <../fig/geo14.pdf> <../fig/geo8.pdf>]
+<../fig/tri1.pdf, id=310, 270.46045pt x 85.5998pt>
+File: ../fig/tri1.pdf Graphic file (type pdf)
+<use ../fig/tri1.pdf>
+Package pdftex.def Info: ../fig/tri1.pdf  used on input line 225.
+(pdftex.def)             Requested size: 270.45978pt x 85.59958pt.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 230.
+
+
+(/usr/share/texmf/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 230.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 253.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 253.
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[][][][]\T1/lmr/m/n/9 Here, we take it for granted that cor-re-spond-ing sides 
+are ap-par-ent from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]\T1/lmr/m/n/10.95 If two tri-an-gles are sim-i-lar, the ra-tios of cor-re-spo
+nd-ing sides are
+ []
+
+<../fig/geo8b.pdf, id=312, 308.92413pt x 66.649pt>
+File: ../fig/geo8b.pdf Graphic file (type pdf)
+<use ../fig/geo8b.pdf>
+Package pdftex.def Info: ../fig/geo8b.pdf  used on input line 253.
+(pdftex.def)             Requested size: 308.92337pt x 66.64882pt.
+[12 <../fig/tri1.pdf> <../fig/geo8b.pdf>]
+<../fig/tri3a.pdf, id=332, 124.12373pt x 71.738pt>
+File: ../fig/tri3a.pdf Graphic file (type pdf)
+<use ../fig/tri3a.pdf>
+Package pdftex.def Info: ../fig/tri3a.pdf  used on input line 274.
+(pdftex.def)             Requested size: 124.12341pt x 71.73782pt.
+<../fig/tri3b.pdf, id=333, 196.27327pt x 105.88559pt>
+File: ../fig/tri3b.pdf Graphic file (type pdf)
+<use ../fig/tri3b.pdf>
+Package pdftex.def Info: ../fig/tri3b.pdf  used on input line 274.
+(pdftex.def)             Requested size: 196.27278pt x 105.88533pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]\T1/lmr/m/n/10.95 We ob-serve that $\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95
+ cor-re-sponds to $\OML/lmm/m/it/10.95 DE$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10
+.95 BC$ \T1/lmr/m/n/10.95 to $\OML/lmm/m/it/10.95 EF$ \T1/lmr/m/n/10.95 and $\O
+ML/lmm/m/it/10.95 AC$ \T1/lmr/m/n/10.95 to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[]\T1/lmr/m/n/10.95 Two tri-an-gles $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 A
+BC$ \T1/lmr/m/n/10.95 and $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 DEF$ \T1/lm
+r/m/n/10.95 are sim-i-lar if one of these
+ []
+
+File: ../fig/geo8b.pdf Graphic file (type pdf)
+<use ../fig/geo8b.pdf>
+Package pdftex.def Info: ../fig/geo8b.pdf  used on input line 285.
+(pdftex.def)             Requested size: 308.92337pt x 66.64882pt.
+<../fig/geo15.pdf, id=334, 199.1741pt x 76.75676pt>
+File: ../fig/geo15.pdf Graphic file (type pdf)
+<use ../fig/geo15.pdf>
+Package pdftex.def Info: ../fig/geo15.pdf  used on input line 294.
+(pdftex.def)             Requested size: 199.17361pt x 76.75656pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]$\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m/n/10.95 and $\OMS/lm
+sy/m/n/10.95 4\OML/lmm/m/it/10.95 ACD$ \T1/lmr/m/n/10.95 are both right and the
+y have $\U/msa/m/n/10.95 \\OML/lmm/m/it/10.95 DAC$ \T1/lmr/m/n/10.95 in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+\T1/lmr/m/n/10.95 com-mon. Hence, the tri-an-gles sat-isfy term \T1/lmr/m/sl/10
+.95 i \T1/lmr/m/n/10.95 from [][]\T1/lmr/m/sl/10.95 Rule 0.12[][][]\T1/lmr/m/n/
+10.95 , and
+ []
+
+[13 <../fig/tri3a.pdf> <../fig/tri3b.pdf>] [14 <../fig/geo15.pdf>]
+<../fig/geo15a.pdf, id=368, 304.09608pt x 72.73172pt>
+File: ../fig/geo15a.pdf Graphic file (type pdf)
+<use ../fig/geo15a.pdf>
+Package pdftex.def Info: ../fig/geo15a.pdf  used on input line 308.
+(pdftex.def)             Requested size: 304.09534pt x 72.73152pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
+\T1/lmr/m/n/10.95 Hence, $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr
+/m/n/10.95 and $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.95 GHI$ \T1/lmr/m/n/10.95
+ sat-isfy term \T1/lmr/m/sl/10.95 ii \T1/lmr/m/n/10.95 from [][]\T1/lmr/m/sl/10
+.95 Rule 0.12[][][]\T1/lmr/m/n/10.95 , and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
+\T1/lmr/m/n/10.95 there-fore they are sim-i-lar. (Hence, $\OMS/lmsy/m/n/10.95 4
+\OML/lmm/m/it/10.95 GHI$ \T1/lmr/m/n/10.95 and $\OMS/lmsy/m/n/10.95 4\OML/lmm/m
+/it/10.95 FED$ \T1/lmr/m/n/10.95 are not
+ []
+
+<../fig/geo15b.pdf, id=370, 323.80975pt x 80.84203pt>
+File: ../fig/geo15b.pdf Graphic file (type pdf)
+<use ../fig/geo15b.pdf>
+Package pdftex.def Info: ../fig/geo15b.pdf  used on input line 316.
+(pdftex.def)             Requested size: 323.80894pt x 80.84181pt.
+
+Overfull \hbox (12.53572pt too wide) in paragraph at lines 316--316
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+\T1/lmr/m/n/10.95 Hence, term \T1/lmr/m/sl/10.95 iii \T1/lmr/m/n/10.95 from [][
+]\T1/lmr/m/sl/10.95 Rule 0.12[][][] \T1/lmr/m/n/10.95 is sat-is-fied, and there
+-fore the
+ []
+
+[15 <../fig/geo15a.pdf> <../fig/geo15b.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[][]\T1/lmr/bx/n/12 0.5[] The perime-ter of a cir-cle (and the value of $\OML/l
+mm/b/it/12 ^^Y$\T1/lmr/bx/n/12 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/it/10.95 Here we shall use reg-u-lar poly-gons along the path to ou
+r wanted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/it/10.95 re-sult. In reg-u-lar poly-gons, all sides are of equal leng
+th. Since all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/it/10.95 poly-gons here to be men-tioned are reg-u-lar, we'll men-tio
+n them
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 We'll start off by ex-am-in-ing some ap-prox-i-ma-tions of 
+the cir-cum-
+ []
+
+<../fig/geo9l.pdf, id=394, 114.3171pt x 114.3171pt>
+File: ../fig/geo9l.pdf Graphic file (type pdf)
+<use ../fig/geo9l.pdf>
+Package pdftex.def Info: ../fig/geo9l.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 When seek-ing a value, it is a good habit to con-clude how 
+large
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 or small you \T1/lmr/m/sl/10.95 ex-pect \T1/lmr/m/n/10.95 it 
+to be. With this tar-get, we en-close the
+ []
+
+<../fig/geo9c.pdf, id=395, 114.3171pt x 114.3171pt>
+File: ../fig/geo9c.pdf Graphic file (type pdf)
+<use ../fig/geo9c.pdf>
+Package pdftex.def Info: ../fig/geo9c.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Clearly, the cir-cum-fer-ence of the cir-cle is smaller than 
+the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Now we in-scribe a 6-gon (hexagon). The hexagon can be di-vid
+ed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 into 6 equi-lat-eral tri-an-gles with, nec-es-sar-ily, sides 
+of length 1.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 The cir-cum-fer-ence of the cir-cle must be larger than the p
+erime-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9.pdf, id=396, 114.3171pt x 114.3171pt>
+File: ../fig/geo9.pdf Graphic file (type pdf)
+<use ../fig/geo9.pdf>
+Package pdftex.def Info: ../fig/geo9.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9d2.pdf, id=397, 114.3171pt x 114.3171pt>
+File: ../fig/geo9d2.pdf Graphic file (type pdf)
+<use ../fig/geo9d2.pdf>
+Package pdftex.def Info: ../fig/geo9d2.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Now ad-vanc-ing to a more so-phis-ti-cated hunt for the cir-c
+um-fer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 The idea of in-scrib-ing poly-gons car-ries on. We let the 
+be-low
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 fig-ures work as a suf-fi-cient prove of the fact that the mo
+re sides
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 of the poly-gon, the bet-ter es-ti-mate its perime-ter makes 
+of the
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+File: ../fig/geo9.pdf Graphic file (type pdf)
+<use ../fig/geo9.pdf>
+Package pdftex.def Info: ../fig/geo9.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9a.pdf, id=398, 114.3171pt x 114.3171pt>
+File: ../fig/geo9a.pdf Graphic file (type pdf)
+<use ../fig/geo9a.pdf>
+Package pdftex.def Info: ../fig/geo9a.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Since a 6-gon has sides of length 1, it is tempt-ing to ex-am
+-ine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 if this can help us find the side lengths of other poly-gons.
+ By
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 in-scrib-ing both a 6-gon and a 12-gon (and draw-ing a tri-an
+-gle)
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9g.pdf, id=399, 114.3171pt x 114.3171pt>
+File: ../fig/geo9g.pdf Graphic file (type pdf)
+<use ../fig/geo9g.pdf>
+Package pdftex.def Info: ../fig/geo9g.pdf  used on input line 465.
+(pdftex.def)             Requested size: 114.3168pt x 114.3168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/sl/9 (a) |\T1/lmr/m/n/9 A 6-gon and a 12-gon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/9 to-gether with a tri-an-gle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/9 formed by the cir-cle cen-ter
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9h.pdf, id=400, 104.83165pt x 81.51454pt>
+File: ../fig/geo9h.pdf Graphic file (type pdf)
+<use ../fig/geo9h.pdf>
+Package pdftex.def Info: ../fig/geo9h.pdf  used on input line 465.
+(pdftex.def)             Requested size: 104.83139pt x 81.51433pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/sl/9 (b) |\T1/lmr/m/n/9 The tri-an-gle from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Let $\OML/lmm/m/it/10.95 s[]$ \T1/lmr/m/n/10.95 and $\OML/lmm
+/m/it/10.95 s[]$ \T1/lmr/m/n/10.95 de-note the side lengths of the 12-gon and t
+he
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 6-gon, re-spec-tively. More-over, we ob-serve that both $\OML
+/lmm/m/it/10.95 A$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 C$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 lies on the cir-cu-lar arc and that both $\OMS/lmsy/m/n/10.95
+ 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m/n/10.95 and $\OMS/lmsy/m/n/10.95 4\OML/lmm
+/m/it/10.95 BSC$ \T1/lmr/m/n/10.95 are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 To find $\OML/lmm/m/it/10.95 s[]$\T1/lmr/m/n/10.95 , we need 
+to know $\OML/lmm/m/it/10.95 BA$\T1/lmr/m/n/10.95 , and to find $\OML/lmm/m/it/
+10.95 BA$ \T1/lmr/m/n/10.95 we need to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 know $\OML/lmm/m/it/10.95 SB$\T1/lmr/m/n/10.95 . Hence, we st
+art off find-ing $\OML/lmm/m/it/10.95 SB$\T1/lmr/m/n/10.95 . Since $[]$ and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 At first, it looks like the ex-pres-sion to the right can-not
+ be sim-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 pli-fied, but a small op-er-a-tion can change this. If $\OMS/
+lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1$ \T1/lmr/m/n/10.95 was a term
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 present, we could have com-bined $\OMS/lmsy/m/n/10.95 ^^@\OT1
+/lmr/m/n/10.95 1$ \T1/lmr/m/n/10.95 and $[]$ to be-come $\OMS/lmsy/m/n/10.95 ^^
+@\OML/lmm/m/it/10.95 SB[]$\T1/lmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 We ob-tain $\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 1$ \T1/
+lmr/m/n/10.95 by both adding and sub-tract-ing it on the right
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Even though we have de-rived a re-la-tion be-tween the side l
+engths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\OML/lmm/m/it/10.95 s[]$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 s[]$\T1/lmr
+/m/n/10.95 , this re-la-tion is valid for all pairs of side lengths
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 where one is the side length of a poly-gon with twice as many
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 sides as the other. Now let $\OML/lmm/m/it/10.95 s[]$ \T1/lmr
+/m/n/10.95 and $\OML/lmm/m/it/10.95 s[]$\T1/lmr/m/n/10.95 , re-spec-tively, de-
+note the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 side lengths of a poly-gon and a poly-gon with twice as many
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 The perime-ter of a poly-gon in-scribed in the cir-cle is an 
+es-ti-mate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 of the cir-cum-fer-ence. Ap-ply-ing [][], we can suc-ces-sive
+ly find the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 side length of a poly-gon with twice as many sides as the pre
+-vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 ous. The be-low ta-ble shows the side length and the as-so-ci
+-ated
+ []
+
+
+Overfull \hbox (4.18436pt too wide) in paragraph at lines 465--465
+ [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+File: ../fig/geo9.pdf Graphic file (type pdf)
+<use ../fig/geo9.pdf>
+Package pdftex.def Info: ../fig/geo9.pdf  used on input line 465.
+(pdftex.def)             Requested size: 85.7376pt x 85.7376pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+File: ../fig/geo9a.pdf Graphic file (type pdf)
+<use ../fig/geo9a.pdf>
+Package pdftex.def Info: ../fig/geo9a.pdf  used on input line 465.
+(pdftex.def)             Requested size: 85.7376pt x 85.7376pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.3
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9i.pdf, id=402, 114.3171pt x 114.3171pt>
+File: ../fig/geo9i.pdf Graphic file (type pdf)
+<use ../fig/geo9i.pdf>
+Package pdftex.def Info: ../fig/geo9i.pdf  used on input line 465.
+(pdftex.def)             Requested size: 85.7376pt x 85.7376pt.
+<../fig/geo9j.pdf, id=403, 114.3171pt x 114.3171pt>
+File: ../fig/geo9j.pdf Graphic file (type pdf)
+<use ../fig/geo9j.pdf>
+Package pdftex.def Info: ../fig/geo9j.pdf  used on input line 465.
+(pdftex.def)             Requested size: 85.7376pt x 85.7376pt.
+<../fig/geo9k.pdf, id=404, 114.3171pt x 114.3171pt>
+File: ../fig/geo9k.pdf Graphic file (type pdf)
+<use ../fig/geo9k.pdf>
+Package pdftex.def Info: ../fig/geo9k.pdf  used on input line 465.
+(pdftex.def)             Requested size: 85.7376pt x 85.7376pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 In fact, the math-e-mati-cian [][]Archimedes[][] reached as f
+ar as the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[][][][]\T1/lmr/m/n/9 For those in-ter-ested in com-puter pro-gram-ming, the it
+-er-a-tion al-go-rithm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/9 must be al-ter-nated in or-der to avoid in-sta-bil-i-ties when th
+e num-ber of sides
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 A com-puter has no prob-lems per-form-ing cal-cu-la-tions[]
+[][] on a poly-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 gon with ex-tremely many sides. Cal-cu-lat-ing the perime-ter
+ of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 (With the aid of more ad-vanced math-e-mat-ics it can be prov
+ed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 that the cir-cum-fer-ence of a cir-cle with ra-dius 1 is an i
+r-ra-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 num-ber, but that the dig-its shown above are cor-rect, there
+by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 We shall now de-rive the fa-mous for-mula for the cir-cum-f
+er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 ence of any cir-cle. Here as well, we take it for granted tha
+t the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 perime-ter of an in-scribed poly-gon yields an es-ti-mate of 
+the cir-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 cum-fer-ence which gets more ac-cu-rate the more sides the po
+ly-gon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 For the sake of sim-plic-ity, we shall use in-scribed squar
+es to il-lus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 trate the out-line. We draw two cir-cles of ran-dom size, but
+ the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 one larger than the other, and in-scribe a square in both. Le
+t $\OML/lmm/m/it/10.95 R$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 r$ \T1/lmr/m/n/10.95 de-note the ra-
+dius of the larger and the smaller cir-cle, re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 spec-tively. Also, let $\OML/lmm/m/it/10.95 K$ \T1/lmr/m/n/10
+.95 and $\OML/lmm/m/it/10.95 k$ \T1/lmr/m/n/10.95 de-note the side length of th
+e larger
+ []
+
+<../fig/geo9e2.pdf, id=407, 100.08391pt x 100.08391pt>
+File: ../fig/geo9e2.pdf Graphic file (type pdf)
+<use ../fig/geo9e2.pdf>
+Package pdftex.def Info: ../fig/geo9e2.pdf  used on input line 465.
+(pdftex.def)             Requested size: 100.08365pt x 100.08365pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9e.pdf, id=408, 100.08391pt x 100.08391pt>
+File: ../fig/geo9e.pdf Graphic file (type pdf)
+<use ../fig/geo9e.pdf>
+Package pdftex.def Info: ../fig/geo9e.pdf  used on input line 465.
+(pdftex.def)             Requested size: 100.08365pt x 100.08365pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.465 }
+        \vsk
+<../fig/geo9f.pdf, id=409, 76.56606pt x 97.79536pt>
+File: ../fig/geo9f.pdf Graphic file (type pdf)
+<use ../fig/geo9f.pdf>
+Package pdftex.def Info: ../fig/geo9f.pdf  used on input line 465.
+(pdftex.def)             Requested size: 76.56586pt x 97.79512pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Let $[]$ and $[]$ de-note the es-ti-mated cir-cum-fer-ences o
+f
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 the larger and the smaller cir-cle, re-spec-tively. Mul-ti-pl
+y-ing both
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/sl/10.95 If we were to in-scribe poly-gons with 4, 100 or any num-b
+er of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/sl/10.95 sides, the poly-gons could still be di-vided into tri-an-gle
+s obey-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[][]\T1/lmr/m/sl/10.95 . And in the same way as we did in the above ex-am-ple, 
+we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 Let's there-fore imag-ine poly-gons with such a large num-b
+er of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 sides that we ac-cept their re-spec-tive perime-ters as equal
+ to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 re-spec-tive cir-cum-fer-ences of the cir-cles. Let-ting $\OM
+L/lmm/m/it/10.95 O$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 o$ \T1/lmr/m/n/1
+0.95 de-note
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 the cir-cum-fer-ences of the larger and smaller cir-cle re-sp
+ec-tively,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Since the cir-cles are ran-domly cho-sen, we con-clude that \
+T1/lmr/m/it/10.95 all cir-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/it/10.95 cles have the same ra-tio of the cir-cum-fer-ence to the ra-
+dius\T1/lmr/m/n/10.95 . An
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 equiv-a-lent state-ment is that \T1/lmr/m/it/10.95 all cir-cl
+es have the same ra-tio of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+[]\T1/lmr/m/n/10.95 The ra-tio of the cir-cum-fer-ence $\OML/lmm/m/it/10.95 O$ 
+\T1/lmr/m/n/10.95 to the di-am-e-ter $\OML/lmm/m/it/10.95 d$ \T1/lmr/m/n/10.95 
+in a cir-cle is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 The above equa-tion yields the for-mula for the cir-cum-fer-e
+nce of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+\T1/lmr/m/n/10.95 Earlier we found that the cir-cum-fer-ence of a cir-cle with 
+ra-dius 1
+ []
+
+[16
+
+ <../fig/geo9l.pdf> <../fig/geo9c.pdf>] [17 <../fig/geo9.pdf> <../fig/geo9d2.pd
+f> <../fig/geo9a.pdf>] [18 <../fig/geo9g.pdf> <../fig/geo9h.pdf>] [19]
+[20 <../fig/geo9i.pdf> <../fig/geo9j.pdf> <../fig/geo9k.pdf>] [21 <../fig/geo9e
+2.pdf> <../fig/geo9e.pdf> <../fig/geo9f.pdf>] [22]
+<../fig/forml0.pdf, id=486, 142.26149pt x 97.42397pt>
+File: ../fig/forml0.pdf Graphic file (type pdf)
+<use ../fig/forml0.pdf>
+Package pdftex.def Info: ../fig/forml0.pdf  used on input line 500.
+(pdftex.def)             Requested size: 142.26112pt x 97.42372pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
+\T1/lmr/m/n/10.95 In the fig-ure above, we have $\OML/lmm/m/it/10.95 BB[]\OMS/l
+msy/m/n/10.95 jj\OML/lmm/m/it/10.95 CC[]$\T1/lmr/m/n/10.95 . With $\OML/lmm/m/i
+t/10.95 BB[]$ \T1/lmr/m/n/10.95 as base, $\OML/lmm/m/it/10.95 HB[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
+\T1/lmr/m/n/10.95 By [][], the ra-tio of cor-re-spond-ing sides in the two tri-
+an-gles are
+ []
+
+[23 <../fig/forml0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]\T1/lmr/m/n/10.95 In the fol-low-ing ex-pla-na-tions of term \T1/lmr/m/sl/10.
+95 ii \T1/lmr/m/n/10.95 and \T1/lmr/m/sl/10.95 iii \T1/lmr/m/n/10.95 from [][]\
+T1/lmr/m/sl/10.95 Rule 0.8[][][] \T1/lmr/m/n/10.95 we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]\T1/lmr/m/n/10.95 Given a co-or-di-nate sys-tem placed in the cen-ter of one 
+of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 the cir-cles, such that the hor-i-zon-tal axis passes through
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 both cir-cle cen-ters. If $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/
+10.95 a; b\OT1/lmr/m/n/10.95 )$ \T1/lmr/m/n/10.95 is one of the in-ter-sec-tion
+
+ []
+
+<../fig/sirk2.pdf, id=507, 64.52104pt x 43.18132pt>
+File: ../fig/sirk2.pdf Graphic file (type pdf)
+<use ../fig/sirk2.pdf>
+Package pdftex.def Info: ../fig/sirk2.pdf  used on input line 510.
+(pdftex.def)             Requested size: 64.52087pt x 43.1812pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 The re-marks above are quite easy to prove, but since they ar
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 largely in-tu-itively true, we hold them as granted. This im-
+plies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 that the tri-an-gle formed by the two cen-ters and one of the
+ in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 ter-sec-tion points is con-gru-ent to the tri-an-gle formed b
+y the two
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+\T1/lmr/m/n/10.95 cen-ters and the other in-ter-sec-tion point. By this, we can
+ study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]\T1/lmr/m/n/10.95 Given a length $\OML/lmm/m/it/10.95 c$ \T1/lmr/m/n/10.95 an
+d two an-gles $\OML/lmm/m/it/10.95 u$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.9
+5 v$\T1/lmr/m/n/10.95 . We make a seg-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95 with length $\OML/lmm/m/it/10.95 c$\T
+1/lmr/m/n/10.95 . Then we dot two an-gle sides, such that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\U/msa/m/n/10.95 \[]$ \T1/lmr/m/n/10.95 and $[]$. As long as these an-gle sides
+ are not par-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 al-lel, they must in-ter-sect in one, and one only, point ($\
+OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 fig-ure). To-gether with $\OML/lmm/m/it/10.95 A$ \T1/lmr/m/n/
+10.95 and $\OML/lmm/m/it/10.95 B$\T1/lmr/m/n/10.95 , this point will form a tri
+-an-gle
+ []
+
+<../fig/geo13c.pdf, id=509, 113.81522pt x 71.63763pt>
+File: ../fig/geo13c.pdf Graphic file (type pdf)
+<use ../fig/geo13c.pdf>
+Package pdftex.def Info: ../fig/geo13c.pdf  used on input line 531.
+(pdftex.def)             Requested size: 113.81493pt x 71.63744pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]\T1/lmr/m/n/10.95 Given three lengths $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.9
+5 , $\OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 c$\T1/lm
+r/m/n/10.95 . We make a seg-ment $\OML/lmm/m/it/10.95 AB$ \T1/lmr/m/n/10.95 wit
+h
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 length $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/10.95 . Then we mak
+e two semi-circles with re-spec-tive radii
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\OML/lmm/m/it/10.95 a$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 b$ \T1/lmr/m/
+n/10.95 and cen-ters $\OML/lmm/m/it/10.95 B$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/
+it/10.95 A$\T1/lmr/m/n/10.95 . If a tri-an-gle $\OMS/lmsy/m/n/10.95 4\OML/lmm/m
+/it/10.95 ABC$ \T1/lmr/m/n/10.95 is to have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 sides of length $\OML/lmm/m/it/10.95 a$\T1/lmr/m/n/10.95 , $\
+OML/lmm/m/it/10.95 b$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 c$\T1/lmr/m/n/
+10.95 , $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 must lie on both of the semi-
+circles.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 Since the semi-circles in-ter-sect in one point only, $\OMS/l
+msy/m/n/10.95 4\OML/lmm/m/it/10.95 ABC$ \T1/lmr/m/n/10.95 is
+ []
+
+<../fig/geo13a.pdf, id=510, 142.26149pt x 55.76836pt>
+File: ../fig/geo13a.pdf Graphic file (type pdf)
+<use ../fig/geo13a.pdf>
+Package pdftex.def Info: ../fig/geo13a.pdf  used on input line 531.
+(pdftex.def)             Requested size: 142.26112pt x 55.7682pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 By plac-ing $\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 ran-dom
+ly on the arc of the semi-circle, we get all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 in-stances of a tri-an-gle $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/i
+t/10.95 ABC$ \T1/lmr/m/n/10.95 with sides of length $[]$ and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+[]$\T1/lmr/m/n/10.95 . Specif-i-cally plac-ing $\OML/lmm/m/it/10.95 C$ \T1/lmr/
+m/n/10.95 on the arc of the semi-circle is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 equiv-a-lent to set-ting a spe-cific value of $\U/msa/m/n/10.
+95 \\OML/lmm/m/it/10.95 A$\T1/lmr/m/n/10.95 . Now it re-mains to
+ []
+
+<../fig/geo13b.pdf, id=511, 227.62039pt x 88.06902pt>
+File: ../fig/geo13b.pdf Graphic file (type pdf)
+<use ../fig/geo13b.pdf>
+Package pdftex.def Info: ../fig/geo13b.pdf  used on input line 531.
+(pdftex.def)             Requested size: 227.61983pt x 88.06879pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 Let $\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 and $\OML/lmm
+/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 de-note two po-ten-tial place-ments of $\OML
+/lmm/m/it/10.95 C$\T1/lmr/m/n/10.95 , where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\OML/lmm/m/it/10.95 C[]$\T1/lmr/m/n/10.95 , along the semi-cir-cle, lies closer
+ to $\OML/lmm/m/it/10.95 E$ \T1/lmr/m/n/10.95 than $\OML/lmm/m/it/10.95 C[]$\T1
+/lmr/m/n/10.95 . Now we dot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 a cir-cu-lar arc with ra-dius $\OML/lmm/m/it/10.95 BC[]$ \T1/
+lmr/m/n/10.95 and cen-ter $\OML/lmm/m/it/10.95 B$\T1/lmr/m/n/10.95 . Since the 
+dot-ted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 arc and the semi-circle only in-ter-sects in $\OML/lmm/m/it/1
+0.95 C[]$\T1/lmr/m/n/10.95 , other points will
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 ei-ther lie in-side or out-side the dot-ted arc. Nec-es-sar-i
+ly, $\OML/lmm/m/it/10.95 C[]$ \T1/lmr/m/n/10.95 lies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 out-side the dot-ted arc, and there-fore $\OML/lmm/m/it/10.95
+ BC[]$ \T1/lmr/m/n/10.95 is longer than $\OML/lmm/m/it/10.95 BC[]$\T1/lmr/m/n/1
+0.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 From this we can con-clude that the length of $\OML/lmm/m/it/
+10.95 BC$ \T1/lmr/m/n/10.95 in-creases as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\OML/lmm/m/it/10.95 C$ \T1/lmr/m/n/10.95 moves against $\OML/lmm/m/it/10.95 E$ 
+\T1/lmr/m/n/10.95 along the semi-circle. There-fore, spec-i-fy-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
+\T1/lmr/m/n/10.95 ing $[]$ yields a unique value of $\OML/lmm/m/it/10.95 BC$\T1
+/lmr/m/n/10.95 , and hence a unique
+ []
+
+[24 <../fig/sirk2.pdf>] [25 <../fig/geo13c.pdf> <../fig/geo13a.pdf>]
+
+LaTeX Warning: Hyper reference `180' on page 26 undefined on input line 573.
+
+
+LaTeX Warning: Reference `180' on page 26 undefined on input line 573.
+
+<../fig/geo12.pdf, id=535, 170.7178pt x 91.36133pt>
+File: ../fig/geo12.pdf Graphic file (type pdf)
+<use ../fig/geo12.pdf>
+Package pdftex.def Info: ../fig/geo12.pdf  used on input line 573.
+(pdftex.def)             Requested size: 170.71738pt x 91.3611pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+\T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 E[]$ \T1/lmr/m/n/10.95 on $\OML/lmm/
+m/it/10.95 AC$ \T1/lmr/m/n/10.95 and $\OML/lmm/m/it/10.95 BC$\T1/lmr/m/n/10.95 
+, re-spec-tively, such that $[]$ and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+\T1/lmr/m/n/10.95 Hence $[]$. From term \T1/lmr/m/sl/10.95 ii \T1/lmr/m/n/10.95
+ of [][]\T1/lmr/m/sl/10.95 Rule 0.8[][][] \T1/lmr/m/n/10.95 it now fol-lows tha
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+\T1/lmr/m/n/10.95 We place $\OML/lmm/m/it/10.95 D[]$ \T1/lmr/m/n/10.95 and $\OM
+L/lmm/m/it/10.95 E[]$ \T1/lmr/m/n/10.95 on $\OML/lmm/m/it/10.95 AC$ \T1/lmr/m/n
+/10.95 and $\OML/lmm/m/it/10.95 BC$\T1/lmr/m/n/10.95 , re-spec-tively, such tha
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[]$ \T1/lmr/m/n/10.95 and $[]$. From term \T1/lmr/m/sl/10.95 i \T1/lmr/m/n/10.9
+5 of [][]\T1/lmr/m/sl/10.95 Rule 0.12[][][] \T1/lmr/m/n/10.95 we have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+\T1/lmr/m/n/10.95 Hence, the side lengths of $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/i
+t/10.95 D[]E[]C$ \T1/lmr/m/n/10.95 and $\OMS/lmsy/m/n/10.95 4\OML/lmm/m/it/10.9
+5 DEF$ \T1/lmr/m/n/10.95 are pair-wise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+\T1/lmr/m/n/10.95 equal, and then, from term \T1/lmr/m/sl/10.95 i \T1/lmr/m/n/1
+0.95 of [][]\T1/lmr/m/sl/10.95 Rule 0.8[][][]\T1/lmr/m/n/10.95 , they are con-g
+ru-ent.
+ []
+
+<../fig/geo12b.pdf, id=541, 170.7178pt x 94.57333pt>
+File: ../fig/geo12b.pdf Graphic file (type pdf)
+<use ../fig/geo12b.pdf>
+Package pdftex.def Info: ../fig/geo12b.pdf  used on input line 573.
+(pdftex.def)             Requested size: 170.71738pt x 94.57309pt.
+[26 <../fig/geo13b.pdf> <../fig/geo12.pdf>] [27 <../fig/geo12b.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 577.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 577.
+
+(./geo2_eng.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 577.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 577.
+Package rerunfilecheck Info: File `geo2_eng.out' has not changed.
+(rerunfilecheck)             Checksum: B5B78B44B47F448507C45FF3476E2652;184.
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 38230 strings out of 494923
+ 754243 string characters out of 6180741
+ 867944 words of memory out of 5000000
+ 40767 multiletter control sequences out of 15000+600000
+ 614899 words of font info for 91 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 69i,20n,102p,10510b,960s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+r9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro9.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb>
+Output written on geo2_eng.pdf (27 pages, 821981 bytes).
+PDF statistics:
+ 660 PDF objects out of 1000 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+
