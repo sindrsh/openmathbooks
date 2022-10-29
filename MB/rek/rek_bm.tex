@@ -70,84 +70,86 @@ Denne metoden baserer seg på plassverdisystemet, der man trinnvis regner ut sum
 \spr{
 Det å skrive 1 på neste sifferplass kalles ''å skrive 1 i mente''.
 }
-\subsubsection{Tabellmetoden}
-Denne metoden tar utgangspunkt i det éne leddet, og summerer fram til det andre leddet er nådd. Det som i starten kan være litt rart med denne metoden, er at du selv velger fritt hvilke tall du skal legge til, så lenge du når det andre leddet til slutt.
-\begin{center}
-	\parbox{0.3\linewidth}{
-		\eks[1]{
-			$ \colb{273}+\colc{86} = \colo{359} $ \vsk
-			
-			\begin{tabular}{r|r|r}
-				&&\colb{273} \\ \hline
-				6 & 6 & 279 \\
-				30& 36 & 309 \\
-				50& \colc{86} & \colo{359}
-			\end{tabular}
+\begin{comment}
+	\subsubsection{Tabellmetoden}
+	Denne metoden tar utgangspunkt i det éne leddet, og summerer fram til det andre leddet er nådd. Det som i starten kan være litt rart med denne metoden, er at du selv velger fritt hvilke tall du skal legge til, så lenge du når det andre leddet til slutt.
+	\begin{center}
+		\parbox{0.3\linewidth}{
+			\eks[1]{
+				$ \colb{273}+\colc{86} = \colo{359} $ \vsk
+				
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6 & 6 & 279 \\
+					30& 36 & 309 \\
+					50& \colc{86} & \colo{359}
+				\end{tabular}
+			}
+		} \qquad
+		\parbox{0.3\linewidth}{
+			\eks[2]{
+				$ \colb{85}+\colc{79}=\colo{164} $  \vsk
+				
+				\begin{tabular}{r|r|r}
+					& & \colb{85} \\ \hline 
+					5 & 5 & 90 \\
+					10 & 15 &100 \\
+					64 & \colc{79} & \colo{164} \\
+				\end{tabular} \vsk
+			}
 		}
-	} \qquad
-	\parbox{0.3\linewidth}{
-		\eks[2]{
-			$ \colb{85}+\colc{79}=\colo{164} $  \vsk
+	\end{center}
+	\newpage
+	\fork{Eksempel 1}{
+		\begin{figure}
+			\centering
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					&  &  \\
+					\phantom{30}& \phantom{36} &  \\
+					&  & 
+				\end{tabular}
+			} \qquad
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					\phantom{30}& \phantom{36} &  \\
+					&  & 
+				\end{tabular}
+			}\vsk 
 			
-			\begin{tabular}{r|r|r}
-				& & \colb{85} \\ \hline 
-				5 & 5 & 90 \\
-				10 & 15 &100 \\
-				64 & \colc{79} & \colo{164} \\
-			\end{tabular} \vsk
-		}
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					30& 36 & 309  \\
+					&  & 
+				\end{tabular}
+			}
+			\qquad
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					30& 36 & 309  \\
+					50& \colc{86} & \colo{359}
+				\end{tabular}
+			}
+		\end{figure}
+		\begin{enumerate}[label=(\alph*)]
+			\item Vi starter med det leddet vi selv ønsker, ofte er det lurt å starte med det største leddet.
+			\item Vi legger til $ 6 $. Da har vi totalt lagt til $ 6 $, og videre er $ {273+6=279} $.
+			\item Vi legger til 30. Da har vi totalt lagt til 36, og videre er $ 279+30=309 $.
+			\item Vi legger til 50. Da har vi totalt lagt til 86, altså har vi nådd det andre leddet, og videre er $ 309+50=359 $.
+		\end{enumerate}
+	} \vsk
+	
+	\info{Oppstilling versus tabellmetoden}{
+		Ved første øyekast kan kanskje tabellmetoden bare se ut som en innviklet måte å regne addisjon på samenlignet med oppstilling, men med øving vil mange oppdage at tabellmetoden bedrer evnen til hoderegning. Styrkene til tabellmetoden kommer aller best til sin rett når det er snakk om å utføre subtraksjon eller divisjon.
 	}
-\end{center}
-\newpage
-\fork{Eksempel 1}{
-\begin{figure}
-	\centering
-\subfloat[]{
-\begin{tabular}{r|r|r}
-	&&\colb{273} \\ \hline
-	 &  &  \\
-	\phantom{30}& \phantom{36} &  \\
-	&  & 
-\end{tabular}
-} \qquad
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		\phantom{30}& \phantom{36} &  \\
-		&  & 
-	\end{tabular}
-}\vsk 
-
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		30& 36 & 309  \\
-		&  & 
-	\end{tabular}
-}
-\qquad
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		30& 36 & 309  \\
-		50& \colc{86} & \colo{359}
-	\end{tabular}
-}
-\end{figure}
-\begin{enumerate}[label=(\alph*)]
-\item Vi starter med det leddet vi selv ønsker, ofte er det lurt å starte med det største leddet.
-\item Vi legger til $ 6 $. Da har vi totalt lagt til $ 6 $, og videre er $ {273+6=279} $.
-\item Vi legger til 30. Da har vi totalt lagt til 36, og videre er $ 279+30=309 $.
-\item Vi legger til 50. Da har vi totalt lagt til 86, altså har vi nådd det andre leddet, og videre er $ 309+50=359 $.
-\end{enumerate}
-} \vsk
-
-\info{Oppstilling versus tabellmetoden}{
-	Ved første øyekast kan kanskje tabellmetoden bare se ut som en innviklet måte å regne addisjon på samenlignet med oppstilling, men med øving vil mange oppdage at tabellmetoden bedrer evnen til hoderegning. 
-}
+\end{comment}
 
 \section{Subtraksjon}
 \subsubsection{Oppstilling}
@@ -206,8 +208,8 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 	\end{figure}
 	
 	\begin{enumerate}[label=(\alph*)]
-		\item Vi merker oss at 7 er større enn 3, derfor tar vi 1 tier fra de 8 på tierplassen. Dette markerer vi ved å sette en strek over 8. Så finner vi differansen mellom enerne: $ {13-7=6} $
-		\item Siden vi tok 1 fra de 8 tierne, er der nå bare 7 tiere. Vi finner differansen mellom tierne: $ {7-6=1} $.
+		\item Vi merker oss at 7 er større enn 3, derfor tar vi 1 tier fra de 9 på tierplassen. Dette markerer vi ved å sette en strek over 9. Så finner vi differansen mellom enerne: $ {13-7=6} $
+		\item Siden vi tok 1 fra de 9 tierne, er der nå bare 8 tiere. Vi finner differansen mellom tierne: $ {8-5=3} $.
 	\end{enumerate}
 }
 \subsubsection{Tabellmetoden}
@@ -406,7 +408,7 @@ Ganging på utvidet form bruker vi for å regne multiplikasjon mellom flersifred
 \fork{Eksempel 1}{
 24 kan skrives som $ 20+4 $, altså er
 \[ 24\cdot3 =(20+4)\cdot3 \]
-Videre er 
+Av \rref{gangpar} har vi at 
 \algv{
 (20+4)\cdot 3 &=20\cdot 3 + 4\cdot 3 \\
 &= 60+12 \\

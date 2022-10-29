@@ -25,13 +25,13 @@ draw((0,1.5dy)--(-6dx,1.5dy));
 
 
 label("3",(-dx,0));
-label("8",(-3dx,0),blue);
+label("9",(-3dx,0),blue);
 
 label("7",(-dx,dy));
-label("6",(-3dx,dy),red);
+label("5",(-3dx,dy),red);
 
 label("6",(-dx,2dy));
-label("1",(-3dx,2dy),Green);
+label("3",(-3dx,2dy),Green);
 
 draw(shift(-2dx)*c);
 label("10",(-dx,dyy),black+fontsize(6pt));

@@ -3,10 +3,10 @@
 \input{../../preamb}
 
 \begin{document}
-\section{Addisjon}
+\section{Addition}
 
 \subsubsection{Column addition}
-This method is founded on the base-10 positional notation, in turn adding the ones, the tens the hundreds and so on.
+This method is founded on the base-10 positional notation, in turn adding the ones, the tens, the hundreds and so on.
 \begin{center}
 	\parbox{0.3\linewidth}{
 \eks[1]{
@@ -39,7 +39,7 @@ This method is founded on the base-10 positional notation, in turn adding the on
 	\end{figure}
 }}
 \end{center}
-\fork{Eksempel 1}{
+\fork{Example 1}{
 \begin{figure}
 	\centering
 	\subfloat[]{\includegraphics{rekfig/plus1a}}\qquad
@@ -53,7 +53,7 @@ This method is founded on the base-10 positional notation, in turn adding the on
 	\item We add the hundreds: $ 2+6=8 $
 \end{enumerate}
 } \newpage
-\fork{Eksempel 2}{
+\fork{Example 2}{
 	\begin{figure}
 		\centering
 		\subfloat[]{\includegraphics{rekfig/plus2a}}\qquad
@@ -71,88 +71,90 @@ This method is founded on the base-10 positional notation, in turn adding the on
 \spr{
 Writing 1 on a place value to the left is calle ''carrying 1 over''.
 }
-\subsubsection{Tabellmetoden}
-Denne metoden tar utgangspunkt i det éne leddet, og summerer fram til det andre leddet er nådd. Det som i starten kan være litt rart med denne metoden, er at du selv velger fritt hvilke tall du skal legge til, så lenge du når det andre leddet til slutt.
-\begin{center}
-	\parbox{0.3\linewidth}{
-		\eks[1]{
-			$ \colb{273}+\colc{86} = \colo{359} $ \vsk
-			
-			\begin{tabular}{r|r|r}
-				&&\colb{273} \\ \hline
-				6 & 6 & 279 \\
-				30& 36 & 309 \\
-				50& \colc{86} & \colo{359}
-			\end{tabular}
+\begin{comment}
+	\subsubsection{The table method}
+	This method starts with one of the terms and add numbers until the other term is reached. You are free to chose which numbers to add as long as you don't exceed the term you are supposed to reach.
+	\begin{center}
+		\parbox{0.3\linewidth}{
+			\eks[1]{
+				$ \colb{273}+\colc{86} = \colo{359} $ \vsk
+				
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6 & 6 & 279 \\
+					30& 36 & 309 \\
+					50& \colc{86} & \colo{359}
+				\end{tabular}
+			}
+		} \qquad
+		\parbox{0.3\linewidth}{
+			\eks[2]{
+				$ \colb{85}+\colc{79}=\colo{164} $  \vsk
+				
+				\begin{tabular}{r|r|r}
+					& & \colb{85} \\ \hline 
+					5 & 5 & 90 \\
+					10 & 15 &100 \\
+					64 & \colc{79} & \colo{164} \\
+				\end{tabular} \vsk
+			}
 		}
-	} \qquad
-	\parbox{0.3\linewidth}{
-		\eks[2]{
-			$ \colb{85}+\colc{79}=\colo{164} $  \vsk
+	\end{center}
+	\newpage
+	\fork{Example 1}{
+		\begin{figure}
+			\centering
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					&  &  \\
+					\phantom{30}& \phantom{36} &  \\
+					&  & 
+				\end{tabular}
+			} \qquad
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					\phantom{30}& \phantom{36} &  \\
+					&  & 
+				\end{tabular}
+			}\vsk 
 			
-			\begin{tabular}{r|r|r}
-				& & \colb{85} \\ \hline 
-				5 & 5 & 90 \\
-				10 & 15 &100 \\
-				64 & \colc{79} & \colo{164} \\
-			\end{tabular} \vsk
-		}
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					30& 36 & 309  \\
+					&  & 
+				\end{tabular}
+			}
+			\qquad
+			\subfloat[]{
+				\begin{tabular}{r|r|r}
+					&&\colb{273} \\ \hline
+					6& 6 & 279 \\
+					30& 36 & 309  \\
+					50& \colc{86} & \colo{359}
+				\end{tabular}
+			}
+		\end{figure}
+		\begin{enumerate}[label=(\alph*)]
+			\item We start with one of the terms. Often, it's wise choose the larger term.
+			\item We add $ 6 $. In total we have added $ 6 $, and $ {273+6=279} $.
+			\item We add 30. In total we have added 36, and $ 279+30=309 $.
+			\item We add 50. In total we have added 86, which is our other term. Moreover, $ 309+50=359 $.
+		\end{enumerate}
+	} \vsk
+	
+	\info{Column addition versus the table method}{
+		At first sight, the table method may seem like a somewhat cumbersome way of calculating addition. However, the flexibility it showcases when it comes to choosing numbers can be utilized when performing mental arithmetic. But the real strengths of the table method are most apparent when it comes to performing subtraction and division.
 	}
-\end{center}
-\newpage
-\fork{Eksempel 1}{
-\begin{figure}
-	\centering
-\subfloat[]{
-\begin{tabular}{r|r|r}
-	&&\colb{273} \\ \hline
-	 &  &  \\
-	\phantom{30}& \phantom{36} &  \\
-	&  & 
-\end{tabular}
-} \qquad
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		\phantom{30}& \phantom{36} &  \\
-		&  & 
-	\end{tabular}
-}\vsk 
+\end{comment}
 
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		30& 36 & 309  \\
-		&  & 
-	\end{tabular}
-}
-\qquad
-\subfloat[]{
-	\begin{tabular}{r|r|r}
-		&&\colb{273} \\ \hline
-		6& 6 & 279 \\
-		30& 36 & 309  \\
-		50& \colc{86} & \colo{359}
-	\end{tabular}
-}
-\end{figure}
-\begin{enumerate}[label=(\alph*)]
-\item Vi starter med det leddet vi selv ønsker, ofte er det lurt å starte med det største leddet.
-\item Vi legger til $ 6 $. Da har vi totalt lagt til $ 6 $, og videre er $ {273+6=279} $.
-\item Vi legger til 30. Da har vi totalt lagt til 36, og videre er $ 279+30=309 $.
-\item Vi legger til 50. Da har vi totalt lagt til 86, altså har vi nådd det andre leddet, og videre er $ 309+50=359 $.
-\end{enumerate}
-} \vsk
-
-\info{Oppstilling versus tabellmetoden}{
-	Ved første øyekast kan kanskje tabellmetoden bare se ut som en innviklet måte å regne addisjon på samenlignet med oppstilling, men med øving vil mange oppdage at tabellmetoden bedrer evnen til hoderegning. 
-}
-
-\section{Subtraksjon}
-\subsubsection{Oppstilling}
-Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis regner differansen mellom enerne, tierne, hundrene, o.l. Metoden tar også utgangspunkt i et mengdeperspektiv, og tillater derfor ikke differanser med negativ verdi (se forklaringen til \textsl{Eksempel 2}).
+\section{Subtraction}
+\subsubsection{Column subtraction}
+This method is founded on the base-10 positional notation, in turn subtracting the ones, the tens, the hundreds and so on. It is also based on the perspective of numbers as amounts, so it does not allow negative differences. (see the explanation of \textsl{Example 2}).
 \begin{center}
 	\parbox{0.3\linewidth}{
 \eks[1]{
@@ -184,7 +186,7 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 }}
 
 \end{center}
-\fork{Eksempel 1}{ \vs
+\fork{Example 1}{ \vs
 \begin{figure}
 	\centering
 	\subfloat[]{\includegraphics{rekfig/min1a}}\qquad
@@ -193,13 +195,13 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 \end{figure}
 
 \begin{enumerate}[label=(\alph*)]
-	\item Vi finner differansen mellom enerne: $ {9-4=5} $
-	\item Vi finner differansen mellom tierne: $ {8-2=6} $. 
-	\item Vi finner differansen mellom hundrene: $ {7-3=4} $.
+	\item We find the difference between the ones: $ {9-4=5} $
+	\item We find the difference between the tens: $ {8-2=6} $. 
+	\item We find the difference between the hundreds: $ {7-3=4} $.
 \end{enumerate}
 }
 \newpage
-\fork{Eksempel 2}{ \vs
+\fork{Example 2}{ \vs
 	\begin{figure}
 		\centering
 		\subfloat[]{\includegraphics{rekfig/min2a}}\qquad
@@ -207,12 +209,12 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 	\end{figure}
 	
 	\begin{enumerate}[label=(\alph*)]
-		\item Vi merker oss at 7 er større enn 3, derfor tar vi 1 tier fra de 8 på tierplassen. Dette markerer vi ved å sette en strek over 8. Så finner vi differansen mellom enerne: $ {13-7=6} $
-		\item Siden vi tok 1 fra de 8 tierne, er der nå bare 7 tiere. Vi finner differansen mellom tierne: $ {7-6=1} $.
+		\item We notice that 7 is larger than 3, and thus we take 1 ten from the 9 at the tens position. This is marked by drawing a line across 9. Then we find the difference between the ones: $ {13-7=6} $
+		\item Since we took 1 from the 9 tens, it is now only 8 tens. We find the difference between the tens: $ {8-5=3} $.
 	\end{enumerate}
 }
-\subsubsection{Tabellmetoden}
-Tabellmetoden for subtraksjon tar utgangspunkt i at subtraksjon er en omvendt operasjon av addisjon. For eksempel, svaret på spørsmålet ''Hva er $ 789-324 $?'' er det samme som svaret på spørsmålet ''Hvor mye må jeg legge til på 324 for å få 789?''. Med tabellmetoden følger du ingen spesiell regel underveis, men velger selv tallene du mener passer best for å nå målet.\\
+\subsubsection{The table method}
+The table method takes advantage of subtraction being the opposite operation of addition. For example, the answer to the question ''What is $ 789-324 $?'' is the same as the answer to the question ''How much must i add to 324 in order to get 789?''. With the table method you can freely chose which numbers to chose as long as you end up with the targeted number.\\
 \begin{center}
 \parbox{0.35\linewidth}{
 \eks[1]{
@@ -262,7 +264,7 @@ $ \colb{789}-\colr{324}=\colc{465} $	 \vsk
 		\end{tabular}
 }}
 \end{center}
-\fork{Eksempel 1}{
+\fork{Example 1}{
 	\[ \colb{789}-\colr{324}=\colo{465} \]
 \begin{figure}
 	\centering
@@ -313,21 +315,21 @@ $ \colb{789}-\colr{324}=\colc{465} $	 \vsk
 }
 \end{figure}
 \begin{enumerate}[label=(\alph*)]
-	\item Vi starter med 324.
-	\item Vi legger til 6, og får $ {324+6=330} $
-	\item Vi legger til 70, og får $ {70+330=400} $
-	\item Vi legger til 389, og får $ {389+400=789} $. Da er vi framme på 789.
-	\item Vi summerer tallene vi har lagt til:  $ {6+70+389=465} $
+	\item We start at 324.
+	\item We add 6, and get $ {324+6=330} $
+	\item We add 70, and get $ {70+330=400} $
+	\item We add 389, and get $ {389+400=789} $. Now we have reached 789.
+	\item We find the sum of the numbers we added: $ {6+70+389=465} $
 \end{enumerate}
 }
-\section{Ganging} \label{rekGanging}
-\subsubsection{Ganging med 10, 100, 1\,000 osv.}
+\section{Multiplication} \label{rekGanging}
+\subsubsection{Multiplying by 10, 100, 1\,000 etc.}
 \reg[Å gange heltall med 10, 100 osv. \label{gangheltallmed10100}]{
 	\vs
 	\begin{itemize}
-		\item Når man ganger et heltall med 10, får man svaret ved å legge til sifferet 0 bak heltallet.
-		\item Når man ganger et heltall med 100, får man svaret ved å legge til sifrene 00 bak heltallet.
-		\item Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
+		\item When multiplying an integer by 10, the product can be found by adding the digit 0 behind the integer.
+		\item When multiplying an integer by 100, the product can be found by adding the digits 00 behind the integer.
+		\item The same pattern applies for the numbers 1\,000, 10\,000 etc.
 	\end{itemize}
 }
 \eks[1]{\vsb \vsb
@@ -352,46 +354,46 @@ $ \colb{789}-\colr{324}=\colc{465} $	 \vsk
 }
 }
 \newpage
-\reg[Å gange desimaltall med 10, 100 osv. \label{gangdesmed10100}]{
+\reg[Multiplying decimal numbers by 10, 100, etc. \label{gangdesmed10100}]{
 	\vs
 	\begin{itemize}
-		\item Når man ganger et desimaltall med 10, får man svaret ved å flytte komma en plass til høgre.
-		\item Når man ganger et heltall med 100, får man svaret ved å flytte komma to plasser til høgre.
-		\item Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
+		\item When multiplying an integer by 10, the product is found by moving the dot one position to the right. 
+		\item When multiplying an integer by 100, the product is found by moving the dot one position to the right.
+		\item The same pattern applies for the numbers 1\,000, 10\,000 etc.
 	\end{itemize}
 }
 \eks[1]{\vsb \vsb
 	\alg{
-		7\colr{,}9\cdot 10 &= 79\colr{,}=79 \vn
-		38\colr{,}02\cdot10&=380\colr{,}2 \vn
-		0\colr{,}57\cdot 10 &=05\colr{,}7=5\colr{,}7 \vn
-		0\colr{,}194\cdot 10&= 01\colr{,}94=1\colr{,}94
+		7\colr{.}9\cdot 10 &= 79\colr{.}=79 \vn
+		38\colr{.}02\cdot10&=380\colr{.}2 \vn
+		0\colr{.}57\cdot 10 &=05\colr{.}7=5\colr{.}7 \vn
+		0\colr{.}194\cdot 10&= 01\colr{.}94=1\colr{.}94
 	}
 }
 \eks[2]{ \vsb \vsb
 	\alg{
-		7\colr{,}9\cdot 100 &= 790\colr{,}=790 \vn
-		38\colr{,}02\cdot100&=3802\colr{,}=3\,802 \vn
-		0\colr{,}57\cdot 100 &=057\colr{,}=57 \vn
-		0\colr{,}194\cdot 100&= 019\colr{,}4=19\colr{,}4
+		7\colr{.}9\cdot 100 &= 790\colr{.}=790 \vn
+		38\colr{.}02\cdot100&=3802\colr{.}=3\,802 \vn
+		0\colr{.}57\cdot 100 &=057\colr{.}=57 \vn
+		0\colr{.}194\cdot 100&= 019\colr{.}4=19\colr{.}4
 	}
 }
 \eks[3]{ \vsb \vsb
 	\alg{
-	7\colr{,}9\cdot 1\,000 &= 7900\colr{,}=7\,900 \vn
-	38\colr{,}02\cdot10\,000&=380020\colr{,}=380\,200 \vn
-	0\colr{,}57\cdot 100\,000 &=57000\colr{,}=57\,000
+	7\colr{.}9\cdot 1\,000 &= 7900\colr{.}=7\,900 \vn
+	38\colr{.}02\cdot10\,000&=380020\colr{.}=380\,200 \vn
+	0\colr{.}57\cdot 100\,000 &=57000\colr{.}=57\,000
 }
 }
-\info{Merk}{
-\hrs{gangheltallmed10100}{Regel} er bare et spesialtilfelle av \rref{gangdesmed10100}. For eksempel, å bruke \rref{gangheltallmed10100} på regnestykket $ {7\cdot 10} $ gir samme resultat som å bruke \rref{gangdesmed10100} på regnestykket $ {7,0\cdot 10} $. 
+\info{\note}{
+\hrs{gangheltallmed10100}{Rule} is just a special case of \rref{gangdesmed10100}. For example, applying \rref{gangheltallmed10100} when calculating $ {7\cdot 10} $ yields the same answer as when applying \rref{gangdesmed10100} when calculating $ {7,0\cdot 10} $. 
 }
 \newpage
-\fork{Å gange tall med 10, 100 osv.}{
-Titallsystemet baserer seg på grupper av ti, hundre, tusen osv., og tideler, hundredeler og tusendeler osv (se \rref{titalsys}). Når man ganger et tall med 10, vil alle enere i tallet bli til tiere, alle tiere bli til hundrere osv. Hvert siffer forskyves altså én plass mot venstre. Tilsvarende forskyves hvert siffer to plasser mot venstre når man ganger med 100, tre plasser når man ganger med 1\,000 osv.
+\fork{Multiplying by 10, 100 etc.}{
+The Base-10 positional notation is founded on groups of tens, hundreds, thousands etc., and tenths, hundredths, thousandths etc. (see \rref{titalsys}). When multiplying a number by 10, all the ones in the number will form a group of tens, all the tens will form a group of hundreds an so on. Hence, every digit is moved one position to the left. Similarly, every digit is moved one position to the left when multiplying by 100, three places when multiplying by 1\,000 etc.
 }
-\subsubsection{Utvidet form}
-Ganging på utvidet form bruker vi for å regne multiplikasjon mellom flersifrede tall. Metoden baserer seg på distributiv lov (\rref{gangpar}). \regv
+\subsubsection{Expanded form}
+Multiplication with expanded form can be applied on multi digit numbers. The method is based on the distributive law (\rref{gangpar}). \regv
 \eks[1]{ \vs
 \begin{figure}
 	\centering
@@ -404,28 +406,26 @@ Ganging på utvidet form bruker vi for å regne multiplikasjon mellom flersifred
 	\includegraphics[]{rekfig/gfleirsif}
 \end{figure}
 }
-\fork{Eksempel 1}{
-24 kan skrives som $ 20+4 $, altså er
+\fork{Example 1}{
+24 can be written as $ 20+4 $, so
 \[ 24\cdot3 =(20+4)\cdot3 \]
-Videre er 
-\algv{
+Moreover, by \rref{gangpar},
+\alg{
 (20+4)\cdot 3 &=20\cdot 3 + 4\cdot 3 \\
 &= 60+12 \\
 &= 72
 }
 }
 \newpage
-\fork{Eksempel 2}{
-Vi har at
+\fork{Example 2}{
+We have
 \algv{
 279&=200+70+9 \\
 34 &=30+4 	
 }
-Altså er
-\alg{
-279\cdot34&= (200+70+9)\cdot (30+4) 
-}
-Videre er 
+Thus
+\[ 279\cdot34= (200+70+9)\cdot (30+4) \]
+Moreover,
 {
 \footnotesize
 \alg{
@@ -434,8 +434,8 @@ Videre er
 &=9486}
 } \vs
 }
-\subsubsection{Kompaktmetoden}
-Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men har en skrivemåte som gjør utregningen korterere. \regv
+\subsubsection{The compact method}
+The compact method is based on the same principles as the expanded form method, only with a shorter way of writing. \regv
 
 \eks[1]{
 	\begin{figure}
@@ -444,62 +444,62 @@ Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men
 	\end{figure}
 }
 \newpage
-\fork{Eksempel 1}{
-Vi starter med å gange sifrene i 279 enkeltvis med 4:
+\fork{Example 1}{
+First we multiply the digits of 279 by 4:
 \begin{itemize}
-	\item $ 9\cdot 6=36 $, da skriver vi 6 på enerplassen og 3 i mente.
-	\item $ 7\cdot4 =28$, da skriver vi 8 på tierplassen og 2 i mente.
-	\item $ 2\cdot 4=8 $, da skriver vi 8 på hundrerplassen.
+	\item $ 9\cdot 6=36 $, so we write 6 at the ones position and carry\\ over 3.
+	\item $ 7\cdot4 =28$, so we write 8 at the tens position and carry\\ over 2.
+	\item $ 2\cdot 4=8 $, so we write 8 at the hundreds position.
 \end{itemize}
-Så ganger vi sifrene i 279 enkeltvis med 30. Dette kan forenkles til å gange med 3, så lenge vi plasserer sifrene én plass forskjøvet til venstre i forhold til da vi ganget med 4:
+Then we multiply the digits of 279 by 30. This in turn can be simplified to multiplying by 3, as long as we shift the digits one position to the left, relative to when we multiplied by 4:
 \begin{itemize}
-	\item $ 9\cdot 3=27 $, da skriver vi 7 på tierplassen og 2 i mente. 
-	\item $ 7\cdot3=21 $, da skriver vi 1 på hundrerplassen og 2 i mente.
-	\item $ 2\cdot3=6 $, da skriver vi 6 på tusenplassen.
+	\item $ 9\cdot 3=27 $, so we write 7 at the tens position and carry \\ over 2. 
+	\item $ 7\cdot3=21 $, so we write 1 at the hundreds position and carry \\ over 2.
+	\item $ 2\cdot3=6 $, so we write 6 at the thousands position.
 \end{itemize} 
 }
-\section{Divisjon} \label{rekDivisjon}
-\subsubsection{\delmedtihundre}
+\section{Division} \label{rekDivisjon}
+\subsubsection{Division by 10, 100, 1\,000 etc.}
 \reg[Deling med 10, 100, 1\,000 osv. \label{deledesmed10100}]{
-Når man deler et desimaltall med 10, får man svaret ved å flytte komma én plass til venstre.\vsk
+When dividing a decimal number by 10, the quotient is found by moving the dot one position to the left.\vsk
 
-Når man deler et desimaltall med 100, får man svaret ved å flytte komma to plasser til venstre.\vsk
+When dividing a decimal number by 100, the quotient is found by moving the dot two positions to the left.\vsk
 
-Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
+The same pattern applies for the numbers 1\,000, 10\,000 etc.
 }
 \eks[1]{ \vsb \vsb
 	\alg{
-200:10&=200\colr{,}0:10 \\&=20\colr{,}00\\&=20	\vn
-45:10&=45\colr{,}0:10 \\&= 4\colr{,}50 \\&=4\colr{,}5
+200:10&=200\colr{.}0:10 \\&=20\colr{.}00\\&=20	\vn
+45:10&=45\colr{.}0:10 \\&= 4\colr{.}50 \\&=4\colr{.}5
 }
 }
 \eks[2]{ \vsb \vsb
 	\alg{
-		200:100&=200\colr{,}0:100 \\&=2\colr{,}000\\&=2	\vn
-		45:100&=45\colr{,}0:100 \\&= 0\colr{,}450 \\&=0\colr{,}45
+		200:100&=200\colr{.}0:100 \\&=2\colr{.}000\\&=2	\vn
+		45:100&=45\colr{.}0:100 \\&= 0\colr{.}450 \\&=0\colr{.}45
 	}
 }
 \newpage
 \eks[3]{ \vsb \vsb
 \alg{
-143\colr{,}7 :10 &= 14\colr{,}37 \vn
-143\colr{,}7 :100 &= 1\colr{,}437 \vn
-143\colr{,}7 :1\,000 &= 0\colr{,}1437 
+143\colr{.}7 :10 &= 14\colr{.}37 \vn
+143\colr{.}7 :100 &= 1\colr{.}437 \vn
+143\colr{.}7 :1\,000 &= 0\colr{.}1437 
 }
 }
 \eks[4]{ \vsb \vsb
 \alg{
-93\colr{,}6:10 &= 9\colr{,}36 \vn
-93\colr{,}6:100 &= 0\colr{,}936 \vn
-93\colr{,}6:1\,000 &= 0\colr{,}0936
+93\colr{.}6:10 &= 9\colr{.}36 \vn
+93\colr{.}6:100 &= 0\colr{.}936 \vn
+93\colr{.}6:1\,000 &= 0\colr{.}0936
 }
 }
-\fork{Deling med 10, 100, 1\,000 osv.}{
-Titallsystemet baserer seg på grupper av ti, hundre, tusen osv., og tideler, hundredeler og tusendeler osv (se \rref{titalsys}). Når man deler et tall med 10, vil alle enere i tallet bli til tideler, alle tiere bli til enere osv. Hvert siffer forskyves altså én plass mot høgre. Tilsvarende forskyves hvert siffer to plasser mot høgre når man deler med 100, tre plasser når man deler med 1\,000 osv.
+\fork{Division by 10, 100, 1\,000 osv.}{
+The Base-10 positional notation is founded on groups of tens, hundreds, thousands etc., and tenths, hundredths, thousandths etc. (see \rref{titalsys}). When dividing a number by 10, all the ones in the number will form a group of tens, all the tens will form a group of ones an so on. Hence, every digit is moved one position to the right. Similarly, every digit is moved two positions to the right when multiplying by 100, three places when multiplying by 1\,000 etc.
 }
 
-\subsubsection{Oppstilling}
-Divisjon med oppstilling baserer seg på divisjon tolket som inndeling av mengder (se side \pageref{Divisjon})
+\subsubsection{Long division}
+Long division is based on the perspective of numbers as amount (see page \pageref{Divisjon}).
 
 \begin{center}
 	\parbox{0.3\linewidth}{
@@ -520,31 +520,31 @@ Divisjon med oppstilling baserer seg på divisjon tolket som inndeling av mengde
 }
 \end{center}
 \newpage
-\fork{Eksempel 1}{ \vs \vs
+\fork{Example 1}{ \vs \vs
 	\begin{figure}
 		\centering
 		\subfloat{\includegraphics{\figp{delalg}}}
 		\qquad \subfloat{\includegraphics[angle=90]{\figp{delalg0}}}
 	\end{figure}
-	Figuren over illustrerer mengden 92, som vi skal dele inn i 4 like store grupper. 
+	The above figure illustrate the amount 92, which we shall divide into 4 equal groups. 
 	\begin{itemize}
-		\item Vi starter med å fordele så mange av tierne som mulig. Av de 9 tierne, kan hver gruppe få 2. Da har vi totalt fordelt $ 2\cdot 4=8 $ tiere.
+		\item We start by distributing as many tens as possible. Of the 9 tens, each group can get 2. In total we have distributed $ 2\cdot 4=8 $ tens.
 		\begin{figure}
 			\centering
 			\subfloat{\includegraphics{\figp{delalgaa}}}
 			\qquad \subfloat{\includegraphics[angle=90]{\figp{delalga}}}
 		\end{figure}
-		\item Vi står nå igjen med 1 tier og 2 enere, altså 12 enere. Av de 12 enerne, kan hver gruppe få 3. Da har vi totalt fordelt $ 3\cdot 4= 12 $ enere.
+		\item Now we are left with 1 ten and 2 ones, which equals 12 ones. Of the 12 ones, each group can get 3. In total we have distributed $ 3\cdot 4= 12 $ ones.
 		\begin{figure}
 			\centering
 			\includegraphics[angle=90]{\figp{delalgb}}
 		\end{figure}
-		\item Nå er hele mengden 92 fordelt, og da er vi ferdige med utregningen. I hver gruppe endte vi opp med mengden 23.
+		\item The amount we started with, 92, is now equally distributed, and our calculation is done. In each group we got 23.
 	\end{itemize}
 }
 \newpage
-\subsubsection{Tabellmetoden}
-Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For eksempel er svaret på spørsmålet ''Hva er $ {76:4} $?'' det samme som svaret på spørsmålet ''Hvilket tall må jeg gange 4 med for å få 76?''. På samme vis som for tabellmetoden ved subtraksjon er det opp til en selv å velge passende tall for å nå målet.
+\subsubsection{The table method}
+Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For Example er svaret på spørsmålet ''Hva er $ {76:4} $?'' det samme som svaret på spørsmålet ''Hvilket tall må jeg gange 4 med for å få 76?''. På samme vis som for tabellmetoden ved subtraksjon er det opp til en selv å velge passende tall for å nå målet.
 \begin{center}
 	\label{ekstbldiv}
 	\parbox{0.35\linewidth}{
@@ -586,12 +586,12 @@ Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For eks
 		\end{tabular} \vsk
 	
 \footnotesize	
-\mer Samme regnestykke som i \textsl{Eksempel 2}, men en annen utregning.
+\mer Samme regnestykke som i \textsl{Example 2}, men en annen utregning.
 }
 }
 \end{center}
 \newpage
-\fork{Eksempel 1}{
+\fork{Example 1}{
 	Siden vi skal dele \colg{92} med \colb{4}, ganger vi med \colb{4} fram til vi når \colg{92}.
 	\begin{figure}
 		\centering
@@ -640,11 +640,11 @@ Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For eks
 	\end{enumerate}
 }
 \info{Tips}{
-	Det kan være lurt å se tilbake på utregninger gjort med tabellmetoden for å tenke over om man kunne valgt tall på en annen måte. I \textsl{Eksempel 1} på side \pageref{ekstbldiv} kunne vi startet med å gange med 20. Dette er omtrent like enkelt som å gange med 10, og det ville ha brakt oss nærmere målet.
+	Det kan være lurt å se tilbake på utregninger gjort med tabellmetoden for å tenke over om man kunne valgt tall på en annen måte. I \textsl{Example 1} på side \pageref{ekstbldiv} kunne vi startet med å gange med 20. Dette er omtrent like enkelt som å gange med 10, og det ville ha brakt oss nærmere målet.
 }
 \newpage
 \subsubsection{Divisjon med rest}
-Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å uttrykke slike svar på, er å ved å bruke begrepet \outl{rest}\index{rest}. Begrepet er best forklart ved eksempel: \regv
+Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å uttrykke slike svar på, er å ved å bruke begrepet \outl{rest}\index{rest}. Begrepet er best forklart ved Example: \regv
 \eks[1]{
 	Regn ut $ 11:4 $ med rest.
 	
@@ -693,7 +693,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 	\end{center}
 }
 \spr{
-	Hvis vi utfører en \outl{modulo-operasjon}, finner vi resten i et delestykke. Dette blir ofte vist ved forkortingen \sym{mod}. For eksempel er
+	Hvis vi utfører en \outl{modulo-operasjon}, finner vi resten i et delestykke. Dette blir ofte vist ved forkortingen \sym{mod}. For Example er
 	\[ 11\text{ mod } 4= 3\qquad , \qquad 19\text{ mod 3} =1 \]
 	I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{\string \\}}} brukt som symbol for denne operasjonen i programmeringsspråk.
 }
@@ -711,7 +711,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 	\sv \vsb
 	\[ 19:3=\text{6 og 1 i rest}=6+\frac{1}{3} \]
 }
-\fork{Eksempel 1}{
+\fork{Example 1}{
 	Vi starter med å legge merke til at $ 4=\frac{4}{1} $. Dette betyr at
 	\[ 11:4 = 11:\frac{4}{1} \]
 	Av \rref{delmbr} har vi at
@@ -749,7 +749,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 		\end{tabular}
 	\end{center}
 }
-\fork{Eksempel 1; oppstilling}{
+\fork{Example 1; oppstilling}{
 	Siden vi deler med 4, er det snakk om å fordele 11 likt i 4 grupper.
 	\begin{itemize}
 		\item 8 av de 11 enerne kan vi fordele likt i 4 grupper. Da har vi igjen 3 enere. Dette er det samme som 30 tideler.
@@ -863,7 +863,7 @@ Vi ser at $ 98,2 \approx 100 $. Skriver vi 100 istedenfor 98,2 i regnestykket v�
 Når vi gjør overslag på tall som legges sammen, bør vi altså prøve å gjøre det ene tallet større (runde opp) og et tall mindre (runde ned).\\
 
 \linje
-Det samme gjelder også hvis vi har ganging, for eksempel
+Det samme gjelder også hvis vi har ganging, for Example
 \[ 1\,689\cdot12 \]
 Her avrunder vi 12 til 10. For å ''veie opp'' for at svaret da blir litt mindre enn det egentlige, avrunder vi 1\,689 opp til 1\,700. Da får vi
 \[ 1\,689\cdot12\approx 1\,700\cdot 10 =17\,000 \]
@@ -975,7 +975,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 	
 	\sv \vs
 	\begin{enumerate}
-		\item 	Vi flytter komma 6 plasser til venstre, og får $ 9\colr{,}761432 $
+		\item 	Vi flytter komma 6 plasser til venstre, og får $ 9\colr{.}761432 $
 		\item Vi ganger dette tallet med $ 10^6 $, og får at 
 		\[ 9\,761\,432=9,761432\cdot 10^6 \] 
 	\end{enumerate}
