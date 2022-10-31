@@ -7,4 +7,6 @@ label("10",(-3dx,dyy),black+fontsize(6pt));
 label("10",(-5dx,dyy),black+fontsize(6pt));
 label("10",(-dx,dyy),black+fontsize(6pt));
 
-
+label("$,$",(-2dx,0.3dy));
+label("$,$",(-2dx,1.3dy));
+label("$,$",(-2dx,2.3dy));
