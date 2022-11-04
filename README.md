@@ -30,7 +30,7 @@ At the moment, all the books are available in Norwegien, and First principles of
 * [Anvendt matematikk 2](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
 
 ## English versions
-* [First principles of math](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=sharing)
+* [First principles of math (beta version)](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=sharing)
 
 
 ### Built With
@@ -48,14 +48,16 @@ This space includes the complete file structure of the books ready to be compile
 <!-- ROADMAP -->
 ## Roadmap
 - Translating all books into English
+- Adding problem solutions manual
 - Adding more exercises
 
 <!-- CONTRIBUTING -->
 ## Contributing
 Please make contact if you want to contribute to this project. Contributions especially sought out for are
+- Join the project's [discord server](https://discord.gg/jz9mPjkCNb) to discuss the content of the books.
 - Translating the books into other languages than Norwegian
 - Proofreading text and calculations
-- Adding problems to the sections
+- Adding problems to the sections. Make sure that problems you provide are not in conflict with any copyrights. Authors of problems that are comprehensive or unique will be credited.
 
 <!-- LICENSE -->
 ## License
@@ -66,5 +68,5 @@ Distributed under the CC BY-NC-SA 4.0 license. To view a copy of this license, v
 <!-- CONTACT -->
 ## Contact
 
-Sindre Sogge Heggen - sindre.heggen@gmail.com
-
+Sindre Sogge Heggen </br>
+sindre.heggen@gmail.com
