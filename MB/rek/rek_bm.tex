@@ -5,7 +5,7 @@
 \section{Addisjon}
 
 \subsubsection{Oppstilling}
-Denne metoden baserer seg på plassverdisystemet, der man trinnvis regner ut summen av enerne, tierne, hundrene, o.l.
+Denne metoden baserer seg på plassverdisystemet, der man trinnvis regner ut summen av enerne, tierne, hundrene, og så videre
 \begin{center}
 	\parbox{0.3\linewidth}{
 \eks[1]{
@@ -550,15 +550,16 @@ Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For eks
 	\label{ekstbldiv}
 	\parbox{0.35\linewidth}{
 		\eks[1]{
-			$ \colg{76}:\colb{4}=\colo{19} $	 \vsk
+			$ \colg{92}:\colb{4}=\colo{23} $	 \vsk
 			
 			\begin{tabular}{r|r|r}
 				$ \cdot\, \colb{4} $&\\ \hline
 				10&40&40 \\
-				9& 36 &\colg{76} \\ \hline
-				\colo{19}&
+				10&40&80 \\
+				3& 12 &\colg{92} \\ \hline
+				\colo{23}&
 			\end{tabular}
-		\vspace{42pt}
+			\vspace{28pt}
 	}} \qquad
 \parbox{0.35\linewidth}{
 	\eks[2]{
@@ -696,7 +697,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 \spr{
 	Hvis vi utfører en \outl{modulo-operasjon}, finner vi resten i et delestykke. Dette blir ofte vist ved forkortingen \sym{mod}. For eksempel er
 	\[ 11\text{ mod } 4= 3\qquad , \qquad 19\text{ mod 3} =1 \]
-	I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{\string \\}}} brukt som symbol for denne operasjonen i programmeringsspråk.
+	I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{//}}} brukt som symbol for denne operasjonen i programmeringsspråk.
 }
 \newpage
 \subsubsection{Divisjon med blanda tall som svar}
@@ -928,7 +929,7 @@ Og siden $ 1000=10^3 $, er
 \st{
 	$ 6,7\cdot10^3 $ er 6\,700 skrevet på standardform fordi
 	\begin{itemize}
-		\item 6,7 er større enn 0 og mindre enn 10.
+		\item 6,7 er større eller lik 1 og mindre enn 10.
 		\item $ 10^3 $ er en potens med grunntall 10 og eksponent 3, som er et heltall.
 		\item 6,7 og $ 10^3 $ er ganget sammen.
 	\end{itemize}
@@ -942,7 +943,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 \st{
 	$ 9,3\cdot10^{-2} $ er 0,093 skrevet på standardform fordi	
 	\begin{itemize}
-		\item 9,3 er større enn 0 og mindre enn 10.
+		\item 9,3 er større eller lik 1 og mindre enn 10.
 		\item $ 10^{-2} $ er en potens med grunntall 10 og eksponent $ -2 $, som er et heltall.
 		\item $ 9,3 $ og $ 10^{-2} $ er ganget sammen.
 	\end{itemize} 
@@ -950,7 +951,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 \reg[Standardform]{
 	Et tall skrevet som
 	\[ a\cdot 10^n \]
-	hvor $ {0<a<10} $ og $ n $ er et heltall, er et tall skrevet på standardform.
+	hvor $ {1\leq|a|<10} $ og $ n $ er et heltall, er et tall skrevet på standardform.
 }
 \eks[1]{
 	Skriv 980 på standardform.

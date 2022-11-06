@@ -6,7 +6,7 @@
 \section{Addition}
 
 \subsubsection{Column addition}
-This method is founded on the base-10 positional notation, in turn adding the ones, the tens, the hundreds and so on.
+This method builds on the base-10 positional notation, in turn adding the ones, the tens, the hundreds and so on.
 \begin{center}
 	\parbox{0.3\linewidth}{
 \eks[1]{
@@ -549,16 +549,17 @@ The table method takes advantage of division being the inverse operation of mult
 	\label{ekstbldiv}
 	\parbox{0.35\linewidth}{
 		\eks[1]{
-			$ \colg{76}:\colb{4}=\colo{19} $	 \vsk
+			$ \colg{92}:\colb{4}=\colo{23} $	 \vsk
 			
 			\begin{tabular}{r|r|r}
 				$ \cdot\, \colb{4} $&\\ \hline
 				10&40&40 \\
-				9& 36 &\colg{76} \\ \hline
-				\colo{19}&
+				10&40&80 \\
+				3& 12 &\colg{92} \\ \hline
+				\colo{23}&
 			\end{tabular}
-		\vspace{42pt}
-	}} \qquad
+			\vspace{28pt}
+		}} \qquad
 \parbox{0.35\linewidth}{
 	\eks[2]{
 		$ \colg{894}:\colb{3}=\colo{298} $	 \vsk
@@ -638,50 +639,49 @@ The table method takes advantage of division being the inverse operation of mult
 		\item We multiply 3 by 4, which equals 12. So far we have reached $ {80+12=92} $, which was our target.
 		\item We add the numbers we multiplied by 4: $ {10+10+3=23} $.
 	\end{enumerate}
-}
+}\vsk
+
 \info{Tip}{
-	Det kan være lurt å se tilbake på utregninger gjort med tabellmetoden for å tenke over om man kunne valgt tall på en annen måte. I \textsl{Example 1} på side \pageref{ekstbldiv} kunne vi startet med å gange med 20. Dette er omtrent like enkelt som å gange med 10, og det ville ha brakt oss nærmere målet.
+	It is wise to look back at calculations done with the table method and search for improvements. In \textsl{Example 1} on page \pageref{ekstbldiv}, we could have started off multiplying by 20. This is almost as easy as multiplying by 10, and it takes us closer to the target.
 }
 \newpage
 \subsubsection{Divisjon med rest}
-Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å uttrykke slike svar på, er å ved å bruke begrepet \outl{rest}\index{rest}. Begrepet er best forklart ved Example: \regv
+The value of a division calculation is far from always an integer. One way of expressing the answer is by using the term \outl{remainder}\index{remainder}. What it means is best explained through an example: \regv
 \eks[1]{
-	Regn ut $ 11:4 $ med rest.
+	Calculate $ 11:4 $ using remainder.
 	
 	\sv
-	Det største heltallet vi kan gange med 4 uten at produktet blir større enn
-	11, er 2. $ {2\cdot 4 = 8} $, så da har vi $ 11-8=3 $ i rest.
+	The largest integer we can multiply by 4 without having a product exceeding 11 is 2. $ {2\cdot 4 = 8} $, so we have ${ 11-8=3 }$ left to reach 11.
 	\[ 11= \colb{2}\cdot 4 +\colc{3} \]	
 	\fig{mod1}
-	Dette betyr at
-	\[ 11:4 =\text{\colb{2} og \colc{3} i rest}\]
+	This means that
+	\[ 11:4 =\text{\colb{2} and \colc{3} in remainder}\]
 }
 \eks[2]{
-	Regn ut $ 19:3 $ med rest.
+	Calculate $ 19:3 $ using remainder.
 	
 	\sv
-	Det største heltallet vi kan gange med 3 uten at produktet blir større enn
-	19, er 6. $ {6\cdot 3 = 18} $, så da har vi $ 19-8=1 $ i rest.
+	The largest integer we can multiply by 3 without exceeding 19 is 6. $ {6\cdot 3 = 18} $, so we have $ 19-8=1 $ left to reach 19.
 	\[ 19= \colb{6}\cdot 3 +\colc{1} \]	
 	\fig{mod2}
-	Dette betyr at
-	\[ 19:3 =\text{\colb{6} og \colc{1} i rest}\]
+	This means that
+	\[ 19:3 =\text{\colb{6} and \colc{1} in remainder}\]
 }
 \newpage
 \eks[3]{
-	Regn ut $ 94:4 $ med rest.
+	Calculate $ 94:4 $ using remainder.
 	
 	\sv
-	\metode{Med oppstilling}{3.75cm}
+	\metode{Using long division}{3.75cm}
 	\[ 94:4 = \text{23 og 2 i rest} \]
 	\begin{figure}
 		\centering
 		\includegraphics[]{rekfig/mod3}
 	\end{figure}
-	\mers{Da det blir feil å bruke \sym{$ = $} i figuren over, har vi valgt å bruke \sym{$  \rightarrow$}. 
+	\notesm{Since it's wrong to use \sym{$ = $} in the above calculation, we have chosen to use \sym{$  \rightarrow$}. 
 	}\vsk 
 	
-	\metode{Med tabellmetoden}{3.75cm}
+	\metode{Using the table method}{3.75cm}
 	\[ 94:4 = \text{23 og 2 i rest} \]
 	\begin{center}
 		\begin{tabular}{r|r|r}
@@ -691,53 +691,55 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 			23&
 		\end{tabular} \qquad $ 94-92=2 $
 	\end{center}
-}
+} \vsk
+
 \spr{
-	Hvis vi utfører en \outl{modulo-operasjon}, finner vi resten i et delestykke. Dette blir ofte vist ved forkortingen \sym{mod}. For Example er
+	Performing a \outl{modulo-operation}, we find the remainder of a division calculation. This is often abbreviated as \sym{mod}. For example is
 	\[ 11\text{ mod } 4= 3\qquad , \qquad 19\text{ mod 3} =1 \]
-	I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{\string \\}}} brukt som symbol for denne operasjonen i programmeringsspråk.
+	In addition to \sym{\texttt{mod}}, \sym{\texttt{\%}} and \sym{{\texttt{\string //}}} are common symbols for this operation in programming languages.
 }
 \newpage
-\subsubsection{Divisjon med blanda tall som svar}
+\subsubsection{Divisjon using mixed numbers}
 \eks[1]{
-	Regn ut $ 11:4 $. Skriv svaret som et blandet tall.
+	Calculate $ 11:4 $ using mixed numbers.
 	
 	\sv \vsb
-	\[ 11:4 = \text{2 og 3 i rest}=2+\frac{3}{4} \]
+	\[ 11:4 = \text{2 and 3 as remainder}=2+\frac{3}{4} \]
 }
 \eks[2]{
-	Regn ut $ 19:3 $. Skriv svaret som et blandet tall.
+	Calculate $ 19:3 $ using mixed numbers.
 	
 	\sv \vsb
-	\[ 19:3=\text{6 og 1 i rest}=6+\frac{1}{3} \]
-}
+	\[ 19:3=\text{6 and 1 in remainder}=6+\frac{1}{3} \]
+} \vsk
+
 \fork{Example 1}{
-	Vi starter med å legge merke til at $ 4=\frac{4}{1} $. Dette betyr at
+	We start by noticing that $ 4=\frac{4}{1} $. Hence
 	\[ 11:4 = 11:\frac{4}{1} \]
-	Av \rref{delmbr} har vi at
+	From \rref{delmbr} it follows that
 	\[ 11:\frac{4}{1} = 11\cdot \frac{1}{4} \]
-	Videre er $ 11=2\cdot 4+ 3 $, og da er
+	Moreover, $ 11=2\cdot 4+ 3 $, and thus
 	\[ 11\cdot \frac{1}{4}=(2\cdot 4+3)\cdot\frac{1}{4} \]
-	Av \rref{gangpar} har vi at
+	Now, by \rref{gangpar},
 	\alg{
 		(2\cdot 4+3)\cdot\frac{1}{4}&=2\cdot4\cdot\frac{1}{4}+3\cdot \frac{1}{4} \\
 		&= 2+\frac{3}{4}
 	}
 }
 \newpage
-\subsection{Divisjon med desimaltall som svar}
+\subsection{Division using decimal numbers}
 \eks[1]{
-	Regn ut $ 11:4 $. Oppgi svaret som desimaltal.
+	Calculate $ 11:4 $ using a decimal number.
 	
 	\sv
 	
-	\metode{Med oppstilling}{3.75cm} \vs
+	\metode{With long divsion}{3.75cm} \vs
 	\[ 11:4=2,75 \]
 	\begin{figure}
 		\centering
 		\includegraphics{rekfig/deldes1}
 	\end{figure}
-	\metode{Med tabellmetoden}{3.75cm} \vs
+	\metode{With the table method}{3.75cm} \vs
 	\[ 11:4 = 2,75\]
 	\begin{center}
 		\begin{tabular}{r|r|r}
@@ -749,37 +751,37 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 		\end{tabular}
 	\end{center}
 }
-\fork{Example 1; oppstilling}{
-	Siden vi deler med 4, er det snakk om å fordele 11 likt i 4 grupper.
+\fork{Example 1; long division}{
+	Since we divide 4, we seperate 11 in 4 equal groups.
 	\begin{itemize}
-		\item 8 av de 11 enerne kan vi fordele likt i 4 grupper. Da har vi igjen 3 enere. Dette er det samme som 30 tideler.
-		\item 28 av de 30 tidelene kan vi fordele likt i 4 grupper. Da har vi igjen 2 tideler. Dette er det samme som 20 hundredeler.
-		\item 20 av de 20 hundredelene kan vi fordele likt i 4 grupper.
-		\item Hele mengden 11 er nå fordelt, og da er vi ferdige med utegningen.
+		\item We can equally distribute 8 of the 11 ones in 4 groups. Then there are 3 ones left. This equals 30 tenths.
+		\item 28 of the 30 tenths can be equally distributed in 4 groups. Then there are 2 tenths left. This equals 20 hundredths.
+		\item 20 of the 20 hundredths can be equally distributed in 4 groups.
+		\item Now the whole amount of 11 is equally distributed, so our calculation is finished.
 	\end{itemize}
 }
 \newpage
-\section{Regning med tid \label{regningmedtid}}
-Sekunder, minutter og timer er organisert i grupper på 60:
+\section{Calculation with time \label{regningmedtid}}
+Seconds, minutes and hours are organized in groups of 60:
 \alg{
-	1\text{ minutt} &= 60\text{ sekund} \\
-	1\text{ time} &= 60\text{ minutt} 
+	1\text{ minute} &= 60\text{ second} \\
+	1\text{ hour} &= 60\text{ minute} 
 }
-Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
+This means that \textsl{crossovers} arise in the calculations when we reach 60.\regv
 
 \eks[1]{
-	$ \text{2\enh{t} 25\enh{min} } + \text{10\enh{t} 45\enh{min}}= \text{13\enh{t} 10\enh{min} } $\vsk
+	$ \text{2\enh{h} 25\enh{min} } + \text{10\enh{h} 45\enh{min}}= \text{13\enh{h} 10\enh{min} } $\vsk
 	
-	\metode{Utrekningsmetode 1}{0.35\linewidth}
+	\metode{Method 1}{0.35\linewidth}
 	\os
 	\begin{tabular}{r|r|r}
-		& &10\enh{t} 45\enh{min}  \\ \hline
-		15\enh{min}  &15\enh{min} & 11\enh{t} 00\enh{min}  \\
-		10\enh{min} &25\enh{min} & 11\enh{t} 10\enh{min} \\
-		2\enh{t} & 2\enh{t} 25\enh{min}  & 13\enh{t} 10\enh{min}
+		& &10\enh{h} 45\enh{min}  \\ \hline
+		15\enh{min}  &15\enh{min} & 11\enh{h} 00\enh{min}  \\
+		10\enh{min} &25\enh{min} & 11\enh{h} 10\enh{min} \\
+		2\enh{h} & 2\enh{h} 25\enh{min}  & 13\enh{h} 10\enh{min}
 	\end{tabular} \vsk \vsk
 	
-	\metode{Utrekningsmetode 2}{0.35\linewidth}\os
+	\metode{Method 2}{0.35\linewidth}\os
 	\begin{tabular}{r|r|r}
 		& & 10:45 \\ \hline 
 		00:15 & 00:15 & 11:00 \\
@@ -789,21 +791,21 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 } \regv
 
 \eks[2]{
-	$ \text{14\enh{t} 18\enh{min} } - \text{9\enh{t} 34\enh{min}}= \text{4\enh{t} 44\enh{min} } $\vsk
+	$ \text{14\enh{h} 18\enh{min} } - \text{9\enh{h} 34\enh{min}}= \text{4\enh{h} 44\enh{min} } $\vsk
 	
 	\begin{center}
 		\parbox{0.4\linewidth}{
-			\metode{Utrekningsmetode 1}{0.9\linewidth} \os
+			\metode{Method 1}{0.9\linewidth} \os
 			\begin{tabular}{r|r}
-				&  9\enh{t} 34\enh{min} \\ \hline 
-				26\enh{min} & 10\enh{t} 00\enh{min} \\
-				18\enh{min} & 10\enh{t} 18\enh{min} \\
-				4\enh{t} & 14\enh{t} 00\enh{min} \\ \hline
-				4\enh{t} 44\enh{min}
+				&  9\enh{h} 34\enh{min} \\ \hline 
+				26\enh{min} & 10\enh{h} 00\enh{min} \\
+				18\enh{min} & 10\enh{h} 18\enh{min} \\
+				4\enh{h} & 14\enh{h} 00\enh{min} \\ \hline
+				4\enh{h} 44\enh{min}
 			\end{tabular}
 		} \qquad \qquad
 		\parbox{0.4\linewidth}{
-			\metode{Utrekningsmetode 2}{0.9\linewidth} \os
+			\metode{Method 2}{0.9\linewidth} \os
 			\begin{tabular}{r|r}
 				& 09:34 \\ \hline 
 				00:26 & 10:00 \\
@@ -819,12 +821,12 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 \section{Avrunding og overslagsregning}
 
 \subsubsection{Avrunding}
-Ved \outl{avrunding} av et tall minker vi antall siffer forskjellige fra 0 i tallet. Videre kan man runde av til \textsl{nærmeste ener}, \textsl{nærmeste tier} og lignende.\regv
+When \outl{rounding}, we decrease the amounts of digits other than 0 in a number. Also, we can round off to the \textsl{closest one}, \textsl{the closest ten} and such.\regv
 \eks[1]{
-	Ved avrunding til \textsl{nærmeste tier} avrundes
+	When rounding off to the \textsl{closest ten} we round off
 	\begin{itemize}
-		\item 1, 2, 3 og 4 \textsl{ned} til 0 fordi de er nærmere 0 enn 10.
-		\item 6, 7, 8 og 9 \textsl{opp} til 10 fordi de er nærmere 10 \\enn 0.
+		\item 1, 2, 3 and 4 \textsl{down} to 0, because they are closer to 0 than to 10.
+		\item 6, 7, 8 and 9 \textsl{up} to 10 because they are closer to 10 than to 0.
 	\end{itemize}	
 	5 avrundes også opp til 10.
 	\fig{avrnd0}
@@ -832,51 +834,51 @@ Ved \outl{avrunding} av et tall minker vi antall siffer forskjellige fra 0 i tal
 
 \eks[2]{ \vs
 	\begin{itemize}
-		\item $\boldmath \textbf{63 avrundet til nærmeste tier} = 60 $ \\
-		Dette fordi 63 er nærmere 60 enn 70.
+		\item $\boldmath \textbf{63 rounded off the the closest 10} = 60 $ \\
+		Because 63 is closer to 60 than 70.
 		\fig{avrnda}
-		\item $\boldmath \textbf{78 avrundet til nærmeste tier} = 80 $ \\
-		Dette fordi 78 er nærmere 80 enn 70.
+		\item $\boldmath \textbf{78 rounded off to the closest ten} = 80 $ \\
+		Because 78 is closer to 80 than 70.
 		\fig{avrndb}
-		\item $\boldmath \textbf{359 avrundet til nærmeste hundrer} = 400 $\\
-		Dette fordi 359 er nærmere 400 enn 300.
+		\item $\boldmath \textbf{359 rounded off to the closest hundred} = 400 $\\
+		Because 359 is closer to 400 than 300.
 		\fig{avrndc}
-		\item $ \boldmath \textbf{11,8 avrundet til nærmeste ener} = 12$ \\
-		Dette fordi 11,8 er nærmere 12 enn 11.
+		\item $ \boldmath \textbf{11,8 rounded off to the closest one} = 12$ \\
+		Because 11,8 is closer to 12 than 11.
 		\fig{avrndd}
 	\end{itemize}
 }
 
-\subsection{Overslagsregning}
-Det er ikke alltid vi trenger å vite svaret på regnestykker helt nøyaktig, ofte er det viktigere at vi fort kan avgjøre hva svaret \textsl{omtrent} er det samme som, aller helst ved hoderegning. Når vi finner svar som omtrent er riktige, sier vi at vi gjør et \outl{overslag}. Et overslag innebærer at vi avrunder\footnote{\textit{Obs!} Avrunding ved overslag trenger ikke å innebære avrunding til nærmeste tier og lignende.} tallene som inngår i et regnestykke slik at utregningen blir enklere. \vsk
-
+\subsection{Estimate}
+Rather than knowing the exact answer to a calculation, at times there is more important to quickly determine the outcome \textsl{approximately}, preferably by mental arithmetic. When finding an approximate answer, the result is called an \outl{estimate}. An estimate involves rounding off\footnote{Note: Rounding off when performing estimates does not necessarily involve rounding off to the closes one, ten or such.} numbers so that the calculation is easier to perform. \regv
 
 \spr{
-	At noe er ''omtrent det samme som'' skriver vi ofte som ''cirka'' (''ca.''). Tegnet for ''cirka'' er \sym{$ \approx $}.
+	That something is ''about the same as'' is often written as ''cirka'' (''ca.''). The symbol for ''cirka'' is \sym{$ \approx $}.
 } 
 
-\subsubsection{Overslag ved addisjon og ganging}
-La oss gjøre et overslag på regnestykket
-\[ 98,2+24,6 \]
-Vi ser at $ 98,2 \approx 100 $. Skriver vi 100 istedenfor 98,2 i regnestykket vårt, får vi noe som er litt mer enn det nøyaktige svaret. Skal vi endre på 24,6 bør vi derfor gjøre det til et tall som er litt mindre. 24,6 er ganske nærme 20, så vi kan skrive
-\[ 98,2+24,6 \approx 100 + 20 = 120 \]
-Når vi gjør overslag på tall som legges sammen, bør vi altså prøve å gjøre det ene tallet større (runde opp) og et tall mindre (runde ned).\\
+\subsubsection{Estimates when adding or multiplying}
+Let us estimate the calculation
+\[ 98.2+24.6 \]
+We have $ 98,2 \approx 100 $. If we write 100 instead of 98.2 in our calculation, the result will slightly exceed the exact answer. Therefore, if we are to round off 24.6 we should round it off downwards. 24.6 is pretty close to 20, we can write
+\[ 98.2+24.6 \approx 100 + 20 = 120 \]
+As this example showcases, when making an estimate involving addition, we should try to round off one of the numbers (upwards) and the other number (downwards).\\
 
 \linje
-Det samme gjelder også hvis vi har ganging, for Example
+The same applies for estimates involving multiplication. Let us\\ estimate
 \[ 1\,689\cdot12 \]
-Her avrunder vi 12 til 10. For å ''veie opp'' for at svaret da blir litt mindre enn det egentlige, avrunder vi 1\,689 opp til 1\,700. Da får vi
+We round off 12 to 10. In that case, the estimate will result in an answer lower than the exact anser, so to account for this we round off 1\,689 uo to 1\,700. Now
 \[ 1\,689\cdot12\approx 1\,700\cdot 10 =17\,000 \]
-\subsubsection{Overslag ved subtraskjon og deling}
-Skal et tall trekkes fra et annet, blir det litt annerledes. La oss gjøre et overslag på
+\subsubsection{Estimation when subtracting and dividing}
+Let us make an estimate of
 \[ 186,4-28,9 \]
-Hvis vi runder 186,4 opp til 190 får vi et svar som er større enn det egentlige, derfor bør vi også trekke ifra noe. Det kan vi gjøre ved også å runde 28,9 oppover (til 30):
+If we round off 186,4 up to 190, the result will be slightly larger than the exact answer. To account for this, we should subtract a bit more than in the original calculation. That can be done by rounding off 28,9 up (to 30):
 \alg{
-	186,4-28,9&\approx 190-30 \\&=160
+	186.4-28,9&\approx 190-30 \\&=160
 }
-Samme prinsippet gjelder for deling: 
+\linje
+The same principle applies when an estimate involves division. Let us estimate
 \[ 145:17 \]
-Vi avrunder 17 opp til 20. Deler vi noe med 20 istedenfor 17, blir svaret mindre. Derfor bør vi også runde 145 oppover (til 150):
+We round off 17 up to 20. This will make our result a bit smaller than the exact answer. Hence, we should also round off 145 upwards (to 150):
 \[ 145:17 \approx 150:20 = 75 \]
 
 \subsubsection{Overslagsregning oppsummert}
@@ -886,8 +888,9 @@ Vi avrunder 17 opp til 20. Deler vi noe med 20 istedenfor 17, blir svaret mindre
 		\item Ved subtraksjon eller deling mellom to tall, avrund gjerne begge tall ned eller begge tall opp.
 	\end{itemize}	
 }
+\newpage
 \eks[]{
-	Rund av og finn omtrentlig svar for regnestykkene.\os
+	Estimate the calculations.\os
 	
 	\abch{
 		\item $ {23,1+174,7} $ 
@@ -902,92 +905,94 @@ Vi avrunder 17 opp til 20. Deler vi noe med 20 istedenfor 17, blir svaret mindre
 	\sv  \vspace{-7pt}
 	\abc{
 		\item $ 32,1 + 174,7 \approx 30+170 = 200 $
-		\item $ 11,8 \cdot 107,2 \approx 10\cdot110 = 1\,100 $
-		\item $ 37,4 - 18,9 \approx 40-20 = 20 $
+		\item $ 11.8 \cdot 107.2 \approx 10\cdot110 = 1\,100 $
+		\item $ 37.4 - 18.9 \approx 40-20 = 20 $
 		\item $ 1\,054:209 \approx 1\,000:200 = 5 $
 	}
 } \vsk
 
-\info{Kommentar
+\info{Comment
 }{
-	Det finnes ingen konkrete regler for hva man \textsl{kan} eller ikke \textsl{kan} tillate seg av forenklinger når man gjør et overslag, det som er kalt \rref{tipsoverslag} er strengt tatt ikke en regel, men et nyttig tips.\vsk
+	There are no specific rules for what you \textsl{can} or \textsl{can not} do when making an estimate. Thereby, \rref{tipsoverslag} is strictly speaking not a rule but rather a useful tip.\vsk
 	
-	Man kan også spørre seg hvor langt unna det faktiske svaret man kan tillate seg å være ved overslagsregning. Heller ikke dette er det noe fasitsvar på, men en grei føring er at overslaget og det faktiske svaret skal være av samme \outl{størrelsesorden}. Litt enkelt sagt betyr dette at hvis det faktiske svaret har med tusener å gjøre, bør også overslaget ha med tusener å gjøre. Mer nøyaktig sagt betyr det av det faktiske svaret og ditt overslag bør ha samme tierpotens når de er skrevet på standardform\footnote{Se \refsec{Standardform}}.
+	It is also natural to raise the question how far away from the exact answer an estimate is allowed to be. Neither in this case are there any rules to follow. However, an estimate and the exact answer should have the same \outl{order of magnitude}. Simply put, if the exact answer has something to do with thousands, then so should also the estimate. 
+	To be more concise, the exact answer and the estimate shall have the same power of 10 when written in standard form\footnote{See \refsec{Standardform}}.
 }
 \newpage
-\section{Standardform} \label{Standardform}
-\textit{Obs! Denne seksjonen tar utgangspunkt i at leseren er kjent med potenser, som vi ser på i \refsec{Potensar}.}\vsk
+\section{Standard form} \label{Standardform}
+\textit{Note: In this section it is taken for granted that the reader is familiar with powers, which we study in \refsec{Potensar}.}\vsk
 
-Vi kan utnytte \rref{gangdesmed10100} og \rref{deledesmed10100}, og det vi kan om potenser, til å skrive tall på \outl{standardform}. \vsk
+We can apply \rref{gangdesmed10100} and \rref{deledesmed10100}, and what we know about powers, to write numbers in \outl{standard form}. \vsk
 
-La oss se på tallet 6\,700. Av \rref{gangdesmed10100} vet vi at
-\[ 6\,700=6,7\cdot1\,000 \]
-Og siden $ 1000=10^3 $, er
-\[ 6\,700=6,7\cdot1\,000=6,7\cdot 10^3 \]
+Let us look at the number 6\,700. By \rref{gangdesmed10100},
+\[ 6\,700=6.7\cdot1\,000 \]
+Since $ 1000=10^3 $, we have
+\[ 6\,700=6,7\cdot1\,000=6.7\cdot 10^3 \]
 \st{
-	$ 6,7\cdot10^3 $ er 6\,700 skrevet på standardform fordi
+	$ 6.7\cdot10^3 $ er 6\,700 written in standard form because
 	\begin{itemize}
-		\item 6,7 er større enn 0 og mindre enn 10.
-		\item $ 10^3 $ er en potens med grunntall 10 og eksponent 3, som er et heltall.
-		\item 6,7 og $ 10^3 $ er ganget sammen.
+		\item 6.7 is larger than or equal to 1, and smaller than 10.
+		\item $ 10^3 $ is a power with base 10 and exponent 3, which is an integer.
+		\item The product of 6,7 and $ 10^3 $ equals $ 6\,700 $.
 	\end{itemize}
 }
 \linje \\[12pt]
 
-La oss også se på tallet  0,093. Av \rref{deledesmed10100} har vi at
-\[ 0,093=9,3: 100 \]
-Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
-\[ 0,093=9,3: 100=9,3\cdot10^{-2} \]
+Let us look at the number 0.093. By \rref{deledesmed10100},
+\[ 0.093=9.3: 100 \]
+Dividing by 100 is the same as multiplying by $ 10^{-2} $, so
+\[ 0.093=9.3: 100=9.3\cdot10^{-2} \]
 \st{
-	$ 9,3\cdot10^{-2} $ er 0,093 skrevet på standardform fordi	
+	$ 9,3\cdot10^{-2} $ is 0,093 written in standard form because
 	\begin{itemize}
-		\item 9,3 er større enn 0 og mindre enn 10.
-		\item $ 10^{-2} $ er en potens med grunntall 10 og eksponent $ -2 $, som er et heltall.
-		\item $ 9,3 $ og $ 10^{-2} $ er ganget sammen.
+		\item 9.3 is larger than or equal to 1, and smaller than 10.
+		\item $ 10^{-2} $ is a power with base 10 and exponent $ -2 $, which is an integer.
+		\item The product of $ 9,3 $ and $ 10^{-2} $ equals 0.093.
 	\end{itemize} 
 }
 \reg[Standardform]{
-	Et tall skrevet som
+	A number written on the form
 	\[ a\cdot 10^n \]
-	hvor $ {0<a<10} $ og $ n $ er et heltall, er et tall skrevet på standardform.
+	where $ {1\leq|a|<10} $ and $ n $ is an integer, is a number written in \outl{standard form}.
 }
 \eks[1]{
-	Skriv 980 på standardform.
+	Write 980 in standard form.
 	
 	\sv \vsb
-	\[ 980 = 9,8\cdot 10^2 \]
+	\[ 980 = 9.8\cdot 10^2 \]
 }
 \eks[2]{
-	Skriv 0,00671 på standardform.
+	Write 0.00671 in standardform.
 	
 	\sv \vsb
-	\[ 0,00671 = 6,71\cdot 10^{-3} \]
-}
-\info{Tips}{
-	For å skrive om tall på standardform kan du gjøre følgende:
+	\[ 0.00671 = 6.71\cdot 10^{-3} \]
+}\vsk
+
+\info{Tip}{
+	To write numbers in standard form you can do the following:
 	\begin{enumerate}
-		\item Flytt komma slik at du får et tall som ligger mellom 0 og 10.
-		\item Gang dette tallet med en tierpotens som har eksponent med tallverdi lik antallet plasser du flyttet komma. \qquad  Flyttet du komma mot venstre/høgre, er eksponenten positiv/negativ. 
-	\end{enumerate}
-}
-\eks[3]{
-	Skriv 9\,761\,432 på standardform.
-	
-	\sv \vs
-	\begin{enumerate}
-		\item 	Vi flytter komma 6 plasser til venstre, og får $ 9\colr{.}761432 $
-		\item Vi ganger dette tallet med $ 10^6 $, og får at 
-		\[ 9\,761\,432=9,761432\cdot 10^6 \] 
+		\item Move the decimal separator so that you get a number between 1 and 10.
+		\item Multiply this number by a power of ten with exponent equal to the amount of places you moved the decimal separator.  If you moved the decimal seperator to the left/right, the exponent is positive/negative. 
 	\end{enumerate}
 }
 \newpage
-\eks[4]{
-	Skriv 0,00039 på standardform.
+\eks[3]{
+	Write 9\,761\,432 in standard form.
 	
 	\sv \vs
 	\begin{enumerate}
-		\item Vi flytter komma 4 plasser til høgre, og får $ 3,9 $.
-		\item Vi ganger dette tallet med $ 10^{-4} $, og får at
+		\item We move the decimal separator 6 places to the left, and get $ 9\colr{.}761432 $
+		\item We multiply this number by $ 10^6 $, and get 
+		\[ 9\,761\,432=9.761432\cdot 10^6 \] 
+	\end{enumerate}
+}
+\eks[4]{
+	Write 0.00039 in standard form
+	
+	\sv \vs
+	\begin{enumerate}
+		\item We move the decimal separator 4 places to the right, and get $ 3,9 $.
+		\item We multiply this number by $ 10^{-4} $, and get
 		\[ 0,00039=3,9\cdot10^{-4} \]
 	\end{enumerate}
 }
