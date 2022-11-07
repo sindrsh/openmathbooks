@@ -1,5 +1,6 @@
-\input{../doc}
-\input{../preamb_eng}
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
 
 \begin{document}
 \section{\geoform}
@@ -35,10 +36,10 @@ The area $ A $ of a rectangle with base $ g $ and height $ h $ is
 Which one of the triangles have the largest area? \vs
 \begin{figure}
 	\centering
-	\subfloat{\includegraphics[]{\asym{triar0b}}}\qquad
-	\subfloat{\includegraphics[]{\asym{triar0a}}}
+	\subfloat{\includegraphics[]{\figp{triar0b}}}\qquad
+	\subfloat{\includegraphics[]{\figp{triar0a}}}
 	\qquad
-	\subfloat{\includegraphics[]{\asym{triar0c}}}
+	\subfloat{\includegraphics[]{\figp{triar0c}}}
 \end{figure}
 \sv
 
@@ -91,7 +92,7 @@ A&=\frac{3(6+4)}{2}\br
 &=15
 }	
 }
-\info{\merk}{
+\info{\note}{
 In respect of a base and a height, the area formulas for a parallelogram and a rectangle are identical. Applying \rref{artrap} on a parallelogram also results in an expression equal to $ gh $. This follows from the fact that a parallelogram is just a special case of a trapezoid (and a rectangle is just a special case of a parallelogram).
 }
 \newpage
@@ -157,7 +158,7 @@ In respect of a base and a height, the area formulas for a parallelogram and a r
 	
 	\parbox[l][][l]{0.7\linewidth}{\[ a^2+b^2=c^2 \]
 	}
-	\parbox[r]{0.2\linewidth}{\includegraphics[]{\asym{tri26g}}} \vs
+	\parbox[r]{0.2\linewidth}{\includegraphics[]{\figp{tri26g}}} \vs
 	\fig{tri26j}
 }
 \eks[1]{
@@ -260,8 +261,8 @@ This means that these are corresponding sides:
 	The triangles are similar. Find the length of $EF $.
 	\begin{figure}
 		\centering
-		\includegraphics[scale=1]{\asym{tri3a}}\quad
-		\includegraphics[scale=1]{\asym{tri3b}}
+		\includegraphics[scale=1]{\figp{tri3a}}\quad
+		\includegraphics[scale=1]{\figp{tri3b}}
 	\end{figure}
 	\sv
 	We observe that $ AB $ corresponds to $ DE $, $ BC $ to $ EF $ and $ AC $ to $ DF $. Therefore
@@ -339,8 +340,8 @@ Now we inscribe a 6-gon (hexagon). The hexagon can be divided into 6 equilateral
 }
 \begin{figure}
 	\centering
-	\subfloat{\includegraphics[]{\asym{geo9}}}\qquad
-	\subfloat{\includegraphics[]{\asym{geo9d2}}}
+	\subfloat{\includegraphics[]{\figp{geo9}}}\qquad
+	\subfloat{\includegraphics[]{\figp{geo9d2}}}
 \end{figure}
 Now advancing to a more sophisticated hunt for the circumference, we know that we seek a value between 6 and 8. 
 \vsk
@@ -349,14 +350,14 @@ Now advancing to a more sophisticated hunt for the circumference, we know that w
 The idea of inscribing polygons carries on. We let the below figures work as a sufficient prove of the fact that the more sides of the polygon, the better estimate its perimeter makes of the circumference of the circle.
 \begin{figure}
 	\centering
-	\subfloat[6-gon]{\includegraphics[]{\asym{geo9}}}\qquad\qquad
-	\subfloat[12-gon]{\includegraphics[]{\asym{geo9a}}}	
+	\subfloat[6-gon]{\includegraphics[]{\figp{geo9}}}\qquad\qquad
+	\subfloat[12-gon]{\includegraphics[]{\figp{geo9a}}}	
 \end{figure}
 Since a 6-gon has sides of length 1, it is tempting to examine if this can help us find the side lengths of other polygons. By inscribing both a 6-gon and a 12-gon (and drawing a triangle) we have a figure like this:
 \begin{figure}
 	\centering
-	\subfloat[A 6-gon and a 12-gon together with a triangle formed by the circle center and one side of the 12-gon.]{\includegraphics[]{\asym{geo9g}}}\qquad\qquad
-	\subfloat[The triangle from figure \textsl{(a)}.]{\includegraphics[]{\asym{geo9h}}}	
+	\subfloat[A 6-gon and a 12-gon together with a triangle formed by the circle center and one side of the 12-gon.]{\includegraphics[]{\figp{geo9g}}}\qquad\qquad
+	\subfloat[The triangle from figure \textsl{(a)}.]{\includegraphics[]{\figp{geo9h}}}	
 \end{figure}
 Let $ s_{12} $ and $ s_6 $ denote the side lengths of the 12-gon and the 6-gon, respectively. Moreover, we observe that both $ A $ and $ C $ lies on the circular arc and that both $ \triangle ABC $ and $ \triangle BSC $ are right-angled (explain to yourself why!). We have
 \alg{
@@ -409,15 +410,15 @@ The perimeter of a polygon inscribed in the circle is an estimate of the circumf
 \end{center}
 \begin{figure}
 	\centering
-	\subfloat[6-gon]{\includegraphics[scale=0.75]{\asym{geo9}}}\quad
-	\subfloat[12-gon]{\includegraphics[scale=0.75]{\asym{geo9a}}}\quad	
-	\subfloat[24-gon]{\includegraphics[scale=0.75]{\asym{geo9i}}}\quad	\\
-	\subfloat[48-gon]{\includegraphics[scale=0.75]{\asym{geo9j}}}\quad	
-	\subfloat[96-gon]{\includegraphics[scale=0.75]{\asym{geo9k}}}		
+	\subfloat[6-gon]{\includegraphics[scale=0.75]{\figp{geo9}}}\quad
+	\subfloat[12-gon]{\includegraphics[scale=0.75]{\figp{geo9a}}}\quad	
+	\subfloat[24-gon]{\includegraphics[scale=0.75]{\figp{geo9i}}}\quad	\\
+	\subfloat[48-gon]{\includegraphics[scale=0.75]{\figp{geo9j}}}\quad	
+	\subfloat[96-gon]{\includegraphics[scale=0.75]{\figp{geo9k}}}		
 \end{figure}
 In fact, the mathematician \net{https://en.wikipedia.org/wiki/Archimedes}{Archimedes} reached as far as the above calculation approximately 250 b.c!\vsk
 
-A computer has no problems performing calculations\footnote{For those interested in computer programming, the iteration algorithm must be alternated in order to avoid instabilities when the number of sides are large.} on a polygon with extremely    many sides. Calculating the perimeter of a 201\,326\,592-gong yields
+A computer has no problems performing calculations\footnote{For those interested in computer programming; the iteration algorithm must be altered in order to avoid instabilities when the number of sides are large.} on a polygon with extremely    many sides. Calculating the perimeter of a 201\,326\,592-gong yields
 \[ \text{Circumference of a circle with radius 1}=6.283185307179586... \]
 (With the aid of more advanced mathematics it can be proved that the circumference of a circle with radius 1 is an irrational number, but that the digits shown above are correct, thereby the equal sign.) \vsk
 \newpage
@@ -429,8 +430,8 @@ For the sake of simplicity, we shall use inscribed squares to illustrate the out
 Both squares can be divided into four isosceles triangles:
 \begin{figure}
 	\centering
-	\subfloat{\includegraphics[scale=1]{\asym{geo9e}}}\qquad
-	\subfloat{\includegraphics[scale=1]{\asym{geo9f}}}	
+	\subfloat{\includegraphics[scale=1]{\figp{geo9e}}}\qquad
+	\subfloat{\includegraphics[scale=1]{\figp{geo9f}}}	
 \end{figure}
 Since these triangles are similar,
 \begin{align}
@@ -499,7 +500,7 @@ Moreover,
 	By \eqref{form}, the ratio of corresponding sides in the two triangles are equal.
 }\vsk
 
-\info{\merk}{
+\info{\note}{
 In the following explanations of term \textsl{ii} and \textsl{iii} from \rref{konsttre} we assume this:
 	\begin{itemize}
 		\item Two circles intersect in maximum two points.

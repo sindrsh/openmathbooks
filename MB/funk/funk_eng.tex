@@ -1,6 +1,6 @@
-\input{../doc}
-\input{../preamb_eng}
-
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
 
 \begin{document}
 
@@ -173,22 +173,22 @@ f(x_1)=ax_1+b \label{funkfork}
 	f(x_2)=ax_2+b \label{funkfork1}
 \end{equation}
 Subtracting \eqref{funkfork} from \eqref{funkfork1}, we get 
-\alg{
-f(x_2)-f(x_1)&=ax_2+b-(ax_1+b) \br
-f(x_2)-f(x_1)&=ax_2-ax_1\\
-f(x_2)-f(x_1)&=a(x_2-x_1) \\
-\frac{f(x_2)-f(x_1)}{x_2-x_1}&=a \label{funka}
-}\vsk
+\begin{align}
+	f(x_2)-f(x_1)&=ax_2+b-(ax_1+b) \nonumber\br
+	f(x_2)-f(x_1)&=ax_2-ax_1 \nonumber\\
+	f(x_2)-f(x_1)&=a(x_2-x_1) \nonumber\\
+	\frac{f(x_2)-f(x_1)}{x_2-x_1}&=a \label{funka}
+\end{align}
 
 \textbf{The graph of a linear function is a straight line}\os
 Given a linear function $ {f(x)=ax+b} $ and two distinct $ x $-values $ x_1 $ and $ x_2 $. Let $ {A=(x_1, b)} $, $ {B=(x_2, b)} $, $ {C=(b, f(x_1))} $, $ {D=(0, f(x_2))} $ and $ {E=(0, b)} $.
 \fig{funk6a}
 By \eqref{funka}, we obtain
-\alg{
-\frac{f(x_1)-f(0)}{x_1-0}&=a\br
-\frac{ax_1+b-b}{x_1}&=a\br
-\frac{ax_1}{x_1}=a \label{funkx1}
-}
+\begin{align}
+	\frac{f(x_1)-f(0)}{x_1-0}&=a \nonumber \br
+	\frac{ax_1+b-b}{x_1}&=a \nonumber\br
+	\frac{ax_1}{x_1}=a \label{funkx1}
+\end{align}
 Similarly, 
 \begin{equation} \label{funkx2}
 \frac{ax_2}{x_2}=a 

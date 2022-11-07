@@ -1,71 +1,96 @@
-\babel@toc {english}{}
-\contentsline {part}{I\hspace {1em}Numbers, calculations, and geometry }{7}{part.1}%
+\babel@toc {english}{}\relax 
+\contentsline {part}{I\hspace {1em}Numbers, calculations, and geometry }{8}{part.1}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{\numberline {1}The numbers }{8}{chapter.1}%
-\contentsline {section}{\numberline {1.1}The equal sign, amounts, and number lines}{9}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Numbers, digits and value}{11}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Coordinate systems }{15}{section.1.3}%
-\contentsline {chapter}{\numberline {2}The four elementary operations }{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Addition}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Subtraction}{19}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Multiplication }{21}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Division}{24}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Factorization and order of operations}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Factorization}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Order of operations}{29}{section.3.2}%
-\contentsline {subsubsection}{Multiplying by 0}{32}{subsubsection*.13}%
-\contentsline {chapter}{\numberline {4}Fractions}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{36}{section.4.1}%
-\contentsline {subsubsection}{Fractions as amounts}{36}{subsubsection*.19}%
-\contentsline {subsubsection}{Fractions on the number line}{38}{subsubsection*.20}%
-\contentsline {subsubsection}{Numerator and denominator summarized}{38}{subsubsection*.21}%
-\contentsline {section}{\numberline {4.2}Values, expanding and simplifying}{39}{section.4.2}%
-\contentsline {subsubsection}{Fractions with equal value}{39}{subsubsection*.23}%
-\contentsline {subsubsection}{Expanding}{40}{subsubsection*.24}%
-\contentsline {subsubsection}{Simplifying}{40}{subsubsection*.25}%
-\contentsline {section}{\numberline {4.3}Addition and subtraction}{42}{section.4.3}%
-\contentsline {subsubsection}{Equal denominators}{42}{subsubsection*.27}%
-\contentsline {section}{\numberline {4.4}Fractions multiplied by integers}{46}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fractions divided by integers}{48}{section.4.5}%
-\contentsline {subsubsection}{When the numerator is divisible by the divisor}{48}{subsubsection*.31}%
-\contentsline {subsubsection}{When the numerator is not divisible by the denominator}{49}{subsubsection*.32}%
-\contentsline {section}{\numberline {4.6}Fractions multiplied by fractions}{51}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Cancelation of fractions}{52}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Division by fractions}{55}{section.4.8}%
-\contentsline {subsubsection}{Division by studying the number line}{55}{subsubsection*.36}%
-\contentsline {subsubsection}{A general method}{56}{subsubsection*.37}%
-\contentsline {section}{\numberline {4.9}Rational numbers}{58}{section.4.9}%
-\contentsline {chapter}{\numberline {5}Negative numbers }{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{60}{section.5.1}%
-\contentsline {section}{\numberline {5.2}The elementary operations}{62}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Negative numbers as amounts}{68}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Geometry}{69}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Terms}{70}{section.6.1}%
-\contentsline {subsubsection}{Altitudes and base lines}{78}{subsubsection*.50}%
-\contentsline {section}{\numberline {6.2}Attributes of triangles and quadrilaterals}{79}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Perimeter}{83}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Area}{84}{section.6.4}%
-\contentsline {subsubsection}{The area of a rectangle}{84}{subsubsection*.56}%
-\contentsline {subsubsection}{The area of a triangle}{86}{subsubsection*.58}%
+\contentsline {chapter}{\numberline {1}The numbers }{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The equal sign, amounts, and number lines}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Numbers, digits and value}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Coordinate systems }{16}{section.1.3}%
+\contentsline {chapter}{\numberline {2}The four elementary operations }{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Addition}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Subtraction}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Multiplication }{22}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Division}{25}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Factorization and order of operations}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Order of operations}{29}{section.3.1}%
+\contentsline {subsubsection}{Multiplying by 0}{32}{subsubsection*.10}%
+\contentsline {section}{\numberline {3.2}Factorization}{35}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Fractions}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{38}{section.4.1}%
+\contentsline {subsubsection}{Fractions as amounts}{38}{subsubsection*.19}%
+\contentsline {subsubsection}{Fractions on the number line}{40}{subsubsection*.20}%
+\contentsline {subsubsection}{Numerator and denominator summarized}{40}{subsubsection*.21}%
+\contentsline {section}{\numberline {4.2}Values, expanding and simplifying}{41}{section.4.2}%
+\contentsline {subsubsection}{Fractions with equal value}{41}{subsubsection*.23}%
+\contentsline {subsubsection}{Expanding}{42}{subsubsection*.24}%
+\contentsline {subsubsection}{Simplifying}{42}{subsubsection*.25}%
+\contentsline {section}{\numberline {4.3}Addition and subtraction}{44}{section.4.3}%
+\contentsline {subsubsection}{Equal denominators}{44}{subsubsection*.27}%
+\contentsline {section}{\numberline {4.4}Fractions multiplied by integers}{48}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Fractions divided by integers}{50}{section.4.5}%
+\contentsline {subsubsection}{When the numerator is divisible by the divisor}{50}{subsubsection*.31}%
+\contentsline {subsubsection}{When the numerator is not divisible by the denominator}{51}{subsubsection*.32}%
+\contentsline {section}{\numberline {4.6}Fractions multiplied by fractions}{53}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Cancelation of fractions}{54}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Division by fractions}{58}{section.4.8}%
+\contentsline {subsubsection}{Division by studying the number line}{58}{subsubsection*.36}%
+\contentsline {subsubsection}{A general method}{59}{subsubsection*.37}%
+\contentsline {section}{\numberline {4.9}Rational numbers}{61}{section.4.9}%
+\contentsline {chapter}{\numberline {5}Negative numbers }{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{64}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The elementary operations}{66}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Negative numbers as amounts}{72}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Calculation methods}{73}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Addition}{74}{section.6.1}%
+\contentsline {subsubsection}{Column addition}{74}{subsubsection*.50}%
+\contentsline {section}{\numberline {6.2}Subtraction}{76}{section.6.2}%
+\contentsline {subsubsection}{Column subtraction}{76}{subsubsection*.51}%
+\contentsline {subsubsection}{The table method}{77}{subsubsection*.52}%
+\contentsline {section}{\numberline {6.3}Multiplication}{79}{section.6.3}%
+\contentsline {subsubsection}{Multiplying by 10, 100, 1\,000 etc.}{79}{subsubsection*.53}%
+\contentsline {subsubsection}{Expanded form}{81}{subsubsection*.56}%
+\contentsline {subsubsection}{The compact method}{82}{subsubsection*.57}%
+\contentsline {section}{\numberline {6.4}Division}{84}{section.6.4}%
+\contentsline {subsubsection}{Division by 10, 100, 1\,000 etc.}{84}{subsubsection*.58}%
+\contentsline {subsubsection}{Long division}{85}{subsubsection*.60}%
+\contentsline {subsubsection}{The table method}{87}{subsubsection*.61}%
+\contentsline {subsubsection}{Divisjon med rest}{89}{subsubsection*.62}%
+\contentsline {subsubsection}{Divisjon using mixed numbers}{91}{subsubsection*.63}%
+\contentsline {subsection}{\numberline {6.4.1}Division using decimal numbers}{92}{subsection.6.4.1}%
+\contentsline {section}{\numberline {6.5}Calculation with time }{93}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Avrunding og overslagsregning}{94}{section.6.6}%
+\contentsline {subsubsection}{Avrunding}{94}{subsubsection*.64}%
+\contentsline {subsection}{\numberline {6.6.1}Estimate}{95}{subsection.6.6.1}%
+\contentsline {subsubsection}{Estimates when adding or multiplying}{95}{subsubsection*.65}%
+\contentsline {subsubsection}{Estimation when subtracting and dividing}{96}{subsubsection*.66}%
+\contentsline {subsubsection}{Overslagsregning oppsummert}{96}{subsubsection*.67}%
+\contentsline {section}{\numberline {6.7}Standard form}{98}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Geometry}{101}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Terms}{102}{section.7.1}%
+\contentsline {subsubsection}{Altitudes and base lines}{110}{subsubsection*.71}%
+\contentsline {section}{\numberline {7.2}Attributes of triangles and quadrilaterals}{111}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Perimeter}{115}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Area}{116}{section.7.4}%
+\contentsline {subsubsection}{The area of a rectangle}{116}{subsubsection*.77}%
+\contentsline {subsubsection}{The area of a triangle}{118}{subsubsection*.79}%
 \newpage 
-\contentsline {part}{II\hspace {1em}Algebra and geometry }{91}{part.2}%
+\contentsline {part}{II\hspace {1em}Algebra and geometry }{123}{part.2}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{\numberline {7}Algebra}{92}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{93}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Powers}{98}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Irrational numbers}{106}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Equations }{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{110}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Solving with the elementary operations}{111}{section.8.2}%
-\contentsline {subsubsection}{Division}{114}{subsubsection*.85}%
-\contentsline {section}{\numberline {8.3}Solving with elementary operations summarized}{118}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Power equations}{122}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Functions }{124}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introduction}{125}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Linear functions and graphs}{128}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Geometry}{136}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Formulas of area and perimeter}{137}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Congruent and similar triangles}{147}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Explanations}{152}{section.10.3}%
+\contentsline {chapter}{\numberline {8}Algebra}{124}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{125}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Powers}{130}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Irrational numbers}{138}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Equations }{141}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{142}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Solving with the elementary operations}{143}{section.9.2}%
+\contentsline {subsubsection}{Division}{146}{subsubsection*.112}%
+\contentsline {section}{\numberline {9.3}Solving with elementary operations summarized}{150}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Power equations}{153}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Functions }{155}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{156}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Linear functions and graphs}{159}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Geometry}{167}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Formulas of area and perimeter}{168}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Congruent and similar triangles}{178}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Explanations}{183}{section.11.3}%
 
-\contentsline {chapter}{Index}{168}{chapter*.104}%
+\contentsline {chapter}{Index}{199}{chapter*.133}%

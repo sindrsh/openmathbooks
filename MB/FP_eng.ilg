@@ -1,6 +1,6 @@
-This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file FP_eng.idx....done (99 entries accepted, 0 rejected).
-Sorting entries....done (793 comparisons).
-Generating output file FP_eng.ind....done (160 lines written, 0 warnings).
+This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
+Scanning input file FP_eng.idx....done (101 entries accepted, 0 rejected).
+Sorting entries....done (684 comparisons).
+Generating output file FP_eng.ind....done (162 lines written, 0 warnings).
 Output written in FP_eng.ind.
 Transcript written in FP_eng.ilg.

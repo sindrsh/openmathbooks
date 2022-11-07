@@ -6,6 +6,8 @@ geo
 	Forklar bruken av "sider" o.l. etterfulgt av en størrelse. For 		eksempel "høgde 2".
 	Skriv om "Arealet til..." med liten a.
 - Rettvinklet, likebeint trekant AC=BC. Vis at v.A=v.B=90-v.C
+- forklare formelen for overflaten til en kjegle
+- utlede formelen for overflaten til en firkantet prisme
 
 geo2
 - vis arealformelen for en trekant
@@ -17,9 +19,7 @@ uttrykke et blanda tall
 obs! Fiks farger på rest-ruter (kan ikke ha samme som negative tall)
 
 ---TM1---
-
 Obs! Fiks figur til linearisering av f(x)
-Obs! Fiks forklaring av rest ved polynomdivisjon
 
 alg
 - forklar hvorfor a ln x^4 + b ln x^2 = 0 ikke kan løses
