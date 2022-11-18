@@ -12,7 +12,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - **Anvendt matematikk 2 (AM2)** <br/>
   Anvendelser av matematikken presentert i TM1 og TM2.
   
-### Files
+## Files
 
 The books are found here:
 - [Matematikkens byggesteiner (bokmål)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
@@ -35,10 +35,10 @@ Please make contact if you want to contribute to this project. Contributions esp
 - Adding problems to the sections. Make sure that problems you provide are not in conflict with any copyrights. Authors of problems that are comprehensive or unique will be credited.
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
-### License
+## License
 The books are licensed under CC BY-NC-SA 4.0. This means you are free to download and edit the files for non-profit purposes.
 
-### Contact
+## Contact
 sindre.heggen@gmail.com
 
 Please join the [OpenMathBooks discord channel](https://discord.gg/jz9mPjkCNb) to enter discussions and/or provide feedback about the books.
