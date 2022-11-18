@@ -6,19 +6,19 @@ path b = box((0,0), (1,1));
 pair M = (0.5,0.5);
 transform sh;
 
-void f0(){ label("$\displaystyle \frac{1}{2}+\frac{5}{2}$", sh*M); }
+void f0(){ label("$\displaystyle \frac{1}{2}:5$", sh*M); }
 
-void f1(){ label("$\displaystyle \frac{2}{3}+\frac{6}{3}$", sh*M); }
+void f1(){ label("$\displaystyle \frac{2}{3}:11$", sh*M); }
 
 void f2(){ label("$\displaystyle \frac{10}{4}+\frac{7}{4}$", sh*M); }
 
 void f3(){ label("$\displaystyle \frac{2}{5}+\frac{9}{5}$", sh*M); }
 
-void f4(){ label("$\displaystyle \frac{11}{6}+\frac{9}{6}$", sh*M); }
+void f4(){ label("$\displaystyle \frac{11}{7}:9$", sh*M); }
 
 void f5(){ label("$\displaystyle \frac{11}{6}-\frac{9}{6}$", sh*M); }
 
-void f6(){ label("$\displaystyle \frac{10}{4}-\frac{7}{4}$", sh*M); }
+void f6(){ label("$\displaystyle \frac{7}{3}:8$", sh*M); }
 
 void f7(){ label("$\displaystyle \frac{6}{3}-\frac{5}{3}$", sh*M); }
 
@@ -121,4 +121,3 @@ int cnt = 0;
 			++cnt;
 			}
 	}
-

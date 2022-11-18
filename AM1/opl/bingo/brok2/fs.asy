@@ -7,19 +7,19 @@ path b = box((0,0), (1,1));
 transform sh;
 pair M = (0.5,0.5);
 
-void f0(){ label("$\displaystyle \frac{6}{2}$", sh*M);  }
+void f0(){ label("$\displaystyle \frac{1}{10}$", sh*M);  }
 
-void f1(){ label("$\displaystyle \frac{8}{3}$", sh*M);  }
+void f1(){ label("$\displaystyle \frac{2}{33}$", sh*M);  }
 
 void f2(){ label("$\displaystyle \frac{17}{4}$", sh*M);  }
 
 void f3(){ label("$\displaystyle \frac{11}{5}$", sh*M);  }
 
-void f4(){ label("$\displaystyle \frac{20}{6}$", sh*M);  }
+void f4(){ label("$\displaystyle \frac{11}{63}$", sh*M);  }
 
 void f5(){ label("$\displaystyle \frac{2}{6}$", sh*M);  }
 
-void f6(){ label("$\displaystyle \frac{3}{4}$", sh*M);  }
+void f6(){ label("$\displaystyle \frac{7}{24}$", sh*M);  }
 
 void f7(){ label("$\displaystyle \frac{1}{3}$", sh*M);  }
 
@@ -72,6 +72,3 @@ void f30(){ label("$\displaystyle 20$", sh*M);  }
 void f31(){ label("$\displaystyle 21$", sh*M);  }
 
 void f32(){ label("$\displaystyle 15$", sh*M);  }
-
-
-

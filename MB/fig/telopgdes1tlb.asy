@@ -9,5 +9,3 @@ mktc(0,"0");
 mktc(1,"0,1",pos=BeginPoint);
 
 mktc(23,p=red);
-
-

@@ -4,7 +4,7 @@
 \usepackage{babel}
 \usepackage[hidelinks, bookmarks]{hyperref}
 \usepackage{geometry}
-\geometry{a4paper, margin=2cm}
+\geometry{a4paper, margin=1cm}
 \setlength{\parindent}{0bp}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -19,11 +19,9 @@
 \raggedbottom
 
 \newcommand{\fig}[1]{
-\begin{figure}[h]
-	\includegraphics[]{#1}
-	\centering
-\end{figure}
-\newpage
+	\centering  
+	\vspace{80pt}
+	\includegraphics[]{#1} \\
 }
 
 \begin{document}
