@@ -21,7 +21,7 @@ The books are found here:
 - [Teoretisk matematikk 2 (bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing)  
 - [Anvendt matematikk 2 (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing) 
 - [Pensumoversikt for grunnskole (trinnvis), 1P, 2P, 1T, R1 og R2](https://github.com/sindrsh/openmathbooks/blob/main/ekstra/pensum/pensum.pdf)
-- 
+
 ## Roadmap
 - Translating all books into English
 - Adding problem solutions manual
