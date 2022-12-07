@@ -63,9 +63,8 @@ When presenting data sets, it should be easy to see for others what we have foun
 \subsection{Frequency table}
 In a \outl{frequency table} the data set are organized in a table showing the amount of times each unique answer appears. This amount is called the \outl{frequency}.\regv
 
-\st{ \label{frkvtbund2}
-\textbf{Survey 2} \os	
-I this survey we have two 0's, two 1's, three 4's, two 5's, two 6's, one 7, two 8's and one 14. In a frequency table we then write
+\eks[- Survey 2]{ \label{frkvtbund2}	
+In this survey we have two 0's, two 1's, three 4's, two 5's, two 6's, one 7, two 8's and one 14. In a frequency table we then write
 \begin{center}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -122,53 +121,54 @@ In a data set there are often answers which are totally or approximately equal, 
 \reg[Mode]{
 The \outl{mode} is the value occurring the most in the data set.
 } \regv
-\st{
-\textbf{Survey 2} \os
+\eks[- Survey 2]{
 In this dataset 4 has the highest occurrence (three), so 4 is the mode.
-} 
+} \regv
+
 \info{Multiple modes}{
 If multiple values have the highest occurance in the data set, the data set has multiple modes.
 }
 \newpage
 \subsection{Mean}
-Når et datasett består av svar i form av tall kan vi finne summen av svarene. Når vi spør hva gjennomsnittet er, spør vi om dette: \os
-\textsl{''Hvis alle svarene var like, og summen den samme, hvilken verdi måtte alle svarene da ha hatt?''}\os
+When a data set includes numbers, we can find the sum of their values. When raising the question what the \outl{mean} is, we ask this: \os
+\textsl{''If all the numbers had equal value, and the sum were still the same, what would the value be?''}\os
 
-Dette er jo ingenting annet enn divisjon\footnote{se \mb, side 23.}: \regv
+The question is answered by the aid of division\footnote{See \mb, side 23.}: \regv
 
-\reg[Gjennomsnitt]{ \vs
-\[ \text{gjennomsnitt}=\frac{\text{summen av verdiene fra datasettet}}{\text{antall verdier}} \]
+\reg[Gjennomsnitt \label{mean}]{ \vs
+\[ \text{mean}=\frac{\text{sum of the values of the data set}}{\text{amount of values}} \]
 } \regv
+\spr{
+The mean, as defined here, is also called the \outl{average}. Also, there are multiple types of means. More specifically, the mean from \rref{mean} is  called the \outl{arithmetic mean}.
+}\vsk 
 
-\st{
-\textbf{Survey 1} \os
-Vi summerer verdiene fra datasettet, og deler med antall verdier:
+\eks[- Survey 1]{
+We sum the values from the data set, and divide by the amount of values:
 \small
 \alg{
-\text{gjennomsnitt}&= \frac{47+124+ 61+ 38+ 97+ 84+ 101+79+ 56+ 40}{10} \\
+\text{mean}&= \frac{47+124+ 61+ 38+ 97+ 84+ 101+79+ 56+ 40}{10} \\
 &= \frac{727}{10}\br
-&=72,7
+&=72.7
 } \normalsize
-Altså, i gjennomsnitt holdt de 10 deltakerne pusten i 72,7\\ sekunder. 
+Hence, the 10 participators held their breath for 72.7 seconds on average. 
 }
 \newpage
-\st{  \label{gjsnund2}
-\textbf{Survey 2} \os \vspace{5pt}
-\metode{Metode 1}{0.4\linewidth}\\
+\eks[- Survey 2]{  \label{gjsnund2}
+\metode{Method 1}{0.4\linewidth}\\
 \footnotesize
 \alg{
-\text{gjennomsnitt}&=\frac{7+ 4+ 5+ 4+ 1+ 0+ 6+ 5+ 4+ 8+1+6+8+0+ 14}{15} \br
+\text{mean}&=\frac{7+ 4+ 5+ 4+ 1+ 0+ 6+ 5+ 4+ 8+1+6+8+0+ 14}{15} \br
 &=\frac{73}{15}\br
 &\approx 4.87
 }  \vsk
 
 \normalsize
-\metode{Metode 2}{0.4\linewidth} \os
-Vi utvider frekvenstabellen fra side \pageref{frkvtbund2} for å finne summen av verdiene fra datasettet (vi har også tatt med summen av frekvensene):
+\metode{Method 2}{0.4\linewidth} \os
+We expand our frequency table \pageref{frkvtbund2} to find the sum of the values from the data set. (we have also included the sum of the frequencies):
 \begin{center}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		Antall epler & Frekvens&$ \text{antall}\cdot \text{frekvens} $\\ \hline
+		Amount of apples & Frequency&$ \text{amount}\cdot \text{frequency} $\\ \hline
 		0 & 2 &$ 0\cdot2=\phantom{0}0 $ \\
 		1 & 2 &$ 1\cdot2=\phantom{0}2 $\\
 		4 & 3 &$ 4\cdot3=12 $\\
@@ -180,59 +180,59 @@ Vi utvider frekvenstabellen fra side \pageref{frkvtbund2} for å finne summen av
 		 \textbf{sum}&15& \qquad\quad73\\ \hline
 	\end{tabular}
 \end{center}
-Nå har vi at
-\alg{
-\text{gjennomsnitt}&=\frac{73}{15} \\
-&\approx 4,87
+Now
+\algv{
+\text{mean}&=\frac{73}{15} \\
+&\approx 4.87
 }
-Altså, i gjennomsnitt spiser de 15 respondentene 4,87 epler i uka.
-} 
-\newpage
-\st{
-\textbf{Survey 4} \os
-(Utregning utelatt. Verdiene er rundet ned til nærmeste éner).
-\begin{itemize}
-	\item Gjennomsnitt for totalt salg av mobiler: 2302
-	\item Gjennomsnitt for salg av mobiler uten smartfunksjon: 732
-	\item Gjennomsnitt for salg av mobiler med smartfunksjon: 1570
-\end{itemize}
-}
-\info{Lik fordeling}{
-Legg merke til at gjennomsnitt handler om lik fordeling. Hvis vi har 4 rektangler med respektive lengder 1, 6, 3 og 2, blir den samlede lengden $ 1+6+3+2=12 $.
-\fig{meana}
-Dette betyr at gjennomsnittslengden er $ {\frac{12}{4}=3} $. Hvis vi kunne omformet rektanglene slik at de ble like lange, ville altså hver av dem hatt lengde 3.
-\fig{meanb}
-}
-\subsubsection{Gjennomsnittlig endring per enhet}
-Tenk deg at du på en løpetur gjør tre målinger av farten din. Datasettet du ender opp med er
-\[ 10\enh{m/s}\qquad10\enh{m/s} \qquad10\enh{m/s}\]
-\outl{Gjennomsnittsfarten} din var da
-\[ \frac{10+10+10}{3}\enh{m/s}=10\enh{m/s} \]
-Siden alle målinger av farten din hadde samme verdi, kan det være rimelig å anta at farten din var konstant. Og hvis den virkelig var det, ville alle målinger av farten din hatt samme verdi, uansett hvor mange målinger du tok. Dette gjør at en konstant fart fra \hrs{fart}{Definisjon} i dagligtale også kalles \outl{gjennomsnittsfart}. Sagt på en annen måte er dette den gjennomsnittlige endringen i antall meter per sekund.
-\regdef[Gjennomsnittlig endring per enhet]{
-Hvis vi \textsl{antar} at to størrelser er proporsjonale, kaller vi proporsjonalitetskonstanten fra \eqref{propeq} den \outl{gjennomsnittlige endringen per enhet}.
+Hence, on average, the 15 respondents ate 4.87 apples a week.
 } \regv
 
-\st{ \label{gjsnittperund4}
-\textbf{Survey 4} 
+\eks[- Survey 4]{
+{\footnotesize (Calculations omitted. The values are rounded off to the nearest one.)}
 \begin{itemize}
-	\item For årene 2009 og 2010 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+	\item Mean of total sale of mobiles: 2302
+	\item Mean of sale of mobiles without smart-functions: 732
+	\item Mean of sale of mobiles with smart-functions: 1570
+\end{itemize}
+} \vsk
+
+\info{Equal distribution}{
+Note that the mean is about equal distribution. If we have 4 rectangles with respective lengths 1, 6, 3 and 2, their joint length is $ 1+6+3+2=12 $.
+\fig{meana}
+Therefore, their mean length is $ {\frac{12}{4}=3} $. Thus, if we could reshape the rectangles so that their lengths were equal, with their joint length unchanged, they would each have length 3.
+\fig{meanb}
+}
+\subsubsection{The average rate of change}
+Say you go for a jog, and measure your speed three times. Also, say that the data set you end up with is
+\[ 10\enh{m/s}\qquad10\enh{m/s} \qquad10\enh{m/s}\]
+Then your \outl{average speed} was
+\[ \frac{10+10+10}{3}\enh{m/s}=10\enh{m/s} \]
+In other words; if your speed is the same alle the time\footnote{In other words, your speed is \textsl{constant}.}, this speed is also you average speed. Consequently, the formula for the speed from \hrs{fart}{Definition} is also the formula for the average speed. Alternatively stated, it is the formula for the average rate og change of length per time.\regv
+
+\regdef[Average rate of change]{
+If we \textsl{assume} or \textsl{hold} two quantities to be proportional, the proportionality constant from \eqref{propeq} is called the \outl{averate rate of change}.
+} \regv
+
+\eks[- Survey 4]{ \label{gjsnittperund4}
+\begin{itemize}
+	\item For the years 2009 and 2010, the difference of smartphones sold to the difference of years is
 	\[ \frac{1\,260-700}{2010-2009}=\frac{550}{1}=550  \]
-	Mellom 2009 og 2010 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med 550\,000 smarttelefoner per år.
-	\item For årene 20010 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+	Therefore, between 2009 and 2010 the sale of smartphones have \textsl{increased} by 550\,000 smartphones per year.
+	\item For the years 2010 and 2014, the difference of smartphones sold to the difference of years is
 \[ \frac{1\,953-1\,250}{2014-2010}=\frac{703}{4}=175,75  \]
-	Mellom 2010 og 2014 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med ca. 176 smarttelefoner per år.	
-\item For årene 2013 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+	Therefore, between 2010 and 2014 the sale of smartphones have \textsl{increased} by ca. 176\,000 smartphones per year.	
+\item For the years 2013 and 2014, the difference of smartphones sold to the difference of years is
 \[ \frac{1\,953-2\,160}{2014-2013}=\frac{-207}{1}=-207  \]
-Mellom 20013 og 2014 har altså salget av smarttelefoner \textsl{sunket} med ca. 207\,000 smarttelefoner per år.		
+	Therefore, between 2013 and 2014 the sale of smartphones have \textsl{decreased} by ca. 207 000 smartphones per year.		
 \end{itemize}
 }
 \newpage
-\info{Stignistallet til linja mellom to punkt}{
-Gitt en funksjon $ f(x) $. I \mb\ har vi sett at stigningstallet til linja mellom punktene $ (a, f(a)) $ og $ (b, f(b)) $ er gitt som
+\info{The slope of the line through two points}{
+Given a function $ f(x) $. In \mb\ we have seen that the slope of the line through the points $ (a, f(a)) $ og $ (b, f(b)) $ is
 \[ \frac{f(b)-f(a)}{b-a} \]
 \fig{lintopunkt}
-Sammenlikner vi dette uttrykket med utregningene fra side \pageref{gjsnittperund4}, ser vi at utrekningene er identiske. Stigningstallet mellom to punkt på en graf gir oss dermed den gjennomsnittlige endringen per enhet.
+Comparing this expression with the calculations made on page \pageref{gjsnittperund4}, we realize that the expressions are, in general, identical. Hence, the slope of a line through two points yields the average rate of change between the two points.
 }
 \subsection{Median}
 \reg[Median \label{median}]{Medianen er tallet som ender opp i midten av datasettet når det rangeres fra tallet med lavest til høgest verdi.\vsk
