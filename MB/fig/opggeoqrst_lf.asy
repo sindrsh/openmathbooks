@@ -34,4 +34,4 @@ dott(D1,"$D$",NE);
 dott(D2,"$E$",SE);
 dott(F,"$F$",1.5N);
 
-
+write(abs(D2-F),(abs(D1)-abs(D2))/(abs(C-D2)+abs(B-D1))*abs(C-D2));

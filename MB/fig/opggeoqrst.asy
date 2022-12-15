@@ -31,5 +31,3 @@ dott(B,"$B$",SE);
 dott(C,"$C$",NW);
 dott(D1,"$D$",NE);
 dott(D2,"$E$",SE);
-
-

@@ -5,6 +5,25 @@
 \begin{document}
 	\footnotesize
 \opgt
+
+\grubr{opggeosin18}
+\fig{opggeosin18los}
+Da $ \angle BAC=\angle CBA=72^\circ $, er $ \triangle ABC $ likebeint ($ AC=BC $) og $ \angle ACB= 36^\circ $. Altså er også $ \triangle BEC $ likebeint ($ EB=EC $). $ \triangle ABC \sim \triangle DBE$ fordi de har $ \angle BAC $ felles, og $ \angle ACB=\angle EBD $. Vi setter $ x=AB $ og $ y=BC $, og får at
+\alg{
+\frac{AB}{BC}&=\frac{EA}{AB} \br
+\frac{x}{y}&=\frac{y-x}{y} \\
+xy+x^2-y^2 &=0
+}
+Av \textit{abc}-formelen har vi at
+\alg{
+x&=\frac{-y+\pm\sqrt{y^2-4y^2}}{2} \\
+&= \frac{-1\pm\sqrt{5}}{2}y
+}
+Vi forkaster den negative løsningen for $ x $, og får at
+\[BD=\frac{x}{2}=\frac{\sqrt{5}-1}{4}y  \]
+Da $ \sin 18^\circ=\frac{BD}{BC} $, er
+\[ \sin 18^\circ = \frac{\sqrt{5}-1}{4} \]
+
 \opr{opggeo2r}
 \abc{
 \item Vi har at
@@ -58,6 +77,8 @@ OD &= OH-CH-DC \\
 \cos(u+v)&=1-(1-\cos u)-\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u \\
 &= \cos u \cos v- \sin u \sin v
 }
+\newpage
+
 \end{document}
 
 

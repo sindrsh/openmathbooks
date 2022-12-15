@@ -7,11 +7,15 @@
 \footnotesize
 \opgt 	
 
-\opr{opggeoqrst}
+\grubr{opglikbmidtn}
+\fig{opglikbmidtnlos}
+Vi lar $ D $ være punktet der halveringslinja til $ \angle ACB $ skjærer $ AB $. $ \triangle DAC\cong \triangle DBC $ fordi de har $ CD $ felles og $ AC=BC $ (trekantene oppfyller altså vilkår iii for formlikhet, og må da være kongruente). Følgelig er $ \angle BDA=\angle ADC $, og da er $ 2\angle DBA=180^\circ $. Altså er $ \angle DBA=90^\circ $, og da $ AD=BD $, ligger $ DC $ på midtnormalen til $ AB $.
+
+\grubr{opggeoqrst}
 \fig{opggeoqrst_lf}	
 $ {\triangle EFC \sim \triangle DFB} $ fordi begge er rettvinklede, og $ {\angle CFE = \angle BFD}$ (de er toppvinkler). Dermed har vi at
 \begin{equation}\label{opggeoqrsteq1}
-	\frac{EF}{CE}=\frac{FD}{BC} 
+	\frac{EF}{CE}=\frac{FD}{BD} 
 \end{equation}
 Videre er
 \begin{equation}\label{opggeoqrsteq2}
@@ -19,15 +23,88 @@ Videre er
 \end{equation}
 Ved å løse likningssettet vi får av \eqref{opggeoqrsteq1} og \eqref{opggeoqrsteq2}, med hensyn på $ EF $ og $ ED $, får vi at
 \[ 
-EF = \frac{AD-AE}{CE+BC}CE\qquad,\qquad  ED=\frac{AD-AE}{CE+BC}BC
+EF = \frac{AD-AE}{CE+BD}CE\qquad,\qquad  FD=\frac{AD-AE}{CE+BD}BD
 \]
 Det doble arealet til $ \triangle ABC $ er gitt som
 \begin{multline*}
-(AE+EF)CE+(AD-FD)BC \\=\left(AE+\frac{AD-AE}{CE+BC}CE\right)CE+\left(AD-\frac{AD-AE}{CE+BC}BC\right)BC	
+(AE+EF)CE+(AD-FD)BD \\=\left(AE+\frac{AD-AE}{CE+BD}CE\right)CE+\left(AD-\frac{AD-AE}{CE+BD}BC\right)BD	
 \end{multline*}
 \alg{
-&=\frac{1}{CE+BC}\left[\left(AE\cdot BC+AD\cdot CE\right)CE+\left(AD\cdot CE+AE\cdot BC\right)BC\right]\br
-&=AD\cdot CE+ AE\cdot BC
+&=\frac{1}{CE+BD}\left[\left(AE\cdot BD+AD\cdot CE\right)CE+\left(AD\cdot CE+AE\cdot BD\right)BD\right]\br
+&=AD\cdot CE+ AE\cdot BD
 }
+
+\newpage
+\grubr{opggeolikar}
+\fig{opggeolikarlos}
+Av å legge merke til trekanter med grunnlinje og høgde av lik lengde, finner vi at
+\alg{
+A_{\triangle AFE}=A_{\triangle FBE} &&
+A_{\triangle AIE}=A_{\triangle EDI}\vn
+A_{\triangle BCE}=A_{\triangle GCE}&&
+A_{\triangle HDE}=A_{\triangle HCE}
+}
+Følgelig er
+\alg{
+(A_{\triangle AFE} + A_{\triangle AIE})+(A_{\triangle BCE}+A_{\triangle HDE}) &= (A_{\triangle FBE}+A_{\triangle EDI})+ (A_{\triangle GCE}+A_{\triangle HCE}) \\
+A_{\square AFEI} + A_{\square GCHE} &= A_{\square FBGE} + A_{\square DIEH}
+}
+Altså er arealet til det blåfargede området er det samme som arealet til det grønnfargede området.
+\newpage
+
+\grubr{opggeo1530}
+\abc{ 
+	\item \mbox{}
+	\fig{opggeosin15invlos}
+	Med hensyn på vinkelsummen i $ \triangle ABC $ har vi at $ \angle ACB= 90-15^\circ=75^\circ$. Vi lar $ D $ være punktet på $ AB $ slik at $ \angle ACD=15^\circ $. Da er $ \angle CDA =75^\circ$ og $ \angle DCE=60^\circ $. Videre lar vi $ E $ være punktet på $ BC $ slik at $ CD=CE $, da er $ \triangle CDE $ likesidet. Vi setter $ s=CD $, $ a= BC $, $ b=AC $ og $ c=AB $. $ \triangle ABC\sim \triangle ACD $ fordi begge er rettvinklede, og $ \angle ACD=\angle ABC$. Dermed er
+	\alg{
+		AD=AC\frac{AC}{AB}=\frac{b^2}{c} \vn
+		s=BC\frac{AC}{AB}=\frac{ab}{c}
+	}
+	Med hensyn på vinkelsummen i $ \triangle CBD $ er $ \angle BDC=180^\circ-15^\circ-60^\circ=105^\circ $, og da er $ \angle FDE=45^\circ $. Altså er $ \triangle DFE $ rettvinklet og likebeint, som betyr at $ DF=FE=\frac{s}{\sqrt{2}} $. Da $ \triangle ABC\sim FBE$, er $ \triangle ACD\sim \triangle FBE $, og dermed er
+	\begin{flalign*}
+		&&	EF\cdot CD &= AD\cdot EB \\
+		&&	\frac{1}{\sqrt{2}}\left(\frac{ab}{c}\right)^2&=\frac{b^2}{c}\left(a-\frac{ab}{c}\right) &&(a,b\neq0) \\
+		&& a&=c\sqrt{2}-b\sqrt{2}
+	\end{flalign*}
+	Av \pyt\ med hensyn på $ \triangle ABC$ har vi at $ c^2=a^2-b^2 $, og følgelig er
+	\alg{
+		a&=\sqrt{2}\sqrt{a^2-b^2}-b\sqrt{2} \\
+		a+b\sqrt{2}&=\sqrt{2}\sqrt{a^2-b^2} \\
+		a^2+2ab\sqrt{2}+2b^2&= 2(a^2-b^2) \\
+		-a^2+2ab\sqrt{2}+4b^2&=0
+	}
+	Av \textit{abc}-formelen har vi at
+	\alg{
+		a&=\frac{-2b\sqrt{2}\pm \sqrt{8b^2+16b^2}}{-2} \\
+		&= \left(\sqrt{2}\mp \sqrt{6}\right)b
+	}
+	Vi forkaster den negative løsningen for $ a $, og får at
+	\nn{
+		\frac{a}{b}=\sqrt{2}+\sqrt{6}
+	}
+\newpage
+	\item \mbox{}
+	\fig{opggeo1530}
+	$ A_{\triangle DBC}=A_{\triangle ADC} $ fordi med henholdsvis $ DB $ og $ AD $ som grunnlinje har de lik høgde, og $ DB=AD $. Altså er $ AF\cdot DC = EB\cdot DC $, og da er $ AF=EB $. Videre er $ \triangle DAF\cong \triangle DBE $ fordi begge er rettvinklede $ \angle ADF =\angle BDE$ (de er toppvinkler), og $ AD=DB $. Vi setter $ x=DE $, $ a=EB $ og $ b=AC $. Da $ \triangle BCE $ er en $ 30^\circ $, $ 60^\circ $, $ 90^\circ $ trekant, er $ EC=\sqrt{3}a $ og $ BC=2a $. Da $ \triangle BGC $ er en $ 45^\circ $, $ 45^\circ $ , $ 90^\circ $ trekant, er $ GB=\frac{2}{\sqrt{2}}a $. Da $ A_{\triangle ABC}=2A_{\triangle DBC} $, har vi at
+	\alg{
+		b\cdot \frac{2}{\sqrt{2}}a &= 2(\sqrt{3}a+x)\cdot a \\
+		b &= \sqrt{2}(\sqrt{3}a+x)
+	}
+	Av løsningen i oppgave a) har vi at $ {AC=(\sqrt{2}+\sqrt{6})AF}$, og dermed er $ b=a\sqrt{2}(\sqrt{3}+1)$. Altså er $ x=a $, som betyr at $ \triangle AFD $ er en $ 45^\circ $, $ 45^\circ $, $ 90^\circ $ trekant. Ved å betrakte vinkelsummen i $ \triangle CAF $, finner vi da at
+	\alg{
+		\angle DAC &=180^\circ-15^\circ-90^\circ-45^\circ \\
+		&=30^\circ
+	}
+	\textbf{Alternativ metode for å vise at \boldmath $ x=a $} \os
+	Av Pytagoras' setning på $ \triangle ACD $ har vi at
+	\alg{
+		AC^2 &= FC^2 + AF \\
+		2(\sqrt{3}a+x)^2 &= (\sqrt{3}a+2x)^2 + a^2 \\
+		x^2 &= a^2
+	}
+	
+}
+
 \end{document}
 
