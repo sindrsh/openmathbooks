@@ -7,10 +7,49 @@
 \footnotesize
 \opgt 	
 
+\grubr{opgGV21D1opg12} \\
+En regulær sekskant kan deles in i seks kongruente, likesidete trekanter. Dette betyr at $ \angle C=120^\circ$. Da $ \triangle ABC $ er likebeint, er derfor
+\alg{
+2\angle BAC +120^\circ &= 180^\circ \\
+\angle BAC &= 30
+}
+\fig{opggv21d1opg12los}
+
 \grubr{opglikbmidtn}
 \fig{opglikbmidtnlos}
 Vi lar $ D $ være punktet der halveringslinja til $ \angle ACB $ skjærer $ AB $. $ \triangle DAC\cong \triangle DBC $ fordi de har $ CD $ felles og $ AC=BC $ (trekantene oppfyller altså vilkår iii for formlikhet, og må da være kongruente). Følgelig er $ \angle BDA=\angle ADC $, og da er $ 2\angle DBA=180^\circ $. Altså er $ \angle DBA=90^\circ $, og da $ AD=BD $, ligger $ DC $ på midtnormalen til $ AB $.
+\newpage
+\grubr{opggeoeqlheight}
+\fig{opggeoeqlheightlos}
+\abc{
+\item Da $ \triangle ABC $ er likesidet, er $ D $ midpunktet på $ AB $. Dermed er 
+\nn{
+AD=DB=\frac{AB}{2}=\frac{s}{2}
+}
+$ \triangle ACD $ er en trekant med vinkler lik $ 30^\circ $, $ 60^\circ $ og $ 90^\circ $ og $ AC=2AD $. Altså er den lengste siden dobbelt så lang som den korteste.
+\item Av \pyt på $ \triangle ADC $ har vi at
+\alg{
+CD^2 &= AC^2 - AD^2 \\
+&= s^2+\left(\frac{1}{2}\right)^2 \\
+&= \frac{3}{4}s^2
+}
+}
+Altså er 
+\[ CD=\sqrt{\frac{3}{4}s^2}=\frac{\sqrt{3}}{2}s \]
 
+\grubr{opggeotresirk}
+\fig{opggeotresirklos}
+$ \triangle ABD $ er likesidet fordi $ AD=AB=BD $, og har dermed areal lik $ \frac{1}{2}\cdot \frac{\sqrt{3}}{2}AB^2=\sqrt{3} $. Da $ \angle B=60^\circ $, utgjør den grønne sektoren $ \frac{1}{6} $ av sirklenes areal, følgelig er arealet til den grønne sektoren $ \frac{1}{6}\cdot \pi\cdot2^2=\frac{2\pi}{3} $. Vi har at
+\alg{
+\text{areal til grønt og blått område}&=2\cdot\text{areal til grønt område}-A_{\triangle ABD} \\
+&=\frac{4\pi}{3}-\sqrt{3}
+}
+Videre har vi at
+\alg{
+\text{areal til rødt omrdåde}&=\text{areal til sirkel}-4\cdot\text{areal til grønt og blått område} \\
+&= 4\pi-4\left(\frac{4\pi}{3}-\sqrt{3}\right) \\
+&= 4\sqrt{3}-\frac{4}{3}\pi
+}
 \grubr{opggeoqrst}
 \fig{opggeoqrst_lf}	
 $ {\triangle EFC \sim \triangle DFB} $ fordi begge er rettvinklede, og $ {\angle CFE = \angle BFD}$ (de er toppvinkler). Dermed har vi at
@@ -151,6 +190,50 @@ Altså er arealet til det blåfargede området er det samme som arealet til det 
 		2(\sqrt{3}a+x)^2 &= (\sqrt{3}a+2x)^2 + a^2 \\
 		x^2 &= a^2
 	}
+}
+\newpage
+\grubr{opggeotrekulik}
+\abc{
+\item 
+\textbf{Alternativ 1}
+\fig{opggeotrekulikisclosp}
+Vi lar $ \triangle A'B'C' $ være en speilet utgave av $ \triangle ABC $. Da $ \angle C=\angle C' $, $ \frac{BC}{AB}=\frac{B'C'}{AB} $ og $ \frac{AC}{B'C'}=\frac{BC}{A'C'} $, har vi av vilkår (iii) i \rref{vilkform} at $ \triangle ABC\sim \triangle BA'C' $. Mer spesifikt betyr dette at $ AC $ er den samsvarende siden til $ B'C' $, som betyr at $ \angle B =\angle A'=\angle A $.\vsk
+
+\textbf{Alternativ 2}
+\fig{opggeotrekulikisclos}
+Vi kan alltids konsturere en rettvinklet trekant $ \triangle A'D'C' $ hvor $ 2AD'=AB $ og $ A'C'=AC $. Ved å la $ B' $ være $ A' $ speilet om $ C'D' $, har vi at $ \angle A' = \angle B $ og $ B'C'=A'C $. Dermed har $ \triangle ABC $ og $ \triangle A'B'C' $ parvis like lange sider, og er derfor kongruente. Da $ AB $ er den samsvarende siden til $ A'B' $, er $ BC $ den samsvarende siden enten til $ B'C' $ eller til $ A'C' $. Uansett hvilke to av disse det er, har vi at $ \angle A= \angle A'=\angle B' $, og tilsvarende er $ \angle B=\angle A'=\angle B' $. 
+\newpage
+\item Vi plasserer $ D $ på forlengelsen av $ CB $ slik at $ CD=CA $. Av oppgave a) er da $ \angle DAC=\angle D $, som betyr at 
+\begin{equation}\label{opggeotrekulikbac}
+	\angle BAC<\angle D \qquad, \qquad \angle D-\angle BAC>0
+\end{equation}
+Videre er $ \angle C=180^\circ-2\angle D $, og da er
+\begin{equation}\label{opggeotrekulikvb}
+	B=180^\circ-\angle C-\angle BAC= 2\angle D-\angle BAC
+\end{equation}
+Av \eqref{opggeotrekulikbac} og \eqref{opggeotrekulikvb} har vi at
+\[ \angle B> \angle D \]
+Dermed er 
+\[ \angle BAC<\angle D<\angle B \]
+\fig{opggeotrekulikvinklos} 
+\item Hvis $ CD $ ligger utenfor $ \triangle ABC $, har vi av \pyt\ at
+\[ (AB+DB)^2=AC^2-CD^2 \]
+Dette betyr at 
+\alg{
+(AB+DB)^2 &< AC^2 \\
+AB^2 &< AC^2 \\
+AB &< AC 
+}
+Da $ AB $ er den lengste siden i $ \triangle ABC $, er dette en selvmotsigelse, og dermed må $ CD $ ligge inni trekanten.
+\fig{opggeotrekulikh}
+\item At $ a+c>b $ og at $ b+c>a $ følger direkte av at $ c $ er den største lengden. Av oppgave $ c) $ vet vi at $ CD $ ligger inni $ \triangle ABC $, som vist i figuren under.
+\fig{opggeotrekuliklos}
+Av \pyt\ har vi at
+\[ b^2=AD^2+h^2\qquad,\qquad a^2=BD^2+h^2 \]
+Som betyr at
+\[ b>AD \qquad,\qquad a>BD \]
+Da $ c=AD+DB $, er dermed
+\[ c<b+a \]
 }
 
 \end{document}

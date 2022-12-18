@@ -1,7 +1,6 @@
 \input{../../doc}
-\input{../bm}
 \input{../../preamb}
-
+\input{../bm}
 
 \begin{document}
 \opr{algogligukonst2}	
@@ -19,4 +18,66 @@ Altså er $ x=0 $, eller
 	x&=2
 }
 }
+
+\newpage
+\grubr{opggeoher}
+\fig{opggeoher}
+Vi setter $ a=BC $, $ b=AC $, $ c=AB $, $ h=CD $ og $ d=AD $. Av \pyt\ med hensyn på $ \triangle ADC $ og $ \triangle DCB $ har vi at
+\alg{
+b^2-d^2 &= a^2-(c-d)^2 \\
+d &= \frac{b^2+c^2-a^2}{2c}
+}
+Videre er
+\alg{
+h^2 &= b^2-d^2 \\
+&= (b+d)(b-d) \\
+&= \left(b+\frac{b^2+c^2-a^2}{2c}\right)\left(b-\frac{b^2+c^2-a^2}{2c}\right) \\
+&= \frac{1}{4c^2}\left[(b+c)^2-a^2\right]\left[a^2-(b-c)^2\right] \\
+&= \frac{1}{4c^2}(b+c+a)(b+c-a)(a+b-c)(a-b+c)
+}
+Da $ h>0 $, er
+\[ h=\frac{1}{2c}\sqrt{(b+c+a)(b+c-a)(a+b-c)(a-b+c)} \]
+Arealet $ T $ til $ \triangle ABC $ er nå gitt som
+\alg{
+T&= \frac{1}{2}hc\br
+&= \frac{1}{4}\sqrt{(b+c+a)(b+c-a)(a+b-c)(a-b+c)}
+}
+\mers{Da en trekant må ha et areal med positiv verdi, kan Herons formel brukes for å vise \textit{trekantulikheten}, som vi utledet i \mb.}\vsk
+
+\newpage
+\grubr{opggeokvadsym} \os
+\textbf{Alternativ 1}\\
+Skal grafen til $ f $ være symmetrisk om vertikallinja som går gjennom punktet $ \left(-\frac{b}{2a}, 0\right) $, må vi for et tall $ k $ ha at
+\begin{equation}\label{opggeokvadsym}
+	f\left(k-\frac{b}{2a}\right)=f\left(-k-\frac{b}{2a}\right)
+\end{equation}
+For et tall $ d $ har vi at
+\[ d-\frac{b}{2a}=\frac{2ad-b}{2a} \]
+Videre er
+\alg{
+	f\left(d-\frac{b}{2a}\right)&=a\left(\frac{2ad-b}{2a} \right)^2+b\left(\frac{2ad-b}{2a} \right)+c \br
+	&= \frac{4a^2d^2-4abd+b^2}{4a}+\frac{2abd-b^2}{2a}+c \br
+	&=\frac{4a^2d^2-b^2}{4a}+c
+}
+Dette betyr at uansett om $ d=k $ eller om $ d=-k $, så vil uttrykket over være likt, og altså er \eqref{opggeokvadsym} gyldig. \vsk
+
+\textbf{Alternativ 2}\\
+Skal $ f $ være symmetrisk om en vertikallinje, må det bety at to tall $ t $ og $ s $ gir lik $ f $-verdi:
+\begin{flalign*}
+	&&f(s)&=f(t) \\
+	&&a s^2+b s + c &= a t^2 + b t + c \\
+	&&a(s^2-t^2)+b(s-t) &= 0 \\
+	&&a(s-t)(s+t)+b(s-t)&=0 &&(s\neq t)\\
+	&& a(s+t)+b&=0 \\
+	&& t&= -\frac{b}{a}-s
+\end{flalign*}
+Vi lar $ x_s $ være $ x $-verdien til symmetrilinja til $ f $. $ x_s $ må ligge midt mellom $ s $ og $ t $. Vi lar $ t>s $, da er
+\alg{
+x_s &= s+\frac{1}{2}(t-s) \\
+&= s+\frac{1}{2}\left(-\frac{b}{a}-s-s\right) \\
+&=-\frac{b}{2a}
+}
+ 
+
+
 \end{document}
