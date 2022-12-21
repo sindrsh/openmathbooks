@@ -91,6 +91,7 @@
 \numberwithin{rg}{chapter}
 \newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
 \newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\words}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=teal!3] #1  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
@@ -148,7 +149,9 @@
 		\includegraphics[]{\figp{#1}}
 		\caption{#2}
 \end{figure}}
-
+\newcommand{\arc}[1]{{
+		\setbox9=\hbox{#1}%
+		\ooalign{\resizebox{\wd9}{\height}{\texttoptiebar{\phantom{A}}}\cr\textit{#1}}}}
 
 \newcommand{\sectionbreak}{\clearpage} % New page on each section
 
