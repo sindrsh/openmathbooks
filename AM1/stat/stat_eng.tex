@@ -1,11 +1,11 @@
 \input{../../doc}
-\input{../eng}
 \input{../../preamb}
+\input{../eng}
 
 
 \begin{document}
 \section{Introduction}
-In a \outl{undersøkelse} we collect information. This information is often words or numbers, and is called \outl{data}. A collection of data is called a \outl{data set}. \vsk
+In a \outl{survey} we collect information. This information is often words or numbers, and is called \outl{data}. A collection of data is called a \outl{data set}. \vsk
 
 For example, say you ask two people whether they like caviar. The one answers ''yes'', the other ''no''. Then ''yes'' and ''no'' are the data (answers) you have collected, and $\{\text{''yes''}, \text{''no''}\} $ is your data set. \vsk
 
@@ -235,7 +235,7 @@ Given a function $ f(x) $. In \mb\ we have seen that the slope of the line throu
 Comparing this expression with the calculations made on page \pageref{gjsnittperund4}, we realize that the expressions are, in general, identical. Hence, the slope of a line through two points yields the average rate of change between the two points.
 }
 \subsection{Median}
-\reg[Median \label{median}]{The \textit{median} is the number that ends up in the middle when the data set is arranged in an increasing order.\vsk
+\reg[Median \label{median}]{The \outl{median} is the number that ends up in the middle when the data set is arranged in an increasing order.\vsk
 
 If the data set has an even amount of values, the median equals the mean of the two values in the middle (after the arranging).} \regv
 
@@ -269,108 +269,103 @@ Often there will be large differences between collected data. The collective ter
 The difference between the data with the largest value and the data with the smallest value yields the \outl{variation width}. 
 } \regv
 \eks[Survey 1]{
-Svaret med henholdsvis høgest og lavest verdi er 124 og 38. Altså er
-\[ \text{variasjonsbredde}=124-38=86 \]
+The datas with, respectively, the highest and lowest values are 124 and 38. Thus
+\[ \text{variation width}=124-38=86 \]
 } \regv
 \eks[- Survey 2]{
-	Svaret med henholdsvis høgest og lavest verdi er 14 og 0. Altså er
-	\[ \text{variasjonsbredde}=14-0=14 \]
+	The datas with, respectively, the highest and lowest values are 14 and 0. Hence
+	\[ \text{variation width}=14-0=14 \]
 }\regv
 \eks[- Survey 4]{
 	\begin{itemize}
-		\item Variasjonsbredde for mobiler totalt:
+		\item Variation width for mobiles in total:
 		\[ 2\,500-2\,100=400  \]
-		\item Variasjonsbredde for mobiler uten smartfunksjoner:
+		\item Variation width e for mobiles without smart functions:
 		\[ 1\,665-147=518 \]
-		\item Variasjonsbredde for mobiler med smartfunksjoner:
+		\item Variation width for mobiles with smart functions:
 		\[ 2\,160-700=1460 \]
 	\end{itemize}
 }
-\subsection{Kvartilbredde}
-\reg[Kvartilbredde og øvre og nedre kvartil]{
-Kvartilbredden til et datasett kan finnes på følgende måte:
+\subsection{Quartile width}
+\reg[Quartile width and upper and lower quartile]{
+The \outl{quartile width} of a data set can be found doing the following:
 \begin{enumerate}
-	\item Ranger datasettet fra høgest til lavest verdi.
-	\item Skill det rangerte datasettet på midten, slik at to nye sett oppstår. (Viss det er oddetalls antall verdier i datasettet, utelates medianen).
-	\item Finn de respektive medianene i de to nye settene.
-	\item Finn differansen mellom medianene fra punkt 3.
+	\item Arrange the data set in increasing order.
+	\item Divide the arranged data set, on the middle, into two new data sets (if the number of values in the set is even, the median is excluded).
+	\item Find the respective medians in the two new data sets.
+	\item Find the difference between the medians from point 3.
 \end{enumerate}
-Om medianene fra punkt 3: Den med høgest verdi kalles \outl{øvre kvartil} og den med lavest verdi kalles \outl{nedre kvartil}.
+Regarding the medians from point 3: The one with the largest value is called the \outl{upper quartile}, and the one with the lowest value is called the \outl{lower quartile}.
 } \regv
 
-\st{
-\textbf{Survey 1} \os
+\eks[- Survey 1]{
 \begin{enumerate}
 	\item $ 38\quad40\quad47\quad 56\quad 61\quad79\quad 84\quad97\quad 101\quad 124 $
 	\item $ \color{blue}38\quad40\quad47\quad 56\quad 61 \quad \color{red}79\quad 84\quad97\quad 101\quad 124 $
-	\item Medianen i det blå settet er 47 (nedre kvartil) og medianen i det røde settet er 97 (øvre kvartil).
+	\item The median in the blue set is 47 (lower quartile), and the median in the red set is 97 (upper quartile).
 	\[ \color{blue}38\quad40\quad{\color{black}47}\quad 56\quad 61 \qquad\quad \color{red}79\quad 84\quad{\color{black}97}\quad 101\quad 124 \] \vs \vs
-	\item $ \text{Kvartilbredde}=97-47=50 $
+	\item $ \text{Quartile width}=97-47=50 $
 \end{enumerate}
-}
-\st{
-\textbf{Survey 2}\os
+} \regv
+\eks[- Survey 2]{
 \begin{enumerate}
 	\item $ 0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  5\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
 	\item $ \color{blue}0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  {\color{black}5}\quad \color{red} 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
-	\item Medianen i det blå settet er 1 (nedre kvartil) og medianen i det røde settet er 7 (øvre kvartil).
+	\item The median in the blue set is 1 (lower quartile), and the median in the red set is 7 (upper quartile).
 	\[ \color{blue}0\quad0\quad 1\quad {\color{black}1}\quad 4\quad 4\quad 4\qquad\quad \color{red} 5\quad  6\quad6\quad  {\color{black}7}\quad8\quad8 \quad14\] \vs \vs
-	\item $ \text{Kvartilbredde}=7-1=6 $
+	\item $ \text{Quartile width}=7-1=6 $
 \end{enumerate}
 }
-\st{
-\textbf{Survey 4} \os
-(Utregning utelatt)
+\eks[- Survey 4]{
+(Calculations omitted)
 \begin{itemize}
-	\item For mobiler totalt er kvartilbredden: 200 
-	\item For mobiler uten smartfunksjoner er kvartilbredden: 1010
-	\item For mobiler med smartfunksjoner er kvartilbredden: 703
+	\item For mobiles in total the quartile with is 200 
+	\item For mobiles without smart functions the quartile width is 1010
+	\item For mobiles with smart functions the quartile width is 703
 \end{itemize}
 } \vsk
 
 \spr{
-Nedre kvartil, medianen og øvre kvartil blir også kalt henholdsvis \outl{1. kvartil}, \outl{2. kvartil} og \outl{3. kvartil}.
+The lower quartile, the median and the upper quartile is also called the \outl{1st. quartile}, the \outl{2nd quartile} and the \outl{3rd quartile}, respectively.
 }
 \newpage
-\subsection{Avvik, varians og standardavvik}
-\reg[Varians]{
-Differansen mellom en verdi og gjennomsnittet i et datasett kalles \outl{avviket} til verdien. \vsk
+\subsection{Deviations, variance and standard deviation}
+\reg[Variance]{
+The difference between a value in a data set and the mean of the dataset is called the \outl{deviation} of the value. \vsk
 	
-Variansen til et datasett kan finnes på følgende måte:	
+The \outl{variance} of a data set can be found in the following way:	
 \begin{enumerate}
-	\item Kvadrer avviket til hver verdi i datasettet, og summer disse.
-	\item Divider med antall verdier i datasettet.
+	\item Square the deviation of every value in the data set, and add these.
+	\item Divide by the amount of values in the data set.
 \end{enumerate} 
 
-\outl{Standardavviket} er kvadratroten av variansen.
+The \outl{standard deviation} is the square root of the variance.
 }
 
 \eks{ \label{vareks}
-Gitt datasettet 
+Given the data set
 \[\color{blue} 2\quad 5\quad 9\quad 7\quad 7 \]
-Da har vi at
+Then
 \[ \text{gjennomsnitt}=\frac{\colb{2+5+9+7+7}}{5}=\colr{6} \]
-Og videre er
+Moreover,
 \alg{
-\text{variansen}&= \frac{(\colb{2}-\colr{6})^2+(\colb{5}-\colr{6})^2+(\colb{9}-\colr{6})^2+(\colb{7}-\colr{6})^2+(\colb{7}-\colr{6})^2}{5} \\ 
+\text{variance}&= \frac{(\colb{2}-\colr{6})^2+(\colb{5}-\colr{6})^2+(\colb{9}-\colr{6})^2+(\colb{7}-\colr{6})^2+(\colb{7}-\colr{6})^2}{5} \\ 
 &= 5
 }
-Da er $ \text{standardavviket}=\sqrt{5}\approx2,23 $.
+Then $ \text{standard deviation}=\sqrt{5}\approx2.23 $.
 } \vsk
-\st{
-\textbf{Survey 1} \os
-(Utregning utelatt)\os
-Variansen er 754,01. Standardavviket er $ \sqrt{754,01}\approx 27,46 $
+\eks[- Survey 1 ]{
+(Calculations omitted)\os
+The variance is 754.01. The standard deviation is $ {\sqrt{754.01}\approx 27.46} $
 }
 \newpage
-\st{
-\textbf{Survey 2} \os
-Gjennomsnittet fant vi på side \pageref{gjsnund2}. Vi utvider frekvenstabellen vår fra side \pageref{frkvtbund2}:
+\eks[- Survey 2]{
+We found the mean of the data set on page \pageref{gjsnund2}. We expand our table from page \pageref{frkvtbund2}:
 \begin{center}
 	\renewcommand{\arraystretch}{2}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		antall epler & frekvens& frekvens $ \cdot $ kvadrert avvik \\ \hline
+		apples & frequency& frequency $ \cdot $ squared deviation \\ \hline
 		0 & 2 &$2\cdot \left(0-\frac{73}{15}\right)^2 $ \\
 		1 & 2 &$2\cdot \left(1-\frac{73}{15}\right)^2 $\\
 		4 & 3 &$3\cdot \left(4-\frac{73}{15}\right)^2 $\\
@@ -379,28 +374,28 @@ Gjennomsnittet fant vi på side \pageref{gjsnund2}. Vi utvider frekvenstabellen 
 		7 & 1 &$1\cdot \left(7-\frac{73}{15}\right)^2 $\\
 		8 & 2 &$2\cdot \left(8-\frac{73}{15}\right)^2 $\\
 		14& 1 &$1\cdot \left(9-\frac{73}{15}\right)^2 $\\ \hline 
-		sum& 15 & $ 189,7\bar{3} $ \\ \hline
+		sum& 15 & $ 189.7\bar{3} $ \\ \hline
 	\end{tabular}
 \end{center}
-Altså er variansen
-\[ \frac{189,7\bar{3}}{15}\approx 12,65 \]
-Da er standardavviket $ \sqrt{12,65}\approx3.57 $
-}
-\st{
-	\textbf{Survey 4} \os
-	(Utregning utelatt)
+Hence
+\[ \text{variance}= \frac{189,7\bar{3}}{15}\approx 12.65 \]
+Thus, the standard deviation is $ \sqrt{12.65}\approx3.57 $
+} \vsk
+
+\eks[- Sruvey 4]{
+	(Calculations omitted)
 	\begin{itemize}
-		\item For mobiler totalt er variansen 17\,781,25 og standardavviket ca. $ 133,4 $.
-		\item For mobiler uten smartfunksjoner er variansen $ 318\,848.\bar{3} $ og standardavviket ca. $ 17,87 $
-		\item For mobiler med smartfunksjoner er variansen $245\,847.91\bar{6} $ og standardavviket ca. 495,83.
+		\item For mobiles in total the variance is 17\,781,25, and the standard deviation ca. $ 133.4 $.
+		\item For mobiles without smart functions the variance is $ 318\,848.\bar{3} $, and the standard deviation ca. $ 17.87 $.
+		\item For mobiles with smart functions the variance is $245\,847.91\bar{6} $, and the standard deviation ca. 495,83.
 	\end{itemize}
 }
-\info{Hvorfor innebærer variansen kvadrering?}{
-La oss se hva som skjer hvis vi gjentar utregningen fra \textsl{Eksempel} på side \pageref{vareks}, men uten å kvadrere:
+\info{Why squaring when finding the variance?}{
+Let us see what happens if we repeat our calculations from \textsl{Example 1} on page \pageref{vareks}, but without squaring:
 \begin{multline}
 	\frac{(\colb{2}-\colr{6})+(\colb{5}-\colr{6})+(\colb{9}-\colr{6})+(\colb{7}-\colr{6})+(\colb{7}-\colr{6})}{5}\\=\frac{\colb{2+5+9+7+7}}{5} - \colr{6}
 \end{multline}
-Men brøken $ \frac{\colb{2+5+9+7+7}}{5} $ er jo per definisjon gjennomsnittet til datasettet, og dermed blir uttrykket over lik 0. Dette vil gjelde for alle datasett, så i denne sammenhengen gir ikke tallet 0 noen ytterligere informasjon. Om vi derimot kvadrerer avvikene, unngår vi et uttrykk som alltid blir lik 0.
+But, by definition, the fraction $ \frac{\colb{2+5+9+7+7}}{5} $ is the mean of the data set, and thus the above expression equals 0. This applies for all data sets, and, in this context, 0 provides no further information. If we however square the deviations, we avoid expressions deemed to equal 0.
 }
 \end{document}
 

@@ -1,5 +1,6 @@
-\input{../doc}
-\input{../preamb_eng}
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
 \begin{document}
 
 \section{\pot \label{Potensar}}
@@ -15,33 +16,38 @@ $ {a^n} $ is a power with base $ a $ and exponent $ n $.
 If $ n $ is a natural number, $ a^n $ corresponds to $ n $ instances of $ a $ multiplied together. \vsk
 
 \mer $ a^1=a $
-}
+} \regv
+
 \eks[1]{\vs \vs
 \algv{
 5^3 &= 5\cdot5\cdot5 \\
 &= 125
 }
-}
+}\regv
+
 \eks[2]{\vs \vs
 	\[ c^4 = c\cdot c \cdot c \cdot c \]
-}
+}\regv
+
 \eks[3]{ \vs \vs
 \algv{
 (-7)^2 &= (-7)\cdot(-7) \\
 &= 49
 }
 }
-
+\newpage
 \spr{
 Common ways of saying $ 2^3 $ are\footnote{Attention! The examples illustrate a paradox in the English language; \textit{power} is also a synonym for \textit{exponent}.}
 \begin{itemize}
-	\item ''2 to the power of 3''
+	\item ''2 (raised) to the power of 3''
 	\item ''2 to the third power''
 \end{itemize}
 
-In computer programming, the symbol \sym{\^{}} or the symbols \sym{**} is usually written between the base and the exponent.
-}
-\newpage
+In computer programming, the symbol \sym{\^{}} or the symbols \sym{**} is usually written between the base and the exponent. \vsk
+
+Raising a number to the power of 2 is called ''squaring'' the number.
+}\regv
+
 \info{\note}{
 The next pages declares rules concerning powers with corresponding explanations. Even though one wish to have these explanations as general as possible, we choose to use, mostly, specific numbers as exponents . Using variables as exponents would lead to less reader-friendly expressions, and it is our claim that the general cases are well illustrated by the specific cases. 
 } \vsk \vsk
@@ -68,7 +74,7 @@ a^5\cdot a^{-7} &= a^{5+(-7)} \\
 }
 (See \rref{potneg} regarding how powers with negative exponents can be interpreted.)	
 } 
-\newpage
+
 \fork{\ref{potgang} \potgang}{
 	Let's study the case 
 	\[ a^{2}\cdot a^{3} \]
@@ -254,7 +260,7 @@ a^{0}=1
 }
 
 \newpage
-\reg[\textit{n}-rot]{ \vs
+\reg[\textit{n}-root]{ \vs
 \[ a^\frac{1}{n}=\sqrt[n]{a} \]
 The symbol \sym{$ \sqrt{\phantom{a}} $} is called the \textit{radical sign}\index{radical sign}. In the case of an exponent equal to $ \frac{1}{2} $, it is common to omit 2 from the radical:
 \[ a^\frac{1}{2}=\sqrt{a} \]
