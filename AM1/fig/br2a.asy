@@ -18,3 +18,4 @@ for (int j=0; j<3; ++j){
 filldraw(shift(-5,0)*scale(1,3)*s,arpeng);
 
 label("=",(-0.5,1.5));
+label("12",(-3,1.5));
