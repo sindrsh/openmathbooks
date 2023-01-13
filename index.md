@@ -1,6 +1,6 @@
 ## OpenMathBooks
 
-OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. The collection includes the following books (for the moment, the books are in Norwegian only):
+OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. The collection includes the following books
 - **First Principles of Math (FP)**<br/>
   Math theory for secondary school and high school.
 - **Applied Mathematics 1 (AM1)** <br/>
