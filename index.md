@@ -44,7 +44,7 @@ Please make contact if you want to contribute to this project. Contributions esp
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
 
 ## License and usage
-The books are licensed under CC BY-NC-SA 4.0. This means you are free to download and edit the files for non-profit purposes. The only software required for editing the books is [LaTex](https://www.latex-project.org/) and at TeX-editor. </br>
+The books are licensed under CC BY-NC-SA 4.0. This means you are free to download and edit the files for non-profit purposes. The only software required for editing the books is [LaTex](https://www.latex-project.org/) and at TeX-editor.
 
 When you have made your own edition of a book, please do not change the main title, but change the subtitle in a fitting way.
 Example: If a school named Plato's Acadamy edits 'First Principle of Math' for it's own purposes, they should substitute the subtitle 'Sindre Sogge Heggen's edition' with 'Plato's Acadamy's' edition. Also, the school should inform OpenMathBooks that
