@@ -13,6 +13,8 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
   Applications of the math introduced in TM1 and TM1.
   
 ## Files
+### English versions
+- [FP](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=share_link)
 
 ### Norwegian versions
 - [Matematikkens byggesteiner (MB) (bokmål)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
