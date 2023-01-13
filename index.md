@@ -31,8 +31,8 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 
 ## Roadmap
 - Translating all books into English
-- Adding problem solutions manual
 - Adding more exercises
+- Adding problem solutions manual
 
 ## Contributing
 Please make contact if you want to contribute to this project. Contributions especially sought out for are
@@ -42,8 +42,12 @@ Please make contact if you want to contribute to this project. Contributions esp
 - Adding problems to the sections. Make sure that problems you provide are not in conflict with any copyrights. Authors of problems that are comprehensive or unique will be credited.
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
-## License
-The books are licensed under CC BY-NC-SA 4.0. This means you are free to download and edit the files for non-profit purposes.
+
+## License and usage
+The books are licensed under CC BY-NC-SA 4.0. This means you are free to download and edit the files for non-profit purposes. The only software required for editing the books is [LaTex](https://www.latex-project.org/) and at TeX-editor. </br>
+
+When you have made your own edition of a book, please do not change the main title, but change the subtitle in a fitting way.
+Example: If a school named Plato's Acadamy edits 'First Principle of Math' for it's own purposes they should substitute the subtitle 'Sindre Sogge Heggen's edition' with 'Plato's Acadamy's' edition.
 
 ## Contact
 sindre.heggen@gmail.com
