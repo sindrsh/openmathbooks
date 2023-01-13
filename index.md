@@ -20,8 +20,11 @@ The books are found here:
 - [Anvendt matematikk 1 (AM1) (bokmål)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing) 
   </br>  Anvendelser av matematikken presentert i MB.
 - [Teoretisk matematikk 1 (TM1) (bokmål)](https://drive.google.com/file/d/1JJQBkm5yuZ1IaA2lHR1_lQgkqQe6WUgP/view?usp=sharing)
-- [Teoretisk matematikk 2 (TM2) (bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing)  
-- [Anvendt matematikk 2 (AM2) (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing) 
+  <br/> Matematikk for VGS-fagene 1T og R1.
+- [Teoretisk matematikk 2 (TM2) (bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing) 
+  <br/> Matematikk knytt til VGS-faget R2. 
+- [Anvendt matematikk 2 (AM2) (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
+  <br/> Anvendelser av matematikken presentert i TM1 og TM2. 
 - [Pensumoversikt for grunnskole (trinnvis), 1P, 2P, 1T, R1 og R2](https://github.com/sindrsh/openmathbooks/blob/main/ekstra/pensum/pensum.pdf)
 
 ## Roadmap
