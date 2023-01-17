@@ -11,7 +11,6 @@ void circ(int n=3, int t=0, pair sh=(0,0)){
 			p = shift(sh)*p;
 			if (cnt<t+1){
 				filldraw(p, black+opacity(0.5));
-				write("hei");
 			}
 			else draw(p);
 		}
@@ -31,14 +30,9 @@ void poly(int n=3, int t=0){
 			path p = (0,0)--L[i-1]--L[i]--cycle;
 			if (cnt<t+1){
 				filldraw(p, black+opacity(0.5));
-				write("hei");
 			}
 			else draw(p);
 		}
 		++cnt;
 	}
 }
-
-
-
-
