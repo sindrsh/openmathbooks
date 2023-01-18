@@ -1,6 +1,6 @@
-\input{../doc}
-\input{../preamb_eng}
-
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
 
 \begin{document}
 \newpage
@@ -400,5 +400,110 @@ Find the area of the triangle.
 	\text{The area of the triangle}=\frac{7\cdot 3}{2}=\frac{21}{2}
 }
 }
+
+\section{Tredimensjonal geometri}
+So far, we have studied two-dimensional shapes as triangles, quadrilaterals, circles etc. Every two-dimensinal figure can be drawn in a coordinate system with two axes.
+\fig{3da}
+In order to draw \outl{three-dimensional} shapes however, we need three axes:
+\fig{3db}
+While we have used the phrase \textit{width}/\textit{length} and \textit{height} to describe a rectangle, we say that the box above has a width, a height \textsl{and} a length (depth). \vsk
+
+The area lying on the ''outside'' of a three-dimensional shape is called the \outl{surface}. The surface of the box above is made up by 6 rectangles. Polygons that are parts of a surface are called \outl{lateral surfaces}.
+
+\reg[Three-dimensional figures]{
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{fprism}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Right prism}\\
+		Has two equal and four equal rectangles as lateral surfaces. All the surfaces in contact are perpendicular to each other.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{kube}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Kube}\\
+		A right prism with squares as lateral surfaces.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{tprism}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Triangular prism}\\
+		Two of the lateral surfaces are congruent triangles parallel to each other. These triangles are connected by lateral surfaces that ar rectangles. 
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{fpyr}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Rectangular pyramid}\\
+		The surface is made up by one\\ rectangle and four triangles.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{tpyr}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Triangular pyramid}\\
+		The surface is made up by four triangles.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{kjegle}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Cone}\\
+		One part of the surface is a circle, the other part is a folded sector.
+	}
+	\parbox[l][][l]{0.4\linewidth}{
+		\centering
+		\fig{kule}	
+	}
+	\parbox[r][][l]{0.6\linewidth}{
+		\textbf{Sphere}\\
+		All the points on the surface have equal distance to the center.
+	}
+}
+\newpage
+\info{Tip}{It is not that easy to imagine what a \textsl{folded sector} is, but try this: \vsk
+	
+Draw a sector on a sheet. Cut the sector, and join the two edges of the sector. Then you have a cone without bottom surface.	
+}
+\section{Volum}
+When we speak of how much space there is inside an object, we speak of it's \outl{volume}. As a measure of volume, we imagine a cube with sides of length 1.
+\fig{vol1}
+We shall call such a cube a 'unit cube'. Say we have a rectangular prism with width 3, length 4 and height 2.
+\fig{vol2}
+Inside it, there is room for exactly 24 unit cubes.
+\fig{vol2a}
+Other than simply counting unit cubes, we can find this by calculating
+\[ 3\cdot 4\cdot 2=24\]
+\reg[The volume of a rectangular prism I]{
+	\fig{vol2c_eng}
+	\[\text{volume}=\text{width}\cdot\text{length}\cdot\text{height} \]
+}
+\newpage
+\subsubsection{Base area}
+To calculate the volume of elementary shapes, it is useful to apply the term \outl{base surface}\index{base surface}. Inthe same way as with baselines\footnote{See page \pageref{grunnlinje}.}, it is our choice of base surface that decides what the height is. Regarding the prism on the preceding page, it is natural to choose the horizontally aligned surface as the base. To indicate the base we shall use the letter $ G $:
+\fig{vol2b}
+The base surface has area $ 3\cdot4=12 $, and the corresponding height is 2. The volume of the prism equals the base surface area multiplied by the height:
+\alg{
+	V &= \colb{3\cdot 4} \cdot 2 \\
+	&= \colb{G}\cdot 2\\
+	&= 24
+}
+\reg[Volumee of a rectangular prism II]{
+	\fig{vol2d}
+	\[ \text{volume}=G\cdot \text{height} \]
+}
+\info{Grunnflata eller grunnflatearealet?}{
+	In the above text, we first let $ G $ denote the base surface, and later we let $ G $ denote the \textsl{base surface area}. In this book the term \textit{base surface} is so strongly connected to the \textsl{base surface area} that we will let the same symbol denote them both, leaving the reader to differ them from the context of use.
+}
+
+
 \end{document}
 
