@@ -39,7 +39,7 @@ Please make contact if you want to contribute to this project. Contributions esp
 - Join the project's [discord server](https://discord.gg/jz9mPjkCNb) to discuss the content of the books.
 - Translating the books into other languages than Norwegian
 - Proofreading text and calculations
-- Adding problems to the sections. Make sure that problems you provide are not in conflict with any copyrights. Authors of problems that are comprehensive or unique will be credited.
+- Adding problems to the sections. Make sure that problems you provide are not in conflict with any copyrights.
 
 The complete file structure is available on GitHub (press the button _View on GitHub_ on the top of this page)
 
