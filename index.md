@@ -4,7 +4,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - **First Principles of Math (FP)**<br/>
   Math theory for secondary school and high school.
 - **Applied Mathematics 1 (AM1)** <br/>
-  Applications of the math introduced in MB.
+  Applications of the math introduced in FP.
 - **Theoretical mathematics 1 (TM1)** <br/>
   Math theory for high level high school courses.
 - **Teoretisk matematikk 2 (TM2)** <br/>
