@@ -1,7 +1,6 @@
 \input{../../doc}
-\input{../bm}
 \input{../../preamb}
-
+\input{../bm}
 
 \begin{document}
 \section{Monotoniegenskaper}
@@ -27,8 +26,8 @@ Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \o
 \reg[\monder \label{monder}]{
 Gitt $ f(x) $ deriverbar på intervallet $ [a, b] $.
 \begin{itemize}
-\item Hvis $ {f'\geq0} $ for $ {x\in[a, b]} $, er $ f $ voksende for $ x\in(a, b) $
-\item Hvis $ {f'\leq0} $ for $ {x\in[a, b]} $, er $ f $ avtagende for $ x\in(a, b) $
+\item Hvis $ {f'\geq0} $ for $ {x\in(a, b)} $, er $ f $ voksende for $ x\in[a, b] $
+\item Hvis $ {f'\leq0} $ for $ {x\in(a, b)} $, er $ f $ avtagende for $ x\in[a, b] $
 \end{itemize}
 Hvis henholdsvis $ \geq $ og $ \leq $ kan erstattes med $ > $ og $ < $, er $ f $ strengt voksende/avtagende. 
 } \regv
@@ -49,17 +48,17 @@ Fortegnsskjemaet illustrerer følgende:
 	\item Siden $ f'=(x-2)(x-6) $, er \vspace{-5pt}
 	\begin{center}
 		\begin{tabular}{l}
-			$ f'\geq0 $ når $ {{x\in[0, 2]} \cup (6, 8]} $ \br
+			$ f'\geq0 $ når $ {{x\in(0, 2)} \cup (6, 8)} $ \br
 			$ f'=0 $ når $ {x\in\{2, 6\}} $ \br
-			$ f'\leq0 $ når $ x\in[2, 6]$
+			$ f'\leq0 $ når $ x\in(2, 6)$
 		\end{tabular}
 	\end{center}
 \end{itemize}
 Dette betyr at
 \begin{center}
 	\begin{tabular}{l}
-		$ f $ er voksende når $ x\in(0, 2) \cup (6, 8) $ \br
-		$ f $ er avtagende når $ x\in(2, 6)$
+		$ f $ er voksende når $ x\in[0, 2] \cup [6, 8] $ \br
+		$ f $ er avtagende når $ x\in[2, 6]$
 	\end{tabular}
 \end{center}
 }
