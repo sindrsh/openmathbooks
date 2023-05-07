@@ -16,7 +16,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 **English versions**
 - [FP](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=share_link) <br/>
 
-**Norwegian versions**
+**Norwegian versions (bokmål)**
 - [Matematikkens byggesteiner (MB) (bokmål)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
   <br/> Grunnleggende teori innen matematikk i grunnskole og VGS-fagene 1P og 2P.
 - [Anvendt matematikk 1 (AM1) (bokmål)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing) 
@@ -28,6 +28,13 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [Anvendt matematikk 2 (AM2) (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
   <br/> Anvendelser av matematikken presentert i TM1 og TM2. 
 - [Pensumoversikt for grunnskole (trinnvis), 1P, 2P, 1T, R1 og R2](https://github.com/sindrsh/openmathbooks/blob/main/ekstra/pensum/pensum.pdf)
+
+
+**Norwegian versions (nynorsk)**
+- [Matematikkens byggesteiner (MB) (bokmål)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
+  <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
+- [Anvendt matematikk 1 (AM1) (bokmål)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
+  <br/>  Anvendingar av matematikken presentert i MB.
 
 ## Roadmap
 - Translating all books into English
