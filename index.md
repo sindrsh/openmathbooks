@@ -51,6 +51,10 @@ Example: If a school named _Plato’s Acadamy_ makes an edit to ‘First Princip
 
 Also, the school should inform OpenMathBooks that a new edition has been made.
 
+## Printing
+The books can easily be adaptet for printing. Choose your preferred printing company, and the project leader of 
+OpenMathBooks will assist you for free in getting you copies.
+
 ## Contact
 sindre.heggen@gmail.com
 
