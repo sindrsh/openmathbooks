@@ -7,14 +7,15 @@ real a = 5;
 real s = 3;
 real t = -3;
 real k = sqrt(s^2+t^2);
-real c = (s+t-sqrt(s^2+t^2))/2;
+k = 1/sqrt(2)*(s-t);
+real c = (s+t-k)/2;
 
 pair f(real x){
-  return (x, a*(s-x)*(t-x)-a*s*t);
+  return (x, a*(x-s)*(x-t)+(s-t)^2*a/4);
 }
 
 pair g(real x){
-  return (x, -a*(s-x+k)*(t-x+k));
+  return (x, -a*(x-s-k)*(x-t-k));
 }
 
 draw(graph(f,t,s), blue);
@@ -31,3 +32,4 @@ dott(B, "$ B $", E);
 dott(C, "$ C $", NE);
 dott(D, "$ D $" , NW);
 dott(Ep, "$ E $", NE);
+write(abs(A-C), 2k);

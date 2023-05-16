@@ -56,9 +56,10 @@
 \contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{124}{section.7.5}%
 \contentsline {subsubsection}{Injektive funksjoner}{124}{subsubsection*.76}%
 \contentsline {subsubsection}{Omvendte funksjoner}{124}{subsubsection*.78}%
-\contentsline {chapter}{Vedlegg A-F}{129}{chapter*.80}%
-\contentsline {subsubsection}{Den deriverte som motivajon}{133}{subsubsection*.85}%
-\contentsline {subsubsection}{Undersøking av grenseverdien}{133}{subsubsection*.86}%
-\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{136}{subsubsection*.87}%
+\contentsline {section}{Oppgaver}{129}{section*.80}%
+\contentsline {chapter}{Vedlegg A-F}{131}{chapter*.81}%
+\contentsline {subsubsection}{Den deriverte som motivajon}{135}{subsubsection*.86}%
+\contentsline {subsubsection}{Undersøking av grenseverdien}{135}{subsubsection*.87}%
+\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{138}{subsubsection*.88}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{144}{chapter*.90}%
+\contentsline {chapter}{Indeks}{146}{chapter*.91}%
