@@ -17,7 +17,7 @@ dv(Ep, B, t.C, "$v$", sc=0.2);
 mksq2(t.C, t.B);
 
 draw(t.C--Ep, dotted);
-draw(Ep--B, dotted);
+draw(O--Ep--B, dotted);
 draw(t.A--t.B--t.C--cycle);
 draw(O--B--C--D--O);
 dott(Ep, "$E$", N);
