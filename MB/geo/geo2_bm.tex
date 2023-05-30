@@ -141,7 +141,7 @@ Når man tar utgangspunkt i en grunnlinje og en høgde, er arealformlene for et 
 	\[ A=\pi\cdot 5^2 =25\pi \]
 }
 \newpage
-\fork{\ref{arsirk} \arsirk}{
+\fork{\ref{arsirk} \arsirk}{ \label{arsirkforkl}
 	I figuren under har vi delt opp en sirkel i 4, 10 og 50 (like store) sektorer, og lagt disse bitene etter hverandre.
 	\fig{tri19}
 	\fig{tri19a}
@@ -153,6 +153,30 @@ Når man tar utgangspunkt i en grunnlinje og en høgde, er arealformlene for et 
 	Arealet  $ A $ til ''rektangelet'', altså sirkelen, blir da
 	\[ A\approx g h \approx \pi r\cdot r = \pi r^2 \]
 }
+\newpage
+\reg[\arsekt \label{arsekten}]{
+Arealet $ A $ til en sektor med radius $ r $ og buelengde $ a $ er
+\[ A= \frac{1}{2}ar \]
+\fig{arsekt}
+}\regv
+
+\fork{\ref{arsekten} \arsekt}{
+På samme måte som vi på side \pageref{arsirkforkl} delte en sirkel inn i et rektangel med sidelengder tilnærmet lik $ r $ og $ \pi r $, kan vi dele en sirkel inn i et ''rektangel'' med sidelengder tilnærmet lik $ r $ og $ \frac{1}{2}a $. Arealet $ A $ til ''rektangelet, altså sektoren, blir da
+\[ A=\frac{1}{2}ar \]
+} \vsk
+
+\reg[\arsektto \label{arsektto}]{
+Arealet $ A $ til en sektor med radius $ r $ og vinkel $ v $ (målt i grader) er
+\[ A=\pi r^2\frac{v}{360^\circ} \]
+} \regv
+\fork{\ref{arsektto} \arsektto}{
+Av \rref{arsekten} har vi at
+\[ A=\frac{1}{2}ar = \pi r^2 \frac{a}{2\pi r}  \]
+hvor $ \frac{a}{2\pi r} $ uttrykker forholdet mellom buelengden til sektoren og omkretsen til en sirkel med radius $ r $. Dette forholdet er også uttrykkt ved $ \frac{v}{360^\circ} $, og dermed er
+$ A=\pi r^2 \frac{v}{360^\circ} $
+}
+
+\newpage
 \reg[\pyt \label{pyt}]{
 	I en rettvinklet trekant er arealet til kvadratet dannet av \\hypotenusen lik summen av arealene til kvadratene dannet av\\ katetene.\regv
 	
