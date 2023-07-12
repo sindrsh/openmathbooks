@@ -35,13 +35,13 @@ void f11(){ label("$15\cdot 6$", sh*M);  }
 
 void f12(){ label("$87\cdot 3$", sh*M);  }
 
-void f13(){ 
-	label("$29\cdot 12$", sh*M);  
+void f13(){
+	label("$29\cdot 12$", sh*M);
 	label("(overslag)", sh*(0.5, 0.25));
 }
 
-void f14(){ 
-	label("$42\cdot 49$", sh*M);  
+void f14(){
+	label("$42\cdot 49$", sh*M);
 	label("(overslag)", sh*(0.5, 0.25));
 	}
 
@@ -63,8 +63,8 @@ void f22(){ label("$1043-167$", sh*M);  }
 
 void f23(){ label("$1712:8$", sh*M);  }
 
-void f24(){ 
-	label("$36\cdot98$", sh*M);  
+void f24(){
+	label("$36\cdot98$", sh*M);
 	label("(overslag)", sh*(0.5, 0.25));
 }
 
@@ -79,9 +79,3 @@ void f28(){ label("$915:5$", sh*M);  }
 void f29(){ label("$468:6$", sh*M);  }
 
 void f30(){ label("$344-85$", sh*M);  }
-
-
-
-
-
-	

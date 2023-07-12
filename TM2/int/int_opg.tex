@@ -1,5 +1,6 @@
-\input{../../../doc}
-\input{../../../preamb}
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
 
 \begin{document}
 	
@@ -88,8 +89,8 @@ Relasjonen mellom to funksjoner $ f(x) $ og $ g(x) $ og en konstant $ d $ er at
 \textbf{a)} Ta det for gitt at $ f $ og $ g $ er som vist på figuren under.
 \begin{figure}
 \centering
-\includegraphics[scale=0.9]{../../fig/int6a}\quad
-\includegraphics[scale=0.9]{../../fig/int6b}
+\includegraphics[scale=0.9]{../fig/int6a}\quad
+\includegraphics[scale=0.9]{../fig/int6b}
 \end{figure}
 Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \,dx=\int\limits_a^b g\,dx -(b-a)d  \]
 \textbf{b)} Bekreft likheten i oppgave a) ved integrasjon.
@@ -98,7 +99,7 @@ Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \,dx=\int\limits
 Under vises grafen til $ F(x) $ og $ f(x) $. $ F $ er en antiderivert av $ f $.
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.9]{../../fig/faropg}\\
+	\includegraphics[scale=0.9]{../fig/faropg}\\
 	\raggedright
 \end{figure}
 Forklar hvorfor arealet av det oransje området er like stort som arealet av det grønne området.
@@ -125,7 +126,11 @@ Bruk definisjonen fra (\ref{bint}) til å vise at
 \textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
 \end{comment}
 
-
+\grubop{opgfunklen}
+Gitt en funksjon $ f(x) $ integrerbar på intervallet $ [a, b] $. Vis at \\lengden $ l $ til grafen til $ f $ er
+\[ l=\int_{a}^{b} \sqrt{1+g^2}\,dx \]
+hvor $ g(x)=f'(x) $.
+\fig{opgfunklen}
 
 \begin{comment}
 	\subsection*{GeoGebra-oppgaver}
