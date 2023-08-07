@@ -1,28 +1,28 @@
 import graph;
 
 // Postscripts
-   
+
 void mktcy(real y, string nm="", position pos=EndPoint, real x=0){
-    draw((x,y), (0.1cm,0) --(-0.1cm,0), L=Label(nm, position=pos));    
-    }   
+    draw((x,y), (0.1cm,0) --(-0.1cm,0), L=Label(nm, position=pos));
+    }
 
 void mktc(real x, string nm="", position pos=EndPoint, real y=0, pen p=black){
     draw((x,y), (0,0.1cm) --(0,-0.1cm), L=Label(nm, position=pos,p=p));
-    }   
+    }
 
 void xaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false, real tc=1){
     draw((a*aex,0) -- (b*bex,0), L=Label(l,
     position=EndPoint), arrow=Arrow(TeXHead));
-    
+
     if (tck){
 		int N = floor((b-a)/tc);
 		for (int i=0; i<= N; ++i){
-			real x = a+i*tc; 
+			real x = a+i*tc;
 			if (x!= 0){
 				mktc(x, format(x));} // For . istedenfor , skriv:
 									  		// mktc(i*tc, format(i*tc));
     	}
-    
+
     }
 }
 void yaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false, real tc=1){
@@ -36,13 +36,13 @@ void yaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false
 				mktcy(y, format(y));} // For . istedenfor , skriv:
 									  		// mktc(i*tc, format(i*tc));
     	}
-    
-    }    
+
+    }
 }
 
 void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
 	int nx = floor(abs((A.y-A.x)/dx));
-	int ny = floor(abs((B.y-B.x)/dy)); 
+	int ny = floor(abs((B.y-B.x)/dy));
 	for (int i=0; floor(A.x) + i*dx<= floor(A.y); ++i){
 		draw((A.x + i*dx, B.x)--(A.x + i*dx, B.y), p);
 }
@@ -51,3 +51,16 @@ void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
 }
 }
 
+void mk_endbar(real f(real x), real x1, real dx=1, bool leftbar=true){
+  path p = graph(f, x1, x1+dx);
+  real l = 0.02cm;
+  path brc = (2,-5)*l--(0,-5)*l--(0, 5)*l--(2, 5)*l;
+  if (leftbar){
+    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*p, x1)))*brc, blue);
+  }
+  else {
+    brc = rotate(180)*brc;
+    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*p, x1)))*brc, blue);
+  }
+
+}

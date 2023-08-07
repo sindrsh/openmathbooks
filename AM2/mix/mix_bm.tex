@@ -17,18 +17,35 @@ Du ønsker å spare penger i en bank som gir 2\,\% månedlig rente. Du sparer ve
 \item Sett opp et uttrykk $ P(n) $ som viser hvor mye penger du har i banken når du starter på $ n $-te måned med sparing. Innskuddet i \textit{n}-te måned skal tas med.
 }
 \newpage
+
+\op{opganubevis}
+Gitt et annuitetslån (se \am)  med lånebeløp $ L_0 $, årlig rente $ r\% $, og nedbetalingstid $ t $. Lånet skal nedbetales med et årlig terminbeløp $ T $. 
+\abc{
+\item La $ L_n $ være resterende lånebeløp etter $ n $-te nedbetaling.\\ Forklar hvorfor 
+\[ L_n=(1+r)L_{n-1}-T \]
+\item Finn en formel for terminbeløpet $ T $, uttrykt ved $ L_0 $, $ t $ og $ r $.
+}
+Annuitetslån blir ofte forklart med utgangspunnkt i det vi her skal kalle \textit{spareperspektivet} og \textit{realverdiperspektivet}: \os
+
+\st{
+\textbf{Spareperspektivet}\\
+Vi tenker oss at utlåner oppretter en sparekonto med $ r\% $ årlig rente. I $ t $ år tilføres sparekontoen et årlig innskudd $ T $. Dette skal gi samme resultat som hvis $ L_0 $ hadde blitt satt på sparekonto umiddelbart og forrentet i $ t $ år.
+} 
+
+\st{
+\textbf{Nåverdiperspektivet} \\
+Året før nedbetalingen starter setter vi som basisår, og vi tenker at kroneverdien har økt, og vil øke, med $ r\% $ hvert år etter basisåret. Summen av realverdiene til alle terminbeløp skal da tilsvare $ L_0 $.
+}
+\abcs{3}{
+\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og forklar hva de to sidene i likningen beskriver ut ifra spareperspektivet.
+\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og lag en likning som beskriver nåverdiperspektivet.
+}
+
 \op{opganu}
 \tagop{
 \#rekker \#øknonomi \# programmering
 }
-Si at du låner $ 1\,500\,000 $ kroner av en bank. Lånet er et annuitetslån (se \am) med 3\% årlig rente, og lånet skal betales ned i løpet av 20 år med årlige fradrag og renter. For å beregne terminbeløpet $ x $ kan man tenke som følger:\os
-\st{
-	Tenk deg at din bank sparer penger i en annen bank, som tilbyr 3\% årlig sparerente. Da skal banken ende opp med det samme sparebeløpet ved begge disse tilfellene:
-	\begin{itemize}
-		\item I 20 år tilføres sparekontoen et årlig innskudd på $ x $ kroner.
-		\item 1\,500\,000 kroner settes på sparekonto og forrentes i 20 år.
-	\end{itemize}
-}
+Si at du låner $ 1\,500\,000 $ kroner av en bank. Lånet er et annuitetslån (se \am) med 3\% årlig rente, og lånet skal betales ned i løpet av 20 år med årlige fradrag og renter.
 \abc{
 \item Finn verdien til terminbeløpet $ x $.
 \item Lag et script som printer terminbeløp, avdrag og renter for hele nedbetalingstiden, og som bekrefter at svaret ditt fra a) er rett.
