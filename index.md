@@ -1,7 +1,7 @@
 ## OpenMathBooks
 
 OpenMathBooks is a collection of free math books ranging from elementary level to precalculus level. The collection includes the following books
-- **First Principles of Math (FP)**<br/>
+- **First Principles of Math (FP)** <br/>
   Math theory for secondary school and high school.
 - **Applied Mathematics 1 (AM1)** <br/>
   Applications of the math introduced in FP.
@@ -60,7 +60,7 @@ Also, the school should inform OpenMathBooks that a new edition has been made.
 
 ## Printing
 The books can easily be adaptet for printing. Choose your preferred printing company, and the project leader of 
-OpenMathBooks will assist you for free in getting you copies.
+OpenMathBooks will assist you for free in getting your copies.
 
 ## Contact
 sindre.heggen@gmail.com
