@@ -21,6 +21,7 @@
 \contentsline {chapter}{\numberline {3}Funksjoner}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Vekstfart, fart og akselerasjon}{22}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Blandede oppgaver}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Oppgaver med tall og situasjoner fra virkelig-heten}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Praktiske oppgaver}{34}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Eksamensoppgaver}{34}{section.4.3}%
+\contentsline {section}{\numberline {4.1}Oppgaver med tall og situasjoner fra virkeligheten}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Teoretiske utvidelser}{35}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Praktiske oppgaver}{36}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Eksamensoppgaver}{36}{section.4.4}%
