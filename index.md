@@ -31,9 +31,9 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 
 
 **Norwegian versions (nynorsk)**
-- [Matematikkens byggesteiner (MB) (bokmål)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
+- [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
   <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
-- [Anvendt matematikk 1 (AM1) (bokmål)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
+- [Anvendt matematikk 1 (AM1)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
   <br/>  Anvendingar av matematikken presentert i MB.
 
 ## Roadmap
