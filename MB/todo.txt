@@ -5,19 +5,18 @@
 - legg til volum i _eng
 - legg til omvendt pyt i _eng
 
-/rek 
+/rek
 - legg til kap i _eng
 
-/lig 
+/lig
 - legg til ulikskap i _eng
 
-/funk 
+/funk
 - fiks oppgaver på nynorsk
 - legg til eks[4] paa engelsk
+- legg til teori om ikke-lineære grafer
+- opg: skisser grafen til f(x)=1/x.
+
 
 /brok
 - legg til blanda tal pa engelsk
-
-
-
-

@@ -41,26 +41,27 @@
 \contentsline {chapter}{\numberline {5}Grenseverdier og kontinuitet}{91}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Grenseverdier}{92}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Kontinuitet}{94}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Derivasjon}{96}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Definisjoner }{97}{section.6.1}%
-\contentsline {subsubsection}{Linearisering av en funksjon}{99}{subsubsection*.53}%
-\contentsline {section}{\numberline {6.2}Derivasjonsregler}{101}{section.6.2}%
-\contentsline {subsubsection}{Den deriverte funksjonen}{101}{subsubsection*.55}%
-\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{103}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{104}{subsection.6.2.2}%
-\contentsline {section}{Oppgaver}{111}{section*.65}%
-\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{113}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{114}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{117}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Asymptoter}{123}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Konvekse og konkave funksjoner}{125}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{126}{section.7.5}%
-\contentsline {subsubsection}{Injektive funksjoner}{126}{subsubsection*.77}%
-\contentsline {subsubsection}{Omvendte funksjoner}{126}{subsubsection*.79}%
-\contentsline {section}{Oppgaver}{131}{section*.81}%
-\contentsline {chapter}{Vedlegg A-F}{134}{chapter*.82}%
-\contentsline {subsubsection}{Den deriverte som motivajon}{138}{subsubsection*.87}%
-\contentsline {subsubsection}{Undersøking av grenseverdien}{138}{subsubsection*.88}%
-\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{141}{subsubsection*.89}%
+\contentsline {section}{Oppgaver}{96}{section*.52}%
+\contentsline {chapter}{\numberline {6}Derivasjon}{98}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definisjoner }{99}{section.6.1}%
+\contentsline {subsubsection}{Linearisering av en funksjon}{101}{subsubsection*.54}%
+\contentsline {section}{\numberline {6.2}Derivasjonsregler}{103}{section.6.2}%
+\contentsline {subsubsection}{Den deriverte funksjonen}{103}{subsubsection*.56}%
+\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{105}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{106}{subsection.6.2.2}%
+\contentsline {section}{Oppgaver}{113}{section*.66}%
+\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{116}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{117}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{120}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Asymptoter}{126}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Konvekse og konkave funksjoner}{128}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{129}{section.7.5}%
+\contentsline {subsubsection}{Injektive funksjoner}{129}{subsubsection*.78}%
+\contentsline {subsubsection}{Omvendte funksjoner}{129}{subsubsection*.80}%
+\contentsline {section}{Oppgaver}{134}{section*.82}%
+\contentsline {chapter}{Vedlegg A-F}{137}{chapter*.83}%
+\contentsline {subsubsection}{Den deriverte som motivajon}{141}{subsubsection*.88}%
+\contentsline {subsubsection}{Undersøking av grenseverdien}{141}{subsubsection*.89}%
+\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{144}{subsubsection*.90}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{149}{chapter*.92}%
+\contentsline {chapter}{Indeks}{152}{chapter*.93}%
