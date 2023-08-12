@@ -90,8 +90,31 @@ Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er 
 \item \cmds{abs( <x> )}
 {Finner lengden til et objekt \textit{x}.
 }
+
+\item \cmds{acos( <x> )}
+{
+I algebrafelt: Gir vinkelen på intervallet $ [0^\circ, 180^\circ] $ som har cosinus-verdi $ x $. \os
+I CAS: Gir vinkelen på intervallet $ [0, \pi] $ som har cosinus-verdi $ x $.
+}
+
+\item \cmds{asin( <x> )}
+{
+I algebrafelt: Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har sinus-verdi $ x $.\os
+
+I CAS: Gir vinkelen på intervallet $ [-\frac{\pi}{2}, \frac{\pi}{2}] $ som har sinus-verdi $ x $.
+}
+
+\item \cmds{atan( <x> )}
+{
+I algebrafelt: Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har tangens-verdi $ x $.\os
+
+I CAS: Gir vinkelen på intervallet $ [-\frac{\pi}{2}, \frac{\pi}{2}] $ som har sinus-verdi $ x $.
+}
+
 \item \cmds{Asymptote( <Funksjon> )}
 {Finner asymptotene til en funksjon.}
+
+
 
 \item \cmds{Avstand( <Punkt>, <Objekt> )}
 {Gir avstanden fra et punkt til et objekt.}
@@ -112,6 +135,7 @@ Knappene velges fra rullemenyer på verktøylinjen. Nummereringen av menyene er 
 \item \cmds{Funksjon ( <Funksjon>, <Start>, <Slutt> )}
 {Tegner en funksjon på et gitt intervall.}
 
+\newpage
 \item \cmds{Høyde( <Objekt> )}
 {Gir avstanden fra toppunkt til grunnflate i et objekt.\\ 
 	\mers{Avstanden har retning, og derfor kan den noen ganger være negativ. Tallverdien er den geometriske høyden.}}

@@ -1,0 +1,6 @@
+print("La oss regne ut a*b")
+a_str = input("a = ")
+b_str = input("b = ")
+a = float(a_str)
+b = float(b_str)
+print("a*b = ", a*b)

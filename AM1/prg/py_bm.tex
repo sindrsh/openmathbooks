@@ -71,7 +71,7 @@ Selv om datamaskiner er ekstremt raske til å utføre utregninger, har de en beg
 }
 \newpage
 \subsection{Egne funksjoner}
-I Pyton  kan man enkelt lage sine egne funksjoner. En funksjon kan utføre handlinger, og den kan \outl{returnere} (return på engelsk) ett eller flere objekt. Den kan også ta imot argumenter. Koden vi skriver inni en funksjon blir bare utført hvis vi \outl{kaller} (call på engelsk) på funsjonen. \regv
+Ved å bruke metoden \pymet{def} kan man lage sine egne funksjoner. En funksjon kan utføre handlinger, og den kan \outl{returnere} (return på engelsk) ett eller flere objekt. Den kan også ta imot argumenter. Koden vi skriver inni en funksjon blir bare utført hvis vi \outl{kaller} (call på engelsk) på funksjonen. \regv
 
 \pythonut{func.py}{
 Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:  Hello! \\
@@ -215,6 +215,41 @@ Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi 
 3\\
 4\\
 }
+
+\subsection{\pymet{input()}}
+Vi kan bruke funksjonen \pymet{input()} til å skrive inn tekst mens skriptet kjører:
+\python{input0.py}
+Teksten vi har skrevet inni \pymet{input()} i skriptet over er teksten vi ønsker vist foran teksten som ønskes innskrevet. Linje 2 i denne koden vil ikke kjøres før en tekst er innskrevet.
+\pythonut{input0.py}{
+Skriv inn tekst her: OK\\
+OK
+}
+\newpage
+Objektet gitt av en \pymet{input()}-funksjon vil alltid være av typen \pytype{str}. Man må alltid passe på å gjøre om objekter til rett type:
+\pythonut{input1.py}{
+La oss regne ut a*b\\
+a = 3.7\\
+b = 4\\
+a*b = 14.8
+}
+\subsection{Feilmeldinger}
+Påstand: Alle programmerere vil erfare at skriptet ikke kjører fordi vi ikke har skrevet koden på rett måte. Dette kalles en \outl{syntax error}. Ved syntax error vil man få beskjed om på hvilken linje feilen befinner seg, og hva som er feil. De vanligste feilene er
+\begin{itemize}
+\item \textbf{Å glemme innrykk når man bruker metoder som \pymet{def}, \pymet{for}, \pymet{while}, og \pymet{if} }
+\pythonut{erindent.py}{
+line 5, in <module>\\
+print("a*b er større enn 48000")\\
+ \^{} \\
+IndentationError: expected an indented block after 'if' statement on line 4
+}
+\item \textbf{Å utføre operasjoner på typer det ikke gir mening for}
+\pythonut{ertype.py}{
+line 2, in <module> \\
+b\_opphøyd\_i\_andre = b**2\\
+TypeError: unsupported operand type(s) for ** or\\ pow(): 'str' and 'int'\\
+}
+\end{itemize}
+
 \newpage
 
 

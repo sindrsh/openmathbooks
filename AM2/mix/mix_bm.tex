@@ -16,30 +16,7 @@ Du ønsker å spare penger i en bank som gir 2\,\% månedlig rente. Du sparer ve
 \item Skriv rekken som viser hvor mye penger du har i banken når du starter på 5. måned med sparing. Innskuddet i 5. måned skal tas med.
 \item Sett opp et uttrykk $ P(n) $ som viser hvor mye penger du har i banken når du starter på $ n $-te måned med sparing. Innskuddet i \textit{n}-te måned skal tas med.
 }
-\newpage
 
-\op{opganubevis}
-Gitt et annuitetslån (se \am)  med lånebeløp $ L_0 $, årlig rente $ r\% $, og nedbetalingstid $ t $. Lånet skal nedbetales med et årlig terminbeløp $ T $. 
-\abc{
-\item La $ L_n $ være resterende lånebeløp etter $ n $-te nedbetaling.\\ Forklar hvorfor 
-\[ L_n=(1+r)L_{n-1}-T \]
-\item Finn en formel for terminbeløpet $ T $, uttrykt ved $ L_0 $, $ t $ og $ r $.
-}
-Annuitetslån blir ofte forklart med utgangspunnkt i det vi her skal kalle \textit{spareperspektivet} og \textit{realverdiperspektivet}: \os
-
-\st{
-\textbf{Spareperspektivet}\\
-Vi tenker oss at utlåner oppretter en sparekonto med $ r\% $ årlig rente. I $ t $ år tilføres sparekontoen et årlig innskudd $ T $. Dette skal gi samme resultat som hvis $ L_0 $ hadde blitt satt på sparekonto umiddelbart og forrentet i $ t $ år.
-} 
-
-\st{
-\textbf{Nåverdiperspektivet} \\
-Året før nedbetalingen starter setter vi som basisår, og vi tenker at kroneverdien har økt, og vil øke, med $ r\% $ hvert år etter basisåret. Summen av realverdiene til alle terminbeløp skal da tilsvare $ L_0 $.
-}
-\abcs{3}{
-\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og forklar hva de to sidene i likningen beskriver ut ifra spareperspektivet.
-\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og lag en likning som beskriver nåverdiperspektivet.
-}
 \newpage
 \op{opganu}
 \tagop{
@@ -168,6 +145,7 @@ hvor $ f $ angir cm over sjøkartnull\footnote{Sjøkartnull er som regel satt ti
 \newpage
 \section{Teoretiske utvidelser}
 \op{opgintpi}
+\tagop{\#programmering \#lengden til en graf}
 Gitt funksjonen
 \[ f(x)=\sqrt{1-x^2} \]
 \abc{
@@ -175,8 +153,59 @@ Gitt funksjonen
 \item I \tmto\, er formelen for lengden $ l $ til en graf gitt. Forklar hvilket tall $ l $ representerer når $ f $ og $ g $ er som gitt i denne oppgaven, $ a=-1 $ og $ b=1 $.
 \item Bruk en numerisk metode til for å finne en tilnærming for $ l $. Drøft på forhånd hvilke hensyn som må tas for å unngå at skriptet feiler ved kjøring.
 }
+\newpage
+
+\op{opganubevis}
+\tagop{\#følger og rekker \#annuitetslån}
+Gitt et annuitetslån (se \am)  med lånebeløp $ L_0 $, årlig rente $ r\% $, og nedbetalingstid $ t $. Lånet skal nedbetales med et årlig terminbeløp $ T $. 
+\abc{
+	\item La $ L_n $ være resterende lånebeløp etter $ n $-te nedbetaling.\\ Forklar hvorfor 
+	\[ L_n=(1+r)L_{n-1}-T \]
+	\item Finn en formel for terminbeløpet $ T $, uttrykt ved $ L_0 $, $ t $ og $ r $.
+}
+Annuitetslån blir ofte forklart med utgangspunnkt i det vi her skal kalle \textit{spareperspektivet} og \textit{realverdiperspektivet}: \os
+
+\st{
+	\textbf{Spareperspektivet}\\
+	Vi tenker oss at utlåner oppretter en sparekonto med $ r\% $ årlig rente. I $ t $ år tilføres sparekontoen et årlig innskudd $ T $. Dette skal gi samme resultat som hvis $ L_0 $ hadde blitt satt på sparekonto umiddelbart og forrentet i $ t $ år.
+} 
+
+\st{
+	\textbf{Nåverdiperspektivet} \\
+	Året før nedbetalingen starter setter vi som basisår, og vi tenker at kroneverdien har økt, og vil øke, med $ r\% $ hvert år etter basisåret. Summen av realverdiene til alle terminbeløp skal da tilsvare $ L_0 $.
+}
+\abcs{3}{
+	\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og forklar hva de to sidene i likningen beskriver ut ifra spareperspektivet.
+	\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og lag en likning som beskriver nåverdiperspektivet.
+}
+\newpage
+\op{utfrskrasjfunk}
+\tagop{\#rasjonale funksjoner \#funksjonsdrøfting \#digital graftegning}
+Definer funksjonen
+\[ \frac{ax-b}{x-c} \]
+i en digital graftegner (GeoGebra). Beskriv hva som skjer med grafen til $ f $ når du øker/minker én av $ a $, $ b $ og $ c $ på intervallet $ [-3, 3] $.
 
 \section{Praktiske oppgaver}
+\op{sprint}
+\tagop{\#regresjon \#derivasjon \# funksjonsdrøfting}
+\begin{itemize}
+\item Sett opp 11 kjegler med 10 meters avstand. 
+\item Ta video av at du springer 100-meteren så fort du kan. 
+\item Bruk videoen og regresjon til å finne en funksjon som gir en god beskrivelse av 100-meteren din. 
+\item Hva var gjennomsnittsfarten din?
+\item Hva var toppfarten din?
+\item På hvilket tidspunkt hadde du størst akselerasjon?
+\end{itemize}
+
+\op{friksjonsvinkel}
+\tagop{\#trigonometri}
+Sett en gjenstand på enden av en planke, og vipp enden varsomt oppover fram til gjenstanden starter å renne nedover planken. Vinkelen hvor bevegelsen starter kalles \outl{friksjonsvinkelen}. Finn friksjonsvinkelen for tre forskjellige gjenstander. Undersøk om friksjonsvinkelen endres hvis gjenstandene og/eller planken vætes. Friksjonsvinkelen skal du finne bare ved å måle hvor høyt planken er vippet, og lengden til planken.
+
+
+\op{finnvolumvedintegrasjon}
+\tagop{\#integrasjon \#regresjon \#omdreiningslegemer}
+Finn forskjellige gjenstander det går an å helle vann i. Bruk regresjon og teorien om omdreiningslegemer til å finne en tilnærming for volumet til gjenstanden. Undersøk hvor godt tilnærmingen svarer til virkeligheten.
+
 \newpage
 \section{Eksamensoppgaver}
 \eksop{R1V23D1}{r1v23d1opg4}
