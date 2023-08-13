@@ -16,18 +16,25 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 **English versions**
 - [FP](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=share_link) <br/>
 
-**Norwegian versions (bokmål)**
-- [Matematikkens byggesteiner (MB) (bokmål)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
+**Norwegian versions**
+*Bokmål*
+- [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
   <br/> Grunnleggende teori innen matematikk i grunnskole og VGS-fagene 1P og 2P.
-- [Anvendt matematikk 1 (AM1) (bokmål)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing) 
+- [Anvendt matematikk 1 (AM1)](https://drive.google.com/file/d/1dwh-TgFX1BxHFfOOOk6WVjYAX56Q9LOZ/view?usp=sharing) 
   <br/>  Anvendelser av matematikken presentert i MB.
-- [Teoretisk matematikk 1 (TM1) (bokmål)](https://drive.google.com/file/d/1JJQBkm5yuZ1IaA2lHR1_lQgkqQe6WUgP/view?usp=sharing)
+- [Teoretisk matematikk 1 (TM1)](https://drive.google.com/file/d/1JJQBkm5yuZ1IaA2lHR1_lQgkqQe6WUgP/view?usp=sharing)
   <br/> Matematikk for VGS-fagene 1T og R1.
-- [Teoretisk matematikk 2 (TM2) (bokmål)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing) 
+- [Teoretisk matematikk 2 (TM2)](https://drive.google.com/file/d/1x3XitDqHoekOpJlexEd6hCjNZI9pcckH/view?usp=sharing) 
   <br/> Matematikk knytt til VGS-faget R2. 
-- [Anvendt matematikk 2 (AM2) (bokmål)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
+- [Anvendt matematikk 2 (AM2)](https://drive.google.com/file/d/1AyJLyizhYbwCte_vJyA3pVZh8Ro-h3oF/view?usp=sharing)
   <br/> Anvendelser av matematikken presentert i TM1 og TM2. 
 - [Pensumoversikt for grunnskole (trinnvis), 1P, 2P, 1T, R1 og R2](https://github.com/sindrsh/openmathbooks/blob/main/ekstra/pensum/pensum.pdf)
+
+*Nynorsk*
+- [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
+  <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
+- [Anvendt matematikk 1 (AM1)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
+  <br/>  Anvendingar av matematikken presentert i MB.
 
 *Løsningsforslag*
 - [MB](https://drive.google.com/file/d/1qJJM4RgKIeLdEyHZvLRSqoIG-i8-S-5x/view?usp=sharing)
@@ -35,18 +42,16 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [TM1](https://drive.google.com/file/d/1RmyiFVRzzM_rRid4VbQPET4m-KiFCe9G/view?usp=drive_link)
 - [TM2](https://drive.google.com/file/d/1xC0KpkSck813rKZOcDTGTx5EX9Rz6wV-/view?usp=sharing)
 
-**Norwegian versions (nynorsk)**
-- [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
-  <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
-- [Anvendt matematikk 1 (AM1)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
-  <br/>  Anvendingar av matematikken presentert i MB.
-
-*Bøkene med dysleksivennlig skrifttype*
+- *Bøkene med dysleksivennlig skrifttype*
 - [MB](https://drive.google.com/file/d/1yDf3uzRn-ok3sDxltLclRkMHYiNqy5nu/view?usp=sharing)
 - [AM1](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
 - [TM1](https://drive.google.com/file/d/1sZk2E8o9Gh0WP8sA7-g2iYKLKbqN2Uh0/view?usp=sharing)
 - [TM2](https://drive.google.com/file/d/1cuv1Q0pcjaGOE3leghl_hQPV_gEKcU4A/view?usp=sharing)
 - [AM2](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
+
+
+
+
 
 
 ## Roadmap
