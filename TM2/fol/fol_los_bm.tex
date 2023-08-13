@@ -1,0 +1,333 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\opr{eksar}\\
+\textbf{a)}
+Vi bruker den eksplisitte fomelen for en aritmetisk følge, og får:
+\alg{
+	a_4 &= a_1 + d(i-1) \\
+	30 &= 3 +d(4-1) \\
+	27 &= 3d \\
+	9 &= d
+}
+\textbf{b)}
+Vi observerer at:
+\alg{
+	a_5-a_3 &= a_1+d(5-1)-(a_1+d(3-1)) \\
+	a_5-a_3&= 2d \\
+	26-14 &= 2d \\
+	6 &= d
+}
+Videre har vi at:\vs
+\alg{
+	a_3 &= a_1+2d \\
+	14 &= a_1 +12 \\
+	2 &= a_1
+}
+
+\opr{eksgeo}\\
+\textbf{a)}
+Vi har at:
+\[ k=\frac{a_2}{a_1}= \frac{1}{3}\]
+Dermed er det eksplisitte uttrykket gitt som:
+\alg{
+a_n &= \frac{1}{2}\cdot\left(\frac{1}{3}\right)^{i-1} \\
+&= \frac{1}{2}\cdot\frac{1}{3^{i-1}} \\
+&= \frac{1}{2}\cdot3^{1-i}
+}
+\textbf{b)}
+Vi vet at:
+\algv{a_1\cdot k^{4-1}&= a_4 \\
+5 \cdot k^3 &= 40 \\
+k^3 &= 8 \\
+k &= 2
+}
+Altså får vi:
+\[ a_n = 5\cdot2^{i-1} \]
+\newpage
+\opr{sum10ar}\\
+\textbf{a)} Vi observerer at rekka er en aritmetisk rekke med $ a_1= 7$ og $ d= 6$. For å finne summen trenger vi verdien til $ a_{10} $:
+\alg{a_{10} &= 7+6(10-1) \\
+&= 61}
+Summen $ S_{10} $ blir da:
+\alg{
+S_{10} &= 10\cdot\frac{7+61}{2}\\
+&= 340
+}
+\textbf{b)} Se \textsl{a}.
+
+\opr{ar435} \\
+Rekken er aritmetisk med \y{a_1=8} og \y{d=3}. Vi har at:
+\alg{
+n\frac{8+(8+3(n-1))}{2} &= 435 \\
+3n^2 +13n-870 &= 0 
+}
+Vi bruker \textit{abc}-formelen og får at $ {n\in\lbrace15, -\frac{58}{3}\rbrace} $, hvorav $ {n=15} $ er eneste mulige svar. 
+
+\opr{opgarekfraeks}
+Dette er den aritmetiske rekken fra eksempelet på side \pageref{arrekeks}. I formelen for $ S_n $ setter vi inn det eksplisitte uttrykket for $ a_n $, og får at	
+\alg{ S_n &= n\frac{a_1+a_1+d(n-1)}{2} \\
+	2\cdot903 &= n(3+3+4(n-1))\\
+	0 &= 6n+4n^2-4n - 2\cdot903 \\
+	0 &= 2n^2+n-903
+}
+Denne ligningen har løsningene $ {n\in \big\lbrace21, -\frac{43}{2} \big\rbrace}$. Vi søker et positivt heltall, derfor er $ {n=21} $ eneste mulige løsning.
+
+\opr{opggerekfraeks}
+Dette er den geometriske rekken fra eksempelet på side \pageref{gerekeks}. Vi lar $ n $ være antall ledd, og får at
+\alg{
+	3\cdot\frac{1-2^n}{1-2} &= 93 \\
+	2^n -1 &= \frac{93}{3} \br
+	2^n &= 31+1 \\
+	2^n &= 2^5 \\
+	n &= 5
+}
+
+\opr{viseks3} \\
+\vs
+\algv{
+3\cdot9\cdot27\cdot\ldots \cdot 3^n &= 3^1\cdot3^2\cdot3^3\ldots\cdot3^n \\
+&= 3^{1+2+\ldots+ n} \\
+&=3^{n\frac{1+n}{2}} \\
+&= 3^{\frac{1}{2}n(n+1)}
+}
+Som er det vi skulle vise.
+
+\opr{geon} \\
+Rekken er geometrisk, med $ {a_1=3} $ og $ {k=4} $. For å finne summen må vi vite hvor mange ledd rekken består av:
+\alg{
+3 \cdot 4 ^{n-1}=768 \\
+4^{n-1} &= 256 \\
+4^{n-1} &= 4^4\\
+n-1 &= 4 \\
+n &= 5
+}
+
+\opr{geoa12} \\
+\textbf{a)}
+Summen $ S_n $ er gitt som:
+\algv{
+S_n &= 2\cdot\frac{1-3^k}{1-3} \\
+&= 2\cdot\frac{1-3^k}{-2} \\
+&= 3^k-1
+}
+\textbf{b)} \algv{S_3&=3^3-1 \\
+&= 26}
+
+\textbf{c)} \algv{
+3^n-1 &= 728\\
+3^n &= 729\\
+3^n &= 3^6\\
+n &= 6
+}
+
+
+\opr{opggerekuendeks}
+Dette er gen geometriske rekken fra eksempelet på side \pageref{gerekuendeks}.
+\abc{
+\item Hvis rekka har en endelig sum $ {S_\infty=\frac{3}{2}} $, er
+\alg{
+	\frac{x}{x-1}=\frac{3}{2} \\
+	2x &= 3(x-1) \\
+	x &=3
+}
+Summen av rekka er altså $ \frac{3}{2} $ når $ {x=3} $. \vsk
+
+\item Skal summen bli $ -1 $, må $ x $ oppfylle følgende ligning:
+\alg{
+	\frac{x}{x-1}&= -1 \\
+	x &= -(x-1) \\
+	x &= \frac{1}{2}
+}
+Men $ {x=\frac{1}{2} }$ oppfyller ikke kravet om at rekka er konvergent (den er divergent) for dette valget av $ x $. Altså er det ingen verdier for $ x $ som oppfyller ligningen.
+}
+
+\newpage
+\opr{1over4}\\
+\textbf{a)} Dette er en uendelig geometrisk rekke med $ k=\frac{1}{4} $. Siden $ |k|<1 $ er rekka konvergent.
+
+\textbf{b)} Siden rekka er uendelig geometrisk og konvergent, har rekka en endelig sum $ S_\infty $ gitt ved:
+\alg{
+S_\infty&=\frac{a_1}{1-k} \br
+&= \frac{4}{\frac{3}{4}}\\
+&= \frac{16}{3}
+}
+
+\begin{comment}
+	\opr{stav}\\
+Dette blir en uendelig geometrisk rekke på formen:
+\[ 1+\frac{1}{10}+\frac{1}{100}+... \]
+Siden $ k=\frac{1}{10} $ er $ |k|<1 $ og derfor er rekka konvergent. Summen $ S_\infty $ er da gitt som:
+\alg{
+S_\infty&=\frac{a_1}{1-k} \\
+&= \frac{1}{1-\frac{1}{10}} \\
+&= \frac{1}{\frac{9}{10}} \br
+&= \frac{10}{9}
+}
+Altså blir lengden $ \frac{10}{9} $ meter.
+\end{comment}
+\opr{099er1} \\
+\textbf{a)} $ {\frac{9}{10}+\frac{9}{10^2}+\frac{9}{10^3}+\ldots} $. Dette er en geometrisk rekke med $ {a_1 = \frac{9}{10}} $ og $ k=10^{-1} $.
+\textbf{b)} Fordi $ {|k|<1 }$ er rekken konvergent. Den uendelige summen er derfor gitt som:
+\algv{
+S_\infty &= \frac{\frac{9}{10}}{1-\frac{1}{10}} \\
+&= \frac{\frac{9}{10}}{\frac{9}{10}} \\
+&= 1
+}
+Summen av rekken blir 1, altså er \y{0.999...=1} (!).
+
+\opr{geokonv} \\
+\textbf{a)} Vi observerer at ${ k=x-2} $. Skal rekka konvergere må altså $ {|x-2|<1} $. Skal dette være sant må vi ha at:
+\alg{
+-1 &< x-2 \\
+1 &< x
+}
+og videre at:
+\algv{
+x-2 &< 1 \\
+x < 3
+}
+Derfor må vi ha at $ {1<x<3} $.
+\newpage
+\textbf{b)} \algv{
+\frac{\frac{1}{3}}{1-(x-2)}&=\frac{2}{9} \br
+\frac{1}{3(3-x)} &= \frac{2}{9} \br
+\frac{2}{18-6x} &= \frac{2}{9} \br
+18-6x &= 9 \\
+x &= \frac{3}{2}
+}
+$  {x=\frac{3}{2}} $ ligger i konvergensområdet, og er derfor et gyldig svar.
+
+\textbf{c)} \algv{
+\frac{\frac{1}{3}}{1-(x-2)}&=\frac{1}{6} \br
+\frac{1}{3(3-x)} &= \frac{1}{6} \br
+3(3-x) &= 6 \\
+x &= 1
+}
+Men $  {x=1} $ ligger ikke i konvergensområdet, og er derfor ikke et gyldig svar. $ S_n=\frac{1}{6} $ har derfor ingen løsning.
+
+\opr{ind}\\
+\textbf{a)} Vi sjekker påstanden for $ {n=1}$:
+\alg{1& = \frac{1(1+1)}{2} \\
+1&= 1}
+Påstanden er sann for $ {n=1} $, vi går derfor videre til å sjekke påstanden for $ {n=k+1} $. Når vi antar at formelen stemmer fram til ledd, $ k $ får vi:
+\algv{
+1+2+3+\ldots+(k+1) &= \frac{(k+1)(k+1+1)}{2} \br
+\frac{k(k+1)}{2}+k+1 &= \frac{(k+1)(k+2)}{2} \br
+\frac{k(k+1)+2(k+1)}{2} &= \\
+\frac{(k+1)(k+2)}{2} &= \frac{(k+1)(k+2)}{2}
+}
+Dermed har vi vist det vi skulle.
+
+\textbf{b)} Vi sjekker påstanden for $ {n=1} $:
+\alg{1 &= 2^n-1 \\
+1 &= 1
+}
+Påstanden er sann for $ n=1 $, vi går derfor videre til å sjekke påstanden for $ n=k+1 $. Når vi antar at formelen stemmer fram til ledd $ k $, får vi:
+\algv{
+1+2 +2^2 +...+ 2^{k+1-1}&= 2^{k+1}-1 \\
+2^k-1+ 2^k &= \\
+2\cdot 2^k-1 &= \\
+2^{k+1}-1 &= 2^{k+1}-1
+}
+Dermed har vi vist det vi skulle.
+
+\textbf{c)} 
+Vi sjekker påstanden for $ {n=1}$:
+\alg{4 &= \frac{4}{3}(4^1-1) \\
+4&= \frac{4}{3}\cdot3\\
+4&=4}
+Påstanden er sann for $ {n=1} $, vi går derfor videre til å sjekke påstanden for $ {n=k+1} $. Når vi antar at formelen stemmer fram til ledd, $ k $ får vi:
+\alg{
+4+4^2+4^3+\ldots+4^{k+1}&=  \frac{4}{3}(4^{k+1}-1) \\
+\frac{4}{3}(4^k-1)+4^{k+1} &=  \\
+\frac{4^{k+1}-1+3\cdot 4^{k+1}}{3} &= \\
+\frac{4}{3}(4^{k+1}-1)&=\frac{4}{3}(4^{k+1}-1)
+}
+Dermed har vi vist det vi skulle.
+
+\textbf{d)} Vi sjekker påstanden for $ n=1 $:
+\alg{1 &= \frac{1(2\cdot1+1)(1+1)}{6} \\
+&= \frac{6}{6} \\
+1&= 1
+}
+Påstanden er sann for $ n=1 $, vi går derfor videre til å sjekke påstanden for $ n=k+1 $. Når vi antar at formelen stemmer fram til ledd $ k $ får vi:
+\alg{
+1^2 + 2^2 + 3^3...+ (k+1)^2 &= \frac{(k+1)(2(k+1)+1)((k+1)+1)}{6} \br
+\frac{k(2k+1)(k+1)}{6} + (k+1)^2 &= \frac{(k+1)(2k+3)(k+2)}{6} \br
+\frac{k(2k+1)(k+1)+6(k+1)^2}{6} &= \br
+\frac{(k+1)(k(2k+1)+6(k+1)}{6}&= \br
+\frac{(k+1)(k(2k+1)+2k+4k+6)}{6} &= \br
+\frac{(k+1)(k(2k+3)+4k+6)}{6} &= \br
+\frac{(k+1)(k(2k+3)+2(2k+3)}{6} &= \br
+\frac{(k+1)(k+2)(2k+3)}{6} &= \frac{(k+1)(2k+3)(k+2)}{6} 
+}
+Og dermed har vi vist det vi skulle. 
+
+\textsl{Merk}: Faktorisering er en treningsak, men observer hvordan vi i overgangen mellom linje 5 og 6 framkalte leddet $ 2k+3 $. Hvis man ikke kommer i mål med ren faktorisering, kan man selvfølgelig etter linje 4 vise at $ k(2k+1)+6(k+1)=(2k+3)(k+2) $ ved å skrive ut uttrykkene på begge sider.
+
+\opr{div3} \\
+Vi sjekker påstanden for $ {n=1}$:
+\alg{1(1^2+2) &= 1\cdot3
+}
+Påstanden er sann for $ {n=1} $, vi går derfor videre til å sjekke påstanden for $ {n=k+1} $. Når vi antar at formelen stemmer for $ n=k $, får vi:
+\alg{
+(k+1)((k+1)^2+2)&= (k+1)(k^2+2k+3) \\
+&= (k+1)(k(k+2)+3)
+}
+Antakelsen vår sier at $ k(k+2) $ er delelig med 3, noe tallet 3 også er. Faktoren $ (k(k+2)+3) $ er derfor delelig med 3, mens $ (k+1) $ er et heltall. Uttrykket i ligningen over er derfor delelig med 3.
+ 
+\opr{factorials} \\
+\textbf{a)} Vi sjekker påstanden for $ {n=1}$:
+\alg{
+\frac{(2\cdot 1)!}{(2\cdot1-1)!} &= 2^1\cdot1!\br
+\frac{1\cdot2}{1} &=  2 \\
+2 &= 2
+}
+Påstanden er sann for $ {n=1} $, vi går derfor videre til å sjekke påstanden for $ {n=k+1} $. Når vi antar at formelen stemmer fram til ledd $ k $, får vi:
+\alg{
+\frac{1\cdot2}{1}\cdot\frac{1\cdot2\cdot3\cdot4}{1\cdot2\cdot3}\cdot
+\ldots\cdot \frac{(2(k+1))!}{(2(k+1)-1)!}&=2^{k+1} (k+1)! \br
+2^k k! \frac{(2(k+1))!}{(2k+1)!} &= \br
+2^k k! \frac{(2k+1)!(2k+2)}{(2k+1)!} &= \br
+2^{k+1}k!(k+1) &= \br
+2^{k+1}(k+1)! &= 2^{k+1}(k+1)!
+}
+Dermed har vi vist det vi skulle.
+
+\textbf{b)} Venstresiden kan enklere skrives som:
+\[ 2\cdot4\cdot6\cdot\ldots\cdot2(k+1) \]
+For $ {n=1} $:
+\algv{
+	2 &= 2^1\cdot1!\\
+	2 &= 2
+}
+For $ {n=k+1} $:
+\algv{
+	2\cdot4\cdot6\cdot\ldots\cdot2(k+1)&=2^{k+1} (k+1)! \br
+	2^k k!\cdot2(k+1) &=  \\
+	2^{k+1}(k+1)!&= 2^{k+1} (k+1)!
+}
+\newpage
+\grubr{opgsumnkvad}
+\textbf{a)} Summen av de $ n $ første oddetallene tilsvarer $ n^2 $ (se f. eks \ref{parodd}b), derfor kan vi skrive kvadratene som summer av oddetall.
+
+\textbf{b)} Vi får $ n $ enere, $ {n-1} $ treere, $ {n-2} $ femmere og så videre. Den isolerte $ n $-en på høyresiden representerer de $ n $ enerene, mens summen
+representerer bidragene fra alle de andre oddetallene (skriv opp hvis du syns det er vanskelig å se). 
+
+\textbf{c)} \vs
+\alg{
+\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (n-i)(2i+1) \\
+\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (2in+n-2i^2-i ) \\
+\sum\limits_{i=1}^n i^2+\sum\limits_{i=1}^n 2i^2 &= n+\sum\limits_{i=1}^n ((2n-1)i+n ) \\
+\sum\limits_{i=1}^n 3i^2 &= n+n^2+(2n-1)\frac{n(n+1)}{2} \\
+\sum\limits_{i=1}^n i^2 &= \frac{2n(1+n)+(2n-1)n(n+1)}{6} \\
+&= \frac{(2n+(2n-1)n)(n+1)}{6} \\
+&= \frac{n(2+(2n-1))(n+1)}{6} \\
+&= \frac{n(2n+1)(n+1)}{6}
+}
+
+
+\end{document}

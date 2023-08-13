@@ -1,0 +1,243 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+
+
+\opr{closest}
+\algv{\vv{AB} &= [3-1 , 2-(-1) , 1-(-2)]\\
+&= [2, 3, 3] \\
+\left|\vv{AB}\right|&= \sqrt{20}\\
+&\\
+\vv{AC} &= [0-1 , 5-(-1) , 6-(-2)]\\
+&= [-1, 6, 8] \\
+\left|\vv{AC}\right|&= \sqrt{101}
+}
+Siden $ {\sqrt{101}>\sqrt{20}} $ er $ B $ nærmest $ A $.\vsk
+
+\opr{lenfakt}\\
+\textbf{a)}
+\algv{
+	|\vec{u}|&=\sqrt{(ad)^2 + (bd)^2 + (bd)^2}\\
+	&= \sqrt{a^2 d^2 + b^2 d^2 + c^2 d^2}\\
+	&= \sqrt{d^2(a^2+b^2+c^2)}\\
+	&= d\sqrt{a^2 + b^2 + c^2}
+}
+\textbf{b)} Som i opg. a) kan vi også her skrive
+\[ |\vec{u}|=\sqrt{d^2(a^2+b^2+c^2)}\]
+men siden $ d^2 $ er et positivt tall, mens $ d $ er negativ, har vi at:
+\[ d\neq \sqrt{d^2} \]
+istedenfor er:
+\[ |d|= \sqrt{d^2} \]
+derfor kan vi skrive:
+\[ |\vec{u}|=|d|\sqrt{a^2 + b^2 + c^2} \]
+\opr{skalfaktor}
+\algv{
+\vec{u}\cdot\vec{v} &= [ad, bd, cd]\cdot[eh, fh, gh]\\
+&= adeh+bdfh+cdgh \\
+&= dh(ae+ bf+ cg)
+}
+
+\opr{skalproo}\\
+\textbf{c)}
+\algv{
+\vec{a}\cdot\vec{b}&= \left[\dfrac{1}{5}, \dfrac{3}{5}, \dfrac{1}{5}\right]\cdot\vec{b}=[512, -128, 64] \br
+&= \frac{1}{5}[1, 3, -1]\cdot 64[8, -2, 1]\br
+&= \frac{64}{5}(8-6-1) \br
+&= \frac{64}{5}
+}
+
+
+\opr{finntheta} 
+Finn vinkelen mellom $ \vec{a} $ og $ \vec{b} $ når:
+
+\textbf{a)} $ \vec{a}=[ 5 ,-5,  2]$ og $ \vec{b}=[ 3 ,-4 , 5] $
+\algv{
+|\vec{a}| &= \sqrt{5^2 +(-5)^2 +2^2} \\
+&= \sqrt{54} \\
+&= \sqrt{9\cdot6} \\
+&= 3\sqrt 6\\
+& \\
+|\vec{b}| &= \sqrt{3^2+(-4)^2 + 5^2} \\
+&= \sqrt{50}\\
+&= \sqrt{25\cdot2}\\
+&= 5\sqrt{2}
+}
+\algv{
+	\vec{a}\cdot\vec{b} &= [ 5 ,-5,  2]\cdot\vec{b}=[ 3 ,-4 , 5] \\
+	&=15+20+10\\
+&= 45 }
+\algv{\cos \theta &= \frac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}\br
+&= \frac{45}{3\sqrt{6}\cdot5\sqrt{2}} \br
+&= \frac{3}{2\sqrt{3}}\br
+&= \frac{3\sqrt{3}}{2\sqrt{3}\sqrt{3}} \br
+&= \frac{\sqrt{3}}{2}
+}
+Dette betyr at $ \theta=30^\circ $.
+
+\opr{forkort} \\
+
+\textbf{b)} 
+\algv{
+(\vec{a}+ \vec{b}+\vec{c})^2 &= (\vec{a}+ \vec{b}+\vec{c})\cdot(\vec{a}+ \vec{b}+\vec{c}) \\
+&= \vec{a}^{\,2}+\vec{a}\cdot\vec{b}+\vec{a}\cdot\vec{c}+\vec{b}\cdot\vec{a}+\vec{b}^{\,2}+\vec{b}\cdot\vec{c}+\vec{c}\cdot\vec{a}+\vec{c}\cdot\vec{b}+\vec{c}^{\,2} \\
+&= 1^2+0+ \vec{a}\cdot\vec{c}+0+2^2+0+\vec{c}\cdot\vec{a}+0+5^2 \\
+&= 2(15+\vec{a}\cdot\vec{c})
+}
+
+
+\opr{torto}\\
+\textbf{b)} Vi krever at:
+\alg{\vec{u}\cdot\vec{v} &= 0 \\ 
+[-5, -1, 6] \cdot[t, t^2, 1]&= 0 \\
+-5t -t^2 +6 &= 0
+}
+Siden $ (-2)\cdot(-3) = 6 $ og $ -2+(-3)=-5 $ kan vi skrive at:
+\[ (t-2)(t-3)=0 \]
+Kravet er dermed oppfylt hvis $ t\in\lbrace2, 3\rbrace $. 
+
+\opr{sjekkpar}
+\textbf{a)} Vi regner fort ut at forholdet mellom både førstekomponentene og andrekomponenten er 2, men at forholdet mellom tredjekomponentene er $ -\frac{1}{2} $. Vektorene er derfor ikke parallelle.
+
+\textbf{b)} Vi observerer at:
+\[ \vec{b}=\frac{3}{7}[-3, 5, 2] \]
+dermed er $ \vec{b} $ et multiplum av $ \vec{a} $ og da er $ \vec{a}||\vec{b} $.
+
+\opr{finntpar}\\
+\textbf{a)} Vi bruker forholdet mellom første- og tredjekomponententene for å sette opp en ligning for $ t $:
+\alg{-\frac{t+3}{3}&=-\frac{16}{8} \br
+t+3 &= 6 \\
+t &= 3
+}
+Forholdet mellom andrekomponentene blir da:
+\alg{
+\frac{1-3}{1}&= -2
+}
+Forholdet er $ -2 $ for alle komponentene når $ t=3 $ og da er $ \vec{a}||\vec{b} $.
+
+\textbf{b)} Også her bruker vi første- og tredjekomponententene for å sette opp en ligning for $ t $, fordi vi da får isolert det kvadratiske leddet:
+\alg{
+	-\frac{t^2+2}{3}&= -\frac{(5t^2+3)}{8} \\
+	8t^2 + 16 &= 15 t^2 + 9 \\
+	7 x^2 &= 7 \\
+	x &= \pm 1
+}
+Når $ t=1 $ er forholdet mellom både førstkomponentene og tredjekomponentene lik
+\[ -\frac{1^2+2}{3}=-1 \]
+Og forholdet mellom andrekomponentene er:
+\[ \frac{1}{1}=1 \]
+For $ t=1 $ er altså $ \vec{a} $ og $ \vec{b} $ ikke parallelle. Vi ser derimot fort at forholdet mellom hver av komponentene blir $ -1 $ når $ t=-1 $, for dette valget av $ t $ er derfor $ \vec{a}||\vec{b} $.
+
+\opr{finnsogt}
+$\vec{u}=[4, 6+s, -(s+t)] $ og $ \vec{v}=\left[\frac{12}{7}, \frac{2t-9s}{7}, \frac{3s-t}{7}\right] $
+Vi starter med å observere at:
+\[ \vec{v}=\frac{1}{7}[12, 2t-9s, 3s-t] \]
+Vi definerer $ \vec{w}= [12, 2t-9s, 3s-t] $. Skal vi ha at $ \vec{u}||\vec{v} $, må vi også hat at $ \vec{u}||\vec{w} $. Siden forholdet mellom førstekomponentene til $ \vec{u} $ og $ \vec{w} $ er 3, krever vi at $ \vec{u}=3\vec{w} $. Da kan vi sette opp følgende ligningssystem:
+\alg{
+2t-9s &= 3(6+s) \tag{I}\label{3I}\br
+3s-t &= -3(s+t) \tag{II}\label{3II}
+}
+Av \ref{3II} får vi at:
+\alg{
+3s-t &= -3s-3t \\
+2t &= -6s \\
+t &= -3s 
+}
+Setter vi $ t=-3s $ inn i (\ref{3II}) får vi:
+\alg{
+2(-3s) -9s &= 18+3s\\
+-6s -9s &=  18 +3s \\
+-18s &= 18 \\
+s&=-1
+}
+Altså er $ \vec{u} $ og $ \vec{v} $ parallelle hvis $ s=-1 $ og $ t=-3s=3 $. 
+
+\opr{vis22det}
+\alg{
+\left|\begin{matrix}
+	ae & be \\
+	cf & df
+\end{matrix}\right|&= aedf-becf \\
+&= ef(ad-bc) \\
+&= ef\left|\begin{matrix}
+	a & b \\
+	c & d
+\end{matrix}\right|
+i}
+
+\opr{arparo}
+
+\textbf{b)} Arelet er gitt som tallverdien til $ \det(\vec{a}, \vec{b}) $:
+\alg{
+\det(\vec{a}, \vec{b}) &= \left|\begin{matrix}
+	-2 & 4 \\
+	24 & -16
+\end{matrix}\right|\\	&= 2\cdot8 \left|\begin{matrix}
+-1 & 2 \\
+3 & -2
+\end{matrix}\right| \\
+&= 16((-1)\cdot(-2)-2\cdot3) \\
+&= 16\cdot(-4) \\
+&= -64
+}
+Arealet er altså 64.
+
+\opr{abparvekpro0}\\
+Hvis $ \vec{u}||\vec{v} $ betyr dette at hvis vi skriver $ \vec{u}=[a, b, c] $, så kan vi skrive $ \vec{v}=d[a, b, c] $. Vi får da at:
+\alg{
+\vec{u}\times\vec{v}&= \left|\begin{matrix}
+	\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+	a & b & c \\
+	da & db & dc
+\end{matrix}\right| \\
+&= d\vec{e}_x \left|\begin{matrix}
+	b & c \\
+	b & c
+\end{matrix}\right|-d\vec{e}_y \left|\begin{matrix}
+a & c \\
+a & c
+\end{matrix}\right|+d\vec{e}_x \left|\begin{matrix}
+a & b \\
+a & b
+\end{matrix}\right| \\
+&= 0
+}
+Resultatet fra \ref{vis22det} er her brukt i andre linje for å forenkle regningen av $ 2\times2 $ determinantene.
+
+\opr{tetraro}\\
+\textbf{a)} Arealet til grunnflaten tilsvarer lengden av vektoren $ \vec{a}\times\vec{b} $:
+\alg{
+	\vec{a}\times\vec{b}  &= 
+\left|\begin{matrix}
+	\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+	2 & -2 & 1 \\
+	3 & -3 & 1
+\end{matrix}\right| \\
+&= [(-2)\cdot1-1\cdot(-3), -(2\cdot1-1\cdot3), 2\cdot(-3)-(-2)\cdot3] \\
+&= [-2+3, -(2-3), -6+6] \\
+&= [1, 1, 0] \\
+& \\
+|\vec{a}\times\vec{b} |&= \sqrt{1^2+1^2} \\
+&= \sqrt{2}
+}
+\textbf{b)} Av (??) vet vi at volumet $ V $ er gitt som:
+\[ V = \frac{1}{6}|\vec{a}\times\vec{b} \cdot \vec{c}| \]
+Vi har at:
+\algv{
+\vec{a}\times\vec{b} \cdot \vec{c} &= [1, 1, 0]\cdot[2, -3, 2] \\
+&= 2-3
+&= -1
+}
+Og dermed er $ V=\frac{1}{6} $.
+
+\opr{parfinnh}\\
+\textbf{a)} Diagonalen til grunnflaten kan uttrykkes som vektoren $ \vec{a}+\vec{b} $, og lengden blir da (husk at $ |\vec{u}|^2 = \vec{u}^{\,2} $):
+\alg{
+|\vec{a}+\vec{b}| &= \sqrt{\left(\vec{a}+\vec{b}\right)^2} \\
+&= \sqrt{\vec{a}^{\,2}+\vec{a}\cdot\vec{b}+\vec{b}^{\,2}} \\
+&= \sqrt{3^2 +0 +4^2} \\
+&= \sqrt{25} \\
+&= 5
+}
+\end{document}

@@ -1,0 +1,64 @@
+\input{../doc}
+\input{../preamb}
+\input{bm}
+
+
+\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+
+% Name of content in TOC
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
+\begin{document}
+	
+	\import{kap0/}{framside}
+	
+	{\footnotesize \tableofcontents}
+	\newpage
+	
+	\chapter{Digitale verktøy}
+	\newpage
+	\import{dig/}{ggb_bm}
+	\import{dig/}{py_bm}
+	
+	\chapter{Numeriske metoder}
+	\newpage
+	\import{num/}{num_bm}
+	\import{num/}{num_opg_bm}	
+	
+	\chapter{Funksjoner}
+	\newpage
+	\import{funk/}{funk_bm}
+	
+	\begin{comment}
+	\chapter{Differensialligninger}
+	\newpage
+	\import{dif/}{dif_bm}
+	\end{comment}
+	
+	\chapter{Blandede oppgaver}
+	\newpage
+	\import{mix/}{mix_bm}	
+	\newpage
+	
+	\begin{comment}
+	\chapter*{Vedlegg} 
+	\newpage
+	\addcontentsline{toc}{chapter}{Vedlegg}
+	\import{vdl/}{tekster_bm}
+	\end{comment}
+	
+	
+	
+	
+	
+
+
+	
+	
+\end{document}
+

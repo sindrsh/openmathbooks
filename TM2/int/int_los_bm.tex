@@ -1,0 +1,229 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\opr{antiderint} \textbf{a)} $ f'(x)=20x^4 $ \textbf{b)}  $ f(2)-f(0)=128 $ \vsk
+
+\opr{Fogf} $ F(4)-F(1)=8 $ \vsk
+
+\opr{ecos2x}\\
+\textbf{a)} Vi bruker kjerneregelen to ganger. Først setter vi $ u(x) = \cos^2 x $ og $ g(u)=e^{u} $. Deretter setter vi $ h(x)=\cos x $ og $ i(h)=h^2 $. Vi får da at:
+\alg{
+u'(x)&= i'(h)h'(x) \\
+&= 2h \cdot(-\sin x) \\
+&= -2\cos x \sin x 
+}
+Videre har vi da at:
+\alg{
+f'(x)&= g'(u)u'(x) \\
+&= e^u \cdot( -2\cos x \sin x ) \\
+&= -2\cos x \sin x\, e^{\cos^2 x}
+}
+\textbf{b)} Av (\ref{sin2x}) har vi at $ 2\cos x \sin x = \sin(2x) $, og derfor kan vi skrive:
+\alg{
+\int -\sin (2x)\, e^{\cos^2 x}\,dx &= \int -2\cos x \sin x\, e^{\cos^2 x}\,dx \\
+&= \int f'(x)\,dx \\
+&= f(x)+C \\
+&= e^{\cos^2 x}+ C
+}
+Overgangen mellom andre og tredje linje følger av definisjonen av det ubestemte integralet. \vsk
+
+\opr{visantider}\\
+\textbf{a)} Vi må vise at $ \left(x^2 e^x \right)'$ tilsvarer uttrykket i integranden.
+\alg{\left(x^2 e^x \right)'&= 2xe^x+x^2e^x \\
+	&= xe^x(2+x)
+}
+\\
+\textbf{b)} Vi må vise at $ \left(e^{\cos x+x^2}\right)' $ tilsvarer uttrykket i integranden:
+\alg{
+\left(e^{\cos x+x^2}\right)' &= e^{\cos x+x^2}\cdot(\cos x+x^2)' \\
+&= e^{\cos x+x^2}(-\sin x + 2x) \\
+&= -e^{\cos x+x^2}(\sin x - 2x) 
+}
+
+\opr{avcos} 
+Av (\ref{ker2pioverP}) vet vi at perioden $ \cos x $ er $ 2\pi $. Dette betyr at hvis vi for en konstant $ c $ har at $ a=c $, så er $ b=a+2\pi $. Integralet blir da:
+\alg{
+	\int\limits_{c}^{c+2\pi} (\cos x + d)\,dx &= \Big[\sin x+dx\Big]_c^{c+2\pi} \\
+	&=\Big[\sin(c+2\pi)+d(c+2\pi)-(\sin c+dc)\Big] \\
+	&= 2d\pi
+}
+Mellom andre og tredje linje har vi brukt det faktum at $ \sin(c+2\pi)=\sin c $. Gjennomsnittet kan altså skrives som:
+\[ \frac{1}{(c+2\pi)-c}\cdot 2d\pi = d \]
+
+\opr{bytvaropg} \\
+\textbf{a)} Vi setter $ u=x^2 $ og $ g(u)=e^u $. Siden $ u'=2x $ får vi:
+\alg{\int xe^{x^2}\,dx &=\frac{1}{2}\int 2xe^{x^2} \\
+	&= \frac{1}{2}\int u'e^{u}\,dx \\
+	&= \frac{1}{2}\int e^u\,du\\
+&= \frac{1}{2}e^u + C \\
+&= \frac{1}{2}e^{x^2}+C
+}
+\textbf{b)} Vi starter med å finne det ubestemte integralet ved å bruke bytte av variabel. Vi setter $ u=2x^2-3$ og $ g(u)=e^u $, siden $ u'=4x $ får vi:
+\alg{
+\int\limits 8xe^{2x^2-3}\,dx &=2\int 4xe^{2x^2-3}\,dx \\
+&= 2\int u'e^u\,dx \\
+&= 2 \int e^u \, du \\
+&= 2e^u + C
+}
+Det bestemte integralet blir derfor:
+\alg{
+\left[2e^{2x^2-3}\right]_1^2&= 2\left[e^{2\cdot2^2-3}-e^{2\cdot 1-3}\right]\\
+&= 2\left[e^5-e^{-1}\right]
+}
+\textbf{c)} Vi setter $ {u=\cos x} $ og $ {g(u)=u} $. Siden $ u'=-\sin x $, får vi:
+\alg{
+	\int \frac{\sin x}{\cos x} \, dx &= -\int \frac{u'}{u}\, dx \\ 
+	&= \int \frac{1}{u}\, du \\
+	&= -\ln u + C \\
+	&= -\ln(\cos x) + C \\
+}
+\textbf{d)} Vi setter $ u=\cos x $ og $ g(u)=\frac{1}{u^3} $. Siden $ u'=-\sin x $, får vi:
+\alg{
+\int\frac{\sin x}{\cos^3 x} \, dx  &= \int \frac{-u'}{u^3} \,dx \\
+&= -\int u^{-3}\, dx \\
+&= \frac{1}{2}u^{-2}+ C
+}
+Siden $ u(0)=\cos 0=1 $ og $ u(\frac{\pi}{3})=\cos\left(\frac{\pi}{3}\right)=2^{-1} $ blir det bestemte integralet:
+\alg{\left[\frac{1}{2}u^{-2}\right]_{1}^{2^{-1}}
+&= \frac{1}{2}\left[(2^{-1})^{-2}-1^{-2}\right] \\
+&= \frac{1}{2}[4-1] \\
+&= \frac{3}{2}
+}
+\textbf{f)} Vi setter $ u=3x^2+4x+3 $ og $ g(u)=\frac{1}{u} $, og får da:
+\alg{
+\int \frac{3x+2}{3x^2 + 4x+3}\,dx &= \frac{1}{2}\int \frac{6x+4}{3x^2+4x+3}\,dx \\
+&= \frac{1}{2}\int \frac{u'}{u}\,dx \\
+&= \frac{1}{2}\int u^{-1}\,du \\
+&= \frac{1}{2}\ln u \\
+&= \frac{1}{2}\ln \left(3x^2+4x+3\right)
+}
+
+\opr{trigint} \\
+Av (\ref{1}) og (\ref{sin2x}) kan vi skrive:
+\[ \int \sin (2x) e^{1-\cos^2 x}\,dx=\int 2\sin x \cos x\, e^{\sin^2 x} \]
+Vi setter så $ u=\sin x $ og $ g(u)=2ue^{u^2} $. Siden $ u'=\cos x $ kan vi skrive:
+\alg{
+\int 2\sin x \cos x\, e^{\sin^2 x}\,dx &= 2\int uu'e^{u^2}\,dx \\
+&= 2\int u e^{u^2}\,dx
+}
+Vi setter nå $ v=u^2 $ og $ h(v)=e^v $. Siden $ v'=2u $ får vi:
+\alg{
+ 2\int u e^{u^2}\,dx &= \int v'e^v\,dx \\
+ &= \int e^v \,dx \\
+ &= e^v + C\\
+ &= e^{u^2}+C \\
+ &= e^{\sin^2 x}+ C
+}
+\opr{delvisintopg}\\
+
+\textbf{b)} Vi setter $ u=\ln x $ og $ v'=x^{\frac{1}{2}} $ og får da at $ u'=x^{-1}$ og $ v = \frac{2}{3}x^{\frac{3}{2}} $:
+\alg{
+\int \sqrt{x}\ln x\,dx &=\int uv'\,dx \\
+&= uv -\int u'v\,dx\\
+&= \ln x \cdot \frac{2}{3}x^{\frac{3}{2}} - \int x^{-1}\cdot\frac{2}{3}x^{\frac{3}{2}} \\
+&= \frac{2}{3}x^{\frac{3}{2}}\ln x - \frac{2}{3}\int x^{\frac{1}{2}} \\
+&= \frac{2}{3}x^{\frac{3}{2}}\ln x - \frac{2}{3}\cdot\frac{2}{3}x^{\frac{3}{2}}+C \\
+&= \frac{2}{9} x^{\frac{3}{2}} (3 \ln x - 2)+C
+}
+
+\textbf{c)}
+Vi setter $ u = \ln x $ og $ v'= x^{-2} $, og får da at $ u'=x^{-1}$ og $ v=-x^{-1} $.
+\alg{
+\int \ln x\,x^{-2}\,dx &=\int uv'\,dx \\
+&= uv -\int u'v\,dx\\
+&= \ln x\, (-x^{-1})-\int x^{-1}(-x)^{-1}\,dx \\
+&= -\frac{\ln x}{x}+\int x^{-2}\,dx \\
+&=  -\frac{\ln x}{x}-\frac{1}{x}+C \\
+&= -\frac{1}{x}(\ln x+1)+ C
+}
+Det bestemte integralet blir da:
+\alg{
+\left[-\frac{1}{x}(\ln |x|+1)\right]_1^e &=
+-\left[\frac{1}{e}(\ln e+1)-\frac{1}{1}(\ln 1+1)\right] \\
+&= -\left[\frac{2}{e}-1\right] \\
+&= 1-\frac{2}{e}
+}
+
+\opr{delvisintopg2}
+Vi setter $ u=\sin x $ og $ v'=\sin x $, og får da at $ u'=\cos x $ og $ v=-\cos x $:
+\alg{
+\int \sin^2 x\,dx &= \sin x(-\cos x)-\int \cos x(-\cos x) \\
+ &= -\sin x \cos x+\int \cos^2 x\,dx \\
+ &= -\sin x \cos x+\int (1-\sin^2 x)\,dx \\
+2\int \sin^2 x\,dx &= -\sin x \cos x+\int 1\,dx \\
+\int \sin^2 x\,dx &= \frac{1}{2}(x-\sin x \cos x)+C
+}
+
+\opr{delbropsopg}
+\textbf{a)}
+Vi starter med å faktorisere nevneren i integranden:
+\[ x^2-5x+6=(x-2)(x-3) \]
+Altså kan vi skrive:
+\alg{
+\frac{13-4x}{x^2-5x+6}&= \frac{A}{x-2}+\frac{B}{x-3} \br
+13-4x&=A(x-3)+B(x-2)
+}
+Når $ x=3 $ får vi:
+\algv{
+13-4\cdot3 &= B(3-2) \\
+1&=B 
+}
+Og når $ x=2 $ får vi:
+\algv{12-4\cdot2&= A(2-3) \\
+5 &= -A \\
+-5 &= A}
+Det ubestemte integralet vi ønsker å løse kan derfor skrives som:
+\alg{
+\int \left(\frac{1}{x-3}-\frac{5}{x-2}\right)\,dx 
+&= \ln (x-3)-5\ln(x-2)+ C
+}
+Det bestemte integralet blir da:
+\alg{
+\Big[\ln |x-3|-5\ln|x-2|\Big]_4^5 &= \ln |5-3|-5\ln|5-2|-(\ln |4-3|-5\ln|4-2|) \\
+&= \ln 2-5\ln 3-\ln 1+5\ln 2 \\
+&= 6\ln 2-5\ln 3
+}
+
+\opr{delbrogpoldiv}
+\se{delbre2}
+
+\opr{kulevolopg}\\
+\textbf{a)}
+Tverrsnittet langs $ x $-aksen blir en sirkel med høyde $ \sqrt{r^2-x^2} $. Tverrsnittsarealet blir derfor
+\alg{
+A(x)&= \pi \sqrt{r^2-x^2}^{\,2} \\
+&= \pi(r^2-x^2)
+}
+\textbf{b)} 
+\algv{
+V &= \int\limits_{-r}^r A(x)\,dx \\
+&= \pi \int\limits_{-r}^r \left(r^2-x^2\right)\,dx \\
+&= \pi\left[xr^2-\frac{1}{3}x^3\right]_{-r}^r \\
+&= \frac{\pi}{3}\left(3r r^2-r^3-(3(-r)r^2-(-r)^3)\right)\\
+&= \frac{\pi}{3}(3r^3-r^3+3r^3-r^3) \\
+&= \frac{4\pi}{3}r^3
+}
+
+\opr{omdropg} \textbf{a)}\\
+Volumet $ V $ er gitt ved ligningen:
+\alg{
+V&=\int\limits_0^1 f^2\,dx \\
+&= \int\limits_0^1 \left(e^x\right)^2\,dx \\
+&= \int\limits_0^1 e^{2x}\,dx
+}
+Vi setter $ u=2x $ og $ g(u)=e^u $, da blir $ u'=2 $:
+\alg{
+\int\limits e^{2x}\,dx &= \frac{1}{2}\int\limits 2e^{2x}\,dx\\
+ &= \frac{1}{2}\int u'e^u\,du \\
+ &= \frac{1}{2}e^u+C
+}
+Siden $ u(0)=0 $ og $ u(1)=2 $ blir det bestemte integralet:
+\alg{
+\left[\frac{1}{2}e^u\right]_0^2 &=\frac{1}{2}\left[e^2-e^0\right]\\
+&= \frac{1}{2}\left[e^2-1\right]
+}
+
+\end{document}

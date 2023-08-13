@@ -1,0 +1,34 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\usepackage{xr}
+\externaldocument{../TM2_bm}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag TM2}}
+\newcommand{\lost}[1]{\section*{Kapittel \ref{#1} \addcontentsline{toc}{chapter}{Kapittel \ref{#1}}\phantomsection }
+	}
+\setlength{\parskip}{11pt}
+\titleformat{\chapter}[display]
+{\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\large}
+\begin{document}
+\allowdisplaybreaks	
+\footnotesize
+\tableofcontents
+\lost{Folgerogrekker}
+\import{../fol/}{fol_los_bm}
+
+\lost{Trigonometri}
+\import{../tri/}{tri_los_bm}
+
+\lost{Vektorerirommet}
+\import{../vek/}{vek_los_bm}
+
+\lost{Romgeometrier}
+\import{../rom/}{rom_los_bm}
+
+\lost{Integrasjon}
+\import{../int/}{int_los_bm}
+
+
+\end{document}

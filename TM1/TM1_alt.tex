@@ -1,0 +1,96 @@
+\input{../doc}
+\input{bm}
+\input{../preamb}
+
+\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
+\begin{document}
+	
+	\import{kap0/}{framside}
+	
+	{\footnotesize \tableofcontents}
+	\newpage
+	
+	\import{cmt/}{cmt_bm}
+	
+	\chapter{Mengder og vilkår} \label{Meng}
+	\newpage
+	\import{meng/}{meng_bm}
+	\import{meng/}{meng_opg_bm}
+	
+	\chapter{Algebra} \label{Alg}
+	\newpage
+	\import{alg/}{alg_bm} 
+	\import{alg/}{alg_opg_bm}
+	
+	\chapter{Geometri} \label{Geo}
+	\newpage
+	\import{geo/}{geo_bm}
+	\import{geo/}{geo_opg_bm}	
+	
+	\chapter{Vektorer} \label{Vek}
+	\newpage
+	\import{vek/}{vek_bm}
+	\import{vek/}{vek_opg_bm}	
+		
+	\chapter{Grenseverdier og kontinuitet} \label{Lim}
+	\newpage
+	\import{lim/}{lim_bm}	
+	\import{lim/}{lim_opg_bm}
+	
+	\chapter{Derivasjon} \label{Derivasjon} \label{Der}
+	\newpage
+	\import{der/}{der_bm}
+	\import{der/}{der_opg_bm}	
+	
+	\chapter{Funksjonsdrøfting} \label{Funk}
+	\newpage
+	\import{inv/}{inv_bm}
+	\import{inv/}{inv_opg_bm}
+	
+	\titleformat{\chapter}[hang]
+	{\normalfont\LARGE\bfseries}{}{}{\vspace{-1cm}\Huge}
+	\chapter*{Vedlegg \ref{vdlfunknavn}-\ref{vdltangent} \label{Tips} \addcontentsline{toc}{chapter}{Vedlegg A-F}}
+	\phantomsection
+	\vspace{20 pt}
+	
+	\import{vedl/}{funknavn_bm}
+	\import{vedl/}{bytvar_bm}
+	\import{vedl/}{sincostan_bm}	
+	\import{vedl/}{ekspfunk_bm}
+	\import{vedl/}{rol_bm}	
+	\import{vedl/}{tan_bm}
+	
+	{\printindex \addtocontents{toc}{\protect\vspace{-5pt}}
+		\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
+	
+	\chapter*{Fasit}
+	\setlength{\parskip}{5pt}
+	\addtocontents{toc}{\protect\vspace{-5pt}}
+	\addcontentsline{toc}{chapter}{Fasit}\phantomsection
+	\import{meng/}{meng_fas}
+	\import{alg/}{alg_fas}
+	\import{geo/}{geo_fas}
+	\import{vek/}{vek_fas}
+	\import{lim/}{lim_fas}
+	\import{der/}{der_fas}
+	\import{inv/}{inv_fas}
+
+	
+	\newpage
+	\section*{Litteratur}
+	Moise, E. E. (1974). \textit{Elementary geometry from an advanced standpoint}. Reading, Addison-Wesley Publishing Company.\vsk
+	
+	Lindstrøm, T. (2006). \textit{Kalkulus} (2. utg). Oslo, Universitetsforlaget AS.\vsk
+	
+	Spivak, M. (1994). \textit{Calculus} (3. utg). Cambridge, Cambridge University Press
+	
+	
+\end{document}
+

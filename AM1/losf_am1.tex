@@ -1,0 +1,48 @@
+\input{../doc}
+\input{../preamb}
+\input{bm}
+
+\usepackage{xr}
+\externaldocument{AM1_bm}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag AM1}}
+\newcommand{\lost}[1]{\section*{Kapittel \ref{#1} \addcontentsline{toc}{chapter}{Kapittel \ref{#1}}\phantomsection }
+	}
+\setlength{\parskip}{11pt}
+\titleformat{\chapter}[display]
+{\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\large}
+\begin{document}
+\allowdisplaybreaks	
+\footnotesize
+\tableofcontents
+
+\lost{Storlogenh}
+%\import{storl/}{storl_lf_bm}
+\newpage
+
+\lost{Statistikk}
+%\import{stat/}{stat_lf_bm}
+\newpage
+
+\lost{BrokAM}
+\import{brok/}{brok_lf_bm}
+\newpage
+
+\lost{Okonomi}
+%\import{oko/}{oko_lf_bm}
+\newpage
+
+\lost{Sannsyn}
+\import{san/}{san_lf_bm}
+\newpage
+
+\lost{LigningerAM}
+\import{lig/}{lig_lf_bm}
+\newpage
+
+\lost{Dig}
+%\import{dig/}{dig_lf_bm}
+\newpage
+
+
+\end{document}

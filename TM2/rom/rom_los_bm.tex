@@ -1,0 +1,161 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\opr{parlinjeo} \se{lirop}
+
+\opr{krysslinj}
+Vi bruker kravet for $ x $ og $ z $-koordinaten for å sette opp et ligningssystem:
+\alg{
+-3-2t &= -7-3s \tag{I} \label{krysI} \\
+1-t &= s \tag{II} \label{krysII}
+}
+Av (\ref{krysII}) har vi et uttrykk for $ s $. Setter vi dette inn i (\ref{krysI}) får vi:
+\alg{
+-3-2t&=-7+3(1-t) \\
+-3-2t&=-7+3-3t \\
+t &=-1
+}
+Altså er $ t=-1 $ og $ s=2 $. For disse verdiene gir begge parameteriseringene punktet $ A=(-1, 1, 2) $.
+
+\opr{finnparplan} \se{plpare}
+
+\opr{finnparplan2} \se{plpare2}
+
+\opr{finnplan} \se{plroe1}
+
+\opr{finnplan2}\\
+\textbf{a)} Av parameteriseringen ser vi at to retningsvektorer må være $ [2, 3, 0] $ og $ [0, 2, -1] $. 
+
+\textbf{b)} En normalvektor for planet er gitt ved vektorproduktet av retningsvektorene:
+\alg{
+\left|\begin{matrix}
+	\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+	2 & 3 & 0 \\
+	0 & 2 & -1
+\end{matrix}\right| &= \vec{e}_x \left|\begin{matrix}
+3 & 0 \\
+2 & -1 
+\end{matrix}\right|-\vec{e}_y \left|\begin{matrix}
+2 & 0 \\
+0 & -1 
+\end{matrix}\right|+\vec{e}_z \left|\begin{matrix}
+2 & 3 \\
+0 & 2 
+\end{matrix}\right| \\
+&= \vec{e}_x (-3-0)-\vec{e}_x(-2-0)+\vec{e}_z(4-0) \\
+&= [-3, -2, 4]  
+}
+Av parameteriseringen ser vi at $ (-4, 2, 1) $ er et punkt i planet, derfor kan vi skrive:
+\alg{
+-3(x-(-4))+2(y-2)+4(z-1)&= 0\\
+-3x-12-2y-4+4z-4&= 0\\
+-3x -2y+4z -20&=0 
+}
+
+\opr{finnplan4} \\
+Vi krever at:\vs
+\alg{
+	(-2, 1, 1)\cdot[3t, 5, t] &= 0 \\
+	-6t+5+t &= 0 \\
+	t &= 1
+}
+Altså er $ [3, 5, 1] $ en retningsvektor for planet. Ligningen til planet blir da:
+\alg{
+3(x-(-2))+5(y-1)+(z-1) &= 0 \\
+3x+5y + z &= 0
+}
+
+\opr{kuleopg} \se{kulee}
+
+\opr{kuleopg2}\\
+\textbf{a)} Vi starter med å skrive de fullstendige kvadratene:
+\alg{
+x^2-6x &= (x^2-3)^2-3^2 \\
+y^2+2y &= (y+1)^2-1^2 \\
+z^2-10z &= (z-5)^2-5^2
+}
+Vi kan derfor skrive:
+\alg{
+(x^2-3)^2+(y+1)^2 +(z-5)^2 -14-9-1-25&= 0 \\
+(x^2-3)^2+(y+1)^2 +(z-5)^2 &= 49 \\
+(x^2-3)^2+(y+1)^2 +(z-5)^2 &= 7^2 
+}
+Altså har kula sentrom i $ S=(3, -1, 5) $ og radius $ r=7 $.
+
+\textbf{b)} Vi setter koordinatene til $ A $ faktoriserte venstresiden av kuleligningen og får:
+\alg{
+(4-3)^2+(1+1)^2 +(6-5)^2 &= 6
+}
+Ligningen over representerer den kvadrerte avstanden mellom $ S $ og $ A $, siden $ 6<49 $ må $ A $ ligge inni kula.
+
+For $ B $ får vi:
+\[ (-6-3)^2+(-4+1)^2 +(1-5)^2 = 106 \]
+Siden $ 106>49 $ ligger $ B $ utenfor kula.
+
+\opr{toparllin}\\
+\textbf{a)} Av ligningen ser vi at $ [3, -2, 1] $ er en normalvektor.
+
+\textbf{b)} I ligningen for $ \beta $ ser vi at hvis $ x=y=0 $, så må også $ z=0 $. $ \beta $ inneholder derfor origo.
+
+\textbf{c)} Avstanden $ h $ mellom $ \alpha $ og $ \beta $ må tilsvare avstande mellom $ \alpha $ og et punkt i $ \beta $. Vi bruker svaret fra b) og får:
+\alg{
+h &= \frac{|3\cdot0-2\cdot2+1\cdot0+12|}{|[3, -2, 1]|} \br
+&= \frac{12}{\sqrt{9+4+1}} \br
+&= \frac{12}{\sqrt{14}}
+}
+
+\opr{kuleopg3}\\
+\textbf{a)} For å finne $ S $ skriver vi de fullstendige kvadratene:
+\alg{
+x^2-6x &= (x-3)^2-3^2 \\
+y^2+4y &= (y+2)^2-2^2 \\
+z^2 &= z^2
+}
+Kuleligningen kan vi derfor skrive som:
+\alg{
+(x-3)^2+(y+2)^2+z^2-23-3^2-2^2 = 0 \\
+(x-3)^2+(y+2)^2+z^2 &= 36 \\
+(x-3)^2+(y+2)^2+z^2 &= 6^2
+}
+Altså har vi $ S=(3, -2, 0) $.
+
+\textbf{b)} Av ligningen til planet ser vi at $ [2, -1, -2] $ er en normalvektor for $ \alpha $. Dette må være en retningsvektor for linja som går gjennom $ A $ og $ S $, som dermed kan parameteriseres ved:
+\[ l: \left\lbrace{
+	\begin{array}{l}
+	x=3+ 2t  \\
+	y=-2-t   \\
+	z=-2t
+	\end{array}
+}\right.  \]
+
+\textbf{c)} \textit{Løsningsmetode 1:}
+Linja og kuleflata skjærer der parameteriseringen til linja oppfyler kuleligningen:
+\alg{
+((3+2t)-3)^2+((-2-t)+2)^2+(-2t-0)^2 &= 36 \\
+(2t)^2+(-t)^2+(-2t)^2 &= 36 \\
+9t^2 &= 36 \\
+t^2 &= 4 \\
+t &= \pm 2
+}
+For $ t=-2 $ gir parameteriseringen punktet $ (-1, 0, 4) $ mens for $ t=2 $ får vi punktet $ (7, -4, -4) $.
+
+\textit{Løsningsmetode 2:} Vi har funnet at $ [2, -1, -2] $ er en retningsvektor for linja gjennom $ A $ og $ S $, denne vektoren har lengde 3. Vi kan derfor lage oss en retningsvektor med lengde $ 1 $ ved å skrive $ \frac{1}{3}[2, -1, 2] $. Siden avstanden mellom $ S $ og de to punktene vi søker er lik radiusen 6, må de være gitt ved uttrykket
+\alg{
+S\pm 6\cdot\frac{1}{2}[2, -1, -2] &= S\pm2[2, -1, -2]
+}
+Regner man ut dette får man (selvølgelig) samme svar som for \textit{Løsningsmetode 1}.
+
+\textbf{d)} \se{plpare3} eller bruk lignende resonnement som \textit{Løsningsmetode 2} i opg. c).
+
+\textbf{e)} Radiusen $ R $ til sirkelen, radiusen $ r $ til kula og linjestykket $ AS $ utgjør en rettvinklet trekant. Av Pytagoras' setning har vi da at:
+\alg{
+R^2 &= r^2-|\vv{AS}|^2 \\
+ &= 6^2-3^2 \\
+&= 36-9 \\
+&= 27 \\
+R &= \pm\sqrt{27} 
+}
+$ R $ har altså lengden $ \sqrt{27} $.
+\end{document}

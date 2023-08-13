@@ -2,6 +2,8 @@
 \input{../preamb}
 \input{bm}
 
+%\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+
 % Norwegian names of figures, chapters, parts and content
 \addto\captionsenglish{\renewcommand{\figurename}{Figur}}
 \makeatletter
@@ -50,7 +52,7 @@
 \vspace{20pt}
 \import{tri/}{tri_bm}
 \newpage
-\import{opg/tri/}{opg}
+\import{tri/}{tri_opg_bm}
 \newpage
 \import{tri/}{cmt}
 
@@ -70,7 +72,7 @@
 \vspace{20pt}
 \import{int/}{int_bm}
 \newpage
-\import{opg/int/}{opg}
+\import{int/}{int_opg_bm}
 
 \titleformat{\chapter}[hang]
 {\normalfont\LARGE\bfseries}{}{}{\vspace{-1cm}\Huge}
@@ -89,7 +91,7 @@
 \newpage
 \import{opg/vek/}{fas}
 \import{opg/rom/}{fas}
-\import{opg/int/}{fas}
+\import{int/}{int_fas}
 \phantom{}
 \newpage
 \thispagestyle{empty}

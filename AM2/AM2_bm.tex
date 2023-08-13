@@ -1,10 +1,16 @@
 \input{../doc}
-\input{bm}
 \input{../preamb}
+\input{bm}
 
 
+%\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
 
 % Name of content in TOC
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
 \addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
 
 \begin{document}
