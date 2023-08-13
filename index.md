@@ -17,6 +17,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [FP](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=share_link) <br/>
 
 **Norwegian versions**
+
 *Bokmål*
 - [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1WiS51PH0V7FKyO-XZSedae_IfhTOfCaH/view?usp=sharing)
   <br/> Grunnleggende teori innen matematikk i grunnskole og VGS-fagene 1P og 2P.
@@ -42,7 +43,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [TM1](https://drive.google.com/file/d/1RmyiFVRzzM_rRid4VbQPET4m-KiFCe9G/view?usp=drive_link)
 - [TM2](https://drive.google.com/file/d/1xC0KpkSck813rKZOcDTGTx5EX9Rz6wV-/view?usp=sharing)
 
-- *Bøkene med dysleksivennlig skrifttype*
+*Bøkene med dysleksivennlig skrifttype*
 - [MB](https://drive.google.com/file/d/1yDf3uzRn-ok3sDxltLclRkMHYiNqy5nu/view?usp=sharing)
 - [AM1](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
 - [TM1](https://drive.google.com/file/d/1sZk2E8o9Gh0WP8sA7-g2iYKLKbqN2Uh0/view?usp=sharing)
