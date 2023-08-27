@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: OpenMathBooks
 description: Open-source introduction to mathematics
+plugins:
+  - jekyll-seo-tag
