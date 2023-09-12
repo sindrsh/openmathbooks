@@ -1,0 +1,223 @@
+\input{../../doc}
+\input{../bm}
+\input{../../preamb}
+
+\begin{document}
+\section{Finding Quantities}
+Equations, formulas, and functions are concepts that appear in various contexts but ultimately revolve around the same idea; \textsl{they express relationships between quantities}. Most of the boxes in this book contain a formula. For example, \rref{measurement} contains a formula for 'scale'. When the other quantities are known, it's just a matter of plugging them into the formula to find the 'scale'. We can say that we then find the 'scale' \textsl{directly}. If you've worked on problems from the previous chapters, you've already practiced finding quantities \textsl{directly}.
+
+In this section, we will look at finding quantities \textsl{indirectly}. By that, we mean that at least one of the following applies:
+\begin{itemize}
+	\item We need to solve an equation to find the unknown quantity.
+	\item Based on a description of a situation, we need to set up a formula that includes the unknown quantity.
+\end{itemize}
+
+\info{Note}{
+	In this section, only examples are provided, and no rules are given. That's because we use rules we've covered in the chapters on equations and functions in \mb. The only difference is that here, we are dealing with quantities with units.
+}
+
+\vsk
+
+\eks[1]{
+	For a taxi ride, the following costs apply:
+	\begin{itemize}
+		\item You have to pay 50\enh{kr} regardless of how far you are driven.
+		\item In addition, you pay 15\enh{kr} for each kilometer you are driven.
+	\end{itemize}
+	
+	\abc{
+	\item Set up an expression for how much the taxi ride costs for each kilometer you are driven.
+	\item What is the cost of a taxi ride for 17\enh{km}?
+	}
+	
+	\sv
+	\abc{
+	\item There are two unknown quantities here: 'the cost of the taxi ride' and 'the number of kilometers driven.' The relationship between them is as follows:
+	\[ \text{cost of the taxi ride} = 50 + 15 \cdot \text{number of kilometers driven} \]
+	\item Now we have:
+	\[ \text{cost of the taxi ride} = 50 + 15 \cdot 17 = 305 \]
+	So, the cost of the taxi ride is 305\enh{kr}.	
+}
+}
+
+\info{Tips}{
+	By letting single letters represent quantities, you can shorten expressions. Let $ k $ represent 'cost of the taxi ride' and $ x $ represent 'number of kilometers driven.' Then the expression from \textsl{Example 1} above becomes:
+	\[ k = 50 + 15x \]
+	Additionally, you can use the notation for functions:
+	\[ k(x) = 50 + 15x \]
+}
+
+\eks[2]{
+	Imagine that your class wants to go on a class trip that costs a total of 11,000\,kr. To cover the expenses, you have already raised 2,000\,kr, and the rest will be obtained through a lottery. For each ticket sold, you earn 25\,kr.
+	
+	\abc{
+	\item Create an equation for how many tickets the class must sell to afford the class trip.
+	\item Solve the equation.	
+	}
+	
+	\sv
+	\abc{
+	\item Let's start by thinking about the situation in words:
+	\small
+	\[ \text{money already raised} + \text{number of tickets} \cdot \text{money per ticket} = \text{cost of the trip} \]
+	\normalsize
+	The only quantity we don't know about is 'number of tickets.' We replace\footnote{We do this only to make it easier for us to write.} 'number of tickets' with $ x $ and substitute the values of the other quantities into the equation:
+	\[ 2,000 + x \cdot 25 = 11,000 \]
+	
+	\item 
+	\begin{align*}
+		25x &= 11,000 - 2,000 \\
+		25x &= 9,000 \\
+		\frac{25x}{25} &= \frac{9,000}{25} \\
+		x &= 360
+	\end{align*}
+	}
+}
+
+\eks[3]{
+	A group of friends wants to chip in for a car that costs 50,000\,kr, but it's uncertain how many people will participate in the pooling.
+	
+	\textbf{a)} Call 'number of people participating in the pooling' $ P $ and 'expense per person' $ U $, and create a formula for $ U $.
+	
+	\textbf{b)} Find the expense per person if 20 people participate.
+	
+	\sv
+	\textbf{a)} Since the cost of the car will be divided among the number of people participating in the pooling, the formula becomes:
+	\[ U = \frac{50,000}{P} \]
+	
+	\textbf{b)} We substitute $ P $ with 20 and find:
+	\begin{align*}
+		U &= \frac{50,000}{20} \\
+		&= 2,500
+	\end{align*}
+	So, the expense per person is 2,500\enh{kr}.
+}
+\newpage
+\eks[4]{
+	A sports club is planning a trip that requires a bus ride. They receive offers from two bus companies:
+	
+	\begin{itemize}
+		\item \textbf{Bus Company 1}\\
+		The class pays 10,000\,kr regardless and 10\enh{kr} per kilometer.
+		
+		\item \textbf{Bus Company 2}\\
+		The class pays 4,000\,kr regardless and 30\enh{kr} per kilometer.
+	\end{itemize}
+	
+	For what distance driven do both bus companies offer the same price?
+	
+	\sv
+	We introduce the following variables:
+	\begin{itemize}
+		\item $ x $ = number of kilometers driven
+		\item $ f(x) $ = price for Bus Company 1
+		\item $ g(x) $ = price for Bus Company 2
+	\end{itemize}
+	Then we have:
+	\begin{align*}
+		f(x) &= 10x + 10,000 \\
+		g(x) &= 30x + 4,000
+	\end{align*}
+	The bus companies offer the same price when:
+	\begin{align*}
+		f(x) &= g(x) \\
+		10x + 10,000 &= 30x + 6,000 \\
+		4,000 &= 20x \\
+		x &= 200
+	\end{align*}
+	So, the bus companies offer the same price if the sports club plans to drive 200\enh{km}.
+}
+
+\eks[5]{
+	\textit{Ohm's Law} states that the current $ I $ through a metallic conductor (at constant temperature) is given by the formula:
+	\[ I = \frac{U}{R} \]
+	where $ U $ is voltage and $ R $ is resistance.
+	
+	\abc{
+	\item Rewrite the formula as a formula for $ R $.
+	\item If the current is 2\,A and the voltage is 12\,V, what is the resistance?
+	}
+	
+	\sv
+	\abc{
+	\item We isolate $ R $ on one side of the equation:
+	\begin{align*}
+		I \cdot R &= \frac{U \cdot \cancel{R}}{\cancel{R}} \\
+		I \cdot R &= U \\
+		\frac{\cancel{I} \cdot R}{\cancel{I}} &= \frac{U}{I} \\
+		R &= \frac{U}{I}
+	\end{align*}
+	
+	\item Using the formula from a):
+	\begin{align*}
+		R &= \frac{U}{I} \\
+		&= \frac{12}{2} \\
+		&= 6
+	\end{align*}
+	So, the resistance is 6\,$ \Omega $.	
+}
+}
+
+\eks[6]{
+	Given a temperature $ T_C $ measured in degrees Celsius ($ ^\circ$C). The temperature $ T_F $ measured in degrees Fahrenheit ($ ^\circ$F) is given by the formula:
+	\[ T_F = \frac{9}{5} \cdot T_C + 32 \]
+	
+	\abc{
+	\item Rewrite the formula as a formula for $ T_C $.
+	\item If a temperature is measured as 59$ ^\circ $F, what is the temperature in $ ^\circ $C?
+	}
+	
+	\sv
+	\abc{
+	\item We isolate $ T_C $ on one side of the equation:
+	\begin{align*}
+		T_F &= \frac{9}{5} \cdot T_C + 32 \\
+		T_F - 32 &= \frac{9}{5} \cdot T_C \\
+		5(T_F - 32) &= \cancel{5} \cdot \frac{9}{\cancel{5}} \cdot T_C \\
+		5(T_F - 32) &= 9T_C \\
+		\frac{5(T_F - 32)}{9} &= \frac{\cancel{9}T_C}{\cancel{9}} \\
+		\frac{5(T_F - 32)}{9} &= T_C
+	\end{align*}
+	
+	\item Using the formula from a):
+	\begin{align*}
+		T_C &= \frac{5(59 - 32)}{9} \\
+		&= \frac{5(27)}{9} \\
+		&= 5 \cdot 3 \\
+		&= 15
+	\end{align*}
+	So, 59$ ^\circ $\textbf{F} is equivalent to 15$ ^\circ $\textbf{C}.
+	}
+}
+
+\section{Regression \label{Regression}}
+Trying to describe how something will \textsl{develop} is one of the most important applications of functions. If we have a dataset that describes past events, we can try to find the function that best fits the dataset. This is called \textsl{regression}.
+
+The graph below shows\footnote{Data obtained from \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} the number of electric cars in Norway after 2010.
+\fig{elbilsalg1}
+
+Now we want to find a function that
+
+\begin{enumerate}[label=(\roman*)]
+	\item closely approximates each point, 	
+	\item has a graph that fits the situation we are modeling.
+\end{enumerate}
+
+If we perform regression with a linear function in GeoGebra (see page \pageref{ggbreg}), we get this graph:
+\fig{elbilsalg2}
+
+If we also perform regression with a quadratic function, we get the following result:
+\fig{elbilsalg3}
+
+In the figure above, we can note that:
+\begin{itemize}
+	\item Both models (functions) behave incorrectly at the beginning. The linear function starts with a negative number of cars, while the quadratic function starts with a decrease in the number of cars from year 0 to year 1.
+	\item The graph of the quadratic function fits the data points much better than the graph of the linear function.
+	
+	If we had assumed that the linear function provided a good description of the number of electric cars going forward, we could have read from the graph that the number of electric cars in 2021 was approximately 350,000. If we had assumed the same about the quadratic function, we could have read from the graph that the number of electric cars in 2021 was just over 425,000. The correct answer is that the number of electric cars in 2021 was 455,271.
+	\fig{elbilsalg4}
+\end{itemize}
+\newpage
+\end{document}
+
+

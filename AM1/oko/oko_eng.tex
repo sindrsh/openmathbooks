@@ -116,226 +116,233 @@ The real value of an amount of money yields the value of these money in the base
 \[ \text{real value} = \text{original value}\cdot \text{currency value} \]
 }
 \eks{
-I 1928 var KPI 3,2 og i 2020 var KPI 112,2. Hva hadde størst realverdi, 10\,000\enh{kr} i 1928 eller 350\,000\enh{kr} i 2020? 
+	In 1928, the CPI was 3.2, and in 2020, the CPI was 112.2. Which had the greater real value, 10,000 NOK in 1928 or 350,000 NOK in 2020?
+	
+	\sv
+	We have that
+	\begin{align*}
+		\text{Krone value in 1928} &= \frac{100}{3.2}
+	\end{align*}
+	Thus,
+	\begin{align*}
+		\small
+		\text{The value of 10,000 NOK from 1928 in base year} &= 10,000 \text{ NOK} \cdot \frac{100}{3.2} \\
+		&= 312,500 \text{ NOK}
+	\end{align*}
+	Furthermore,
+	\begin{align*}
+		\text{Krone value in 2020} &= \frac{100}{112.2}
+	\end{align*}
+	Thus,
+	\begin{align*}
+		\footnotesize
+		\text{The value of 350,000 NOK from 1928 in base year} &= 350,000 \text{ NOK} \cdot \frac{100}{112.2} \\
+		&\approx 311,943 \text{ NOK}
+	\end{align*}
+	Therefore, 10,000 NOK was worth more in 1928 than what 350,000 NOK was worth in 2020.
+}
 
-\sv
-Vi har at
-\algv{
-\text{kroneverdi i 1928} &= \frac{100}{3,2}
-}
-Altså er
-\alg{
-\text{verdien av 10\,000\enh{kr} fra 1928 i basisår}&= 10\,000\enh{kr}\cdot \frac{100}{3,2} \\
-&= 312\,500 \enh{kr}
-}
-Videre er
-\algv{
-	\text{kroneverdi i 2012} &= \frac{100}{112,2}
-}
-Altså er
-\alg{
-	\text{verdien av 350\,000\enh{kr} fra 1928 i basisår}&= 350\,000\cdot \frac{100}{112,2} \\
-	&\approx 311\,943\enh{kr}
-}
-Altså var 10\,000\enh{kr} mer verd i 1928 enn det 350\,000\enh{kr} var verd i 2020.
-}
-\subsection{Reallønn og nominell lønn}
-Hvor god \textit{råd} vi har avhenger av hvor mye vi tjener og hva prisnivået er. Tenk at du  hadde en årslønn på 500\,000\,kr i både 2020 og i 2019. \hyperref[KPI]{\textsl{Tabell \ref*{KPI}}} forteller oss da at du hadde du best råd i 2019, fordi da var prisnivået (KPI) lavere enn i 2020. \vsk
+\subsection{Real Wages and Nominal Wages}
+How well off we are depends on how much we earn and what the price level is. Suppose you had an annual salary of 500,000 NOK in both 2020 and 2019. \hyperref[KPI]{\textsl{Table \ref*{KPI}}} then tells us that you had better purchasing power in 2019 because the price level (CPI) was lower than in 2020. \vspace{5pt}
 
-At prisnivået har blitt høgere er det samme som at kroneverdien har blitt lavere. Dette betyr igjen at hvis lønnen din var den samme i 2019 og 2020, er \textsl{realverdien} til lønnen din høgere i 2019 enn i 2020. Den opprinnelige lønnen og realverdien til lønnen er så mye brukt i statistikk at de har fått egne navn:\regv
+An increase in the price level is the same as a decrease in the value of the currency. This means that if your salary was the same in 2019 and 2020, the \textsl{real value} of your salary is higher in 2019 than in 2020. The original salary and the real value of the salary are so commonly used in statistics that they have their own names:\vspace{5pt}
 
-\reg[Reallønn og nominell lønn\label{realnomonn}]{
-Nominell lønn er lønn  mottat et gitt år. \vsk
-
-Reallønnen er realverdien til den nominelle lønnen. 	
+\reg[Real Wages and Nominal Wages\label{realnomonn}]{
+	Nominal wages are the wages received in a given year. \vspace{5pt}
+	
+	Real wages are the real value of the nominal wages.
 }
+
 \eks{
-I 2016 tjente Per 450\,000 kr, mens i 2012 tjente han 420\,000 kr. I 2016 var $ {\text{KPI}=103,6} $, mens i 2012 var $ {\text{KPI}=93,9} $. I hvilket av disse årene hadde Per best råd?
-
-\sv
-For å finne ut hvilket av årene Per hadde best råd i, sjekker vi hvilket år han hadde høgest reallønn\footnote{KPI-verdiene i utregningen henter vi fra \hyperref[KPI]{\textsl{Tabell 1}}.} (se \rref{realverdi}):
-\alg{
-\text{reallønn i 2016}&= 450\,000\cdot\frac{100}{103,6}\enh{kr} \\
-& \approx 434\,363 \enh{kr}\vn
-\text{reallønn i 2012}&= 420\,000\cdot\frac{100}{93,9} \\
-& \approx 447\,284 \enh{kr}
-}
-Reallønnen til Per var altså høgest i 2012, derfor hadde han bedre råd da enn i 2016.
+	In 2016, Per earned 450,000 NOK, while in 2012, he earned 420,000 NOK. In 2016, the CPI was 103.6, while in 2012, it was 93.9. In which of these years did Per have better purchasing power?
+	
+	\sv
+	To find out in which year Per had better purchasing power, we check which year had the highest real wage\footnote{We obtain the CPI values from \hyperref[KPI]{\textsl{Table 1}} for this calculation.} (see \rref{realverdi}):
+	\begin{align*}
+		\text{Real wage in 2016} &= 450,000 \cdot \frac{100}{103.6} \text{ NOK} \\
+		&\approx 434,363 \text{ NOK} \\
+		\text{Real wage in 2012} &= 420,000 \cdot \frac{100}{93.9} \text{ NOK} \\
+		&\approx 447,284 \text{ NOK}
+	\end{align*}
+	Per's real wage was highest in 2012; therefore, he had better purchasing power in that year.
 }
 \newpage
-\reg[Verdi som følger indeks]{
-En verdi er sagt å ha \textit{fulgt indeks} hvis verdi og indeks ved to tidspunkt er like.
-\[ \frac{\text{verdi ved tidspunkt 1}}{\text{indeks ved tidspunkt 1}} = \frac{\text{verdi ved tidspunkt 2}}{\text{indeks ved tidspunkt 2}} \]
+
+\reg[Value Following an Index]{
+	A value is said to have \textit{followed an index} if the value and index at two points in time are equal.
+	\[ \frac{\text{value at time 1}}{\text{index at time 1}} = \frac{\text{value at time 2}}{\text{index at time 2}} \]
 }
 
 \eks[1]{
-	Tabellen under viser en oversikt over prisen registrert i en butikk på to varer ved to forskjellige tidspunkt. 
+	The table below shows an overview of prices recorded in a store for two items at two different points in time.
 	\begin{center}
 		\begin{tabular}{r|r|r|}
 			& \textbf{2010} & \textbf{2020}	\\ \hline
-			sjokolade & 11,00\enh{kr} & 13,40\enh{kr} \\
-			brus	& 12,50\enh{kr} & 19,00\enh{kr}
+			chocolate & 11.00 NOK & 13.40 NOK \\
+			soda & 12.50 NOK & 19.00 NOK
 		\end{tabular}
 	\end{center}
-I 2010 var KPI 92,1 og i 2020 var KPI 12,2.
-Har prisen på noen av varene fulgt indeks?
-
-\sv
-
-Vi har at
-\alg{
-\frac{\text{pris på sjokolade i 2010}}{\text{KPI i 2010}} &= \frac{11}{92,1}\approx 0,119 \vn
-\frac{\text{pris på sjokolade i 2020}}{\text{KPI i 2020}} &= \frac{13,40}{112,1}\approx 0,119
+	In 2010, the CPI was 92.1, and in 2020, the CPI was 112.1. Has the price of any of the items followed the index?
+	
+	\sv
+	
+	We have that
+	\begin{align*}
+		\frac{\text{price of chocolate in 2010}}{\text{CPI in 2010}} &\approx \frac{11.00}{92.1} \approx 0.119 \\
+		\frac{\text{price of chocolate in 2020}}{\text{CPI in 2020}} &\approx \frac{13.40}{112.1} \approx 0.119
+	\end{align*}
+	Furthermore,
+	\begin{align*}
+		\frac{\text{price of soda in 2010}}{\text{CPI in 2010}} &\approx \frac{12.50}{92.1} \approx 0.136 \\
+		\frac{text{price of soda in 2020}}{\text{CPI in 2020}} &\approx \frac{19.00}{112.1} \approx 0.169
+	\end{align*}
+	So, it's reasonable to say that the price of chocolate has followed the index, while the price of soda has not.
 }
-Videre er
-\alg{
-	\frac{\text{pris på brus i 2010}}{\text{KPI i 2010}} &= \frac{12,5}{92,1}\approx 0,136 \vn
-	\frac{\text{pris på brus i 2020}}{\text{KPI i 2020}} &= \frac{19}{112,1}\approx 0,169
-}
-Altså er det rimelig å si at prisen for sjokolade har fulgt indeks, mens prisen for brus ikke har gjort det.
-}
 
-\section{Lån og sparing}
-\subsection{Lån}
-Noen ganger har vi  ikke nok penger til å kjøpe det vi ønsker oss, og må derfor ta opp et lån fra en bank. Banken gir oss da en viss \textit{lånesum} mot at vi betaler tilbake denne, og \textit{renter}, i løpet av en bestemt tid. Det vanligste er at vi underveis betaler banken det som kalles \textit{terminbeløp}, som på sin side består av \textit{avdrag} og renter. Det vi til enhver tid skylder banken kaller vi \textit{gjelden}. \vsk
+\section{Loans and Savings}
+\subsection{Loans}
+Sometimes we don't have enough money to buy what we want and, therefore, need to take out a loan from a bank. The bank then lends us a certain \textit{loan amount} in exchange for us paying it back, along with \textit{interest}, over a specified period. Typically, we pay the bank what is called the \textit{installment amount} along the way, which consists of \textit{principal} and interest. The amount we owe the bank at any given time is called \textit{debt}. \vspace{5pt}
 
-Si at en bank låner  oss 100\,000\,kr, som da er lånesummen. Lånet skal tilbakebetales i løpet av 5 år, med ett terminbeløp hvert år, og renten er 10\%. Det finnes forskjellige måter å betale tilbake et lån på, men følgende vil som regel gjelde:
+Suppose a bank lends us 100,000 NOK, which is the loan amount. The loan is to be repaid over 5 years, with one installment amount each year, and the interest rate is 10%. There are different ways to repay a loan, but the following generally applies:
 \begin{itemize}
-	\item \textbf{Summen av alle avdragene skal tilsvare lånesummen}.\os
-	 For å gjøre det enkelt i vårt eksempel, bestemmer vi oss for å betale tilbake lånet med like avdrag hvert år. Siden 100\,000 kr skal fordeles likt over 5 år, må det årlige avdraget bli $ \frac{100\,000}{5}\enh{kr}=20\,000 $\,kr.
-	\item \textbf{Det man betaler i avdrag skal trekkes fra gjelden.}\os
+	\item \textbf{The sum of all installments should equal the loan amount}.\vspace{5pt}
 	
-	Startgjelden er 100\,000\enh{kr}, men det første året betaler vi 20\,000\,kr i avdrag, og da blir gjelden $100\,000\enh{kr}-20\,000\enh{kr} =80\,000\enh{kr} $. Det andre året betaler vi nye 20\,000\,kr, og da blir gjelden $ 80\,000\enh{kr}-20\,000\enh{kr} =60\,000\enh{kr}  $. Og slik fortsetter det de neste tre årene.
-	\item \textbf{Renter skal beregnes av gjelden.}\os 
-	Siden gjelden det første året er 100\,000\,kr, må vi betale \\${ 100\,000\enh{kr}\cdot0,1=10\,000\enh{kr} } $ i renter. Siden gjelden det andre året er 80\,000\,kr må vi betale ${ 80\,000\enh{kr}\cdot0,1=8\,000\enh{kr} } $ i renter.  Og slik fortsetter det de neste tre årene.
+	To simplify our example, we decide to repay the loan with equal installments each year. Since 100,000 NOK should be distributed equally over 5 years, the annual installment should be $ \frac{100,000}{5} \text{ NOK} = 20,000 \text{ NOK} $.
+	\item \textbf{What is paid in installments should be deducted from the debt}.\vspace{5pt}
 	
-	\item \textbf{Terminbeløpet er summen av avdraget og rentene}.\os
+	The initial debt is 100,000 NOK, but in the first year, we pay 20,000 NOK in installments, so the debt becomes $ 100,000 \text{ NOK} - 20,000 \text{ NOK} = 80,000 \text{ NOK} $. In the second year, we pay another 20,000 NOK, making the debt $ 80,000 \text{ NOK} - 20,000 \text{ NOK} = 60,000 \text{ NOK} $, and so on for the next three years.
+	\item \textbf{Interest should be calculated on the debt}.\vspace{5pt}
 	
-	Av første og tredje punkt får vi at\os
-	\centering
-	\begin{tabular}{c| c |c}
-		 & 1. år & 2. år \\ \hline
-		Terminbeløp 
-			& $\begin{matrix}
-			20\,000\enh{kr} +10\,000\enh{kr}\\
-			= \\
-			30\,000\enh{kr}
-			\end{matrix} $  
-				& $\begin{matrix}
-					20\,000\enh{kr} +80\,000\enh{kr}\\
-					= \\
-					28\,000\enh{kr}
-					\end{matrix} $ 
-	\end{tabular}\os
-\raggedright 
-Og slik fortsetter det de neste tre årene.
-\item \textbf{Lånet er fullført når gjelden er lik 0\enh{kr} og alle renter er betalt.}\os
-Hvis vi har betalt avdrag lik 20\,000\enh{kr} i 5 år, er gjelden 0\enh{kr}. Har vi da betalt alle rentene også, er lånet fullført. \os
+	Since the debt in the first year is 100,000 NOK, we must pay $ 100,000 \text{ NOK} \times 0.1 = 10,000 \text{ NOK} $ in interest. In the second year, with a debt of 80,000 NOK, we must pay $ 80,000 \text{ NOK} \times 0.1 = 8,000 \text{ NOK} $ in interest, and so on for the next three years.
+	\item \textbf{The installment amount is the sum of the principal and interest}.\vspace{5pt}
+	
+	From the first and third points, we deduce that:
+	\begin{center}
+		\begin{tabular}{c|c|c}
+			& 1st year & 2nd year \\ \hline
+			Installment amount & $\begin{matrix} 20,000 \text{ NOK} + 10,000 \text{ NOK} \\ = \\ 30,000 \text{ NOK} \end{matrix} $ & $\begin{matrix} 20,000 \text{ NOK} + 8,000 \text{ NOK} \\ = \\ 28,000 \text{ NOK} \end{matrix} $
+		\end{tabular}
+	\end{center}
+	And so on for the next three years.
+	\item \textbf{The loan is complete when the debt is zero, and all interest is paid}.\vspace{5pt}
+	
+	If we have paid installments of 20,000 NOK for 5 years, the debt is reduced to zero. If we have also paid all the interest, the loan is complete.\vspace{5pt}
+	
+	{\footnotesize\textit{Note: You always have the right to pay larger installments than originally agreed upon. If you pay off the entire debt, provided that any interest has also been paid, the loan will be terminated.}}
+\end{itemize}
+\vspace{5pt}
+\textbf{Amortizing Loans and Annuity Loans}\vspace{5pt}
 
-{\footnotesize\mer Du har alltid rett til å betale større avdrag enn det som først er avtalt. Betaler du hele gjelden vil lånet avsluttes så lenge eventuelle renter også er betalt.}
-\end{itemize}\vsk
-\textbf{Serielån og annuitetslån}\os
-To vanlige typer lån er \textit{serielån} og \textit{annuitetslån}. Lånet fra eksempelet vi akkurat har sett på er et serielån fordi avdragene er like store. Hvis terminbeløpene hadde vært like store, ville det isteden vært et annuitetslån. Hvis lånesum, rente og nedbetalingstid er lik, vil et serielån alltid medføre minst utgifter totalt sett. For privatpersoner er det likevel veldig populært å velge annuitetslån på grunn av at det er lettere å planlegge økonomien når man betaler det samme beløpet hver gang. \vsk
+Two common types of loans are \textit{amortizing loans} and \textit{annuity loans}. The loan from the example we just saw is an amortizing loan because the installments are of equal size. If the installment amounts had been equal, it would have been an annuity loan instead. If the loan amount, interest rate, and repayment period are the same, an amortizing loan will always result in lower overall expenses. However, for individuals, annuity loans are very popular because it is easier to plan finances when paying the same amount each time. \vspace{5pt}
 
-\textbf{Kredittkort}\os
-\prbxl{0.6}{Kredittkort er et betalingskort som er slik at hvis du f.eks. bruker kortet for å betale 10\,000\,kr, så låner du pengene fra banken. Etter en tid som er avtalt med banken vil den kreve renter av gjelden din. Til hvilken tid du betaler denne gjelden }\qquad
-\parbox{0.3\linewidth}{\includegraphics[scale=0.1]{kred}}\\[-3pt]
-er delvis opp til deg selv, men generelt har kredittkort veldig høge renter, så det lureste er å betale før rentekravet har startet!
+\textbf{Credit Cards}\vspace{5pt}\\
+\prbxl{0.6}{Credit cards are a payment card that works in such a way that if you, for example, use the card to pay 10,000 NOK, you are borrowing the money from the bank. After a period agreed upon with the bank, it will charge interest on your debt. When you pay this debt }\qquad
+\parbox{0.3\linewidth}{\includegraphics[scale=0.1]{kred}}\\[2pt]
+is partly up to you, but generally, credit cards have very high-interest rates, so it is wise to pay it off before the interest starts accruing!
+
 \regv
-\reg[Lån]{
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{>{\bfseries}r l}
-	lånesum & Beløpet vi låner av banken. \\
-	gjeld & Det vi til enhver tid skylder banken. \\
-	rente & Prosentandel av gjeld som skal betales.\\
-	avdrag & Det vi betaler ned på gjelden.  \\
-	& Summen av avdragene tilsvarer lånesummen.\\
-	&ny gjeld $ =  $ gammel gjeld $ - $ avdrag \\
-	renter & gjeld $ \cdot $ rente \\
-	terminbeløp & avdrag $ + $ renter \\
-	serielån & Lån hvor avdragene er like store. \\
-	annuitetslån & Lån hvor terminbeløpene er like store. \\
-	kredittkort & Betalingskort som oppretter et lån fra banken.
-\end{tabular}
+\reg[Loans]{
+	\small
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{>{\bfseries}r l}
+		loan amount & The amount we borrow from the bank. \\
+		debt & What we owe the bank at any given time. \\
+		interest & Percentage of debt to be paid.\\
+		principal & What we pay down on the debt.  \\
+		& The sum of the principal equals the loan amount.\\
+		& New debt $ = $ old debt $ - $ principal \\
+		interest & debt $ \cdot $ interest \\
+		installment & principal $ + $ interest \\
+		amortizing loan & A loan where the installments are of equal size. \\
+		annuity loan & A loan where the installment amounts are equal. \\
+		credit card & A payment card that creates a loan from the bank.
+	\end{tabular}
 }
 \newpage
 \eks[1]{
-Fra en bank låner du 300\,000 kr med 3\% årlig rente. Lånet skal betales tilbake som et serielån med 5 årlige terminbeløp. \os
-\textbf{a)} Hva blir det årlige avdraget?\os
-\textbf{b)} Hva er gjelden din etter at du har betalt tredje terminbeløp?\os
-\textbf{c)} Hvor mye må du betale i renter ved fjerde terminbeløp?\os
-\textbf{d)} Hvor stort blir det fjerde terminbeløpet?\os 
-
-
-\sv
-\textbf{a)} Siden 300\,000\,kr skal betales over 5 år, blir det årlige avdraget
-\[ \frac{300\,000\enh{kr}}{5}=60\,000\enh{kr} \]
-\textbf{b)} Når tredje terminbeløp er betalt, har du betalt tre avdrag. Det betyr at gjelden din er
-\alg{
-300\,000-60\,000\cdot3 &= 300\,000-180\,000 \\
-&= 120\,000
+	From a bank, you borrow 300,000 NOK with a 3% annual interest rate. The loan is to be repaid as an amortizing loan with 5 annual installment amounts.\vspace{5pt}
+	\textbf{a)} What is the annual principal payment?\vspace{5pt}
+	\textbf{b)} What is your debt after paying the third installment amount?\vspace{5pt}
+	\textbf{c)} How much do you have to pay in interest for the fourth installment amount?\vspace{5pt}
+	\textbf{d)} What is the amount of the fourth installment?\vspace{5pt}
+	
+	\textbf{Solution:}\vspace{5pt}
+	
+	\textbf{a)} Since 300,000 NOK is to be paid over 5 years, the annual principal payment is
+	\[ \frac{300,000 \text{ NOK}}{5} = 60,000 \text{ NOK} \]
+	
+	\textbf{b)} When the third installment is paid, you have paid three installments. That means your debt is
+	\[ 300,000 - 60,000 \cdot 3 = 300,000 - 180,000 = 120,000 \text{ NOK} \]
+	So, 120,000 NOK.
+	
+	\textbf{c)} From the answer to part b), we know that the debt is 180,000 NOK when the fourth installment is to be paid. 3% of the debt is then
+	\[ 180,000 \cdot 0.03 = 5,400 \text{ NOK} \]
+	So, 5,400 NOK.
+	
+	\textbf{d)} The installment amount is equal to the principal plus interest. Based on the answers to parts a) and c), we know that the fourth installment amount is
+	\[ 60,000 \text{ NOK} + 5,400 \text{ NOK} = 65,400 \text{ NOK} \]
+	So, the fourth installment amount is 65,400 NOK.
 }
-Altså 120\,000\,kr.\os
 
-\textbf{c)} Ut ifra oppgave b) vet vi at gjelden er 180\,000 kr når fjerde terminbeløp skal betales. 3\% av gjelden blir da
-\[ 180\,000\cdot0,03=5\,400 \]
-Altså 5\,400 kr.\os
-\textbf{d)} Terminbeløpet tilsvarer avdrag pluss renter. Ut ifra oppgave a) og c) vet vi da at det fjerde terminbeløpet blir
-\[ 60\,000\enh{kr}+5\,400\enh{kr} =65\,400\enh{kr}\]}
-\newpage
 \eks[2]{
-Fra en bank låner du 100\,000\,kr med 6,4\% årlig rente. Lånet skal betales tilbake som et annuitetslån over 5 år, og banken har da regnet ut at terminbeløpet blir 24\,000\enh{kr}.\os
-
-Regn ut avdrag og renter for det første terminbeløpet.
-
-\sv
-Det første året er gjelden 100\,000\,kr, i renter må du betale 6,4\% av denne:
-\[ 100\,000\cdot0,064=6\,400 \]
-Altså må du betale 6\,400\,kr i renter det første året.\vsk
-
-Vi har at
-\[ \text{terminbeløp}=\text{avdrag}+\text{renter} \]
-Dermed er
-\[ {\text{avdrag}=\text{terminbeløp}-\text{avdrag}} \]
-\[ =24\,000-6400=17\,600 \]
-Altså må du betale 17\,600\enh{kr} i avdrag det første året.
+	From a bank, you borrow 100,000 NOK with a 6.4\% annual interest rate. The loan is to be repaid as an annuity loan over 5 years, and the bank has calculated that the installment amount will be 24,000 NOK.\vspace{5pt}
+	
+	Calculate the principal and interest for the first installment amount.
+	
+	\sv
+	
+	In the first year, the debt is 100,000 NOK, and you must pay 6.4% of this in interest:
+	\[ 100,000 \cdot 0.064 = 6,400 \text{ NOK} \]
+	So, you must pay 6,400 NOK in interest in the first year.\vspace{5pt}
+	
+	We have that
+	\[ \text{installment amount} = \text{principal} + \text{interest} \]
+	So, the principal is
+	\[ \text{principal} = \text{installment amount} - \text{interest} = 24,000 \text{ NOK} - 6,400 \text{ NOK} = 17,600 \text{ NOK} \]
+	So, you must pay 17,600 NOK in principal in the first year.
 }
+
 \newpage
-\subsection{Sparing; innskuddsrente og forventet avkastning}
-\subsubsection{Innskuddsrente}
-Vi har sett at vi må betale renter når vi låner penger av en bank, men hvis vi i steden setter penger (gjør et innskudd) i en bank  \textsl{får} vi renter: \regv
-\reg[Innskuddsrente]{
-Innskuddsrente er en prosentvis økning av pengene du har i banken, gjentatt over faste tidsintervaller (månedlig, årlig o.l.) 
-}
-\eks[1]{
-Du setter inn 20\,000\,kr i en bank som gir 2\% årlig sparerente. Hvor mye penger har du i banken etter 8 år? 
+\subsection{Savings; Deposit Interest and Expected Return}
+\subsubsection{Deposit Interest}
+We have seen that we must pay interest when we borrow money from a bank, but if we instead put money (make a deposit) in a bank, we \textsl{earn} interest: \regv
 
-\sv
-For å beregne innskuddsrenter kan vi anvende \rref{progjen}. Siden renten er 2\%, er vekstfaktoren 1,02. Originalverdien er 20\,000 og antall endringer (tiden) er 8:
-\[ 20\,000\cdot1,02^8\approx 23\,433 \]
-Du har altså ca. 23\,433\,kr i banken etter 8 år med sparing.
+\reg[Deposit Interest]{
+	Deposit interest is a percentage increase in the money you have in the bank, repeated over fixed time intervals (monthly, annually, etc.).
 }
-\subsubsection{Forventet avkastning}
-En annen måte å spare penger på, er å investere i et aksjefond. Da vil man snakke om \textit{forventet avkastning}:\regv
-\reg[Forventet avkastning]{
-Forventet avkastning angir en \textsl{forventet} prosentvis økning av en investering, gjentatt over faste tidsintervaller.
-}
-\newpage
-\eks[1]{
-Du investerer 15\,000 i et aksjefond som forventer 5\% årlig avkastning. Hvor mye penger er investeringen verd etter 8 år ved en slik avkastning?
 
-\sv
-Også for forventet avkastning kan vi bruke \rref{progjen}. Vekstfaktoren er 1,05, originalverdien er 15\,000 og antall endringer (tiden) er 8:
-\[ 15\,000\cdot1,05^8\approx22\,162 \]
-Etter 8 år er det forventet at investeringen er verdt 22\,162\enh{kr}.
+\eks[1]{
+	You deposit 20,000 NOK in a bank that offers a 2\% annual savings interest rate. How much money do you have in the bank after 8 years?
+	
+	\sv
+	To calculate deposit interest, we can use \rref{progrowth}. Since the interest rate is 2\%, the growth factor is 1.02. The original value is 20,000, and the number of changes (time) is 8:
+	\[ 20,000 \cdot 1.02^8 \approx 23,433 \]
+	So, you have approximately 23,433 NOK in the bank after 8 years of saving.
+}
+
+\subsubsection{Expected Return}
+Another way to save money is to invest in a mutual fund. In this case, we talk about \textit{expected return}:\regv
+
+\reg[Expected Return]{
+	Expected return specifies an \textsl{expected} percentage increase of an investment, repeated over fixed time intervals.
+}
+
+\eks[1]{
+	You invest 15,000 NOK in a mutual fund that expects a 5\% annual return. How much is the investment worth after 8 years with such a return?
+	
+	\sv
+	For expected return, we can also use \rref{progrowth}. The growth factor is 1.05, the original value is 15,000, and the number of changes (time) is 8:
+	\[ 15,000 \cdot 1.05^8 \approx 22,162 \]
+	After 8 years, it is expected that the investment is worth 22,162 NOK.
 }
 \vsk
 
-\info{Spare med innskuddsrente eller aksjefond?}{
-Som regel er forventet avkastning på et aksjefond høgere enn innskudsrenten du får i en bank, men ulempen er at forventet avkastning ikke gir noen garantier. Forventet avkastning oppgir bare økningen eksperter antar vil skje. Er du heldig blir økningen høgere, er du uheldig blir den lavere, og kan til og med føre til en \textsl{reduksjon} av investeringen din. I verste fall, rett nok i ekstremt sjeldne tilfeller, kan hele investeringen din ende opp med å bli verd 0\enh{kr}. \vsk
-
-Innskuddsrenten kan også forandre seg noe med tiden, men den kan aldri føre til en reduksjon av investeringen din.
+\info{Saving with Deposit Interest or Mutual Funds?}{
+	Usually, the expected return on a mutual fund is higher than the deposit interest you get in a bank, but the downside is that expected return does not provide any guarantees. Expected return only indicates the increase experts anticipate. If you're lucky, the increase will be higher; if you're unlucky, it will be lower and may even result in a \textsl{reduction} of your investment. In the worst case, although extremely rare, your entire investment may end up being worth 0 NOK. \vsk
+	
+	Deposit interest rates can also change somewhat over time, but they can never lead to a reduction in your investment.
 }
+
 \begin{comment}
 	\eks[2]{Du betaler 27\,000\,kr med et kreddittkort som krever 1,4\% rente for hver måned du betaler for seint.\os
 	
@@ -353,207 +360,117 @@ Innskuddsrenten kan også forandre seg noe med tiden, men den kan aldri føre ti
 \end{comment}
 
 
-\section{Skatt}
-Om du har en inntekt, må du som regel betale en del av disse pengene til staten. Disse pengene kalles \textit{skatt} (og noen ganger \textit{avgift}). Hensikten med skatt er at staten skal ha råd til å gi innbyggerne tilbud som skole, helsetjenester og mye mer. I dag blir blir skatten i stor grad beregnet av datasystemer, men det er ditt ansvar å sjekke at beregningene er riktige $ - $ og da er det viktig å forstå hvordan skattesystemet fungerer.\vsk
+\section{Taxation}
+If you have an income, you usually have to pay a portion of that money to the state. This money is called \textit{tax} (and sometimes \textit{duty}). The purpose of tax is to provide the state with the means to offer services to its citizens, such as education, healthcare, and more. Today, taxes are largely calculated by computer systems, but it is your responsibility to ensure that the calculations are correct - and that's why it's important to understand how the tax system works.\vsk
 
-\info{Obs!}{I eksamensoppgaver og i virkeligheten vil du fort oppdage at skattesystemer er presentert på en litt annen måte enn i denne boka. Dette er blant annet fordi skattereglene kan forandre seg fra år til år, og i denne boka har vi tatt utgangspunkt i skattereglene for 2018. Det viktigste er ikke at du husker spesifikt disse reglene, men at du lærer deg hva som menes med begrepene \textit{bruttolønn, fradrag, skattegrunnlag, trygdeavgift} og \textit{nettolønn}.}
-\subsection{Bruttolønn, fradrag og skattegrunnlag}
-\prbxl{0.68}{De fleste må betale 23\% av det som kalles \textit{skattegrunnlaget}, som er \textit{bruttolønnen} minus \textit{fradrag}. Bruttolønnen er lønnen du mottar fra arbeidsgiver, mens fradrag kan være mye forskjellig. \textit{Personfradrag} og  \textit{minstefradrag} er noe alle skattebetalere får, i tillegg kan man }\qquad
-\prbxr{0.22}{Skattegrunnlag kalles noen ganger \textit{trekkgrunnlag}.} \\[-16pt]
+\info{Note!}{In exam questions and in real life, you will quickly realize that tax systems are presented somewhat differently than in this book. This is because tax rules can change from year to year, and in this book, we have based our explanations on the tax rules of Norway in 2018. The most important thing is not to memorize these specific rules but to learn what is meant by the terms \textit{gross income, deductions, taxable income, social security contribution}, and \textit{net income}.}
 
-\prbxl{0.66}{blant annet få fradrag hvis man betaler \textit{fagforeningskontigent} eller har gitt penger til veldedige formål.}\qquad
-\prbxr{0.24}{Fagforeningskontigent er det du betaler for å være med i en \net{https://no.wikipedia.org/wiki/Fagforening}{fagforening}.}\regv
+\subsection{Gross Income, Deductions, and Taxable Income}
+\prbxl{0.68}{Most people have to pay 23\% of what is called \textit{taxable income}, which is \textit{gross income} minus \textit{deductions}. Gross income is the salary you receive from your employer, while deductions can be various things. \textit{Personal deductions} and \textit{minimum deductions} are something all taxpayers receive. Additionally, you can }\qquad
+\prbxr{0.22}{Taxable income is sometimes called \textit{taxable basis}.} \\[-16pt]
 
-\reg[Bruttolønn, fradrag og skattegrunnlag]{\vs
-\begin{center}
-	\begin{tabular}{c r}
-		\phantom{xxxxx} &bruttolønn	\\
-		$ - $ & fradrag \\ \hline
-		$ = $ & skattegrunnlag \\ \hline
-	\end{tabular}
-\end{center}
+\prbxl{0.66}{receive deductions if you pay \textit{union dues} or have donated money to charitable causes.}\qquad
+\prbxr{0.24}{Union dues are what you pay to be a member of a \net{https://en.wikipedia.org/wiki/Trade_union}{trade union}.}\regv
+
+\reg[Gross Income, Deductions, and Taxable Income]{\vs
+	\begin{center}
+		\begin{tabular}{c r}
+			\phantom{xxxxx} &gross income	\\
+			$ - $ & deductions \\ \hline
+			$ = $ & taxable income \\ \hline
+		\end{tabular}
+	\end{center}
 }
+
 \newpage
 \eks{
-Bruttolønnen til Magnus er 500\,000\,kr. Han får 56\,000\,kr i personfradrag 97\,600\,kr i minstefradrag, i tilleg betaler han 1\,000\,kr for årlig medlemskap i fagforeningen \textsl{Tekna}.\os
-Hva må Magnus betale hvis han skatter 23\% av skattegrunnlaget?
-
-\sv
-Vi starter med å regne ut skattegrunnlaget, som er bruttolønnen minus fradragene:
-\begin{center}
-	\begin{tabular}{c r l}
-	\phantom{xxxxx}	& 500\,000 & bruttolønn	\\
-		$ - $& 56\,000 & personfradrag \\
-		$ - $& 97\,600 & minstefradrag \\
-		$ - $& 1\,000 &fagforeningskontigent \\ \hline
-		$ = $ &345\,400 & skattegrunnlag \\ \hline
-	\end{tabular}
-\end{center}
+	Magnus's gross income is 500,000 NOK. He receives a 56,000 NOK personal deduction, a 97,600 NOK minimum deduction, and he also pays 1,000 NOK for annual membership in the union \textsl{Tekna}.\os
+	How much does Magnus have to pay if he is taxed at 23% of the taxable income?
+	
+	\sv
+	We start by calculating the taxable income, which is the gross income minus the deductions:
+	\begin{center}
+		\begin{tabular}{c r l}
+			\phantom{xxxxx}	& 500,000 & gross income	\\
+			$ - $& 56,000 & personal deduction \\
+			$ - $& 97,600 & minimum deduction \\
+			$ - $& 1,000 & union dues \\ \hline
+			$ = $ &345,400 & taxable income \\ \hline
+		\end{tabular}
+	\end{center}
 }
 
-\subsection{Trygdeavgift}
-Alle lønnsmottakere må også betale \textit{trygdeavgift}. Dette er en inntekt staten bruker til å dekke \net{https://no.wikipedia.org/wiki/Folketrygden_(Norge)}{Folketrygden}. Hva man må betale i trygdeavgift kommer an på hvor gammel du er og hvilken type inntekt du har, men her skal vi bare bry oss om det man må betale for lønn fra en arbeidsgiver. Da er trygdeavgiften avhengig av alderen: \regv
-\reg[Trygdeavgift]{\vs
-\begin{center}
-	\begin{tabular}{l| r}
-		alder & trygdeavgift\\ \hline
-		17-69 år &	8,2 \% \\
-		under 17 år eller over 69 år &	5,1\%
-	\end{tabular}
-\end{center}
-Trygdeavgiften skal beregnes av bruttolønnen.
-}
-\newpage
 \eks{
-Jonas og bestemoren hans, Line, har begge 150\,000\,kr i lønn. Jonas er 18 år og Line er 71 år.\os
-\textbf{a)} Hva må Jonas betale i trygdeavgift?\os
-\textbf{b)} Hva må Line betale i trygdeavgift?
+	Jonas and his grandmother, Line, both have a salary of 150,000 NOK. Jonas is 18 years old, and Line is 71 years old.\os
+	\textbf{a)} How much does Jonas have to pay in social security tax?\os
+	\textbf{b)} How much does Line have to pay in social security tax?
+	
+	\sv
+	\textbf{a)} Since Jonas is between 17 and 69 years old, he has to pay 8.2% social security tax:
+	\[ 150,000 \cdot 0.082 = 12,300 \]
+	So, Jonas has to pay 12,300 NOK in social security tax.
+	
+	\textbf{b)} Since Line is over 69 years old, she has to pay 5.1% social security tax:
+	\[ 150,000 \cdot 0.051 = 7,650 \]
+	So, Line has to pay 7,650 NOK in social security tax.
+}
 
-\sv
-\textbf{a)} Siden Jonas er mellom 17 år og 69 år, skal han betale 8,2\% trygdeavgift:
-\[ 150\,000\cdot0,082=12\,300 \]
-Altså skal Jonas betale 12\,300\,kr i trygdeavgift.
-Sidan Line er over 69 år, skal hun betale 5,1\% trygdeavgift:
-\[ 150\,000\cdot0,051=7\,650\]
-Altså skal Line betale 7\,650\,kr i trygdeavgift.
-}
-\subsection{Trinnskatt \label{trinnskatt}}
-Av lønnen din må du også betale en viss prosent av forskjellige intervall, dette kalles \textit{trinnskatt}:\regv
-\reg[Trinnskatt]{\vs
-\begin{center}
-	\begin{tabular}{l| r |r}
-		& Intervall & Skatt \\ \hline
-		Trinn 1	& 169 000\,-\,237 900\,kr&	1,4\% \\
-		Trinn 2	& 237 900\,-\,598 050\,kr&	3,3\%  \\
-		Trinn 3	& 598 050\,-\,962 050\,kr&	12,4\%  \\
-		Trinn 4	& Over 962 050\,kr	&15,4\% 
-	\end{tabular}
-\end{center}
-Trinnskatt beregnes av bruttolønnen.
-}
-\newpage
 \eks{
-Hvis du tjener 550\,000 blir utregningen av trinnskatt slik:
-
-\begin{center}
-\small
+	If you earn 550,000 NOK, the calculation of progressive tax is as follows:
+	
+	\begin{center}
+		\small
 		\begin{tabular}{c|l}
-\multirow{3}{*}{Trinn 1} 
-\\[-14pt] \hline \\
-& Da hele lønnen er over 237\,900\,kr, må du betale \\
-&skatt av  ${(237\,900-169\,000)\enh{kr} = 68\,900\enh{kr}}  $. \os
-& Skatt for trinn 1 blir da $ 68\,900\enh{kr}\cdot0,014\approx 965\enh{kr} $.\os \hline \\
-\multirow{4}{*}{Trinn 2} 
-& Da 550\,000\,kr er over 237\,900\,kr, men under 598\,050\,kr,\\
-& må du betale skatt av ${(550\,000-237\,900)\enh{kr} = 312\,100\enh{kr}}  $.  \os
-& Skatt for trinn 2 blir da $ 312\,100\enh{kr}\cdot0,033\approx 10\,299\enh{kr} $. \os \hline \\
-\multirow{2}{*}{Totalt} 
-& Totalt må du betale $ {965\enh{kr}+10\,299\enh{kr}=11\,264\enh{kr}} $\\
-& i trinnskatt.
-	\end{tabular}
-\end{center}
+			\multirow{3}{*}{Trinn 1} 
+			\\[-14pt] \hline \\
+			& As the entire salary is over 237,900 NOK, you must pay \\
+			& tax on ${(237,900-169,000)\,NOK = 68,900\,NOK}$. \os
+			& The tax for trinn 1 is then $68,900\,NOK\cdot0.014\approx 965\,NOK$. \os \hline \\
+			\multirow{4}{*}{Trinn 2} 
+			& Since 550,000 NOK is over 237,900 NOK but below 598,050 NOK,\\
+			& you must pay tax on ${(550,000-237,900)\,NOK = 312,100\,NOK}$.  \os
+			& The tax for trinn 2 is then $312,100\,NOK\cdot0.033\approx 10,299\,NOK$. \os \hline \\
+			\multirow{2}{*}{Total} 
+			& In total, you must pay $ {965\,NOK+10,299\,NOK=11,264\,NOK}$\\
+			& in progressive tax.
+		\end{tabular}
+	\end{center}
 }
+
 \newpage
-\subsection{Nettolønn}
-Det du sitter igjen med etter å ha betalt skatt, trygdeavgift og fagforeningskontigent kalles \textit{nettolønnen}. Med tanke på de tre tidligere delseksjonene kan vi sett opp et regnestykke som dette: \regv
-\reg[Nettolønn]{
-\begin{center}\vsb
-	\begin{tabular}{c r}
-	\phantom{xxxxxxx}	& Bruttolønn \\
-		$ - $ & Fagforeningskontigent\\ 
-		$ - $& 23\% skatt \\
-		$ - $ & Trygdeavgift \\
-		$ - $ & Trinnskatt \\ \hline
-		$ = $ & Nettolønn \\ \hline
-	\end{tabular}
-\end{center}
-}
-\eks{
-Emblas bruttolønn er 550\,000\,kr. Hun betaler 1500\,kr i året for medlemskap i \textsl{LO} (Norges største fagforening) og har 409\,900\enh{kr} som skattegrunnlag. Embla er 28 år.\os
 
-Hva er nettolønnen til Embla?
-
-\sv \vsb
-\begin{center}
-	\begin{tabular}{c r l}
-		\phantom{xxxxxxx} & 550\,000	& Bruttolønn \\
-		$ - $ & 1\,500\, & Fradrag for fagforening \\
-		$ - $& $ 93\,127 $& 23\% av skattegrunnlaget \\
-		$ - $ & 45\,100 & 8,2\% av bruttolønn \\
-		$ - $ & 11\,264 & Total skatt for trinn 1 og 2 \\ \hline
-		$ = $ & 399\,009& Nettolønn \\ \hline
-		
-	\end{tabular}
-\end{center}
-(Den totale trinnskatten har vi hentet fra utregningen i \textsl{Eksempel 1} fra \hyperref[trinnskatt]{\textsl{delseksjon \ref*{trinnskatt}}}.)\vsk
-
-Embla har altså 399\,009\,kr i nettolønn.
-}
-\section{Budsjett og regnskap}
-\subsection{Budsjett \label{budsjett}}
-Når man skal planlegge økonomien sin, kan det være lurt å sette opp en oversikt over det man forventer av inntekter og utgifter. En slik oversikt kalles et \textit{budsjett}. Når man regner ut hva inntekter minus utgifter er, finner man et \textit{resultat}. Er tallet positivt går man med \textit{overskudd}, er tallet negativt går man med \textit{underskudd}.
-
-\regv
-\eks{
-Lisa vil lage en oversikt over sine månedlige inntekter og utgifter, og kommer fram til dette:
-\begin{itemize}
-	\item Hun tar på seg kveldsvakter på en gamlehjem. Av dette forventer hun ca. 4\,000\enh{arg1} i nettolønn. \\
-	\item Hun bruker ca. 4\,500 kr i måneden på mat.
-	\item Hun får 4\,360\enh{kr} i borteboerstipend.
-	\item Hun bruker ca. 1\,200\enh{kr} på klær, fritidsaktiviteter o.l.
-\end{itemize}
-Sett opp et månedsbudsjett for Lisa.
-
-\sv \vsb
-\begin{center}
-	\begin{tabular}{r r}
-		\textbf{Inntekter} & Budsjett \\ \hline 
-		Lønn & 4\,000 \\
-		Stipend & 4\,360 \\ \hline
-		\textit{Sum} & 8\,360\\\hline 
-		& \\
-		\textbf{Utgifter} & \\ \hline
-		Mat & 4\,500 \\
-		Klær, fritid o.l. & 1\,200 \\ \hline
-		\textit{Sum} & 5\,700 \\ \hline
-		& \\ \hline
-		\textbf{Resultat} & 2\,660 \\ \hline
-	\end{tabular}
-\end{center}
-Budsjettet viser at Lisa forventer 2\,660\,kr i overskudd.
-}
 \newpage
-\subsection{Regnskap}
-I et budsjett fører man opp \textsl{forventede} inntekter og utgifter, mens i et \textit{regnskap} fører man opp \textsl{faktiske} innteker og utgifter. Forskjellen mellom budsjett og regnskap kalles \textit{avviket}. For avviket er det vanlig at man for inntekter og resultat regner ut '$ {\text{regnskap}-\text{budsjett}} $', mens man for utgifter regner ut '$ \text{budsjett}-\text{regnskap} $'. Dette fordi vi ønsker positive tall hvis inntektene er større enn forventet, og negative tall hvis utgiftene er større enn forventet. \regv
-\eks{ I eksempelet fra forrige delseksjon (\ref*{budsjett}) satt vi opp et månedsbudsjett for Lisa.
-	I mars viste det seg at dette ble de faktiske inntektene og utgiftene hennes:
+\subsection{Accounting}
+In a budget, you list \textsl{expected} incomes and expenses, while in an \textit{accounting} record, you list \textsl{actual} incomes and expenses. The difference between the budget and accounting is called the \textit{deviation}. For the deviation, it is common to calculate '$ {\text{accounting}-\text{budget}} $' for incomes and results, while for expenses, you calculate '$ \text{budget}-\text{accounting} $'. This is because we want positive numbers if the incomes are higher than expected, and negative numbers if the expenses are higher than expected. \regv
+\eks[]{In the example from the previous subsection (\ref*{budget}), we set up a monthly budget for Lisa.
+	In March, it turned out that these were her actual incomes and expenses:
 	\begin{itemize}
-		\item Hun fikk ikke jobbet så mye som hun hadde tenkt. Nettolønnen ble 3\,500\,kr.\\
-		\item Hun brukte  4\,200 kr i måneden på mat.
-		\item Hun fikk 4\,360 i borteboerstipend.
-		\item I bursdagsgave fikk hun i alt 2\,000 kr.
-		\item Hun brukte ca. 3\,600 på klær, fritidsaktiviteter o.l.
+		\item She didn't work as much as she had planned. Net pay was 3,500 NOK.\\
+		\item She spent 4,200 NOK on food.
+		\item She received 4,360 NOK in away-from-home grant.
+		\item In birthday gifts, she received a total of 2,000 NOK.
+		\item She spent about 3,600 NOK on clothing, leisure activities, etc.
 	\end{itemize}
-	Sett opp et regnskap for Lisas mars måned.
+	Set up an accounting record for Lisa's month of March.
 	
 	\sv \vsb
 	\begin{center}
 		\begin{tabular}{r r r r}
-			\textbf{Inntekter} & Budsjett & Regnskap & Avvik \\ \hline 
-			Lønn & 4\,000 & 3\,500 & $ \color{red} -500 $\\
-			Stipend & 4\,360 &  4\,360 &0\\ 
-			Bursdagsgave & 0& 2\,000 & 2\,000\\ \hline
-			\textit{Sum} & 8\,360 & 9\,860 & 2\,000\\\hline 
+			\textbf{Incomes} & Budget & Accounting & Deviation \\ \hline 
+			Salary & 4,000 & 3,500 & $ \color{red} -500 $\\
+			Grant & 4,360 &  4,360 & 0\\ 
+			Birthday Gifts & 0 & 2,000 & 2,000\\ \hline
+			\textit{Total} & 8,360 & 9,860 & 2,000\\\hline 
 			& \\
-			\textbf{Utgifter} & \\ \hline
-			Mat & 4\,500 & 4\,200 & 300\\
-			Klær, fritid o.l. & 1\,200 & 3\,600 & $ \color{red}-2\,400 $\\ \hline
-			\textit{Sum} & 5\,700 & 7\,800 & 1\,900\\ \hline
+			\textbf{Expenses} & \\ \hline
+			Food & 4,500 & 4,200 & 300\\
+			Clothing, Leisure, etc. & 1,200 & 3,600 & $ \color{red}-2,400 $\\ \hline
+			\textit{Total} & 5,700 & 7,800 & 1,900\\ \hline
 			& \\ \hline
-			\textbf{Resultat}  & 2\,660 & 2\,060 & $ \color{red}-600 $ \\ \hline
+			\textbf{Result}  & 2,660 & 2,060 & $ \color{red}-600 $ \\ \hline
 		\end{tabular}
 	\end{center}
-Lisa gikk altså med 2\,060\,kr i overskudd, men 600\,kr mindre enn forventet ut ifra budsjettet. 	
+	So, Lisa ended up with a surplus of 2,060 NOK, but 600 NOK less than expected based on the budget. 	
 }
 
 \end{document}
