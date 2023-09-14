@@ -15,6 +15,7 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 ## Files
 **English versions**
 - [FP](https://drive.google.com/file/d/1dYgNJhAPwST242vCtwdEP69xmgybLYXT/view?usp=share_link) <br/>
+- [AM1](https://drive.google.com/file/d/1dV8mrGnO6-PzSN5KSyM9A6IYLkNCe8P_/view?usp=drive_link) <br/>
 
 **Norwegian versions**
 
