@@ -1,0 +1,202 @@
+\input{../../doc}
+\input{../eng}
+\input{../../preamb}
+
+
+\begin{document}
+\section{GeoGebra}
+\subsection{Introduction}
+When you open GeoGebra, you see a picture like this:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{ggbalgoggraf}
+\end{figure}
+The field labeled "Skriv inn" is called the \textit{input field}. This field, along with the blank field below, constitutes the \textit{algebra field}. The coordinate system on the right is called the \textit{graphics field}.
+
+\subsection{Entering points, functions, and lines}
+\subsubsection{Points}
+Suppose we want the points $ (1,3) $ and $ (4,5) $ to appear in the graphics field. In the input field, we then write
+\g{(1,3)}
+and \vs
+\g{(4,5)}
+GeoGebra then names the points $ A $ and $ B $, and plots them in the graphics field:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{pointAandB}
+\end{figure}
+If we want to set a point's name ourselves, we can write, for instance,
+\g{P=(2,4)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.15]{pointP}
+\end{figure}
+\subsubsection{Functions}
+Suppose we have the function 
+\[f(x)= \frac{3}{2} x^2 + 3x \]
+To use $ f(x) $ in GeoGebra, we write:
+\g{3/2*x\^{}2+3x}
+When we do not give the function a name, GeoGebra will automatically name the function $ f $. In the algebra field, we therefore get
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{skrivf}
+\end{figure}
+In the graphics field, we get the graph of $ f $. \vsk
+
+If instead we have the function
+\[ P(x)= 0.15x^3 - 0.4 x\]
+there are two things to be aware of. The first is that \textsl{all decimals must be written using a period instead of a comma} in GeoGebra. The second is that we want to give the function the name $ P(x) $. We then write
+\g{P(x) = 0.15x\^{}3 - 0.4x}
+and get \vspace{-5pt}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{pfig}
+\end{figure}
+\info{Note!}{
+	You can never name functions $ {y(x)} $ in GeoGebra. $ y $ can only be used when entering expressions for a straight line, i.e., $ {y=ax +b} $, where $ a $ and $ b $ are two arbitrary numbers.
+}
+
+\subsubsection{Horizontal and Vertical Lines}
+
+If we want to create a line that runs horizontally through the value 3 on the \(y\)-axis and a line that runs vertically through the value 2 on the \(x\)-axis, we write:
+\g{y = 3}
+and 
+\g{x = 2 }
+This gives us the following figure:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{23}
+\end{figure}
+
+\subsection{Finding the Value of Functions and Lines}
+\subsubsection{Functions}
+Suppose we have the function
+\[H(x) = x^2 + 3x -3 \]
+If we want to know what \(H(2)\) is, we write:
+\g{H(2)}
+which results in this:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{H}
+\end{figure}
+From this, we know that \(H(2) = 7\).
+\subsubsection{Lines}
+It is strongly recommended that you use function expressions when dealing with lines in GeoGebra, but in some cases, you cannot avoid lines in the form \(y = ax + b\). \vsk
+
+Consider the two lines \vs
+\alg{
+	y &= x-3 \vn
+	y &= -2x+1
+}
+We enter these into GeoGebra, and get:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{fglin1}
+\end{figure}
+If we now want to find out what the value of \(y = x-3\) is when \(x = 2\), we need to note that GeoGebra has named this line \(f\). The answer we are looking for is then obtained by writing \(f(2)\). If we also want to know what \(y = -2x+1\) is when \(x = 0\), we write \(g(0)\):
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{fglin2}
+\end{figure}
+
+
+\newpage
+\subsection{Buttons and Commands}
+
+\subsubsection*{Graphics Field}
+Buttons are selected from dropdown menus on the toolbar. The numbering of the menus is from the left.\vsk
+
+\begin{tabular}{@{}l}
+	\,\includegraphics[scale=0.4]{fig/pkt} Creates a new point. (Menu no. 1) \\
+	\,\includegraphics[scale=0.4]{fig/lin} Creates a line between two points. (Menu no. 2)\\	
+	\,\includegraphics[scale=0.4]{fig/ekst} Finds the maximum and minimum points of a function. (Menu no. 2)\\
+	\,\includegraphics[scale=0.4]{fig/nul} Finds the zeros of a function. (Menu no. 2)	\\
+	\,\includegraphics[scale=0.4]{fig/skj} Finds the intersection point between two objects. (Menu no. 3)\\	
+	\,\includegraphics[scale=0.4]{fig/vek} Creates the vector between two points (Menu no. 3)\\		
+	\,\includegraphics[scale=0.4]{fig/tekst} Creates a text box. (Menu no. 10)\\		
+	\,\includegraphics[scale=0.4]{fig/flytt} Moves the graphics field. Changes the value distance if pointing at the axes. \\
+	\hspace{1cm}(Menu no. 10)\\			
+\end{tabular}
+
+\subsubsection{Shortcut Keys}
+\begin{tabular}{@{}c | c |c | c }
+	&\textbf{Description} & \textbf{PC }& \textbf{Mac} \\ \hline
+	$ \sqrt{} $	& square root& \texttt{alt\,+\,r} &\texttt{alt\,+\,r} \\\hline
+	$ \pi $	& pi& \texttt{alt\,+\,p} & \texttt{alt\,+\,p}\\\hline
+	$ \infty $ &infinity& \texttt{alt\,+\,u} &\texttt{alt\,+\,,}  \\\hline
+	$ \otimes $&cross product & \texttt{alt\,+\,shift\,+\,8}&\texttt{ctrl\,+\,shift\,+\,8} \\\hline
+	$ e $&euler's number & \texttt{alt\,+\,e}& \texttt{alt\,+\,e}\\\hline
+	$ {}^\circ $&degree symbol ($ \frac{\pi}{180} $) & \texttt{alt\,+\,o}& \texttt{alt\,+\,o}
+	\\\hline	
+\end{tabular}
+\newpage
+
+\subsubsection{Videos}
+\begin{itemize}
+	\item \net{https://drive.google.com/file/d/1u9u6eZFW8yqtM2ukdW9716i1_YH0NMOa/view?usp=sharing}{Find the zeros of a graph}
+	\item \net{https://drive.google.com/file/d/11B7o3WMrbR5cpfshkv9FSBpQ5khBCwLS/view?usp=sharing}{Find the local minimum (or maximum) of a graph}
+	\item \net{https://drive.google.com/file/d/1koy-ffEejtIt-YbIohoFN4gbMLi-95cb/view?usp=sharing}{Find the intersection points of two functions}
+	\item \net{https://drive.google.com/file/d/1Z8v05XjlqsSFpHEed5q4s0nGDjdQUfqs/view?usp=sharing}{Adjust axes}
+	\item \net{https://drive.google.com/file/d/1oKKDk084IEhy11rNhDk0-VykzXLuhthy/view?usp=sharing}{Change thickness, color, etc. on graph}
+	\item \net{https://drive.google.com/file/d/1568rRj2PxzwK6wSm7v4w3GWzDnGtSuuX/view?usp=sharing}{Draw graph on a given interval} \\
+	{\footnotesize In the video, we draw \(f(x)= x^2-3x+2\) on the interval \(0 \leq x \leq 5\)}.
+	\item \net{https://drive.google.com/file/d/1x7y7DJMJ-7rfpgapB48e5Nlq6UnXXcI2/view?usp=sharing}{Draw a line between two points} \\
+	{\footnotesize Notice what is done towards the end of the video to get the familiar expression \(y=ax+b\)}.
+	\item \net{https://drive.google.com/file/d/18cNeX3vJFEY7BpgrH_BFpI1q4c-bczyH/view?usp=sharing}{Perform regression}\\
+	{\footnotesize In the video, we have previously entered the numbers in the table below, which shows the electric car sales in Norway the number of years after 2010. These numbers were also used in \refsec{Regression}. \os
+		Regression is performed with a line, a quadratic function, and a 4th-degree function.
+		
+		\begin{tabular}{c|c}
+			\textbf{number of years} & \textbf{electric cars} \\ \hline
+			0 &	3347\\
+			1 &	5381\\
+			2 &	9565\\
+			3 &	19678\\
+			4 &	42356\\
+			5 &	73312\\
+			6 &	101126\\
+			7 &	138477\\
+			8 &	194900\\
+			9 &	260688\\
+			10 &337201\\
+			11 &	455271\\
+		\end{tabular}
+	}
+\end{itemize}
+
+\newpage
+\subsubsection{Command List}
+\mers{Many of the commands have their own buttons, as shown in the videos above.}
+\begin{itemize}
+	\item \cmds{abs( <x> )}{Gives the length of \( x \) (a number, a line segment, etc.). Alternatively, you can write {\tt{|x|}}}.
+	
+	\item \cmds{Line( <Point>, <Point> )}{Gives the line between two points.}
+	
+	\item \cmds{ExtremalPoint( <Function>, <Start>, <End> )}{Finds local maxima and minima for a function over a specified interval.}
+	
+	\item \cmds{Function( <Function>, <Start>, <End> )}{Draws a function within a specified interval.}
+	
+	\item \cmds{Polygon( <Point>, ..., <Point> )}{Draws the polygon between the given points.}
+	
+	\item \cmds{Zeroes( <Function>, <Start>, <End> )}{Provides the zeroes of a function within a specified interval.}
+	
+	\item \cmds{LinReg( <List> )}
+	{Uses linear regression to fit points given in a list.}
+	
+	\item \cmds{ExpReg( <List> )}
+	{Uses regression with an exponential function to fit points given in a list.}
+	
+	\item \cmds{PolyReg( <List>, <Degree> )}
+	{Uses regression with a polynomial of a given degree to fit points provided in a list.}
+	
+	\item \cmds{PotReg( <List> )}
+	{Uses regression with a power function to fit points given in a list.}
+	
+	\item \cmds{Intersection( <Object>, <Object> )}{Finds the intersection points of two objects (functions, lines, etc.)}
+	
+\end{itemize}
+
+
+
+
+\end{document}
+

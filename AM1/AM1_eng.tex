@@ -3,7 +3,9 @@
 \input{eng}
 
 %\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+\usepackage[angle=0, color={[rgb]{1,0,0}}, scale = 0.075, vpos = 20pt]{draftwatermark}
 
+\SetWatermarkText{Translated, in large, from Norwegian to English by ChatGPT}
 
 
 
@@ -14,61 +16,61 @@
 \newpage
 \tableofcontents
 
-\chapter{Størrelser og enheter \label{Storlogenh}}
+\chapter{Quantities and unit \label{Storlogenh}}
 \newpage
 
 \import{storl/}{storl_eng}
 %\import{storl/}{storl_opg_eng}
 
-\chapter{Statistikk \label{Statistikk}}
+\chapter{Statistics \label{Statistikk}}
 \newpage
 \import{stat/}{stat_eng}
 %\import{stat/}{stat_opg}
 
-\chapter{Brøkregning \label{BrokAM}}
+\chapter{Fractions \label{BrokAM}}
 \newpage
 \import{brok/}{brok_eng}
 \newpage
 %\import{brok/}{brok_opg_eng}
 
-\chapter{Økonomi \label{Okonomi}}
+\chapter{Economics \label{Okonomi}}
 \newpage
 \import{oko/}{oko_eng}
 %\import{oko/}{oko_opg}
 
-\chapter{Sannsynlighet \label{Sannsyn}} 
+\chapter{Probability \label{Sannsyn}} 
 \newpage
 \import{san/}{san_eng}
 %\import{san/}{san_opg}
 
-\chapter{Ligninger, formler og funksjoner \label{LigningerAM}}
+\chapter{Equations, formulas, and functions \label{LigningerAM}}
 \newpage
 \import{lig/}{lig_eng}
 %\import{lig/}{lig_opg_eng}
 
-\chapter{Digitale verktøy \label{Dig}}
+\chapter{Digital tools \label{Dig}}
 \import{prg/}{prg_eng}
 \import{prg/}{py_eng}
 \import{exl/}{rgn_eng}	
 \import{ggb/}{ggb_eng}	
 
-\import{prg/}{prg_opg}
-\import{exl/}{rgn_opg}	
+%\import{prg/}{prg_opg}
+%\import{exl/}{rgn_opg}	
 %\import{ggb/}{ggb_opg}	
 
 %\chapter{Blandende oppgaver}
 %\import{mix/}{mix_eng}
 
-\chapter*{Vedlegg} 
+\chapter*{Appendix} 
 \newpage
-\addcontentsline{toc}{chapter}{Vedlegg}
-\import{vdl/}{funk}
-\import{vdl/}{tekster}
+\addcontentsline{toc}{chapter}{Appendix}
+\import{vdl/}{funk_eng}
+%\import{vdl/}{tekster}
 
-\chapter*{Fasit}
-\addcontentsline{toc}{chapter}{Fasit}
-\phantomsection
-\import{fas/}{fas_eng}
+%\chapter*{Fasit}
+%\addcontentsline{toc}{chapter}{Fasit}
+%\phantomsection
+%\import{fas/}{fas_eng}
 
 \end{document}
 

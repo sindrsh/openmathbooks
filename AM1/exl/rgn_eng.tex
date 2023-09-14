@@ -1,0 +1,129 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+\begin{document}
+\section{Spreadsheets}
+
+\textit{In this book, we base our discussions on Microsoft's software, Excel. There are other good spreadsheets available in the market, such as Google Sheets and Libre Office Calc. These three mentioned spreadsheets are very similar in design and in the functions they offer.}
+
+\subsection{Introduction}
+
+When you open a spreadsheet, you'll see a table where \textit{rows} are numbered with numbers (1, 2, 3 etc.), while \textit{columns} are indexed with letters (A, B, C etc.). How the rows and columns are used is crucial for understanding Excel. In the figure below, we have highlighted what we call \textit{cell B\textsl{3}}. This is the cell where \textsl{row 3 and column B intersect}. (Also, notice that B3 is highlighted in the top left of the figure).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{figs/B3}
+\end{figure}
+In each cell, we can input both numbers and text. Let's say Ole has a job with an hourly wage of 250\,kr, and he works 7 hours a week. We can input this information into Excel as shown:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{figs/ex2}
+\end{figure}
+\subsection{Calculations}
+Now, we want to determine Ole's weekly wage.
+The weekly wage is given by the formula
+\[ \text{weekly wage}={\text{hourly wage}\cdot \text{hours per week}} \]
+To perform a calculation in a spreadsheet, you start by typing {\tt{=}} in the cell. In cell B4, we find Ole's weekly wage by typing {\tt=250$ ^* $7}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex3}\qquad
+	\includegraphics[scale=0.3]{figs/ex4}
+\end{figure}
+When we press the enter key, the result, 1750, is displayed in the cell. If you want to see the formula we used, you can double click on the cell, or look at the \textit{input field} (top right in the figure below).
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{figs/intast}
+\end{figure}
+\textsl{Note:} The input field can also be used to input numbers and text in the cell.
+
+\subsection{Cell References}
+Perhaps Excel's most essential feature is \textit{cell references}. In short, this means that we use cells instead of numbers when making calculations. In the previous section, we calculated Ole's wage by multiplying 250 (hourly wage) by 7 (hours per week). By using cell references, we could have done this instead:
+
+The number corresponding to the hourly wage (250) is in cell B2, while the number corresponding to hours (35) is in cell B3. To multiply the numbers in these cells, we can type {\tt =B2$ ^* $B3}: 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex5}\qquad
+	\includegraphics[scale=0.3]{figs/ex4}
+\end{figure}
+One advantage of using cell references is that it becomes much easier to correct mistakes that have been made. Say, for instance, it should have been 300 instead of 250 in B3. If we change B3, the result in B4 will adjust accordingly:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex6}
+\end{figure}
+\textsl{Note:} You can also click on the cells you want to use in your formulas, as shown \net{https://drive.google.com/open?id=1S43og4XFAiYyZeFh7tGClBYXoPSv2i0R}{here}.
+
+\subsection{Copying and Locking Cells}
+Copying cells is a method that prevents you from writing the same formulas over and over again. We now want to create a sheet suitable for the following information:
+\begin{itemize}
+	\item The hourly wages for Ole, Dole, and Doffen are 300\,kr, 200\,kr, and 500\,kr, respectively.
+	\item All three work 7 days a week.
+	\item We want to calculate the total hours they work and their total weekly wages.
+\end{itemize}
+
+We start by setting up this spreadsheet:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex7}\qquad
+\end{figure}
+Here, we have only filled in the information that is \textit{unique} for Ole, Dole, and Doffen, precisely because the other cells either contain the same numbers or use the same calculation method. For cells that are not unique, we should use the copying features, as shown in this \net{??}{video}. Here is a brief description of what is done:
+\begin{enumerate}
+	\item Since all three work 7 hours, we type {\tt 7} in cell B4. Then, we copy by clicking the mouse pointer right at the bottom right corner of B4 and drag \textsl{across} to C2 and D2.
+	\item Since the calculation method for weekly wages is the same for all three, we type it (with cell references) in B4, and copy it \textsl{across} to cell C4 and D4.
+	\item The calculation method for the sum of hours and the sum of weekly wages is also the same; hence, we type it in cell E3 and copy it \textsl{down} to E4.
+\end{enumerate}
+The result is:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex8}\\[5pt]
+	\includegraphics[scale=0.3]{figs/ex15}
+\end{figure}
+From what we've seen in the \net{https://drive.google.com/open?id=1FgpfKxFzfrc18sIoy3B1MBfEguvzSzVJ}{video} and the figures above, we can take away two general rules:
+\begin{enumerate}
+	\item Every time you copy a formula one cell \textsl{across}, the columns in the formula will increase by one letter in the alphabet. (A becomes B, B becomes C, etc.)
+	\item Every time you copy a formula one cell \textsl{down}, the rows in the formula will increase by 1 (1 becomes 2, 2 becomes 3, etc.).
+\end{enumerate}
+
+\textbf{Locking of cells}\\[2pt]
+When copying cells, it's essential to watch out for cells you want to use in all copies, because these cells must be \textit{locked}. Let's say for instance that Huey, Dewey, and Louie all work 48 weeks a year. To find their annual salary, we must multiply the weekly wage of each of them by 48. \vsk
+
+Again, we note that the calculation method to find the annual salary is the same for all three. However, if we use cell B8 in a formula and copy as we have done so far, the letter B will change in the formulas. To avoid this, we write {\tt \$} in front of {\tt B} in the formula $ - $ this ensures that the column letter doesn't change, even if we copy the formula. This is shown in this \net{https://drive.google.com/open?id=1bPz2NYZEB3iWyCMQQYTpgms8LsTepY_G}{video}, and the result looks like this:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{figs/ex12}\\[5pt]
+	\includegraphics[scale=0.3]{figs/ex13}
+\end{figure}
+To lock a cell \textsl{downwards}, we must place the dollar sign in front of the row number, for instance {\tt{B\$1}}.
+\subsection{Other useful functions}
+\st{
+	\textbf{Videos}
+	\begin{itemize}
+		\item \net{https://drive.google.com/file/d/1o7DuDB4yd47kfJWRGXn5Gp3yQbskZiVC/view?usp=sharing}{Sum across and sum down}	
+		\item \net{https://drive.google.com/file/d/1RoEAzBYq0bkf1T-W_iWfKW4cc4inlRtb/view?usp=sharing}{Adjust column width}
+		\item \net{https://drive.google.com/file/d/1ZiRWW8CwNgSRvjng6JFxKhFZ5HmWLSXM/view?usp=sharing}{Insert row}
+		\item \net{https://drive.google.com/file/d/1iuDPTMvDeA73HCjhXIp9nhdMdWou2qhI/view?usp=sharing}{Formula view}
+		\item \net{https://drive.google.com/file/d/1EdnLdzkRKL_L7ipeEtNc8wyDlS-f2h9X/view?usp=sharing}{Convert to percentage}
+		\item \net{https://drive.google.com/file/d/1ueFQnTNYIGEH6lMxXc0o_PWcl7204YVZ/view?usp=sharing}{Change the number of decimals}
+		\item \net{https://drive.google.com/file/d/1HZAlebp51NlwbO5JyxtFPX0TBbvRmvWu/view?usp=sharing}{Sort in ascending/descending order}
+		\item \net{https://drive.google.com/file/d/10era8zDW0oCIcZi8ydT4pFKhxR6b-SUw/view?usp=sharing}{Create a bar chart}
+		\item \net{https://drive.google.com/file/d/1tbXVgy28F4bXqKunZsfYrjiNs-cV6Vk-/view?usp=sharing}{Create a pie chart}
+		\item \net{https://drive.google.com/file/d/1ueFQnTNYIGEH6lMxXc0o_PWcl7204YVZ/view?usp=sharing}{Create a line chart}
+\end{itemize}}
+
+\st{
+	\textbf{Commands} (written with {\tt{=}} in front).
+	
+	\begin{itemize}
+		\item {\tt{SUM}(cell1:cell2)} \\
+		Sums all the values from cell1 to cell2.
+		\item {\tt{AVERAGE}(cell1:cell2)} \\
+		Finds the average for all values from cell1 to cell2.
+		\item {\tt{MEDIAN}(cell1:cell2)} \\
+		Finds the median for all values from cell1 to cell2.
+		\item {\tt{VAR.P}(cell1:cell2)} \\
+		Finds the variance for all values from cell1 to cell2.
+	\end{itemize}	
+}
+
+
+\end{document}
