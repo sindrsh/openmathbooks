@@ -1,0 +1,56 @@
+\usepackage{geometry}
+\geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
+\usepackage[dvipsnames, xetex, table]{xcolor}
+\setlength{\parindent}{0bp}
+\usepackage{import}
+\usepackage[subpreambles=false]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+
+\usepackage{imakeidx}
+\makeindex[title=Indeks]
+
+\newcommand\alg[1]{\begin{align*} #1 \end{align*}}
+\newcommand{\sym}[1]{\colorbox{blue!15}{#1}}
+\newcommand{\regv}{\vspace{5pt}}
+\newcommand{\mer}{\textsl{\note}: }
+\newcommand{\mers}[1]{{\footnotesize \mer #1}}
+\newcommand\vsk{\vspace{11pt}}
+\newcommand{\tbs}{\vspace{5pt}}
+\newcommand\vs{\vspace{-11pt}}
+\newcommand\vsb{\vspace{-16pt}}
+\newcommand\br{\\[5 pt]}
+\newcommand{\figp}[1]{../fig/#1}
+\newcommand\algvv[1]{\vs\vs\begin{align*} #1 \end{align*}}
+\newcommand{\y}[1]{$ {#1} $}
+\newcommand{\os}{\\[5 pt]}
+\newcommand{\prbxl}[2]{
+	\parbox[l][][l]{#1\linewidth}{#2
+}}
+\newcommand{\prbxr}[2]{\parbox[r][][l]{#1\linewidth}{
+		\setlength{\abovedisplayskip}{5pt}
+		\setlength{\belowdisplayskip}{5pt}	
+		\setlength{\abovedisplayshortskip}{0pt}
+		\setlength{\belowdisplayshortskip}{0pt} 
+		\begin{shaded}
+			\footnotesize	#2 \end{shaded}}}
+\newcommand{\fgbxr}[2]{
+	\parbox[r][][l]{#1\linewidth}{#2
+}}		
+
+
+\usepackage{datetime2}
+
+% outline word
+\newcommand{\outl}[1]{{\boldmath \color{teal}\textbf{#1}}}
+%line to seperate examples
+\newcommand{\linje}{\rule{\linewidth}{1pt} }
+
+
+\usepackage[]{hyperref}
+
+% arabic language
+\usepackage{polyglossia}
+\setdefaultlanguage{arabic}
+\setmainfont{Amiri}
