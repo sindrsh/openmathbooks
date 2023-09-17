@@ -1,18 +1,9 @@
 \input{../../doc_arab}
 \input{../../preamb_arab}
-\input{../bm}
-
-\usepackage{datetime2}
-%%\usepackage{sansmathfonts} for dyslexia-friendly math
-\usepackage[]{hyperref}
-
-% arabic language
-\usepackage{polyglossia}
-\setdefaultlanguage{arabic}
-\setmainfont{Amiri}
+\input{../arab}
 
 \begin{document}
-\small
+\setcounter{chapter}{1}
 \section{سلاسل}\index{سلسلة}
 السلاسل هي تسلسل للأرقام، عادة ما تكون مفصولة بفواصل. في السلسلة
 \begin{equation}
@@ -47,74 +38,76 @@
 }
 الصيغة الصريحة تعطينا تعبيرًا يتم حساب قيمة العنصر مباشرة من خلاله. عندما نمتلك تعبيرًا من هذا النوع، فإنه من المعتاد أيضًا كتابة هذا كآخر عنصر في السلسلة، وتصبح \eqref{folg1} كالتالي:
 \[  2, 4, 8, 16, 32, 64, ..., 2^i \]
-\end{document}
-\subsection{Aritmetiske følger} \index{følge!aritmetisk}
+\subsection{التتابعات الحسابية} \index{تتابع!حسابي}
 
-Følgen 
+التتابع
 \[ 2, 5, 8, 11, 14, 17 \]
-kalles en \textit{aritmetisk følge}. I en aritmetisk følge har to naboelement konstant differanse, i dette tilfellet 3. Skriver vi opp de tre første elementene kan vi finne mønsteret til en eksplisitt formel\index{eksplisitt formel}:
+يُطلق عليه \textit{تتابع حسابي}. في التتابع الحسابي, يكون لدينا فرق ثابت بين كل عنصرين متتاليين، وفي هذه الحالة الفرق هو 3. عندما نكتب العناصر الثلاثة الأولى نستطيع أن نجد النمط للصيغة المحددة \index{صيغة محددة}:
 \alg{
 	& a_1 = 2 = 2+3\cdot0\\
 	& a_2 = 5 = 2+3\cdot1\\
 	& a_3 = 8 = 2 +3\cdot2
 }
-Av ligningene over observerer vi at
+من المعادلات أعلاه نلاحظ أن
 \[ a_i=2+3\cdot(i-1) \]
-\reg[Aritmetisk følge]{
-	Et element $ a_i $  i en \outl{aritmetisk følge} er gitt ved den rekursive formelen
+\reg[التتابع الحسابي]{
+	العنصر \( a_i \) في \outl{تتابع حسابي} معطى بالصيغة التكرارية
 	\begin{equation}\label{arrekeq}
 		a_i=a_{i-1}+d
 	\end{equation}
-	og den eksplisitte formelen
+	والصيغة المحددة
 	\begin{equation}
 		a_i=a_1+d(i-1) \label{ekspl}
 	\end{equation}
-	hvor $ d $ er den konstante differansen $ a_i-a_{i-1} $.}
+	حيث \( d \) هو الفرق الثابت \( a_i-a_{i-1} \).
+}
 \newpage
-\eks[]{Finn den rekursive og den eksplisitte formelen til følgen
-	\[ 7, 13, 19, 25, ... \]	\vs
+\eks[]{ابحث عن الصيغة التكرارية والصيغة المحددة للتتابع
+	\[ 7, 13, 19, 25, ... \]
+	\vs
 	\sv
-	Følgen har konstant differanse $ {d=6} $ og første element $ {a_1=7} $. Den rekursive formelen blir da
+	التتابع له فرق ثابت \( {d=6} \) والعنصر الأول هو \( {a_1=7} \). الصيغة التكرارية تصبح 
 	\[ a_i = a_{i-1}+6 \]
-	Mens den eksplisitte formelen blir
+	في حين تصبح الصيغة المحددة
 	\[ a_i=7+6(i-1) \]
 }
-\subsection{Geometriske følger} \index{følge!geometrisk}
-Følgen 
+
+\subsection{التتابعات الهندسية} \index{تتابع!هندسي}
+
+التتابع 
 \[ 2, 6, 18, 54, 162 \]
-kalles en \textit{geometrisk følge}. I en geometrisk følge har forholdet mellom to naboelement den samme kvotienten, i dette tilfellet 3. Også her kan vi gjenkjenne et fast mønster:
+يُطلق عليه \textit{تتابع هندسي}. في التتابع الهندسي, النسبة بين كل عنصرين متتاليين تكون ثابتة، وفي هذه الحالة النسبة هي 3. هنا أيضًا نستطيع أن نكتشف نمطًا ثابتًا:
 \algv{
 	& a_1 = 2 = 2\cdot3^0\\
 	& a_2 = 6 = 2\cdot3^1\\
 	& a_3 = 18 = 2\cdot3^2
 }
-Den eksplisitte formelen blir derfor
+إذاً الصيغة المحددة هي
 \[ a_i = 2\cdot3^{i-1} \]
-\reg[Geometrisk følge]{
-	Et element $ a_i $  i en \outl{geometrisk følge} med kvotient $ k $ er gitt ved den rekursive formelen
+\reg[التتابع الهندسي]{
+	العنصر \( a_i \) في \outl{تتابع هندسي} بنسبة \( k \) معطى بالصيغة التكرارية
 	\begin{equation}\label{geofolgrek}
 		a_i=a_{i-1}\cdot k
 	\end{equation}
-	og den eksplisitte formelen
+	والصيغة المحددة
 	\begin{equation}\label{geofolgeks}
 		a_i=a_1\cdot k^{i-1}
 	\end{equation}
 }
-\eks[]{
-	Finn den rekursive og den eksplisitte formelen til følgen
+\eks[1]{
+	ابحث عن الصيغة التكرارية والصيغة المحددة للتتابع
 	\[ 5, 10, 20, 40, ... \]
 	
 	\sv
-	Følgen har konstant kvotien $ {k=2} $, og første element $ {a_1=5} $. Den rekursive formelen blir da
+	التتابع له نسبة ثابتة \( {k=2} \)، والعنصر الأول هو \( {a_1=5} \). الصيغة التكرارية تصبح
 	\[ a_i= a_{i-1}\cdot 2 \]
-	Mens den eksplisitte formelen blir
+	في حين تصبح الصيغة المحددة
 	\[ a_i=5\cdot2^{i-1} \]
 }
-
-\eks{En geometrisk følge har $ {a_1 = 2} $ og $ {k=4} $. For hvilken $ i $ er $ {a_i=128 }$? \\
+\eks[2]{تتابع هندسي له \( {a_1 = 2} \) و \( {k=4} \). لأي قيمة من \( i \) يكون \( {a_i=128 } \)? \\
 	
 	\sv
-	Vi får ligningen
+	لدينا المعادلة
 	\algv{
 		2\cdot4^{i-1}&=128 \\
 		4^{i-1}&= 64 \\
@@ -122,86 +115,87 @@ Den eksplisitte formelen blir derfor
 		i-1 &= 3\\
 		i &= 4
 	}
-	Altså er ${ a_4=128} $.
+	إذا كان \( {a_4=128} \).
 }
-\section{Rekker}\index{rekke}
-En \textit{rekke} er strengt tatt det samme som et \textit{addisjonsstykke} (se \mb). For eksempel er
+\section{سلاسل}\index{سلسلة}
+\textit{السلسلة} هي في الواقع نفسها \textit{عبارة الجمع} (انظر \mb). على سبيل المثال، هي
 \[ 2+6+18+54+162 \]
-en rekke. Vi bruker begrepet \textit{ledd} på samme måte som \textit{element} for en følge; i rekka over har ledd nr. 3 verdien 18, og i alt er det fem ledd.\vsk
+سلسلة. نستخدم المصطلح \textit{عنصر} بنفس الطريقة التي نستخدم فيها \textit{عنصر} لتتابع، في السلسلة أعلاه، العنصر رقم 3 له القيمة 18، وفي المجموع هناك خمسة عناصر.\vsk
 
-For en rekke er det naturlig at vi ikke bare ønsker å vite verdien til hvert enkelt ledd, men også hva summen av alle leddene er. Så lenge en rekke ikke er uendelig, kan man alltids legge sammen ledd for ledd, men for noen rekker finnes det uttrykk som gir oss summen etter mye mindre arbeid (og til og med for tilfeller av uendelige rekker).
+بالنسبة لسلسلة، من الطبيعي أننا لا نرغب فقط في معرفة قيمة كل عنصر بشكل فردي، ولكن أيضًا ما هو مجموع جميع العناصر. طالما أن السلسلة ليست لانهائية، يمكن دائمًا جمع العناصر واحدًا تلو الآخر، ولكن بالنسبة لبعض السلاسل، هناك تعبيرات تعطينا المجموع بكثير أقل من العمل (وحتى في حالات السلاسل اللانهائية).
 
-\subsection{Aritmetiske rekker}
+\subsection{سلاسل حسابية}
 \reg[\sumarrek \label{sumarrek}]{
 	
-	\index{rekke!aritmetisk}
-	Hvis leddene i en rekke kan beskrives som en aritmetisk følge, kalles rekka en \outl{aritmetisk rekke}.\vsk
+	\index{سلسلة!حسابية}
+	إذا كانت العناصر في سلسلة يمكن وصفها بتتابع حسابي، تُسمى السلسلة بـ\outl{سلسلة حسابية}.\vsk
 	
-	Summen $ S_n $ av de $ n $ første leddene i en aritmetisk rekke er gitt som
+	المجموع \( S_n \) لأول \( n \) عنصر في سلسلة حسابية هو
 	\begin{equation}\label{arrek}
 		S_n = n\frac{a_1+a_n}{2}
 	\end{equation}
-	hvor $ a_1 $ er første element i rekka.
+	حيث \( a_1 \) هو العنصر الأول في السلسلة.
 } \regv
 
 \eks{ \label{arrekeks}
-	Gitt den uendelige rekka
+	نظرًا للسلسلة اللانهائية
 	\[ 3+7+11+... \] 
-	Finn summen av de ti første leddene \os
+	ابحث عن مجموع العناصر العشرة الأولى \os
 	
 	\sv
-	Det $ i $-te leddet $a_i$ i rekka er gitt ved formelen
+	العنصر \( i \) في السلسلة \(a_i\) معطى بالصيغة
 	\[ a_i=3+4(i-1) \]
-	Dette er derfor en aritmetisk rekke, og summen av de $ n $ første  leddene er da gitt av ligning \eqref{arrek}. Ledd nr.\,10 blir da
+	لذا، هذه هي سلسلة حسابية، ومجموع العناصر \( n \) الأولى هو
 	\alg{
 		a_{10} &= 3+4(10-1) \\
 		&= 39	
 	} 
-	De ti første leddene er dermed gitt som
+	العناصر العشرة الأولى هي
 	\alg{
 		S_{10} &= 10\cdot\frac{3+39}{2} \\
 		&= 210
 	}
 } \vsk
 \fork{\ref{sumarrek} \sumarrek}{
-	Ved å bruke den eksplisitte formelen fra \eqref{ekspl}, kan vi skrive summen av en aritmetisk rekke med $ n $ element som
+	باستخدام الصيغة الصريحة من \eqref{ekspl}، يمكننا كتابة مجموع سلسلة حسابية بها \( n \) عنصر كـ
 	\begin{equation}
 		S_n = a_1 + (a_1+d) + (a_1+ 2d)+...+ (a_1+d(n-1)) \label{a1}
 	\end{equation}
-	Men ledd i rekka kan også uttrykkes slik:
+	ويمكن أيضًا التعبير عن عنصر في السلسلة كـ:
 	\[ a_i= a_n-(n-i)d \]
-	for $ 1\leq i\leq n $.
-	Og da kan vi skrive summen som (her står siste element først, deretter nest siste osv.)
+	لـ \( 1\leq i\leq n \).
+	وبذلك، يمكننا كتابة المجموع (هنا العنصر الأخير أولاً، ثم الذي قبله وهكذا)
 	\begin{equation}
 		S_n = a_n + (a_n-d)+(a_n-2d)+...+(a_n-d(n-1)) \label{a2}
 	\end{equation}
-	Adderer vi \eqref{a1} og \eqref{a2}, får vi $ 2S_n $ på venstre side. På høyre side blir alle \textit{d}-er kansellert, og vi ender opp med at
+	عند جمع \eqref{a1} و \eqref{a2}، نحصل على \( 2S_n \) على الجانب الأيسر. على الجانب الأيمن، جميع \textit{d} تُلغى، ونحصل على
 	\alg{
 		2S_n &= na_1 + na_n \br
 		S_n&=n\frac{a_1+a_n}{2} 
 	}
 }
+
 \newpage
-\subsection{Geometriske rekker} 
+\subsection{التسلسلات الهندسية} 
 \reg[\sumgerek \label{geom} \index{rekke!geometrisk}]{
-	Hvis ledd i en rekke kan beskrives som en geometrisk følge, kalles rekka en \outl{geometrisk rekke}.	\vsk
+	إذا كان يمكن وصف أحد أجزاء التسلسل بأنه تتابع هندسي، يُسمى التسلسل \outl{تسلسل هندسي}.	\vsk
 	
-	Summen $ S_n $ av de $ n $ første leddene i en geometrisk rekke med kvotient $ k $ og første element $ a_1 $ er gitt som
+	مجموع $ S_n $ للـ $ n $ جزء الأولى في التسلسل الهندسي بنسبة $ k $ والجزء الأول $ a_1 $ معطى كالتالي:
 	\begin{equation}
 		S_n=a_1\frac{1-k^n}{1-k}\quad, \quad k\neq 1 \label{sumg}
 	\end{equation}
-	Hvis $ {k=1}, $ er
+	إذا كان $ {k=1}, $ فإن:
 	\begin{equation}
 		S_n = na_1
 	\end{equation}
 }
 \eks{ \label{gerekeks}
-	Gitt den uendelige rekka
+	نظرًا للتسلسل اللانهائي:
 	\[ 3+6+12+24+... \]	
-	Finn summen av de 15 første leddene.
+	ابحث عن مجموع الـ 15 جزء الأولى.
 	
 	\sv
-	Dette er en geometrisk rekke med $ {a_1=3} $ og $ {k=2} $. Summen av de 15 første leddene blir da
+	هذا هو التسلسل الهندسي بـ $ {a_1=3} $ و $ {k=2} $. مجموع الـ 15 جزء الأولى هو:
 	\alg{
 		S_{15}&= 3\cdot\frac{2^{15}-1}{1-2} \br
 		&= 	3\cdot\frac{1-32768}{-1} \br
@@ -210,171 +204,176 @@ For en rekke er det naturlig at vi ikke bare ønsker å vite verdien til hvert e
 }
 \newpage
 \fork{\ref{geom} \sumgerek}{
-	Summen $ S_n $ av en geometrisk rekke med $ n $ element er
+	مجموع $ S_n $ للتسلسل الهندسي بـ $ n $ جزء هو:
 	\begin{equation}
 		S_n = a_1 + a_1k + a_1k^2+...+a_1 k^{n-2}+a_1 k^{n-1} \label{geo1}
 	\end{equation}
-	Ganger vi denne summen med $ k $, får vi at
+	إذا ضربنا هذا المجموع بـ $ k $، نحصل على:
 	\begin{equation}
 		kS_n = a_1k + a_1k^2 + a_1k^3+...+a_1 k^{n-1}+a_1 k^{n} \label{geo2}
 	\end{equation}
-	Uttrykket vi søker framkommer når vi trekker \eqref{geo2} ifra \eqref{geo1}:
+	التعبير الذي نبحث عنه يظهر عندما نخصم \eqref{geo2} من \eqref{geo1}:
 	\alg{
 		S_n-kS_n &= a_1-a_1k^n \\
 		S_n(1-k) &= a_1(1-k^n) \\
 		S_n &= a_1\frac{(1-k^n)}{1-k}
 	}
 }
-\subsection{Uendelige geometrisk rekker}
-Når en geometrisk rekke har uendelig mange element, merker vi oss dette:
 
-Hvis $ {|k|<1} $, er
+\subsection{التسلسلات الهندسية اللانهائية}
+عندما يكون للتسلسل الهندسي عناصر لانهائية، نلاحظ:
+
+إذا كان $ {|k|<1} $، فإن:
 \alg{
 	\lim\limits_{n\to\infty} S_n &=\lim\limits_{n\to\infty} a_1\frac{1-k^n}{1-k}  \\[5pt]
 	&= a_1 \frac{1}{1-k}
 }
-Summen av uendelig mange element går altså mot en endelig (konkret) verdi! Når dette er et faktum sier vi at rekka \textit{konvergerer}\index{konvergere} og at rekka er konvergent\index{rekke!konvergent}. Hvis derimot $ |k|\geq 1$, går summen mot $ \pm \infty$. Da sier vi at rekka \textit{divergerer}\index{divergere} og at rekka er divergent\index{rekke!divergent}.\regv
-\reg[Summen av en uendelig geometrisk rekke]{
-	For en uendelig geometrisk rekke med kvotient $ {k<|1|} $ og første element $ a_1 $ er summen $ S_\infty $ av rekka gitt som
+إذاً، مجموع عناصر لانهائية يتجه نحو قيمة محددة (واقعية)! عندما يكون هذا حقيقة نقول أن التسلسل \textit{يتقارب}\index{konvergere} وأن التسلسل هو متقارب\index{rekke!konvergent}. إذا كان من ناحية أخرى $ |k|\geq 1$، يتجه المجموع نحو $ \pm \infty$. في هذه الحالة نقول أن التسلسل \textit{يتباعد}\index{divergere} وأن التسلسل هو متباعد\index{rekke!divergent}.\regv
+\reg[مجموع التسلسل الهندسي اللانهائي]{
+	للتسلسل الهندسي اللانهائي بنسبة $ {k<|1|} $ والجزء الأول $ a_1 $، مجموع $ S_\infty $ للتسلسل معطى كالتالي:
 	\begin{equation}
 		S_\infty = \frac{a_1}{1-k}
 	\end{equation}
 	
-	Hvis $ |k|\geq 1 $, vil summen gå mot $ \pm \infty $.
+	إذا كان $ |k|\geq 1 $، سيرتفع المجموع نحو $ \pm \infty $.
 }
 \newpage
 \eks{ \label{gerekueneks}
-	Gitt den uendelige rekka 
+	نظرًا للتسلسل اللانهائي: 
 	\[ 1+\frac{1}{x}+\frac{1}{x^2}+.... \]
-	\textbf{a)} For hvilke $ x $ er rekka konvergent? \os
+	\textbf{a)} ما هي قيمة $ x $ التي يكون فيها التسلسل متقاربًا؟ \os
 	
-	\textbf{b)} Vis at \y{S_\infty=\frac{x}{x-1}} når rekka konvergerer.\os
+	\textbf{b)} أظهر أن \y{S_\infty=\frac{x}{x-1}} عندما يتقارب التسلسل.\os
 	
-	\textbf{c)} For hvilken $ x $ er summen av rekka lik $ \frac{3}{2} $?\os
+	\textbf{c)} ما هي قيمة $ x $ التي يكون فيها مجموع التسلسل مساويًا لـ $ \frac{3}{2} $؟\os
 	
-	\textbf{d)} For hvilken $ x $ er summen av rekka lik $ -1 $?\\
+	\textbf{d)} ما هي قيمة $ x $ التي يكون فيها مجموع التسلسل مساويًا لـ $ -1 $?\\
 	
 	\sv
-	\textbf{a)} Dette er en geometrisk rekke med $ {k=\frac{1}{x} }$ og ${ a_1 = 1} $. Rekka er konvergent når $ {|k|<1} $, vi krever derfor at
+	\textbf{a)} هذا هو التسلسل الهندسي بـ $ {k=\frac{1}{x} }$ و ${ a_1 = 1} $. التسلسل يكون متقاربًا عندما $ {|k|<1} $، ولذلك نتطلب:
 	\[ |x|>1  \] 
 	
-	\textbf{b)} Når $ |x|>1 $, har vi at
+	\textbf{b)} عندما $ |x|>1 $، نحصل على:
 	\alg{
 		S_\infty &= \frac{a_1}{1-k} \\
 		&= \frac{1}{1-\frac{1}{x}} \\
 		&= \frac{1}{\frac{x-1}{x}} \\
 		&= \frac{x}{x-1}
 	}
-	Som er det vi skulle vise.\vsk
+	وهو ما كنا بحاجة لإثباته.\vsk
 }
-\newpage
-\subsection{Summetegnet}\index{summetegnet}
-Vi skal nå se på et symbol som forenkler skrivemåten av rekker betraktelig. Symbolet blir spesielt viktig i \refkap{Integrasjon}, hvor vi skal studere \textit{integrasjon}.\vsk
 
-Tidligere har vi skrevet rekkae mer eller mindre bent fram. For eksempel har vi sett på rekka
+\newpage
+\subsection{رمز المجموع}\index{رمز المجموع}
+سننظر الآن في رمز يبسط طريقة كتابة السلاسل بشكل كبير. يصبح هذا الرمز مهمًا بشكل خاص في {التكامل}، حيث سندرس \textit{التكامل}.\vsk
+
+في السابق كتبنا السلسلة بشكل مباشر أو أقله. على سبيل المثال، رأينا السلسلة
 \[ 2+6+18+54+162 \]
-med den eksplisitte formelen
+بالصيغة الصريحة
 \[ a_n = 2\cdot3^{n-1} \]
-Ved hjelp av summetegnet $ \sum $ kan rekka vår komprimeres betratelig. Ved å skrive $ \sum\limits_{i=1}^5 $ indikerer vi at $ i $ er en løpende variabel som starter på 1 og deretter øker med 1 opp til 5. Hvis vi lar den eksplisitte formelen til rekka være uttrykt ved $ i $, kan vi skrive rekka som $ \sum\limits_{i=1}^5 2\cdot3^{i-1} $, underforstått at vi skal sette et plusstegn hver gang $ i $ øker med 1:
+باستخدام رمز المجموع $ \sum $ يمكننا ضغط سلسلتنا بشكل كبير. عند كتابة $ \sum\limits_{i=1}^5 $ نشير إلى أن $ i $ هو متغير متزايد يبدأ من 1 ويزداد بمقدار 1 حتى 5. إذا كنا نعبر عن الصيغة الصريحة للسلسلة باستخدام $ i $، يمكننا كتابة السلسلة ك $ \sum\limits_{i=1}^5 2\cdot3^{i-1} $، مع فهم أنه يتعين وضع علامة جمع كلما زاد $ i $ بمقدار 1:
 \[ 2+6+18+54+162=\sum\limits_{i=1}^5 2\cdot3^{i-1} \]
-Den uendelige rekka 
-$ 2+6+18+... $ kan vi derimot skrive som
+أما السلسلة اللانهائية 
+$ 2+6+18+... $ يمكننا كتابتها كالتالي
 \[ \sum\limits_{i=1}^\infty 2\cdot3^{i-1} \]
 
-For summetegnet har vi også noen regneregler verdt å nevne:\regv
-\reg[\regnregsum \label{regnregsum}]{
-	For to følger $ \lbrace a_i\rbrace $ og $ \lbrace b_i\rbrace $ og en konstant $ c $ har vi at
+بالنسبة لرمز المجموع، لدينا أيضًا بعض القواعد الحسابية التي يجدر بنا ذكرها:\regv
+\reg[قواعد الجمع \label{قواعد الجمع}]{
+	لهاتين السلاسلتين $ \lbrace a_i\rbrace $ و $ \lbrace b_i\rbrace $ وثابت $ c $ لدينا:
 	\begin{align}
-		\sum_{i=j}^{n} \left(a_i+b_i\right) &= \sum_{i=j}^{n} a_i + \sum_{i=j}^{n} b_i \label{sumreg1}\br
-		\sum_{i=j}^{n} c a_i &= c\sum_{i=j}^{n} a_i \label{sumreg2}
+		\sum_{i=j}^{n} \left(a_i+b_i\right) &= \sum_{i=j}^{n} a_i + \sum_{i=j}^{n} b_i \label{قاعدة1}\br
+		\sum_{i=j}^{n} c a_i &= c\sum_{i=j}^{n} a_i \label{قاعدة2}
 	\end{align}
-	hvor $ {j, n \in \mathbb{N}} $ og $ {j<n} $.
+	حيث $ {j, n \in \mathbb{N}} $ و $ {j<n} $.
 }
+
 \newpage
-\fork{\ref{regnregsum} \regnregsum}{
-	Ved å skrive ut summen og omrokkere på rekkefølgen av addisjonene, innser vi at
+\fork{\ref{قواعد الجمع} \ قواعد الجمع}{
+	عند كتابة المجموع وإعادة ترتيب الجمع، ندرك أن
 	\alg{
 		\sum_{i=1}^{n} \left(a_i+b_i\right) &= a_1+b_1 + a_2+b_2 + ... + a_n + b_n \\
 		&= a_1+a_2+...+a_n + b_1+b_2+...+b_n \\
 		&= \sum_{i=1}^{n} a_i + \sum_{i=1}^{n} b_i 
 	}
-	Ved å skrive ut summen og faktorisere ut $ c $, innser vi også at
+	عند كتابة المجموع واستخراج العامل $ c $، ندرك أيضًا أن
 	\alg{
 		\sum_{i=1}^{n} c a_i &= ca_1 + ca_2 + ...+ ca_n \\
 		&= c(a_1+a_2+...+a_n) \\
 		&= c\sum_{i=1}^{n} a_i 
 	}
 }
+
 \newpage
-\section{Induksjon} \index{induksjon}
-I teoretisk matematikk stilles det strenge krav til bevis av formler. En metode som brukes spesielt for formler med heltall, er \textit{induksjon}. Prinsippet er dette\footnote{Ordene formel og ligning vil bli brukt litt om hverandre. En formel er strengt tatt bare en ligning hvor vi kan finne den ukjente størrelsen direkte ved å sette inn kjente størresler.}:\vsk
+\section{الاستقراء} \index{الاستقراء}
+في الرياضيات النظرية، هناك متطلبات صارمة لإثبات الصيغ. الطريقة التي يتم استخدامها خصوصاً للصيغ التي تحتوي على أعداد صحيحة هي \textit{الاستقراء}. والمبدأ هو كما يلي\footnote{سيتم استخدام كل من كلمة صيغة ومعادلة بالتبادل. الصيغة في الواقع هي مجرد معادلة حيث يمكننا العثور على الكمية المجهولة مباشرةً عن طريق إدخال الكميات المعروفة.}:\vsk
 
-\textsl{Si vi har en ligning som er sann for et heltall $ n $. Hvis vi kan vise at ligningen også gjelder om vi adderer heltallet med 1, har vi vist at ligningen gjelder for alle heltall større eller lik} $ n $.\vsk
+\textsl{إذا كان لدينا معادلة صحيحة لعدد صحيح $ n $. إذا كنا نستطيع أن نظهر أن المعادلة صحيحة أيضاً عندما نضيف العدد الصحيح بـ 1، فقد أظهرنا أن المعادلة صحيحة لجميع الأعداد الصحيحة التي تكون أكبر من أو تساوي} $ n $.\vsk
 
-Det kan være litt vanskelig i starten å få helt grep på induksjonsprinsippet, så la oss gå rett til et eksempel:\vsk
+قد يكون من الصعب في البداية فهم مبدأ الاستقراء، لذا دعونا ننتقل مباشرة إلى مثال:\vsk
 
-Vi ønsker å vise at summen av de $ n $ første partallene er lik $ n(n+1) $:
+نريد أن نظهر أن مجموع الأعداد الزوجية الـ $ n $ الأولى يساوي $ n(n+1) $:
 \begin{equation}
 	2+4+6+...+2n=n(n+1) \label{induk}
 \end{equation}
-Vi starter med å vise at dette stemmer for $ {n=1} $:
+نبدأ بإظهار أن هذا صحيح لـ $ {n=1} $:
 \alg{2 &= 1\cdot(1+1) \\
 	2&= 2}
-Nå vet vi altså om et heltall, nemlig $ {n=1} $, som formelen stemmer for. Videre antar vi at ligningen er gyldig helt opp til ledd nr. $ k $. Vi ønsker så å sjekke at den gjelder også for neste element, altså  når $ n=k+1 $. Summen blir da
-\[ 2+4+6+...+\quad\mathclap{\overbrace{2k}^{\text{element nr. }k} \;\;\;\,}+\quad\;\;\;\mathclap{\underbrace{2(k+1)}_{\text{ledd nr.. }k+1}}\qquad=(k+1)((k+1)+1) \]
-Men fram til ledd nr.. $ k $ er det tatt for gitt at \eqref{induk} gjelder, dermed får vi at\footnote{Det kan se litt merkelig ut å skrive $ {2+4+6+...+2k }$, og anta at formelen vår gjelder for denne summen. Det virker jo da som at vi antar den gjelder for $ {n=1 }$, $ {n=2 }$ osv. Men dette er bare en litt kunstig skrivemåte som blir brukt for summen fram til ledd nr.. $ k $. For etterpå sier vi at vi vet om et tall $ k $ som denne antakelsen er riktig for, nemlig $ {k=1} $, og da har vi jo bare ett element før ledd nr.. $ {k+1} $. 
+الآن نعرف عن عدد صحيح، وهو $ {n=1} $، أن الصيغة صحيحة له. بعد ذلك نفترض أن المعادلة صحيحة حتى العنصر رقم $ k $. نريد بعد ذلك التحقق من صحتها للعنصر التالي، أي عندما $ n=k+1 $. الجمع يصبح
+\[ 2+4+6+...+\quad\mathclap{\overbrace{2k}^{\text{العنصر رقم }k} \;\;\;\,}+\quad\;\;\;\mathclap{\underbrace{2(k+1)}_{\text{العنصر رقم }k+1}}\qquad=(k+1)((k+1)+1) \]
+ولكن حتى العنصر رقم $ k $، تم افتراض أن \eqref{induk} صحيحة، وبالتالي نحصل على\footnote{قد يبدو غريبًا قليلًا أن نكتب $ {2+4+6+...+2k }$، ونفترض أن صيغتنا صحيحة لهذا المجموع. يبدو أننا نفترض أنها صحيحة لـ $ {n=1 }$, $ {n=2 }$ وهكذا. ولكن هذه مجرد طريقة كتابة غير حقيقية تُستخدم للمجموع حتى العنصر رقم $ k $. لأننا بعد ذلك نقول أننا نعرف عن عدد $ k $ أن هذا الافتراض صحيح بالنسبة له، وهو $ {k=1} $، وبالتالي لدينا عنصر واحد فقط قبل العنصر رقم $ {k+1} $. 
 	
-	I påfølgende eksempler skal vi for enkelthets skyld la ledd nr.. $ k $ være innbakt i symbolet ''$ ... $''. }
+	في الأمثلة التالية، سنترك العنصر رقم $ k $ ضمن الرمز ''$ ... $''. }
 \algv{
 	\underbrace{2+4+6+...+2k}_{k(k+1)}+2(k+1)&=(k+1)((k+1)+1) \\ 
 	k(k+1)+2(k+1)&=(k+1)(k+2)\br
 	(k+1)(k+2)&= (k+1)(k+2)
 }
-Og nå kommer den briljante konklusjonen: Vi har vist at \eqref{induk} er sann for ${ n=1 }$. I tillegg har vi vist at hvis ligningen gjelder for et heltall ${n= k} $, gjelder den også for $ {n=k+1} $. På grunn av dette vet vi at \eqref{induk} gjelder for ${n= 1+1=2} $. Men når vi vet at den gjelder for $ {n=2} $, gelder den også for $ {n=2+1=3} $ og så videre, altså for alle heltall!\regv
-\reg[Induksjon]{
-	Når vi ved induksjon ønsker å vise at ligningen
+والآن نأتي إلى الاستنتاج المدهش: لقد أظهرنا أن \eqref{induk} صحيحة لـ ${ n=1 }$. بالإضافة إلى أننا أظهرنا إذا كانت المعادلة صحيحة لعدد صحيح ${n= k} $، فإنها صحيحة أيضاً لـ $ {n=k+1} $. وبسبب ذلك نعرف أن \eqref{induk} صحيحة لـ ${n= 1+1=2} $. ولكن عندما نعرف أنها صحيحة لـ $ {n=2} $، فإنها صحيحة أيضاً لـ $ {n=2+1=3} $ وهكذا، أي لجميع الأعداد الصحيحة!\regv
+\reg[الاستقراء]{
+	عندما نريد بالاستقراء أن نظهر أن المعادلة
 	\begin{equation}\label{induksjon}
 		A(n)=B(n)
 	\end{equation}
-	er sann for alle $ n\in\mathbb{N} $, gjør vi følgende:
+	صحيحة لكل $ n\in\mathbb{N} $، نقوم بما يلي:
 	\begin{enumerate}
-		\item Sjekker at \eqref{induksjon} er sann for $ {n=1} $.
-		\item Sjekker at \eqref{induksjon} er sann for $ {n=k+1} $, antatt at den er sann for $ {n=k} $.
+		\item التحقق من أن \eqref{induksjon} صحيحة لـ $ {n=1} $.
+		\item التحقق من أن \eqref{induksjon} صحيحة لـ $ {n=k+1} $، مع افتراض أنها صحيحة لـ $ {n=k} $.
 	\end{enumerate}
 }
+\newpage
 \eks[1]{
-	Vis ved induksjon at summen av de $ n $ første oddetallene er gitt ved ligningen
-	\[ 1+3+5+...+(2n-1) = n^2 \]	
-	for alle $ n\in\mathbb{N} $.
+	أظهر باستخدام الاستقراء أن مجموع الأعداد الفردية الـ $ n $ الأولى معطى بالمعادلة
+	\[ 1+3+5+...+(2n-1) = n^2 \]
+	لكل $ n\in\mathbb{N} $.
 	
 	\sv
-	Vi sjekker at påstanden stemmer for $ {n=1} $:
+	نتحقق أن الفرض صحيح لـ $ {n=1} $:
 	\alg{
 		1 &= 1^2 \\
 		1 &= 1
 	}
-	Vi tar det for gitt at påstanden gjelder for $ {n=k} $, og sjekker at den stemmer også for $ {n=k+1 }$:
+	نفترض أن الفرض صحيح لـ $ {n=k} $ ونتحقق منه لـ $ {n=k+1 }$:
 	\alg{
 		\underbrace{1+3+5+...}_{k^2}+(2(k+1)-1) &=(k+1)^2 \\
 		k^2 + 2k+1 &= (k+1)^2 \br
 		(k+1)^2 &= (k+1)^2
 	}
-	Dermed er påstanden vist for alle $ n\in\mathbb{N} $.\vsk
+	وبذلك يكون الفرض قد أثبت لكل $ n\in\mathbb{N} $.\vsk
 	
-	\textsl{Merk:} Hvis du har problemer med å faktorisere venstresiden når du utfører induksjon, kan du som reserveløsning skrive ut høyresiden istedenfor, men helst bør du la være. Dett er litt for elegansens skyld (selv ikke matematikk kan fraskrive seg en porsjon forfengelighet), men også fordi sjansen for regnefeil blir mindre.
+	\textsl{ملاحظة:} إذا واجهت مشكلة في عاملة الجانب الأيسر أثناء الاستقراء، يمكنك كحل بديل كتابة الجانب الأيمن بدلاً من ذلك، ولكن من الأفضل أن تتجنب ذلك. هذا من أجل الأناقة (حتى الرياضيات لا تستطيع التخلص من نوع من الغرور)، ولكن أيضًا لأن فرصة الخطأ في الحساب تصبح أقل.
 }
 \newpage
 \eks[2]{
-	Vis ved induksjon at:
+	أظهر باستخدام الاستقراء:
 	\[ 1^3 + 2^3 + 3^3 + ... + n^3= \frac{n^2(n+1)^2}{4} \]
-	for alle $ n\in\mathbb{N} $. \\
+	لكل $ n\in\mathbb{N} $.
 	
 	\sv
-	Vi starter med å sjekke for $ n=1 $:
+	نبدأ بالتحقق لـ $ n=1 $:
 	\alg{1 &= \frac{1^2\cdot(1+1)^2}{4} \\
 		1^3&= \frac{2^2}{4} \\
 		1 &= 1}
-	Ligningen er altså sann for $ {n=1 }$. Vi antar videre at den også stemmer for $ {n=k} $, og sjekker for $ {n=k+1} $:
+	المعادلة صحيحة بالتالي لـ $ {n=1 }$. نفترض أنها صحيحة أيضًا لـ $ {n=k} $ ونتحقق لـ $ {n=k+1} $:
 	\alg{\underbrace{1^3+2^3+3^3+...}_{\frac{k^2(k+1)^2}{4}}+(k+1)^3 &= \frac{(k+1)^2(k+1+1)^2}{4} \\
 		\frac{k^2(k+1)^2}{4} + (k+1)^3 &= \frac{(k+1)^2(k+2)^2}{4} \\
 		\frac{k^2(k+1)^2+4(k+1)^3}{4} &= \\
@@ -382,18 +381,18 @@ Og nå kommer den briljante konklusjonen: Vi har vist at \eqref{induk} er sann f
 		\frac{(k+1)^2(k^2+4k+4))}{4} &= \\	
 		\frac{(k+1)^2(k+2)^2}{4} &= \frac{(k+1)^2(k+2)^2}{4}
 	}
-	Påstanden er dermed vist for alle $ n\in\mathbb{N} $.		
+	وبذلك الفرض قد أثبت لكل $ n\in\mathbb{N} $.		
 }\newpage
 \eks[3]{\label{prodind}
-	Vis ved induksjon at:
+	أظهر باستخدام الاستقراء:
 	\[ 3\cdot9\cdot27\cdot... \cdot 3^n= 3^{\frac{1}{2}n(n+1)}\]\vs
 	\sv
-	Vi sjekker at påstanden er sann for $ n=1 $:
+	نتحقق أن الفرض صحيح لـ $ n=1 $:
 	\alg{
 		3 &= 3^{\frac{1}{2}\cdot1(1+1)} \\
 		3 &= 3^1
 	}
-	Videre antar vi at påsanden stemmer også for $ {n=k}$, og sjekker for $ n=k+1 $:
+	نفترض أن الفرض صحيح أيضًا لـ $ {n=k}$ ونتحقق لـ $ n=k+1 $:
 	\alg{
 		\underbrace{3\cdot9\cdot27\cdot...}_{3^{\frac{1}{2}k(k+1)}} \cdot 3^{k+1} &= 3^{\frac{1}{2}(k+1)(k+1+1)} \br
 		3^{\frac{1}{2}k(k+1)}\cdot  3^{k+1} &= 3^{\frac{1}{2}(k+1)(k+2)} \\
@@ -401,5 +400,8 @@ Og nå kommer den briljante konklusjonen: Vi har vist at \eqref{induk} er sann f
 		3^{\frac{1}{2}k(k+1)+\frac{2}{2}(k+1)} &= \\
 		3^{\frac{1}{2}(k+1)(k+2)} &= 3^{\frac{1}{2}(k+1)(k+2)}
 	}
-	Påstanden er dermed vist for alle $ n\in \mathbb{N} $.
+	وبذلك الفرض قد أثبت لكل $ n\in \mathbb{N} $.
 }
+
+
+\end{document}
