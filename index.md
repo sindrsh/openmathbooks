@@ -51,8 +51,8 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [TM2](https://drive.google.com/file/d/1cuv1Q0pcjaGOE3leghl_hQPV_gEKcU4A/view?usp=sharing)
 - [AM2](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
 
-
-
+**Arabic versions**
+- [TM2 (Chapter 1 only)](https://drive.google.com/file/d/1waLGLY3-_Q9TMkwR8tvLNfT8r5YWBg2y/view?usp=drive_link)
 
 
 
