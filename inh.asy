@@ -1,6 +1,10 @@
 settings.outformat="pdf";
 defaultpen(fontsize(11 pt));
 //defaultpen(1bp);
+import x11colors;
+usepackage("asycolors");
+usepackage("xcolor");
+
 usepackage("icomma");
 usepackage("amsmath");
 usepackage("amssymb");
@@ -23,6 +27,3 @@ void dott(pair A, Label L="$$", pair Al=(0,0),pen p=black){
 void ds(pair A=(0,0), real s=1, pen p=black){
 	draw(shift(A)*scale(s)*unitcircle,p=p);
 }
-
-
-
