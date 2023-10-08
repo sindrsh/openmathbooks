@@ -27,7 +27,7 @@ Hvis vi kan vise at grenseverdien $ \lim\limits_{h\to 0}\left(1+h\right)^\frac{1
 \subsubsection{Undersøking av grenseverdien}
 Vi innfører følgende to funksjoner (motivasjonen for å innføre $ g $ vil komme fram senere):
 \[ f(h)=1+h \qquad,\qquad g(h)=2-\left(\frac{1}{4}\right)^{h}\]
-Videre ønsker vi å undersøke for hvilke verdier $ f $ er mindre enn  $ g $. Når $ f=g $, har vi at
+Videre undersøker vi for hvilke verdier $ f $ er mindre enn  $ g $. Når $ f=g $, har vi at
 \begin{equation}\label{eforkleqh}
 	1+h=2-\left(\frac{1}{4}\right)^h 
 \end{equation}
@@ -80,12 +80,13 @@ har løsningene $ h=-1 $ og $ h=0 $, som betyr at
 På tilsvarende måte som vi kom fram til en øvre grense, kan vi bruke dette til å slå fast at
 \[ \lim\limits_{z\to \infty}\left(1 + \frac{1}{z}\right)^z\geq 2 \] 
 Dermed vet vi at $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ ligger et sted mellom 2 og 4. Da\\ uttrykket inneholder utelukkende positive ledd for $ {z\to\infty} $, kan vi også være sikre på at grenseverdien er endelig\footnote{I motsetning til å være ubestemt. For eksempel vil $ \lim\limits_{x\to \infty} \cos x $  være ubestemt, fordi $ \cos x $ svinger mellom $ -1 $ og $ 1 $.}. Det gir derfor mening å behandle grenseverdien som et tall, som vi kaller for $ e $:
-\[ e=\lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n=\lim\limits_{h\to0}\left(1+h\right)^{\frac{1}{h}}  \]
+\[ e=\lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^z=\lim\limits_{h\to0}\left(1+h\right)^{\frac{1}{h}}  \]
 \info{Merk}{
 Den mest klassiske metoden for å finne en øvre og en nedre grense for $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ er ved å bruke \net{https://en.wikipedia.org/wiki/Binomial\_theorem\#General\_case}{Binomialteoremet}. 
 }
 \subsubsection{Et tilbakeblikk på den deriverte}
 Derivasjon av potensfunksjoner var det som motiverte oss til å undersøke tallet $ e $. Av det vi har drøftet i de foregående avsnittene, følger det at
 \[ \left(e^x\right)'=e^x \]
-Likningen over er rett og slett én av de viktigste likningene i matematikk.
+Likningen over er rett og slett én av de viktigste likningene i\\
+matematikk.
 \end{document}
