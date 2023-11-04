@@ -33,10 +33,12 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [Pensumoversikt for grunnskole (trinnvis), 1P, 2P, 1T, R1 og R2](https://github.com/sindrsh/openmathbooks/blob/main/ekstra/pensum/pensum.pdf)
 
 *Nynorsk*
-- [Matematikkens byggesteiner (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
+- [Matematikken sine byggesteinar (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
   <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
-- [Anvendt matematikk 1 (AM1)](https://drive.google.com/file/d/1jUl0yqWr1MGCrKwwd-w6iSG6EkRdhYWb/view?usp=share_link) 
+- [MB med alternativ skrifttype](https://drive.google.com/file/d/11iyVV75YmHBDJTOp349giZ6QozVvnkzd/view?usp=sharing)
+- [Anvend matematikk 1 (AM1)](https://drive.google.com/file/d/1SbO29BdTKmZApBnMvmKWyjmlJ-xWvUWy/view?usp=sharing) 
   <br/>  Anvendingar av matematikken presentert i MB.
+- [AM1 med alternativ skrifttype](https://drive.google.com/file/d/1tYtLEXCbnaOd44hCapbqCTVLNxMbemOJ/view?usp=sharing)
 
 *Løsningsforslag*
 - [MB](https://drive.google.com/file/d/1qJJM4RgKIeLdEyHZvLRSqoIG-i8-S-5x/view?usp=sharing)
