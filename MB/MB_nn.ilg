@@ -1,6 +1,6 @@
-This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file MB_nn.idx....done (101 entries accepted, 0 rejected).
-Sorting entries....done (736 comparisons).
-Generating output file MB_nn.ind....done (160 lines written, 0 warnings).
+This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
+Scanning input file MB_nn.idx....done (99 entries accepted, 0 rejected).
+Sorting entries....done (688 comparisons).
+Generating output file MB_nn.ind....done (158 lines written, 0 warnings).
 Output written in MB_nn.ind.
 Transcript written in MB_nn.ilg.

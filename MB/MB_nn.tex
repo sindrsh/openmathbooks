@@ -2,116 +2,117 @@
 \input{../preamb}
 \input{nn}
 
+\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\addto\captionsenglish{\renewcommand{\partname}{Del}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
 \begin{document}
-
-\import{kap0/}{framside}
-\import{kap0/}{forord}
-\import{kap0/}{sym}
-\newpage
-
-{\footnotesize \tableofcontents}
-\newpage
-\part{Tal, rekning og geometri}
-
-\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Tala våre \label{Talavare}}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.25]{sticks} \\
-	{\footnotesize Bilde fra \net{https://cdn.pixabay.com/photo/2013/08/11/14/46/matchsticks-171578_1280.jpg}{pixabay.com}} 
-\end{figure}
-\newpage
-\import{tel/}{tel}
-
-\chapter{Dei fire rekneartane \label{Rekneartane}}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.38]{wood} \\
-	{\footnotesize Bilde fra \net{https://pxhere.com/en/photo/1143712}{pxhere.com}} 
-\end{figure}
-\newpage
-\import{plus/}{plus}
-\import{min/}{min}
-\import{gang/}{gang}
-\import{del/}{del}
-\opgt
-\import{plus/}{plusopg_bm}
-\import{min/}{minopg_bm}
-\import{gang/}{gangopg_bm}
-
-\chapter{Faktorisering og reknerekkefølge \label{Faktogreknrekflg}}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.2]{escher} \\
-	{\footnotesize Bilde fra \net{https://commons.wikimedia.org/wiki/File:M.C.Escher_a_tursi.jpg}{pcommons.wikimedia.org}} 
-\end{figure}
-\newpage
-\import{fakt/}{fakt_nn}
-\import{rrek/}{rrek}
-
-%% Brok
-\chapter{Brøk \label{Brok}}
-\newpage
-\import{brok/}{brok}
-\newpage
-\import{brok/}{brokopg}
-
-\chapter{Negative tal \label{Negtal}}
-\newpage
-\import{neg/}{neg}
-
-\chapter{Utrekningsmetodar \label{Utrekning}}
-\newpage
-\import{rek/}{rek_nn}
-\newpage
-\import{rek/}{rekopg}
-
-
-% Geometri
-\chapter{Geometri}
-\newpage
-\import{geo/}{geo}
-
-\addtocontents{toc}{\protect\newpage}
-\part{Algebra og geometri \label{Del2}}
-\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
-\chapter{Algebra}
-\newpage
-\import{alg/}{alg}
-\import{pot/}{pot}
-\newpage
-\import{kom/}{kom1}
-
-\chapter{Likningar \label{Likningar}}
-\newpage
-\import{lig/}{lig}
-\import{lig/}{lig_opg_bm}
-
-\chapter{Funksjonar \label{Funksjoner}}
-\import{funk/}{funk}
-\import{funk/}{funkopg_bm}
-
-\chapter{Geometri}
-\newpage
-\import{geo/}{geo2}
-
-\newpage
-\import{kom/}{kom2}
-
-\newpage
-\phantomsection
-\addcontentsline{toc}{chapter}{Fasit}
-\import{fas/}{fasit}
-
-\import{kap0/}{lit}
-{\printindex \addtocontents{toc}{\protect}
-	\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
-\import{kap0/}{bakside}
-
-
+	
+	
+	\import{kap0/}{framside_nn}
+	\import{kap0/}{forord_nn}
+	\import{kap0/}{sym_nn}
+	\newpage
+	
+	{\footnotesize \tableofcontents}
+	\newpage
+	\part{Tal, rekning og geometri}
+	
+	\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+	\chapter{Tala våre \label{Talavare}}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.25]{sticks} \\
+		{\footnotesize Bilde fra \net{https://cdn.pixabay.com/photo/2013/08/11/14/46/matchsticks-171578_1280.jpg}{pixabay.com}} 
+	\end{figure}
+	\newpage
+	\import{tel/}{tel_nn}
+	\import{tel/}{tel_opg_bm}
+	
+	\chapter{Dei fire rekneartene \label{Rekneartane}}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.38]{wood} \\
+		{\footnotesize Bilde fra \net{https://pxhere.com/en/photo/1143712}{pxhere.com}} 
+	\end{figure}
+	\newpage
+	\import{rekar/}{rekar_nn}
+	\import{rekar/}{rekar_opg_bm}
+	
+	
+	\chapter{Faktorisering og reknerekkefølge \label{Faktogrek}}
+	\newpage
+	\import{rrek/}{rrek_nn}
+	\import{rrek/}{rrek_opg_bm}
+	
+	%% Brok
+	\chapter{Brøk \label{Brok}} 
+	\newpage
+	\import{brok/}{brok_nn}
+	\newpage
+	\import{brok/}{brok_opg_bm}
+	
+	\chapter{Negative tal \label{Negtal}}
+	\newpage
+	\import{neg/}{neg_nn}
+	\import{neg/}{neg_opg_bm}
+	
+	\chapter{Utrekningsmetodar \label{Utrekning}}
+	\newpage
+	\import{rek/}{rek_nn}
+	\newpage
+	\import{rek/}{rek_opg_bm}
+	
+	% Geometri
+	\chapter{Geometri \label{Geometri}}
+	\newpage
+	\import{geo/}{geo_nn}
+	\import{geo/}{geo_opg_bm}
+	
+	\addtocontents{toc}{\protect\newpage}
+	\part{Algebra og geometri \label{Del2}}
+	\addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+	\chapter{Algebra \label{Algebra}}
+	\newpage
+	\import{alg/}{alg_nn}
+	\import{alg/}{alg_opg_bm}
+	\newpage
+	\import{kom/}{kom1_nn}
+	
+	\chapter{Likningar \label{Likningar}}
+	\newpage
+	\import{lig/}{lig_nn}
+	\import{lig/}{lig_opg_bm}
+	
+	\chapter{Funksjonar \label{Funksjoner}}
+	\import{funk/}{funk_nn}
+	\import{funk/}{funk_opg_bm}
+	
+	\chapter{Geometri \label{Geometri2}}
+	\newpage
+	\import{geo/}{geo2_nn}
+	\import{geo/}{geo2_opg_bm}
+	\newpage
+	\import{kom/}{kom2_nn}
+	
+	\newpage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{Fasit}
+	\chapter*{Fasit}
+	\import{fas/}{fas_bm}
+	
+	\import{kap0/}{lit_bm}
+	{\printindex \addtocontents{toc}{\protect}
+		\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
+	\import{kap0/}{bakside_nn}
+	
+	
 \end{document}
-
-
 
 
 

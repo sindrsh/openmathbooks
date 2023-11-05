@@ -194,12 +194,12 @@ P(F\cup H)&= P(F)+P(H)-P(F\cap H)\br
 Målet med eit venndiagram er å lage ein figur som illustrerer antalet av dei \textsl{særskilde} utfalla og dei \textsl{felles} utfalla. La oss bruke eksempelet på side \pageref{eksfothand} til å lage ein slik figur. For klassen der nokon spelar fotball, nokon handball og nokon begge deler, kan vi lage eit venndiagram som vist under.
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn}}
+	\includegraphics[]{\figp{venn}}
 \end{figure}
 Den grøne ellipsa\footnote{Ei ellipse er ein ''strekt'' sirkel.} representerer dei som spelar fotball ($ F $) og den blå dei som spelar handball ($ H $). Da nokre spelar \textsl{begge} sportane ($ F\cap H $), har vi teikna ellipsane litt over i kvarandre. Videre veit vi at 7 spelar fotball, 10 spelar handball og 4 av disse gjer \textsl{begge} deler. Dette illustrerast slik:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{vennb}}
+	\includegraphics[]{\figp{vennb}}
 \end{figure}
 Diagrammet fortel no at 3 personar spelar \textsl{berre} fotball og 6 spelar \textsl{berre} handball. I tilleg spelar 4 personar \textsl{både} fotball og handball. (Til saman er det derfor 7 som spelar fotball og 10 som spelar handball.) 
 \newpage
@@ -240,12 +240,12 @@ Om ein klasse med 29 elevar veit vi følgande:
 \textbf{a)} La $ F $ bety 'speler fotball', $ H $ bety 'speler handball' og $ V $ bety 'speler volleyball'. Når vi skal lage eit venndiagram, er det lurt å skrive inn dei felles utfalla først. Ut ifrå fjerde til sjuande punkt kan vi teikne dette:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn3ea}}
+	\includegraphics[]{\figp{venn3ea}}
 \end{figure}
 Da ser vi videre at \y{16-5-1-3=7} elevar speler \textsl{berre} fotball, \y{12-5-1-2=4} speler \textsl{berre} handball og \y{9-3-1-2=3} speler \textsl{berre} volleyball:
 \begin{figure}
 	\centering
-	\includegraphics[]{\fpath{venn3e}}
+	\includegraphics[]{\figp{venn3e}}
 \end{figure} 
 \textbf{b)} Av diagrammet vårt ser vi at det er $ 8+5+1+3+4+2+3= 26$ unike elevar som speler éin eller fleire av sportene. Sjansen for å trekke ein av desse 26 i ein klasse med 29 elever er $ \frac{17}{29} $. \br
 
@@ -284,7 +284,7 @@ Så fyller vi inn tabellen ut ifrå infoen vi har:
 \subsection{Permutasjoner}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{\fpath{bolle}}
+	\includegraphics[scale=0.8]{\figp{bolle}}
 	\vs
 \end{figure}
 Sei vi har en bolle med fire kuler som er nummererte frå 1 til 4. I eit forsøk trekk vi opp ei og ei kule fram til vi har trekt opp tre kuler. Viss vi for eksempel først trekk kule 2, deretter kule 4, og så kule 3, får vi \textit{permutasjonen} $2\; 4\; 3$. \vsk
@@ -292,20 +292,20 @@ Sei vi har en bolle med fire kuler som er nummererte frå 1 til 4. I eit forsøk
 Kor mange forskjellige permutasjoner kan vi få? La oss lage ein figur som hjelper oss med å finne svaret. Ved første trekning er det 4 kuler å plukke av, vi kan derfor seie at vi har 4 vegar å gå. Enten trekk vi kule 1, eller kule 2, eller kule 3, eller kule 4:
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{\fpath{perm1a}}
+\includegraphics[scale=0.8]{\figp{perm1a}}
 \end{figure}
 Kula vi trekk opp, legg vi ut av bollen, og trekk så for andre gang. For kvar av de 4 vegane vi kunne gå i første trekning får vi no 3 nye vegar å gå. Altså har vi nå  $3\cdot4=12$ vegar vi kan gå.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{\fpath{perm1b}}
+	\includegraphics[scale=0.8]{\figp{perm1b}}
 \end{figure}
  
 Den andre kula vi trekk opp legg vi også ut av bollen,  så for kvar av dei 12 vegane fra 2. trekning, får vi no to nye moglege vegar å gå. Totalt antall vegar (permutasjoner) blir derfor $12\cdot2=24$. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{\fpath{perm1c}}
+\includegraphics[scale=0.8]{\figp{perm1c}}
 \end{figure}
 
 Denne utrekninga kunne vi også ha skrive slik:
@@ -392,14 +392,14 @@ Sannsynet for at $ A $ skjer først, deretter $ B $, deretter $ C $, og så vida
 Vi kan utnytte \rref{permsans} for å lage ei hjelpeteikning når vi har å gjere med gjentatte trekk. Teikninga vi her skal ende opp med kallast eit \textit{valgtre}. Vi teikner da ei lignende figur som vi gjor i delkapittel \ref{komb}, men langs alle vegar skriv vi på sannsynet for utfallet vegen leder oss til. 
 \begin{figure}[H]
 \centering
-\includegraphics{\fpath{bolle2}}
+\includegraphics{\figp{bolle2}}
 \end{figure}
 La oss igjen sjå på bollen med de sju kulene. Trekk av grøn, blå eller raud kule tegnsett vi høvesvis med bokstavene \textit{G}, \textit{B} og \textit{R}.\vsk
 
 Ved første trekning er sjansen for å trekke en grønn kule $ \frac{3}{7} $, derfor skriver vi denne brøken på veien som fører oss til \textit{G}. Gitt at vi har trekt en grønn kule, er sannsynet for også å trekke en grønn kule i andre trekning lik $ \frac{2}{6} $. Denne brøken skriver vi derfor langs veien som fører oss fra \textit{G} til \textit{G}. Og sånn fortset vi til vi har ført opp alle sannsyna til kvar veg. For å få ei rask oversikt over dei forskjellige permutasjonane vegane fører til, kan det være lurt å skrive opp desse under kvar ende av treet.  \vs
 \begin{figure}[H]
 \centering
-\includegraphics[]{\fpath{tree}}
+\includegraphics[]{\figp{tree}}
 \end{figure}
 La oss no bruke valgtreet over til å finne sannsynet for å trekke éi grøn og éni blå kule. \textit{GB} og \textit{BG} er da dei gunstige permutasjonane. Ved å gonge saman sannsyna langs vegen til \textit{GB}, finn vi at
 \[ P(GB)=\frac{3}{7}\cdot\frac{2}{6}=\frac{6}{42} \]
@@ -426,7 +426,7 @@ P(GB\cup BG)&=P(GB)+P(BG) \\
 \textbf{a)}
 \begin{figure}[H]
 	\centering
-	\includegraphics{\fpath{treee}}
+	\includegraphics{\figp{treee}}
 \end{figure}
 \textbf{b)} Av valgtreet vårt ser vi at
 \alg{

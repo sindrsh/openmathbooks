@@ -1,0 +1,235 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../nn}
+
+\begin{document}
+	\newpage
+	\section{\adi \label{Addisjon}}	
+	\subsection*{Addisjon med mengder: Å legge til}
+	Når vi har ei mengde og skal legge til meir, bruker vi symbolet \sym{$ + $}. Har vi 2 og skal legge til 3, skriv vi
+	\[ 2+3=5 \]
+	\fig{plusm1}
+	Rekkefølga vi legg saman tala på har ikkje noko å seie; å starte med 2 og så legge til 3 er det same som å starte med 3 og så legge til 2:
+	\[ 3+2=5 \]
+	\fig{plusm1a}
+	\spr{
+		Eit addisjonsstykke består av to eller fleire \textit{ledd}\index{ledd} og éin \textit{sum}\index{sum}. I reknestykket
+		\[ 2+3=5 \]
+		er både $ 2 $ og $ 3 $ ledd, mens $ 5 $ er summen.\vsk
+		
+		Vanlege måtar å seie $ 2+3 $ på er
+		\begin{itemize}
+			\item ''2 pluss 3''
+			\item ''2 addert med 3''
+			\item ''2 og 3 lagt saman''
+		\end{itemize}
+		Det å legge saman tal kallast også \textit{å summere}.
+		
+	} \vsk
+	\newpage
+	\reg[Addisjon er kommutativ \label{adkom}]{
+		Summen er den same uansett rekkefølge på ledda.
+	}
+	\eks{ \vs \vsb
+		\alg{
+			2+5 &= 7 =5+2  \vn
+			6+3 &=9=3+6
+		}
+	}
+	
+	\subsection*{Addisjon på tallinja: Vandring mot høgre}
+	På ei tallinje vil addisjon med positive tal  innebere vandring \textsl{mot \\høgre}:\regv
+	\eks[1]{
+		\[ 2+7=9 \]
+		\fig{plus2}
+	}
+	\eks[2]{
+		\[ 4+11=15 \]
+		\fig{plus3}
+	}
+	\info{Tydinga av \sym{$\bm=$}}{
+		\sym{+} gir oss moglegheiten til å uttrykke tal på mange forskjellige måtar, for eksempel er $ {5=2+3} $ og $ {5=1+4} $. I denne samanhengen vil \sym{=} bety ''har same verdi som''. Dette gjeld også ved subtraksjon, multiplikasjon og divisjon, som vi skal sjå på i dei neste tre seksjonane.
+	}
+	
+\section{\sub\label{Subtraksjon}}
+\subsection*{Subtraksjon med mengder: Å trekke ifrå}
+Når vi har ei mengde og tar bort ein del av den, bruker vi symbolet \sym{$ - $}:
+\[ 5-{\color{red} 3}=2 \]
+\fig{min1c}
+
+\spr{
+	Eit subtraksjonsstykke består av to eller fleire \textit{ledd} \index{ledd} og éin\\ \textit{differanse}\index{differanse}. I subtraksjonsstykket
+	\[  5-3=2 \] 
+	er både $ 5 $ og $ 3 $ ledd og $ 2 $ er differansen. \vsk
+	
+	Vanlege måtar å seie $ 5-3 $ på er
+	\begin{itemize}
+		\item ''5 minus 3'' \\
+		\item ''5 fratrekt 3''
+		\item ''3 subtrahert fra 5''
+	\end{itemize}
+} \vsk \vsk
+
+\info{Ei ny tolking av 0}{
+	Innleiingsvis i denne boka nemnde vi at 0 kan tolkast som ''ingenting''. Subtraksjon gir oss moglegheiten til å uttrykke 0 via andre tal. For eksempel er $ {7-7=0} $ og $ {19-19=0} $. I praktiske samanhengar vil 0 ofte innebere ei form for likevekt, for eksempel som at ei kraft og ei motkraft er like store.
+} \vsk
+
+\newpage
+\subsection*{Subtraksjon på tallinja: Vandring mot venstre}
+I \hrs{Addisjon}{seksjon} har vi sett at \sym{$ + $} (med positive tal) inneber at vi skal gå \\[2pt] \textsl{mot høgre} langs tallinja. Med \sym{$ - $} gjer vi omvend, vi går \textsl{mot venstre}\footnote{I figurar med tallinjer vil raudfarga piler indikere at ein startar ved pilspissen og vandrar til andre enden.}: \regv
+
+\eks[1]{ \vs
+	\[ 6-4=2 \]
+	\fig{mint}
+}
+\eks[2]{ \vs
+	\[ 12-7=5 \]
+	\fig{mint2}
+}
+\info{Merk}{
+	Med det første kan det kanskje verke litt rart at ein i \textsl{Eksempel 1} og \textsl{2} over skal gå i motsatt veg av retninga pila peiker i, men spesielt i \hrs{Negtal}{Kapittel} vil det lønne seg å tenke slik.
+}
+
+
+\section{\gong \label{Gonging} }
+
+\subsection*{Gonging med heiltal: Innleiiande definisjon }
+Når vi legg saman like tall, kan vi bruke gonge-symbolet \sym{$ \cdot $}\;for å skrive reknestykka våre kortare: \regv
+\eks[]{\vsb \vs
+	\alg{
+		4+4+4 &= 4\cdot 3 \vn
+		8+8 &=8\cdot 2 \vn
+		1+1+1+1+1&= 1\cdot5 
+	}
+} \regv
+\spr{
+	Eit gongestykke består av to eller fleire \outl{faktorar}\index{faktor} og eitt\\ \outl{produkt}\index{produkt}. I gongestykket
+	\[ {4\cdot 3=12} \]
+	er $ 4 $ og $ 3 $ faktorar, mens $ 12 $ er produktet. \vsk
+	
+	Vanlege måtar å seie $ 4\cdot3 $ på er
+	\begin{itemize}
+		\item ''4 gonger 3''  \\
+		\item ''4 gonga med 3''\\
+		\item ''4 multiplisert med 3''
+	\end{itemize}
+	
+	Mange nettstader og bøker på engelsk brukar symbolet \sym{$ \times $} i staden for \sym{$ \cdot $}. I dei fleste programmeringsspråk er \sym{*} symbolet for multiplikasjon.
+}
+\newpage
+\subsection*{Gonging av mengder}
+La oss no bruke ein figur for å sjå for oss gongestykket $ 2\cdot3 $:
+\fig{2t3}
+Og så kan vi legge merke til produktet til $ 3\cdot 2 $:
+\fig{3t2}
+\reg[\gangkom \label{gangkom}]{
+	Produktet er det same uansett rekkefølge på faktorane.
+}
+\eks[]{\vsb \vs
+	\alg{
+		3\cdot 4 &=12= 4\cdot 3 \vn
+		6\cdot 7 &=42= 7\cdot6 \vn
+		8\cdot 9 &=72= 9\cdot8
+	}
+}
+
+\subsection*{Gonging på tallinja}
+Vi kan også bruke tallinja for å rekne ut gongestykker. For eksempel kan vi finne kva $ 2\cdot4 $ er ved å tenke slik:
+\[\text{''} 2\cdot 4 \text{ betyr å vandre 2 plassar mot høgre, 4 gonger.}\text{''} \]
+\[ 2\cdot4=8 \]
+\fig{2t4l}
+
+Også tallinja kan vi bruke for å overbevise oss om at rekkefølga i eit gongestykke ikkje har noko å seie:
+\[\text{''} 4\cdot 2 \text{ betyr å vandre 4 plassar mot høgre, 2 gonger.}\text{''} \]
+\[ 4\cdot2=8 \]
+\fig{4t2l}
+
+
+\subsection*{Endeleg definisjon av gonging med positive heiltal}
+Det ligg kanskje nærast å tolke ''2 gonger 3'' som ''3, 2 gonger''. Da er
+\[ \text{''2 gonger 3''}=3+3 \]
+Innleiingsvis presenterete vi $ {2\cdot3} $, altså ''2 gonger 3'', som $ {2+2+2} $. Med denne tolkinga vil $ {3+3} $ svare til $ {3\cdot2} $, men nettopp det at multiplikasjon er ein kommutativ operasjon (\rref{gangkom}) gjer at den eine tolkinga ikkje utelukkar den andre; $ {2\cdot3 =2+2+2} $ og $ {2\cdot3=3+3} $ er to uttrykk med same verdi.\regv
+
+\reg[Gonging som gjentatt addisjon \label{ganggjad2}]{
+	Gonging med eit positivt heiltal kan uttrykkast som gjentatt addisjon.
+}
+\eks[1]{\vsb \vs
+	\alg{
+		4+4+4 &= 4\cdot 3=3+3+3+3 \vn
+		8+8 &=8\cdot 2=2+2+2+2+2+2+2 \vn
+		1+1+1+1+1&= 1\cdot5 =5
+	}
+}
+\info{Merk}{
+	At gonging med positive heiltal kan uttrykkast som gjentatt addisjon, utelukkar ikkje andre uttrykk. Det er ikkje feil å skrive at $ {2\cdot 3=1+5} $.
+} 
+
+
+\section{\del \label{Divisjon}}
+\sym{:} er \outl{divisjonstegnet}.
+I praksis har divisjon tre forskjellige tydingar, her eksemplifisert ved regnestykket $ 12:3 $:\regv
+
+\reg[Divisjon sine tre tydingar]{ \vs
+	\begin{itemize}
+		\item \textbf{Inndeling av mengder} \\
+		$ 12:3 = \text{''Antallet i kvar gruppe når 12 delast inn i 3 like}$\\
+		\hspace{1.6cm}store grupper'' 
+		\item \textbf{Antall gongar} \\
+		$ 12:3=\text{''Antall gongar 3 går på 12''} $
+		\item \textbf{Omvendt operasjon av multiplikasjon}\\
+		$ 12:3=\text{''Tallet ein må gonge 3 med for å få 12''} $
+	\end{itemize}
+} \regv
+
+\spr{ \label{sprakdiv}
+	Eit divisjonsstykke består av ein \outl{dividend}\index{dividend}, ein \outl{divisor}\index{divisor} og ein\\ \outl{kvotient}\index{kvotient}.	
+	I divisjonstykket
+	\[  {12:3=4} \]
+	er $ 12 $ dividenden, $ 3 $ er divisoren og $ 4 $ er kvotienten.\vsk
+	
+	Vanlege måtar å uttale $ 12:3 $ på er
+	\begin{itemize}
+		\item ''12 delt med/på 3''
+		\item ''12 dividert med/på 3''
+		\item ''12 på 3''
+	\end{itemize}
+	I nokre samanhengar blir $ {12:3} $ kalt ''\outl{forholdet}\index{forhold} mellom 12 og 3''. Da er 4 \outl{forholdstallet}\index{forholdstal}. \vsk
+	
+	Ofte brukast \sym{$ / $} i staden for \sym{$:$}, spesielt i programmeringsspråk.
+}
+\newpage
+\subsection*{Divisjon av mengder}
+Reknestykket $ {12:3} $ fortell oss at vi skal dele 12 inn i 3 like store \\grupper:
+\fig{del1}
+Vi ser at kvar gruppe inneheld 4 ruter, dette betyr at
+\[ 12:3=4 \]
+
+
+\subsection*{Antal gongar}
+\fig{del2}
+3 går 4 ganger på 12, altså er $ 12:3=4 $.
+
+
+\subsection*{Omvend operasjon av multiplikasjon}
+Vi har sett at viss vi deler 12 inn i 3 like grupper, får vi 4 i kvar gruppe. Altså er $ 12:3=4$. Om vi legg saman igjen desse gruppene, får vi naturligvis 12: 
+\fig{del1b}
+Men dette er det samme som å gonge 4 med 3. Altså;
+om vi veit at $ {4\cdot 3=12} $, så veit vi også at $ {12:3=4} $. I tillegg veit vi da at $ {12:4=3} $. 
+\fig{del1a}
+
+
+\eks[1]{Sidan $ 6\cdot 3 = 18  $, er\vs
+	\alg{
+		18:6= 3\vn
+		18:3=6
+	}
+}
+\eks[2]{
+	Sidan $ 5\cdot 7 = 35  $, er\vs
+	\alg{
+		35:5= 7\vn
+		35:7=5
+	}
+}
+
+\end{document}
