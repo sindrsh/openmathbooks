@@ -226,4 +226,24 @@ Siden $ u(0)=0 $ og $ u(1)=2 $ blir det bestemte integralet:
 &= \frac{1}{2}\left[e^2-1\right]
 }
 
+\newpage
+\grubr{opgintsin2x}\\
+Vi har at
+\[ \int \sin^2 x\, dx = \int \sin x \cdot \sin x \, dx\]
+Vi setter $ u=\sin x $ og $ v'=\sin x$. Da er
+\[ u'=\cos x\qquad\qquad v=-\cos x \]
+Altså har vi at
+\alg{
+\int \sin x \cdot \sin x \, dx&= -\sin x \cos x +\int \cos^2 x \, dx \\
+2\int \sin^2 x \, dx&= -\sin x \cos x +\int \cos^2 x \, dx + \int \sin^2 x \,dx
+}
+Ettersom $ \cos^2 x+ \sin^2 x =1 $, følger det at
+\alg{
+2\int \sin^2 x \, dx&= -\sin x \cos x +\int 1\, dx \\
+2\int \sin^2 x \, dx&= -\sin x \cos x + x \\
+\int \sin^2 x \, dx&= \frac{1}{2}\left(x-\sin x \cos x\right)
+}
+
+
+
 \end{document}
