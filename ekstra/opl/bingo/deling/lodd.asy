@@ -26,14 +26,13 @@ for (int i = 0; i < 5; ++i){
 }
 
 draw(shift(3,8)*b);
-label("168", shift(3,8)*(0.5,0.5));	
+label("$168:1$", shift(3,8)*(0.5,0.5));
 
 draw(shift(2,8)*b);
-label("207", shift(2,8)*(0.5,0.5));	
+label("$207:1$", shift(2,8)*(0.5,0.5));
 
 draw(shift(1,8)*b);
-label("74", shift(1,8)*(0.5,0.5));	
+label("$74:1$", shift(1,8)*(0.5,0.5));
 
 draw(shift(0,8)*b);
-label("805", shift(0,8)*(0.5,0.5));	
-
+label("$805:1$", shift(0,8)*(0.5,0.5));	

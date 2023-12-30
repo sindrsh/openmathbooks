@@ -329,5 +329,19 @@ representerer bidragene fra alle de andre oddetallene (skriv opp hvis du syns de
 &= \frac{n(2n+1)(n+1)}{6}
 }
 
+\newpage
+\grubop{opgfolgeoarrek}
+Vi starter med å skrive opp noen ledd i følgen:
+\alg{
+a_2 &= ka_1 + d\\
+a_3 &= k(ka_1 + d) + d = k^2a_1+d(1+k) \\
+a_4 &= k(k^2a_1+d(k+1))=k^3a_1+d(1+k+k^2)
+}
+Ut ifra dette finner vi at det første leddet i $ a_n $ kan skrives som
+\[ ka_1^{n-1} \]
+Det andre lettet i $ a_n $ gjenkjenner vi som en geometrisk rekke med $ n-1 $ ledd, med sum lik
+\[ d\frac{1-k^{n-1}}{1-k} \]
+Altså er
+\[ a_n = k^{n-1}a_1+d\frac{1-k^{n-1}}{1-k} \]
 
 \end{document}

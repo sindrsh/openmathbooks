@@ -9,11 +9,11 @@ transform sh;
 pair M = (0.5,0.5);
 
 
-//!!  OBS!! f16() kommer ligger til slutt i lista.  !! // 
+//!!  OBS!! f16() kommer ligger til slutt i lista.  !! //
 
-void f0(){ label("$11$", sh*M);  }
+void f0(){ label("$22:2$", sh*M);  }
 
-void f1(){ label("$12$", sh*M);  }
+void f1(){ label("$36:3$", sh*M);  }
 
 void f2(){ label("$52:4$", sh*M);  }
 
@@ -82,6 +82,3 @@ void f34(){ label("$207:1$", sh*M);  }
 void f35(){ label("$74:1$", sh*M);  }
 
 void f16(){ label("$805:1$", sh*M);  }
-
-
-	

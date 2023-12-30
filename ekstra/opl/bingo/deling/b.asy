@@ -9,8 +9,8 @@ void mkbingo(){
 		if (l.length == 0){return true;}
 		bool z = true;
 		for (int i = 0; i < l.length; ++i){
-			if (l[i]==x){ 
-				z=false; 
+			if (l[i]==x){
+				z=false;
 				}
 		}
 		return z;
@@ -18,11 +18,11 @@ void mkbingo(){
 
 	srand(seconds());
 	for (int j = 0; j <= 21; ++j){
-		int v1 = rand() % 29; // % X angir X funksjoner aa velge mellom
+		int v1 = rand() % 36; // % X angir X funksjoner aa velge mellom
 		if (ch(v1)){l.push(v1);}
 		else{ j=j-1; }
 		}
-	write(sum(l));	 
+	write(sum(l));
 
 	int cnt = 0;
 	for (int i = 0; i < 4; ++i){
@@ -33,7 +33,7 @@ void mkbingo(){
 		    ++cnt;
 			eval(f, true);
 			}
-	}	
+	}
 }
 
 for (int i=1; i<= 9; ++i){
@@ -44,4 +44,3 @@ for (int i=1; i<= 9; ++i){
 	erase();
 }
 exit();
-

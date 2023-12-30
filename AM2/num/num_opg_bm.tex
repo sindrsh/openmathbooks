@@ -46,6 +46,19 @@ også er gode kandidater til å være med i delintervallene.
 \item Bruk Newtons metode til å finne $ x $-verdiene du ønsker. Stopp søket når $ |x_n-x_{n+1}| \leq 10^{-6}$.
 }
 
+\newpage
+\grubop{opgimplpyt}
+I \mb\ har vi vist at\footnote{Se forklaringen av omkretsen til en sirkel.} hvis $ s_n $ er sidelengden til en regulær mangekant med $ n $ sider, innskrevet i en sirkel med radius 1, har vi at
+\[ s_{2n}=\sqrt{2-\sqrt{4-s_n^2}} \]
+\abc{
+	\item Lag et skript som finner sidelengden til en regulær 768-kant når du vet at $ s_6=1 $. Bruk $ s_{768} $ til å finne en tilnærmet verdi for omkretsen til en sirkel med radius 1.
+	\item Vis at
+	\[ s_{2n}=\frac{s_n}{\sqrt{2+\sqrt{4-s_n^2}}} \]
+	\item Når man utfører numeriske beregninger er det alltid en utfordring at differansen mellom to tall som er veldig like, blir ''satt'' til 0 av datamaskinen.
+	Drøft hvilke av de to gitte uttrykkene for $ s_{2n} $ som er best egnet til en numerisk approksimasjon av $ \pi $.
+	\item Skriv to versjoner av skriptet fra oppgave a), slik at skriptene bruker hvert sitt uttrykk av $ s_{2n} $. Kjør skriptene med minst 30 iterasjoner. (Hvor mange iterasjoner du må ha for å se noe merkelig avhenger av hvilken datamaskin du bruker). 
+}
+
 \grubop{opgtrapreg}
 Gitt integralet
 \[ I=\int\limits_0^2 x^3-5x+6\,dx\]
@@ -55,4 +68,6 @@ La $ I_n $ være intgralet tilnærmet ved trapesmetoden med $ n $ del-intervalle
 	\item La $ E_n=I-I_n $
 	\item Bruk regresjon til å finne den best tilpassede polynomfunksjonen for punktene $ \left(\frac{1}{n}, E_n\right), n\in[10, 100, 1000] $.
 }
+
+
 \end{document}
