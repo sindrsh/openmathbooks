@@ -2,8 +2,9 @@
 \input{../../preamb}
 \input{../bm}
 
-
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
 \begin{document}
+\tableofcontents
 \section{Introduksjon til Python}
 Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}. Det er mange måter å få kjørt skriptet sitt på, blant annet kan man bruke en online compiler som \net{https://www.programiz.com/python-programming/online-compiler/}{programmiz.com}.
 \subsection{Objekt, type, funksjon og uttrykk}
@@ -232,6 +233,14 @@ a = 3.7\\
 b = 4\\
 a*b = 14.8
 }
+\subsection{Moduler}
+Noen ganger er vi nødt til å importere \outl{moduler} for å få tilgang til objekter vi ønsker. Dette gjør vi ved å bruke \pymet{import}-metoden:
+\pythonut{imports.py}{
+3.141592653589793 \\
+4
+}
+
+\newpage
 \subsection{Feilmeldinger}
 Påstand: Alle programmerere vil erfare at skriptet ikke kjører fordi vi ikke har skrevet koden på rett måte. Dette kalles en \outl{syntax error}. Ved syntax error vil man få beskjed om på hvilken linje feilen befinner seg, og hva som er feil. De vanligste feilene er
 \begin{itemize}
