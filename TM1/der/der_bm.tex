@@ -79,13 +79,13 @@ Det er ofte nyttig å vite differansen $ \varepsilon $ mellom en tilnærming og 
 \begin{equation}\label{vareps}
 	\varepsilon = f(a+k)-\left[f(a)+f'(a)k\right]
 \end{equation}
-Vi legger merket til at\footnote{Dette overlates til leseren å vise.} $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k} =0 $, og skriver om \eqref{vareps} til en formel for $ f(x+k) $: \regv
+Vi legger merket til at\footnote{Dette overlates til leseren å vise.} $ \lim\limits_{k\to0}\frac{\varepsilon}{k} =0 $, og skriver om \eqref{vareps} til en formel for $ f(a+k) $: \regv
 \reg[Linearisering av en funskjon \label{linfunk}]{
-Gitt en funskjon $ f(x) $ og en variabel $ k $. Da finnes en funksjon $ \varepsilon $ slik at
+Gitt en funskjon $ f(x) $ og en variabel $ k $. Da finnes en funksjon $ \varepsilon(k) $ slik at
 \begin{equation} \label{linfunkeq}
 f(a+k)=f(a)+f'(a)k+\varepsilon
 \end{equation}
-hvor $ \lim\limits_{h\to0}\frac{\varepsilon_f}{k}=0 $. \vsk
+hvor $ \lim\limits_{k\to0}\frac{\varepsilon}{k}=0 $. \vsk
 
 Tilnærmingen
 \begin{equation}\label{linaprx}
@@ -262,13 +262,13 @@ Av \eqref{derdefaeq} har vi at
 Vi setter $ k = u(x+h)-u(x) $. Da er
 \[ \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}= \lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h} \]
 Av \eqref{linfunkeq} har vi at
-\[ g(u)-g(u+k)= g'(u)k+\varepsilon_g  \]
+\[ g(u+k)-g(u)= g'(u)k+\varepsilon_g  \]
 Altså er
 \alg{
 	\lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h}& = \lim\limits_{h\to 0}\frac{g'(u)k+\varepsilon_g}{h}\br
 	&=\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}
 }
-Da $ \lim\limits_{h\to0}k=0 $, er $ \lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0 $. Videre har vi at $ \lim\limits_{h\to0}\frac{k}{h}=u'(x) $. Altså har vi at
+Da $ {\lim\limits_{h\to0}k=0} $, er $ {\lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0} $. Videre har vi at $ {\lim\limits_{h\to0}\frac{k}{h}=u'(x)} $. Altså har vi at
 \nn{
 	\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
 }
@@ -337,7 +337,7 @@ Altså er
 \fork{\ref{Lhop} \lhop}{
 	Siden $ f(a)=g(a)=0 $, er
 	\alg{
-		\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}
+		\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}=\frac{\dfrac{f(x)-f(a)}{x-a}}{\dfrac{g(x)-g(a)}{x-a}}
 	}
 	Av \eqref{derdefalt} har vi da at
 	\[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]

@@ -21,27 +21,27 @@ Ofte kommer vi ut for situasjoner der vi ønsker å bruke uttrykket vi har funne
 \end{figure}
 
 \subsubsection{Lister}
-Når et uttrykk står inni sløyfeparanteser \{\}, betyr det at det er laget en liste. En liste inneholder flere elementer som vi kan hente ut. Dette gjør vi ved å skrive paranteser bak listen, hvor vi angir nummeret til elementet i listen.
+Når et uttrykk står inni sløyfeparanteser \{\}, betyr det at det er laget en liste. En liste inneholder flere elementer som vi kan hente ut ved \texttt{Element}-kommandoen.
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{fig/liste}
 \end{figure}
-
-Lister bruker vi også når vi skal løse liginger med flere ukjente:
+For å løse ligninger med flere ukjente kan vi bruke lister:
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{fig/lign}
 \end{figure}
 \subsubsection{Høyre- og venstresiden \label{hogl}}
-De fleste uttrykkene vi jobber med i CAS inneholder et $ = $ tegn. Disse uttrykkene er en ligning med en venstre- og høyreside. Ofte ønsker vi å bruke uttrykket på bare én av disse sidene, og oftest høyresiden. Som eksempel har vi løst ligningen $ (a+b)x = c $ og definert funksjonen $ f(x)= d x^2 $. Vi ønsker så å sette løsningen av ligningen inn i funksjonen. Dette gjør vi ved hjelp av \texttt{HøyreSide}-kommandoen (resulatet uten bruken av denne er vist i celle 4).
+De fleste uttrykkene vi jobber med i CAS inneholder et \texttt{=}-tegn. Disse uttrykkene er en ligning med en venstre- og høyreside. Ofte ønsker vi å bruke uttrykket på bare én av disse sidene, og oftest høyresiden. Som eksempel har vi løst ligningen $ (a+b)x = c $ og definert funksjonen $ f(x)= d x^2 $. Vi ønsker så å sette løsningen av ligningen inn i funksjonen. Dette gjør vi ved hjelp av \texttt{HøyreSide}-kommandoen:
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{fig/hoyre}
 \end{figure}
+\newpage
 \subsubsection{ByttUt}
-Noen ganger ønsker vi å endre en variabel i et utrykk. For å gjøre dette kan vi anvende \texttt{{ByzttUt}{<Uttrykk>, <Liste med forandringer>}}. La oss se på uttrykket
+For å endre variabelen i et uttrykk, kan vi bruke \texttt{ByttUt}-kommandoen. La oss se på uttrykket
 \[ \frac{a+b}{c} \]
-Vi ønsker nå å sette $ {a=d }$, $ {b=2} $ og $ {c=f} $. Dette kan vi gjør ved å skrive følgende:
+Vi ønsker nå å sette $ {a=d }$, $ {b=2} $ og $ {c=f} $. Dette kan vi gjør ved å skrive
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{fig/cas2}
@@ -127,10 +127,23 @@ I CAS: Gir vinkelen på intervallet $ [-\frac{\pi}{2}, \frac{\pi}{2}] $ som har 
 		For en definert funksjon $ f(x) $, kan man like gjerne skrive \texttt{f'(x)}.
 }}
 
+\item \cmds{Divisjon ( <Dividend Polynom >, <Divisor Polynom> )}{
+Gir kvotienten og resten til en polynomdivisjon.
+}
+
 \item \cmds{Ekstremalpunkt( <Funksjon>, <Start>, <Slutt> )}{Finner lokale ekstremalpunkt og ekstremalverdier for en funksjon $ f $ på et gitt intervall.}
 
 \item \cmds{Ekstremalpunkt( <Polynom> )}
 {Finner lokale ekstremalpunkt og ekstremalverdier til et polynom.}
+
+\item \cmds{Element( <Lisre>, <Posisjonen til elementet> )}
+{
+Gir elementet til en liste ut ifra en gitt posisjon.
+}
+
+\item \cmds{Faktoriser ( <Tall/Polynom> )}{
+Faktoriserer et tall/polynom.
+}
 
 \item \cmds{Funksjon ( <Funksjon>, <Start>, <Slutt> )}
 {Tegner en funksjon på et gitt intervall.}
