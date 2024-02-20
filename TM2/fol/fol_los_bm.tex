@@ -313,24 +313,6 @@ For $ {n=k+1} $:
 	2^k k!\cdot2(k+1) &=  \\
 	2^{k+1}(k+1)!&= 2^{k+1} (k+1)!
 }
-\newpage
-\grubr{opgsumnkvad}
-\textbf{a)} Summen av de $ n $ første oddetallene tilsvarer $ n^2 $ (se f. eks \ref{parodd}b), derfor kan vi skrive kvadratene som summer av oddetall.
-
-\textbf{b)} Vi får $ n $ enere, $ {n-1} $ treere, $ {n-2} $ femmere og så videre. Den isolerte $ n $-en på høyresiden representerer de $ n $ enerene, mens summen
-representerer bidragene fra alle de andre oddetallene (skriv opp hvis du syns det er vanskelig å se). 
-
-\textbf{c)} \vs
-\alg{
-\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (n-i)(2i+1) \\
-\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (2in+n-2i^2-i ) \\
-\sum\limits_{i=1}^n i^2+\sum\limits_{i=1}^n 2i^2 &= n+\sum\limits_{i=1}^n ((2n-1)i+n ) \\
-\sum\limits_{i=1}^n 3i^2 &= n+n^2+(2n-1)\frac{n(n+1)}{2} \\
-\sum\limits_{i=1}^n i^2 &= \frac{2n(1+n)+(2n-1)n(n+1)}{6} \\
-&= \frac{(2n+(2n-1)n)(n+1)}{6} \\
-&= \frac{n(2+(2n-1))(n+1)}{6} \\
-&= \frac{n(2n+1)(n+1)}{6}
-}
 
 \newpage
 \grubr{r2h23d1opg3}\\
@@ -349,8 +331,26 @@ Altså er
 	a_4 &= 38
 }
 }
-
-
+\newpage
+\grubr{opgsumnkvad}
+\abc{
+	\item Summen av de $ n $ første oddetallene tilsvarer $ n^2 $ (se f. eks \ref{parodd}b), derfor kan vi skrive kvadratene som summer av oddetall.
+	\item Vi får $ n $ enere, $ {n-1} $ treere, $ {n-2} $ femmere og så videre. Den isolerte $ n $-en på høyresiden representerer de $ n $ enerene, mens summen
+	representerer bidragene fra alle de andre oddetallene (skriv opp hvis du syns det er vanskelig å se).
+	\item \vs
+	\alg{
+		\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (n-i)(2i+1) \\
+		\sum\limits_{i=1}^n i^2 &= n+\sum\limits_{i=1}^n (2in+n-2i^2-i ) \\
+		\sum\limits_{i=1}^n i^2+\sum\limits_{i=1}^n 2i^2 &= n+\sum\limits_{i=1}^n ((2n-1)i+n ) \\
+		\sum\limits_{i=1}^n 3i^2 &= n+n^2+(2n-1)\sum\limits_{i=1} i\\
+		\sum\limits_{i=1}^n 3i^2 &= n+n^2+(2n-1)\frac{n(n+1)}{2} \\
+		\sum\limits_{i=1}^n i^2 &= \frac{2n(1+n)+(2n-1)n(n+1)}{6} \\
+		&= \frac{(2n+(2n-1)n)(n+1)}{6} \\
+		&= \frac{n(2+(2n-1))(n+1)}{6} \\
+		&= \frac{n(2n+1)(n+1)}{6}
+	}
+}
+\newpage
 \grubr{opgfolgeoarrek}\\
 Vi starter med å skrive opp noen ledd i følgen:
 \alg{

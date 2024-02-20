@@ -1,7 +1,7 @@
-\input{../../doc_pdf}
-\input{../../preamb_pdf}
-\usepackage{xr}
-\externaldocument{../../bokR2_PDF}
+\input{../../../doc}
+\input{../../../preamb}
+\input{../../bm}
+
 
 \begin{document}
 \textit{Så lenge ikke annet er nevnt, tas det for gitt at $ n\in \mathbb{Z} $.} \vsk
@@ -45,6 +45,7 @@ I enhetssirkelen er $ |\cos x| $ og $ |\sin x| $ katetene i en rettvinklete trek
 	&= -\frac{1}{2}\cdot\frac{2}{\sqrt{3}} \br
 &= -\frac{1}{\sqrt{3}}}
 
+
 \opr{bruk1}\\
 Vi har at:
 \alg{
@@ -71,8 +72,8 @@ Siden $ \frac{\pi}{6} $ ligger i første kvadrant, må sinusverdien være positi
 \opr{cossomsin} \\
 Vi legger til og trekker ifra $ \frac{\pi}{2} $ i argumentet:
 \[ \cos\left(3x-\frac{7\pi}{2}\right) = \cos\left(3x-\frac{7\pi}{2}+\frac{\pi}{2}-\frac{\pi}{2}\right) \]
-Fra (\ref{cossomsi}) har vi da at:
-\alg{\cos\left(3x-\frac{7\pi}{2}+\frac{\pi}{2}\right) &= \sin\left(3x-\frac{7\pi}{2}+\frac{\pi}{2}\right) \\
+Fra (\ref{cossomsi}) har vi da at
+\alg{\cos\left(3x-\frac{7\pi}{2}+\frac{\pi}{2}-\frac{\pi}{2}\right) &= \sin\left(3x-\frac{7\pi}{2}+\frac{\pi}{2}\right) \\
 &= \sin(3x + 2\pi) \\
 &= \sin(3x)}
 
@@ -194,7 +195,7 @@ $ c=\frac{\pi}{4} $ oppfyller kravene over \big($ {\frac{1}{\sqrt{2}}=\frac{2}{\
  \sin\left(x+\frac{\pi}{4}\right)  &= 1
 }
 Altså må:
-\algb{
+\alg{
 x+\frac{\pi}{4}&= \frac{\pi}{2}+2\pi n \\
 x &= \frac{\pi}{4}+2\pi n
 }
@@ -228,13 +229,13 @@ eller at:
 \opr{abctri}\\
 \textbf{a)} Vi løser andregradsligningen mhp. $ \sin x $, og får at:
 \[ \sin x = \frac{1}{2}\quad\vee\quad x= -1 \]
-I tilfellet av at $ {\sin x = \frac{1}{2}} $, må:
-\[ x = \frac{\pi}{4}+2\pi n\quad\vee\quad \frac{3\pi}{4}+2\pi n \]
-I tilfellet av at $ {\sin x = -1} $, må:
-\[ x = \frac{\pi}{2}+2\pi n\]
+I tilfellet der $ {\sin x = \frac{1}{2}} $ har vi at
+\[ x = \frac{\pi}{6}+2\pi n\quad\vee\quad \frac{5\pi}{6}+2\pi n \]
+I tilfellet der $ {\sin x = -1} $, har vi at
+\[ x = -\frac{\pi}{2}+2\pi n\]
 \textbf{b)} Vi løser andregradsligningen mhp. $ \cos (3x) $, og får at:
 \[ \cos (3x) = -4\quad\vee\quad x= 1 \]
-I tilfellet av at $ {\cos (3x) = -4} $ har ligningen ingen reell løsning. I tilfellet av at $ {\cos (3x) = -1} $, må:
+Ligningen $ {\cos (3x) = -4} $ har ligningen reell løsning. Hvis $ {\cos (3x) = -1} $, har vi at
 \[ x = \frac{\pi +2\pi n}{3}\]
 \textbf{c)} Vi løser andregradsligningen mhp. $ \cos x $, og får at:
 \[ \cos x = -4\quad\vee\quad x= 1 \]
@@ -305,12 +306,12 @@ P &= \frac{2\pi}{k}\br
 &= \frac{2\pi}{3}
 }
 \textbf{b)} Maksimumsverdien $ f_{maks} $ er amplituden addert med konstantleddet:
-\alg{f_{maks}&=5+4 \\
-&= 9
+\alg{f_{maks}&=3+4 \\
+&= 7
 }
 Minimumsverdien $ f_{min} $ er konstandleddet fratrekt amplituden:
-\alg{f_{min}&=4-5 \\
-	&= 2
+\alg{f_{min}&=4-3 \\
+	&= 1
 }
 \textbf{c)} $ f $ må ha sitt maksimum når cosinusverdien blir $ -1 $, dette skjer når:
 \alg{3x+\frac{\pi}{12} &= \pi +2\pi n \br
@@ -364,14 +365,44 @@ På intervallet $ x\in[-3, 3] $ vil $ x=-\frac{7}{3} $, $ x=\frac{5}{3} $ og $ x
 \textbf{d)} Vi markerer nullpunktene og toppunktene og skisserer sinuskurven som går mellom disse på intervallet $ x\in[-3, 3] $.\vsk
 
 \opr{skissin}\\
-Perioden til $ f $ tilsvarer den horisontale avstanden mellom toppunktene, som er $ 2\pi $. Amplituden er vertikalavstanden mellom likevektslinja og toppunktene, som altså er 2. Bunnpunktene ligger en halv bølgelengde unna toppunktene, og siden amplituden er 2, må bunnpunktene ha $ y $-verdien $ 1-2=-1 $.\vds
+Perioden til $ f $ tilsvarer den horisontale avstanden mellom toppunktene, som er $ 2\pi $. Amplituden er vertikalavstanden mellom likevektslinja og toppunktene, som altså er 2. Bunnpunktene ligger en halv bølgelengde unna toppunktene, og siden amplituden er 2, må bunnpunktene ha $ y $-verdien $ 1-2=-1 $.\vs
 \begin{figure}
 	\centering
 	\includegraphics[]{skissin}
 \end{figure}
 
+\newpage
+\opr{sincosfig}
+\vspace{-10 pt}
+\subimport{../../tri/fig/}{cosopg2}
+\abc{
+\item Vi observerer at vertikalavstanden mellom toppunkt og bunnpunkt til grafen er 6, som betyr at amplituden til funksjonen er 3. Horisontalavstanden mellom to toppunkt er $ 2 $, og da har vi av \eqref{ker2pioverP} at
+\[ k= \frac{2\pi}{2}=\pi \]
+Videre har  vi av \eqref{c} at
+\alg{
+\pi\cdot1 +c &=0 \\
+c &= -\pi
+}
+Topp- og bunnpunktene har den samme vertikalavstanden til linja $ y=2 $, som dermed er likvektslinja til funksjonen. Dermed har vi at
+\[ f(x)=3\cos(\pi x-\pi)+2 \]
+\item Sinusfunksjonen finner vi på tilsvarende måte som ved cosinusfunksjonen i a), med eneste forskjell at $ c $ er gitt av \eqref{sinc}. Eventult kan vi bruke \eqref{cossomsi}, og får da
+\alg{
+f(x)&=3\cos(\pi x-\pi)+2\\
+&=3\cos\left(\pi x-\pi +\frac{\pi}{2}-\frac{\pi}{2}\right)\\
+&=3\sin\left(\pi x -\frac{\pi}{2}\right) 
+}
+}
+
+\newpage
+
+\opr{tanfopg}
+Vi har at
+\[ f(x)= a \tan (kx+c)+d=a\frac{\sin(kx+c)}{\cos(kx+c)}+d \]
+Når cosinus-verdien går mot 0, vil sinus-verdien gå mot $ \pm 1 $, og dermed vil verdien gå mot $ \pm \infty $. Funksjonen har dermed en vertikal asymptote når $ \cos(k x+c) = 0 $. Av \eqref{cosligeq} har vi at da er
+\[ kx+c=\pm\frac{\pi}{2}+2\pi n \]
+
 \grubr{opgtangr}
-Fordi forholdet $ \frac{a}{b}$ er det samme som $ \frac{\sin x}{\tan x} $, må det finnes et tall $ c $ som er slik at:
+Fordi forholdet $ \frac{a}{b}$ er det samme som $ \frac{\sin x}{\cos x} $, må det finnes et tall $ c $ som er slik at:
 \alg{
 c\sin x = a \tag{I} \label{gr21}\\
 c\cos x = b \tag{II} \label{gr22}

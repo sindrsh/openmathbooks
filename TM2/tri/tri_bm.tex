@@ -284,7 +284,7 @@ Hvis vi derimot har at $ {-1< d<0} $, må vi ha en løsning $ {x=v_2} $ i andre 
 \subimport{fig/}{coslig}
 Og hva nå om vi står i punktet til den ene av løsningene og derifra vandrer $ 2\pi $ buelengder i enten negativ eller positiv retning? Jo, da er vi tilbake til det eksakt samme punktet. Har vi én løsning kan vi altså finne en ny løsning ved å legge til et heltalls antall $ 2\pi $. Alle heltallene, nemlig følgen $ \{...,-2, -1, 0, 1, 2, ... \} $, skriver vi som $ \mathbb{Z} $.\vsk
 
-Til slutt tar vi med oss at siden cosinusverdier handler om horisontalkoordinaten til et punkt på enhetssirkelen, vil vi ikke få svar hvis $ {d\not \in [1,1]} $.\regv
+Til slutt tar vi med oss at siden cosinusverdier handler om horisontalkoordinaten til et punkt på enhetssirkelen, vil vi ikke få svar hvis $ {d\not \in [-1,1]} $.\regv
 
 \reg[Cosinusligninger \label{coslig}]{
 	Gitt ligningen
@@ -516,7 +516,7 @@ La oss forsøke å løse ligningen
 Vi observerer at (\ref{sin2}) er en andregradsligning for $ \sin x $ (erstatt $ \sin x $ med $ u $ hvis du syns det er vanskelig å se). Vi kan derfor bruke \textit{abc}-formelen til å løse ligningen med hensyn på $ \sin x $, og finner da at:
 \[ \sin x = \frac{1}{2} \quad\vee\quad \sin x = -2 \]
 Altså har vi to sinusligninger vi nå må finne løsningene til. Vi vet at $ \asin \frac{1}{2} = \frac{\pi}{6} $, dermed er (se \eqref{sinligeq}):
-\[ x = \frac{\pi}{6}+2\pi n \quad \vee \quad x = \pi-\frac{\pi}{6}+\frac{2\pi}{n}=\frac{5\pi}{6}+\frac{2\pi}{n}\]
+\[ x = \frac{\pi}{6}+2\pi n \quad \vee \quad x = \pi-\frac{\pi}{6}+2\pi n=\frac{5\pi}{6}+2\pi n\]
 Derimot er det ingen \textit{reelle} tall som kan oppfylle ligningen \\ $ {\sin x=-2} $, vi anser derfor (\ref{sin2}) som ferdig løst.\regv
 \newpage
 \reg[Kvadratiske ligninger I]{
@@ -648,7 +648,7 @@ Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktore
 	\end{equation}
 	kalles en cosinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $.
 	\fig{fcos2}
-	For to naboliggende ekstremalpunkt $ x_1 $ og $ x_2 $, er
+	For to naboliggende maksimal/minimumspunkt $ x_1 $ og $ x_2 $, er
 	\begin{equation}\label{perioden}
 	P=x_2-x_1
 	\end{equation}
@@ -915,7 +915,7 @@ Siden  $ \cos \left(u+ \left(v+\frac{\pi}{2}\right)\right) = -\sin (u+v) $, har 
 
 {\boldmath $ \sin (2u)=2\sin u \cos u $}
 \alg{
-	\sin(2x) &= \sin(x+x) \\&= \sin x\cos x+\sin x + \cos x \\
+	\sin(2x) &= \sin(x+x) \\&= \sin x\cos x+\sin x \cos x \\
 	&= 2\sin x \cos x
 }
 
