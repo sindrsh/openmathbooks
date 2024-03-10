@@ -62,24 +62,24 @@
 \contentsline {subsection}{\numberline {4.4.2}Vinkelen mellom to plan}{130}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Vinkelen mellom plan og linje}{131}{subsection.4.4.3}%
 \contentsline {section}{Oppgaver}{132}{section*.72}%
-\contentsline {chapter}{\numberline {5}Integrasjon }{137}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Bestemt og ubestemt integral }{137}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Den antideriverte}{141}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Analysens fundamentalteorem}{143}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Ubestemte integral}{143}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Integralregning}{146}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Integralet av utvalge funksjoner}{146}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Bytte av variabel}{149}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Delvis integrasjon}{152}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Delbrøksoppspaltning}{155}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Areal og volum}{160}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Avgrenset areal}{160}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Volumet av en figur}{163}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Volum av omdreiningslegemer}{165}{subsection.5.3.3}%
-\contentsline {section}{Forklaringer}{167}{section*.88}%
-\contentsline {section}{Oppgaver}{173}{section*.89}%
-\contentsline {chapter}{Vedlegg A-F}{180}{chapter*.90}%
+\contentsline {chapter}{\numberline {5}Integrasjon }{136}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bestemt og ubestemt integral }{136}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Den antideriverte}{140}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Analysens fundamentalteorem}{142}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Ubestemte integral}{142}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Integralregning}{145}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Integralet av utvalge funksjoner}{145}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Bytte av variabel}{148}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Delvis integrasjon}{151}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Delbrøksoppspaltning}{154}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Areal og volum}{159}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Avgrenset areal}{159}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Volumet av en figur}{162}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Volum av omdreiningslegemer}{164}{subsection.5.3.3}%
+\contentsline {section}{Forklaringer}{166}{section*.88}%
+\contentsline {section}{Oppgaver}{172}{section*.89}%
+\contentsline {chapter}{Vedlegg A-F}{179}{chapter*.90}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{192}{chapter*.105}%
+\contentsline {chapter}{Indeks}{191}{chapter*.105}%
 \vspace {-5pt}
-\contentsline {chapter}{Fasit}{193}{chapter*.107}%
+\contentsline {chapter}{Fasit}{192}{chapter*.107}%

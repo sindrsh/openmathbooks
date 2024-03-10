@@ -53,52 +53,60 @@ Av (\ref{ker2pioverP}) vet vi at perioden $ \cos x $ er $ 2\pi $. Dette betyr at
 Mellom andre og tredje linje har vi brukt det faktum at $ \sin(c+2\pi)=\sin c $. Gjennomsnittet kan altså skrives som:
 \[ \frac{1}{(c+2\pi)-c}\cdot 2d\pi = d \]
 
-\opr{bytvaropg} \\
-\textbf{a)} Vi setter $ u=x^2 $ og $ g(u)=e^u $. Siden $ u'=2x $ får vi:
+\opr{bytvaropg}
+\abc{
+\item  Vi setter $ u=x^2 $ og $ g(u)=e^u $. Siden $ u'=2x $ får vi:
 \alg{\int xe^{x^2}\,dx &=\frac{1}{2}\int 2xe^{x^2} \\
 	&= \frac{1}{2}\int u'e^{u}\,dx \\
 	&= \frac{1}{2}\int e^u\,du\\
-&= \frac{1}{2}e^u + C \\
-&= \frac{1}{2}e^{x^2}+C
+	&= \frac{1}{2}e^u + C \\
+	&= \frac{1}{2}e^{x^2}+C
 }
-\textbf{b)} Vi starter med å finne det ubestemte integralet ved å bruke bytte av variabel. Vi setter $ u=2x^2-3$ og $ g(u)=e^u $, siden $ u'=4x $ får vi:
+\item  Vi starter med å finne det ubestemte integralet ved å bruke bytte av variabel. Vi setter $ u=2x^2-3$ og $ g(u)=e^u $, siden $ u'=4x $ får vi:
 \alg{
-\int\limits 8xe^{2x^2-3}\,dx &=2\int 4xe^{2x^2-3}\,dx \\
-&= 2\int u'e^u\,dx \\
-&= 2 \int e^u \, du \\
-&= 2e^u + C
+	\int\limits 8xe^{2x^2-3}\,dx &=2\int 4xe^{2x^2-3}\,dx \\
+	&= 2\int u'e^u\,dx \\
+	&= 2 \int e^u \, du \\
+	&= 2e^u + C
 }
 Det bestemte integralet blir derfor:
 \alg{
-\left[2e^{2x^2-3}\right]_1^2&= 2\left[e^{2\cdot2^2-3}-e^{2\cdot 1-3}\right]\\
-&= 2\left[e^5-e^{-1}\right]
+	\left[2e^{2x^2-3}\right]_1^2&= 2\left[e^{2\cdot2^2-3}-e^{2\cdot 1-3}\right]\\
+	&= 2\left[e^5-e^{-1}\right]
 }
-\textbf{c)} Vi setter $ {u=\cos x} $ og $ {g(u)=u} $. Siden $ u'=-\sin x $, får vi:
+\item  Vi setter $ {u=\cos x} $ og $ {g(u)=u} $. Siden $ u'=-\sin x $, får vi:
 \alg{
 	\int \frac{\sin x}{\cos x} \, dx &= -\int \frac{u'}{u}\, dx \\ 
-	&= \int \frac{1}{u}\, du \\
+	&= -\int \frac{1}{u}\, du \\
 	&= -\ln u + C \\
 	&= -\ln(\cos x) + C \\
 }
-\textbf{d)} Vi setter $ u=\cos x $ og $ g(u)=\frac{1}{u^3} $. Siden $ u'=-\sin x $, får vi:
+\item  Vi setter $ u=\cos x $ og $ g(u)=\frac{1}{u^3} $. Siden $ u'=-\sin x $, får vi:
 \alg{
-\int\frac{\sin x}{\cos^3 x} \, dx  &= \int \frac{-u'}{u^3} \,dx \\
-&= -\int u^{-3}\, dx \\
-&= \frac{1}{2}u^{-2}+ C
+	\int\frac{\sin x}{\cos^3 x} \, dx  &= \int \frac{-u'}{u^3} \,dx \\
+	&= -\int u^{-3}\, dx \\
+	&= \frac{1}{2}u^{-2}+ C
 }
 Siden $ u(0)=\cos 0=1 $ og $ u(\frac{\pi}{3})=\cos\left(\frac{\pi}{3}\right)=2^{-1} $ blir det bestemte integralet:
 \alg{\left[\frac{1}{2}u^{-2}\right]_{1}^{2^{-1}}
-&= \frac{1}{2}\left[(2^{-1})^{-2}-1^{-2}\right] \\
-&= \frac{1}{2}[4-1] \\
-&= \frac{3}{2}
+	&= \frac{1}{2}\left[(2^{-1})^{-2}-1^{-2}\right] \\
+	&= \frac{1}{2}[4-1] \\
+	&= \frac{3}{2}
 }
-\textbf{f)} Vi setter $ u=3x^2+4x+3 $ og $ g(u)=\frac{1}{u} $, og får da:
+\item Vi setter $ u= 2x^2+5x $ og $ g(u)=\frac{1}{u} $. Da er
 \alg{
-\int \frac{3x+2}{3x^2 + 4x+3}\,dx &= \frac{1}{2}\int \frac{6x+4}{3x^2+4x+3}\,dx \\
-&= \frac{1}{2}\int \frac{u'}{u}\,dx \\
-&= \frac{1}{2}\int u^{-1}\,du \\
-&= \frac{1}{2}\ln u \\
-&= \frac{1}{2}\ln \left(3x^2+4x+3\right)
+\int \frac{4x+5}{2x^2+5x}\,dx&=\int \frac{u'}{u}\,dx \br
+&=\int \frac{1}{u}\,du \br
+&= \ln u + C  \\
+&= \ln(2x^2+5x)+ C
+}
+\item  Vi setter $ u=3x^2+4x+3 $ og $ g(u)=\frac{1}{u} $, og får da:
+\alg{
+	\int \frac{3x+2}{3x^2 + 4x+3}\,dx &= \frac{1}{2}\int \frac{6x+4}{3x^2+4x+3}\,dx \\
+	&= \frac{1}{2}\int \frac{u'}{u}\,dx \\
+	&= \frac{1}{2}\int u^{-1}\,du \\
+	&= \frac{1}{2}\ln u \\
+	&= \frac{1}{2}\ln \left(3x^2+4x+3\right)
 }
 
 \opr{trigint} \\
@@ -106,17 +114,19 @@ Av (\ref{1}) og (\ref{sin2x}) kan vi skrive:
 \[ \int \sin (2x) e^{1-\cos^2 x}\,dx=\int 2\sin x \cos x\, e^{\sin^2 x} \]
 Vi setter så $ u=\sin x $ og $ g(u)=2ue^{u^2} $. Siden $ u'=\cos x $ kan vi skrive:
 \alg{
-\int 2\sin x \cos x\, e^{\sin^2 x}\,dx &= 2\int uu'e^{u^2}\,dx \\
-&= 2\int u e^{u^2}\,dx
+	\int 2\sin x \cos x\, e^{\sin^2 x}\,dx &= 2\int uu'e^{u^2}\,dx \\
+	&= 2\int u e^{u^2}\,dx
 }
 Vi setter nå $ v=u^2 $ og $ h(v)=e^v $. Siden $ v'=2u $ får vi:
 \alg{
- 2\int u e^{u^2}\,dx &= \int v'e^v\,dx \\
- &= \int e^v \,dx \\
- &= e^v + C\\
- &= e^{u^2}+C \\
- &= e^{\sin^2 x}+ C
+	2\int u e^{u^2}\,dx &= \int v'e^v\,dx \\
+	&= \int e^v \,dx \\
+	&= e^v + C\\
+	&= e^{u^2}+C \\
+	&= e^{\sin^2 x}+ C
 }
+}
+
 \opr{delvisintopg}\\
 
 \textbf{b)} Vi setter $ u=\ln x $ og $ v'=x^{\frac{1}{2}} $ og får da at $ u'=x^{-1}$ og $ v = \frac{2}{3}x^{\frac{3}{2}} $:

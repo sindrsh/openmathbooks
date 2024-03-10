@@ -1,0 +1,490 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+
+\begin{document}
+\section{Factorization}
+\reg[\kvadset \label{kvadset}]{
+	For two real numbers $ a $ and $ b $, we have
+	\alg{
+		&&(a+b)^2 &= a^2+2ab+b^2 && \text{(1st square formula)}\vn
+		&&(a-b)^2 &= a^2-2ab+b^2 && \text{(2nd square formula)} \vn
+		&&(a+b)(a-b)&= a^2-b^2 && \text{(3rd square formula)}
+	}
+}
+\spr{
+	$ (a+b)^2 $ and $ (a-b)^2 $ are called \outl{complete squares}.\vsk	
+	
+	The 3rd square formula is also called the \outl{conjugate formula}.\vsk
+	
+	All the square formulas are \textit{identities}. An \outl{identity} is an equation that is satisfied no matter which values are given to the variables in the equation. 
+}
+\eks[1]{
+	Rewrite $ a^2+8a+16 $ to a complete square.
+	
+	\sv \vsb \vs
+	\alg{
+		a^2+8a+16 &= a^2+2\cdot4a+4^2 \\
+		&= (a+4)^2
+	}
+}
+\eks[2]{
+	Rewrite $ {k^2+6k +7} $ to an expression where $ k $ is part of a complete square.
+	
+	\sv \vsb \vs
+	\alg{
+		k^2+6k +7 &= k^2+2\cdot3k+7  \\
+		&= k^2+2\cdot3k+ 3^2-3^2+7 \\
+		&= (k+3)^2-2
+	}
+}
+\newpage
+\eks[3]{
+	Factorize $ x^2-10x+16 $.
+	
+	\sv
+	We start by creating a complete square:
+	\alg{
+		x^2-10x+16 &= x^2-2\cdot5x+5^2-5^2+16 \\
+		&= (x-5)^2-9
+	}
+	We note that $ 9=3^2 $, and use the 3rd square formula:
+	\alg{
+		(x-5)^2-3^2 &= (x-5+3)(x-5-3) \\
+		&= (x-2)(x-8)
+	}
+	Thus, 
+	\[ x^2-10x+16=(x-2)(x-8) \]
+} 
+\fork{\ref{kvadset} \kvadset}{
+	The square formulas follow directly from the distributive law in multiplication (see \mb).
+}
+\vsk
+
+\reg[\aenato \label{a1a2}]{
+	Given $ x, b, c \in \mathbb{R} $. If $ a_1+a_2=b $ and $ a_1a_2=c$, then
+	\begin{equation}
+		x^2+bx+c=(x+a_1)(x+a_2)	\label{a1a2eq}
+	\end{equation}
+}
+\eks[1]{
+	Factorize the expression $ x^2-x-6 $.
+	
+	\sv
+	Since $ 2(-3)=-6 $ and $ 2+(-3)=-1 $, we have
+	\[ x^2-1x-6=(x+2)(x-3) \]
+}
+\newpage
+\eks[2]{
+	Factorize the expression $ b^2-5b+4 $.
+	
+	\sv
+	Since ${(-4)( -1)=4} $ and ${ (-4)+(-1)=-5} $, we have
+	\[ b^2-5b+4 =(b-4)(b-1) \] 
+}
+\eks[3]{
+Solve the inequality
+\[ x^2-8x-9\leq0 \] \vs
+\sv
+Since $ 1(-9)=-9 $ and $ 1+(-9)=-8 $, we have
+\[ x^2-8x-9=(x+1)(x-9) \]
+We set $ f=(x+1)(x-9) $, and make a \outl{sign table}:
+\fig{fortgnskj2}
+The sign table shows the following:
+\begin{itemize}
+	\item The expression $ {x+1} $ is negative when  $ {x<-1} $, equals 0 when $ x=-1 $, and is positive when $ {x>-1} $.
+	\item The expression $ {x-9} $ is negative when $ {x<9} $, equals zero 0 when $ x=9 $, and is positive when $ {x>9} $.
+	\item Since $ f=(x+1)(x-9) $, \vspace{-5pt}
+	\begin{center}
+		\begin{tabular}{l}
+			$ f>0 $ when $ {{x\in[-\infty, -1)} \cup (9, \infty]} $ \br
+			$ f=0 $ when $ {x\in\{-1, 9\}} $ \br
+			$ f<0 $ when $ x\in(-1, 9)$
+		\end{tabular}
+	\end{center}
+\end{itemize}
+Therefore, $ x^2-8x-9\leq0 $ when $ x\in[-1, 9] $.
+}
+\fork{\ref{a1a2} \aenato}{
+We have
+\algv{
+(x+a_1)(x+a_2)&=x^2+xa_2+a_1x+a_1a_2 \\
+&= x^2+(a_1+a_2)x+a_1a_2
+}
+If $ a_1+a_2=b $ og $ {a_1a_2=c}$, then
+\nn{
+(x+a_1)(x+a_2) = x^2+bx+c
+}
+}
+\newpage
+\section{Quadratic Equations}
+\reg[Quadratic equation with constant term]{
+	Given the equation
+	\begin{equation}\label{abc}
+		ax^2+bx+c=0
+	\end{equation}
+	where $a, b, c \in \mathbb{R}$. Then 
+	\begin{flalign*}
+		&&\qquad\qquad\qquad    x&= \frac{-b\pm\sqrt{b^2-4ac}}{2a} &&\qquad(\textit{abc}\text{\,-formula})
+	\end{flalign*}
+	If $x=x_1$ and $x=x_2$ are the solutions given by the \textit{abc}-formula, is
+	\begin{equation}\label{abcfakt}
+		ax^2+bx+c=a(x-x_1)(x-x_2)
+	\end{equation}
+}
+\eks[1]{
+	\abc{
+		\item Solve the equation    $ 2x^2-7x+5=0 $.
+		\item Factorize the expression on the left side in task a). 
+	} \vs
+	\sv \vs
+	\abc{
+		\item We use the \textit{abc}-formula. Then $a=2$, $b=-7$ and $c=5$. Now we get that
+		\alg{
+			x &=\frac{-(-7)\pm\sqrt{(-7)^2-4\cdot2\cdot5}}{2\cdot2} \br
+			&=\frac{7\pm\sqrt{49-40}}{4} \br
+			&=\frac{7\pm\sqrt{9}}{4}\br
+			&=\frac{7\pm3}{4}    
+		}
+		Either is
+		\[ x=\frac{7+3}{4}=\frac{10}{4}=\frac{5}{2} \]    
+		or
+		\[ x=\frac{7-3}{4}=1 \]    
+		
+		\item $ 2x^2-7x+5=2(x-1)\left(x-\frac{5}{2}\right) $     
+	}
+}
+\eks[2]{
+	Solve the equation 
+	\[ x^2+3x-10=0 \]
+	\sv
+	We use the \textit{abc}-formula. Then $a=1$, $b=3$, and $c=-10$. Now we get that
+	\alg{
+		x&=\frac{-3\pm\sqrt{3^2-4\cdot1\cdot(-10)}}{2\cdot1}\br
+		&=\frac{-3\pm\sqrt{9+40}}{2} \br
+		&=\frac{-3\pm\sqrt{49}}{2} \br
+		&=\frac{-3\pm7}{2}
+	}
+	Thus
+	\[ x=-5\qquad\vee\qquad x=2 \]
+}
+\eks[3]{
+	Solve the equation    
+	\[ 4x^2-8x+1=0 \]
+	\sv
+	By the \textit{abc}-formula, we have that
+	\alg{
+		x&=\frac{8\pm\sqrt{(-8)^2-4\cdot4\cdot1}}{2\cdot4} \\
+		&=\frac{8\pm\sqrt{64-16}}{8} \br
+		&=\frac{8\pm\sqrt{48}}{8} \br
+		&=\frac{8\pm4\sqrt{3}}{8} \br
+		&=\frac{2\pm\sqrt{3}}{2}
+	}
+	Thus
+	\[ x=\frac{2+\sqrt{3}}{2}\quad\vee\quad x=\frac{2-\sqrt{3}}{2} \]
+}
+
+\newpage
+\fork{Quadratic Equations}{
+	Given the equation
+	\[ ax^2+bx+c=0 \]
+	We start by rewriting the equation:
+	\[ x^2+\frac{b}{a}x+\frac{c}{a}=0 \]
+	Then we make a perfect square and use the conjugate root theorem to factorize the expression:
+	\alg{
+		x^2+\frac{b}{a}x+\frac{c}{a}&=x^2+2\cdot\frac{b}{2a}x+\frac{c}{a}\\
+		&=\left(x+\frac{b}{2a}\right)^2-\frac{b^2}{4a^2}+\frac{c}{a} \\
+		&=\left(x+\frac{b}{2a}\right)^2-\frac{b^2-4ac}{4a^2} \\
+		&=\left(x+\frac{b}{2a}\right)^2-\left(\sqrt{\frac{b^2-4ac}{4a^2}}\,\right)^2 \br
+		&=\left(x+\frac{b}{2a}+\frac{\sqrt{b^2-4ac}}{2a}\,\right)\left(x+\frac{b}{2a}-\frac{\sqrt{b^2-4ac}}{2a}\,\right)
+	}    
+	The expression above equals 0 when
+	\[ x=\frac{-b+\sqrt{b^2-4ac}}{2a}\qquad\vee\qquad x=\frac{-b-\sqrt{b^2-4ac}}{2a} \]
+}
+
+\newpage
+\section{Polynomial Division}
+\subsection{Methods}
+When two given numbers are not divisible by each other, we can use fractions to express the quotient. For example,
+\begin{equation}\label{17div3}
+	\frac{17}{3}=5+\frac{2}{3}
+\end{equation}
+The idea behind \eqref{17div3} is that we rewrite the numerator so that we bring out the part of 17 that is divisible by 3:
+\[ \frac{17}{3}=\frac{5\cdot3+2}{3}=5+\frac{2}{3} 
+\]
+The same reasoning can be applied to fractions with polynomials, and then it's called \outl{polynomial division}.
+\regv
+\eks[1]{ \label{polydiveks1}
+	Perform polynomial division on the expression
+	\[ \frac{2x^2+3x-4}{x+5} \] 
+	\sv
+	\metode{Method 1}{0.4\linewidth} \\
+	We do the following steps; starting with the highest power of $x$ in the numerator, we create expressions that are divisible by the denominator.
+	\alg{
+		\frac{2x^2+3x-4}{x+5}&=\frac{2x(x+5)-10x+3x-4}{x+5} \br
+		&= 2x+\frac{-7x-4}{x+5} \br
+		&= 2x+\frac{-7(x+5)+35-4}{x+5} \br
+		&= 2x-7 +\frac{31}{x+5}
+	}
+	\newpage
+	\metode{Method 2}{0.4\linewidth}
+	(See the calculation under the points)
+	\begin{enumerate}[label=\roman*)]
+		\item  We observe that the term with the highest order of $x$ in the dividend is $2x^2$. This expression can be obtained by multiplying the dividend by $2x$. We write $2x$ to the right of the equals sign, and subtract $2x(x+5)=2x^2+10x$.
+		\item The difference from point ii) is ${-7x-4}$. We can bring out the term with the highest order of $x$ by multiplying the dividend by $-7$. We write $-7$ to the right of the equals sign, and subtract $-7(x+5)=-7x-35$.
+		\item The difference from point iii) is $31$. This is an expression that has a lower order of $x$ than the dividend, and thus we write $\frac{31}{x+5}$ to the right of the equals sign.
+	\end{enumerate}
+	\alg{
+		\phantom{-}&(2x^2+3x-4):(x+5) =2x-7+\frac{31}{x+5} \\ 
+		-&\underline{(2x^2+10x)} \\
+		&\phantom{02x}-7x-4  \\
+		&\phantom{xx}-\underline{(-7x-35)}\\
+		&\phantom{aaaaaaaaaa''\,}31 
+	}
+}
+\newpage
+\eks[2]{
+	Perform polynomial division on the expression
+	\[ \frac{x^3-4x^2+9}{x^2-2} \]
+	\sv
+	\metode{Method 1}{0.4\linewidth}\\ \vs
+	\alg{
+		\frac{x^3-4x^2+9}{x^2-2}&= \frac{x(x^2-2)+2x-4x^2+9}{x^2-2} \br
+		&=x+\frac{-4x^2+2x+9}{x^2-2}\br
+		&=x+\frac{-4(x^2-2)-8+2x+9}{x^2-2}\br
+		&= x-4+\frac{2x+1}{x^2-2}
+	}
+	\metode{Method 2}{0.4\linewidth} \\ \vs
+	\alg{
+		\phantom{-}&(x^3-4x^2+9):(x^2-2) =x-4+\frac{2x+1}{x^2-2} \\ 
+		-&\underline{(x^3-2x)} \\
+		&\phantom{02x}-4x^2+2x+9  \\
+		&\phantom{'}-\underline{(-\,4x^2+8)}\\
+		&\phantom{aaaaaaaaaa'}2x+1 
+	}
+}\newpage
+
+\eks[3]{ \label{polydiveks3}
+	Perform polynomial division on the expression
+	\[ \frac{x^3-3x^2-6x+8 }{x-4}\]
+	
+	\sv
+	\metode{Method 1}{0.4\linewidth} \\ \vs
+	\alg{
+		\frac{x^3-3x^2-6x+8 }{x-4} &= \frac{x^2(x-4)+4x^2-3x^2-6x+8}{x-4} \br
+		&= x^2 +\frac{x^2-6x+8}{x-4} \br
+		&= x^2+\frac{x(x-4)+4x-6x+8}{x-4}\br
+		&=x^2+x+\frac{-2x+8}{x-4} \br
+		&= x^2+x-2
+	}
+	\metode{Method 2}{0.4\linewidth} \\ \vs
+	\alg{
+		\phantom{-}&(x^3-3x^2-6x+8):(x-4) =x^2+x-2 \\ 
+		-&\underline{(x^3-4x^2)} \\
+		&\phantom{02xx''',}x^2-6x+8  \\
+		&\phantom{''}-\underline{(-\,x^2+4x)}\\
+		&\phantom{aaaaaa''''}-2x+8 \\
+		&\phantom{aaaa,,,}-\underline{(-2x+8)}\\
+		&\phantom{aaaaaaaaaaaaaa,}0
+	}
+}
+
+\newpage
+\subsection{Divisibility and Factors}
+The examples on pages \pageref{polydiveks1}\,-\,\pageref{polydiveks3} point to some important relationships that apply to general cases:\regv
+\reg[Polynomial Division \label{polydiv}]{
+	Let $ A_k $ denote a polynomial $ A $ of degree $ k $. Given the polynomial $ P_m $, then there exist polynomials $ Q_n $, $ S_{m-n} $, and $ R_{n-1} $, where $ m\geq n>0 $, such that
+	\begin{equation}\label{polydiveq}
+		\frac{P_m}{Q_n}=S_{m-n}+\frac{R_{n-1}}{Q_n}    
+	\end{equation}
+}
+\spr{
+	If $ R_{n-1}=0 $, we say that $ P_m $ is \outl{divisible} by $ Q_n $.
+} 
+\eks[1]{
+	Investigate whether the polynomials are divisible by $ {x-3} $.
+	\abc{
+		\item $P(x)= x^3+5x^2-22x-56 $
+		\item $K(x)= x^3+6x^2-13x-42 $
+	}
+	\sv \vs
+	\abc{
+		\item By polynomial division, we find that
+		\[ \frac{P}{x-2}=x^2+8x+2-\frac{50}{x-2} \]
+		Thus, $ P $ is \textsl{not} divisible by $ x-3 $.
+		\item By polynomial division, we find that
+		\[ \frac{K}{x-2}=x^2+9x+14 \]
+		Thus, $ K $ is divisible by $ x-3 $.
+	}
+}
+
+
+\newpage
+\reg[Factors in Polynomials \label{polyfakt}]{
+	Given a polynomial $ P(x) $ and a constant $ a $. Then we have that
+	\begin{equation}
+		P \text{ is divisible by } x-a  \Longleftrightarrow P(a)=0 
+	\end{equation}
+	If this is true, there exists a polynomial $ S(x) $ such that
+	\begin{equation}\label{PfaktS}
+		P=(a-x)S
+	\end{equation}
+}
+\eks[1]{
+	Given the polynomial
+	\[ P(x)= x^3-3x^2-6x+8\]
+	\abc{
+		\item Show that $ x=1 $ solves the equation $ P=0 $.
+		\item Factorize $ P $. 
+	}
+	\sv
+	
+	\abc{
+		\item We investigate $ P(1) $:
+		\alg{
+			P(1)&=1^3-3\cdot1^2-6\cdot1+8 \\
+			&= 0
+		}
+		Thus, $ P=0 $ when $ x=1 $.
+		\item Since $ P(1)=0 $, $ x-1 $ is a factor in $ P $. By polynomial division, we find that
+		\[ P=(x-1)(x^2-2x-8) \]
+		Since $ 2(-4)=-8 $ and $ -4+2=-2 $, we have
+		\[ x^2-2x-8=(x+2)(x-4) \]
+		This means that
+		\[ P=(x-1)(x+2)(x-4) \]
+	}
+}
+
+\section{Euler's Number}
+\outl{Euler's Number}\index{Euler's number}\index{e} is a constant of such significant importance in mathematics that it has been given its own letter; \sym{$ e $}. The number is irrational\footnote{And \net{https://en.wikipedia.org/wiki/Transcendental_number}{transcendental}.}, and the first ten digits are
+\st{\[ e=2.718281828... \]}
+The most fascinating properties of this number become apparent when investigating the function ${f(x)= e^x}$. This is an exponential function of such importance that it is simply known as \\\outl{the exponential function}. This function will be examined more closely in \refved{eulersnumberprop} and \refkap{Derivation}.
+\fig{ekspfunk}
+
+\section{Logarithms}
+In \mb, we looked at powers, which consist of a base and an exponent. A \outl{logarithm} is a mathematical operation relative to a number. If a logarithm is relative to the base of a power, the operation will result in the exponent.\vsk
+
+The logarithm relative to 10 is written $ \log_{10} $. For example,
+\[ \log_{10} 10^2 = 2 \]
+Furthermore, for example,
+\[ \log_{10} 1000= \log_{10} 10^3 = 3\]
+Consequently, we can write
+\[ 1000 = 10^{\log_{10} 1000} \]
+With the power rules as a starting point (see \mb), many rules for logarithms can be derived.\regv
+\regdef[Logarithms]{
+	Let $ \log_a $ denote the logarithm relative to $ {a>0}$. For $ m\in\mathbb{R} $, then
+	\begin{equation}
+		\log_a a^m = m
+	\end{equation}
+	Alternatively, we can write \vs
+	\begin{equation}
+		m=a^{\log_{a} m}
+	\end{equation}
+}
+\eks[1]{ \vsb
+	\[ \log_5 5^9 = 9 \]
+}
+\eks[2]{ \vsb
+	\[ 3 = 8^{\log_8 3} \]
+}
+\spr{
+	\sym{$ \log_{10}$} is often written as \sym{$ \log $}, while \sym{$ \log_e $} is often written as \sym{$ \ln $} or (!) \sym{log}. When using digital aids to find logarithm values, it is therefore important to check what the base is. In this book, we shall write \sym{$ \log_e $} as \sym{$ \ln $}.    \\[5pt]
+	
+	The logarithm with $ e $ as the base is called the \outl{natural logarithm}.
+}
+\regv
+\eks[3]{ \vsb
+	\[ \log 10^7 = 7 \]
+}
+\eks[4]{ \vsb
+	\[ \ln e^{-3} = -3 \]
+} \vsk
+
+\reg[Logarithm Rules]{
+	\notesm{The logarithm rules are here given by the natural logarithm. The same rules will apply by replacing $ \ln $ with $ \log_a $, and $ e $ with $ a $, for $ a>0 $.
+	} \vsk
+	
+	For $ {x, y>0} $, we have that \vs
+	\begin{align}
+		\ln e&= 1\label{loga}\vn    
+		\ln 1 &= 0 \label{log1}\vn
+		\ln (xy)&=\ln x + \ln y \label{logxy} \vn
+		\ln \left(\frac{x}{y}\right)&= \ln x - \ln y \label{logxdivy} 
+	\end{align}
+	For a number $ y $ and $ x>0 $, is
+	\begin{equation}
+		\ln x^y = y \ln x \label{logxexpy}
+	\end{equation}
+}
+\eks[1]{\vsb
+	\[ \ln\left(ex^5\right) =\ln e+\ln x^5=1+5\ln x\]
+}
+\eks[2]{\vsb
+	\[ \ln \frac{1}{2} = \ln 1 - \ln 2 = -\ln 2\]
+}
+\newpage
+\fork{Logarithm Rules}{
+	\textbf{Equation} \textbf{(\ref{loga})}        
+	\[ \ln e= \ln e^1=1  \]
+	
+	\textbf{Equation} \textbf{(\ref{log1})}
+	\[ \ln 1 = \ln e^0 =0  \]
+	
+	\textbf{Equation} \textbf{(\ref{logxy})}\\
+	For $ m, n\in \mathbb{R} $, we have that
+	\alg{
+		\ln e^{m+n}&=m+n \\
+		&= \ln e^m + \ln e^n
+	}
+	We set\footnote{It is taken for granted here that all positive numbers different from 0 can be expressed as a power.} $ {x=e^m} $ and $ {y=e^n} $. Since $ {\ln e^{m+n}=\ln (e^m\cdot e^n)}$, then
+	\[ \ln(x y)=\ln x+\ln y \]
+	
+	\textbf{Equation} \textbf{(\ref{logxdivy})}\\
+	By examining $ \ln a^{m-n} $, and by setting $ {y=a^{-n}} $, the\\ explanation is analogous to that given for equation \eqref{logxy}.\vsk
+	
+	\textbf{Equation} \textbf{(\ref{logxexpy})} \os
+	Since $ x=e^{\ln x} $ and\footnote{See power rules in \mb.} $ \left(e^{\ln x}\right)^y = e^{y \ln x} $, we have that
+	\algv{
+		\ln x^y &= \ln e^{y\ln x}  \\
+		&= y\ln x
+	}
+}
+\newpage
+\section{Explanations}
+\fork{\ref{polydiv} Polynomial Division}{
+	Given the polynomials
+	\alg{
+		&P_m\text{, where }ax^m\text{ is the term with the highest degree}\vn
+		&Q_{n}\text{, where } bx^n\text{ is the term with the highest degree}    
+	}
+	Then we can write
+	\begin{equation*}
+		P_m=\frac{a}{b}x^{m-n}Q_n-\frac{a}{b}x^{m-n}Q_n+P_m
+	\end{equation*}
+	We set $ {U=-\frac{a}{b}x^{m-n}Q_n+P_m} $, and note that $ U $ \\necessarily has a degree lower or equal to $ m-1 $. Further, we have that
+	\begin{equation} \label{polydivu}
+		\frac{P_m}{Q_n}=\frac{a}{b}x^{m-n}+\frac{U}{Q_n}
+	\end{equation}
+	Let's call the first and the second term on the right side in \eqref{polydivu} respectively a "power term" and a "remaining fraction". By following the procedure that led us to \eqref{polydivu}, we can also express $ \frac{U}{Q_n} $ by a "power term" and a "remaining term". This "power term" will have a degree less or equal to $ {m-1} $, while the numerator in the "remaining term" will have a degree less or equal to $ {m-2} $. By applying \eqref{polydivu} we can continually create new "power terms" and "remaining terms" until we have a "remaining term" with a degree of $ {n-1} $.
+}
+\newpage
+\fork{\ref{polyfakt} Factorization of Polynomials}{
+	\textbf{\boldmath $ P $ is divisible by $ x-a \Rightarrow P(a)=0 $.}\os
+	For a polynomial $ S $, we have from \eqref{polydiveq} that
+	\alg{
+		\frac{P}{x-a}&= S \\
+		P &= (x-a)S
+	}
+	Then obviously $ x=a $ is a solution for the equation $ P=0 $.\vsk
+	
+	\textbf{\boldmath $ P $ is divisible by $ x-a \Leftarrow P(a)=0 $.}\os
+	From \eqref{polydiveq}, there exists a polynomial $ S $ and a constant $ R $ such that
+	\alg{
+		\frac{P}{x-a}&=S+\frac{R}{x-a} \br
+		P &= (x-a)S+R
+	}
+	Since $ P(a)=0 $, $ 0=R $, and then $ P $ is divisible by $ x-a $.
+}
+
+\end{document}
