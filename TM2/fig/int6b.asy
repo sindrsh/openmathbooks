@@ -33,9 +33,7 @@ yaks(xmin, max(s).y);
 
 mktc(a, "$a$");
 mktc(b, "$b$");
-mktcy(d, "$d$");
+mktcy(d, "$k$");
 label("$A$", (0.6, 1.3));
 //label("$C$", (0.7, 0.4));
 label("$B$", (1.5, 0.4));
-
-

@@ -1,0 +1,196 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+\subsection*{Oppgave 1}	
+Av produktregelen ved derivasjon har vi at
+\alg{
+f'(x) &= (x^2)'\ln x + x^2 (\ln x)'\\
+&= 2x\ln x + x^2\frac{1}{x} \\
+&= x(2\ln x+ 1)
+}
+\subsection*{Oppgave 2}
+Vi har at
+\alg{
+&2\ln e = 2 \vn
+&3\log 70=3\log 7 + 3\log 10 = 3\log 7+3>2  \vn
+&e^{3\ln 2} = \left(e^{\ln 2}\right)^3=2^3=8
+}
+Da $\log 7<1 $, er $ 3\log 7+3<8 $, og dermed er
+\[ 2\ln e<3\log 70<e^3\ln 2 \]
+\subsection*{Oppgave 3}
+\abc{
+\item Vi har at
+\alg{
+	\vv{AB}&=[2-(-3), -2-(-1)]=[5, -1]\vn 
+	\vv{BC}&=[3, 4]\vn
+	\vv{AC}&=[8, 3]
+}
+Videre er
+\alg{
+	|\vv{AB}|&=\sqrt{5+(-1)^2}=\sqrt{26}\vn
+	|\vv{BC}|&=\sqrt{25}\vn
+	|\vv{AC}|&=\sqrt{73}
+}
+Dermed er $ BC $ kortest.
+\item For to vektorer $ \vec{a} $ og $ \vec{b} $ har vi at $ \vec{a}\cdot\vec{b}\iff \angle(\vec{a}, \vec{b})=90^\circ$. Videre har vi at
+\alg{
+\vv{AB}\cdot\vv{BC}&=5\cdot3+(-1)4=11\vn
+\vv{BC}\cdot\vv{AC}&= 36 \vn
+\vv{AB}\cdot\vv{AC}&=37
+}
+Dermed er ingen av vinklene i trekanten $ 90^\circ $.
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item I skriptet: \\
+Linje 1-2: Definerer $ f(x) $.\\
+Linje 4-5: Definerer $ f'(x) $\\
+Linje 6-7: Setter verdiene til $ h $ og $ a $\\
+Linje 10-11: Kjører en while-loop som stopper når $ df(a,h)\geq 0 $, og som øker $ a $ med 1 for hver iterasjon. \vsk
+
+Egil antar at $ f'(a)<0 $ for $ {a=0} $, og forsøker etterpå å finne $ a $-verdien hvor $ f(x) $ skifter fortegn. Hvis $ f'(x) $ skifter fra negativt til positivt fortegn i $ a $, vil dette være bunnpunktet til $ f $.
+
+\item Å øke $ a $ med 1 gjør at Egil bare sjekker for $ a\in\mathbb{N} $. Han bør derfor øke $ a $ med en mye mindre verdi. Forslag for Linje 11:\\
+\texttt{a = a + 0.01}
+}
+\newpage
+\subsection*{Oppgave 1}
+\abc{ 
+\item Da potensfunksjoner ikke kan gå gjennom punktet $ (0, 0) $, bruker vi tallene i tabellen hvor konsentrasjonen er fratrekt 2,5. Ved regresjon får vi potensfunksjonene $ g(x) $. Da denne tilnærmet går gjennom alle punktene vi har lagt inn, ser $ g(x) $ ut til å være en god modell. $ f(t) $ fra oppgaven gjennkjenner vi som $ g(t)+2,5 $, og dermed er $ f $ en god modell for konsentrasjonen av stoffet.
+\begin{figure}
+	\includegraphics[scale=0.2]{opg1a}
+\end{figure}
+
+\item Ved hjelp av CAS finner vi at konsentrasjonen vil være 2.0 mmol/L etter ca. 160 sekunder.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{opg1b}
+\end{figure}
+\item Ved hjelp av CAS finner vi at konsentrasjonen vil øke med mindre enn 0,001 mmol/L per sekund etter ca 321 sekunder.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{opg1c}
+\end{figure}
+}
+
+
+\newpage
+\subsection*{Oppgave 2}
+I CAS-celle 1 og 2 definerer vi $ g(x) $ og $ h(x) $ slik at
+\[ f(x)= \left\lbrace{
+	\begin{array}{rcr}
+		g(x) &,&x<k \br
+		h(x)   &,& x\geq k
+	\end{array}
+}\right. \]
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{opg2ab}
+\end{figure}
+\abc{
+\item Av celle 3 og 4 ser vi at $ \lim\limits_{x\to k} f(x) =2k $, og dermed er $ f $ kontiuerlig for alle $ k $.
+\item For at $ f $ skal være deriverbar i $ x=k $, må vi at at
+\[ \lim\limits_{h\to 0} \frac{g(k+h)-g(k)}{h}=\lim\limits_{h\to 0}\frac{h(k+h)-h(k)}{h} \]
+Da både $ g(x) $ og $ h(x) $ er polynomer, har de en kontinuerlig deriverte funksjon for alle $ k $, og dermed er det tilstrekkelig å sjekke for hvilke verdier $ g'(k)=h'(k) $. Av celle 5 ser vi at dette bare gjelder for $ k=0 $.
+\newpage
+\item Da $ g(x) $ er en konkav funksjon, er den injektiv for alle $ x\in[\infty, x_m] $, hvor $ x_m $ er maksimumspunktet til $ g $. Maksimumspunktet finner vi ved å kreve at $ g'(x)=0 $ (celle 6). I tillegg må vi kreve at $ x_m<k $, som gir at $ k>2 $ (celle 7). En tilsvarende utregning med hensyn på $ h(x) $ (celle 8 og 9) gir at $ k\leq 2 $. Altså er $ f $ injektiv dersom \\$ -2\leq k<2 $.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{opg2c}
+\end{figure}
+}
+\newpage
+\subsection*{Oppgave 3}
+\abc{
+\item Vi definerer tredjegradsfunksjonen $ f $ med koeffisienter $ c_1, c_2, c_3\in \mathbb{R} $ (celle 1). Ska $ f $ ha et ekstremalpunkt, må det finnes en reell løsning av ligningen $ f'(x)=0 $. Av celle 2 ser vi at hvis $ {c_2^2<3c_1c_3} $, så har ikke ligningen en rell løsning. Det er åpenbart at det finnes sett med $ c_1 $, $ c_2 $ og $ c_3 $ som oppfyller ulikheten (for eksempel $ c_1=1, c_2=0, c_3=1 $), og dermed er ikke Påstand 1 gyldig for alle sett med $ c_1 $, $ c_2 $ og $ c_3 $.
+\item For at $ y=ax+b $ skal skjære $ f $, må ligningen $ f=ax+b $ ha minst én løsning. Dette er en tredjegradsligning. Alle tredjegradsligninger har minst én reell løsning, og dermed er påstand 2 riktig.
+\item \textbf{Løsning 1}\\
+Vi definerer $ g(x)=f'(x) $. Da $ f $ er en tredjegradsfunksjon, er $ g $ en andregradsfunksjon, og siden $ {g'(3)=0} $ er $ {(3, g(3))} $ ekstremalpunktet til $ g $. Da $ {x=1} $ og $ {x=5} $ har lik horisontalavstand til ekstremalpunktet, har vi av symmetriegenskapene til en andregradsfunksjon at $ {g(1)=g(3)} $. Altså er Påstand 3 riktig.\\[12pt]
+\textbf{Løsning 2}\\
+Hvis $ f $ har et vendepunkt i $ x=3 $, er $ f''(3)=0 $. Da er $ c_2=-9c_3 $ (celle 3). Vi definerer $ g(x) $ som $ f $ med koeffisienter $ c_1, c_2=-9c_3 $ og $ c_3 $ (cell 4). Da stemmer det at $ g'(x)=g'(5) $ (celle 5).
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{opg3}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 4}
+Vi setter sidelengden til grunnflaten lik $ s $ og høyden lik $ h $. Da er volumet $ V $ og overflatearealet $ A $ til prismen gitt i CAS-celle 1 og 2. I celle 3 finner vi $ h $ uttrykt ved $ s $ og $ A $, og setter dette inn i $ V $ (celle 4). I celle 5 og 6 finner vi ekstremalpunktene til uttrykket fra celle 4. Da dette er et 3. gradsuttrykk med negativ koeffisient foran $ s^3 $, forventer vi at ekstremalpunktet lengst til høgre på $ x $-aksen er maksimalpunktet. Setter vi ekstremalpunktet inn i uttrykket for $ V $ (celle 7), ser vi at det største volumet oppnås ved å ha en så stor overflate som tillat.
+\abc{
+\item I celle 8 finner vi at det største volumet når $ {s=5} $ er $ \frac{475}{4}\enh{L}=118.75\enh{L} $.
+\item I celle 9 finner vi at det maksimale volumet kassen kan få er $ 40\sqrt{10}\enh{L}\approx 126.49\enh{L} $.
+\item Vi løser ligningen $ V=80 $, og får et uttrykk for $ h $ (celle 10). Deretter lager vi funksjonen $ a(s) $ (celle 11), hvor uttrykket for $ h $ er satt inn i uttrykket for $ A $ i celle 2. Da $ a $ bare har ett ekstremalpunkt (celle 12) er det ut i fra oppgaven naturlig å anta at dette er et bunnpunkt (dette kan også bekreftes av grafen til $ a $). Dermed er det minste samlede arealet platene kan ha lik $ 12\cdot20^{\frac{2}{3}}\enh{dm}^2\approx 88,42\enh{dm}^2$.
+}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg4}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item Vi definerer $ f(t) $ og $ g(t) $ slik at $ r(t)=[f, g] $ (celle 1, 2 og 3). $ r'(t) $ er fartsvektoren til pucken, som dermed har utgangsfart ca. lik $ 18,87\enh{m/s} $ (celle 3).
+\item Vi tiden det vil ta før $ r $ antar $ x $- og $ y $-verdiene til randsonene (celle 5-8), og finner at den minste gyldige tiden er ca $ 3,05\enh{s} $. Dett er altså tiden det tok før pucken traff vantet.
+\item Vi definerer posisjonsvektoren til spilleren som $ p(t) $ (celle 9), og sjekker om $ r=p $ har en løsning (celle 10). Det har den ikke, og dermed treffer ikke pucken spilleren. (Hvis vi skulle sjekket om $ p $ og $ r $ kan anta samme posisjon, måtte vi brukt to forskjellige variabler, men siden det her er snakk om samme posisjon til samme tid, kan vi bruke $ t $ for begge).
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg5}
+\end{figure}
+\newpage
+\subsection*{Oppgave 6}
+\textit{Kommentar: Vi vil her presentere to løsninger. Den første løsningen fremhever viktigheten av å lese alle deloppgaver før man setter i gang med besvarelsen, og styrken av å bruke CAS så mye som mulig.
+}\vsk
+
+\textbf{Løsning 1} \\
+Vi definerer $ f(x)= kx^2+lx +m $ hvor $ k, l, m\in\mathbb{R} $ (celle 1). I celle 2 har vi da et generelt uttrykk som gjelder for alle andregradsfunksjoner.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg6}
+\end{figure}
+\abc{
+\item Av uttrykket vi har funnet er $ c=\frac{3+1}{2}=2 $.
+\item Se linje 2-3 i Python-skriptet.
+\item Linje 5-7 bekrefter det vi har funnet, at $ c=\frac{a+b}{2} $.
+\item Da $ \frac{2+8}{2}=5 $, er Annes påstand riktig.
+} \vsk
+
+\textbf{Løsning 2}\\
+Vi har at $ f'(x)=2x+3 $. Dermed er
+\alg{
+f'(c)&=\frac{f(b)-f(a)}{b-a} \br
+2c &=\frac{f(b)-f(a)}{b-a}\br
+c &= \frac{1}{2}\left(\frac{f(b)-f(a)}{b-a}-3\right)
+}
+\abc{
+\item Vi bruker skriptet fra oppgave b) og får at $ c=2 $ (linje 8).
+\item Se linje 2-6.
+\item Ut i fra forsøk med tilfeldige tall ser det ut til at $ c=\frac{a+b}{2} $.
+\item Gitt $ f(x)= kx^2+lx +m $ hvor $ k, l, m\in\mathbb{R} $. Ved å generalisere uttrykket vi har funnet for $ c $, får vi at
+\alg{
+c&= \frac{1}{2k}\left(\frac{f(b)-f(a)}{b-a}-l\right)
+} 
+Videre er 
+\alg{
+f(b)-f(a)&=kb^2+3lb+m-(ka^2+3la+m) \\
+&= k(a+b)(b-a)+l(b-a)
+}
+Dermed er
+\algv{
+c&=\frac{1}{2k}k(a+b) \\
+&=\frac{a+b}{2} 
+}
+Uttrykket gjelder altså for alle andregradsfunksjoner, og dermed er Annes påstand riktig.
+}
+\pythonut{meanvaluesentence_a.py}{
+2.0\\
+4.5\\
+55.0
+}
+\end{document}

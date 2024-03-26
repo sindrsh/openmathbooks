@@ -28,10 +28,10 @@ Intuitivt vil vi tenke at jo mindre intervaller vi bruker, jo bedre må tilnærm
 \end{figure}
 Lar vi $ n $ være antall delintervaller, og $ {n\to \infty} $, får vi at
 \begin{align}
-	I&\approx\lim\limits_{n\to \infty}\left[f(x_1)+fv(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
+	I&\approx\lim\limits_{n\to \infty}\left[f(x_1)+f(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
 	&\approx \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{intdefpreeq}
 \end{align}
-hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ t_1=a $). Det kan vises at grenseverdien i \eqref{intdefpreeq} er lik $ I $, og det fører oss til følgende definisjon:
+hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ x_1=a $). Det kan vises at grenseverdien i \eqref{intdefpreeq} er lik $ I $, og det fører oss til følgende definisjon:
 \regdef[\bestminten \label{bestminten}]{\outl{Det bestemte integralet} $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
 	\begin{equation}
 		I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{bint}
@@ -88,7 +88,7 @@ Allerede nå innser vi at det finnes en haug av funksjoner, rett og slett uendel
 	\alg{
 		g'(x)&=2x+e^x  \os 
 		h'(x)&=2x+2e^{2x} \os
-		k(x)&=2x+e^x
+		k'(x)&=2x+e^x
 	}
 	Siden $ {g'(x)=k'(x)=f(x)} $, mens $ { h'(x)\neq f(x)} $, er bare $ g(x) $ og $ k(x) $ en antiderivert til $ f $.
 }
@@ -521,13 +521,13 @@ A &= \int\limits_{0}^{1} (f-g)\,dx + \int\limits_{1}^{2} (g-f)\,dx
 Vi starter med å regne ut de to integralene hver for seg:
 \alg{
 \int\limits_{0}^{1} (f-g)\,dx&= \left[-\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)-(x^2-x)\right]_0^1\\
-&= -\left[\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)+(x^2-x)\right]_0^1\br
-&= \frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)+(1^2-1) \\ &\qquad\qquad-\left(\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot0\right)+(0^2-0)\right)\\
+&= -\left[\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)+x^2-x\right]_0^1\br
+&= -\bigg[\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)+1^2-1 \\ &\qquad\qquad-\left(\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot0\right)+0^2-0\right)\bigg]\\
 &= \frac{2}{\pi}
 } \vs
 \alg{
-\int\limits_{1}^{2} (g-f)\,dx&=\left[(x^2-x)+\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)\right]_1^2\\
-&=(2^2-2)+\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot2\right) \\ &\qquad\qquad-\left(-\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)-(1^2-1)\right) \\
+\int\limits_{1}^{2} (g-f)\,dx&=\left[x^2-x+\frac{2}{\pi}\cos\left(\frac{\pi}{2}x\right)\right]_1^2\\
+&=2^2-2+\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot2\right) \\ &\qquad\qquad-\left(1^2-1+\frac{2}{\pi}\cos\left(\frac{\pi}{2}\cdot1\right)\right) \\
 &=2 -\frac{2}{\pi}
 }
 Summen av disse to integralene er $ 2 $, som altså er arealet.
@@ -619,14 +619,14 @@ La oss ta utgangspunkt i funksjonen $ f(x) $, med en graf som vist i \fref{Ifig}
 
 Vi starter med å splitte $ [a, b] $ inn i $ n $ mindre delintervaller, alle med bredden $ {\Delta x = \frac{b-a}{n}} $. I tillegg lar vi $ x_i $ for $ {i\in\lbrace 1, 2,\,...\,, n\rbrace} $ betegne den $ x $-verdien som er slik at $ f(x_i) $ er den laveste verdien til $ f$ på delintervall nr. $ i $. \vsk
 
-Arealet avgrenset av delintervallet og $ f $ tilnærmer vi som $s_i= f(x_i)\Delta x $, da har vi at (se \fref{bintforkl})
+Arealet avgrenset av delintervallet og $ f $ tilnærmer vi som ${s_i= f(x_i)\Delta x} $, da har vi at (se \fref{bintforkl})
 \alg{
 I &\geq s_1+s_2+...+s_i\\
 I&\geq f(x_1)\Delta x + f(x_2)\Delta x +...+f(x_n)\Delta x  \\
 I &\geq \sum\limits_{i=i}^{n} f(x_i)\Delta x	
 }
 \figc{int4}{Arealene av $ s_i $ markert som grønne søyler og arealene av $ c_i $ markert som blå søyler. Bredden til hver søyle er $ \Delta x = \frac{b-a}{n} $ (her er \y{n=4 }).\label{bintforkl}}
-Videre må det finnes et tall $ {h_i\in [0, 1)} $ som er slik at $ f(x_i+h_i\Delta x) $ er den høyeste verdien til $ f $ på delintervallet. Vi lar $ c_i $ betegne arealet til søylen med $ \Delta x $ som bredde og  $ f(x_i+h_i\Delta x)-f(x_i)$ som høyde:
+Videre må det finnes et tall $ {h_i\in [0, 1)} $ som er slik at $ {f(x_i+h_i\Delta x)} $ er den høyeste verdien til $ f $ på delintervallet. Vi lar $ c_i $ betegne arealet til søylen med $ \Delta x $ som bredde og  $ f(x_i+h_i\Delta x)-f(x_i)$ som høyde:
 \[ c_i = (f(x_i+h_i\Delta x)-f(x_i))\Delta x \]
 Hvis vi legger til alle $ c_i $ i det første estimatet vårt, får vi en tilnærming som må være større eller lik det egentlige arealet. Derfor kan vi skrive
 \[\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq I \leq \sum\limits_{i=1}^{n} f(x_i)\Delta x+ \sum\limits_{i=1}^{n} c_i \]
@@ -641,7 +641,7 @@ Men når \y{n\to\infty}, går summen $ nc_m $ mot 0:
 &= 0	
 }
 \newpage
-Følgelig er $ \lim\limits_{x\to\infty} \sum\limits_{i=1}^{n} c_i =0,$ og da er
+Følgelig er $ \lim\limits_{n\to\infty} \sum\limits_{i=1}^{n} c_i =0,$ og da er
 \begin{align}
 \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq &I \leq \lim\limits_{n\to\infty}\left(\,\sum\limits_{i=1}^{n} f(x_i)\Delta x+ \sum\limits_{i=1}^{n} c_i\right) \label{bintforkl1} \br
 \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \leq &I\leq \lim\limits_{n\to\infty}\sum\limits_{i=1}^{n} f(x_i)\Delta x \\

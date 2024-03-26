@@ -49,7 +49,7 @@ Regn ut de bestemte integralene.\os
 \op{avcos}
 Gjennomsnittet av en funksjon $ f(x) $ over et intervall $ [a, b] $ kan vi skrive som
 \[ \frac{1}{b-a}\int\limits_a^b f(x)\,dx \]
-Gitt et vilkårlig tall $ c $, vis at gjennomsnittet av $f(x)=\cos x+d  $ over intervallet $ [c, c+2\pi] $ er lik $ d $. 
+Gitt et vilkårlig tall $ c $, vis at gjennomsnittet av $f(x)=\cos x+k  $ over intervallet $ [c, c+2\pi] $ er lik $ k $. 
 
 \op{opgintviselmnt}
 Bevis \eqref{intsinkx}-\eqref{intexpkx} ved å bruke integrasjon ved substutisjon.
@@ -94,15 +94,15 @@ Finn det ubestemte integralet:
 \newpage
 \nes
 \op{gerfminusdb}
-Relasjonen mellom to funksjoner $ f(x) $ og $ g(x) $ og en konstant $ d $ er at
-\[ g=f+d \]
+Relasjonen mellom to funksjoner $ f(x) $ og $ g(x) $ og en positiv konstant \\$ k $ er at
+\[ g=f+k \]
 \textbf{a)} Ta det for gitt at $ f $ og $ g $ er som vist på figuren under.
 \begin{figure}
 \centering
 \includegraphics[scale=0.9]{../fig/int6a}\quad
 \includegraphics[scale=0.9]{../fig/int6b}
 \end{figure}
-Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \,dx=\int\limits_a^b g\,dx -(b-a)d  \]
+Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \,dx=\int\limits_a^b g\,dx -(b-a)k  \]
 \textbf{b)} Bekreft likheten i oppgave a) ved integrasjon.
 
 \op{fogF}
@@ -150,20 +150,12 @@ Figuren viser grafene til funksjonene $ f(x)=\cos x$ og $ g(x)=\sin x $.
 \fig{r2h23d1opg2}
 Bestem arealet til det fargede området.
 
-\grubop{opgintsin2x}
-Vis at
-\[ \int \sin^2 x\,dx=\frac{1}{2}(x-\sin x \cos x)+C \]
-ved å bruke delvis integrasjon.
 \newpage
-\grubop{opgintxkvadmdef}
-Bruk definisjonen fra (\ref{bint}) til å vise at
-\[ \int\limits_a^b x^2 \,dx = \frac{1}{3}(b^3-a^3) \]
-\begin{comment}
-\textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
-\end{comment}
-
 \grubop{opgfunklen}
-Gitt en funksjon $ f(x) $ integrerbar på intervallet $ [a, b] $. Vis at \\lengden $ l $ til grafen til $ f $ er
+Gitt en funksjon $ f(x) $ integrerbar på intervallet $ [a, b] $. Ta det for gitt at lengden $ l $ til grafen til $ f $ er gitt som
+\[ \lim_{n\to \infty}\sum\limits_{i=1}^n \left|P_{i+1}-P_i\right| \]
+For $ i,n\in\mathbb{N} $, hvor $ P_i =(x_i, f(x_i)) $, $ x_1=a $, $ x_n=b $, $ x_{i+1}-x_i=\Delta x $, og $ \lim\limits_{n\to\infty}\Delta x=0 $.
+Vis at vi da kan skrive
 \[ l=\int_{a}^{b} \sqrt{1+g^2}\,dx \]
 hvor $ g(x)=f'(x) $.
 \fig{opgfunklen}
@@ -177,5 +169,12 @@ hvor $ g(x)=f'(x) $.
 	\textbf{a)} Tegn $ f(x) $ og $ g(x) $ inn i et koordinatsystem for $ x\in  [-0.4, 0.4]$
 	
 	\textbf{b)} Bruk det faktum at $  \int f(x)\, dx = \tan x $ og at $ \int f(x)\, dx \approx \int g(x)\, dx$ for å finne en tilnærming til $ \tan x $
+\end{comment}
+
+\grubop{opgintxkvadmdef}
+Bruk definisjonen fra (\ref{bint}) til å vise at
+\[ \int\limits_a^b x^2 \,dx = \frac{1}{3}(b^3-a^3) \]
+\begin{comment}
+	\textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
 \end{comment}
 \end{document}
