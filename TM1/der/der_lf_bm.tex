@@ -6,7 +6,17 @@
 \begin{document}
 
 \grubr{opgderkont}
-Av \eqref{derdefalt} har vi at
+\abc{
+\item Av \eqref{derdefalt} har vi at
 \[ f'(a)=\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}\]
+For at denne grensen skal eksistere, må vi ha at $ \lim\limits_{b\to a} \left(f(b)-f(a)\right)=0 $ (hvis ikke går grensen mot $ \pm \infty $, og da er ikke den deriverte definert), og følgelig er $ \lim\limits_{a\to b} f(b)=f(a) $. Dermed er $ f $ kontinuerlig for alle $ x $.
+\item Gitt funksjonen $ f(x)=0 $, da er $ f'(x)=0 $ for alle $ x $. Av resultatet fra a) er dermed $ f(x)=0 $ kontinuerlig. \os
+
+Gitt funksjonen $ g(x)=a $, hvor $ a $ er en konstant. Da er $ f'(x)=0 $, og dermed er $ g(x) $ kontinuerlig.\os
+
+Gitt funksjonene $ h(x)=ax+b $ hvor $ a $ og $ b $ er konstanter. Da er $ h'(x)=g(x) $, og dermed er $ h(x) $ kontinuerlig.
+
+Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi måtte ønske det, og dermed er alle polynomfunksjoner kontinuerlige.
+}
 
 \end{document}

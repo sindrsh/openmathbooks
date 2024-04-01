@@ -61,6 +61,10 @@ Dette betyr at
 		$ f $ er avtagende når $ x\in[2, 6]$
 	\end{tabular}
 \end{center}
+}\vsk
+
+\reg[\defmengdgittint \label{defmengdgittint}]{
+Gitt en kontinuerlig funksjon $ f(x) $ strengt voksende/avtagende for $ {x\in[a, b]} $. Definisjonsmengden til $ f $ på dette intervallet er da $ [f(a), f(b))] $.
 }
 
 \section{Ekstremalpunkt, vendepunkt og infleksjons-punkt}
@@ -296,6 +300,14 @@ I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 	}
 	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $. \vs
 }\vsk
+
+\fork{\ref{defmengdgittint} \defmengdgittint}{
+Vi ønsker å vise at for et hvilket som helst tall $ {c\in(f(a), f(b))} $ finnes det et tall $x_c $ slik at $ f(x_c)=c$.\os
+
+Vi lar $ f(x) $ være en strengt voksende funksjon og definerer $ P(c, n) $ gitt ved følgende prosedyre, beskrevet av en Python-funksjon (se \am for en innføring i Python):
+\python{defmengdgittint.py}
+Da $ f $ er strengt voksende kan vi hele tiden være sikre på at $ f(x_1)\leq f(x_3)\leq f(x_2)  $ og $ f(x_1)\leq c\leq f(x_2)  $ ved starten av hver iterasjon. Når $ {n\to\infty} $ vil $ {x_2\to x_1} $, og da $ f $ er kontinuerlig vil $ {\lim\limits_{n\to \infty} f(x_1)=f(x_2)} $. Dette betyr at $ {\lim\limits_{n\to \infty} P(c,n)\to c}$, og dermed må det finnes et tall $ x_c\in(a, b) $ som gir at $ f(x_c)=c$.
+}
 
 \fork{\ref{fderekstr} \fderekstr}{
 	\textbf{Punkt (i)} \os
