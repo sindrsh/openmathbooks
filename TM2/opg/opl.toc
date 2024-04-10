@@ -1,8 +1,0 @@
-\select@language {english}
-\select@language {english}
-\contentsline {section}{1.A\tmspace +\thickmuskip {.2777em}Summen av de 100 f\IeC {\o }rste heltallene}{2}{section*.1}
-\contentsline {section}{2.A\tmspace +\thickmuskip {.2777em}Enhetssirkelen}{3}{section*.2}
-\contentsline {section}{2.B\tmspace +\thickmuskip {.2777em}Trigonometriske identiteter}{4}{section*.3}
-\contentsline {section}{4.A\tmspace +\thickmuskip {.2777em}Treffe punkt i et plan}{5}{section*.4}
-\contentsline {section}{6.A\tmspace +\thickmuskip {.2777em}Integrasjon}{6}{section*.5}
-\contentsline {section}{7.A\tmspace +\thickmuskip {.2777em}Oppstart med differensialligninger}{7}{section*.6}
