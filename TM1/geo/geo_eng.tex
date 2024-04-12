@@ -1,0 +1,361 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\section{Definitions}
+\regdef[Bisector]{
+	Given $ \angle BAC $. For a point $ P $ that lies on the \outl{bisector} of the angle (blue line in the figure), it is
+	\begin{equation}
+		\angle BAP = PAC=\frac{1}{2}\angle BAC
+	\end{equation}
+	\fig{halfline}
+}	
+\regdef[Midpoint]{
+	The \outl{midpoint} $ C $ of $ AB $ is the point on the line segment such that $ AC=CB $.
+	\fig{midtp} 
+}
+\regdef[Perpendicular bisector]{
+	The \outl{perpendicular bisector} of $ AB $ (blue line in the figure) stands perpendicular to, and passes through the midpoint of, $ AB $.
+	\fig{midnorm0}
+}
+\newpage
+\regdef[sin, cos and tan]{
+	Given a right triangle with legs $ a $ and $ b $, hypotenuse $ c $, and angle $ v $, as shown in the figure below.
+	\fig{sincostan}
+	Then we have \vs
+	\begin{align}
+		\sin v &= \frac{a}{c} \label{sindef1}\vn
+		\cos v &= \frac{b}{c} \label{cosdef1}\vn
+		\tan v &= \frac{a}{b} 	
+	\end{align}
+}
+\spr{
+	In the figure above, $ a $ is called the \outl{opposite} leg to angle $ v $, and $ b $ the \outl{adjacent}.
+	\vs
+	
+	sin, cos, and tan are abbreviations for respectively \outl{sine}, \outl{cosine}, and \outl{tangent}.
+}
+
+\info{Exact values}{
+	Most values of sine, cosine, and tangent are irrational numbers, therefore in practical applications of these values, it is common to use digital tools. The most important values for theoretical purposes are given in \refved{sincoseksakt}.
+}
+\newpage
+\eks[]{ \vsb
+	\fig{sincostaneks}
+	\[ \sin v =\frac{3}{5}\quad,\quad \cos v = \frac{4}{5}\quad,\quad \tan v = \frac{3}{4} \]
+}\vsk
+
+\reg[Sine, cosine, and tangent I]{
+	Given $ \triangle ABC$, where $ {v=\angle BAC>90^\circ} $, as shown in the figure below.
+	\fig{sincostan2}
+	Then we have \vs
+	\begin{align}
+		\sin v &= \frac{CD}{AC} \label{sindef2} \vn
+		\cos v &= -\frac{AD}{AC} \label{cosdef2}  \vn
+		\tan v &= -\frac{CD}{AD} \label{tandef2}
+	\end{align}
+}
+\eks[]{ \vsb
+	\fig{sincostaneks2}
+	In the figure above, $ CD=\sqrt{3} $, $ AD=1 $, and $ AC=2 $. Thus,
+	\[ \sin 120^\circ =\frac{\sqrt{3}}{2}\quad,\quad \cos 120^\circ = -\frac{1}{2}\quad,\quad \tan 120^\circ =-\sqrt{3} \]
+}
+
+
+\section{Egenskaper til sirkler}
+\reg[\tang \label{tang}]{
+	En linje som skjærer en sirkel i bare ett punkt, kalles en \\\outl{tangent} til sirkelen.\vsk
+	
+	La $ S $ være sentrum i en sirkel, og la $ A $ være skjæringspunktet til denne sirkelen og en linje. Da har vi at
+	\nn{
+		\text{linja er en tangent til sirkelen} \Longleftrightarrow \vv{AS}\text{ står vinkelrett på linja} 
+	}
+	
+	\fig{tang0a}
+}
+
+\spr{
+	Når to geometriske former skjærer hverandre i bare ett punkt, sier vi at de ''tangerer hverandre''.
+}
+
+\reg[\perfvink \label{perfvink}]{
+	Både periferi- og sentralvinkler har vinkelbein som ligger (delvis) inni en sirkel. \vsk
+	
+	En \outl{sentralvinkel} har toppunkt i sentrum av en sirkel.\vsk
+	
+	En \outl{periferivinkel} har toppunkt på sirkelbuen.\vsk
+	
+	Gitt en periferivinkel $ u $ og en sentralvinkel $ v $, som er innskrevet i samme sirkel og som spenner over samme sirkelbue. Da er\vs
+	\begin{equation}\label{v2u}
+		v=2u
+	\end{equation}
+	\centering
+	\includegraphics[]{\figp{pervink0a}}\qquad
+	\includegraphics[]{\figp{pervink0b}}\qquad
+	\includegraphics[]{\figp{pervink0c}}	
+}
+
+\section{Properties of Triangles}
+
+\reg[Area Theorem \label{arealsetn}]{
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics{\figp{arealsetn}}}\qquad
+		\subfloat[]{\includegraphics{\figp{arealsetnb}}}
+	\end{figure}
+	The area $ T $ of $ \triangle ABC $ is
+	\begin{equation}
+		T=\frac{1}{2} AB\cdot AC\cdot\sin \angle A
+	\end{equation}
+}
+\eks[]{\vs
+	\fig{arealsetneks1}
+	Since $ \sin 60^\circ =\frac{\sqrt{3}}{2} $
+	The area $ T $ of $ \triangle ABC $ is
+	\[ T=\frac{1}{2}\cdot5\cdot 2\cdot \frac{\sqrt{3}}{2} =\frac{5\sqrt{3}}{2} \]
+} \vsk
+
+\reg[Law of Sines]{
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics{\figp{arealsetn}}}\qquad
+		\subfloat[]{\includegraphics{\figp{arealsetnb}}}
+	\end{figure}
+	\begin{equation}
+		\frac{\sin \angle A}{BC}= \frac{\sin \angle B}{AC}=\frac{\sin \angle C}{AB}
+	\end{equation}
+}
+\eks[]{
+	$ BC=\sqrt{2} $, $ \angle A=135^\circ $, and $ \angle B=30^\circ $. Find the length of $ AC $.
+	\fig{sinseteks} \vs
+	\sv
+	We have that
+	\[ AC=\frac{\sin \angle B}{\sin \angle A}BC \]
+	Since $ \sin 135^\circ =\frac{\sqrt{2}}{2}  $ and $ \sin 30^\circ = \frac{1}{2} $, we have that
+	\alg{
+		AC &=\frac{1}{2}\cdot \frac{2}{\sqrt{2}}\cdot \sqrt{2} = 1
+	}
+} \vsk
+
+\reg[Law of Cosines \label{cossetn}]{
+	Given a triangle with side lengths $ a $, $ b $ and $ c $, and angle $ v $, as shown in the figures below.
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics{\figp{cossetna}}} \qquad \quad
+		\subfloat[]{\includegraphics{\figp{cossetnb}}}
+	\end{figure}
+	Then
+	\begin{equation}
+		a^2 = b^2+c^2-2bc\cos v	\label{cossetneq}
+	\end{equation}
+}
+\newpage
+\eks[]{
+	Find the value of $ x $.
+	\fig{cossetneks} \vs
+	\sv 
+	We have that
+	\algv{
+		x^2 &= 2^2 + (1+\sqrt{3})^2 -2\cdot2(1+\sqrt{3})\cos 60^\circ 
+	}
+	Since $ \cos 60^\circ =\frac{1}{2} $, we have that
+	\alg{
+		x^2 &= 2^2 + (1+\sqrt{3})^2 -2(1+\sqrt{3}) \\
+		&= 6
+	}
+	Thus, $ x=\sqrt{6} $.
+} \vsk
+
+\reg[Equilateral Triangle Height \label{hlikb}]{
+	Given an isosceles triangle $ \triangle ABC $, where $ AC=BC $, as shown in the figure below. 
+	\fig{hlikb}
+	The height $ DC $ then lies on the perpendicular bisector of $ AB $.
+}
+\reg[Median of a Triangle \label{trkmedian}]{
+	A \outl{median} is a line segment that goes from a vertex in a triangle to the midpoint of the opposite side in the triangle. \vsk
+	
+	The three medians in a triangle intersect at a single point.
+	\fig{median1a}
+	Given $ \triangle ABC $ with medians $ CD $, $ BF $, and $ AE $, which intersect at $ G $. Then
+	\alg{	
+		\frac{CG}{GD}=\frac{BG}{GF}=\frac{AG}{GE} = 2
+	}
+} \vsk
+
+\reg[Circumcenter of a Triangle \label{midtrk}]{
+	The perpendicular bisectors in a triangle meet at a single point. This point is the center of the \outl{circumscribed circle} of the triangle, which has the vertices of the triangle on its arc.	
+	\fig{midnorm1a}
+}
+
+\reg[Incenter of a Triangle \label{innskrsirk}]{
+	The angle bisectors in a triangle meet at a single point. This point is the center of the triangle's \outl{inscribed circle}, which touches each of the sides of the triangle.
+	\fig{innskr1a}
+}
+
+
+
+
+\section{Explanations}
+\fork{\ref{hlikb} \hlikb}{
+	Since both $ \triangle ADC $ and $ \triangle DBC $ are right-angled and have $ CD $ as the shortest leg, and $ {AC=BC} $, it follows from the Pythagorean theorem that $ {AD=BD} $.
+} \vsk
+
+\fork{\ref{trkmedian} \trkmedian}{
+	Here we will express the area of a triangle $ \triangle ABC $ as $ ABC $.
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\includegraphics{\figp{median1b}}
+		}\;\;
+		\subfloat[]{
+			\includegraphics{\figp{median1c}}
+		}
+	\end{figure}
+	Let $ G $ be the intersection point of $ BF $ and $ AE $, and assume it is within $ \triangle ABC $. Since $ {AF=\frac{1}{2}AC} $ and $ {BE=\frac{1}{2}BC }$, we have $ {ABF= BAE=\frac{1}{2}ABC} $. Thus, $ F $ and $ E $ are equidistant from $ AB $, meaning that $ {FE\parallel AB} $. Furthermore, we have
+	\alg{
+		ABG + AFG &= ABG + BGE \\
+		AFG &= BGE 
+	}
+	$ G $ is equidistant from $ AF $ and $ FC $, and $ {AF=FC} $. Hence, $ AFG=GFC $. Similarly, $ BGE=GEC $. Therefore, these four triangles have equal areas. Further,
+	\alg{
+		AFG+GFC+GEC&= AEC \\
+		GEC &= \frac{1}{6}ABC
+	}
+	Let $ H $ be the intersection point of $ AE $ and $ CD $. Using the same approach as above, it can be shown that
+	\[HEC=\frac{1}{6}ABC \]
+	Since both $ \triangle GEC $ and $ \triangle HEC $ have $ CE $ as a side, equal areas, and both $ G $ and $ H $ are on $ AE $, it must be that $ G=H $. Thus, the medians intersect at a single point. \vsk
+	
+	$ \triangle ABC\sim\triangle FEC$ because they have pairwise parallel sides. Therefore,
+	\[ \frac{AB}{FE} = \frac{BC}{CE}=2  \]
+	$ {\triangle ABG\sim\triangle EFG }$ because $ \angle EGF $ and $ \angle AGB $ are vertical angles and $ AB\parallel FE $. Hence,
+	\[ \frac{GB}{FG}=\frac{AB}{FE}=2 \]
+	Similarly, it can be shown that
+	\[ \frac{CG}{GD}=\frac{AG}{GE}=2 \]
+}
+\newpage
+\fork{\ref{midtrk} \midtrk}{
+	\fig{midnorm1b}
+	Given $ \triangle ABC $ with midpoints $ D $, $ E $, and $ F $. Let $ S $ be the intersection point of the respective perpendicular bisectors of $ AC $ and $ AB $.
+	$ {\triangle AFS\sim\triangle CFS} $ because both are right-angled, both have $ FS $ as the shortest leg, and $ AF=FC $. Similarly, $ {\triangle ADS\sim\triangle BDS} $. Consequently, $ {CS=AS=BS} $. This means that 
+	\begin{itemize}
+		\item $ \triangle BSC $ is isosceles, and hence the perpendicular bisector of $ BC $ goes through $ S $.
+		\item $ A $, $ B $, and $ C $ must necessarily lie on the circle with center $ S $ and radius $ AS=BS=CS $ 
+	\end{itemize}
+}
+\newpage
+\fork{\ref{innskrsirk} \innskrsirk}{
+	\fig{innskr1b}
+	Given $ \triangle ABC $. Let $ S $ be the intersection point of the respective angle bisectors of $ \angle BAC $ and $ \angle CBA $. Further place $ D $, $ E $, and $ F $ so that $ {DS\perp AB} $, $ {ES\perp BC} $ and $ {FS\perp AC} $. $ {\triangle ASD\cong\triangle ASF} $ because both are right-angled with hypotenuse $ AS $, and $ {\angle DAS=\angle SAF} $. Similarly, $ {\triangle BSD \cong \triangle BSE} $. Therefore, $ {SE=SD=SF} $. Consequently, $ F $, $ C $, and $ E $ are the respective tangency points to $ AB $, $ BC $, and $ AC $ on the circle with center $ S $ and radius $ SE $. \vsk
+	
+	Furthermore, we have that $ {\triangle CSE \cong  \triangle CSF} $, because both are right-angled with hypotenuse $ CS $, and $ {SF=SE} $. Thus, $ {\angle FCS=\angle ECS}$, meaning that $ CS $ lies on the angle bisector of $ \angle ACB $.
+}
+\newpage
+\fork{\ref{tang} \tang}{
+	\textbf{The line is a tangent to the circle ${\boldmath \Longrightarrow \vv{AS}} $ is perpendicular to the line}
+	\fig{tangforkla}
+	We assume that the angle between the line and $ \vv{AS} $ is not $ 90^\circ $. Then there must exist a point $ B $ on the line such that $ {\angle BAS=\angle SBA} $, which means that $ \triangle ASB $ is isosceles. Consequently, $ {AS=BS} $, and since $ AS $ equals the radius of the circle, this must mean that $ B $ also lies on the circle. This contradicts the fact that $ A $ is the only intersection point of the circle and the line, and thus the angle between the line and $ \vv{AS} $ must be $ 90^\circ $. \vsk
+	
+	\textbf{The line is a tangent to the circle ${\boldmath \Longleftarrow \vv{AS}} $ is perpendicular to the line}
+	\fig{tangforklb}
+	Given an arbitrary point $ B $, which does not coincide with $ A $, on the line. Then $ BS $ is the hypotenuse in $ \triangle ABC $. This implies that $ BS $ is greater than the radius of the circle ($ {BS>AS} $), and thus $ B $ cannot lie on the circle. Therefore, $ A $ is the only point that lies on both the line and the circle, and hence the line is a tangent to the circle.
+}
+\newpage
+\fork{\ref{arealsetn} \arealsetn }{
+	Given two cases of $ \triangle ABC$, as shown in the figure below. One where $ \angle BAC\in (0^\circ, 90^\circ] $, the other where $ \angle BAC\in(90^\circ, 0^\circ) $ and let $ h $ be the height with base $ AB $.
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\includegraphics{\figp{arealsetnforkla}}
+		}
+		\subfloat[]{
+			\includegraphics{\figp{arealsetnforklb}}
+		}
+	\end{figure}
+	The area $ T $ of $ \triangle ABC$ is in both cases
+	\begin{equation}
+		T = \frac{1}{2}AB\cdot h
+	\end{equation}
+	From \eqref{sindef1} and \eqref{sindef2} we have that $ h=AC\cdot \sin \angle BAC $, thus
+	\[ T = \frac{1}{2}AB\cdot h=\frac{1}{2}AB\cdot AC\sin \angle BAC \]
+}
+\newpage
+\fork{\ref{cossetn} \cossetn}{
+	{\textbf{Tilfellet hvor} \boldmath $ v\in(90^\circ, 180^\circ] $ }\\	
+	\fig{cossetnforkla}	
+	Av Pytagoras' setning har vi at
+	\begin{equation}
+		x^2=b^2-h^2 \label{cossetnforkl1}
+	\end{equation}
+	og at
+	\begin{align}
+		a^2&=(x+c)^2+h^2 \label{cosetnforkla2}\\
+		a^2&=x^2+2xc+c^2+h^2 \label{cossetnforkl2}
+	\end{align}
+	Ved å sette uttrykket for $ x^2 $ fra \eqref{cossetnforkl1} inn i \eqref{cossetnforkl2}, får vi at
+	\begin{align}
+		a^2&=b^2-h^2+2xc+c^2+h^2 \\
+		a^2&=b^2+c^2+2xc \label{cossetnforkl3}
+	\end{align}
+	Av \eqref{cosdef2} har vi at $ x=-b\cos v $, og da er
+	\nn{
+		a^2=b^2+c^2-2bc\cos v
+	}
+	{\textbf{Tilfellet hvor} \boldmath $ v\in[0^\circ, 90^\circ] $ }\\	
+	\fig{cossetnforklb}	
+	Dette tilfellet skiller seg ut fra tilfellet hvor $ {v\in(90^\circ, 180^\circ]} $ på to måter:
+	\begin{enumerate}[label=(\roman*)]
+		\item I \eqref{cosetnforkla2} får vi $ {(c-x)^2} $ i steden for $ {(x+c)^2} $. I \eqref{cossetnforkl3} får vi da $ -2xc $ i steden for $ +2xc $.
+		\item Av \eqref{cosdef1} er $ x=b\cos v $. Av punkt (i) følger det da at
+		\[ a^2=b^2+c^2-2bc\cos v \]
+	\end{enumerate}
+}
+\fork{\ref{perfvink} \perfvink}{
+	Tilhørende periferi- og sentralvinkler kan deles inn i tre tilfeller.\vsk
+	
+	\textbf{(i) En diameter i sirkelen er høyre eller venstre vinkelbein i begge vinklene}\\[5pt]
+	I figuren under er $ S $ sentrum i sirkelen, ${\angle BAC= u}$ en periferi-vinkel og $ {\angle BSC=v} $ den tilhørende sentralvinkelen. Vi setter $ {\angle {SCB}=a} $. $ {\angle {ACS}=\angle {SAC}=u} $ og ${\angle {CBS}=\angle {SCB}=a} $ fordi både $ \triangle {ASC} $ og $ \triangle {SBC} $ er likebeinte.\vspace{-1pt}
+	\fig{pervinkforkla}
+	Vi har at \vs
+	\begin{align}
+		2a &= 180^\circ-v \label{aogv} \vn
+		2u+2a &= 180^\circ \label{uoga}
+	\end{align}
+	Vi setter uttrykket for $ 2a $ fra \eqref{aogv} inn i \eqref{uoga}:
+	\alg{
+		2u+180^\circ -v &= 180^\circ\\
+		2u &= v
+	}
+	
+	\textbf{(ii) Vinklene ligger innenfor samme halvdel av sirkelen}\\[5pt]
+	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I tillegg har vi tegnet inn en diameter, som er med på å danne vinklene $ a $ og $ b $. Både $ u $ og $ v $ ligger i sin helhet på samme side av denne diameteren.
+	\fig{pervinkforkld}
+	Ettersom $  {u+a }$  er en periferivinkel, og $ {v+b }$ den tilhørende sentralvinkelen, vet vi av tilfelle 1 at
+	\[ 2(u+a) = v+b  \]
+	Men ettersom $ a $ og $ b $ også er samhørende periferi- og sentralvinkler, er $ {2a=b} $. Det betyr at
+	\algv{
+		2u+b &= v+b \\
+		2u &= v
+	}
+	\newpage
+	\textbf{(iii) Vinklene ligger ikke innenfor samme halvdel av sirkelen}\\[5pt]
+	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I figuren til høyre har vi tegnet inn en diameter. Den deler $ u $ inn i vinklene $ a $ og $ c $, og $ v $ inn i $ b $ og $ d $.
+	\begin{center}
+		\includegraphics[]{\figp{pervinkforklc}}\qquad
+		\includegraphics[]{\figp{pervinkforklb}}
+	\end{center}
+	$ a $ og $ c $ er begge periferivinkler, med henholdsvis $ b $ og $ d $ som tilhørende sentralvinkler. Av tilfelle i) har vi da at
+	\algv{
+		2a &= b \vn
+		2c &= d
+	}
+	Dermed er
+	\algv{
+		2a+2c &= b+d \\
+		2(a+c) &= v \\
+		2u &= v
+	}
+}
+\end{document}
+
+
