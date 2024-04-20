@@ -36,11 +36,8 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 
 *Nynorsk*
 - [Matematikken sine byggesteinar (MB)](https://drive.google.com/file/d/1QXpqxShclXVOvckh64MM9WFJXAwobZJB/view?usp=share_link)
-  <br/> Grunnleggande teori innan matematikk i grunnskule og VGS-faga 1P og 2P.
-- [MB med alternativ skrifttype](https://drive.google.com/file/d/11iyVV75YmHBDJTOp349giZ6QozVvnkzd/view?usp=sharing)
 - [Anvend matematikk 1 (AM1)](https://drive.google.com/file/d/1SbO29BdTKmZApBnMvmKWyjmlJ-xWvUWy/view?usp=sharing) 
-  <br/>  Anvendingar av matematikken presentert i MB.
-- [AM1 med alternativ skrifttype](https://drive.google.com/file/d/1tYtLEXCbnaOd44hCapbqCTVLNxMbemOJ/view?usp=sharing)
+
 
 *Løsningsforslag*
 - [MB](https://drive.google.com/file/d/1qJJM4RgKIeLdEyHZvLRSqoIG-i8-S-5x/view?usp=sharing)
@@ -49,11 +46,14 @@ OpenMathBooks is a collection of free math books ranging from elementary level t
 - [TM2](https://drive.google.com/file/d/1xC0KpkSck813rKZOcDTGTx5EX9Rz6wV-/view?usp=sharing)
 
 *Bøkene med sans serif skrifttype*
-- [MB](https://drive.google.com/file/d/1yDf3uzRn-ok3sDxltLclRkMHYiNqy5nu/view?usp=sharing)
-- [AM1](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
-- [TM1](https://drive.google.com/file/d/1sZk2E8o9Gh0WP8sA7-g2iYKLKbqN2Uh0/view?usp=sharing)
-- [TM2](https://drive.google.com/file/d/1cuv1Q0pcjaGOE3leghl_hQPV_gEKcU4A/view?usp=sharing)
-- [AM2](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
+- [MB (bm)](https://drive.google.com/file/d/1yDf3uzRn-ok3sDxltLclRkMHYiNqy5nu/view?usp=sharing)
+- [MB (nn)](https://drive.google.com/file/d/11iyVV75YmHBDJTOp349giZ6QozVvnkzd/view?usp=sharing)
+- [AM1 (bm)](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
+- [AM1 (nn)](https://drive.google.com/file/d/1tYtLEXCbnaOd44hCapbqCTVLNxMbemOJ/view?usp=sharing)
+- [TM1 (bm)](https://drive.google.com/file/d/1sZk2E8o9Gh0WP8sA7-g2iYKLKbqN2Uh0/view?usp=sharing)
+- [TM2 (bm)](https://drive.google.com/file/d/1cuv1Q0pcjaGOE3leghl_hQPV_gEKcU4A/view?usp=sharing)
+- [AM2 (bm)](https://drive.google.com/file/d/14OaLCc60b4Rm3TIxl-4foPsC78lnPncc/view?usp=sharing)
+
 
 **Arabic versions**
 - [TM2 (Chapter 1 only)](https://drive.google.com/file/d/1waLGLY3-_Q9TMkwR8tvLNfT8r5YWBg2y/view?usp=drive_link)
