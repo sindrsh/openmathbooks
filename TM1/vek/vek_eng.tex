@@ -1,0 +1,425 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}	
+\section{Introduction}\index{vector}
+A \outl{two-dimensional vector} indicates a displacement in a coordinate system with an $ x $-axis and a $ y $-axis. We draw a vector as a line segment between two points, additionally allowing an arrow to indicate what is the endpoint. This means that the displacement starts at the point without the arrow, and ends at the point with the arrow.
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{vekdefa}}}\qquad
+	\subfloat[]{\includegraphics{\figp{vekdefb}}}
+\end{figure}
+In figure \textsl{(a)} the vector $ \vec{v} $ is shown with starting point $ (0, 0) $ and endpoint $ (3,1) $. When a vector has starting point $ (0, 0) $, we say that it is shown in \outl{standard position}. In figure \textsl{(b)} $ \vec{v} $ is shown with starting point $ (1, -2) $ and endpoint $ (3, 1) $. The displacement $ \vec{v} $ indicates is to move 2 to the right along the $ x $-axis and $ 3 $ up along the $ y $-axis. We write this as $ \vec{u}=[2, 3] $, which is called $ \vec{u} $ written in \outl{component form}. 2 and 3 are respectively the $ x $-component and the $ y $-component of $ \vec{v} $.\vsk
+
+\spr{A two-dimensional vector is also called a \outl{vector in the plane}.}
+\newpage
+\eks[1]{\vs
+	\alg{
+		\vec{a}&= [1, 3] & \vec{b} &= [0, -2] \\[15pt]
+		\vec{c}&= [-3, -4] & \vec{d}&= [5, 0]
+	}
+	\fig{vek1}
+}
+\newpage
+\regdef[Vector between two points]{
+	A vector $ \vec{v} $ with starting point $ {(x_1, y_1)} $ and endpoint $ (x_2, y_2) $ is given as 
+	\begin{equation}
+		\vec{v}= [x_2-x_1, y_2-y_1]
+	\end{equation}
+}
+\eks[1]{
+	Write the vectors in component form.
+	\begin{itemize}
+		\item $ \vec{a} $ has starting point $ (1, 3) $ and endpoint $ (7, 5) $
+		\item $ \vec{b} $ has starting point $ (0, 9) $ and endpoint $ (-3, 2) $
+		\item $ \vec{c} $ has starting point $ (-3, 7) $ and endpoint $ (2, -4) $
+		\item $ \vec{d} $ has starting point $ (-7, -5) $ and endpoint $ (3, 0) $
+	\end{itemize}
+	\sv \vs
+	
+	\algv{
+		\vec{a}&=[7-1, 5-3]=[6, 2] \br
+		\vec{b}&=[-3-0, 2-9]=[-3, -7] \br
+		\vec{c}&=[2-(-3), -4-7]=[5, -11]\br
+		\vec{d}&=[3-(-7),0-(-5)]=[10, 5]
+	}
+}
+\info{Point or vector}{
+	Mathematically, there is no difference between a point and a vector; the point $ (a, b) $ refers to exactly the same location as the vector $ [a, b] $, and both can indicate the same displacement. Often, however, it may be useful to distinguish between when we talk about a location and when we talk about a displacement, and for this, we use the terms point (location) and vector (displacement).
+}
+
+\section{Vector Arithmetic Rules}
+\regdef[Addition and subtraction of vectors]{
+	Given vectors $ {\vec{u}=[x_1, y_1]} $ and $ {\vec{v}=[x_2, y_2]} $, and the point ${ A=(x_0, y_0)} $. Then we have \vs
+	\begin{align}
+		A+\vec{u} &= (x_0+x_1, y_0+y_1) \label{Aplusu}	\br
+		\vec{u}+\vec{v} &= [x_1+x_2, y_1+y_2] \br
+		\vec{u}-\vec{v} &= [x_1-x_2, y_1-y_2] 
+	\end{align}
+	The sum or difference of $ \vec{u} $ and $ \vec{v} $ can be depicted as follows:
+	\begin{figure}
+		\centering
+		\subfloat[]{\includegraphics[scale=1]{\figp{uplusv}}}\qquad\quad
+		\subfloat[]{\includegraphics[scale=1]{\figp{uminusv}}}
+	\end{figure}
+}
+\reg[Vector arithmetic rules]{
+	For vectors $\vec{u}$, $ \vec{v} $, and $\vec{w} $, and a number $ t $, we have that
+	\begin{align}
+		t\vec{u} &= [tx_1, ty_1, tz_1] \br
+		t(\vec{u}+\vec{v})&= t\vec{u}+t\vec{v}\br
+		(\vec{u}+\vec{v})+\vec{w} &= \vec{u}+(\vec{v}+\vec{w}) \br
+		\vec{u}-(\vec{v}+\vec{w}) &= \vec{u}-\vec{v}-\vec{w}
+	\end{align}
+}
+\newpage
+\regdef[Angle between two vectors]{
+	The angle between two vectors is (the smallest) angle formed when the vectors are placed at the same starting point. For two vectors $ \vec{u} $ and $ \vec{v} $, we denote this angle as $ \angle(\vec{u}, \vec{v}) $.
+	\fig{vekvink}}
+\info{Angle measurement}{In vector calculus, it is common to specify angles in degrees, that is, on the interval $ [0^\circ, 180^\circ] $.}
+\section{Length of a vector}
+Given a vector $ \vec{v}=[x_1, y_1] $. The \outl{length} of $ \vec{v} $ is the distance between the starting point and the endpoint. 
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{veklena}}}\qquad\quad
+	\subfloat[]{\includegraphics{\figp{veklenb}}}
+\end{figure}
+From any vector, we can form a right-angled triangle where $ |\vec{v}| $ is the length of the hypotenuse, and $ |x_1| $ and $ |y_1| $ are the respective lengths of the legs. Thus, $ |\vec{v}| $ is given by Pythagoras' theorem.\regv
+
+\reg[Length of a vector]{
+	Given a vector $ \vec{v}=[x_1, y_1] $. The length $ |\vec{v}| $ is then 
+	\begin{equation}
+		|\vec{v}|=\sqrt{x_1^2+y_1^2} \label{vekleneq}
+	\end{equation}
+}
+\eks[1]{
+	Find the lengths of the vectors $ \vec{a}= [7, 4] $ and $ \vec{b}= [-3, 2] $.
+	
+	\sv \vs
+	\algv{
+		|\vec{a}|&=\sqrt{7^2+4^2}=\sqrt{65} \br
+		|\vec{b}|&=\sqrt{(-3)^2+2^2}=\sqrt{13}
+	}
+}
+
+
+\section{The Dot Product I}
+\regdef[The Dot Product I]{
+	For two vectors $ {\vec{u}=[x_1, y_1]} $ and $ {\vec{v}=[x_2, y_2]} $, the \outl{dot product} is given as
+	\begin{equation}
+		\vec{u}\cdot\vec{v}=x_1x_2+y_1y_2 \label{skaldef1}
+	\end{equation}
+}
+\spr{
+	The dot product is also called \outl{the scalar product} or \\ \outl{the inner product}.\vsk
+	
+	The word \textit{scalar} refers to a one-dimensional quantity.
+}
+\eks[1]{
+	Given the vectors $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $, and $ \vec{c}=[1,-9] $. Calculate $ \vec{a}\cdot\vec{b} $ and $ \vec{a}\cdot\vec{c} $.
+	
+	\sv \vsb
+	\algv{
+		\vec{a}\cdot\vec{b}&=3\cdot4+2\cdot7=26 \br
+		\vec{a}\cdot\vec{c}&=3\cdot1+2(-9)=-15
+	}
+}
+\newpage
+\reg[Rules for the dot product]{
+	For the vectors $ \vec{u} $, $ \vec{v} $, and $ \vec{w} $, we have that
+	\begin{align}
+		\vec{u}\cdot \vec{u}&=\vec{u}^{\,2} \label{veku2}\br
+		\vec{u}\cdot\vec{v} &= \vec{v}\cdot\vec{u} \br
+		\vec{u}\cdot\left(\vec{v}+\vec{w}\right) &= \vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{w} \br
+		\left(\vec{u}+\vec{v}\right)^2 &= \vec{u}^{\,2} + 2\vec{u}\cdot\vec{v}+\vec{v}^{\,2}
+	\end{align}
+}
+\eks[]{Simplify the expression
+	\[   \vec{b}\cdot(\vec{a}+\vec{c}) + \vec{a}\cdot(\vec{a}+\vec{b})+\vec{b}^{\,2} \]
+	
+	when you know that $ \vec{b}\cdot\vec{c}=0 $. \\
+	
+	\sv
+	\algv{\vec{b}\cdot(\vec{a}+\vec{c}) + \vec{a}\cdot(\vec{a}+\vec{b})+\vec{b}^2 &= \vec{b}\cdot\vec{a}+\vec{b}\cdot\vec{c} + \vec{a}\cdot\vec{a}+\vec{a}\cdot\vec{b}+\vec{b}^2 \\
+		&= \vec{a}^{\,2} + 2 \vec{a}\cdot \vec{b} + \vec{b}^{\,2} \\
+		&= \left(\vec{a}+ \vec{b}\right)^2
+	}
+} 
+
+\section{The Dot Product II}
+Given the vector $ \vec{u}-\vec{v} $, where 
+$ \vec{u}=[x_1, y_1] $ and $ \vec{v}=[x_2, y_2] $. Then
+\[ \vec{u}-\vec{v}=[x_1-x_2, y_1-y_2] \]
+From \eqref{vekleneq} we have
+\begin{align}
+	|\vec{u}-\vec{v}|&= \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2} \nonumber \\
+	&= \sqrt{x_1^2 - 2x_1 x_2 + x_2^2 + y_1^2 - 2y_1 y_2 + y_2^2 }\label{preskal}
+\end{align}
+
+Using \eqref{skaldef1} and \eqref{veku2}, we can rewrite \eqref{preskal} as
+\begin{equation}
+	|\vec{u}-\vec{v}|= \sqrt{\vec{u}^{\,2} - 2\vec{u}\cdot\vec{v} + \vec{v}^{\,2}} \label{skl1}
+\end{equation}
+Note the following figure:
+\fig{skaldef}
+From \refunnbr{cossetn}{the cosine rule} and \eqref{skl1}, we have
+\alg{
+	|(\vec{v}-\vec{u})|^2&= |\vec{v}|^2+|\vec{u}|^2-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
+	\vec{v}^{\,2}- 2\vec{u}\cdot \vec{v} + \vec{u}^{\,2} &= \vec{v}^{\,2}+\vec{u}^{\,2}-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
+	\vec{u}\cdot \vec{v} &= |\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v})
+}
+\reg[The Dot Product II]{
+	For two vectors $ \vec{u} $ and $ \vec{v} $, the formula is
+	\begin{equation}\label{skal2}
+		\vec{u}\cdot \vec{v} = |\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v})
+	\end{equation}
+}
+
+\section{Vectors Perpendicular to Each Other}
+From (\ref{skal2}), we can make an important observation; if $\angle (\vec{u},\vec{v})=90^\circ $, then $ {\cos\angle (\vec{u},\vec{v})=0} $, and therefore
+\nn{
+	\vec{u}\cdot\vec{v}=0
+}
+\reg[Perpendicular Vectors \label{vinkrett} ]{
+	For two vectors $ \vec{u} $ and $ \vec{v} $, we have that
+	\begin{equation}\label{vinkretteq}
+		\vec{u} \cdot \vec{v} = 0\iff \vec{u}\perp \vec{v}
+	\end{equation}
+}
+\spr{
+	There are many ways to express that $ {\vec{u}\perp \vec{v}} $. For instance, we can say that
+	\begin{itemize}
+		\item $ \vec{u} $ and $ \vec{v} $ are perpendicular to each other.
+		\item $ \vec{u} $ and $ \vec{v} $ are normal to each other. 
+		\item $\vec{u} $ is a normal vector to $ \vec{v}$ (and vice versa).
+		\item $\vec{u} $ and $ \vec{v}$ are orthogonal.
+	\end{itemize}
+}
+\eks[1]{
+	Check if the vectors $ {\vec{a}=[5, -3]} $, $ {\vec{b}=[6, -10]} $, and $ {\vec{c}=[2, 7] }$ are orthogonal.
+	
+	\sv 
+	We find that
+	\algv{
+		\vec{a}\cdot\vec{b}&=5\cdot6+(-3)\cdot10 \\
+		&=0
+	}
+	Hence, $ \vec{a}\perp\vec{b} $. Further,
+	\alg{
+		\vec{a}\cdot\vec{c}&=5\cdot2+(-3)\cdot7 \\
+		&= -11
+	}
+	Thus, $ \vec{a} $ and $ \vec{c} $ are \textsl{not} orthogonal. Since $ {\vec{a}\perp\vec{b}} $, $ \vec{b} $ and $ \vec{c} $ cannot be orthogonal either.
+}
+\newpage
+\info{The Zero Vector}{
+	Prior to \rref{vinkrett}, we have only argued that\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. To justify the bidirectional condition in \eqref{vinkretteq}, we must ask: Can we have ${ \vec{u}\cdot\vec{v} =0}$ if the angle between $ \vec{u} $ and $ \vec{v} $ is \textsl{not} $ 90^\circ $? \vsk
+	
+	On the interval $ [0^\circ, 180^\circ] $, only the angle value $ 90^\circ $ results in a cosine value of 0. For the dot product to be 0 at other angles, therefore, the length of $ \vec{u} $ or $ \vec{v} $ must be 0. The only vector with this length is the \outl{zero vector} ${\vec{0}=[0, 0] }$, which simply has no direction\footnote{Alternatively, one could argue it points in all directions!}. Nonetheless, it is common to define that the zero vector is perpendicular to \textit{all} vectors.
+}
+
+\section{Parallel Vectors}
+\regdef[Parallel Vectors]{If the angle between two vectors is $0^\circ$ or $180^\circ$, they are parallel.}
+
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{vekpara}}}\qquad
+	\subfloat[]{\includegraphics{\figp{vekparb}}}
+\end{figure}
+Given the vectors $ {\vec{u}=[x_1, y_1]} $ and $ {\vec{v}=[x_2, y_2]} $. Let $ \theta $ and $ \alpha $ be the angles between the $x$-axis and respectively $ \vec{u} $ and $ \vec{v} $, with the $x$-axis as the right angle leg. Then $ {\tan \theta =\frac{y_1}{x_1}} $ and $ {\tan \alpha =\frac{y_2}{x_2}} $. If $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, there are two possibilities:
+\begin{enumerate}[label=(\roman*)]
+	\item $ \theta=0^\circ $ and $ \alpha=180^\circ $, or vice versa.
+	\item $ \theta = \alpha $
+\end{enumerate}
+In both cases, $ \angle(\vec{u}, \vec{v}) $ is either $ 0^\circ $ or $ 180^\circ $, and thus $ \vec{u} $ and $ \vec{v} $ are parallel. The converse also holds: If point (i) or (ii) applies, then $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $. It is often practical to rewrite this relation to the ratio of corresponding components\footnote{
+	For vectors $ [x_1, y_1] $ and $ [x_2, y_2] $, these corresponding components are: \vspace{-5pt}
+	\begin{itemize}
+		\item $ x_1 $ and $ x_2 $
+		\item $ y_1 $ and $ y_2 $
+	\end{itemize}
+}:
+\begin{equation}\label{parforkl}
+	\frac{x_1}{x_2}=\frac{y_1}{y_2}
+\end{equation}
+It is also useful to note that there must be two numbers $ s $ and $ t $ such that $ {\vec{u}=[tx_2, sy_2]} $. If $ \vec{u}\parallel \vec{v}$, it follows from \eqref{parforkl} that $ {\frac{sx_2}{x_2}=\frac{ty_2}{y_2}}  $.
+Thus, $ s=t $. Conversely; if $ \vec{u}=t[x_2, y_2] $, then $ \vec{u} $ and $ \vec{v} $ obviously satisfy \eqref{parforkl}.
+\reg[Parallel Vectors]{
+	For two vectors $ {\vec{u}=[x_1, y_1]} \text{ and } {\vec{v}=[x_2, y_2]} $, we have that
+	\begin{equation}
+		\frac{x_1}{x_2}=\frac{y_1}{y_2} \iff \vec{u}\parallel\vec{v}
+	\end{equation}
+	Alternatively, for a number $ t $ we have that
+	\begin{equation}
+		\vec{u}=t\vec{v}\iff \vec{u}\parallel\vec{v}
+	\end{equation}
+}
+\spr{
+	When $ {\vec{u}=t \vec{v}} $, we say that $ \vec{u} $ is a \outl{multiple} of $ \vec{v} $ (and vice versa). We also say that $ \vec{u} $ and $ \vec{v} $ are \outl{linearly dependent}. \vsk
+	
+	If two vectors are not parallel, we say they are \outl{linearly independent}.
+}
+\eks[]{
+	Examine whether $ {\vec{a}=[2, -3]} $ and $ {\vec{b}=[20, -45]} $ are parallel with $ {\vec{c}=[10, -15]} $.
+	
+	\sv
+	We have that
+	\nn{
+		\vec{c}=5[2, -3]=5\vec{a}
+	}
+	Thus, $ \vec{a}\parallel \vec{c} $. Since $ \frac{20}{10}\neq \frac{-45}{15} $, $ \vec{b} $ and $ \vec{c} $ are \textsl{not} parallel.
+}
+
+\section{Vector Functions}
+\subsection{Parameterization}
+\regdef{
+	Given two functions $ f(t) $ and $ g(t) $. A vector $ \vec{v} $ in the form
+	\[ \vec{v}(t)=[f(t), g(t)] \]
+	is then a \outl{vector function}.\vsk
+	
+	$ \vec{v} $ can be written in \outl{parameterized form} as
+	\begin{equation}\vec{v}(t): \left\lbrace{
+			\begin{array}{lll}
+				x= f(t)   \\
+				y= g(t)   
+			\end{array}
+		}\right. 
+	\end{equation}
+	\fig{vek0}
+}
+\info{\note}{
+	Unlike the graph of a scalar function, the graph of a vector function can "move freely" in the coordinate system.
+}
+
+\subsection{Vector Function of a Line}
+Given a line $ \vec{l}(t) $, as shown in the figure below
+\fig{linje}
+If a vector $ \vec{r} $ is parallel to $ \vec{l} $, it is called a \outl{direction vector}\index{direction vector!for line} for the line. Say $ {\vec{r}=[a, b]} $ is a direction vector for $ \vec{l} $, and $ A=(x_0, y_0) $ is a point on $ \vec{l} $. If we start at $ A $ and walk parallel to $ \vec{r} $, we can be sure that we are still on the line. This must mean that for a variable $ t $ we can reach any point $ {B=(x, y)} $ on the line with the following calculation:
+\[B= A+t\vec{r} \]
+In coordinate form, we can write this as\footnote{See \eqref{Aplusu}.}
+\[(x, y)= (x_0 +at, y_0+bt) \]
+Thus, the line can be written as a vector function:\regv
+\reg[Line as a Vector Function]{
+	A line $ \vec{l}(t) $ that passes through the point $ {A=(x_0, y_0,)} $ and has direction vector $ {\vec{r}=[a, b] }$ is given as
+	\[ \vec{l}=[x_0 + at, y_0+ bt] \]
+}
+\section{Circle Equation}
+Given a circle with center $ S=(x_0, y_0) $ and a point $ A=(x, y) $, lying on the arc of the circle. 
+\fig{sirklig1}
+Then
+\[ \vv{SA}=[x-x_0, y-y_0] \]
+From \eqref{vekleneq}, then
+\[ \left|\vv{SA}\right|^2=(x-x_0)^2+(y-y_0)^2 \]
+If we let $ r $ be the radius of the circle, $ \left|\vv{SA}\right|=r $, and thus we can express $ r $ using the coordinates of $ S $ and $ A $.\regv
+\reg[Circle Equation]{
+	Given a circle radius $ r $ and center $ {S=(x_0, y_0)} $. If the point $ A=(x, y) $ lies on the arc of the circle, then
+	\nn{
+		(x-x_0)^2+(y-y_0)^2=r^2
+	}
+}
+\eks[]{
+	Find the center and radius of the circle given by the equation
+	\begin{equation}\label{sirkligeks1}
+		x^2 + y^2 - 4x + 10y - 20=0
+	\end{equation} \vs
+	\sv
+	We start by completing the square:
+	\alg{
+		x^2-4x &= (x-2)^2-4 \vn
+		y^2+10y &= (y+5)^2-25 
+	}
+	Thus, we can write \eqref{sirkligeks1} as
+	\alg{
+		(x-2)^2+(y+5)^2-4-25-20&=0 \\
+		(x-2)^2+(y+5)^2&=49
+	}
+	Thus, the circle has center $ (2, -5) $ and radius 7.
+}
+
+\section{Determinants} \index{determinant}
+\reg[\boldmath$ 2\times 2 $ Determinants]{
+	The \outl{determinant} $ \det(\vec{u}, \vec{v}) $ of two vectors $ {\vec{u}=[a, b] }$ and $ {\vec{v}=[c, d]} $ is given by
+	\begin{equation}\label{determinant2eq}
+		\det(\vec{u}, \vec{v}) = \left|\begin{matrix}
+			a & b \\
+			c & d
+		\end{matrix}\right| = ad-bc
+	\end{equation}
+}
+\eks{
+	Given the vectors $ {\vec{u}=[-1, 3] }$ and $ {\vec{v}=[-2, 4]} $. Calculate $ \det(\vec{u}, \vec{v})$.
+	
+	\sv
+	\vs \algv{
+		\det(\vec{u}, \vec{v}) &= \left|\begin{matrix}
+			-1 & 3 \\
+			-2 & 4
+		\end{matrix}\right| \\
+		&= (-1)4-3(-2)   \\
+		&= 2
+	}
+}
+\reg[\detar \label{det2area}]{
+	The area $ A $ of a parallelogram formed by two vectors $ \vec{u} $ and $ \vec{v} $ is given by
+	\begin{equation}
+		A= |\det(\vec{u}, \vec{v})| \label{det2arparl}
+	\end{equation}
+	\fig{utspprl}
+	The area $ A $ of a triangle formed by two vectors $ \vec{u} $ and $ \vec{v} $ is given by
+	\begin{equation}
+		A= \frac{1}{2}|\det(\vec{u}, \vec{v})| \label{det2artrk}
+	\end{equation}
+	\fig{utsptrk}
+}
+\reg[\avstpunktlin \label{avstpunktlin}]{
+	The distance $ h $ between a point $ B $ and a line given by point $ A $ and the direction vector $ \vec{r} $ is given as
+	\begin{equation}
+		h = \frac{\left|\det\left(\vv{AB}, \vec{r}\right)\right| }{|\vec{r}|}
+	\end{equation}
+	\fig{plin}
+}
+\newpage
+\fork{\ref{avstpunktlin} \avstpunktlin}{
+	Let a line $ \vec{l}(t) $ in space be given by a point $ A $ and a direction vector $ \vec{r} $. In addition, a point \textit{B} lies outside the line, as shown in the figure below
+	\fig{plin}
+	The shortest distance from \textit{B} to the line is the height \textit{h} in the triangle spanned by $ \vec{r} $ and $ \vv{AB} $. The area of this triangle is given by \eqref{det2artrk}:
+	\[ \frac{1}{2}\left|\det\left(\vv{AB}, \vec{r}\right)\right| \]
+	From the classic area formula for a triangle (see \mb) we now have
+	\alg{\frac{1}{2}|\vec{r}\,|h &=\frac{1}{2}\left|\det\left(\vv{AB}, \vec{r}\right)\right|  \br
+		h &= \frac{\left|\det\left(\vv{AB}, \vec{r}\right)\right| }{|\vec{r}|}
+	}
+}
+
+\section*{Explanations}
+\fork{\ref{det2area} \detar }{
+	Let $ A_N $ denote the area of a geometric shape $ N $.
+	\begin{figure}
+		\subfloat[]{\includegraphics{\figp{utspprl}}}\qquad
+		\subfloat[]{\includegraphics{\figp{utspprlforkl}}}\qquad
+	\end{figure}
+	Given two vectors $ {\vec{u}=[a, b]} $ and $ {\vec{v}=[c, d]} $, where $ {a, b, c, d >0} $, as shown in figure \textsl{(a)}. Placing the vectors in standard position, the points shown in figure \textsl{(b)} are given as
+	\alg{
+		O &= (0, 0) & B&=(a, b) & C &= (a+c, b+d) \br
+		D&= (c, d) & E &= (a+c, 0) & F &= (0, b+d)
+	}
+	With $ OE $ as the base, $ \triangle OEB $ has height $ b $, thus
+	\[  2A_{\triangle OEB}=(a+c)b \]
+	Similarly,
+	\[  2A_{\triangle FDO}=(b+d)c \]
+	Since $ A_{\triangle OEB}=A_{\triangle CDF}$ and $ A_{\triangle FDO}=A_{\triangle EBC} $, we have that
+	\alg{
+		A_{\square ABCD}&=A_{\square OECF}-2A_{\triangle OBE}-2A_{\triangle FDO} \\
+		&=(a+c)(b+d)-(a+c)b-(b+d)c \\
+		&=(a+c)d-(b+d)c\\
+		&= ad-bc
+	}
+	In the figures, we have assumed that (the smallest) angle between $ \vec{v} $ and the $ x $-axis is less than the angle between $ \vec{u} $ and the $ x $-axis. If the situation were reversed, we would have that
+	\[ A_{\square OECF}=bc-ad \]
+	Thus,
+	\[  A_{\square OECF}=|ac-bd| \]
+	Similarly, it can be shown that \eqref{det2arparl} holds for all ${a, b, c, d\in\mathbb{R}} $, see \refops{det2arbevis}. \vsk
+	
+	\mers{\eqref{det2arparl} can also be very concisely shown using trigonometry. See problem ?? in \tmto\ for this.}
+}
+
+\end{document}

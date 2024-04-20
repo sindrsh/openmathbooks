@@ -1,0 +1,348 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+
+\begin{document}
+
+\section{Definitions \label{grense}}
+Given a function $ f(x) $ and two $ x $-values $ a $ and $ b $. The change in $ f $ relative to the change in $ x $ for these values is given as
+\begin{equation}\label{releq}
+	\frac{f(b)-f(a)}{b-a}
+\end{equation}
+In \mb\ we have seen that the expression above gives the slope of the line that passes through the points $ (a, f(a)) $ and $ (b, f(b)) $. In a mathematical context, it is particularly interesting to examine \eqref{releq} when $ b $ approaches $ a $.
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2a}}
+	}\qquad
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2b}}
+	}\\
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2c}}
+	} \qquad
+	\subfloat[]{
+		\includegraphics[scale=0.8]{\figp{der2d}}
+	}
+\end{figure}
+By introducing the number $ h $, and setting $ b=a+h $, we can write \eqref{releq} as
+\[ \frac{f(a+h)-f(a)}{h} \]
+To \outl{differentiate} involves examining the limit of this fraction as $ h $ approaches 0.
+\info{\note}{
+	In the text and figures above, we have assumed that $ {b>a} $, but this is not a prerequisite for the expressions to be valid.
+}
+\regdef[The derivative\label{derdefa}]{
+	Given a function $ f(x) $. The \outl{derivative} of $ f $ at $ {x=a} $ is then given as
+	\begin{equation}\label{derdefaeq}
+		f'(a) =\lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h}
+	\end{equation}
+	The line that has the slope $ f'(a) $, and passes through the point $ (a, f(a)) $, is called the \outl{tangent line} to $ f $ for $ x=a $.
+	\fig{der1}
+}
+\eks[1]{
+	Given $ f(x)=x^2 $. Find $ f'(2) $.
+	
+	\sv
+	We have that
+	\algv{
+		f'(2) &=\lim\limits_{h \to 0} \frac{f(2+h)-f(2)}{h} \\
+		&=\lim\limits_{h \to 0} \frac{(2+h)^2-2^2}{h} \\
+		&= \lim\limits_{h \to 0} \frac{2^2+4h + (h)^2-2^2}{h} \\
+		&= 4
+	}
+}
+\newpage
+\eks[2]{ \label{dereks2}
+	Given $ f(x)=x^3 $. Find $ f'(a) $ .\vsk
+	
+	\sv
+	We have that
+	\alg{
+		f'(a) &=\lim\limits_{h \to 0} \frac{(a+h)^3-a^3}{h} \br
+		&= \lim\limits_{h \to 0}\frac{a^3+3a^2h +3 ah^2+ h^3-a^3}{h} \br
+		&= \lim\limits_{h \to 0}\left(3a^2 +3ah+h^2\right) \\
+		&= 3a^2
+	}
+	Thus, $ f'(a)=3a^2 $.
+}
+\info{Alternative definition}{
+	An equivalent version of \eqref{derdefaeq} is
+	\begin{equation}\label{derdefalt}
+		f'(a)=	\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}
+	\end{equation}
+}
+
+\subsubsection{Linearization of a Function}
+Given a function $ f(x) $ and a variable $ k $. Since $ f'(a) $ represents the slope of $ f(a) $ for $ x=a $, an approximation to $ f(a+k) $ would be
+\[ f(a+k)\approx f(a)+f'(a)k \]
+It is often useful to know the difference $ \varepsilon $ between an approximation and the actual value:
+\begin{equation}\label{vareps}
+	\varepsilon = f(a+k)-\left[f(a)+f'(a)k\right]
+\end{equation}
+We note that\footnote{This is left as an exercise for the reader.} $ \lim\limits_{k\to0}\frac{\varepsilon}{k} =0 $, and reformulate \eqref{vareps} into a formula for $ f(a+k) $: \regv
+\reg[Linearization of a function \label{linfunk}]{
+	Given a function $ f(x) $ and a variable $ k $. Then there exists a function $ \varepsilon(k) $ such that
+	\begin{equation} \label{linfunkeq}
+		f(a+k)=f(a)+f'(a)k+\varepsilon
+	\end{equation}
+	where $ \lim\limits_{k\to0}\frac{\varepsilon}{k}=0 $. \vsk
+	
+	The approximation
+	\begin{equation}\label{linaprx}
+		f(a+k)\approx f(a)+f'(a)k
+	\end{equation}
+	is called the \outl{linear approximation} of $ f(a+k) $.
+	\fig{flinear}
+}
+
+\section{Rules of Differentiation}
+\subsubsection{The Derivative Function}
+\textsl{Example 2} on page \pageref{dereks2} highlights something important; if the limit in \eqref{derdefaeq} exists, then $ f'(a) $ will be expressed in terms of $ a $. And although $ a $ is considered a constant along the way to this expression, there is nothing to prevent us from treating $ a $ as a variable afterwards. If $ f'(a) $ results from differentiating the function $ f(x) $, it is also convenient to rename $ a $ to $ x $:\regv
+\reg[The derivative function]{
+	Given a function $ f(x) $. The \outl{derivative function} of $ f $ is the function that results from replacing $ a $ in \eqref{derdefaeq} with $ x $. This function is written as $ f'(x) $.
+}
+\eks[]{
+	Given $ {f(x)=x^3} $. Since\footnote{See \textsl{Example 2}, page \pageref{dereks2}.} $ {f'(a)=3a^2} $, $ f'(x)=3x^2 $. 
+} \regv
+
+\spr{
+	Alternative notations for \sym{$f'$} are 
+	\sym{$ (f)'$} and \sym{$\frac{\text{d}}{\text{d}x} f $}.
+}
+\newpage
+\info{Derivative with respect to}{
+	The differentiation we have seen so far has been a fraction with a difference of $ x $-values in the denominator and the associated difference of $ f $-values in the numerator. We say that $ f $ is differentiated with \outl{respect to $ x $}. In this book series, we will primarily look at functions that depend on only one variable. Given a function $ f(x) $, it is then understood that \sym{$ f' $} symbolizes $ f $ differentiated with respect to $ x $.\vsk
+	
+	At the same time, it is useful to be aware that a function can depend on several variables. For example, the function
+	\[ f(x, y)= x^2+y^3 \]
+	is a \outl{multivariable function}, dependent on both $ x $ and $ y $. In this case, we can use \sym{$ \frac{\text{d}}{\text{d}x} f$} to indicate differentiation with respect to $ x $, and \sym{$ \frac{\text{d}}{\text{d}x}f $} to indicate differentiation with respect to $ y $. The reader may like to explain for themselves why the following is true:
+	\[ \frac{\text{d}}{\text{d}x}f = 2x \qquad,\qquad  \frac{\text{d}}{\text{d}y}f = 3y^2 ,\]
+}
+
+\newpage
+\subsection{The Derivative of Elementary Functions}
+\reg[\derel \label{derel}]{
+	For a variable $ x $ and a constant $ r $, the following are true:
+	\begin{align}
+		& (e^x)' = e^{x} \label{derex} \vn	
+		& (x^r)' = r x^{r-1} \label{derxr} \vn
+		& (\ln x)'=  \frac{1}{x} \label{derlnx}
+	\end{align}
+}	
+\reg[The Derivative of Composite Functions]{
+	Given a constant $ a $ and the functions $ f(x) $ and $ g(x) $. Then,
+	\begin{align}
+		& \left(a\cdot f\right)'=a\cdot f' \vn
+		& \left(f+g\right)' =f'+g' \vn
+		& \left(f-g\right)'=f'-g'
+	\end{align}
+} \regv
+
+\regdef[The Second Derivative]{
+	Given a differentiable function $ f(x) $. Then, the \outl{second derivative} of $ f $ is given as
+	\begin{equation}\label{andredereq}
+		\left(f'\right)'=f''
+	\end{equation}
+} \regv
+
+\regdef[The Derivative of a Vector Function \label{vektfunkder}]{
+	Given the functions $ f(t) $, $ g(t) $, and $ v(t)=[f(t), g(t)] $. Then,
+	\begin{equation}\label{vektfunkdereq}
+		v'(t)=[f'(t), g'(t)]	
+	\end{equation}
+}
+\newpage
+\subsection{Chain, Product, and Quotient Rules in Differentiation}
+\reg[\kjernereg \label{kjerne}]{
+	For a function $ f(x)=g\left[u(x)\right] $, we have:
+	\begin{equation}\label{kjerneeq}
+		f'(x) = g'(u)u'(x)
+	\end{equation}
+}
+\eks{
+	Find $ f'(x) $ when  $ f(x)=e^{x^2+x+1} $.\\
+	\sv
+	
+	We set $ u=x^2+x+1 $, and then
+	\begin{align*}
+		g(u)&=e^u &
+		g'(u)&=e^u &
+		u'(x) &= 2x + 1
+	\end{align*}
+	Thus,
+	\algv{
+		f'(x) &= g'(u)u'(x) \\
+		&= e^u(2x+1)\\
+		&= e^{x^2+x+1}(2x+1) 
+	}
+} \vsk
+
+\reg[\prodregder \label{prodregder}]{
+	Given the functions $ f(x) $, $ u(x) $, and $ v(x) $, where $ {f=uv} $, then
+	\[ f'=u'v+uv' \]	
+}
+\eks[1]{
+	Find the derivative of the function $ f(x)=x^2e^x $.
+	
+	\sv
+	We set $ {u(x)=x^2} $ and $ v(x)=e^x $, then
+	\alg{
+		f &= uv
+		&u'&=2x
+		&v'&=e^x
+	}
+	Thus,
+	\algv{
+		f' &= 2xe^x +x^2 e^x \\
+		&=xe^x(2+x)
+	}
+}
+\vsk
+
+\reg[\divder \label{divder}]{
+	Given the functions $ f(x) $, $ u(x) $, and $ v(x) $, where $ f=\dfrac{u}{v} $. Then,
+	\begin{equation}\label{divdereq}
+		f'=\frac{u'v-uv'}{v^2} 
+	\end{equation}
+}
+\eks{
+	Find the derivative of the function $ f(x)=\frac{\ln x}{x^4} $.
+	
+	\sv
+	We set $ u(x)=\ln x $ and $ v(x)=x^4 $, then
+	\alg{
+		f&=\frac{u}{v} & u'&=x^{-1} & v' &= 4x^3
+	}
+	Thus,
+	\alg{
+		f' &= \frac{x^{-1}\cdot x^4-\ln x\cdot 4x^3}{x^8} \br
+		&= \frac{1-4 \ln x}{x^5}
+	}
+	\notesm{We could also find $ f' $ by setting $ {u(x)=\ln x} $ and $ {v(x)=x^{-4}} $, and then using the product rule.}
+}
+\newpage
+\reg[\lhop \label{Lhop}]{
+	Given two differentiable functions $ f(x) $ and $ g(x) $, where
+	\[ f(a)=g(a)=0 \]
+	Then,
+	\nn{
+		\lim\limits_{x\to a} \frac{f}{g}=\lim\limits_{x\to a}\frac{f'}{g'}\label{Lhopeq}
+	}
+}
+\eks[]{
+	Find the limit of $ \lim\limits_{x\to 0} \dfrac{e^x-1}{x}$.
+	
+	\sv
+	We set $ {f(x)=e^x-1} $ and $ {g(x)=x} $, noting that $ {f(0)=g(0)=0} $. Therefore,
+	\alg{
+		\lim\limits_{x\to 0} \frac{e^x-1}{x}&=\lim\limits_{x\to0}\frac{f}{g}
+		\br
+		&=\lim\limits_{x\to0} \frac{f'}{g'}\br
+		&=\lim\limits_{x\to0}\frac{e^x}{1} \\
+		&= 1
+	} 
+}
+
+\section*{Explanations}
+
+\fork{\ref{kjerne} \kjernereg}{
+	Let's consider three functions $ f $, $ g $, and $ u $, where\footnote{The square brackets $ \sym{$ [\ ] $} $ in this context have the same meaning as ordinary parentheses, they are just used to make the expressions cleaner.}
+	\[ f(x)= g\left[u(x)\right] \]
+	$f$ is directly described by $x$, while $g$ is indirectly described by $x$, via $u(x)$. \vsk
+	
+	Let's use $f(x) =e^{x^2} $ as an example. If we know the value of \textit{x}, we can easily calculate the value of $ f(x) $. For instance,
+	\[ f(3)=e^{3^2}=e^9 \]
+	But we can also write $ {g\left[u(x)\right]=e^{u(x)}} $, where $ u(x)=x^2 $. This notation implies that when we know the value of \textit{x}, we first calculate the value of \textit{u}, then find the value of $g$:
+	\[ u(3) =3^2=9\qquad,\qquad 
+	g\left[u(3)\right]=e^{u(3)}=e^9 \]
+	From \eqref{derdefaeq}, we have:
+	\alg{
+		f'(x)&=\lim\limits_{h \to 0}\frac{f(x+h)-f(x)}{h} \br
+		&= \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}
+	}
+	We set $ k = u(x+h)-u(x) $. Thus,
+	\[ \lim\limits_{h \to 0}\frac{g\left[u(x+h)\right]-g\left[u(x)\right]}{h}= \lim\limits_{h to 0}\frac{g(u+k)-g(u)}{h} \]
+	From \eqref{linfunkeq}, we have:
+	\[ g(u+k)-g(u)= g'(u)k+\varepsilon_g  \]
+	Thus,
+	\alg{
+		\lim\limits_{h \to 0}\frac{g(u+k)-g(u)}{h}& = \lim\limits_{h\to 0}\frac{g'(u)k+\varepsilon_g}{h}\br
+		&=\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}
+	}
+	Since $ {\lim\limits_{h\to0}k=0} $, $ {\lim\limits_{h\to0}\frac{\varepsilon_g}{k}=0} $. Moreover, $ {\lim\limits_{h\to0}\frac{k}{h}=u'(x)} $. Thus,
+	\nn{
+		\lim\limits_{h\to 0}\left(g'(u)+\frac{\varepsilon_g}{k}\right)\frac{k}{h}=g'(u)u'(x)
+	}
+} \vsk
+
+\fork{\ref{prodregder} \prodregder}{
+	Given the functions $ f(x) $, $ u(x) $, and $ v(x) $, where
+	\[ f=uv \] 
+	From \eqref{derdefa}, then
+	\[ f'=\lim\limits_{h\to 0}\frac{u(x+h)v(x+h)-uv}{h} \]
+	Let's denote $ u(x+h) $ and $ v(x+h) $ as respectively $ \tilde{u} $ and $ \tilde{v} $:
+	\alg{
+		f' &= \lim\limits_{h\to 0} \frac{\tilde{u}\tilde{v}- u v}{h}
+	}
+	We can always add 0 in the form of $ \dfrac{u\tilde{v}}{h}- \dfrac{u\tilde{v}}{h} $:
+	\alg{f'&= \lim\limits_{h\to 0} \left[\frac{\tilde{u}\tilde{v}- u v}{h} + \frac{u\tilde{v}}{h}- \frac{u\tilde{v}}{h}\right] \\
+		&= \lim\limits_{h\to 0}\left[\frac{(\tilde{u}- u)\tilde{v}}{h} +\frac{u(\tilde{v}- v)}{h} \right]
+	}
+	Since for any continuous function $ g $, $ {\lim\limits_{h\to 0} \tilde{g}=g} $ and \\$ {\lim\limits_{h\to 0}  \frac{g(x+h)-g(x)}{h}=g'}$, it is:
+	\[ f'=u'v+uv' \]
+}
+
+\newpage
+\fork{\ref{derel} \derel}{
+	\textbf{Equation (\ref{derxr})}\\
+	Let's start by noting that
+	\alg{(\ln x^r)'&=(r \ln x)' \\
+		&= \frac{r}{x}
+	}  
+	We set $ u=x^r $. From the chain rule, we have:
+	\alg{
+		\frac{r}{x}&=	(\ln u)'\\
+		&=\frac{1}{u} u' \\
+		&=\frac{1}{x^r}(x^r)' 
+	}
+	Thus,
+	\[ 	(x^r)'= \frac{r}{x}x^r = r x^{r-1} \]
+	
+	\textbf{Equation (\ref{derlnx})}\\	
+	We have that $ {x=e^{\ln x}} $. We set $ {u=\ln x} $ and $ g(u)=e^u $. Then $ x=g(u) $, and
+	\alg{
+		g'(u) &= e^u=e^{\ln x}=x \br
+		u'(x) &= \left(\ln x\right)'
+	}
+	From the chain rule, we have:
+	\alg{
+		\left(x\right)' &= g'(u)u'(x)\\
+		&= x \left(\ln x\right)'
+	}
+	Since\footnote{See exercise ??.}  ${\left(x\right)'=1} $, we have:
+	\[ 1 = x\left(\ln x \right)' \]
+	Thus,
+	\[ \left(\ln x\right)'= \frac{1}{x} \]
+} 
+
+\fork{\ref{divder} \divder}{
+	We have that
+	\[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
+	From \refunnbr{prodregder}{product rule} and \refunnbr{kjerne}{chain rule}, then
+	\alg{
+		f'	&= u' v^{-1} - u v^{-2}v' \\
+		&= \frac{u'v - u v'}{v^2}
+	}
+} \vsk
+
+\fork{\ref{Lhop} \lhop}{
+	Since $ f(a)=g(a)=0 $, it is:
+	\alg{
+		\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}=\frac{\dfrac{f(x)-f(a)}{x-a}}{\dfrac{g(x)-g(a)}{x-a}}
+	}
+	From \eqref{derdefalt}, then
+	\[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]
+}
+
+\end{document}

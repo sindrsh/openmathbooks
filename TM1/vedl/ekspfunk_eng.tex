@@ -1,0 +1,93 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}	
+\vedlegg{Euler's Number} \label{eulerstallfork}
+\subsubsection{The Derivative as Motivation}
+Given the function $ f(x)=a^x $. Then we have
+\alg{
+	\left(a^x\right)'&=\lim\limits_{h\to 0}\frac{a^{x+h}-a^x}{h}\br
+	&= \lim\limits_{h\to 0}\frac{a^{x}a^h-a^x}{h}
+}
+Since $ x $ is independent of $ h $, we get
+\alg{
+	\left(a^x\right)'=a^x\lim\limits_{h\to 0}\frac{a^h-1}{h}
+}
+The equation above points towards something amazing; if there exists a number $ a $ such that $ {\lim\limits_{h\to 0}\frac{a^h-1}{h}=1} $, then the function $ a^x $ will be its own derivative function! That is, $ \left(a^x\right)'=a^x $. We now notice that if
+\[ a=\lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} \]
+then
+\algv{
+	\lim\limits_{h\to 0}\frac{a^h-1}{h}&=\lim\limits_{h\to 0}\frac{\left(\left(1+h\right)^\frac{1}{h}\right)^h-1}{h}\br
+	&=\frac{1+h-1}{h}\\
+	&=1
+}
+If we can demonstrate that the limit $ \lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} $ exists, we have thus found exactly the expression for $ a $ that we want.
+
+\subsubsection{Investigation of the Limit}
+We introduce the following two functions (the motivation to introduce $ g $ will appear later):
+\[ f(h)=1+h \qquad,\qquad g(h)=2-\left(\frac{1}{4}\right)^{h}\]
+Further, we investigate for which values $ f $ is less than $ g $. When $ f=g $, we have that
+\begin{equation}\label{eforkleqh}
+	1+h=2-\left(\frac{1}{4}\right)^h 
+\end{equation}
+We now make the following observation: Given two numbers $ c $ and $ k $, and the function $ p(h)=b^h $, where $ k>0 $ and $ 0<b<1 $. Then we have
+\alg{
+	p(c+k)-p(c)=b^{c+k}-b^{c}=b^c\left(b^{k}-1\right)
+}
+Similarly,
+\alg{
+	p(c+2k)-p(c+k)&=b^{c+k}\left(b^{k}-1\right)
+}
+Furthermore, $ b^{c+k}<b^c $ and $ b^k-1<1 $, which means that
+\[ \frac{p(c+k)-p(c)}{k}<\frac{p(c+2k)-p(c+k)}{k} \]
+Therefore, the line between $ (c, p(c)) $ and $ (c+k, p(c+k)) $ must be steeper than the line between $ (c+k, p(c+k)) $ and $ (c+2k, p(c+2k)) $, and thus $ (c+k, p(c+k)) $ must lie below the line between $ (c, p(c)) $ and $ (c+2k, p(c+2k)) $.
+\fig{ekspfunk3}
+Since $ p(h) $ is not a linear function, one of these three statements must be valid:
+\begin{itemize}
+	\item $ p $ is convex for all $ h$
+	\item $ p $ is concave for all $ h $
+	\item $ p $ alternates between concave and convex
+\end{itemize}
+But if $ p $ is concave, there must be an interval where $ (c+k, p(c+k)) $ lies above the line between $ (c, p(c)) $ and $ (c+2k, p(c+2k)) $, and this is contradictory. Thus, $ p $ must necessarily be convex for all $ h $.\vsk
+
+\newpage
+From what we just found, we can conclude that the function $2-\left(\frac{1}{4}\right)^h $ is concave for all $ h $, and since $ 1+h$ is a linear expression, \eqref{eforkleqh} has at most two solutions. It is easy to show that $ h=0 $ and $ h=\frac{1}{2} $ are the solutions to \eqref{eforkleqh}, and this means that
+\begin{equation}\label{1plushleq}
+	1+h\leq 2-\left(\frac{1}{4}\right)^h\qquad,\qquad x\in\left[0, \frac{1}{2}\right] 	
+\end{equation}
+\fig{ekspfunk2}
+We set $z=\frac{1}{h} $ for $ h\neq0 $. Then
+\[ \lim\limits_{h\to 0} (1+h)^h=\lim\limits_{z\to\infty}=\left(1+\frac{1}{z}\right)^\frac{1}{z} \]
+Furthermore, \eqref{1plushleq} can be rewritten as
+\begin{equation}\label{eforkleqz}
+	1+\frac{1}{z}\leq 2-\left(\frac{1}{4}\right)^\frac{1}{z}\qquad,\qquad z\in[2, \infty]
+\end{equation}
+
+For $ z\to\infty $ we can therefore be sure that
+\[ 1+\frac{1}{z}<1+1-\left(\frac{1}{4}\right)^\frac{1}{z}+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^2+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^3+... \]
+The right side in the inequality above is recognized\footnote{See about geometric series in \tmto.} as an infinite geometric series where the sum is given as
+\[ \frac{1}{1-\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)} =\frac{1}{\left(\frac{1}{4}\right)^\frac{1}{z}}=4^\frac{1}{z} \]
+Thus, it is
+\begin{equation}\label{eforkllim4}
+	\lim\limits_{z\to\infty}\left(1+\frac{1}{z}\right)^z\leq \lim\limits_{z\to\infty}\left(4^\frac{1}{z}\right)^z=4
+\end{equation}
+\newpage
+Furthermore, it is easy to show that the equation
+\[ 1+h=2-\left(\frac{1}{2}\right)^h \]
+has the solutions $ h=-1 $ and $ h=0 $, which means that
+\[ 1+h\geq2-\left(\frac{1}{2}\right)^h \qquad,\qquad h\in[0, \infty]\]
+In a similar manner as we came to an upper limit, we can use this to assert that
+\[ \lim\limits_{z\to \infty}\left(1 + \frac{1}{z}\right)^z\geq 2 \] 
+Thus, we know that $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ lies somewhere between 2 and 4. Since the\\ expression contains only positive terms for $ {z\to\infty} $, we can also be sure that the limit is finite\footnote{As opposed to being indeterminate. For example, $ \lim\limits_{x\to \infty} \cos x $  will be indeterminate because $ \cos x $ oscillates between $ -1 $ and $ 1 $.}. It therefore makes sense to treat the limit value as a number, which we call $ e $:
+\[ e=\lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^z=\lim\limits_{h\to0}\left(1+h\right)^{\frac{1}{h}}  \]
+\info{Note}{
+	The most classic method for finding an upper and lower limit for $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ is by using \net{https://en.wikipedia.org/wiki/Binomial\_theorem\#General\_case}{Binomial Theorem}. 
+}
+\subsubsection{A Look Back at the Derivative}
+Differentiation of power functions was what motivated us to investigate the number $ e $. From what we have discussed in the preceding sections, it follows that
+\[ \left(e^x\right)'=e^x \]
+The equation above is simply one of the most important equations in\\
+mathematics.
+
+\end{document}

@@ -1,0 +1,66 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\opgt
+\op{opgvekmidt}
+Given points $ A=(m, n) $ and $ B=(s, t) $, and the vectors $ \vec{a}=[m, n] $ and $ \vec{b}=[s, t] $. Show that the midpoint of the line segment $ AB $ is given by the expression
+\[ (0, 0) + \frac{1}{2}(\vec{u}+\vec{v}) \]
+
+\op{vekfaktlen}
+Given $ \vec{v}=[ca, cb] $. Show that 
+\[ |\vec{v}|=c\sqrt{a^2+b^2} \]
+
+\op{opgvektenh} \vs
+\abc{
+	\item Given a vector $ \vec{v} $. Show that the length of the vector $ \frac{\vec{v}}{|\vec{v}|} $ is 1.
+	\item Determine the expression for the vector that is parallel to the vector $ [3, 4] $, and has a length of 10.
+}
+
+\op{opgveklen}
+Determine the length of each of the vectors.
+\alg{
+	\vec{a} &= [3, 4]\\
+	\vec{b} &= [-1, 7]\\
+	\vec{c} &= [-8, 6]\\
+	\vec{d} &= [4, -3]
+}
+
+\op{opgveknorm}
+Check if any of the vectors from \refops{opgveklen} are perpendicular to each other.
+
+\op{opgvekparl}
+Check if any of the vectors from \refops{opgveklen} are parallel.
+
+\newpage
+\eksop{R1V22D1}{R1V22D1opg2}
+For the vectors $ \vec{a} $ and $ \vec{b} $, $ |\vec{a}|=2 $, $ \vec{b}=3 $ and $ \vec{a}\cdot\vec{b}=-3 $.\os
+
+We let $ \vec{u}=\vec{a}+\vec{b} $ and $ \vec{v}=\vec{a}-6\vec{b} $.
+\abc{
+	\item Determine the length of $ \vec{u} $ and $ \vec{v} $.
+	\item Determine the angle between $ \vec{u} $ and $ \vec{v} $.
+} 
+
+\op{vekskalparl}
+Given $ \vec{u}=[a,b] $ and $ \vec{v}=[c, d] $
+Show that if $\angle(\vec{u}, \vec{v})=0^\circ $, \eqref{skal2} gives that
+\[ ad-bc=0 \]
+
+\eksop{R1V23D1}{R1V23D1opg3}
+Given three points $ A=(1, 3) $, $ B=(4, 0) $, and $ C=(9, 4) $.
+\abc{
+	\item  Use vector calculations to determine if $ \angle CBA $ is less than, equal to, or greater than $ 90^\circ $.
+}
+A point $ P $ lies on the line that goes through $ B $ and $ C $.
+\abcs{1}{
+	\item Use vector calculations to determine the coordinates of the point P so that $ AB\perp AP $.
+}
+
+\eksop{R1H23D1}{r1h23d1opg3}
+In the triangle $ \triangle ABC $, $ A= (-3, -1) $, $ B=(2, -2) $, and $ C=(5,2) $.
+\abc{
+	\item Determine using vector calculations which side of the triangle is the shortest. \item Determine using vector calculations if any of the angles in the triangle are $ 90^\circ $. 
+}
+\end{document}

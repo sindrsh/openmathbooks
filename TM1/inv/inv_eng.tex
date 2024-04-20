@@ -1,0 +1,341 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\section{Monotonic Properties}
+Most function values vary. Descriptions of how functions vary are called descriptions of the functions' \outl{monotonic properties}.\regv
+\reg[Increasing and Decreasing Functions \label{incanddec}]{
+	Given a function $ f(x) $.
+	\begin{itemize}
+		\item $ f $ is \outl{increasing} on the interval $ [a, b] $ if for all $ {x_1, x_2 \in[a, b]}$ we have that
+		\begin{equation}\label{increasing}
+			x_1<x_2 \Rightarrow f(x_1)\leq f(x_2)
+		\end{equation}
+		If $ {f(x_1)\leq f(x_2) }$ can be replaced with $ {f(x_1)< f(x_2)} $, then $ f $ is \outl{strictly increasing} on the interval.
+		\fig{voksende}
+		\item $ f $ is \outl{decreasing} on the interval $ [a, b] $ if for all $ {x_1, x_2 \in[a, b]}$ we have that
+		\begin{equation}\label{decreasing}
+			x_1<x_2 \Rightarrow f(x_1)\geq f(x_2)
+		\end{equation}
+		If $ {f(x_1)\geq f(x_2) }$ can be replaced with $ {f(x_1)> f(x_2)} $, then $ f $ is \outl{strictly decreasing} on the interval.
+		\fig{avtagende}
+	\end{itemize}
+} \newpage
+
+\reg[\monder \label{monder}]{
+	Given $ f(x) $ differentiable on the interval $ [a, b] $.
+	\begin{itemize}
+		\item If $ {f'\geq0} $ for $ {x\in(a, b)} $, then $ f $ is increasing for $ x\in[a, b] $
+		\item If $ {f'\leq0} $ for $ {x\in(a, b)} $, then $ f $ is decreasing for $ x\in[a, b] $
+	\end{itemize}
+	If respectively $ \geq $ and $ \leq $ can be replaced with $ > $ and $ < $, then $ f $ is strictly increasing/decreasing. 
+} \regv
+
+\eks[]{
+	Determine on which intervals $ f $ is increasing/decreasing when
+	\[ f(x)=\frac{1}{3} x^3 - 4x^2 + 12x\qquad,\qquad x\in[0, 8] \]
+	\sv \vs
+	We have that
+	\[  f'(x)=x^2-8x+12 \]
+	To clarify when $ f' $ is positive, negative, or equal to 0, we do two things; we factorize the expression of $ f' $ and draw a sign chart:
+	\[ f'(x)=(x-2)(x-6) \]
+	\fig{fortgnskj1}
+	The sign chart illustrates the following:
+	\begin{itemize}
+		\item The expression $ x-2 $ is negative when  $ x\in[0, 2) $, equal to 0 when $ x=2 $, and positive when $ x\in(2, 8]  $.
+		\item The expression $ x-6 $ is negative when $ x\in[0, 8) $, equal to 0 when $ x=6 $, and positive when $ x\in(6, 8]  $.
+		\item Since $ f'=(x-2)(x-6) $, 
+		\begin{center}
+			\begin{tabular}{l}
+				$ f'\geq0 $ when $ {{x\in(0, 2)} \cup (6, 8)} $ \br
+				$ f'=0 $ when $ {x\in\{2, 6\}} $ \br
+				$ f'\leq0 $ when $ x\in(2, 6)$
+			\end{tabular}
+		\end{center}
+	\end{itemize}
+	This means that
+	\begin{center}
+		\begin{tabular}{l}
+			$ f $ is increasing when $ x\in[0, 2] \cup [6, 8] $ \br
+			$ f $ is decreasing when $ x\in[2, 6]$
+		\end{tabular}
+	\end{center}
+} \vsk
+
+\reg[\verdmengdgittint \label{verdmengdgittint}]{
+	Given a continuous function $ f(x) $ strictly increasing/decreasing for $ {x\in[a, b]} $. The domain of $ f $ on this interval is then $ [f(a), f(b))] $.
+}
+
+\section{Extreme Points, Turning Points, and Inflection Points}
+\reg[Maximum and Minimum]{\label{max}\index{maximum}\index{minimum}	
+	\notesm{A number $ c $ can be referred to as a point in function discussions, implying that it is the point $ (c, 0) $.} \br
+	
+	Given a function $ f(x) $ and a number $ c $.\bs
+	\begin{itemize}
+		\item $ f $ has an \outl{absolute maximum} $ f(c) $ if $ {f(c)\geq f(x)} $ for all $ x\in D_f $.
+		
+		\item $ f $ has an \outl{absolute minimum} $ f(c) $ if ${ f(c)\leq f(x) }$ for all $ x\in D_f $.
+		\item $ f $ has a \outl{local maximum} $ f(c) $ if there exists an open interval $ I $ around $ c $ such that $ f(c)\geq f(x) $ for $ x\in I  $.
+		
+		\item $ f $ has a \outl{local minimum} $ f(c) $ if there exists an open interval $ I $ around $ c $ such that $ f(c)\leq f(x) $ for $ x\in I  $.
+	\end{itemize}\vs
+}
+\spr{
+	A maximum/minimum is also called a\\ \outl{maximum value/minimum value}.
+}
+\reg{Extreme Value and Extreme Point}{\index{extreme point}\index{extreme value}
+	Given a function $ f(x) $ with maximum/minimum $ f(c) $. Then
+	\begin{itemize}
+		\item $ f(c) $ is an \outl{extreme value} for $ f $.
+		\item $ c $ is an \outl{extreme point} for $ f $. Specifically, a maximum point/minimum point for $ f $.
+		\item $ (c, f(c)) $ is a \outl{maximum point/minimum point} for $ f $.
+	\end{itemize}
+}
+\reg{Critical Points}{
+	A number $ c $ is a \outl{critical point} for a function $ f(x) $ if one of the following holds:
+	\begin{itemize}
+		\item $ f $ is not differentiable at $ c $
+		\item $ f'(c)=0 $
+	\end{itemize}
+}\regv
+
+\reg{First Derivative Test for Extrema \label{fdertest}}{
+	Given a differentiable function $ f(x) $ and $ c\in[a, b] $.
+	\begin{enumerate}[label=(\roman*)]
+		\item If $ c $ is a local extremum point for $ f $, then $ {f'(c)= 0}$
+		\item If $ {f'>0} $ for $ {x\in(a, c)} $ and $ {f'<0} $ for $ {x\in(c, b)} $, then $ c $ is a local maximum point for $ f $
+		\item If $ {f'<0} $ for $ {x\in(a, c)} $ and $ {f'>0} $ for $ {x\in(c, b)} $, then $ c $ is a local minimum point for $ f $
+	\end{enumerate}
+}
+\regv
+\spr{
+	What is described in points (ii) and (iii) is often referred to as ''$ f $ changes sign at $ c $''. 
+}
+\newpage
+\eks[1]{
+	Find the local minimum point and maximum point for 
+	\[ f(x)=2x^3 + 9x^2 - 60x \]
+	\sv
+	We start by finding $ f' $:
+	\alg{
+		f'&=6x^2+18x-60 \\
+		&= 6(x^2+3x-10)
+	}
+	Since $ 5(-2)=10 $ and $ 5-2=3 $, we have by \rref{a1a2} that
+	\[ f'=6(x-2)(x+5) \]
+	$ f'=0 $ for $ x=2 $ and $ x=-5 $. We have that
+	\alg{
+		f(-5)&=2^3+9\cdot2^2-60\cdot2 = -68	\br
+		f(2)&=5^3+9\cdot5^2-60\cdot5 = 275 
+	}
+	Thus, $ (-5, 275) $ is the maximum point for $ f $ and $ (2, -68) $ is the minimum point for $ f $.
+}
+
+
+
+\newpage
+
+\reg[Second Derivative Test \label{seconddertest}]{
+	Given a differentiable function $ f(x) $ and a number $ c $.
+	\begin{itemize}
+		\item If $ {f'(c)=0} $ and $ {f''(c)<0} $, then $ f(c) $ is a local maximum.
+		\item If $ {f'(c)=0 }$ and $ {f''(c)>0} $, then $ f(c) $ is a local minimum.
+		\item If ${ f'(c)=f''(c)=0 }$, it cannot be determined from this information alone whether $ f(c) $ is a local maximum or minimum.
+	\end{itemize}	
+}
+\fork{\ref{seconddertest} Second Derivative Test}{
+	By the definition of the derivative, we have that
+	\[ f''(c)=\lim\limits_{h \to 0}\frac{f'(c+h)-f'(c)}{h} \]
+	When $ f'(c)=0$, we have
+	\[ f''(c)=\lim\limits_{h \to 0}\frac{f'(c+h)}{h} \]
+	When $ f''(c)<0 $, this means that
+	\[\lim\limits_{h \to 0} \frac{f'(c+h)}{h}<0 \]
+	So, $ f' $ must be positive when $ h $ approaches 0 from the left and negative when $ h $ approaches 0 from the right. Thus, $ f' $ changes sign at $ c $, which must then be a maximum point for $ f $. Similarly, $ c $ must be a minimum point for $ f $ if $ {f(c)=0} $ and $ {f''(c)<0} $.
+}
+\newpage
+\reg{Inflection Point and Turning Point}{\index{inflection point}\index{turning point}
+	For a continuous function $ f(x) $, we have that
+	\begin{itemize}
+		\item If $ {f''(c)=0} $ and $ f'' $ changes sign at $ c $, then $ c $ is an \outl{inflection point} for $ f $.
+		\item If $ c $ is an inflection point for $ f $, then $ (c, f(c)) $ is a \outl{turning point}.
+		\item $ f $ is convex on intervals where $ {f''>0} $, and concave on intervals where $ {f''<0} $. (See \rref{convconc} regarding convex and concave functions.)
+	\end{itemize}\vs
+}
+\newpage
+\eks[]{
+	\[ f(x)=x^3-3x^2-144x-140\quad,\quad x\in[-14, 16] \]
+	\fig{funkdroft}
+	\begin{center}
+		\small
+		\begin{tabular}{c | c}
+			\rowcolor{gray!25}		\textbf{point/value} & \textbf{type} \\ \hline
+			\rowcolor{green!10}		$ A=(-14, -1456) $ & absolute minimum point \\ \hline
+			\rowcolor{green!10}		$ -14 $ & extremum point; absolute minimum \\ \hline
+			\rowcolor{green!10}		$ -1456 $& absolute minimum \\ \hline
+			\rowcolor{cyan!10}		$ B=(-6, 400) $ & local maximum point \\ \hline	\rowcolor{cyan!10}		
+			$ -6 $ & extremum point; local maximum point \\ \hline \rowcolor{cyan!10}	
+			$ 400 $ & local maximum \\ \hline
+			\rowcolor{green!10}		$ C=(-1, -286) $ & turning point  \\ \hline
+			\rowcolor{green!10}		$ -1 $ & inflection point \\ \hline 
+			\rowcolor{cyan!10}		$ D = (8, -972) $ & local minimum point \\ \hline
+			\rowcolor{cyan!10}		$ 8 $ & extremum point; local minimum point \\ \hline
+			\rowcolor{cyan!10}		$ -972 $ & local minimum \\ \hline
+			\rowcolor{green!10}		$ E= (16, 884) $ & absolute maximum point \\ \hline
+			\rowcolor{green!10}		$ 16 $ & extremum point; absolute maximum point \\ \hline
+			\rowcolor{green!10}		$ 884 $ & absolute maximum \\ \hline
+			\rowcolor{cyan!10}		$ -10 $, $ -1 $ and $ 14 $ & zero point \\ \hline
+		\end{tabular}
+	\end{center}
+}
+\newpage
+\section{Asymptotes}
+\reg[Vertical Asymptotes]{
+	Given a function $ f(x) $ and a constant $ c $.
+	\begin{itemize}
+		\item If $ {\lim\limits_{x\to c^+} f(x)=\pm \infty}  $, then $ c $ is a \outl{vertical asymptote from above} for $ f $.
+		\item If $ {\lim\limits_{x\to c^-} f(x)=\pm \infty}  $, then $ c $ is a \outl{vertical asymptote from below} for $ f $.
+		\item If $ {\lim\limits_{x\to c} f(x)=\pm \infty}  $, then $ c $ is a \outl{vertical asymptote} for $ f $.
+	\end{itemize}
+}
+\eks[]{
+	Find the vertical asymptote of
+	\[ f(x)=\frac{1}{x-3}+2 \]
+	\sv
+	We observe that
+	\[ \lim\limits_{x\to 3}\left[\frac{1}{x-3}+2\right]=\pm \infty  \]
+	Thus, $ x=3 $ is a vertical asymptote for $ f $.
+} 
+\newpage
+\reg[Horizontal Asymptotes]{
+	Given a function $ f(x) $. Then $ {y=c} $ is a \outl{horizontal asymptote} for $ f $ if 
+	\[  {\lim\limits_{x\to |\infty|} f(x)=c} \]
+}
+\eks[]{
+	Find the horizontal asymptote of
+	\[ f(x)=\frac{1}{x-3}+2 \]
+	\sv
+	We observe that
+	\[ \lim\limits_{x\to |\infty|}\left[\frac{1}{x-3}+2\right]=2 \]
+	Thus, $ y=2 $ is a horizontal asymptote for $ f $.
+}
+
+\section{Convex and Concave Functions}
+\reg{Convex and Concave Functions \label{convconc}}{
+	Given a continuous function $ f(x) $.	\vsk
+	
+	If the entire line between $ (a, f(a)) $ and $ (b, f(b)) $ lies above the graph of $ f $ on the interval $ [a, b] $, then $ f $ is \outl{convex} for $ x\in[a, b] $.	
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konv}}
+	\end{figure}	
+	If the entire line between $ (a, f(a)) $ and $ (b, f(b)) $ lies below the graph of $ f $ on the interval $ [a, b] $, then $ f $ is \outl{concave} for $ x\in[a, b] $.
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konk}}
+	\end{figure}
+	\vs
+}
+\section{Injective and Inverse Functions}
+\subsubsection{Injective Functions}
+\reg{Injective Functions}{
+	Given a function $ f(x) $. If all values of $ f $ are unique on the interval $ x\in[a, b] $, then $ f $ is \outl{injective} on this interval.
+}
+\spr{
+	Another word for injective is \outl{one-to-one}.
+}
+\subsubsection{Inverse Functions}
+Given the function $ f(x)=2x+1 $, which is obviously injective for all $ x\in \mathbb{R} $. This means that the equation $ f=2x+1 $ has only one solution, regardless of whether we solve with respect to $ x $ or $ f $. Solving with respect to $ x $, we have that
+\[ x=\frac{f-1}{2} \]
+Now, we have gone from having an expression for $ f $ to the ''reverse'', an expression for $ x $. Since both $ x $ and $ f $ are variables, $ x $ is a function of $ f $, and to clarify this, we could have written
+\[ x(f)=\frac{f-1}{2} \]
+This function is called the \outl{inverse function} of $ f $. If we substitute the expression for $ f $ into the expression for $ x(f) $, we necessarily get $ x $:
+\alg{
+	x\left(2x+1\right)&=\frac{2x+1-1}{2} \\
+	&= x
+} 
+The equation above highlights a problem; it is very messy to treat $ x $ as both a function and a variable simultaneously. It is therefore common to rename both $ f $ and $ x $ so that the inverse function and the variable it depends on get new symbols. For example, we can set $ y=f$ and $ g=x $. The inverse function $ g $ of $ f $ is then that
+\[ g(y)=\frac{y-1}{2} \]
+\reg{Inverse Functions}{
+	Given two injective functions $ f(x) $ and $ g(y) $. If
+	\[ g(f)=x \]
+	then $ f $ and $ g $ are \outl{inverse} functions.
+} 
+\eks[1]{Given the function $ f(x)=5x-3 $.
+	\abc{
+		\item Find the inverse function $ g $ of $ f $.
+		\item Show that $ g(f)=x $. 
+	} 
+	
+	\sv
+	\abc{
+		\item We set $ y=f $, and solve the equation with respect to $ x $:
+		\alg{
+			y&= 5x-3 \\
+			x &= \frac{y+3}{5}
+		}
+		Then, $ g(y)=\frac{y+3}{5} $.
+		\item When $ y = f $, we have that
+		\alg{
+			g(y)&=g(5x-3)\br 
+			&= \frac{5x-3+3}{5} \\
+			&= x
+		}
+	}
+}
+
+\newpage
+\info{$ \bm {f^{-1}} $}{
+	If $ f $ and $ g $ are inverse functions, $ g $ is often written as $ f^{-1} $. It is important to note that $ f^{-1} $ is not the same as $ (f)^{-1} $. For example, given $ f(x)= x+1 $. Then
+	\[ f^{-1}=x-1 \qquad,\qquad (f)^{-1}=\frac{1}{x+1}\] 
+	In all other cases except when $ {n=-1} $, it will be the case in this book that
+	\[ f^n=(f)^n \] 
+}
+\section*{Explanations}
+\fork{\ref{monder}\,\monder}{
+	Given $ f(x) $, where $ {f'\geq0} $ for $ {x\in[a, b]} $. Let $ {x_1, x_2 \in(a, b)}$ and $ {x_2>x_1} $. By the \refunnbr{meanval}{mean value theorem}, there exists a number $ {c\in(x_1, x_2)} $ such that
+	\alg{
+		f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
+	}
+	Since $ c\in[a, b] $, $ {f'(x)\geq 0} $, and thus
+	\alg{
+		0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
+	}
+	Consequently, $ {f(x_2)\geq f(x_1)} $, and from \dref{voksogav} then $ f $ is increasing on the interval $ (a, b) $. \vs
+}\vsk
+
+\fork{\ref{verdmengdgittint} \verdmengdgittint}{
+	We aim to show that for any number $ {c\in(f(a), f(b))} $ there exists a number $x_c $ such that $ f(x_c)=c$.\os
+	
+	We let $ f(x) $ be a strictly increasing function and define $ P(c, n) $ given by the following procedure, described by a Python function (see \am for an introduction to Python):
+	\python{verdmengdgittint.py}
+	Since $ f $ is strictly increasing, we can always be sure that $ f(x_1)\leq f(x_3)\leq f(x_2)  $ and $ f(x_1)\leq c\leq f(x_2)  $ at the start of each iteration. As $ {n\to\infty} $, $ {x_2\to x_1} $, and since $ f $ is continuous, $ {\lim\limits_{n\to \infty} f(x_1)=f(x_2)} $. This means that $ {\lim\limits_{n\to \infty} P(c,n)\to c}$, and thus there must exist a number $ x_c\in(a, b) $ that makes $ f(x_c)=c$.
+}
+
+
+\fork{\ref{fderekstr} \fderekstr}{
+	\textbf{Punkt (i)} \os
+	
+	La $ c $ være et lokalt maksimumspunkt for $ f $. For et tall $ h $ må vi da ha at $ c\geq x $ for $ x\in(c-|h|, c+|h|) $. Da er
+	\[ f(c+h)-f(c)\leq 0 \] 
+	Dette betyr at
+	\alg{
+		\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h}\leq 0 
+	}
+	og at
+	\alg{
+		\lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}\geq 0 
+	}
+	Følgelig er
+	\[ \lim\limits_{h\to 0^-}\frac{f(c+h)-f(c)}{h}=\lim\limits_{h\to 0^+}\frac{f(c+h)-f(c)}{h} \]
+	Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.\vsk
+	
+	\textbf{Punkt (ii)} \os
+	Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende der. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende der. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
+	
+	\textbf{Punkt (iii)} \os
+	Tilsvarende resonnement som for punkt (ii).
+}
+
+
+\end{document}

@@ -1,0 +1,105 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\section{Limits}
+Suppose we start with the value 0.9, and then continuously add 9 as the last digit. Then we get the values 0.9, 0.99, 0.999, and so on. By adding 9 as the last digit in this way, \textsl{we can get as close as we wish $-$ but never exactly reach $-$ the value 1}. The process of \textsl{"getting as close as we wish $-$ but never exactly reaching $-$ a value"} will henceforth be referred to as "approaching a value." The method we just described can be seen as a method to \textsl{approach} 1. We can then say that the \outl{limit} of this method is 1.
+To indicate a limit, we write \sym{$ \lim $}.\vsk
+
+It is important to consider that we can approach a number from two sides; from the left or from the right on the number line. With a method that gives us the values 0.9, 0.99, 0.999, etc., we are approaching 1 from the left. If we create a method that gives us the values 1.1, 1.01, 1.001, etc., we are approaching 1 from the right. This is shown by marking \sym{$ + $} or \sym{$ - $} above the number we are approaching.
+
+\regv
+
+\regdef[Limits]{ \vsb
+	\alg{
+		x\to a^+ &= x \text{ approaches } a \text{ from the right} \br
+		x\to a^- &= x \text{ approaches } a \text{ from the left} \br
+		x\to a &=  x \text{ approaches } a \text{ (from both the right and left)}\\[12pt]
+		\lim\limits_{x\to a} f(x) &= \text{the limit of } f \text{ as } x \text{ approaches } a \\
+		&= \text{the value }f\text{ approaches as }x \text{ approaches }a
+	} 
+}
+
+\spr{
+	Approaching a value from the right/left is also called approaching a value from above/below.
+}
+\info{\note}{
+	\sym{$ x\to a$} covers the two cases \sym{$ x\to a^+ $} and \sym{$ x\to a^- $}. Often, these are so similar that we can treat \sym{$ x\to a $} as one case.
+}
+\newpage
+
+\info{An Extension of \sym{$ = $}}{
+	The somewhat paradoxical aspect of limit values where $ x $ approaches $ a $, is that we often end up substituting $ x $ with $ a $, even though we have by definition that $ x\neq a $. For example, the equation
+	\begin{equation} \label{limxto2}
+		\lim_{x\to 2}(x+1)=2+1=3 
+	\end{equation}
+	It's worth pondering the similarities in \eqref{limxto2}. When $ x $ approaches 2, $ x $ will never be exactly 2. This means that $ {x+1} $ can never be \textsl{exactly equal} to 3. But \textsl{the closer} $ x $ is to 2, \textsl{the closer} $ {x+1} $ is to 3. In other words, $ {x+1} $ approaches 3 as $ x $ approaches 2. The equality in \eqref{limxto2} thus does not refer to an expression that is \textsl{exactly equal} to a value, but to an expression that \textsl{exactly approaches} a value. This means that limit values bring a somewhat expanded understanding of \sym{$ = $}.
+}
+\eks[1]{
+	Given $ f(x)=\frac{x^2+2x-3}{x-1} $. Find $ \lim\limits_{x\to 1} f(x) $. 
+	
+	\sv
+	When $ x\neq1 $, we have
+	\alg{
+		f(x)&= \frac{(x-1)(x+3)}{x-1} \\
+		&= x+3
+	}
+	This means that 
+	\alg{
+		\lim\limits_{x\to 1} f(x) &= \lim\limits_{x\to 1} x+3 \\
+		&= 4
+	} 
+}
+\section{Continuity}
+\regdef[Continuity]{
+	Given a function $ f(x) $ and a number $ c $. If $ f(c) $ exists, $ f $ is \outl{continuous} at $ x=c $ if
+	\begin{equation}\label{kont}
+		\lim\limits_{x\to c} f(x)=f(c) 
+	\end{equation}
+	If \eqref{kont} is not valid, $ f $ is \outl{discontinuous} at $ x=c $.
+}
+\spr{If a function $ f(x) $ is continuous for all $ x $, $ f $ is called a \outl{continuous function}.}
+\eks[1 \label{konteks1}]{
+	Examine whether the functions are continuous at $ x=2 $.
+	\abc{
+		\item \begin{equation}f(x)= \left\lbrace{
+				\begin{array}{rcr}
+					x+4 &,&x<2 \\
+					-3x+12   &,& x\geq 2
+				\end{array}
+			}\right. 
+		\end{equation}	
+		\item \begin{equation}g(x)= \left\lbrace{
+				\begin{array}{rcr}
+					x+1 &,&x\leq2 \\
+					-x+6   &,& x> 2
+				\end{array}
+			}\right. 
+		\end{equation}	
+	}
+	
+	\sv \vs
+	\abc{
+		\item We have that
+		\algv{
+			\lim\limits_{x\to2^+} f(x)&=f(2)= -3\cdot2+12 = 6\br
+			\lim\limits_{x\to2^-} f(x)&= 2+4 = 6
+		}
+		Thus, $ f $ is continuous at $ x=2 $.
+		\item We have that
+		\algv{
+			\lim\limits_{x\to2^-} g(x)&=g(2)= 2+1 = 3\br
+			\lim\limits_{x\to2^+} g(x)&= -2+6 = 4
+		}
+		Thus, $ g $ is \textsl{not} continuous at $ x=2 $.
+	}
+}
+\newpage
+\info{Visualization of Continuity}{
+	Visually, we can distinguish between continuous and discontinuous functions in this way; continuous functions have connected graphs, discontinuous functions do not. A snippet of the graphs of the functions from \eksref{Example 1} on page \pageref{konteks1} looks like this:
+	\fig{konteks1}
+	Graphs work excellently for determining which functions we \textsl{expect} to be continuous or not, but they are never valid as proof of this. 
+}
+
+\end{document}

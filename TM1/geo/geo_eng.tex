@@ -281,81 +281,82 @@
 }
 \newpage
 \fork{\ref{cossetn} \cossetn}{
-	{\textbf{Tilfellet hvor} \boldmath $ v\in(90^\circ, 180^\circ] $ }\\	
+	{\textbf{The case where} \boldmath $ v\in(90^\circ, 180^\circ] $ }\\	
 	\fig{cossetnforkla}	
-	Av Pytagoras' setning har vi at
+	By Pythagoras' theorem, we have
 	\begin{equation}
 		x^2=b^2-h^2 \label{cossetnforkl1}
 	\end{equation}
-	og at
+	and that
 	\begin{align}
 		a^2&=(x+c)^2+h^2 \label{cosetnforkla2}\\
 		a^2&=x^2+2xc+c^2+h^2 \label{cossetnforkl2}
 	\end{align}
-	Ved å sette uttrykket for $ x^2 $ fra \eqref{cossetnforkl1} inn i \eqref{cossetnforkl2}, får vi at
+	By substituting the expression for $ x^2 $ from \eqref{cossetnforkl1} into \eqref{cossetnforkl2}, we get
 	\begin{align}
 		a^2&=b^2-h^2+2xc+c^2+h^2 \\
 		a^2&=b^2+c^2+2xc \label{cossetnforkl3}
 	\end{align}
-	Av \eqref{cosdef2} har vi at $ x=-b\cos v $, og da er
+	From \eqref{cosdef2} we have that $ x=-b\cos v $, and thus
 	\nn{
 		a^2=b^2+c^2-2bc\cos v
 	}
-	{\textbf{Tilfellet hvor} \boldmath $ v\in[0^\circ, 90^\circ] $ }\\	
+	{\textbf{The case where} \boldmath $ v\in[0^\circ, 90^\circ] $ }\\	
 	\fig{cossetnforklb}	
-	Dette tilfellet skiller seg ut fra tilfellet hvor $ {v\in(90^\circ, 180^\circ]} $ på to måter:
+	This case differs from the case where $ {v\in(90^\circ, 180^\circ]} $ in two ways:
 	\begin{enumerate}[label=(\roman*)]
-		\item I \eqref{cosetnforkla2} får vi $ {(c-x)^2} $ i steden for $ {(x+c)^2} $. I \eqref{cossetnforkl3} får vi da $ -2xc $ i steden for $ +2xc $.
-		\item Av \eqref{cosdef1} er $ x=b\cos v $. Av punkt (i) følger det da at
+		\item In \eqref{cosetnforkla2} we get $ {(c-x)^2} $ instead of $ {(x+c)^2} $. In \eqref{cossetnforkl3} we then get $ -2xc $ instead of $ +2xc $.
+		\item From \eqref{cosdef1}, $ x=b\cos v $. From point (i) it follows that
 		\[ a^2=b^2+c^2-2bc\cos v \]
 	\end{enumerate}
 }
 \fork{\ref{perfvink} \perfvink}{
-	Tilhørende periferi- og sentralvinkler kan deles inn i tre tilfeller.\vsk
+	Peripheral and central angles can be divided into three cases.\vsk
 	
-	\textbf{(i) En diameter i sirkelen er høyre eller venstre vinkelbein i begge vinklene}\\[5pt]
-	I figuren under er $ S $ sentrum i sirkelen, ${\angle BAC= u}$ en periferi-vinkel og $ {\angle BSC=v} $ den tilhørende sentralvinkelen. Vi setter $ {\angle {SCB}=a} $. $ {\angle {ACS}=\angle {SAC}=u} $ og ${\angle {CBS}=\angle {SCB}=a} $ fordi både $ \triangle {ASC} $ og $ \triangle {SBC} $ er likebeinte.\vspace{-1pt}
+	\textbf{(i) A diameter in the circle is the right or left angle leg in both angles}\\[5pt]
+	In the figure below, $ S $ is the center of the circle, ${\angle BAC= u}$ a peripheral angle and $ {\angle BSC=v} $ the corresponding central angle. We set $ {\angle {SCB}=a} $. $ {\angle {ACS}=\angle {SAC}=u} $ and ${\angle {CBS}=\angle {SCB}=a} $ because both $ \triangle {ASC} $ and $ \triangle {SBC} $ are isosceles.\vspace{-1pt}
 	\fig{pervinkforkla}
-	Vi har at \vs
+	We have that \vs
 	\begin{align}
 		2a &= 180^\circ-v \label{aogv} \vn
 		2u+2a &= 180^\circ \label{uoga}
 	\end{align}
-	Vi setter uttrykket for $ 2a $ fra \eqref{aogv} inn i \eqref{uoga}:
+	We substitute the expression for $ 2a $ from \eqref{aogv} into \eqref{uoga}:
 	\alg{
 		2u+180^\circ -v &= 180^\circ\\
 		2u &= v
 	}
 	
-	\textbf{(ii) Vinklene ligger innenfor samme halvdel av sirkelen}\\[5pt]
-	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I tillegg har vi tegnet inn en diameter, som er med på å danne vinklene $ a $ og $ b $. Både $ u $ og $ v $ ligger i sin helhet på samme side av denne diameteren.
+	\textbf{(ii) The angles lie within the same half of the circle}\\[5pt]
+	In the figure below, $ u $ is a peripheral angle and $ v $ the corresponding central angle. Additionally, we have drawn a diameter, which helps form angles $ a $ and $ b $. Both $ u $ and $ v $ are entirely on the same side of this diameter.
 	\fig{pervinkforkld}
-	Ettersom $  {u+a }$  er en periferivinkel, og $ {v+b }$ den tilhørende sentralvinkelen, vet vi av tilfelle 1 at
+	Since $  {u+a }$  is a peripheral angle, and $ {v+b }$ the corresponding central angle, we know from case 1 that
 	\[ 2(u+a) = v+b  \]
-	Men ettersom $ a $ og $ b $ også er samhørende periferi- og sentralvinkler, er $ {2a=b} $. Det betyr at
+	But since $ a $ and $ b $ are also corresponding peripheral and central angles, $ {2a=b} $. Therefore,
 	\algv{
 		2u+b &= v+b \\
 		2u &= v
 	}
 	\newpage
-	\textbf{(iii) Vinklene ligger ikke innenfor samme halvdel av sirkelen}\\[5pt]
-	I figuren under er $ u $ en periferivinkel og $ v $ den tilhørende sentralvinkelen. I figuren til høyre har vi tegnet inn en diameter. Den deler $ u $ inn i vinklene $ a $ og $ c $, og $ v $ inn i $ b $ og $ d $.
+	\textbf{(iii) The angles do not lie within the same half of the circle}\\[5pt]
+	In the figure below, $ u $ is a peripheral angle and $ v $ the corresponding central angle. In the figure to the right, we have drawn a diameter. It divides $ u $ into angles $ a $ and $ c $, and $ v $ into $ b $ and $ d $.
 	\begin{center}
 		\includegraphics[]{\figp{pervinkforklc}}\qquad
 		\includegraphics[]{\figp{pervinkforklb}}
 	\end{center}
-	$ a $ og $ c $ er begge periferivinkler, med henholdsvis $ b $ og $ d $ som tilhørende sentralvinkler. Av tilfelle i) har vi da at
+	$ a $ and $ c $ are both peripheral angles, with respectively $ b $ and $ d $ as corresponding central angles. From case i) we then have
 	\algv{
 		2a &= b \vn
 		2c &= d
 	}
-	Dermed er
+	Thus,
 	\algv{
 		2a+2c &= b+d \\
 		2(a+c) &= v \\
 		2u &= v
 	}
 }
+
 \end{document}
 
 

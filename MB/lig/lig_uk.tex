@@ -1,41 +1,41 @@
-\input{../../doc}
-\input{../../preamb}
+\documentclass[english,hidelinks,xetex, 11 pt, class=report,crop=false]{standalone}
+\input{../../preamb_cyrillic}
 \input{../eng}
 \begin{document}
-	
+	\setcounter{chapter}{1}
 	\section{\ligintro}
-	Even though every mathematical expression involving \sym{$=$} is an \textit{equation}\index{equation}, the word is, traditionally, closely linked to the presence of an \\\textit{unknown} number.\vsk
+	Незважаючи на те, що кожний математичний вираз, що включає \sym{$=$}, є \textit{рівнянням}\index{equation}, традиційно це слово тісно пов'язане з наявністю \textit{невідомого} числа.\vsk
 	
-	Say we want to find the number which when added by $4$ results in $7$. The name of this unknown number is free to choose but commonly it's called $ x $. Our equation can now be written as
+	Припустимо, ми хочемо знайти число, яке, будучи доданим до $4$, дає в результаті $7$. Назву цього невідомого числа можна вибрати довільно, але зазвичай його називають $ x $. Наше рівняння тепер можна записати як
 	\[ x+4=7 \]
-	The $ x $-value\footnote{In other cases it can be several values.} which results in the same values on each side of the equal sign is the \textit{solution} of the equation.
-	It is nothing wrong done by simply observing what the value of $ x $ must be. Probably you have already realized that $ {x=3} $ is the solution of the equation, since
+	Значення $ x $\footnote{У інших випадках може бути кілька значень.}, яке робить значення з обох сторін знака рівності однаковими, є \textit{розв'язком} рівняння.
+	Нічого поганого в тому, щоб просто спостерігати, яким має бути значення $ x $. Ймовірно, ви вже зрозуміли, що $ {x=3} $ є розв'язком рівняння, оскільки
 	\[ 3+4=7 \]
-	However, most equations are difficult to solve simply by observing, and it is therefore vice to take the advantage of more general methods. In reality, there is only one principle to follow: \regv
+	Проте, більшість рівнянь важко розв'язати, просто спостерігаючи, тому мудро користуватися більш загальними методами. Насправді, існує лише один принцип, якому слід слідувати: \regv
 	\st{ \label{principle}
-		We can always carry out a mathematical operation on one of the sides of the equal sign, as long as we carry out the operation on the other side too.}
-	The mathematical operations presented in this book is the four elementary operations. Concerning these the principal sounds:\regv
-	\st{We can always add, subtract, multiply or divide by a number on one side of the equal sign, as long as we also do it on the other side.}\regv
-	The principle follows from the meaning of \sym{$=$}. When two expressions are of equal value, their values are necessarily still equal as long as we carry out identical mathematical operations on them. Anyways, in the coming section we'll specify this principle for every single elementary operation. If you already feel things make sense, you can, without no great loss of insight, skip to \refsec{ligsaml}.
+		Ми завжди можемо виконати математичну операцію на одній із сторін знака рівності, якщо ми виконуємо операцію й на іншій стороні.}
+	Математичні операції, представлені в цій книзі, є чотирма елементарними операціями. Стосовно цих принцип звучить так:\regv
+	\st{Ми завжди можемо додавати, віднімати, множити чи ділити на число з однієї сторони знака рівності, якщо ми також робимо це з іншої сторони.}\regv
+	Принцип випливає зі значення \sym{$=$}. Коли два вирази мають однакову вартість, їхні значення залишаються однаковими, доки ми виконуємо ідентичні математичні операції з ними. У наступному розділі ми конкретизуємо цей принцип для кожної окремої елементарної операції. Якщо вам вже все зрозуміло, ви можете без великої втрати розуміння перейти до \refsec{ligsaml}.
 	\section{\liglos \label{likloysfire}}
-	\textit{In the figures of this section we'll understand equations from what we call the weight principle. In that case, \sym{$=$} indicates\footnote{\sym{$\neq$} symbols ''not equal''.} there is equal weight (equal value) on the left and the right side.} \vs
+	\textit{На малюнках цього розділу ми зрозуміємо рівняння з того, що ми називаємо принципом ваги. У цьому випадку \sym{$=$} вказує\footnote{\sym{$\neq$} символи ''не дорівнює''.} на те, що вага (або значення) зліва і справа є однаковою.} \vs
 	\begin{figure}
 		\centering
 		\includegraphics[]{\figp{lig}}\qquad
 		\includegraphics[]{\figp{lig1}}
 	\end{figure} \vs \vspace{-3pt}
-	\subsection*{Addition and subtraction; moving terms}
-	\subsubsection*{First example} \vspace{-3pt}
-	We have already found the solution of this equation, but let's now solve it in a different way\footnote{\mer In earlier figures, there have been a correspondence between the size of the boxes and the (absolute) value of the number they represent. This does not apply to the boxes representing $ x $.}: \vs
+	\subsection*{Додавання та віднімання; перенесення членів}
+	\subsubsection*{Перший приклад} \vspace{-3pt}
+	Ми вже знайшли розв'язок цього рівняння, але зараз давайте розв'яжемо його іншим способом\footnote{\mer На попередніх малюнках розмір коробок відповідав (абсолютній) величині числа, яке вони представляли. Це не стосується коробок, які представляють $ x $.}: \vs
 	\[ x+4=7 \]
 	\fig{lig2}
-	The value of $ x $ becomes clear if $ x $ is alone on one of the sides, and we can isolate $ x $ on the left side by removing 4. But if we are to remove 4 from the left side, we must also remove 4 from the right side, in order to preserve equal values on both sides. \vspace{-3pt}
+	Значення $ x $ стає очевидним, якщо $ x $ залишиться сам на одній із сторін, і ми можемо ізолювати $ x $ з лівого боку, видаляючи 4. Але якщо ми збираємося видалити 4 з лівого боку, ми також повинні видалити 4 з правого боку, щоб зберегти рівні значення з обох сторін. \vspace{-3pt}
 	\[ x+4-{\color{red}4}=7-{\color{red}4}  \]
 	\fig{lig2b}
-	Since $ 4-{\color{red}4}=0 $ and $ 7-{\color{red}4}=3 $, we get 
+	Оскільки $ 4-{\color{red}4}=0 $ і $ 7-{\color{red}4}=3 $, ми отримуємо 
 	\[ x=3 \]
 	\fig{lig2c}
-	In a more abbreviated way this can be written as
+	Це можна записати стисліше так
 	
 	\prbxl{0.5}{
 		\alg{
@@ -43,36 +43,36 @@
 			x&= 7-4 \\
 			x &= 3
 	}}
-	\prbxr{0.5}{Between the first and second line it is common to say that \textsl{4 has shifted side and therefore also sign (from $ + $ to $ - $).}}
-	\textbf{Second example}\os
-	Let's move on to a somehow more complex equation\footnote{Notice that the figure illustrates $ {4x+(-2)} $ (see \refsec{negmeng}) on the left side. However, $ {4x+(-2)} $ equals $ {4x-2} $ (see \refsec{rekmneg}).}:
+	\prbxr{0.5}{Між першою і другою лініями зазвичай кажуть, що \textsl{4 змінило сторону і тому також знак (з $ + $ на $ - $).}}
+	\textbf{Другий приклад}\os
+	Перейдемо до трохи складнішого рівняння\footnote{Зверніть увагу, що малюнок ілюструє $ {4x+(-2)} $ (див. \refsec{negmeng}) з лівого боку. Однак, $ {4x+(-2)} $ дорівнює $ {4x-2} $ (див. \refsec{rekmneg}).}:
 	\[ 4x-2=3x+5 \]
-	To get an expression with $ x $ exclusively on one side, we remove $ 3x $ on both sides:
+	Щоб отримати вираз з $ x $ виключно на одному боці, ми видаляємо $ 3x $ з обох сторін:
 	\[ 4x-2-{\color{red}3x}=3x+5-{\color{red}3x} \]
-	Now,
+	Тепер,
 	\[ x-2=5 \]
-	To isolate $ x $ we add 2 on the left side. Then we must also add $ 2 $ on the right side:
+	Щоб ізолювати $ x $, ми додаємо 2 з лівого боку. Тоді ми також повинні додати $ 2 $ з правого боку:
 	\[ x-2+{\color{blue}2}=5+{\color{blue}2} \]
-	Hence
+	Отже
 	\[ x=7 \]
-	The steps we have made can be summarized in this way:
+	Кроки, які ми зробили, можна підсумувати так:
 	\begin{flalign*}
-		&& 4x-2&=3x+5 && \llap{1. figure} \\
-		&& 4x-{\color{red}3x}-2&=3x-{\color{red}3x}+5 &&  \llap{2. figure} \\
-		&& x -2 &= 5 &&\llap{3. figure}\\
-		&& x-2+\color{blue}2&=  5+\color{blue}2 &&\llap{4. figure}\\
-		&& x &= 7 &&\llap{5. figure}
+		&& 4x-2&=3x+5 && \llap{1. малюнок} \\
+		&& 4x-{\color{red}3x}-2&=3x-{\color{red}3x}+5 &&  \llap{2. малюнок} \\
+		&& x -2 &= 5 &&\llap{3. малюнок}\\
+		&& x-2+\color{blue}2&=  5+\color{blue}2 &&\llap{4. малюнок}\\
+		&& x &= 7 &&\llap{5. малюнок}
 	\end{flalign*}
-	In a more abbreviated way we can write
+	Стисліше можна записати
 	\alg{
 		4x-2&=3x+5 \\
 		4x-{\color{red}3x}&=5+\color{blue}2\\
 		x &= 7
 	}
 	
-	\reg[Moving numbers across the equal sign \label{bytt}]{To solve an equation, we gather all $x$-terms and all known terms on respective sides of the equal sign. A term which shifts side, also shifts sign.}
+	\reg[Переміщення чисел через знак рівності \label{bytt}]{Щоб розв'язати рівняння, ми збираємо всі $x$-члени і всі відомі члени на відповідних сторонах знака рівності. Член, який переходить на іншу сторону, також змінює знак.}
 	
-	\eks[1]{Solve the equation
+	\eks[1]{Розв'яжіть рівняння
 		\[ 3x+5 =2x+9 \]
 		\sv	
 		\vs \vs \vs \vs
@@ -81,7 +81,7 @@
 			x &=4
 		\end{align*}  \vspace{-20pt}}
 	
-	\eks[2]{Solve the equation
+	\eks[2]{Розв'яжіть рівняння
 		\[ -4x-3 =-5x+12  \]	
 		\sv
 		\vs \vs \vs \vs
@@ -89,26 +89,27 @@
 			-4x+5x &=12+3 \\
 			x &=15
 	\end{align*}}
-	\subsection*{Multiplication and division}	
-	\subsubsection{Division}
-	So far we have studied equations resulting in a single instance of $x $ on one side of the equal sign. Often there are several instances of $ x $, as, for example, in the equation
+	\subsection*{Множення та ділення}
+	
+	\subsubsection{Ділення}
+	Досі ми вивчали рівняння, які призводили до одного випадку $x$ на одній стороні знаку рівності. Часто $x$ зустрічається кілька разів, як, наприклад, у рівнянні
 	\[ 3x=6 \]
 	\fig{lig8}
-	If we separate the left side into three equal groups, we get a single $ x $ in each group. And by separating the right side into three equal groups, all groups present are of equal value
+	Якщо ми розділимо лівий бік на три рівні групи, то отримаємо одне $x$ в кожній групі. І, розділяючи праву сторону на три рівні групи, всі групи мають однакову вартість
 	\[ \frac{3x}{3}=\frac{6}{3} \]
 	\fig{lig9}
-	Therefore
+	Отже
 	\[ x=2 \]
 	\fig{lig10}
-	Let's summarize our calculations:
+	Підсумуємо наші обчислення:
 	\begin{flalign*}
-		&& 3x&=6 && \llap{1. figure} \br
-		&& \frac{\cancel{3}x}{\cancel{3}}&=\frac{6}{3} && \llap{2. figure} \br
-		&& x&=2 && \llap{3. figure}
+		&& 3x&=6 && \llap{1. малюнок} \br
+		&& \frac{\cancel{3}x}{\cancel{3}}&=\frac{6}{3} && \llap{2. малюнок} \br
+		&& x&=2 && \llap{3. малюнок}
 	\end{flalign*}
 	\newpage
-	\reg[Division on both sides of an equation \label{ligdel}]{We can divide both sides of an equation by the same number.}
-	\eks[1]{ Solve the equation
+	\reg[Ділення обох сторін рівняння \label{ligdel}]{Ми можемо ділити обидві сторони рівняння на одне і те ж число.}
+	\eks[1]{ Розв'язати рівняння
 		\[ 	4x = 20  \]
 		\sv \vs \vs \vsb
 		\begin{align*}
@@ -118,7 +119,7 @@
 		\vspace{-20 pt}
 	}
 	
-	\eks[2]{Solve the equation
+	\eks[2]{Розв'язати рівняння
 		\[2x+6 =3x-2 \]
 		\sv \vs \vs \vs \vs
 		\begin{flalign*}
@@ -128,38 +129,38 @@
 			&& x &= 8&&
 	\end{flalign*}}
 	
-	\subsubsection*{Multiplication}
-	Let's solve the equation
+	\subsubsection*{Множення}
+	Давайте розв'яжемо рівняння
 	\[ \frac{x}{3}=4 \]
 	\fig{lig11}
-	We can get a unit $ x $ on the left side if we add two more instances of $ \frac{x}{3} $. The equation informs that $ \frac{x}{3} $ equals 4, this implies that for every instance of $ \frac{x}{3} $ we add to the left side, we must add 4 to the right side, in order to keep the balance.
+	Ми можемо отримати одиничне $ x $ зліва, якщо додамо ще два випадки $ \frac{x}{3} $. Рівняння вказує, що $ \frac{x}{3} $ дорівнює 4, це означає, що на кожний випадок $ \frac{x}{3} $, який ми додаємо зліва, ми повинні додати 4 справа, щоб зберегти баланс.
 	\[ \frac{x}{3}+\frac{x}{3}+\frac{x}{3}=4+4+4 \]
 	\fig{lig12}
-	Now we notice that \y{\frac{x}{3}+\frac{x}{3}+\frac{x}{3}=\frac{x}{3}\cdot3} and that \y{4+4+4=4\cdot3}:
+	Тепер ми помічаємо, що \y{\frac{x}{3}+\frac{x}{3}+\frac{x}{3}=\frac{x}{3}\cdot3} і \y{4+4+4=4\cdot3}:
 	\[ \frac{x}{3}\cdot 3 = 4\cdot 3 \]
 	\fig{lig12b}
-	Since $ \frac{x}{3}\cdot3=x $ and $ 4\cdot3=12 $, we have
+	Оскільки $ \frac{x}{3}\cdot3=x $ і $ 4\cdot3=12 $, ми маємо
 	\[ x=12 \]
 	\fig{lig13}
-	Our steps can be summarized in the following way:
+	Наші кроки можна підсумувати таким чином:
 	\begin{flalign*}
-		&& \frac{x}{3}&=4 && \llap{1. figure} \br 
-		&& \frac{x}{3}+\frac{x}{3}+\frac{x}{3} &= 4+4+4  &&\llap{2. figure} \br
-		&& \frac{x}{3}\cdot 3&=4\cdot3 && \llap{3. figure} \\
-		&& x&=12 && \llap{4. figure}
+		&& \frac{x}{3}&=4 && \llap{1. малюнок} \br 
+		&& \frac{x}{3}+\frac{x}{3}+\frac{x}{3} &= 4+4+4  &&\llap{2. малюнок} \br
+		&& \frac{x}{3}\cdot 3&=4\cdot3 && \llap{3. малюнок} \\
+		&& x&=12 && \llap{4. малюнок}
 	\end{flalign*}
-	In a more abbreviated form this can be written as
+	У стислішій формі це можна записати як
 	\alg{
 		\frac{x}{3}&= 4 \br 
 		\frac{x}{\cancel{3}}\cdot \cancel{3} &= 4\cdot 3 \br
 		x &= 12
 	}
 	\newpage
-	\reg[Multiplication on both sides of an equation]{
-		We can multiply both sides of an equation by the same number.
+	\reg[Множення обох сторін рівняння]{
+		Ми можемо множити обидві сторони рівняння на одне і те ж число.
 	}
 	\eks[1]{
-		Solve the equation
+		Розв'яжіть рівняння
 		\[ \frac{x}{5}=2 \]
 		\sv \vsb \vs
 		
@@ -169,7 +170,7 @@
 		}
 	}
 	\eks[2]{
-		Solve the equation
+		Розв'яжіть рівняння
 		\[ \frac{7x}{10}-5=13+\frac{x}{10} \]
 		\sv \vsb \vs
 		
@@ -182,168 +183,170 @@
 			x&=30
 		}
 	}
-	\newpage
-	\section{\ligloso \label{ligsaml}}
-	\reg[Solving methods with elementary operations \label{lsmlig}]{
-		We can always
-		\begin{itemize}
-			\item add or subtract both sides of an equation by the same number. This is equivalent to shifting a term from one side to the other, also shifting the terms sign.
-			\item multiply or divide both sides of an equation by the same number.
-		\end{itemize}
-	}
-	\eks[1]{
-		Solve the equation 
-		\[ 3x-4=6+2x \]
-		
-		\sv \vs \vs
-		
-		\algv{
-			3x-2x&=6+4 \\
-			x&=10
-		}
-	}
-	\eks[2]{
-		Solve the equation
-		\[ 9-7x=-8x+3 \]
-		\sv \vs \vs
-		\algv{
-			8x-7x&=3-9 \\
-			x&=-6
-		}
-	}
-	\newpage
-	\eks[3]{
-		Solve the equation
-		\[ 10x-20=7x-5 \]
-		\sv \vs \vsb
-		\algv{
-			10x-7x&=20-5 \\
-			3x&=15 \\
-			\frac{\cancel{3}x}{\cancel{3}}&=\frac{15}{3} \\
-			x&=5
-		}
-	}
-	\eks[4]{
-		Solve the equation
-		\[ 15-4x=x+5 \]
-		
-		\sv \vs \vs \vs
-		\alg{
-			15-5&=x+4x \\
-			10&=5x\\
-			\frac{10}{5}&=\frac{\cancel{5}x}{\cancel{5}}\\
-			2&=x
-		}
-		{\footnotesize \mer In the other examples, we have chosen to collect the instances of $ x $ on the left side of the equation but we can just as well collect them on the right side. By doing that here, we have avoided calculations with negative numbers.}
-	}	
 	
-	\eks[5]{
-		Solve the equation
-		\[ \frac{4x}{9}-20=8-\frac{3x}{9} \]
-		
-		\sv \vs \vsb
-		\alg{
-			\frac{4x}{9}+\frac{3x}{9}&=20+8 \\
-			\frac{\cancel{7}x}{9\cdot \cancel{7}}&=\frac{28}{7} \br
-			\frac{x}{\cancel{9}}\cdot \cancel{9}&=4\cdot 9\\
-			x&=36
-		}
-	}
+\newpage
+\section{\ligloso \label{ligsaml}}
+\reg[Методи розв'язання з використанням елементарних операцій \label{lsmlig}]{
+	Ми завжди можемо
+	\begin{itemize}
+		\item додавати або віднімати однакове число з обох боків рівняння. Це еквівалентно перенесенню терміну з одного боку на інший, також змінюючи знак терміну.
+		\item множити або ділити обидва боки рівняння на одне і те ж число.
+	\end{itemize}
+}
+\eks[1]{
+	Розв'яжіть рівняння
+	\[ 3x-4=6+2x \]
 	
-	\newpage
-	\eks[6]{
-		Solve the equation	
-		\[ \frac{1}{3}x+\frac{1}{6}=\frac{5}{12}x+2  \vs\]	
-		
-		\sv
-		To avoid fractions, we multiply both sides by the common denominator 12:
-		\begin{align}
-			\left(\frac{1}{3}x+\frac{1}{6}\right)12&=\left(\frac{5}{12}x+2\right)12 \br	
-			\frac{1}{3}x\cdot12+\frac{1}{6}\cdot12&=\frac{5}{12}x\cdot12+2\cdot12 \tag{$ \ast $}\br	
-			4x+2 &= 5x+24 \\
-			4x-5x &= 24-2 \\
-			-x &= 22 \\
-			\frac{\cancel{-1}\,x}{\cancel{-1}} &= \frac{22}{-1} \\
-			x &= -22
-		\end{align} 
+	\sv \vs \vs
+	
+	\algv{
+		3x-2x&=6+4 \\
+		x&=10
 	}
-	\info{Tip}{
-		Some like to make the rule that ''{we can multiply or divide all terms by the same number}''. In that case, we could have jumped to the second line in the calculations of the example above.
+}
+\eks[2]{
+	Розв'яжіть рівняння
+	\[ 9-7x=-8x+3 \]
+	\sv \vs \vs
+	\algv{
+		8x-7x&=3-9 \\
+		x&=-6
 	}
-	\eks[7]{
-		Solve the equation
-		\[ 3-\frac{6}{x}= 2+\frac{5}{2x} \vs\]
-		
-		\sv
-		We multiply both sides by the common denominator $ 2x $:
-		\alg{
-			2x\left(3-\frac{6}{x}\right)&= 2x\left(2+\frac{5}{2x}\right) \br
-			6x -12 &= 4x+5\\
-			6x-4x &= 5+12\\
-			2x &= 17\\
-			x&=\frac{17}{2}
-		}
+}
+\newpage
+\eks[3]{
+	Розв'яжіть рівняння
+	\[ 10x-20=7x-5 \]
+	\sv \vs \vsb
+	\algv{
+		10x-7x&=20-5 \\
+		3x&=15 \\
+		\frac{\cancel{3}x}{\cancel{3}}&=\frac{15}{3} \\
+		x&=5
 	}
-	\section{Power equations}
-	Let's solve the equation
-	\[ x^2=9 \]
-	This is called a \textit{power equation}\index{power equation}. In general, power equations are difficult to solve applying the four elementary operations only. Applying power-rules, we raise both sides to the power of the inverse of the exponent associated with $ x $:
-	\[ \left(x^2\right)^\frac{1}{2}=9^\frac{1}{2} \]
-	By \rref{potsomgrunn}, we have
+}
+\eks[4]{
+	Розв'яжіть рівняння
+	\[ 15-4x=x+5 \]
+	
+	\sv \vs \vs \vs
 	\alg{
-		x^{2\cdot\frac{1}{2}}&=9^\frac{1}{2} \\
-		x&=9^\frac{1}{2}
+		15-5&=x+4x \\
+		10&=5x\\
+		\frac{10}{5}&=\frac{\cancel{5}x}{\cancel{5}}\\
+		2&=x
 	}
-	Since $ 3^2=9 $, we have $ 9^\frac{1}{2}=3 $. Now observe this: \vsk
+	{\footnotesize \mer У інших прикладах ми вирішили збирати випадки $ x $ з лівого боку рівняння, але ми можемо так само зібрати їх і з правого боку. Зробивши це тут, ми уникли обчислень з від'ємними числами.}
+}	
+
+\eks[5]{
+	Розв'яжіть рівняння
+	\[ \frac{4x}{9}-20=8-\frac{3x}{9} \]
 	
-	\textit{The principle stated on page \pageref{principle} says we can, like we just did, carry out a mathematical operation on both sides of an equation. However, sticking to this principle does not guarantee that all solutions are found.} \\ \vsk
+	\sv \vs \vsb
+	\alg{
+		\frac{4x}{9}+\frac{3x}{9}&=20+8 \\
+		\frac{\cancel{7}x}{9\cdot \cancel{7}}&=\frac{28}{7} \br
+		\frac{x}{\cancel{9}}\cdot \cancel{9}&=4\cdot 9\\
+		x&=36
+	}
+}
+
+\newpage
+\eks[6]{
+	Розв'яжіть рівняння
+	\[ \frac{1}{3}x+\frac{1}{6}=\frac{5}{12}x+2  \vs\]
 	
-	Concerning our equation, we know that $ {x=3} $ is a solution. For the sake of it, we can confirm this by the calculation
-	\[ 3^2=3\cdot3=9 \]
-	But we also have
-	\[ (-3)^2=(-3)(-3)=9 \]
-	Hence, $ -3 $ is also a solution of our original equation!
+	\sv
+	Щоб уникнути дробів, множимо обидві сторони на спільний знаменник 12:
+	\begin{align}
+		\left(\frac{1}{3}x+\frac{1}{6}\right)12&=\left(\frac{5}{12}x+2\right)12 \br
+		\frac{1}{3}x\cdot12+\frac{1}{6}\cdot12&=\frac{5}{12}x\cdot12+2\cdot12 \tag{$ \ast $}\br
+		4x+2 &= 5x+24 \\
+		4x-5x &= 24-2 \\
+		-x &= 22 \\
+		\frac{\cancel{-1}\,x}{\cancel{-1}} &= \frac{22}{-1} \\
+		x &= -22
+	\end{align}
+}
+\info{Порада}{
+	Деякі вважають за краще правило, що ''{ми можемо множити або ділити всі терміни на одне й те ж число}''. У цьому випадку ми могли б перейти до другого рядка у обчисленнях згаданого прикладу.
+}
+\eks[7]{
+	Розв'яжіть рівняння
+	\[ 3-\frac{6}{x}= 2+\frac{5}{2x} \vs\]
 	
-	\reg[Power equations]{
-		An equation which can be written as
-		\[ x^a=b \]
-		where $ a $ and $ b $ are constants,
-		is a \textit{power} equation. \vsk
-		
-		The equation has $ a $ distinct solutions.
-	} 
-	\newpage
-	\eks[1]{
-		Solve the equation 
-		\[ x^2+5= 21\]
-		\sv \vs \vs \vs
-		\algv{
-			x^2+5&= 21\\
-			x^2 &= 21-5\\
-			x^2 &= 16
-		}
-		Since $ {4\cdot4 =16} $ and $ {(-4)\cdot(-4)=16} $, we have
-		\[ x=4\qquad\vee\qquad x=-4 \]
+	\sv
+	Множимо обидві сторони на спільний знаменник $ 2x $:
+	\alg{
+		2x\left(3-\frac{6}{x}\right)&= 2x\left(2+\frac{5}{2x}\right) \br
+		6x -12 &= 4x+5\\
+		6x-4x &= 5+12\\
+		2x &= 17\\
+		x&=\frac{17}{2}
 	}
-	\eks[2]{
-		Solve the equation
-		\[ 3x^2+1=7 \]
-		\sv \vs \vs \vs
-		\alg{
-			3x^2&=7-1 \\
-			3x^2&=6 \\
-			\frac{\cancel{3}x^2}{\cancel{3}}&=\frac{6}{3}\\
-			x^2&=2}
-		Hence,
-		\[ x=\sqrt{2}\qquad\vee\qquad x=-\sqrt{2} \]
+}
+\section{Рівняння зі ступенями}
+Давайте розв'яжемо рівняння
+\[ x^2=9 \]
+Це називається \textit{ступеневим рівнянням}\index{power equation}. Загалом, ступеневі рівняння важко розв'язати, застосовуючи лише чотири елементарні операції. Застосовуючи правила ступенів, підносимо обидві сторони до ступеня, оберненого до показника ступеня при $ x $:
+\[ \left(x^2\right)^\frac{1}{2}=9^\frac{1}{2} \]
+За \rref{potsomgrunn}, маємо
+\alg{
+	x^{2\cdot\frac{1}{2}}&=9^\frac{1}{2} \\
+	x&=9^\frac{1}{2}
+}
+Оскільки $ 3^2=9 $, маємо $ 9^\frac{1}{2}=3 $. Тепер зверніть увагу: \vsk
+
+\textit{Принцип, викладений на сторінці \pageref{principle} каже, що ми можемо, як ми щойно зробили, виконувати математичну операцію на обох сторонах рівняння. Однак, дотримання цього принципу не гарантує, що будуть знайдені всі розв'язки.} \\ \vsk
+
+Стосовно нашого рівняння, ми знаємо, що $ {x=3} $ є розв'язком. Заради цього ми можемо підтвердити це обчисленням
+\[ 3^2=3\cdot3=9 \]
+Але ми також маємо
+\[ (-3)^2=(-3)(-3)=9 \]
+Отже, $ -3 $ також є розв'язком нашого оригінального рівняння!
+
+\reg[Ступеневі рівняння]{
+	Рівняння, яке можна записати як
+	\[ x^a=b \]
+	де $ a $ і $ b $ є сталими,
+	є \textit{ступеневим} рівнянням. \vsk
+	
+	Рівняння має $ a $ різних розв'язків.
+}
+\newpage
+\eks[1]{
+	Розв'яжіть рівняння
+	\[ x^2+5= 21\]
+	\sv \vs \vs \vs
+	\algv{
+		x^2+5&= 21\\
+		x^2 &= 21-5\\
+		x^2 &= 16
 	}
-	\info{\note}{
-		Although the equation
-		\[ x^a=b \]
-		has $ a $ solutions, they are not necessarily all \textit{real}\footnote{As earlier mentioned, \textit{real} and \textit{imaginary} numbers lie outside the scope of this book.}. Concerning this book, it means we settle with finding all rational or irrational numbers which solves the equation. For example,
-		\[ x^3=8 \]
-		has 3 solutions, but we settle with the solution $ x=2 $.
-	}
+	Оскільки $ {4\cdot4 =16} $ і $ {(-4)\cdot(-4)=16} $, маємо
+	\[ x=4\qquad\vee\qquad x=-4 \]
+}
+\eks[2]{
+	Розв'яжіть рівняння
+	\[ 3x^2+1=7 \]
+	\sv \vs \vs \vs
+	\alg{
+		3x^2&=7-1 \\
+		3x^2&=6 \\
+		\frac{\cancel{3}x^2}{\cancel{3}}&=\frac{6}{3}\\
+		x^2&=2}
+	Отже,
+	\[ x=\sqrt{2}\qquad\vee\qquad x=-\sqrt{2} \]
+}
+\info{\note}{
+	Хоча рівняння
+	\[ x^a=b \]
+	має $ a $ розв'язків, вони не обов'язково всі \textit{дійсні}\footnote{Як зазначалося раніше, \textit{дійсні} та \textit{уявні} числа виходять за рамки цієї книги.}. Стосовно цієї книги, це означає, що ми задовольняємося знаходженням усіх раціональних або ірраціональних чисел, які розв'язують рівняння. Наприклад,
+	\[ x^3=8 \]
+	має 3 розв'язки, але ми задовольняємося з розв'язком $ x=2 $.
+}
+
 \end{document}
 
 

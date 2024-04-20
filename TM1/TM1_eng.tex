@@ -1,0 +1,89 @@
+\input{../doc}
+\input{../preamb}
+\input{eng}
+
+
+\begin{document}
+	
+	\import{kap0/}{framside}
+	
+	{\footnotesize \tableofcontents}
+	\newpage
+	
+	\import{cmt/}{cmt_eng}
+	
+	\chapter{Sets and conditions} \label{Meng}
+	\newpage
+	\import{meng/}{meng_eng}
+	\import{meng/}{meng_opg_eng}
+	
+	\chapter{Algebra} \label{Alg}
+	\newpage
+	\import{alg/}{alg_eng} 
+	\import{alg/}{alg_opg_eng}
+	
+	\chapter{Geometry} \label{Geo}
+	\newpage
+	\import{geo/}{geo_eng}
+	\import{geo/}{geo_opg_eng}	
+	
+	\chapter{Vectors} \label{Vek}
+	\newpage
+	\import{vek/}{vek_eng}
+	\import{vek/}{vek_opg_eng}	
+		
+	\chapter{Limits and continuity} \label{Lim}
+	\newpage
+	\import{lim/}{lim_eng}	
+	\import{lim/}{lim_opg_eng}
+
+	\chapter{Differentiation} \label{Derivasjon} \label{Der}
+	\newpage
+	\import{der/}{der_eng}
+	\import{der/}{der_opg_eng}	
+	
+	\chapter{Function properties} \label{Funk}
+	\newpage
+	\import{inv/}{inv_eng}
+	\import{inv/}{inv_opg_eng}
+
+	\titleformat{\chapter}[hang]
+	{\normalfont\LARGE\bfseries}{}{}{\vspace{-1cm}\Huge}
+	\chapter*{Appendix \ref{vdlfunknavn}-\ref{vdltangent} \label{Tips} \addcontentsline{toc}{chapter}{Appendix A-F}}
+	\phantomsection
+	\vspace{20 pt}
+	
+	\import{vedl/}{funknavn_eng}
+	\import{vedl/}{bytvar_eng}
+	\import{vedl/}{sincostan_eng}	
+	\import{vedl/}{ekspfunk_eng}
+	\import{vedl/}{rol_eng}	
+	\import{vedl/}{tan_eng}
+	
+	{\printindex \addtocontents{toc}{\protect\vspace{-5pt}}
+		\addcontentsline{toc}{chapter}{Index}\phantomsection}
+	
+	\chapter*{Answers}
+	\setlength{\parskip}{5pt}
+	\addtocontents{toc}{\protect\vspace{-5pt}}
+	\addcontentsline{toc}{chapter}{Fasit}\phantomsection
+	\import{meng/}{meng_fas}
+	\import{alg/}{alg_fas}
+	\import{geo/}{geo_fas}
+	\import{vek/}{vek_fas}
+	\import{lim/}{lim_fas}
+	\import{der/}{der_fas}
+	\import{inv/}{inv_fas}
+
+	
+	\newpage
+	\section*{Literature}
+	Moise, E. E. (1974). \textit{Elementary geometry from an advanced standpoint}. Reading, Addison-Wesley Publishing Company.\vsk
+	
+	Lindstrøm, T. (2006). \textit{Kalkulus} (2. utg). Oslo, Universitetsforlaget AS.\vsk
+	
+	Spivak, M. (1994). \textit{Calculus} (3. utg). Cambridge, Cambridge University Press
+	
+	
+\end{document}
+

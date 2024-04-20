@@ -13,6 +13,9 @@
 % Exercises
 \newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
 
+\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
+
 %references
 \newcommand{\reftab}[1]{\hrs{#1}{tabell}}
 \newcommand{\rref}[1]{\hrs{#1}{regel}}
@@ -50,7 +53,7 @@
 
 % Funksjonsdrofting
 \newcommand{\monder}{Monotoniegenskaper og den deriverte}
-\newcommand{\defmengdgittint}{Definisjonsmengde på voksende/avtagende intervall}
+\newcommand{\verdmengdgittint}{Definisjonsmengde på voksende/avtagende intervall}
 \newcommand{\fderekstr}{$ \bm{f'=0} $ for lokale ektstremalpunkt}
 \newcommand{\andredertest}{Andrederiverttesten}
 

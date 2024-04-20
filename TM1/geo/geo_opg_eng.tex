@@ -1,0 +1,178 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\opgt
+
+\op{opggeosinvmin180}
+Given $ v\in [0^\circ, 90^\circ] $.
+\abc{
+	\item Show that $ \sin v = \sin(180^\circ-v) $.
+	\item Show that $ \cos v = -\cos(180^\circ-v) $
+}
+
+\op{opggeoarsetn}
+Find the area of $ \triangle ABC $ when
+\abc{
+	\item $ \angle A=60^\circ $, $ AB=5 $ and $ AC=7 $.
+	\item $ \angle B=18^\circ $, $ AB=4 $ and $ BC=3 $. $ \left(\sin 18^\circ = \frac{\sqrt{5}-1}{4}\right) $
+	\item $ \angle A= 75^\circ $, $ \angle B=60^\circ $, $ AC=\sqrt{6} $ and $ BC=\sqrt{3}+1 $
+}
+
+\op{opggeoarealsetn}
+\abch{
+	\item Prove the area theorem.
+	\item Prove the sine theorem.
+}
+
+\op{opggeoviscos}
+\prbxl{0.5}{\abc{
+		\item Show that $ \cos 45^\circ=\frac{\sqrt{2}}{2} $.
+		\item Show that $ \sin 30^\circ=\frac{1}{2} $.
+		\item Show that $ \cos 30^\circ=\frac{\sqrt{3}}{2} $.
+}}
+\fgbxr{0.3}{\fig{opggeo1}}
+
+\newpage
+\eksop{1TV23D1}{1TV23D1opg1} \vs
+\prbxl{0.5}{
+	A right triangle has sides 6, 8, and 10. See the figure to the right. \os
+	
+	Show that
+	\[ (\sin u)^2+(\cos u)^2 =1 \]
+}
+\fgbxr{0.5}{\fig{1tv23d1opg1}}
+
+\eksop{1TH22D1}{1TH22D1opg1} 
+\prbxl{0.5}{Given the triangle to the right. Show that
+	\[ \frac{\sin u}{\cos u}=\tan u \]
+	\vspace{35pt}
+}
+\fgbxr{0.5}{\fig{1th22opg1}}
+
+
+
+\op{opggeovistan}
+Show that $ \tan v = \dfrac{\sin v}{\cos v}  $.
+
+\nes
+
+\eksop{1TH21D1}{1TH21D1opg8}
+\fig{eks1th21opg8}
+Given the triangle above. Determine the length of side $ BC $.
+
+\op{opggeoabcr}
+Given a triangle with sides $ a $, $ b $, and $ c $ and an inscribed circle with radius $ r $. Explain why the area of the triangle is given as 
+\[ \frac{1}{2}(a+b+c)r \]
+\newpage
+\op{opggeo2r}
+Let $ a=BC $, $ b=AC $, $ c=AB $ and $ DM=r $.
+\abc{
+	\item Show that $ r= \frac{ac}{a+b+c}$.
+	\item Show that $ 2r=a+c-b $.
+	\item Use the expressions from tasks a) and b) to find $ b^2 $ expressed by $ a $ and $ c $. What is this formula called?
+}
+\fig{geoopg2r}
+
+\op{opggeolikeperf}
+Explain why, from \rref{perfvink}, it follows that two angles spanning the same arc are equal in size.
+\fig{opggeolikeperf}
+
+\op{opggeotalesTM} \vs
+\abc{
+	\item Show that Thales' theorem\footnote{See \mb.} follows from \rref{perfvink}.
+	\item Given a right-angled triangle $ \triangle ABC $ with hypotenuse $ AB $.
+	Which of  \sym{$ \Rightarrow $},  \sym{$ \Leftarrow $} and \sym{$ \iff $} should replace \sym{$ ??? $} below to describe the \textsl{inverse} case of Thales' theorem.
+	{\small
+		\[C=90^\circ \quad???\quad \text{$ AB $ is a diameter in the circumscribed circle of }\triangle ABC\]}
+}
+
+\newpage
+\op{opggeotanchord}
+The red line is tangent to the circle. Show that $ \angle BAC=\angle EBC $.
+\fig{geoopgtanchord}
+
+\newpage
+\grubop{1TH21D1opg9} 
+(1TH21D1) \\
+A triangle has a perimeter of 12, and one side of the triangle is 2. Determine the area of the triangle.
+
+
+\grubop{1TV21D1opg2}
+(1TV21D1)\\
+Sort the values in ascending order.
+\[ \sin 60^\circ\qquad\qquad \left(\frac{3}{4}\right)^{-1}\qquad\qquad\sin 160^\circ\qquad\qquad \lg 1\]
+
+\grubop{t1h23d1opg1}
+An equilateral triangle has sides of length 2.
+\fig{t1h23d1opg1}
+Use the triangle to show that
+\[ \cos 60^\circ = \frac{1}{2} \]
+
+\grubop{t1h23d1opg4}
+Which of the two triangles has the larger area? \os
+
+Remember to argue why your answer is correct.
+\fig{t1h23d1opg4}
+
+\grubop{opggeolimsin0overx}
+Show that 
+\[\lim\limits_{x\to0} \frac{\sin x}{x}=1 \]
+
+
+\grubop{opggeosin18}
+Show that $ \sin 18^\circ=\frac{1}{4}(\sqrt{5}-1) $. (Hint: See figure.)
+\fig{opggeosin18}
+
+
+\grubop{opggeobeviscossetn}
+Prove the cosine theorem.
+
+
+\newpage
+\grubop{opggeoviscosuv}
+Show that
+\[ \cos(u+v)= \cos u\cos v-\sin u \sin v \]
+It is sufficient to examine the case where $ v,u \in [0^\circ, 90^\circ] $.
+
+\grubop{opggeotalesTMconv}
+Prove the converse case of Thales theorem (see \refops{opggeotalesTM} ).
+
+
+\grubop{opggeo180minv}
+Show that
+\[ u=180^\circ-v \]
+\fig{opggeo180minv}
+
+\grubop{opggeokordteo}
+Show that 
+\[ AP\cdot PB = DP\cdot PC \]
+\fig{opggeokordteo}
+\mers{This result is often called \outl{the chord theorem}.}
+
+\newpage
+\grubop{opggeovinkar}
+Let $ r $ be the radius of the semicircle. Express the area of the blue area in terms of $ v $ and $ r $.
+\fig{opggeovinkar}
+
+\grubop{opggeoR}
+Let $ r $ be the radius of the circumscribed circle to $ \triangle ABC $. Show that
+\[ r=\frac{abc}{4A_{\triangle ABC}} \]
+\fig{opggeoR}
+
+\grubop{opgeo45vink}
+$ E $ is the midpoint of the square. Find the value of $ v $.
+\fig{opggeo45vink}
+
+\newpage
+\grubop{opggeotangentsq}
+Show that
+\[ AB^2 = BC\cdot CD \]
+\fig{opggeotangentsq}
+
+
+
+\end{document}
+
+
