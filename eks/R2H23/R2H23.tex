@@ -1,0 +1,183 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+\subsection*{Oppgave 1}	
+\[ \int_{-1}^{1}x^3+2x\,dx = \left[\frac{1}{4}x^4+x^2\right]_{-1}^1 = 0 \]
+Dette svart forteller at arealet avgrenset av grafen til $ x^3+2x $ og $ x $-aksen er like stort på begge sider av $ x $-aksen på intervallet $ [-1, 1] $.
+
+\subsection*{Oppgave 2}
+$ x $-verdiene til de to skjæringspunktene gjenkjenner vi som $ x=\frac{\pi}{4} $ og $ x=-\frac{3\pi}{4} $ (fordi da er $ \cos x =\sin x $). Da $ \cos x\geq \sin x $ for $ x\in\left[-\frac{3\pi}{4}, \frac{\pi}{4}\right] $, er arealet til det fargede området gitt som
+
+\[ \int_{-\frac{3\pi}{4}}^{\frac{\pi}{4}} \cos x-\sin x \,dx =\Big[\sin x + \cos x\Big]_{-\frac{3\pi}{4}}^{\frac{\pi}{4}}=\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}-\left(-\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}\right)=2\sqrt{2} \]
+
+\subsection*{Oppgave 3}
+\abc{
+	\item Da summen av den uendelige rekka er 8, og $ a_1=4 $, har vi av formelen for summen av en uendelig geometrisk rekke at
+	\[ 8=\frac{4}{1-k} \] 
+	Altså er $ k=\frac{1}{2} $, og dermed har vi av formelen for summen av en geometrisk rekke at
+	\alg{
+		S_4 = 4\cdot\frac{1-\left(\frac{1}{2}\right)^4}{1-\frac{1}{2}}=\frac{15}{2}
+	}
+	\item Den eksplisitte formelen for ledd $ i $ i en aritmetisk rekke er $ a_i = a_1+d(i-1) $, og dermed har vi at
+	\[ a_1 +a_4 + a_7 = a_1 + (a_1+3d) + (a_1+6d)=3a_1+9d=3(a_1+3d)=3a_4 \]
+	Altså er
+	\algv{
+		3a_4 &= 114 \\
+		a_4 &= 38
+	}
+}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Ut ifra koeffisientene foran $ x $, $ y $ og $ z $ i likningene til planet, har vi at $ [1, -2, 2] $ er en normalvektor til $ \alpha $. En parameterframstilling $ l $ for linja gjennom $ A $ som står normalt på planet $ \alpha $ er dermed gitt som
+	\begin{equation}l: \left\lbrace{
+		\begin{array}{lll}
+			x= 4 + t   \\
+			y= 2 + -2t    \\
+			z= 2 + 2t 
+		\end{array}
+	}\right. 
+\end{equation}
+\item Vi bruker formelen for avstanden $ h $ mellom et punkt og et plan, og får at 
+\[ h=\frac{\left|4+2(-2)+2\cdot2+1\right|}{\sqrt{1^2+(-2)+2^2}}=\frac{5}{3} \]
+}
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item Eleven ønsker å finne det samlede arealet avgrenset av grafen til $ f(x)=x^2-1 $ og $ x $-aksen på intervallet $ [-2, 2] $. Dette fordi eleven i skriptet
+\begin{itemize}
+	\item definerer nevnte funksjon og intervall.
+	\item ved bruk av en for-løkke tilnærmer integralet $ \int_{-2}^{2}|f|\, dx $, som gir det nevnte arealet.
+\end{itemize}
+\item På intervallet $ [-2, 2] $ er $ f(x)=x^2-1 $ positiv når $ |x|>1 $ og negativ når $ |x|<1 $. Følgelig er
+\[ \int_{-2}^{2}|f|\,dx = \int_{-2}^{-1} f\,dx + \int_{-1}^{1} -f\,dx+\int_{1}^{2}f\,dx \]
+}
+Vi har at 
+\alg{
+\int x^2-1 \, dx &= \frac{1}{3}x^3-x \br
+\left[\frac{1}{3}x^3-x\right]_{-2}^{-1}&=-\frac{1}{3}+1-\left(-\frac{8}{3}+2\right)=\frac{4}{3} \br
+-\left[\frac{1}{3}x^3-x\right]_{-1}^{1}&=-\frac{1}{3}+1+\left(-\frac{1}{3}+1\right)=\frac{4}{3} \br
+\left[\frac{1}{3}x^3-x\right]_{1}^{2}&=\frac{8}{3}-2-\left(\frac{1}{3}-1\right)=\frac{4}{3}
+}
+Av summen av de bestemte integralene har vi at
+\[ \int_{-2}^{2}f\,dx=4 \]
+\textit{Kommentar: Vi kunne spart oss litt utregning ved å poengtere at $ \int_{-2}^{2} |f|\, dx = \int_{-2}^{2}f\,dx + 2\int_{-1}^{1}f\, dx$}
+
+\subsection*{Oppgave 6}
+$ O(0 ,0 ,0) , A(4,0,0) , B(4, 4,0) , C(0, 4,0) ,
+D(1,1, 3) , E (3 ,1, 3) , F (3 , 3 , 3) og G(1, 3 , 3) . $
+Vi har at
+\alg{
+\vv{BC}&=(0-4, 4-4, 0-0)=(-4, 0, 0)\br
+\vv{BF}&=(-1, -1, 3)\br
+\vv{GC}&=(-1, 1, 3)\br
+\vv{GF}&=(2, 0, 0)
+}
+Videre er
+{	\footnotesize\begin{align*}
+	\vv{BC}\times\vec{BF} &= \left|\begin{matrix}
+		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+		-4 & 0 & 0 \\
+		-1 & -1 & 3
+	\end{matrix}\right|=[0\cdot3-0(-1), -\left((-4)3-(-1)0\right), (-4)(-1)-(-4)0]=[0, 12, 4] \br
+	\vv{GC}\times\vec{GF} &= \left|\begin{matrix}
+		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+		-1 & 1 & 3 \\
+		2 & 0 & 0
+	\end{matrix}\right|=[0, -6, -2]\br
+2A_{\triangle BCF}&=\left|\vv{BC}\times\vec{BF}\right|=4\sqrt{0^2+3^2+1^2}= 4\sqrt{10}\br
+2A_{\triangle GCF}&=\left|\vv{GC}\times\vv{GF}\right|=2\sqrt{10}
+\end{align*}
+}
+Dermed er
+\[ A_{\square BCGF}=A_{\triangle BCF}+A_{\triangle GCF}=2\sqrt{10}+\sqrt{10}=3\sqrt{10} \]
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Skriver tallene fra tabellen inn i regnearket og lager en liste med punkt. Siden tidevannet er periodisk, bruker regresjon med en sinus-funksjon. Av dette får vi modellen
+\[ f(x)= 83.55+30.97\sin(0.52x+0.19)\]
+hvor $ x $ er antall timer etter midnatt 24. april og $ f $ er vannstanden gitt i cm.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{opg1a}
+\end{figure}
+\item Den største økningen i vannstand skjer når $ f'(x) $ når sitt toppunkt. For å finne ekstremalpunkt 25. april må vi søke på intervallet $ [24, 48] $. Finner da at $ f'(x) $ har toppunkt når $ x\approx36.5 $, altså ca. kl. $ 12 $ den dagen. 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{opg1b}
+\end{figure}
+\item Av inspeksjon av grafen ser vi at vannstanden er synkende i det siste skjæringspunktet mellom $ f $ og linja $ y=90 $ på intervallet $ [24, 48] $. Dette skjæringspunktet er når $ x=\approx 42 $, som betyr at båten må slepes senest når $ x\approx40 $, altså kl. 16:00.
+ \begin{figure}
+ 	\centering
+ 	\includegraphics[scale=0.2]{opg1c}
+ \end{figure}
+}
+\subsection*{Oppgave 2}
+\abc{
+\item 
+Det ytre pentagonet i figur $ n $ har $ 5(n-1) $ kuler. Da det ytre pentagonet er det eneste som skiller figur $ n $ og figur $ n-1 $, har vi at
+\[ P_{n}=5(n-1)+P_{n-1} \]
+\item\phantom{a} \python{opg2.py}
+\item Vi har at
+\alg{
+P_1&=1=1+5\cdot0\\
+P_2&=6=1+5\cdot1  \\
+P_3&=16=1+5\cdot1 + 5\cdot2=1+5(1+2) \\
+P_4&=31=1+5\cdot 1+5\cdot2+5\cdot3=1+5(1+2+3) \\
+P_5&=51=1+ 5\cdot1+5\cdot2+5\cdot3+5\cdot4=1+5(1+2+3+4)
+}
+Av dette ser vi at $ P_n=1+S_{n-1} $, hvor $ S_{n-1} $ er summen av de $ n-1 $ første naturlige tallene. $ S_{n-1}=\frac{n(n-1)}{2} $, og dermed er
+\[ P_n=1+\frac{5n(n-1)}{2} \]
+Det er åpenbart at formelen stemmer for $ n=1 $. Videre må vi, av den rekursive formelen, ha at
+\begin{equation}\label{opg2i}
+	P_{n+1}=5(n+1-1)+P_n = 1+\frac{5(n+1)n}{2}
+\end{equation}
+Vi antar at den eksplisitte formelen gjelder for $ P_n $, da kan vi skrive
+\begin{align}
+	P_{n+1}&=5n+P_n \nonumber \\
+	&= 5n+1+\frac{5n(n-1)}{2} \nonumber \\
+	&= 1+\frac{5n\cdot2+5n(n-1)}{2} \nonumber \\
+	&= 1+\frac{5n(2+n-1)}{2} \nonumber\\
+	&= 1+\frac{5n(n+1)}{2} \label{opg2ii}
+\end{align}
+\eqref{opg2i} samsvarer med \eqref{opg2ii}, og dermed er induksjonsbeviset fullført.
+}
+\subsection*{Oppgave 3}
+Vi definerer punktene $ A $, $ B $ og $ C $ ut ifra opplysningene om tønnen, og bruker deretter regresjon for å finne parabelen $ f $ som går gjennom disse tre punktene. Volumet tilsvarer volumet til omdreiningslegemet til $ f $ på intervallet $ [0, 75] $, som har verdi $ 437164.4 $. Da målene er gitt i cm er volumet $ 437.1644\enh{dm}^3\approx437\enh{l} $.
+
+\subsection*{Oppgave 4}
+\abc{
+\item Vi har at
+\alg{
+	a &= \frac{31.2-18.2}{2} = 7.5 \\
+	d &= \frac{31.2+18.2}{2} = 24.7
+}
+Ut ifra oppgavebeskrivelsen antar vi det menes at $ M $ har en periode lik $ 24 $. Da er
+\alg{
+	c &= \frac{2\pi}{24}
+}
+\item I CAS-celle 1 definerer vi $ f(x) $ til å være $ M(t) $ med ukjent $ k $, og løser deretter ligningen $ f(13)=27 $ (celle 2). Ved å inspisere grafen til $ f $ med fase $ k=-0.62 $ eller $ k=-3.04 $, ser vi at $ k=-3.04 $ passer best til beskrivelsen i oppgaveteksten. Med denne verdien definerer vi $ M(t) $ i celle 3, og løser ligningen $ M=27 $ (celle 4). Da finner vi at det andre tidspunktet luftforurensingen har verdi 27 er når $ t=22.23 $, altså ca. kl. 22:10.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg4}
+\end{figure}
+}
+
+\subsection*{Oppgave 5}
+\abc{
+\item Vi definerer $ r_1(t) $ som $ r(t) $ i CAS (celle 1). Skal en tangent til $ C $ være parallell med $ xy $-planet, må $ z $-kordinaten til $ r'(t) $ (celle 2) være 0. På intervallet $ (0, 2\pi) $ er $ \sin t=0 $ bare når $ t=\pi $, og dermed er punktet vi søker $ r(\pi)=(0, \pi, -1) $.
+\item Se celle 3.
+\item Cosiniusverdien til vinkelen mellom et plan med normalvektor $ \vec{n} $ og en linje med retningsvektor $ \vec{a} $ er gitt som
+\[ \frac{|\vec{n}\cdot\vec{a}|}{|\vec{n}||\vec{a}|} \]
+I celle 4 finner vi en normalvektor til smygplanet. $ [0, 1, 0] $ er en retningsvektor (med lengde 1) for $ y $-aksen. Da $ \cos^2 t+\sin^2 t=1 $ for alle $ t $, får vi av celle 5 at cosinusverdien er $ \frac{1}{\sqrt{2}} $ for alle $ t $. Dette betyr at vinkelen er $ 45^\circ $.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg5}
+\end{figure}
+\item For en vektorfunksjon
+}
+
+\end{document}
