@@ -4,33 +4,32 @@
 
 \begin{document}
 
-\vedlegg{Tangent Line to a Graph} \label{vdltangent}
+\vedlegg{The Tangent Line to a Graph} \label{vdltangent}
 \subsection*{Introduction}
-In geometry, a \textit{tangent line to a circle} is defined as a line that intersects a circle at only one point (Moise, 1974). From this definition, it can be shown that 
+In geometry, a \textit{tangent line to a circle} is defined as a line that intersects a circle at exactly one point (Moise, 1974). From this definition, it can be shown that
 \begin{itemize}
-	\item a tangent line is perpendicular to the vector formed by the center of the circle and the intersection point
-	\item any line that intersects a circle, where the intersection point and the center of the circle form a normal vector to the line, is a tangent line to the circle.
+	\item a tangent line is perpendicular to the vector formed by the center of the circle and the point of intersection
+	\item any line that has an intersection point with a circle, and where the intersection point and the center of the circle form a normal vector to the line, is a tangent line to the circle.
 \end{itemize}
 (See \textsl{Figure \ref{sirkoggraf}a}.) \vsk
 
-Given a differentiable function $ f(x) $. In real analysis, the \textit{tangent line to f at the point $ (a, f(a)) $} is defined as the line that passes through $ (a, f(a)) $ and has a slope $ f'(a) $ (Spivak, 1994). (See \textsl{Figure \ref{sirkoggraf}b}.)
+Given a differentiable function $ f(x) $. In real analysis, the \textit{tangent line to $ f $ at the point $ (a, f(a)) $} is defined as the line passing through $ (a, f(a)) $ and having a slope of $ f'(a) $ (Spivak, 1994). (See \textsl{Figure \ref{sirkoggraf}b}.)
 \begin{figure}[H]
 	\centering
 	\subfloat[]{\includegraphics{\figp{tang0a}}}\qquad \qquad
 	\subfloat[]{\includegraphics{\figp{tang0b}}}
 	\caption{\label{sirkoggraf}}
 \end{figure}
-For many, it is quite intuitive that tangents to circles and tangents to graphs are closely related, but the purpose of this text is to formalize this.
-\subsection*{Center of Curvature}
-Given a function $ f(x) $ that is continuous and twice differentiable for all $ x\in\mathbb{R} $, and where $ f''(x)\neq0 $. For a given $ a $, we let $ {f_a=f(a)} $, and define the functions
+It is quite intuitive for many that tangent lines to circles and tangent lines to graphs are closely related, but the purpose of this text is to formalize this.
+
+\subsection*{The Center of Curvature}
+Given a function $ {\vec{r}(t)=[f(t), g(t)]} $ where $ f $ and $ g $ are continuous and twice differentiable for all $ t\in\mathbb{R} $, and where $ f''(t), g''(t)\neq0 $. For $ a, h\in\mathbb{R} $ we set $ b=a-h $ and $ c=a+h $. Furthermore, we introduce the points
 \nn{
-	f_b(h)=f(a-h)\quad, \quad f_c(h)=f(a+h)
+	A=\vec{r}(a)\quad,\quad B= \vec{r}(b)\quad,\quad C=\vec{r}(c)
 }
-We also introduce the points
-\nn{
-	A=(a, f_a)\quad,\quad B=(a-h, f_b)\quad,\quad C=(a+h, f_c)
-}
-Further, let $ S=(S_x, S_y) $ be the center of the circumscribed circle of $ \triangle ABC $. Just as we find the \textit{derivative} at a point by letting the distance between two points on a graph approach 0, one can find the \outl{curvature} at a point by letting the distance between three points approach 0. In our case, the curvature is described by the circumscribed circle to $ \triangle ABC $ as $ h $ approaches 0.
+In addition, we introduce the notation $ k_d^{\hat{n}}(t) $, where $ \hat n $ replaced with $ n $ instances of $ ' $ denotes the $ n $-th derivative of the function $ k(t) $ at the point $ d $. \vsk
+
+Let $ S=(S_x, S_y) $ be the center of the circumcircle of $ \triangle ABC $. In the same way that we find the \textit{derivative} at a point by letting the distance between two points on a graph approach 0, we can find the \outl{curvature} at a point by letting the distance between three points approach 0. In our case, the curvature is described by the circumcircle of $ \triangle ABC $ as $ h $ approaches 0.
 \begin{figure}[H]
 	\centering
 	\subfloat[]{
@@ -39,107 +38,42 @@ Further, let $ S=(S_x, S_y) $ be the center of the circumscribed circle of $ \tr
 	\subfloat[]{\includegraphics{\figp{tang1c}}}
 	\caption{\label{krumnfig}}
 \end{figure}
-\subsection*{A System of Equations for $\bm S $}
+\subsection*{A System of Equations for finding $\bm S $}
 We have that
-\nn{
-	\vv{BA}= [h,f_a-f_b] \quad,\quad \vv{AC}=[h, f_c-f_a]
+\alg{
+	\vv{BA}&= [f_s-f_{b}, g_a-g_{b}] \br \vv{AC}&=[f_c-f_a, g_c-g_a]
 }
-Let $ B_m $ and $ C_m $ be the midpoints of the secants $ AB $ and $ AC $, respectively. Then,
+Let $ B_m $ and $ C_m $ be the midpoints of (the secants) $ AB $ and $ AC $, respectively. Then,
 \nn{
-	B_m = B+\frac{1}{2} \vv{BA} \qquad,\qquad C_m = C+\frac{1}{2}\vv{AC} 
+	B_m = \frac{1}{2}(A+B)\qquad,\qquad C_m = \frac{1}{2}(A+C)
 }
-$ [f_a-f_b,-h] $ is a normal vector for $ \vv{BA} $, meaning the mid-normal $\bm l_1 $ to the secant $ AB $ can be parameterized as
+$ [g_a-g_b,f_b-f_a] $ is a normal vector for $ \vv{BA} $, which means that the perpendicular bisector $\bm l_1 $ of $ AB $ can be parameterized as
 \nn{
-	{\bm l_1(t)}=B_m+[f_a-f_b, -h]t \label{l1}
+	{\bm l_1(p)}=B_m+[g_a-g_b,f_b-f_a] p \label{l1}
 }
-Similarly, the mid-normal $\bm l_2 $ to the secant $ AC $ is parameterized by
-\[ {\bm l_2(q)}=C_m+[f_c-f_a, -h]q \]
+Similarly, the perpendicular bisector $\bm l_2 $ of $ AC $ is parameterized by
+\[ {\bm l_2(q)}=C_m+[g_a-g_c,f_c-f_a] q \]
 $ S $ coincides with the intersection of $\bm l_1 $ and $\bm l_2 $.
-By requiring that $\bm l_1= \bm l_2 $, we obtain a linear system of equations with two unknowns that gives
-\nn{
-	t=\frac{(f_a-f_c)(f_b-f_c)+2h^2}{2h(f_b+f_c-2f_a)} \label{t}
-}
-\subsection*{$\bm S$ as $\bm {h}$ approaches 0}
-We define the functions $ \dot{f}_b$, $ \dot{f}_c  $, $ \ddot{f}_b $, and $ \ddot{f}_c $ based on the (respective) derivatives and second derivatives of $ f_b $ and $ f_c $ with respect to $ h $:
-\alg{
-	-\dot{f}_b&=\left(f_b\right)' =-f'(a-h) \vn
-	\dot{f}_c&=\left(f_c\right)'=f'(a+h) \vn
-	\ddot{f}_b&=\left(f_b\right)'' =f''(a-h) \vn
-	\ddot{f}_c&=\left(f_c\right)''=f''(a+h)
-}
-We will now use these functions to study the coordinates of $ S $ as $ h $ approaches 0. We take into account that
-\alg{
-	&\lim\limits_{h\to0} \left\{h^2, h\right\}=0 &&
-	&\lim\limits_{h\to0} \left\{f_b, f_c\right\}=f_a \vn
-	&\lim\limits_{h\to0} \left\{\dot{f}_c,\dot{f}_b\right\}=f'_a&&
-	&\lim\limits_{h\to0} \left\{\ddot{f}_b, \ddot{f}_c\right\}=f_a''
-}
-where\footnote{Note that we are talking about $ f $ derived with respect to $ x $, and evaluated at $ a $.} $ f'_a=f'(a) $ and $ f''_a=f''(a) $. \vsk
+By requiring that $\bm l_1= \bm l_2 $, we obtain a linear system of equations with $ p $ and $ q $ as unknowns. Let $ q=q_s $ be the solution to this system, then we know that
+\[ S=C_m+[g_a-g_c, f_c-f_a]q_s\]
+Furthermore,
+\[ \lim\limits_{h\to0}S=\lim\limits_{h\to0}\left(C_m+[g_a-g_c, f_c-g_a]\frac{h}{h}q_s\right)=A+[g'_a, -f'_a]\lim\limits_{h\to 0}h q_s \]
+We will show that the limit $ \lim\limits_{h\to 0}h q_s $ exists, and we observe this: As $ {h\to0} $, $ \vv{AS} $ becomes parallel to the vector $ [g'_a, -f'_a] $. We have that $ \vec{r}'(a)=[f'_a, g'_a] $, and thus,
+\[ \vv{AS}\cdot \vec{r}\,'(a)=0 \]
+The line passing through the point $ \vec{r}(a) $, and having $ \vec{r}\,'(a) $ as the direction vector, is therefore a tangent line to the circle describing the curvature of $ \vec{r} $ at $ a $.
 
-For $ t $ expressed by \eqref{t} is (see \eqref{l1})
+\subsubsection{Examination of the limit}
+By solving the mentioned system of equations, we find that
 \nn{
-	S_y=\frac{f_a+f_b+2ht}{2} = \frac{f_a+f_b}{2}+ht \label{sy}
+	q_s=\frac{1}{2}\frac{f_c(f_c-f_a)+f_b(f_a-f_c)+g_c(g_c-g_a)+g_b(g_a-g_c)}{f_b(g_c-g_a)+f_c(g_a-g_b)+f_a(g_b-g_c)}
 }
-We have that
-\nn{
-	\lim\limits_{h\to 0} \frac{f_a+f_b}{2}=f_a
-}
-Further,
-\alg{
-	ht&=\frac{(f_c-f_a)(f_b-f_c)+2h^2}{2(f_b+f_c-2f_a)} \br
-	&=\frac{(f_c-f_a)(f_b-f_c)}{2(f_b+f_c-2f_a)}+\frac{h^2}{f_b+f_c-2f_a} \label{ht}
-}
-As $ h $ approaches 0, both terms in \eqref{ht} are <<0 over 0>> expressions. We use L'Hopital's rule on the last term: 
-\begin{align}
-	&&\lim\limits_{h\to0}\frac{h^2}{2(f_b+f_c-2f_a)}&=\lim\limits_{h\to0}\frac{\left(h^2\right)'}{(f_b+f_c-2f_a)'} \br
-	&&&=\lim\limits_{h\to0} \frac{2h}{-\dot{f}_b+\dot{f}_c} &&\text{<<0 over 0>>}\br
-	&&&=\lim\limits_{h\to0} \frac{2}{\ddot{f}_b+\ddot{f}_c}  \\
-	&& &=\frac{1}{f_a''} \label{ht2}
-\end{align}
+Furthermore,
+\[ \lim\limits_{h\to 0} q_s=\lim\limits_{h\to 0}\frac{h}{h}q_s=\lim\limits_{h\to 0}\frac{f_cf_a'-f_bf_a'+g_cg_a'-g_bg_a'}{f_bg_a'+f_cg_b'-2f_ag_a'} \]
+Using the same procedure, we have that
+\[\lim\limits_{h\to 0}q_s= \lim\limits_{h\to 0} \frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'} \]
+Furthermore,
+\[ \lim\limits_{h\to 0}h q_s= h\frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'-f_b'g_b'+f_b'g_b'}= \frac{(f_a')^2+(g_a')^2}{f_b''g_b'+f_b'g_b''} \]
 
-Using L'Hopital's rule on the first term in \eqref{ht} we have that
-\alg{
-	\lim\limits_{h\to 0}\frac{(f_c-f_a)(f_b-f_c)}{f_b+f_c-2f_a} &= \lim\limits_{h\to 0}\frac{\left((f_c-f_a)(f_b-f_c)\right)'}{(f_b+f_c-2f_a)'} 
-}
-By the product rule in differentiation,
-\alg{
-	\lim\limits_{h\to 0}\frac{\left((f_a-f_c)(f_b-f_c)\right)'}{(f_b+f_c-2f_a)'} &=\lim\limits_{h\to 0} \left[\frac{\dot{f_c}(f_b-f_c)}{-\dot{f}_b+\dot{f}_c}+\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}\right]
-}
-Both terms above are <<0 over 0>> expressions. We investigate them separately by applying L'Hopital's rule:
-\alg{
-	\lim\limits_{h\to 0}\frac{\dot{f_c}(f_b-f_c)}{-\dot{f}_b+\dot{f}_c} &= \lim\limits_{h\to 0} \left[\frac{\ddot{f}_c(f_b-f_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right] \br
-	&= 0+\frac{(f_a')^2}{2f_a''} \label{ht1a}
-}
-\begin{align}
-	\lim\limits_{h\to 0}\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}&= \lim\limits_{h\to 0}\left[\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{(f_c-f_a)(-\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right]\br
-	&=\frac{(f_a')^2}{2f_a''}+0 \label{ht1b}
-\end{align}
-By \eqref{ht}, \eqref{ht2}, \eqref{ht1a} and \eqref{ht1b} we have that
-\[ \lim\limits_{h\to0} h t=\frac{1+(f_a')^2}{f_a''} \]
-Thus,
-\nn{
-	S_y=f_a+\frac{1+(f_a')^2}{f''_a}
-}
-
-Furthermore, with $ t $ given by \eqref{t}
-\[ S_x=(f_b-f_a)t+a-\frac{1}{2}h \]
-We have that
-\algv{
-	\lim\limits_{h\to0}(f_b-f_a)t&=\lim\limits_{h\to0} \frac{f_b-f_a}{h}\cdot ht \br
-	&= \lim\limits_{h\to0} \frac{f_b-f_a}{h}\cdot \lim\limits_{h\to0} ht  \br
-	&=-f_a'\frac{1+(f_a')^2}{f''_a}
-}
-Thus,
-\nn{S_x=a-f'_a\frac{1+(f_a')^2}{f''_a}}
-\subsection*{Conclusion}
-The line that has a slope $ f'(a) $, and that passes through $ (a, f(a)) $, is given by the function 
-\[ g(x)=f_a'(x-a)+f_a \]
-$ \vec{r}=[1, f_a] $ is the direction vector of this line. 
-From the expressions we have found for $ S_x $ and $ S_y $ we have that
-\[ S=\left(a-f'_a\frac{1+(f_a')^2}{f''_a}, f_a+\frac{1+(f_a')^2}{f''_a}\right) \]
-Thus,
-\[ \vv{AS}= \frac{1}{f_a''}\left[-f_a(1+(f_a')^2), 1+(f_a')^2\right] \]
-Since $ {\vec{r}\cdot \vv{AS}=0 }$ and $ {g(a)=f(a)} $, the graph of $ g $ is the tangent line to the circle with center $ S $ as $ h $ approaches 0. Thus, $ g $ is the tangent line to the circle that describes the curvature of $ f $ when $ x=a $.
 
 
 \end{document}

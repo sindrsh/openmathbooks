@@ -4,6 +4,7 @@
 
 
 \begin{document}
+{\Large Eksamen R2 Høsten 2023\hfill {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
 \subsection*{Oppgave 1}	
 \[ \int_{-1}^{1}x^3+2x\,dx = \left[\frac{1}{4}x^4+x^2\right]_{-1}^1 = 0 \]
 Dette svart forteller at arealet avgrenset av grafen til $ x^3+2x $ og $ x $-aksen er like stort på begge sider av $ x $-aksen på intervallet $ [-1, 1] $.
@@ -117,11 +118,13 @@ hvor $ x $ er antall timer etter midnatt 24. april og $ f $ er vannstanden gitt 
 }
 \subsection*{Oppgave 2}
 \abc{
-\item 
-Det ytre pentagonet i figur $ n $ har $ 5(n-1) $ kuler. Da det ytre pentagonet er det eneste som skiller figur $ n $ og figur $ n-1 $, har vi at
+\item Det ytre pentagonet i figur $ n $ har $ 5(n-1) $ kuler. Da det ytre pentagonet er det eneste som skiller figur $ n $ og figur $ n-1 $, har vi at
 \[ P_{n}=5(n-1)+P_{n-1} \]
-\item\phantom{a} \python{opg2.py}
-\item Vi har at
+
+\item\phantom{a} \pythonut{opg2.py}{24751}
+\item 
+\textbf{Løsning 1}\\
+Vi har at
 \alg{
 P_1&=1=1+5\cdot0\\
 P_2&=6=1+5\cdot1  \\
@@ -130,20 +133,25 @@ P_4&=31=1+5\cdot 1+5\cdot2+5\cdot3=1+5(1+2+3) \\
 P_5&=51=1+ 5\cdot1+5\cdot2+5\cdot3+5\cdot4=1+5(1+2+3+4)
 }
 Av dette ser vi at $ P_n=1+S_{n-1} $, hvor $ S_{n-1} $ er summen av de $ n-1 $ første naturlige tallene. $ S_{n-1}=\frac{n(n-1)}{2} $, og dermed er
-\[ P_n=1+\frac{5n(n-1)}{2} \]
-Det er åpenbart at formelen stemmer for $ n=1 $. Videre må vi, av den rekursive formelen, ha at
 \begin{equation}\label{opg2i}
-	P_{n+1}=5(n+1-1)+P_n = 1+\frac{5(n+1)n}{2}
+	P_n=1+\frac{5n(n-1)}{2}
 \end{equation}
-Vi antar at den eksplisitte formelen gjelder for $ P_n $, da kan vi skrive
+Det er åpenbart at formelen stemmer for $ n=1 $. Vi antar at den eksplisitte formelen gjelder for $ P_n $, da kan vi skrive
 \begin{align}
-	P_{n+1}&=5n+P_n \nonumber \\
+	P_{n+1}&=P_{n+1}=5(n+1-1)+P_n \nonumber\\
+	&=5n+P_n \nonumber \\
 	&= 5n+1+\frac{5n(n-1)}{2} \nonumber \\
 	&= 1+\frac{5n\cdot2+5n(n-1)}{2} \nonumber \\
 	&= 1+\frac{5n(2+n-1)}{2} \nonumber\\
 	&= 1+\frac{5n(n+1)}{2} \label{opg2ii}
 \end{align}
-\eqref{opg2i} samsvarer med \eqref{opg2ii}, og dermed er induksjonsbeviset fullført.
+\eqref{opg2i} samsvarer med \eqref{opg2ii}, og dermed er induksjonsbeviset fullført. \\[12pt]
+\textbf{Løsning 2} \\
+Bruker regresjon, og finner $ P(n)=P_n $ i celle 1. Sjekker at $ P(n) $ er sann for $ P(n) $ (celle 2). Antar at kravet fra rekursiv formel er oppfylt for $ P(n) $, og sjekker at det da er oppfylt for $ P(n+1) $. Begge sjekkene stemmer, og dermed er induksjonsbeviset fullført.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{opg2c}
+\end{figure}
 }
 \subsection*{Oppgave 3}
 Vi definerer punktene $ A $, $ B $ og $ C $ ut ifra opplysningene om tønnen, og bruker deretter regresjon for å finne parabelen $ f $ som går gjennom disse tre punktene. Volumet tilsvarer volumet til omdreiningslegemet til $ f $ på intervallet $ [0, 75] $, som har verdi $ 437164.4 $. Da målene er gitt i cm er volumet $ 437.1644\enh{dm}^3\approx437\enh{l} $.
@@ -175,9 +183,13 @@ Ut ifra oppgavebeskrivelsen antar vi det menes at $ M $ har en periode lik $ 24 
 I celle 4 finner vi en normalvektor til smygplanet. $ [0, 1, 0] $ er en retningsvektor (med lengde 1) for $ y $-aksen. Da $ \cos^2 t+\sin^2 t=1 $ for alle $ t $, får vi av celle 5 at cosinusverdien er $ \frac{1}{\sqrt{2}} $ for alle $ t $. Dette betyr at vinkelen er $ 45^\circ $.
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{opg5}
+	\includegraphics[scale=0.3]{opg5a}
 \end{figure}
-\item For en vektorfunksjon
+\item Vi definerer $ r_2(t) $ (celle 7), og finner en normalvektor til smygplanet (celle 8). I celle 9-13 finner vi cosinusverdien til vinkelen mellom smygplanet og $ y $-aksen, $ x $-aksen og $ z $-aksen. Vi ser da at smygplanet har konstant vinkel mellom alle aksene, og at smygplanet er parallell med $ y $-aksen, fordi cosinusverdien er 0 (celle 9).
 }
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg5d}
+\end{figure}
 
 \end{document}

@@ -22,11 +22,13 @@ Gitt en deriverbar funksjon $ f(x) $. Innen reell analyse defineres \textit{tang
 Det er for mange ganske intuitivt at tangeringslinjer til sirkler og tangeringslinjer til grafer er nært beslektet, men formålet med denne teksten er å formalisere dette.
 
 \subsection*{Senteret til krumningen}
-Gitt en funksjon $ \vec{r}(t) $ som er kontinuerlig og to ganger deriverbar for alle $ t\in\mathbb{R} $, og hvor $ f''(t), g''(t)\neq0 $. Vi innfører punktene
+Gitt en funksjon $ {\vec{r}(t)=[f(t), g(t)]} $ der $ f $ og $ g $ er kontinuerlige og to ganger deriverbare for alle $ t\in\mathbb{R} $, og hvor $ f''(t), g''(t)\neq0 $. For $ a, h\in\mathbb{R} $ setter vi $ b=a-h $ og $ c=a+h $. Videre innfører vi  punktene
 \nn{
 A=\vec{r}(a)\quad,\quad B= \vec{r}(b)\quad,\quad C=\vec{r}(c)
 }
-Videre lar vi $ S=(S_x, S_y) $ være sentrum i den omskrevne sirkelen til $ \triangle ABC $. På samme måte som vi finner den \textit{deriverte} i et punkt ved å la avstanden mellom to punkt på en graf gå mot 0, kan man finne \outl{krumningen} i et punkt ved å la avstanden mellom tre punkt gå mot 0. I vårt tilfelle er krumningen beskrevet av den omskrevne sirkelen til $ \triangle ABC $ når $ h $ går mot 0.
+I tillegg introduserer vi skrivemåten $ k_d^{\hat{n}}(t) $, hvor $ \hat n $ erstattet med $ n $ eksemplar  av $ ' $ viser til den $ n $-te deriverte av funksjonen $ k(t) $ i punktet $ d $. \vsk
+
+La $ S=(S_x, S_y) $ være sentrum i den omskrevne sirkelen til $ \triangle ABC $. På samme måte som vi finner den \textit{deriverte} i et punkt ved å la avstanden mellom to punkt på en graf gå mot 0, kan man finne \outl{krumningen} i et punkt ved å la avstanden mellom tre punkt gå mot 0. I vårt tilfelle er krumningen beskrevet av den omskrevne sirkelen til $ \triangle ABC $ når $ h $ går mot 0.
 \begin{figure}[H]
 \centering
 \subfloat[]{
@@ -38,104 +40,36 @@ Videre lar vi $ S=(S_x, S_y) $ være sentrum i den omskrevne sirkelen til $ \tri
 \subsection*{Et likningssett for $\bm S $}
 Vi har at
 \alg{
-	\vv{BA}&= [f_t-f_{b}, g_t-g_{b}] \br \vv{AC}&=[f_c-f_t, g_c-g_t]
+	\vv{BA}&= [f_s-f_{b}, g_a-g_{b}] \br \vv{AC}&=[f_c-f_a, g_c-g_a]
 }
 La $ B_m $ og $ C_m $ være midptunktene til henholdsvis  (sekantene) $ AB $ og $ AC $. Da er
 \nn{
 	B_m = \frac{1}{2}(A+B)\qquad,\qquad C_m = \frac{1}{2}(A+C)
 }
-$ [g_t-g_b,f_b-f_t] $ er en normalvektor for $ \vv{BA} $, dette betyr at midtnormalen $\bm l_1 $ til sekanten $ AB $ kan parameterisere som
+$ [g_a-g_b,f_b-f_a] $ er en normalvektor for $ \vv{BA} $, dette betyr at midtnormalen $\bm l_1 $ til $ AB $ kan parameterisere som
 \nn{
-{\bm l_1(t)}=B_m+[g_t-g_b,f_b-f_t] t \label{l1}
+{\bm l_1(p)}=B_m+[g_a-g_b,f_b-f_a] p \label{l1}
 }
-Tilsvarende er midtnormalen $\bm l_2 $ til sekanten $ AC $ parameterisert ved
-\[ {\bm l_2(q)}=C_m+[g_t-g_c,f_c-f_t] q \]
+Tilsvarende er midtnormalen $\bm l_2 $ til $ AC $ parameterisert ved
+\[ {\bm l_2(q)}=C_m+[g_a-g_c,f_c-f_a] q \]
 $ S $ sammenfaller med skjæringspunktet til $\bm l_1 $ og $\bm l_2 $.
-Ved å kreve at $\bm l_1= \bm l_2 $, får vi et lineært likningssett med to ukjente som gir
-\nn{
-t=\frac{(f_a-f_c)(f_b-f_c)+2h^2}{2h(f_b+f_c-2f_a)} \label{t}
-}
-\subsection*{$\bm S$ når $\bm {h}$ går mot 0}
-Vi definerer funkjonene $ \dot{f}_b$ , $ \dot{f}_c  $, $ \ddot{f}_b $ og $ \ddot{f}_c $ ut ifra de (respektive) deriverte og andrederiverte av $ f_b $ og $ f_c $ med hensyn på $ h $:
-\alg{
-	-\dot{f}_b&=\left(f_b\right)' =-f'(a-h) \vn
-	\dot{f}_c&=\left(f_c\right)'=f'(a+h) \vn
-	\ddot{f}_b&=\left(f_b\right)'' =f''(a-h) \vn
-	\ddot{f}_c&=\left(f_c\right)''=f''(a+h)
-}
-Vi skal nå bruke dise funsjonene til å studere koordinatene til $ S $ når $ h $ går mot 0. Vi tar da med oss at
-\alg{
-&\lim\limits_{h\to0} \left\{h^2, h\right\}=0 &&
-&\lim\limits_{h\to0} \left\{f_b, f_c\right\}=f_a \vn
-&\lim\limits_{h\to0} \left\{\dot{f}_c,\dot{f}_b\right\}=f'_a&&
-&\lim\limits_{h\to0} \left\{\ddot{f}_b, \ddot{f}_c\right\}=f_a''
-}
-hvor\footnote{Legg merke til at det her er snakk om $ f $ derivert med hensyn på $ x $, og evaluert i $ a $.} $ f'_a=f'(a) $ og $ f''_a=f''(a) $. \vsk
+Ved å kreve at $\bm l_1= \bm l_2 $, får vi et lineært likningssett med $ p $ og $ q $ som ukjente. La $ q=q_s $ være løsningen av dette likningssettet, da vet vi at
+\[ S=C_m+[g_a-g_c, f_c-f_a]q_s\]
+Videre er
+\[ \lim\limits_{h\to0}S=\lim\limits_{h\to0}\left(C_m+[g_a-g_c, f_c-g_a]\frac{h}{h}q_s\right)=A+[g'_a, -f'_a]\lim\limits_{h\to 0}h q_s \]
+At grensen $ \lim\limits_{h\to 0}h q_s $ eksisterer viser vi avslutningsvis, og observerer nå dette: Når $ h\to0 $, blir $ \vv{AS} $ parallell med vektoren $ [g'_a, -f'_a] $. Vi har at $ \vec{r}'(a)=[f'_a, g'_a] $, og dermed er er 
+\[ \vv{AS}\cdot \vec{r}\,'(a)=0 \]
+Linja som går gjennom punktet $ \vec{r}(a) $, og som har $ \vec{r}\,'(a) $ som retningsvektor er altså en tangeringslinje til sirkelen som beskriver krumningen til $ \vec{r} $ i $ a $. \vsk
 
-For $ t $ uttrykt ved \eqref{t} er (se \eqref{l1})
+\textbf{Undersøkelse av grenseverdien} \\
+Ved å løse det nevnte ligningssettet, finner vi at
 \nn{
-	S_y=\frac{f_a+f_b+2ht}{2} = \frac{f_a+f_b}{2}+ht \label{sy}
-}
-Vi har at
-\nn{
-\lim\limits_{h\to 0} \frac{f_a+f_b}{2}=f_a
+	q_s=\frac{1}{2}\frac{f_c(f_c-f_a)+f_b(f_a-f_c)+g_c(g_c-g_a)+g_b(g_a-g_c)}{f_b(g_c-g_a)+f_c(g_a-g_b)+f_a(g_b-g_c)}
 }
 Videre er
-\alg{
-ht&=\frac{(f_c-f_a)(f_b-f_c)+2h^2}{2(f_b+f_c-2f_a)} \br
-&=\frac{(f_c-f_a)(f_b-f_c)}{2(f_b+f_c-2f_a)}+\frac{h^2}{f_b+f_c-2f_a} \label{ht}
-}
-Når $ h $ går mot 0, er begge leddene i \eqref{ht} <<0 over 0>> uttrykk. Vi bruker L'Hopitals regel på det siste leddet: 
-\begin{align}
-	&&\lim\limits_{h\to0}\frac{h^2}{2(f_b+f_c-2f_a)}&=\lim\limits_{h\to0}\frac{\left(h^2\right)'}{(f_b+f_c-2f_a)'} \br
-	&&&=\lim\limits_{h\to0} \frac{2h}{-\dot{f}_b+\dot{f}_c} &&\text{<<0 over 0>>}\br
-	&&&=\lim\limits_{h\to0} \frac{2}{\ddot{f}_b+\ddot{f}_c}  \\
-	&& &=\frac{1}{f_a''} \label{ht2}
-\end{align}
-
-Ved å bruke L'Hopitals regel på det første leddet i \eqref{ht} har vi at
-\alg{
-\lim\limits_{h\to 0}\frac{(f_c-f_a)(f_b-f_c)}{f_b+f_c-2f_a} &= \lim\limits_{h\to 0}\frac{\left((f_c-f_a)(f_b-f_c)\right)'}{(f_b+f_c-2f_a)'} 
-}
-Av produktregelen ved derivasjon er
-\alg{
-\lim\limits_{h\to 0}\frac{\left((f_a-f_c)(f_b-f_c)\right)'}{(f_b+f_c-2f_a)'} &=\lim\limits_{h\to 0} \left[\frac{\dot{f_c}(f_b-f_c)}{-\dot{f}_b+\dot{f}_c}+\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}\right]
-}
-Begge leddene over er <<0 over 0>> uttrykk. Vi undersøker dem hver for seg ved å anvende L'Hopitals regel:
-\alg{
-\lim\limits_{h\to 0}\frac{\dot{f_c}(f_b-f_c)}{-\dot{f}_b+\dot{f}_c} &= \lim\limits_{h\to 0} \left[\frac{\ddot{f}_c(f_b-f_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right] \br
-&= 0+\frac{(f_a')^2}{2f_a''} \label{ht1a}
-}
-\begin{align}
-	\lim\limits_{h\to 0}\frac{(f_c-f_a)(\dot{f}_b+\dot{f}_c)}{-\dot{f}_b+\dot{f}_c}&= \lim\limits_{h\to 0}\left[\frac{\dot{f}_c(\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}+\frac{(f_c-f_a)(-\dot{f}_b+\dot{f}_c)}{\ddot{f}_b+\ddot{f}_c}\right]\br
-	&=\frac{(f_a')^2}{2f_a''}+0 \label{ht1b}
-\end{align}
-Av \eqref{ht}, \eqref{ht2}, \eqref{ht1a} og \eqref{ht1b} har vi at
-\[ \lim\limits_{h\to0} h t=\frac{1+(f_a')^2}{f_a''} \]
-Dermed er 
-\nn{
-S_y=f_a+\frac{1+(f_a')^2}{f''_a}
-}
-
-Videre er (med $ t $ gitt av \eqref{t})
-\[ S_x=(f_b-f_a)t+a-\frac{1}{2}h \]
-Vi har at
-\algv{
-\lim\limits_{h\to0}(f_b-f_a)t&=\lim\limits_{h\to0} \frac{f_b-f_a}{h}\cdot ht \br
-&= \lim\limits_{h\to0} \frac{f_b-f_a}{h}\cdot \lim\limits_{h\to0} ht  \br
-&=-f_a'\frac{1+(f_a')^2}{f''_a}
-}
-Altså er
-\nn{S_x=a-f'_a\frac{1+(f_a')^2}{f''_a}}
-\subsection*{Avslutning}
-Linja som har stigningstall $ f'(a) $, og som går gjennom $ (a, f(a)) $, er gitt ved funksjonen 
-\[ g(x)=f_a'(x-a)+f_a \]
-$ \vec{r}=[1, f_a] $ er en retningsvektoren til denne linja. 
-Av uttrykkene vi har funnet for $ S_x $ og $ S_y $ har vi at
-\[ S=\left(a-f'_a\frac{1+(f_a')^2}{f''_a}, f_a+\frac{1+(f_a')^2}{f''_a}\right) \]
-Dermed er
-\[ \vv{AS}= \frac{1}{f_a''}\left[-f_a(1+(f_a')^2), 1+(f_a')^2\right] \]
-Siden $ {\vec{r}\cdot \vv{AS}=0 }$ og $ {g(a)=f(a)} $, er grafen til $ g $ tangeringslinja til sirkelen med sentrum $ S $ når $ h $ går mot 0. Altså er $ g $ tangeringslinja til sirkelen som beskriver krumningen til $ f $ når $ x=a $.
-
-
+\[ \lim\limits_{h\to 0} q_s=\lim\limits_{h\to 0}\frac{h}{h}q_s=\lim\limits_{h\to 0}\frac{f_cf_a'-f_bf_a'+g_cg_a'-g_bg_a'}{f_bg_a'+f_cg_b'-2f_ag_a'} \]
+Ved samme prosedyre har vi at
+\[\lim\limits_{h\to 0}q_s= \lim\limits_{h\to 0} \frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'} \]
+Videre har vi at
+\[ \lim\limits_{h\to 0}h q_s= h\frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'-f_b'g_b'+f_b'g_b'}= \frac{(f_a')^2+(g_a')^2}{f_b''g_b'+f_b'g_b''} \]
 \end{document}

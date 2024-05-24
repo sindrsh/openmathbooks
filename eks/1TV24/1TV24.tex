@@ -1,0 +1,155 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen 1T Våren 2024\hfill {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
+\subsection*{Oppgave 1}	
+\abc{
+\item $ \tan u = \frac{6}{8} $ og $ \tan v = \frac{8}{6} $, dermed er $ \tan u\cdot \tan v =\frac{6}{8}\cdot\frac{8}{6}=1 $. 
+\item Vi setter $ a $ og $ b $ som vist i figuren under. Da er $ {\tan u= \frac{a}{b}} $ og $ {\tan v = \frac{b}{a}} $. Følgelig er
+\[ \tan u \cdot \tan v = \frac{a}{b}\cdot\frac{b}{a}=1 \]
+Altså gjelder dette for alle rettvinklede trekanter.
+\localfig{opg1bd1}{1}
+}
+
+\subsection*{Oppgave 2}
+Hun kan ha utført polynomdivisjon på regnestykket $ \frac{2x^3+3x^2-11x-6}{2x^2+7x+3}  $ eller $ \frac{2x^3+3x^2-11x-6}{x-2}  $.
+\alg{
+	\phantom{-}&(2x^3+3x^2-11x-6):(2x^2+7x+3) = x-2\\ 
+	-&\underline{(2x^3+7x^2+3x)} \\
+	&\phantom{000\,\,x\;}10x^2-14x-6  \\
+	&\phantom{xx}-\underline{(10x^2-14x-6)}\\
+	&\phantom{aaaaaaaaaaaaaaaa''}0 \\
+}
+\alg{
+	\phantom{-}&(2x^3+3x^2-11x-6):(x-2) = 2x^2+7x+3\\ 
+	-&\underline{(2x^3-4x^2)} \\
+	&\phantom{000\,\,x-}7x^2-11x-6  \\
+	&\phantom{xxx}-\underline{(7x^2-14x)}\\
+	&\phantom{aaaaaaaaaaa''\,}3x-6 \\
+	&\phantom{aaaaaaaax}-\underline{(3x-6)}\\
+	&\phantom{aaaaaaaaaaaaaaaaa} 0
+}
+Polynomdivisjonene viser at både $ x-2 $ og $ 2x^2+7x+3 $ er faktorer i $ 2x^3+2x^2-11x-6 $.
+
+\subsection*{Oppgave 3}
+Vi setter to uttrykk for arealet til det grønne området lik hverandre:
+\alg{
+a(a-b+b)-b^2\cdot &= a\cdot(a-b) + b(a-b) \\
+a^2-b^2&= (a+b)(a-b)
+}
+
+
+\subsection*{Oppgave 4}
+\alg{
+f(0) &= 0^2-3\cdot0+7 = 7\\
+f(5) &= 5^2-3\cdot5+7 = 17\\
+\frac{f(5)-f(0)}{5-0}&=\frac{17-7}{5}=2
+}
+Verdien 2 vil bli skrevet ut, og dette forteller at den gjennomsnittlige endringen til $ f $ er 2 på intervallet $ [0, 5] $.
+
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item Av nullpunktene vet vi at vi kan skrive $ f(x)=a(x+3)(x-4) $. Videre har vi at
+\alg{
+	f(0)&= a(0+3)(0-4) \\
+	24 &= -12a \\
+	a &= -2
+}
+Dermed er $ f(x)=-2(x+3)(x-4) $
+\item
+\alg{
+-2(x+3)(x-4) &> 12 \\
+(x+3)(x-4) &< -6 \\
+x^2-4x+3x-12+6 &< 0\\
+x^2-x-6&<0
+}
+Siden $ (-3)\cdot2=6 $ og $ -3+2=-1 $, har vi at
+\alg{
+(x-3)(x+2)< 0
+}
+Av fortegnsskjemaet ser vi at ulikheten over er oppfylt når \\$ x\in(-2, 3) $.
+\localfig{opg5bd1}{1}
+}
+\newpage
+\subsubsection{Oppgave 1}
+\abc{
+\item Skriver tallene inn i regnearket i GeoGebra, lager liste med punkt, og bruker regresjon med andregradspolynom. Får da $ O(x) $ som samsvarer med $ O(x) $ i oppgaven. I grafikkfeltet ser vi at grafen til $ O $ (den grønne kurven) tilnærmet skjærer alle punktene, og derfor er en god modell.
+\item Det største overskuddet får vi i toppunktet til $ O $, som vi finner ved kommandoen \texttt{Ekstremalpunkt(O)}. Da får vi at det største overskuddet oppstår ved å selge 282-283 baguetter i uka.
+\item Vi skriver inn punktene som $ I $ og $ J $, finner linja mellom dem med kommandoen \texttt{Linje(I, J)}. Da får vi at stigningstallet til linja er $ 23.96 $. Dette betyr at på intervallet $ [100, 200] $, så har overskuddet i gjennomsnitt endret seg med $ 23.96 $ kroner per solgte baguett.
+\item Finner den momentane vekstfarten ved å skrive \texttt{O'(235)}, som gir at $ O(235)=8.61 $. Dette betyr at akkurat når salget nådde 235 baguetter, så endret overskuddet seg meg $ 8.61 $ kronger per solgte baguett.
+}
+\localfig{opg1}{0.25}
+
+\newpage
+\subsection*{Oppgave 2}
+\abc{
+\item Vinkelen må være ca. $ 59^\circ $ (celle 1).
+\item Når $ u $ går mot $ 90^\circ $, går $ v $ mot ca. $ 48.75^\circ $ (celle 2).
+\localfig{opg2}{0.4}
+\item Si at $ u=v=t $. For $ \sin t\neq 0 $ har vi at
+\alg{
+\sin t &= 1.33\sin t \\
+1 &= 1.33
+} 
+Dette fører altså til en selvmotsigelse. Hvis derimot $ \sin t=0^\circ $, er ligningen over oppfylt. Dermed er $ u $ og $ v $ bare like når $ t= \text{asind}(0) $, som gir at $ t=0^\circ $.
+}
+
+\subsection*{Oppgave 3}
+Bruker arealsetningen, og finner at $ AC=2 $ (celle 1). Bruker cosinussetningen, og finner at $ BC= 2\sqrt{21} $ (celle 2).
+\localfig{opg3}{0.5}
+
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Oddetall nr $ i $ er gitt ved formelen $ 2i-1 $.
+\pythonut{opg4.py}{
+	S1: 1\\
+	S2: 4\\
+	S3: 9\\
+	S4: 16\\
+	S5: 25\\
+	S6: 36\\
+	S7: 49\\
+	S8: 64\\
+	S9: 81\\
+	S10: 100\\
+	S11: 121\\
+	S12: 144\\
+	S13: 169\\
+	S14: 196\\
+	S15: 225\\
+	S16: 256\\
+	S17: 289\\
+	S18: 324\\
+	S19: 361\\
+	S20: 400
+}
+\item At summene ser vi at $ S_i=i^2 $. Summen av $ i $ oddetall danner et kvadrat med lengde $ i $, og dermed er summen lik $ i^2 $.
+}
+
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item Skriver inn tabellen i rengearket i GeoGebra, lager liste med punkt, og bruker regresjon med potensfunksjon. Får da
+\[ K(x)=7.56x^{0.38} \]
+\item Aris modell:
+\[ f(x)=1000\cdot0.88^x \]
+der $ f $ er lufttrykket og $ x $ er km over havet. \os
+Lisas modell:
+\[ g(x)=1000\cdot0.5^\frac{x}{5.5} \]
+der $ g $ er lufttrykket og $ x $ er km over havet.
+\item Ved å skrive \texttt{Skjæring(K, y=85)}, finner vi at lufttrykket har verdi $ 578.34 $ når kokepunktet er $ 85^\circ $. Vi skriver så modellene til Ari og Lisa inn i GeoGebra, og finner at begge modellene gir en høyde på ca. 4.3 km over havet.
+}
+\localfig{opg5ac}{0.3}
+\localfig{opg5c}{0.3}
+
+\newpage
+\subsection*{Oppgave 6}
+Da $ f' $ er en lineær funksjon, må $ f $ være en andregradsfunksjon. I celle 1 definerer vi en generell andregradsfunksjon. Ut ifra figuren ser vi at funksjonen må oppfylle at $ g'(2)=0 $ og $ g'(4)=4 $. Dette gir oss et ligningssett for $ a $ og $ b $, som er løst i celle 4. Vi definerer en ny funksjon $ h $ med de gitte verdiene for $ a $ og $ b $, og løser ligningen som er gitt av at punktet $ (1, 2) $ ligger på grafen til $ f $ (celle 5 og 4). I algebrafeltet skriver vi inn $ f $ med de gitte verdiene for $ a $, $ b $ og $ c $, og ser videre at grafen til $ f' $ stemmer overens med grafen gitt i oppgaven.
+ 
+\localfig{opg6}{0.3}
+\end{document}
