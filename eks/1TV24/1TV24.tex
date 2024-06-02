@@ -149,7 +149,25 @@ der $ g $ er lufttrykket og $ x $ er km over havet.
 
 \newpage
 \subsection*{Oppgave 6}
-Da $ f' $ er en lineær funksjon, må $ f $ være en andregradsfunksjon. I celle 1 definerer vi en generell andregradsfunksjon. Ut ifra figuren ser vi at funksjonen må oppfylle at $ g'(2)=0 $ og $ g'(4)=4 $. Dette gir oss et ligningssett for $ a $ og $ b $, som er løst i celle 4. Vi definerer en ny funksjon $ h $ med de gitte verdiene for $ a $ og $ b $, og løser ligningen som er gitt av at punktet $ (1, 2) $ ligger på grafen til $ f $ (celle 5 og 4). I algebrafeltet skriver vi inn $ f $ med de gitte verdiene for $ a $, $ b $ og $ c $, og ser videre at grafen til $ f' $ stemmer overens med grafen gitt i oppgaven.
- 
-\localfig{opg6}{0.3}
+Vi definerer $ g(x)=ax+b $ som tangeringslinja til $ f $ i punktet $ P=(1, 2) $. Av figuren ser vi at for $ x=1 $ er stigningstallet til $ g $ lik $ -2 $. Siden grafen til $ g $ skjærer grafen til $ f $ i $ P $, har vi at $ g(1)=2 $. Ved å løse denne ligningen får vi at
+\[ g(x)=-2x+4 \] 
+\localfig{opg6}{0.4}
+
+\subsection*{Oppgave 7}
+Ut ifra figur og krav ser vi at det kan passe med en tredjegradsfunksjon, en andregradsfunksjon og en lineær funksjon. Vi setter
+\[ f(x)=ax^3+bx^2+cx+d \]
+I bunnpunktet til en funksjon er den deriverte lik 0, og da er
+\[ f'(x)=3ax^2+2bx+c=0 \]
+Siden bunnpunktet ligger på $ y $-aksen har vi at
+\alg{
+f'(0) &= c =0
+}
+Vi velger oss derfor
+\[ f(x)=x^2(x+2) \]
+Da har $ (0, f(0)) $ og $ (-2, f(-2)) $ samme $ y $-verdi, nemlig 0. For at andregradsfunksjonen vår skal ha bunnpunkt i $ x=0 $, må vi også kreve at leddet proporsjonalt med $ x $ er lik 0 (på samme måte som vi fikk $ c=0 $ for $ f $). For at den i tillegg skal ha $ (-2, 0) $ på grafen, tar vi med faktoren $ x+2 $. Disse to kravene gir oss at 
+\[ g(x)=(x+2)(x-2) \]
+\newpage
+Til slutt finner vi linja mellom to punkt på grafene til $ f $ og $ g $, og får funksjonen
+\[ h(x)=-3x+6 \]
+\localfig{opg7}{0.25}
 \end{document}

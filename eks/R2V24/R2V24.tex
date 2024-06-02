@@ -1,0 +1,185 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen R2 Våren 2024\hfill {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
+\subsection*{Oppgave 1}	
+\abc{
+\item \alg{
+\int_{-1}^{0} -x^3+3x \, dx &= \left[-\frac{1}{4}x^4+\frac{3}{2}x^2\right]_{-1}^{0} \\
+&= -\frac{1}{4}0^4+\frac{3}{2}\cdot0^2-\left(\frac{1}{4}\cdot(-1)^4+\frac{3}{2}\cdot(-1)^2\right) \\
+&= \frac{1}{4}-\frac{3}{2}\\
+&= -\frac{5}{4}
+}
+\item Vi har at $ f'(x)=-2x^2+3 $, som betyr at $ f $ har maksimalpunkt og minimumspunkt når $ x=\pm\sqrt{\dfrac{3}{2}} $. Dette betyr at $ f $ er enten voksende eller synkende på hele intervallet $ [-1, 1] $, og dermed vil tallverdien til $ \int_{-1}^0 f\, dx $ representere arealet avgrenset av grafen til $ f $, $ x $-aksen og linjene $ x=-1 $ og $ x=0 $. Tilsvarende får vi for tallverdien til $ \int_0^{1} f \,dx $. Tallverdien til det bestemte integralet i oppgave a) er den samme for $ {x=\pm 1} $, fordi alle leddene med $ x $ har partalls eksponent. Dette betyr at $ |\int_{-1}^0 f\,dx| = |\int_{0}^1 f\,dx|  $, og da er arealet spurt om i oppgaven lik $ 2\cdot\frac{5}{4}=\frac{5}{2} $.
+
+
+\subsection*{Oppgave 2}
+Vi setter $ u=\sin x $, da er $ u'=\cos x$. Av kjerneregelen har vi da at
+\alg{
+\int \sin^3 x \cos x \,dx &= \int u^3 u' \,dx \\
+&= \int u^3 \,du \\
+&= \frac{1}{4}u^4 + C \\
+&= \frac{1}{4}\sin^4 x + C
+}
+}
+
+\newpage
+\subsection*{Oppgave 3}
+\abc{
+\item Eleven prøver å finne ut hva $ n $ er når summen av den aritmetiske rekka
+\[ 2+6+10+...+a_n \]
+passerer 200.
+\item Da koden ser ut til å gi det rett svar, gjenstår det for oss å finne $ n $. Den eksplisitte formelen til rekka er $ a_i=2+4(i-1) $. Av formelen for summen $ S_n $ til en aritmetisk rekke har vi at
+\[ S_{n}= n\cdot\frac{2+a_n}{2}=n\frac{(2+2+4(n-1))}{2}=2n^2 \]
+Når $ S_n>200 $ er altså
+\alg{
+2n^2> 200 \\
+n^2 > 100 \\
+n > 10
+}
+Dette betyr at når $ n=11 $ så passerer summen 200.
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item Vi har at
+\alg{
+	\vv{AB}&= [4-1, 1- 1, 1-0] = [3, 0, 1]\vn
+	\vv{AC}&= [1, -1, -1]
+}
+\alg{
+	\vv{AB}\times\vv{AC} \left|\begin{matrix}
+		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+		3 & 0 & 1 \\
+		1 & -1 & -1
+	\end{matrix}\right|&= [0(-1)-(-1)1, - (3(-1)-1\cdot1), 3(-1)-1\cdot0]\\
+	&= [1, 4, -3]
+}
+Arealet til trekanten er gitt som
+\alg{
+	\frac{1}{2}|\vv{AB}\times\vv{AC}|&=\frac{1}{2}\sqrt{1^2+4^2+(-3)^2}=\frac{\sqrt{26}}{2}
+}
+\item Avstanden fra punktet $ C $ til linja gjennom $ A $ og $ B $ tilsvarer høyden i trekanten med segmentet $ AB $ som grunnlinje. Vi har at $ |\vv{AB}|=\sqrt{3^2+1^2}=\sqrt{10} $. Altså er høyden $ h $ gitt ved
+\alg{
+\frac{\sqrt{26}}{2}&=\frac{\sqrt{10}\cdot h}{2} \\
+h &= \sqrt{\frac{13}{5}}
+}
+\item En linje med $ \vv{AB}\times\vv{AC} $ som retningsvektor vil stå vinkelrett på $ \alpha $. Dermed kan $ l $ parameteriseres som
+\[ l: \left\lbrace{
+	\begin{array}{l}
+		x=-2-1t  \\
+		y= 1+ 4t   \\
+		z= 4-3t 
+	\end{array}
+}\right. \]
+\item 
+\textbf{Løsningsmetode 1} \\
+Skal $ m $ være parallell med $ \alpha $  må vektoren $ P-(0, 0, z)=[-2, 1, 4-z] $ stå vinkelrett på $ \vv{AB}\times\vv{AC} $, om er en normalvektor til $ \alpha $. Dette betyr at
+\alg{
+[-2, 1, 4-z]\cdot[1, 4, -3]  &= 0\\
+-2+4-12+3z &= 0 \\
+z &= \frac{10}{3}
+}
+Altså er $ D=(0, 0, \frac{3}{10}) $.\\[12pt]
+
+\textbf{Løsningsmetode 2} \\
+$ \alpha $ kan parameteriseres som 
+\[ \alpha: \left\lbrace{
+	\begin{array}{l}
+		x=1+3t+s  \\
+		y= 1-s   \\
+		z= t-s 
+	\end{array}
+}\right. \]
+Når $ \alpha $ skjærer $ z $-aksen har vi at
+\alg{
+0 &= 1+3t+s \\
+0 &= 1-s
+}
+Altså er $ s=1 $ og $ t= -\frac{2}{3} $. $ \alpha $ skjærer altså $ z $-aksen i $ E=(0, 0, -\frac{5}{3}) $. Avstanden fra $ D $ til $ E $ tilsvarer avstanden fra $ P $ til $ \alpha $ langs $ z $-aksen. Når $ x=-2 $ og $ y=1 $ har vi 
+at
+\alg{
+	-2 &= 1+3t+s \\
+	1 &= 1-s
+}
+Altså er $ s=0 $ og $ t=-1 $, og da er $ z=-1 $. Avstanden fra $ P $ til $ \alpha $ langs $ z $-aksen er derfor $ 4-(-1)=5 $, og da er $ D=(0, 0, \frac{10}{3}) $
+}
+
+
+\subsection*{Oppgave 5}
+\abc{
+\item Når $ f(x)=0 $ er
+\alg{
+2\cdot\sin\left(\frac{\pi}{6}x-\frac{\pi}{3}\right)-1 &= 0 \\
+\sin\left(\frac{\pi}{6}x-\frac{\pi}{3}\right)&= \frac{1}{2}
+}
+Da $ \asin \frac{1}{2}=\frac{\pi}{6} $ har vi at  
+\[ \frac{\pi}{6}x-\frac{\pi}{3}=\frac{\pi}{6}+2\pi n\qquad\vee\qquad  \frac{\pi}{6}x-\frac{\pi}{3}=\pi-\frac{\pi}{6}+2\pi n\]
+hvor $ n\in\mathbb{Z} $. Altså er
+\[ x=3+12 n\qquad\vee\qquad  x=7+12 n\]
+Følgelig er $ x\in\lbrace 3, 7, 15, 19\rbrace $.
+\item En sinusfunksjon $ g(x)=a\sin(kx+c)+d $ har amplitude $ |a| $, periode $ P=\frac{2\pi}{k} $, fase $ c $ og likevektslinje $ d $. For $ f $ har vi at
+\alg{
+|a| &= 2 \\
+P &= 2\pi \cdot \frac{6}{\pi}=12 \\
+c &= -\frac{\pi}{3} \\
+d &= -1
+}
+Forskyvningen langs likevektslinja tilsvarer avstanden mellom et punkt på grafen til $ h(x)=2\sin\left(\frac{\pi}{6}x\right)-1 $ og et samsvarende punkt på grafen til $ f $. Kjernen til $ h $ blir 0 når $ x>0 $. Det samsvarende punktet på grafen til $ f $ får vi i det første tilfellet når kjernen til $ f $ blir 0 for $ x\geq0 $, altså når
+\alg{
+\frac{\pi}{6}x-\frac{\pi}{3}&=0 \\
+x &= 2
+}
+Altså er forskyvningen langs likevektslinja lik 2.
+}
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Farten er ca. 31.21 m/s. idet ballen blir skutt (celle 2).
+\item Når ballen treffer banen er $ z=0 $, og da er $ t\approx1.43 $ (celle 3). Da er ballen ca 43.5 meter unna hjørnet (celle 4).
+\item Ballen er på sitt høyeste når $ z $ har sin høyeste verdi, som er når $ t\approx0.71 $ (celle 5). Da er farten ca. 30.41 m/s (celle 6) og høyden 2.5 m (celle 5)
+}
+\localfig{opg1}{0.2}
+
+\subsection*{Oppgave 2}
+Ut i fra figuren leser vi av noen omtrentlige punkt, og bruker regresjon. Her nøyer vi oss med å se på grafen for å avgjøre hva som er en god tilnærming, og ender da med et 4. grads polynom. Bruker så formelen for volumet til et omdreiningslegeme, og finner at volumer ca. er 327 $ \text{cm}^3 $. 
+\localfig{opg2}{0.3}
+
+
+\newpage
+
+\subsection*{Oppgave 3}
+\abc{
+\item Ut ifra figuren ser vi at $ T $ er tilnærmet periodisk mellom 0 til 365, altså i løpet av et år, og at $ V_f $ er tilnærmet $ [15, 19] $. I tillegg er $ T(90)\approx19 $ (rad 7), hvor $ x=90 $ tilsvarer 1. april.
+\item  $ T'(x) $ gir endringen minutter per dag og 3 minutter tilsvarer $ \frac{3}{60} $ time. Denne endringen skjer i løpet av dag $ x=46 $ og dag $ x=135 $, som tilsvarer  15. februar og 15. mai (rad 3 og rad 4). (Vi har bare tatt hensyn til den positive endringen. Fremgangsmåten for å finne den negative endringen er helt lik).
+\item Den største endringen er når $ T'(x) $ har sitt toppunkt, som er i løpet av dag $ x=90 $ (rad 5). Da er endringen på ca. 4 minutter per dag. (rad 8). (Vi har bare tatt hensyn til den positive endringen. Fremgangsmåten for å finne den negative endringen er helt lik.)
+}
+\localfig{opg3}{0.2}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Kubikktall nr $ n $ er lik $ n^3 $. Altså er rekursiv formel
+\[ S_{n+1}=S_n+(n+1)^3 \]
+Regresjonsanalysen gir at $ R^2=1 $ når eksplisitt formel er
+\[ S_n =\frac{1}{4}n^4+\frac{1}{2}n^3+\frac{1}{4}n^2 \]
+
+
+\item \phantom{text}\\\pythonut{opg4.py}{
+1625625
+}
+\item Uttrykket stemmer for $ S_1=1 $ (celle 2). Vi antar at uttrykker stemmer for $ S_n $, og sjekker om det da stemmer for $ S_{n+1} $, som det gjør (celle 3). 
+}
+\localfig{opg4}{0.24}
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item I celle 3 finner vi sentrum i sirkelen, og i celle 4 finner vi radien til sirkelen. I celle 5 definerer vi ligningen til $ \gamma $. Den minste avstanden mellom sirkelen og planet er avstanden mellom sentrum i sirkelen og planet, fratrekt radien til sirkelen. Vi definerer normalvektoren til $ \gamma $ i celle 5, og bruker formelen for avstanden mellom et punkt og et plan. Den minste avstanden mellom sirkelen og planet er $ 4-\sqrt{6} $ (celle 6)
+\item Da $ \gamma $ og $ \alpha $ er parallelle, er en normalvektor til $ \gamma $ også en normalvektor til $ \alpha $. I avstandsformelen ersatter vi $ -14 $ med $ d $, og finner verdien til $ d $ som gir at avstanden er den samme (celle 7). Da får vi at $ \alpha $ er gitt ved ligningen
+\[ x+2y+2z+10=0 \]
+\localfig{opg5}{0.4}
+}
+
+\end{document}

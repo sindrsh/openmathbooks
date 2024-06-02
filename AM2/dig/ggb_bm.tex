@@ -97,11 +97,21 @@ I algebrafelt: Gir vinkelen på intervallet $ [0^\circ, 180^\circ] $ som har cos
 I CAS: Gir vinkelen på intervallet $ [0, \pi] $ som har cosinus-verdi $ x $.
 }
 
+\item \cmds{acosd( <x> )}
+{
+	I algebrafelt: Gir vinkelen på intervallet $ [0^\circ, 180^\circ] $ som har cosinus-verdi $ x $.
+}
+
 \item \cmds{asin( <x> )}
 {
 I algebrafelt: Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har sinus-verdi $ x $.\os
 
 I CAS: Gir vinkelen på intervallet $ [-\frac{\pi}{2}, \frac{\pi}{2}] $ som har sinus-verdi $ x $.
+}
+
+\item \cmds{asind( <x> )}
+{
+Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har sinus-verdi $ x $.
 }
 
 \item \cmds{atan( <x> )}
@@ -110,6 +120,12 @@ I algebrafelt: Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har ta
 
 I CAS: Gir vinkelen på intervallet $ [-\frac{\pi}{2}, \frac{\pi}{2}] $ som har sinus-verdi $ x $.
 }
+
+\item \cmds{atand( <x> )}
+{
+Gir vinkelen på intervallet $ [-90^\circ, 90^\circ] $ som har tangens-verdi $ x $.
+}
+
 
 \item \cmds{Asymptote( <Funksjon> )}
 {Finner asymptotene til en funksjon.}
@@ -271,8 +287,21 @@ Faktoriserer et tall/polynom.
 
 \item \cmds{Vinkel( <Vektor>, <Vektor> )}
 {Gir vinkelen mellom to vektorer. Kan også brukes for vinkel mellom plan/linjer, plan/plan og linje/linje}
+
+\item \cmds{X( <Punkt> )}{
+	Gir $ x $-koordinaten til et punkt.
+}
+
+\item \cmds{Y( <Punkt> )}{
+	Gir $ y $-koordinaten til et punkt.
+}
+
+\item \cmds{Z( <Punkt> )}{
+	Gir $ z $-koordinaten til et punkt.
+}
 \end{itemize}
 \label{commandlistend}
+
 
 
 \end{document}

@@ -1,0 +1,128 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen R1 Våren 2024\hfill {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}
+\subsection*{Oppgave 1}	
+Bruker produktregelen og kjerneregelen, og får at
+\alg{
+\left(4x^2\cdot \ln(3x)\right)' &= (4x^2)'\ln(3x)+4x^2(\ln (3x))' \\
+&= 8x\ln(3x)+4x^2\frac{1}{3x}\cdot 3 \\
+&= 4x(2\ln(3x)+1)
+}
+
+\subsection*{Oppgave 2}
+Vi setter $ \ln x =u $, og får at
+\[ u^2-u-6=0 \]
+Da $ 2(-3)=-6 $ og $ 2+(-3)=-1 $, har vi at
+\[ (u+2)(u-3)=0 \]
+Dermed er 
+\alg{
+\ln x &= -2 &&\vee & \ln x &= 3 \\
+x &= e^{-2} &&\vee & x &= e^3
+}
+
+\subsection*{Oppgave 3}
+\algv{
+\lim\limits_{x\to\infty}f(x)&= \lim\limits_{x\to\infty} e^{-\infty+1}\lim\limits_{x\to\infty} \frac{1}{e^\infty}=0 \vn
+\lim\limits_{x\to\infty}f(x)&= \lim\limits_{x\to\infty} e^{-(-\infty)+1}\lim\limits_{x\to-\infty} e^\infty=\infty
+}
+Altså er det bare den øverste grensen som eksisterer.
+
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Hvis $ A $, $ B $ og $ C $ ligger på linje, er $ \vv{AB}\parallel \vv{AC} $. Vi har at
+\alg{
+	\vv{AB}&= [-1-3, -2-4] = -2[2, 3] \vn
+	\vv{AC}&= [t, 2t-4]
+}
+Da forholdet mellom $ x $-koordinaten og $ y $-koordinaten til $ \vv{AB} $ er $ \frac{2}{3} $ har vi at
+\alg{
+	\frac{t}{2t-4}&=\frac{2}{3}\\
+	3t &= 2(2t-4) \\
+	t &= 8
+}
+\item $ \vv{AB} $ og $ \vv{AC} $ danner en rett vinkel hvis $ \vv{AB}\cdot\vv{AC}=0 $, som betyr at
+\alg{
+[2, 3]\cdot[t, 2t-4]&= 0 \\
+2t+3(2t-4)&=0 \\
+t &= \frac{1}{2}
+}
+}
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Det tar ca. 9 dager før 100 elever er smittet (rad 2).
+\item Tidspunktet der flest blir smittet er der $ S'(t) $ har sitt maksimum, som er når $ t\approx 11 $ (rad 3). Flest blir altså smittet rundt dag 11, og da blir mellom 22 til 23 elever smittet per dag.
+\item For $ t>0 $ er $ y=300 $ en horisontal asymptote til $ S $. Dette betyr at det aldri vil bli mer enn 300 smittede elever ved skolen.
+}
+\localfig{opg1}{0.3}
+
+\subsection*{Oppgave 2}
+\abc{
+\item Påstanden er sann fordi hvis $ x>0 $ har vi at
+\[ e^{k\ln x}=(e^{\ln x})^k=x^k \]
+\item
+\alg{
+&\lim\limits_{x\to 2} (x^3-2)'=\lim\limits_{x\to 2} 3x^2 = 8 \vn
+&\lim\limits_{x\to 2} (3x^2-4)' = \lim\limits_{x\to 2} 6x = 12
+}
+Skulle $ f $ vært deriverbar i $ x=2 $ måtte dei to uttrykkene over hatt lik grenseverdi, og det har de ikke. Påstanden er feil.
+\item Hvis en funksjon $ f(x) $ er både minkende og voksende i en sammenhende definisjonsmengde, vil $ f $ anta lik verdi for minst to forskjellige verdier av $ x $, og kan da ikke ha en omvendt funksjon. I så fall er påstanden er feil. Hvis $ f $ derimot har delt forskrift, minkende på en delmengde og voksende på en annen delmengde, er påstanden sann.
+}
+\subsection*{Oppgave 3}
+\abc{
+\item Vi definerer $ r_a $ og $ r_b $ som henholdsvis $ ra $ og $ rb $ i CAS. Verdien til avstanden mellom bilene er gitt i celle 3, og dette tilsvarer ca 2 km. 
+\item Da bil $ B $ har høyest banefart (celle 4 og 5) er det rimelig å anta at bil $ B $ kjører på motorvei.  
+\item I veikrysset har bilene like koordinater (celle 6 og 7). Av dette finner vi at bil $ B $ når krysset først (celle 8). 
+}
+\localfig{opg3}{0.5}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Utttrykket er gitt i celle 3.
+\item Ved et jordskjelv som måler 4.7 på massemagnitudeskalaen blir det utløst ca 140 kJ (celle 4).
+\item \alg{
+\frac{E(M_0+1)}{E(M_0)}=10^{\frac{3}{2}(M_0+1)+\frac{24}{5}}\cdot 10^{-\frac{3}{2}M_0-\frac{24}{5}}=10^\frac{3}{2}\approx 31.6
+}
+Hvis $ M $ øker med 1 utløser jordskjelvet ca 31.6 ganger så stor energi.
+}
+\localfig{opg4}{0.4}
+
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item For å beskrive salg av bensinbiler har vi valgt å bruke lineær regresjon, da dette ser ut til å passe rimelig godt med tallene fra tabellen. For å beskrive salget av elbiler har vi valgt regresjon med et 4. gradspolynom da polynomfunksjoner viste seg å beskrive veksten de siste årene bedre enn en eksponentialfunksjon.
+\item Hvis den lineære trenden for salg av bensinbiler fortsetter, vil det bli solgt ca. 450 bensinbiler mindre for hvert år som går. Dette ser vi ut av stigningstallet til $ f $. $ f $ vil ikke være gyldig noen få år etter 2040, for da er $ f $ negativ. Hvis trenden for elbilsalg fortsetter, vil elbil-salget ha nådd ca. 20 000 rundt 2029. Dette ser vi av grafen til $ g $. Da er det ikke lenger rimelig å anta at modellen er gyldig, fordi det totale elbilsalget i 2010 er var ca. 20 000. 
+}
+
+\localfig{opg5}{0.3}
+
+\newpage
+\subsection*{Oppgave 6}
+\abc{
+\item Lars ønsker å finne det største arealet $ \square ABCD $ kan ha. Ved å kjøre programmet får man at dette arealet er 24751.
+\item Lars finner arealet til rektangelet ved funksjonen \texttt{areal(x)}. I tillegg finner han en tilnærming til den deriverte av denne funksjonen ved \texttt{der\_areal(x)}. Han antar så at
+\begin{itemize}
+	\item \texttt{areal(x)} er voksende i $ x=0 $ (derivert større enn 0).
+	\item \texttt{areal(x)} har et toppunkt for $ x\in[0, 2] $. Dette fordi while-løkken stopper når den deriverte skifter fortegn.
+\end{itemize}
+Strategien vil ikke fungere uavhengig av hvilken funksjon $ f $ er fordi:
+\begin{itemize}
+	\item Hvis $ \texttt{der\_areal(x)} \leq 0 $ for $ x=0 $ vil while-løkken stoppe med en gang.
+	\item Hvis hele verdimengden til $ f $ er negativ har $ \texttt{areal(x)} $ feil fortegn. 
+\end{itemize}
+}
+\newpage
+\subsection*{Oppgave 7}
+Da høyden er uavhengig av formen på $ G $, må høyden som bidrar til størst volum være $ h=r $. Vi finner $ G $ uttrykt ved $ x $. Da $ G=0 $ for $ x\in\lbrace0, r\rbrace $ og $ G\geq0 $ for $ x\in[0, r] $, må $ G $ ha et toppunkt hvor $ G'(x)=0 $ for $ x\in[0, r] $. Da $ G $ har maksimalverdi $ 2r^2 $, er det største volumet pyramiden kan ha gitt som
+\[ V=\frac{r\cdot2r^2}{3}=\frac{2r^3}{3} \]
+\begin{figure}
+	\centering
+	\includegraphics{opg7}\quad
+	\includegraphics[scale=0.5]{opg7a}
+\end{figure}
+\end{document}
