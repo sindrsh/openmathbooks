@@ -19,4 +19,13 @@ Gitt funksjonene $ h(x)=ax+b $ hvor $ a $ og $ b $ er konstanter. Da er $ h'(x)=
 Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi måtte ønske det, og dermed er alle polynomfunksjoner kontinuerlige.
 }
 
+\grubr{opgder2dx} \\
+Vi har at
+\alg{
+\lim\limits_{h\to0}\frac{f(x+h)-f(x-h)}{h}&=\lim\limits_{h\to0}\frac{f(x+h)-f(x)+f(x)-f(x-h)}{h} \\
+&= \lim\limits_{h\to0}\frac{f(x+h)-f(x)}{h}+\lim\limits_{h\to0}\frac{f(x)-f(x-h)}{h} \\
+&= \lim\limits_{h\to0}\left[f'(x)+f'(x-h)\right] \\
+&= 2f'(x)
+}
+
 \end{document}
