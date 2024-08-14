@@ -288,5 +288,42 @@ Punkt der funksjonen har sin høyeste verdi.
 \info{Hvorfor er nullpunkt en verdi?}{
 	Det kan kanskje virke litt rart at vi kaller $ x $-verdier for nullpunkt, punkt har jo både en $ x $-verdi og en $ y $-verdi. Men når det er snakk om nullpunkt, er det underforstått at $ {y=0} $, og da er det tilstrekkelig å vite $ x $-verdien for å avgjøre hvilket punkt det er snakk om.  
 }
+\section{Navn på funksjoner}
+\regdef[Potensfunksjoner]{
+	Gitt konstantene $ k $ og $ b $, og en variabel $ x $. En funksjon på formen
+	\begin{equation}\label{powrfunc}
+		f(x)=k x^m	
+	\end{equation}
+	er da en \outl{potensfunksjon} med \outl{koeffisient} $ k $ og \outl{eksponent} $ m $.
+}
+\regdef[Polynomfunksjoner]{
+	En \outl{polynomfunksjon} er én av følgende:
+	\begin{itemize}
+		\item en potensfunksjon med heltalls eksponent større eller lik 0.
+		\item summen av flere potensfunksjoner med heltalls eksponent større eller lik 0.
+	\end{itemize}
+	Polynomfunksjoner kategoriseres etter den største eksponenten i funksjonsuttrykket. For konstantene $ a $, $ b $, $ c $ og $ d$, og en variabel $ x $, har vi at \vs
+	\begin{center}
+		\begin{tabular}{|r|l|} \hline
+			\textbf{funksjonsuttyrykk} & \textbf{funksjonsnavn} \\ \hline
+			$ ax+b $ &1. grads funksjon/polynom (lineær) \\
+			$ ax^2+bx+c $& 2. grads funksjon/polynom (kvadratisk) \\
+			$ ax^3+bx^2+cx+d $& 3. grads funksjon/polynom (kubisk) \\ \hline
+		\end{tabular}
+	\end{center}
+}
+\eks[1]{ 
+	$ 4x^7-5x^2+4 $ er et 7. grads polynom. \vsk
+	
+	$ \frac{2}{7}x^5-3 $ er et et 5. grads polynom.
+}
+\newpage
+\regdef[Rasjonale funksjoner]{
+	Hvis uttrykket til en funksjon består av en brøk med et polynom i både teller og nevner, er funksjonen en \outl{rasjonal funksjon}.
+}
+\eks{
+	$ f $, $ g $ og $ h $ er rasjonale funksjoner.
+	\[ f(x)=\frac{1}{x} \qquad\qquad g(x)=\frac{x^2+3}{4x+2}\qquad\qquad h(x)=\frac{x^3-x+4}{-2x^7+9x^2}\]
+}
 
 \end{document}

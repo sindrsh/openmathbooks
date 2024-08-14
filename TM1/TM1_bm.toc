@@ -18,54 +18,54 @@
 \contentsline {section}{\numberline {2.5}Logaritmer}{28}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Forklaringer}{31}{section.2.6}%
 \contentsline {section}{Oppgaver}{33}{section*.12}%
-\contentsline {chapter}{\numberline {3}Geometri}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definisjoner}{40}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Egenskaper til sirkler}{43}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Egenskaper til trekanter}{44}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Forklaringer}{49}{section.3.4}%
-\contentsline {section}{Oppgaver}{58}{section*.31}%
-\contentsline {chapter}{\numberline {4}Vektorer}{67}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduksjon}{68}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Regneregler for vektorer}{71}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Lengden til en vektor}{73}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Skalarproduktet I}{74}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Skalarproduktet II}{76}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Vektorer vinkelrett på hverandre}{77}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Parallelle vektorer}{79}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Vektorfunksjoner}{81}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Parameterisering}{81}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Vektorfunksjonen til en linje}{82}{subsection.4.8.2}%
-\contentsline {section}{\numberline {4.9}Sirkellikningen}{83}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Determinanter}{84}{section.4.10}%
-\contentsline {section}{Oppgaver}{89}{section*.49}%
-\contentsline {chapter}{\numberline {5}Grenseverdier og kontinuitet}{91}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Grenseverdier}{92}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Kontinuitet}{94}{section.5.2}%
-\contentsline {section}{Oppgaver}{96}{section*.52}%
-\contentsline {chapter}{\numberline {6}Derivasjon}{98}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Definisjoner }{99}{section.6.1}%
-\contentsline {subsubsection}{Linearisering av en funksjon}{101}{subsubsection*.54}%
-\contentsline {section}{\numberline {6.2}Derivasjonsregler}{103}{section.6.2}%
-\contentsline {subsubsection}{Den deriverte funksjonen}{103}{subsubsection*.56}%
-\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{105}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{106}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Derivasjon av vektorfunksjoner}{109}{section.6.3}%
-\contentsline {section}{Oppgaver}{114}{section*.67}%
-\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{118}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{119}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{122}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Asymptoter}{128}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Konvekse og konkave funksjoner}{130}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{131}{section.7.5}%
-\contentsline {subsubsection}{Injektive funksjoner}{131}{subsubsection*.80}%
-\contentsline {subsubsection}{Omvendte funksjoner}{131}{subsubsection*.82}%
-\contentsline {section}{Oppgaver}{136}{section*.84}%
-\contentsline {chapter}{Vedlegg A-F}{140}{chapter*.85}%
-\contentsline {subsubsection}{Den deriverte som motivajon}{144}{subsubsection*.90}%
-\contentsline {subsubsection}{Undersøking av grenseverdien}{144}{subsubsection*.91}%
-\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{147}{subsubsection*.92}%
-\contentsline {subsubsection}{Undersøkelse av grensenverdien}{152}{subsubsection*.95}%
+\contentsline {chapter}{\numberline {3}Geometri}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definisjoner}{42}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Egenskaper til sirkler}{45}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Egenskaper til trekanter}{46}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Forklaringer}{51}{section.3.4}%
+\contentsline {section}{Oppgaver}{60}{section*.31}%
+\contentsline {chapter}{\numberline {4}Vektorer}{69}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduksjon}{70}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Regneregler for vektorer}{73}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Lengden til en vektor}{75}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Skalarproduktet I}{76}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Skalarproduktet II}{78}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Vektorer vinkelrett på hverandre}{79}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Parallelle vektorer}{81}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Vektorfunksjoner}{83}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Parameterisering}{83}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Vektorfunksjonen til en linje}{84}{subsection.4.8.2}%
+\contentsline {section}{\numberline {4.9}Sirkellikningen}{85}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Determinanter}{86}{section.4.10}%
+\contentsline {section}{Oppgaver}{91}{section*.49}%
+\contentsline {chapter}{\numberline {5}Grenseverdier og kontinuitet}{93}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Grenseverdier}{94}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Kontinuitet}{96}{section.5.2}%
+\contentsline {section}{Oppgaver}{98}{section*.52}%
+\contentsline {chapter}{\numberline {6}Derivasjon}{100}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definisjoner }{101}{section.6.1}%
+\contentsline {subsubsection}{Linearisering av en funksjon}{103}{subsubsection*.54}%
+\contentsline {section}{\numberline {6.2}Derivasjonsregler}{105}{section.6.2}%
+\contentsline {subsubsection}{Den deriverte funksjonen}{105}{subsubsection*.56}%
+\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{107}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{108}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Derivasjon av vektorfunksjoner}{111}{section.6.3}%
+\contentsline {section}{Oppgaver}{116}{section*.67}%
+\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{120}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{121}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{124}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Asymptoter}{130}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Konvekse og konkave funksjoner}{132}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{133}{section.7.5}%
+\contentsline {subsubsection}{Injektive funksjoner}{133}{subsubsection*.80}%
+\contentsline {subsubsection}{Omvendte funksjoner}{133}{subsubsection*.82}%
+\contentsline {section}{Oppgaver}{138}{section*.84}%
+\contentsline {chapter}{Vedlegg A-F}{142}{chapter*.85}%
+\contentsline {subsubsection}{Den deriverte som motivajon}{146}{subsubsection*.90}%
+\contentsline {subsubsection}{Undersøking av grenseverdien}{146}{subsubsection*.91}%
+\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{149}{subsubsection*.92}%
+\contentsline {subsubsection}{Undersøkelse av grensenverdien}{154}{subsubsection*.95}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{153}{chapter*.96}%
+\contentsline {chapter}{Indeks}{155}{chapter*.96}%
 \vspace {-5pt}
-\contentsline {chapter}{Fasit}{154}{chapter*.98}%
+\contentsline {chapter}{Fasit}{156}{chapter*.98}%

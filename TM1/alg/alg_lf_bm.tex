@@ -88,10 +88,10 @@ T&= \frac{1}{2}hc\br
 \mers{Da en trekant må ha et areal med positiv verdi, kan Herons formel brukes for å vise \textit{trekantulikheten}, som vi utledet i \mb.}\vsk
 
 \newpage
-\grubr{opggeokvadsym} \os
+\grubr{opggeokvadsym} \\
 \textbf{Alternativ 1}\\
-Skal grafen til $ f $ være symmetrisk om vertikallinja som går gjennom punktet $ \left(-\frac{b}{2a}, 0\right) $, må vi for et tall $ k $ ha at
-\begin{equation}\label{opggeokvadsym}
+Skal grafen til $ f $ være symmetrisk om linja $ {x=-\frac{b}{2a}} $, må vi for et tall $ k $ ha at
+\begin{equation}\label{opggeokvadsymeq}
 	f\left(k-\frac{b}{2a}\right)=f\left(-k-\frac{b}{2a}\right)
 \end{equation}
 For et tall $ d $ har vi at
@@ -102,7 +102,7 @@ Videre er
 	&= \frac{4a^2d^2-4abd+b^2}{4a}+\frac{2abd-b^2}{2a}+c \br
 	&=\frac{4a^2d^2-b^2}{4a}+c
 }
-Dette betyr at uansett om $ d=k $ eller om $ d=-k $, så vil uttrykket over være likt, og altså er \eqref{opggeokvadsym} gyldig. \vsk
+Dette betyr at uansett om $ d=k $ eller om $ d=-k $, så vil uttrykket over være likt, og altså er \eqref{opggeokvadsymeq} gyldig. \vsk
 
 \textbf{Alternativ 2}\\
 Skal $ f $ være symmetrisk om en vertikallinje, må det bety at to tall $ t $ og $ s $ gir lik $ f $-verdi:
@@ -129,5 +129,11 @@ x_s &= s+\frac{1}{2}(t-s) \\
 	&=(2bd-2dr-r^2)\left(r^2+2bd\right)
 } 
 
-
+\grubr{opgbevisabc} \\
+Hvis $ f(x)=ax^2+bx+c=0 $, har vi for et tall $ k $ at
+\[ f\left(\pm k-\frac{b}{2a}\right)=\frac{4a^2k^2-b^2}{4a}+c=0 \]
+Løser vi denne ligningen med hensyn på $ k $, får vi at
+\[ k=\pm \frac{\sqrt{b^2-4ac}}{2a} \]
+Dette betyr at
+\[ f\left(\pm \frac{\sqrt{b^2-4ac}}{2a}-\frac{b}{2a}\right)=0 \]
 \end{document}
