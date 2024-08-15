@@ -1,0 +1,428 @@
+\input{../doc}
+\input{../preamb_nn}
+\begin{document}
+
+\section{Å finne størrelser}
+Likningar, formlar og funksjonar (og utttrykk) er omgrep som dukkar i forskjellige sammenhenger, men som i bunn og grunn handlar om det same; \textsl{dei uttrykker relasjonar mellom størrelsar}. Når alle størrelsane utanom den éine er kjent, kan vi finne denne enten direkte eller indirekte.\vsk
+
+\subsection{Å finne størrelser direkte}
+Mange av regelboksane i boka inneheld ein formel. Når ein størrelse står aleine på éi side av formelen, seier vi at det er ein formel for \textsl{den} størrelsen. For eksempel inneheld \rref{maalstk} ein formel for 'målestokk'. Når dei andre størrelsane er gitt, er det snakk om å sette verdiane inn i formelen og regne ut for å finne den ukjente,  'målestokk'.  \vsk
+
+Men ofte har vi berre ei skildring av ein situasjon, og da må vi sjølv lage formlane. Da gjeld det å først identifisere kva størrelsar som er til stades, og så finne relasjonen mellom dei.\regv
+\eks[1]{
+For ein taxi er det følgende kostnader:
+\begin{itemize}
+	\item Du må betale 50\enh{kr} uansett hvor langt du blir kjørt.
+	\item I tillegg betaler du 15\enh{kr} for kvar kilometer du blir kjørt.
+\end{itemize}
+\abc{
+\item Sett opp eit uttrykk for kor mykje taxituren kostar for kvar kilometer du blir kjørt.
+\item Hva kostar ein taxitur på 17\enh{km}?
+}
+
+\sv \vsabc
+\abc{
+\item Her er det to ukjente størrelsar; 'kostnaden for taxituren' og 'antal kilometer køyrt'. Relasjonen mellom dei er denne:
+	\[ \text{kostnaden for taxituren}=50+15\cdot\text{antal kilometer køyrt} \]
+\item Vi har no at
+\[ \text{kostnaden for taxituren}=50+15\cdot17= 305 \]
+Taxituren kostar altså 305\enh{kr}.
+}
+}
+\info{Tips}{
+Ved å la enkeltbokstaver representere størrelsar, får ein kortare uttrykk. La $ k $ stå for 'kostnad for taxituren' og $ x $ for 'antal kilometer køyrt'. Da blir uttrykket fra \textsl{Eksempel 1} over dette:
+\[ k=50+15x \]
+I tillegg kan ein gjerne bruke skrivemåten for funksjonar:
+\[ k(x)=50+15x \] 
+}
+\subsection{Å finne størrelsar indirekte}
+\subsubsection{Når formlane er kjente}
+\eks[1]{
+	Vi har sett at strekninga $ s $ vi har køyrt, farta $ f $ vi har halde, og tida $ t $ vi har brukt kan settast i samanheng via formelen\footnote{$ \text{strekning}=\text{fart}\cdot \text{tid} $}:
+	\[ s = f\cdot t \] 
+	Dette er altså ein formel for $ s $. Ønsker vi i staden ein formel for $ f $, kan vi gjere om formelen ved å følge prinsippa for likningar\footnote{Sjå \mb, s. 121.}:
+	\alg{
+		s &= f\cdot t \br
+		\frac{s}{t}&=\frac{f\cdot \bcancel{t}}{\bcancel{t}} \br
+		\frac{s}{t}&=f
+	}
+}
+\newpage
+\eks[2]{
+	\textit{Ohms lov} seier at strømmen $ I $ gjennom ein metallisk ledar (med konstant temeperatur) er gitt ved formelen
+	\[ I = \frac{U}{R} \]
+	der $ U $ er spenninga og $ R $ er resistansen.
+	
+	\abc{
+	\item Skriv om formelen til ein formel for $ R $.	
+}
+Strøm målast i Ampere (A), spenning i Volt (V) og motstand i Ohm ($ \Omega $).
+\abcs{2}{
+\item Hvis strømmen er 2\,A og spenninga 12\,V, kva er da resistansen?
+}
+
+	
+	\sv \vsabc
+\abc{
+	\item Vi gjer om formelen slik at $ R $ står aleine på éi side av likskapsteiknet:\vs
+\alg{
+	I\cdot R&=\frac{U\cdot \cancel{R}}{\cancel{R}} \br
+	I\cdot R &= U \br
+	\frac{\cancel{I}\cdot R}{\cancel{I}} &= \frac{U}{I}\br 
+	R &= \frac{U}{I}
+}
+\item Vi bruker formelen vi fant i a), og får at
+\alg{
+	R &= \frac{U}{I} \br
+	&= \frac{12}{2} \\
+	&= 6
+}
+Resistansen er altså $ 6\,\Omega $.
+}
+}
+\newpage
+\eks[3]{
+	Gitt ein temperatur $ T_C $ målt i antall grader Celsius ($ ^\circ C $). Temperaturen $ T_F $ målt i antall grader Fahrenheit ($ ^\circ F $) er da gitt ved formelen
+	\[ T_F = \frac{9}{5}\cdot T_C+32 \]
+\abc{
+\item Skriv om formelen til ein formel for $ T_C $.
+\item Vis ein temperatur er målt til 59$ ^\circ F $, kva er da temperaturen målt i $ ^\circ C $?
+}
+	
+	\sv \vsabc
+	
+	\abc{
+	\item Vi isolerer $ T_C $ på én side av likhetstegnet:
+	\alg{
+		T_F &= \frac{9}{5}\cdot T_C+32 \\
+		T_F-32 &= \frac{9}{5}\cdot T_C \\
+		5(T_F-32) &= \cancel{5}\cdot\frac{9}{\cancel{5}}\cdot F_C \\
+		5(T_F-32) &= 9T_C \\
+		\frac{5(T_F-32)}{9} &= \frac{\cancel{9}T_C}{\cancel{9}} \\
+		\frac{5(T_F-32)}{9} &= T_C
+	}
+	\item Vi bruker formelen fra a), og finn at
+	\alg{
+		T_C&= \frac{5(59-32)}{9} \br
+		&= \frac{5(27)}{9} \br
+		&= 5\cdot 3 \\
+		&= 15
+	}
+}
+}
+
+\subsubsection{Når formlane er ukjente}
+\eks[1]{
+Tenk at klassen ønsker å fare på ein klassetur som til saman kostar 11\,000\,kr. For å dekke utgiftane har de allereie skaffa 2\,000\,kr, resten skal skaffast gjennom loddsalg. For kvart lodd som selgast, tener de 25\,kr.\os
+
+\abc{
+\item Lag ei ligning for kor mange lodd klassen må selge for å få råd til klasseturen.
+\item Løys likninga.
+}
+
+\sv
+\abc{
+\item Vi startar med å tenke oss reknestykket i ord:
+\small
+\[ \text{pengar allereie skaffa}+\text{antal lodd}\cdot\text{pengar per lodd}=\text{prisen på turen} \]
+\normalsize
+Den einaste størrelsen vi ikkje veit om er 'antal lodd'. Vi erstattar\footnote{Dette gjer vi berre fordi det da blir mindre for oss å skrive.} \textit{antal lodd} med $ x $, og sett verdiane til dei andre størrelsane inn i likninga:
+\[ 2\,000+x\cdot25 = 11\,000 \]
+\item \ \vs \vs
+\alg{
+	25x &= 11\,000-2\,000\\
+	25 x &= 9\,000\\
+	\frac{\cancel{25} x}{\cancel{25}} &= \frac{9\,000}{25} \\
+	x &= 360
+}
+}
+}
+\newpage
+\eks[2]{Ein vennegjeng ønsker å spleise på ein bil som kostar 50\,000\enh{kr}, men det er usikkert kor mange personar som skal vere med på å spleise.\os 
+	\textbf{a)} Kall 'antal personar som blir med på å spleise' for $ P $ og 'utgift per person' for $ U $,  og lag ein formel for $ U $.\os
+	
+	\textbf{b)} Finn utgifta per person viss 20 personar blir med.
+	
+	\sv
+	\textbf{a)} Sidan prisen på bilen skal delast på antal personar som er med i spleiselaget, må formelen bli
+	\[ U = \frac{50\,000}{P} \]
+	
+	\textbf{b)} Vi erstattar $ P $ med 20, og får
+	\alg{
+		U &= \frac{50\,000}{20}\\
+		&= 2\,500
+	}
+	Utgifta per person er altså 2\,500\enh{kr} .
+}
+\section{Funksjoners egenskaper}
+\textit{Denne seksjonen tar utgangspunkt i at lesaren er kjed med funksjonar, sjå \mb, kapittel 9.}
+\subsection{Funksjoner med samme verdi; skjæringspunkt}
+\reg[Skjæringspunkt til grafer]{
+	Et punkt der to funksjonar har same verdi kallast eit \textit{skjæringspunkt} til funksjonane.
+}
+\eks[1]{
+Gitt de to funksjonane
+\alg{
+	f(x) &= 2x+1 \vn 
+	g(x) &= x+4
+}
+Finn skjæringspunktet til $ f(x) $ og $ g(x) $.
+
+\sv
+
+Vi kan finne skjæringspunktet både ved ein \textsl{grafisk} og ein \textsl{algebraisk} metode. \vsk
+
+\metode{Grafisk metode}{0.6\linewidth} \os
+
+Vi teikner grafane til funksjonane inn i det same koordinatsystemet:
+\fig{lig1}
+Vi les av at funksjonane har same verdi når $ {x=3} $, og da har begge funksjonane verdien 7. Altså er skjæringspunktet $ (3, 7) $. \vsk
+\vsk
+
+\metode{Algebraisk metode}{0.6\linewidth} \os
+At $ f(x) $ og $ g(x) $ har samme verdi gir likninga
+\alg{
+f(x)&=g(x) \\
+2x+1 &=x+4 \\
+x&=3
+}
+Vidare har vi at
+\alg{
+f(3)&=2\cdot3+1=7 \vn 
+g(3)&=3+4=7
+}
+Altså er $ (3, 7) $ skjæringspunktet til grafane.\vsk
+
+{\footnotesize \mer Det hadde sjølvsagt halde å berre finne éin av $ f(3) $ og $ g(3) $.}
+}
+\newpage
+\eks[2]{
+Ein klasse planlegg ein tur som krever bussreise. Dei får tilbud frå to busselskap:
+\begin{itemize}
+	\item \textbf{Busselskap 1} \\
+	Klassen betaler 10\,000\,kr uansett, og 10\enh{kr} per km.
+	\item \textbf{Busselskap 2} \\
+	Klassen betaler 4\,000\,kr uansett, og 30\enh{kr} per km.
+\end{itemize}
+For kva lengde kjøyrt tilbyr busselskapa same pris?
+
+\sv
+
+Vi innfører følgande variablar:
+\begin{itemize}
+	\item $ x=\text{antall kilometer kjørt} $ \\
+	\item $ f(x)=\text{pris for Busselskap 1} $ \\
+	\item $ g(x)=\text{pris for Busselskap 2} $
+\end{itemize}
+Da er
+\alg{
+	f(x)&=10x+10\,000\vn
+	g(x)&=30x+4\,000
+}
+Vidare løyser vi no oppgåva både med ein grafisk og ein algebraisk metode. \vsk
+
+\metode{Grafisk metode}{0.6\linewidth} \os
+Vi teikner grafane til funksjonane inn i same koordinatsystem:
+\fig{lig2}
+Vi les av at funksjonane har same verdi når $ {x=200} $. Dette betyr at busselskapa tilbyr same pris viss klassen skal køyre 200\enh{km}.\vsk \vsk
+
+\metode{Algebraisk metode}{0.6\linewidth} \os
+Busselskapa har same pris når
+\alg{
+f(x)&=g(x) \\
+10x+10\,000&=30x+6\,000 \\
+4\,000&=20x \\
+x&=200
+}
+Busselskapa tilbyr altså samm pris viss klassen skal køyre 200\enh{km}.
+}
+
+\subsection{Null-, bunn- og toppunkt}
+\reg[Null-, bunn- og toppunkt]{
+\vs	
+	\begin{itemize}
+	\item \textbf{Nullpunkt} \\[-5pt]
+	Ein $ x $-verdi som gir funksjonsverdi 0.
+	\item \textbf{Lokalt bunnpunkt} \\[-5pt]
+Punkt der funksjonen (frå venstre) går frå å synke i verdi til å stige i verdi.
+\item \textbf{Lokalt toppunkt} \\[-5pt]
+Punkt der funksjonen (frå venstre) går frå å stige i verdi til å synke i verdi
+\item \textbf{Globalt bunnpunkt} \\[-5pt]
+Punkt der funksjonen har sin lavaste verdi.
+\item \textbf{Globalt toppunkt} \\[-5pt]
+Punkt der funksjonen har sin høgste verdi.
+\end{itemize}
+}
+\eks[]{
+\fig{funkdroft}
+}
+\info{Kvifor er nullpunkt ein verdi?}{
+Det kan kanskje verke litt rart at vi kallar $ x $-verdiar for nullpunkt, punkt har jo både ein $ x $-verdi og eni $ y $-verdi. Men når det er snakk om nullpunkt, er det underforstått at $ {y=0} $, og da er det tilstrekkeleg å vite $ x $-verdien for å avgjere kva punkt det er snakk om.  
+}
+\section{Likningssett}
+Vi har så langt sett på likningar med eitt ukjend tal, men det kan også vere to eller fleire tal som er ukjende. Som regel er det slik at 
+\st{\begin{itemize}
+	\item er det to ukjende, trengs minst to likningar for å finne løysingar som er konstantar.
+	\item er det tre ukjende, trengs minst tre likningar for å finne løysingar som er konstantar.
+\end{itemize}}
+Og slik fortset det. Likningane som gir oss den nødvendige informasjonen om dei ukjende, kallast eit \textit{likningssett}. I denne boka skal vi konsentrere oss om \textsl{lineære likninger med to ukjente}, som betyr at likningssettet består av uttrykk for lineære funksjonar.
+\subsection{Innsettingsmetoden}
+\reg[Innsettingsmetoden]{
+Eit lineært likningssett som består av to ukjende, $ x $ og $ y $, kan løses ved å 
+\begin{enumerate}
+	\item bruke den éine likninga til å finne eit uttrykk for $ x $.
+	\item sette uttrykket fra punkt 1 inn i den andre likninga, og løyse denne med hensyn på $ y $.
+	\item sette løysninga for $ y $ inn i uttrykket for $ x $.
+\end{enumerate}
+{\footnotesize \mer I punkta over kan sjølvsagt $ x $ og $ y $ bytte roller.}
+}
+\newpage
+\eks[1]{
+Løys likningssettet, og sett prøve på svaret.
+\alg{
+	x-y&=5 \tag{I} \label{eks4a}\vn
+	x+y&=9 \tag{II} \label{eks4b}
+}
+\sv
+
+Av \eqref{eks4a} har vi at 
+\algv{
+x-y &= 5 \\
+x&=5+y
+}
+Vi set dette uttrykket for $ x $ inn i \eqref{eks4b}:
+\alg{
+5+y+y &=9 \\
+2y&=9-5 \\
+2y&=4 \\
+y&=2
+}
+Vi set løysinga for $ y $ inn i uttrykket for $ x $:
+\alg{
+x&=5+y \\
+&=5+2 \\
+&=7
+}
+Altså er $ x=7 $ og $ y=2 $. \vsk
+
+Vi set prøve på svaret:
+\alg{
+x-y&=7-2=5 \vn
+x+y &=7+2=9
+} 
+}
+\newpage
+\eks[2]{
+Løs likningssettet \vs
+\alg{
+	7x-5y&=-8 \tag{I} \label{eks1a}\vn
+	5x-2y&=4x-5 \tag{II} \label{eks1b}
+}
+\sv
+
+Ved innsettingsmetoden kan ein ofte spare seg for ein del utrekning ved å velge likninga og den ukjende som gir det finaste uttrykket innleiingsvis. Vi observerer at \eqref{eks1b} gir et fint uttrykk for $ x $:
+\alg{
+7x-5y&=-6 \\
+x&=2y-5
+}
+Vi set dette uttrykket for $ x $ inn i \eqref{eks1a}:
+\alg{
+	7x-5y&=-8\\
+7(2y-5)-5y&=-8 \\
+14y-35-5y&=-8 \\
+9y &=27 \\
+y&=3
+}
+Vi set løysinga for $ y $ inn i uttrykket for $ x $:
+\alg{
+x&=2y-5 \\
+&=2\cdot 3-5\\
+&=1
+}
+Altså er $ x=1 $ og $ y=3 $.
+}
+\newpage
+\eks[3]{
+Løys likningssettet \vs
+\alg{
+3x-4y&=-2 \tag{I} \label{eks2a}\vn
+9y-5x&=6x+y \tag{II} \label{eks2b}
+} \vs \vs
+
+\sv
+
+Vi velg her å bruke \eqref{eks1a} til å finne eit uttrykk for $ y $:
+\alg{
+3x-4y&=-2 \\
+3x+2&=4y \\
+\frac{3x+2}{4}&=y
+}
+Vi set dette uttrykket for $ y $ inn i \eqref{eks2b}:
+\alg{
+9y-5x&=6x+y \\	
+9\cdot\frac{3x+2}{4}-5x&=6x+\frac{3x+2}{4} \\
+9(3x+2)-20x&=24x+3x+2 \\
+27x+18-20x &=24x+3x+2 \\
+-20x&=-16 \\
+x&=\frac{4}{5}
+}
+Vi set løysinga for $ x $ inn i uttrykket for $ y $:
+\alg{
+y&=\frac{3x+2}{4} \br
+&=\frac{3\cdot\frac{4}{5}+2}{4} \br
+&=\frac{\frac{22}{5}}{4} \\
+&=\frac{11}{10}
+}
+Altså er $ x=\frac{4}{5} $ og $ y=\frac{11}{10} $.
+}
+\eks[4]{
+	''Bror min er dobbelt så gamal som meg. Til saman er vi 9 år gamle. Kor gamal er eg?''.
+	
+	\sv
+	''Bror min er dobbelt så gamal som meg.'' betyr at
+	\[ \text{brors alder}=2\cdot \text{min alder} \]
+	''Til saman er vi 9 år gamle.'' betyr at
+	\[ \text{brors alder}+\text{min alder}=\text{9} \]
+	Erstattar vi 'brors alder' med ''$2\cdot\text{min alder} $'', får vi
+	\[ 2\cdot\text{min alder}+\text{min alder}=\text{9} \]
+	Altså er
+	\algv{
+		3\cdot \text{min alder} &= 9 \\
+		\frac{\cancel{3}\cdot \text{min alder}}{\cancel{3}}&= \frac{9}{3} \\
+		\text{min alder} &= 3
+	}
+	''Eg'' er altså 3 år gammel.
+}
+\subsection{Grafisk metode}
+\reg[Grafisk løsning av likningssett]{
+Eit lineært likningssett som består av to ukjende, $ x $ og $ y $, kan løysast ved å 
+	\begin{enumerate}
+		\item omskrive dei to likningane til uttrykk for to linjer.
+		\item finne skjæringspunktet til linjene.
+\end{enumerate}
+}
+\newpage
+\eks[1]{
+Løys likningsettet\vs
+\alg{
+	x-y&=5 \tag{I} \label{eks3a}\vn
+	x+y&=9 \tag{II} \label{eks3b}
+}\vs 
+\sv
+Av \eqref{eks3a} har vi at \vs
+\alg{
+x-y&=5 \\
+y&=x-5
+}
+Av \eqref{eks3b} har vi at \vs
+\alg{
+x+y&=9 \\
+y &= 9-x 
+}
+Vi teikner desse to linjene inn i eit koordinatsystem:
+\fig{ligset1}
+Altså er $ x=7 $ og $ y=2 $.
+}
+\end{document}
+
+

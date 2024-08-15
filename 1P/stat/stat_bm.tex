@@ -1,0 +1,429 @@
+\input{../../doc}
+\input{../bm}
+\input{../../preamb}
+
+
+\begin{document}
+\section{Introduksjon}
+I en \outl{undersøkelse} henter vi inn informasjon. Denne informasjonen kan gjerne være tall eller ord, og kalles \outl{data}. En samling av innhentet data kalles et \outl{datasett}. \vsk
+
+For eksempel, tenk at du spør to mennesker om de liker kaviar. Den ene svarer ''ja'', den andre ''nei''. Da er ''ja'' og ''nei'' dataene (svarene) du har samlet inn, og $\{\text{''ja''}, \text{''nei''}\} $ er datasettet ditt. \vsk
+
+Statistikk handler grovt sett om to ting;  \textsl{å presentere} og \textsl{å tolke} innsamlet data. For begge disse formålene har vi noen begrep som vi i kommende seksjoner skal studere ved hjelp av forskjellige eksempler på undersøkelser. Disse eksemplene finner du på side \pageref{undersok}. \vsk
+
+Det er ikke noen fullstendige fasitsvar på hvordan en presenterer eller tolker data, men to retningslinjer bør du alltid ha med deg:\regv
+
+\st{\begin{itemize}
+	\item La det alltid komme tydelig fram hva du har undersøkt, og hvilke data som er innhentet.
+	\item Tenk alltid over hvilke metoder du bruker for å tolke dataene.
+\end{itemize}} \vsk
+
+\spr{
+Personer som deltar i en undersøkelse der man skal svare på spørsmål kalles \outl{respondenter}.
+}
+\newpage
+\label{undersok}
+\st{
+\textbf{Undersøkelse 1} \os
+	10 personer testet hvor mange sekunder de kunne holde pusten. Resultatene ble disse:
+	\[ 47\quad124\quad 61\quad 38\quad 97\quad 84\quad 101\quad79\quad 56\quad 40 \]
+} \vsk
+\st{
+\textbf{Undersøkelse 2} \os
+15 personer ble spurt hvor mange epler de spiser i løpet av en uke. Svarene ble disse:
+\[ 7\quad 4\quad 5\quad 4\quad 1\quad 0\quad 6\quad 5\quad 4\quad 8\quad1\quad6\quad8\quad0\quad 14 \] 
+} \vsk
+\st{\textbf{Undersøkelse 3}\os
+300 personer ble spurt hva deres favorittdyr er.
+\begin{itemize}
+	\item 46 personer svarte tiger
+	\item 23 personer svarte løve
+	\item 17 personer svarte krokodille
+	\item 91 personer svarte hund
+	\item 72 personer svarte katt
+	\item 51 personer svarte andre dyr
+\end{itemize}} \vsk
+\st{
+\textbf{Undersøkelse 4} \os
+Mobiltelefoner med smartfunksjoner (app-baserte) kom på det norske markedet i 2009. Tabellen\footnote{Tallene er hentet fra \net{https://www.medienorge.uib.no/statistikk/medium/ikt/405}{medienorge.uib.no}.} under viser det totale salget mobiltelefoner i tidsperioden 2009-2014, og andelen med og uten smartfunkskjoner. Salgstallene oppgir antall 1\,000 telefoner.
+\begin{center}
+	\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} 
+	\textbf{År} &\textbf{2009}&\textbf{2010} &\textbf{2011} &\textbf{2012} &\textbf{2013}&\textbf{2014} \\ \hline
+	totalt& 2\,365 & 2\,500 &2\,250&2\,200&	2\,400&2\,100\\
+	\phantom{---}u. sm.f. & 1\,665 & 1\,250 &790&300&240&147\\
+	\phantom{---}m. sm.f. &700&1\,250&	1\,460&	1\,900&	2\,160 &1\,953
+	\end{tabular}
+\end{center}
+}
+
+
+\section{Presentasjonsmetoder}
+Skal vi presentere våre undersøkelser, bør vi vise datasettene slik at det er lett for andre å se hva vi har funnet. Dette kan vi gjøre blant annet ved hjelp av \outl{frekvenstabeller}, \outl{søylediagram}, \outl{sektordiagram} eller \outl{linjediagram}.
+
+\subsection{Frekvenstabell}
+I en frekvenstabell setter man opp dataene i en tabell som viser hvor mange ganger hvert unike svar dukker opp. Dette antallet kalles\\ \outl{frekvensen}.\regv
+
+\st{ \label{frkvtbund2}
+\textbf{Undersøkelse 2} \os	
+I vår undersøkelse har vi to 0, to 1, tre 4, to 5, to 6, én 7, to 8 og én 14. I en frekvenstabell skriver vi da
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		antall epler & frekvens\\ \hline
+		0 & 2 \\
+		1 & 2 \\
+		4 & 3 \\
+		5 & 2\\
+		6 & 2 \\
+		7 & 1 \\
+		8 & 2 \\
+		14& 1 \\ \hline
+	\end{tabular}
+\end{center}
+Ofte kan det være greit å vite hvor høy frekvensen er relativ til \\ summen av alle frekvensene. Dette kalles \outl{relativ frekvens}:
+\begin{center}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|c|l|c|}
+		\hline
+		antall epler & frekvens & relativ frekvens  & relativ frekvens (\%)\\ \hline
+		0 & 2 & $ \frac{2}{15}\approx 0.1333 $ & 13.33\% \\ 
+		1 & 2 & $ \frac{2}{15}\approx 0.1333 $ & 13.33\%\\
+		4 & 3 & $ \frac{3}{15}=0.2 $ & 20\% \\
+		5 & 2 & $ \frac{2}{15}\approx 0.1333 $ & 13.33\%\\
+		6 & 2 & $ \frac{2}{15}\approx 0.1333 $ & 13.33\% \\
+		7 & 1 & $ \frac{1}{15}\approx 0.0667 $ & 6.67\%\\
+		8 & 2 & $ \frac{2}{15}\approx 0.1333 $ & 13.33\%\\
+		14& 1 & $ \frac{1}{15}\approx 0.0667 $ & 6.67\%\\ \hline
+		sum& 15
+	\end{tabular}
+\end{center}
+}
+
+\newpage
+\subsection{Søylediagram (stolpediagram)}
+Med et søylediagram presenterer vi dataene med søyler som viser frekvensen. \\[8pt]
+\st{ \label{soylund2}
+\textbf{Undersøkelse 2}
+\fig{stat1}
+} \vsk
+
+\st{
+\textbf{Undersøkelse 3}
+\fig{stat2}
+}
+\newpage
+\subsection{Sektordiagram (kakediagram)}
+I et sektordiagram vises frekvensene som sektorer av en sirkel. \regv
+\st{  \label{sektorund2}
+\textbf{Undersøkelse 2}
+\fig{stat4}
+} \vsk
+
+\st{ \label{sektorundsk3}
+\textbf{Undersøkelse 3}	
+	\fig{stat3}
+} \vsk
+
+\info{Å lage et sektordiagram for hand
+}{
+Skal du selv tegne et sektordiagram, trenger du kunnskaper om vinkler og om brøkandeler. Se \refsec{brkdlavhel} og \mb}
+\newpage
+\subsection{Linjediagram}
+I et linjediagram legger vi inn dataene som punkt i et koordinatsystem, og trekker en linje mellom dem. Linjediagram brukes oftest når det er snakk om en form for utvikling.\regv
+\st{
+\textbf{Undersøkelse 4} \\
+\fig{stat5}
+}
+\section{Tolking av tendenser; sentralmål}
+I et datasett er det gjerne svar som er helt eller tilnærmet like, og som gjentar seg. Dette betyr at vi kan si noe om hva som gjelder for mange; en \outl{tendens}. De matematiske begrepene som forteller noe om dette kalles \outl{sentralmål}. De vanligste sentralmålene er typetall, gjennnomsnitt og median.
+\subsection{Typetall}
+\reg[Typetall]{
+\outl{Typetallet} er verdien det er flest eksemplarer av i datasettet.
+} \regv
+\st{
+\textbf{Undersøkelse 2} \os
+I datasettet er det verdien 4 som opptrer flest (tre) ganger. 4 er altså typetallet.
+} 
+\info{Flere typetall}{
+Hvis flere verdier opptrer oftest i et datasett, har datasettet flere typetall.
+}
+\newpage
+\subsection{Gjennomsnitt}
+Når et datasett består av svar i form av tall kan vi finne summen av svarene. Når vi spør hva gjennomsnittet er, spør vi om dette: \os
+\textsl{''Hvis alle svarene var like, og summen den samme, hvilken verdi måtte alle svarene da ha hatt?''}\os
+
+Dette er jo ingenting annet enn divisjon\footnote{se \mb, side 23.}: \regv
+
+\reg[Gjennomsnitt]{ \vs
+\[ \text{gjennomsnitt}=\frac{\text{summen av verdiene fra datasettet}}{\text{antall verdier}} \]
+} \regv
+
+\st{
+\textbf{Undersøkelse 1} \os
+Vi summerer verdiene fra datasettet, og deler med antall verdier:
+\small
+\alg{
+\text{gjennomsnitt}&= \frac{47+124+ 61+ 38+ 97+ 84+ 101+79+ 56+ 40}{10} \\
+&= \frac{727}{10}\br
+&=72,7
+} \normalsize
+Altså, i gjennomsnitt holdt de 10 deltakerne pusten i 72,7\\ sekunder. 
+}
+\newpage
+\st{  \label{gjsnund2}
+\textbf{Undersøkelse 2} \os \vspace{5pt}
+\metode{Metode 1}{0.4\linewidth}\\
+\footnotesize
+\alg{
+\text{gjennomsnitt}&=\frac{7+ 4+ 5+ 4+ 1+ 0+ 6+ 5+ 4+ 8+1+6+8+0+ 14}{15} \br
+&=\frac{73}{15}\br
+&\approx 4.87
+}  \vsk
+
+\normalsize
+\metode{Metode 2}{0.4\linewidth} \os
+Vi utvider frekvenstabellen fra side \pageref{frkvtbund2} for å finne summen av verdiene fra datasettet (vi har også tatt med summen av frekvensene):
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Antall epler & Frekvens&$ \text{antall}\cdot \text{frekvens} $\\ \hline
+		0 & 2 &$ 0\cdot2=\phantom{0}0 $ \\
+		1 & 2 &$ 1\cdot2=\phantom{0}2 $\\
+		4 & 3 &$ 4\cdot3=12 $\\
+		5 & 2 &$ 5\cdot2=10 $\\
+		6 & 2 &$ 6\cdot2=12 $\\
+		7 & 1 &$ 7\cdot1=14 $\\
+		8 & 1 &$ 8\cdot2=16 $\\
+		14& 1 &$ 14\cdot1=14\phantom{0} $\\ \hline
+		 \textbf{sum}&15& \qquad\quad73\\ \hline
+	\end{tabular}
+\end{center}
+Nå har vi at
+\alg{
+\text{gjennomsnitt}&=\frac{73}{15} \\
+&\approx 4,87
+}
+Altså, i gjennomsnitt spiser de 15 respondentene 4,87 epler i uka.
+} 
+\newpage
+\st{
+\textbf{Undersøkelse 4} \os
+(Utregning utelatt. Verdiene er rundet ned til nærmeste éner).
+\begin{itemize}
+	\item Gjennomsnitt for totalt salg av mobiler: 2302
+	\item Gjennomsnitt for salg av mobiler uten smartfunksjon: 732
+	\item Gjennomsnitt for salg av mobiler med smartfunksjon: 1570
+\end{itemize}
+}
+\info{Lik fordeling}{
+Legg merke til at gjennomsnitt handler om lik fordeling. Hvis vi har 4 rektangler med respektive lengder 1, 6, 3 og 2, blir den samlede lengden $ 1+6+3+2=12 $.
+\fig{meana}
+Dette betyr at gjennomsnittslengden er $ {\frac{12}{4}=3} $. Hvis vi kunne omformet rektanglene slik at de ble like lange, ville altså hver av dem hatt lengde 3.
+\fig{meanb}
+}
+\subsubsection{Gjennomsnittlig endring per enhet}
+Tenk deg at du på en løpetur gjør tre målinger av farten din. Datasettet du ender opp med er
+\[ 10\enh{m/s}\qquad10\enh{m/s} \qquad10\enh{m/s}\]
+\outl{Gjennomsnittsfarten} din var da
+\[ \frac{10+10+10}{3}\enh{m/s}=10\enh{m/s} \]
+Siden alle målinger av farten din hadde samme verdi, kan det være rimelig å anta at farten din var konstant. Og hvis den virkelig var det, ville alle målinger av farten din hatt samme verdi, uansett hvor mange målinger du tok. Dette gjør at en konstant fart fra \hrs{fart}{Definisjon} i dagligtale også kalles \outl{gjennomsnittsfart}. Sagt på en annen måte er dette den gjennomsnittlige endringen i antall meter per sekund.
+\regdef[Gjennomsnittlig endring per enhet]{
+Hvis vi \textsl{antar} at to størrelser er proporsjonale, kaller vi proporsjonalitetskonstanten fra \eqref{propeq} den \outl{gjennomsnittlige endringen per enhet}.
+} \regv
+
+\st{ \label{gjsnittperund4}
+\textbf{Undersøkelse 4} 
+\begin{itemize}
+	\item For årene 2009 og 2010 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+	\[ \frac{1\,260-700}{2010-2009}=\frac{550}{1}=550  \]
+	Mellom 2009 og 2010 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med 550\,000 smarttelefoner per år.
+	\item For årene 20010 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+\[ \frac{1\,953-1\,250}{2014-2010}=\frac{703}{4}=175,75  \]
+	Mellom 2010 og 2014 har altså salget av smarttelefoner i gjennomsnitt \textsl{økt} med ca. 176 smarttelefoner per år.	
+\item For årene 2013 og 2014 er differansen mellom smarttelefoner solgt delt på differansen mellom år gått lik
+\[ \frac{1\,953-2\,160}{2014-2013}=\frac{-207}{1}=-207  \]
+Mellom 20013 og 2014 har altså salget av smarttelefoner \textsl{sunket} med ca. 207\,000 smarttelefoner per år.		
+\end{itemize}
+}
+\newpage
+\info{Stignistallet til linja mellom to punkt}{
+Gitt en funksjon $ f(x) $. I \mb\ har vi sett at stigningstallet til linja mellom punktene $ (a, f(a)) $ og $ (b, f(b)) $ er gitt som
+\[ \frac{f(b)-f(a)}{b-a} \]
+\fig{lintopunkt}
+Sammenlikner vi dette uttrykket med utregningene fra side \pageref{gjsnittperund4}, ser vi at utrekningene er identiske. Stigningstallet mellom to punkt på en graf gir oss dermed den gjennomsnittlige endringen per enhet.
+}
+\subsection{Median}
+\reg[Median \label{median}]{Medianen er tallet som ender opp i midten av datasettet når det rangeres fra tallet med lavest til høgest verdi.\vsk
+
+Hvis datasettet har partalls antall verdier, er medianen gjennomsnittet av de to verdiene i midten (etter rangering).} \regv
+
+\st{
+	\textbf{Undersøkelse 1} \os
+	Vi rangerer datasettet fra lavest til høgest verdi:
+	\[ 38\quad40\quad47\quad 56\quad \colr{61}\quad\colr{79}\quad 84\quad97\quad 101\quad 124  \]
+	De to tallene i midten er 61 og 79. Gjennomsnittet av disse er
+	\[ \frac{61+79}{2}=70 \]
+	Altså er medianen 70.
+} 
+
+\st{
+\textbf{Undersøkelse 2} \os
+Vi rangerer datasettet fra lavest til høgest verdi:
+\[0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  \colr{5}\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14\]
+Tallet i midten er 5, altså er medianen 5.
+}
+\newpage
+\st{
+\textbf{Undersøkelse 4} \os
+(Utregning utelatt. Verdiene er rundet ned til nærmeste éner).
+\begin{itemize}
+	\item Median for totalt salg av mobiler: 2307
+	\item Median for salg av mobiler uten smartfunksjon: 545
+	\item Median for salg av mobiler med smartfunksjon: 1570
+\end{itemize}
+}
+\section{Tolking av forskjeller; spredningsmål}
+Ofte vil det også være store forskjeller (stor spredning) mellom dataene som er samlet inn. De vanligste matematiske begrepene som forteller noe om dette er \outl{variasjonsbredde}, \outl{kvartilbredde}, \outl{varians} og \outl{standardavvik}.
+\subsection{Variasjonsbredde}
+\reg[Variasjonsbredde]{
+Differansen mellom svarene med henholdsvis høgest og lavest verdi.
+} \regv
+\st{
+\textbf{Undersøkelse 1} \os
+Svaret med henholdsvis høgest og lavest verdi er 124 og 38. Altså er
+\[ \text{variasjonsbredde}=124-38=86 \]
+}
+\st{
+	\textbf{Undersøkelse 2} \os
+	Svaret med henholdsvis høgest og lavest verdi er 14 og 0. Altså er
+	\[ \text{variasjonsbredde}=14-0=14 \]
+}
+\st{
+	\textbf{Undersøkelse 4}
+	\begin{itemize}
+		\item Variasjonsbredde for mobiler totalt:
+		\[ 2\,500-2\,100=400  \]
+		\item Variasjonsbredde for mobiler uten smartfunksjoner:
+		\[ 1\,665-147=518 \]
+		\item Variasjonsbredde for mobiler med smartfunksjoner:
+		\[ 2\,160-700=1460 \]
+	\end{itemize}
+}
+\subsection{Kvartilbredde}
+\reg[Kvartilbredde og øvre og nedre kvartil]{
+Kvartilbredden til et datasett kan finnes på følgende måte:
+\begin{enumerate}
+	\item Ranger datasettet fra høgest til lavest verdi.
+	\item Skill det rangerte datasettet på midten, slik at to nye sett oppstår. (Viss det er oddetalls antall verdier i datasettet, utelates medianen).
+	\item Finn de respektive medianene i de to nye settene.
+	\item Finn differansen mellom medianene fra punkt 3.
+\end{enumerate}
+Om medianene fra punkt 3: Den med høgest verdi kalles \outl{øvre kvartil} og den med lavest verdi kalles \outl{nedre kvartil}.
+} \regv
+
+\st{
+\textbf{Undersøkelse 1} \os
+\begin{enumerate}
+	\item $ 38\quad40\quad47\quad 56\quad 61\quad79\quad 84\quad97\quad 101\quad 124 $
+	\item $ \color{blue}38\quad40\quad47\quad 56\quad 61 \quad \color{red}79\quad 84\quad97\quad 101\quad 124 $
+	\item Medianen i det blå settet er 47 (nedre kvartil) og medianen i det røde settet er 97 (øvre kvartil).
+	\[ \color{blue}38\quad40\quad{\color{black}47}\quad 56\quad 61 \qquad\quad \color{red}79\quad 84\quad{\color{black}97}\quad 101\quad 124 \] \vs \vs
+	\item $ \text{Kvartilbredde}=97-47=50 $
+\end{enumerate}
+}
+\st{
+\textbf{Undersøkelse 2}\os
+\begin{enumerate}
+	\item $ 0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  5\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
+	\item $ \color{blue}0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  {\color{black}5}\quad \color{red} 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
+	\item Medianen i det blå settet er 1 (nedre kvartil) og medianen i det røde settet er 7 (øvre kvartil).
+	\[ \color{blue}0\quad0\quad 1\quad {\color{black}1}\quad 4\quad 4\quad 4\qquad\quad \color{red} 5\quad  6\quad6\quad  {\color{black}7}\quad8\quad8 \quad14\] \vs \vs
+	\item $ \text{Kvartilbredde}=7-1=6 $
+\end{enumerate}
+}
+\st{
+\textbf{Undersøkelse 4} \os
+(Utregning utelatt)
+\begin{itemize}
+	\item For mobiler totalt er kvartilbredden: 200 
+	\item For mobiler uten smartfunksjoner er kvartilbredden: 1010
+	\item For mobiler med smartfunksjoner er kvartilbredden: 703
+\end{itemize}
+} \vsk
+
+\spr{
+Nedre kvartil, medianen og øvre kvartil blir også kalt henholdsvis \outl{1. kvartil}, \outl{2. kvartil} og \outl{3. kvartil}.
+}
+\newpage
+\subsection{Avvik, varians og standardavvik}
+\reg[Varians]{
+Differansen mellom en verdi og gjennomsnittet i et datasett kalles \outl{avviket} til verdien. \vsk
+	
+Variansen til et datasett kan finnes på følgende måte:	
+\begin{enumerate}
+	\item Kvadrer avviket til hver verdi i datasettet, og summer disse.
+	\item Divider med antall verdier i datasettet.
+\end{enumerate} 
+
+\outl{Standardavviket} er kvadratroten av variansen.
+}
+
+\eks{ \label{vareks}
+Gitt datasettet 
+\[\color{blue} 2\quad 5\quad 9\quad 7\quad 7 \]
+Da har vi at
+\[ \text{gjennomsnitt}=\frac{\colb{2+5+9+7+7}}{5}=\colr{6} \]
+Og videre er
+\alg{
+\text{variansen}&= \frac{(\colb{2}-\colr{6})^2+(\colb{5}-\colr{6})^2+(\colb{9}-\colr{6})^2+(\colb{7}-\colr{6})^2+(\colb{7}-\colr{6})^2}{5} \\ 
+&= 5
+}
+Da er $ \text{standardavviket}=\sqrt{5}\approx2,23 $.
+} \vsk
+\st{
+\textbf{Undersøkelse 1} \os
+(Utregning utelatt)\os
+Variansen er 754,01. Standardavviket er $ \sqrt{754,01}\approx 27,46 $
+}
+\newpage
+\st{
+\textbf{Undersøkelse 2} \os
+Gjennomsnittet fant vi på side \pageref{gjsnund2}. Vi utvider frekvenstabellen vår fra side \pageref{frkvtbund2}:
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		antall epler & frekvens& frekvens $ \cdot $ kvadrert avvik \\ \hline
+		0 & 2 &$2\cdot \left(0-\frac{73}{15}\right)^2 $ \\
+		1 & 2 &$2\cdot \left(1-\frac{73}{15}\right)^2 $\\
+		4 & 3 &$3\cdot \left(4-\frac{73}{15}\right)^2 $\\
+		5 & 2&$2\cdot \left(5-\frac{73}{15}\right)^2 $\\
+		6 & 2 &$2\cdot \left(6-\frac{73}{15}\right)^2 $\\
+		7 & 1 &$1\cdot \left(7-\frac{73}{15}\right)^2 $\\
+		8 & 2 &$2\cdot \left(8-\frac{73}{15}\right)^2 $\\
+		14& 1 &$1\cdot \left(9-\frac{73}{15}\right)^2 $\\ \hline 
+		sum& 15 & $ 189,7\bar{3} $ \\ \hline
+	\end{tabular}
+\end{center}
+Altså er variansen
+\[ \frac{189,7\bar{3}}{15}\approx 12,65 \]
+Da er standardavviket $ \sqrt{12,65}\approx3.57 $
+}
+\st{
+	\textbf{Undersøkelse 4} \os
+	(Utregning utelatt)
+	\begin{itemize}
+		\item For mobiler totalt er variansen 17\,781,25 og standardavviket ca. $ 133,4 $.
+		\item For mobiler uten smartfunksjoner er variansen $ 318\,848.\bar{3} $ og standardavviket ca. $ 17,87 $
+		\item For mobiler med smartfunksjoner er variansen $245\,847.91\bar{6} $ og standardavviket ca. 495,83.
+	\end{itemize}
+}
+\info{Hvorfor innebærer variansen kvadrering?}{
+La oss se hva som skjer hvis vi gjentar utregningen fra \textsl{Eksempel} på side \pageref{vareks}, men uten å kvadrere:
+\begin{multline}
+	\frac{(\colb{2}-\colr{6})+(\colb{5}-\colr{6})+(\colb{9}-\colr{6})+(\colb{7}-\colr{6})+(\colb{7}-\colr{6})}{5}\\=\frac{\colb{2+5+9+7+7}}{5} - \colr{6}
+\end{multline}
+Men brøken $ \frac{\colb{2+5+9+7+7}}{5} $ er jo per definisjon gjennomsnittet til datasettet, og dermed blir uttrykket over lik 0. Dette vil gjelde for alle datasett, så i denne sammenhengen gir ikke tallet 0 noen ytterligere informasjon. Om vi derimot kvadrerer avvikene, unngår vi et uttrykk som alltid blir lik 0.
+}
+\end{document}
+

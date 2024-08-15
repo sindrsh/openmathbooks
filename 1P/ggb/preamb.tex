@@ -1,0 +1,128 @@
+%\documentclass[english, 11 pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{babel}
+\usepackage[hidelinks, bookmarks]{hyperref}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=4cm,rmargin=4cm,headheight=3cm,headsep=3cm,footskip=1cm}
+\setlength{\parindent}{0bp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{import}
+\usepackage{standalone}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+%\addto\captionsenglish{\renewcommand{\appendixname}{Appendiks}}
+\makeatother
+\usepackage{comment}
+%\usepackage[titletoc]{appendix}
+%\usepackage[authoryear, round]{natbib}
+%\setcitestyle{super}
+\addto\captionsenglish{\renewcommand{\contentsname}{GeoGebra og Excel}}
+%\renewcommand{\bibsection}{\chapter*{Referanser}}
+\usepackage{graphicx}
+%\usepackage{float}
+%\usepackage{subfig}
+\usepackage{placeins}
+\raggedbottom
+\usepackage{calc}
+\usepackage{cancel}
+\makeatletter
+\usepackage{color}
+\definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{bm}
+\usepackage{ntheorem}
+\newenvironment{lign}[1][]{\Large \refstepcounter{lign} \large
+   \textbf{\thelign #1} \rmfamily}{\par\medskip}
+%\newtheorem{lign}{\large Regel}[chapter]
+\usepackage[dvipsnames]{xcolor}
+\colorlet{shadecolor}{blue!30} 
+\usepackage{icomma}
+\usepackage{mathtools}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{xr-hyper}
+\makeatother
+\usepackage[many]{tcolorbox}
+%\setlength{\parskip}{\medskipamount}
+%\setlength{\parskip}{12 pt}
+\newcommand\reg[1]{\begin{tcolorbox}[colback=blue!15] #1 \vspace{1pt} \end{tcolorbox}\vspace{1pt}}
+\newcommand\eks[2][]{\vspace{-11 pt}\begin{tcolorbox}[enhanced jigsaw,breakable,colback=green!30] {\large \textbf{Eksempel #1} \par\medskip} #2 \end{tcolorbox}\vspace{1pt}}
+
+
+\newcommand\hrds[1]{\hyperref[#1]{\textsl{delseksjon \ref*{#1}}}}
+\newcommand\hr[2][]{\hyperref[#2]{\textsl{#1}}}
+\newcommand\hrs[2][]{\hyperref[#2]{\textsl{\textsl{#1} \ref*{#2}}}}
+\newcommand\fref[2][]{\hyperref[#2]{\textsl{Figur \ref*{#2}}}}
+\newcommand\hrss[2][]{\hyperref[#2]{\textsl{#1}}}
+
+\newcommand\rg[2][]{\begin{tcolorbox}[colback=blue!15]{\large \normalfont \textbf{#1} \vspace{5pt} \\ } #2 \vspace{1pt} \end{tcolorbox}\vspace{1pt}}
+\newcommand\rgm[2][]{\begin{tcolorbox}[colback=blue!15]{\large \normalfont \textbf{#1} } #2 \vspace{1pt} \end{tcolorbox}\vspace{1pt}}
+\newcommand\alg[1]{\begin{align*} #1 \end{align*}}
+\newcommand\algv[1]{\vspace{-11 pt} \begin{align*} #1 \end{align*}}
+\newcommand\algvv[1]{\vspace{-28 pt} \begin{align*} #1 \end{align*}}
+\newcommand\vs{\vspace{-11 pt}}
+\newcommand\br{\\[5 pt]}
+\newcommand{\g}[1]{\begin{center} {\tt #1} \end{center}}
+\newcommand{\gv}[1]{\begin{center} \vspace{-11 pt} {\tt #1}  \end{center}}
+%\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag tentamen R2 H2015}}
+\newcommand{\net}[2]{{\color{blue}\href{#1}{#2}}}
+
+%tableofcontents
+\usepackage{tocloft}
+\setlength{\cftsubsecindent}{0.03 cm}
+\setlength{\cftbeforesubsecskip}{8 pt}
+
+\usepackage{float}
+\usepackage{subfig}
+\captionsetup[subfigure]{labelformat=empty}
+\usepackage{esvect}
+
+\newcommand{\sss}[1]{\subsection*{#1}   \addcontentsline{toc}{subsection}{#1}}
+\newcommand\sv{\textbf{Svar:} \vspace{5 pt} \\}
+
+% Gjem tekst
+\newcommand\gj[1]{\begin{comment} #1 \end{comment}}
+
+%Footnote:
+\usepackage[bottom, hang, flushmargin]{footmisc}
+\usepackage{perpage} 
+\MakePerPage{footnote}
+\addtolength{\footnotesep}{2mm}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand\footnoterule{\rule{\linewidth}{0.4pt}}
+
+%asin, atan, acos
+\DeclareMathOperator{\atan}{atan}
+\DeclareMathOperator{\acos}{acos}
+\DeclareMathOperator{\asin}{asin}
+
+% Figur
+\usepackage[font=footnotesize,labelfont=sl]{caption}
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+
+% Tikz
+\usetikzlibrary{calc}
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix}
+
+\newcommand\tsec[1]{\addcontentsline{toc}{section}{#1}
+	\section*{#1}}
+\newcommand\tssec[1]{\phantomsection\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+
+\newcommand{\bs}{\\[3pt]}
+\newcommand{\vsk}{\vspace{11pt}}
+\usepackage{titlesec}
+
+%Vedlegg
+\newcounter{vedl}
+%\renewcommand\thevedl{\Alph{vedl}}	
+\newcommand{\vedlg}[1]{\refstepcounter{vedl}\phantomsection\section*{G.\thevedl\;#1}  \addcontentsline{toc}{section}{G.\thevedl\; #1} }
+\newcommand{\nreqvd}{\refstepcounter{vedleq}\tag{\thevedl \thevedleq}}
+
+\newcounter{vedlE}
+%\renewcommand\thevedl{\Alph{vedl}}	
+\newcommand{\vedle}[1]{\refstepcounter{vedlE}\phantomsection\section*{E.\thevedlE\;#1}  \addcontentsline{toc}{section}{E.\thevedlE\; #1} }

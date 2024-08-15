@@ -1,0 +1,35 @@
+\newcommand{\texandasy}{Teksten er skrevet i \LaTeX\ og figurene er lagd ved hjelp av Asymptote.}
+
+\newcommand{\expl}{forklaring}
+
+\newcommand{\note}{Merk}
+\newcommand{\notesm}[1]{{\footnotesize \textsl{\note:} #1}}
+\newcommand{\ekstitle}{Eksempel }
+\newcommand{\sprtitle}{Språkboksen}
+\newcommand{\vedlegg}[1]{\refstepcounter{vedl}\section*{Vedlegg \thevedl: #1}  \setcounter{vedleq}{0}}
+
+\newcommand\sv{\vsk \textbf{Svar} \vspace{4 pt}\\}
+
+% exercises
+\newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
+
+\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
+
+%references
+\newcommand{\reftab}[1]{\hrs{#1}{tabell}}
+\newcommand{\rref}[1]{\hrs{#1}{regel}}
+\newcommand{\dref}[1]{\hrs{#1}{definisjon}}
+\newcommand{\refkap}[1]{\hrs{#1}{kapittel}}
+\newcommand{\refsec}[1]{\hrs{#1}{seksjon}}
+\newcommand{\refdsec}[1]{\hrs{#1}{delseksjon}}
+\newcommand{\refved}[1]{\hrs{#1}{vedlegg}}
+\newcommand{\eksref}[1]{\textsl{#1}}
+\newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
+\newcommand{\refop}[1]{{\color{blue}Oppgave \ref{#1}}}
+\newcommand{\refops}[1]{{\color{blue}oppgave \ref{#1}}}
+
+% Solutions manual
+\newcommand{\selos}{Se løsningsforslag.}
+
+\newcommand{\ompref}{Omgjøring av prefikser}

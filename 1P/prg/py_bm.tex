@@ -1,0 +1,266 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+\begin{document}
+\tableofcontents
+\section{Introduksjon til Python}
+Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}. Det er mange måter å få kjørt skriptet sitt på, blant annet kan man bruke en online compiler som \net{https://www.programiz.com/python-programming/online-compiler/}{programmiz.com}.
+\subsection{Objekt, type, funksjon og uttrykk}
+Vårt første skript består av bare én kodelinje:
+
+\pythonut{helloworld.py}{
+Hello world!
+}
+
+I kommende avsnitt vil begrepene \outl{objekt}, \outl{type}, \outl{funksjon} og \outl{uttrykk} stadig dukke opp.
+\begin{itemize}
+	\item Det aller meste i Python er objekter. I skriptet over er både \pymet{print()} og \pytype{"Hello world"} objekter.
+	\item Objekter vil være av forskjellige typer. \pymet{print()} er av typen \pytype{function}, mens \pytype{"Hello world"} er av typen \pytype{str}\footnote{'str' er en forkortelse for det engelske ordet 'string'.}. Hvilke handlinger som kan utføres med forskjellige objekter avhenger av hvilke typer de er.
+	\item Funksjoner kan ta imot \outl{argumenter}, for så å utføre handlinger. I skriptet over tar \pymet{print()}-funksjonen imot argumentet \pytype{"Hello world"}, og printer teksten til utdata.
+	\item Uttrykk har sterke likehetstrekk med funksjoner, men tar ikke imot argumenter.
+\end{itemize}
+\newpage
+\subsubsection{Tilvising og utregning}
+Tekst og tall kan vi se på som noen av de minste byggesteinene (objektene). Python har én type for tekst, og to typer for reelle tall:
+\begin{center}
+	\begin{tabular}{r|l} \rowcolor{gray!10}
+		\pytype{str} & tekst \\
+		\pytype{int} & heltall \\ \rowcolor{gray!10}
+		\pytype{float} & desimaltall
+	\end{tabular} 
+\end{center}
+Det er som regel nyttig å gi objektene våre navn. Dette gjør vi ved å skrive navnet etterfulgt av \texttt{=} og objektet. \outl{Kommentarer} er tekst som ikke blir behandlet som kode. Kommentarer kan vi skrive ved å starte setningen med \texttt{\color{codegreen} \#}.
+\python{strintfloat.py} \vsk
+
+Med Python kan vi selvsagt utføre klassiske regneoperasjoner: \vspace{4pt}
+
+\pythonut{opr.py}{
+a+b =  7\\
+a-b =  3\\
+a*b =  10\\
+a/b =  2.5\\
+a**b =  25\\
+a//b =  2 \\
+a\%b =  1
+} \vsk
+\newpage
+Funksjonene \pymet{str()}, \pymet{int()} og \pymet{float()} kan vi bruke til å gjøre om objekter til typene \pytype{int} eller \pytype{float}: 
+\pythonut{strintfloatfunk.py}{
+	32.0\\
+	6\\
+	6.0
+} \vsk
+
+En viktig ting å være klar over er at \texttt{=} i Python \textsl{ikke} betyr det samme som \sym{$ = $} i matematikk. Mens $ \sym{=} $ kan oversettes til ''er lik'', kan vi si at \texttt{=} kan oversettes til 'er'.
+\pythonut{assign.py}{
+5 \\
+6 
+} \newpage
+At et objekt legger til seg selv og en annen verdi er så vanlig i programmering at Python har en egen operator for det:
+\pythonut{aplus1.py}{
+5\\
+6
+}\vsk
+
+Selv om datamaskiner er ekstremt raske til å utføre utregninger, har de en begrensning det er viktig å være klar over; avrundingsfeil. En av grunnene til dette er at datamaskiner bare kan bruke et visst antall desimaler for å representere tall. En annen grunn er at datamaskiner anvender \net{https://en.wikipedia.org/wiki/Binary_number}{totallssystemet}. Det er mange verdier vi kan skrive eksakt i titallssystemet som ikke lar seg skrive eksakt i totallssystemet. For å bøte på dette kan vi bruke funksjonen \texttt{round()}\label{round()}:\regv
+
+\pythonut{rnd.py}{
+0.8300000000000001\\
+0.83
+}
+\newpage
+\subsection{Egne funksjoner}
+Ved å bruke metoden \pymet{def} kan man lage sine egne funksjoner. En funksjon kan utføre handlinger, og den kan \outl{returnere} (return på engelsk) ett eller flere objekt. Den kan også ta imot argumenter. Koden vi skriver inni en funksjon blir bare utført hvis vi \outl{kaller} (call på engelsk) på funksjonen. \regv
+
+\pythonut{func.py}{
+Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:  Hello! \\
+5
+
+}
+
+\subsection{Boolske verdier og vilkår}
+Verdiene \pytype{True} og \pytype{False} kalles \outl{boolske verdier}. Disse vil være resultatet når vi sjekker om objekter er like eller ulike. For å sjekke dette har vi de \outl{sammenlignende operatorene}:
+\begin{center}
+	\begin{tabular}{c|c}
+		\textbf{operator} & \textbf{betydning} \\ \hline
+		\texttt{==}	& er lik \\ \rowcolor{gray!10}
+		\texttt{!=} & er \textsl{ikke} lik\\
+		\texttt{>} & er større enn \\ \rowcolor{gray!10}
+		\texttt{>=} & er større enn, eller lik \\
+		\texttt{<} & er mindre enn \\ \rowcolor{gray!10}
+		\texttt{<=} & er mindre enn, eller lik \\		
+	\end{tabular}
+\end{center}
+\pythonut{bool1.py}{
+False\\
+True\\
+True\\
+False\\
+}\vsk
+
+I tillegg til de sammenlignende operatorene kan vi bruke de \outl{logiske operatorene} \pytype{and}, \pytype{or} og \pytype{not}
+\pythonut{bool2.py}{
+False\\
+True\\
+True
+
+}
+\spr{
+Sjekker som bruker de sammenlignende og de logiske operatorene, skal vi heretter kalle \outl{vilkår}.
+}
+\subsection{Uttrykkene \pymet{if, else} og \pymet{elif}}
+Når vi ønsker å utføre handlinger bare \textsl{hvis} et vilkår er sant (\pytype{True}), bruker vi uttrykket \pymet{if} foran vilkåret. Koden vi skriver med innrykk under \pymet{if}-linjen, vil bare bli utført hvis vilkåret gir \pytype{True}. 
+\pythonut{if.py}{
+ Jepp, c er større enn b
+} 
+Hvis man først vil sjekke om et vilkår er sant, og så utføre handlinger hvis det \textsl{ikke} er det, kan vi bruke uttrykket \pymet{else}:
+\pythonut{else.py}{
+Men denne kommer, fordi vilkåret i if-linja over var False
+}
+Uttrykket \pymet{else} tar bare hensyn til (og gir ikke mening uten) \pymet{if}-uttrykket like over seg. Hvis vi vil at handlinger skal utføres \textsl{bare} hvis ingen tidligere \pymet{if} uttrykk ga noe utslag, må vi bruke\footnote{\pymet{elif} er en forkortelse for \pymet{else if}, som også kan brukes.} uttrykket \pymet{elif}. Dette er et \pymet{if}-uttrykk som slår inn hvis \pymet{if}-uttrykket over \textsl{ikke} ga utslag.
+\pythonut{elif.py}{
+Nå er vi sikre på at 1 < b < 3
+}
+\info{Merk}{
+Når du jobber med tall, kan noen vilkår du forventer skal være \pytype{True} vise seg å være \pytype{False}. Dette handler ofte om avrundingsfeil, som vi har omtalt på side \pageref{round()}.
+}
+\newpage
+\subsection{Lister}
+Lister kan vi bruke for å samle objekter. Objektene som er i listen kalles \outl{elementene} til listen.
+\python{list1.py}
+Elementene i lister er \outl{indekserte}. Første objekt har indeks 0, andre objekt har indeks 1 og så videre:
+\pythonut{list1.py}{
+96 \\
+99 \\
+98
+}
+Med den innebygde funksjonen \texttt{append()} kan vi legge til et objekt i enden av listen. Dette er en \outl{innebygd funksjon}\footnote{Kort fortalt betyr det at det bare er noen typer objekter som kan bruke denne funksjonen.}, som vi skriver i enden av navnet på listen, med et punktum foran.
+\pythonut{list3.py}{
+[] \newline
+[3] \newline
+[3, 7]
+}
+\newpage
+Med funksjonen \texttt{pop()} kan vi hente ut et objekt fra listen
+\pythonut{list4.py}{
+a = 19 \\
+min\_liste = [6, 10, 15] \\
+a = 10 \\
+min\_liste = [6, 15]
+}
+\info{Forklar for deg selv}{
+Hva er forskjellen på å skive \texttt{a = min\_liste[1]} og å skrive \texttt{a = min\_liste.pop(1)}?
+} \vsk
+
+Med funksjonen \texttt{sort()} kan vi sortere elementene i listen.
+\pythonut{list5.py}{
+[0, 1, 3, 4, 7, 8, 9]
+\\
+
+['a', 'b', 'c', 'd', 'e']
+}\vsk
+\newpage
+Med funksjonene \texttt{count()} kan vi telle gjentatte elementer i listen.
+\pythonut{list6.py}{
+4\\
+1\\
+2\\
+0
+} \vsk
+
+Med funksjonen \texttt{len()} kan vi finne antall elementer i en liste, og med funksjonen \texttt{sum()} kan vi finne summen av lister med tall som elementer.
+\pythonut{list7.py}{
+5\\
+3\\
+15
+}
+\newpage
+Med uttrykket \texttt{in} kan vi sjekke om et element er i en liste.
+\pythonut{list8.py}{
+True\\
+False
+}
+
+
+\newpage
+\subsection{Looper; \pymet{for} og \pymet{while}}
+\subsubsection{\pymet{for} loop}
+For objekter som inneholder flere elementer, kan vi bruke \pymet{for}\,-\,looper til å utføre handlinger for hvert element. Handlingene må vi skrive med et innrykk etter \pymet{for}\,-\,uttrykket:
+\pythonut{for.py}{
+5 \\
+50 \\[12pt]
+
+10\\
+100\\[12pt]
+
+15\\
+150
+}
+\spr{
+Å gå gjennom hvert element i (for eksempel) en liste kalles ''å iterere over listen''.
+}\vsk
+
+Ofte er det ønskelig å iterere over heltallene $ 0, 1, 2 $ og så videre. Til dette kan vi bruke \pymet{range()}:
+\pythonut{forrang.py}{
+0 \\
+1 \\
+2
+}
+\subsubsection{\pymet{while} loop}
+Hvis vi ønsker at handlinger skal utføres fram til et vilkår er sant, kan vi bruke en \pymet{while}\,-\,loop: \regv
+\pythonut{while1.py}{
+1\\
+2\\
+3\\
+4\\
+}
+
+\subsection{\pymet{input()}}
+Vi kan bruke funksjonen \pymet{input()} til å skrive inn tekst mens skriptet kjører:
+\python{input0.py}
+Teksten vi har skrevet inni \pymet{input()} i skriptet over er teksten vi ønsker vist foran teksten som ønskes innskrevet. Linje 2 i denne koden vil ikke kjøres før en tekst er innskrevet.
+\pythonut{input0.py}{
+Skriv inn tekst her: OK\\
+OK
+}
+\newpage
+Objektet gitt av en \pymet{input()}-funksjon vil alltid være av typen \pytype{str}. Man må alltid passe på å gjøre om objekter til rett type:
+\pythonut{input1.py}{
+La oss regne ut a*b\\
+a = 3.7\\
+b = 4\\
+a*b = 14.8
+}
+\subsection{Moduler}
+Noen ganger er vi nødt til å importere \outl{moduler} for å få tilgang til objekter vi ønsker. Dette gjør vi ved å bruke \pymet{import}-metoden:
+\pythonut{imports.py}{
+3.141592653589793 \\
+4
+}
+
+\newpage
+\subsection{Feilmeldinger}
+Påstand: Alle programmerere vil erfare at skriptet ikke kjører fordi vi ikke har skrevet koden på rett måte. Dette kalles en \outl{syntax error}. Ved syntax error vil man få beskjed om på hvilken linje feilen befinner seg, og hva som er feil. De vanligste feilene er
+\begin{itemize}
+\item \textbf{Å glemme innrykk når man bruker metoder som \pymet{def}, \pymet{for}, \pymet{while}, og \pymet{if} }
+\pythonut{erindent.py}{
+line 5, in <module>\\
+print("a*b er større enn 48000")\\
+ \^{} \\
+IndentationError: expected an indented block after 'if' statement on line 4
+}
+\item \textbf{Å utføre operasjoner på typer det ikke gir mening for}
+\pythonut{ertype.py}{
+line 2, in <module> \\
+b\_opphøyd\_i\_andre = b**2\\
+TypeError: unsupported operand type(s) for ** or\\ pow(): 'str' and 'int'\\
+}
+\end{itemize}
+
+\newpage
+
+
+
+\end{document}

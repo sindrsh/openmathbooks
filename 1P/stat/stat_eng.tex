@@ -1,0 +1,401 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+
+\begin{document}
+\section{Introduction}
+In a \outl{survey} we collect information. This information is often words or numbers, and is called \outl{data}. A collection of data is called a \outl{data set}. \vsk
+
+For example, say you ask two people whether they like caviar. The one answers ''yes'', the other ''no''. Then ''yes'' and ''no'' are the data (answers) you have collected, and $\{\text{''yes''}, \text{''no''}\} $ is your data set. \vsk
+
+Roughly speaking, statistics involves two things;  \textsl{presenting} and \textsl{interpreting} data sets. For both purposes we have some terms which we will study in the following sections, helped by different examples of studies. These examples are found on page \pageref{undersok}. \vsk
+
+There are no universal laws telling you how to present or interpret data sets, however, you should follow these two guidelines: \regv
+
+\st{\begin{itemize}
+	\item Let it always be clear exactly what you have studied, and what data you have collected.
+	\item Always be aware the methods you use to interpret the data.
+\end{itemize}}  \vspace{9pt}
+
+\spr{
+Persons participating in a survey where they are asked to answer questions are called \outl{respondents}.
+}
+\newpage
+\label{undersok}
+\st{
+\textbf{Survey 1} \os
+	10 persones tested how many seconds they could hold their breath. These were the results (in seconds):
+	\[ 47\quad124\quad 61\quad 38\quad 97\quad 84\quad 101\quad79\quad 56\quad 40 \]
+}  \vspace{9pt}
+\st{
+\textbf{Survey 2} \os
+15 persons were asked how many apples they eat during a week. The answers were these:
+\[ 7\quad 4\quad 5\quad 4\quad 1\quad 0\quad 6\quad 5\quad 4\quad 8\quad1\quad6\quad8\quad0\quad 14 \] 
+}  \vspace{9pt}
+\st{\textbf{Survey 3}\os
+300 persones where asked to name their favorite animal.
+\begin{itemize}
+	\item 46 persons answered tiger
+	\item 23 persons answered lion
+	\item 17 persons answered crocodile
+	\item 91 persons answered dog
+	\item 72 persons answered cat
+	\item 51 persons answered other animals
+\end{itemize}} \vspace{9pt}
+\st{
+\textbf{Survey 4} \os
+Mobile phones with smart-functions (app-based) came to the Norwegian market in 2009. The table\footnote{Numbers imported from \net{https://www.medienorge.uib.no/statistikk/medium/ikt/405}{medienorge.uib.no}.} below shows the total sale of mobile phones during the time period 2009-2014, and the share with and without smart-functions. The numbers express the amount of 1\,000 phones.
+\begin{center}
+	\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} 
+	\textbf{År} &\textbf{2009}&\textbf{2010} &\textbf{2011} &\textbf{2012} &\textbf{2013}&\textbf{2014} \\ \hline
+	totalt& 2\,365 & 2\,500 &2\,250&2\,200&	2\,400&2\,100\\
+	\phantom{---}wtho. sm.f. & 1\,665 & 1\,250 &790&300&240&147\\
+	\phantom{---}wth. sm.f. &700&1\,250&	1\,460&	1\,900&	2\,160 &1\,953
+	\end{tabular}
+\end{center}
+}
+
+
+\section{Ways of presenting}
+When presenting data sets, it should be easy to see for others what we have found. This can be accomplished by using frequency tables, bar charts, sector graphs, or line graphs.
+
+\subsection{Frequency table}
+In a \outl{frequency table} the data set are organized in a table showing the amount of times each unique answer appears. This amount is called the \outl{frequency}.\regv
+
+\eks[- Survey 2]{ \label{frkvtbund2}	
+In this survey we have two 0's, two 1's, three 4's, two 5's, two 6's, one 7, two 8's and one 14. In a frequency table we then write
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		amount of apples & frequency\\ \hline
+		0 & 2 \\
+		1 & 2 \\
+		4 & 3 \\
+		5 & 2\\
+		6 & 2 \\
+		7 & 1 \\
+		8 & 2 \\
+		14& 1 \\ \hline
+	\end{tabular}
+\end{center}}
+\newpage
+\subsection{Søylediagram (stolpediagram)}
+In a bar chart the frequencies are represented by bars. \\[8pt]
+\st{ \label{soylund2}
+\textbf{Survey 2}
+\fig{stat1}
+} \vsk
+
+\st{
+\textbf{Survey 3}
+\fig{stat2}
+}
+\newpage
+\subsection{Sektordiagram (kakediagram)}
+In a sector graph the frequencies are represented by sectors in a circle. \regv
+\st{  \label{sektorund2}
+\textbf{Survey 2}
+\fig{stat4}
+} \vsk
+
+\st{ \label{sektorundsk3}
+\textbf{Survey 3}	
+	\fig{stat3}
+} \vsk
+
+\info{Making a sector graph from scratch
+}{
+There are a lot of software available that generates sector graphs. However, if you were to make one from scratch, you will need basic knowledge of angles and fraction shares (see \mb).}
+\newpage
+\subsection{Linjediagram}
+In a line graph the data is represented as points in a coordinate system, with lines drawn between the points. Line graphs is typically used for describing evolving data.
+\regv
+\st{
+\textbf{Survey 4} \\
+\fig{stat5}
+}
+\section{Interpretation; central tendencies}
+In a data set there are often answers which are totally or approximately equal, and which reoccur. This means we can tell something about things that apply to the many; a \outl{central tendeny}. The most common measures of central tendencies are the mode, the mean and the median.
+\subsection{Mode}
+\reg[Mode]{
+The \outl{mode} is the value occurring the most in the data set.
+} \regv
+\eks[- Survey 2]{
+In this dataset 4 has the highest occurrence (three), so 4 is the mode.
+} \regv
+
+\info{Multiple modes}{
+If multiple values have the highest occurance in the data set, the data set has multiple modes.
+}
+\newpage
+\subsection{Mean}
+When a data set includes numbers, we can find the sum of their values. When raising the question what the \outl{mean} is, we ask this: \os
+\textsl{''If all the numbers had equal value, and the sum were still the same, what would the value be?''}\os
+
+The question is answered by the aid of division\footnote{See \mb, side 23.}: \regv
+
+\reg[Gjennomsnitt \label{mean}]{ \vs
+\[ \text{mean}=\frac{\text{sum of the values of the data set}}{\text{amount of values}} \]
+} \regv
+\spr{
+The mean, as defined here, is also called the \outl{average}. Also, there are multiple types of means. More specifically, the mean from \rref{mean} is  called the \outl{arithmetic mean}.
+}\vsk 
+
+\eks[- Survey 1]{
+We sum the values from the data set, and divide by the amount of values:
+\small
+\alg{
+\text{mean}&= \frac{47+124+ 61+ 38+ 97+ 84+ 101+79+ 56+ 40}{10} \\
+&= \frac{727}{10}\br
+&=72.7
+} \normalsize
+Hence, the 10 participators held their breath for 72.7 seconds on average. 
+}
+\newpage
+\eks[- Survey 2]{  \label{gjsnund2}
+\metode{Method 1}{0.4\linewidth}\\
+\footnotesize
+\alg{
+\text{mean}&=\frac{7+ 4+ 5+ 4+ 1+ 0+ 6+ 5+ 4+ 8+1+6+8+0+ 14}{15} \br
+&=\frac{73}{15}\br
+&\approx 4.87
+}  \vsk
+
+\normalsize
+\metode{Method 2}{0.4\linewidth} \os
+We expand our frequency table \pageref{frkvtbund2} to find the sum of the values from the data set. (we have also included the sum of the frequencies):
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Amount of apples & Frequency&$ \text{amount}\cdot \text{frequency} $\\ \hline
+		0 & 2 &$ 0\cdot2=\phantom{0}0 $ \\
+		1 & 2 &$ 1\cdot2=\phantom{0}2 $\\
+		4 & 3 &$ 4\cdot3=12 $\\
+		5 & 2 &$ 5\cdot2=10 $\\
+		6 & 2 &$ 6\cdot2=12 $\\
+		7 & 1 &$ 7\cdot1=14 $\\
+		8 & 1 &$ 8\cdot2=16 $\\
+		14& 1 &$ 14\cdot1=14\phantom{0} $\\ \hline
+		 \textbf{sum}&15& \qquad\quad73\\ \hline
+	\end{tabular}
+\end{center}
+Now
+\algv{
+\text{mean}&=\frac{73}{15} \\
+&\approx 4.87
+}
+Hence, on average, the 15 respondents ate 4.87 apples a week.
+} \regv
+
+\eks[- Survey 4]{
+{\footnotesize (Calculations omitted. The values are rounded off to the nearest one.)}
+\begin{itemize}
+	\item Mean of total sale of mobiles: 2302
+	\item Mean of sale of mobiles without smart-functions: 732
+	\item Mean of sale of mobiles with smart-functions: 1570
+\end{itemize}
+} \vsk
+
+\info{Equal distribution}{
+Note that the mean is about equal distribution. If we have 4 rectangles with respective lengths 1, 6, 3 and 2, their joint length is $ 1+6+3+2=12 $.
+\fig{meana}
+Therefore, their mean length is $ {\frac{12}{4}=3} $. Thus, if we could reshape the rectangles so that their lengths were equal, with their joint length unchanged, they would each have length 3.
+\fig{meanb}
+}
+\subsubsection{The average rate of change}
+Say you go for a jog, and measure your speed three times. Also, say that the data set you end up with is
+\[ 10\enh{m/s}\qquad10\enh{m/s} \qquad10\enh{m/s}\]
+Then your \outl{average speed} was
+\[ \frac{10+10+10}{3}\enh{m/s}=10\enh{m/s} \]
+In other words; if your speed is the same alle the time\footnote{In other words, your speed is \textsl{constant}.}, this speed is also you average speed. Consequently, the formula for the speed from \hrs{fart}{Definition} is also the formula for the average speed. Alternatively stated, it is the formula for the average rate og change of length per time.\regv
+
+\regdef[Average rate of change]{
+If we \textsl{assume} or \textsl{hold} two quantities to be proportional, the proportionality constant from \eqref{propeq} is called the \outl{averate rate of change}.
+} \regv
+
+\eks[- Survey 4]{ \label{gjsnittperund4}
+\begin{itemize}
+	\item For the years 2009 and 2010, the difference of smartphones sold to the difference of years is
+	\[ \frac{1\,260-700}{2010-2009}=\frac{550}{1}=550  \]
+	Therefore, between 2009 and 2010 the sale of smartphones have \textsl{increased} by 550\,000 smartphones per year.
+	\item For the years 2010 and 2014, the difference of smartphones sold to the difference of years is
+\[ \frac{1\,953-1\,250}{2014-2010}=\frac{703}{4}=175,75  \]
+	Therefore, between 2010 and 2014 the sale of smartphones have \textsl{increased} by ca. 176\,000 smartphones per year.	
+\item For the years 2013 and 2014, the difference of smartphones sold to the difference of years is
+\[ \frac{1\,953-2\,160}{2014-2013}=\frac{-207}{1}=-207  \]
+	Therefore, between 2013 and 2014 the sale of smartphones have \textsl{decreased} by ca. 207 000 smartphones per year.		
+\end{itemize}
+}
+\newpage
+\info{The slope of the line through two points}{
+Given a function $ f(x) $. In \mb\ we have seen that the slope of the line through the points $ (a, f(a)) $ og $ (b, f(b)) $ is
+\[ \frac{f(b)-f(a)}{b-a} \]
+\fig{lintopunkt}
+Comparing this expression with the calculations made on page \pageref{gjsnittperund4}, we realize that the expressions are, in general, identical. Hence, the slope of a line through two points yields the average rate of change between the two points.
+}
+\subsection{Median}
+\reg[Median \label{median}]{The \outl{median} is the number that ends up in the middle when the data set is arranged in an increasing order.\vsk
+
+If the data set has an even amount of values, the median equals the mean of the two values in the middle (after the arranging).} \regv
+
+\eks[- Survey 1]{
+	We arrange the data set in an increasing order:
+	\[ 38\quad40\quad47\quad 56\quad \colr{61}\quad\colr{79}\quad 84\quad97\quad 101\quad 124  \]
+	The two numbers in the middle are 61 and 79. The mean of these is
+	\[ \frac{61+79}{2}=70 \]
+	Hence, the median is 70.
+} 
+\eks[- Survey 2]{
+We arrange the data set in an increasing order:
+\[0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  \colr{5}\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14\]
+The value in the middle is 5, and thus the median is 5.
+}
+
+\eks[- Survey 4]{
+{\footnotesize
+(Calculations omitted. The values are rounded off to the nearest one).
+}
+\begin{itemize}
+	\item The median for the total sale of mobiles: 2307
+	\item The median for the sale of mobiles without smart-functions: 545
+	\item The median for the sale of mobiles with smart-functions: 1570
+\end{itemize}
+}
+\section{Interpretation; variations}
+Often there will be large differences between collected data. The collective term for various type of differences is \outl{variation}. The most common measures of variation are variation width, quartile width, variance and standard deviation.
+\subsection{Variation width}
+\reg[Variasjonsbredde]{
+The difference between the data with the largest value and the data with the smallest value yields the \outl{variation width}. 
+} \regv
+\eks[Survey 1]{
+The datas with, respectively, the highest and lowest values are 124 and 38. Thus
+\[ \text{variation width}=124-38=86 \]
+} \regv
+\eks[- Survey 2]{
+	The datas with, respectively, the highest and lowest values are 14 and 0. Hence
+	\[ \text{variation width}=14-0=14 \]
+}\regv
+\eks[- Survey 4]{
+	\begin{itemize}
+		\item Variation width for mobiles in total:
+		\[ 2\,500-2\,100=400  \]
+		\item Variation width e for mobiles without smart functions:
+		\[ 1\,665-147=518 \]
+		\item Variation width for mobiles with smart functions:
+		\[ 2\,160-700=1460 \]
+	\end{itemize}
+}
+\subsection{Quartile width}
+\reg[Quartile width and upper and lower quartile]{
+The \outl{quartile width} of a data set can be found doing the following:
+\begin{enumerate}
+	\item Arrange the data set in increasing order.
+	\item Divide the arranged data set, on the middle, into two new data sets (if the number of values in the set is even, the median is excluded).
+	\item Find the respective medians in the two new data sets.
+	\item Find the difference between the medians from point 3.
+\end{enumerate}
+Regarding the medians from point 3: The one with the largest value is called the \outl{upper quartile}, and the one with the lowest value is called the \outl{lower quartile}.
+} \regv
+
+\eks[- Survey 1]{
+\begin{enumerate}
+	\item $ 38\quad40\quad47\quad 56\quad 61\quad79\quad 84\quad97\quad 101\quad 124 $
+	\item $ \color{blue}38\quad40\quad47\quad 56\quad 61 \quad \color{red}79\quad 84\quad97\quad 101\quad 124 $
+	\item The median in the blue set is 47 (lower quartile), and the median in the red set is 97 (upper quartile).
+	\[ \color{blue}38\quad40\quad{\color{black}47}\quad 56\quad 61 \qquad\quad \color{red}79\quad 84\quad{\color{black}97}\quad 101\quad 124 \] \vs \vs
+	\item $ \text{Quartile width}=97-47=50 $
+\end{enumerate}
+} \regv
+\eks[- Survey 2]{
+\begin{enumerate}
+	\item $ 0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  5\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
+	\item $ \color{blue}0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  {\color{black}5}\quad \color{red} 5\quad  6\quad6\quad  7\quad8\quad8 \quad14 $
+	\item The median in the blue set is 1 (lower quartile), and the median in the red set is 7 (upper quartile).
+	\[ \color{blue}0\quad0\quad 1\quad {\color{black}1}\quad 4\quad 4\quad 4\qquad\quad \color{red} 5\quad  6\quad6\quad  {\color{black}7}\quad8\quad8 \quad14\] \vs \vs
+	\item $ \text{Quartile width}=7-1=6 $
+\end{enumerate}
+}
+\eks[- Survey 4]{
+(Calculations omitted)
+\begin{itemize}
+	\item For mobiles in total the quartile with is 200 
+	\item For mobiles without smart functions the quartile width is 1010
+	\item For mobiles with smart functions the quartile width is 703
+\end{itemize}
+} \vsk
+
+\spr{
+The lower quartile, the median and the upper quartile is also called the \outl{1st. quartile}, the \outl{2nd quartile} and the \outl{3rd quartile}, respectively.
+}
+\newpage
+\subsection{Deviations, variance and standard deviation}
+\reg[Variance]{
+The difference between a value in a data set and the mean of the dataset is called the \outl{deviation} of the value. \vsk
+	
+The \outl{variance} of a data set can be found in the following way:	
+\begin{enumerate}
+	\item Square the deviation of every value in the data set, and add these.
+	\item Divide by the amount of values in the data set.
+\end{enumerate} 
+
+The \outl{standard deviation} is the square root of the variance.
+}
+
+\eks{ \label{vareks}
+Given the data set
+\[\color{blue} 2\quad 5\quad 9\quad 7\quad 7 \]
+Then
+\[ \text{gjennomsnitt}=\frac{\colb{2+5+9+7+7}}{5}=\colr{6} \]
+Moreover,
+\alg{
+\text{variance}&= \frac{(\colb{2}-\colr{6})^2+(\colb{5}-\colr{6})^2+(\colb{9}-\colr{6})^2+(\colb{7}-\colr{6})^2+(\colb{7}-\colr{6})^2}{5} \\ 
+&= 5
+}
+Then $ \text{standard deviation}=\sqrt{5}\approx2.23 $.
+} \vsk
+\eks[- Survey 1 ]{
+(Calculations omitted)\os
+The variance is 754.01. The standard deviation is $ {\sqrt{754.01}\approx 27.46} $
+}
+\newpage
+\eks[- Survey 2]{
+We found the mean of the data set on page \pageref{gjsnund2}. We expand our table from page \pageref{frkvtbund2}:
+\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		apples & frequency& frequency $ \cdot $ squared deviation \\ \hline
+		0 & 2 &$2\cdot \left(0-\frac{73}{15}\right)^2 $ \\
+		1 & 2 &$2\cdot \left(1-\frac{73}{15}\right)^2 $\\
+		4 & 3 &$3\cdot \left(4-\frac{73}{15}\right)^2 $\\
+		5 & 2&$2\cdot \left(5-\frac{73}{15}\right)^2 $\\
+		6 & 2 &$2\cdot \left(6-\frac{73}{15}\right)^2 $\\
+		7 & 1 &$1\cdot \left(7-\frac{73}{15}\right)^2 $\\
+		8 & 2 &$2\cdot \left(8-\frac{73}{15}\right)^2 $\\
+		14& 1 &$1\cdot \left(9-\frac{73}{15}\right)^2 $\\ \hline 
+		sum& 15 & $ 189.7\bar{3} $ \\ \hline
+	\end{tabular}
+\end{center}
+Hence
+\[ \text{variance}= \frac{189,7\bar{3}}{15}\approx 12.65 \]
+Thus, the standard deviation is $ \sqrt{12.65}\approx3.57 $
+} \vsk
+
+\eks[- Survey 4]{
+	(Calculations omitted)
+	\begin{itemize}
+		\item For mobiles in total the variance is 17\,781,25, and the standard deviation ca. $ 133.4 $.
+		\item For mobiles without smart functions the variance is $ 318\,848.\bar{3} $, and the standard deviation ca. $ 17.87 $.
+		\item For mobiles with smart functions the variance is $245\,847.91\bar{6} $, and the standard deviation ca. 495,83.
+	\end{itemize}
+}
+\info{Why squaring when finding the variance?}{
+Let us see what happens if we repeat our calculations from \textsl{Example 1} on page \pageref{vareks}, but without squaring:
+\begin{multline}
+	\frac{(\colb{2}-\colr{6})+(\colb{5}-\colr{6})+(\colb{9}-\colr{6})+(\colb{7}-\colr{6})+(\colb{7}-\colr{6})}{5}\\=\frac{\colb{2+5+9+7+7}}{5} - \colr{6}
+\end{multline}
+But, by definition, the fraction $ \frac{\colb{2+5+9+7+7}}{5} $ is the mean of the data set, and thus the above expression equals 0. This applies for all data sets, and, in this context, 0 provides no further information. If we however square the deviations, we avoid expressions deemed to equal 0.
+}
+\end{document}
+

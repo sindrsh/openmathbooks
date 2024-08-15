@@ -1,0 +1,330 @@
+\input{../../doc}
+\input{../bm}
+\input{../../preamb}
+
+\begin{document}
+
+\section{Størrelser, enheter og prefikser}
+Det vi kan måle og uttrykke med tall, kaller vi \textit{størrelser}. En størrelse består gjerne av både en verdi og en \textit{enhet}, og i denne seksjonen skal vi se på disse fire enhetene:
+\tbs
+\begin{center}
+	\begin{tabular}{c|c|c}
+		\textbf{enhet} & \textbf{forkortelse} &\textbf{enhet for}\\ \hline
+		meter & m &lengde\\\hline
+		gram & g &masse\\\hline
+		sekund & s & tid\\\hline 
+		liter & L & volum
+	\end{tabular}
+\end{center}\tbs
+Noen ganger har vi veldig store eller veldig små størrelser, for eksempel er det ca 40\,075\,000\,m rundt ekvator! For så store tall er det vanlig å bruke en \textit{prefiks}. Da kan vi skrive at det er ca 40\,075 km rundt ekvator. Her står 'km' for 'kilometer', og 'kilo' betyr '1\,000'. Så 1\,000\enh{meter}  er altså 1\enh{kilometer} . Her er prefiksene man oftest\footnote{Unntaket er 'deka', som er en veldig lite brukt prefiks, men vi har tatt den med fordi den kompletterer tallmønsteret.} møter på i hverdagen:\tbs
+\begin{center}
+	\begin{tabular}{c|c|r}
+		\textbf{prefiks} & \textbf{forkortelse}&\textbf{verdi} \\ \hline
+		kilo & k & 1\,000\phantom{000\;}\\\hline
+		hekto & h & 100\phantom{000\;}\\\hline
+		deka & da & 10\phantom{000\;}\\\hline
+		desi & d & 0,1\phantom{0\,\;}\\\hline
+		centi & c & 0,01\phantom{\,\;}\\\hline
+		milli & m & 0,001\\\hline		
+	\end{tabular}
+\end{center}
+Bruker vi denne tabellen i kombinasjon med enhetene kan vi for eksempel se at\vs
+\alg{
+	1000\enh{g}&= 1\enh{kg} \\
+	0,1 \enh{m} &= 1\enh{dm} \\
+	1\enh{s} &= 1000 \enh{ms} \\
+	0,01 \enh{L} &= 1\enh{cL} 
+}
+Enda ryddigere kan vi få det hvis vi lager en vannrett tabell (se neste side) med meter, gram eller liter lagt til i midten\footnote{Legg merke til at 'meter', 'gram', 'sekund' og 'liter' er \textsl{enheter}, mens 'kilo', 'hekto' osv. er \textsl{tall}. Det kan derfor virke litt rart å sette dem opp i samme tabell, men for vårt formål fungerer det helt fint.}. 
+\newpage
+\reg[\ompref \label{ompref}]{Når vi skal endre prefikser kan vi bruke denne tabellen:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hekto &
+			deka & m/g/L &
+			desi & 
+			centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Komma må flyttes like mange ganger som antall ruter vi må flytte oss fra opprinnelig prefiks til ny prefiks.\vsk
+	
+	{\footnotesize For lengde brukes også enheten 'mil' (1 mil $ = $ 10\,000\,m). Denne kan legges på til venstre for 'kilo'.}
+}\regv
+
+\spr{
+	En (eventuell) \outl{prefiks} og en \outl{enhet} utgjør en \outl{benevning}. For eksempel har 9\enh{km} benevningen 'km', mens 9\enh{m} har benevningen 'm'. Disse størrelsene har forskjellige benevning, men begge har 'm' som enhet.
+} \regv
+
+\eks[1]{
+	Skriv om 23,4\,mL til antall L.
+	
+	\sv
+	Vi skriver tabellen vår med L i midten, og legger merke til at vi må \textsl{tre ruter til venstre} for å komme oss fra mL til L:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hekto &
+			deka & \color{blue}L &
+			desi & 
+			centi & 
+			\color{red} milli & 		
+		\end{tabular}
+	\end{center}
+	Det betyr at vi må flytte kommaet vårt tre plasser til venstre for å gjøre om mL til L:
+	\[ 23,4\enh{mL}=0,0234\enh{L} \]
+}
+\newpage
+\eks[2]{
+	Skriv om 30\,hg til antall cg.
+	
+	\sv
+	Vi skriver tabellen vår med 'g' i midten, og legger merke til at vi må \textbf{fire ruter til høyre} for å komme oss fra \colr{hg} til \colb{cg}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			\color{red}hekto &
+			deka & g &
+			desi & 
+			\color{blue}centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Dét betyr at vi må flytte kommaet vårt fire plasser til høyre for å gjøre om 'hg' til 'cg':\vs
+	\[ 30\enh{mg}=300\,000\enh{cg} \]
+}\regv
+
+\eks[3]{
+	Skriv om 2,7\enh{s} til antall \enh{ms}.
+	
+	\sv
+	Vi skriver tabellen vår med 's' i midten, og legger merke til at vi må \textbf{tre ruter til høgre} for å komme oss fra \colr{s} til \colb{ms}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hekto &
+			deka &\color{red} s &
+			desi & 
+			centi & 
+			\color{blue}milli & 		
+		\end{tabular}
+	\end{center}
+	Dét betyr at vi må flytte kommaet vårt tre plasser til høgre for å gjøre om 's' til 'ms': \vs
+	\[ 2,7\enh{s}=2\,700\enh{ms} \]
+}\regv
+
+\eks[4]{
+	Gjør om 12\,500\,dm til antall mil.
+	
+	\sv
+	Vi skriver tabellen vår med m i midten, legger til 'mil', og merker oss at vi må \textbf{fem ruter til venstre} for å komme oss fra \colb{dm} til \colr{mil}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c}
+			\color{blue}mil &kilo &
+			hekto &
+			deka & m &
+			\color{red} desi & 
+			centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+	Dét betyr at vi må flytte kommaet vårt fem plasser til høyre for å gjøre om mil til dm:
+	\[ 12\,500\enh{dm}=0,125\enh{mil} \]
+}\vsk
+
+\fork{\ref{ompref} \ompref}{
+Omgjøring av prefikser handler om å gange/dele med 10, 100 og så videre (se \mb). \vsk
+
+La oss som første eksempel skrive om $ 3,452\enh{km} $ til antall meter. Vi har at
+\algv{
+3,452\enh{km}&= 3,452\cdot1000 \enh{m} \\
+&=3\,452\enh{m}
+}
+La oss som andre eksempel skrive om 47\enh{mm} til antall meter. Vi har at
+\algv{
+47\enh{mm}&=47\cdot\frac{1}{1000} \enh{m} \\
+&= (47:1000) \enh{m}\\
+&=0,047\enh{m}
+}
+}
+\section{Regning med størrelser}
+\mers{I eksemplene til denne seksjonen bruker vi areal- og volumformler som du finner i \mb.}\os
+
+I utregninger behandler vi benevninger på samme måte som vi behandler variabler i algebra\footnote{Se kapitlet om algebra i \mb.}. På samme måte som at $ a+a=2a $, er altså $ 1\enh{cm}+1\enh{cm}=2\enh{cm} $ og på samme måte som at $ 2a\cdot 3a=6a^2$, er $ 2\enh{cm}\cdot 3\enh{cm}=6\enh{cm}^2 $.\regv
+
+\eks[1]{
+\fig{armedstorl}
+\abc{
+\item Finn omkretsen til rektangelet.
+\item Finn arealet til rektangelet.
+} \vs
+\sv \vs
+\abc{
+\item Omkretsen til rektangelet er
+\[ 7\enh{cm}+2\enh{cm}+7\enh{cm}+2\enh{cm}=18\enh{cm} \]
+\item Arealet til rektangelet er
+\[ 7\enh{cm}\cdot 2\enh{cm}=14\enh{cm}^2 \]
+}
+} \regv
+
+\eks[3]{
+	En sylinder har radius $ 4\enh{m} $ og høgde $ 2\enh{m} $. Finn volumet til\\ sylinderen.
+	
+	\sv \vs \vs
+	\alg{
+		\text{grunnflaten til sylinderen}&=\pi\cdot \left(4\enh{cm}\right)^2 
+		= 16 \pi \enh{cm}^2 \vn
+		\text{volumet til sylinderen}&= 16\pi \enh{cm}^2 \cdot2\enh{cm} 
+		= 32\pi \enh{cm}^3
+	}
+} 
+\section{Proporsjonale størrelser \label{Propstorl}}
+Si at det koster $ 10\enh{kr}$ for $ 0,5\enh{kg} $ poteter. Hvis det er slik at denne prisen gjelder også hvis vi ønsker å kjøpe $ 0,5\enh{kg} $ poteter mer, koster det $ 20\enh{kr} $ for $ 1\enh{kg} $ poteter. Hvis prisen gjelder også hvis vi ønsker å kjøpe $ 0,5\enh{kg} $ poteter mer enn dette, koster det $ 30\enh{kr} $ for $ 1,5\enh{kg} $ poteter. Antall kroner og antall kilogram poteter for hver av tilfellene kan vi sette opp i en tabell: \vs
+\begin{center}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+\textbf{kr} & 10  & 20 & 30 \\ \hline
+\textbf{kg} & 0,5 & 1\,& 1,5 \\ \hline
+	\end{tabular}
+\end{center}
+La oss videre dele prisen med vekten for hvert av tilfellene:
+\alg{
+\frac{10\enh{kr}}{0,5\enh{kg}}&=20\enh{kr/kg} & \frac{20\enh{kr}}{1\enh{kg}}&=20\enh{kr/kg} & \frac{30\enh{kr}}{1,5}&=20\enh{kr/kg}
+}
+Vi ser nå at forholdet mellom prisen og vekten er det samme for alle tilfellene. Da sier vi at prisen og vekten er\footnote{Se også \refved{Funkvedl} i \mb.} \outl{proporsjonale størrelser}. Av disse to størrelsene har vi også ''lagd'' en ny størrelse, med benevning\footnote{Vi kunne også skrevet $ \frac{\enh{kr}}{\enh{kg}} $, men i dette tilfellet er det vanligst å bruke \sym{/} som divisjonstegn.} 'kr/kg'. Dette uttaler vi ''kroner per kilogram'', og denne størrelsen blir gjerne kalt \outl{kiloprisen}. I dette tilfellet er kiloprisen 20\,kr/kg. Da kiloprisen er forholdet mellom to proporsjonale størrelser, kalles den en \outl{proporsjonalitetskonstant.} \regv
+\regdef[Proporsjonale størrelser \label{prop}]{
+\begin{equation}\label{propeq}
+	\text{proporsjonalitetskonstant}=\frac{\text{en størrelse}}{\text{en annen størrelse}}
+\end{equation}
+} \regv
+
+Anvendt matematikk er full av størrelser som er proporsjonalitetskonstanter, og i definisjonsboksene under finner du et utvalg av disse. Legg merke til at formlene som vises matematisk sett er de samme som \eqref{propeq}, det er bare navnene på størrelsene og enhetene som er forskjellige.
+\newpage
+\regdef[Kilopris]{
+\outl{Kilopris} gir forholdet mellom en pris (i kr) og en vekt \\(i kilogram)
+\begin{equation}\label{kilopriseq}
+	\text{kilopris}=\frac{\text{pris}}{\text{vekt}}
+\end{equation}
+Alternativt kan vi skrive
+\begin{equation}\label{kiloprisalteq}
+	\text{pris}=\text{kilopris}\cdot \text{vekt}
+\end{equation}
+Benevningen for kilopris er 'kr/kg'.
+}
+\regdef[Literpris]{
+	\outl{Literpris} gir forholdet mellom en pris (i kr) og et volum \\(i liter)
+	\begin{equation}\label{literpriseq}
+		\text{litepris}=\frac{\text{pris}}{\text{volum}}
+	\end{equation}
+	Alternativt kan vi skrive
+	\begin{equation}\label{literprisalteq}
+		\text{pris}=\text{literpris}\cdot \text{volum}
+	\end{equation}
+	Benevningen for literpris er 'kr/L'.
+}
+\regdef[Fart \label{fart}]{
+\outl{Fart} gir forholdet mellom en lengde og en tid.
+\begin{equation}\label{lengdeeq}
+	\text{fart}=\frac{\text{lengde}}{\text{tid}}
+\end{equation}
+Alternativt kan vi skrive
+\begin{equation}\label{lengdealteq}
+	\text{lengde}=\text{fart}\cdot\text{tid}
+\end{equation}
+Vanlige benevninger for fart er\footnote{'h' står for 'time' ('hour' på engelsk).} 'km/h' og 'm/s'
+}
+\newpage
+\regdef[Tetthet]{
+\outl{Tetthet} gir forholdet mellom en vekt og et volum.
+\begin{equation}\label{tettheteq}
+	\text{tetthet}=\frac{\text{vekt}}{\text{volum}}
+\end{equation}
+Alternativt kan vi skrive
+\begin{equation}\label{tetthetalteq}
+	\text{vekt}=\text{tetthet}\cdot\text{volum}
+\end{equation}
+Vanlige benevninger for tetthet er 'kg/m$ ^3 $' og 'g/cm$ ^3 $'	
+}
+\regdef[Effekt]{
+	\outl{Effekt} gir forholdet mellom energi og tid
+	\begin{equation}\label{effekteq}
+		\text{effekt}=\frac{\text{energi}}{\text{tid}}
+	\end{equation}
+	Alternativt kan vi skrive
+	\begin{equation}\label{Effektalteq}
+		\text{energi}=\text{effekt}\cdot\text{tid}
+	\end{equation}
+	Vanlige benevninger for effekt er 'J/s' og 'kWh/s'. 'J' står for energieneheten 'Joule'. 'J/s' er det samme som 'W', som står for 'Watt'. I 'kWh' står 'k' for 'kilo', 'W' for 'Watt' og 'h' for 'time'.
+}
+\info{\note}{
+I \eqref{kilopriseq}\,-\,\eqref{tettheteq} er det antatt at størrelsene på venstre side av likningen er \textit{konstant}, men det er ikke alltid slik. Lar du en stein falle fra en høgde, vil den åpenbart ikke ha den samme farten hele tiden. Ved å dele lengden den har falt med tiden det tok, vil du finne \textsl{hvilken fart ballen ville hatt dersom den skulle kommet seg like langt på den samme tiden, dersom farten var den samme hele tiden.}
+}
+\section{Regning med forskjellige benevninger \label{regnmforbenvn}}
+Når vi skal utføre regneoperasjoner med størrelser som har benevning, er det helt avgjørende at vi passer på at benevningene som er involvert er de samme. \regv
+
+\eks[1]{
+Regn ut $ 5\enh{km}+4\,000\enh{m} $.
+
+\sv
+Her må vi enten gjøre om 5\enh{km} til antall m eller 4\,000\enh{m} til antall km før vi kan legge sammen verdiene. Vi velger å gjøre om $ 5\enh{km} $ til antall m:
+\[ \text{5\enh{km}=5\,000\enh{m}}\]
+Nå har vi at
+\alg{
+5\enh{km}+4\,000\enh{m} &= 5\,000\enh{m}+4\,000\enh{m} \\
+&= 9\,000\enh{m}
+}
+}
+\info{Tips}{
+I mange utregninger kan enheter føre til at uttrykkene blir litt rotete. Hvis du er helt sikker på at alle benevningene er like, kan du med fordel skrive utregninger uten benevning. I \textsl{Eksempel 1} over kunne vi da regnet ut
+\[ 5\,000+4\,000=9\,000 \]
+Men merk at i et endelig svar \textsl{må} vi ha med benevning:
+\[ 5\enh{km}+4\,000\enh{m}= 9\,000\enh{m} \]
+}
+\newpage
+\eks[2]{
+	Bruk ligning \eqref{lengdealteq} til å svare på spørsmålene.
+	\abc{
+		\item Hvor langt kjører en bil som holder farten 50\enh{km/h} i 3 timer?
+		\item Hvor langt kjører en bil som holder farten  90\enh{km/h} i 45 minutt?
+	}
+	
+	\sv
+	\abc{
+		\item I ligning \eqref{lengdealteq} er nå  farten $ 50 $ og tiden $ 3 $, og da er
+		\[ \text{strekning}=50\cdot3=150 \]
+		Altså har bilen kjørt 150\enh{km} 
+		\item Her har vi to forskjellige enheter for tid involvert; 'timer' ('h') og 'minutt' ('min'). Da må vi enten gjøre om farten til antall 'km/min' eller tiden til antall 'h'. Vi velger å gjøre om antall 'min' til antall 'h'\footnote{Husk at $ 60\enh{min}=1\enh{h}. $}:
+		\alg{
+			45\enh{minutt}&=\frac{45}{60}\enh{timer} \br
+			&=\frac{3}{4}\enh{timer}
+		}
+	I ligning \eqref{lengdealteq} er nå farten 90 og tiden $ \dfrac{3}{4} $, og da er
+	\[ \text{strekning}=90\cdot\frac{3}{4}=67.5\]
+	Altså har bilen kjørt 67.5\enh{km}.
+	}
+}
+\newpage
+\eks[3]{
+	Bruk ligning \eqref{kilopriseq} til å svare på spørsmålene.
+	\abc{
+		\item 10\enh{kg} tomater koster 35\enh{kr}. Hva er kiloprisen til tomatene?
+		\item Safran går for å være verdens dyreste krydder, 5\enh{g} kan koste 600\enh{kr}. Hva er da kiloprisen på safran?
+	}
+	\sv
+	\abc{
+		\item I ligning \eqref{kilopriseq} er nå prisen 35 og vekten 10, og da er
+		\[ \text{kilopris}=\frac{35}{10}=3,5 \]
+		Altså er kiloprisen på tomater 3,5\enh{kr/kg}
+		\item Her har vi to forskjellige enheter for vekt involvert; kg og gram. Vi gjør om antall g til antall kg (se \rref{ompref}):
+		\[ 5\enh{g}=0,005\enh{kg} \]
+			I ligning \eqref{kilopriseq} er nå prisen 600 og vekten 0,005, og da er
+		\[ \text{kilopris}=\frac{600}{0,005}=120\,000 \]
+		Altså koster safran 120\,000\enh{kr/kg}.
+	}
+
+}
+
+\end{document}
+
+

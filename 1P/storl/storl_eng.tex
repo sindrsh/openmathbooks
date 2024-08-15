@@ -1,0 +1,307 @@
+\input{../../doc}
+\input{../eng}
+\input{../../preamb}
+
+\begin{document}
+
+\section{Quantities, units, and prefixes}
+Objects we can measure and describe by numbers are called \\\outl{quantities}. A quantity usually consists of both a value and a \outl{unit}. \\In this section we will look at these four units:
+\tbs
+\begin{center}
+	\begin{tabular}{c|c|c}
+		\textbf{unit} & \textbf{abbreviation} &\textbf{unit for}\\ \hline
+		meter & m &length\\\hline
+		gram & g &mass\\\hline
+		second & s & time\\\hline 
+		liter & L & volume
+	\end{tabular}
+\end{center}\tbs
+Sometimes we have either very large or very small quantities, like the length around the equator, which is ca. 40\,075\,000\,m! For very large or small numbers it is helpful to use a \outl{prefix}. Using the prefix 'kilo', the length around the equator can be written as ca. 40\,075 km, where 'km' is an abbreviation for 'kilometer', and 'kilo' meaning '1\,000'. Hence, 1\,000\enh{meters} is 1\enh{kilometer} . The prefixes for the powers of ten with integer exponents ranging from $ -3 $ to 3 (except 0) are the following:\tbs
+\begin{center}
+	\begin{tabular}{c|c|r}
+		\textbf{prefix} & \textbf{abbreviation}&\textbf{value} \\ \hline
+		kilo & k & 1\,000\phantom{000\;}\\\hline
+		hecto & h & 100\phantom{000\;}\\\hline
+		deka & da & 10\phantom{000\;}\\\hline
+		desi & d & 0.1\phantom{0\,\;}\\\hline
+		centi & c & 0.01\phantom{\,\;}\\\hline
+		milli & m & 0.001\\\hline		
+	\end{tabular}
+\end{center}
+\spr{
+	A (potential) \outl{prefix} and a \outl{unit} constitute a \outl{notation}. For example, 9\enh{km} has notation 'km', while 9\enh{m} has notation 'm'. These quantities have unequal notations but both have 'm' as unit.
+}
+\newpage
+We can create a structured way of changing prefixes by placing the prefixes in a horizontal table with a unit added to the place corresponding to the value 1: \regv
+
+\reg[\ompref \label{ompref}]{
+When changing the prefix of a quantity we can use this table:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hecto &
+			deka & unit &
+			desi & 
+			centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+The movement of the decimal separator corresponds to the movement from the original prefix to the new prefix.
+}
+
+
+
+\eks[1]{
+	Write 23,4\,mL as an amount of L.
+	
+	\sv
+	We set 'L' as the unit, and notice that we must move \textbf{three cells to the left} to get from \colr{mL} to \colb{L}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hecto &
+			deka & \color{blue}L &
+			desi & 
+			centi & 
+			\color{red} milli & 		
+		\end{tabular}
+	\end{center}
+	This means the comma separator is to be moved three places to the left: 
+	\[ 23.4\enh{mL}=0.0234\enh{L} \]
+}
+
+\eks[2]{
+	Write 30\enh{hg} as an amount of cg.
+	
+	\sv
+	We set 'g' as the unit, and notice that we must move \textbf{four cells to the right} to get from \colr{hg} to \colb{cg}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			\color{red}hecto &
+			deka & g &
+			desi & 
+			\color{blue}centi & 
+			milli & 		
+		\end{tabular}
+	\end{center}
+This means the comma separator is to be moved four places to the right:
+	\[ 30\enh{mg}=300\,000\enh{cg} \]
+}
+\newpage
+\eks[3]{
+	Write 2.7\enh{s} as an amount of ms.
+	
+	\sv
+	We set 's' as the unit, and notice that we must move \textbf{three cells to the right} to get from \colr{s} to \colb{ms}:
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|c}
+			kilo &
+			hecto &
+			deka &\color{red} s &
+			desi & 
+			centi & 
+			\color{blue}milli & 		
+		\end{tabular}
+	\end{center}
+This means the comma separator is to be moved three places to the right: \vs
+	\[ 2.7\enh{s}=2\,700\enh{ms} \]
+}
+
+\fork{\ref{ompref} \ompref}{
+Changing prefixes corresponds to multiplying/dividing by 10, 100 etc. (see \mb). \vsk
+
+As our first example, let us write $ 3,452\enh{km} $ as an amount of meters. We have
+\algv{
+3.452\enh{km}&= 3.452\cdot1000 \enh{m} \\
+&=3\,452\enh{m}
+}
+As our second example, let us write 47\enh{mm} as an amount of meters. We have
+\algv{
+47\enh{mm}&=47\cdot\frac{1}{1000} \enh{m} \\
+&= (47:1000) \enh{m}\\
+&=0.047\enh{m}
+}
+}
+\section{Calculation with quantities}
+\notesm{In the examples of this section we use area and volume formulas found in \mb.}\os
+
+When performing calculations, notations can be handled in the same way as variables in algebra.
+\footnote{See \mb.}. Hence, in the same way as we have $ a+a=2a $, we have $ 1\enh{cm}+1\enh{cm}=2\enh{cm} $, and just like we have $ 2a\cdot 3a=6a^2$, we have $ 2\enh{cm}\cdot 3\enh{cm}=6\enh{cm}^2 $.\regv
+
+\eks[1]{
+\fig{armedstorl}
+\abc{
+\item Find the perimeter of the rectangle.
+\item Find the area of the rectangle.
+} \vs
+\sv \vs
+\abc{
+\item The perimeter of the rectangle is
+\[ 7\enh{cm}+2\enh{cm}+7\enh{cm}+2\enh{cm}=18\enh{cm} \]
+\item The area of the rectangle is
+\[ 7\enh{cm}\cdot 2\enh{cm}=14\enh{cm}^2 \]
+}
+} \regv
+
+\eks[3]{
+	A cylinder has radius $ 4\enh{m} $ and height $ 2\enh{m} $. Find the volume of the cylinder.
+	
+	\sv \vs \vs
+	\alg{
+		\text{base area}&=\pi\cdot \left(4\enh{cm}\right)^2 
+		= 16 \pi \enh{cm}^2 \vn
+		\text{volume of the cylinder}&= 16\pi \enh{cm}^2 \cdot2\enh{cm} 
+		= 32\pi \enh{cm}^3
+	}
+} 
+\section{Proportional quantities \label{Propstorl}}
+Say it costs\footnote{'kr' is the Norwegian currency} $ 10\enh{kr}$ for $ 0.5\enh{kg} $ potatoes. If this price is also valid if we buy $ 0.5\enh{kg} $ additional potatoes, the price for $ 1\enh{kg} $ potatoes is $ 20\enh{kr} $. If this price is valid also if we buy  $ 0,5\enh{kg} $ additional potatoes, the price for $ 2\enh{kg} $ potatoes is $ 40\enh{kr} $. We can put the amount of krones and amount of kilogram potatoes in a table:
+\begin{center}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+\textbf{kr} & 10  & 20 & 40 \\ \hline
+\textbf{kg} & 0,5 & 1\,& 2\\ \hline
+	\end{tabular}
+\end{center}
+Moreover, let us divide the price by the weight for each case:
+\alg{
+\frac{10\enh{kr}}{0,5\enh{kg}}&=20\enh{kr/kg} & \frac{20\enh{kr}}{1\enh{kg}}&=20\enh{kr/kg} & \frac{40\enh{kr}}{2}&=20\enh{kr/kg}
+}
+Clearly, the ratio of the price to the weight is the same for all the cases. In that case, we say that the price and the weight are\footnote{Also see \refved{Funkvedl} in \mb.} \outl{proportional quantities}. From these two quantities we have also  ''made'' a new quantity with notation\footnote{We could also write $ \frac{\enh{kr}}{\enh{kg}} $, but in this case it is more convenient to use \sym{/} as the symbol for division.} 'kr/kg'. This is expelled ''krones per kilogram''. Therefore, in our example the price per kilogram is 20\,kr/kg. Since the price per kilogram is the result of division between two proportional quantities, it is called a \outl{constant of proportionality}. \regv
+\regdef[Proportional quantities \label{prop}]{
+\begin{equation}\label{propeq}
+	\text{constant of proportionality}=\frac{\text{a quantity}}{\text{another quantity}}
+\end{equation}
+} \regv
+
+Applied mathematics includes a great amount of quantities which are constants of proportionality, and in the definition boxes below you will find a selection of these. Note that all these formulas are identical to equation \eqref{propeq}, only with the names of quantities and units changed.
+\newpage
+\regdef[Price per kilo]{
+\outl{Price per kilo} yields the ratio of a price (in av given currency) to a weight (in kilograms).
+\begin{equation}\label{kilopriseq}
+	\text{price per kilo}=\frac{\text{price}}{\text{weight}}
+\end{equation}
+Alternatively,
+\begin{equation}\label{kiloprisalteq}
+	\text{price}=\text{price per kilo}\cdot \text{weight}
+\end{equation}
+The notation for price per kilo is 'currency/kg'.
+}
+\regdef[Price per liter]{
+	\outl{Price per liter} yields the ratio of a price (in av given currency) to a volume (in liters).
+	\begin{equation}\label{literpriseq}
+		\text{price per liter}=\frac{\text{price}}{\text{volume}}
+	\end{equation}
+Alternatively,
+	\begin{equation}\label{literprisalteq}
+		\text{pris}=\text{literpris}\cdot \text{volum}
+	\end{equation}
+	The notation for price per liter is 'currency/L'.
+}
+\regdef[Speed \label{fart}]{
+\outl{Speed} yields the ratio of length to time.
+\begin{equation}\label{lengdeeq}
+	\text{fart}=\frac{\text{lengde}}{\text{tid}}
+\end{equation}
+Alternatively,
+\begin{equation}\label{lengdealteq}
+	\text{length}=\text{speed}\cdot\text{time}
+\end{equation}
+Common notations for speed are 'km/h' and 'm/s'.
+}
+\newpage
+\regdef[Tetthet]{
+\outl{Density} yields the ratio of weight to volume.
+\begin{equation}\label{tettheteq}
+	\text{density}=\frac{\text{weight}}{\text{volume}}
+\end{equation}
+Alternatively,
+\begin{equation}\label{tetthetalteq}
+	\text{weight}=\text{density}\cdot\text{volume}
+\end{equation}
+Common notations for density are 'kg/m$ ^3 $' and 'g/cm$ ^3 $'	
+}
+\regdef[Effect]{
+	\outl{Effect} yields the ratio of energy to time.
+	\begin{equation}\label{effekteq}
+		\text{effect}=\frac{\text{energy}}{\text{time}}
+	\end{equation}
+	Alternatively,
+	\begin{equation}\label{Effektalteq}
+		\text{energy}=\text{effect}\cdot\text{time}
+	\end{equation}
+	Common notations for effect are 'J/s' and 'kWh/s'. 'J' is the abbreviation of the energy unit 'Joule'. 'J/s' is the same as 'W', which is the abbreviation of 'Watt'. In 'kWh', 'k' means 'kilo', 'W' means 'Watt' and 'h' means 'hour'.
+}
+\info{\note}{
+In \eqref{kilopriseq}\,-\,\eqref{tettheteq}, it is assumed that the quantities on the left side of the equations are \textit{constants}, but that is not always the case. If you let a stone fall from a height, it's speed will obviously not remain the same along the way. By dividing the length by the time it took to travel it, you will find \textsl{the constant speed the ball would need have if it were to travel the same distance at the identical time.}
+}
+\section{Regning med forskjellige benevninger \label{regnmforbenvn}}
+
+When performing calculations with quantities with notations, it is important to ensure that the notations involved are the same. \regv
+
+\eks[1]{
+Calculate $ 5\enh{km}+4\,000\enh{m} $.
+
+\sv
+We must either write 5\enh{km} as an amount of 'm' or 4\,000\enh{m} as an amount of 'km' before we can add the quantities. We choose to write $ 5\enh{km} $ as an amount of 'm' (see \rref{ompref}):
+\[ \text{5\enh{km}=5\,000\enh{m}}\]
+Now
+\algv{
+5\enh{km}+4\,000\enh{m} &= 5\,000\enh{m}+4\,000\enh{m} \\
+&= 9\,000\enh{m}
+}
+}
+\info{Tips}{
+Calculations involving notations can turn out to be a bit cumbersome. If you have ensured that the notations are the same, further calculations can be performed without them. In \textsl{Example 1} above, we could have written
+\[ 5\,000+4\,000=9\,000 \]
+However, in a final answer the notation is \textsl{absolutely necessary}:
+\[ 5\enh{km}+4\,000\enh{m}= 9\,000\enh{m} \]
+}
+\newpage
+\eks[2]{
+	Use equation \eqref{lengdealteq} to answer the questions.
+	\abc{
+		\item A car drives at 50\enh{km/h}. How far will it travel in 3 hours?
+		\item A car drives at 90\enh{km/h}. How far will it travel in 45 minutes?
+	}
+	
+	\sv \vs
+	\abc{
+		\item In equation \eqref{lengdealteq}, the speed is now $ 50 $, and the time is $ 3 $, so
+		\[ \text{length}=50\cdot3=150 \]
+		That is, the car will travel 150\enh{km}. 
+		\item Here, we have two different notations for time involved; 'hours' ('h') and 'minutes' ('min'). Therefore, we must either write the speed as an amount of 'km/min' or the time as an amount of 'h'. We chose to write 'min' as an amount of 'h'\footnote{Recall that $ 60\enh{min}=1\enh{h}. $}:
+		\alg{
+			45\enh{minutes}&=\frac{45}{60}\enh{hours} \br
+			&=\frac{3}{4}\enh{hours}
+		}
+	In equation \eqref{lengdealteq}, the speed is now 90, and the time is $ \dfrac{3}{4} $, so
+	\[ \text{strekning}=90\cdot\frac{3}{4}=67.5\]
+	That is, the car will travel 67.5\enh{km} in 45 minutes.
+	}
+}
+\newpage
+\eks[3]{
+	Use equation \eqref{kilopriseq} to answer the questions.
+	\abc{
+		\item 10\enh{kg} tomatoes cost 35\enh{kr}. what is the price per kilo for the tomatoes?
+		\item Safran is reckoned to be the world's most expensive spice, with 5\enh{g} costing up to 600\enh{kr}. In that case, what is the price per kilo for safran?
+	}
+	\sv
+	\abc{
+		\item In equation \eqref{kilopriseq}, the price is now 35, and the weight is 10, so
+		\[ \text{price per kilo}=\frac{35}{10}=3.5 \]
+		That is, tomatoes costs 3.5\enh{kr/kg}
+		\item Here, we have two different units for weight involved; 'kg' and 'g'. We write the amount of 'g' as an amount of 'kg' (see \rref{ompref}):
+		\[ 5\enh{g}=0.005\enh{kg} \]
+		In equation \eqref{kilopriseq}, the price is now 600, and the weight is 0.005, so
+		\[ \text{price per kilo}=\frac{600}{0,005}=120\,000 \]
+		That is, safran costs 120\,000\enh{kr/kg}.
+	}
+
+}
+
+\end{document}
+
+

@@ -1,0 +1,255 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\section{Introduction to Python}
+Python is a programming language for \outl{text-based coding}. This means that the actions we want to be executed must be coded as text. The file containing all the code is referred to as a \outl{script}. The visible result of running the script is termed \outl{output}\footnote{\outl{Output} in English.}. There are various ways to run one's script; for example, one can use an online compiler like \net{https://www.programiz.com/python-programming/online-compiler/}{programmiz.com}.
+\subsection{Object, Type, Function, and Expression}
+Our first script consists of just one line of code:
+
+\pythonut{helloworld.py}{
+	Hello world!
+}
+
+In the upcoming sections, the terms \outl{object}, \outl{type}, \outl{function}, and \outl{expression} will frequently be discussed.
+\begin{itemize}
+	\item Almost everything in Python is objects. In the above script, both \pymet{print()} and \pytype{"Hello world"} are objects.
+	\item Objects come in different types. \pymet{print()} is of the \pytype{function} type, while \pytype{"Hello world"} is of the \pytype{str} type\footnote{'str' is an abbreviation for the English word 'string'.}. The operations that can be executed with various objects depend on their types.
+	\item Functions can accept \outl{arguments} and then perform operations. In the script above, the \pymet{print()} function takes the argument \pytype{"Hello world"} and displays the text as output.
+	\item Expressions have strong similarities with functions, but they don't accept arguments.
+\end{itemize}
+
+\newpage
+\subsubsection{Assignment and Calculation}
+Text and numbers can be seen as some of the smallest building blocks (objects). Python has one type for text and two types for real numbers:
+\begin{center}
+	\begin{tabular}{r|l} \rowcolor{gray!10}
+		\pytype{str} & text \\
+		\pytype{int} & integer \\ \rowcolor{gray!10}
+		\pytype{float} & decimal
+	\end{tabular} 
+\end{center}
+It is usually useful to give our objects names. We do this by writing the name followed by \texttt{=} and the object. \outl{Comments} are text that is not treated as code. We can write comments by starting the sentence with \texttt{\color{codegreen} \#}.
+\python{strintfloat.py} \vsk
+
+With Python, we can of course perform classic arithmetic operations: \vspace{4pt}
+
+\pythonut{opr.py}{
+	a+b =  7\\
+	a-b =  3\\
+	a*b =  10\\
+	a/b =  2.5\\
+	a**b =  25\\
+	a//b =  2 \\
+	a\%b =  1
+} \vsk
+\newpage
+The functions \pymet{str()}, \pymet{int()} and \pymet{float()} can be used to convert objects to types \pytype{int} or \pytype{float}: 
+\pythonut{strintfloatfunk.py}{
+	32.0\\
+	6\\
+	6.0
+} \vsk
+
+One important thing to be aware of is that \texttt{=} in Python \textsl{does not} mean the same as \sym{$ = $} in mathematics. While $ \sym{=} $ can be translated to ''equals'', we can say that \texttt{=} can be translated to 'is assigned to'.
+\pythonut{assign.py}{
+	5 \\
+	6 
+} \newpage
+For an object to add itself and another value is so common in programming that Python has its own operator for it:
+\pythonut{aplus1.py}{
+	5\\
+	6
+}\vsk
+
+Although computers are extremely fast at performing calculations, they have a limitation that is important to be aware of: rounding errors. One reason for this is that computers can only use a certain number of decimals to represent numbers. Another reason is that computers use the \net{https://en.wikipedia.org/wiki/Binary_number}{binary system}. There are many values that we can write exactly in the decimal system that cannot be written exactly in the binary system. To address this, we can use the \texttt{round()}\label{round()} function:\regv
+
+\pythonut{rnd.py}{
+	0.8300000000000001\\
+	0.83
+}
+\newpage
+\subsection{Custom Functions}
+Using the method \pymet{def}, you can create your own functions. A function can perform actions, and it can \outl{return} one or more objects. It can also accept arguments. The code we write inside a function is only executed if we \outl{call} the function. \regv
+
+\pythonut{func.py}{
+	Hi. Someone called function b. The argument given was: Hello! \\
+	5
+}
+
+\subsection{Boolean Values and Conditions}
+The values \pytype{True} and \pytype{False} are called \outl{boolean values}. These will be the result when we check if objects are equal or different. To check this, we have the \outl{comparative operators}:
+\begin{center}
+	\begin{tabular}{c|c}
+		\textbf{operator} & \textbf{meaning} \\ \hline
+		\texttt{==}	& is equal to \\ \rowcolor{gray!10}
+		\texttt{!=} & is \textsl{not} equal to\\
+		\texttt{>} & is greater than \\ \rowcolor{gray!10}
+		\texttt{>=} & is greater than, or equal to \\
+		\texttt{<} & is less than \\ \rowcolor{gray!10}
+		\texttt{<=} & is less than, or equal to \\		
+	\end{tabular}
+\end{center}
+\pythonut{bool1.py}{
+	False\\
+	True\\
+	True\\
+	False\\
+}\vsk
+
+In addition to the comparative operators, we can use the \outl{logical operators} \pytype{and}, \pytype{or}, and \pytype{not}.
+\pythonut{bool2.py}{
+	False\\
+	True\\
+	True
+}
+\spr{
+	Checks that use both comparative and logical operators will henceforth be called \outl{conditions}.
+}
+\subsection{Expressions \pymet{if, else}, and \pymet{elif}}
+When we want to perform actions only \textsl{if} a condition is true (\pytype{True}), we use the expression \pymet{if} in front of the condition. The code we write indented under the \pymet{if} line will only be executed if the condition evaluates to \pytype{True}.
+\pythonut{if.py}{
+	Yep, c is greater than b
+} 
+If you first want to check if a condition is true, and then perform actions if it's \textsl{not}, you can use the expression \pymet{else}:
+\pythonut{else.py}{
+	But this comes because the condition in the if-line above was False
+}
+The expression \pymet{else} only considers (and doesn't make sense without) the \pymet{if} expression right above it. If we want actions to be performed \textsl{only} if no previous \pymet{if} expressions produced any result, we must use\footnote{\pymet{elif} is a shortcut for \pymet{else if}, which can also be used.} the expression \pymet{elif}. This is an \pymet{if} expression that takes effect if the \pymet{if} expression above did \textsl{not} take effect.
+\pythonut{elif.py}{
+	Now we are sure that 1 < b < 3
+}
+\info{Note}{
+	When working with numbers, some conditions you expect to be \pytype{True} might turn out to be \pytype{False}. This often deals with rounding errors, as mentioned on page \pageref{round()}.
+}
+\newpage
+
+\subsection{Lists}
+Lists can be used to collect objects. The objects in the list are called the \outl{elements} of the list.
+\python{list1.py}
+The elements in lists are \outl{indexed}. The first object has index 0, the second object has index 1, and so on:
+\pythonut{list1.py}{
+	96 \\
+	99 \\
+	98
+}
+Using the built-in function \texttt{append()} we can add an object to the end of the list. This is an \outl{in-built function}\footnote{In short, it means that only certain types of objects can use this function.}, which we write at the end of the list name, preceded by a dot.
+\pythonut{list3.py}{
+	[] \newline
+	[3] \newline
+	[3, 7]
+}
+\newpage
+With the \texttt{pop()} function, we can retrieve an object from the list.
+\pythonut{list4.py}{
+	a = 19 \\
+	min\_liste = [6, 10, 15] \\
+	a = 10 \\
+	min\_liste = [6, 15]
+}
+
+\info{Explain to yourself}{
+	What's the difference between writing \texttt{a = min\_liste[1]} and \texttt{a = min\_liste.pop(1)}?
+} \vsk
+
+With the \texttt{sort()} function, we can sort the elements in the list.
+\pythonut{list5.py}{
+	[0, 1, 3, 4, 7, 8, 9] 
+	\\
+	
+	['a', 'b', 'c', 'd', 'e']
+}\vsk
+
+\newpage
+With the \texttt{count()} function, we can count repeated elements in the list.
+\pythonut{list6.py}{
+	4\\
+	1\\
+	2\\
+	0
+} \vsk
+
+With the \texttt{len()} function, we can find the number of elements in a list, and with the \texttt{sum()} function, we can find the sum of lists with numbers as elements.
+\pythonut{list7.py}{
+	5\\
+	3\\
+	15
+}
+\newpage
+With the \texttt{in} expression, we can check if an element is in a list.
+\pythonut{list8.py}{
+	True\\
+	False
+}
+
+\newpage
+\subsection{Loops; \pymet{for} and \pymet{while}}
+\subsubsection{\pymet{for} loop}
+For objects containing multiple elements, we can use \pymet{for} loops to perform actions for each element. The actions must be written with an indentation after the \pymet{for} statement:
+\pythonut{for.py}{
+	5 \\
+	50 \\[12pt]
+	10\\
+	100\\[12pt]
+	15\\
+	150
+}
+\spr{
+	Going through each element in (for example) a list is called "iterating over the list".
+}\vsk
+
+Often, it's desired to iterate over the integers $0, 1, 2$ and so forth. For this, we can use \pymet{range()}:
+\pythonut{forrang.py}{
+	0 \\
+	1 \\
+	2
+}
+\subsubsection{\pymet{while} loop}
+If we want actions to be performed until a condition is met, we can use a \pymet{while} loop: \regv
+\pythonut{while1.py}{
+	1\\
+	2\\
+	3\\
+	4\\
+}
+
+\subsection{\pymet{input()}}
+We can use the \pymet{input()} function to enter text while the script is running:
+\python{input0.py}
+The text written inside \pymet{input()} in the script above is the text we want displayed before the text to be entered. Line 2 of this code will not execute until text is entered.
+\pythonut{input0.py}{
+	Enter text here: OK\\
+	OK
+}
+\newpage
+The object provided by an \pymet{input()} function will always be of type \pytype{str}. One must always ensure to convert objects to the correct type:
+\pythonut{input1.py}{
+	Let's calculate a*b\\
+	a = 3.7\\
+	b = 4\\
+	a*b = 14.8
+}
+\subsection{Error Messages}
+Claim: All programmers will experience that the script does not run because we haven't written the code correctly. This is called a \outl{syntax error}. With a syntax error, you will be informed about which line the error is on and what the error is. The most common errors are:
+\begin{itemize}
+	\item \textbf{Forgetting indentation when using methods like \pymet{def}, \pymet{for}, \pymet{while}, and \pymet{if}}
+	\pythonut{erindent.py}{
+		line 5, in <module>\\
+		print("a*b is greater than 48000")\\
+		\^{} \\
+		IndentationError: expected an indented block after 'if' statement on line 4
+	}
+	\item \textbf{Performing operations on types where it doesn't make sense}
+	\pythonut{ertype.py}{
+		line 2, in <module> \\
+		b\_raised\_to\_second = b**2\\
+		TypeError: unsupported operand type(s) for ** or\\ pow(): 'str' and 'int'\\
+	}
+\end{itemize}
+
+
+
+
+\end{document}

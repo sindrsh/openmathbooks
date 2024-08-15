@@ -1,0 +1,31 @@
+\input{../doc}
+\input{../preamb}
+\input{bm}
+
+%\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+
+% Norwegian names of figures, chapters, parts and content
+\addto\captionsenglish{\renewcommand{\figurename}{Figur}}
+\makeatletter
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
+
+
+\begin{document}
+\import{kap0/}{framside}
+\newpage
+\tableofcontents
+
+\chapter{Digitale verktøy \label{Dig}}
+\import{prg/}{prg_bm}
+\import{prg/}{py_bm}
+\import{prg/}{prg_opg}
+
+
+\end{document}
+
+
+
+
+
