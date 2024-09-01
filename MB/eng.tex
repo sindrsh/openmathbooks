@@ -19,6 +19,10 @@
 % exercises
 \newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Exercises} \section*{Exercises for Chapter \thechapter}\vs \setcounter{section}{1}}
 
+\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Ponder \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubr}[1]{\vspace{3pt}\textbf{Ponder \ref{#1}}}
+
+
 % references
 \newcommand{\reftab}[1]{\hrs{#1}{Table}}
 \newcommand{\rref}[1]{\hrs{#1}{Rule}}

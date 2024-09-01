@@ -10,18 +10,20 @@
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapittel}}
 \addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
 
-
+\renewcommand{\thesection}{\thechapter.\Alph{section}}
 
 \begin{document}
 \import{kap0/}{framside}
 \newpage
 \tableofcontents
-
+\setcounter{chapter}{-1}
 \chapter{Digitale verktøy \label{Dig}}
 \import{prg/}{prg_bm}
 \import{prg/}{py_bm}
 \import{prg/}{prg_opg}
 
+\chapter{Tall}
+\import{talreg/}{talreg}
 
 \end{document}
 
