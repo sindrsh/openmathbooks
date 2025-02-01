@@ -14,6 +14,7 @@ void ad(int k, int m, int n=0, int p=0){
 	string s2 = (string) m;
 	string[] s2 = array(s2);
 	int q = k + m;
+	if (n+p > 10) { q = q+ 1;}
 
 	string s3 = (string) q;
 	string[] s3 = array(s3);

@@ -1,4 +1,4 @@
-settings.outformat="pdf";
+settings.outformat="svg";
 defaultpen(fontsize(11 pt));
 //defaultpen(1bp);
 usepackage("icomma");

@@ -1,5 +1,4 @@
-\usepackage[T1]{fontenc}
-%\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{lmodern} % load a font with all the characters
 \usepackage{geometry}
 %\geometry{verbose,paperwidth=16.1 cm, paperheight=24 cm, inner=2.3cm, outer=1.8 cm, bmargin=2cm, tmargin=1.8cm}
@@ -300,9 +299,6 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 
 %%% Writing code
 
-\usepackage{listings}
-
-
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -310,34 +306,6 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 
 \newcommand{\pymet}[1]{{\ttfamily\color{magenta} #1}}
 \newcommand{\pytype}[1]{{\ttfamily\color{codepurple} #1}}
-
-\lstdefinestyle{mystyle}{
-	backgroundcolor=\color{backcolour},   
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{magenta},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\ttfamily\footnotesize,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=2,
-	inputencoding=utf8,
-	extendedchars=true,
-	literate= {
-		{å}{{\aa}}1 
-		{æ}{{\ae}}1 
-		{ø}{{\o}}1
-	}
-}
-
-\lstset{style=mystyle}
 
 \newcommand{\python}[1]{
 \begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]
