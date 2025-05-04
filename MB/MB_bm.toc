@@ -91,24 +91,32 @@
 \mbox {}\hrulefill \par 
 \contentsline {chapter}{\numberline {8}Algebra }{209}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Introduksjon}{210}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenser}{217}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Irrasjonale tall}{227}{section.8.3}%
-\contentsline {section}{Oppgaver}{228}{section*.117}%
-\contentsline {chapter}{\numberline {9}Likninger }{237}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introduksjon}{238}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{240}{section.9.2}%
-\contentsline {subsubsection}{Deling}{243}{subsubsection*.131}%
-\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{247}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Potenslikninger}{252}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Ulikheter}{256}{section.9.5}%
-\contentsline {subsection}{\numberline {9.5.1}Introduksjon}{256}{subsection.9.5.1}%
-\contentsline {subsection}{\numberline {9.5.2}Løsing av ulikheter}{258}{subsection.9.5.2}%
-\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{260}{section.9.6}%
-\contentsline {subsubsection}{Likningssett}{261}{subsubsection*.140}%
-\contentsline {section}{Oppgaver}{266}{section*.153}%
-\contentsline {chapter}{\numberline {10}Funksjoner }{270}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Introduksjon}{271}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{275}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{287}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Navn på funksjoner}{292}{section.10.4}%
-\contentsline {section}{Oppgaver}{294}{section*.160}%
+\contentsline {section}{\numberline {8.2}Potenser}{216}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Irrasjonale tall}{226}{section.8.3}%
+\contentsline {section}{Oppgaver}{227}{section*.117}%
+\contentsline {chapter}{\numberline {9}Likninger }{236}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduksjon}{237}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{239}{section.9.2}%
+\contentsline {subsubsection}{Deling}{242}{subsubsection*.131}%
+\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{246}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Potenslikninger}{251}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Ulikheter}{255}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Introduksjon}{255}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Løsing av ulikheter}{257}{subsection.9.5.2}%
+\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{259}{section.9.6}%
+\contentsline {subsubsection}{Likningssett}{260}{subsubsection*.140}%
+\contentsline {section}{Oppgaver}{265}{section*.153}%
+\contentsline {chapter}{\numberline {10}Funksjoner }{269}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduksjon}{270}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{274}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{286}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Navn på funksjoner}{291}{section.10.4}%
+\contentsline {section}{Oppgaver}{293}{section*.160}%
+\contentsline {chapter}{\numberline {11}Geometri }{301}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Formler for areal og omkrets}{302}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{324}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Forklaringar}{332}{section.11.3}%
+\contentsline {section}{Oppgaver}{356}{section*.182}%
+\contentsline {chapter}{Fasit}{373}{section*.183}%
+
+\contentsline {chapter}{Indeks}{381}{chapter*.186}%

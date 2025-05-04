@@ -140,6 +140,7 @@ Når man tar utgangspunkt i en grunnlinje og en høgde, er arealformlene for et 
 	Arealet $ A $ til sirkelen er 
 	\[ A=\pi\cdot 5^2 =25\pi \]
 }
+
 \newpage
 \fork{\ref{arsirk} \arsirk}{ \label{arsirkforkl}
 	I figuren under har vi delt opp en sirkel i 4, 10 og 50 (like store) sektorer, og lagt disse bitene etter hverandre.
@@ -389,6 +390,7 @@ Dette betyr at disse er samsvarende sider:
 		6 &= EF
 	}
 }
+
 \info{Merk}{
 Av \rref{forform} har vi at for to formlike trekanter $ \triangle ABC $ og $ \triangle DEF $ er
 	\[ \frac{AB}{BC}=\frac{DE}{EF}\quad,\quad \frac{AB}{AC}=\frac{DE}{DF}\quad,\quad\frac{BC}{AC}=\frac{EF}{DF} \]
@@ -403,6 +405,7 @@ To trekanter $ \triangle ABC $ og $ \triangle DEF $ er formlike hvis ett av føl
 
 \fig{geo8b}
 }
+
 \eks[1]{
 $ \angle ACB =90^\circ $. 
 Vis at $ \triangle ABC \sim ACD $.
@@ -439,6 +442,7 @@ Altså er vilkår (iii) fra \rref{vilkform} oppfylt, og da er trekantene formlik
 
 \newpage
 \section{\geofork}
+
 \fork{\ref{omkrsirk} \omkrsirk}
 {
 \textit{Vi skal her bruke \textit{regulære} mangekanter langs veien til ønsket resultat. I regulære mangekanter har alle sidene lik lengde. Da det er utelukkande regulære mangekanter vi kommer til å bruke, vil de bli omtalt bare som mangekanter.}\vsk
@@ -592,114 +596,114 @@ Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6
 \newpage
 \fork{\ref{pytomv} \pytomv}{
 	Samme hva verdien til $ a $ og $ b $ måtte være, kan man åpenbart alltid lage en rettvinklet trekant med kateter $ a $ og $ b $. Av \pyt\;er hypotenusen da $ \sqrt{a^2+b^2} $. Av vilkår (ii) i \rref{konsttre} er dette en unik trekant, og det betyr at alle trekanter med sidelengder $ a $, $ b $ og $ \sqrt{a^2+b^2} $ er rettvinklet.
-} \regv
+}
 
 \fork{\ref{volforml} \volforml}{
 	Se boka \textit{Elementary geometry from an advanced standpoint}	av E. E. Moise.
-} \regv
+} 
 \newpage
 \fork{\ref{volkule} \volkule }{
-	\textbf{Førkunnskapar}\os
-	For å finne formelen for volumet til en kule, introduserer vi tre begrep: \outl{vertikalt tverrsnitt}, \outl{horisontalt tverrsnitt} og \outl{Cavalieris prinsipp}. Et tverrsnitt er en tenkt overflate som kommer til syne når man skjærer i en tredimensjonal form. Et vertikalt/horisontalt tverrsnitt er en tenkt overflate som kommer til syne hvis vi skjærer en tredimensjonal form enten rett vertikalt eller rett horisontalt.\vspace{-8pt}
-	\fig{tverrsnitt}
-	Cavalieris prinsipp lyder slik:\os
-	
-	\textsl{Hvis tverrsnittsarealene til to tredimensjonale former er de samme langs den samme høgda, har formene samme volum. } \os
-	
-	Dette prinsippet er illustrert i figuren under, som viser et vertikalt tverrsnitt av to former bygd av fem prismer. Prismene i de to formene er parvis like. 
-	\begin{figure}
-		\centering
-		\subfloat[]{
-			\includegraphics{\figp{cav}}	
-		} \qquad
-		\subfloat[]{
-			\includegraphics{\figp{cavb}}	
-		}
-	\end{figure}
-	Det er opplagt at hvis man startar med formen vist i \textsl{(a)}, så vil ikke volumet endre seg om man forskyver prismene mot høgre, slik som i \textsl{(b)}.\newpage
-	
-	\textbf{Volumet til en kule}\os
-	Vi starter med å se for oss en kule eksakt omsluttet av en  sylinder. La radiusen til kula og sylinderen vere $ r $, da er høgda til sylinderen $ 2r $.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule1}}
-		\caption{\label{figkule}}
-	\end{figure}
-	Vi innfører følgende størrelser:
-	\alg{
-		V_s &= \text{volumet til sylinderen}\\
-		V_k &= \text{volumet til kula}\\
-		V_i &= \text{volumet til formen inneklemt mellom sylinderen og kula}
+\textbf{Førkunnskapar}\os
+For å finne formelen for volumet til en kule, introduserer vi tre begrep: \outl{vertikalt tverrsnitt}, \outl{horisontalt tverrsnitt} og \outl{Cavalieris prinsipp}. Et tverrsnitt er en tenkt overflate som kommer til syne når man skjærer i en tredimensjonal form. Et vertikalt/horisontalt tverrsnitt er en tenkt overflate som kommer til syne hvis vi skjærer en tredimensjonal form enten rett vertikalt eller rett horisontalt.\vspace{-8pt}
+\fig{tverrsnitt}
+Cavalieris prinsipp lyder slik:\os
+
+\textsl{Hvis tverrsnittsarealene til to tredimensjonale former er de samme langs den samme høgda, har formene samme volum. } \os
+
+Dette prinsippet er illustrert i figuren under, som viser et vertikalt tverrsnitt av to former bygd av fem prismer. Prismene i de to formene er parvis like. 
+\begin{figure}
+	\centering
+	\subfloat[]{
+		\includegraphics{\figp{cav}}	
+	} \qquad
+	\subfloat[]{
+		\includegraphics{\figp{cavb}}	
 	}
-	Da har vi at
-	\begin{equation}
-		V_k=V_s-V-i \label{volkule_Vk}
-	\end{equation}
-	Tenk nå at vi skjærer formen fra \hrs{figkule}{figur} fra toppen og rett ned gjennom sentrum av kula. Da får vi et vertikalt tverrsnitt. Ser vi på dette tverrsnittet rett horisontalt, vil sylinderen se ut som en firkant, og kula som en sirkel. 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule2}}
-		\caption{}
-	\end{figure}
-	På dette tverrsnittet vandrer vi en lengde $ k $ rett opp fra sentrum til et punkt $ P $. Den halve bredden til kula i dette punktet kaller vi $ s $. Av Pytagoras' setning har vi at
-	\begin{equation} \label{volkule_s2}
-		s^2 = r^2-k^2
-	\end{equation}
-	Videre forestiller vi oss at vi igjen skjærer formen i \hrs{figkule}{figur}, men denne gangen rett fra siden og gjennom punktet $ P $. Da får vi et horisontalt tverrsnitt. Studerer vi dette tverrsnittet rett ovenfra, får vi en figur som dette:
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule3}}
-		\caption{\centering Horisontalt tverrsnitt. Den svarte sirkelen er buen til sylinderen\newline og den blå er buen til kula.\label{figtverrar}}
-	\end{figure}
-	Vi definerer følgende:
-	\alg{
-		A_s &= \text{arealet til tverrsnittsoverflaten til sylinderen} \\
-		A_k &= \text{arealet til tverrsnittsoverflaten til kula} \\
-		A_i &= \text{arealet til tverrsnittsoverflaten mellom } \\
-		&\hspace{12pt} \text{ sylinderen og kula (grønn i figuren over)}
-	}
-	
-	Da er
-	\begin{equation} \label{volkule_Ai}
-		A_i=A_s-A_k
-	\end{equation}
-	Av \rref{arsirk} har vi at ${A_s= \pi r^2} $ og $ {A_k=\pi s^2} $. Av \eqref{volkule_s2} og \eqref{volkule_Ai} er
-	\begin{align*}
-		A_i &= \pi r^2 - \pi s^2 \\
-		&= \pi r^2 - \pi(r^2-k^2)\\
-		&= \pi r^2 - \pi r^2+\pi k^2\\
-		&= \pi k^2
-	\end{align*} 
-	\newpage
-	$ A_i $ tilsvarer altså arealet til en sirkel med radius $ k $.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule6}}
-		\caption{Overflate med same areal som den grøne overflata i \hrs{figtverrar}{figur}.}
-	\end{figure}
-	Vi tenker oss nå to kjegler, begge med høyde og radius lik $ r $, satt med spissene mot hverandre. Denne formen vil være like høg som formen fra \hrs{figkule}{figur}, og kan plasseres slik at punktet hvor spissene møtes sammenfaller med $ S $.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule4}}
-		\caption{\label{kjegle}}
-	\end{figure}
-	Det vertikale tverrsnittet gjennom $ S $ av denne formen ser slik ut:
-	\begin{figure}[H]
-		\centering
-		\includegraphics[]{\figp{volkule5}}
-		\caption{\label{figkjegler}}
-	\end{figure}
-	Om vi vandret $ k $ rett opp eller ned fra $ S $, så er den horisontale avstanden ut til siden også $ k $ (dette er overlatt til leseren å vise). Dette betyr at det horisontale tverrsnittsarealet til kjeglene er $ {\pi k^2=A_i} $. Altså har den inneklemte formen fra \hrs{figkule}{figur} og formen fra \hrs{figkjegler}{figur} samme tverrsnittsareal langs den samme høgden (begge har høgde $ 2r $). Av Cavalieris prinsipp og \rref{volforml} har vi da at 
-	\begin{align}
-		V_i &= \frac{2(\pi r^2\cdot r)}{3}\nonumber \\
-		&= \frac{2\pi r^3}{3} \label{volkule_Vi}
-	\end{align}
-	Av \eqref{volkule_Vk}, \eqref{volkule_Vi} og \rref{volforml} har vi nå at
-	\begin{align*}
-		V_k&=2\pi r^3- \frac{2\pi r^2}{3} \\
-		&= \frac{6\pi r^3}{3}-\frac{2\pi r^3}{3} \\
-		&= \frac{4\pi r^3}{3}
-	\end{align*}
+\end{figure}
+Det er opplagt at hvis man startar med formen vist i \textsl{(a)}, så vil ikke volumet endre seg om man forskyver prismene mot høgre, slik som i \textsl{(b)}.\newpage
+
+\textbf{Volumet til en kule}\os
+Vi starter med å se for oss en kule eksakt omsluttet av en  sylinder. La radiusen til kula og sylinderen vere $ r $, da er høgda til sylinderen $ 2r $.
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule1}}
+	\caption{\label{figkule}}
+\end{figure}
+Vi innfører følgende størrelser:
+\alg{
+	V_s &= \text{volumet til sylinderen}\\
+	V_k &= \text{volumet til kula}\\
+	V_i &= \text{volumet til formen inneklemt mellom sylinderen og kula}
+}
+Da har vi at
+\begin{equation}
+	V_k=V_s-V-i \label{volkule_Vk}
+\end{equation}
+Tenk nå at vi skjærer formen fra \hrs{figkule}{figur} fra toppen og rett ned gjennom sentrum av kula. Da får vi et vertikalt tverrsnitt. Ser vi på dette tverrsnittet rett horisontalt, vil sylinderen se ut som en firkant, og kula som en sirkel. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule2}}
+	\caption{}
+\end{figure}
+På dette tverrsnittet vandrer vi en lengde $ k $ rett opp fra sentrum til et punkt $ P $. Den halve bredden til kula i dette punktet kaller vi $ s $. Av Pytagoras' setning har vi at
+\begin{equation} \label{volkule_s2}
+	s^2 = r^2-k^2
+\end{equation}
+Videre forestiller vi oss at vi igjen skjærer formen i \hrs{figkule}{figur}, men denne gangen rett fra siden og gjennom punktet $ P $. Da får vi et horisontalt tverrsnitt. Studerer vi dette tverrsnittet rett ovenfra, får vi en figur som dette:
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule3}}
+	\caption{\centering Horisontalt tverrsnitt. Den svarte sirkelen er buen til sylinderen og den blå er buen til kula.\label{figtverrar}}
+\end{figure}
+Vi definerer følgende:
+\alg{
+	A_s &= \text{arealet til tverrsnittsoverflaten til sylinderen} \\
+	A_k &= \text{arealet til tverrsnittsoverflaten til kula} \\
+	A_i &= \text{arealet til tverrsnittsoverflaten mellom } \\
+	&\hspace{12pt} \text{ sylinderen og kula (grønn i figuren over)}
+}
+
+Da er
+\begin{equation} \label{volkule_Ai}
+	A_i=A_s-A_k
+\end{equation}
+Av \rref{arsirk} har vi at ${A_s= \pi r^2} $ og $ {A_k=\pi s^2} $. Av \eqref{volkule_s2} og \eqref{volkule_Ai} er
+\begin{align*}
+	A_i &= \pi r^2 - \pi s^2 \\
+	&= \pi r^2 - \pi(r^2-k^2)\\
+	&= \pi r^2 - \pi r^2+\pi k^2\\
+	&= \pi k^2
+\end{align*} 
+\newpage
+$ A_i $ tilsvarer altså arealet til en sirkel med radius $ k $.
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule6}}
+	\caption{Overflate med same areal som den grøne overflata i \hrs{figtverrar}{figur}.}
+\end{figure}
+Vi tenker oss nå to kjegler, begge med høyde og radius lik $ r $, satt med spissene mot hverandre. Denne formen vil være like høg som formen fra \hrs{figkule}{figur}, og kan plasseres slik at punktet hvor spissene møtes sammenfaller med $ S $.
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule4}}
+	\caption{\label{kjegle}}
+\end{figure}
+Det vertikale tverrsnittet gjennom $ S $ av denne formen ser slik ut:
+\begin{figure}[H]
+	\centering
+	\includegraphics[]{\figp{volkule5}}
+	\caption{\label{figkjegler}}
+\end{figure}
+Om vi vandret $ k $ rett opp eller ned fra $ S $, så er den horisontale avstanden ut til siden også $ k $ (dette er overlatt til leseren å vise). Dette betyr at det horisontale tverrsnittsarealet til kjeglene er $ {\pi k^2=A_i} $. Altså har den inneklemte formen fra \hrs{figkule}{figur} og formen fra \hrs{figkjegler}{figur} samme tverrsnittsareal langs den samme høgden (begge har høgde $ 2r $). Av Cavalieris prinsipp og \rref{volforml} har vi da at 
+\begin{align}
+	V_i &= \frac{2(\pi r^2\cdot r)}{3}\nonumber \\
+	&= \frac{2\pi r^3}{3} \label{volkule_Vi}
+\end{align}
+Av \eqref{volkule_Vk}, \eqref{volkule_Vi} og \rref{volforml} har vi nå at
+\begin{align*}
+	V_k&=2\pi r^3- \frac{2\pi r^2}{3} \\
+	&= \frac{6\pi r^3}{3}-\frac{2\pi r^3}{3} \\
+	&= \frac{4\pi r^3}{3}
+\end{align*}
 }
 \newpage
 
