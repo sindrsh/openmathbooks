@@ -38,7 +38,7 @@
 \usepackage[many]{tcolorbox}
 \usepackage{multicol}
 \usepackage{stackengine}
-
+\usepackage{listings}
 \usepackage{esvect} %For vectors with capital letters
 
 % For tabular
@@ -303,6 +303,29 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
 
 \newcommand{\pymet}[1]{{\ttfamily\color{magenta} #1}}
 \newcommand{\pytype}[1]{{\ttfamily\color{codepurple} #1}}

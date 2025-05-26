@@ -1,0 +1,25 @@
+import "../../inh" as inh;
+unitsize(0.2cm);
+
+draw(unitsquare);
+draw(shift(0,0)*unitsquare);
+draw(shift(1,0)*unitsquare);
+draw(shift(2,0)*unitsquare);
+draw(shift(0,1)*unitsquare);
+draw(shift(1,1)*unitsquare);
+draw(shift(2,1)*unitsquare);
+draw(shift(0,2)*unitsquare);
+draw(shift(1,2)*unitsquare);
+draw(shift(2,2)*unitsquare);
+draw(shift(-1,-1)*unitsquare);
+draw(shift(-2,-2)*unitsquare);
+draw(shift(-3,-3)*unitsquare);
+draw(shift(3,3)*unitsquare);
+draw(shift(4,4)*unitsquare);
+draw(shift(5,5)*unitsquare);
+draw(shift(-1,3)*unitsquare);
+draw(shift(-2,4)*unitsquare);
+draw(shift(-3,5)*unitsquare);
+draw(shift(2,-1)*unitsquare);
+draw(shift(3,-2)*unitsquare);
+draw(shift(4,-3)*unitsquare);
