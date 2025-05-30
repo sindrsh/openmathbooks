@@ -2,9 +2,9 @@
 \input{../../preamb}
 \input{../bm}
 
-\addto\captionsenglish{\renewcommand{\contentsname}{Innhold}}
+
 \begin{document}
-\tableofcontents
+
 \section{Introduksjon til Python}
 Python er et programmeringsspråk for \outl{tekstbasert koding}. Dette innebærer at handlingene vi ønsker utført, må kodes som tekst. Filen som inneholder hele koden kaller vi et \outl{skript}. Det synlige resultatet av å kjøre skriptet, kaller vi \outl{utdata}\footnote{\outl{Output} på engelsk.}. Det er mange måter å få kjørt skriptet sitt på, blant annet kan man bruke en online compiler som \net{https://www.programiz.com/python-programming/online-compiler/}{programmiz.com}.
 \subsection{Objekt, type, funksjon og uttrykk}
@@ -22,6 +22,7 @@ I kommende avsnitt vil begrepene \outl{objekt}, \outl{type}, \outl{funksjon} og 
 	\item Uttrykk har sterke likehetstrekk med funksjoner, men tar ikke imot argumenter.
 \end{itemize}
 \newpage
+
 \subsubsection{Tilvising og utregning}
 Tekst og tall kan vi se på som noen av de minste byggesteinene (objektene). Python har én type for tekst, og to typer for reelle tall:
 \begin{center}
@@ -57,7 +58,9 @@ En viktig ting å være klar over er at \texttt{=} i Python \textsl{ikke} betyr 
 \pythonut{assign.py}{
 5 \\
 6 
-} \newpage
+} 
+\newpage
+
 At et objekt legger til seg selv og en annen verdi er så vanlig i programmering at Python har en egen operator for det:
 \pythonut{aplus1.py}{
 5\\
@@ -70,6 +73,7 @@ Selv om datamaskiner er ekstremt raske til å utføre utregninger, har de en beg
 0.8300000000000001\\
 0.83
 }
+
 \newpage
 \subsection{Egne funksjoner}
 Ved å bruke metoden \pymet{def} kan man lage sine egne funksjoner. En funksjon kan utføre handlinger, og den kan \outl{returnere} (return på engelsk) ett eller flere objekt. Den kan også ta imot argumenter. Koden vi skriver inni en funksjon blir bare utført hvis vi \outl{kaller} (call på engelsk) på funksjonen. \regv
