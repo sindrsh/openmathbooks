@@ -16,7 +16,6 @@ pair D = r2s - (0, r2);
 
 draw(scale(r1)*unitcircle, red);
 draw(shift(r2s)*scale(r2)*unitcircle, blue);
-draw(B--D, dotted);
 
 draw(A--D);
 draw(A--B--C--D);
@@ -24,3 +23,6 @@ dott(A, "$A$", S);
 dott(B, "$B$", 1.5E);
 dott(C, "$C$", N);
 dott(D, "$D$", S);
+dott(O, "$E$", W);
+dott(r2s, "$F$", E);
+draw(A--O--r2s, dotted);

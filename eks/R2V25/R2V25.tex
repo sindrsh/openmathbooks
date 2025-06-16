@@ -1,0 +1,127 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen Matematikk R2 2025\hfill \\ {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
+
+\subsection*{Oppgave 1}
+\abc{
+\item 
+\begin{align}
+\int_{0}^{1} \left(2e^x+2x^2\right)\,dx&=\left[2e^x+\frac{2}{3}x^3\right]_0^1\br
+&= \left(2e^1+\frac{2}{3}\cdot1^3\right)-\left(2e^0+0\right) \br
+&=2e-\frac{4}{3}
+\end{align}
+\item Vi setter $u=x^2-x-6$, da er $u'=2x-1$. Dermed har vi at
+\begin{align}
+	\int \frac{2x-1}{x^2-x-6}\,dx &= \int \frac{u'}{u}\,dx \br
+	&= \int \frac{1}{u}\,du \br
+	&= \ln |u|+ C \\
+	&=\ln|x^2-x-6|
+\end{align}
+}
+
+\subsection*{Oppgave 2}
+$f$ er en antiderivert av $f'$, som betyr at
+\[ f(x)=\int -\frac{2}{x^3}\,dx=-\int 2x^{-3}=-2\cdot\frac{1}{1-3}x^{1-3}+C=x^{-2}+C \]
+Av arealet til det avgrensede området har vi at
+\begin{align}
+\int_{1}^{2} f\,dx &= \frac{11}{14} \br
+\left[-x^{-1}+Cx\right]_1^2 &= \frac{11}{14} \br
+\left(-2^{-1}+2C\right)-\left(-1^{-1}+C\right) &= \frac{11}{14} \br
+C&=\frac{11}{14}-\frac{1}{2} \br
+&=\frac{2}{7}
+\end{align}
+Altså er
+\[ f(x)=-x^{-2}+\frac{2}{7} \]
+
+\subsection*{Oppgave 3}
+\abc{
+\item Følgen har 5 elementer og rekursiv formel $a_{i+1}=a_{i}+i+2$. Koden vil printe følgende verdier:
+\begin{align*}
+	a_1&=2 & a_2&=5 & a_3&=9 & a_4 &=14 & a_5 &=20
+\end{align*}
+\item Eleven ønsker å finne summen av de 5 første elementene i følgen.
+\[ S=2+5+9+14+20=50 \]
+Resultatet blir 50.
+\abc{
+\item Vi starter med å sjekke at formelen stemmer for $n=1$:
+\[ a_1=\frac{1(1+3)}{2}=2 \]
+Videre antar vi at formelen stemmer for $n=k$, og sjekker om den stemmer også for $n=k+1$. I så fall er
+\[ a_{k+1}=\frac{(k+1)(k+1+3)}{2}=\frac{(k+1)(k+4)}{2}=\frac{k^2+5k+4}{2} \]
+Av den rekursive formelen har vi at
+\begin{align*}
+	a_{k+1}&=a_k+k+2 \\ 
+	&= \frac{k(k+3)}{2}+k+2 \\
+	&=\frac{k(k+3)+2(k+2)}{2} \\
+	&=\frac{k^2+3k+2k+4}{2} \\
+	&= \frac{k^2+5k+4}{2}
+\end{align*}
+Uttrykkene for $a_{k+1}$ er like, og dermed har vi vist det vi skulle vise.
+}
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item Amplitude: $2\sqrt{3}$, likevektslinje: $y=0$, periode: $\frac{2\pi}{2}=\pi$, faseforskyvning: $\frac{\pi}{6}$.
+\item 
+\begin{align}
+	2\sqrt{3}\sin\left(2x+\frac{\pi}{6}\right)&=\sqrt{3} \br
+	\sin\left(2x+\frac{\pi}{6}\right)&=\frac{1}{2}
+\end{align}
+Da $\asin \frac{1}{2}=\frac{\pi}{6}$, har vi at ($n\in\mathbb{N}$):
+\begin{align}
+	2x+\frac{\pi}{6}&=\frac{\pi}{6}+2\pi n &\vee & & 2x+\frac{\pi}{6}&=\pi-\frac{\pi}{6}+2\pi n \\
+	x &= \pi n & \vee & & x&=\frac{\pi}{3}+\pi n
+\end{align}
+Altså er $x=0$ eller $x=\frac{\pi}{3}$.
+\item Av identiteten $\sin(u+v)=\sin u\cos v+\cos u\sin v$ ser vi at $f(x)=g(x)$, og at vi derfor har løst den generelle ligningen i oppgave b). Men da $D_f\neq D_g$, må vi legge til løsningene $x\in \lbrace \pi, \frac{\pi}{3}+\pi \rbrace$
+}
+
+\subsection*{Oppgave 5}
+\abc{
+\item 
+\begin{align}
+	\vv{BC}&=[1-2, 4-3, 1-0]=[-1, 1, 1]\\
+	\vv{AB}&=[2, 3, 0] \\
+	\vv{AC}&=[1, 4, 1]
+\end{align}
+\begin{align}
+	BC^2 &= (-1)^2+1^2+1^2 =3\\
+	AB^2 &= 13 \\
+	AC^2 &= 18
+\end{align}
+Skal en trekant ha en vinkel større enn $90^\circ$, følger det av cosinussetningen at kvadratet av den lengste siden er større enn summen av kvadratene av de to andre sidene. Dette er tilfelle her.
+\item 
+Vi har at
+\begin{align*}
+			\vv{AB}\times\vec{AC}&= \left|\begin{matrix}
+				\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+				2 & 3 & 0 \\
+				1 & 4 & 1
+			\end{matrix}\right| \\
+			&=\vec{e}_x\left|\begin{matrix}
+		3 & 0 \\
+		4 & 1
+	\end{matrix}\right|-\vec{e}_y\left|\begin{matrix}
+		2 & 0 \\
+		1 & 1
+	\end{matrix}\right|+\vec{e}_z\left|\begin{matrix}
+		2 & 3 \\
+		1 & 4
+	\end{matrix}\right|  \\
+	&= \vec{e}_x(3\cdot1-0)-\vec{e}_y(2\cdot1-0)+\vec{e}_z(2\cdot 4-1\cdot3) \\
+	&= [3, -2, 5]
+\end{align*}
+Arealet er da
+\[ \frac{1}{2}|\vv{BC}\times\vv{AB}|=\frac{1}{2}\sqrt{3^2+(-2)^2+5^2}=\frac{1}{2}\sqrt{85} \]
+\item Vi har at
+\[ \vv{ED}=[1, 4, 1] \]
+Linja $l(t)$ som beskriver planten er dermed gitt som
+\[ l(t)=[2, 3, 2]+t[1, 4, 1] \]
+Retningsvektoren til linja er parallell med $\vv{AC}$, som betyr at linja bare skjærer trekanten hvis den skjærer $\vv{AB}$. Av parameteriseringen ser vi at det eneste punktet på linja som har $z=0$ er $(0, -5, 0)$, og dette punktet ligger ikke på $\vv{AB}$. Altså vil greina aldri treffe bordplata.
+}
+
+\end{document} 

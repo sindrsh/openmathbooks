@@ -1,0 +1,12 @@
+\section{Likhetstegnet, mengder og tallinjer}
+\index{tall}
+\subsection*{\likteikn}
+Som navnet tilsier, viser \outl{likhetstegnet} \index{likhetstegnet} \sym{$ = $} til at noe er likt. I hvilken grad og når man kan si at noe er likt er en filosofisk diskusjon, så i starten er vi prisgitt dette: \textsl{Hvilken likhet \sym{$=$} sikter til må bli forstått ut ifra konteksten tegnet blir brukt i}. Slik kan vi studere noen grunnleggende egenskaper for tallene våre, og så komme tilbake til mer presise betydninger av tegnet. \regv
+\spr{
+Vanlige måter å si \sym{$=$} på er
+\begin{itemize}
+	\item ''er lik'' \\
+	\item ''er det samme som''\\
+	\item ''tilsvarer''
+\end{itemize}
+}
