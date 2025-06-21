@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<link rel="stylesheet" href="../book_styles.css">
+	<body>
+
+	</body>
+	<script type="module">
+		const response = await fetch("converted_html.txt");
+		const text = await response.text()
+		document.getElementsByTagName("body")[0].innerHTML = text
+
+		for(let footbtn of document.getElementsByClassName("footnote-button")) {
+			console.log(footbtn)
+			footbtn.addEventListener("click", toggleFootNote)
+		}
+
+		function toggleFootNote() {
+			let footnote = document.getElementById(this.dataset.reference)
+			
+			if (footnote.hidden == true) {
+				footnote.hidden = false
+			} else {
+				console.log(footnote.hidden)
+				footnote.hidden = true
+			}
+			
+		}
+	</script>
+</html>
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
-settings.outformat="pdf";
-defaultpen(fontsize(12 pt));
+settings.outformat="svg";
+//defaultpen(fontsize(12 pt));
 //defaultpen(1bp);
 import x11colors;
 usepackage("asycolors");

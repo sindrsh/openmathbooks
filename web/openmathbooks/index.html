@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head id="general">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/menu_styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="./books/books.html">Bøker</a>
+  <a href="./exams/exams.html">Eksamensløsninger</a>
+  <a href="#contact">Pensum</a>
+    <button class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
+
+<div id="main">
+<h1>Gratis lærebøker i matematikk</h1>
+Bøkene i OpenMathbooks-serien er gratis og fri for reklame. Bøkene dekker kompetansemålene fra grunnskolen og fra VGS-fagene 1P, 1T, 2P, R1 og R2.
+
+<h1>Åpen kildekode</h1>
+Bøkene har åpen kildekode og er lisensiert under CC BY-NC-SA 4.0. Dette betyr at den som vil kan lage sin egen kopi av boka og redigere kopien som de vil.
+
+</div>
+</body>
+
+<script id="menu-script">
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</html>

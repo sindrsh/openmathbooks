@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import figs;
 import tri;
 size(8cm);

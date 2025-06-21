@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import broks;
 
 draw((0,0)--(1,0));

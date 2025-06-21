@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 size(4cm,0);
 import bsp;
 

@@ -1,5 +1,5 @@
 import figs;
-import inh;
+import "../../inh" as inh;
 
 size(10cm);
 

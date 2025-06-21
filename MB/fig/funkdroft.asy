@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import drwgrph;
 
 size(10cm, 8cm,keepAspect=false);

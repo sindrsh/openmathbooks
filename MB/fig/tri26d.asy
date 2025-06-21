@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 unitsize(0.15cm);
 
 pen arpenp = purple+opacity(0.3);

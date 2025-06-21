@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 unitsize(2cm);
 import geo0;
 

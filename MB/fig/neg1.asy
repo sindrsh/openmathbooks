@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import figs;
 settings.outformat="svg";
 unitsize(0.75 cm);

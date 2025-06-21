@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import drwgrph;
 size(4 cm, 3 cm, keepAspect=false);
 usepackage("icomma");

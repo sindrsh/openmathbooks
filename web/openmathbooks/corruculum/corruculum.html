@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head id="general">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/openmathbooks/styles/menu_styles.css">
+</head>
+<head>
+  <title>
+    Kompetansemål
+  </title>
+  <style>
+      :root {
+      --selected-color: rgb(6, 104, 50);
+      --unselected-color: rgb(25, 131, 122);
+    }
+    table {
+      margin-top: 10px;
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    thead {
+      background-color: rgba(5, 172, 172, 0.664);
+    }
+
+    td, th {
+      border: 1px solid #000000;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    td:nth-child(1) {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="./books/books.html">Bøker</a>
+  <a href="./exams/exams.html">Eksamensløsninger</a>
+  <a href="#contact">Pensum</a>
+  <button class="icon" onclick="myFunction()">
+    Meny
+  </button>
+</div>
+
+<div id="main">
+
+<h1>Kompetansemål</h1>
+<div>
+I tabellene under vises de trinnvise kompetansemålene definert av Udir, og hvilke kapitler fra
+bøkene i OpenMathBooks-serien som dekker disse. Merk at begge ”Anvendt”-bøkene har et
+vedlegg som gir lenker til relevante tekster. I kompetansemål som nevner innhenting av informasjon fra tekster er det underforstått at disse vedleggene er med på å dekke kompetansemålet.
+I alle kompetansemål hvor det nevnes anvendelse/praktiske situasjoner er det også underforstått at kapittel
+8 og kapittel 4 i henholdsvis Anvendt matematikk 1 og 2 er med på å dekke kompetansemålet.
+</div>
+
+<button class="grade" data-reference="5">5. klasse</button>
+<button class="grade" data-reference="6">6. klasse</button>
+<button class="grade" data-reference="7">7. klasse</button>
+<button class="grade" data-reference="8">8. klasse</button>
+<button class="grade" data-reference="9">9. klasse</button>
+<button class="grade" data-reference="10">10. klasse</button>
+<button class="grade" data-reference="1p">1P</button>
+<button class="grade" data-reference="2p">2P klasse</button>
+<button class="grade" data-reference="1t">1T</button>
+<button class="grade" data-reference="r1">R1</button>
+<button class="grade" data-reference="r2">R2</button>
+
+
+<table class="curruculum" id="5" hidden>
+  <thead>
+  <tr>
+    <th>Kompetansemål for 5. trinn</th>
+    <th>MB</th>
+    <th>AM1</th>
+  </tr>
+  </thead>
+    <tr>
+      <td>
+        utforske og forklare sammenhenger mellom brøker,
+        desimaltall og prosent og bruke det i hoderegning
+      </td>
+      <td>
+        1 <br>
+        4
+      </td>
+      <td>
+        3
+      </td>
+    </tr>
+  <tbody>
+    <tr>
+      <td>
+      beskrive brøk som del av en hel, som del av en mengde
+      og som tall på tallinjen og vurdere og navngi størrelsene
+      </td>
+      <td>
+        1 <br>
+        4
+      </td>
+      <td>
+        3
+      </td>
+    </tr>
+    <tr>
+      <td>
+      representere brøker på ulike måter og oversette
+  mellom de ulike representasjonene
+      </td>
+      <td>
+        1 <br>
+        4
+      </td>
+      <td>
+        3
+      </td>
+    </tr> 
+    <tr>
+      <td>
+      utvikle og bruke ulike strategier for regning med positive
+  tall og brøk og forklare tenkemåtene sine
+      </td>
+      <td>
+        1 <br>
+        4 <br>
+        6
+      </td>
+      <td>
+        3
+      </td>
+    </tr>
+      <tr>
+      <td>
+      formulere og løse problemer fra egen hverdag
+  som har med brøk å gjøre
+      </td>
+      <td>
+      </td>
+      <td>
+        3
+      </td>
+    </tr>
+    <tr>
+      <td>
+      diskutere tilfeldighet og sannsynlighet i spill og
+  praktiske situasjoner og knytte det til brøk
+      </td>
+      <td>
+      </td>
+      <td>
+        5
+      </td>
+    </tr>
+    <tr>
+      <td>
+      løse ligninger og ulikheter gjennom logiske resonnementer og
+  forklare hva det vil si at et tall er en løsning på en ligning
+      </td>
+      <td>
+        9
+      </td>
+      <td>
+        6
+      </td>
+    </tr> 
+    <tr>
+      <td>
+      formulere og løse problemer fra egen hverdag
+  som har med tid å gjøre
+      </td>
+      <td>
+        6
+      </td>
+      <td>
+        8
+      </td>
+    </tr> 
+    <tr>
+      <td>
+      lage og programmere algoritmer med bruk av
+  variabler, vilkår og løkker
+      </td>
+      <td>
+        
+      </td>
+      <td>
+        7
+      </td>
+    </tr> 
+  </tbody>
+</table>
+
+<table class="curruculum" id="6"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 6. trinn</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>utforske, navngi og plassere desimaltall på tallinjen</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske strategier for regning med desimaltall og sammenligne med regnestrategier for hele tall</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>formulere og løse problemer fra sin egen hverdag som har med desimaltall, brøk og prosent å gjøre, og forklare egne tenkemåter</td>
+      <td></td>
+      <td>1<br>3<br>8</td>
+    </tr>
+    <tr>
+      <td>beskrive egenskaper ved og minimumsdefinisjoner av to- og tredimensjonale figurer og forklare hvilke egenskaper figurene har felles, og hvilke egenskaper som skiller dem fra hverandre</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske og beskrive symmetri i mønstre og utføre kongruensavbildninger med og uten koordinatsystem</td>
+      <td>1<br>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>måle radius, diameter og omkrets i sirkler og utforske og argumentere for sammenhengen</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske mål for areal og volum i praktiske situasjoner og representere dem på ulike måter</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>bruke ulike strategier for å regne ut areal og omkrets og utforske sammenhenger mellom disse</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>bruke variabler og formler til å uttrykke sammenhenger i praktiske situasjoner</td>
+      <td>7</td>
+      <td>alle</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="7"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 7. trinn</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>utvikle og bruke hensiktsmessige strategier i regning med brøk, desimaltall og prosent og forklare tenkemåtene sine</td>
+      <td>1<br>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>representere og bruke brøk, desimaltall og prosent på ulike måter og utforske de matematiske sammenhengene mellom disse representasjonsformene</td>
+      <td>1<br>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>utforske negative tall i praktiske situasjoner</td>
+      <td></td>
+      <td>4<br>8</td>
+    </tr>
+    <tr>
+      <td>bruke tallinje i regning med positive og negative tall</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bruke sammensatte regneuttrykk til å beskrive og utføre utregninger</td>
+      <td>3<br>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bruke ulike strategier for å løse lineære ligninger og ulikheter og vurdere om løsninger er gyldige</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>utforske og bruke hensiktsmessige sentralmål i egne og andres statistiske undersøkelser</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>logge, sortere, presentere og lese data i tabeller og diagrammer og begrunne valget av framstilling</td>
+      <td></td>
+      <td>2<br>7</td>
+    </tr>
+    <tr>
+      <td>lage og vurdere budsjett og regnskap ved å bruke regneark med cellereferanser og formler</td>
+      <td></td>
+      <td>4<br>6</td>
+    </tr>
+    <tr>
+      <td>bruke programmering til å utforske data i tabeller og datasett</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="8"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 8. trinn</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bruke potenser og kvadratrøtter i utforsking og problemløsing<br>og argumentere for framgangsmåter og resultater</td>
+      <td>7<br>11</td>
+      <td>3<br>4</td>
+    </tr>
+    <tr>
+      <td>utvikle og kommunisere strategiar for hovudrekning<br>i utrekningar</td>
+      <td>1<br>4<br>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske og beskrive primtalsfaktorisering<br>og bruke det i brøkrekning</td>
+      <td>3<br>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske algebraiske reknereglar</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>beskrive og generalisere mønster med eigne ord og algebraisk</td>
+      <td>8<br>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lage og løyse problem som omhandlar samansette måleiningar</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lage og forklare rekneuttrykk med tal, variablar og konstantar<br>knytte til praktiske situasjonar</td>
+      <td></td>
+      <td>alle</td>
+    </tr>
+    <tr>
+      <td>lage, løyse og forklare likningar knytte til praktiske situasjonar</td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>utforske, forklare og samanlikne funksjonar knytte til<br>praktiske situasjonar</td>
+      <td></td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>representere funksjonar på ulike måtar og vise samanhengar<br>mellom representasjonane</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske korleis algoritmar kan skapast, testast<br>og forbetrast ved hjelp av programmering</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="9"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 9. trinn</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beskrive, forklare og presentere strukturer og utviklinger<br>i geometriske mønstre og i tallmønstre</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske egenskapene ved ulike polygoner og forklare<br>begrepene formlikhet og kongruens</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske, beskrive og argumentere for sammenhenger mellom<br>sidelengdene i trekanter</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske og argumentere for hvordan det å endre forutsetninger<br>i geometriske problemstillinger påvirker løsninger</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske og argumentere for formler for areal og volum av<br>tredimensjonale figurer</td>
+      <td>7<br>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tolke og kritisk vurdere statistiske<br>framstillinger fra mediene og lokalsamfunnet</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>finne og diskutere sentralmål og spredningsmål i reelle datasett</td>
+      <td></td>
+      <td>2<br>7</td>
+    </tr>
+    <tr>
+      <td>utforske og argumentere for hvordan framstillinger av tall og<br>data kan brukes for å fremme ulike synspunkter</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>beregne og vurdere sannsynlighet i statistikk og spill</td>
+      <td></td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>simulere utfall i tilfeldige forsøk og beregne sannsynligheten<br>for at noe skal inntreffe, ved å bruke programmering</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="10"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 10. trinn</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>utforske og generalisere multiplikasjon av<br>polynomer algebraisk og geometrisk</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske og sammenligne egenskaper ved ulike funksjoner<br>ved å bruke digitale verktøy</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>lage, løse og forklare ligningssett knyttet til praktiske<br>situasjoner</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>utforske sammenhengen mellom konstant prosentvis endring,<br>vekstfaktor og eksponentialfunksjoner</td>
+      <td></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>hente ut og tolke relevant informasjon fra tekster om<br>kjøp og salg og ulike typer lån og bruke det til å formulere<br>og løse problemer</td>
+      <td></td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>planlegge, utføre og presentere et utforskende arbeid<br>knyttet til personlig økonomi</td>
+      <td></td>
+      <td>4<br>7</td>
+    </tr>
+    <tr>
+      <td>bruke funksjoner i modellering og argumentere<br>for framgangsmåter og resultater</td>
+      <td>10</td>
+      <td>6<br>7</td>
+    </tr>
+    <tr>
+      <td>modellere situasjoner knyttet til reelle datasett, presentere<br>resultatene og argumentere for at modellene er gyldige</td>
+      <td></td>
+      <td>6<br>7</td>
+    </tr>
+    <tr>
+      <td>utforske matematiske egenskaper og sammenhenger ved<br>å bruke programmering</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="1p"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 1P</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lese, hente ut og vurdere matematikk i tekster om situasjoner fra<br>lokalmiljøet, gjøre beregninger knyttet til dette og presentere og<br>argumentere for resultatene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske hvordan ulike premisser vil kunne påvirke hvordan<br>matematiske problemer fra samfunnsliv og arbeidsliv løses</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>modellere situasjoner knyttet til temaer fra samfunnsliv og<br>arbeidsliv, presentere og argumentere for resultatene<br>og for når modellene er gyldige</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>identifisere variable størrelser i ulike situasjoner og bruke dem<br>til utforsking og generalisering</td>
+      <td>10</td>
+      <td>alle</td>
+    </tr>
+    <tr>
+      <td>tolke og bruke formler som gjelder samfunnsliv og arbeidsliv</td>
+      <td></td>
+      <td>alle</td>
+    </tr>
+    <tr>
+      <td>bruke prosent, prosentpoeng, promille og vekstfaktor i utregninger<br>og presentere og begrunne løsninger</td>
+      <td></td>
+      <td>3<br>4</td>
+    </tr>
+    <tr>
+      <td>utforske, beskrive og bruke begrepene proporsjonalitet<br>og omvendt proporsjonalitet</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>tolke og bruke sammensatte måleenheter i praktiske sammenhenger<br>og velge egnet måleenhet</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>tolke og bruke funksjoner i matematisk modellering og problemløsing</td>
+      <td></td>
+      <td>6<br>7</td>
+    </tr>
+    <tr>
+      <td>planlegge, utføre og presentere selvstendig arbeid knyttet til<br>modellering og funksjoner innenfor samfunnsfaglige temaer</td>
+      <td></td>
+      <td>2<br>6<br>7</td>
+    </tr>
+    <tr>
+      <td>bruke digitale verktøy i utforsking og problemløsing knyttet<br>til egenskaper ved funksjoner, og diskutere løsningene</td>
+      <td>10</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>tolke og regne med rotuttrykk, potenser og tall på standardform</td>
+      <td>8<br>11</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="2p"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 2P</th>
+      <th>MB</th>
+      <th>AM1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>forklare og bruke prosent, prosentpoeng og vekstfaktor til<br>modellering av praktiske situasjoner med digitale verktøy</td>
+      <td></td>
+      <td>3<br>4</td>
+    </tr>
+    <tr>
+      <td>utforske og forklare sammenhenger mellom prisindeks, kroneverdi,<br>reallønn, nominell lønn og brutto- og nettoinntekt</td>
+      <td></td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>utforske strategier for å løse ligninger, ligningssystemer<br>og ulikheter og argumentere for tenkemåtene sine</td>
+      <td>9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vurdere valg knyttet til personlig økonomi og reflektere over<br>konsekvenser av å ta opp lån og å bruke kredittkort</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>analysere og presentere funn i datasett fra lokalsamfunn og media</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>bruke og vurdere valg av hensiktsmessige sentralmål og<br>spredningsmål for statistisk datamateriale</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>utforske og forklare hvordan formlikhet, målestokk og egenskaper<br>ved geometriske figurer kan brukes i beregninger og i praktisk arbeid</td>
+      <td>11</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="1t"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål 1T</th>
+      <th>TM1</th>
+      <th>AM2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tolke og bruke funksjoner i matematisk modellering og problemløsing</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>lese og forstå matematiske bevis og utforske og utvikle bevis i<br>relevante matematiske emner</td>
+      <td>alle</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>identifisere variable størrelser i ulike situasjoner, sette opp formler<br>og utforske disse ved hjelp av digitale verktøy</td>
+      <td>alle</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>utforske strategier for å løse ligninger, ligningssystemer og ulikheter<br>og argumentere for tenkemåtene sine</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>forklare forskjellen mellom en identitet, en ligning, et algebraisk<br>uttrykk og en funksjon</td>
+      <td>2<br>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>utforske sammenhenger mellom andregradsligninger og<br>andregradsulikheter, andregradsfunksjoner og kvadratsetningene<br>og bruke sammenhengene i problemløsing</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>modellere situasjoner knyttet til ulike temaer, drøfte, presentere<br>og forklare resultatene og argumentere for om modellene er gyldige</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>lese, hente ut og vurdere matematikk i relevante tekster<br>om ulike temaer og presentere relevante beregninger og<br>analyser av resultatene</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>utforske og beskrive egenskapene ved polynomfunksjoner,<br>rasjonale funksjoner, eksponentialfunksjoner og potensfunksjoner</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bruke gjennomsnittlig og momentan vekstfart i konkrete eksempler<br>og gjøre rede for den deriverte</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>forklare polynomdivisjon og bruke det til å omskrive algebraiske<br>uttrykk, drøfte funksjoner og løse ligninger og ulikheter</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gjøre rede for definisjonene av sinus, cosinus og tangens og bruke<br>trigonometri til å beregne lengder, vinkler og arealer i vilkårlige<br>trekanter</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>begrunne sinus-, cosinus- og arealsetningen</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bruke trigonometri til å analysere og løse sammensatte teoretiske<br>og praktiske problemer med lengder, vinkler og arealer</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="r1"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål R1</th>
+      <th>TM1</th>
+      <th>AM2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        planlegge og gjennomføre et selvstendig arbeid med reelle datasett<br>
+        knyttet til naturvitenskapelige temaer og forhold, og analysere<br>
+        og presentere funn
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        forstå begrepene vekstfart, grenseverdi, derivasjon og kontinuitet,<br>
+        og bruke disse for å løse praktiske problemer
+      </td>
+      <td>5<br>6</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>
+        bruke ulike strategier for å utforske og bestemme grenseverdier til<br>
+        funksjoner, og utforske og argumentere for anvendelser av<br>
+        grenseverdier
+      </td>
+      <td>1<br>5<br>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        bestemme den deriverte i et punkt geometrisk, algebraisk og ved<br>
+        numeriske metoder, og gi eksempler på funksjoner som ikke<br>
+        er deriverbare i gitte punkter
+      </td>
+      <td>5<br>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>analysere og tolke ulike funksjoner ved å bruke derivasjon</td>
+      <td>6<br>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        anvende derivasjon til å analysere og tolke egne matematiske<br>
+        modeller av reelle datasett
+      </td>
+      <td>6<br>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        utforske og forstå regneregler for potenser og logaritmer, og bruke<br>
+        ulike strategier for å løse eksponentialligninger og logaritmeligninger
+      </td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        modellere og analysere eksponentiell og logistisk vekst i reelle<br>
+        datasett
+      </td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        gjøre rede for og argumentere for om en funksjon er kontinuerlig<br>
+        eller diskontinuerlig i et punkt i et definisjonsområde,<br>
+        og gi eksempler på anvendelser av diskontinuerlige funksjoner
+      </td>
+      <td>1<br>5<br>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        utforske, analysere og derivere ulike funksjoner og deres omvendte<br>
+        funksjoner, og gjøre rede for egenskaper til og sammenhenger<br>
+        mellom slike funksjoner
+      </td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        anvende parameterframstillinger til linjer og bruke<br>
+        parameterframstillinger til å løse naturvitenskapelige problemer
+      </td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>
+        forstå begrepet vektor og regneregler for vektorer i planet,<br>
+        og bruke vektorer til å beregne ulike størrelser i planet
+      </td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<table class="curruculum" id="r2"  hidden>
+  <thead>
+    <tr>
+      <th>Kompetansemål R2</th>
+      <th>TM2</th>
+      <th>AM2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        utforske egenskaper ved ulike rekker og gjøre rede for<br>
+        praktiske anvendelser av egenskaper ved rekker
+      </td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        utforske rekursive sammenhenger ved å bruke programmering og<br>
+        presentere egne framgangsmåter
+      </td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        gjøre rede for integral som en grenseverdi av en følge av summer,<br>
+        og tolke betydningen av denne grenseverdien i ulike situasjoner
+      </td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        gjøre rede for analysens fundamentalteorem og gjøre rede for<br>
+        konsekvenser av teoremet
+      </td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        utvikle algoritmer for å beregne integraler numerisk,<br>
+        og bruke programmering til å utføre algoritmene
+      </td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        gi eksempler på ulike situasjoner som kan modelleres ved å bruke<br>
+        matematiske funksjoner, og modellere og analysere slike<br>
+        situasjoner ved å bruke reelle datasett
+      </td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        anvende derivasjon og integrasjon til å analysere og tolke<br>
+        egne matematiske modeller av reelle datasett
+      </td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>
+        analysere og tolke ulike funksjoner ved å bruke derivasjon<br>
+        og integrasjon, og anvende integrasjon til å beregne ulike<br>
+        mål av omdreiningslegemer
+      </td>
+      <td>2<br>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        anvende parameterframstillinger til kurver og bruke<br>
+        parameterframstillinger til å løse naturvitenskapelige problemer<br>
+        inkludert problemer knyttet til fart og akselerasjon
+      </td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>
+        utforske og forstå regneregler for vektorer i rommet, og bruke<br>
+        vektorer til å beregne ulike størrelser i rommet
+      </td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        utforske egenskaper ved radianer og trigonometriske funksjoner og<br>
+        identiteter og anvende disse egenskapene til å løse<br>
+        praktiske problemer
+      </td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        analysere og forstå matematiske bevis, forklare de bærende ideene<br>
+        i et matematisk bevis og utvikle egne bevis
+      </td>
+      <td>alle</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<script>
+
+  for(let gradeButton of document.getElementsByClassName("grade")){
+    gradeButton.addEventListener("click", selectGrade)
+  }
+
+  let selectedGrade = null
+  const root = document.documentElement
+  const selectedColor = getComputedStyle(root).getPropertyValue("--selected-color")
+  const unselectedColor = getComputedStyle(root).getPropertyValue("--unselected-color")
+
+  function selectGrade() {
+    if (this.style.backgroundColor == selectedColor){ 
+      this.style.backgroundColor = unselectedColor
+      document.getElementById(this.dataset.reference).hidden = true
+      selectedGrade = null
+    } else {
+      document.getElementById(this.dataset.reference).hidden = false
+      this.style.backgroundColor = selectedColor
+      if (selectedGrade) {
+        document.getElementById(selectedGrade.dataset.reference).hidden = true
+        selectedGrade.style.backgroundColor = unselectedColor
+      }
+      selectedGrade = this
+    }
+  }
+</script>
+</body>
+</html>

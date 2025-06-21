@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import figs;
 unitsize(0.5 cm);
 path b = box((0,0),(1,10));

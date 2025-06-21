@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import broks;
 
 mkbroktick(5,6/5,6);

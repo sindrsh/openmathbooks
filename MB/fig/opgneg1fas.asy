@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import figs;
 defaultpen(fontsize(9pt));
 unitsize(0.6 cm);

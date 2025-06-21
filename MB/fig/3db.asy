@@ -1,5 +1,5 @@
 import figs;
-import inh;
+import "../../inh" as inh;
 import solids;
 import three;
 triple proj = (1,-1,0.5);

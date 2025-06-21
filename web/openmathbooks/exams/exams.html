@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head id="general">
+    <link rel="stylesheet" href="../styles/menu_styles.css">
+</head>
+<head>
+  <title>Eksamensløsninger</title>
+  <style>
+    :root {
+      --selected-color: rgb(6, 104, 50);
+      --unselected-color: rgb(25, 131, 122);
+    }
+    .grades {
+      width: 100px;
+      background-color: var(--unselected-color);
+      color: #f2f2f2;
+      padding: 14px 16px;
+      margin-left: 8px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .exams a {
+      text-decoration: none;
+      display: block;
+      padding-bottom: 10px;
+    }
+
+    #grades-container {
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+      #main {
+        width: 100%;
+        padding-left: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="topnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <button class="icon" onclick="myFunction()">
+    Meny
+  </button>
+</div>
+<div id="main">
+<div id="grades-container">
+  <button class="grades" data-reference="g">Grunnskole</button>
+  <button class="grades" data-reference="1p">1P</button>
+  <button class="grades" data-reference="2p">2P</button>
+  <button class="grades" data-reference="1t">1T</button>
+  <button class="grades" data-reference="r1">R1</button>
+  <button class="grades" data-reference="r2">R2</button>
+</div>
+<div class="exams" id="g">
+  <h2>Eksamener for grunnskolen</h2>
+  <a href="#">Våren 2025</a>
+  <a href="#">Våren 2025</a>
+  <a href="#">Våren 2025</a>
+  <a href="#">Våren 2025</a>
+
+</div>
+<div class="exams" id="1p" hidden>
+  <h2>Eksamener for 1P</h2>
+  <a href="#">Våren 2025</a>
+</div>
+</div>
+</body>
+<script>
+  
+  let selectedGrade = null
+  const root = document.documentElement
+  const selectedColor = getComputedStyle(root).getPropertyValue("--selected-color")
+  const unselectedColor = getComputedStyle(root).getPropertyValue("--unselected-color")
+
+  for(let gradeButton of document.getElementsByClassName("grades")){
+    console.log(gradeButton)
+    gradeButton.addEventListener("click", selectGrade)
+  }
+
+  function selectGrade() {
+    if (this.style.backgroundColor == selectedColor){ 
+      this.style.backgroundColor = unselectedColor
+      document.getElementById(this.dataset.reference).hidden = true
+      selectedGrade = null
+    } else {
+      document.getElementById(this.dataset.reference).hidden = false
+      this.style.backgroundColor = selectedColor
+      if (selectedGrade) {
+        document.getElementById(selectedGrade.dataset.reference).hidden = true
+        selectedGrade.style.backgroundColor = unselectedColor
+      }
+      selectedGrade = this
+    }
+  }
+</script>
+</html>

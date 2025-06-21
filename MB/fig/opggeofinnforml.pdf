@@ -1,21 +1,22 @@
-%PDF-1.4
+%PDF-1.5
 %«Ïè¢
-%%Invocation: gs -q -dNOPAUSE -dBATCH -P -dSAFER -dALLOWPSTRANSPARENCY -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dEncodeColorImages=true -dEncodeGrayImages=true -dCompatibilityLevel=1.4 -dAutoRotatePages=/None
-%%+ -g612x792 -dDEVICEWIDTHPOINTS=141.732 -dDEVICEHEIGHTPOINTS=78.2055 -sOutputFile=? ? ? -f ?
+%%Invocation: gs -q -dNOPAUSE -dBATCH -P -dSAFER -dALLOWPSTRANSPARENCY -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dEncodeColorImages=true -dEncodeGrayImages=true -dCompatibilityLevel=1.5
+%%+ -dTransferFunctionInfo=/Apply -dAutoRotatePages=/None -g612x792 -dDEVICEWIDTHPOINTS=141.732 -dDEVICEHEIGHTPOINTS=78.2989 -sOutputFile=? ? ? -f ?
 5 0 obj
 <</Length 6 0 R/Filter /FlateDecode>>
 stream
-xúeP±n1›˘
-∆‹pÃ„±i´JŸ⁄xã2%J•Ín»‘ﬂ/wIìJB†Á˜ûÅ32	Ú◊zò`†Z›@p˘åÔPìëâb$ïåxv ’1[¢¢é#8 !4Â†Ål¡K&„Ñ‚ôD5t’ò,…Ô«¢ãnÓŸÏÜM *B>¸c˝yõï‡é™Ÿi[•Ä≥T‹GºœtÛ~t⁄∆“_p«Â,◊ròp›‡È≥†S5ã≠€	.áãÒ)a"8)∂	v´ÁÆ≠Í§´u«≥Ò‡≤oDëóZ∞É˙“ıJÏji~Ôô‘X≤aoïä‘zaΩvJûyÒxkÒ∂X»endstream
+xúeê;O1Äwˇ
+èΩ·å'é3R@H›†∑UùZQ	ıÜäÅøèÔ⁄£»ä¸à˝˘qA&Aû‰¶#<ºW<}A¶÷‹øApÔ_°%£\MîZ≠8Çß\*K‘¨‡ú+Â\–î©y∂‡µP6AÒBû£™Sˆ≈?ˇ˙Ã‰i.ôÃb∂ÑF!Õ˜új.1Î˘S3av±Tbb-˜aÔ≥,‡ˇúmÏzÇKÊ£‹‘aƒıÁqÙÿ‘‘q¯ÄÎŸÇF	qÊ§8å∞[=vΩhS']≠;¶jñ]ˆ√<ëG/Ú⁄*«H}Íz%vµ4˝˜Lj,≈∞∑FUZªf=wJ^xfºÚW©Yendstream
 endobj
 6 0 obj
-257
+263
 endobj
 4 0 obj
-<</Type/Page/MediaBox [0 0 141.73 78.21]
+<</Type/Page/MediaBox [0 0 141.73 78.3]
 /Parent 3 0 R
 /Resources<</ProcSet[/PDF /Text]
-/Font 9 0 R
+/ExtGState 10 0 R
+/Font 11 0 R
 >>
 /Contents 5 0 R
 >>
@@ -28,19 +29,26 @@ endobj
 endobj
 1 0 obj
 <</Type /Catalog /Pages 3 0 R
-/Metadata 11 0 R
+/Metadata 13 0 R
 >>
 endobj
-9 0 obj
+7 0 obj
+<</Type/ExtGState
+/SA false>>endobj
+10 0 obj
 <</R7
 7 0 R>>
 endobj
-7 0 obj
-<</BaseFont/FEMOKN+CMMI9/FontDescriptor 8 0 R/Type/Font
+11 0 obj
+<</R8
+8 0 R>>
+endobj
+8 0 obj
+<</BaseFont/FEMOKN+CMMI9/FontDescriptor 9 0 R/Type/Font
 /FirstChar 65/LastChar 68/Widths[ 770 777 733 847]
 /Encoding/WinAnsiEncoding/Subtype/Type1>>
 endobj
-8 0 obj
+9 0 obj
 <</Type/FontDescriptor/FontName/FEMOKN+CMMI9/FontBBox[0 -22 823 716]/Flags 65568
 /Ascent 716
 /CapHeight 716
@@ -48,9 +56,9 @@ endobj
 /ItalicAngle 0
 /StemV 123
 /MissingWidth 500
-/CharSet(/A/B/C/D)/FontFile3 10 0 R>>
+/CharSet(/A/B/C/D)/FontFile3 12 0 R>>
 endobj
-10 0 obj
+12 0 obj
 <</Filter/FlateDecode
 /Subtype/Type1C/Length 812>>stream
 xú}êohw«ó?∑≥q
@@ -60,18 +68,18 @@ CÊ˜ÊI;8¨‡∞]6[è˛uÿªﬂëX&<òFbr∞?†ànˇfqGWWg´ÿÓÒtâ{BíÙ˚¬b∑O	H!üR?NâG#˛†§ƒD˜ÓÄ¢
 K}Ö™?5∫lùe«öKS!ˇ÷óå’
 endstream
 endobj
-11 0 obj
+13 0 obj
 <</Type/Metadata
-/Subtype/XML/Length 1248>>stream
+/Subtype/XML/Length 1245>>stream
 <?xpacket begin='Ôªø' id='W5M0MpCehiHzreSzNTczkc9d'?>
 <?adobe-xap-filters esc="CRLF"?>
 <x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
 <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
-<rdf:Description rdf:about="" xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.55.0'/>
-<rdf:Description rdf:about="" xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2022-12-18T13:31:53+01:00</xmp:ModifyDate>
-<xmp:CreateDate>2022-12-18T13:31:53+01:00</xmp:CreateDate>
-<xmp:CreatorTool>dvips(k) 2021.1 (TeX Live 2022/dev)  Copyright 2021 Radical Eye Software</xmp:CreatorTool></rdf:Description>
-<rdf:Description rdf:about="" xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:80820a43-b6ec-11f8-0000-9728187714d8'/>
+<rdf:Description rdf:about="" xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 10.02.1'/>
+<rdf:Description rdf:about="" xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2025-06-21T13:14:32+02:00</xmp:ModifyDate>
+<xmp:CreateDate>2025-06-21T13:14:32+02:00</xmp:CreateDate>
+<xmp:CreatorTool>dvips(k) 2023.1 (TeX Live 2023)  Copyright 2023 Radical Eye Software</xmp:CreatorTool></rdf:Description>
+<rdf:Description rdf:about="" xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:74b0b714-86ad-11fb-0000-17355b7629a4'/>
 <rdf:Description rdf:about="" xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>opggeofinnforml_.dvi</rdf:li></rdf:Alt></dc:title></rdf:Description>
 </rdf:RDF>
 </x:xmpmeta>
@@ -81,29 +89,31 @@ endobj
 endstream
 endobj
 2 0 obj
-<</Producer(GPL Ghostscript 9.55.0)
-/CreationDate(D:20221218133153+01'00')
-/ModDate(D:20221218133153+01'00')
-/Creator(dvips\(k\) 2021.1 \(TeX Live 2022/dev\)  Copyright 2021 Radical Eye Software)
+<</Producer(GPL Ghostscript 10.02.1)
+/CreationDate(D:20250621131432+02'00')
+/ModDate(D:20250621131432+02'00')
+/Creator(dvips\(k\) 2023.1 \(TeX Live 2023\)  Copyright 2023 Radical Eye Software)
 /Title(opggeofinnforml_.dvi)>>endobj
 xref
-0 12
+0 14
 0000000000 65535 f 
-0000000908 00000 n 
-0000003605 00000 n 
-0000000849 00000 n 
-0000000712 00000 n 
-0000000366 00000 n 
-0000000693 00000 n 
-0000001002 00000 n 
-0000001166 00000 n 
-0000000973 00000 n 
-0000001384 00000 n 
-0000002280 00000 n 
+0000000962 00000 n 
+0000003731 00000 n 
+0000000903 00000 n 
+0000000748 00000 n 
+0000000396 00000 n 
+0000000729 00000 n 
+0000001027 00000 n 
+0000001131 00000 n 
+0000001295 00000 n 
+0000001071 00000 n 
+0000001101 00000 n 
+0000001513 00000 n 
+0000002409 00000 n 
 trailer
-<< /Size 12 /Root 1 0 R /Info 2 0 R
-/ID [<4AC1D7CD59F5B4147D01E2D6B66B7EF7><4AC1D7CD59F5B4147D01E2D6B66B7EF7>]
+<< /Size 14 /Root 1 0 R /Info 2 0 R
+/ID [<68E6F9F6E706D5246D55E2E824B44ABC><68E6F9F6E706D5246D55E2E824B44ABC>]
 >>
 startxref
-3846
+3969
 %%EOF

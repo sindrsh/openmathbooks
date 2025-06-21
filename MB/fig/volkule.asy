@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 import math;
 unitsize(2cm);
 

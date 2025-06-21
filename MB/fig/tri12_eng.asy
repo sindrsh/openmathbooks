@@ -1,4 +1,4 @@
-import inh;
+import "../../inh" as inh;
 unitsize(0.75cm);
 
 path p = box((0,0),(3,2));

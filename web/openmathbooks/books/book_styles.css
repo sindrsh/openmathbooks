@@ -1,0 +1,285 @@
+:root {
+  --select-color1: rgb(0, 0, 255, 1);
+  --select-color2: rgb(0, 180, 0, 1); 
+  --select-color3: rgb(0, 200, 200, 1);   
+  --select-color4: rgb(150, 200, 200, 1);    
+  --minus-color: rgb(255, 0, 0, 1);
+  --fill-color-blue: rgb(0, 0, 255, 0.2);
+  --fill-color-red: rgb(255, 0, 0, 0.2);
+  --fill-color-green: rgb(0, 255, 0, 0.2);
+  --fill-color-orange: rgb(255, 153, 0, 0.4);
+  --fill-color-yellow: rgb(255, 255, 0, 0.2);
+  --fill-color-cyan: rgb(0, 255, 255, 0.2);
+  --red-color: rgb(255, 0, 0);
+}
+
+
+body {
+    font-family: "Latin Modern Math";
+    font-weight: 100;
+    width: 550px;
+    margin: auto;
+    font-size: 16px;
+}
+
+
+
+.figure {
+    padding: 10px;
+    text-align: center;
+}
+
+math {
+    font-family: "Latin Modern Math";
+}
+
+.outline {
+    color: teal;
+    font-weight: bold;
+}
+
+.symbol {
+    background-color: rgb(0, 128, 128, 0.2);
+}
+
+.statement {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rule, .info ,.example, .definition, .language-box, .explanation {
+    padding: 10px;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1pt solid black;
+}
+
+.rule h4, .info h4, .example h4, .explanation h4, .language-box h4 {
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.explanation {
+  background-color: rgb(255, 255, 0, 0.1);
+}
+
+.language-box, .statement{
+    background-color: rgb(255, 255, 0, 0.1);
+}
+
+.display-math {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.display-math-no-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.standalone{
+  margin-bottom: 0px;
+}
+
+.subsubsection {
+    margin-bottom: 5px;
+}
+
+.rule, .definition {
+    background-color: rgb(102, 204, 255, 0.1);
+}
+
+.example {
+    background-color: rgb(0, 128, 0, 0.1);
+}
+
+.info {
+    background-color: rgb(0, 153, 153, 0.1);
+}
+
+
+.footnote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top-style: solid;
+    border: 1pt solid;
+}
+
+.abc-list li::marker {
+    content: counter(abc-counter, lower-alpha) ") ";
+}
+
+
+.abc-list li {
+    counter-increment: abc-counter; 
+}
+
+.abc-list {
+    list-style-type: none;
+    counter-reset: abc-counter;
+}
+
+.min-tablemethod, .div-tablemethod {
+  text-align: right;
+}
+
+.min-tablemethod .last-row {
+  border-top: 1pt solid black;
+}
+
+.column-method, .min-tablemethod, .div-tablemethod, .long-division {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.long-division {
+  text-align: center;
+}
+
+
+.column-method tr:last-child {
+  border-top: 1pt solid black;
+}
+
+.column-method .top-row {
+  font-size: xx-small;
+}
+
+.column-method .hundreds {
+  background-color: orange;
+}
+
+.column-method .tens {
+  background-color: aquamarine;
+}
+
+.column-method .ones {
+  background-color: lightblue;
+}
+
+.column-method .tenths {
+  background-color: rgba(137, 43, 226, 0.295);
+}
+
+.min-tablemethod td:nth-child(1), .div-tablemethod td:nth-child(1) {
+  padding-right: 15px;
+  border-right: 1pt solid black;
+}
+
+.min-tablemethod td:nth-child(2) {
+    padding-left: 15px;
+}
+
+.min-tablemethod tr:first-child, .div-tablemethod tr:first-child {
+  border-bottom: 1pt solid black;
+}
+
+.min-tablemethod tr:last-child, .div-tablemethod tr:last-child{
+  border-top: 1pt solid black;
+}
+
+.div-tablemethod td:nth-child(2) {
+    padding-left: 15px;
+}
+.div-tablemethod td:nth-child(3) {
+    padding-left: 15px;
+    border-left: 1pt solid black;
+}
+
+.example-table {
+  margin: auto;
+  border-spacing: 50px 10px;
+}
+
+.slope-1-digit {
+  background: url('./slopedline1digit.svg');
+}
+
+math mtd{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+math mtd:nth-child(1) {
+  text-align: -webkit-right;
+}
+math mtd:nth-child(2) {
+  text-align: center;
+}
+math mtd:nth-child(3) {
+  text-align: left;
+}
+
+
+.method {
+  width: fit-content;
+  border-bottom: 1pt solid black;
+}
+
+.lined-columns-closed, .lined-columns-open {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.lined-columns-open td {
+  border-right: 1pt solid black;
+  padding: 5px;
+}
+
+.lined-columns-open td:last-child {
+  border-right: none;
+}
+
+.bottom-lined-row td {
+  border-bottom: 1pt solid black;
+}
+
+
+.select-1 {
+  color: var(--select-color1)
+}
+
+.select-2 {
+  color: var(--select-color2)
+}
+.select-3 {
+  color: var(--select-color3)
+}
+.select-4 {
+  color: var(--select-color4)
+}
+
+.minus {
+  color: var(--minus-color)
+}
+
+.strikethrough1 {
+  background-image: url('../figures/slopedline1digit.svg');
+  background-position: left bottom;
+}
+
+.strikethrough10 {
+  background-image: url('../figures/slopedline1digit.svg');
+  background-position: left bottom;
+}
+
+ol, ul {
+  line-height: 150%;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.tml-right {
+  text-align: -webkit-right;
+}
+
+@page{
+  counter-increment: pageNumber;
+  @top-right {
+    content: counter(pageNumber);
+  }
+}

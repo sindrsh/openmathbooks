@@ -1,7 +1,7 @@
 import figs;
 import tri;
 import drwgrph;
-import inh;
+import "../../inh" as inh;
 
 
 size(8cm);
