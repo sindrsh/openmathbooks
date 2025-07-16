@@ -1,8 +1,7 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
+import "../../geo" as geo;
 unitsize(2cm);
-import mods;
-import graph;
 
 
 real r = 1;
@@ -26,4 +25,5 @@ draw(s, arrow=Arrow(TeXHead), L=Label("$+$", position=Relative(0.5)));
 r= 1.1;
 path s = graph(f, -b, -a, operator ..);
 draw(s, arrow=Arrow(TeXHead), L=Label("$-$", align=E,position=Relative(0.5)));
-//g(4,4, true);
+
+dott(O);

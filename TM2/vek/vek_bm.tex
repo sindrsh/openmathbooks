@@ -484,8 +484,6 @@ Hensikten med vektorproduktet er å innføre en regneoperasjon som gir oss en ve
 	dx+ey+fz&=0  \nonumber \\
 	dx+ey&=-fz\label{vktp5}
 \end{align}
-Vi har altså to forskjellige ligninger som kan hjelpe oss med å finne de tre ukjente størrelsene $ x, y $ og $ z$. Dette kalles at man har en ligning med \textit{én fri variabel}. Hvis vi velger $ z $ som fri variabel betyr dette kort fortalt at vi kan finne et uttrykk for $ x $ og $ y $ som vil oppfylle (\ref{vktp2}) og (\ref{vktp5}) for et hvilket som helst valg av $ z $. \vsk
-
 Vi starter med å finne et uttrykk for $ x $. Først multipliserer vi (\ref{vktp5}) med $ \frac{b}{e} $, og subtraherer deretter venstre- og høyresiden fra denne ligningen med henholdsvis venstre- og høyresiden fra ligning (\ref{vktp2}):
 \alg{
 	ax+by -\left(\frac{bdx}{e}+by\right)&= -cz-\left(-\frac{bfz}{e}\right) \\
@@ -503,7 +501,7 @@ Med omtrent samme framgangsmåte og identisk antakelse finner vi et uttrykk for 
 	(bd-ae)y &= (af-cd)z \nonumber\\
 	y &= \frac{af-cd}{bd-ae}z \label{y}
 \end{align}
-Som nevnt kan $ z $ velges fritt, og vi ser av (\ref{x}) og (\ref{y}) at valget $ {z=ae-bd} $ gir oss følgende fine uttrykk:
+Vi har nå uttrykk for $x$ og $y$ som vil oppfylle (\ref{x}) og (\ref{y}) uavhengig av hva uttrykket til $z$ er. Ved å velge $ {z=ae-bd} $, får vi at
 \alg{
 	x &= bf-ce \\
 	y &= -(af-cd) \\
@@ -511,7 +509,7 @@ Som nevnt kan $ z $ velges fritt, og vi ser av (\ref{x}) og (\ref{y}) at valget 
 } 
 Dette samsvarer med (\ref{vekpro}). \vsk
 
-For å komme fram til likhetene over har vi antatt at $ {z=ae-bd\neq 0} $, men det er fristende å sjekke om uttrykkene vi nettopp har funnet oppfyller (\ref{vktp2}) og (\ref{vktp5}) også når ${ z=ae-bd=0} $:
+For å komme fram til likhetene over har vi antatt at $ {z=ae-bd\neq 0} $, men uttrykkene vi fant oppfyller (\ref{vktp2}) og (\ref{vktp5}) også når $ z=ae-bd=0 $:
 \alg{ax+by &=0 \\
 	a(bf-ce)+-b(af-cd) &= 0 \\
 	-(ae-bd)c &= 0\\
@@ -522,9 +520,14 @@ For å komme fram til likhetene over har vi antatt at $ {z=ae-bd\neq 0} $, men d
 	-(ae-db)f &= 0 \\
 	0 &= 0 
 }
-Med $ z $ som fri variabel er altså (\ref{vktp2}) og (\ref{vktp5})  oppfylt for alle ${ z=ae-bd} $, dermed har vi funnet et uttrykk som alltid vil gi oss en vektor $ \vec{w} $ som er ortogonal med både $ \vec{u} $ og $ \vec{v} $. \vsk
+Dermed har vi funnet uttrykk som alltid vil gi oss en vektor $ \vec{w} $ som er ortogonal med både $ \vec{u} $ og $ \vec{v} $. \vsk
 
-Så lenge man bruker uttrykkene fra \eqref{x} og \eqref{y}, vil $ \vec{w} $ være parallell med vektoren gitt ved (\ref{vekpro}), uansett valg av $ z $. I tillegg kan vi få uttrykket fra (\ref{vekpro}) også om vi velger $ x $ eller $ y $ som fri variabel (det får bli opp til leseren å konstatere disse to påstandene).\label{allekrypropar} Av dette kan vi konkludere med at alle vektorer som står ortogonalt på både $ \vec{u} $ og $ \vec{v} $ er parallelle med vektoren gitt ved (\ref{vekpro}). \vsk
+Til slutt merker vi oss to ting (overlatt til leseren å vise):
+\begin{itemize}
+\item Så lenge man bruker uttrykkene fra \eqref{x} og \eqref{y}, vil $ \vec{w} $ være parallell med vektoren gitt ved (\ref{vekpro}), uansett valg av $ z $.
+\item I vår utledning valgte vi $z$ som \textit{fri variabel}. En vektor parallell med vektoren gitt ved (\ref{vekpro}) får vi også om vi velger $ x $ eller $ y $ som fri variabel .
+\end{itemize}
+\label{allekrypropar} Av dette kan vi konkludere med at alle vektorer som er ortogonal med både $ \vec{u} $ og $ \vec{v} $ er parallelle med vektoren gitt ved (\ref{vekpro}). \vsk
 
 \textbf{Lengden til vektorproduktet}\os
 For å komme fram til det vi ønsker, skal vi benytte oss av \outl{Lagranges identitet}\footnote{Den spesielt interesserte finner utledningen for identieten i \refved{lagrange}}\index{Lagranges identitet.}. Denne sier at vi for to vektorer

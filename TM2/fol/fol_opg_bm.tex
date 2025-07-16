@@ -6,9 +6,18 @@
 \opgt
 
 \op{odpar}
-\textbf{a)} Skriv opp de tre første partallene. Lag en rekursiv og en eksplisitt formel for det $ i $-te partallet.\os
+\textbf{a)} Skriv opp de tre første partallene. Lag en rekursiv og en eksplisitt formel partall nr. $i$.\os
 	
-\textbf{b)} Skriv opp de tre første oddetallene. Lag en eksplisitt formel for det $ i $-te oddetallet. 
+\textbf{b)} Skriv opp de tre første oddetallene. Lag en rekursiv og en eksplisitt formel for oddetall nr. $i$. 
+
+\op{opgfolari}
+Gitt følgen
+\[ 5, 15, 25,\,... \]
+\abc{
+\item Finn et rekursivt uttrykk for $a_i$.
+\item Finn et eksplisitt uttrykk for $a_i$.
+\item Hva er verdien til $i$ når $a_i=125$?
+}
 
 \op{eksar}
 Finn det eksplisitte uttrykket til  den aritmetiske følgen når du vet at\os
@@ -24,6 +33,15 @@ Finn det eksplisitte uttrykket til den geometriske følgen når du vet at\os
 	\textbf{a)} $ a_1=\frac{1}{2} $ og $ a_2 = \frac{1}{6} $ \os 
 	\textbf{b)} $ a_1 = 5 $ og $ a_4 = 40 $
 \end{tabular} \os
+
+\op{opgfolgeoi}
+Gitt følgen
+\[ 2, 8, 32,\,... \]
+\abc{
+	\item Finn et rekursivt uttrykk for $a_i$.
+	\item Finn et eksplisitt uttrykk for $a_i$.
+	\item Hva er verdien til $i$ når $a_i=128$?
+}
 
 \begin{comment}
 	\op
@@ -45,9 +63,6 @@ for $ |k|<1 $.
 \textbf{b)} Skriv opp summen av det første, de to første og de tre første  oddetallene. Bruk en lignende figur som i oppgave a) til å vise at summen $ S_n $ av de $ n $ første oddetallene er
 \[ S_n = n^2 \] 
 
-\op{opgnegsum}
-$ -1-2-3 $ er en rekke. Skriv om rekka slik at den blir uttrykt ved ledd som adderes med hverandre. 
-
 \op{sum10ar}
 Finn $ S_{10} $ for rekkene:\os
 \begin{tabular}{@{}l l}	
@@ -61,17 +76,16 @@ Gitt rekken
 For hvilken $ n $ er summen av rekken lik 435?
 
 \op{opgarekfraeks}
-Gitt den uendelige rekken
+Gitt rekken
 \[ 3+7+11+... \] 
 For hvilken $ n $ er summen av rekken lik 903?
 
 \op{opggerekfraeks}
-Gitt den uendelige rekken
+Gitt rekken
 \[ 3+6+12+24+... \]	
-For hvor mange element er summen av rekken lik 93?
+For hvilken $n$ er summen av rekken lik 93?
 
-\op{viseks3}
-Bruk summen av en aritmetisk rekke til å vise at ligningen gitt i \hyperref[prodind]{\textsl{Eksempel 3}} på s. \pageref{prodind} er sann.
+
 
 \op{geon}
 Gitt rekken
@@ -101,11 +115,12 @@ Gitt den uendelige rekken
 \textbf{b)} Finn summen av den uendelige rekken.
 
 \op{opggerekuendeks}
-Gitt den uendelige rekka 
+Gitt den uendelige rekken 
 \[ 1+\frac{1}{x}+\frac{1}{x^2}+.... \]
 \abc{
-\item  For hvilken $ x $ er summen av rekka lik $ \frac{3}{2} $?\os
-
+\item For hvilke $ x $ er rekken konvergent?
+\item Vis at \y{S_\infty=\frac{x}{x-1}} når rekken konvergerer.
+\item  For hvilken $ x $ er summen av rekka lik $ \frac{3}{2} $?
 \item For hvilken $ x $ er summen av rekka lik $ -1 $?
 }
 
@@ -115,9 +130,9 @@ Gitt den uendelige rekka
 \end{comment}
 \newpage
 \op{099er1}
-\textbf{a)} Skriv det uendelige desimaltallet 0.999... som en uendelig geometrisk rekke.\os
+\textbf{a)} Skriv desimaltallet 0.999... som en uendelig geometrisk rekke.\os
 
-\textbf{b)} Forklar hvorfor rekken er konvergent og bruk dette faktumet til å finne summen av rekken. 
+\textbf{b)} Forklar hvorfor rekken er konvergent og bruk dette til å finne summen av rekken. 
 
 \op{geokonv}
 Gitt den uendelige rekken
@@ -150,9 +165,19 @@ Vis ved induksjon at:
 
 \textbf{b)} Hvordan kan venstresiden i a) skrives enklere? Utfør induksjonsbeviset på nytt etter forenklingen.
 \newpage
+\grubop{opgfolarrekomv}
+Forklar hvorfor den eksplisitte formelen til en aritmetisk rekke med $n$ element også kan skrives som
+\[ a_i=a_n-(n-i)d \]
+
+\grubop{opgfoliplusone}
+Omskriv \eqref{arrekeq}, \eqref{ekspl}, \eqref{geofolgrek} og \eqref{geofolgeks} til formler som gir uttrykk for $a_{i+1}$ i steden for $a_i$. \vsk
+
+\grubop{viseks3}
+Bruk summen av en aritmetisk rekke til å vise at ligningen gitt i \hyperref[prodind]{\textsl{Eksempel 3}} på side \pageref{prodind} er sann.
+
 \grubop{opgfolform}
 \abc{
-\item Gitt $n,m\in\mathbb{N}$. Vis at vi for en aritmetisk følge $\{a_n\}$ har at 
+\item Gitt $n,m\in\mathbb{N}$. Vis at vi for en aritmetisk følge $\{a_i\}$ har at 
 \[ a_n=a_m+(m-n)\cdot d \]
 hvor $d$ er den konstante differansen mellom to naboelement.
 \item Gitt $n,m\in\mathbb{N}$. Vis at vi for en geometrisk følge $\{g_n\}$ har at 
@@ -170,6 +195,24 @@ I en aritmetisk rekke er $ a_1+a_4+a_7 =114 $.
 \abcs{2}{
 \item Bestem $ a_4 $. 
 }
+\grubop{opgfolinduction}
+Vis ved induksjon at for $n\in\mathbb{N}$ er
+\[ \left(x^n\right)'=nx^{n-1} \]
+
+\grubop{opgfol}
+Desimaltallet 0.097097... er et desimaltall med repeterende desimalmønster. Desimalmønsteret har verdi 97 og 3 repeterende siffer.
+\abc{
+\item Skriv 0.097097... som en geometrisk rekke
+\item Skriv 0.097097... uttrykt som en brøk.
+\item La $a$ være et desimaltall som
+\begin{itemize}
+	\item er mindre enn 1
+	\item har repeterende desimalmønster med verdi $b$ og $c$ repeterende siffer.
+\end{itemize}
+Vi at
+\[ a=\frac{b}{10^c-1} \]
+}
+\mers{En nesten indentisk oppgave er gitt i \mb, men der er den tenkt løst ved andre metoder enn her.}
 
 \grubop{opgfolgeoarrek}
 Gitt en følge med rekursiv formel
@@ -182,7 +225,6 @@ Målet med denne oppgaven er å, uten bruk av induksjon, vise at summen av $ n $
 \abc{
 \item Forklar hvorfor vi kan skrive
 \[ 1^2 + 2^2 + 3^2+\ldots = 1 + (1+3) + (1+3+5)+ \ldots  \]
-\textsl{Hint}: Se opg. \ref{parodd} b).
 \item Ut ifra det du fant i a), forklar at
 \[ \sum\limits_{i=1}^n i^2 = n+\sum\limits_{i=1}^n (n-i)(2i+1)  \]
 \item Skriv ut alle kjente summer fra b) og løs ligningen med\\ hensyn på $ \sum\limits_{i=1}^n i^2 $. Du skal da komme fram til (\ref{sumkvad}).

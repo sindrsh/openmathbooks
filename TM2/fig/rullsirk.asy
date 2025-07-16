@@ -38,4 +38,4 @@ draw((dx,0)--shift(0,1)*A2, dotted);
 draw((2dx,0)--shift(0,1)*A3, dotted);
 draw((3dx,0)--shift(0,1)*A4, dotted);
 
-
+dott((0,1));

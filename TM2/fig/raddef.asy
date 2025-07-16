@@ -23,4 +23,4 @@ draw((0,0)--1.2B);
 
 path s = rotate(r)*graph(f, 0, v, operator ..);
 draw(s, arrow=ArcArrow(), red); //, L=Label("$\frac{\pi}{3}$", position=Relative(0.5)));
-
+dott(O);

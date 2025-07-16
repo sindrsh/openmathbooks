@@ -10,4 +10,5 @@ pair f(real z){
     return (cos(z), sin(z));
 }
 
-draw((0,0)--(1,0),L="1",dotted);
+draw((0,0)--(1,0),L="1");
+dott(O);

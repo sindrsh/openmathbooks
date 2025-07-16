@@ -1,5 +1,6 @@
 \input{../../../doc}
 \input{../../../preamb}
+\input{../../bm}
 \usepackage{xr}
 \externaldocument{../../bokR2_PDF}
 \setlength{\parskip}{11pt}
@@ -31,6 +32,22 @@ Videre har vi at:\vs
 }
 Altså er
 \[ a_i=2+6(i-1) \]
+
+\opr{opgfolgeoi}
+\abc{
+\item 
+\item 
+\item Vi får ligningen
+\algv{
+	2\cdot4^{i-1}&=128 \\
+	4^{i-1}&= 64 \\
+	4^{i-1} &= 4^3 \\
+	i-1 &= 3\\
+	i &= 4
+}
+Altså er ${ a_4=128} $.
+}
+
 
 \opr{eksgeo}\\
 \textbf{a)}
@@ -130,7 +147,17 @@ n &= 6
 
 
 \opr{opggerekuendeks}
-Dette er gen geometriske rekken fra eksempelet på side \pageref{gerekuendeks}.
+\textbf{a)} Dette er en geometrisk rekke med $ {k=\frac{1}{x} }$ og ${ a_1 = 1} $. Rekken er konvergent når $ {|k|<1} $, vi krever derfor at
+\[ |x|>1  \] 
+
+\textbf{b)} Når $ |x|>1 $, har vi at
+\alg{
+	S_\infty &= \frac{a_1}{1-k} \\
+	&= \frac{1}{1-\frac{1}{x}} \\
+	&= \frac{1}{\frac{x-1}{x}} \\
+	&= \frac{x}{x-1}
+}
+Som er det vi skulle vise.
 \abc{
 \item Hvis rekka har en endelig sum $ {S_\infty=\frac{3}{2}} $, er
 \alg{

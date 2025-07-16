@@ -1,22 +1,10 @@
 \input{../../../doc}
 \input{../../../preamb}
-
+\input{../../bm}
 \begin{document}
 
 \opgt
 \setcounter{section}{1}	
-\op{udir}
-Utdanninsdirektoratet definerer størrelsen til en vinkel $ v $ mellom to linjestykker $ a $ og $ b $, oppgitt i radianer,  på følgende måte:\os
-
-\textsl{Forholdet mellom lengden på en bue mellom $ a $ og $ b $ og radiusen til buen.}
-\begin{figure}
-	\centering
-	\includegraphics[]{../../fig/rad}
-\end{figure}
-I figuren over svarer dette til forholdet $ \dfrac{l}{r} $.
-\os
-Forklar hvorfor radianer ut ifra denne definisjonen også kan sees på som en buelengde langs enhetssirkelen.
-
 \op{rads}
 Gjør om til radianer:\os
 \begin{tabular}{@{}l l}
@@ -74,6 +62,11 @@ Bruk \eqref{1} til å vise at $ {\sin\left(\frac{\pi}{6}\right)=\frac{1}{2}} $ n
 \textbf{b)} Gitt at $ {\sin \left(\frac{\pi}{6}\right)=\frac{1}{2}} $. Bruk dette og identiteten over til å vise at
 \[ 2\cos \left(\frac{\pi}{12}\right)\sin \left(\frac{\pi}{12}\right) = \frac{1}{2} \]
 
+\op{cos2xopg}
+Vis at
+\[ \cos^2 x = \frac{1}{2}\cos(2x)+\frac{1}{2} \]
+
+
 \op{cossomsin}
 Skriv om utrykket
 \[ \cos \left(3x-\frac{5\pi}{2}\right) \]
@@ -85,11 +78,16 @@ til et sinusuttrykk.
 
 \nes
 
-\op{sincos0}
-Vis at alle løsninger av ligningen $ \cos x=0 $ er gitt som
-\[ x = \frac{\pi}{2}+\pi n \]
-mens alle løsninger av ligningen $ \sin x = 0 $ er gitt som
-\[ x = \pi n \]\vs \vs
+\op{sincosoneminonesincos0}
+\abc{
+\item Vis at alle løsninger av ligningen $\cos x=1$ er gitt som $x=2\pi n $.
+\item Vis at alle løsninger av ligningen $\cos x=-1$ er gitt som $x=\pi+2\pi n$.
+\item Vis at alle løsninger av ligningen $\sin x=1$ er gitt som $x=\frac{\pi}{2}+2\pi n$.
+\item Vis at alle løsninger av ligningen $\sin x=-1$ er gitt som $x=-\frac{\pi}{2}+2\pi n$.
+\item Vis at alle løsninger av ligningen $ \cos x=0 $ er gitt som $x = \frac{\pi}{2}+\pi n$.
+\item Vis at alle løsninger av ligningen $ \sin x = 0 $ er gitt som $x = \pi n$.
+}
+
 
 \op{triligns}
 Løs ligningene:\os
@@ -198,6 +196,33 @@ Forklar hvorfor alle funksjoner $ f $ på formen
 har vertikale figr når
 \[ kx+c=\pm \frac{\pi}{2}+\pi n \]
 \newpage
+\grubop{udir}
+Utdanninsdirektoratet definerer størrelsen til en vinkel $ v $ mellom to linjestykker $ a $ og $ b $, oppgitt i radianer,  på følgende måte:\os
+
+\textsl{Forholdet mellom lengden på en bue mellom $ a $ og $ b $ og radiusen til buen.}
+\begin{figure}
+	\centering
+	\includegraphics[]{../../fig/rad}
+\end{figure}
+I figuren over svarer dette til forholdet $ \dfrac{l}{r} $.
+\os
+Forklar hvorfor radianer ut ifra denne definisjonen også kan sees på som en buelengde langs enhetssirkelen. \vsk
+
+\grubop{opgkvadtri}
+Løs ligningen.
+\abch{
+\item $\cos^2 x -3 \cos x - 4=0$
+\item $2\sin^2 x -3\sin x-2 \label{sin2}=0$
+\item $4\cos^2 (\pi x) -\sqrt{48}\cos (\pi x) +  3=0$
+}
+
+\grubop{opgkvadtri2}
+Løs ligningen.
+\abc{
+\item $3 \cos^2 (2x) + 5\sin^2 (2x) = 4$
+\item $-3\cos^2(5 x)+\sin^2(5 x)=-2$
+}
+
 \grubop{opgtangr}
 Gitt at
 \[ \tan x = \frac{a}{b} \]
