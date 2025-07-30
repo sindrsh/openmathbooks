@@ -1,143 +1,140 @@
 \begin{theindex}
 
-  \item amplitude, \hyperpage{74}
-  \item analysens fundamentalteorem, \hyperpage{180}
-  \item antiderivert, \hyperpage{178}
-  \item arcuscosinus, \hyperpage{46}
-  \item arcussinus , \hyperpage{46}
-  \item arcustangens , \hyperpage{46}
+  \item amplitude, \hyperpage{59}
+  \item analysens fundamentalteorem, \hyperpage{144}
+  \item antiderivert, \hyperpage{142}
+  \item arcuscosinus, \hyperpage{42}
+  \item arcussinus , \hyperpage{42}
+  \item arcustangens , \hyperpage{42}
   \item avstand
-    \subitem fra punkt til linje, \hyperpage{155}
-    \subitem fra punkt til plan, \hyperpage{157}
+    \subitem fra punkt til linje, \hyperpage{123}
+    \subitem fra punkt til plan, \hyperpage{125}
 
   \indexspace
 
-  \item bølgelengde, \hyperpage{74}
-  \item bølgetall, \hyperpage{75}
+  \item bølgelengde, \hyperpage{59}
+  \item bølgetall, \hyperpage{60}
 
   \indexspace
 
-  \item cosinus, \hyperpage{44}
-    \subitem -funksjon, \hyperpage{74}
+  \item cosinus, \hyperpage{40}
+    \subitem -funksjon, \hyperpage{59}
 
   \indexspace
 
-  \item determinant, \hyperpage{115}
-  \item divergere, \hyperpage{19}
+  \item determinant, \hyperpage{93}
 
   \indexspace
 
-  \item eksplisitt formel, \hyperpage{12}
-  \item element, \hyperpage{10}
-  \item enhetssirkelen, \hyperpage{38}
+  \item eksplisitt formel, \hyperpage{10, 11}
+  \item element, \hyperpage{9}
+  \item enhetssirkelen, \hyperpage{34}
 
   \indexspace
 
-  \item fase, \hyperpage{75}
-  \item faseforskyvning, \hyperpage{75}
-  \item følge, \hyperpage{10}
-    \subitem aritmetisk, \hyperpage{12}
-    \subitem endelig, \hyperpage{11}
-    \subitem geometrisk, \hyperpage{13}
-    \subitem uendelig, \hyperpage{11}
+  \item fase, \hyperpage{60}
+  \item faseforskyvning, \hyperpage{60}
+  \item følge, \hyperpage{9}
+    \subitem aritmetisk, \hyperpage{11}
+    \subitem endelig, \hyperpage{10}
+    \subitem geometrisk, \hyperpage{12}
+    \subitem uendelig, \hyperpage{10}
 
   \indexspace
 
-  \item induksjon, \hyperpage{25}
+  \item induksjon, \hyperpage{22}
   \item integral
-    \subitem som areal, \hyperpage{200}
-    \subitem som volum, \hyperpage{205}
-    \subitem ubestemt, \hyperpage{180}
-  \item integrand, \hyperpage{195}
+    \subitem som areal, \hyperpage{161}
+    \subitem som volum, \hyperpage{164}
+    \subitem ubestemt, \hyperpage{144}
+  \item integrand, \hyperpage{156}
   \item integrasjon
-    \subitem bytte av variabel, \hyperpage{187}
-    \subitem delbrøksoppspaltning, \hyperpage{194}
-    \subitem delvis, \hyperpage{191}
+    \subitem bytte av variabel, \hyperpage{150}
+    \subitem delbrøksoppspaltning, \hyperpage{156}
+    \subitem delvis, \hyperpage{153}
 
   \indexspace
 
-  \item kjerne, \hyperpage{45}
-  \item konstantledd, \hyperpage{74}
-  \item konvergere, \hyperpage{19}
-  \item kryssprodukt, \hyperpage{118}
-  \item kule, \hyperpage{150}
-  \item kvadrant, \hyperpage{47}
-  \item kvadrert, \hyperpage{69}
+  \item kjerne, \hyperpage{41}
+  \item konstantledd, \hyperpage{59}
+  \item kryssprodukt, \hyperpage{95}
+  \item kule, \hyperpage{120}
+  \item kvadrant, \hyperpage{42}
 
   \indexspace
 
-  \item Lagranges identitet., \hyperpage{127}
-  \item likevektslinje, \hyperpage{74}
-  \item linje, \hyperpage{138}
-    \subitem mellom to plan, \hyperpage{147}
+  \item Lagranges identitet., \hyperpage{101}
+  \item likevektslinje, \hyperpage{59}
+  \item linje, \hyperpage{109}
+    \subitem mellom to plan, \hyperpage{118}
 
   \indexspace
 
-  \item normalvektor, \hyperpage{144}
+  \item normalvektor, \hyperpage{115}
 
   \indexspace
 
   \item omdreiningslegeme
-    \subitem volumet av, \hyperpage{207}
-  \item omdreiningsleme, \hyperpage{207}
+    \subitem volumet av, \hyperpage{166}
+  \item omdreiningsleme, \hyperpage{166}
 
   \indexspace
 
-  \item parallellepiped, \hyperpage{122}
-  \item parallellogram, \hyperpage{122}
+  \item parallellepiped, \hyperpage{97}
+  \item parallellogram, \hyperpage{97}
   \item parameterisering
-    \subitem  av linje, \hyperpage{138}
-    \subitem av plan, \hyperpage{140}
-  \item periode, \hyperpage{74}
-  \item plan, \hyperpage{140}
-    \subitem ligningen til, \hyperpage{144}
-  \item pyramide, \hyperpage{122}
+    \subitem  av linje, \hyperpage{109}
+    \subitem av plan, \hyperpage{111}
+  \item periode, \hyperpage{59}
+  \item plan, \hyperpage{111}
+    \subitem ligningen til, \hyperpage{115}
+  \item pyramide, \hyperpage{97}
 
   \indexspace
 
-  \item rekke, \hyperpage{16}
-    \subitem aritmetisk, \hyperpage{16}
-    \subitem divergent, \hyperpage{19}
-    \subitem geometrisk, \hyperpage{18}
-    \subitem konvergent, \hyperpage{19}
-  \item rekursiv formel, \hyperpage{10}
+  \item rekk
+    \subitem konverget, \hyperpage{14}
+  \item rekke, \hyperpage{14}
+    \subitem aritmetisk, \hyperpage{15}
+    \subitem divergent, \hyperpage{14}
+    \subitem geometrisk, \hyperpage{17}
+  \item rekursiv formel, \hyperpage{9}
   \item retningsvektor
-    \subitem for plan, \hyperpage{140}
+    \subitem for plan, \hyperpage{111}
 
   \indexspace
 
-  \item sinus, \hyperpage{44}
-    \subitem -funksjon, \hyperpage{80}
-  \item summetegnet, \hyperpage{22}
+  \item sinus, \hyperpage{40}
+    \subitem -funksjon, \hyperpage{64}
+  \item summetegnet, \hyperpage{20}
 
   \indexspace
 
-  \item tangens, \hyperpage{46}
-    \subitem -funksjon, \hyperpage{82}
-  \item tetreaeder, \hyperpage{122}
-  \item trekant, \hyperpage{122}
+  \item tangens
+    \subitem -funksjon, \hyperpage{66}
+  \item tetreaeder, \hyperpage{97}
+  \item trekant, \hyperpage{97}
   \item trigonometrisk
-    \subitem identitet, \hyperpage{51}
+    \subitem identitet, \hyperpage{45}
     \subitem ligning
-      \subsubitem kvadratisk, \hyperpage{69}
-      \subsubitem lineær, \hyperpage{57}
+      \subsubitem lineær, \hyperpage{49}
 
   \indexspace
 
   \item utspent
-    \subitem geometrisk figur, \hyperpage{122}
+    \subitem geometrisk figur, \hyperpage{97}
 
   \indexspace
 
   \item vektor
-    \subitem i rommet, \hyperpage{101}
-    \subitem lengden til, \hyperpage{104}
-    \subitem mellom to punkt, \hyperpage{102}
-  \item vektorprodukt, \hyperpage{118}
-    \subitem som areal og volum, \hyperpage{122}
-  \item vinkel, \hyperpage{38}
-    \subitem mellom linjer, \hyperpage{161}
-    \subitem mellom plan, \hyperpage{164}
-    \subitem mellom plan og linje, \hyperpage{165}
+    \subitem i rommet, \hyperpage{81}
+    \subitem lengden til, \hyperpage{84}
+    \subitem mellom to punkt, \hyperpage{81}
+  \item vektorprodukt, \hyperpage{95}
+    \subitem som areal og volum, \hyperpage{97}
+  \item vinkel, \hyperpage{34}
+    \subitem mellom linjer, \hyperpage{129}
+    \subitem mellom plan, \hyperpage{131}
+    \subitem mellom plan og linje, \hyperpage{132}
 
 \end{theindex}

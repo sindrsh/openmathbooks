@@ -240,6 +240,36 @@ Setter vi dette inn i integralet, kan vi skrive
 	}
 	\vs
 }
+
+\vedlegg{Volum}
+Alle tetraeder kan plasseres i et koordinatsystem slik at det er utspent av vektorene $\vec{u}=[x_1, 0, 0]$, $\vec{v}=[x_1, y_2, 0]$ og $\vec{w}=[x_3, y_3, h]$. Vi lar $\triangle ABC$  betegne trekanten utspent av $\vec{u}$ og $\vec{v}$. Med $\triangle ABC$ som grunnflate, er $h$ høyden til tetraederet. La $G$ være arealet $\triangle ABC$. Vi ønsker å finne volumet til tetraederet uttrykt ved $G$ og $h$.
+\figc{vol_expl}{}
+
+Vi lar $\triangle A_zB_zC_z$ være et tverrsnitt av tetreaderet parallelt med, og en høyde $z$ fra, $\triangle ABC$. Videre lar vi $G_z$ være arealet til $\triangle A_zB_zC_z$. For et tall $t$ er $A_z=t\vec{w}$. For et tall $q$ er da $B_z=t\vec{w}+q\vec{u}$. Men for et tall $s$ har vi også at $B_z=\vec{u}+s(\vec{w}-\vec{u})$, altså er
+\begin{align*}
+	t\vec{w}+q\vec{u}&=\vec{u}+s(\vec{w}-\vec{u}) \\
+	(q+s-1)\vec{u}&=(s-t)\vec{w}
+\end{align*}
+Da $z$-komponenten til $\vec{u}$ er 0, må vi ha at $s=t$. Dette betyr at $q=1-t$, og da er $B_z-A_z=(1-t)\vec{u}$. Tilsvarende kan vi finne at $C_z-A_z=(1-t)\vec{v}$. $\triangle ABC\sim \triangle A_zB_zC_z$ fordi $\angle BAC=\angle B_zA_zC_z$ og $\frac{A_zB_z}{AB}=\frac{A_zC_z}{AC}=1-t$. Dermed er har vi at
+\[ G_z=(1-t)^2G \]
+\figc{vol_expl2}{}
+Av formlikhet har vi at
+\begin{align}
+	\frac{AA_z}{AD}&=\frac{A_zH_z}{DH}\br
+	\frac{t|\vec{w}|}{|\vec{w}|}&=\frac{z}{h} \\
+	t&=\frac{z}{h}
+\end{align}
+Altså er 
+\[ G_z=\left(1-\frac{z}{h}\right)^2G=\frac{1}{h^2}(h-z)^2G \]
+Av ref?? har vi nå at volumet $V$ er 
+\[ V=\int_{0}^{h}\frac{1}{h^2}(h-z)^2G\,dz=\frac{G}{h^2}\int_{0}^{h}(h-z)^2\,dz\]
+Ved å sette $p(z)=h-z$, er $p'=-1$, $p(0)=h$ og $p(h)=0$, og dermed er 
+\begin{align*}
+	V&=-\frac{G}{h^2}\int_{h}^{0}p^2\,dp \\
+	&= -\frac{G}{h^2}\left[\frac{1}{3}p^3\right]_{h}^0 \\
+	&= -\frac{G}{3h^2}\left(0-h^3\right) \\
+	&=\frac{Gh}{3}
+\end{align*}
 \begin{comment}
 
 

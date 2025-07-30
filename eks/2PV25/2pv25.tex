@@ -1,0 +1,84 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen 2P våren 2025\hfill {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
+\subsection*{Oppgave 1}
+\textbf{Alternativ 1} \\
+At 88\% har deltatt betyr at 12\% ikke har deltatt. Vi setter antall elever i klassen lik $x$. Da er
+\alg{
+\frac{12}{100}\cdot x &=3 \\
+x&=\frac{3\cdot100}{12} \\
+&=25
+}
+Det er 25 elever i klassen.\os
+
+\textbf{Alternativ 2} \\
+At 88\% har deltatt betyr at 12\% ikke har deltatt. Da 12\% av elevtallet er lik 3, må 1 elev utgjøre 4\% av elevtallet. Altså er det $\frac{100}{4}=25$ elever i klassen.
+
+\subsection*{Oppgave 2}
+\abc{
+\item
+\[ 2\quad2\quad3\quad4{\color{blue}\quad4\quad6}\quad6\quad7\quad8\quad8 \]
+Median: $\frac{4+6}{2}=5$\\
+Gjennomsnitt: $\frac{2+2+3+4+4+6+6+7+8+8}{10}=\frac{50}{10}=5$
+\item \phantom{text} \\
+\begin{tabular}{c|c|c}
+	\textbf{Personer i heis} & \textbf{Frekvens} & \textbf{Kumulativ frekvens} \\ \hline 
+	2 & 2 & 2 \\
+	3 & 1 & 3 \\
+	4 & 2 & 5 \\
+	6 & 2 & 7
+\end{tabular} \\
+Den kumulative frekvensen for 6 personer er 7. Det betyr at i 7 av de 10 tilfellene var det 6 eller færre personer i heisen.
+}
+\subsection*{Oppgave 3}
+Vi setter antall små sekker lik $x$ og antall store sekker lik $y$.
+Da har vi at
+\alg{
+	x+7&=y \tag{I}\\
+	x+y &= 44 \tag{II}
+}
+Vi setter uttrykket for $y$ fra (I) inn i (II):
+\alg{
+x+x+7&=44 \\
+2x &= 37 \\
+x&=18,5
+}
+Dermed er $y=18,5+7=25,5$. En liten sekk veier 18,5\enh{kg} og en stor sekk veier 25,5\enh{kg}.
+\subsection*{Oppgave 4}
+\textit{Areal og omkrets oppgis uten enhet, da enheten er irrelevant for å svare på spørsmålet.}
+\[ \text{arealet til sirkelen}=\pi\cdot1^2>3 \]
+\[ \text{arealet til trekanten}=\frac{3\cdot1}{2}<3 \]
+\[ \text{omkretsen til sirkelen}=\frac{2\cdot\pi}{2}+2=\pi +2\approx5,14 \]
+$AC=BC$ er hypotenuser i trekanter med kateter lik $1$ og $1,5$. Dette må bety at $AC=BC>1,5$, og da er
+\[ \text{omkretsen til trekanten}> 3+1,5+1,5=5,5 \]
+Altså har sirkelen størst areal, men minst omkrets.
+
+\subsection*{Oppgave 5}
+\abc{
+\item Hvert avdrag er lik 10\,000\enh{kr} og det er 10 avdrag. Dermed er lånet lik 100\,000\enh{kr}.
+\item Det er et annuitetslån siden avdragene er like.
+}
+
+\subsection*{Oppgave 6}
+\begin{center}
+	\begin{tabular}{c | c | c}
+		\textbf{Alder} & \textbf{Antall medlemmer} & \textbf{Kumulativ frekvens}\\ \hline
+		$[16, 20\rangle$ & 20 & 20 \\ \hline
+		$[20, 40\rangle$ & 40 & 60 \\ \hline
+		$[40, 60\rangle$ & 30 & 90 \\ \hline
+		$[60, 90\rangle$ & 10 & 100 \\ \hline
+	\end{tabular}
+\end{center}
+Vi antar at aldrene er jevnt fordelt i hvert intervall. \os
+
+Da det er 100 medlemmer totalt, er medianen gjennomsnittet av aldrene til medlem nr. 50 og 51, men siden vi ikke har eksakte tall nøyer vi oss med alderen til medlem nr. 50. Medlem nr. 50 er i intervallet $[20, 40\rangle$. Da intervallbredden er 20 og frekvensen er 40, antar vi at alderen øker med 0,5 år per person i dette intervaller\footnote{Merk: Med denne metoden får vi at den siste personen i intervallet er 40 år, og dermed tilhører neste intervall. Men siden alle beregninger her bare er omtrentlige, tar vi ikke hensyn til detet.}. Medlem nr. 50 er person nr. 30 i dette intervallet. Dermed antar vi at medlem nr. 50 er $(20+0,5\cdot30)\text{ år}=35\text{ år}$.\os
+For å finne gjennomsnittet ganger vi gjennomsnittsalderen i hvert intervall med frekvensen, og deler på det totale antallet medlemmer:
+\[ \frac{18\cdot20+30\cdot40+50\cdot30+75\cdot10}{100}=\frac{3810}{100}=38,1 \]
+
+\subsection*{Oppgave 7}
+Sofie ønsker å finne ut hvor mange år det tar før matsvinnet er halvert (\texttt{mål = matsvinn / 2}) hvis man lykkes med å redusere matsvinnet med 13\% hvert år (\texttt{vf = 0.87}). De printede verdiene forteller at i år 2030 vil matsvinnet være ca 80 kg i året for en familie på fire.
+\end{document}
