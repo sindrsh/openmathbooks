@@ -8,15 +8,19 @@
 \index{tall}
 \subsection*{Likhetstegnet}
 Som navnet tilsier, viser \outl{likhetstegnet} \index{likhetstegnet} 
-%id{eq}
+%id{symeq}
 \sym{$ = $}
-%\id 
-til at noe er likt. I hvilken grad og når man kan si at noe er likt er en filosofisk diskusjon, så i starten er vi prisgitt dette: \textsl{Hvilken likhet \sym{$=$} sikter til må bli forstått ut ifra konteksten tegnet blir brukt i}. Slik kan vi studere noen grunnleggende egenskaper for tallene våre, og så komme tilbake til mer presise betydninger av tegnet. \regv
+%\id
+til at noe er likt. I hvilken grad og når man kan si at noe er likt er en filosofisk diskusjon, så i starten er vi prisgitt dette: \textsl{Hvilken likhet
+%id{symeq}
+\sym{$ = $}
+%\id
+sikter til må bli forstått ut ifra konteksten tegnet blir brukt i}. Slik kan vi studere noen grunnleggende egenskaper for tallene våre, og så komme tilbake til mer presise betydninger av tegnet. \regv
 \spr{
 Vanlige måter å si 
-%id{eq}
+%id{symeq}
 \sym{$ = $}
-%\id 
+%\id
 på er
 \begin{itemize}
 	\item ''er lik'' \\
@@ -28,7 +32,7 @@ på er
 Tall kan representere så mangt. I denne boka skal vi holde oss til to måter å tolke tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utganspunkt i hva forståelsen er av tallene 0 og 1.
 
 \subsubsection*{Tall som mengde}
-	Når vi snakkar om en mengde, vil tallet 0 være
+	Når vi snakkar om en mengde, vil tallet 0 være\!\!
 	%id{0interpretations}
 	\footnote{I \refkap{Rekneartane} 
 	skal vi se at det også er andre tolkninger av 0.} 
@@ -55,8 +59,14 @@ Andre tall vil da være definert ut ifra hvor mange ''enerruter'' (''enere'') vi
 Vi skal straks se at tall ikke nødvendigvis trenger å være \textsl{hele} antall enere, men tallene som \textsl{er} det har et eget navn:\regv
 
 \reg[Positive heltall]{
-Tall som er et helt antall enere kalles \outl{positive\footnotemark heltall}\index{positive heltall}. De\\ positive heltallene er
+Tall som er et helt antall enere kalles 
+%id{posintoutl}
+\outl{positive\footnotemark heltall}\index{positive heltall}.
+%\id
+De positive heltallene er
+%id{posint}
 \[ 1, 2, 3, 4, 5 \text{ og så videre.} \]
+%\id
 Positive heltall blir også kalt \outl{naturlige tal}\index{tall!naturlige}.
 }
 \info{Hva med 0?}{
@@ -65,13 +75,20 @@ Noen forfattere inkluderer også 0 i begrepet naturlige tal. I noen sammenhenger
 \footnotetext{Hva ordet 'positiv' innebærer skal vi se i \refkap{Negtal}.}
 
 \newpage
-\section{\talsifverd}
-Tallene våre er bygd opp av \outl{sifrene}\index{siffer} $ 0, 1, 2 , 3, 4, 5, 6, 7, 8 $ og $ 9 $, og \textsl{plasseringen} av dem. Sifrene og deres plassering definerer\footnote{Etter hvert skal vi også se at \textit{fortegn} er med på å definere verdien til tallet (se \hrs{Negtal}{kapittel}).} \outl{verdien} \index{verdi} til tallet.
+\section{Tall, siffer og verdi}
+Tallene våre er bygd opp av \outl{sifrene}\index{siffer} 
+0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og \textsl{plasseringen} av dem. Sifrene og deres plassering definerer
+%id{10pos}
+\footnote{Etter hvert skal vi også se at \textit{fortegn} er med på å definere verdien til tallet (se \refkap{Negtal}).}
+%\id
+\outl{verdien} \index{verdi} til tallet.
 \subsection*{Heltall større enn 9}
 La oss som et eksempel skrive tallet 'fjorten' ved hjelp av sifrene våre.
 \fig{tel}
 En gruppe med ti enere kaller vi en ''tier''. Av fjorten kan vi lage 1 tier, og i tillegg har vi da 4 enere. Da skriver vi 'fjorten' slik:
+%id{14}
 \[ \text{fjorten}=14 \]
+%\id
 \fig{tel2_bm}\vsk
 
 \fig{tel2t}
@@ -101,17 +118,19 @@ Tideler skriver vi ved hjelp av  \outl{desimaltegnet} \sym{,}  :
 }\regv
 \spr{
 På engelsk bruker man punktum \sym{.} som desimaltegn:
+%id{dotcomma}
 \alg{
 	3,5&\quad(norsk) \\
 	3.5&\quad (english)
 }
+%\id
 }
 \newpage
 \subsection*{Titallsystemet}
 Vi har nå sett hvordan vi kan uttrykke verdien til tall ved å plassere \\siffer etter antall tiere, enere og tideler, og det stopper selvsagt ikke der: \regv
 
 \reg[Titallsystemet \label{titalsys}]{
-Verdien til et tall er gitt av sifrene $ 0, 1, 2, 3, 4, 5, 6, 7, 8  $ og $ 9 $, og plasseringen av dem. Med sifferet som angir enere som utgangspunkt vil
+Verdien til et tall er gitt av sifrene 0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og plasseringen av dem. Med sifferet som angir enere som utgangspunkt vil
 \begin{itemize}
 	\item siffer til venstre (i rekkefølge) indikere antall tiere, \\hundrere, tusener og så videre.
 	\item siffer til høyre (i rekkefølge) indikere antall tideler, \\hundredeler, tusendeler og så videre.
@@ -131,20 +150,45 @@ Heltall som har 1, 3, 5, 7 eller 9 på enerplassen kalles \outl{oddetall}\index{
 }
 \eks{
 De ti første (positive) partallene er
+%id{even2to18}
 \[ \text{0, 2, 4, 6, 8, 10, 12, 14, 16, og 18} \]
+%\id
 De ti første (positive) oddetallene er
+%id{odd1to19}
 \[ \text{1, 3, 5, 7, 9, 11, 13, 15, 17, og 19} \]
+%\id
 }
 
 \newpage
-\section{\koordsys \label{Koord}}
-I mange tilfeller er det nyttig å bruke to tallinjer samtidig. Dette kaller vi et \outl{koordinatsystem}\index{koordinatsystem}\footnote{Strengt tatt finnes det mange typer koordinatsystem, men i denne boka bruker vi ordet om bare én sort, nemlig det \outl{kartesiske koordinatsystem}. Det er oppkalt etter den franske filosofen og matematikeren René Descartes.}. Vi plasserer da én tallinje (en akse) som går \textsl{horisontalt} og én som går \textsl{vertikalt}. En plassering i et koordinatsystem kaller vi et \outl{punkt}\index{punkt}. 
+\section{Koordinatsystem \label{Koord}}
+I mange tilfeller er det nyttig å bruke to tallinjer samtidig. Dette kaller vi et \outl{koordinatsystem}\index{koordinatsystem}\!\!
+%id{coord}
+\footnote{Strengt tatt finnes det mange typer koordinatsystem, men i denne boka bruker vi ordet om bare én sort, nemlig det \outl{kartesiske koordinatsystem}. Det er oppkalt etter den franske filosofen og matematikeren René Descartes.}
+%\id
+\!\!. Vi plasserer da én tallinje (en akse) som går \textsl{horisontalt} og én som går \textsl{vertikalt}. En plassering i et koordinatsystem kaller vi et \outl{punkt}\index{punkt}. 
 \st{Et punkt skriver vi som to tall inni en parentes. De to tallene blir kalt \outl{førstekoordinaten} og \outl{andrekoordinaten} til punktet.
 	\begin{itemize}
 		\item Førstekoordinaten forteller oss hvor langt vi skal gå langs horisontalaksen.
 		\item Andrekoordinaten forteller oss hvor langt vi skal gå langs vertikalaksen.
 \end{itemize}
-I figuren ser vi punktene $ (2, 3) $, $ (5, 1) $ og $ (0, 0) $. Punktet der aksene møtes, altså $ (0, 0) $, kalles \outl{origo}\index{origo}.
+I figuren ser vi punktene 
+%id{p23}
+$ (2, 3) $
+%\id
+\!\!,
+%id{p51}
+$ (5, 1) $
+%\id
+ og 
+%id{p00}
+$ (0, 0) $
+%\id
+\!\!.
+Punktet der aksene møtes, altså
+%id{p00comma}
+$ (0, 0) $
+%\id
+\!\!, kalles \outl{origo}\index{origo}.
 \fig{kord}
 }
 

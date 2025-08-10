@@ -9,10 +9,10 @@
 $\frac{60}{40}=1,5=150\%$. Sjokoladeplaten er 50\% dyrere på bensinstasjonen enn i butikken.
 
 \subsection*{Oppgave 2}
-Den prosentvise fremgangen for henholdsvis Arbeiderpartiet og Senterpartiet er gitt ved brøkene $\frac{5}{40}$ og $\frac{5}{20}$. Da $\frac{5}{20}>\frac{5}{40}$, har Senterpartiet hatt størst fremgang.
+Den prosentvise fremgangen for henholdsvis Senterpartiet og Arbeiderpartiet er gitt ved brøkene $\frac{5}{20}$ og $\frac{5}{40}$. Da $\frac{5}{20}>\frac{5}{40}$, har Senterpartiet hatt størst fremgang.
 
 \subsection*{Oppgave 3}
-Viss $n$ personer skal fordele 100\enh{kr} likt mellom seg, vil prisen per person $100$ være gitt som
+Viss $n$ personer skal fordele 100\enh{kr} likt mellom seg, vil prisen $p$ per person være gitt som
 \[ p=\frac{100}{n} \] 
 Dermed er $p\cdot n=100$, som betyr at $p$ og $n$ er omvendt proporsjonale.
 \begin{figure}
@@ -24,7 +24,7 @@ Dermed er $p\cdot n=100$, som betyr at $p$ og $n$ er omvendt proporsjonale.
 \[ \colb{4}\cdot10^\colb{3}\cdot\colb{2}\cdot10^\colb{6}=8\,000\,000\,000 \]
 
 \subsection*{Oppgave 5}
-Det blir 5\,370\,000\,700\,000 blodceller til sammen.
+Det blir 5\,307\,000\,000\,000 blodceller til sammen.
 
 \subsection*{Oppgave 6}
 \abc{
@@ -32,7 +32,7 @@ Det blir 5\,370\,000\,700\,000 blodceller til sammen.
 \item Skrå kvadrat: $n+1$ \\
 Loddrette kvadrat: $n$ \\
 Kvadrat i rutenett: $n^2$
-\[ \text{Kvadrat i figur $n$}=n+1+n+n^2=n(2+n)+1 \]
+\[ \text{Kvadrat i figur $n$}=n+1+n+n^2=n^2+2n+1=(n+1)^2 \]
 }
 
 \subsection*{Oppgave 7}
@@ -44,15 +44,26 @@ Verdiene som blir printet forteller antall år med sparing, og hvor mye penger d
 \abc{
 \item Vi har at
 \[ a=\frac{270-90}{20-5}=\frac{180}{15}=12 \]
+\textbf{Alternativ 1 for å finne $\bm b$}\\
+Av punktet $(5, 90)$ har vi at
+\begin{align*}
+	12\cdot5+b&=90 \\
+	b &= 90-60\\
+	b&=30
+\end{align*}
+\textbf{Alternativ 2 for å finne $\bm b$}\\
 Da $G(0)=b$, har vi at
 \begin{align*}
 	\frac{90-b}{5-0}&=12 \\
 	90-b &= 60 \\
 	b&=30
 \end{align*}
+\textbf{Alternativ 3 for å finne $\bm b$}\\
+Vi starter i punktet $(5, 90)$, og går 12 ned for hver gang vi går 1 til venstre på grafen. Når $x=0$, er $y=b=30$ \vsk
+
 Altså er 
 \[ g(x)=12x+30 \]
-\item Det er rimelig å anta at godterien har en fast hektopris, og at bøtta har en fast pris. Koster godteriet 12\enh{kr/hg} og bøtta koster 30\enh{kr}.
+\item Det er rimelig å anta at godteriet har en fast hektopris, og at bøtta har en fast pris. Da koster godteriet 12\enh{kr/hg} og bøtta koster 30\enh{kr}.
 \item 
 \[ G(8)=12\cdot8+30=96+30=126 \]
 En bøtte med 8\enh{hg} godteri koster 126\enh{kr}. 
@@ -62,10 +73,10 @@ En bøtte med 8\enh{hg} godteri koster 126\enh{kr}.
 \abc{
 \item Skriver inn punktene i et regneark i GeoGebra, lager en liste av punktene, og bruker kommandoen \texttt{RegEksp}. Får da samme $K$ som i oppgaveteksten.
 \item 1,2 er vekstfaktoren til $K$. For hver måned som går, øker $K$ med 20\%.
-\item Bruker kommandoen \texttt{Linje}, og får en linje med stigningstall $70,24$. Dette betyr at den gjennomsnittlige økningen av antall smittede mellom $x=4$ og $x=21$ er lik $70,24$.
-\item Mai i 2025 tilsvarer $x=29$. Bruker kommandoen \texttt{K(29)}, og får at det da vil være $5336$ tilfeller.
+\item Bruker kommandoen \texttt{Linje}, og får en linje med stigningstall $70,2$. Dette betyr at den gjennomsnittlige økningen av antall smittede mellom $x=4$ og $x=21$ er lik $70,2$.
+\item Mai i 2025 tilsvarer $x=29$. Bruker kommandoen \texttt{K(29)}, og får at det da (avrundet) vil være $5336$ tilfeller.
 \begin{figure}
-	\includegraphics[scale=0.2]{opg1}
+	\includegraphics[scale=0.22]{opg1}
 \end{figure}
 }
 \subsection*{Oppgave 2}
@@ -73,9 +84,10 @@ En bøtte med 8\enh{hg} godteri koster 126\enh{kr}.
 \item $\frac{3\,300\,000}{40\,000}=82,5$. Hver deltaker har i gjennomsnitt gått 82,5\enh{km}.
 \item $\frac{3\,300\,000}{83}\approx39\,759$. Der har regnet at det er ca 39\,759\enh{km} rundt jorda.
 }
+\newpage
 \subsection*{Oppgave 3}
 Vi lar $x$ være antall aviser solgt. Da viser $f$ Tilbud 1 og $g$ viser Tilbud 2. Bruker kommandoen \texttt{Skjæring} for å finne at $f$ får høyere verdi enn $g$ fra og med 21 solgte aviser.\os
-Hvis Elise tror hun vil greie å selge 21 eller flere aviser bør hun altså velge Tilbud 2. Hvis ikke bør hun velge Tilbud 1.
+Hvis Elise tror hun vil greie å selge 21 eller flere aviser bør hun altså velge Tilbud 1. Hvis ikke bør hun velge Tilbud 2.
 \begin{figure}
 	\includegraphics[scale=0.3]{opg3}
 \end{figure}
@@ -92,8 +104,9 @@ $\frac{194}{4}=48,5$. En avis koster altså 48,5\enh{kr}.
 $145\enh{mm}=0,145\enh{m}$. Ved å kjøpe 1\enh{m} får vi en overflate lik 0,145$\enh{m}^2$. $\frac{67,9}{0,145}\approx468$. Prisen per kvadratmeter er ca. 468\enh{kr}.\vsk
 
 \textbf{Furu 28x095}\\
-$\frac{49,9}{0,095}\approx1109$. Prisen per kvadratmeter er ca. 1109\enh{kr}.
+$\frac{49,9}{0,095}\approx525$. Prisen per kvadratmeter er ca. 525\enh{kr}.
 
+\newpage
 \subsection*{Oppgave 6}
 \abc{
 \item Vi får formelen 
@@ -106,7 +119,7 @@ $\frac{49,9}{0,095}\approx1109$. Prisen per kvadratmeter er ca. 1109\enh{kr}.
 \item Av uttrykket vi fant i oppgave a) og uttrykket for $O$ har vi at
 \[ O(r)=\pi r^2 + 2\pi r \frac{450}{\pi r^2}=\pi r^2+\frac{900}{r} \]
 Grafen til $O$ er vist i GeoGebra (se figur under).
-\item Av grafen ser vi at bunnpunktet ligger mellom $r=0$ og $r=10$. Bruker kommandoen \texttt{Ekstremalpunkt}, og finner at $O$ er minst når $r=5,23$. Da er $O\approx258$.
+\item Av grafen ser vi at bunnpunktet ligger mellom $r=0$ og $r=10$. Bruker kommandoen \texttt{Ekstremalpunkt}, og finner at $O$ er minst når $r=5,23$ (cm). Da er $O\approx258$ ($\text{cm}^3$).
 }
 \begin{figure}
 	\includegraphics[scale=0.4]{opg6bc}
