@@ -6,8 +6,8 @@ unitsize(1.5cm);
 draw(graph(f,0,2pi));
 pair A = f(pi/2 +0.25);
 pair B = A-2*(A.y,-A.x);
-pair C = intersectionpoint(graph(f,0,2pi), B--O);
-pair D = B + (C-B)/abs(C-B)^2*abs(A-B)^2;
+pair C = f(pi+0.1);
+pair D = intersectionpoint(unitcircle, C--C+2*(C-B));
 
 draw(B--A, deepgreen);
 draw(B--C, red);

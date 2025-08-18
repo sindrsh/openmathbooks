@@ -1,4 +1,4 @@
-settings.outformat="pdf";
+settings.outformat="svg";
 //defaultpen(fontsize(12 pt));
 //defaultpen(1bp);
 import x11colors;

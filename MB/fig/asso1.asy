@@ -1,8 +1,7 @@
+import "../../inh" as inh;
 import solids;
-settings.outformat="pdf";
 currentprojection=orthographic(5,4,4);
 settings.render = 5;
-defaultpen(fontsize(11 pt));
 unitsize(0.5cm);
 settings.render = 10;
 
