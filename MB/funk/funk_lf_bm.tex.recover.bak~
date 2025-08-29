@@ -38,9 +38,6 @@ Dette tilsvarer funksjonsuttrykket til $f$.
 \begin{align*}
 	f(-3)&=(-3+2)(-3-4)=(-1)\cdot(-7)=7 \\
 	f(5)&=(5+2)(5-4)=7\cdot1 =7
-\end{align*}
-Altså er $A=(-3, 7)$ og $B=(5, 7)$. For både $A$ og $B$ er horisontalavstanden til bunnpunktet 4.
-\item To punkt med lik horisontalavstand til bunnpunktet vil ha samme $y$-verdi.
-}
+\end{align*
 
 \end{document}

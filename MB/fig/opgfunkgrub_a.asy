@@ -11,8 +11,8 @@ yaks(0, f(b), l="$y$", bex=1.075);
 real x1 = 4;
 real x2 = 9;
 
-dott((x1,f(x1)),"$("+(string) x1+","+(string) f(x1)+")$",SE);
-dott((x2,f(x2)),"$("+(string) x2+","+(string) f(x2)+")$",SE);
+dott((x1,f(x1)),"$("+(string) x1+", "+(string) f(x1)+")$",SE);
+dott((x2,f(x2)),"$("+(string) x2+", "+(string) f(x2)+")$",SE);
 write(x1, f(x1));
 write(x2, f(x2));
 draw((a,f(a))--(b,f(b)),blue);
