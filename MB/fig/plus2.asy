@@ -2,7 +2,7 @@ import "../../inh" as inh;
 import figs;
 unitsize(0.75 cm);
 
-xaks(0,10, tck=true, tckl=true);
+xaks(2,9, tck=true, tckl=true);
 
 
 jmp(7, xs=2);

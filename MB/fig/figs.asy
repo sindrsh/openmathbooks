@@ -1,6 +1,7 @@
+import "../../inh" as inh;
 import graph;
 
-void dc(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=cyan, pen p1=p, bool l=false, real ls=1.0, real opac=0.1){
+void dc(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=cyan, pen p1=p, bool l=false, real ls=1.0, real opac=0.2){
 	path b = scale(0.5)*unitcircle;
 	int cnt = 0;
 	for (int i = 1; i <= I; ++i){
@@ -32,7 +33,7 @@ void ten(int I=1, pair sh=(0,0), pen p=green, pen p1=deepgreen, bool l=false, re
 		 }
 }
 
-void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0, real opac=0.1){
+void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0, real opac=0.2){
 	path b = box((0,0),(1,1));
 	int cnt = 0;
 	for (int i = 1; i <= I; ++i){
@@ -58,7 +59,7 @@ void ddb(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=purple, bool l
 	for (int i = 1; i <= I; ++i){
 		for (int j = 1; j <= J; ++j){
 			if (i<=m || j<=n){
-			filldraw(shift(sh+(i*a-a,j*h-h))*b, p+opacity(0.1), drawpen=p);
+			filldraw(shift(sh+(i*a-a,j*h-h))*b, p+opacity(0.2), drawpen=p);
 			++cnt;
 			}
 			}
@@ -186,7 +187,7 @@ void tcksb(int tc, real b, real y=0){
 			}
 			}
 
-void einar(int n=1, pair sh=(0,0), pen p=blue+opacity(0.1), pen p1=black){
+void einar(int n=1, pair sh=(0,0), pen p=blue+opacity(0.2), pen p1=black){
 	path uc = unitcircle;
 	filldraw(shift(sh)*uc, p, p1);
 	label("1",sh);
@@ -233,10 +234,10 @@ void brok(int i=1, int j=1, int m=0, pair sh=(0,0), pen p=blue){
 	for (int x = 0; x < i; ++x){
 		for (int y = 0; y < j; ++y){
 			if (cnt <= m){
-				fill(shift(sh)*shift(x*dx,-y*dy)*b, p+opacity(0.1));
+				fill(shift(sh)*shift(x*dx,-y*dy)*b, p+opacity(0.2));
 				cnt+=1;
 				}
-			draw(shift(sh)*shift(x*dx,-y*dy)*b, p);
+			draw(shift(sh)*shift(x*dx,-y*dy)*b, black);
 			}
 		}
 }
@@ -261,10 +262,10 @@ void teller(int i=1, int j=1, bool d=false, pair sh=(0,0), pair sh2=(0,0), pen p
 	pair sh = (dx*sh.x,dy*sh.y);
 	int cnt = 1;
 		if (d == true){
-			draw(shift(sh2)*shift(sh)*b, p);
+			draw(shift(sh2)*shift(sh)*b, black);
 			cnt+=1;
 			}
-	fill(shift(sh2)*shift(sh)*b, p+opacity(0.1));
+	fill(shift(sh2)*shift(sh)*b, p+opacity(0.2));
 }
 
 ///////////////////////////

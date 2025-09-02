@@ -14,6 +14,6 @@ yaks(-3, 5, l="$y$", bex=1.15, tck=true, tc=1);
 draw((a,f(a))--(b,f(b)),blue);
 draw((a,g(a))--(b,g(b)),red);
 
-label("$f(x)$",(b,f(b)),E,blue);
-label("$g(x)$",(b,g(b)),E,red);
+label("$f$",(b,f(b)),E,blue);
+label("$g$",(b,g(b)),E,red);
 

@@ -1,6 +1,6 @@
 import "../../inh" as inh;
 import drwgrph;
-unitsize(0.75 cm);
+unitsize(0.7 cm);
 
 int a = 6;
 int b = 6;

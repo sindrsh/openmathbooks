@@ -1,9 +1,9 @@
 import "../../inh" as inh;
 import figs;
-unitsize(0.5 cm);
+unitsize(0.75 cm);
 
 
-draw((0,0)--(10,0),heavygreen);
+draw((0,0)--(10,0),green);
 draw((10,0)--(14,0),blue);
 for(int i=1; i<15;++i){
 	if(i>9){ mktc(i,(string) i); }

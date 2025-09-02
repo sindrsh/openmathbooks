@@ -121,6 +121,33 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \spr{
 Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet, og konstanter og variabler på den andre siden, sier vi at den isolerte variabelen er \outl{uttrykt ved} de andre tallene. For eksempel, om vi har uttrykket $ {a=2b-4} $, sier vi at ''$ a $ er uttrykt ved $ b $''. Har vi uttrykket $ {q = 9y-x} $, sier vi at ''$ q $ er uttrykt ved $ x $ og $ y $''.
 }
+\info{Minus foran parentes}{
+	La oss se på uttrykket $-(a-b)$. Vi har at
+	\alg{
+	-(a-b)=(-1)\cdot(a-b)	
+	}
+	Av \rref{gangpara} er
+	\[ (-1)\cdot(a-b)=(-1)\cdot a-(-1)\cdot b=-a+b \]
+	Dermed er 
+	\[ -(a-b)=-a+b \]
+	Hvis vi skal skrive ut et uttrykk med minus foran parentes, kan vi altså si at vi da ''snur'' fortegnene på leddene inni parentesen.
+}
+\eks[1]{
+Skriv uttrykket så enkelt som mulig.
+\[ a^2+2bc-4a-(5bc-4a) \]
+\sv
+\[ a^2+5bc-4a-(5bc-4a)=a^2+5bc-4a-5bc+4a=a^2 \]
+}
+\eks[2]{
+	Skriv uttrykket så enkelt som mulig.
+	\[ 3bc-9ac-2c(5c-4a+b) \]
+	\sv
+	\alg{
+	3bc-9ac-2c(5c-4a+b)&=3bc-9ac-10c^2+8ac-2bc\\
+	&=bc-ac-10c^2 \\
+	&=c(b-a-10c)
+	}
+}
 \newpage
 \info{Utvidelser av reglene}{
 Noe av styrken til algebra er at vi kan lage oss kompakte regler som det er lett å utvide også til andre tilfeller. La oss som et eksempel finne et annet uttrykk for

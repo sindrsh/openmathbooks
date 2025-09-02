@@ -95,6 +95,17 @@ Grafen til $ f(x) $ er nå en tenkt strek som går gjennom alle de uendelig mang
 
 Som vi har vært inne på før, kan vi aldri tegne en hel linje, bare et utklipp av den. Dette gjelder som regel også for grafer. I figuren på side \pageref{funkfig} har vi tegnet grafen til $ f(x) $ for $ x $-verdier mellom $ -2 $ og $ 4 $. At $ x $ er i dette \outl{intervallet}\index{intervall} kan vi skrive som $ -2\leq x\leq 4 $ eller\footnote{Se \tmen for en nøyere forklaring av denne skrivemåten.} $ x\in[-2, 4] $.
 \fig{funk3} \label{funkfig}
+\info{$\bm {f(x)}$ og $\bm f$}{
+Når vi omtaler en funksjon $f(x)$, nøyer vi oss ofte med å skrive bare $f$. Istedenfor å skrive for eksempel ${f(x)=2x}$, kunne vi også skrevet $f=x$, men det fine med førstnevnte skrivemåte er at det tydeliggjør at det er $x$ som er variabelen.
+}
+\info{Navn på $\bm y$-aksen}{
+Hvis vi bare har grafen til én funksjon, $f$, plassert i et koordinatsystem, vil vi noen ganger kalle $y$-aksen for $f$-aksen.
+\begin{figure}
+	\centering
+	\includegraphics{\figp{axisf_a}}\qquad
+	\includegraphics{\figp{axisf_b}}
+\end{figure}
+}
 \spr{
 $f$-verdiene kalles også $y$-verdiene til funksjonen $f$.
 }
@@ -157,16 +168,23 @@ Vi tegner punktene og trekker en linje gjennom dem:
 Finn funksjonsuttrykkene til $ f(x) $ og $ g(x) $.	
 \fig{funk5} \vs
 \sv
-Vi starter med å finne funksjonsuttrykket til $ f(x) $. Punktet $ (0, 3) $ ligger på grafen til $ f(x) $ (se også figur på neste side). Da vet vi at $ {f(0)=3} $, og dette må bety at $ 3 $ er konstantleddet til $ f(x) $. Videre ser vi at punktet $ (1, 2) $ også ligger på grafen til $ f(x) $. Stigningstallet til $ f(x) $ er da gitt ved brøken
-\[ \frac{2-3}{1-0}=-1 \] 
+Vi starter med å finne funksjonsuttrykket til $ f(x) $. Punktet $ (0, 3) $ ligger på grafen til $ f $. Da vet vi at $ {f(0)=3} $, og dette må bety at $ 3 $ er konstantleddet til $ f $. Videre ser vi at punktet $ (1, 2) $ også ligger på grafen til $ f $, som betyr at $f(1)=2$. Stigningstallet til $ f $ er da gitt ved brøken
+\[\frac{f(1)-f(0)}{1-0}= \frac{2-3}{1-0}=-1 \] 
 Altså er 
 \[  f(x)=-x+3 \]
 \newpage
-\fig{funk5a}
-Vi går så over til å finne uttrykket til $ g(x) $. Punktet $ (0, -1) $ ligger på grafen til $ g(x) $. Da vet vi at $ {f(0)=-1} $, og dette må bety at $ -1 $ er konstantleddet til $ g(x) $. Videre ser vi at punktet $ (5, 2) $ også ligger på grafen til $ g(x) $. Stigningstallet til $ g(x) $ er da gitt ved brøken
-\[ \frac{2-(-1)}{5-0}=\frac{3}{5} \]
+Vi går så over til å finne uttrykket til $ g(x) $. Punktet $ (0, -1) $ ligger på grafen til $ g $. Da vet vi at $ {g(0)=-1} $, og dette må bety at $ -1 $ er konstantleddet til $ g $. Videre ser vi at punktet $ (5, 2) $ også ligger på grafen til $ g $, som betyr at $g(5)=2$. Stigningstallet til $ g $ er da gitt ved brøken
+\[\frac{g(5)-g(0)}{5-0}= \frac{2-(-1)}{5-0}=\frac{3}{5} \]
 Altså er
 \[ g(x)=\frac{3}{5}x+1 \]
+}
+\info{Alternativ metode for å finne $\bm a$}{
+I \textsl{Eksempel 3} over har vi brukt formelen for $a$ fra \rref{funklin} for å finne stigningstallene. Denne metoden vil alltid virke, men noen ganger kan det være raskere å lese av stigningstall så og si direkte fra grafen. \os
+
+For funksjonene $f$ ser vi at om vi står i et punkt på grafen og går 1 steg til høyre, så må vi gå 1 steg ned for å komme tilbake til grafen. Dette betyr at stigningstallet er $\frac{-1}{1}=-1$.\os
+
+For funksjonen $g$ ser vi at om vi står i et punkt på grafen og går 5 skritt til høyre, så må vi gå 3 skritt opp for å komme tilbake til grafen. Dette betyr at stigningstallet er $\frac{3}{5}$.
+\fig{funk5a}
 }
 \newpage
 \eks[4]{
@@ -174,10 +192,21 @@ Altså er
 	\fig{funk7}
 	\sv
 	\fig{funk7b}
-	Vi legger merke til at punktene $ (1, 2) $ og $ (4, 4) $ ligger på grafen til $ f(x) $. Altså er stigningstalelt til $ f(x) $ gitt ved brøken
+	\textbf{Alternativ 1}\os
+	Punktene $ (1, 2) $ og $ (4, 4) $ ligger på grafen til $ f $. Altså er stigningstallet til $ f(x) $ gitt ved brøken
 	\alg{
-		\frac{4-2}{4-1} =\frac{2}{3}
+		\frac{f(4)-f(1)}{4-1}=\frac{4-2}{4-1} =\frac{2}{3}
 	}
+	\textbf{Alternativ 2} \os
+	Hvis vi går 3 skritt bort, må vi gå 2 skritt opp for å komme tilbake til grafen. Altså er stigningstallet $\frac{2}{3}$.
+}
+\newpage
+\info{Rette linjer}{
+De to uttrykkene $f(x)=ax+b$ og $y=ax+b$ er bare to forskjellige skrivemåter av samme sak; en rett linje med stigningstall $a$ og konstantledd $b$.\vsk
+
+${y=b}$ beskriver en  horisontallinje som går gjennom \\punktet $(0, b)$.\vsk
+
+$x=b$ beskriver en vertikallinje som går gjennom punktet $(b, 0)$.
 }
 \newpage
 \fork{\ref{funklin} \funklin}{
@@ -294,11 +323,14 @@ Punkt der funksjonen har sin høyeste verdi.
 }
 \section{Navn på funksjoner}
 \regdef[Potensfunksjoner]{
-	Gitt konstantene $ k $ og $ b $, og en variabel $ x $. En funksjon på formen
+	Gitt konstantene $ k $ og $ b $. En funksjon på formen
 	\begin{equation}\label{powrfunc}
 		f(x)=k x^m	
 	\end{equation}
 	er da en \outl{potensfunksjon} med \outl{koeffisient} $ k $ og \outl{eksponent} $ m $.
+}
+\eks{
+$f(x)=2x^3$ er en potensfunksjon med koeffisient $k$ og\\ eksponent $3$.
 }
 \regdef[Polynomfunksjoner]{
 	En \outl{polynomfunksjon} er én av følgende:
@@ -328,6 +360,17 @@ Punkt der funksjonen har sin høyeste verdi.
 \eks{
 	$ f $, $ g $ og $ h $ er rasjonale funksjoner.
 	\[ f(x)=\frac{1}{x} \qquad\qquad g(x)=\frac{x^2+3}{4x+2}\qquad\qquad h(x)=\frac{x^3-x+4}{-2x^7+9x^2}\]
+}
+\regdef[Proporsjonale funksjoner]{
+Gitt funksjonene $f(x)$ og en konstant $a$. \os
+Hvis 
+\[ f(x)=ax \]
+sier vi at $f$ og $x$ er \outl{proporsjonale størrelser}. \os
+Hvis
+\[ f(x)=\frac{a}{x} \]
+sier vi at $f$ og $x$ er \outl{omvendt proporsjonale størrelser}.\vsk
+
+I begge tilfellene kalles $a$ for \outl{proporsjonalitetskonstanten}.
 }
 
 \end{document}

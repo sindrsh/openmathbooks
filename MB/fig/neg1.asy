@@ -1,6 +1,5 @@
 import "../../inh" as inh;
 import figs;
-settings.outformat="svg";
 unitsize(0.75 cm);
 
 xaks(0,5, tckl=true,omite=true);

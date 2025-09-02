@@ -1,5 +1,7 @@
-%PDF-1.4
+%PDF-1.5
 %�쏢
+%%Invocation: gs -q -dNOPAUSE -dBATCH -P -dSAFER -dALLOWPSTRANSPARENCY -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dEncodeColorImages=true -dEncodeGrayImages=true -dCompatibilityLevel=1.5
+%%+ -dTransferFunctionInfo=/Apply -dAutoRotatePages=/None -g612x792 -dDEVICEWIDTHPOINTS=260.297 -dDEVICEHEIGHTPOINTS=114.767 -sOutputFile=? ? ? -f ?
 5 0 obj
 <</Length 6 0 R/Filter /FlateDecode>>
 stream
@@ -30,24 +32,24 @@ endobj
 endobj
 7 0 obj
 <</Type/ExtGState
-/OPM 1>>endobj
+/SA false>>endobj
 8 0 obj
 <</R7
 7 0 R>>
 endobj
 9 0 obj
 <</Type/Metadata
-/Subtype/XML/Length 1344>>stream
+/Subtype/XML/Length 1179>>stream
 <?xpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'?>
 <?adobe-xap-filters esc="CRLF"?>
 <x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
 <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
-<rdf:Description rdf:about='uuid:4372155b-8219-11f6-0000-ec83f82097d2' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.26'/>
-<rdf:Description rdf:about='uuid:4372155b-8219-11f6-0000-ec83f82097d2' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2020-12-29T18:38:51+01:00</xmp:ModifyDate>
-<xmp:CreateDate>2020-12-29T18:38:51+01:00</xmp:CreateDate>
-<xmp:CreatorTool>Asymptote 2.592.59</xmp:CreatorTool></rdf:Description>
-<rdf:Description rdf:about='uuid:4372155b-8219-11f6-0000-ec83f82097d2' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:4372155b-8219-11f6-0000-ec83f82097d2'/>
-<rdf:Description rdf:about='uuid:4372155b-8219-11f6-0000-ec83f82097d2' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>Untitled</rdf:li></rdf:Alt></dc:title></rdf:Description>
+<rdf:Description rdf:about="" xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 10.02.1'/>
+<rdf:Description rdf:about="" xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2025-09-02T10:45:08+02:00</xmp:ModifyDate>
+<xmp:CreateDate>2025-09-02T10:45:08+02:00</xmp:CreateDate>
+<xmp:CreatorTool>Asymptote 3.02</xmp:CreatorTool></rdf:Description>
+<rdf:Description rdf:about="" xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:ade3931b-bff5-11fb-0000-71b32b2dc6e2'/>
+<rdf:Description rdf:about="" xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>Untitled</rdf:li></rdf:Alt></dc:title></rdf:Description>
 </rdf:RDF>
 </x:xmpmeta>
                                                                         
@@ -56,26 +58,26 @@ endobj
 endstream
 endobj
 2 0 obj
-<</Producer(GPL Ghostscript 9.26)
-/CreationDate(D:20201229183851+01'00')
-/ModDate(D:20201229183851+01'00')
-/Creator(Asymptote 2.592.59)>>endobj
+<</Producer(GPL Ghostscript 10.02.1)
+/CreationDate(D:20250902104508+02'00')
+/ModDate(D:20250902104508+02'00')
+/Creator(Asymptote 3.02)>>endobj
 xref
 0 10
 0000000000 65535 f 
-0000000472 00000 n 
-0000002026 00000 n 
-0000000413 00000 n 
-0000000277 00000 n 
-0000000015 00000 n 
-0000000258 00000 n 
-0000000536 00000 n 
-0000000577 00000 n 
-0000000606 00000 n 
+0000000853 00000 n 
+0000002245 00000 n 
+0000000794 00000 n 
+0000000658 00000 n 
+0000000396 00000 n 
+0000000639 00000 n 
+0000000917 00000 n 
+0000000961 00000 n 
+0000000990 00000 n 
 trailer
 << /Size 10 /Root 1 0 R /Info 2 0 R
-/ID [<3EE98AE79CD8D091A34E5157B13CC1AF><3EE98AE79CD8D091A34E5157B13CC1AF>]
+/ID [<2D520FEC5178BEE9698753910E4E47B2><2D520FEC5178BEE9698753910E4E47B2>]
 >>
 startxref
-2178
+2396
 %%EOF

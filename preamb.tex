@@ -1,7 +1,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern} % load a font with all the characters
 \usepackage{geometry}
-\geometry{verbose,paperwidth=17 cm, paperheight=24 cm, inner=2.8cm, outer=2.3 cm, bmargin=2cm, tmargin=1.8cm}
+\geometry{verbose,paperwidth=16 cm, paperheight=24 cm, inner=2.3cm, outer=1.7 cm, bmargin=2cm, tmargin=1.8cm}
 
 \setlength{\parindent}{0bp}
 \usepackage{import}
@@ -80,8 +80,6 @@
 \end{equation}
 }
 
-\definecolor{cblue}{cmyk}{0, 0.7808, 0.4429, 0.1412}
-
 
 % Equation comments
 \newcommand{\cm}[1]{\llap{\color{blue} #1}}
@@ -91,20 +89,29 @@
 \newcounter{rg}
 \numberwithin{rg}{chapter}
 
-
-\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
-\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
-\newcommand{\words}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=teal!3] #1  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\amounts}[1]{
+\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
+\small \rightline{Mengde}
+\end{tcolorbox}
+}
+\newcommand{\numrline}[1]{
+	\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
+		\small \rightline{Tallinja}
+	\end{tcolorbox}
+}
+\newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox}\vspace{-5pt}}
+\newcommand{\words}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Teal!3] #1  \end{tcolorbox}\vspace{-5pt}}
 
 \newcommand\alg[1]{\begin{align*} #1 \end{align*}}
 
-\newcommand\eks[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=green!3] {\large \textbf{\ekstitle #1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+\newcommand\eks[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=Green!5] {\large \textbf{\ekstitle #1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
 
-\newcommand{\st}[1]{\begin{tcolorbox}[boxrule=0.0 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!12]{ #1} \end{tcolorbox}}
+\newcommand{\st}[1]{\begin{tcolorbox}[boxrule=0.0 mm,arc=0mm,enhanced jigsaw,breakable,colback=Yellow!5]{ #1} \end{tcolorbox}}
 
-\newcommand{\spr}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{\sprtitle} \vspace{5 pt}\\} #1 \end{tcolorbox}\vspace{-5pt} }
+\newcommand{\spr}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=Yellow!5] {\large \textbf{\sprtitle} \vspace{5 pt}\\} #1 \end{tcolorbox}\vspace{-5pt} }
 
-\newcommand{\sym}[1]{\colorbox{blue!15}{#1}}
+\newcommand{\sym}[1]{\colorbox{NavyBlue!15}{#1}}
 
 \newcommand{\info}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=cyan!6] {\large \textbf{#1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
 
@@ -184,12 +191,14 @@
 \newcommand\fork[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=yellow!7] {\large \textbf{#1 (\expl)} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
  
 %colors
-\newcommand{\colr}[1]{{\color{red} #1}}
-\newcommand{\colb}[1]{{\color{blue} #1}}
-\newcommand{\colo}[1]{{\color{orange} #1}}
-\newcommand{\colc}[1]{{\color{cyan} #1}}
 \definecolor{projectgreen}{cmyk}{100,0,100,0}
-\newcommand{\colg}[1]{{\color{projectgreen} #1}}
+
+\newcommand{\colr}[1]{{\color{Red} #1}}
+\newcommand{\colb}[1]{{\color{Cyan} #1}}
+\newcommand{\colo}[1]{{\color{Orange} #1}}
+\newcommand{\colc}[1]{{\color{SeaGreen} #1}}
+\definecolor{projectgreen}{cmyk}{100,0,100,0}
+\newcommand{\colg}[1]{{\color{Green} #1}}
 
 % Methods
 \newcommand{\metode}[2]{
@@ -288,7 +297,8 @@ Tekst og innhold kan her være noe endret i forhold til originalen.
 	#2}
 
 % outline word
-\newcommand{\outl}[1]{{\boldmath \color{teal}\textbf{#1}}}
+\definecolor{Teal}{cmyk}{1, 0, 0.4, 0.3}
+\newcommand{\outl}[1]{{\boldmath \color{Teal}\textbf{#1}}}
 %line to seperate examples
 \newcommand{\linje}{\rule{\linewidth}{1pt} }
 

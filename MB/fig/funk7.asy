@@ -12,5 +12,5 @@ yaks(0, 5, l="$y$", bex=1.15, tck=true, tc=1);
 
 draw((a,f(a))--(b,f(b)),blue);
 
-label("$f(x)$",(b,f(b)),E,blue);
+label("$f$",(b,f(b)),E,blue);
 

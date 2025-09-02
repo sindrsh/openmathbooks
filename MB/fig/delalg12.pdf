@@ -1,14 +1,16 @@
-%PDF-1.4
+%PDF-1.5
 %Çì¢
-%%Invocation: gs -q -dNOPAUSE -dBATCH -P -dSAFER -dDELAYSAFER -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dPDFSETTINGS=/prepress -dCompatibilityLevel=1.4 -dAutoRotatePages=/None -g612x792
-%%+ -dDEVICEWIDTHPOINTS=14.6732 -dDEVICEHEIGHTPOINTS=57.1929 -sOutputFile=? ? ? -f ?
+%%Invocation: gs -q -dNOPAUSE -dBATCH -P -dSAFER -dALLOWPSTRANSPARENCY -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dEncodeColorImages=true -dEncodeGrayImages=true -dCompatibilityLevel=1.5
+%%+ -dTransferFunctionInfo=/Apply -dAutoRotatePages=/None -g612x792 -dDEVICEWIDTHPOINTS=14.6732 -dDEVICEHEIGHTPOINTS=57.1929 -sOutputFile=? ? ? -f ?
 5 0 obj
 <</Length 6 0 R/Filter /FlateDecode>>
 stream
-xœµ•MN1F÷9EN`š¿Ir$v”# Q„ê°àúLŠíÔ™,ƒªÑô³^_¾ÑTÉ§=³§ö¡û+š‡s¶—oÓ’³_ã!Ùv¡I\uñ–®’ø~½‘:ı‘o»³4g²?ÆÙ§ıú ÿùqÿİ¼ì+Ô¶Â=‚s.A)™4:uZŠ¯Õ}Ã‰F&y'sa±NB«¾ë´c_Âp¢‘Wè+øø5©Ôiİw™vèËN42)	ê–X¬“Ğªï:íØ—0œhx¢‡-m¤Ò©Óºï2íĞ—1œhdR+„äY¬“Ğªï:íØ—0œhxÓ§È-:­û.Ó}Ã‰F¶"ç!Ù$Uê´ê»N;î¿„áD#“­‚<¹Âêİw‘ô®kÉButø¸Á:Q(ô-›Ùãd8âVJ']û!t°Ñ oÛü›ãdrÂı×íÍ/(Ê­`endstream
+xœµ•MNÄ0F÷9EN`š¿&¹¬€# ‚É±àú4ƒíŒÓ,FUç³Ş¼|UGÉ—İÀÙ­ğşÒÌİS¶oßçöÓxH¶_Í¤
+®ºxMNt¿\I™şÈ×CZº4ÙŸC|\¼ÀƒÂïæ™zß"m¡ oÎ%(%£F¦A÷æU_;õ%¬-4<É™‰ebZôÕÓÎ}k¿B_Áç@¯I¤AË¾jÚ©/am¡áIIP÷Db™˜}õ´s_ÄÚBC“=ìiG•Lƒ–}Õ´S_ÂÚBÃ“Z!$Ob™˜}õ´s_ÄÚBC“˜vØ"ıµd´ì«¦úÖŞŠœ‡x“iĞ¢¯vŞkOö
+üä20+w_%éM×’!…êğğq1‚x¢`[6±çÉ8ãª¶tÑuB'Æ¶M¿9O'Ü-ĞŸáÑü/.­9endstream
 endobj
 6 0 obj
-334
+330
 endobj
 4 0 obj
 <</Type/Page/MediaBox [0 0 14.67 57.19]
@@ -33,19 +35,19 @@ endobj
 7 0 obj
 <</Type/ExtGState
 /AIS false
-/CA 0.1
-/ca 0.1
-/OPM 1>>endobj
+/CA 0.2
+/ca 0.2>>endobj
 8 0 obj
 <</Type/ExtGState
 /AIS false
 /CA 1
-/ca 1>>endobj
+/ca 1
+/SA false>>endobj
 9 0 obj
 <</Type/ExtGState
 /AIS false
-/CA 0.1
-/ca 0.1>>endobj
+/CA 1
+/ca 1>>endobj
 10 0 obj
 <</R9
 9 0 R/R8
@@ -54,17 +56,17 @@ endobj
 endobj
 11 0 obj
 <</Type/Metadata
-/Subtype/XML/Length 1344>>stream
+/Subtype/XML/Length 1179>>stream
 <?xpacket begin='ï»¿' id='W5M0MpCehiHzreSzNTczkc9d'?>
 <?adobe-xap-filters esc="CRLF"?>
 <x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
 <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
-<rdf:Description rdf:about='uuid:c2b005c7-7bac-11f7-0000-b41a5af11a34' xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 9.50'/>
-<rdf:Description rdf:about='uuid:c2b005c7-7bac-11f7-0000-b41a5af11a34' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2021-11-12T09:12:00+01:00</xmp:ModifyDate>
-<xmp:CreateDate>2021-11-12T09:12:00+01:00</xmp:CreateDate>
-<xmp:CreatorTool>Asymptote 2.622.62</xmp:CreatorTool></rdf:Description>
-<rdf:Description rdf:about='uuid:c2b005c7-7bac-11f7-0000-b41a5af11a34' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:c2b005c7-7bac-11f7-0000-b41a5af11a34'/>
-<rdf:Description rdf:about='uuid:c2b005c7-7bac-11f7-0000-b41a5af11a34' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>Untitled</rdf:li></rdf:Alt></dc:title></rdf:Description>
+<rdf:Description rdf:about="" xmlns:pdf='http://ns.adobe.com/pdf/1.3/' pdf:Producer='GPL Ghostscript 10.02.1'/>
+<rdf:Description rdf:about="" xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2025-09-02T10:44:21+02:00</xmp:ModifyDate>
+<xmp:CreateDate>2025-09-02T10:44:21+02:00</xmp:CreateDate>
+<xmp:CreatorTool>Asymptote 3.02</xmp:CreatorTool></rdf:Description>
+<rdf:Description rdf:about="" xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:91dff19a-bff5-11fb-0000-f2379be7625f'/>
+<rdf:Description rdf:about="" xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>Untitled</rdf:li></rdf:Alt></dc:title></rdf:Description>
 </rdf:RDF>
 </x:xmpmeta>
                                                                         
@@ -73,28 +75,28 @@ endobj
 endstream
 endobj
 2 0 obj
-<</Producer(GPL Ghostscript 9.50)
-/CreationDate(D:20211112091200+01'00')
-/ModDate(D:20211112091200+01'00')
-/Creator(Asymptote 2.622.62)>>endobj
+<</Producer(GPL Ghostscript 10.02.1)
+/CreationDate(D:20250902104421+02'00')
+/ModDate(D:20250902104421+02'00')
+/Creator(Asymptote 3.02)>>endobj
 xref
 0 12
 0000000000 65535 f 
-0000000950 00000 n 
-0000002670 00000 n 
-0000000891 00000 n 
-0000000755 00000 n 
-0000000332 00000 n 
-0000000736 00000 n 
-0000001015 00000 n 
-0000001083 00000 n 
-0000001140 00000 n 
-0000001201 00000 n 
-0000001249 00000 n 
+0000001010 00000 n 
+0000002564 00000 n 
+0000000951 00000 n 
+0000000815 00000 n 
+0000000396 00000 n 
+0000000796 00000 n 
+0000001075 00000 n 
+0000001136 00000 n 
+0000001203 00000 n 
+0000001260 00000 n 
+0000001308 00000 n 
 trailer
 << /Size 12 /Root 1 0 R /Info 2 0 R
-/ID [<F99E207FF81EB5322112EE7CFD5EB6AA><F99E207FF81EB5322112EE7CFD5EB6AA>]
+/ID [<0B13AAF1F09AC0BB6F2197C774C2B1D9><0B13AAF1F09AC0BB6F2197C774C2B1D9>]
 >>
 startxref
-2822
+2715
 %%EOF

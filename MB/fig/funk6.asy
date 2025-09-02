@@ -7,7 +7,7 @@ real f(real x){return x+1;}
 real a = -2;
 real b = 3.5;
 xaks(a, b,l="$x$",aex=1.10,tck=false, tc=1);
-yaks(f(a), f(b), l="$y$", bex=1.1, tck=false, tc=1);
+yaks(f(a), f(b), l="$f$", bex=1.1, tck=false, tc=1);
 
 real x1 = 1.5;
 real x2 = 3;

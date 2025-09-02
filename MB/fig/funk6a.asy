@@ -9,7 +9,7 @@ real f(real x){return x/3+bb;}
 real a = -1;
 real b = 3.5;
 xaks(a, b,l="$x$",aex=1.10,tck=false, tc=1);
-yaks(-1, f(b), l="$y$", bex=1.15, tck=false, tc=1);
+yaks(-1, f(b), l="$f$", bex=1.15, tck=false, tc=1);
 
 draw((a,f(a))--(b,f(b)),blue);
 

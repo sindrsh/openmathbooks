@@ -10,8 +10,8 @@ int b = 6;
 mkgrid((a,b),(-3,5));
 
 
-label("$f(x)$",(b,f(b)),E,blue);
-label("$g(x)$",(b,g(b)),E,red);
+label("$f$",(b,f(b)),E,blue);
+label("$g$",(b,g(b)),E,red);
 
 pair A = (0,f(0));
 pair B = (1,f(1));
