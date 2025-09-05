@@ -13,7 +13,7 @@ pair O = (0,0);
 real u = pi/n;
 path s = graph(f, v+u, v-u, operator..);
 path p = O--s--O--cycle;
-pen pn = deepgreen+opacity(0.3);
+pen pn = arpeng;
 
 for (int i=0; i <= n-1; ++i){
 	if (i%2 == 0){ filldraw(shift((i*cos(v-u),0))*p, pn, black+0.2pt); }

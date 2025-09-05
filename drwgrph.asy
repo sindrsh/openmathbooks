@@ -1,5 +1,5 @@
 import graph;
-
+import "/home/sindre/openmathbooks/inh" as inher;
 // Postscripts
 
 void mktcy(real y, string nm="", position pos=EndPoint, real x=0){

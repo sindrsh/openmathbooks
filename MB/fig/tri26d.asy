@@ -1,13 +1,6 @@
 import "../../inh" as inh;
 unitsize(0.15cm);
 
-pen arpenp = purple+opacity(0.3);
-pen arpen = Cyan+opacity(0.4);
-pen arpeno = orange+opacity(0.5);
-pen arpenr = red+opacity(0.5);
-pen arpenc = Cyan+opacity(0.2);
-pen arpeng = cmyk(green)+opacity(0.2);
-
 real a = 8;
 real b = 15;
 pair o = (0,0);

@@ -14,7 +14,7 @@ pair D = (0,0);
 
 mksq2((a,0),B);
 
-fill(D--B--C--cycle, blue+opacity(0.15));
+fill(D--B--C--cycle, arpen);
 
 draw(D--B--C--cycle);
 draw(B--(a,0)--C, dotted);

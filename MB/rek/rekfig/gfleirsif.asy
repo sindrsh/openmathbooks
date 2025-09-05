@@ -22,7 +22,7 @@ label(sh*(x,y-2dy),"${\phantom{0}9}\cdot30$",align=W);
 label(sh*(x+dx,y-2dy),"$=\phantom{0}270$",align=E);
 
 draw(sh*(x-1.5dx,y-2.5dy)--sh*(0.9+x,y-2.5dy));
-label(sh*(x+dx,y-3dy),"$\color{blue}\phantom{=}\;8370$",align=E);
+label(sh*(x+dx,y-3dy),"$\phantom{=}\;8370$",blue,align=E);
 
 
 transform sh = shift(-0.5,0);
@@ -39,14 +39,14 @@ label(sh*(x,y-2dy),"${\phantom{0}9}\cdot4$",align=W);
 label(sh*(x+dx,y-2dy),"$=\phantom{00}36$",align=E);
 
 draw(sh*(x-1.5dx,y-2.5dy)--sh*(0.9+x,y-2.5dy));
-label(sh*(x+dx,y-3dy),"$\color{blue}\phantom{=}\;1116$",align=E);
+label(sh*(x+dx,y-3dy), "$\phantom{=}\;1116$",blue,align=E);
 
 transform sh = shift(1.5,0);
 
-label(sh*(x+dx,y),"$\color{blue}8370$",align=E);
+label(sh*(x+dx,y),"$8370$",blue,align=E);
 
-label(sh*(x+dx,y-dy),"$\color{blue}1116$",align=E);
+label(sh*(x+dx,y-dy),"$1116$",blue,align=E);
 
 draw(sh*(x+dx,y-1.5dy)--sh*(0.6+x,y-1.5dy));
-label(sh*(x+dx,y-2dy),"$\color{deepgreen}9486$",align=E);
+label(sh*(x+dx,y-2dy),"$9486$",align=E,green);
 

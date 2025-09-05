@@ -16,7 +16,7 @@ for (int i = 0; i < 2; ++i){
 	pen p = p1;
 	if (i==1){p=p10;}
 	if (i==2){p=p100;}
-	filldraw(b, p+opacity(0.1),drawpen=grey+opacity(0.1));	
+	filldraw(b, p,drawpen=grey+opacity(0.1));	
 	}
 
 label("$-$",-((2*(2)+1)*dx,-dy));

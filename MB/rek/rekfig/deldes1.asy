@@ -11,16 +11,16 @@ for (int i = 0; i < 8; ++i){
 
 path l = (0,0)--(2dx,0);
 
-label("\color{blue}1",sh*(-dx,0));
-label("\color{blue}1",sh*(dx,0));
-label("$\color{blue}:$",sh*(3dx,0));
-label("\color{blue}4",sh*(5dx,0));
-label("$\color{blue}=$",sh*(7dx,-0.025));
+label("1",sh*(-dx,0));
+label("1",sh*(dx,0));
+label("$:$",sh*(3dx,0));
+label("4",sh*(5dx,0));
+label("$=$",sh*(7dx,-0.025));
 
-label("\color{blue}2",sh*(9dx,0));
-label("\color{blue},",sh*(10dx,-0.2));
-label("\color{blue}7",sh*(11dx,0));
-label("\color{blue}5",sh*(13dx,0));
+label("2",sh*(9dx,0));
+label(",",sh*(10dx,-0.2));
+label("7",sh*(11dx,0));
+label("5",sh*(13dx,0));
 
 label("\color{red}8",sh*(dx,dy));
 
@@ -32,8 +32,8 @@ label("3",sh*(dx,2dy));
 label("0",sh*(3dx,2dy));
 
 
-label("\color{red}2",sh*(dx,3dy));
-label("\color{red}8",sh*(3dx,3dy));
+label("2",sh*(dx,3dy), red);
+label("8",sh*(3dx,3dy), red);
 
 
 
@@ -42,8 +42,8 @@ draw(sh*shift(0,3.5dy)*scale(2)*l);
 label("2",sh*(3dx,4dy));
 label("0",sh*(5dx,4dy));
 
-label("\color{red}2",sh*(3dx,5dy));
-label("\color{red}0",sh*(5dx,5dy));
+label("2",sh*(3dx,5dy), red);
+label("0",sh*(5dx,5dy), red);
 
 draw(sh*shift(2dx,5.5dy)*scale(2)*l);
 label("0",sh*(5dx,6dy));

@@ -1,5 +1,5 @@
 import "../../inh" as inh;
-unitsize(2cm);
+unitsize(1.5cm);
 import geo0;
 
 

@@ -15,8 +15,8 @@ draw(rotate(v)*p);
 draw(A--C, L="$3$",align=W);
 draw(A--B, L="$5$",align=S);
 
-filldraw(C--D--B--cycle,deepgreen+opacity(0.4));
-filldraw(p,blue+opacity(0.15));
+filldraw(C--D--B--cycle,arpeng);
+filldraw(p,arpen);
 mksq2(A,C);
 mksq2(D,B);
 

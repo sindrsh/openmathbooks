@@ -16,7 +16,7 @@ draw(A--B, L="grunnlinje",align=S);
 
 mksq2(A,C);
 
-filldraw(p,blue+opacity(0.15));
+filldraw(p,blue+opacity(0.6));
 
 
 

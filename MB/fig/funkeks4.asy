@@ -1,5 +1,5 @@
-import "inh" as inh;
-import "drwgrph" as grph;
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 size(6 cm, 7 cm, keepAspect=false);
 defaultpen(fontsize(8pt));
 

@@ -17,17 +17,17 @@ I \textsl{Del I} av boka har vi sett på regning med konkrete tal, likevel er de
 \reg[\adkom\;(\ref{adkom}) \label{adkomalg}]{
 \[ a+ b =b+a \]
 }
-\eks{ \vsb
+\eks{ \vs
 \[ 7+ 5=5+7 \]
 } \vsk \vsk
 \newpage
 \reg[\gangkom\;(\ref{gangkom})]{
 	\[ a\cdot b =b\cdot a \]
 }
-\eks[1]{ \vsb
+\eks[1]{ \vs
 	\[ 9\cdot 8=8\cdot9 \]
 }
-\eks[2]{ \vsb
+\eks[2]{ \vs
 \[  8\cdot a= a\cdot 8  \]
 }
 
@@ -68,11 +68,8 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \eks[1]{ \vs
 \[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
 }
-\eks[2]{ \vsb \vs
-\alg{
-\frac{a}{13}:\frac{b}{3}&=\frac{a}{13}\cdot \frac{3}{b} \br
-&=\frac{3a}{13b}
-}
+\eks[2]{ \vs
+\[ \frac{a}{13}:\frac{b}{3}=\frac{a}{13}\cdot \frac{3}{b} =\frac{3a}{13b} \]
 }
 \newpage
 
@@ -89,17 +86,11 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \reg[\gangmnegto\;(\ref{gangmnegto})]{
 \[ a\cdot(-b)=-(a\cdot b) \]
 }
-\eks[1]{ \vsb \vs
-\alg{
-3\cdot(-4)&=-(3\cdot 4) \\
-&= 	-12
+\eks[1]{ \vs
+\[ 3\cdot(-4)=-(3\cdot 4) = 	-12 \]
 }
-}
-\eks[2]{ \vsb
-	\algv{
-	(-a)\cdot7&=-(a\cdot 7)\\
-	&=-7a 
-}
+\eks[2]{ \vs
+\[ (-a)\cdot7=-(a\cdot 7)=-7a \]
 }
 \newpage
 
@@ -107,10 +98,7 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \[ (-a)\cdot(-b)=a\cdot b \]
 }
 \eks[1]{ \vs
-\alg{
-(-2)\cdot(-8)&=2\cdot 8 \\
-&= 	16
-}	
+\[ (-2)\cdot(-8)=2\cdot 8 = 16 \]	
 }
 \eks[2]{ \vs 
 \[ (-a)\cdot(-15)=15a \]
@@ -169,7 +157,7 @@ Altså er
 }
 
 \section{\pot \label{Potensar}}
-\fig{pot}
+\fig{pot} \vs
 En potens består av et \outl{grunntall}\index{grunntall} og en \outl{eksponent}\index{eksponent}. For eksempel er $2^{3}$ en potens med grunntall 2 og
 eksponent 3. En positiv, heltalls eksponent sier hvor mange eksemplar
 av grunntallet som skal ganges sammen, altså er
@@ -181,22 +169,16 @@ av grunntallet som skal ganges sammen, altså er
 	
 	Hvis $ n $ er et naturlig tall, vil $ a^n $ svare til $ n $ eksemplar av $ a $\\ multiplisert med hverandre.
 }
-\eks[1]{\vs \vs
-	\algv{
-		5^3 &= 5\cdot5\cdot5 \\
-		&= 125
-	}
+\eks[1]{\vs
+	\[ 5^3 = 5\cdot5\cdot5 = 125 \]
 }
-\eks[2]{\vs \vs
+\eks[2]{\vs 
 	\[ c^4 = c\cdot c \cdot c \cdot c \]
 }
-\eks[3]{ \vs \vs
-	\algv{
-		(-7)^2 &= (-7)\cdot(-7) \\
-		&= 49
-	}
+\eks[3]{ \vs
+	\[ (-7)^2 = (-7)\cdot(-7) = 49 \]
 } 
-\eks[4]{\vs \vs
+\eks[4]{\vs 
 	\[ a^1=a \]
 }
 \spr{
@@ -212,23 +194,20 @@ av grunntallet som skal ganges sammen, altså er
 \newpage
 \info{Merk}{
 	De kommende sidene vil inneholde regler for potenser med tilhørende forklaringer. Selv om det er ønskelig at de har en så generell form som mulig, har vi i forklaringene valgt å bruke eksempel der eksponentene ikke er variabler. Å bruke variabler som eksponenter ville gitt mye mindre leservennlige uttrykk, og vi vil påstå at de generelle tilfellene kommer godt til synes også ved å studere konkrete tilfeller. 
-} \vsk \vsk
+} \vsk 
 
 \reg[\potgang \label{potgang}]{
 	\begin{equation}
 		a^{m}\cdot a^{n}=a^{m+n}	
 	\end{equation}
 }
-\eks[1]{\vs \vs
-	\algv{3^{5}\cdot3^{2}&=3^{5+2}\\&=3^{7}}
+\eks[1]{\vs 
+	\[ 3^{5}\cdot3^{2}=3^{5+2}=3^{7} \]
 }
-\eks[2]{\vs \vs
-	\algv{
-		b^4\cdot b^{11}&= b^{3+11}\\
-		&=b^{14}
-	}
+\eks[2]{\vs
+	\[ b^4\cdot b^{11}= b^{3+11}=b^{14} \]
 }
-\eks[3]{ \vs \vs
+\eks[3]{ \vs 
 	\algv{
 		a^5\cdot a^{-7} &= a^{5+(-7)} \\
 		&=a^{5-7} \\
@@ -246,20 +225,17 @@ av grunntallet som skal ganges sammen, altså er
 		a^{3} & =a\cdot a\cdot a
 	}
 	Med andre ord kan vi skrive 
-	\begin{align*}
-		a^{2}\cdot a^{3} & =\overbrace{a \cdot a}^{a^{2}}\cdot\overbrace{a\cdot a\cdot a}^{a^{3}}\\
-		& =a^{5}
-	\end{align*}
+	\[ a^{2}\cdot a^{3} =\overbrace{a \cdot a}^{a^{2}}\cdot\overbrace{a\cdot a\cdot a}^{a^{3}} =a^{5} \]
 }
 \reg[\potdivpot \label{potdivpot}]{
 	\[ \frac{a^{m}}{a^{n}}=a^{m-n} \] }
 
-\eks[1]{\vspace{-20 pt}
+\eks[1]{\vs
 	\[
 	\frac{3^{5}}{3^{2}}=3^{5-2}=3^{3}
 	\]
 } 
-\eks[2]{ \vs \vsb
+\eks[2]{ \vs
 	\alg{
 		\frac{2^{4}\cdot a^{7}}{a^{6}\cdot2^{2}}&=2^{4-2}\cdot a^{7-6}\\
 		&=2^{2}a \\
@@ -280,10 +256,7 @@ av grunntallet som skal ganges sammen, altså er
 		& =a^{3}
 	\end{align*}
 	Dette kunne vi ha skrevet som
-	\begin{align*}
-		\frac{a^{5}}{a^{2}} & =a^{5-2}\\
-		& =a^{3}
-	\end{align*}
+	\[ \frac{a^{5}}{a^{2}} =a^{5-2}=a^{3} \]
 } \vsk \vsk
 
 \reg[\potanull \label{pota0}]{
@@ -330,10 +303,7 @@ av grunntallet som skal ganges sammen, altså er
 		\frac{1}{a^n}=\frac{a^0}{a^n}
 	}
 	Av \rref{potdivpot}  er
-	\algv{
-		\frac{a^0}{a^n}&=a^{0-n} \\
-		&=a^{-n}
-	}
+	\[ \frac{a^0}{a^n}=a^{0-n} =a^{-n} \]
 } \vsk \vsk
 
 
@@ -341,22 +311,16 @@ av grunntallet som skal ganges sammen, altså er
 	\begin{equation}\label{pbrg}
 		\left(\frac{a}{b}\right)^{m}=\frac{a^{m}}{b^{m}}
 \end{equation}} 
-\eks[1]{ \vs \vs
-	\alg{
-		\left(\frac{3}{4}\right)^2=\frac{3^2}{4^2} 
-		=\frac{9}{16}
-	}
+\eks[1]{ \vs
+	\[ \left(\frac{3}{4}\right)^2=\frac{3^2}{4^2} 
+	=\frac{9}{16} \]
 }
-\eks[2]{ \vs \vs
-	\alg{
-		\left(\frac{a}{7}\right)^3=\frac{a^3}{7^3} 
-		=\frac{a^3}{343}
-	}
+\eks[2]{ \vs
+	\[ \left(\frac{a}{7}\right)^3=\frac{a^3}{7^3} 
+	=\frac{a^3}{343} \]
 }
 \fork{\ref{potbr} \potbr}{
-	La oss studere
-	\[ \left(\frac{a}{b}\right)^3 \]
-	Vi har at
+	La oss studere $\left(\frac{a}{b}\right)^3$. Vi har at
 	\begin{align*}
 		\left(\frac{a}{b}\right)^3 	&=\frac{a}{b}\cdot \frac{a}{b}\cdot \frac{a}{b}\br
 		& =\frac{a\cdot a\cdot a}{b\cdot b\cdot b}\br
@@ -369,16 +333,11 @@ av grunntallet som skal ganges sammen, altså er
 		\left(ab\right)^{m}=a^{m}b^{m}
 	\end{equation}
 }
-\eks[1]{ \vs \vs \vs
-	\alg{
-		(3a)^5&=3^5a^5 \\
-		&=243a^5 
-	}	
+\eks[1]{ \vs 
+	\[ (3a)^5=3^5a^5=243a^5 \]
 }
-\eks[2]{\vs\vs
-	\[
-	(ab)^{4}=a^{4}b^{4}
-	\]
+\eks[2]{\vs
+	\[ (ab)^{4}=a^{4}b^{4} \]
 }
 \fork{\ref{faktgr} \faktgr}{
 	La oss
@@ -395,17 +354,11 @@ av grunntallet som skal ganges sammen, altså er
 	\begin{equation}
 		\left(a^{m}\right)^{n}=a^{m\cdot n}
 \end{equation}}
-\eks[1]{ \vs \vs
-	\alg{
-		\left(c^4\right)^5&=c^{4\cdot5}\\
-		&=c^{20}	
-	}	
+\eks[1]{ \vs
+	\[ \left(c^4\right)^5=c^{4\cdot5}=c^{20} \]
 }
 \eks[2]{ \vs \vs 
-	\alg{
-		\left(3^\frac{5}{4}\right)^8&=3^{\frac{5}{4}\cdot8} \\
-		&=3^{10}
-	}	
+	\[ \left(3^\frac{5}{4}\right)^8=3^{\frac{5}{4}\cdot8}=3^{10} \]	
 }
 \fork{\ref{potsomgrunn} \potsomgrunn}{
 	La oss bruke $\left(a^{3}\right)^{4}$ som eksempel. Vi har at
@@ -423,17 +376,14 @@ av grunntallet som skal ganges sammen, altså er
 }
 
 \newpage
-\reg[\textit{n}-rot]{ \vs
+\reg[\textit{n}-rot]{ 
 	\[ a^\frac{1}{n}=\sqrt[n]{a} \]
 	Symbolet \sym{$ \sqrt{\phantom{a}} $} kalles et \outl{rottegn}\index{rottegn}. For eksponenten $ \frac{1}{2} $ er det vanlig å utelate 2 i rottegnet:
 	\[ a^\frac{1}{2}=\sqrt{a} \]
 }
 \eks{
 	Av \rref{potsomgrunn} har vi at
-	\alg{
-		\left(a^b\right)^\frac{1}{b}&=a^{b\cdot \frac{1}{b}} \\
-		&=a	
-	}
+	\[ \left(a^b\right)^\frac{1}{b}=a^{b\cdot \frac{1}{b}} =a \]
 	For eksempel er	
 	\algv{
 		9^\frac{1}{2}=\sqrt{9}=3 &\text{, siden } 3^2 =9 \vn

@@ -10,7 +10,7 @@ pair B = (a,0);
 pair D = (3,h);
 pair C = (D.x+b,h);
 
-filldraw(A--B--C--D--cycle,arpenr);
+filldraw(A--B--C--D--cycle, arpenr);
 
 label((string) b, (D+(1/2*(C.x-D.x),0)), align=N);
 label((string) a, (a/2,0), align=S);

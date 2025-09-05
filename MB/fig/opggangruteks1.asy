@@ -1,6 +1,6 @@
 import figs as figs;
 settings.outformat="pdf";
-defaultpen(fontsize(9 pt));
+import "../../inhopg" as inh;
 
 unitsize(0.5 cm);
 

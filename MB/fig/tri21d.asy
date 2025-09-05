@@ -12,8 +12,8 @@ pair C = (-0.5+b,h);
 draw(A--B--C--D--cycle);
 draw(A--C);
 
-fill(A--B--C--cycle, blue+opacity(0.3));
-fill(A--C--D--cycle, deepgreen+opacity(0.3));
+fill(A--B--C--cycle, arpen);
+fill(A--C--D--cycle, arpeng);
 
 label("$b$", (b/2,h), align=N);
 label("$a$", (b/2,0), align=S);

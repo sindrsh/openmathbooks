@@ -3,10 +3,10 @@ import figs;
 unitsize(0.5 cm);
 
 path b = box((0,0),(1,10));
-db(1,10,sh=(-8,0),p=green,p1=green, opac=0.2);
-db(1,10,sh=(-7,0),p=green,p1=green, opac=0.2);
-db(1,10,sh=(-6,0),p=green,p1=green, opac=0.2);
-db(1,10,sh=(-5,0),p=green,p1=green, opac=0.2);
+db(1,10,sh=(-8,0),p=green,p1=black, opac=0.2);
+db(1,10,sh=(-7,0),p=green,p1=black, opac=0.2);
+db(1,10,sh=(-6,0),p=green,p1=black, opac=0.2);
+db(1,10,sh=(-5,0),p=green,p1=black, opac=0.2);
 
 db(1,7, sh=(-3.5,0), l=false);
 

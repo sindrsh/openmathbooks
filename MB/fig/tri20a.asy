@@ -10,11 +10,11 @@ pair B = (a,0);
 pair C = (3,h);
 pair D = (C.x,0);
 
-filldraw(A--C--(0,h)--cycle, orange+opacity(0.6));
-filldraw(C--(a,h)--B--cycle, deepgreen+opacity(0.4));
+filldraw(A--C--(0,h)--cycle, arpeno);
+filldraw(C--(a,h)--B--cycle, arpeng);
 
-fill(C--D--B--cycle, yellow+opacity(0.2));
-fill(A--D--C--cycle, red+opacity(0.5));
+fill(C--D--B--cycle, arpeny);
+fill(A--D--C--cycle, arpenr);
 
 draw(D--C,dotted);
 draw(A--B);

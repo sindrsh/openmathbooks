@@ -38,7 +38,7 @@ void ad(int k, int m, int n=0, int p=0){
 	pen p = p1;
 	if (i==1){p=p10;}
 	if (i==2){p=p100;}
-	filldraw(b, p+opacity(0.1),drawpen=grey+opacity(0.1));	
+	filldraw(b, p,drawpen=grey+opacity(0.1));	
 	}
 
 	draw(((-2*(s3.length)-2)*dx,1.5dy)--(0,1.5dy));

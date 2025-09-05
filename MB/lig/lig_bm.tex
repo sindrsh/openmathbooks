@@ -18,12 +18,6 @@ De matematiske operasjonene vi har presentert i denne boka er de fire reknearten
 \st{Vi kan alltid legge til, trekke ifra, gange eller dele med et tall på den ene siden av likhetstegnet, så lenge vi gjør det også på den andre siden.}\regv
 Prinsippet følger av betydningen til \sym{$=$}. Når to uttrykk har samme verdi, må de nødvendigvis fortsette å ha lik verdi, så lenge vi utfører de samme matematiske operasjonane på dem. I kommende seksjon skal vi likevel konkretisere dette prinsippet for hver enkelt rekneoperasjon, men hvis du føler dette allerede gir god mening kan du hoppe til \hrs{ligsaml}{seksjon}.
 \section{\liglos \label{likloysfire}}
-\textit{I figurene til denne seksjonen skal vi forstå likninger ut ifra et vektprinsipp. \sym{$=$} vil da indikere\footnote{\sym{$\neq$} er symbolet for ''er \textsl{ikke} lik''.} at det er like mye vekt (lik verdi) på venstre side som på høyre side.} \vspace{-5pt}
-\begin{figure}
-	\centering
-	\includegraphics[]{\figp{lig}}\qquad
-	\includegraphics[]{\figp{lig1}}
-\end{figure}
 \subsection*{Addisjon og subtraksjon; tall som skifter side}
 \subsubsection*{Første eksempel}
 Vi har allerede funnet løsningen på denne likningen, men la oss løse den på en annen måte\footnote{\textsl{Merk:} I tidligere figurer har det vært samsvar mellom størrelsen på rutene og tallverdien til tallet de symboliserer. Dette gjelder ikke rutene som representerer $ x $.}: \vspace{-3pt}
@@ -43,32 +37,32 @@ Dette kunne vi ha skrevet noe mer kortfattet slik:
 		x&= 7-4 \\
 		x &= 3
 }}
-\prbxr{0.5}{Mellom første og andre linje er det vanlig å si at \textsl{4 har skiftet side, og derfor også fortegn (fra $ + $ til $ - $).}}
+\prbxr{0.5}{Mellom første og andre linje er det vanlig å si at \textsl{4 har skiftet side, og derfor også fortegn (fra \sym{$ + $} til \sym{$ - $}).}}
 \textbf{Andre eksempel}\os
 La oss gå videre til å se på en litt vanskeligere likning:
 \[ 4x-2=3x+5 \]
 For å skaffe et uttrykk med $ x $ bare på én side, tar vi vekk $ 3x $ på begge sider:
-\[ 4x-2-{\color{red}3x}=3x+5-{\color{red}3x} \]
+\[ 4x-2-\colr{3x}=3x+5-\colr{3x} \]
 
 Da får vi at
 \[ x-2=5 \]
 For å isolere $ x $, legger vi til 2 på venstre side. Da må vi også legge til $ 2 $ på høyre side:
-\[ x-2+{\color{blue}2}=5+{\color{blue}2} \]
+\[ x-2+\coln{2}=5+\coln{2} \]
 Da får vi at
 \[ x=7 \]
 \fig{lig7}
 Stegene vi har tatt kan oppsummeres slik:
 \begin{flalign*}
 && 4x-2&=3x+5 && \llap{1. figur} \\
-&& 4x-{\color{red}3x}-2&=3x-{\color{red}3x}+5 &&  \llap{2. figur} \\
+&& 4x-\colr{3x}-2&=3x-\colr{3x}+5 &&  \llap{2. figur} \\
 && x -2 &= 5 &&\llap{3. figur}\\
-&& x-2+\color{blue}2&=  5+\color{blue}2 &&\llap{4. figur}\\
+&& x-2+\coln{2}&=  5+\coln2 &&\llap{4. figur}\\
 && x &= 7 &&\llap{5. figur}
 \end{flalign*}
 Dette kan vi på en forenklet måte skrive slik:
 \alg{
 4x-2&=3x+5 \\
-4x-{\color{red}3x}&=5+\color{blue}2\\
+4x-{\color{red}3x}&=5+\coln{2}\\
 x &= 7
 }
 
@@ -77,15 +71,15 @@ x &= 7
 \eks[1]{Løs likningen
 \[ 3x+5 =2x+9 \]
 \sv	
-	 \vs \vs \vs \vs
+	 \vs \vsb
 	\begin{align*}
 	3x-2x &=9-5 \\
 	x &=4
-	\end{align*}  \vspace{-20pt}}
+	\end{align*}  }
 \eks[2]{Løs likningen
 \[ -4x-3 =-5x+12 \\ \]	
 \sv
-	 \vs \vs \vs \vs
+	 \vsb \vs
 	\begin{align*}
 	-4x+5x &=12+3 \\
 	x &=15
@@ -114,7 +108,7 @@ La oss oppsummere utregningen vår:\\
 \reg[Deling på begge sider av en likning \label{ligdel}]{Vi kan dele begge sider av en likning med det samme tallet.}
 \eks[1]{ Løs likningen\vspace{-3pt}
 	\[ 	4x = 20  \]
-	\sv \vs \vs \vsb
+	\sv \vs \vsb
 	\begin{align*}
 	\frac{\cancel{4}x}{\cancel{4}}&=\frac{20}{4} \\
 	x &=5
@@ -124,7 +118,7 @@ La oss oppsummere utregningen vår:\\
 	
 \eks[2]{Løs likningen \vspace{-3pt}
 	\[2x+6 =3x-2 \]
-\sv \vs \vs \vs \vs
+\sv \vs \vs
 	\begin{flalign*}
 	&& 2x-3x &= -2-6 &&\\
 	&&-x &= -8&& \\
@@ -167,8 +161,7 @@ Vi kan gange begge sider av en likning med det samme tallet.
 \eks[1]{
 Løs likningen
 \[ \frac{x}{5}=2 \]
-\sv \vsb \vs
-
+\sv \vs
 \algv{
 \frac{x}{\cancel{5}}\cdot\cancel{5}&=2\cdot5 \\
 x &= 10
@@ -177,7 +170,7 @@ x &= 10
 \eks[2]{
 Løs likningen 
 \[ \frac{7x}{10}-5=13+\frac{x}{10} \]
-\sv \vsb \vs
+\sv \vs 
 
 \algv{
 \frac{7x}{10}-\frac{x}{10}&=13+5\br
@@ -202,7 +195,7 @@ Dette er ekvivalent til å flytte et ledd fra den ene siden av likningen til den
 Løs likningen 
 \[ 3x-4=6+2x \]
 
-\sv \vs \vs
+\sv \vs
 
 \algv{
 3x-2x&=6+4 \\
@@ -212,7 +205,7 @@ x&=10
 \eks[2]{
 Løs likningen
 \[ 9-7x=-8x+3 \]
-\sv \vs \vs
+\sv \vs
 \algv{
   8x-7x&=3-9 \\
   x&=-6
@@ -222,7 +215,7 @@ Løs likningen
 \eks[3]{
 	Løs likningen
 	\[ 10x-20=7x-5 \]
-	\sv \vs \vs
+	\sv \vsb
 	\algv{
 		10x-7x&=20-5 \\
 		3x&=15 \\
@@ -234,7 +227,7 @@ Løs likningen
 Løs likningen
 \[ 15-4x=x+5 \]
 
-\sv \vs \vsb
+\sv \vsb
 \alg{
 15-5&=x+4x \\
 10&=5x\\
@@ -248,7 +241,7 @@ Løs likningen
 Løs likningen
 \[ \frac{4x}{9}-20=8-\frac{3x}{9} \]
 
-\sv \vs \vsb
+\sv \vs
 \alg{
 \frac{4x}{9}+\frac{3x}{9}&=20+8 \\
 \frac{\cancel{7}x}{9\cdot \cancel{7}}&=\frac{28}{7} \br
@@ -317,10 +310,11 @@ Nå legger vi merke til dette: \textsl{Prinsippet erklært på side \pageref{pri
 	Likningen har $ a $ forskjellige løsninger.
 } 
 \newpage
+\spr{I de to kommende eksemplene skal vi bruke symbolet \sym{$\vee$}, som betyr ''eller''.}
 \eks[1]{
 	Løs likningen
 	\[ x^2+5= 21\]
-	\sv \vs \vs \vs
+	\sv \vs
 	\algv{
 		x^2+5&= 21\\
 		x^2 &= 21-5\\
@@ -332,7 +326,7 @@ Nå legger vi merke til dette: \textsl{Prinsippet erklært på side \pageref{pri
 \eks[2]{
 	Løs likningen
 	\[ 3x^2+1=7 \]
-	\sv \vs \vs \vs
+	\sv \vs
 	\alg{
 		3x^2&=7-1 \\
 		3x^2&=6 \\
@@ -372,13 +366,13 @@ For tall med same fortegn, er det tallet med størst\\ absoluttverdi som er stø
 
 0 er større enn ethvert negativt tal og mindre enn ethvert positivt tal.	
 }
-\eks[1]{ \vsb
+\eks[1]{ \vs
 	\[ 9>8 \]
 }
-\eks[2]{ \vsb
+\eks[2]{ \vs
 	\[ -9<-8 \]
 }
-\eks[3]{ \vsb
+\eks[3]{ \vs
 	\[ -7<1 \]
 }
 \newpage
@@ -407,10 +401,10 @@ For tall med same fortegn, er det tallet med størst\\ absoluttverdi som er stø
 \subsection{Løsing av ulikheter}
 Vi kan løse ulikheter ved å bruke metodene fra \rref{lsmlig}, men med ett unntak; \textsl{om vi ganger eller deler med negative tall, skifter ulikheten symbol}. For å forklare kva som skjer, la oss bruke den enkle ulikheten 
 \[ 9>8 \]
-Om vi ganger begge sider av ulikheten med $ -1 $, får vi $ -9 $ på venstre side og $ -8 $ på høgre side. Men $ {-9 < -8}$. Symbolet fra vår opprinnelege ulikhet har altså endret seg fra \sym{>} til \sym{<}. \regv
+Om vi ganger begge sider av ulikheten med $ -1 $, får vi $ -9 $ på venstre side og $ -8 $ på høgre side. Men $ {-9 < -8}$. Symbolet fra vår opprinnelege ulikhet har altså endret seg fra \sym{$>$} til \sym{$<$}. \regv
 
 \reg[Løsing av ulikheter]{
-	Ulikheter kan løses på same måte som likninger, men med ett unntak: Hvis man ganger eller deler begge sider av en ulikhet med et negativt tal, vil $ \sym{>} $ endre seg til $ \sym{<} $, og omvendt.
+	Ulikheter kan løses på same måte som likninger, men med ett unntak: Hvis man ganger eller deler begge sider av en ulikhet med et negativt tal, vil $ \sym{$>$} $ endre seg til $ \sym{$<$} $, og omvendt.
 }
 \eks[1]{
 	Løs ulikheten
@@ -471,7 +465,7 @@ Hvis vi har to eller flere tall ukjente tall er det som regel slik at \regv
 		\item er det to ukjente, trengs minst to likninger for å finne løsninger med bestemt verdi.
 		\item er det tre ukjente, trengs minst tre likninger for å finne løsninger med bestemt verdi.
 \end{itemize}}
-Og slik fortsetter det. Likningene som gir oss den nødvendige informasjonen om de ukjente, kalles et \outl{likningssett}. I denne boka skal vi konsentrere oss om \textsl{lineære likninger med to ukjente}, som betyr at likningssettet består av uttrykk for lineære funksjoner\footnote{Se \refkap{Funksjoner}.}. For å løse likningssettene skal vi anvende følgende to metoder:\regv
+Og slik fortsetter det. Likningene som gir oss den nødvendige informasjonen om de ukjente, kalles et \outl{likningssett} eller et \outl{ligningssystem}. I denne boka skal vi konsentrere oss om \textsl{lineære likninger med to ukjente}, som betyr at likningssettet består av uttrykk for lineære funksjoner\footnote{Se \refkap{Funksjoner}.}. For å løse likningssettene skal vi anvende følgende to metoder:\regv
 
 \regdef[Innsettingsmetoden]{
 	Et lineært likningssett bestående av to likninger med to ukjente, $ x $ og $ y $, kan løses ved å 
@@ -572,6 +566,7 @@ Vi setter løsningen for $ y $ inn i uttrykket for $ x $:
 \[ x=2y-5=2\cdot 3-5=1 \]
 Altså er $ x=1 $ og $ y=3 $.
 }
+
 \newpage
 \begin{comment}
 \eks[3]{

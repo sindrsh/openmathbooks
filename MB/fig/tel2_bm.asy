@@ -5,7 +5,7 @@ unitsize(0.5 cm);
 db(I=3,J=5, m=2, n=4, sh=(-7.5,0), l=false);
 sym("$=$",-4);
 
-db(J=10,l=false, sh=(-3.5,0), p=green, p1=green);
+db(J=10,l=false, sh=(-3.5,0), p=green, p1=black);
 db(J=4,l=false, sh=(-2,0));
 sym("$=$",-0.5);
 

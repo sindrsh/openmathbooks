@@ -1,5 +1,5 @@
-import "inh" as inh;
-import "drwgrph" as grph;
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 size(10 cm, 16 cm, keepAspect=false);
 
 real f(real x){return 4*x+3;}

@@ -10,7 +10,7 @@ Tri t = mktri(3,4.5,7);
 draw(O--t.B--t.C--t.A);
 label(O,"$A$",S);
 label(t.B,"$B$",S);
-label(t.C,"$B$",N);
+label(t.C,"$C$",N);
 mksq2((t.C.x,0), O, sc=0.7);
 draw((t.C.x,0)--t.C,dotted,L="$h_1$");
 

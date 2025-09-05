@@ -86,6 +86,26 @@ En vinkel som er større enn $ 90^\circ $ kalles en \outl{butt/stump vinkel}\ind
 	}	
 	Dette må bety at $ {\angle BOC = \angle AOD} $. Tilsvarende er $ {\angle COA=\angle DOB} $.	
 }
+\reg[\corra \label{corra}\index{vinkel!samsvarende}]{
+Vinkler med forskjellige toppunkt og et høyre vinkelbein felles eller et venstre vinkelbein felles, kalles \outl{samsvarende vinkler}. \os
+
+Samsvarende vinkler med parallelle vinkelbein er like store.
+}
+\eks[1]{
+I figuren under er $\angle BGC$, $\angle AGD$ og $\angle FHC$ samsvarende vinkler fordi alle har $DC$ som venstre vinkelbein. I tillegg er $\angle BGC=\angle AGD$.
+\fig{corraa}
+}
+\eks[2]{
+I figuren under er ${\angle BGC=\angle AGD=\angle FHC}$ fordi de er samsvarende vinkler med parvis parallelle vinkelbein.
+\fig{corrab}
+}
+\fork{(\ref{corra}) \corra}{
+Gitt tre samsvarende vinkler $\angle BGC$, $\angle AGD$ og $\angle FHC$ med parvis parallelle vinkelbein, som vist i figuren under.
+\fig{corrab}
+At ${\angle FHC=\angle BGC}$ godtar vi som sant uten noen videre forklaring. ${\angle BGC=\angle AGD}$ fordi de er toppvinkler, og dermed er
+\[ \angle BGC=\angle AGD=\angle FHC \]
+}
+
 
 \begin{comment}
 \reg[Samsvarande vinklar]{
@@ -101,6 +121,8 @@ Når linjestykker danner en lukket form, har vi en \outl{mangekant}\index{mangek
 \fig{kant1}
 Linjestykkene en mangekant består av kalles \outl{kanter}\index{kant} eller \outl{sider}\index{side!i mangekant}. Punktene der kantene møtes kaller vi \outl{hjørner}\index{mangekant!hjørner i}. Trekanten under har altså hjørnene $ A $, $ B $ og $ C $, og sidene (kantene) $ AB $, $ BC $ og $ AC $.
 \fig{kant2}
+En \outl{regulær mangekant} er en mangekant hvor alle sidene er like lange.
+\fig{ngon}
 \info{Merk}{
  Ofte kommer vi til å skrive bare en bokstav for å markere et hjørne i en mangekant.
 \fig{kant2b}
@@ -171,7 +193,7 @@ Da en likesidet trekant har tre sider som er like lange og tre vinkler som er $ 
 }\regv
 \fork{\ref{180} \trisum}{
 	\fig{geo10}	
-	Vi tegner et linjestykke $ FG $ som går gjennom $ C $ og som er parallell med $ AB $. Videre setter vi punktet $ E $ og $ D $ på forlengelsen av henholdsvis $ AC $ og $ BC $. Da er $ {\angle A=\angle GCE} $ og $ {\angle B=\angle DCF} $. $ {\angle ACB=\angle ECD}  $ fordi de er toppvinkler. Vi \\har at
+	Vi tegner et linjestykke $ FG $ som går gjennom $ C $ og som er parallell med $ AB $. Videre setter vi punktet $ E $ og $ D $ på forlengelsen av henholdsvis $ AC $ og $ BC $. Da er $ {\angle BAC=\angle GCE} $ og $ {\angle CBA=\angle DCF} $. $ {\angle ACB=\angle ECD}  $ fordi de er toppvinkler. Vi \\har at
 	\[ \angle DCF+\angle ECD=\angle GCE=180^\circ \]
 	Altså er
 	\[ \angle CBA+\angle ACB+\angle BAC=180^\circ  \]
@@ -249,17 +271,18 @@ Kvadratet er både en rombe og et rektangel, og ''arver'' derfor egenskapene til
 	Den samlede vinkelsummen i $ \triangle ABD $ og $ \triangle BCD $ utgjør vinkelsummen i $ \square ABCD $. Av \rref{180} vet vi at vinkelsummen i alle trekanter er $ 180^\circ $, altså er vinkelsummen i $ \square ABCD $ lik $ 2\cdot180^\circ=360^\circ $.
 	\fig{kant6a}
 }
+
+
 \section{\omkr}
-Når vi måler hvor langt det er rundt en lukket form, finner vi \textit{omkretsen}\index{omkrets} til figuren. La oss starte med å finne omkretsen til dette rektangelet:
+Når vi måler hvor langt det er rundt en lukket form, finner vi \outl{omkretsen}\index{omkrets} til formen. La oss finne omkretsen til dette rektangelet:
 \fig{geo1}
+Det første vi må gjøre er å definere et linjestykke med lengde 1:
+\fig{lengde1}
 Rektangelet har to sider med lengde 4 og to sider med lengde 5:
 \fig{geo1a}
 Dette betyr at
-\alg{
-\text{Omkretsen til rektangelet} &= 4+4+5+5 \\
-&= 18
-}
-\reg[Omkrets]{\outl{Omkretsen} er lengden rundt en lukket figur.}
+\[ \text{Omkretsen til rektangelet} = 4+4+5+5 = 18 \]
+\reg[Omkrets]{Omkretsen er lengden rundt en lukket figur.}
 \eks[]{ \vsb \vs
 	\begin{figure}
 		\centering
@@ -273,25 +296,18 @@ I figur \textsl{(b)} er omkretsen $ 4+5+3+1+6+5=24 $.
 
 
 \section{\area \label{Areal}}
-Overalt rundt oss kan vi se \textit{overflater}\index{overflate}, for eksempel på et gulv eller et ark. Når vi ønsker å si noe om hvor store overflater er, må vi finne \textit{arealet}\index{areal} deres. Idéen bak begrepet areal er denne:\regv
+Når vi ønsker å si noe om hvor store overflaten til en form er, finner vi \outl{arealet}\index{areal} til formen. Grunnlaget for å bestemme arealet til en form er dette:\regv
 
-\st{Vi tenker oss et kvadrat med sidelengder 1. Dette kaller vi \\\textit{enerkvadradet}.
+\st{Vi tenker oss et kvadrat med sidelengder 1. Dette kaller vi 'enerkvadradet'.
 	\fig{tri_10}
-	Så ser vi på overflaten vi ønsker å finne arealet til, og spør:\os
-	\begin{center}
-		''Hvor mange enerkvadrat er det plass til på denne overflata?''
-\end{center}}
+	Så finner vi ut hvor mange 'enerkvadrat' det er plass til på overflaten til formen.}
 \subsubsection{\arrekt \label{arrekt}}
-La oss finne arealet til et rektangel som har grunnlinje 3 og høgde 2.
-\fig{tri11a}
+La oss finne arealet til et rektangel med grunnlinje 3 og høgde 2.
+\fig{tri11}
 Vi kan da telle oss fram til at rektangelet har plass til 6 enerkvadrat:
 \[ \text{Arealet til rektangelet}=6 \]
-\fig{tri11}
 Ser vi tilbake til \hrs{Gonging}{seksjon}, legger vi merke til at
-\alg{
-	\text{Arealet til rektangelet} &= 3\cdot 2 \\
-	&= 6 
-}
+\[ \text{Arealet til rektangelet} = 3\cdot 2 = 6  \]
 \newpage
 \reg[\arrekt \label{arfir}]{
 	\[ \text{areal}=\text{grunnlinje}\cdot\text{høgde} \]

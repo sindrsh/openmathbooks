@@ -3,7 +3,7 @@ import figs;
 unitsize(0.5 cm);
 
 path b = box((0,0),(1,10));
-filldraw(shift(-3,0)*rotate(90)*b, green+opacity(0.1), deepgreen);
+filldraw(shift(-3,0)*rotate(90)*b, green+opacity(0.2), black);
 mklb("$=10$",(-3,0.5));
 
 db(I=1,l=false);

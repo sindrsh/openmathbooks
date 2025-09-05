@@ -11,9 +11,9 @@ pair B = (d,0);
 pair C = (a,b);
 pair D = (0,0);
 
-fill(D--B--C--cycle, blue+opacity(0.15));
-fill(A--D--(a,b)--cycle, orange+opacity(0.6));
-fill((a,0)--C--B--cycle, deepgreen+opacity(0.4));
+fill(D--B--C--cycle, arpen);
+fill(A--D--(a,b)--cycle, arpeno);
+fill((a,0)--C--B--cycle, arpeng);
 
 draw(D--B--C);
 draw(A--D--(a,b)--cycle);

@@ -1,4 +1,5 @@
 import graph;
+import "/home/sindre/openmathbooks/inh" as inher;
 
 pair O = (0,0);
 

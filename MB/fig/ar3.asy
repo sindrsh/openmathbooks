@@ -1,6 +1,6 @@
-import "/home/sindre/G/fig/inh" as inh;
-import "/home/sindre/G/fig/figs" as figs;
-import "/home/sindre/G/fig/tri" as tri;
+import "../../inh" as inh;
+import figs;
+import "../../geo" as geo;
 unitsize(0.6cm);
 
 real c = 2;

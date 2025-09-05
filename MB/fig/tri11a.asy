@@ -3,6 +3,7 @@ unitsize(0.5cm);
 
 
 draw(box((0,0),(3,2)), black);
+
 for (int i = 0; i <= 3; ++i){
 	draw((i,0)--(i,2), dotted);
 	}

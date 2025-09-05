@@ -1,7 +1,5 @@
 import plus;
 
-import inh;
-
 unitsize(0.5 cm);
 
 real dx = 0.4;
@@ -15,7 +13,7 @@ for (int i = 0; i < 3; ++i){
 	pen p = p1;
 	if (i==1){p=p10;}
 	if (i==2){p=p100;}
-	filldraw(b, p+opacity(0.1),drawpen=grey+opacity(0.1));	
+	filldraw(b, p,drawpen=grey+opacity(0.1));	
 	}
 
 label("$+$",-((2*(3)+1)*dx,-dy));

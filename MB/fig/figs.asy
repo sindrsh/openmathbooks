@@ -33,7 +33,7 @@ void ten(int I=1, pair sh=(0,0), pen p=green, pen p1=deepgreen, bool l=false, re
 		 }
 }
 
-void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=p, bool l=false, real ls=1.0, real opac=0.2){
+void db(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=blue, pen p1=black, bool l=false, real ls=1.0, real opac=0.2){
 	path b = box((0,0),(1,1));
 	int cnt = 0;
 	for (int i = 1; i <= I; ++i){
@@ -59,7 +59,7 @@ void ddb(int I=1, int J=1, int m=I, int n=J, pair sh=(0,0), pen p=purple, bool l
 	for (int i = 1; i <= I; ++i){
 		for (int j = 1; j <= J; ++j){
 			if (i<=m || j<=n){
-			filldraw(shift(sh+(i*a-a,j*h-h))*b, p+opacity(0.2), drawpen=p);
+			filldraw(shift(sh+(i*a-a,j*h-h))*b, p+opacity(0.2), drawpen=black);
 			++cnt;
 			}
 			}

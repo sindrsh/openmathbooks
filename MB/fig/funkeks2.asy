@@ -1,5 +1,5 @@
-import "../inh" as inh;
-import "../drwgrph" as grph;
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 size(13cm);
 usepackage("icomma");
 

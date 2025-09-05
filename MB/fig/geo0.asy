@@ -1,3 +1,4 @@
+import "../../inh" as inh;
 import graph;
 
 pair A = (0,0);

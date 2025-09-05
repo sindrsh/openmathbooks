@@ -21,6 +21,6 @@ label("$1$",(3dx,-0.5+dy));
 label("$2$",(5dx,-0.5+dy));
 
 draw((2dx,-0.5+dy+dy2/2)--(6dx,-0.5+dy+dy2/2));
-label("$7$",(3dx,-0.5+dy+dy2));
-label("$2$",(5dx,-0.5+dy+dy2));
+label("$7$",(3dx,-0.5+dy+dy2), blue);
+label("$2$",(5dx,-0.5+dy+dy2), blue);
 

@@ -12,4 +12,4 @@ draw(p);
 draw(A--B, L="grunnlinje",align=S);
 draw(B--(4,0)--C,dotted,L=Label("h\o gde", position=Relative(0.75)));
 draw(shift((4,0))*box((0,0),(-0.2,0.2)), black);
-filldraw(p,blue+opacity(0.15));
+filldraw(p,blue+opacity(0.6));
