@@ -1,9 +1,7 @@
-unitsize(1.2cm);
-defaultpen(fontsize(11 pt));
+import "../../inh.asy" as inh;
+unitsize(1cm);
 import solids;
 import math;
-settings.outformat="pdf";
-settings.render = 5;
 import three;
 import fig3d;
 
@@ -16,8 +14,8 @@ triple pA=(b,b,0), pB=(-b,b,0),
 draw(pS--(0,0,0), L="$h$",align=SW, dotted);
 draw(pS--pD--pA--pS--pB--pA);
 draw(pD--pC--pS^^pC--pB,dashed);
-draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.1));
+draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.2));
 label("$G$", (0,0,0), align=2*W);
 
-mksq3(-pS,pB,(0,0,0),l=0.15,k=0.12);
+mksq3(-pS,pB,(0,0,0),l=0.2,k=0.2);
 dot((0,0,0));

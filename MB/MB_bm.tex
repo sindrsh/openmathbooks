@@ -2,7 +2,10 @@
 \input{../preamb}
 \input{bm}
 
-%\renewcommand*\familydefault{\sfdefault} % For dyslexia-friendly text
+% For dyslexia-friendly text
+%\usepackage{sansmathfonts}
+%\renewcommand*\familydefault{\sfdefault} 
+%%
 
 % Norwegian names of figures, chapters, parts and content
 \addto\captionsenglish{\renewcommand{\figurename}{Figur}}
@@ -14,32 +17,43 @@
 \begin{document}
 
 	
-\import{kap0/}{framside_bm}
-\import{kap0/}{forord_bm}
-\import{kap0/}{sym_bm}
+%\import{kap0/}{framside_bm}
+\import{kap0/}{firstpages_bm}
+\import{kap0/}{kolofon_bm}
 \newpage
 
-{\footnotesize \tableofcontents}
+{\small \tableofcontents}
 \newpage
+\phantom{text}
+\newpage
+\import{kap0/}{forord_bm}
+\import{kap0/}{sym_bm}
+
+
 \part{Tall, rekning og geometri}
 
 \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
 \chapter{Tallene våre \label{Talavare}}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.25]{sticks} \\
-	{\footnotesize Bilde fra \net{https://cdn.pixabay.com/photo/2013/08/11/14/46/matchsticks-171578_1280.jpg}{pixabay.com}} 
-\end{figure}
+
+\begin{comment}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.25]{sticks} \\
+		{\footnotesize Bilde fra \net{https://cdn.pixabay.com/photo/2013/08/11/14/46/matchsticks-171578_1280.jpg}{pixabay.com}} 
+	\end{figure}
+\end{comment}
 \newpage
 \import{tel/}{tel_bm}
 \import{tel/}{tel_opg_bm}
 
 \chapter{De fire regneartene \label{Rekneartane}}
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.38]{wood} \\
-	{\footnotesize Bilde fra \net{https://pxhere.com/en/photo/1143712}{pxhere.com}} 
-\end{figure}
+\begin{comment}
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.38]{wood} \\
+		{\footnotesize Bilde fra \net{https://pxhere.com/en/photo/1143712}{pxhere.com}} 
+	\end{figure}
+\end{comment}
 \newpage
 \import{rekar/}{rekar_bm}
 \import{rekar/}{rekar_opg_bm}
@@ -113,9 +127,12 @@
 \import{kap0/}{lit_bm}
 {\printindex \addtocontents{toc}{\protect}
 	\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
-\import{kap0/}{bakside_bm}
-
-
+%\import{kap0/}{bakside_bm}
+\newpage
+\phantom{}
+\newpage
+\phantom{}
+\newpage
 \end{document}
 
 

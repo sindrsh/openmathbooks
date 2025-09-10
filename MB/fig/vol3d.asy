@@ -1,9 +1,10 @@
+import "../../inh" as inh;
 import solids;
 settings.render=0; 
 settings.prc=false; // on se restreint à une vue 2d
 settings.outformat="pdf";
 defaultpen(fontsize(11pt));
-size(4.5cm,0);
+size(3.5cm,0);
 
 currentprojection=orthographic(10,3,8);
 
@@ -16,6 +17,6 @@ triple S=(0,0,0);
 draw(S--pA, L="$r$");
 revolution b=sphere(S,a);
 draw(b,1,longitudinalpen=nullpen);
-draw(b.silhouette(),1bp+blue);
+draw(b.silhouette(),blue);
 
 dot(S);

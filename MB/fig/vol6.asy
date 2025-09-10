@@ -1,11 +1,9 @@
-unitsize(0.5cm);
-defaultpen(fontsize(11 pt));
+import "../../inh" as inh;
 import solids;
 import math;
-settings.outformat="pdf";
-settings.render = 10;
 import three;
 import fig3d;
+size(5cm);
 
 currentprojection=orthographic(5,5,3);
 
@@ -18,7 +16,7 @@ triple pA=(a,b,0), pB=(-a,b,0),
 draw(pS--(0,0,0), L="$5$",align=E+2S, dotted);
 draw(pS--pD--pA--pS--pB--pA);
 draw(pD--pC--pS^^pC--pB,dashed);
-draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.1));
+draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.2));
 
 mksq3(-pS,pB,(0,0,0),l=0.3,k=0.3);
 dot((0,0,0));

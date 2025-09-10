@@ -1,9 +1,9 @@
-unitsize(2cm);
+import "../../inh.asy" as inh;
+unitsize(1.5cm);
 defaultpen(fontsize(11 pt));
 import solids;
 import math;
 settings.outformat="pdf";
-settings.render = 5;
 currentprojection = orthographic(50,50,25);
 import fig3d;
 
@@ -12,13 +12,14 @@ real v = 135/180*pi;
 triple pO=(0,0,0), pS=(0,0,h), pA=(r*cos(v),r*sin(v),0);
 revolution CoRev=cone(pO,r,h,axis=Z,n=1);
 
-draw(CoRev,1bp+blue);
+draw(CoRev,black);
 
 draw(pO--pA, dotted);
 draw(pS--pO,dotted);
-draw(surface(CoRev),blue+opacity(0.1));
+//draw(surface(CoRev),blue);
 label("$h$",1/2*pS,E);
 label("$r$", (pA/2), align=N);
+draw(unitdisk, blue+opacity(0.2));
 label("$G$", (-pA/3));
 dot(pO);
 

@@ -22,7 +22,7 @@ label("$C$", t.C, align=NE);
 pair Ep = t.C-d*t.AC;
 
 mksq2(Ep,t.C);
-draw(Ep--t.B,dotted,L=rotate(t.vA)*Label("h\o gde", position=Relative(0.5)));
+draw(Ep--t.B,dotted,L=rotate(t.vA)*Label("h\o yde", position=Relative(0.5)));
 
 label(rotate(t.vA)*Label("grunnlinje"),t.C+1/2*(t.A-t.C),N);
 
@@ -41,7 +41,7 @@ label("$C$", t.C, align=NE);
 pair Ep = t.C-d*t.BC;
 
 mksq2(Ep,t.A);
-draw(Ep--t.A,dotted,L=rotate(90-t.vB)*Label("h\o gde", position=Relative(0.5),align=SW));
+draw(Ep--t.A,dotted,L=rotate(90-t.vB)*Label("h\o yde", position=Relative(0.5),align=SW));
 draw(Ep--t.C,dotted);
 
 label(rotate(180-t.vB)*Label("grunnlinje"),t.B+1/2*(t.C-t.B),1.5SE);

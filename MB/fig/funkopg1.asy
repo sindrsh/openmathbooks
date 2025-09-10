@@ -1,6 +1,6 @@
 import "../../inh" as inh;
 import figs;
-unitsize(0.5 cm);
+unitsize(0.45 cm);
 
 void mkfig(pair sh =(0,0), int n){
 	db(n,n,sh=sh);

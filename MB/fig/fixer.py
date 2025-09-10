@@ -3,11 +3,11 @@ import os
 def fix(name):
     f = open(name, "r")
     content = f.read()
-    """
+
     if not 'import "../../inh' in content and not 'import ../../inh_opg' in content and not 'import figs' in content:
         print(name)
-    """
-    
+
+    return
     
     content = content.replace("import inh;", 'import "../../inh" as inh;')
     content = content.replace("import geo;", 'import "../../geo" as geo;')
