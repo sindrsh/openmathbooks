@@ -184,7 +184,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\sv
 	Vi vet at
 	\[ c^2=a^2+b^2 \]
-	der $ a $ og $ b $ er lengdene til de korteste sidene i trekanten. Dermed er
+	der $ a $ og $ b $ er lengdene til katetene (de korteste sidene) i trekanten. Dermed er
 	\algv{
 		c^2 &= 4^2 + 3^2 \\
 		&= 16+9 \\
@@ -212,6 +212,13 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	Gitt en trekant med sidelengder $ a, b $ og $ c $, der $ c $ er den lengste sidelengden.
 	Så lenge trekanten er rettvinklet, kan vi alltid lage to kvadrat med sidelengder $ {a+b} $, slik som i første figur. \eqref{pytforkl} gjelder dermed for alle rettvinklede trekanter.
 }
+\spr{
+	Den lengste siden i en rettvinklet trekant kalles \outl{hypotenus}\index{hypotenus}. De korteste sidene kalles \outl{kateter}\index{katet}. Dette spesielt i samband med Pytagoras' setning.
+}
+\info{Merk}{
+	Gitt en trekant $\triangle ABC$. Av \rref{grside} følger det at hvis $\angle {BAC=90^\circ}$, er det $BC$ som er hypotenusen til trekanten. Og omvendt; Hvis $BC$ er hypotenusen, er $\angle BAC=90^\circ$.
+	\fig{kathyp}
+}
 \newpage
 \reg[\pytomv \label{pytomv}]{
 	Gitt en trekant med sidelengder $ a, b $ og $ c $, der $ c $ er den lengste siden. Da er trekanten rettvinklet bare hvis $ a^2+b^2=c^2 $.
@@ -232,6 +239,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 		Altså er trekanten rettvinklet i dette tilfellet.
 	}
 }
+
 
 \newpage
 \reg[\volforml \label{volforml}]{ 
@@ -550,8 +558,84 @@ Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6
 
 \newpage
 \fork{\ref{pytomv} \pytomv}{
+	Samme hva verdien til $ a $ og $ b $ måtte være, kan man åpenbart alltid lage en rettvinklet trekant med kateter $ a $ og $ b $. Av \pyt\;er hypotenusen da $ \sqrt{a^2+b^2} $. Av vilkår (ii) i \rref{konsttre} er dette en unik trekant, og det betyr at alle trekanter med sidelengder $ a $, $ b $ og $ \sqrt{a^2+b^2} $ er rettvinklet.
+}
+\fork{\ref{volforml} \volforml}{ \vs
 Forklaringene til disse formlene er gitt i \tmto.
 } 
+
+\info{Merk}{
+	I de kommnde forklaringene av vilkårene \textsl{ii)} og \textsl{iii)} fra \rref{konsttre} tar man utgangspunkt i følgende:
+	\begin{itemize}
+		\item To sirkler skjærer kvarandre i maksimalt to punkt.
+		\item Gitt at et koordinatsystem blir plassert med origo i senteret til den ene sirkelen, og slik at horisontalaksen går gjennom begge sirkelsentrene. Hvis $ (a, b) $ er det éne skjæringspunktet, er $ (a, -b) $ det andre skjæringspunktet.
+	\end{itemize}
+	\fig{sirk2} 
+	Punktene over kan enkelt vises, men er såpass intuitivt sanne at vi tar dem for gitt. Punktene forteller oss at trekanten som består av de to sentrene og det éne skjæringspunktet er kongruent med trekanten som består av de to sentrene og det andre skjæringspunktet. Med dette kan vi studere egenskaper til trekanter ved hjelp av halvsirkler.
+} \vsk
+
+\fork{\ref{konsttre} \konsttre}{
+	\textbf{Vilkår (i)}\os
+	Gitt en lengde $ c $ og to vinkler $u $ og $ v $.
+	Vi lager et linjestykke $ AB $ med lengde $ c $. Så stipler vi to vinkelbein slik at $ \angle {A= u} $ og $ {B=v} $. Så lenge disse vinkelbeina ikke er parallelle, må de nødvendigvis skjære hverandre i ett, og bare ett, punkt ($ C $ i figuren). I lag med $ A $ og $ B $ vil dette punktet danne en trekant som er unikt gitt av $ c $, $ u $ og $ v $.
+	\fig{geo13c}	
+	\newpage	
+	\textbf{Vilkår (ii)}\os
+	Gitt tre lengder $ a $, $ b $ og $ c $. Vi lager et linjestykket $ AB $ med lengde $ c $. Så lager vi to halvsirkler med henholdsvis radius $ a $ og $ b $ og sentrum $ B $ og $ A $. Skal nå en trekant $ \triangle ABC $ ha sidelengder $ a $, $ b $ og $ c $, må $ C $ ligge på begge sirkelbuene. Da buene bare kan møtes i ett punkt, er formen og størrelsen til $ \triangle ABC $ unikt gitt av $a$, $ b $ og $ c $.
+	\fig{geo13a}	
+	
+	\textbf{Vilkår (iii)} \os
+	Gitt to lengder $ b $ og $ c $ og en vinkel $ u $. Vi starter med følgende:
+	\begin{enumerate}
+		\item Vi lager et linjestykke $ AB $ med lengde $ c $.
+		\item I $ A $ tegner vi en halvsirkel med radius $ b $. 
+	\end{enumerate}
+	Ved å la $ C $ vere plassert hvor som helst på denne sirkelbuen, har vi alle mulige varianter av en trekant $ \triangle ABC $ med sidelengdene $ {AB=c} $ og $ {AC=b} $. Å plassere $ C $ langs buen til halvsirkelen er det samme som å gi $ \angle A $ en bestemt verdi. Det gjenstår nå å vise at hver plassering av $ C $ gir en unik lengde av $ BC $.
+	\fig{geo13b}
+	Vi lar $ C_1 $ og $ C_2 $ være to potensielle plasseringer av $ C $, der $ C_2 $, langs halvsirkelen, ligger nærmere $ E $ enn $ C_1 $. Videre stipler vi en sirkelbue med radius $ BC_1 $ og sentrum $ B $. Da den stiplede sirkelbuen og halvsirkelen bare kan skjære hverandre i $ C_1 $, vil alle andre punkt på halvsirkelen ligge enten innenfor eller utenfor den stiplede sirkelbuen. Slik vi har definert $ C_2 $, må dette punktet ligge utenfor den stiplede sirkelbuen, og dermed er $ BC_2 $ lengre enn $ BC_1 $. Av dette kan vi konkludere med at $ BC $ blir lengre dess nærmere $ C $ beveger seg mot $ E $ langs halvsirkelen. Å sette $ {\angle A=u} $ vil altså gi en unik verdi for $ BC $, og da en unik trekant $ \triangle ABC $ der $ AC=b $, $ c=AB $ og $ \angle BAC=u $.
+}\vsk
+
+\fork{\ref{vilkform} \vilkform}{
+	\textbf{Vilkår (i)}\os
+	Gitt to trekanter $ \triangle ABC $ og $ \triangle DEF $. Av \rref{180} har vi at
+	\alg{
+		\angle A+ \angle B+\angle C=\angle D+\angle E+\angle F
+	}	
+	Hvis $ \angle A=\angle D $ og $ \angle B=\angle E $, følger det at $ \angle C=\angle E $.\vsk
+	
+	\textbf{Vilkår (ii)}\os
+	Vi tar utgangspunkt i trekantene $ \triangle ABC $ og $ \triangle DEF $ der
+	\begin{equation}
+		\dfrac{AC}{DF}=\dfrac{BC}{EF}\qquad,\qquad \angle C = \angle F\label{vilkforma}
+	\end{equation}
+	\fig{geo12}
+	Vi setter $ a=BC $, $ b=AC $, $ d=EF $ og $ e=DF $. Vi plasserer $ D' $ og $ E' $ på henholdsvis $ AC $ og $ BC $, slik at $ D'C=e $ og $ AB\parallel D'E' $. Da er $ \triangle ABC \sim \triangle D'E'C$, altså har vi at
+	\alg{
+		\frac{E'C}{BC}&=\frac{D'C}{AC}\br
+		E'C&=\frac{ae}{b}
+	}
+	Av \eqref{vilkforma} har vi at
+	\[ EF=\frac{ae}{b} \]	
+	Altså er $ {E'C = EF} $. Nå har vi av vilkår (ii) fra \rref{kongtre} at $ \triangle D'E'C\cong\triangle DEF $. Dette betyr at $ \triangle ABC\sim \triangle DEF $.\vsk
+	
+	\textbf{Vilkår iii}\os
+	Vi tar utgangspunkt i to trekanter $ \triangle ABC $ og $ \triangle DEF $ der
+	\begin{equation}
+		\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF} \label{vilkformb}
+	\end{equation}
+	Vi plasserer $ D' $ og $ E' $ på henholdsvis $ AC $ og $ BC $, slik at $ D'C=e $ og $ E'C=d $. Av vilkår (i) fra \rref{vilkform} har vi da at $ \triangle ABC\sim\triangle D'E'C $. Altså er
+	\alg{
+		\frac{D'E'}{AB}&=\frac{D'C}{AC} \br
+		D'E'&=\frac{ae}{c}
+	} 
+	Av \eqref{vilkformb} har vi at
+	\alg{
+		f&=\frac{ae}{c}
+	}
+	Altså har $ \triangle D'E'C $ og $ \triangle DEF $ parvis like sidelengder, og av vilkår (i) fra \rref{kongtre} er de da kongruente. Dette betyr at $ {\triangle ABC \sim \triangle DEF}$.
+	\fig{geo12b}
+}
+
 
 
 \end{document}
