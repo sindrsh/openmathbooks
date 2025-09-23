@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {part}{I\hspace {1em}Tall, rekning og geometri}{13}{part.1}%
+\contentsline {part}{I\hspace {1em}Tall, regning og geometri}{13}{part.1}%
 \mbox {}\hrulefill \par 
 \contentsline {chapter}{\numberline {1}Tallene våre }{15}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Likhetstegnet, mengder og tallinjer}{16}{section.1.1}%
@@ -12,108 +12,108 @@
 \contentsline {section}{\numberline {2.3}Ganging }{35}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Divisjon }{38}{section.2.4}%
 \contentsline {section}{Oppgaver}{41}{section*.10}%
-\contentsline {chapter}{\numberline {3}Faktorisering og regnerekkefølge }{45}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Regnerekkefølge}{46}{section.3.1}%
-\contentsline {subsubsection}{Å gange med 0}{49}{subsubsection*.13}%
-\contentsline {section}{\numberline {3.2}Faktorisering }{52}{section.3.2}%
-\contentsline {section}{Oppgaver}{54}{section*.21}%
-\contentsline {chapter}{\numberline {4}Brøk }{57}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduksjon}{58}{section.4.1}%
-\contentsline {subsubsection}{Brøk som mengde}{58}{subsubsection*.23}%
-\contentsline {subsubsection}{Brøk på tallinja}{60}{subsubsection*.24}%
-\contentsline {subsubsection}{Teller og nevner oppsummert}{60}{subsubsection*.25}%
-\contentsline {section}{\numberline {4.2}Verdi, utviding og forkorting av brøk}{61}{section.4.2}%
-\contentsline {subsubsection}{Brøker med samme verdi}{61}{subsubsection*.27}%
-\contentsline {subsubsection}{Utviding}{62}{subsubsection*.28}%
-\contentsline {subsubsection}{Forkorting}{62}{subsubsection*.29}%
-\contentsline {section}{\numberline {4.3}Addisjon og subtraksjon}{64}{section.4.3}%
-\contentsline {subsubsection}{Lik nevner}{64}{subsubsection*.31}%
-\contentsline {section}{\numberline {4.4}Brøk ganget med heltall}{68}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Brøk delt med heltall}{70}{section.4.5}%
-\contentsline {subsubsection}{Tilfellet der telleren er delelig med divisoren}{70}{subsubsection*.35}%
-\contentsline {subsubsection}{Tilfellet der telleren ikke er delelig med divisoren}{72}{subsubsection*.36}%
-\contentsline {section}{\numberline {4.6}Brøk ganget med brøk}{75}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Kansellering av faktorer}{76}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Deling med brøk}{80}{section.4.8}%
-\contentsline {subsubsection}{Deling ved å se på tallinja}{80}{subsubsection*.40}%
-\contentsline {subsubsection}{En generell metode}{81}{subsubsection*.41}%
-\contentsline {section}{\numberline {4.9}Rasjonale tall}{83}{section.4.9}%
-\contentsline {section}{Oppgaver}{85}{section*.45}%
-\contentsline {chapter}{\numberline {5}Negative tall }{93}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduksjon}{94}{section.5.1}%
-\contentsline {section}{\numberline {5.2}De fire regneartene med negative tall}{96}{section.5.2}%
-\contentsline {section}{Oppgaver}{103}{section*.54}%
+\contentsline {chapter}{\numberline {3}Faktorisering og regnerekkefølge }{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Regnerekkefølge}{48}{section.3.1}%
+\contentsline {subsubsection}{Å gange med 0}{52}{subsubsection*.13}%
+\contentsline {section}{\numberline {3.2}Faktorisering }{55}{section.3.2}%
+\contentsline {section}{Oppgaver}{57}{section*.21}%
+\contentsline {chapter}{\numberline {4}Brøk }{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduksjon}{62}{section.4.1}%
+\contentsline {subsubsection}{Brøk som mengde}{62}{subsubsection*.23}%
+\contentsline {subsubsection}{Brøk på tallinja}{64}{subsubsection*.24}%
+\contentsline {subsubsection}{Teller og nevner oppsummert}{64}{subsubsection*.25}%
+\contentsline {section}{\numberline {4.2}Verdi, utviding og forkorting av brøk}{65}{section.4.2}%
+\contentsline {subsubsection}{Brøker med samme verdi}{65}{subsubsection*.27}%
+\contentsline {subsubsection}{Utviding}{66}{subsubsection*.28}%
+\contentsline {subsubsection}{Forkorting}{66}{subsubsection*.29}%
+\contentsline {section}{\numberline {4.3}Addisjon og subtraksjon}{68}{section.4.3}%
+\contentsline {subsubsection}{Lik nevner}{68}{subsubsection*.31}%
+\contentsline {section}{\numberline {4.4}Brøk ganget med heltall}{72}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Brøk delt med heltall}{74}{section.4.5}%
+\contentsline {subsubsection}{Tilfellet der telleren er delelig med divisoren}{74}{subsubsection*.35}%
+\contentsline {subsubsection}{Tilfellet der telleren ikke er delelig med divisoren}{76}{subsubsection*.36}%
+\contentsline {section}{\numberline {4.6}Brøk ganget med brøk}{79}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Kansellering av faktorer}{80}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Deling med brøk}{84}{section.4.8}%
+\contentsline {subsubsection}{Deling ved å se på tallinja}{84}{subsubsection*.40}%
+\contentsline {subsubsection}{En generell metode}{85}{subsubsection*.41}%
+\contentsline {section}{\numberline {4.9}Rasjonale tall}{87}{section.4.9}%
+\contentsline {section}{Oppgaver}{89}{section*.45}%
+\contentsline {chapter}{\numberline {5}Negative tall }{97}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduksjon}{98}{section.5.1}%
+\contentsline {section}{\numberline {5.2}De fire regneartene med negative tall}{100}{section.5.2}%
+\contentsline {section}{Oppgaver}{107}{section*.54}%
 \newpage 
-\contentsline {chapter}{\numberline {6}Utregningsmetoder }{105}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Addisjon}{106}{section.6.1}%
-\contentsline {subsubsection}{Oppstilling}{106}{subsubsection*.55}%
-\contentsline {section}{\numberline {6.2}Subtraksjon}{108}{section.6.2}%
-\contentsline {subsubsection}{Oppstilling}{108}{subsubsection*.56}%
-\contentsline {subsubsection}{Tabellmetoden}{110}{subsubsection*.57}%
-\contentsline {section}{\numberline {6.3}Ganging}{112}{section.6.3}%
-\contentsline {subsubsection}{Ganging med 10, 100, 1\,000 osv.}{112}{subsubsection*.58}%
-\contentsline {subsubsection}{Utvidet form}{114}{subsubsection*.61}%
-\contentsline {subsubsection}{Kompaktmetoden}{115}{subsubsection*.62}%
-\contentsline {subsubsection}{Ganging med desimaltall}{117}{subsubsection*.63}%
-\contentsline {section}{\numberline {6.4}Divisjon}{118}{section.6.4}%
-\contentsline {subsubsection}{Deling med 10, 100, 1\,000 osv.}{118}{subsubsection*.64}%
-\contentsline {subsubsection}{Oppstilling}{119}{subsubsection*.66}%
-\contentsline {subsubsection}{Tabellmetoden}{121}{subsubsection*.67}%
-\contentsline {subsubsection}{Divisjon med rest}{123}{subsubsection*.68}%
-\contentsline {subsubsection}{Divisjon med blanda tall som svar}{125}{subsubsection*.69}%
-\contentsline {subsubsection}{Divisjon med desimaltall som svar}{126}{subsubsection*.70}%
-\contentsline {subsubsection}{Divisjon med desimaltall}{127}{subsubsection*.71}%
-\contentsline {section}{\numberline {6.5}Regning med tid }{128}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Avrunding og overslagsregning}{129}{section.6.6}%
-\contentsline {subsubsection}{Avrunding}{129}{subsubsection*.72}%
-\contentsline {subsubsection}{Overslagsregning}{130}{subsubsection*.73}%
-\contentsline {subsubsection}{Overslag ved addisjon og ganging}{130}{subsubsection*.74}%
-\contentsline {subsubsection}{Overslag ved subtraskjon og deling}{131}{subsubsection*.75}%
-\contentsline {subsubsection}{Overslagsregning oppsummert}{131}{subsubsection*.76}%
-\contentsline {section}{\numberline {6.7}Standardform}{133}{section.6.7}%
-\contentsline {section}{Oppgaver}{136}{section*.79}%
-\contentsline {chapter}{\numberline {7}Geometri }{143}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Begrep}{144}{section.7.1}%
-\contentsline {subsubsection}{Høyde og grunnlinje }{154}{subsubsection*.82}%
-\contentsline {section}{\numberline {7.2}Egenskaper for trekanter og firkanter}{155}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Omkrets}{159}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Areal}{161}{section.7.4}%
-\contentsline {subsubsection}{Arealet til et rektangel}{161}{subsubsection*.88}%
-\contentsline {subsubsection}{Arealet til en trekant}{163}{subsubsection*.90}%
-\contentsline {section}{\numberline {7.5}Tredimensjonal geometri}{168}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Volum}{171}{section.7.6}%
-\contentsline {subsubsection}{Grunnflate}{172}{subsubsection*.94}%
-\contentsline {section}{\numberline {7.7}Symmetri}{173}{section.7.7}%
-\contentsline {section}{Oppgaver}{180}{section*.99}%
+\contentsline {chapter}{\numberline {6}Utregningsmetoder }{109}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Addisjon}{110}{section.6.1}%
+\contentsline {subsubsection}{Oppstilling}{110}{subsubsection*.55}%
+\contentsline {section}{\numberline {6.2}Subtraksjon}{112}{section.6.2}%
+\contentsline {subsubsection}{Oppstilling}{112}{subsubsection*.56}%
+\contentsline {subsubsection}{Tabellmetoden}{114}{subsubsection*.57}%
+\contentsline {section}{\numberline {6.3}Ganging}{116}{section.6.3}%
+\contentsline {subsubsection}{Ganging med 10, 100, 1\,000 osv.}{116}{subsubsection*.58}%
+\contentsline {subsubsection}{Utvidet form}{118}{subsubsection*.61}%
+\contentsline {subsubsection}{Kompaktmetoden}{119}{subsubsection*.62}%
+\contentsline {subsubsection}{Ganging med desimaltall}{121}{subsubsection*.63}%
+\contentsline {section}{\numberline {6.4}Divisjon}{122}{section.6.4}%
+\contentsline {subsubsection}{Deling med 10, 100, 1\,000 osv.}{122}{subsubsection*.64}%
+\contentsline {subsubsection}{Oppstilling}{123}{subsubsection*.66}%
+\contentsline {subsubsection}{Tabellmetoden}{125}{subsubsection*.67}%
+\contentsline {subsubsection}{Divisjon med rest}{127}{subsubsection*.68}%
+\contentsline {subsubsection}{Divisjon med blanda tall som svar}{129}{subsubsection*.69}%
+\contentsline {subsubsection}{Divisjon med desimaltall som svar}{130}{subsubsection*.70}%
+\contentsline {subsubsection}{Divisjon med desimaltall}{131}{subsubsection*.71}%
+\contentsline {section}{\numberline {6.5}Regning med tid }{132}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Avrunding og overslagsregning}{133}{section.6.6}%
+\contentsline {subsubsection}{Avrunding}{133}{subsubsection*.72}%
+\contentsline {subsubsection}{Overslagsregning}{134}{subsubsection*.73}%
+\contentsline {subsubsection}{Overslag ved addisjon og ganging}{134}{subsubsection*.74}%
+\contentsline {subsubsection}{Overslag ved subtraskjon og deling}{135}{subsubsection*.75}%
+\contentsline {subsubsection}{Overslagsregning oppsummert}{135}{subsubsection*.76}%
+\contentsline {section}{\numberline {6.7}Standardform}{137}{section.6.7}%
+\contentsline {section}{Oppgaver}{140}{section*.79}%
+\contentsline {chapter}{\numberline {7}Geometri }{147}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Begreper}{148}{section.7.1}%
+\contentsline {subsubsection}{Høyde og grunnlinje }{158}{subsubsection*.82}%
+\contentsline {section}{\numberline {7.2}Egenskaper for trekanter og firkanter}{159}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Omkrets}{164}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Areal}{166}{section.7.4}%
+\contentsline {subsubsection}{Arealet til et rektangel}{166}{subsubsection*.89}%
+\contentsline {subsubsection}{Arealet til en trekant}{168}{subsubsection*.91}%
+\contentsline {section}{\numberline {7.5}Tredimensjonal geometri}{173}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Volum}{176}{section.7.6}%
+\contentsline {subsubsection}{Grunnflate}{177}{subsubsection*.95}%
+\contentsline {section}{\numberline {7.7}Symmetri}{178}{section.7.7}%
+\contentsline {section}{Oppgaver}{185}{section*.100}%
 \newpage 
-\contentsline {part}{II\hspace {1em}Algebra og geometri }{189}{part.2}%
+\contentsline {part}{II\hspace {1em}Algebra og geometri }{193}{part.2}%
 \mbox {}\hrulefill \par 
-\contentsline {chapter}{\numberline {8}Algebra }{191}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduksjon}{192}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Potenser}{199}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Irrasjonale tall}{207}{section.8.3}%
-\contentsline {section}{Oppgaver}{208}{section*.118}%
-\contentsline {chapter}{\numberline {9}Likninger }{215}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introduksjon}{216}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{217}{section.9.2}%
-\contentsline {subsubsection}{Deling}{219}{subsubsection*.132}%
-\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{224}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Potenslikninger}{229}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Ulikheter}{232}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{235}{section.9.6}%
-\contentsline {subsubsection}{Likningssett}{236}{subsubsection*.141}%
-\contentsline {section}{Oppgaver}{240}{section*.154}%
-\contentsline {chapter}{\numberline {10}Funksjoner }{243}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Introduksjon}{244}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{247}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{258}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Navn på funksjoner}{262}{section.10.4}%
-\contentsline {section}{Oppgaver}{264}{section*.162}%
-\contentsline {chapter}{\numberline {11}Geometri }{275}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Formler for areal og omkrets}{276}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{293}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Forklaringer}{298}{section.11.3}%
-\contentsline {section}{Oppgaver}{306}{section*.183}%
-\contentsline {chapter}{Fasit}{323}{section*.184}%
+\contentsline {chapter}{\numberline {8}Algebra }{195}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduksjon}{196}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Potenser}{203}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Irrasjonale tall}{211}{section.8.3}%
+\contentsline {section}{Oppgaver}{212}{section*.120}%
+\contentsline {chapter}{\numberline {9}Likninger }{221}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduksjon}{222}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{223}{section.9.2}%
+\contentsline {subsubsection}{Deling}{225}{subsubsection*.134}%
+\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{230}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Potenslikninger}{235}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Ulikheter}{238}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{241}{section.9.6}%
+\contentsline {subsubsection}{Likningssett}{242}{subsubsection*.143}%
+\contentsline {section}{Oppgaver}{246}{section*.156}%
+\contentsline {chapter}{\numberline {10}Funksjoner }{249}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduksjon}{250}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{253}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{264}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Navn på funksjoner}{268}{section.10.4}%
+\contentsline {section}{Oppgaver}{270}{section*.164}%
+\contentsline {chapter}{\numberline {11}Geometri }{281}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Fromler for areal, omkrets og volum}{282}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{297}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Forklaringer}{302}{section.11.3}%
+\contentsline {section}{Oppgaver}{313}{section*.185}%
+\contentsline {chapter}{Fasit}{333}{section*.186}%
 
-\contentsline {chapter}{Indeks}{334}{chapter*.187}%
+\contentsline {chapter}{Indeks}{346}{chapter*.189}%

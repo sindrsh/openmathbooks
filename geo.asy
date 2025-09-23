@@ -153,7 +153,7 @@ real ar(){
 	}						 
 }
 
-Tri mktri(real a=0, real b=0, real c=0, real vA=0, real vC=0,real sc=1){
+Tri mktri(real a=0, real b=0, real c=0, real sc=1){
 	Tri t;
 	t.tri(a, b, c, sc);
 	return t;

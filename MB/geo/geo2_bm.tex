@@ -3,7 +3,7 @@
 \input{../bm}
 
 \begin{document}
-\section{\geoform}
+\section{Fromler for areal, omkrets og volum}
 I \refsec{Areal}\ har vi allerede sett på formler for arealet til rektangel og trekanter, men der brukte vi ord i steden for symboler. Her skal vi gjengi disse to formlene i en mer algebraisk form, etterfulgt av andre klassiske formler for areal, omkrets og volum.\regv
 
 \reg[\arrekt\; (\ref{arrekt}) \label{arrekt2}]{ \index{areal!til rektangel}
@@ -43,7 +43,7 @@ Hvilken av trekantene har størst areal? \vs
 \end{figure}
 \sv
 
-Vi lar $ A_1 $, $ A_2 $ og $ A_3 $ være arealene til henholdsvis trekanten til venstre, i midten og til høgre. Da har vi at
+Vi lar $ A_1 $, $ A_2 $ og $ A_3 $ være arealene til henholdsvis trekanten til venstre, i midten og til høyre. Da har vi at
 \alg{
 A_1 &=\frac{4\cdot3}{2}=6 \vn
 A_2 &=\frac{2\cdot 3}{2}=3\vn
@@ -89,9 +89,6 @@ A&=\frac{3(6+4)}{2}\br
 &=15
 }	
 }
-\info{Merk}{
-Når man tar utgangspunkt i en grunnlinje og en høyde, er arealformlene for et parallellogram og et rektangel identiske. Å anvende \rref{artrap} på et parallellogram vil resultere i et uttrykk tilsvarende $ gh $. Dette er fordi et parallellogram bare er et spesialtilfelle av et trapes (og et rektangel er bare et spesialtilfelle av et parallellogram).
-}
 \newpage
 \fork{\ref{artrap} \artrap}{
 	Også for et trapes får vi to trekanter hvis vi tegner én av diagonalene:
@@ -104,15 +101,22 @@ Når man tar utgangspunkt i en grunnlinje og en høyde, er arealformlene for et 
 	Arealet $ A $ til trapeset blir dermed
 	\[ 	A=\frac{ah}{2}+\frac{bh}{2}=\frac{h(a+b)}{2}  \]	
 }
+\info{Merk}{
+	Når man tar utgangspunkt i en grunnlinje og en høyde, er arealformlene for et parallellogram og et rektangel identiske. Å anvende \rref{artrap} på et parallellogram vil resultere i et uttrykk tilsvarende $ gh $. Dette fordi et parallellogram er et spesialtilfelle av et trapes (og et rektangel er et spesialtilfelle av et parallellogram).
+}
+\info{Tips}{
+	I arealformlene som innebærer å dividere med 2, vil det å i stedet multiplisere med $\frac{1}{2}$ ofte gjøre at man slipper å regne med brøker i en teller. Har vi for eksempel en trekant med  grunnlinje $\frac{3}{4}$ og høyde $\frac{7}{9}$, er arealet $A$ gitt som
+	\[A=\frac{1}{2}\cdot g h= \frac{1}{2}\cdot\frac{3}{4}\cdot\frac{7}{9}=\frac{21}{72} \]
+}
 \newpage
-\reg[\omkrsirk \label{omkrsirk}]{\index{omkrins!til sirkel}
+\reg[\omkrsirk \label{omkrsirk}]{\index{omkrets!til sirkel}
 	Omkretsen $ O $ til en sirkel med radius $ r $ er
 	\[ O = 2\pi r \]
 	\fig{tri22}
 	hvor $ \pi = 3.141592653589793...
 	$.
 }
-\eks[1]{
+\eks[]{
 	Finn omkretsen til sirkelen.
 	\fig{tri22b}
 	\sv 
@@ -165,13 +169,13 @@ Arealet $ A $ til en sektor med radius $ r $ og vinkel $ v $ (målt i grader) er
 \fork{\ref{arsektto} \arsektto}{
 Av \rref{arsekten} har vi at
 \[ A=\frac{1}{2}ar = \pi r^2 \frac{a}{2\pi r}  \]
-hvor $ \frac{a}{2\pi r} $ uttrykker forholdet mellom buelengden til sektoren og omkretsen til en sirkel med radius $ r $. Dette forholdet er også uttrykkt ved $ \frac{v}{360^\circ} $, og dermed er
+hvor $ \frac{a}{2\pi r} $ uttrykker forholdet mellom buelengden til sektoren og omkretsen til en sirkel med radius $ r $. Dette forholdet er også uttrykt ved $ \frac{v}{360^\circ} $, og dermed er
 $ A=\pi r^2 \frac{v}{360^\circ} $
 }
 
 \newpage
 \reg[\pyt \label{pyt}]{
-	I en rettvinklet trekant er arealet til kvadratet dannet av \\hypotenusen lik summen av arealene til kvadratene dannet av\\ katetene.\regv
+	I en rettvinklet trekant er arealet til kvadratet dannet av den lengste siden lik summen av arealene til kvadratene dannet av de to andre sidene.\regv
 	
 	\parbox[l][][l]{0.7\linewidth}{\[ a^2+b^2=c^2 \]
 	}
@@ -184,17 +188,13 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\sv
 	Vi vet at
 	\[ c^2=a^2+b^2 \]
-	der $ a $ og $ b $ er lengdene til katetene (de korteste sidene) i trekanten. Dermed er
-	\algv{
-		c^2 &= 4^2 + 3^2 \\
-		&= 16+9 \\
-		&=25
-	}
+	der $ a $ og $ b $ er lengdene til de korteste sidene i trekanten. Dermed er
+	\[ c^2 = 4^2 + 3^2 = 16+9 =25 \]
 	Altså har vi at
 	\[ c=5\qquad\vee\qquad c=-5 \]
 	Da $ c $ er en lengde, er $ c=5 $.
 }
-\newpage
+
 \fork{\ref{pyt} \pyt}{ \label{pytforklaringintro}
 	Under har vi tegnet to kvadrat som er like store, men som er inndelt i forskjellige former.
 	\fig{tri26d}
@@ -213,13 +213,13 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	Så lenge trekanten er rettvinklet, kan vi alltid lage to kvadrat med sidelengder $ {a+b} $, slik som i første figur. \eqref{pytforkl} gjelder dermed for alle rettvinklede trekanter.
 }
 \spr{
-	Den lengste siden i en rettvinklet trekant kalles \outl{hypotenus}\index{hypotenus}. De korteste sidene kalles \outl{kateter}\index{katet}. Dette spesielt i samband med Pytagoras' setning.
+	Den lengste siden i en rettvinklet trekant kalles \outl{hypotenus}\index{hypotenus}. Hver av de korteste sidene kalles \outl{katet}\index{katet}. Dette spesielt i samband med Pytagoras' setning.
 }
 \info{Merk}{
 	Gitt en trekant $\triangle ABC$. Av \rref{grside} følger det at hvis $\angle {BAC=90^\circ}$, er det $BC$ som er hypotenusen til trekanten. Og omvendt; Hvis $BC$ er hypotenusen, er $\angle BAC=90^\circ$.
 	\fig{kathyp}
 }
-\newpage
+
 \reg[\pytomv \label{pytomv}]{
 	Gitt en trekant med sidelengder $ a, b $ og $ c $, der $ c $ er den lengste siden. Da er trekanten rettvinklet bare hvis $ a^2+b^2=c^2 $.
 }
@@ -243,8 +243,8 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 
 \newpage
 \reg[\volforml \label{volforml}]{ 
-	Volumet $ V $ til en firkantet prisme eller en sylinder med grunnflate $ G $ og høyde $ h $ er
-	\[ V = G\cdot h \]
+	Volumet $ V $ til en firkantet prisme eller en sylinder med grunnflateareal $ G $ og høyde $ h $ er
+	\[ V = G h \]
 	\begin{figure}
 		\centering
 		\footnotesize
@@ -252,8 +252,8 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 		\stackunder[6pt]{\includegraphics[]{\figp{vol3b}}}{Sylinder}
 	\end{figure} \vsk
 	
-	Volumet $ V $ til en kjegle eller en pyramide med grunnflate $ G $ og høyde $ h $ er
-	\[ V = \frac{G\cdot h}{3} \]
+	Volumet $ V $ til en kjegle eller en pyramide med grunnflateareal $ G $ og høyde $ h $ er
+	\[ V = \frac{G h}{3} \]
 	\begin{figure}
 		\centering
 		\footnotesize
@@ -262,7 +262,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\end{figure} \vsk
 	
 	Volumet $ V $ til en kule med radius $ r $ er
-	\[ V = \frac{4\cdot\pi\cdot r^3}{3} \]
+	\[ V = \frac{4\pi r^3}{3} \]
 	\begin{figure}
 		\centering
 		\includegraphics[]{\figp{vol3d}}
@@ -274,21 +274,20 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\fig{vol4} 
 	(For spisse gjenstander som kjegler og pyramider finnes det selvsagt bare ett valg av grunnflate.)
 }
-\newpage
 \eks[1]{\vs
 	\fig{vol5}
 	En sylinder har radius 7 og høyde 5. 
 	\abc{
-		\item Finn grunnflaten til sylinderen.
+		\item Finn grunnflatearealet til sylinderen.
 		\item Finn volumet til sylinderen.
 	}
 	
 	\sv \vs
 	\abc{
 		\item Av \rref{arrekt2} har vi at
-		\[ \text{grunnflate}= \pi \cdot 7^2 = 49 \pi \]
+		\[ \text{grunnflateareal}= \pi \cdot 7^2 = 49 \pi \]
 		\item Dermed er
-		\[ \text{volumet til sylinderen}= 49\pi\cdot 6 = 294\pi \]
+		\[ \text{volum}= 49\pi\cdot 6 = 294\pi \]
 	}
 }
 \newpage
@@ -296,15 +295,15 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\fig{vol6}
 	En firkantet pyramide har lengde 2, bredde 3 og høyde 5.
 	\abc{
-		\item Finn grunnflaten til pyramiden.
+		\item Finn grunnflatearealet til pyramiden.
 		\item Finn volumet til pyramiden.
 	}
 	\sv  \vs
 	\abc{
 		\item Av \rref{arrekt2} har vi at
-		\[ \text{grunnflate}=2\cdot 3= 6  \]
+		\[ \text{grunnflateareal}=2\cdot 3= 6  \]
 		\item Dermed er
-		\[ \text{volumet til pyramiden}= 6\cdot 5 = 30 \]
+		\[ \text{volum}= 6\cdot 5 = 30 \]
 	}
 } 
 	
@@ -468,7 +467,7 @@ Vi går så videre til å finne $ s_{12} $:
 	s_{12}^2 &= \left(1-SB\right)^2 + \left(\frac{s_6}{2}\right)^2 \\
 	&= 1^2 - 2SB + SB^2 + \frac{s_6^2}{4}
 }
-Ved å både addere og subtrahere 1 på høgresiden kan vi slå sammen $ -1 $ og $ \frac{s_6^2}{4} $ til å bli $ -SB^2 $: 
+Ved å både addere og subtrahere 1 på høyresiden kan vi slå sammen $ -1 $ og $ \frac{s_6^2}{4} $ til å bli $ -SB^2 $: 
 \alg{
 	s_{12}^2&= 1 - 2SB + SB^2 + \frac{s_6^2}{4}-1+1\\
 	&= 2-2SB+SB^2-\left(1-\frac{s_6^2}{4}\right) \\
@@ -555,15 +554,17 @@ Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6
 	&= 3.141592653589793...
 }
 }
-
-\newpage
 \fork{\ref{pytomv} \pytomv}{
-	Samme hva verdien til $ a $ og $ b $ måtte være, kan man åpenbart alltid lage en rettvinklet trekant med kateter $ a $ og $ b $. Av \pyt\;er hypotenusen da $ \sqrt{a^2+b^2} $. Av vilkår (ii) i \rref{konsttre} er dette en unik trekant, og det betyr at alle trekanter med sidelengder $ a $, $ b $ og $ \sqrt{a^2+b^2} $ er rettvinklet.
+	Samme hva verdien til $ a $ og $ b $ måtte være, kan man åpenbart alltid lage en rettvinklet trekant med kateter $ a $ og $ b $. Av \pyt\;er hypotenusen da $ \sqrt{a^2+b^2} $. Av vilkår (ii) i \rref{konsttre} er dette en unik trekant, og det betyr at alle trekanter med sidelengder $ a $, $ b $ og $ \sqrt{a^2+b^2} $ er rettvinklet. Og for en slik trekant er $a^2+b^2=c^2$.
+	
+	\vsk
+	
+	Si videre at trekanten \textsl{er} rettvinklet, men at $a^2+b^2\neq c^2$. Dette ville motsi Pytagoras' setning, og kan dermed ikke være tilfellet.
 }
 \fork{\ref{volforml} \volforml}{ \vs
 Forklaringene til disse formlene er gitt i \tmto.
 } 
-
+\newpage
 \info{Merk}{
 	I de kommnde forklaringene av vilkårene \textsl{ii)} og \textsl{iii)} fra \rref{konsttre} tar man utgangspunkt i følgende:
 	\begin{itemize}
@@ -572,14 +573,13 @@ Forklaringene til disse formlene er gitt i \tmto.
 	\end{itemize}
 	\fig{sirk2} 
 	Punktene over kan enkelt vises, men er såpass intuitivt sanne at vi tar dem for gitt. Punktene forteller oss at trekanten som består av de to sentrene og det éne skjæringspunktet er kongruent med trekanten som består av de to sentrene og det andre skjæringspunktet. Med dette kan vi studere egenskaper til trekanter ved hjelp av halvsirkler.
-} \vsk
-
+}
+\newpage
 \fork{\ref{konsttre} \konsttre}{
 	\textbf{Vilkår (i)}\os
 	Gitt en lengde $ c $ og to vinkler $u $ og $ v $.
 	Vi lager et linjestykke $ AB $ med lengde $ c $. Så stipler vi to vinkelbein slik at $ \angle {A= u} $ og $ {B=v} $. Så lenge disse vinkelbeina ikke er parallelle, må de nødvendigvis skjære hverandre i ett, og bare ett, punkt ($ C $ i figuren). I lag med $ A $ og $ B $ vil dette punktet danne en trekant som er unikt gitt av $ c $, $ u $ og $ v $.
-	\fig{geo13c}	
-	\newpage	
+	\fig{geo13c}		
 	\textbf{Vilkår (ii)}\os
 	Gitt tre lengder $ a $, $ b $ og $ c $. Vi lager et linjestykket $ AB $ med lengde $ c $. Så lager vi to halvsirkler med henholdsvis radius $ a $ og $ b $ og sentrum $ B $ og $ A $. Skal nå en trekant $ \triangle ABC $ ha sidelengder $ a $, $ b $ og $ c $, må $ C $ ligge på begge sirkelbuene. Da buene bare kan møtes i ett punkt, er formen og størrelsen til $ \triangle ABC $ unikt gitt av $a$, $ b $ og $ c $.
 	\fig{geo13a}	

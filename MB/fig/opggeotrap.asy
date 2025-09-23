@@ -1,7 +1,7 @@
 import "../../inhopg" as inh;
 import "../../geo" as geo;
 
-size(10cm);
+size(7cm);
 
 pair B = (10, 0);
 pair Ep = (5, 0);

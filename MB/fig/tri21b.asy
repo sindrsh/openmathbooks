@@ -1,6 +1,6 @@
 import "../../inh" as inh;
 import figs;
-unitsize(1cm);
+unitsize(0.79cm);
 
 
 real b = 5;

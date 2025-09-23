@@ -3,6 +3,36 @@
 \input{../bm}
 \begin{document}
 
+\grubr{}
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{opgalgsquare1_lf}}}\qquad \qquad
+	\subfloat[]{\includegraphics{\figp{opgalgsquare2_lf}}}
+\end{figure}
+\abc{
+\item Da det røde kvadratet har sidelengde $a$ og det grønne kvadratet har sidelengde $b$, har det største kvadratet sidelengde $a+b$. Hver av de hvite rektanglene har areal $ab$. Dermed har vi at
+\begin{align*}
+	A_{\text{størst kvadrat}}&=A_\text{rødt kvadrat}+A_\text{grønt kvadrat}+2A_\text{hvitt rektangel} \\
+	(a+b)^2 &= a^2+b^2+2ab
+\end{align*}
+\item Det blå kvadratet har sidelengde $a-b$. Hver av de hvite rektanglene har areal $(a-b)b$. Dermed har vi at
+\begin{align*}
+	A_{\text{størst kvadrat}}&=A_\text{blått kvadrat}+A_\text{grønt kvadrat}+2A_\text{hvitt rektangel} \\
+	a^2&= (a-b)^2+b^2+2(a-b)b \\
+	a^2&= (a-b)^2+b^2+2ab-2b^2 \\
+	a^2-2ab+b^2 &= (a-b)^2
+\end{align*}
+\item \begin{align*}
+	a^2-b^2 &= A_{\text{størst kvadrat}}-A_\text{grønt kvadrat} \\
+	&=A_\text{blått kvadrat}+2A_\text{hvitt rektangel} \\
+	&=(a-b)^2+2(a-b)b \\ 
+	&=(a-b)(a-b+2b) \\
+	&=(a-b)(a+b)
+\end{align*}
+}
+
+
+
 \grubr{opgalglikbrok} \\
 Vi har at
 \[ a= \frac{cb}{d} \]
