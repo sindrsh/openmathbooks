@@ -14,20 +14,22 @@ draw(rotate(v)*p);
 draw(A--C, L="$h$",align=W);
 draw(A--B, L="$g$",align=S);
 
-mksq2(A,C);
-fill(p,arpen);
 
+fill(p,arpen);
+mksq2(A,C);
 
 // %%%
 transform sh = shift(6,0);
 Tri t = mktri(3,4.5,5);
 p = t.A--t.B--t.C--cycle;
 draw(sh*p);
+fill(sh*p,arpen);
 draw(sh*(t.C.x, 0)--sh*t.C, dotted, L="$h$",align=W);
 draw(sh*t.A--sh*t.B,L="$g$",S);
 
+
+
 mksq2(sh*(t.C.x, 0),sh*t.C);
-fill(sh*p,arpen);
 
 // %%%
 sh = shift(12,0);

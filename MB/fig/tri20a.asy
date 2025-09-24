@@ -1,5 +1,5 @@
 import "../../inh" as inh;
-unitsize(1cm);
+unitsize(0.7cm);
 
 
 real a = 5;

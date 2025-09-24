@@ -3,7 +3,7 @@
 \input{../bm}
 \begin{document}
 
-\grubr{}
+\grubr{opgalgsquare}
 \begin{figure}
 	\centering
 	\subfloat[]{\includegraphics{\figp{opgalgsquare1_lf}}}\qquad \qquad
@@ -30,8 +30,20 @@
 	&=(a-b)(a+b)
 \end{align*}
 }
-
-
+\newpage
+\grubr{opgalgdeterminant}
+\fig{determinant_lf}
+Med $ OE $ som grunnlinje har $ \triangle OEB $ høyde $ b $, altså er
+\[  2A_{\triangle OEB}=(a+c)b \]
+Tilsvarende er
+\[  2A_{\triangle FDO}=(b+d)c \]
+Da $ A_{\triangle OEB}=A_{\triangle CDF}$ og $ A_{\triangle FDO}=A_{\triangle EBC} $, har vi at
+\alg{
+	A_{\square ABCD}&=A_{\square OECF}-2A_{\triangle OBE}-2A_{\triangle FDO} \\
+	&=(a+c)(b+d)-(a+c)b-(b+d)c \\
+	&=(a+c)d-(b+d)c\\
+	&= ad-bc
+}
 
 \grubr{opgalglikbrok} \\
 Vi har at

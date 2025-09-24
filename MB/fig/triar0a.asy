@@ -13,7 +13,7 @@ path p = A--B--C--cycle;
 filldraw(p,arpenr);
 
 draw(A--C, L=(string) b,align=W);
-draw(A--B, L=(string) c,align=S);
+draw(A--B, L="$3b$",align=S);
 
 mksq2(A,C);
 

@@ -13,7 +13,7 @@ real d = 3;
 filldraw((0,0)--(c,0)--(d,h)--cycle,arpenc);
 
 draw((d,0)--(d,h),dotted,L=(string) h,align=W);
-draw((0,0)--(c,0),L=(string) c,align=S);
+draw((0,0)--(c,0),L="$4b$",align=S);
 mksq2((d,0),(d,h));
 
 

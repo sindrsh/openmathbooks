@@ -29,7 +29,7 @@ på er
 \end{itemize}
 }
 \subsection*{Mengder og tallinjer}
-Tall kan representere så mangt. I denne boka skal vi holde oss til to måter å tolke tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utganspunkt i forståelsen av tallene 0 og 1.
+I denne boka skal vi bruke to måter å representere tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utganspunkt i forståelsen av tallene 0 og 1.
 
 \subsubsection*{Tall som mengde}
 	Når vi snakker om en mengde, vil tallet 0 bety\!\!
@@ -73,6 +73,34 @@ Positive heltall blir også kalt \outl{naturlige tal}\index{tall!naturlige}.
 Noen forfattere inkluderer også 0 i begrepet naturlige tal. I noen sammenhenger vil dette lønne seg, i andre ikke.
 }
 \footnotetext{Hva ordet \textit{positiv} betyr skal vi se i \refkap{Negtal}.}
+\subsubsection{Ulikhetstegn}
+Vi har også symboler som viser at verdier \textsl{ikke} er like. Noen ganger er det nok å si at de ikke er like, andre ganger er det også behov for å si hvilken av verdiene som er størst (og minst).
+\spr{ \vs
+	\begin{center}
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{@{}cp{0.4cm}l}
+			$\neq$&& ''er ikke like''\\
+			$ < $ && ''er mindre enn'' \\
+			$ > $ && ''er større enn'' \\
+			$ \leq $ && ''er mindre enn eller lik'' \\
+			$ \geq $ && ''er større enn eller lik'' 
+		\end{tabular}
+		\renewcommand{\arraystretch}{1}
+	\end{center}
+} 
+\eks{ \vsb
+\alg{
+0 &\neq 1 \vn
+7&<9 \vn
+5&>2 \vn
+\text{positive partall}&\geq 2\\
+3&\leq \text{positive oddetall}
+}
+}
+\info{Leseretning}{
+Strengt tatt har vi bare tre symbol for ulikhet, nemlig \sym{$\neq$}, \sym{$<$} og \sym{$\leq$}. De to sistnevnte symbolene krever leseretning fra venstre mot høyre. Ulikheten ${3<5}$ leser vi som ''3 er mindre enn 5''. Men vi kan også si at \sym{$<$} er et symbol med retning, hvor den spisse enden skal peke mot den minste verdien. Dette betyr at vi kan lese ${3<5}$ fra høyre som ''5 er større enn 3''. Det at vi i tillegg bruker symbolene \sym{$>$} og \sym{$\geq$} er et resultat av at vi noen ganger ønsker å si ''større enn'' også når vi leser fra venstre.
+}
+
 
 \newpage
 \section{Tall, siffer og verdi}
