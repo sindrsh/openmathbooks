@@ -1,4 +1,4 @@
-import "../../inh" as inh;
+import "../../inhopg" as inh;
 import "../../drwgrph" as drwgrph;
 
 import figs;
@@ -17,4 +17,8 @@ filldraw(A--C--D--cycle, arpen);
 draw(A--B--C--D);
 draw(O--C, dotted);
 dott(O, "$S$", S);
+dott(A, "$A$", S);
+dott(B, "$B$", S);
+dott(C, "$C$", NE);
+dott(D, "$D$", NW);
 

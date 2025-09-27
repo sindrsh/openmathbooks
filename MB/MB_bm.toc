@@ -94,27 +94,27 @@
 \contentsline {section}{\numberline {8.2}Potenser}{201}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Irrasjonale tall}{209}{section.8.3}%
 \contentsline {section}{Oppgaver}{210}{section*.121}%
-\contentsline {chapter}{\numberline {9}Likninger }{219}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Introduksjon}{220}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{221}{section.9.2}%
-\contentsline {subsubsection}{Deling}{223}{subsubsection*.135}%
-\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{228}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Potenslikninger}{232}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Ulikheter}{235}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{237}{section.9.6}%
-\contentsline {subsubsection}{Likningssett}{238}{subsubsection*.144}%
-\contentsline {section}{Oppgaver}{242}{section*.157}%
-\contentsline {chapter}{\numberline {10}Funksjoner }{245}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Introduksjon}{246}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{249}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{260}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Navn på funksjoner}{264}{section.10.4}%
-\contentsline {section}{Oppgaver}{266}{section*.165}%
-\contentsline {chapter}{\numberline {11}Geometri }{277}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Fromler for areal, omkrets og volum}{278}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{293}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Forklaringer}{298}{section.11.3}%
-\contentsline {section}{Oppgaver}{309}{section*.186}%
-\contentsline {chapter}{Fasit}{329}{section*.187}%
+\contentsline {chapter}{\numberline {9}Likninger }{221}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduksjon}{222}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Løsing ved de fire regneartene}{223}{section.9.2}%
+\contentsline {subsubsection}{Deling}{225}{subsubsection*.135}%
+\contentsline {section}{\numberline {9.3}Løsingsmetodene oppsummert}{230}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Potenslikninger}{234}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Ulikheter}{237}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{239}{section.9.6}%
+\contentsline {subsubsection}{Likningssett}{240}{subsubsection*.144}%
+\contentsline {section}{Oppgaver}{244}{section*.157}%
+\contentsline {chapter}{\numberline {10}Funksjoner }{247}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduksjon}{248}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{251}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{262}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Navn på funksjoner}{266}{section.10.4}%
+\contentsline {section}{Oppgaver}{268}{section*.165}%
+\contentsline {chapter}{\numberline {11}Geometri }{279}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Fromler for areal, omkrets og volum}{280}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{295}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Forklaringer}{300}{section.11.3}%
+\contentsline {section}{Oppgaver}{311}{section*.186}%
+\contentsline {chapter}{Fasit}{332}{section*.187}%
 
-\contentsline {chapter}{Indeks}{342}{chapter*.190}%
+\contentsline {chapter}{Indeks}{346}{chapter*.190}%

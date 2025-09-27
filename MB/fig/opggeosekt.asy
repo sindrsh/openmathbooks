@@ -1,7 +1,7 @@
 import "../../inhopg" as inh;
 import "../../geo" as geo;
 
-unitsize(3.5cm);
+unitsize(2cm);
 
 int n = 5;
 
