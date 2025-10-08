@@ -323,6 +323,62 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 	\item Vi summerer tallene vi har lagt til:  $ {6+70+389=465} $
 \end{enumerate}
 }
+
+\section{Flytting av komma}
+I kommende seksjoner skal vi bruke en teknikk vi skal kalle ''flytting av komma''. Denne metoden handler om å flytte komma et visst antall ''plasser''. Det vi her mener med ''plasser'' er plasser i titallssystemet (se \refsec{tallsiff}).
+\reg[Flytting av komma]{
+Hvis vi flytter komma slik at komma står helt til høyre, kan komma fjernes. \vsk
+
+Hvis vi flytter komma slik at 0-er står til venstre for både komma og alle andre siffer, skal disse 0-ene fjernes.\vsk
+
+Hvis vi flytter komma forbi plasser uten siffer, må vi skrive 0 på disse plassene.\vsk
+
+Hvis vi flytter komma slik at komma står helt til venstre, må vi skrive 0 foran komma. \vsk
+
+Flytter vi komma i et heltall, tar vi utgangspunkt i at komma står helt til høyre.
+}
+\eks[1]{
+Gitt tallet $2,46$. \os
+
+Flytter vi komma to plasser til høyre, får vi $246,=246$.
+\fig{komma1}
+}
+\eks[2]{
+Gitt tallet $42,9$. \os
+
+Flytter vi komma tre plasser til høyre, får vi $42900,=42900$.
+\fig{komma2}
+}
+\newpage
+\eks[3]{
+Gitt tallet $0,001$. \os
+
+Flytter vi komma seks plasser til høyre, får vi $0001000,=1000$
+\fig{komma4}
+}
+\eks[4]{
+Gitt tallet $8,4$.\os
+
+Flytter vi komma en plass til venstre, får vi $,84=0,84$.
+\fig{komma3}
+}
+\eks[5]{
+Gitt tallet $5$.\os
+
+Flytter vi komma tre plasser til venstre, får vi $0,05$.
+\fig{komma5}
+}
+\eks[6]{
+Gitt tallet $109$.\os
+
+Flytter vi komma fire plasser til høyre, får vi $1090000$.
+\fig{komma6}
+}
+\spr{Som nevnt, brukes punktum som desimaltegn i programmeringsspråk. Mange programmeringsspråk godtar at man skriver punktum helst til venstre i et tall. For eksempel kan man skrive $\sym{\texttt{0.1}}$ som \sym{\texttt{.1}}.\vsk
+	
+Mange programmeringsspråk godtar også at man skriver \\ punktum helt til høyre i et tall, men da vil det ofte bety om tallet skal leses som et heltall eller ikke. For eksempel kan \sym{\texttt{1}} tolkes som et heltall, mens \sym{\texttt{1.0}} kan tolkes som et desimaltall. I programmering kan det være forskjell på et heltall og et desimaltall selv om de har lik verdi.
+}
+
 \section{Ganging} \label{rekGanging}
 \subsubsection{Ganging med 10, 100, 1\,000 osv.}
 \reg[Å gange heltall med 10, 100 osv. \label{gangheltallmed10100}]{
@@ -358,8 +414,8 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 \reg[Å gange desimaltall med 10, 100 osv. \label{gangdesmed10100}]{
 	\vs
 	\begin{itemize}
-		\item Når man ganger et desimaltall med 10, får man svaret ved å flytte komma en plass til høgre.
-		\item Når man ganger et heltall med 100, får man svaret ved å flytte komma to plasser til høgre.
+		\item Når man ganger et desimaltall med 10, får man svaret ved å flytte komma en plass til høyre.
+		\item Når man ganger et heltall med 100, får man svaret ved å flytte komma to plasser til høyre.
 		\item Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
 	\end{itemize}
 }
@@ -437,6 +493,7 @@ Videre er
 &=9486}
 } \vs
 }
+\newpage
 \subsubsection{Kompaktmetoden}
 Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men har en skrivemåte som gjør utregningen korterere. \regv
 
@@ -449,7 +506,7 @@ Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men
 \fork{Eksempel 1}{
 Vi starter med å gange sifrene i 279 enkeltvis med 4:
 \begin{itemize}
-	\item $ 9\cdot 6=36 $, da skriver vi 6 på enerplassen og 3 i mente.
+	\item $ 9\cdot 4=36 $, da skriver vi 6 på enerplassen og 3 i mente.
 	\item $ 7\cdot4 =28$, da skriver vi 8 på tierplassen og 2 i mente.
 	\item $ 2\cdot 4=8 $, da skriver vi 8 på hundrerplassen.
 \end{itemize}
@@ -466,16 +523,16 @@ Vi regner ut summen (med mentene inkludert), som er 9486.
 \subsubsection{Ganging med desimaltall}
 \st{
 	\begin{enumerate}
-		\item Flytt komma til høgre slik at begge tallene blir heltall.
+		\item Flytt komma til høyre slik at begge tallene blir heltall.
 		\item Regn ut gangestykket mellom heltallene.
-		\item Flytt komma til venstre like mange plasser som du totalt flyttet komma til høgre.
+		\item Flytt komma til venstre like mange plasser som du totalt flyttet komma til høyre.
 	\end{enumerate}
 }
 \eks[1]{
 	Regn ut $ 3,4\cdot2 $
 	
 	\sv
-	Vi flytter komma i 1 plass til \textsl{høgre} i 3,4. Da får vi 34. Videre er
+	Vi flytter komma 1 plass til \textsl{høyre} i 3,4. Da får vi 34. Videre er
 	\[ 34\cdot2=68 \]
 	Flytter vi komma 1 plass til \textsl{venstre} i 68, får vi 6,8. Altså er
 	\[ 3,4\cdot 2=6,8 \]
@@ -484,7 +541,7 @@ Vi regner ut summen (med mentene inkludert), som er 9486.
 	Regn ut $ 0,005\cdot 7 $.
 	
 	\sv
-	Vi flytter komma 3 plasser til \textsl{høgre} i 0,005. Da får  vi 5. Videre er
+	Vi flytter komma 3 plasser til \textsl{høyre} i 0,005. Da får  vi 5. Videre er
 	\[ 5\cdot7=35 \]
 	Flytter vi komma 3 plasser til \textsl{venstre} i 35, får vi 0,035. Altså er
 	\[ 0,005\cdot7=0,035 \]
@@ -526,7 +583,7 @@ Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
 }
 }
 \fork{Deling med 10, 100, 1\,000 osv.}{
-Titallsystemet baserer seg på grupper av ti, hundre, tusen osv., og tideler, hundredeler og tusendeler osv (se \rref{titalsys}). Når man deler et tall med 10, vil alle enere i tallet bli til tideler, alle tiere bli til enere osv. Hvert siffer forskyves altså én plass mot høgre. Tilsvarende forskyves hvert siffer to plasser mot høgre når man deler med 100, tre plasser når man deler med 1\,000 osv.
+Titallsystemet baserer seg på grupper av ti, hundre, tusen osv., og tideler, hundredeler og tusendeler osv (se \rref{titalsys}). Når man deler et tall med 10, vil alle enere i tallet bli til tideler, alle tiere bli til enere osv. Hvert siffer forskyves altså én plass mot høyre. Tilsvarende forskyves hvert siffer to plasser mot høyre når man deler med 100, tre plasser når man deler med 1\,000 osv.
 }
 
 \subsubsection{Oppstilling}
@@ -794,7 +851,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 \subsubsection{Divisjon med desimaltall}
 \st{
 \begin{enumerate}
-\item Flytt komma til høgre slik at begge tallene blir heltall. Flytt gjerne komma til høgre i dividenden slik at den blir større enn divisoren.
+\item Flytt komma til høyre slik at begge tallene blir heltall. Flytt gjerne komma til høyre i dividenden slik at den blir større enn divisoren.
 \item Regn ut delestykket mellom heltallene.
 \item Regn ut (det er snakk om antall plasser komma flyttet)
 \[\small \text{plasser flyttet i dividend}-\text{plasser flyttet i divisor} \]
@@ -805,7 +862,7 @@ Hvis svaret er positivt, flytt komma så mange plasser til \textsl{høyre}. Hvis
 Regn ut $ 9,2:4 $.
 
 \sv
-Vi flytter komma 1 plass til \textsl{høgre} i 9,2. Da får vi 92. Videre er
+Vi flytter komma 1 plass til \textsl{høyre} i 9,2. Da får vi 92. Videre er
 \[ 92:4=23 \]
 Vi flytter komma 1 plass til \textsl{venstre} i 23. Da får vi 2,3. Altså er
 \[ 9,2:4=2,3 \]
@@ -1020,7 +1077,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 	For å skrive om tall på standardform kan du gjøre følgende:
 	\begin{enumerate}
 		\item Flytt komma slik at du får et tall som ligger mellom 0 og 10.
-		\item Gang dette tallet med en tierpotens som har eksponent med tallverdi lik antallet plasser du flyttet komma. \qquad  Flyttet du komma mot venstre/høgre, er eksponenten positiv/negativ. 
+		\item Gang dette tallet med en tierpotens som har eksponent med tallverdi lik antallet plasser du flyttet komma. \qquad  Flyttet du komma mot venstre/høyre, er eksponenten positiv/negativ. 
 	\end{enumerate}
 }
 \eks[3]{
@@ -1039,7 +1096,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 	
 	\sv \vs
 	\begin{enumerate}
-		\item Vi flytter komma 4 plasser til høgre, og får $ 3,9 $.
+		\item Vi flytter komma 4 plasser til høyre, og får $ 3,9 $.
 		\item Vi ganger dette tallet med $ 10^{-4} $, og får at
 		\[ 0,00039=3,9\cdot10^{-4} \]
 	\end{enumerate}

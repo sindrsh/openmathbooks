@@ -6,7 +6,7 @@
 \section{\algintro}
 \outl{Algebra}\index{algebra} er matematikk der bokstaver representerer tall. Dette gjør at vi lettere kan jobbe med \textsl{generelle} tilfeller. For eksempel er $ {3\cdot 2=2\cdot3} $ og $ {6\cdot7=7\cdot6} $, men disse er bare to av de uendelig mange eksemplene på at multiplikasjon er kommutativ! En av hensiktene med algebra er at vi ønsker å gi \textsl{ett} eksempel som forklarer \textsl{alle} tilfeller, og siden sifrene våre (0-9) er uløselig knyttet til bestemte tall, bruker vi bokstaver for å nå dette målet. \vsk
 
-Verdien til tallene som er representert ved bokstaver vil ofte variere ut ifra en sammenheng, og da kaller vi disse bokstavtallene for \outl{variabler}\index{variabel}. Hvis bokstavtallene derimot har en bestemt verdi, kaller vi dem for \outl{konstanter}\index{konstant}.
+Verdien til tallene som er representert ved bokstaver vil ofte variere ut ifra en sammenheng. Da kaller vi disse bokstavtallene for \outl{variabler}\index{variabel}. Hvis bokstavtallene derimot har en bestemt verdi, kaller vi dem for \outl{konstanter}\index{konstant}.
 
 \vsk
 
@@ -48,8 +48,8 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \eks[]{ \vs
 \[a:2= \frac{a}{2} \]
 }
- \vsk 
 
+\newpage
 \reg[\brtbr\; (\ref{brtbr})]{
 \[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
 }
@@ -60,7 +60,7 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 }
 \eks[2]{ \vs
 	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
-}
+} \vsk
 
 \reg[\brdelmbr\;(\ref{delmbr})]{ 
 \[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
@@ -70,8 +70,7 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 }
 \eks[2]{ \vs
 \[ \frac{a}{13}:\frac{b}{3}=\frac{a}{13}\cdot \frac{3}{b} =\frac{3a}{13b} \]
-}
-\newpage
+} \vsk
 
 \reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{
 \[ (a+b)c = a c + b c \]
@@ -82,7 +81,7 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \eks[2]{\vs
 \[ a(5b-3)=5ab-3a \]
 } 
-\vsk \vsk
+\newpage
 \reg[\gangmnegto\;(\ref{gangmnegto})]{
 \[ a\cdot(-b)=-(a\cdot b) \]
 }
@@ -91,8 +90,7 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 }
 \eks[2]{ \vs
 \[ (-a)\cdot7=-(a\cdot 7)=-7a \]
-}
-\newpage
+} \vsk
 
 \reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{
 \[ (-a)\cdot(-b)=a\cdot b \]
@@ -102,13 +100,15 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 }
 \eks[2]{ \vs 
 \[ (-a)\cdot(-15)=15a \]
-}
+} \vsk
 \label{regslutt}
-\vsk \vsk
+
 
 \spr{
 Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet, og konstanter og variabler på den andre siden, sier vi at den isolerte variabelen er \outl{uttrykt ved} de andre tallene. For eksempel, om vi har uttrykket $ {a=2b-4} $, sier vi at ''$ a $ er uttrykt ved $ b $''. Har vi uttrykket $ {q = 9y-x} $, sier vi at ''$ q $ er uttrykt ved $ x $ og $ y $''.
 }
+
+\newpage
 \info{Minus foran parentes}{
 	La oss se på uttrykket $-(a-b)$. Vi har at
 	\alg{
@@ -204,7 +204,7 @@ Med innføringen av potenser legger vi også til en linje i \rref{rrek}:
 %\id
 }
 \info{Merk}{
-	De kommende sidene vil inneholde regler for potenser med tilhørende forklaringer. Selv om det er ønskelig at forklaringer har en så generell form som mulig, har vi i utledningene valgt å bruke eksempler der eksponentene ikke er variabler. Å bruke variabler som eksponenter ville gitt mye mindre leservennlige uttrykk, og vi vil påstå at de generelle tilfellene kommer godt til syne også ved de konkrete tilfellene. 
+	De kommende sidene vil inneholde regler for potenser med tilhørende forklaringer. Selv om det er ønskelig at forklaringer har en så generell form som mulig, har vi i utledningene valgt å bruke eksempler der eksponentene ikke er variabler. Å bruke variabler som eksponenter ville gitt mye mindre leservennlige uttrykk, og de generelle tilfellene kommer godt til syne også ved de konkrete tilfellene. 
 } \vsk 
 
 \reg[\potgang \label{potgang}]{
@@ -330,6 +330,7 @@ Med innføringen av potenser legger vi også til en linje i \rref{rrek}:
 	\[ \left(\frac{a}{7}\right)^3=\frac{a^3}{7^3} 
 	=\frac{a^3}{343} \]
 }
+\newpage
 \fork{\ref{potbr} \potbr}{
 	La oss studere $\left(\frac{a}{b}\right)^3$. Vi har at
 	\begin{align*}
@@ -407,16 +408,15 @@ Med innføringen av potenser legger vi også til en linje i \rref{rrek}:
 	
 	$ \sqrt[5]{9} $ kalles ''femterota til 9''.
 }
-\newpage
-\section{\irrasj}
+\section{Irrasjonale tall}
 \reg[Irrasjonale tall]{
 	Et tall som \textsl{ikke} er et rasjonalt tall, er et irrasjonalt tall\index{tall!irrasjonalt}\footnotemark.\vsk
 	
 	Verdien til et irrasjonalt tall har uendelig mange desimaler med et ikke-repeterende mønster.
 }
 \footnotetext{Strengt tatt er irrasjonale tall alle \textit{reelle} tall som ikke er rasjonale tall. Men for å forklare hva \textit{reelle} tall er, må vi forklare hva \textit{imaginære} tall er, og det har vi valgt å ikke gjøre i denne boka. }
-\eks[1]{
-	$ \sqrt{2} $ er et irrasjonalt tall.
+\eks[]{
+$ \sqrt{2} $ er et irrasjonalt tall.
 	\[ \sqrt{2}=1.414213562373... \]
 }
 
