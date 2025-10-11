@@ -25,7 +25,7 @@ $ {2x+1} $ er \outl{funksjonsuttrykket}\index{funksjonsuttrykk} til funksjonen '
 
 \newpage
 \textbf{Generelle uttrykk} \\
-Skulle vi jobbet videre med funskjonen vi akkurat har sett på, ville det blitt tungvint å hele tiden måtte skrive ''Antall ruter i \textsl{Figur }$ x $''. Det er vanlig å kalle også funksjoner bare for en bokstav, og i tillegg skrive variabelen funskjonen er avhengig av i parentes. La oss nå omdøpe funksjonen ''Antall ruter i \textsl{Figur} $ x $'' til $ a(x) $. Da har vi at
+Skulle vi jobbet videre med funksjonen vi akkurat har sett på, ville det blitt tungvint å hele tiden måtte skrive ''Antall ruter i \textsl{Figur }$ x $''. Det er vanlig å kalle også funksjoner bare for en bokstav, og i tillegg skrive variabelen funksjonen er avhengig av i parentes. La oss nå omdøpe funksjonen ''Antall ruter i \textsl{Figur} $ x $'' til $ a(x) $. Da har vi at
 \[ \text{Antall ruter i \textsl{Figur }}x=a(x)=2x+1 \]
 Hvis vi skriver $ a(x) $, men erstatter $ x $ med et bestemt tall, betyr det at vi skal erstatte $ x $ med dette tallet i funksjonsuttrykket vårt:
 \alg{
@@ -35,9 +35,6 @@ a({\colb3})&=2\cdot{\colb3}+1=7\\
 a({\colb4})&=2\cdot{\colb4}+1=9
 }
 \fig{funk1a}
-\spr{
-Som leseren kanskje har lagt merke til, er en funksjon med et tilhørende funksjonsuttrykk strengt tatt bare en likning med to ukjente. Men ordet \textit{funksjon} brukes istendefor \textit{likning} for å tydeliggjøre at vi har å gjøre med en likning hvor én variabel er isolert på den éne siden av likhetstegnet, og at vi har et uttrykk av en annen variabel\footnote{En funksjon kan også være uttrykt ved flere variabler.} på den andre siden. Et annet synonym for \textit{likning} og \textit{funksjon} er \outl{formel}\index{formel}. 
-}
 \newpage
 \eks{
 La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
@@ -69,8 +66,15 @@ Altså er
 Siden vi søker en positiv verdi for $ x $, er $ x=15 $.	
 }
 }
+\newpage
+\info{$\bm {f(x)}$ og $\bm f$}{
+	Når vi omtaler en funksjon $f(x)$, nøyer vi oss ofte med å skrive bare $f$. I steden for å skrive for eksempel ${f(x)=2x}$, kunne vi også skrevet $f=2x$, men det fine med førstnevnte skrivemåte er at det tydeliggjør at det er $x$ som er variabelen.
+}
+\spr{
+	Som leseren kanskje har lagt merke til, er en funksjon med et tilhørende funksjonsuttrykk strengt tatt bare en likning med to ukjente. Men ordet \textit{funksjon} brukes i steden for \textit{likning} for å tydeliggjøre at vi har å gjøre med en likning hvor én variabel er isolert på den éne siden av likhetstegnet, og at vi har et uttrykk av en annen variabel\footnote{En funksjon kan også være uttrykt ved flere variabler.} på den andre siden. Et synonym for \textit{likning} og \textit{funksjon} er \outl{formel}\index{formel}. 
+}
 \section{\lingraf}
-Når vi har en variabel $ x $ og en funksjon $ f(x) $, har vi hele tiden to verdier; verdien til $ x $ og den tilhørende verdien til $ f(x) $. Disse parene av verdier kan vi sette inn i et koordinatsystem\footnote{Se \hrs{Koord}{seksjon}.} for å lage \outl{grafen}\index{funksjon!grafen til} til $ f(x) $. \vsk
+Når vi har en variabel $ x $ og en funksjon $ f(x) $, har vi hele tiden to verdier; verdien til $ x $ og den tilhørende verdien til $ f $. Disse parene av verdier kan vi sette inn i et koordinatsystem\footnote{Se \hrs{Koord}{seksjon}.} for å lage \outl{grafen}\index{funksjon!grafen til} til $ f $. \vsk
 
 La oss bruke funksjonen 
 \[ f(x)=2x-1 \]
@@ -85,30 +89,30 @@ Disse parene av verdier kan vi sette opp i en tabell:
 	\begin{center}
 	\begin{tabular}{c | c |c |c|c}
 		$ x $ & 0 & 1 & 2 & 3 \\ \hline
-		$ f(x) $ &$  -1 $ & 1&3 &5
+		$ f $ &$  -1 $ & 1&3 &5
 	\end{tabular}
 \end{center}
 Tabellen over gir punktene
 \[ (0, -1)\quad\quad(1, 1)\quad\quad(2, 3)\quad\quad(3, 5) \]
-Vi plasserer nå punktene i et koordinatsystem (se figur på side \pageref{funkfig}). I samband med funksjoner er det vanlig å kalle horisontalaksen og vertikalaksen for henholdsvis \outl{$ x $-aksen} og \outl{$ y $-aksen}. 
-Grafen til $ f(x) $ er nå en tenkt strek som går gjennom alle de uendelig mange punktene vi kan lage av $ x$-verdier og de tilhørende $ f$-verdiene. Vår funksjon er en \textit{lineær}\index{funksjon!lineær} funksjon, noe som betyr at grafen er en rett linje. Altså kan grafen tegnes ved å tegne linja som går gjennom punktene vi har funnet.\vsk
+Vi plasserer nå punktene i et koordinatsystem (se figur på side \pageref{funkfig}). Grafen til $ f $ er en tenkt strek som går gjennom alle de uendelig mange punktene vi kan lage av $ x$-verdier og de tilhørende $ f$-verdiene. Vår funksjon er en \outl{lineær}\index{funksjon!lineær} funksjon, noe som betyr at grafen er en rett linje. Altså kan grafen tegnes ved å tegne linja som går gjennom\\ punktene vi har funnet.\vsk
 
 Som vi har vært inne på før, kan vi aldri tegne en hel linje, bare et utklipp av den. Dette gjelder som regel også for grafer. I figuren på side \pageref{funkfig} har vi tegnet grafen til $ f(x) $ for $ x $-verdier mellom $ -2 $ og $ 4 $. At $ x $ er i dette \outl{intervallet}\index{intervall} kan vi skrive som $ -2\leq x\leq 4 $.
 \fig{funk3} \label{funkfig}
-\info{$\bm {f(x)}$ og $\bm f$}{
-Når vi omtaler en funksjon $f(x)$, nøyer vi oss ofte med å skrive bare $f$. I steden for å skrive for eksempel ${f(x)=2x}$, kunne vi også skrevet $f=2x$, men det fine med førstnevnte skrivemåte er at det tydeliggjør at det er $x$ som er variabelen.
+
+\spr{
+	Horisontalaksen og vertikalaksen kalles for henholdsvis \outl{$ x $-aksen} og \outl{$ y $-aksen}. \vsk
+	
+	$f$-verdiene kalles også $y$-verdiene til funksjonen $f$.
 }
 \info{Navn på $\bm y$-aksen}{
-Hvis vi bare har grafen til én funksjon, $f$, plassert i et koordinatsystem, vil vi noen ganger kalle $y$-aksen for $f$-aksen.
+Hvis vi bare har én funksjon, $f$, plassert i et koordinatsystem, kan vi også kalle $y$-aksen for $f$-aksen. Hvis vi bruker $y$-akse som navn, vil det være underforstått at $f$ på figuren viser til grafen til $f$.
 \begin{figure}
 	\centering
 	\includegraphics{\figp{axisf_a}}\qquad
 	\includegraphics{\figp{axisf_b}}
 \end{figure}
 }
-\spr{
-$f$-verdiene kalles også $y$-verdiene til funksjonen $f$.
-}
+
 \info{Merk}{
 En lengde på $ x $-aksen trenger ikke å ha samme verdi som en lengde på $ y $-aksen.
 \fig{funkmerk}
@@ -176,7 +180,7 @@ Altså er
 Vi går så over til å finne uttrykket til $ g(x) $. Punktet $ (0, -1) $ ligger på grafen til $ g $. Da vet vi at $ {g(0)=-1} $, og dette må bety at $ -1 $ er konstantleddet til $ g $. Videre ser vi at punktet $ (5, 2) $ også ligger på grafen til $ g $, som betyr at $g(5)=2$. Stigningstallet til $ g $ er da gitt ved brøken
 \[\frac{g(5)-g(0)}{5-0}= \frac{2-(-1)}{5-0}=\frac{3}{5} \]
 Altså er
-\[ g(x)=\frac{3}{5}x+1 \]
+\[ g(x)=\frac{3}{5}x-1 \]
 }
 \info{Alternativ metode for å finne $\bm a$}{
 I \textsl{Eksempel 3} over har vi brukt formelen for $a$ fra \rref{funklin} for å finne stigningstallene. Denne metoden vil alltid virke, men noen ganger kan det være raskere å lese av stigningstall så og si direkte fra grafen. \os
@@ -330,7 +334,7 @@ Punkt der funksjonen har sin høyeste verdi.
 	er da en \outl{potensfunksjon} med \outl{koeffisient} $ k $ og \outl{eksponent} $ m $.
 }
 \eks{
-$f(x)=2x^3$ er en potensfunksjon med koeffisient $k$ og\\ eksponent $3$.
+$f(x)=2x^3$ er en potensfunksjon med koeffisient $2$ og\\ eksponent $3$.
 }
 \regdef[Polynomfunksjoner]{
 	En \outl{polynomfunksjon} er én av følgende:
@@ -351,7 +355,7 @@ $f(x)=2x^3$ er en potensfunksjon med koeffisient $k$ og\\ eksponent $3$.
 \eks[1]{ 
 	$ 4x^7-5x^2+4 $ er et 7. grads polynom. \vsk
 	
-	$ \frac{2}{7}x^5-3 $ er et et 5. grads polynom.
+	$ \frac{2}{7}x^5-3 $ er et 5. grads polynom.
 }
 \newpage
 \regdef[Rasjonale funksjoner]{

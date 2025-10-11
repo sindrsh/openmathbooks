@@ -13,5 +13,5 @@ xaks(a, b,l="$x$",bex=1.1,tck=true, tc=1);
 yaks(-50, 50, l="$y$", bex=1.1, tck=true, tc=10);
 
 draw((a,f(a))--(b,f(b)),blue);
-label("$f(x)=10x$",(b,f(b)),NW,blue);
+label("$f$",(b,f(b)),NW,blue);
 

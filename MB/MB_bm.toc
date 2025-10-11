@@ -107,15 +107,15 @@
 \contentsline {section}{Oppgaver}{245}{section*.158}%
 \contentsline {chapter}{\numberline {10}Funksjoner }{249}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Introduksjon}{250}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{253}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{264}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Navn på funksjoner}{268}{section.10.4}%
-\contentsline {section}{Oppgaver}{270}{section*.166}%
-\contentsline {chapter}{\numberline {11}Geometri }{281}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Fromler for areal, omkrets og volum}{282}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{297}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Forklaringer}{302}{section.11.3}%
-\contentsline {section}{Oppgaver}{313}{section*.187}%
-\contentsline {chapter}{Fasit}{335}{section*.188}%
+\contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{254}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{265}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Navn på funksjoner}{269}{section.10.4}%
+\contentsline {section}{Oppgaver}{271}{section*.166}%
+\contentsline {chapter}{\numberline {11}Geometri }{283}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Fromler for areal, omkrets og volum}{284}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{299}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Forklaringer}{304}{section.11.3}%
+\contentsline {section}{Oppgaver}{315}{section*.187}%
+\contentsline {chapter}{Fasit}{337}{section*.188}%
 
 \contentsline {chapter}{Indeks}{348}{chapter*.191}%
