@@ -25,6 +25,7 @@
 \newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
 
 
+
 %references
 \newcommand{\reftab}[1]{\hrs{#1}{tabell}}
 \newcommand{\rref}[1]{\hrs{#1}{regel}}
@@ -37,7 +38,18 @@
 \newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
 \newcommand{\refop}[1]{{\color{NavyBlue}Oppgave \ref{#1}}}
 \newcommand{\refops}[1]{{\color{NavyBlue}oppgave \ref{#1}}}
+\newcommand{\refgrub}[1]{\vspace{3pt}\textbf{\color{NavyBlue} gruble \ref{#1}}}
 
+\newcommand{\amounts}[1]{
+	\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
+		\small \rightline{Mengde}
+	\end{tcolorbox}
+}
+\newcommand{\numrline}[1]{
+	\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
+		\small \rightline{Tallinje}
+	\end{tcolorbox}
+}
 
 
 %%% SECTION HEADLINES %%%
@@ -106,7 +118,7 @@
 \newcommand{\delmedtihundre}{Deling med 10, 100, 1\,000 osv.}
 \newcommand{\adkom}{Addisjon er kommutativ}
 \newcommand{\gangkom}{Multiplikasjon er kommutativ}
-\newcommand{\brdef}{Brøk som omskriving av delestykke}
+\newcommand{\brdef}{Brøk som omskriving av divisjonsstykke}
 \newcommand{\brtbr}{Brøk ganget med brøk}
 \newcommand{\delmbr}{Brøk delt på brøk}
 \newcommand{\gangpar}{Ganging med parentes (distributiv lov)}
@@ -146,4 +158,7 @@
 \newcommand{\rknut}{
 	Regn ut.
 }
+
+
+
 

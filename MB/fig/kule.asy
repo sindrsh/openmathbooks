@@ -1,8 +1,7 @@
+import "../../inh" as inh;
 import solids;
 settings.render=0; 
 settings.prc=false; // on se restreint à une vue 2d
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
 size(2cm,0);
 
 currentprojection=orthographic(10,3,8);

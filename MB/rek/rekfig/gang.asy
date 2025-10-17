@@ -17,19 +17,19 @@ real[] g(int k, int m, real y=-3){
 
 	real lmarg = (-2*s.length-2-2*s2.length)*dx;
 
-	label("$=$",(dx,-0.05),blue);
+	label("$=$",(dx,-0.05));
 	
 	real[] margs ={};
 	for (int i = 0; i < s.length; ++i){
-		label(s[i],lmarg+((2*i+1)*dx,0),blue);
+		label(s[i],lmarg+((2*i+1)*dx,0));
 		margs.push(lmarg+(2*i+1)*dx);
 	}
 
 	real margc = lmarg+(2*s.length+1)*dx;
-	label("$\cdot$",(margc,0),blue);
+	label("$\cdot$",(margc,0));
 
 	for (int i = 0; i < s2.length; ++i){
-		label(s2[i],margc+dx+((2*i+1)*dx,0),blue);
+		label(s2[i],margc+dx+((2*i+1)*dx,0));
 	}
 	
 	for (int i = 0; i < s3.length; ++i){

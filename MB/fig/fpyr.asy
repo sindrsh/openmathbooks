@@ -1,9 +1,7 @@
+import "../../inh" as inh;
 unitsize(0.6cm);
-defaultpen(fontsize(11 pt));
 import solids;
 import math;
-settings.outformat="pdf";
-settings.render = 5;
 import three;
 import fig3d;
 
@@ -15,4 +13,4 @@ triple pA=(b,b,0), pB=(-b,b,0),
        pS=(0,0,3);
 draw(pS--pD--pA--pS--pB--pA);
 draw(pD--pC--pS^^pC--pB,dashed);
-draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.1));
+draw(surface(pA--pB--pC--pD--cycle), blue+opacity(0.2));

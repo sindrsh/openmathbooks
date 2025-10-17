@@ -1,9 +1,7 @@
-import tri;
+import "../../inh" as inh;
+import "../../geo" as geo;
 import solids;
-settings.outformat="pdf";
 currentprojection=orthographic(5,4,4);
-settings.render = 10;
-defaultpen(fontsize(11 pt));
 
 triple proj = (1,-1,0.5);
 currentprojection=orthographic(proj);
@@ -34,10 +32,10 @@ surface s2 = surface(p2);
 surface s3 = surface(p3);
 surface s4 = surface(p4);
 
-draw(p1,blue);
-draw(p2,blue);
-draw(p3,blue);
-draw(p4,blue);
+draw(p1,black);
+draw(p2,black);
+draw(p3,black);
+draw(p4,black);
 
 draw(s1,p);
 draw(s2,p);

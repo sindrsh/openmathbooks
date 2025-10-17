@@ -47,8 +47,8 @@ void su(int k, int m){
 		pen p = p1;
 		if (i==1){p=p10;}
 		if (i==2){p=p100;}
-		if (i==3){p=Yellow+opacity(0.5);}
-		filldraw(b, p,drawpen=grey+opacity(0.1));	
+		if (i==3){p=Yellow+opacity(0.1);}
+		filldraw(b, p,drawpen=grey+opacity(0.2));	
 	}
 	
 	draw(((-2*(L)-2)*dx,1.5dy)--(0,1.5dy));

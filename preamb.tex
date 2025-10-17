@@ -89,16 +89,6 @@
 \newcounter{rg}
 \numberwithin{rg}{chapter}
 
-\newcommand{\amounts}[1]{
-\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
-\small \rightline{Mengde}
-\end{tcolorbox}
-}
-\newcommand{\numrline}[1]{
-	\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs
-		\small \rightline{Tallinja}
-	\end{tcolorbox}
-}
 \newcommand{\reg}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox} \vs}
 \newcommand{\regdef}[2][]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Blue!3] {\refstepcounter{rg}\phantomsection \large \textbf{\therg \;#1} \vspace{5 pt}}\newline #2  \end{tcolorbox} \vs}
 \newcommand{\words}[1]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=Teal!3] #1  \end{tcolorbox} \vs}
@@ -113,7 +103,8 @@
 
 \newcommand{\sym}[1]{\colorbox{NavyBlue!15}{#1}}
 
-\newcommand{\info}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=cyan!6] {\large \textbf{#1} \vspace{5 pt}\\} #2 \end{tcolorbox}\vspace{-5pt} }
+\newcommand{\info}[2]{\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,enhanced jigsaw,breakable,colback=Cyan!6] {\large \textbf{#1} \vspace{5 pt}\\} #2 \end{tcolorbox}
+}
 
 \newcommand\algv[1]{\vspace{-11 pt}\begin{align*} #1 \end{align*}}
 

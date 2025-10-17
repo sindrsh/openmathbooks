@@ -56,9 +56,9 @@ Regn ut
 \sv \vs \vs
 %id{calcorderexmp1s}
 \alg{
-&& 23-(3+9)+4\cdot 7&=23-12+4\cdot7 &&\text{Parentes} \\
-&&&=23-12+28 &&\text{Multiplikasjon} \\
-&&&=39 &&\text{Addisjon og subtraksjon}
+&& 23-\colb{(3+9)}+4\cdot 7&=23-\colb{12}+4\cdot7 &&\text{Parentes} \br
+&&23-12+\colg{4\cdot7}&=23-12+\colg{28} &&\text{Multiplikasjon} \br
+&&23-12+28&=39 &&\text{Addisjon og subtraksjon}
 }
 %\id
 }
@@ -67,12 +67,12 @@ Regn ut
 	%id{calcorderexmp2}
 	\[ 18:(7-5)-3 \]
 	%\id
-	\sv \vs
+	\sv \vsb
 	%id{calcorderexmp2}
 	\algv{
-		&& 18:(7-5)-3&=18:2-3 &&\text{Parentes} \\
-		&&&=9-3 &&\text{Divisjon} \\
-		&&&=6 &&\text{Subtraksjon}
+		&& 18:\colb{(7-5)}-3&=18:\colb{2}-3 &&\text{Parentes} \\
+		&&\colg{18:2}-3&=\colg{9}-3 &&\text{Divisjon} \\
+		&&9-3&=6 &&\text{Subtraksjon}
 	}
 	%\id
 }
@@ -83,7 +83,7 @@ To måter man kan tenke på er disse:
 %id{twoways}
 \begin{enumerate}[label=(\roman*)]
 	\item Det er $ 2\cdot4 =8 $ lilla ruter og $ 3\cdot4=12 $ grønne ruter. Til sammen er det $ 8+12 =20 $ ruter. Dette kan vi skrive som
-\[ 2\cdot 4 + 3\cdot 4 = 20  \]
+\[ 2\cdot 4 + 3\cdot 4 = 20  \] 
 	\item Det er $ 2+3=5 $ ruter bortover og 4 ruter oppover. Altså er det $ 5\cdot4 =20 $ ruter totalt. Dette kan vi skrive som
 	\[ (2+3)\cdot 4 = 20 \]
 \end{enumerate}
@@ -137,7 +137,7 @@ $ 12\cdot 3 $
 Vi introduserte parenteser som en indikator på hva som skulle regnes ut først, men \rref{gangpar} gir en alternativ og likeverdig betydning av parenteser.
 }
 \info{Ganging med parentes og gangetenget}{
-Det er vanlig å utelate gangetegnet når et tall ganges med en parentesuttrykk. Altså er for eksempel ${2(3-1)}$ det samme som $2\cdot(3-1)$. 
+Det er vanlig å utelate gangetegnet når et tall ganges med en parentesuttrykk. For eksempel er ${2(3-1)}$ det samme som $2\cdot(3-1)$. 
 }
 \newpage
 \subsubsection{Å gange med 0}
@@ -173,6 +173,7 @@ $ 0=2-2 $
 	}
 %\id
 }
+\newpage
 \subsection*{Assosiative lover}
 \reg[Assosiativ lov ved addisjon]{
 Plasseringen av parenteser mellom ledd har ingen påvirkning på summen.
@@ -186,7 +187,7 @@ Plasseringen av parenteser mellom ledd har ingen påvirkning på summen.
 %\id
 %\fig{asso0}
 }
-\vsk \vsk
+
 
 \reg[Assosiativ lov ved multiplikasjon]{
 Plasseringen av parenteser mellom faktorer har ingen påvirkning på produktet.
@@ -213,7 +214,10 @@ I motsetning til addisjon og multiplikasjon, er hverken subtraksjon eller divisj
 	80:(10:2)&=80:5=16
 }
 %\id
+\newpage
+\subsection*{Retning på utregninger}
 Vi har sett at parentesene hjelper oss med å si noe om \textsl{prioriteringen} av regneartene, men det at subtraksjon og divisjon ikke er assosiative fører til at vi også må ha en regel for hvilken \textsl{retning} vi skal regne i. \regv
+
 
 \reg[Retning på utregninger \label{rret}]{
 Regnearter som ut ifra \rref{rrek} har lik prioritet, skal regnes fra venstre mot høyre.
@@ -246,7 +250,7 @@ Regnearter som ut ifra \rref{rrek} har lik prioritet, skal regnes fra venstre mo
 	%\id
 }
 \info{Divisor og faktors plassering}{
-I uttrykk som bare inneholder divisjon og multiplikasjon kan vi flytte på divisorer og faktorer uten at verdien endres. For eksempel ak vi skrive uttrykket $3:8\cdot16$ kan vi skrive som $3\cdot16:8$
+I uttrykk som bare inneholder divisjon og multiplikasjon kan vi flytte på divisorer og faktorer uten at verdien endres. For eksempel kan vi skrive uttrykket ${3:8\cdot16}$ som ${3\cdot16:8}$
 }
 
 \section{Faktorisering \label{Faktorisering}}
@@ -263,14 +267,20 @@ $ {40:10=4} $
 \regdef[Primtall]{
 	Et naturlig tall som er større enn 1, og som bare er delelig med seg selv og 1, er et primtall.
 }
-\eks[]{
-	De fem første primtallene er 2, 3, 5, 7 og 11.
-} \vsk \vsk
-
-\regdef[Faktorisering]{\index{faktorisering}
-	\outl{Faktorisering} er å skrive et tall som et produkt av andre tall.
+\info{Primtallene mellom 1-100}{
+	Primtallene er markert med blått.
+	\label{primtalfig}
+	\fig{primn100}
 }
-\eks{
+\newpage
+\spr{
+	\outl{Faktorisering} er å skrive et tall som et produkt av andre tall\index{faktorisering}. \vsk
+	
+	Faktorisering med bare primtall som faktorer kalles \\\outl{primtallsfaktorisering}\index{primtallsfaktorisering}. \vsk
+	
+	Da 12 er delelig med 4, sier vi at 4 er en faktor i 12.
+}
+\eks[1]{
 	Faktoriser 24 på tre forskjellige måter.
 	
 	\sv  \vsb
@@ -282,14 +292,8 @@ $ {40:10=4} $
 	}
 	%\id
 } 
-\spr{
-	Da 12 er delelig med 4, sier vi at 4 er en faktor i 12.
-}
-\newpage
-\reg[Primtallsfaktorisering]{\index{primtallsfaktorisering}
-	Faktorisering med bare primtall som faktorer kalles \\\outl{primtallsfaktorisering}.
-}
-\eks[]{
+
+\eks[2]{
 	Primtallsfaktoriser 12.
 	
 	\sv \vs
@@ -297,10 +301,7 @@ $ {40:10=4} $
 	\[ 12= 2 \cdot2\cdot3 \]
 	%\id
 }
-\info{Primtallene mellom 1-100}{
-	\label{primtalfig}
-	\fig{primn100}
-}
+
 
 \end{document}
 

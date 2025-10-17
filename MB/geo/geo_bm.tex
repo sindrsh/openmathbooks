@@ -213,10 +213,8 @@ Forklaringen for denne regelen finner du i løsningsforslaget til \grubr{trekuli
 \spr{
 	Den lengste siden i en rettvinklet trekant kalles \outl{hypotenus}\index{hypotenus}. De korteste sidene kalles \outl{kateter}\index{katet}.
 }
-\info{Merk}{
-	Gitt en trekant $\triangle ABC$. Av \rref{grside} følger det at hvis $\angle {BAC=90^\circ}$, er det $BC$ som er hypotenusen til trekanten. Og omvendt; Hvis $BC$ er hypotenusen, er $\angle BAC=90^\circ$.
-	\fig{kathyp}
-}\regdef[Firkanter \label{firkantar}]{
+
+\regdef[Firkanter \label{firkantar}]{
 \fig{kant3g}
 \begin{figure}
 	\parbox[l][][l]{0.5\linewidth}{
@@ -487,7 +485,7 @@ Området som ''ligger utenpå'' en tredimensjonal figur kaller vi \outl{overflat
 	}
 	\parbox[r][][l]{0.6\linewidth}{
 		\textbf{Kjegle}\\
-		En del av overflaten er en sirkel, den resterende delen er en sammenbrettet sektor.
+		En del av overflaten er en sirkel, den resterende delen er en sammenføyd sektor.
 	}
 	\parbox[l][][l]{0.4\linewidth}{
 	\centering
@@ -499,7 +497,7 @@ Området som ''ligger utenpå'' en tredimensjonal figur kaller vi \outl{overflat
 	}
 }
 \newpage
-\info{Tips}{Det er ikke så lett å se for seg hva en \textsl{sammenbrettet sektor} er, men prøv dette: \vsk
+\info{Tips}{Det er ikke så lett å se for seg hva en \textit{sammenføyd sektor} er, men prøv dette: \vsk
 
 \textsl{Tegn en sektor på et ark. Klipp ut sektoren, og føy sammen de to kantene på sektoren. Da har du en kjegle uten bunn.}
 }
@@ -533,54 +531,32 @@ Grunnflaten har areal $ 3\cdot4=12 $, mens høyden er 2. Volumet til hele prisme
 
 
 \section{Symmetri}
+Mange figurer kan deles inn i minst to deler hvor den éne delen bare er en forskjøvet, speilvendt eller rotert utgave av den andre. Dette kalles \outl{symmetri}\index{symmetri}. De tre kommende regelboksene definerer de tre\\ variantene for symmetri, men merk dette: Symmetri blir som regel\\ intuitivt forstått ved å studere figurer, men er omstendelig å beskrive med ord. Her vil det derfor, for mange, være en fordel å hoppe rett til eksemplene.
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.19]{\figp{sym}}\;
-	\includegraphics[scale=0.16]{\figp{symb}}\;
-	\includegraphics[scale=0.16]{\figp{symc}}
-	\caption*{Bilder hentet fra \net{https://freesvg.org}{freesvg.org}.}
-\end{figure}
-Mange figurer kan deles inn i minst to deler hvor den éne delen bare er en forskjøvet, speilvendt eller rotert utgave av den andre. Dette kalles \outl{symmetri}\index{symmetri}. De tre kommende regelboksene definerer de tre variantene for symmetri, men merk dette: Symmetri blir som regel intuitivt forstått ved å studere figurer, men er omstendelig å beskrive med ord. Her vil det derfor, for mange, være en fordel å hoppe rett til eksemplene. \vsk
-
+\spr{
+	En form som er en forskjøvet, speilvendt eller rotert utgave av en annen form, kalles en \outl{kongruensavbilding}.
+}
+\newpage
 \regdef[Translasjonssymmetri (parallellforskyvning)]{
 	En symmetri hvor minst to deler er forskjøvne utgaver av hverandre kalles en \outl{translasjonssymmetri}. \vsk
 	
 	Når en form forskyves, blir hvert punkt på formen flyttet langs den samme \vs \text{vektoren}\footnote{En vektor er et linjestykke med retning.}.
 }
-\eks[1]{
-	Figuren under viser en translasjonssymmetri som består av to sommerfugler.
-	\begin{figure}
-		\centering
-		\subfloat{\includegraphics[scale=0.2]{\figp{btfly0}}}\quad
-		\subfloat{\includegraphics[scale=0.2]{\figp{btfly0}}}
-		\caption*{Bilde hentet fra \net{https://freesvg.org}{freesvg.org}.}
-	\end{figure}
-}
-\newpage
-\eks[2]{
-	Under vises $ \triangle ABC $ og en blå vektor.
+\eks[]{
+	Figuren under viser $ \triangle ABC $ og en blå vektor.
 	\fig{trans1a}
-	Under vises $ \triangle ABC $ forskjøvet med den blå vektoren. 
+	Figuren under viser $ \triangle ABC $ forskjøvet med den blå vektoren. 
 	\fig{trans1}
 }
 \reg[Speiling]{En symmetri hvor minst to deler er vendte utgaver av hverandre kalles en \outl{speilingssymmetri} og har minst én \outl{symmetrilinje} (\outl{symmetriakse}).\vsk
 	
 	Når et punkt speiles, blir det forskjøvet vinkelrett på symmetrilinja, fram til det nye og det opprinnelige punktet har samme avstand til symmetrilinja.
 } 
-\newpage
 \eks[1]{
-	Sommerfuglen er en speilsymmetri, med den røde linja som symmetrilinje.
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.3]{\figp{btfly}}
-	\end{figure}
-}
-\eks[2]{
-	Den røde linja og den blå linja er begge symmetrilinjer til det grønne rektangelet.
+	$A$, $B$, $C$ og $D$ er midtpunktene til sidene. Den røde linja og den blå linja er begge symmetrilinjer til det grønne rektangelet.
 	\fig{sym2}
 }
-\eks[3]{
+\eks[2]{
 	Under vises en form laget av punktene $ A, B, C, D, E $ og $ F $, og denne formen speilet om den blå linja.
 	\fig{sym3}
 }
@@ -594,27 +570,15 @@ Mange figurer kan deles inn i minst to deler hvor den éne delen bare er en fors
 	\end{itemize} 
 	Hvis rotasjonsvinkelen er et positivt tall, vil det nye punktet forflyttes langs sirkelbuen \textsl{mot} klokka. Hvis rotasjonsvinkelen er et negativt tall, vil det nye punktet forflyttes langs sirkelbuen \textsl{med} klokka.
 }
-\eks[1]{
-	Mønsteret under er rotasjonssymmetrisk. Rotasjonssenteret er i midten av figuren og rotasjonsvinkelen er $ 120^\circ $
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.2]{\figp{rot0}}
-		\caption*{Bilde hentet fra \net{https://freesvg.org}{freesvg.org}.}
-	\end{figure}
-}
-\newpage
-\eks[2]{
+\eks[]{
 	Figuren under viser $ \triangle ABC $ rotert $ 80^\circ $ om rotasjonspunktet $ P $.
 	\fig{rot1}
 	Da er
-	\[ PA='PA \quad,\quad PB=PB'\quad,\quad PC=PC' \]
+	\[ PA=PA' \quad,\quad PB=PB'\quad,\quad PC=PC' \]
 	og
 	\[ \angle APA'=\angle BPB'=\angle CPC'=80^\circ \]
 } \vsk
 
-\spr{
-	En form som er en forskjøvet, speilvendt eller rotert utgave av en annen form, kalles en \outl{kongruensavbilding}.
-}
 
 \end{document}
 

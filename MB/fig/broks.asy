@@ -1,7 +1,7 @@
 import figs;
 unitsize(4cm);
 
-void mkbroktick(int tc,real b, int j=0, int i=0, real y=0, real xs=0, pen p=black, bool colend = true){
+void mkbroktick(int tc,real b, int j=0, int i=0, real y=0, real xs=0, pen p=black, pen plabel=blue, bool colend = true){
 	real dx = 1/tc;
 	draw((xs,y)--(xs+b,y));
 	for (i; i*dx<= b; ++i){
@@ -13,7 +13,7 @@ void mkbroktick(int tc,real b, int j=0, int i=0, real y=0, real xs=0, pen p=blac
 				string name = "$\frac{%d}{x}$";
 				string l = format(name, i);
 				string l = replace(l, "x", tcn);
-				if (i==j && colend){mktc(xs+x, l, y=y,p=blue);}
+				if (i==j && colend){mktc(xs+x, l, y=y,p=plabel);}
 				else mktc(xs+x, l, y=y,p=p);
 				}
 			else mktc(xs+x, format(x), y=y);

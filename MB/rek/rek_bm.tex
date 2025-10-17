@@ -62,7 +62,7 @@ Denne metoden baserer seg på plassverdisystemet, der man trinnvis regner ut sum
 	
 	\begin{enumerate}[label=\alph*)]
 		\item Vi legger sammen enerne: $ 3+6=9 $
-		\item Vi legger sammen tierne: $ {7+8=15} $. Siden 10 tiere er det samme som 100, legger vi til 1 på hundreplassen, og skriver opp de resterende 5 tierne på tierplassen.
+		\item Vi legger sammen tierne: $ {7+8=15} $. Siden 10 tiere er lik 100, legger vi til 1 på hundreplassen, og skriver opp de resterende 5 tierne på tierplassen.
 		\item Vi legger sammen hundrene: $ 1+2=3 $.
 	\end{enumerate}
 } \vsk
@@ -214,31 +214,33 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 }
 \newpage
 \subsubsection{Tabellmetoden}
-Tabellmetoden for subtraksjon tar utgangspunkt i at subtraksjon er en omvendt operasjon av addisjon. For eksempel, svaret på spørsmålet ''Hva er $ 789-324 $?'' er det samme som svaret på spørsmålet ''Hvor mye må jeg legge til på 324 for å få 789?''. Med tabellmetoden følger du ingen spesiell regel underveis, men velger selv tallene du mener passer best for å nå målet.\\
+Tabellmetoden for subtraksjon baserer seg på at subtraksjon er den omvendte operasjonen av addisjon. For eksempel, svaret på spørsmålet ''Hva er $ 789-324 $?'' er det samme som svaret på spørsmålet ''Hvor mye må jeg legge til på 324 for å få 789?''. Med tabellmetoden følger du ingen spesiell regel underveis, men velger selv tallene du mener passer best for å nå målet.\\
 \begin{center}
 \parbox{0.35\linewidth}{
-\eks[1]{
-$ \colb{789}-\colr{324}=\colo{465} $	 \vsk
-
-\begin{tabular}{r|r}
-	& \colr{324} \\ \hline
-	6&330 \\
-	70&400 \\
-	389&\colb{789} \\ \hline
-	\colo{465}
-\end{tabular}
-}} \qquad
+\eks[2]{
+	$ \colb{83}-\colr{67}=\colo{16} $	 \vsk
+	
+	\begin{tabular}{r|r}
+		& \colr{67} \\ \hline
+		3&70 \\
+		13&\colb{83} \\ \hline
+		\colo{16}
+	\end{tabular} \vspace{14pt}
+}	
+} \qquad
 \parbox{0.35\linewidth}{
-	\eks[2]{
-		$ \colb{83}-\colr{67}=\colo{16} $	 \vsk
-		
-		\begin{tabular}{r|r}
-			& \colr{67} \\ \hline
-			3&70 \\
-			13&\colb{83} \\ \hline
-			\colo{16}
-		\end{tabular} \vspace{14pt}
-}} \\[12pt]
+\eks[1]{
+	$ \colb{789}-\colr{324}=\colo{465} $	 \vsk
+	
+	\begin{tabular}{r|r}
+		& \colr{324} \\ \hline
+		5&329 \\
+		60&389 \\
+		300&\colb{789} \\ \hline
+		\colo{465}
+	\end{tabular}
+	}
+} \\[12pt]
 \parbox{0.35\linewidth}{
 	\eks[3]{
 		$ 564-478=86 $\vsk
@@ -266,6 +268,51 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 \end{center}
 \newpage
 \fork{Eksempel 1}{
+	\[ \colb{83}-\colr{67}=\colo{16} \]
+	\begin{figure}
+		\centering
+		\subfloat[]{
+			\begin{tabular}{r|r}
+				& \colr{67} \\ \hline
+				& \\
+				& \\ \hline
+				&
+			\end{tabular}	
+		} \qquad
+		\subfloat[]{
+			\begin{tabular}{r|r}
+				& \coln{67} \\ \hline
+				\coln{3}& \colg{70}\\
+				& \\ \hline
+				&
+			\end{tabular}
+		}\qquad
+		\subfloat[]{
+			\begin{tabular}{r|r}
+				& 67 \\ \hline
+				3& \coln{70}\\
+				\coln{13}& \colb{83} \\ \hline
+				&
+			\end{tabular}	
+		} \qquad
+		\subfloat[]{
+			\begin{tabular}{r|r}
+				& 67 \\ \hline
+				\coln{3}& 70\\
+				\coln{13}& 83\\ \hline
+				\colo{16}&
+			\end{tabular}	
+		}
+	\end{figure}
+	\begin{enumerate}[label=(\alph*)]
+		\item Vi starter med 67.
+		\item Vi legger til 3, og får $ {67+3=70} $
+		\item Vi legger til 13, og får $ {70+13=83} $. Da er vi framme\\ på 83.
+		\item Vi summerer tallene vi har lagt til:  $ {3+13=16} $
+	\end{enumerate}
+}
+\newpage
+\fork{Eksempel 2}{
 	\[ \colb{789}-\colr{324}=\colo{465} \]
 \begin{figure}
 	\centering
@@ -281,7 +328,7 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 	\subfloat[]{
 	\begin{tabular}{r|r}
 		& \colb{324} \\ \hline
-	   \colb{6}& \colg{330}\\
+	   \colb{5}& \colg{329}\\
 		& \\
 		& \\ \hline
 		&
@@ -290,8 +337,8 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 	\subfloat[]{
 	\begin{tabular}{r|r}
 		& 324 \\ \hline
-		6& \colb{330}\\
-		\colb{70}& \colg{400} \\
+		5& \colb{329}\\
+		\colb{60}& \colg{389} \\
 		& \\ \hline
 		&
 	\end{tabular}	
@@ -299,28 +346,28 @@ $ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 \subfloat[]{
 	\begin{tabular}{r|r}
 		& 324 \\ \hline
-		6& 330\\
-		70& \colb{400} \\
-		\colb{389}& \colg{789}\\ \hline
+		5& 329\\
+		60& \colb{389} \\
+		\colb{400}& \colg{789}\\ \hline
 		&
 	\end{tabular}	
 }\qquad
 \subfloat[]{
 	\begin{tabular}{r|r}
 		& 324 \\ \hline
-		\colb{6}& 330\\
-		\colb{70}& 400 \\
-		\colb{389}& 789\\ \hline
+		\colb{5}& 329\\
+		\colb{60}& 389 \\
+		\colb{400}& 789\\ \hline
 		\colo{465}&
 	\end{tabular}	
 }
 \end{figure}
 \begin{enumerate}[label=(\alph*)]
 	\item Vi starter med 324.
-	\item Vi legger til 6, og får $ {324+6=330} $
-	\item Vi legger til 70, og får $ {70+330=400} $
-	\item Vi legger til 389, og får $ {389+400=789} $. Da er vi framme på 789.
-	\item Vi summerer tallene vi har lagt til:  $ {6+70+389=465} $
+	\item Vi legger til 5, og får $ {324+5=329} $
+	\item Vi legger til 60, og får $ {329+60=389} $
+	\item Vi legger til 400, og får $ {389+400=789} $. Da er vi framme på 789.
+	\item Vi summerer tallene vi har lagt til:  $ {5+60+400=465} $
 \end{enumerate}
 }
 
@@ -365,7 +412,7 @@ Flytter vi komma en plass til venstre, får vi $,84=0,84$.
 \eks[5]{
 Gitt tallet $5$.\os
 
-Flytter vi komma tre plasser til venstre, får vi $0,05$.
+Flytter vi komma tre plasser til venstre, får vi $0,005$.
 \fig{komma5}
 }
 \eks[6]{
@@ -415,31 +462,31 @@ Mange programmeringsspråk godtar også at man skriver \\ punktum helt til høyr
 	\vs
 	\begin{itemize}
 		\item Når man ganger et desimaltall med 10, får man svaret ved å flytte komma en plass til høyre.
-		\item Når man ganger et heltall med 100, får man svaret ved å flytte komma to plasser til høyre.
+		\item Når man ganger et desimaltall med 100, får man svaret ved å flytte komma to plasser til høyre.
 		\item Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
 	\end{itemize}
 }
 \eks[1]{\vsb
 	\alg{
-		7\colr{,}9\cdot 10 &= 79\colr{,}=79 \vn
-		38\colr{,}02\cdot10&=380\colr{,}2 \vn
-		0\colr{,}57\cdot 10 &=05\colr{,}7=5\colr{,}7 \vn
-		0\colr{,}194\cdot 10&= 01\colr{,}94=1\colr{,}94
+		7{\color{black},}9\cdot 10 &= 79{\color{black},}=79 \vn
+		38{\color{black},}02\cdot10&=380{\color{black},}2 \vn
+		0{\color{black},}57\cdot 10 &=05{\color{black},}7=5{\color{black},}7 \vn
+		0{\color{black},}194\cdot 10&= 01{\color{black},}94=1{\color{black},}94
 	}
 }
 \eks[2]{ \vsb
 	\alg{
-		7\colr{,}9\cdot 100 &= 790\colr{,}=790 \vn
-		38\colr{,}02\cdot100&=3802\colr{,}=3\,802 \vn
-		0\colr{,}57\cdot 100 &=057\colr{,}=57 \vn
-		0\colr{,}194\cdot 100&= 019\colr{,}4=19\colr{,}4
+		7{\color{black},}9\cdot 100 &= 790{\color{black},}=790 \vn
+		38{\color{black},}02\cdot100&=3802{\color{black},}=3\,802 \vn
+		0{\color{black},}57\cdot 100 &=057{\color{black},}=57 \vn
+		0{\color{black},}194\cdot 100&= 019{\color{black},}4=19{\color{black},}4
 	}
 }
 \eks[3]{ \vsb
 	\alg{
-	7\colr{,}9\cdot 1\,000 &= 7900\colr{,}=7\,900 \vn
-	38\colr{,}02\cdot10\,000&=380020\colr{,}=380\,200 \vn
-	0\colr{,}57\cdot 100\,000 &=57000\colr{,}=57\,000
+	7{\color{black},}9\cdot 1\,000 &= 7900{\color{black},}=7\,900 \vn
+	38{\color{black},}02\cdot10\,000&=380020{\color{black},}=380\,200 \vn
+	0{\color{black},}57\cdot 100\,000 &=57000{\color{black},}=57\,000
 }
 }
 \info{Merk}{
@@ -460,42 +507,41 @@ Ganging på utvidet form bruker vi for å regne multiplikasjon mellom flersifred
 \eks[2]{ \vs
 \begin{figure}
 	\centering
-	\includegraphics[]{rekfig/gfleirsif}
+	\includegraphics[]{rekfig/gang2}
 \end{figure}
 }
+\newpage
 \fork{Eksempel 1}{
 24 kan skrives som $ 20+4 $, altså er
 \[ 24\cdot3 =(20+4)\cdot3 \]
 Av \rref{gangpar} har vi at 
-\algv{
+\alg{
 (20+4)\cdot 3 &=20\cdot 3 + 4\cdot 3 \\
 &= 60+12 \\
 &= 72
 }
 }
-\newpage
 \fork{Eksempel 2}{
 Vi har at
-\algv{
-279&=200+70+9 \\
-34 &=30+4 	
+\alg{
+91&=90+1 \\
+53 &=50+3 	
 }
 Altså er
 \alg{
-279\cdot34&= (200+70+9)\cdot (30+4) 
+91\cdot53&= (90+1)\cdot (50+3) 
 }
 Videre er 
 {
-\footnotesize
 \alg{
-(200+70+9)\cdot (30+4) &=200\cdot 30+70\cdot30+9\cdot30+200\cdot4+70\cdot4+9\cdot4
+(90+1)\cdot (50+3) &=90\cdot50+1\cdot50+90\cdot3+1\cdot3
 \\
-&=9486}
+&=4823}
 } \vs
 }
 \newpage
 \subsubsection{Kompaktmetoden}
-Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men har en skrivemåte som gjør utregningen korterere. \regv
+Kompaktmetoden bygger på de samme prinsippene som ganging på utvidet form, men har en skrivemåte som gjør utregningen kortere. \regv
 
 \eks[1]{ \vsb
 	\begin{figure}
@@ -555,31 +601,31 @@ Når man deler et desimaltall med 100, får man svaret ved å flytte komma to pl
 
 Det samme mønsteret gjelder for tallene 1\,000, 10\,000 osv.
 }
-\eks[1]{ \vsb \vsb
+\eks[1]{ \vsb
 	\alg{
-200:10&=200\colr{,}0:10 \\&=20\colr{,}00\\&=20	\vn
-45:10&=45\colr{,}0:10 \\&= 4\colr{,}50 \\&=4\colr{,}5
+200:10&=200{\color{black},}0:10 \\&=20{\color{black},}00\\&=20	\vn
+45:10&=45{\color{black},}0:10 \\&= 4{\color{black},}50 \\&=4{\color{black},}5
 }
 }
-\eks[2]{ \vsb \vsb
+\eks[2]{ \vsb
 	\alg{
-		200:100&=200\colr{,}0:100 \\&=2\colr{,}000\\&=2	\vn
-		45:100&=45\colr{,}0:100 \\&= 0\colr{,}450 \\&=0\colr{,}45
+		200:100&=200{\color{black},}0:100 \\&=2{\color{black},}000\\&=2	\vn
+		45:100&=45{\color{black},}0:100 \\&= 0{\color{black},}450 \\&=0{\color{black},}45
 	}
 }
 \newpage
-\eks[3]{ \vsb \vsb
+\eks[3]{ \vsb
 \alg{
-143\colr{,}7 :10 &= 14\colr{,}37 \vn
-143\colr{,}7 :100 &= 1\colr{,}437 \vn
-143\colr{,}7 :1\,000 &= 0\colr{,}1437 
+143{\color{black},}7 :10 &= 14{\color{black},}37 \vn
+143{\color{black},}7 :100 &= 1{\color{black},}437 \vn
+143{\color{black},}7 :1\,000 &= 0{\color{black},}1437 
 }
 }
-\eks[4]{ \vsb \vsb
+\eks[4]{ \vsb
 \alg{
-93\colr{,}6:10 &= 9\colr{,}36 \vn
-93\colr{,}6:100 &= 0\colr{,}936 \vn
-93\colr{,}6:1\,000 &= 0\colr{,}0936
+93{\color{black},}6:10 &= 9{\color{black},}36 \vn
+93{\color{black},}6:100 &= 0{\color{black},}936 \vn
+93{\color{black},}6:1\,000 &= 0{\color{black},}0936
 }
 }
 \fork{Deling med 10, 100, 1\,000 osv.}{
@@ -614,7 +660,7 @@ Divisjon med oppstilling baserer seg på divisjon tolket som inndeling av mengde
 		\subfloat{\includegraphics{\figp{delalg}}}
 		\qquad \subfloat{\includegraphics[angle=90]{\figp{delalg0}}}
 	\end{figure}
-	Figuren over illustrerer mengden 92, som vi skal dele inn i 4 like store grupper. 
+	Figuren over viser mengden 92, som vi skal dele inn i 4 like store grupper. 
 	\begin{itemize}
 		\item Vi starter med å fordele så mange av tierne som mulig. Av de 9 tierne, kan hver gruppe få 2. Da har vi totalt fordelt $ 2\cdot 4=8 $ tiere.
 		\begin{figure}
@@ -632,7 +678,7 @@ Divisjon med oppstilling baserer seg på divisjon tolket som inndeling av mengde
 }
 \newpage
 \subsubsection{Tabellmetoden}
-Tabellmetoden baserer seg på divisjon som omvendt operasjon av ganging. For eksempel er svaret på spørsmålet ''Hva er $ {76:4} $?'' det samme som svaret på spørsmålet ''Hvilket tall må jeg gange 4 med for å få 76?''. På samme vis som for tabellmetoden ved subtraksjon er det opp til en selv å velge passende tall for å nå målet.
+Tabellmetoden for divisjon baserer seg på at divisjon er den omvendte operasjonen av multiplikasjon. For eksempel er svaret på spørsmålet ''Hva er $ {76:4} $?'' det samme som svaret på spørsmålet ''Hvilket tall må jeg gange 4 med for å få 76?''. På samme måte som for tabellmetoden for subtraksjon er det opp til en selv å velge passende tall for å nå målet.
 \begin{center}
 	\label{ekstbldiv}
 	\parbox{0.35\linewidth}{
@@ -750,7 +796,7 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 	
 	\sv
 	Det største heltallet vi kan gange med 3 uten at produktet blir større enn
-	19, er 6. $ {6\cdot 3 = 18} $, så da har vi $ 19-8=1 $ i rest.
+	19, er 6. $ {6\cdot 3 = 18} $, så da har vi $ 19-18=1 $ i rest.
 	\[ 19= \colb{6}\cdot 3 +\colg{1} \]	
 	\fig{mod2}
 	Dette betyr at
@@ -787,31 +833,22 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 	I tillegg til \sym{\texttt{mod}}, blir også \sym{\texttt{\%}} og \sym{{\texttt{//}}} brukt som symbol for denne operasjonen i programmeringsspråk.
 }
 \newpage
-\subsubsection{Divisjon med blanda tall som svar}
+\subsubsection{Divisjon med blandet tall som svar}
 \eks[1]{
 	Regn ut $ 11:4 $. Skriv svaret som et blandet tall.
 	
-	\sv \vsb
+	\sv
 	\[ 11:4 = \text{2 og 3 i rest}=2+\frac{3}{4} \]
 }
 \eks[2]{
 	Regn ut $ 19:3 $. Skriv svaret som et blandet tall.
 	
-	\sv \vsb
+	\sv 
 	\[ 19:3=\text{6 og 1 i rest}=6+\frac{1}{3} \]
 }
 \fork{Eksempel 1}{
-	Vi starter med å legge merke til at $ 4=\frac{4}{1} $. Dette betyr at
-	\[ 11:4 = 11:\frac{4}{1} \]
-	Av \rref{delmbr} har vi at
-	\[ 11:\frac{4}{1} = 11\cdot \frac{1}{4} \]
-	Videre er $ 11=2\cdot 4+ 3 $, og da er
-	\[ 11\cdot \frac{1}{4}=(2\cdot 4+3)\cdot\frac{1}{4} \]
-	Av \rref{gangpar} har vi at
-	\alg{
-		(2\cdot 4+3)\cdot\frac{1}{4}&=2\cdot4\cdot\frac{1}{4}+3\cdot \frac{1}{4} \\
-		&= 2+\frac{3}{4}
-	}
+	Det største tallet vi kan gange 4 med uten at produktet er større enn 11, er 2. Siden $11=2\cdot4+3$, er
+	\[ 11:4=\frac{2\cdot4+3}{4}=\frac{2\cdot\cancel{4}}{\cancel{4}}+\frac{3}{4}=2+\frac{3}{4} \]
 }
 \newpage
 \subsubsection{Divisjon med desimaltall som svar}
@@ -853,19 +890,33 @@ Det er langt ifra alltid at svaret ved divisjon blir et heltall. En måte å utt
 \begin{enumerate}
 \item Flytt komma til høyre slik at begge tallene blir heltall. Flytt gjerne komma til høyre i dividenden slik at den blir større enn divisoren.
 \item Regn ut delestykket mellom heltallene.
-\item Regn ut (det er snakk om antall plasser komma flyttet)
-\[\small \text{plasser flyttet i dividend}-\text{plasser flyttet i divisor} \]
-Hvis svaret er positivt, flytt komma så mange plasser til \textsl{høyre}. Hvis svaret er negativt, flytt komma så mange plasser til \textsl{venstre}.
+\item Regn ut (det er snakk om antall plasser komma er flyttet)
+\[\text{plasser flyttet i dividend}-\text{plasser flyttet i divisor} \]
+Hvis svaret er positivt, flytt komma så mange plasser til \textsl{venstre} i svaret fra punkt 2. Hvis svaret er negativt, flytt komma så mange plasser til \textsl{høyre} i svaret fra punkt 2.
 \end{enumerate}
 }
 \eks[1]{
 Regn ut $ 9,2:4 $.
 
 \sv
-Vi flytter komma 1 plass til \textsl{høyre} i 9,2. Da får vi 92. Videre er
+Vi flytter komma 1 plass til \textsl{høyre} i 9,2. Da får vi 92. Vi har at
 \[ 92:4=23 \]
+I tillegg er
+\[ \text{plasser flyttet i dividend}-\text{plasser flyttet i divisor}=1-0=1 \]
 Vi flytter komma 1 plass til \textsl{venstre} i 23. Da får vi 2,3. Altså er
 \[ 9,2:4=2,3 \]
+}
+\newpage
+\eks[2]{
+Regn ut $4,06:0,00002$.
+
+\sv
+Vi flytter komma 2 plasser til \textsl{høyre} i 4,06. Da får vi 406. Vi flytter komma 5 plasser til \textsl{høyre} i 0,00002. Da får vi 2. Vi har at
+\[ 406:2=203 \]
+I tillegg er
+\[ \text{plasser flyttet i dividend}-\text{plasser flyttet i divisor}=2-5=-3 \]
+Vi flytter komma 3 plasser til \textsl{høyre} i 203. Da får vi 203\,000. Altså er
+\[ 4,06:0,00002=203\,000 \]
 }
 
 \newpage
@@ -880,7 +931,7 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 \eks[1]{
 	$ \text{2\enh{t} 25\enh{min} } + \text{10\enh{t} 45\enh{min}}= \text{13\enh{t} 10\enh{min} } $\vsk
 	
-	\metode{Utrekningsmetode 1}{0.35\linewidth}
+	\metode{Utregningsmetode 1}{0.35\linewidth}
 	\os
 	\begin{tabular}{r|r|r}
 		& &10\enh{t} 45\enh{min}  \\ \hline
@@ -889,7 +940,7 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 		2\enh{t} & 2\enh{t} 25\enh{min}  & 13\enh{t} 10\enh{min}
 	\end{tabular} \vsk \vsk
 	
-	\metode{Utrekningsmetode 2}{0.35\linewidth}\os
+	\metode{Utregningsmetode 2}{0.35\linewidth}\os
 	\begin{tabular}{r|r|r}
 		& & 10:45 \\ \hline 
 		00:15 & 00:15 & 11:00 \\
@@ -903,7 +954,7 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 	
 	\begin{center}
 		\parbox{0.4\linewidth}{
-			\metode{Utrekningsmetode 1}{0.9\linewidth} \os
+			\metode{Utregningsmetode 1}{0.9\linewidth} \os
 			\begin{tabular}{r|r}
 				&  9\enh{t} 34\enh{min} \\ \hline 
 				26\enh{min} & 10\enh{t} 00\enh{min} \\
@@ -913,7 +964,7 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 			\end{tabular}
 		} \qquad \qquad
 		\parbox{0.4\linewidth}{
-			\metode{Utrekningsmetode 2}{0.9\linewidth} \os
+			\metode{Utregningsmetode 2}{0.9\linewidth} \os
 			\begin{tabular}{r|r}
 				& 09:34 \\ \hline 
 				00:26 & 10:00 \\
@@ -929,8 +980,8 @@ Dette betyr at \textsl{overganger} oppstår i utregninger når vi når 60.\regv
 \section{Avrunding og overslagsregning}
 
 \subsubsection{Avrunding}
-Ved \outl{avrunding} av et tall minker vi antall siffer forskjellige fra 0 i tallet. Videre kan man runde av til \textsl{nærmeste ener}, \textsl{nærmeste tier} og lignende.\regv
-\eks[1]{
+Ved \outl{avrunding} endrer vi verdien til tall, helst for at de skal bli\\ lettere å lese eller å bruke i utregninger. En vanlig form for avrunding er å avrunde til \textsl{nærmeste ener}, \textsl{nærmeste tier} og lignende.\regv
+\info{Avrunding til nærmeste tier}{
 	Ved avrunding til \textsl{nærmeste tier} avrundes
 	\begin{itemize}
 		\item 1, 2, 3 og 4 \textsl{ned} til 0 fordi de er nærmere 0 enn 10.
@@ -940,7 +991,7 @@ Ved \outl{avrunding} av et tall minker vi antall siffer forskjellige fra 0 i tal
 	\fig{avrnd0}
 }
 
-\eks[2]{ \vs
+\eks[]{ \vs
 	\begin{itemize}
 		\item $\boldmath \textbf{63 avrundet til nærmeste tier} = 60 $ \\
 		Dette fordi 63 er nærmere 60 enn 70.
@@ -958,7 +1009,7 @@ Ved \outl{avrunding} av et tall minker vi antall siffer forskjellige fra 0 i tal
 }
 
 \subsubsection{Overslagsregning}
-Det er ikke alltid vi trenger å vite svaret på regnestykker helt nøyaktig, ofte er det viktigere at vi fort kan avgjøre hva svaret \textsl{omtrent} er det samme som, aller helst ved hoderegning. Når vi finner svar som omtrent er riktige, sier vi at vi gjør et \outl{overslag}. Et overslag innebærer at vi avrunder\footnote{\textit{Obs!} Avrunding ved overslag trenger ikke å innebære avrunding til nærmeste tier og lignende.} tallene som inngår i et regnestykke slik at utregningen blir enklere. \vsk
+Det er ikke alltid vi trenger å vite svaret på regnestykker helt nøyaktig, ofte er det viktigere at vi fort kan avgjøre hva svaret \textsl{omtrent} er det samme som, aller helst ved hoderegning. Når vi finner svar som omtrent er riktige, sier vi at vi gjør et \outl{overslag}. Et overslag innebærer at vi avrunder\footnote{\textit{Obs!} Avrunding ved overslag trenger ikke å bety avrunding til nærmeste tier og lignende.} tallene som inngår i et regnestykke slik at utregningen blir enklere. \vsk
 
 
 \spr{
@@ -984,11 +1035,13 @@ Hvis vi runder 186,4 opp til 190 får vi et svar som er større enn det egentlig
 \alg{
 	186,4-28,9&\approx 190-30 \\&=160
 }
+\linje
 Samme prinsippet gjelder for deling: 
 \[ 145:17 \]
 Vi avrunder 17 opp til 20. Deler vi noe med 20 i steden for 17, blir svaret mindre. Derfor bør vi også runde 145 oppover (til 150):
 \[ 145:17 \approx 150:20 = 75 \]
 
+\newpage
 \subsubsection{Overslagsregning oppsummert}
 \reg[Overslagsregning \label{tipsoverslag}]{ \vs
 	\begin{itemize}
@@ -1072,7 +1125,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 	
 	\sv \vsb
 	\[ 0,00671 = 6,71\cdot 10^{-3} \]
-}
+}\regv
 \info{Tips}{
 	For å skrive om tall på standardform kan du gjøre følgende:
 	\begin{enumerate}
@@ -1085,7 +1138,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 	
 	\sv \vs
 	\begin{enumerate}
-		\item 	Vi flytter komma 6 plasser til venstre, og får $ 9\colr{,}761432 $
+		\item 	Vi flytter komma 6 plasser til venstre, og får $ 9{\color{black},}761432 $
 		\item Vi ganger dette tallet med $ 10^6 $, og får at 
 		\[ 9\,761\,432=9,761432\cdot 10^6 \] 
 	\end{enumerate}
