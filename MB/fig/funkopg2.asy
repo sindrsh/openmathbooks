@@ -3,9 +3,9 @@ import figs;
 unitsize(0.5 cm);
 
 void mkfig(pair sh =(0,0), int n){
-	db(n,n,sh=sh);
-	db(n,1,sh=sh+(0,n),p=deepgreen);
-	db(1,n,sh=sh+(n,0),p=deepgreen);
+	db(n,n,sh=sh, opac=0.6);
+	db(n,1,sh=sh+(0,n),p=green, opac=0.6);
+	db(1,n,sh=sh+(n,0),p=green, opac=0.6);
 	label("$x = $"+(string) n, sh+((n+1)/2,-0.5));
 }
 

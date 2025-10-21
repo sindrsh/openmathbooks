@@ -3,7 +3,7 @@
 \input{../bm}
 
 \begin{document}
-\section{Fromler for areal, omkrets og volum}
+\section{Formler for areal, omkrets og volum}
 I \refsec{Areal}\ har vi allerede sett på formler for arealet til rektangel og trekanter, men der brukte vi ord i steden for symboler. Her skal vi gjengi disse to formlene i en mer algebraisk form, etterfulgt av andre klassiske formler for areal, omkrets og volum.\regv
 
 \reg[\arrekt\; (\ref{arrekt}) \label{arrekt2}]{ \index{areal!til rektangel}
@@ -109,12 +109,17 @@ A&=\frac{3(6+4)}{2}\br
 	\[A=\frac{1}{2}\cdot g h= \frac{1}{2}\cdot\frac{3}{4}\cdot\frac{7}{9}=\frac{21}{72} \]
 }
 \newpage
+\spr{
+Det irrasjonale tallet 3,141592653589793... er så viktig i matematikk at det har sitt eget symbol, nemlig \sym{$\pi$}. Altså er
+\[ \pi=3,141592653589793... \]
+
+$\pi$ uttales ''pi''\index{pi}. 
+} \vsk
+
 \reg[\omkrsirk \label{omkrsirk}]{\index{omkrets!til sirkel}
 	Omkretsen $ O $ til en sirkel med radius $ r $ er
 	\[ O = 2\pi r \]
 	\fig{tri22}
-	hvor $ \pi = 3.141592653589793...
-	$.
 }
 \eks[]{
 	Finn omkretsen til sirkelen.
@@ -202,7 +207,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	\begin{enumerate}
 		\item Arealet til det røde kvadratet er $ a^2 $, arealet til det lilla kvadratet er $ b^2 $ og arealet til det blå kvadratet er $ c^2 $.
 		\item Arealet til et oransje rektangel er $ ab $ og arealet til en grønn trekant er $ \frac{ab}{2} $.
-		\item Om vi tar bort de to oransje rektanglene og de fire grønne trekantane, er det igjen (av pkt. 2) et like stort areal til venstre som til høyre.
+		\item Om vi tar bort de to oransje rektanglene og de fire grønne trekantene, er det igjen (av pkt. 2) et like stort areal til venstre som til høyre.
 		\fig{tri26e}
 		Dette betyr at
 		\begin{equation}\label{pytforkl}
@@ -270,7 +275,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 	
 }\vsk
 \info{Merk}{
-	Formlene fra \rref{volforml} gjelder også for prismer, sylindre, kjegler og pyramider som heller (er skeive). Hvis grunnflaten er plassert horisontalt, er høyden den vertikale avstanden mellom grunnflaten og toppen til figuren.
+	Formlene fra \rref{volforml} gjelder også for prismer, sylindre,\\ kjegler og pyramider som heller (er skeive). Hvis grunnflaten er plassert horisontalt, er høyden den vertikale avstanden mellom grunnflaten og toppen til figuren.
 	\fig{vol4} 
 	(For spisse gjenstander som kjegler og pyramider finnes det selvsagt bare ett valg av grunnflate.)
 }
@@ -287,7 +292,7 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 		\item Av \rref{arrekt2} har vi at
 		\[ \text{grunnflateareal}= \pi \cdot 7^2 = 49 \pi \]
 		\item Dermed er
-		\[ \text{volum}= 49\pi\cdot 6 = 294\pi \]
+		\[ \text{volum}= 49\pi\cdot 5 = 245\pi \]
 	}
 }
 \newpage
@@ -303,13 +308,13 @@ $ A=\pi r^2 \frac{v}{360^\circ} $
 		\item Av \rref{arrekt2} har vi at
 		\[ \text{grunnflateareal}=2\cdot 3= 6  \]
 		\item Dermed er
-		\[ \text{volum}= 6\cdot 5 = 30 \]
+		\[ \text{volum}= \frac{6\cdot 5}{3} = 10 \]
 	}
 } 
 	
 \section{\kongogsim}
 \reg[\konsttre \label{konsttre}]{
-En trekant $ \triangle ABC $, som vist i figuren under, kan bli unikt konstruert hvis ett av følgende vilkår er oppfylt:
+En trekant $ \triangle ABC $ kan bli unikt konstruert hvis ett av følgende vilkår er oppfylt: \\
 \prbxl{0.6}{\begin{enumerate}[label=\roman*)]
 		\item $ c $, $ \angle A $ og $ \angle B $ er kjente.
 		\item $ a $, $ b $ og $ c $ er kjente.
@@ -322,18 +327,18 @@ En trekant $ \triangle ABC $, som vist i figuren under, kan bli unikt konstruert
 \reg[\kongtre \label{kongtre}]{ \index{trekant!kongruet}
 To trekanter som har samme form og størrelse er kongruente.
 \fig{geo14}
-At trekantane i figuren over er kongruente skrives
+At trekantene i figuren over er kongruente skrives
 \[ \triangle ABC\cong\triangle DEF \]
 }
 \reg[Formlike trekanter \index{trekant!formlik}]{Formlike trekanter har tre vinkler som er parvis like store.
 \fig{geo8}
-At trekantane i figuren over er formlike skrives \[ \triangle ABC\sim \triangle DEF \]
+At trekantene i figuren over er formlike skrives \[ \triangle ABC\sim \triangle DEF \]
 } \vsk
 \newpage
 \textbf{Samsvarende sider}\os
 Når vi studerer formlike trekanter er \outl{samsvarende sider}\index{side!samsvarende} et viktig begrep. Samsvarende sider er sider som i formlike trekanter står \outl{motstående} den samme vinkelen.
 \fig{tri1}
-For de formlike trekantane $ \triangle ABC $ og $ \triangle DEF $ har vi at
+For de formlike trekantene $ \triangle ABC $ og $ \triangle DEF $ har vi at
 \begin{multicols}{2}
 	\quad I $ \triangle ABC $ er
 	\begin{itemize}
@@ -369,7 +374,7 @@ Dette betyr at disse er samsvarende sider:
 		\includegraphics[scale=1]{\figp{tri3b}}
 	\end{figure}
 	\sv
-	Vi observerer at $ AB $ samsvarer med $ DE $, $ BC $ med $ EF $ og $ AC $ med $ DF $. Det betyr at
+	$ AB $ samsvarer med $ DE $, $ BC $ samsvarer med $ EF $ og $ AC $ samsvarer med $ DF $. Det betyr at
 	\alg{
 		\frac{DE}{AB} &= \frac{EF}{BC} \br
 		\frac{10}{5}&= \frac{EF}{3} \br
@@ -377,7 +382,15 @@ Dette betyr at disse er samsvarende sider:
 		6 &= EF
 	}
 }
-
+\info{Tips}{
+Av eksempelet over kan vi legge merke til følgende:
+\begin{itemize}
+	\item ${\frac{DE}{AB}=2}$ er forholdstallet mellom samsvarende sider i $\triangle DEF$ og $\triangle ABC$.
+	\item $BC=3$ er den samsvarende siden til $EF$.
+\end{itemize}
+Ligningen vi satt opp i eksempelet ender med at vi ganger forholdstallet med den samsvarende siden. Dette vil alltid være tilfellet så lenge bare én av sidelengdene er ukjent. I steden for å sette opp en ligning, kunne vi altså direkte regnet ut at $EF=2\cdot3=6$.
+}
+\newpage
 \info{Merk}{
 Av \rref{forform} har vi at for to formlike trekanter $ \triangle ABC $ og $ \triangle DEF $ er
 	\[ \frac{AB}{BC}=\frac{DE}{EF}\quad,\quad \frac{AB}{AC}=\frac{DE}{DF}\quad,\quad\frac{BC}{AC}=\frac{EF}{DF} \]
@@ -492,10 +505,10 @@ Når vi kjenner sidelengden til en innskrevet mangekant, vil tilnærmingen til o
 		\textit{Formel for sidelengde}&\textit{Sidelengde} & \textit{Tilnærming for omkrets} \\
 		\hline
 		& $s_6= 1 $ & $ \;\,6\cdot s_6\;\,=6 $ \\
-		$ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} $ & $ s_{12}=0.517... $ & 		 $ 12\cdot s_{12}=6.211... $ \\
-		$ s_{24} = \sqrt{2- \sqrt{4-s_{12}^2}} $ & $ s_{24}=0.261... $ & 		 $ 24\cdot s_{24}=6.265... $ \\
-		$ s_{48} = \sqrt{2- \sqrt{4-s_{24}^2}} $ & $ s_{48}=0.130... $ & 		 $ 48\cdot s_{48}=6.278... $ \\		 
-		$ s_{96} = \sqrt{2- \sqrt{4-s_{48}^2}} $ & $ s_{96}=0.065... $ & 		 $ 96\cdot s_{96}=6.282... $ \\		 		 
+		$ s_{12} = \sqrt{2- \sqrt{4-s_6^2}} $ & $ s_{12}=0.517... $ & 		 $ 12\cdot s_{12}=6,211... $ \\
+		$ s_{24} = \sqrt{2- \sqrt{4-s_{12}^2}} $ & $ s_{24}=0.261... $ & 		 $ 24\cdot s_{24}=6,265... $ \\
+		$ s_{48} = \sqrt{2- \sqrt{4-s_{24}^2}} $ & $ s_{48}=0.130... $ & 		 $ 48\cdot s_{48}=6,278... $ \\		 
+		$ s_{96} = \sqrt{2- \sqrt{4-s_{48}^2}} $ & $ s_{96}=0.065... $ & 		 $ 96\cdot s_{96}=6,282... $ \\		 		 
 	\end{tabular}
 \end{center}
 \begin{figure}
@@ -506,10 +519,10 @@ Når vi kjenner sidelengden til en innskrevet mangekant, vil tilnærmingen til o
 	\subfloat[48-kant]{\includegraphics[]{\figp{geo9j}}}\quad	
 	\subfloat[96-kant]{\includegraphics[]{\figp{geo9k}}}		
 \end{figure}
-Utregningene over er faktisk like langt som matematikeren \net{https://no.wikipedia.org/wiki/Arkimedes}{Arkimedes} kom allerede ca 250 f. kr!\vsk
+Utregningene over er faktisk like langt som matematikeren \net{https://no.wikipedia.org/wiki/Arkimedes}{Arkimedes} kom allerede ca 250 f. Kr!\vsk
 
 Med en datamaskin er det lett å regne ut dette for en mangekant med ekstremt mange sider. Regner vi oss fram til en 201\,326\,592-kant  finner vi at
-\[ \text{omkretsen til sirkel med radius 1}=6.283185307179586... \]
+\[ \text{omkretsen til sirkel med radius 1}=6,283185307179586... \]
 (Ved hjelp av mer avansert matematikk kan det vises at omkretsen til en sirkel med radius 1 er et irrasjonalt tal, men at alle desimalene vist over er korrekte, derav likhetstegnet.) \vsk
 \newpage
 \textbf{Den endelige formelen og $\bm \pi $} \os
@@ -530,7 +543,7 @@ Da trekantene er formlike, har vi at
 Vi lar $ {\tilde{O}=4K} $ og $ {\tilde{o}=4k} $ være tilnærmingen av omkretsen til henholdsvis den største og den minste sirkelen.
 Ved å gange med 4 på begge sider av \eqref{arogar} får vi at
 \begin{align}
-\frac{4A}{R} &= \frac{4a}{r} \br
+\frac{4K}{R} &= \frac{4k}{r} \br
 \frac{\tilde{O}}{R} &= \frac{\tilde{o}}{r} \label{arogarto}
 \end{align}
 Og nå merker vi oss dette:\vsk
@@ -548,10 +561,10 @@ Forholdstallet mellom omkretsen og diameteren i en sirkel skriver vi som $ \pi $
 \[ \frac{O}{D}=\pi \]
 Likningen over fører oss til formelen for omkretsen $O$ til en sirkel:
 \[ O= \pi D=2\pi R \]
-Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6.283185307179586... $\,. Dette betyr at
+Tidligere fant vi at omkretsen til en sirkel med radius 1 (og diameter 2) er $ 6,283185307179586... $\,. Dette betyr at
 \alg{
-	\pi&= \frac{6.283185307179586...}{2} \br
-	&= 3.141592653589793...
+	\pi&= \frac{6,283185307179586...}{2} \br
+	&= 3,141592653589793...
 }
 }
 \fork{\ref{pytomv} \pytomv}{

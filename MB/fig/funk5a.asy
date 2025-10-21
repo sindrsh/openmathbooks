@@ -18,11 +18,11 @@ pair B = (1,f(1));
 pair C = (0,g(0));
 pair D = (5,g(5));
 
-draw(A--(B.x,A.y),Cyan,L=Label("$1$",position=Relative(0.5),N),arrow=Arrow(TeXHead));
-draw((B.x,A.y)--B,Cyan,L=Label("$1$",position=Relative(0.5),E),arrow=Arrow(TeXHead));
+draw(A--(B.x,A.y),green,L=Label("$1$",position=Relative(0.5),N),arrow=Arrow(TeXHead));
+draw((B.x,A.y)--B,green,L=Label("$1$",position=Relative(0.5),E),arrow=Arrow(TeXHead));
 
-draw(C--(D.x,C.y),Cyan,L=Label("$5$",position=Relative(0.5),S),arrow=Arrow(TeXHead));
-draw((D.x,C.y)--D,Cyan,L=Label("$3$",position=Relative(0.5),E),arrow=Arrow(TeXHead));
+draw(C--(D.x,C.y),green,L=Label("$5$",position=Relative(0.5),S),arrow=Arrow(TeXHead));
+draw((D.x,C.y)--D,green,L=Label("$3$",position=Relative(0.5),E),arrow=Arrow(TeXHead));
 
 xaks(a, b,l="$x$",bex=1.10,aex=1.05,tck=true, tc=1);
 yaks(-3, 5, l="$y$", bex=1.15, tck=true, tc=1);

@@ -1,20 +1,20 @@
 \begin{theindex}
 
-  \item $ \pi $, \hyperpage{309}
+  \item $ \pi $, \hyperpage{301}
 
   \indexspace
 
   \item absoluttverdi, \hyperpage{97}
   \item addisjon, \hyperpage{33}
-  \item algebra, \hyperpage{198}
-  \item areal, \hyperpage{168}
-    \subitem til rektangel, \hyperpage{284}
-    \subitem til sirkel, \hyperpage{290}
-    \subitem til trapes, \hyperpage{287}
+  \item algebra, \hyperpage{194}
+  \item areal, \hyperpage{166}
+    \subitem til rektangel, \hyperpage{276}
+    \subitem til sirkel, \hyperpage{282}
+    \subitem til trapes, \hyperpage{279}
 
   \indexspace
 
-  \item bredde, \hyperpage{169}
+  \item bredde, \hyperpage{167}
   \item brøk, \hyperpage{64}
     \subitem forkorting av, \hyperpage{69}
     \subitem omvendt, \hyperpage{83}
@@ -23,7 +23,7 @@
   \indexspace
 
   \item deling, \hyperpage{41}
-  \item diameter, \hyperpage{152}
+  \item diameter, \hyperpage{150}
   \item differanse, \hyperpage{35}
   \item dividend, \hyperpage{41}
   \item divisjon, \hyperpage{41}
@@ -31,64 +31,65 @@
 
   \indexspace
 
-  \item eksponent, \hyperpage{204}
-  \item ettpunktsformelen, \hyperpage{282}
+  \item eksponent, \hyperpage{200}
+  \item ettpunktsformelen, \hyperpage{271}
 
   \indexspace
 
   \item faktor, \hyperpage{38}
   \item faktorisering, \hyperpage{59}
   \item fellesnevner, \hyperpage{74}
-  \item firkant, \hyperpage{158}
+  \item firkant, \hyperpage{156}
   \item forhold, \hyperpage{41}
   \item forholdstal, \hyperpage{41}
-  \item formel, \hyperpage{253}
+  \item formel, \hyperpage{247}
   \item fortegn, \hyperpage{97}
-  \item funksjon, \hyperpage{250}
-    \subitem grafen til, \hyperpage{254}
-    \subitem lineær, \hyperpage{254}
-  \item funksjonsuttrykk, \hyperpage{250}
+  \item funksjon, \hyperpage{244}
+    \subitem grafen til, \hyperpage{248}
+    \subitem lineær, \hyperpage{248}
+  \item funksjonsuttrykk, \hyperpage{244}
 
   \indexspace
 
   \item ganging, \hyperpage{38}
-  \item grad, \hyperpage{154}
-  \item grunnflate, \hyperpage{179}
-  \item grunnlinje, \hyperpage{160}
-  \item grunntall, \hyperpage{204}
+  \item grad, \hyperpage{152}
+  \item grunnflate, \hyperpage{177}
+  \item grunnlinje, \hyperpage{158}
+  \item grunntall, \hyperpage{200}
 
   \indexspace
 
-  \item hypotenus, \hyperpage{163}, \hyperpage{295}
-  \item høyde, \hyperpage{160}
+  \item hypotenus, \hyperpage{161}, \hyperpage{287}
+  \item høyde, \hyperpage{158}
 
   \indexspace
 
-  \item intervall, \hyperpage{254}
+  \item intervall, \hyperpage{248}
 
   \indexspace
 
   \item kansellering, \hyperpage{79}
-  \item kant, \hyperpage{158}
-  \item katet, \hyperpage{163}, \hyperpage{295}
-  \item konstant, \hyperpage{198}
-  \item konstantledd, \hyperpage{257}
+  \item kant, \hyperpage{156}
+  \item katet, \hyperpage{161}, \hyperpage{287}
+  \item konstant, \hyperpage{194}
+  \item konstantledd, \hyperpage{250}
   \item koordinatsystem, \hyperpage{25}
   \item kvotient, \hyperpage{41}
 
   \indexspace
 
   \item ledd, \hyperpage{33}, \hyperpage{35}
-  \item lengde, \hyperpage{96}, \hyperpage{169}
+  \item lengde, \hyperpage{96}, \hyperpage{167}
+  \item likeverdig, \hyperpage{67}
   \item likhetstegnet, \hyperpage{16}
-  \item likning, \hyperpage{224}
-  \item linje, \hyperpage{150}
-  \item linjestykke, \hyperpage{150}
+  \item likning, \hyperpage{218}
+  \item linje, \hyperpage{148}
+  \item linjestykke, \hyperpage{148}
 
   \indexspace
 
-  \item mangekant, \hyperpage{158}
-    \subitem hjørner i, \hyperpage{158}
+  \item mangekant, \hyperpage{156}
+    \subitem hjørner i, \hyperpage{156}
   \item matematisk operasjon, \hyperpage{32}
   \item multiplikasjon, \hyperpage{38}
 
@@ -99,79 +100,80 @@
   \indexspace
 
   \item oddetall, \hyperpage{24}
-  \item omkrets, \hyperpage{166}
-    \subitem til sirkel, \hyperpage{289}
+  \item omkrets, \hyperpage{164}
+    \subitem til sirkel, \hyperpage{281}
   \item omvendt operasjon, \hyperpage{37}
   \item origo, \hyperpage{25}
 
   \indexspace
 
-  \item parallell, \hyperpage{153}
+  \item parallell, \hyperpage{151}
   \item partall, \hyperpage{24}
+  \item pi, \hyperpage{281}
   \item positive heltall, \hyperpage{18}
-  \item potenslikning, \hyperpage{235}
+  \item potenslikning, \hyperpage{229}
   \item primtall, \hyperpage{58}
   \item primtallsfaktorisering, \hyperpage{59}
   \item produkt, \hyperpage{38}
-  \item punkt, \hyperpage{25}, \hyperpage{150}
+  \item punkt, \hyperpage{25}, \hyperpage{148}
 
   \indexspace
 
-  \item radius, \hyperpage{152}
+  \item radius, \hyperpage{150}
   \item regneart, \hyperpage{32}
   \item regnestykke, \hyperpage{32}
   \item rest, \hyperpage{128}
-  \item rottegn, \hyperpage{211}
+  \item rottegn, \hyperpage{207}
 
   \indexspace
 
-  \item sektor, \hyperpage{152}
+  \item sektor, \hyperpage{150}
   \item side
-    \subitem i mangekant, \hyperpage{158}
-    \subitem samsvarende, \hyperpage{300}
+    \subitem i mangekant, \hyperpage{156}
+    \subitem samsvarende, \hyperpage{292}
   \item siffer, \hyperpage{20}
-  \item sirkel, \hyperpage{152}
-    \subitem sentrum i, \hyperpage{152}
-  \item stigningstall, \hyperpage{257}
+  \item sirkel, \hyperpage{150}
+    \subitem sentrum i, \hyperpage{150}
+  \item stigningstall, \hyperpage{250}
   \item subtraksjon, \hyperpage{35}
   \item sum, \hyperpage{33}
   \item summere, \hyperpage{33}
-  \item symmetri, \hyperpage{180}
+  \item symmetri, \hyperpage{178}
 
   \indexspace
 
-  \item Tales' setning, \hyperpage{322}
+  \item Tales' setning, \hyperpage{315}
   \item tall, \hyperpage{16}
     \subitem blandet, \hyperpage{85}
-    \subitem irrasjonalt, \hyperpage{212}
+    \subitem irrasjonalt, \hyperpage{208}
     \subitem naturlige, \hyperpage{18}
     \subitem negativt, \hyperpage{96}
     \subitem positivt, \hyperpage{96}
     \subitem rasjonalt, \hyperpage{85}
   \item tallverdi, \hyperpage{97}
   \item teller, \hyperpage{64}
-  \item til parallellogram, \hyperpage{286}
-  \item til trekant, \hyperpage{285}
-  \item toppvinkel, \hyperpage{156}
-  \item trekant, \hyperpage{158}
-    \subitem formlik, \hyperpage{299}
-    \subitem kongruet, \hyperpage{299}
+  \item til parallellogram, \hyperpage{278}
+  \item til trekant, \hyperpage{277}
+  \item toppvinkel, \hyperpage{154}
+  \item trekant, \hyperpage{156}
+    \subitem formlik, \hyperpage{291}
+    \subitem kongruet, \hyperpage{291}
 
   \indexspace
 
-  \item ulikhet, \hyperpage{238}
+  \item ulikhet, \hyperpage{232}
 
   \indexspace
 
-  \item variabel, \hyperpage{198}
+  \item variabel, \hyperpage{194}
   \item verdi, \hyperpage{20}
-  \item vinkel, \hyperpage{153}
-    \subitem butt, \hyperpage{155}
-    \subitem rett, \hyperpage{154}
-    \subitem samsvarende, \hyperpage{156}
-    \subitem spiss, \hyperpage{155}
-    \subitem toppunkt til, \hyperpage{153}
-  \item vinkelbein, \hyperpage{153}
-  \item vinkelrett, \hyperpage{154}
+  \item vinkel, \hyperpage{151}
+    \subitem butt, \hyperpage{153}
+    \subitem rett, \hyperpage{152}
+    \subitem samsvarende, \hyperpage{154}
+    \subitem spiss, \hyperpage{153}
+    \subitem toppunkt til, \hyperpage{151}
+  \item vinkelbein, \hyperpage{151}
+  \item vinkelrett, \hyperpage{152}
 
 \end{theindex}

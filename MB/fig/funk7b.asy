@@ -16,5 +16,5 @@ label("$f$",(b,f(b)),E,blue);
 
 pair A = (1,f(1));
 pair B = (4,f(4));
-draw(A--(B.x,A.y),Cyan,L=Label("$3$",position=Relative(0.5),S),arrow=Arrow(TeXHead));
-draw((B.x,A.y)--B,Cyan,L=Label("$2$",position=Relative(0.5),E),arrow=Arrow(TeXHead));
+draw(A--(B.x,A.y),green,L=Label("$3$",position=Relative(0.5),S),arrow=Arrow(TeXHead));
+draw((B.x,A.y)--B,green,L=Label("$2$",position=Relative(0.5),E),arrow=Arrow(TeXHead));

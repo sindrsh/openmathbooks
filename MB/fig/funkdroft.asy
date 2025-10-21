@@ -1,7 +1,7 @@
 import "../../inh" as inh;
-import drwgrph;
+import "../../drwgrph" as drwgrph;
 
-size(10cm, 8cm,keepAspect=false);
+size(10cm, 6.75cm,keepAspect=false);
 
 real f(real x) { return x^3-3x^2-144x-140; }
 
@@ -25,14 +25,14 @@ pair H = (b, f(b));
 
 dott(A, "globalt bunnpunkt",S);
 //dott(B, "$B$",N);
-dott(C, "lokalt toppunkt",N);
+dott(C, "lokalt toppunkt",N+0.1W);
 //dott(D, "$D$",N);
 dott(F, "lokalt bunnpunkt",S);
 //dott(G, "$G$",N);
 dott(H, "globalt toppunkt",N);
 
-mktc(-10,"nullpunkt",p=red);
-mktc(-1,"nullpunkt",p=red);
+mktc(-10,"nullpunkt");
+mktc(-1,"nullpunkt");
 
 
 

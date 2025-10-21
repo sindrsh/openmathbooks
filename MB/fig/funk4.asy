@@ -10,9 +10,7 @@ mkgrid((-5,6),(-6,3));
 xaks(a, b,l="$x$",aex=1.10,tck=true, tc=1);
 yaks(-6, 3, l="$y$", bex=1.2, tck=true, tc=1);
 
+draw((a,f(a))--(b,f(b)),blue);
+label("$f$",(b,f(b)),E,blue);
 dott((0,f(0)));
 dott((4,f(4)));
-
-draw((a,f(a))--(b,f(b)),blue);
-label("$f(x)$",(b,f(b)),E,blue);
-

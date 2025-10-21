@@ -1,18 +1,18 @@
-import "../../inhopg" as inh;
+import "../../inhopg" as inhopg;
 import "../../drwgrph" as grph;
-size(6 cm, 7 cm, keepAspect=false);
+size(4 cm, 5 cm, keepAspect=false);
 
 real f(real x){return -8*x+16;}
-int a = -4;
-int b = 4;
+int a = -2;
+int b = 2;
 int ga = -16;
 int gb = 48;
 mkgrid((a,b),(ga,gb), dy=16);
 xaks(a, b,l="$x$",aex=1.10,tck=true, tc=1);
-yaks(ga, gb, l="$y$", bex=1.05, tck=true, tc=16);
+yaks(ga, gb, l="$y$", bex=1.1, tck=true, tc=16);
 
 draw((a,f(a))--(b,f(b)),blue);
-label("$f(x)$",(b,f(b)),blue,align=E);
+label("$f$",(b,f(b)),blue,align=NE);
 
 write(f(a),f(b));
 

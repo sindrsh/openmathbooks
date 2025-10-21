@@ -21,7 +21,9 @@
 \newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Oppgaver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
 
 \newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubeksop}[2]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble \thegrub} (#2) \vspace{2 pt} \label{#1} \\}
 \newcommand{\gruboprecc}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble* \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubeksoprecc}[2]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble* \thegrub} (#2) \vspace{2 pt} \label{#1} \\}
 \newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
 
 
@@ -38,7 +40,7 @@
 \newcommand\fref[2][]{\hyperref[#2]{\textsl{figur \ref*{#2}#1}}}
 \newcommand{\refop}[1]{{\color{NavyBlue}Oppgave \ref{#1}}}
 \newcommand{\refops}[1]{{\color{NavyBlue}oppgave \ref{#1}}}
-\newcommand{\refgrub}[1]{\vspace{3pt}\textbf{\color{NavyBlue} gruble \ref{#1}}}
+\newcommand{\refgrub}[1]{\color{NavyBlue} gruble \ref{#1}}
 
 \newcommand{\amounts}[1]{
 	\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=white]  #1  \vs

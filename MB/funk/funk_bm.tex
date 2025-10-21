@@ -39,9 +39,12 @@ a({\colb4})&=2\cdot{\colb4}+1=9
 \eks{
 La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
 \fig{funk2}
-\textbf{a)} Finn uttrykket for $ a(x) $.\bs
-\textbf{b)} Hvor mange ruter er der når $ x=10 $? \bs
-\textbf{c)} Hva er verdien til $ x $ når $ a(x)=628 $?
+\abc{
+\item Finn uttrykket for $ a(x) $.\bs
+\item Hvor mange ruter er der når $ x=10 $? \bs
+\item Hva er verdien til $ x $ når $ a(x)=628 $?
+}
+
 
 \sv
 \abc{
@@ -112,11 +115,6 @@ Hvis vi bare har én funksjon, $f$, plassert i et koordinatsystem, kan vi også 
 	\includegraphics{\figp{axisf_b}}
 \end{figure}
 }
-
-\info{Merk}{
-En lengde på $ x $-aksen trenger ikke å ha samme verdi som en lengde på $ y $-aksen.
-\fig{funkmerk}
-}
 \newpage
 \reg[\funklin \label{funklin}]{
 	En funksjon på formen \vs
@@ -132,17 +130,15 @@ En lengde på $ x $-aksen trenger ikke å ha samme verdi som en lengde på $ y $
 \eks[1]{Finn stigningstallet og konstantleddet til funksjonene.
 	\alg{
 		f(x)&=2x+1 \vn
-		g(x)&=-3+\frac{7}{2}	\vn
+		g(x)&=-3x+\frac{7}{2}	\vn
 		h(x)&=\frac{1}{4}x-\frac{5}{6}\vn
 		j(x)&=4-\frac{1}{2}x
 	}
-	\sv \vs \vs
-	\begin{itemize}
-		\item $ f(x) $ har stigningstall 2 og konstantledd 1.
-		\item $ g(x) $ har stigningstall $ -3 $ og konstantledd $ \frac{7}{2} $.
-		\item $ h(x) $ har stigningstall $ \frac{1}{4} $ og konstantledd $ -\frac{5}{6} $.
-		\item $ j(x) $ har stigningstall $ -\frac{1}{2} $ og konstantledd 4.		
-	\end{itemize}	
+	\sv 
+	$ f(x) $ har stigningstall 2 og konstantledd 1.\os
+	$ g(x) $ har stigningstall $ -3 $ og konstantledd $ \frac{7}{2} $. \os
+	$ h(x) $ har stigningstall $ \frac{1}{4} $ og konstantledd $ -\frac{5}{6} $. \os
+	$ j(x) $ har stigningstall $ -\frac{1}{2} $ og konstantledd 4.
 }
 \newpage
 \eks[2]{
@@ -212,54 +208,7 @@ ${y=b}$ beskriver en  horisontallinje som går gjennom \\punktet $(0, b)$.\vsk
 
 $x=b$ beskriver en vertikallinje som går gjennom punktet $(b, 0)$.
 }
-\newpage
-\fork{\ref{funklin} \funklin}{
-\textbf{Uttrykk for $ \bm a$}\os	
-Gitt en lineær funksjon
-\[ f(x)=ax+b \]
-For to forskjellige $ x $-verdier, $ x_1 $ og $ x_2 $, har vi at
-\begin{equation}
-f(x_1)=ax_1+b \label{funkfork}
-\end{equation}
-\begin{equation}
-f(x_2)=ax_2+b \label{funkfork1}
-\end{equation}
-Vi trekker \eqref{funkfork} fra \eqref{funkfork1}, og får at 
-\begin{align}
-	f(x_2)-f(x_1)&=ax_2+b-(ax_1+b) \nonumber \br
-	f(x_2)-f(x_1)&=ax_2-ax_1 \nonumber\\
-	f(x_2)-f(x_1)&=a(x_2-x_1) \nonumber\\
-	\frac{f(x_2)-f(x_1)}{x_2-x_1}&=a \label{funka}
-\end{align}
-\vsk
 
-\textbf{Grafen til en lineær funksjon er ei rett linje}\os
-
-Gitt en lineær funksjon $ f(x)=ax+b $ og to forskjellige $ x $-verdier $ x_1 $ og $ x_2 $. Vi setter $ {A=(x_1, b)} $, $ B=(x_2, b) $, $ C=(b, f(x_1)) $,\\ $ D=(0, f(x_2)) $ og $ E=(0, b) $.
-\fig{funk6a}
-Av \eqref{funka} har vi at
-\begin{align}
-	\frac{f(x_1)-f(0)}{x_1-0}&=a \nonumber\br
-	\frac{ax_1+b-b}{x_1}&=a \nonumber \br
-	\frac{ax_1}{x_1}=a \label{funkx1}
-\end{align}
-Tilsvarende er 
-\begin{equation} \label{funkx2}
-\frac{ax_2}{x_2}=a 
-\end{equation}
-Videre har vi at
-\alg{
-AC&=f(x_1)-b = ax_1 \vn
-BD&=f(x_2)-b = ax_2 \vn
-EA&= x_1 \vn
-EB&= x_2
-}
-Av \eqref{funkx1} og \eqref{funkx2} har vi at
-\[ \frac{ax_1}{x_1}=\frac{ax_2}{x_2} \]
-Dette betyr at
-\[ \frac{AC}{BD}=\frac{EA}{EB} \]
-I tillegg er $ {\angle A=\angle B} $, altså oppfyller $ \triangle EAC $ og $ \triangle EBD $ vilkår (iii) fra \rref{vilkform}, og dermed er trekantane formlike. Dette betyr at $ C $ og $ D $ ligger på linje, og denne linja må vere grafen til $ f(x) $.
-}
 \section{Viktige punkt på grafer}
 
 \reg[Skjæringspunkt til grafer]{
@@ -309,7 +258,7 @@ En $ x $-verdi som gir funksjonsverdi 0.\vsk
 Punkt der funksjonen (fra venstre) går fra å synke i verdi til å stige i verdi. \vsk
 
 \outl{Lokalt toppunkt} \\
-Punkt der funksjonen (fra venstre) går fra å stige i verdi til å synke i verdi \vsk
+Punkt der funksjonen (fra venstre) går fra å stige i verdi til å synke i verdi. \vsk
 
 \outl{Globalt bunnpunkt} \\
 Punkt der funksjonen har sin laveste verdi.\vsk
@@ -318,10 +267,9 @@ Punkt der funksjonen har sin laveste verdi.\vsk
 Punkt der funksjonen har sin høyeste verdi.
 }
 
-\eks[]{
+\eks[]{ \vsb
 	\fig{funkdroft}
 }
-\newpage
 \info{Hvorfor er nullpunkt en verdi?}{
 	Det kan kanskje virke litt rart at vi kaller $ x $-verdier for nullpunkt, punkt har jo både en $ x $-verdi og en $ y $-verdi. Men når det er snakk om nullpunkt, er det underforstått at $ {y=0} $, og da er det tilstrekkelig å vite $ x $-verdien for å avgjøre hvilket punkt det er snakk om.  
 }
@@ -342,7 +290,7 @@ $f(x)=2x^3$ er en potensfunksjon med koeffisient $2$ og\\ eksponent $3$.
 		\item en potensfunksjon med heltalls eksponent større eller lik 0.
 		\item summen av flere potensfunksjoner med heltalls eksponent større eller lik 0.
 	\end{itemize}
-	Polynomfunksjoner kategoriseres etter den største eksponenten i funksjonsuttrykket. For konstantene $ a $, $ b $, $ c $ og $ d$, og en variabel $ x $, har vi at \vs
+	Polynomfunksjoner kategoriseres etter den største eksponenten i funksjonsuttrykket. For konstantene $ a $, $ b $, $ c $ og $ d$, og en variabel $ x $, har vi at 
 	\begin{center}
 		\begin{tabular}{|r|l|} \hline
 			\textbf{funksjonsuttrykk} & \textbf{funksjonsnavn} \\ \hline
@@ -375,6 +323,55 @@ Hvis
 sier vi at $f$ og $x$ er \outl{omvendt proporsjonale størrelser}.\vsk
 
 I begge tilfellene kalles $a$ for \outl{proporsjonalitetskonstanten}.
+}
+
+\section*{Forklaringer}
+\fork{\ref{funklin} \funklin}{
+	\textbf{Uttrykk for $ \bm a$}\os	
+	Gitt en lineær funksjon
+	\[ f(x)=ax+b \]
+	For to forskjellige $ x $-verdier, $ x_1 $ og $ x_2 $, har vi at
+	\begin{equation}
+		f(x_1)=ax_1+b \label{funkfork}
+	\end{equation}
+	\begin{equation}
+		f(x_2)=ax_2+b \label{funkfork1}
+	\end{equation}
+	Vi trekker \eqref{funkfork} fra \eqref{funkfork1}, og får at 
+	\begin{align}
+		f(x_2)-f(x_1)&=ax_2+b-(ax_1+b) \nonumber \br
+		f(x_2)-f(x_1)&=ax_2-ax_1 \nonumber\\
+		f(x_2)-f(x_1)&=a(x_2-x_1) \nonumber\\
+		\frac{f(x_2)-f(x_1)}{x_2-x_1}&=a \label{funka}
+	\end{align}
+	\vsk
+	
+	\textbf{Grafen til en lineær funksjon er ei rett linje}\os
+	
+	Gitt en lineær funksjon $ f(x)=ax+b $ og to forskjellige $ x $-verdier $ x_1 $ og $ x_2 $. Vi setter $ {A=(x_1, b)} $, $ B=(x_2, b) $, $ C=(b, f(x_1)) $,\\ $ D=(0, f(x_2)) $ og $ E=(0, b) $.
+	\fig{funk6a}
+	Av \eqref{funka} har vi at
+	\begin{align}
+		\frac{f(x_1)-f(0)}{x_1-0}&=a \nonumber\br
+		\frac{ax_1+b-b}{x_1}&=a \nonumber \br
+		\frac{ax_1}{x_1}=a \label{funkx1}
+	\end{align}
+	Tilsvarende er 
+	\begin{equation} \label{funkx2}
+		\frac{ax_2}{x_2}=a 
+	\end{equation}
+	Videre har vi at
+	\alg{
+		AC&=f(x_1)-b = ax_1 \vn
+		BD&=f(x_2)-b = ax_2 \vn
+		EA&= x_1 \vn
+		EB&= x_2
+	}
+	Av \eqref{funkx1} og \eqref{funkx2} har vi at
+	\[ \frac{ax_1}{x_1}=\frac{ax_2}{x_2} \]
+	Dette betyr at
+	\[ \frac{AC}{BD}=\frac{EA}{EB} \]
+	I tillegg er $ {\angle A=\angle B} $, altså oppfyller $ \triangle EAC $ og $ \triangle EBD $ vilkår (iii) fra \rref{vilkform}, og dermed er trekantane formlike. Dette betyr at $ C $ og $ D $ ligger på linje, og denne linja må vere grafen til $ f(x) $.
 }
 
 \end{document}

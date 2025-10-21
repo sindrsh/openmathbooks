@@ -1,5 +1,5 @@
 import "../../inhopg" as inhopg;
-size(4cm);
+size(3cm);
 
 pair A = (0, 0);
 pair B = (4, 0);

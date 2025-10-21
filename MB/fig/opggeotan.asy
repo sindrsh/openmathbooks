@@ -1,7 +1,7 @@
 import "../../inhopg" as inh;
 import "../../geo" as geo;
 
-size(7cm);
+size(5cm);
 
 real r1 = 2;
 real r2 = 6;
