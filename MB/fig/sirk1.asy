@@ -5,7 +5,7 @@ unitsize(2cm);
 
 draw(unitcircle);
 pair A = f(pi/3);
-draw(O--A,L=rotate(60)*Label("radius"),Blue);
+draw(O--A,L=rotate(60)*Label("radius"),red);
 draw((-1,0)--(1,0),L="diameter",deepgreen);
 
 dott(O,rotate(110)*Label("sentrum"),2NW,p=Cyan);

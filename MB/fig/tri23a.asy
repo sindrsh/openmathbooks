@@ -1,6 +1,6 @@
 import "../../inh" as inh;
 import tri;
-unitsize(0.8cm);
+unitsize(0.7cm);
 
 Tri t = mktri(2,4,5, sc=1);
 t.mkv();

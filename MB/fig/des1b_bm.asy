@@ -8,7 +8,7 @@ mktc(0,"$0$");
 mktc(1,"$1$");
 
 
-mktc(0.1,red);
+mktc(0.1,Blue);
 
 label("en",(0.1,-0.05));
 label("tidel",(0.1,-0.1));

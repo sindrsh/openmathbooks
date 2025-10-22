@@ -16,8 +16,6 @@
 
 \begin{document}
 
-	
-%\import{kap0/}{framside_bm}
 \import{kap0/}{firstpages_bm}
 \import{kap0/}{kolofon_bm}
 \newpage
@@ -116,23 +114,19 @@
 \newpage
 \import{kom/}{kom2_bm}
 
-\import{vdl}{vdl}
-
 \newpage
+
+\chapter*{Fasit}
 \phantomsection
 \addcontentsline{toc}{chapter}{Fasit}
-\chapter*{Fasit}
 \import{fas/}{fas_bm}
 
 \import{kap0/}{lit_bm}
-{\printindex \addtocontents{toc}{\protect}
-	\addcontentsline{toc}{chapter}{Indeks}\phantomsection}
-%\import{kap0/}{bakside_bm}
-\newpage
-\phantom{}
-\newpage
-\phantom{}
-\newpage
+{	
+\addcontentsline{toc}{chapter}{Indeks}
+\printindex
+}
+
 \end{document}
 
 

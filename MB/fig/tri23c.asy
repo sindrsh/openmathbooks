@@ -1,6 +1,6 @@
 import "../../inh" as inh;
 import tri;
-unitsize(0.8cm);
+unitsize(0.7cm);
 
 pair A = (0,0);
 pair B = (4,0);
