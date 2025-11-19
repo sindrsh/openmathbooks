@@ -3,6 +3,25 @@
 \input{../bm}
 
 \begin{document}
+
+\grubop{opgfunkfindx}
+$A=(4, 1)$, $B=(12, 3)$ og $C=(3, 3)$. Linja $x=c$ deler $\triangle ABC$ i to områder med likt areal. Finn verdien til $c$.
+\fig{opgfunkfindx_lf}	
+Vi lar $f(x)=ax+b$= være funksjonen som beskriver linja gjennom $AB$. Da er
+\[ a=\frac{3-1}{12-4}=\frac{1}{4} \]
+Da $A$ ligger på grafen til $f$, er $f(4)=\frac{1}{4}\cdot4+b=1$, og dermed er $b=0$. \vsk
+
+Videre har vi at $EB=12-c$ og $ED=3-f(c)$. Dermed har vi at
+\begin{align*}
+	2A_{\triangle DEB}&=A_{\triangle ABC} \\
+	(12-c)\left(3-\frac{1}{4}c\right)&=\frac{1}{2}\cdot9\cdot2 \\
+	(12-c)\cdot\frac{1}{4}(12-c)&=9 \\
+	(12-c)^2 &=36 \\
+	12-c &= \pm 6 \\
+	c&= 12\pm6
+\end{align*}
+Da $c<12$, er $c=6$.
+	
 \opr{opgalgligukonst2}	
 \abc{
 \item 

@@ -20,7 +20,8 @@ Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi mått
 }
 
 \grubr{opgder2dx} \\
-Vi har at
+
+\abc{ \item Vi har at
 \alg{
 \lim\limits_{h\to0}\frac{f(x+h)-f(x-h)}{h}&=\lim\limits_{h\to0}\frac{f(x+h)-f(x)+f(x)-f(x-h)}{h} \\
 &= \lim\limits_{h\to0}\frac{f(x+h)-f(x)}{h}+\lim\limits_{h\to0}\frac{f(x)-f(x-h)}{h} \\
@@ -28,4 +29,38 @@ Vi har at
 &= 2f'(x)
 }
 
+\newpage
+\grubr{opgderarchi}
+\fig{opgderarchi_lf}
+\abc{
+\item Vi har at
+\[ A=(p, ap^2+ bp+c)\qquad,\qquad B = (q, aq^2+bq+c) \]
+}
+Vi lar $g(x)$ være funksjonen som beskriver linja gjennom $AB$. Da er
+\alg{
+ g'(x)&= \frac{f(q)-f(p)}{q-p} \br
+ &=\frac{aq^2+bq+c-(ap^2+ bp+c)}{q-p} \br
+ &=\frac{a(q^2-p^2)+b(q-p)}{q-p} \br
+ &=\frac{a(q+p)(q-p)+b(q-p)}{q-p} \br
+ &=a(q+p)+b
+}
+Vi setter $C=(t, f(t))$. Da har vi at
+\alg{
+f'(t)&=a(q+p)+b \\
+2a t+ b &= a(q+p)+b \\
+t &= \frac{1}{2}(q+p)
+}
+\item Vi lar $D$ være midtpunktet til $AB$. Da er $D=\left(t, \frac{1}{2}(f(q)+f(p))\right)$ (se \refops{vekopgmidt}). Videre er
+\alg{
+DC&=\frac{1}{2}\left(f(q)+f(p)\right)-f(t) \br
+&= \frac{1}{2}\left(a(p^2+q^2)+b(p+q)+2c\right)-a\left(\frac{1}{2}(p+q)\right)^2+b \left(\frac{1}{2}(p+q)\right)+c \br
+&= \frac{a}{2}(p^2+q^2)-\frac{a}{4}(p+q)^2 \br
+&=\frac{a}{4}(2p^2+2q^2-p^2-q^2-2pq) \\
+&=\frac{a}{4}(q-p)^2
+}
+}
+Vi plasserer $E$ og $F$ slik at $\square AEFB$ er et parallellogram. Med $AE$ som grunnlinje, har $\square AEFB$ høyde $q-p$. Da $AE=DC$, er
+\nn{
+A_{\triangle ABC}=\frac{1}{2}A_{\square AEFB}=\frac{1}{2}\cdot\frac{a}{4}(q-p)^2(q-p)=\frac{1}{8}(q-p)^3
+}
 \end{document}

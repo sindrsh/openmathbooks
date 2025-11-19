@@ -1,5 +1,5 @@
 import "../../inhopg" as inhopg;
-import drwgrph;
+import "../../drwgrph" as drwgrph;
 size(4cm);
 
 xaks(0, 12, l="$x$", bex=1.05);

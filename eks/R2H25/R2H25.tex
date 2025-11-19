@@ -1,0 +1,168 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen R2 Høsten 2025\hfill {\footnotesize Løsning fra \color{blue} \href{https://openmath.online}{OpenMathBooks}}}	
+\subsection*{Oppgave 1}	
+Vi setter $u=4x$ og $v'=\cos x$. Da er $u'=4$ og $v=\sin x$
+Ved delvis integrasjon er
+\begin{align*}
+	 \int 4x\cdot \cos x\,dx &=\int u v'\,dx \\
+	 &= u v-\int u'v \,dx \\
+	 &=4x\sin x-\int 4\sin x\,dx \\
+	 &=4(x \sin x+\cos x)
+\end{align*}
+
+\subsection*{Oppgave 2}
+Volumet $V$ til et omdreiningslegemet er 
+\begin{align*}
+	V&=\pi \int_{0}^{10} f^2\,dx\br
+	&=\pi\int_{0}^{10} x+4\,dx \\
+	&= \pi\left[\frac{1}{2}x^2+4x\right]_0^{10} \\
+	&= \pi\left[\frac{1}{2}10^2+4\cdot10\right] \\
+	&=90\pi \\
+	&\approx 270
+\end{align*}
+$270\enh{cm}^3=0,27\enh{dm}^3=2,7\enh{dL}$. Det er plass til $2,7\enh{dL}$ i koppen. (Dette virker som et rimelig svar siden et melkeglass inneholder ca. 2\enh{dL}).
+
+\subsection*{Oppgave 3}
+\abc{
+\item Integralet til $f$ er positivt for $x\in[-2, 0]$ og negativt for $x\in[0, 1]$. Dermed er det alternativ 4 som gir arealet.
+\item Vi har at
+\[ \int x^3+x^2-2x\,dx = \frac{1}{4}x^4+\frac{1}{3}x^3-x^2 \]
+Arealet $A$ er dermed
+\begin{align*}
+	A &= \left[x^2\left(\frac{1}{4}x^2+\frac{1}{3}x-1\right)\right]_{-2}^{0}-\left[x^2\left(\frac{1}{4}x^2+\frac{1}{3}x-1\right)\right]_{0}^{1}\br
+	&=-(-2)^2\left[\frac{1}{4}\cdot(-2)^2+\frac{1}{3}\cdot(-2)-1\right]- \left[\frac{1}{4}+\frac{1}{3}-1\right] \br
+	&=\frac{37}{12}
+\end{align*}
+\item Hvis $a$ ligger mellom $-2$ og ca $-0,6$, vil arealet over $x$-aksen være større enn arealet under $x$-aksen. Men hvis $a<-2$, vil summen av areal under $x$-aksen økes. For riktig valg av $a<-2$ vil summen av areal over $x$-aksen være lik summen av areal under $x$-aksen, og da vil integralet være lik 0. For at dette skal skje må vi ha at
+\[ \int_{a}^{-2}f\,dx \approx \int_{-2}^{0,6}f\,dx \]
+Dette vil gjelde for $a\approx -3,7$.
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item \begin{align*}
+	\sin x -\sqrt{3}\cos x &= 0 \\
+	\frac{\sin x}{\cos x}&=\sqrt{3} \\
+	\tan x &= \sqrt{3}
+\end{align*}
+Da $\atan(\sqrt{3})=\frac{\pi}{3}$, er
+\[ x=\frac{\pi}{3}+\pi n \]
+Dermed er
+\[ x\vee \frac{\pi}{3}\qquad\vee\qquad x=\frac{\pi}{3}+\pi=\frac{4}{3}\pi \]
+\item På intervallet $x\in[0, 2\pi)$ har likningen $\sin x-\frac{1}{2}$ løsningene $x=\frac{\pi}{6}$ og $\frac{5\pi}{6}$. Hvis $a=\frac{1}{2}$, har den originale likningen fortsatt bare to løsninger. På intervallet $[0, 2\pi)$ har likningen $\sin x\pm1$ løsningen $\mp \frac{\pi}{2}$. Hvis $a=\pm 1$, har altså den originale likningen tre løsninger. For alle andre $a\in[0,1)$ har den originale likningen fire løsninger.
+}
+
+\subsection*{Oppgave 5}
+\textbf{Påstand 1}\\
+Antar her at 'fartsgraf' viser til grafen til en funksjon $v(t)$ som gir farten $v$ etter $t$ tidsenheter. Akselerasjonen vil i så fall være gitt som $v'(t)$, mens arealet under fartsgrafen ville være gitt som $\int v\,dt$. Påstanden er dermed usann.\os
+
+\textbf{Påstand 2}\\
+\[ \frac{\pi}{5}=\frac{\pi}{5}\cdot\frac{180^\circ}{\pi}=36^\circ \]
+Påstanden er sann.
+
+\subsection*{Oppgave 6}
+\abc{
+\item Den eksplisitte formelen for den aritmetisk rekka er
+\[ a_i = -3+3(i-1)=3(i-2) \]
+Når $a_i=69$, har vi at
+\begin{align}
+	69&=3(i-2) \\
+	23&=i-2 \\
+	25&=i
+\end{align}
+Altså har rekka $25$ ledd. Da er
+\[ S_{25}=25\frac{-3+69}{2}=825 \]
+\item Koeffisienten til rekka er $\frac{1}{2}-x$. Rekka er konvergent når \\ $\left|\frac{1}{2}-x\right|<1$, altså når $x\in\left(-\frac{1}{2}, \frac{3}{2}\right)$.
+\item Bortsett fra for høyden 2\enh{m}, vil ballen bevege seg den samme høyden to ganger. Hvis vi legger til at ballen startet med å bli kastet 2\enh{m} fra bakken, vil den totale lengden ballen har bevegd seg være gitt ved den geometriske rekka
+\[ 4+4\cdot\frac{3}{4}+4\cdot\left(\frac{3}{4}\right)^2+...+4\cdot\left(\frac{3}{4}\right)^{i-1} \]
+Dette er en uendelig konvergent geometrisk rekke med sum
+\[ S_\infty = \frac{4}{1-\left(\frac{3}{4}\right)}=16 \]
+Siden ballen egentlig ikke startet fra bakken, men fra 2\enh{m} over bakken, har den bevegd seg 14\enh{m}.
+}
+\subsection*{Oppgave 7}
+\abc{
+\item	
+Vi fullfører kvadratene:
+\begin{align}
+	z^2+2z &= (z+1)^2-1 \vn
+	x^2-4x &= (x-2)^2-4 
+\end{align}
+Altså er
+\begin{align}
+	x^2+y^2+z^2-4x+2z&=4 \\
+	(x-2)^2+y^2+(z+1)^2&=3^2
+\end{align}
+Dette er en kuleflate med sentrum $(2, 0, -1)$ og radius 3.
+\item Vi har at
+\[ \vv{KP}=[3-1, -1-(-1), 3-3]=[2, 0, 0] \] 
+Siden $\alpha$ tangerer kulen i $P$, er $\vv{KP}$ en normalvektor til $\alpha$. Da er likningen til $\alpha$ gitt som
+\[  2(x-3)=0 \]
+\item Av likningen  ser vi at $\vec{n}=[3, 1, -2]$ er en normalvektor til planet. Videre har vi at
+\[ |\vec{n}|=\sqrt{3^2+1^2+(-2)^2}=\sqrt{14} \]
+Hvis $\beta$ skal skjære $K$, må dette bety at avstanden mellom sentrum i $K$ og $\beta$ er mindre enn 2. Av likningen for avstanden mellom et plan og et punkt har vi at
+\begin{align*}
+\left|\frac{3-1+(-2)\cdot3+1}{\sqrt{14}}\right|=\frac{3}{\sqrt{14}}<\frac{3}{\sqrt{9}}=1
+\end{align*}
+}
+Dermed er avstanden mindre enn 2, som betyr at $\beta$ skjærer $K$.
+\newpage
+\subsection*{Oppgave 8}
+Vi sjekker først at påstanden stemmer for $n=0$:
+\[ 1=\frac{4^{0+1}-1}{3}=\frac{3}{3}=1 \]
+Deretter antar vi at påstanden stemmer for $n=k$, og ønsker å vise at den da også stemmer for $n=k+1$. I så fall er
+\[ \frac{4^{k+1}-1}{3}+4^{k+1}=\frac{4^{k+1+1}-1}{3}=\frac{4^{k+2}-1}{3} \]
+Vi har at
+\begin{align}
+	\frac{4^{k+1}-1}{3}+4^{k+1}&=\frac{4^{k+1}-1+3\cdot4^{k+1}}{3}\\
+	&=\frac{4^{k+1}(1+3)-1}{3} \\
+	&=\frac{4^{k+2}-1}{3} \\
+	&=\frac{4^{k+2}-1}{3}
+\end{align}
+Dermed har vi vist det vi skulle.
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Farten er den derivere av posisjonsvektoren. I celle 2 finner vi at for $t=2$ er farten er ca. 10,3\enh{m/s}.
+\item I celle 3 finner vi bunnpunktet til $z$-komponenten til $\vec{r}$. På det dypeste er båten 312,5\enh{m} under havoverflaten.
+\item Vi lar $\vec{r}$ og $\vec{s}$ gi posisjonen til sentrum i henholdsvis båten og fiskestimen. Da må $|\vec{r}-\vec{s}|<15+4=19$ for at båten potensielt treffer stimen. Av celle 6 ser vi at dette ikke er tilfellet.
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg1}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 2}
+\abc{
+\item Vi lager en liste av punkt, og ser at $U$ kan tilnærmes ved en sinusfunksjon. Bruker derfor \texttt{RegSin}, for å finne uttrykket for $U$ ($x$ er variabel i stedet for $t$).
+\item Ser av grafen at $U(t)=230$ for to $t$-verdier på intervallet $[0, 0,02]$. Definerer $f(x)=230$, og bruker \texttt{Skjæring}. Finner da at $U=230$ når $t=0,0025$ og $t=0,0075$.
+\item Av bølgetallet til sinusfunksjonen finner vi perioden $T$. Kvadratroten av integralet gir at $U_\text{effektiv}\approx 229$, noe som tyder på at målingene er rette.
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.25]{opg2}
+\end{figure}
+\newpage
+\subsection*{Oppgave 3}
+\abc{
+\item Totalt antall enheter etter $i$ døgn er gitt ved den geometriske rekka
+\[ 2+2\cdot0.72+2\cdot0.72^2+...+2\cdot0.72^{i-1} \]
+Vi skriver inn summen $S_i$ til denne rekka i CAS, og finner at $S_i=10$ når $i\approx11.6$. Altså kan Sofie sove der i 11 netter får antall enheter når et potensielt farlig nivå. (celle 1).
+\item I artikkelen antas det at den uendelige konvergente geometriske rekka med første ledd lik $2$ og koeffisient $k$ har sum 10. I så fall er $k=\frac{4}{5}=0.8$, som betyr at det antas at det skilles ut $20\%$ enheter hvert døgn.
+}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item Begge metodene tilnærmer integralet ved å finne summen av små rektangler. Siden $f$ er en strengt voksende funksjon, bruker  \texttt{areal\_til\_hoyre} den høyeste $f$-verdien på hvert delintervall, mens  \texttt{areal\_til\_venstre} bruker den laveste $f$-verdien. Dermed vil \texttt{areal\_til\_hoyre} bestå av rektangler som ligger over grafen til $f$, og gi en litt for høy verdi, mens \texttt{areal\_til\_venstre} vil bestå av rektangler som ligger under grafen til $f$, og gi en litt for lav verdi.
+\item Vi implementerer Trapes-metoden:
+\pythonut{opg4b.py}{36.0}
+}
+
+
+
+\end{document}

@@ -31,6 +31,7 @@ på er
 \subsection*{Mengder og tallinjer}
 I denne boka skal vi bruke to måter å representere tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utgangspunkt i forståelsen av tallene 0 og 1.
 \newpage
+%span{numbers_as_amounts}
 \subsubsection*{Tall som mengde}
 	Når vi snakker om en mengde, vil tallet 0 bety\!\!
 	%id{0interpretations}
@@ -46,6 +47,8 @@ I denne boka skal vi bruke to måter å representere tallene på; tall som en \t
 Andre tall vil da være definert ut fra hvor mange enerruter ('enere') vi har: \vs
 	\fig{rut2}
 	\fig{rut3}	
+%\span
+%span{numbers_on_numberline}
 \subsubsection*{Tall som plassering på ei linje}
 	Når vi plasserer tall på ei linje, vil 0 være utgangspunket vårt:
 	\fig{lin0a}
@@ -53,7 +56,7 @@ Andre tall vil da være definert ut fra hvor mange enerruter ('enere') vi har: \
 	\fig{lin0b}
 	Andre tall vil da være definert ut fra hvor mange enerlengder ('enere') vi er unna 0:
 	\fig{lin1}
-
+%\span
 \subsection*{Positive heltall}
 Vi skal straks se at tall ikke nødvendigvis trenger å være \textsl{hele} antall enere, men tallene som \textsl{er} det har et eget navn:\regv
 
@@ -71,10 +74,13 @@ Positive heltall blir også kalt \outl{naturlige tal}\index{tall!naturlige}.
 \info{Hva med 0?}{
 Noen forfattere inkluderer også 0 i begrepet naturlige tal. I noen sammenhenger vil dette lønne seg, i andre ikke.
 }
+%id{posinterpre}
 \footnotetext{Hva ordet \textit{positiv} betyr skal vi se i \refkap{Negtal}.}
+%\id
 \subsubsection{Ulikhetstegn}
 Vi har også symboler som viser at verdier \textsl{ikke} er like. Noen ganger er det nok å si at de ikke er like, andre ganger er det også behov for å si hvilken av verdiene som er størst (og minst).
 \spr{ \vs
+	%id{unequals}
 	\begin{center}
 		\renewcommand{\arraystretch}{1.2}
 		\begin{tabular}{@{}cp{0.4cm}l}
@@ -86,9 +92,11 @@ Vi har også symboler som viser at verdier \textsl{ikke} er like. Noen ganger er
 		\end{tabular}
 		\renewcommand{\arraystretch}{1}
 	\end{center}
+	%\id
 } 
 \newpage
 \eks{ \vsb
+%id{unequalexample}
 \alg{
 0 &\neq 1 \vn
 7&<9 \vn
@@ -96,12 +104,46 @@ Vi har også symboler som viser at verdier \textsl{ikke} er like. Noen ganger er
 \text{positive partall}&\geq 2\\
 3&\leq \text{positive oddetall}
 }
+%\id
 }
 \info{Leseretning}{
-Strengt tatt har vi bare tre symboler for ulikhet, nemlig \sym{$\neq$}, \sym{$<$} og \sym{$\leq$}. De to sistnevnte symbolene krever leseretning fra venstre mot høyre. Ulikheten ${3<5}$ leser vi som ''3 er mindre enn 5''. Men vi kan også si at \sym{$<$} er et symbol med retning, hvor den spisse enden skal peke mot den minste verdien. Dette betyr at vi kan lese ${3<5}$ fra høyre som ''5 er større enn 3''. Det at vi i tillegg bruker symbolene \sym{$>$} og \sym{$\geq$} er et resultat av at vi noen ganger ønsker å si ''større enn'' også når vi leser fra venstre.
+Strengt tatt har vi bare tre symboler for ulikhet, nemlig 
+%id{neq}
+\sym{$\neq$}
+%\id
+\!\!, 
+%id{<}
+\sym{$<$}
+%\id
+ og 
+%id{leq} 
+\sym{$\leq$}
+%\id
+\!\!. De to sistnevnte symbolene krever leseretning fra venstre mot høyre. Ulikheten
+%id{3<5}
+${3<5}$ 
+%\id
+leser vi som ''3 er mindre enn 5''. Men vi kan også si at 
+%id{<}
+\sym{$<$}
+%\id
+er et symbol med retning, hvor den spisse enden skal peke mot den minste verdien. Dette betyr at vi kan lese 
+%id{3<5}
+${3<5}$
+%\id
+fra høyre som ''5 er større enn 3''. Det at vi i tillegg bruker symbolene 
+%id{>}
+\sym{$>$} 
+%\id
+og 
+%id{geq}
+\sym{$\geq$}
+%\id
+er et resultat av at vi noen ganger ønsker å si ''større enn'' også når vi leser fra venstre.
 }
 
 \newpage
+%span{integers_larger_than_9}
 \section{Tall, siffer og verdi \label{tallsiff}}
 Tallene våre er bygd opp av \outl{sifrene}\index{siffer} 
 0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og \textsl{plasseringen} av dem. Sifrene og deres plassering definerer
@@ -119,10 +161,13 @@ En gruppe med ti 'enere' kaller vi en 'tier'. Av 'fjorten' kan vi lage 1 'tier',
 \amounts{\fig{tel2_bm}} 
 \numrline{\fig{tel2t}}
 \vsk
-
+%/span
 \newpage
 \subsection*{Desimaltall}
-I mange tilfeller har vi ikke et helt antall enere, og da vil det være behov for å dele 1 inn i mindre biter. La oss starte med å tegne en ener\footnote{Her definerer vi enerlengden større enn tidligere.}:
+I mange tilfeller har vi ikke et helt antall enere, og da vil det være behov for å dele 1 inn i mindre biter. La oss starte med å tegne en\\ ener\!\!
+%id{defof1}
+\footnote{Her definerer vi enerlengden større enn tidligere.}:
+%\id
 \amounts{\fig{maal} \vs} 
 \numrline{\fig{des1}}
 Så deler vi eneren vår inn i 10 mindre biter:
@@ -152,10 +197,15 @@ På engelsk bruker man punktum \sym{.} som desimaltegn:
 	3.5&\quad (english)
 }
 %\id
-Når vi kombinerer matematiske symboler\footnote{Sifrene regnes som matematiske symboler}, får vi det vi kaller et matematisk \outl{uttrykk}.
+Når vi kombinerer matematiske symboler\!\!
+%id{digits}
+\footnote{Sifrene regnes som matematiske symboler.}
+%\id
+\!\!, får vi det vi kaller et matematisk \outl{uttrykk}.
 }
 
 \newpage
+%span{the_decimal_system}
 \subsection*{Titallsystemet}
 Vi har nå sett hvordan vi kan uttrykke verdien til tall ved å plassere \\siffer etter antall tiere, enere og tideler, og det stopper selvsagt ikke der: \regv
 
@@ -172,6 +222,7 @@ Verdien til et tall er gitt av sifrene 0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og plasse
 \eks[2]{ \vs \vs
 \fig{titalsys_bm}
 }
+%span
 \newpage
 \reg[Partall og oddetall \label{parogodd}]{
 Heltall som har 0, 2, 4, 6 eller 8 på enerplassen kalles \outl{partall}\index{partall}.\vsk

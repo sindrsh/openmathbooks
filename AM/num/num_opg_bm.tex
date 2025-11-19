@@ -1,0 +1,73 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+
+\opgt
+\nes
+\op{opgnumnewtmet}
+Gitt likningen
+\[ x^3+4x^2-5=0 \]
+\abc{
+\item Hvorfor vil ikke Newtons metode fungere viss du starter med $ x_0=0 $?
+\item Lag et skript som finner tilnærminger for de tre løsningene av likningen. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. 
+}
+
+\nes
+
+\op{opgnumtrapalt}
+Forklar hvorfor \eqref{trapmeteq} også kan skrives som
+\[ \int_{a}^{b} f\,dx \approx \Delta x\left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}\left[f(x_i)+f(x_{i+1})\right]\right)  \]
+
+\op{opgintdef}
+I \tmto\ har vi sett at det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
+\begin{equation}
+	I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x 
+\end{equation}
+hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $. La $ I_n $ være tilnærmingen av $ I $ gitt ved å la $ n $ være et gitt tall. Implementer $ I_n $ i et skript, og bruk integralet $ \int\limits_{0}^1 3x^2\,dx $ til å sjekke at du får output som forventet.
+
+\op{opgnumtrapkonveks}
+Hvis funksjonen du skal integrere er konkav, vil trapesmetoden gi et overestimat eller et underestimat?
+
+\newpage
+\grubop{opgtrapeunordered}
+Trapesmetoden kan også implementeres slik at delintervallene ikke nødvendigvis har samme bredde. Forklar hvorfor \eqref{trapmeteq} da kan skrives som
+\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right]  \]
+
+Gitt funksjonen 
+\[ f(x)= 1+\frac{1}{2}x^2+\sin(\pi x) \qquad x\in [0, 2]\]
+\abc{
+\item Bruk (for eksempel) GeoGebra til å tegne grafen til $ f $.
+\item Du skal bruke trapesmetoden for å tilnærme $ \int\limits_{0}^2 f \,dx$, men får bare lov til å dele $ [0, 2] $ inn i tre delintervaller. Det er naturlig at $ {x=0} $ og $ {x=2} $ er med i hvert sitt delintervall. Forklar hvorfor de to $ x $-verdiene som løser likningen
+\[ x+\pi \cos(\pi x)=0 \]
+også er gode kandidater til å være med i delintervallene.
+\item Bruk Newtons metode til å finne $ x $-verdiene du ønsker. Stopp søket når $ |x_n-x_{n+1}| \leq 10^{-6}$.
+}
+
+\newpage
+\grubop{opgimplpyt}
+I \mb\ har vi vist at\footnote{Se forklaringen av omkretsen til en sirkel.} hvis $ s_n $ er sidelengden til en regulær mangekant med $ n $ sider, innskrevet i en sirkel med radius 1, har vi at
+\[ s_{2n}=\sqrt{2-\sqrt{4-s_n^2}} \]
+\abc{
+	\item Lag et skript som finner sidelengden til en regulær 768-kant når du vet at $ s_6=1 $. Bruk $ s_{768} $ til å finne en tilnærmet verdi for omkretsen til en sirkel med radius 1.
+	\item Vis at
+	\[ s_{2n}=\frac{s_n}{\sqrt{2+\sqrt{4-s_n^2}}} \]
+	\item Når man utfører numeriske beregninger er det alltid en utfordring at differansen mellom to tall som er veldig like, blir ''satt'' til 0 av datamaskinen.
+	Drøft hvilke av de to gitte uttrykkene for $ s_{2n} $ som er best egnet til en numerisk approksimasjon av $ \pi $.
+	\item Skriv to versjoner av skriptet fra oppgave a), slik at skriptene bruker hvert sitt uttrykk av $ s_{2n} $. Kjør skriptene med minst 30 iterasjoner. (Hvor mange iterasjoner du må ha for å se noe merkelig avhenger av hvilken datamaskin du bruker). 
+}
+
+\grubop{opgtrapreg}
+Gitt integralet
+\[ I=\int\limits_0^2 x^3-5x+6\,dx\]
+La $ I_n $ være intgralet tilnærmet ved trapesmetoden med $ n $ del-intervaller.
+\abc{
+	\item Beregn $ I_{10} $ og $ I_{100} $ og $ I_{1000} $
+	\item La $ E_n=I-I_n $
+	\item Bruk regresjon til å finne den best tilpassede polynomfunksjonen for punktene $ \left(\frac{1}{n}, E_n\right), n\in[10, 100, 1000] $.
+}
+
+
+\end{document}

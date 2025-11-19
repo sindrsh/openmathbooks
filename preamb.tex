@@ -32,6 +32,8 @@
 \usepackage{bm}
 \usepackage[dvipsnames, table]{xcolor}
 \definecolor{shadecolor}{rgb}{0.105469, 0.613281, 1}
+\definecolor{blue}{cmyk}{1, 0, 0, 0}
+\definecolor{red}{cmyk}{0, 1, 1, 0}
 \colorlet{shadecolor}{Emerald!15} 
 \usepackage{icomma}
 \makeatother
@@ -167,7 +169,7 @@
 \end{equation*}
 }
 
-\newcommand{\enh}[1]{\,\textrm{#1}}
+\newcommand{\enh}[1]{\,\text{#1}}
 
 %asin, atan, acos
 \DeclareMathOperator{\atan}{atan}
@@ -193,7 +195,7 @@
 
 % Methods
 \newcommand{\metode}[2]{
-	\textsl{#1} \\[-8pt]
+	\textsl{#1} \\ \vspace{-10pt}
 	\rule{#2}{0.75pt}
 }
 

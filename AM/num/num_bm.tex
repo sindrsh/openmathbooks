@@ -1,0 +1,91 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+	
+\section{Newtons metode}
+Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Ved \outl{Newtons metode} gjør vi denne antakelsen for å en tilnærming $ a $: \regv
+\st{
+La $ x_1 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $. Vi antar da at $ |x_1-a|<|x_0-a| $. Sagt med ord antar vi at $ x_1 $ gir en bedre tilnærming for $ a $ enn det $ x_0 $ gjør.
+}
+Siden $ x_1 $ er skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_0 $, har vi  at\footnote{Se oppgave??}
+\alg{
+f'(x_0)(x_1-x_0)+f(x_0)&=0 \\
+f'(x_0)x_1 &= f'(x_0)x_0-f(x_0) \\
+x_1 &= x_0-\frac{f(x_0)}{f'(x_0)}
+}
+\begin{figure}
+\subfloat[]{
+\includegraphics{\figp{newt1a}}
+}
+\subfloat[]{
+	\includegraphics{\figp{newt1b}}
+}
+\end{figure}
+La $ x_2 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $ x_1 $. Ved å gjenta prosedyren vi brukte for å finne $ x_1 $, kan vi finne $ x_2 $, som vi antar er en enda bedre tilnærming for $ a $ enn $ x_1 $.
+Prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig\footnote{Hva som er en \textit{tilstrekkelig tilnærming} er det opp til oss selv å bestemme.} tilnærming til $ a$.
+\newpage
+\reg[Newtons metode]{
+Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
+\nn{
+x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
+}
+antas det at $ x_{n+1} $ gir en bedre tilnærming for $ a $ enn $ x_{n} $.
+}
+\spr{
+\outl{Newtons metode} kalles også \outl{Newton-Rhapsos metode}.
+}
+\info{Når er tilmærmingen god nok?}{
+Newtons metode beskriver en iterasjonsprossess som man håper at nærmer seg en verdi. Hvis meotden lykkes, vil $ x_{n+1}$ og $ x_n $ etterhvert være veldig like, og slik kan en grense for hvor liten $ {|x_{n+1}-x_n|} $ kan være fungere som et godt mål for når iterasjonsprossessen skal stoppe.
+}
+\section{Trapesmetoden} \label{Trapesmetoden}
+Gitt en funksjone $ f(x) $. Integralet $ \int_a^b f \,dx $ kan vi tilnærme ved å 
+\st{
+\begin{enumerate}
+	\item Dele intervallet $ [a, b] $ inn i mindre intervall. Disse kaller vi \outl{delintervall}.
+	\item Finne en tilnærmet verdi for integralet av $ f $ på hvert\\ delintervall.
+	\item Summere verdiene fra punkt 2.
+\end{enumerate}
+}\regv
+
+I \fref[a]{trapmetfig} har vi 3 like store delintervaller. Hvis vi setter $ {a=x_0} $ og $ {\Delta x=\frac{b-a}{3}} $, betyr dette at 
+\alg{
+x_1&=x_0+\Delta x & x_2&=x_0+2\Delta x & x_3&=x_0+3\Delta x=b
+}
+En tilnæret verdi for $ \int_{a}^{x_1}f\,dx $ får vi ved å finne arealet til trapeset med hjørner (husk at $ x_0=a $)
+\alg{
+(x_0, 0) && (x_1, 0) && (x_1, f(x_1)) && (x_0, f(x_0))
+}
+Dette arealet er gitt ved uttrykket
+\[ \frac{1}{2}(x_1-x_0)\left[f(x_0)+f(x_1)\right]=
+\frac{\Delta x}{2}\left[f(x_0)+f(x_1)\right] \]
+Ved å tilnærme integralet for hvert delintervall på denne måten, kan vi skrive
+\[ \int_{a}^{b} f\,dx \approx \frac{\Delta x}{2}\sum_{i=0}^{2} \left[f(x_i)+f(x_{i+1})\right] \]
+\begin{figure}
+	\centering
+	\subfloat[Tilnærming med 3 del-intervaller.]{\includegraphics{\figp{trapmet}}}\qquad
+\subfloat[Tilnærming med 20 del-intervaller]{\includegraphics{\figp{trapmetb}}}
+	\caption{\label{trapmetfig}}
+\end{figure}
+
+\reg[Trapesmetoden \label{trapmet}]{
+Gitt en integrerbar funksjon $ f $. En tilnærmet verdi for $ \int_{a}^{b} f\,dx $ er da gitt som
+\begin{equation}\label{trapmeteq}
+	\int_{a}^{b} f\,dx \approx \frac{\Delta x}{2}\sum_{i=0}^{n-1}\left[f(x_i)+f(x_{i+1})\right]
+\end{equation}
+hvor
+\algv{
+n&\in \mathbb{\hat{N}}\vn
+a&=x_0 \vn
+b&=x_n \vn
+\Delta x &= \frac{b-a}{n}\vn
+x_{n+1}&=x_0+i\Delta x
+}
+}
+\info{\note}{
+Slik \rref{trapmet} er formulert, vil $ {[a, b]} $ være delt inn i $ {n} $ delintervaller.
+}
+
+\end{document}
