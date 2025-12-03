@@ -45,6 +45,7 @@ Lag et skript som fra en liste med oddetalls antall tall finner
 }
 Bruk gjerne datasettet fra \refops{opgstatsentrodd2} som et utgangspunkt.
 
+\newpage
 \op{opgstascriptpar}
 Lag et skript som fra en liste med partalls antall tall finner
 \abc{
@@ -53,8 +54,16 @@ Lag et skript som fra en liste med partalls antall tall finner
 }
 Bruk gjerne datasettet fra \refops{opgstatsentrpar2} som utgangspunkt.
 
+\grubop{opgprgint} \vs
+\abc{
+\item Lag et skript som implementerer denne summen:
+\[ \sum_{i=0}^{n-1}f(x_i)\Delta x  \]
+hvor $x_i=a+i\Delta x$ og $\Delta x = \frac{b-a}{n}$. Sett $f(x)=e^x$, $a=0$, $b=2$ og $n=100$.
+\item Hva finner denne summen en tilnærming av?
+}
 
-
+\grubop{opgprgtrap}
+Lag et skript som implementerer trapesmetoden for tilnærming av $\int_{a}^{b}f(x)\,dx$.
 \end{document}
 
 

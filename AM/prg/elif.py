@@ -7,5 +7,5 @@ elif a < 1: #Siden if uttrykket over ikke ga utslag, 						sjekkes vilkåret b <
 	print("Denne linja printes ikke, vilkåret er False")
 
 else: 
-	print("Nå er vi sikre på at 1 < b < 3")
+	print("Nå er vi sikre på at 1 < a < 3")
 

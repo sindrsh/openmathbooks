@@ -9,7 +9,7 @@ def a():
 def b(tekst): 
 	print("Hei. Noen kalte på funksjon b. Argumentet som ble gitt var: ", tekst)
 	
-# c er er funksjon som tar argmunentene a og b
+# c er funksjon som tar argmunentene a og b
 # c returnerer et objekt	
 def c(a, b):
 	return a+b
@@ -21,10 +21,3 @@ d = c(2,3) # Vi kaller på a med	argumentene 2 og 3
 print(d)
 
 # merk at teksten gitt i a ikke blir printet, fordi vi ikke har kalt på a.
-
-
-
-
-	
-	
-

@@ -1,0 +1,177 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen R1 Høsten 2025\hfill {\footnotesize Løsning fra \color{blue} \href{https://openmath.online}{OpenMathBooks}}}	
+
+\subsection*{Oppgave 1}
+\abc{
+\item $f(x)=3x^2+\frac{1}{2}x^{-\frac{1}{2}}$
+\item Vi setter $u = 2x-3$ og $v=e^x$. Da er $u'=2$ og $v'=e^x$. Av divisjonsformelen ved derivasjon har vi at
+\[ f'(x)=\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2}=\frac{2e^x-(2x-3)e^x}{\left(e^x\right)^2}=\frac{5-2x}{e^x} \]
+\item $g'(2)=\frac{5-2\cdot2}{e^2}=\frac{1}{e^2}$ og $g'(3)=\frac{5-2\cdot3}{e^3}=-\frac{1}{e^3}$
+\item Grafen går fra å være stigende til synkende. Dette betyr også at $g$ har en lokalt toppunkt på intervallet.
+}
+
+\subsection*{Oppgave 2}
+\abc{
+\item Ved å sette $u=\lg x$, kan vi skrive
+\[ u^2-2u-8=0 \]
+Av \textit{abc}-formelen har vi at
+\begin{align*}
+	u &= \frac{-(-2)\pm\sqrt{(-2)^2-4\cdot1\cdot(-8)}}{2\cdot1} \br
+	&=\frac{2\pm\sqrt{36}}{2} \br
+	&= \frac{2\pm 6}{2}
+\end{align*}
+Dermed er
+\[ u=4\qquad\vee\qquad u=-2 \]
+Antatt at $\lg$ har 10 som base er
+\[ x = 10^{4}\qquad\vee\qquad x=10^{-2} \]
+\item Vi har at $\sqrt[3]{64}=\sqrt[3]{4^3}=4$. Dermed er $\frac{1}{64}=4^{-3}$, og da er 
+\[ \log_4 \frac{1}{64}=-3 \]
+}
+
+\subsection*{Oppgave 3}
+\abc{
+\item Nevneren til uttrykket går mot 0 når $x$ går mot $-2$, mens telleren går mot 14. Dermed eksisterer ikke grenseverdien.
+\item 1) Grensen eksisterer hvis $x+2$ er en faktor i telleren. For en $a=2+b$, skal vi da kunne skrive telleren som $x^2+(2+b)x+2b$. Dette må bety at $b=1$,og da er $a=3$. \os
+2) Da $2\cdot(-4)=-8$ og $2+(-4)=-2$, har vi at
+\[ \lim\limits_{x\to-2} \frac{x^2+3x+2}{x^2-2x-8}=\lim\limits_{x\to-2} \frac{(x+2)(x+1)}{(x+2)(x-4)}=\frac{-2+1}{-2-4}=\frac{1}{6} \] 
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item $\vv{AB}=[3-(-2), 2-3]=[5, -1]$. Videre er
+\[ \left|\vv{AB}\right|=\sqrt{5^2+(-1)^2}=\sqrt{26} \]
+\item Parameteriseringen av linja kan vi skrive som
+\[ \vec{r}(t)=(-2, 3)+t[5, -1] \]
+Linja skjærer $x$-aksen når $y$-verdien til $\vec{r}$ er lik 0, som er når $t=3$. Dermed er
+\[ C=\vec{r}(3)=(-2+15, 0)=(-13, 0) \]
+\item $\vv{BD}=[-1, t-2]$. Hvis $\angle ABD=90^\circ$, har vi at
+\begin{align*}
+	\vv{AB}\cdot\vv{BD}&=0 \\
+	[5, -1]\cdot[-1, t-2]&=0 \\
+	5\cdot(-1)+(-1)(t-2)&=0 \\
+	-5-t+2&=0 \\
+	t&=-3
+\end{align*}
+Dermed er $D=(2, -3)$.
+}
+
+\subsection*{Oppgave 5}
+\abc{
+\item Vi setter $u=4x^2$ og $\ln x=v$. Da er $u'=8x$ og $v'=\frac{1}{x}$. Av derivasjonsregelen ved multiplikasjon har vi at
+\[ f'(x)=u'v+uv'=8x\ln x+4x^2\cdot\frac{1}{x}=4x(2\ln x+1) \]
+$f$ har toppunkt/bunnpunkt der hvor $f'(x)=0$. $4x=0$ når $x=0$, men $\ln 0$ er ikke definert. Dette betyr at $f'(x)=0$ bare når $2\ln x=-1$, som betyr at $x=e^{-\frac{1}{2}}$. $4x$ er positiv på intervallet for alle $x>0$, mens $2\ln x +1$ skifter fortegn fra negativ til positiv når $x=e^{-\frac{1}{2}}$. Dette er altså et minimumspunkt for $f$. Vi har at
+\[ f\left(e^{-\frac{1}{2}}\right)=4\cdot \left(e^{-\frac{1}{2}}\right)^2\cdot \ln e^{-\frac{1}{2}}=4e^{-1}\cdot\left(-\frac{1}{2}\right)=-2e^{-1} \]
+Altså er $\left(e^{-\frac{1}{2}}, -2e^{-1}\right)$ et bunnpunkt på grafen til $f$.
+\item Eleven prøver å finne nullpunktet til funksjonen. \os
+
+Vi lar $x=x_1$ være løsningen av likningen $f(x)=0$.
+\\Linje 11: Starter med "å gjette" at $x_1$ er midtpunktet mellom $a$ og $b$.\\
+Linje 13: Itererer så lenge $f(m)$ er over $0,0001$.\\
+Linje 15-18: Setter $b=m$ hvis $f(a)\cdot f(m)<0$, og $a=m$ hvis ikke. Hvis vilkåret er oppfylt, har $f(a)$ og $f(m)$ forskjellig fortegn, og siden $f(a)<0$, vet vi at $x_1\in[a, m]$. Da må ny høyre grense settes til $m$. Hvis vilkåret  ikke er oppfylt er $x_1\in[m, b]$. Da må ny venstre grense settes til $m$.\\
+Linje 20: ''Gjetter'' at $x$ er midpunktet mellom nye $a$ og $b$. \os
+
+$f(x)=0$ når $\ln x =0$, altså når $x=1$.
+}
+
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Lager en liste med punkt, og bruker \texttt{RegLogist}. Får da funksjonen $f(x)$ som samsvarer med $F(t)$ i oppgaven. Vi ser at grafen ligger rimelig nærme punktene, som tyder på at modellen er gyldig på intervallet $[0, 20]$. Da er det rimelig å tro at modellen vil være gyldig også for noen år før 1960 og for noen år etter 1980. Men når $t$ går fra 0 mot negative verdier, går $F$ ganske fort mot 0. Dermed er nok ikke modellen gyldig for så mange år før 1960. Etter ca. $t=30$ flater grafen til $F$ ut. Mange små tettsteder i Norge har i nyere tid hatt liten befolkningsendring, og dermed er det ikke umulig at modellens gyldighetsområde strekker seg langt over $t=20$.
+\item $f'(12)\approx 115$, som betyr at ved starten av 1972 økte antall innbyggere med ca. 115 personer per år. $f''(12)\approx-17$, som betyr at økningen i antall innbyggere var avtagende i starten av 1972.
+\item Vi definerer $f'(x)$ som en funksjon, og finner skjæringspunktene med linja $y=150$. I ca. perioden 1963-1970 økte befolkningen med mer enn 150 personer per år.
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{opg1}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 2}
+\abc{
+\item Vi har at
+\begin{align*}
+	\lim\limits_{x\to-2^-} f(x)&=2\cdot(-2)-2 = -6 \vn
+	\lim\limits_{x\to-2^+} f(x)&=2\cdot(-2)^3+2\cdot(-2)^2-2\cdot(-2)=-4
+\end{align*}
+Dermed er ikke $f$ kontinuerlig hvis $a=2$ og $b=-2$.
+\item Vi setter $g(x)=ax+b$ og $h(x)=2x^3+2x^2-2x$. Krav at $f$ skal være kontinuerlig og deriverbar gir lilningssettene
+\begin{align*}
+	h'(k)=0 \\
+	h(k)=c
+\end{align*}
+og 
+\begin{align*}
+	g(-2)=h(-2) \vn
+	g'(-2)=h'(-2)
+\end{align*}
+}
+I CAS finner vi at $a=15$ og $b=24$. I tillegg er enten $c=2$ og $k=-1$, eller så er $c=-\frac{10}{27}$ og $k=\frac{1}{3}$.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg2}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 3}
+\abc{
+\item Vi definerer funksjonen i CAS, og finner at $l(500)\approx3,48$ og $l(1400)\approx4,1$. Altså svinger verdiene mellom det som tilsier at lukt bør begrenses og at tiltak kreves. Dermed har beboerne grunn til å klage.
+\item For at lukt skal være akseptabel, må vi ha at $l=2$ eller mindre. Da kan ikke $C$ overstige ca. 44.
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg3}
+\end{figure}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item $\vv{HU}=[1200, 100]$. Siden dette er en retningsvektor for $l$, er
+\[ l(s)=(0, 300)+s(1200, 100) \]
+$l(0)=H$ og $l(1)=U$.
+\item Siden Ina går med konstant fart, har hun etter $5\enh{min}$ gått $\frac{5}{20}$ av turen, og dermed $\frac{5}{20}$ av lengden til $\vv{HU}$. Da har hun gått ca. 301\enh{m} (celle 4).
+\item I punktet hvor Jonas og Ina møtes er likningssettet fra celle 5 og cell 6 oppfylt. Ina møter Jonas når hun har gått $\frac{7}{20}$ av turen (celle 7), og da hun gått ca. 421\enh{m} (celle 8).
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg4}
+\end{figure}
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+\item Vi har at 
+\begin{align*}
+	{\vec{p}\,}^2 &= \vec{a}^2+2\vec{a}\cdot\vec{b} +{\vec{b}\,}^2 \\
+	&=4^2 +2\cdot4\cdot2\sqrt{3}\cdot \frac{\sqrt{3}}{2}+ (2\sqrt{3})^2 \\
+	&=52
+\end{align*}
+Dermed er $|p|=\sqrt{52}$.
+\item Vi har at
+\begin{align*}
+	\vec{p}\cdot\vec{q}&=0 \\
+	(\vec{a}+\vec{b}) \cdot (t\vec{a}+ \vec{b})&=0 \\
+	t\vec{a}^2+t\vec{a}\cdot\vec{b}+\vec{a}\cdot\vec{b}+{\vec{b}\,}^2 &=0 \\
+	16t+12t+12+12&=0 \\
+	t &= -\frac{6}{7}
+\end{align*}
+}
+
+\newpage
+\subsubsection{Oppgave 6}
+\abc{
+\item Vi skriver par med funksjoner først og andrederivert etter.\os
+A og G. Siden $(a^x)'=a^x\ln x$, ligger grafen i G litt over grafen i A. \os
+E og H. Av symmetrien viser grafen i E en andregradsfunksjon. Da er den dobbeltderiverte en konstant. (E kunne også vært andrederivert for D)
+\os
+B og C. Grafen i B går mot $\pm\infty$, og har et infleksjonspunkt. Da er dette en tredjegradsfunksjon, med en rett linje som dobbeltderivert. \os
+F og D. Av symmetrien viser D en andregradsfunksjon. Da er den tilhørende funksjonen en fjerdegradsfunksjon. Ved å skrive $x^4$ i Geogebra ser vi at dette stemmer godt overens med F.
+\item A, B, C og G. Dette fordi de er injektive.	
+}
+
+\newpage
+
+
+\end{document}

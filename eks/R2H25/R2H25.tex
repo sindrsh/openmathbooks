@@ -77,7 +77,7 @@ Når $a_i=69$, har vi at
 \end{align}
 Altså har rekka $25$ ledd. Da er
 \[ S_{25}=25\frac{-3+69}{2}=825 \]
-\item Koeffisienten til rekka er $\frac{1}{2}-x$. Rekka er konvergent når \\ $\left|\frac{1}{2}-x\right|<1$, altså når $x\in\left(-\frac{1}{2}, \frac{3}{2}\right)$.
+\item Kvotienten til rekka er $\frac{1}{2}-x$. Rekka er konvergent når \\ $\left|\frac{1}{2}-x\right|<1$, altså når $x\in\left(-\frac{1}{2}, \frac{3}{2}\right)$.
 \item Bortsett fra for høyden 2\enh{m}, vil ballen bevege seg den samme høyden to ganger. Hvis vi legger til at ballen startet med å bli kastet 2\enh{m} fra bakken, vil den totale lengden ballen har bevegd seg være gitt ved den geometriske rekka
 \[ 4+4\cdot\frac{3}{4}+4\cdot\left(\frac{3}{4}\right)^2+...+4\cdot\left(\frac{3}{4}\right)^{i-1} \]
 Dette er en uendelig konvergent geometrisk rekke med sum
@@ -153,13 +153,18 @@ Dermed har vi vist det vi skulle.
 \item Totalt antall enheter etter $i$ døgn er gitt ved den geometriske rekka
 \[ 2+2\cdot0.72+2\cdot0.72^2+...+2\cdot0.72^{i-1} \]
 Vi skriver inn summen $S_i$ til denne rekka i CAS, og finner at $S_i=10$ når $i\approx11.6$. Altså kan Sofie sove der i 11 netter får antall enheter når et potensielt farlig nivå. (celle 1).
-\item I artikkelen antas det at den uendelige konvergente geometriske rekka med første ledd lik $2$ og koeffisient $k$ har sum 10. I så fall er $k=\frac{4}{5}=0.8$, som betyr at det antas at det skilles ut $20\%$ enheter hvert døgn.
+\item I artikkelen antas det at den uendelige konvergente geometriske rekka med første ledd lik $2$ og kvotient $k$ har sum 10. I så fall er $k=\frac{4}{5}=0.8$, som betyr at det antas at det skilles ut $20\%$ enheter hvert døgn.
 }
 \newpage
 \subsection*{Oppgave 4}
 \abc{
 \item Begge metodene tilnærmer integralet ved å finne summen av små rektangler. Siden $f$ er en strengt voksende funksjon, bruker  \texttt{areal\_til\_hoyre} den høyeste $f$-verdien på hvert delintervall, mens  \texttt{areal\_til\_venstre} bruker den laveste $f$-verdien. Dermed vil \texttt{areal\_til\_hoyre} bestå av rektangler som ligger over grafen til $f$, og gi en litt for høy verdi, mens \texttt{areal\_til\_venstre} vil bestå av rektangler som ligger under grafen til $f$, og gi en litt for lav verdi.
-\item Vi implementerer Trapes-metoden:
+\item \textbf{Alternativ 1} \\
+
+\pythonut{opg4b2.py}{35.99999999999999}
+\newpage
+\textbf{Alternativ 2}\\
+Vi implementerer Trapes-metoden:
 \pythonut{opg4b.py}{36.0}
 }
 

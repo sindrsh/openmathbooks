@@ -320,6 +320,44 @@ I tilfellet der $ {\Delta x\to 0} $ gjenkjenner vi brøken som $ \left[f'(x_i)\r
 Av \eqref{bint} har vi da at
 \[ \lim\limits_{n\to \infty}\sum\limits_{i=1}^n \left|P_{i+1}-P_i\right|=\int\limits_{a}^b \sqrt{1+g^2}\,dx \]
 
+\newpage
+\grubr{opgarchi}
+\abc{
+\item Vi forventer at $p$ og $q$ inngår i uttrykket for $I$ siden disse avgjør plasseringen av $A$ og $B$. Så lenge formen til $f$ er lik, vil ikke det avgrensede området endres. Siden bare $a$ påvirker formen til $f$, må også $a$ inngå i uttyrkket for $I$.
+\item 
+Vi lar $g(x)$ være funksjonen som beskriver linja gjennom $AB$. Da er (se {\color{NavyBlue} gruble ??} i \tmen)
+\begin{align*}
+	g(x)&=(a(p+q)+b)(x-p)+f(p) \\
+	&=(a(p+q)+b)x-(a(p+q)+b)p+ap^2+bp+c \\
+	&=(a(p+q)+b)x-apq+c
+\end{align*}
+Vi har at
+\[g-f=ax(p+q)-apq-ax^2 \]
+Dermed er
+\begin{align}
+	I &= \int_{p}^{q} g-f\,dx  \br
+	&= \left[\frac{ax^2}{2}(p+q)-apqx-\frac{1}{3}ax^3\right]_p^q \br
+	&= \frac{aq^2}{2}(p+q)-apq^2-\frac{1}{3}aq^3-\left(\frac{ap^2}{2}(p+q)-ap^2q-\frac{1}{3}ap^3\right) \br
+	&=\frac{a}{2}(p+q)(q^2-p^2)-apq(q-p)-\frac{a}{3}(q^3-p^3) \br
+	&=\frac{a}{2}(q-p)((p+q)^2-2pq)-\frac{a}{3}(q^3-p^3) \br
+	&=\frac{a}{2}(q-p)(p^2+q^2)-\frac{a}{3}(q^3-p^3) \br
+	&=\frac{a}{2}(q-p)(p^2+q^2)-\frac{a}{3}(q-p)(p^2+q^2+pq) \\
+	&=\frac{a}{6}(q-p)(3p^2+q^2-2p^2-2q^2-2pq) \\
+	&=\frac{a}{6}(q-p)^3
+\end{align}
+\item Siden $I=\frac{a}{6}(q-p)^3$ og $A_{\triangle ABC}=\frac{a}{8}(q-p)^3$, er 
+\[ \frac{I}{A_{\triangle ABC}}=\frac{4}{3} \]
+\item Vi har at
+\begin{align*}
+	A_\text{blått område}+A_{\triangle ABC}&=\frac{4}{3}A_{\triangle ABC} \\
+	\frac{A_{\triangle ABC}}{A_\text{blått område}}&=3
+\end{align*}
+}
+
+
+
+
+
 \grubr{opgintxkvadmdef}\\
 Vi har at
 \alg{
@@ -344,14 +382,10 @@ Dermed er
 }
 
 \newpage
-a) Det er rett skrevet at $ x_i=a+(a-i)\Delta x $. Dette gjør at differansen mellom to naboliggende $ x_i $-verdier er $ \Delta x $, og det er denne differansen man ganger med $ f(x_i) $.\vsk
 
-b) Det stemmer at kjerneregelen gir
-\[ f'(x)=g'(u)u'(x) \]
-I teksten du viser til gir kjerneregelen
-\[ F'(x)=G'(u)u'(x) \]
-Og da vi har definert $ F'(x)=f(x) $ og $ G'(u)=g'(u) $, kan vi skrive
-\[ f(x)=g(u)u \]
+
+
+
 
 
 \end{document}

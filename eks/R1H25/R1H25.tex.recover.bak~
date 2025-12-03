@@ -1,0 +1,93 @@
+\input{../../doc}
+\input{../../preamb}
+
+
+
+\begin{document}
+{\Large Eksamen R1 Høsten 2025\hfill {\footnotesize Løsning fra \color{blue} \href{https://openmath.online}{OpenMathBooks}}}	
+
+\subsection*{Oppgave 1}
+\abc{
+\item $f(x)=3x^2+\frac{1}{2}x^{-\frac{1}{2}}$
+\item Vi setter $u = 2x-3$ og $v=e^x$. Da er $u'=2$ og $v'=e^x$. Av divisjonsformelen ved derivasjon har vi at
+\[ f'(x)=\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^2}=\frac{2e^x-(2x-3)e^x}{\left(e^x\right)^2}=\frac{5-2x}{e^x} \]
+\item $g'(2)=\frac{5-2\cdot2}{e^2}=\frac{1}{e^2}$ og $g'(3)=\frac{5-2\cdot3}{e^3}=-\frac{1}{e^3}$
+\item Grafen går fra å være stigende til synkende. Dette betyr også at $f$ har en lokalt toppunkt på intervallet.
+}
+
+\subsection*{Oppgave 2}
+\abc{
+\item Ved å sette $u=\lg x$, kan vi skrive
+\[ u^2-2u-8=0 \]
+Av \textit{abc}-formelen har vi at
+\begin{align}
+	u &= \frac{-(-2)\pm\sqrt{(-2)^2-4\cdot1\cdot(-8)}}{2\cdot1} \br
+	&=\frac{2\pm\sqrt{36}}{2} \br
+	&= \frac{2\pm 6}{2}
+\end{align}
+Dermed er
+\[ u=4\qquad\vee\qquad u=-2 \]
+Antatt at $\lg$ har 10 som base er
+\[ x = 10^{4}\qquad\vee\qquad x=10^{-2} \]
+\item Vi har at $\sqrt[3]{64}=\sqrt[3]{4^3}=4$. Dermed er $\frac{1}{64}=4^{-3}$, og da er 
+\[ \log_4 \frac{1}{64}=-3 \]
+}
+
+\subsection*{Oppgave 3}
+\abc{
+\item Nevneren til uttrykket går mot 0 når $x$ går mot $-2$, mens telleren går mot 18. Dermed eksisterer ikke grenseverdien.
+\item 1) Grensen eksisterer hvis $x+2$ er en faktor i telleren. For en $a=2+b$, skal vi da kunne skrive telleren som $x^2+(2+b)x+2b$. Dette må bety at $b=1$,og da er $a=3$. \os
+2) Da $2\cdot(-4)=-8$ og $2+(-4)=-2$, har vi at
+\[ \lim\limits_{x\to-2} \frac{x^2+3x+2}{x^2-2x-8}=\lim\limits_{x\to-2} \frac{(x+2)(x+1)}{(x+2)(x-4)}=\frac{-2+1}{-2-4}=\frac{1}{6} \] 
+}
+
+\subsection*{Oppgave 4}
+\abc{
+\item $\vv{AB}=[3-(-2), 2-3]=[5, -1]$. Videre er
+\[ \left|\vv{AB}\right|=\sqrt{5^2+(-1)^2}=\sqrt{26} \]
+\item Parameteriseringen av linja kan vi skrive som
+\[ \vec{r}(t)=(-2, 3)+t[5, -1] \]
+Linja skjærer $x$-aksen når $y$-verdien til $\vec{r}$ er lik 0, som er når $t=3$. Dermed er
+\[ C=\vec{r}(3)=(-2+15, 0)=(-13, 0) \]
+\item $\vv{BD}=[-1, t-2]$. Hvis $\angle ABD=90^\circ$, har vi at
+\begin{align}
+	\vv{AB}\cdot\vv{BD}&=0 \\
+	[5, -1]\cdot[-1, t-2]&=0 \\
+	5\cdot(-1)+(-1)(t-2)&=0 \\
+	-5-t+2&=0 \\
+	t&=-3
+\end{align}
+Dermed er $D=(2, -3)$.
+}
+
+\subsection*{Oppgave 5}
+\abc{
+\item Vi setter $u=4x^2$ og $\ln x=v$. Da er $u'=8x$ og $v'=\frac{1}{x}$. Av derivasjonsregelen ved multiplikasjon har vi at
+\[ f'(x)=u'v+uv'=8x\ln x+4x^2\cdot\frac{1}{x}=4x(2\ln x+1) \]
+$f$ har toppunkt/bunnpunkt der hvor $f'(x)=0$. $4x=0$ når $x=0$, men $\ln 0$ er ikke definert. Dette betyr at $f'(x)=0$ bare når $2\ln x=-1$, som betyr at $x=e^{-\frac{1}{2}}$. $4x$ er positiv på intervallet for alle $x>0$, mens $2\ln x +1$ skifter fortegn fra negativ til positiv når $x=e^{-\frac{1}{2}}$. Dette er altså et minimumspunkt for $f$. Vi har at
+\[ f\left(e^{-\frac{1}{2}}\right)=4\cdot \left(e^{-\frac{1}{2}}\right)^2\cdot \ln e^{-\frac{1}{2}}=4e^{-1}\cdot\left(-\frac{1}{2}\right)=-2e^{-1} \]
+Altså er $\left(e^{-\frac{1}{2}}, -2e^{-1}\right)$ et bunnpunkt på grafen til $f$.
+\item Eleven prøver å finne nullpunktet til funksjonen. \os
+
+Vi lar $x=x_1$ være løsningen av likningen $f(x)=0$.
+\\Linje 11: Starter med "å gjette" at $x_1$ er midtpunktet mellom $a$ og $b$.\\
+Linje 13: Itererer så lenge $f(m)$ er over $0,0001$.\\
+Linje 15-18: Setter $b=m$ hvis $f(a)\cdot f(m)<0$, og $a=m$ hvis ikke. Hvis vilkåret er oppfylt, har $f(a)$ og $f(m)$ forskjellig fortegn, og siden $f(a)<0$, vet vi at $x_1\in[a, m]$. Da må ny høyre grense settes til $m$. Hvis vilkåret  ikke er oppfylt er $x_1\in[m, b]$. Da må ny venstre grense settes til $m$.\\
+Linje 20: ''Gjetter'' at $x$ er midpunktet mellom nye $a$ og $b$. \os
+
+$f(x)=0$ når $\ln x =0$, altså når $x=1$.
+}
+
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Lager en liste med punkt, og bruker \texttt{RegLogist}. Får da funksjonen $f(x)$ som samsvarer med $F(t)$ i oppgaven. Vi ser at grafen ligger rimelig nærme punktene, som tyder på at modellen er gyldig på intervallet $[0, 20]$. Da er det rimelig å tro at modellen vil være gyldig også for noen år etter 1980. Etter ca. $t=30$ flater grafen til $F$ ut. Mange små tettsteder i Norge har i nyere tid hatt liten befolkningsendring, og dermed er det ikke umulig at modellens gyldighetsområde strekker seg langt over $t=20$.
+\item $f'(12)\approx 115$, som betyr at ved starten av 1972 økte antall innbyggere med ca. 115 personer per år. $f''(12)\approx-17$, som betyr at økningen i antall innbyggere var avtagende i starten av 1972.
+\item Vi definerer $f'()$
+}
+
+
+\newpage
+
+
+\end{document}

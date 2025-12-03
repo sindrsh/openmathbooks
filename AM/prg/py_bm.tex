@@ -81,7 +81,6 @@ Ved å bruke metoden \pymet{def} kan man lage sine egne funksjoner. En funksjon 
 \pythonut{func.py}{
 Hei. Noen kalte på funksjon b. Argumentet som ble gitt var:  Hello! \\
 5
-
 }
 
 \subsection{Boolske verdier og vilkår}
@@ -125,7 +124,7 @@ Men denne kommer, fordi vilkåret i if-linja over var False
 }
 Uttrykket \pymet{else} tar bare hensyn til (og gir ikke mening uten) \pymet{if}-uttrykket like over seg. Hvis vi vil at handlinger skal utføres \textsl{bare} hvis ingen tidligere \pymet{if} uttrykk ga noe utslag, må vi bruke\footnote{\pymet{elif} er en forkortelse for \pymet{else if}, som også kan brukes.} uttrykket \pymet{elif}. Dette er et \pymet{if}-uttrykk som slår inn hvis \pymet{if}-uttrykket over \textsl{ikke} ga utslag.
 \pythonut{elif.py}{
-Nå er vi sikre på at 1 < b < 3
+Nå er vi sikre på at 1 < a < 3
 }
 \info{Merk}{
 Når du jobber med tall, kan noen vilkår du forventer skal være \pytype{True} vise seg å være \pytype{False}. Dette handler ofte om avrundingsfeil, som vi har omtalt på side \pageref{round()}.
@@ -147,7 +146,7 @@ Med den innebygde funksjonen \texttt{append()} kan vi legge til et objekt i ende
 [3, 7]
 }
 \newpage
-Med funksjonen \texttt{pop()} kan vi hente ut et objekt fra listen
+Med funksjonen \texttt{pop()} kan vi hente et objekt fra listen. Når vi henter objektet blir det også fjernet fra listen.
 \pythonut{list4.py}{
 a = 19 \\
 min\_liste = [6, 10, 15] \\
@@ -166,7 +165,7 @@ Med funksjonen \texttt{sort()} kan vi sortere elementene i listen.
 ['a', 'b', 'c', 'd', 'e']
 }\vsk
 \newpage
-Med funksjonene \texttt{count()} kan vi telle gjentatte elementer i listen.
+Med funksjon \texttt{count()} kan vi telle gjentatte elementer i listen.
 \pythonut{list6.py}{
 4\\
 1\\
@@ -246,7 +245,7 @@ Noen ganger er vi nødt til å importere \outl{moduler} for å få tilgang til o
 
 \newpage
 \subsection{Feilmeldinger}
-Påstand: Alle programmerere vil erfare at skriptet ikke kjører fordi vi ikke har skrevet koden på rett måte. Dette kalles en \outl{syntax error}. Ved syntax error vil man få beskjed om på hvilken linje feilen befinner seg, og hva som er feil. De vanligste feilene er
+Påstand: Alle programmerere vil erfare at skriptet ikke kjører fordi vi ikke har skrevet koden på rett måte. Dette kalles en \outl{error}. Ved error vil man få beskjed om på hvilken linje feilen befinner seg, og hva som er feil. De vanligste feilene er
 \begin{itemize}
 \item \textbf{Å glemme innrykk når man bruker metoder som \pymet{def}, \pymet{for}, \pymet{while}, og \pymet{if} }
 \pythonut{erindent.py}{
@@ -265,7 +264,7 @@ TypeError: unsupported operand type(s) for ** or\\ pow(): 'str' and 'int'\\
 \end{itemize}
 
 \subsection{NumPy}
-I Python kan man importere det som kalles \outl{bibliotek} for å få tilgang til enda flere typer objekter, funksjoner og liknende. NumPy er et bibliotek som inneholder typen \pymet{numpy.ndarray}. Denne typen har mange fellestrekk med en liste, men skiller seg ut ved at den inneholder et bestemt antall elemener. Dette gjør blant annet at prossesser som bruker NumPy-arrays istedenfor lister går raskere, og at NumPy-arrays egner seg bedre til regneoperasjoner.\vsk
+I Python kan man importere det som kalles \outl{bibliotek} for å få tilgang til enda flere typer objekter, funksjoner og liknende. NumPy er et bibliotek som inneholder typen \pymet{numpy.ndarray}. Denne typen har mange fellestrekk med en liste, men skiller seg ut ved at den inneholder et bestemt antall elementer. Dette gjør blant annet at prosesser som bruker NumPy-arrays istedenfor lister går raskere, og at NumPy-arrays egner seg bedre til regneoperasjoner.\vsk
 
 For å lage NumPy-arrays må vi importere NumPy-biblioteket: \regv
 \pythonut{array1.py}{
