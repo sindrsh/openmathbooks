@@ -116,18 +116,15 @@ Gitt en deriverbar funksjon $ f(x) $ og $ c\in[a, b] $.
 \eks[1]{
 Finn det lokale bunnpunktet og toppunktet til 
 \[ f(x)=2x^3 + 9x^2 - 60x \]
-\sv
+\sv \vs
 Vi starter med å finne $ f' $:
-\alg{
-f'&=6x^2+18x-60 \\
-&= 6(x^2+3x-10)
-}
-Siden $ 5(-2)=10 $ og $ 5-2=3 $, har vi av \rref{a1a2} at
+\[ f'=6x^2+18x-60 = 6(x^2+3x-10) \]
+Siden $ 5\cdot(-2)=10 $ og $ 5+(-2)=3 $, har vi av \rref{a1a2} at
 \[ f'=6(x-2)(x+5) \]
 $ f'=0 $ for $ x=2 $ og $ x=-5 $. Vi har at
 \alg{
-f(-5)&=2^3+9\cdot2^2-60\cdot2 = -68	\br
-f(2)&=5^3+9\cdot5^2-60\cdot5 = 275 
+f(2)&=2^3+9\cdot2^2-60\cdot2 = -68	\br
+f(-5)&=5^3+9\cdot5^2-60\cdot5 = 275 
 }
 Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
 }
@@ -215,7 +212,7 @@ Gitt en funksjon $ f(x) $. Da er $ {y=c} $ en \outl{horisontal asymptote} for $ 
 	\[ f(x)=\frac{1}{x-3}+2 \]
 	\sv
 	Vi observerer at
-	\[ \lim\limits_{x\to |\infty|}\left[\frac{1}{x-3}+2\right]=2 \]
+	\[ \lim\limits_{x\to |\infty|}\left(\frac{1}{x-3}+2\right)=2 \]
 	Altså er $ y=2 $ en horisontal asymptote for $ f $.
 }
 \section{Konvekse og konkave funksjoner}
@@ -261,7 +258,7 @@ er $ f $ og $ g $ \outl{omvendte} funksjoner.
 } 
 \eks[1]{Gitt funksjonen $ f(x)=5x-3 $.
 \abc{
-\item Finn den omvendte funksjonen $ g $ til $ f $.
+\item Finn den omvendte funksjonen $ g(y) $ til $ f $.
 \item Vis at $ g(f)=x $. 
 } 
 
@@ -298,7 +295,7 @@ I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 	\alg{
 		0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
 	}
-	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $. \vs
+	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $.
 }\vsk
 
 \fork{\ref{verdmengdgittint} \verdmengdgittint}{

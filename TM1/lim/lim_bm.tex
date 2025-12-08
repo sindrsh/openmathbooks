@@ -20,14 +20,14 @@ x\to a &=  x \text{ går mot } a \text{ (fra både høgre og venstre)}\\[12pt]
 &= \text{verdien }f\text{ går mot når }x \text{ går mot }a
 } 
 }
-
 \spr{
-Å gå mot en verdi fra høgre/venstre kalles også å gå mot en verdi ovenfra/nedenfra.
+Å gå mot en verdi fra høgre/venstre kalles også å gå mot en verdi ovenfra/nedenfra. \vsk
+
+Hvis $\lim\limits_{x\to a} f(x)$ er et endelig tall, sier vi at \outl{grensen eksisterer}. Hvis den \textsl{ikke} er et endelig tall, sier vi at \outl{grensen ikke eksisterer}. Et krav for at en grense skal eksistere er altså at $\lim\limits_{x\to a}\neq \pm \infty$ og at $\lim\limits_{x^+ \to a}=\lim\limits_{x^-}\to a$.
 }
 \info{\note}{
 \sym{$ x\to a$} omfatter de to tilfellene \sym{$ x\to a^+ $} og \sym{$ x\to a^- $}. Ofte vil disse være så like at vi kan behandle \sym{$ x\to a $} som ett tilfelle.
 }
-\newpage
 
 \info{En utvidelse av \sym{$ = $}}{
 Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel er
@@ -36,24 +36,27 @@ Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte
 \end{equation}
 Det er verd å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli \textsl{eksakt lik} 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går eksakt mot} en verdi. Dette gjør altså at grenseverdier bringer en noe utvidet forståelse av \sym{$ = $}.
 }
+\reg[Regneregler for grenseverdier]{
+	Gitt funksjonene $f(x)$ og $g(x)$, hvor $\lim\limits_{x\to a}=b$ og $\lim\limits_{x\to a}=c$. Da er
+	\begin{align}
+		\lim\limits_{x\to a}(f+g)&=b+c \vn
+		\lim\limits_{x\to a} fg &= bc
+	\end{align}	
+}
 \eks[1]{
 Gitt $ f(x)=\frac{x^2+2x-3}{x-1} $. Finn $ \lim\limits_{x\to 1} f(x) $. 
 
 \sv
 Når $ x\neq1 $, har vi at
-\alg{
-f(x)&= \frac{(x-1)(x+3)}{x-1} \\
-&= x+3
-}
+\[ f(x)= \frac{(x-1)(x+3)}{x-1}= x+3 \]
 Dette betyr at 
-\alg{
-\lim\limits_{x\to 1} f(x) &= \lim\limits_{x\to 1} x+3 \\
-&= 4
-} 
+\[ \lim\limits_{x\to 1} f(x) = \lim\limits_{x\to 1} x+3= 4 \] 
 }
+
+
 \section{Kontinuitet}
 \regdef[Kontinuitet]{
-Gitt en funksjon $ f(x) $ og et tall $ c $. Hvis $ f(c) $ eksisterer, er $ f $ \outl{kontinuerlig} for $ x=c $ hvis
+Gitt en funksjon $ f(x) $ og et tall $ c $. $ f $ er \outl{kontinuerlig} for $ {x=c} $ bare hvis
 \begin{equation}\label{kont}
 	\lim\limits_{x\to c} f(x)=f(c) 
 \end{equation}

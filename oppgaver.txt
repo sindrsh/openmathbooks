@@ -51,6 +51,7 @@ funk
 ved å undersøke polynomet med polynomdivisjon.
 - lag fortegnsskjema ut ifra graf
 - vis ulikhet grafisk ved å skissere andregradsfunksjon og linje
+- vis symmetri for rasjonale funksjoner
 
 vektor
 - skriv vektorfunksjoner som parameteriseringer, og omvendt
@@ -85,6 +86,7 @@ funkdroft
 eksamener brukt (oppgaver er til og med)
 - R2 H23 (D1)
 - R1 H23 (D1)
+- T1 H25 (D1 3)
 - T1 H23 (D1 4)
 - 1P V23 (D1)
 - 1P H22 (D1)

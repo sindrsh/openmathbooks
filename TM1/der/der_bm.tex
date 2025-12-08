@@ -8,7 +8,7 @@
 \section{Definisjoner \label{grense}}
 Gitt en funksjon $ f(x) $ og to $ x $-verdier $ a $ og $ b $. Endringen til $ f $ relativ til endringen til $ x $ for disse verdiene er gitt som
 \begin{equation}\label{releq}
-	\frac{f(b)-f(a)}{b-a}
+\frac{f(b)-f(a)}{b-a}
 \end{equation}
 I \mb\ har vi sett at uttrykket over gir stigningstallet til linja som går gjennom punktene $ (a, f(a)) $ og $ (b, f(b)) $. I en matematisk sammenheng er det ekstra interessant å undersøke \eqref{releq} når $ b $ nærmer seg $ a $.
 \begin{figure}
@@ -72,6 +72,7 @@ En ekvivalent utgave av \eqref{derdefaeq} er
 f'(a)=	\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}
 \end{equation}
 }
+\spr{Hvis vi for to funksjoner $f(x)$ og $g(x)$ har at ${f'(a)=g'(a)}$, sier vi at funksjonene tangerer hverandre i punktet $a$.}
 \subsubsection{Linearisering av en funksjon}
 Gitt en funksjon $ f(x) $ og en variabel $ k $. Siden $ f'(a) $ angir stigningstallet til $ f(a) $ for $ x=a $, vil en tilnærming til $ f(a+k) $ være
 \[ f(a+k)\approx f(a)+f'(a)k \]
@@ -142,14 +143,7 @@ Gitt en deriverbar funksjon $ f(x) $. Da er den \outl{andrederiverte} funksjonen
 \begin{equation}\label{andredereq}
 	\left(f'\right)'=f''
 \end{equation}
-} \regv
-
-\regdef[Den deriverte av en vektorfunksjon \label{vektfunkder}]{
-Gitt funksjonene $ f(t) $, $ g(t) $ og $ v(t)=[f(t), g(t)] $. Da er
-\begin{equation}\label{vektfunkdereq}
-v'(t)=[f'(t), g'(t)]	
-\end{equation}
-}
+} 
 \newpage
 \subsection{Kjerne-, produkt- og divisjonsregelen ved derivasjon}
 \reg[\kjernereg \label{kjerne}]{
@@ -192,7 +186,8 @@ f &= uv
 }
 Altså er
 \algv{
-f' &= 2xe^x +x^2 e^x \\
+f' &= u'v+uv' \\
+&=2xe^x +x^2 e^x \\
 &=xe^x(2+x)
 }
 }
@@ -213,8 +208,9 @@ Vi setter $ u(x)=\ln x $ og $ v(x)=x^4 $, da er
 f&=\frac{u}{v} & u'&=x^{-1} & v' &= 4x^3
 }
 Altså er
-\alg{
-f' &= \frac{x^{-1}\cdot x^4-\ln x\cdot 4x^3}{x^8} \br
+\algv{
+f' &= \frac{u'v-uv'}{v^2}\br
+&=\frac{x^{-1}\cdot x^4-\ln x\cdot 4x^3}{x^8} \br
 &= \frac{1-4 \ln x}{x^5}
 }
 \notesm{Vi kan også finne $ f' $ ved å sette $ {u(x)=\ln x} $ og $ {v(x)=x^{-4}} $, for så å bruke produktregelen.}
@@ -336,12 +332,9 @@ Altså er
 \fork{\ref{divder} \divder}{
 	Vi har at
 	\[ f'=\left(\dfrac{u}{v} \right)'=\left(u v^{-1}\right)' \]
-	Av \refunnbr{prodregder}{produktregelen} og \refunnbr{kjerne}{kjerneregelen} er da
-	\alg{
-		f'	&= u' v^{-1} - u v^{-2}v' \\
-		&= \frac{u'v - u v'}{v^2}
-	}
-} \vsk
+	Av \refunnbr{prodregder}{produktregelen} (\rref{prodregder}) og \refunnbr{kjerne}{kjerneregelen} (\rref{kjerne}) er da
+	\[ f'= u' v^{-1} - u v^{-2}v'= \frac{u'v - u v'}{v^2} \]
+}
 
 \fork{\ref{Lhop} \lhop}{
 	Siden $ f(a)=g(a)=0 $, er
