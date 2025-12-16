@@ -51,16 +51,16 @@ void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
 }
 }
 
-void mk_endbar(real f(real x), real x1, real dx=1, bool leftbar=true){
-  path p = graph(f, x1, x1+dx);
+void mk_endbar(real f(real x), real x1, real dx=1, bool leftbar=true, pen p=blue){
+  path s = graph(f, x1, x1+dx);
   real l = 0.02cm;
   path brc = (2,-5)*l--(0,-5)*l--(0, 5)*l--(2, 5)*l;
   if (leftbar){
-    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*p, x1)))*brc, blue);
+    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*s, x1)))*brc, p);
   }
   else {
     brc = rotate(180)*brc;
-    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*p, x1)))*brc, blue);
+    draw((x1, f(x1)), rotate(180/pi*angle(dir(currentpicture.calculateTransform()*s, x1)))*brc, p);
   }
 
 }

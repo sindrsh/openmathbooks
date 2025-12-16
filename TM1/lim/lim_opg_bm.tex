@@ -6,11 +6,11 @@
 
 \opgt
 
-\op{opglimx}
-For hvilke $ x $-verdier er $ f(x)=\frac{|x|}{x} $ kontinuerlig?
+%\op{opglimx}
+%For hvilke $ x $-verdier er $ f(x)=\frac{|x|}{x} $ kontinuerlig?
 
 \op{opglimkont}
-Undersøk om funksjonene er kontinuerlige for $ x=4 $.
+Undersøk om funksjonene er kontinuerlige.
 \begin{equation*}
 	f(x)= \left\lbrace{
 		\begin{array}{rcr}
@@ -49,11 +49,52 @@ Bestem $ a $ slik at $ f $ er kontinuerlig
 	}\right. 
 \end{equation*}
 
-\newpage
-\grubop{R1V23D1opg2} (R1V23D1) \os
+\op{opglimfind}
+Bestem grenseverdiene hvis de eksisterer. \os
+\abch{
+\item $\lim\limits_{x\to3} \dfrac{3(x^2-3)}{x-3}$ 
+\item $\lim\limits_{x\to 4} \dfrac{\sqrt{x}-2}{x-4}$
+\item $\lim\limits_{x\to\infty}\dfrac{x^2+x+12}{2x^2-18}$
+} \os
+\abchs{4}{
+\item $\lim\limits_{x\to\infty}e^{-x+1}$
+\item $\lim\limits_{x\to-\infty}e^{-x+1}$
+\item $\lim\limits_{x\to3} \dfrac{x-3}{x^2+x-12}$
+}
 
+\eksop{R1H22}{r1h22d1opg2}
+Bestem grenseverdien
+\[ \lim\limits_{h\to 0} \frac{(4+h)^2-4}{h}\]
+
+
+\eksop{R1H25}{r1h25opg3}
+\abc{
+\item Forklar hvorfor grenseverdien ikke eksisterer.
+\[ \lim\limits_{x\to -2} \frac{x^2-4x+2}{x^2-2x-8} \]
+\item Bestem $a$ slik at grenseverdien eksisterer, og finn grenseverdien.
+\[ \lim\limits_{x\to -2}\frac{x^2+ax+2}{x^2-2x-8} \]
+}
+
+\grubop{R1V23D1opg2} (R1V23D1) \os
 Bestem grenseverdien
 \[ \lim\limits_{x\to0}\frac{x^3-8}{x^2-4} \]
+
+
+\grubop{1tv25opg4}
+\abc{
+\item Løs likningen 
+\[ x^3-7x^2-10x+16=0 \]
+\item Gitt funksjonen $f(x)=x^3-7x^2-10x+16$. Hvilken av figurene under kan vise grafen til $f$?
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{1tv25opg4a}}} \quad
+	\subfloat[]{\includegraphics{\figp{1tv25opg4b}}} \\
+	\subfloat[]{\includegraphics{\figp{1tv25opg4c}}} \quad
+	\subfloat[]{\includegraphics{\figp{1tv25opg4d}}} 
+\end{figure}
+}
+
+
 
 \grubop{1th23d1opg5}
 Gitt funksjonene
@@ -71,6 +112,13 @@ Gitt funksjonene
 	\subfloat[]{\includegraphics{\figp{1th23opg5e}}}
 	\subfloat[]{\includegraphics{\figp{1th23opg5f}}} 	
 \end{figure}
+
+\grubop{r1h24d2opg2a}
+Vurder om påstanden er rett.
+\begin{center}
+		Dersom $\lim\limits_{x\to\infty}f(x)=\lim\limits_{x\to\infty}g(x)$ og $\lim\limits_{x\to-\infty}f(x)=\lim\limits_{x\to-\infty}=g(x)$,\\ så er 
+		$f(x)=g(x)$.
+\end{center}
 
 
 \end{document}

@@ -18,6 +18,9 @@ rrek
 uttrykke et blanda tall
 obs! Fiks farger på rest-ruter (kan ikke ha samme som negative tall)
 
+funk
+-1th21opg1
+
 ---TM1---
 Obs! Fiks figur til linearisering av f(x)
 opg om skråasymptote
@@ -27,7 +30,8 @@ alg
 ved å bruke potensregelen for ln
 - forklar kvadratsetningene ut ifra figurer
 - for andregradslikning: vise at hvis x1 og x2 er løsninger av likningen, så er (x1+x2)/2 x-verdien til toppunktet
-
+- analyser 3-gradsfunksjon ut fra den deriverte
+- opg: vis utsnitt av f=(x-1)(x+2)(x+5), og finn uttrykket til f.
 
 
 geo
@@ -42,6 +46,7 @@ der
 
 grens
 - vis at lim0 sin x/x = 1 og lim 0 (cos x - 1)/x = 0
+- vis at lim 3poly = +- inft
 
 funk
 - vertikale asymptoter
@@ -63,6 +68,9 @@ og (x,f(x)) for x in [a, b]
 - forklar betingelser som må være oppfylt for at A=(x, y) skal ligge utenfor/innenfor sirkelen.
 - undersøke begrepet 'lineært uavhengige'
 
+der
+forklar kontinuerlig derivert i et punkt
+
 ---TM2---
 trigonometri
 - vise at |det(u,v)|=|u||v|*sin(vinkel(u,v))
@@ -81,13 +89,23 @@ log
 funkdroft
 - luftmotstand
 
-
-
 eksamener brukt (oppgaver er til og med)
 - R2 H23 (D1)
-- R1 H23 (D1)
-- T1 H25 (D1 3)
-- T1 H23 (D1 4)
+- R1 H25
+- R1 V25
+- R1 H24
+- R1 V24
+- R1 H23
+- R1 V23
+- R2 H22
+- T1 V25 (D1)
+- T1 V24
+- T1 H24 (D1)
+- T1 H23 (D1)
+- 1T V23 (D1)
+- 1T H22 (D1)
+- 1T V22 (D1)
+- 1T H21 
 - 1P V23 (D1)
 - 1P H22 (D1)
 - 1P V22 (D1)

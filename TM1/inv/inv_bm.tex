@@ -279,6 +279,22 @@ g(y)&=g(5x-3)\br
 }
 }
 \newpage
+\reg[Den deriverte til en omvendt funksjon \label{derofomv}]{
+Gitt funksjonen $f(x)$, og la $g(y)$ være den omvendte funksjonen til $f$. Hvis $f'(x)\neq0$, er
+\[ g'(y)=\frac{1}{f'(x)} \]
+}
+\fork{\ref{derofomv} Den deriverte til en omvendt funksjon}{
+Vi har at $g(y)=x$. Dermed er $\frac{\text{d}}{\text{d}x}g=\frac{\text{d}}{\text{d}x}x=1$. Av kjerneregelen er
+\[ \frac{\text{d}}{\text{d}x}g=g'(y)y'(x) \]
+Dermed er
+\algv{
+g'(y)y'(x)&=1 \\
+g'(y)&=\frac{1}{y'(x)}
+}
+Da $y=f$, er
+\[ g'(y)=\frac{1}{f'(x)} \]
+}
+\newpage
 \info{$ \bm {f^{-1}} $}{
 Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. Da er det viktig å merke seg at $ f^{-1} $ ikke er det samme som $ (f)^{-1} $. For eksempel, gitt $ f(x)= x+1 $. Da er
 \[ f^{-1}=x-1 \qquad,\qquad (f)^{-1}=\frac{1}{x+1}\] 
