@@ -18,13 +18,14 @@ pair Bx = (B.x, 0);
 
 draw(C--D);
 
-draw(O--A--Ax);
-draw(B--O);
+draw(Bx--B--O);
+draw(B--D);
 
 dv(Ax, B, O, sc=0.1, "$u$", NE);
-dv(Ax, A, O, sc=0.2, "$v$", 0.5N+E, p=green);
+dv(C, B, O, sc=0.2, "$v$", 0.5W, p=green);
 
 draw(graph(f, 0, pi));
 dott(O, "$O$", S);
-dott(A, "$A$", NE);
-dott(B, "$B$", NW);
+dott(B, "$C$", NW);
+dott(Bx, "$A$", S);
+dott(D, "$B$", S);

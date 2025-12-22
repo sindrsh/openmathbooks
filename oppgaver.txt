@@ -69,7 +69,9 @@ og (x,f(x)) for x in [a, b]
 - undersøke begrepet 'lineært uavhengige'
 
 der
-forklar kontinuerlig derivert i et punkt
+- vis at rektangel har størst areal hvis det er et kvadrat 
+- forklar kontinuerlig derivert i et punkt
+- språkboksen stasjonært punkt
 
 ---TM2---
 trigonometri
@@ -78,7 +80,9 @@ trigonometri
 folger
 - vis at (1/a)^(1/x) kan skrives som 1+(1-a^(1/x)+(1-a^(1/x))^2+...)
 
----AM2---
+---AM---
+ggb
+- legg til kommando tangent
 
 log
 - godot
@@ -98,11 +102,12 @@ eksamener brukt (oppgaver er til og med)
 - R1 H23
 - R1 V23
 - R2 H22
-- T1 V25 (D1)
+- T1 V25
+- T1 H24
 - T1 V24
-- T1 H24 (D1)
-- T1 H23 (D1)
-- 1T V23 (D1)
+- T1 H24 
+- T1 H23
+- 1T V23 
 - 1T H22 (D1)
 - 1T V22 (D1)
 - 1T H21 

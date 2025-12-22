@@ -113,7 +113,11 @@ Gitt $ {f(x)=x^3} $. Siden\footnote{Se \textsl{Eksempel 2}, side \pageref{dereks
 \spr{
 Alternative skrivemåter for \sym{$f'$} er 
 \sym{$ (f)'$} og \sym{$\frac{\text{d}}{\text{d}x} f $}.
+} \vsk
+\reg[Den deriverte funksjonen og den deriverte \label{fderandder}]{
+Hvis både $f(x)$ og $f'(x)$ er kontinuerlig for ${x=a}$, er $f$ deriverbar for ${x=a}$.
 }
+
 \newpage
 \info{Derivert med hensyn på}{
 Derivasjon som vi har sett på så langt har vært en brøk med en differanse av $ x $-verdier i nevner og den tilknyttede differansen av $ f $-verdier i teller. Da sier vi at $ f $ er derivert med \outl{hensyn på $ x $}. I denne bokserien skal vi i all hovedsak se på funksjoner som bare er avhengige av én variabel. Gitt en funksjon $ f(x) $, er det da underforstått at \sym{$ f' $} symboliserer $ f $ derivert med hensyn på $ x $.\vsk
@@ -252,6 +256,12 @@ For $ {t=a} $ vil $ \vec{r}\,'(a) $ være en retningsvektor til tangenten til $ 
 }
 \newpage
 \section*{Forklaringer}
+
+\fork{\ref{fderandder} Den deriverte funksjonen og den deriverte}{
+Vi har at
+\[ f'(a)= \lim\limits_{h\to 0} \frac{f(a+h)-f(a)}{h} \]
+Siden $f$ er kontinuerlig for $x=a$, går telleren mot 0.
+}
 
 \fork{\ref{kjerne} \kjernereg}{
 La oss se på tre funksjoner $ f $, $ g $ og $ u $, hvor\footnote{Klammeparantesene $ \sym{$ [\ ] $} $ har i denne sammenhengen lik betydning som vanlige paranteser, de brukes bare for å få ryddigere uttrykk.}

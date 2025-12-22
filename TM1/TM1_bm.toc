@@ -42,30 +42,30 @@
 \contentsline {section}{\numberline {5.1}Grenseverdier}{108}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Kontinuitet}{110}{section.5.2}%
 \contentsline {section}{Oppgaver}{112}{section*.53}%
-\contentsline {chapter}{\numberline {6}Derivasjon}{117}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Definisjoner }{118}{section.6.1}%
-\contentsline {subsubsection}{Linearisering av en funksjon}{120}{subsubsection*.55}%
-\contentsline {section}{\numberline {6.2}Derivasjonsregler}{122}{section.6.2}%
-\contentsline {subsubsection}{Den deriverte funksjonen}{122}{subsubsection*.57}%
-\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{124}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{125}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Derivasjon av vektorfunksjoner}{128}{section.6.3}%
-\contentsline {section}{Oppgaver}{133}{section*.67}%
+\contentsline {chapter}{\numberline {6}Derivasjon}{115}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Definisjoner }{116}{section.6.1}%
+\contentsline {subsubsection}{Linearisering av en funksjon}{118}{subsubsection*.55}%
+\contentsline {section}{\numberline {6.2}Derivasjonsregler}{120}{section.6.2}%
+\contentsline {subsubsection}{Den deriverte funksjonen}{120}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {6.2.1}Den deriverte av elementære funksjoner}{122}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Kjerne-, produkt- og divisjonsregelen ved derivasjon}{123}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Derivasjon av vektorfunksjoner}{126}{section.6.3}%
+\contentsline {section}{Oppgaver}{131}{section*.68}%
 \contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{143}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Monotoniegenskaper}{144}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{147}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Asymptoter}{153}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Konvekse og konkave funksjoner}{155}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Injektive og omvendte funksjoner}{156}{section.7.5}%
-\contentsline {subsubsection}{Injektive funksjoner}{156}{subsubsection*.80}%
-\contentsline {subsubsection}{Omvendte funksjoner}{156}{subsubsection*.82}%
-\contentsline {section}{Oppgaver}{163}{section*.85}%
-\contentsline {chapter}{Vedlegg A-F}{173}{chapter*.86}%
-\contentsline {subsubsection}{Den deriverte som motivajon}{177}{subsubsection*.92}%
-\contentsline {subsubsection}{Undersøking av grenseverdien}{177}{subsubsection*.93}%
-\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{180}{subsubsection*.94}%
-\contentsline {subsubsection}{Undersøkelse av grensenverdien}{185}{subsubsection*.97}%
+\contentsline {subsubsection}{Injektive funksjoner}{156}{subsubsection*.81}%
+\contentsline {subsubsection}{Omvendte funksjoner}{156}{subsubsection*.83}%
+\contentsline {section}{Oppgaver}{163}{section*.86}%
+\contentsline {chapter}{Vedlegg A-F}{175}{chapter*.87}%
+\contentsline {subsubsection}{Den deriverte som motivajon}{179}{subsubsection*.93}%
+\contentsline {subsubsection}{Undersøking av grenseverdien}{179}{subsubsection*.94}%
+\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{182}{subsubsection*.95}%
+\contentsline {subsubsection}{Undersøkelse av grensenverdien}{187}{subsubsection*.98}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{187}{chapter*.98}%
+\contentsline {chapter}{Indeks}{189}{chapter*.99}%
 \vspace {-5pt}
-\contentsline {chapter}{Fasit}{189}{chapter*.100}%
+\contentsline {chapter}{Fasit}{191}{chapter*.101}%

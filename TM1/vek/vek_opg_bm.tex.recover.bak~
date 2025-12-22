@@ -58,9 +58,9 @@ Undersøk om noen av vektorene fra \refops{opgveklen} står vinkelrett på hvera
 \op{opgvekskalar2}
 Finn skalarproduktet av $\vec{u}$ og $\vec{v}$ når 
 \abc{
-\item $|\vec{u}|=2$, $|\vec{v}|=10$ og $\angle(\vec{u}, \vec{v})=30^\circ$.
-\item $|\vec{u}|=3$, $|\vec{v}|=7$ og $\angle(\vec{u}, \vec{v})=45^\circ$.
-\item $|\vec{u}|=1$, $|\vec{v}|=5$ og $\angle(\vec{u}, \vec{v})=120^\circ$.
+\item $|\vec{u}|=2$, $\vec{v}=10$, $\angle(\vec{u}, \vec{v})=30^\circ$.
+\item $|\vec{u}|=3$, $\vec{v}=7$, $\angle(\vec{u}, \vec{v})=45^\circ$.
+\item $|\vec{u}|=1$, $\vec{v}=10$, $\angle(\vec{u}, \vec{v})=30^\circ$.
 }
 
 \op{opgvekcalc}

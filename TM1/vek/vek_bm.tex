@@ -72,6 +72,16 @@ For vektorene $\vec{u}$, $ \vec{v} $ og $\vec{w} $, og et tall $ t $, har vi at
 	\vec{u}-(\vec{v}+\vec{w}) &= \vec{u}-\vec{v}-\vec{w}
 \end{align}
 }
+\eks{
+Skriv uttrykket så enkelt som mulig.
+\[ t(\vec{u}+\vec{v})-(t\vec{u}+\vec{v}) \] \vs \vs
+
+\sv \vsb
+\begin{align*}
+	t(\vec{u}+\vec{v})-(t\vec{u}+\vec{v}) = t\vec{u}+t\vec{v}-t\vec{u}-\vec{v}=(1-t)\vec{v}
+\end{align*}
+}
+
 \newpage
 \regdef[Vinkelen mellom to vektorer]{
 Vinkelen mellom to vektorer er (den minste) vinkelen som blir dannet når vektorene plasseres i samme startpunkt. For to vektorer $ \vec{u} $ og $ \vec{v} $ skriver vi denne vinkelen som $ \angle(\vec{u}, \vec{v}) $.
@@ -102,7 +112,8 @@ Finn lengden til vektorene $ \vec{a}= [7, 4] $ og $ \vec{b}= [-3, 2] $.
 }
 }
 
-\section{Skalarproduktet I}
+\section{Skalarproduktet}
+\subsection*{Skalarproduktet I}
 \regdef[Skalarproduktet I]{
 For to vektorer $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, er \outl{skalarproduktet} gitt som
 \begin{equation}
@@ -145,7 +156,7 @@ Gitt vektorene $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $ og $ \vec{c}=[1,-9] $. Regn
 	}
 } 
 
-\section{Skalarproduktet II}
+\subsection*{Skalarproduktet II}
 Gitt vektoren $ \vec{u}-\vec{v} $, hvor 
 $ \vec{u}=[x_1, y_1] $ og $ \vec{v}=[x_2, y_2] $. Da er
 \[ \vec{u}-\vec{v}=[x_1-x_2, y_1-y_2] \]
@@ -173,6 +184,16 @@ For to vektorer $ \vec{u} $ og $ \vec{v} $ er
 	\vec{u}\cdot \vec{v} = |\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v})
 \end{equation}
 }
+\eks{
+For vektorene $\vec{u}$ og $\vec{v}$ har vi at $|\vec{u}|=4$, $|\vec{v}|=5$, og $\angle (\vec{u}, \vec{v})=60^\circ$. Finn skalarproduktet av $\vec{u}$ og $\vec{v}$.
+
+\sv
+
+Da $\cos 60^\circ=\frac{1}{2}$, har vi at
+\[ \vec{u}\cdot\vec{v}=4\cdot5\cdot\frac{1}{2}=10 \]
+
+}
+
 \section{Vektorer vinkelrett på hverandre}
 Fra (\ref{skal2}) kan vi gjøre en viktig observasjon; hvis $\angle (\vec{u},\vec{v})=90^\circ $, er $ {\cos\angle (\vec{u},\vec{v})=0} $, og da blir
 \nn{
@@ -199,12 +220,12 @@ Det er mange måter å uttrykke at $ {\vec{u}\perp \vec{v}} $ på. Blant annet k
 	\sv 
 	Vi har at
 	\algv{
-		\vec{a}\cdot\vec{b}&=5\cdot6+(-3)10 \\
+		\vec{a}\cdot\vec{b}&=5\cdot6+(-3)\cdot10 \\
 		&=0
 	}
 	Altså er $ \vec{a}\perp\vec{b} $. Videre er
 	\alg{
-	\vec{a}\cdot\vec{c}&=5\cdot2+(-3)7\cdot \\
+	\vec{a}\cdot\vec{c}&=5\cdot2+(-3)\cdot7 \\
 	&= 11
 	}
 Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Da $ {\vec{a}\perp\vec{b}} $, kan heller ikke $ \vec{b} $ og $ \vec{c} $ være ortogonale.
@@ -275,7 +296,7 @@ er da en \outl{vektorfunksjon}.\vsk
 
 $ \vec{v} $ kan skrives på \outl{parameterisert form} som
 \begin{equation}\vec{v}(t): \left\lbrace{
-		\begin{array}{lll}
+		\begin{array}{l}
 			x= f(t)   \\
 			y= g(t)   
 		\end{array}
@@ -300,19 +321,61 @@ Altså kan linja skrives som en vektorfunksjon:\regv
 	En linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ er gitt som
 	\[ \vec{l}=[x_0 + at, y_0+ bt] \]
 }
+\eks[1]{
+En linje $\vec{l}(t)$ går gjennom punktene $(3, 6)$ og $(5, 13)$. Finn uttrykket for $\vec{l}$. Skriv uttrykket både som en vektorfunksjon og på parameterisert form.
+
+\sv
+Vi finner retningsvektoren $\vec{r}$ til linja:
+\[ \vec{r}=[5-3, 13-6]=[2, 7] \]
+Altså er
+\[ \vec{l}(t)=(3, 6)+[2, 7]t=[3+2t, 6+7t] \]
+På parameterisert form er
+\begin{equation*}\vec{l}(t): \left\lbrace{
+		\begin{array}{l}
+			x= 3+2t\\
+			y= 6+7t   
+		\end{array}
+	}\right. 
+\end{equation*}
+\mers{Vi kunne like gjerne brukt $(5, 13)$ i stedet for $(3, 6)$ i uttrykket til $\vec{l}$.}
+}
+\eks[2]{
+Gitt linja $\vec{l}(t)=[2+3t, 6-5t]$.
+\abc{
+\item Bruk uttrykket til $\vec{l}$ for å finne et punkt på linja, og for å finne en retningsvektor for linja.
+\item Avgjør om punktet $(32, -60)$ ligger på linja.
+}
+\sv
+\abc{
+\item Av uttrykket til $\vec{l}$ ser vi at $(2, 6)$ er et punkt på linja, og at $[3, -5]$ er en retningsvektor for linja.
+\item \metode{Metode 1}{2cm} \\
+Skal punktet ligge på linja, må vektoren mellom $(2, 6)$ og $(32, -60)$ være en retningsvektor til linja. Denne vektoren er gitt som
+\[ [32-2, -60-6]=[30, -66]=6[5, -11] \]
+Denne vektoren er ikke parallell med $[3, -5]$, og dermed ligger ikke $(32, -60)$ på linja. \vsk
+
+\metode{Metode 2}{2cm} \\
+Skal $(32, -60)$ ligge på linja, må vi ha at
+\begin{align*}
+	2+3t&=32 \\
+	t &= 10
+\end{align*}
+Men $6-5\cdot10\neq -60$, og dermed ligger ikke punktet på linja.
+}
+}
 \section{Sirkellikningen}
-Gitt en sirkel med sentrum $ S=(x_0, y_0) $ og et punkt $ A=(x, y) $, som ligger på buen til sirkelen. 
+Gitt en sirkel med sentrum $ S=(x_0, y_0) $, og et punkt $ A=(x, y) $. 
 \fig{sirklig1}
 Da er
 \[ \vv{SA}=[x-x_0, y-y_0] \]
 Av \eqref{vekleneq} er da
 \[ \left|\vv{SA}\right|^2=(x-x_0)^2+(y-y_0)^2 \]
-Hvis vi lar $ r $ være radien til sirkelen, er $ \left|\vv{SA}\right|=r $, og dermed kan vi uttrykke $ r $ ved koordinatene til $ S $ og $ A $.\regv
+Vi lar $r$ være radien til sirkelen. Hvis $A$ ligger på sirkelen, er $ \left|\vv{SA}\right|=r $, og dermed kan vi uttrykke $ r $ ved koordinatene til $ S $ og $ A $. Hvis $A$ ikke ligger på sirkelen, er $|\vv{SA}|\neq r$.\regv
 \reg[Sirkelligningen]{
-Gitt en sirkel radius $ r $ og sentrum $ {S=(x_0, y_0)} $. Hvis punktet $ A=(x, y) $ ligger på buen til sirkelen, er
+Gitt en sirkel radius $ r $ og sentrum $ {S=(x_0, y_0)} $, og et pyn. Hvis punktet $ A=(x, y) $ ligger på buen til sirkelen, er
 \nn{
 (x-x_0)^2+(y-y_0)^2=r^2
 }
+Hvis likningen ikke er oppfylt, ligger ikke $A$ på sirkelbuen.
 }
 \eks[]{
 Finn sentrum og radien til sirkelen gitt av likningen
@@ -415,6 +478,6 @@ Altså er
 \[  A_{\square OECF}=|ac-bd| \]
 På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $, se \refops{det2arbevis}. \vsk
 
-\mers{\eqref{det2arparl} kan også vises veldig kortfattet ved å anvende trigonometri. Se oppgave ?? i \tmto\ for dette.}
+\mers{\eqref{det2arparl} kan også vises veldig kortfattet ved å anvende trigonometri. Dette er gitt som en oppgave i \tmto.}
 }
 \end{document}
