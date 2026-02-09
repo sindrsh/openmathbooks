@@ -1,7 +1,7 @@
 import "../../inh" as inh;
 import "../../drwgrph" as inh;
 
-size(6cm, 5cm,keepAspect=false);
+size(5cm, 5cm,keepAspect=false);
 
 real f(real x) { return x^3-x^2+x; }
 

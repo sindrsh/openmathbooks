@@ -13,6 +13,8 @@ yaks(0,b,l="$y$",bex=1.2);
 
 
 pair A = (a,b);
+
+mksq2((A.x, 0), (0, 0));
 mktc(A.x,"$x_1$");
 mktcy(A.y,"$y_1$");
 

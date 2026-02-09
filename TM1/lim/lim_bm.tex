@@ -7,34 +7,40 @@
 Si at vi starter med verdien 0.9, og deretter stadig legger til 9 som bakerste siffer. Da får vi verdiene 0.9, 0.99, 0.999 og så videre. Ved å legge til 9 som bakerste siffer på denne måten, \textsl{kan vi komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ verdien 1}. Det å \\''komme så nærme vi måtte ønske $ - $ men aldri nå eksakt $ - $ en verdi'' vil vi heretter kalle å ''gå mot en verdi''. Metoden vi akkurat beskrev kan vi se på som en metode for å \textsl{gå mot} 1. Vi kan da si at \outl{grense-verdien} til denne metoden er 1. 
 For å indikere en grenseverdi skriver vi \sym{$ \lim $}.\vsk
 
-Det er viktig å tenke over at vi kan gå mot et tall fra to sider; fra venstre eller fra høgre på tallinjen. Med en metode som gir oss verdiene 0.9, 0.99, 0.999 og så videre, nærmer vi oss 1 fra venstre. Lager vi oss en metode som gir verdiene 1.1, 1.01, 1.001 og så videre, nærmer vi oss 1 fra høgre. Dette vises ved å markere \sym{$ + $} eller $ \sym{$ - $} $ over tallet vi går mot. 
+Det er viktig å tenke over at vi kan gå mot et tall fra to sider; fra venstre eller fra høyre på tallinjen. Med en metode som gir oss verdiene 0.9, 0.99, 0.999 og så videre, nærmer vi oss 1 fra venstre. Lager vi oss en metode som gir verdiene 1.1, 1.01, 1.001 og så videre, nærmer vi oss 1 fra høyre. 
 
 \regv
 
 \regdef[Grenseverdier]{ \vs
 \alg{
-x\to a^+ &= x \text{ går mot } a \text{ fra høgre} \br
-x\to a^- &= x \text{ går mot } a \text{ fra venstre} \br
-x\to a &=  x \text{ går mot } a \text{ (fra både høgre og venstre)}\\[12pt]
-\lim\limits_{x\to a} f(x) &= \text{grenseverdien til } f \text{ når } x \text{ går mot } a \\
-&= \text{verdien }f\text{ går mot når }x \text{ går mot }a
+x\to a^+ &\quad \text{''}x \text{ går mot } a \text{ fra høyre}\text{''} \br
+x\to a^- &\quad \text{''}x \text{ går mot } a \text{ fra venstre}\text{''} \br
+x\to a &\quad  \text{''}x \text{ går mot } a \text{ (fra både høyre og venstre)}\text{''}\br
+\lim\limits_{x\to a} f(x) &\quad \text{''}\text{grenseverdien til } f \text{ når } x \text{ går mot } a\text{''}
 } 
 }
-\spr{
-Å gå mot en verdi fra høgre/venstre kalles også å gå mot en verdi ovenfra/nedenfra. \vsk
-
-Hvis $\lim\limits_{x\to a} f(x)$ er et endelig tall, sier vi at \outl{grensen eksisterer}. Hvis den \textsl{ikke} er et endelig tall, sier vi at \outl{grensen ikke eksisterer}. Et krav for at en grense skal eksistere er altså at $\lim\limits_{x\to a}\neq \pm \infty$ og at $\lim\limits_{x^+ \to a}=\lim\limits_{x^-}\to a$.
-}
 \info{\note}{
-\sym{$ x\to a$} omfatter de to tilfellene \sym{$ x\to a^+ $} og \sym{$ x\to a^- $}. Ofte vil disse være så like at vi kan behandle \sym{$ x\to a $} som ett tilfelle.
+	\sym{$ x\to a$} omfatter de to tilfellene \sym{$ x\to a^+ $} og \sym{$ x\to a^- $}. Ofte vil disse være så like at vi kan behandle \sym{$ x\to a $} som ett tilfelle.
 }
+\spr{
+Å gå mot en verdi fra høyre/venstre kalles også å gå mot en verdi ovenfra/nedenfra. \os
+
+Vi kan også si at $\lim\limits_{x\to a} f(x)$ er $\text{''}\text{verdien }f\text{ går mot når }x \text{ går mot }a\text{''}.$ \os
+
+Hvis $\lim\limits_{x\to a} f(x)$ er et endelig tall, sier vi at \outl{grensen eksisterer}. Hvis den \textsl{ikke} er et endelig tall, sier vi at \outl{grensen ikke eksisterer}. Krav for at en grense skal eksistere er altså at $\lim\limits_{x\to a}f(x)\neq \pm \infty$ og at $\lim\limits_{x\to a^+} f(x)=\lim\limits_{x\to a^-}f(x)$. \os
+
+Hvis ${\lim\limits_{x\to a}\neq \pm \infty}$, sier vi at grensen ''går mot $\pm$uendelig'', selv om grensen ikke eksisterer. \os
+
+Både \sym{$\lim\limits_{x\to a^-}$} og \sym{$\lim\limits_{x\to a^+}$} kalles \outl{ensidige grenser}, mens\\ \sym{$\lim\limits_{x\to a}$} kalles den \outl{tosidige grensen}.
+}
+
 
 \info{En utvidelse av \sym{$ = $}}{
 Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel er
 \begin{equation} \label{limxto2}
 	\lim_{x\to 2}(x+1)=2+1=3 
 \end{equation}
-Det er verd å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli \textsl{eksakt lik} 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går eksakt mot} en verdi. Dette gjør altså at grenseverdier bringer en noe utvidet forståelse av \sym{$ = $}.
+Det er verd å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli eksakt lik 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går mot} en eksakt verdi. Dette gjør altså at grenseverdier bringer en utvidet betydning av \sym{$ = $}.
 }
 \reg[Regneregler for grenseverdier]{
 	Gitt funksjonene $f(x)$ og $g(x)$, hvor $\lim\limits_{x\to a}=b$ og $\lim\limits_{x\to a}=c$. Da er
@@ -62,7 +68,10 @@ Gitt en funksjon $ f(x) $ og et tall $ c $. $ f $ er \outl{kontinuerlig} for $ {
 \end{equation}
 Hvis \eqref{kont} er ugyldig, er $ f $ \outl{diskontinuerlig} for $ x=c $.
 }
-\spr{Hvis en funksjon $ f(x) $ er kontinuerlig for alle $ x $, kalles $ f $ en \outl{kontinuerlig funksjon}.}
+\spr{Hvis en funksjon $ f(x) $ er kontinuerlig for alle $ x $, kalles $ f $ en \outl{kontinuerlig funksjon}. \vsk
+
+Hvis en funksjon $f(x)$ er diskontinuerlig for ${x=c}$, kalles $c$ et \outl{bruddpunkt} for $f$.
+}
 \eks[1 \label{konteks1}]{
 Undersøk om funksjonene er kontinuerlige for $ x=2 $.
 \abc{

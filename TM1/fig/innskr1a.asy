@@ -12,6 +12,7 @@ draw(t.A--t.rs^^t.B--t.rs^^t.C--t.rs,red);
 ds(t.rs,t.r,blue);
 
 
+dott(t.rs);
 dott(t.A, "$$", SW);
 dott(t.B, "$$", SE);
 dott(t.C, "$$", NE);

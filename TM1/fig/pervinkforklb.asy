@@ -22,4 +22,5 @@ draw(s);
 draw(C--D,dotted);
 draw(B--C--A--O--B);
 
+dott(O);
 

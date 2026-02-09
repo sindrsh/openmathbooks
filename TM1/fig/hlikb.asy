@@ -18,5 +18,6 @@ draw(D--t.C,blue);
 
 dott(t.A, "$A$", SW);
 dott(t.B, "$B$", SE);
-dott(t.C, "$C$", NE);
+dott(t.C, "$C$", N);
 dott(D, "$D$", S);
+

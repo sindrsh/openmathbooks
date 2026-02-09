@@ -16,4 +16,4 @@ dv(A, B, O, sc=0.2, l="$v$", al=N,p=red);
 draw(s);
 draw(B--C--A--O--B);
 
-
+dott(O);

@@ -73,7 +73,7 @@ Faktoriser uttrykket $ x^2-x-6 $.
 
 \sv
 Siden $ 2\cdot(-3)=-6 $ og $ 2+(-3)=-1 $, er
-\[ x^2-1x-6=(x+2)(x-3) \]
+\[ x^2-x-6=(x+2)(x-3) \]
 }
 \newpage
 \eks[2]{
@@ -82,29 +82,6 @@ Siden $ 2\cdot(-3)=-6 $ og $ 2+(-3)=-1 $, er
 	\sv
 	Siden ${(-4)\cdot( -1)=4} $ og ${ -4+(-1)=-5} $, er 
 	\[ b^2-5b+4 =(b-4)(b-1) \] 
-}
-\eks[3]{
-Løs ulikheten
-\[ x^2-8x-9\leq0 \] \vs
-\sv
-Siden $ 1\cdot(-9)=-9 $ og $ 1+(-9)=-8 $, er
-\[ x^2-8x-9=(x+1)(x-9) \]
-Vi setter $ f=(x+1)(x-9) $, og lager et \outl{fortegnsskjema}:
-\fig{fortgnskj2}
-Fortegnsskjemaet illustrerer følgende:
-\begin{itemize}
-	\item Uttrykket $ x+1 $ er negativt når  $ x<-1 $, lik 0 når $ x=-1 $, og positivt når $ x>-1 $.
-	\item Uttrykket $ x-9 $ er negativt når $ x<9 $, lik 0 når $ x=9 $, og positivt når $ x>9 $.
-	\item Siden $ f=(x+1)(x-9) $, er \vspace{-5pt}
-	\begin{center}
-		\begin{tabular}{l}
-			$ f>0 $ når $ {{x\in[-\infty, -1)} \cup (9, \infty]} $ \br
-			$ f=0 $ når $ {x\in\{-1, 9\}} $ \br
-			$ f<0 $ når $ x\in(-1, 9)$
-		\end{tabular}
-	\end{center}
-\end{itemize}
-Altså er $ x^2-8x-9\leq0 $ når $ x\in[-1, 9] $.
 }
 \fork{\ref{a1a2} \aenato}{
 Vi har at
@@ -118,6 +95,59 @@ Hvis $ a_1+a_2=b $ og $ {a_1a_2=c}$, er
 }
 }
 \newpage
+\section*{Fortegnsskjema}
+En funksjon $f(x)$ består gjerne av uttrykk som har positive og negative verdier for forskjellige verdier av $x$. For å få et tydeligere bilde av når $f$ er positiv eller negativ, kan vi lage et \outl{fortegnsskjema}.
+\eks[1]{
+	Løs ulikheten
+	\[ x^2-8x-9\leq0 \] \vs
+	\sv
+	Siden $ 1\cdot(-9)=-9 $ og $ 1+(-9)=-8 $, er
+	\[ x^2-8x-9=(x+1)(x-9) \]
+	Vi setter $ f=(x+1)(x-9) $, og lager et fortegnsskjema:
+	\fig{fortgnskj2}
+	Skjemaet viser følgende:
+	\begin{itemize}
+		\item Uttrykket $ x+1 $ er negativt når  $ x<-1 $, lik 0 når $ x=-1 $, og positivt når $ x>-1 $.
+		\item Uttrykket $ x-9 $ er negativt når $ x<9 $, lik 0 når $ x=9 $, og positivt når $ x>9 $.
+		\item Siden $ f=(x+1)(x-9) $, er \vspace{-5pt}
+		\begin{center}
+			\begin{tabular}{l}
+				$ f>0 $ når $ {{x\in[-\infty, -1)} \cup (9, \infty]} $ \br
+				$ f=0 $ når $ {x\in\{-1, 9\}} $ \br
+				$ f<0 $ når $ x\in(-1, 9)$
+			\end{tabular}
+		\end{center}
+	\end{itemize}
+	Altså er $ x^2-8x-9\leq0 $ når $ x\in[-1, 9] $.
+}
+
+\newpage
+\eks[2]{
+Løs ulikheten
+\[ \frac{(x-3)(x+1)}{x-4}>0 \] \vs
+\sv
+Vi setter $f=\frac{(x-3)(x+1)}{x-4}$, og lager et fortegnskjema:
+\fig{fortgnskj3}
+Skjemaet viser følgende:
+\begin{itemize}
+	\item Uttrykket $ x-3 $ er negativt når  $ x<3 $, lik 0 når $ x=3 $, og positivt når $ x>2 $.
+	\item Uttrykket $ x+2 $ er negativt når $ x<-2 $, lik 0 når $ x=-2 $, og positivt når $ x>-2 $.
+	\item Uttrykket $x-4$ er negativt når $x<4$, lik 0 når $x=4$, og positivt når $x>4$.
+	\item Siden $f=\frac{(x-3)(x+1)}{x-4}$, har vi at \vspace{-5pt}
+	\begin{center}
+		\begin{tabular}{l}
+			$ f>0 $ når $ {{x\in(-2, 3)} \cup (4, \infty]} $ \br
+			$f$ er ikke definert for $x=4$ \br
+			$ f=0 $ når $ {x\in\{-2, 3\}} $ \br
+			$ f<0 $ når $ x\in(-\infty, -2)\cup(3, 4)$
+		\end{tabular}
+	\end{center}
+\end{itemize}
+Altså er ${\frac{(x-3)(x+1)}{x-4}>0}$ for $ x\in(-2,3)\cup (4, \infty) $.\vsk
+
+\mers{Siden ${x-4}$ kan være både positiv og negativ, kan vi ikke multiplisere ulikheten med denne faktoren (fordi vi ikke kan vite hvordan retningen på ulikhetstegnet endres).}
+}
+
 \section{Andregradslikninger}
 \reg[Andregradslikning med konstantledd]{
 	Gitt likningen
@@ -140,7 +170,7 @@ Hvis $ a_1+a_2=b $ og $ {a_1a_2=c}$, er
 } \vs
 \sv \vs
 \abc{
-\item Vi bruker \textit{abc}-formelen. Da er $ a=2 $, $ b=-7 $ og $ c=5 $. Nå får vi at
+\item Vi bruker \textit{abc}-formelen. Da er $ {a=2} $, $ {b=-7} $ og $ {c=5} $. Dermed er
 \alg{
 	x &=\frac{-(-7)\pm\sqrt{(-7)^2-4\cdot2\cdot5}}{2\cdot2} \br
 	&=\frac{7\pm\sqrt{49-40}}{4} \br
@@ -159,7 +189,7 @@ eller så er
 	Løs likningen 
 	\[ x^2+3x-10=0 \]
 	\sv
-	Vi bruker \textit{abc}-formelen. Da er $ a=1 $, $ b=3 $ og $ c=-10 $. Nå får vi at
+	Vi bruker \textit{abc}-formelen. Da er $ a=1 $, $ b=3 $ og $ c=-10 $. Dermed har vi at
 	\alg{
 		x&=\frac{-3\pm\sqrt{3^2-4\cdot1\cdot(-10)}}{2\cdot1}\br
 		&=\frac{-3\pm\sqrt{9+40}}{2} \br
@@ -203,7 +233,7 @@ Altså er
 \newpage
 \section{Polynomdivisjon}
 \subsection{Metoder}
-Når to gitte tall ikke er delelige med hverandre, kan vi bruke brøker for å uttrykke kvotienten. For eksempel er
+Når to tall ikke er delelige med hverandre, kan vi kombinere et heltall og en brøk for å uttrykke kvotienten. For eksempel er
 \begin{equation}\label{17div3}
 	\frac{17}{3}=5+\frac{2}{3}
 \end{equation}
@@ -225,12 +255,12 @@ Vi gjør følgende trinnvis; med den største potensen av $ x $ i telleren som u
 	&= 2x-7 +\frac{31}{x+5}
 }
 \newpage
-\metode{Metode 2}{0.4\linewidth}
+\metode{Metode 2}{0.4\linewidth} \\
 (Se utregningen under punktene)
 \begin{enumerate}[label=\roman*)]
-	\item  Vi observerer at leddet med den høyste ordenen av $ x $ i dividenden er $ 2x^2 $. Dette uttrykket kan vi få fram ved å multiplisere dividenden med $ 2x $. Vi skriver $ 2x $ til høgre for likhetstegnet, og subtraherer $ 2x(x+5)=2x^2+10x $.
-	\item Differansen fra punkt ii) er ${-7x-4}$. Vi kan få fram leddet med høyest ordenen av $ x $ ved å multiplisere dividenden med $ -7 $. Vi skriver $ -7 $ til høgre for likhetstegnet, og subtraherer $ -7(x+5)=-7x-5 $. 
-	\item Differansen fra punkt iii) er $ 31 $. Dette er et uttrykk som har lavere orden av $ x $ enn dividenden, og dermed skriver vi $ \frac{31}{x+5} $ til høgre for likhetstegnet.
+	\item  Leddet med den høyste graden av $ x $ i dividenden er $ 2x^2 $. Dette uttrykket kan vi få fram ved å multiplisere dividenden med $ 2x $. Vi skriver $ 2x $ til høyre for likhetstegnet, og subtraherer $ 2x(x+5)=2x^2+10x $.
+	\item Differansen fra punkt i) er ${-7x-4}$. Vi kan få fram leddet med den høyeste gradenen av $ x $ ved å multiplisere dividenden med $ -7 $. Vi skriver $ -7 $ til høyre for likhetstegnet, og subtraherer $ -7(x+5)=-7x-5 $. 
+	\item Differansen fra punkt ii) er $ 31 $. Dette er et uttrykk som har lavere grad av $ x $ enn dividenden, og dermed skriver vi $ \frac{31}{x+5} $ til høyre for likhetstegnet.
 \end{enumerate}
 \alg{
 	\phantom{-}&(2x^2+3x-4):(x+5) =2x-7+\frac{31}{x+5} \\ 
@@ -292,7 +322,7 @@ Utfør polynomdivisjon på uttrykket
 \subsection{Delelighet og faktorer}
 Eksemplene på side \pageref{polydiveks1}\,-\,\pageref{polydiveks3} peker på noen viktige sammenhenger som gjelder for generelle tilfeller:\regv
 \reg[Polynomdivisjon \label{polydiv}]{
-La $ A_k $ betegne et polynom $ A $ med grad $ k $. Gitt polynomet $ P_m $, da fins polynomene $ Q_n $, $ S_{m-n} $ og $ R_{n-1} $, hvor $ m\geq n>0 $, slik at
+La $ A_k $ betegne et polynom $ A $ med grad $ k $. Gitt heltallene $m$ og $n$, hvor $m\geq n>0$ og polynomet $ P_m $. Da finnes polynomene $ Q_n $, $ S_{m-n} $ og $ R_{n-1} $ slik at
 \begin{equation}\label{polydiveq}
 \frac{P_m}{Q_n}=S_{m-n}+\frac{R_{n-1}}{Q_n}	
 \end{equation}
@@ -321,10 +351,10 @@ Altså er $ K $ delelig med $ x-3 $.
 \newpage
 \reg[Faktorer i polynomer \label{polyfakt}]{
 	Gitt et polynom $ P(x) $ og en konstant $ a $. Da har vi at
-	\begin{equation}
+	\begin{equation} \label{divisiblep0}
 		P \text{ er delelig med } x-a  \Longleftrightarrow P(a)=0 
 	\end{equation}
-	Hvis dette stemmer, fins det et polynom $ S(x) $ slik at
+	Hvis ett av vilkårene over er oppfylt, finnes det et polynom $ S(x) $ slik at
 	\begin{equation}\label{PfaktS}
 		P=(a-x)S
 	\end{equation}
@@ -351,20 +381,20 @@ Dette betyr at
 }
 }
 \section{Eulers tall}
-\outl{Eulers tall}\index{eulers tall}\index{e} er en konstant som har så stor betydning i matematikk at den har fått sin egen bokstav; \sym{$ e $}. Tallet er irrasjonalt, og de ti første sifrene er
+\outl{Eulers tall}\index{eulers tall}\index{e} er en konstant som har så stor betydning i matematikk at den har fått sin egen bokstav \sym{$ e $}. Tallet er irrasjonalt, og de ti første sifrene er
 \st{\[ e=2.718281828... \]}
-De mest fascinerende egenskapene til dette tallet kommer til syne når man undersøker funksjonen ${f(x)= e^x} $. Dette er en eksponentialfunksjon som er så viktig at den rett og slett går under navnet \\\outl{eksponentialfunksjonen}. Denne funksjonen skal vi undersøke nærmere i \refved{eulerstallfork} og \refkap{Derivasjon}.
+De mest fascinerende egenskapene til dette tallet kommer til syne når man undersøker funksjonen ${f(x)= e^x} $. Dette er en eksponentialfunksjon\footnote{Se kapittel ??} som er så viktig at den rett og slett går under navnet \\\outl{eksponentialfunksjonen}. Denne funksjonen skal vi undersøke nærmere i \refved{eulerstallfork} og \refkap{Derivasjon}.
 \fig{ekspfunk}
 \section{Logaritmer}
-I \mb\, så vi på potenstall, som består av et grunntall og en eksponent. En \outl{logaritme} er en matematisk operasjon relativ til et tall. Hvis en logaritme er relativ til grunntallet til en potens, vil operasjonen resultere i ekspontenten.\vsk
+I \mb\, så vi at potenstall består av et grunntall og en eksponent. En \outl{logaritme} er en matematisk operasjon relativ til et tall. Hvis en logaritme er relativ til grunntallet til en potens, vil operasjonen resultere i ekspontenten.\vsk
 
-Logaritmen relativ til 10 skrives $ \log_{10} $. Da er for eksempel
+Logaritmen relativ til 10 skrives \sym{$ \log_{10} $}. Da er for eksempel
 \[ \log_{10} 10^2 = 2 \]
 Videre er for eksempel
 \[ \log_{10} 1000= \log_{10} 10^3 = 3\]
 Følelig kan vi skrive
 \[ 1000 = 10^{\log_{10} 1000} \]
-Med potensreglene som ugangspunkt (se \mb), kan man utlede mange regler for logartimer.\regv
+Med potensreglene som utgangspunkt (se \mb), kan man utlede mange regler for logartimer.\regv
 \regdef[Logaritmer]{
 La $ \log_a $ betegne logaritmen relativ til $ {a>0}$. For $ m\in\mathbb{R} $ er da
 \begin{equation}
@@ -382,7 +412,7 @@ Alternativt kan vi skrive \vs
 	\[ 3 = 8^{\log_8 3} \]
 }
 \spr{
-	\sym{$ \log_{10}$} skrives ofte som \sym{$ \log $}, mens \sym{$ \log_e $} skrives ofte som \sym{$ \ln $} eller (!) \sym{log}. Når man bruker digitale hjelpemidler til å finne verdier til logaritmer er det derfor viktig å sjekke hva som er grunntallet. I denne boka skal vi skrive \sym{$ \log_e $} som \sym{$ \ln $}.	\\[5pt]
+	\sym{$ \log_{10}$} skrives ofte som \sym{$ \log $}, mens \sym{$ \log_e $} skrives ofte som \sym{$ \ln $} eller (!) \sym{log}. Når man bruker digitale hjelpemidler til å finne verdier til logaritmer er det derfor viktig å sjekke hva som er grunntallet. I denne boka skal vi skrive \sym{$\log_{10}$} som \sym{$\log$}, og \sym{$ \log_e $} som \sym{$ \ln $}.	\\[5pt]
 	
 	Logaritmen med $ e $ som grunntall kalles den \outl{naturlige logaritmen}.
 }
@@ -395,7 +425,7 @@ Alternativt kan vi skrive \vs
 } \vsk
 
 \reg[Logaritmeregler]{
-\notesm{Logaritmereglene er her gitt ved den naturlige logaritmen. De samme regelene vil gjelde ved å erstatte $ \ln $ med $ \log_a $, og $ e $ med $ a $, for $ a>0 $.
+\notesm{Logaritmereglene er her gitt ved den naturlige logaritmen. De samme regelene vil gjelde ved å erstatte \sym{$ \ln $} med \sym{$ \log_a $}, og $ e $ med $ a $ for $ a>0 $.
 } \vsk
 
 For $ {x, y>0} $ har vi at \vs
@@ -427,11 +457,11 @@ For et tall $ y $ og $ x>0 $, er
 	\textbf{Likning} \textbf{(\ref{logxy})}\\
 	For $ m, n\in \mathbb{R} $, har vi at
 	\[ \ln e^{m+n}=m+n = \ln e^m + \ln e^n \]
-	Vi setter\footnote{Vi tar det her for gitt at alle positive tall forskjellig fra 0 kan uttrykkes som et potenstall.} $ {x=e^m} $ og $ {y=e^n} $. Siden $ {\ln e^{m+n}=\ln (e^m\cdot e^n)}$, er da
+	Vi setter\footnote{Vi tar det her for gitt at alle positive tall forskjellige fra 0 kan uttrykkes som et potenstall.} $ {x=e^m} $ og $ {y=e^n} $. Siden $ {\ln e^{m+n}=\ln (e^m\cdot e^n)}$, er da
 	\[ \ln(x y)=\ln x+\ln y \]
 	
 	\textbf{Likning} \textbf{(\ref{logxdivy})}\\
-	Ved å undersøke $ \ln a^{m-n} $, og ved å sette $ {y=a^{-n}} $, blir\\ forklaringen tilsvarende den gitt for likning \eqref{logxy}.\vsk
+	Ved å undersøke $ \ln e^{m-n} $, og ved å sette $ {y=e^{-n}} $, blir for-klaringen tilsvarende den gitt for likning \eqref{logxy}.\vsk
 	
 	\textbf{Likning} \textbf{(\ref{logxexpy})} \os
 	Siden $ x=e^{\ln x} $ og\footnote{Se potensregler i \mb.} $ \left(e^{\ln x}\right)^y = e^{y \ln x} $, har vi at
@@ -440,7 +470,7 @@ For et tall $ y $ og $ x>0 $, er
 \newpage
 \section{Forklaringer}
 \fork{\ref{polydiv} Polynomdivisjon}{
-Gitt polynomene
+Gitt heltallene $m$ og $n$, hvor $m>n>0$, og polynomene
 \alg{
 &P_m\text{, hvor }ax^m\text{ er leddet med høyest grad}\vn
 &Q_{n}\text{, hvor } bx^n\text{ er leddet med høyest grad}	
@@ -453,24 +483,24 @@ Vi setter $ {U=-\frac{a}{b}x^{m-n}Q_n+P_m} $, og merker oss at $ U $ \\nødvendi
 \begin{equation} \label{polydivu}
 \frac{P_m}{Q_n}=\frac{a}{b}x^{m-n}+\frac{U}{Q_n}
 \end{equation}
-La oss kalle det første og det andre leddet på høgresiden i \eqref{polydivu} for henholdsvis et ''potensledd' og en ''resterende brøk''. Ved å følge prosedyren som ledet oss til \eqref{polydivu}, kan vi også uttrykke $ \frac{U}{Q_n} $ ved et ''potensledd'' og et ''resterende ledd''. Dete ''potensleddet'' vil ha grad mindre eller lik $ {m-1} $, mens telleren i det ''resterende leddet'' vil ha grad mindre eller lik $ {m-2} $. Ved å anvende \eqref{polydivu} kan vi stadig lage nye ''potensledd'' og ''resterende ledd'' fram til vi har et ''resterende ledd'' med grad $ n-1 $.
+La oss kalle det første og det andre leddet på høyresiden i \eqref{polydivu} for henholdsvis et ''potensledd' og en ''resterende brøk''. Ved å følge prosedyren som ledet oss til \eqref{polydivu}, kan vi også uttrykke $ \frac{U}{Q_n} $ ved et ''potensledd'' og et ''resterende ledd''. Dette ''potensleddet'' vil ha grad mindre eller lik $ {m-1} $, mens telleren i det ''resterende leddet'' vil ha grad mindre eller lik $ {m-2} $. Ved å anvende \eqref{polydivu} kan vi stadig lage nye ''potensledd'' og ''resterende ledd'' fram til vi har et ''resterende ledd'' med grad $ n-1 $.
 }
 \newpage
 \fork{\ref{polyfakt} Faktorisering av polynom}{
-\textbf{\boldmath $ P $ er delelig med $ x-a \Rightarrow P(a)=0 $.}\os
-For et polynom $ S $ har vi av \eqref{polydiveq} at
-\alg{
+\textbf{\boldmath $ P $ er delelig med $ x-a \Rightarrow P(a)=0 $}\os
+Gitt at $P$ er delelig med ${x-a}$. For et polynom $ S $ har vi da av \eqref{polydiveq} at
+\algv{
 \frac{P}{x-a}&= S \\
 P &= (x-a)S
 }
-Da er åpenbart $ x=a $ en løsning for likningen $ P=0 $.\vsk
+Da er åpenbart $ {x=a} $ en løsning for likningen $ {P=0} $, og da er $P(a)=0$.\vsk
 
-\textbf{\boldmath $ P $ er delelig med $ x-a \Leftarrow P(a)=0 $.}\os
+\textbf{\boldmath $P(a)=0 \Rightarrow$ $ P $ er delelig med $ x-a $}\os
 Av \eqref{polydiveq} finnes et polynom $ S $ og en konstant $ R $ slik at
 \alg{
 \frac{P}{x-a}&=S+\frac{R}{x-a} \br
 P &= (x-a)S+R
 }
-Siden $ P(a)=0 $, er $ 0=R $, og da er $ P $ delelig med $ x-a $.
+Hvis $ P(a)=0 $, er $R=0$, og da er $ P $ delelig med $ x-a $.
 }
 \end{document}

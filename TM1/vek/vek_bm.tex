@@ -10,15 +10,16 @@ En \outl{todimensjonal vektor} angir en forflytning i et koordinatsystem med en 
 \subfloat[]{\includegraphics{\figp{vekdefa}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekdefb}}}
 \end{figure}
-I figur \textsl{(a)} er vektoren $ \vec{v} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (2,3) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \outl{grunn-stillingen}. I figur \textsl{(b)} er $ \vec{v} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{v} $ viser til er å vandre 2 mot høgre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ \vec{u}=[2, 3] $, som kalles $ \vec{u} $ skrevet på \outl{komponentform}. 2 og 3 er henholdvis $ x $-komponenten og $ y $-komponenten til $ \vec{v} $.\vsk
+I figur \textsl{(a)} er vektoren $ \vec{v} $ vist med startpunkt $ (0, 0) $ og endepunkt $ (2,3) $. Når en vektor har startpunkt $ (0, 0) $, sier vi at den er vist i \outl{grunn-stillingen}. I figur \textsl{(b)} er $ \vec{v} $ vist med startpunkt $ (1, -2) $ og endepunkt $ (3, 1) $. Forflytningen $ \vec{v} $ viser til er å vandre 2 mot høyre langs $ x $-aksen og $ 3 $ opp langs $ y $-aksen. Dette skriver vi som $ {\vec{v}=[2, 3]} $, som er $ \vec{v} $ skrevet på \outl{komponentform}. 2 og 3 er henholdvis $ x $-komponenten og $ y $-komponenten til $ \vec{v} $.\vsk
 
-\spr{En todimensjonal vektor kalles også en \outl{vektor i planet}.}
-\newpage
-\eks[1]{\vs
-\alg{
-\vec{a}&= [1, 3] & \vec{b} &= [0, -2] \\[15pt]
-\vec{c}&= [-3, -4] & \vec{d}&= [5, 0]
+\spr{En vektor med to komponenter kalles en \outl{todimensjonal \\ vektor}  eller en \outl{vektor i planet}. \vsk
+
+\textit{Komponent} kan i mange sammenhenger ses på som et synonym for \textit{koordinat}.
 }
+\newpage
+\eks[1]{
+\[ \vec{a}= [1, 3]\quad,\quad \vec{b} = [0, -2] \quad,\quad
+\vec{c}= [-3, -4] \quad,\quad \vec{d}= [5, 0] \]		
 \fig{vek1}
 }
 \newpage
@@ -36,7 +37,7 @@ $ \vec{b} $ har startpunkt $ (0, 9) $ og endepunkt $ (-3, 2) $. \os
 $ \vec{c} $ har startpunkt $ (-3, 7) $ og endepunkt $ (2, -4) $. \os
 $ \vec{d} $ har startpunkt $ (-7, -5) $ og endepunkt $ (3, 0) $.
 
-\sv
+\sv \vs
 
 \algv{
 \vec{a}&=[7-1, 5-3]=[6, 2] \br
@@ -46,11 +47,11 @@ $ \vec{d} $ har startpunkt $ (-7, -5) $ og endepunkt $ (3, 0) $.
 }
 }
 \info{Punkt eller vektor}{
-Rent matematisk er det ingen forskjell på et punkt og en vektor; punktet $ (a, b) $ viser til akkurat samme plassering som vektoren $ [a, b] $, og begge kan vise til den samme forflytningen. Ofte kan det likevel være greit å skille mellom når vi snakker om en plassering og når vi snakker om en forlytning, og til det bruker vi begrepene punkt (plassering) og vektorer (forflytning).
+Rent matematisk er det ingen forskjell på et punkt og en vektor; punktet $ (a, b) $ viser til akkurat samme plassering som vektoren $ [a, b] $, og begge kan vise til den samme forflytningen. Ofte kan det likevel være greit å skille mellom når vi snakker om en plassering og når vi snakker om en forflytning, og til det bruker vi begrepene punkt (plassering) og vektorer (forflytning).
 }
 \section{Regneregler for vektorer}
 \regdef[Addisjon og subtraksjon av vektorer]{
-	Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, punktet ${ A=(x_0, y_0)} $. Da er \vs
+	Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, og punktet ${ A=(x_0, y_0)} $. Da er 
 	\begin{align}
 		A+\vec{u} &= (x_0+x_1, y_0+y_1) \label{Aplusu}	\br
 		\vec{u}+\vec{v} &= [x_1+x_2, y_1+y_2] \br
@@ -59,8 +60,8 @@ Rent matematisk er det ingen forskjell på et punkt og en vektor; punktet $ (a, 
 	Summen eller differansen av $ \vec{u} $ og $ \vec{v} $ kan vi tegne slik:
 	\begin{figure}
 		\centering
-		\subfloat[]{\includegraphics[scale=1]{\figp{uplusv}}}\qquad\quad
-		\subfloat[]{\includegraphics[scale=1]{\figp{uminusv}}}
+		\includegraphics[scale=1]{\figp{uplusv}}\qquad\quad
+		\includegraphics[scale=1]{\figp{uminusv}}
 	\end{figure}
 }
 \reg[Regneregler for vektorer]{
@@ -94,7 +95,7 @@ Gitt en vektor $ \vec{v}=[x_1, y_1] $. \outl{Lengden} til $ \vec{v} $ er avstand
 \subfloat[]{\includegraphics{\figp{veklena}}}\qquad\quad
 \subfloat[]{\includegraphics{\figp{veklenb}}}
 \end{figure}
-Av enhver vektor kan vi danne en rettvinklet trekant hvor $ |\vec{v}| $ er lengden til hypotenusen, og $ |x_1| $ og $ |y_1| $ er de respektive lengdene til katetene. Dermed er $ |\vec{v}| $ gitt av Pytagoras' setning.\regv
+Av envektor kan vi danne en rettvinklet trekant hvor $ |\vec{v}| $ er lengden til hypotenusen, og $ |x_1| $ og $ |y_1| $ er de respektive lengdene til katetene. Dermed er $ |\vec{v}| $ gitt av Pytagoras' setning.\regv
 
 \reg[Lengden til en vektor ]{
 Gitt en vektor $ \vec{v}=[x_1, y_1] $. Lengden $ |\vec{v}| $ er da 
@@ -103,7 +104,7 @@ Gitt en vektor $ \vec{v}=[x_1, y_1] $. Lengden $ |\vec{v}| $ er da
 \end{equation}
 }
 \eks[1]{
-Finn lengden til vektorene $ \vec{a}= [7, 4] $ og $ \vec{b}= [-3, 2] $.
+Finn lengdene til vektorene $ \vec{a}= [7, 4] $ og $ \vec{b}= [-3, 2] $.
 
 \sv 
 \algv{
@@ -123,7 +124,7 @@ For to vektorer $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $, er \outl{s
 \spr{
 Skalarproduktet kalles også \outl{prikkproduktet} eller \\ \outl{indreproduktet}.\vsk
 
-Ordet \textit{skalar} viser til en éndimensjonal størrelse.
+Ordet \textit{skalar} viser til en éndimensjonal størrelse, altså et tall.
 }
 \eks[1]{
 Gitt vektorene $ \vec{a}=[3, 2] $, $ \vec{b}=[4,7] $ og $ \vec{c}=[1,-9] $. Regn ut $ \vec{a}\cdot\vec{b} $ og $ \vec{a}\cdot\vec{c} $.
@@ -172,7 +173,7 @@ Ved hjelp av \eqref{skaldef1} og \eqref{veku2} kan vi skrive \eqref{preskal} som
 \end{equation}
 Videre merker vi oss følgende figur:
 \fig{skaldef}
-Av \refunnbr{cossetn}{cosinussetningen} og \eqref{skl1} er
+Av \refunnbr{cossetn}{cosinussetningen} (\rref{cossetn}) og \eqref{skl1} er
 \alg{
 	|(\vec{v}-\vec{u})|^2&= |\vec{v}|^2+|\vec{u}|^2-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
 	\vec{v}^{\,2}- 2\vec{u}\cdot \vec{v} + \vec{u}^{\,2} &= \vec{v}^{\,2}+\vec{u}^{\,2}-2|\vec{u}||\vec{v}|\cos \angle(\vec{u}, \vec{v}) \\
@@ -208,33 +209,27 @@ For to vektorer $ \vec{u} $ og $ \vec{v} $ har vi at
 \spr{
 Det er mange måter å uttrykke at $ {\vec{u}\perp \vec{v}} $ på. Blant annet kan vi si at
 \begin{itemize}
-	\item $ \vec{u} $ og $ \vec{v} $ står vinkelrett på hverandre.
+	\item $ \vec{u} $ og $ \vec{v} $ står vinkelrette på hverandre.
 	\item $ \vec{u} $ og $ \vec{v} $ står normalt på hverandre. 
 	\item $\vec{u} $ er en normalvektor til $ \vec{v}$ (og omvendt).
 	\item $\vec{u} $ og $ \vec{v}$ er ortogonale.
 \end{itemize}
 }
 \eks[1]{
-	Sjekk om vektorene $ {\vec{a}=[5, -3]} $, $ {\vec{b}=[6, -10]} $ og $ {\vec{c}=[2, 7] }$ er ortogonale.
+	Sjekk om vektorene $ {\vec{a}=[5, -3]} $, $ {\vec{b}=[6, 10]} $ og $ {\vec{c}=[2, 7] }$ er ortogonale.
 	
 	\sv 
 	Vi har at
-	\algv{
-		\vec{a}\cdot\vec{b}&=5\cdot6+(-3)\cdot10 \\
-		&=0
-	}
+	\[ \vec{a}\cdot\vec{b}=5\cdot6+(-3)\cdot10=0 \]
 	Altså er $ \vec{a}\perp\vec{b} $. Videre er
-	\alg{
-	\vec{a}\cdot\vec{c}&=5\cdot2+(-3)\cdot7 \\
-	&= 11
-	}
+	\[ \vec{a}\cdot\vec{c}=5\cdot2+(-3)\cdot7 = 11 \]
 Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Da $ {\vec{a}\perp\vec{b}} $, kan heller ikke $ \vec{b} $ og $ \vec{c} $ være ortogonale.
 }
 \newpage
 \info{Nullvektoren}{
-I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. For å rettferdiggjøre vilkåret som går begge veier i \eqref{vinkretteq}, må vi spørre: Kan vi få ${ \vec{u}\cdot\vec{v} =0}$ om vinkelen mellom $ \vec{u} $ og $ \vec{v} $ \textsl{ikke} er $ 90^\circ $? \vsk
+I forkant av \rref{vinkrett} har vi bare argumentert for at\\ ${\vec{u}\perp\vec{v}\Rightarrow \vec{u}\cdot\vec{v}=0} $. For å rettferdiggjøre vilkåret som går begge veier i \eqref{vinkretteq}, må vi vise at hvis ${ \vec{u}\cdot\vec{v} =0}$, så er $\vec{u}\perp\vec{v}$.\vsk
 
-På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ som resulterer i cosinusverdi 0. Skal skalarproduktet bli 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med denne lengden er \outl{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man hevde at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textit{alle} vektorer.
+På intervallet $ [0^\circ, 180^\circ] $ er det bare ${\angle(\vec{u}, \vec{v})=90^\circ} $ som gir at $\cos \angle(\vec{u}, \vec{v})$. Skal skalarproduktet være 0 for andre vinkler, må derfor lengden av $ \vec{u} $ eller $ \vec{v} $ være 0. Den eneste vektoren med lengde 0 er \outl{nullvektoren} ${\vec{0}=[0, 0] }$, som rett og slett ikke har noen retning\footnote{Eventuelt kan man si at den peker i alle retninger!}. Det er likevel vanlig å definere at nullvektoren står vinkelrett på \textsl{alle} vektorer.
 }
 \section{Parallelle vektorer}
 \regdef[Parallelle vektorer]{Hvis vinkelen mellom to vektorer er $ 0^\circ $ eller $ 180^\circ $, er de parallelle.}
@@ -245,12 +240,12 @@ På intervallet $ [0^\circ, 180^\circ] $ er det bare vinkelverdien $ 90^\circ $ 
 \subfloat[]{\includegraphics{\figp{vekpara}}}\qquad
 \subfloat[]{\includegraphics{\figp{vekparb}}}
 \end{figure}
-Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $, med $ x $-aksen som høgre vinkelbein. Da er $ {\tan \theta =\frac{y_1}{x_1}} $ og $ {\tan \alpha =\frac{y_2}{x_2}} $. Hvis $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, er det to muligheter:
+Gitt vektorene $ {\vec{u}=[x_1, y_1]} $ og $ {\vec{v}=[x_2, y_2]} $. La $ \theta $ og $ \alpha $ være vinkelen mellom $ x $-aksen og henholdsvis $ \vec{u} $ og $ \vec{v} $, med $ x $-aksen som høyre vinkelbein. Da er $ {\tan \theta =\frac{y_1}{x_1}} $ og $ {\tan \alpha =\frac{y_2}{x_2}} $. Hvis $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $, er det to muligheter:
 \begin{enumerate}[label=(\roman*)]
 \item $ \theta=0^\circ $ og $ \alpha=180^\circ $, eller omvendt.
 \item $ \theta = \alpha $
 \end{enumerate}
-I begge tilfeller er $ \angle(\vec{u}, \vec{v}) $ enten $ 0^\circ $ eller $ 180^\circ $, og da er $ \vec{u} $ og $ \vec{v} $ parallelle. Det omvendte gjelder også: Hvis punkt (i) eller (ii) gjelder, er $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $. Det er ofte praktisk å omskrive denne sammehengen til forholdet mellom samsvarende komponenter\footnote{
+I begge tilfeller er $ \angle(\vec{u}, \vec{v}) $ enten $ 0^\circ $ eller $ 180^\circ $, og da er $ \vec{u} $ og $ \vec{v} $ parallelle. Det omvendte gjelder også: Hvis punkt (i) eller (ii) gjelder, er $ {\frac{y_1}{x_1}=\frac{y_2}{x_2}} $. Det er ofte praktisk å omskrive denne sammehengen til forholdet mellom \outl{samsvarende komponenter}\footnote{
 For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter: \vspace{-5pt}
 \begin{itemize}
 	\item $ x_1 $ og $ x_2 $
@@ -260,7 +255,7 @@ For vektorene $ [x_1, y_1] $ og $ [x_2, y_2] $ er disse samsvarende komponenter:
 \begin{equation}\label{parforkl}
 	\frac{x_1}{x_2}=\frac{y_1}{y_2}
 \end{equation}
-Det er også nyttig å merke seg at det må finnes to tall $ s $ og $ t $ slik at $ {\vec{u}=[tx_2, sy_2]} $. Hvis $ \vec{u}\parallel \vec{v}$, følger det av \eqref{parforkl} at $ {\frac{sx_2}{x_2}=\frac{ty_2}{y_2}}  $.
+Det er også nyttig å merke seg at det må finnes to tall $ s $ og $ t $ slik at $ {\vec{u}=[sx_2, ty_2]} $. Hvis $ \vec{u}\parallel \vec{v}$, følger det av \eqref{parforkl} at $ {\frac{sx_2}{x_2}=\frac{ty_2}{y_2}}  $.
 Dermed er $ s=t $. Omvendt; hvis $ \vec{u}=t[x_2, y_2] $, oppfyller $ \vec{u} $ og $ \vec{v} $ åpenbart \eqref{parforkl}.
 \reg[Parallelle vektorer]{
 	For to vektorer $ {\vec{u}=[x_1, y_1]} \text{ og } {\vec{v}=[x_2, y_2]} $ har vi at
@@ -278,14 +273,14 @@ Når $ {\vec{u}=t \vec{v}} $, sier vi at $ \vec{u} $ er et \outl{multiplum} av $
 Om to vektorer ikke er parallelle, sier vi at de er \outl{lineært uavhengige}.
 }
 \eks[]{
-Undersøk hvorvidt $ {\vec{a}=[2, -3]} $ og $ {\vec{b}=[20, -45]} $ er parallelle med $ {\vec{c}=[10, -15]} $.
+Sjekk om $ {\vec{a}=[2, -3]} $ og $ {\vec{b}=[20, -45]} $ er parallelle med $ {\vec{c}=[10, -15]} $.
 
 \sv
 Vi har at
 \nn{
-\vec{c}=5[2, -4]=5\vec{a}
+\vec{c}=5[2, -3]=5\vec{a}
 }
-Dermed er $ \vec{a}\parallel \vec{c} $. Da $ \frac{20}{10}\neq \frac{-45}{15} $, er $ \vec{b} $ og $ \vec{c} $ \textsl{ikke} parallelle.
+Dermed er $ \vec{a}\parallel \vec{c} $. Da $ \frac{20}{10}\neq \frac{-45}{-15} $, er $ \vec{b} $ og $ \vec{c} $ \textsl{ikke} parallelle.
 }
 \section{Vektorfunksjoner}
 \subsection{Parameterisering}
@@ -295,19 +290,17 @@ Gitt to funksjoner $ f(t) $ og $ g(t) $. En vektor $ \vec{v} $ på formen
 er da en \outl{vektorfunksjon}.\vsk
 
 $ \vec{v} $ kan skrives på \outl{parameterisert form} som
-\begin{equation}\vec{v}(t): \left\lbrace{
+\begin{equation*}\vec{v}(t): \left\lbrace{
 		\begin{array}{l}
 			x= f(t)   \\
 			y= g(t)   
 		\end{array}
 	}\right. 
-\end{equation}
+\end{equation*}
 Mengden av alle endepunktene til $ \vec{v} $ utgjør grafen til $ \vec{v} $.
 \fig{vek0}
 }
-\info{\note}{
-Til forskjell fra grafen til en skalarfunksjon, kan grafen til en vektorfunksjon ''begevege seg fritt'' i koordinatsystemet.
-}
+
 \newpage
 \subsection{Vektorfunksjonen til en linje}
 Gitt en linje $ \vec{l}(t) $, som vist i figuren under
@@ -318,8 +311,10 @@ På koordinatform kan vi skrive dette som\footnote{Se \eqref{Aplusu}.}
 \[(x, y)= (x_0 +at, y_0+bt) \]
 Altså kan linja skrives som en vektorfunksjon:\regv
 \reg[Linje som vektorfunksjon]{
-	En linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$ er gitt som
-	\[ \vec{l}=[x_0 + at, y_0+ bt] \]
+	En linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $, og som har retningsvektor $ {\vec{r}=[a, b] }$, er gitt som
+	\nn{
+	\vec{l}=[x_0 + at, y_0+ bt]	\label{linje}
+	}
 }
 \eks[1]{
 En linje $\vec{l}(t)$ går gjennom punktene $(3, 6)$ og $(5, 13)$. Finn uttrykket for $\vec{l}$. Skriv uttrykket både som en vektorfunksjon og på parameterisert form.
@@ -371,7 +366,7 @@ Av \eqref{vekleneq} er da
 \[ \left|\vv{SA}\right|^2=(x-x_0)^2+(y-y_0)^2 \]
 Vi lar $r$ være radien til sirkelen. Hvis $A$ ligger på sirkelen, er $ \left|\vv{SA}\right|=r $, og dermed kan vi uttrykke $ r $ ved koordinatene til $ S $ og $ A $. Hvis $A$ ikke ligger på sirkelen, er $|\vv{SA}|\neq r$.\regv
 \reg[Sirkelligningen]{
-Gitt en sirkel radius $ r $ og sentrum $ {S=(x_0, y_0)} $, og et pyn. Hvis punktet $ A=(x, y) $ ligger på buen til sirkelen, er
+Gitt en sirkel med radius $ r $ og sentrum $ {S=(x_0, y_0)} $. Hvis punktet $ A=(x, y) $ ligger på buen til sirkelen, er
 \nn{
 (x-x_0)^2+(y-y_0)^2=r^2
 }
@@ -442,16 +437,16 @@ Arealet $ A $ til en trekant formet av to vektorer $ \vec{u} $ og $ \vec{v} $ er
 \fork{\ref{avstpunktlin} \avstpunktlin}{
 La en linje $ \vec{l}(t) $ i rommet være gitt  av et punkt $ A $ og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja, som vist i figuren under
 \fig{plin}
-Den korteste avstanden fra \textit{B} til linja er høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Arealet til denne trekanten er gitt ved \eqref{det2artrk}:
+Den korteste avstanden fra \textit{B} til linja er høyden \textit{h} i trekanten formet av $ \vec{r} $ og $ \vv{AB} $. Arealet til denne trekanten er gitt som \eqref{det2artrk}:
 \[ \frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right| \]
-Av den klassiske arealformelen for en trekant (se \mb) har vi nå at
+Av den klassiske arealformelen for en trekant (se \mb) har vi at
 \alg{\frac{1}{2}|\vec{r}\,|h &=\frac{1}{2}\left|\det\left(\vv{AB}, \vec r\right)\right|  \br
 	h &= \frac{\left|\det\left(\vv{AB}, \vec r\right)\right| }{|\vec{r}|}
 }
 }
 \section*{Forklaringer}
 \fork{\ref{det2area} \detar }{
-Vi lar $ A_N $ betegne arealet til en geometrisk form $ N $.
+Vi lar $A_N$ betegne arealet til en geometrisk form $N$.
 \begin{figure}
 \subfloat[]{\includegraphics{\figp{utspprl}}}\qquad
 \subfloat[]{\includegraphics{\figp{utspprlforkl}}}\qquad

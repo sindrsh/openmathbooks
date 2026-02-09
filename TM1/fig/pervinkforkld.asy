@@ -20,3 +20,5 @@ dv(B, O, C, sc=0.25, l="$a$", al=E);
 dv(D, B, O, sc=0.15, l="$b$", al=E);
 draw(B--C--A--O--B);
 
+dott(O);
+

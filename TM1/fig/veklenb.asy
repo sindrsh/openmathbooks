@@ -9,6 +9,7 @@ real a = 5;
 real b = 4;
 
 pair A = (a,b);
+mksq2((A.x, 0),(0,0));
 
 draw(O--A,deepgreen, L=Label("$\color{black}|\vec v|$", align=NW,position=Relative(0.5)));
 draw(O--(A.x,0),deepgreen, L=Label("$\color{black}|x_1|$", align=S,position=Relative(0.5)));
