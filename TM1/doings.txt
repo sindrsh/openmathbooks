@@ -1,3 +1,6 @@
 definer eksisterende grenseverdi
 
 opg: skriv hvilke elementære funksjoner som er konkave/konvekse.
+opg: vis at ekstremalpunktene til en tredjegradsfunksjon er nullpunktene
+til den deriverte funksjonen. vis at infleksjonspunktet til tredjegradsfunksjonen
+er ekstremalpunktet til andregradsfunksjonen.
