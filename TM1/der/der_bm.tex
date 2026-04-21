@@ -201,7 +201,7 @@ en \outl{flervariabel funksjon}, avhengig av både $ x $ og $ y $. I dette tilfe
 \[ \frac{\text{d}}{\text{d}x}f = 2x \qquad,\qquad  \frac{\text{d}}{\text{d}y}f = 3y^2 ,\]
 }
 \newpage
-\subsection{Den deriverte av elementære funksjoner}
+\subsection*{Den deriverte av elementære funksjoner}
 \reg[\derel \label{derel}]{
 For en variabel $ x $ og en konstant $ r $ er
 \begin{align}
@@ -220,7 +220,7 @@ Gitt en konstant $ a $ og funksjonene $ f(x) $ og $ g(x) $. Da er
 } 
  
 \newpage
-\subsection{Kjerne-, produkt- og divisjonsregelen ved derivasjon}
+\subsection*{Kjerne-, produkt- og divisjonsregelen ved derivasjon}
 \reg[\kjernereg \label{kjerne}]{
 For en funksjon $ f(x)=g\left[u(x)\right] $ har vi at
 \begin{equation}\label{kjerneeq}
@@ -338,14 +338,14 @@ Gitt en deriverbar funksjon $k(x)$. Vi lar $v_k(b)$ være funksjonen slik at
 \begin{equation}
 	k(b)-k(x)=(b-x)\left[k'(x)+v_k(b) \label{kjernefork} \right]
 \end{equation}
-Ved å undersøke dette uttryket for tilfellet hvor ${b\to x}$, finner vi at $\lim\limits_{b\to x}u_b(b) =0$. \os
+Ved å undersøke dette uttryket for tilfellet hvor ${b\to x}$, finner vi at $\lim\limits_{b\to x}v_k(b) =0$. \os
 
 Vi setter ${t=u(x)}$ og ${s=u(b)}$. Ved å bruke uttrykket fra \eqref{kjernefork} kan vi nå skrive
 \begin{align*}
 	t-s&=u(b)-u(x)=(b-x)[f'(x)+v_u(b)]\vn
-	f(b)-f(x)&=g(s)-g(t)=(s-t)[g'(t)+v_g(b)]
+	f(b)-f(x)&=g(s)-g(t)=(t-s)[g'(t)+v_g(b)]
 \end{align*}
-Dermed er
+Ved å sette uttrykket for $t-s$ inn i uttrykket for $f(b)-f(x)$, har vi at
 \begin{align*}
 	f(b)-f(x)&=(b-x)[u'(x)+v_f(b)][g'(t)+v_g(b)] \br
 	\frac{f(b)-g(x)}{b-x}&=[u'(x)+v_u(b)][g'(t)+v_g(b)]

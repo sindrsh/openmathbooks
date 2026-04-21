@@ -3,9 +3,9 @@ import "../../drwgrph" as geo;
 
 size(5.5cm, 4cm, keepAspect=false);
 
-mkgrid((-6,6), (-2,4));
+mkgrid((-5,5), (-2,4));
 
-xaks(-6, 6, tck=true, tc=2, l="$x$");
+xaks(-5, 5, tck=true, tc=2, l="$x$");
 yaks(-2, 4, tck=true, l="$k$");
 
 real f(real x){

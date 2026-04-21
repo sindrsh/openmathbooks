@@ -72,13 +72,24 @@ Dette betyr at
 	\end{itemize}
 \end{comment}
 
-\reg[\verdmengdgittint \label{verdmengdgittint}]{
+\begin{comment}
+	\reg[\verdmengdgittint \label{verdmengdgittint}]{
+Gitt en kontinuerlig funksjonen $f(x)$ med\footnote{Se side \pageref{max}.} absolutt minimum $f(a)$ og absolutt maksimum $f(b)$.	
+For et hvilket som helst tall $ {c\in[f(a), f(b)]} $ finnes det et tall $x_c $ slik at $ f(x_c)=c$.
+}
+\info{Merk}{
+Regelen over er så intuitivt sann at det å erklære den (og ikke minst det å forklare den) kan oppleves som både overflødig, men regelen er fundemental for funksjonsdrøfting. For eksempel er det denne regelen som garanterer at hvis vi kan påvise en funksjon har verdimengde ${[m, n]}$, hvor ${m<0}$ og ${n>0}$, så er funksjonen garantert å ha et nullpunkt.
+}
+\end{comment}
+\begin{comment}
+	\reg[]{
 Gitt en kontinuerlig funksjon $ f(x) $. Da har vi at
 \begin{itemize}
-\item hvis $f$ er voksende på intervallet ${[a, b]}$, er ${D_v=[f(a), f(b))]}$.
-\item hvis $f$ er avtagende på intervallet ${[a, b]}$, er ${D_v=[f(b), f(a)]}$.
+	\item hvis $f$ er voksende på intervallet ${[a, b]}$, er ${D_v=[f(a), f(b))]}$.
+	\item hvis $f$ er avtagende på intervallet ${[a, b]}$, er ${D_v=[f(b), f(a)]}$.
 \end{itemize} 
 }
+\end{comment}
 
 \section{Ekstremalpunkt, vendepunkt og infleksjons-punkt}
 \reg[Endepunkt]{
@@ -339,13 +350,14 @@ I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $.
 }\vsk
 
-\fork{\ref{verdmengdgittint} \verdmengdgittint}{
-Vi ønsker å vise at for et hvilket som helst tall $ {c\in(f(a), f(b))} $ finnes det et tall $x_c $ slik at $ f(x_c)=c$.\os
-
-Vi lar $ f(x) $ være en strengt voksende funksjon og definerer $ P(c, n) $ gitt ved følgende prosedyre, beskrevet av en Python-funksjon (se \am\ for en innføring i Python):
+\begin{comment}
+	\fork{\ref{verdmengdgittint} \verdmengdgittint}{
+Vi lar $ f(x) $ være en voksende funksjon og definerer $ P(c, n) $ gitt ved følgende prosedyre, beskrevet av en Python-funksjon (se \am\ for en innføring i Python):
 \python{verdmengdgittint.py}
-Da $ f $ er strengt voksende kan vi hele tiden være sikre på at $ f(x_1)\leq f(x_3)\leq f(x_2)  $ og $ f(x_1)\leq c\leq f(x_2)  $ ved starten av hver iterasjon. Når $ {n\to\infty} $ vil $ {x_2\to x_1} $, og da $ f $ er kontinuerlig vil $ {\lim\limits_{n\to \infty} f(x_1)=f(x_2)} $. Dette betyr at $ {\lim\limits_{n\to \infty} P(c,n)= c}$, og dermed må det finnes et tall $ x_c\in(a, b) $ som gir at $ f(x_c)=c$.
+Da $ f $ er voksende, kan vi hele tiden være sikre på at $ {f(x_1)\leq f(x_3)\leq f(x_2)}  $, $ {f(x_1)\leq c\leq f(x_2)}  $, og ${x_1, x_2 \in [a, b]}$  ved starten av hver iterasjon. Når $ {n\to\infty} $, vil $ {x_2\to x_1} $, og da $ f $ er kontinuerlig, vil $ {\lim\limits_{n\to \infty} f(x_1)=f(x_2)} $. Dette betyr at $ {\lim\limits_{n\to \infty} P(c,n)= c}$. Dette betyr at det finnes et tall ${x_c\in[a, b]}$ slik at $\lim\limits_{x\to x_c} f=c$, og da $f$ er kontinuerlig har vi at
+\[f(x_c)=\lim\limits_{x\to x_c} f=c \]
 }
+\end{comment}
 
 \fork{\ref{fderekstr} \fderekstr}{
 	\textbf{Punkt (i)} \os

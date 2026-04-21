@@ -74,5 +74,48 @@ Vi har at
 	&=-\infty
 \end{align*}
 Dermed eksisterer ikke $f'(0)$.
+\newpage
+%\grubr{directrix}
+\textbf{Gruble 27}\\
+\fig{directrix_lf}
+\abc{
+\item Av $y$-verdien til $A$ har vi at
+\begin{align*}
+&&	p&=f(2p) \\
+&&	p&= 4p^2 && (p\neq 0) \\
+&& 1 &= 4p \\
+&& p &= \frac{1}{4}
+\end{align*}
+\item Av \pyt på $\triangle AKC$ har vi at
+\alg{
+&&FC^2 &= FK^2+CK^2 \\
+&&&= c^2+(f(c)-p)^2 \\
+&&&= c^2 + (c^2-p)^2 \\
+&&&=c^2 +c^4 -2c^2p+p^2 \\
+&&&= c^2+c^4-\frac{1}{2}c^2+\frac{1}{16} \\
+&&&=c^4+\frac{1}{2}c^2+\frac{1}{16} \\
+&&&= \left(c^2+\frac{1}{4}\right)^2 && (FC>0) \\
+&&FC&= c^2+\frac{1}{4} 
+}
+\item 
+Vi har at
+\[ CD=CJ+JD=f(c)+p=c^2+\frac{1}{4}=FC \]
+\item Vi har at $f'(c)=2c$. Tangenten til $f$ i $C$ kan derfor beskrives ved funksjonen $g(x)=2cx+b$. I punktet $C$ har vi at
+\begin{align*}
+g(c) &= f(c) \\
+2c^2+b &= c^2 \\
+b &= -c^2
+\end{align*}
+I punket $E$ har vi at
+\alg{
+&&g(x) = 0 && \\
+&&2cx-c^2 = 0 && (c\neq0) \\
+&& 2x-c &= 0 \\
+&& x &= \frac{c}{2}
+}
+$\triangle FOE\cong\triangle DJE$ fordi begge er rettvinklede, $OF=JD=p$ og $OE=EJ=\dfrac{c}{2}$. Følgelig er $E$ midptunktet på $FD$.
+\item Da $\triangle FCD$ er likebeint og $E$ er midtpunktet på $FD$, er $\angle ACE=\angle ECD$. $\angle HCG=\angle ECD$ fordi de er toppunkt. Dermed er $\angle FCE=\angle HCG$.
+}
+
 
 \end{document}

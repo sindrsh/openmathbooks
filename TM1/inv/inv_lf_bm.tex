@@ -21,5 +21,86 @@ En endring av $b$ forskyver grafen både horisontalt og vertikalt, men endrer ik
 En endring av $a$ forskyver grafen både horisontalt og vertikalt, og endrer formen til grafen. 
 }
 
+\newpage
+\grubop{opginvsym2}
+\abc{
+\item Da $A=(a, b)$ ligger på grafen til $f$, er $b=f(a)$. Siden $g$ er den omvendte funksjonen til $f$, vet vi at $g(b)=g(f(a))=a$. Dermed må $(b, a)$ ligge på grafen til $g$, og da er $B=(b, a)$.
+\item Vi har at
+\[ \vv{AB}=[b-a, a-b] \]
+Retningsvektoren $\vec{r}$ til symmetrilinja må stå vinkelrett på $\vv{AB}$. Dette kravet er oppfylt hvis $\vec{r}=[b-a, b-a]$ (se \refops{opgvekrett}). $\vec{r}$ har komponenter med lik lengde og likt fortegn, noe som tilsier at $\vec{r}$ danner en vinkel på $45^\circ$ med $t$-aksen.
+}
+\fig{opginvsym2_lf}
+
+\newpage
+\grubr{opginvareaoftriangle} \\
+\abc{
+\item Vi setter $B=(b, f(b))$. Da tangenten til $f$ i $B$ danner $60^\circ$ med $x$-aksen, har vi at
+\begin{align*}
+	f'(b)&=\tan 60^\circ \\
+	2b &= \sqrt{3} \\
+	b &= \frac{\sqrt{3}}{2}
+\end{align*}
+Siden $f\left(\frac{\sqrt{3}}{2}\right)=\frac{3}{4}$, er
+\[ B=\left(\frac{\sqrt{3}}{2}, \frac{3}{4}\right) \]
+Videre er
+\[ AD=\frac{DB}{\tan 60^\circ}=\dfrac{3}{4}\cdot\frac{1}{\sqrt{3}}=\frac{\sqrt{3}}{4} \]
+Følgelig har vi at
+\[ OA=OD-AD=\frac{\sqrt{3}}{2}-\frac{\sqrt{3}}{4}=\frac{\sqrt{3}}{4}  \]
+Dermed er
+\[ A=\left(\frac{\sqrt{3}}{4}, 0\right) \]
+\fig{opginvareaoftriangle_lf_a}
+\newpage
+\item Av punkt 1) krever vi at
+\[ g\left(\frac{\sqrt{3}}{2}\right)=f\left(\frac{\sqrt{3}}{2}\right)=\frac{3}{4} \]
+Videre er
+{
+\small
+\begin{align*}
+g\left(\frac{\sqrt{3}}{2}\right)&=\frac{(6\sqrt{3} + 8)}{3}\left(\frac{\sqrt{3}}{2}\right)^3 - (4\sqrt{3}+9)\left(\frac{\sqrt{3}}{2}\right)^2 + \frac{(7\sqrt{3} + 8)}{2}\frac{\sqrt{3}}{2} \\
+&=\frac{(6\sqrt{3} + 8)}{3}\cdot\frac{\sqrt{3}}{2}\cdot\frac{3}{4} - (4\sqrt{3}+9)\frac{3}{4} + \frac{(7\sqrt{3} + 8)}{2}\frac{\sqrt{3}}{2}\\
+&=\frac{(6\sqrt{3} + 8)}{3}\cdot\frac{\sqrt{3}}{2}\cdot\frac{3}{4} - (4\sqrt{3}+9)\frac{3}{4} + \frac{(7\sqrt{3} + 8)}{2}\frac{\sqrt{3}}{2} \\
+&=\frac{1}{24}\left(3(18+8\sqrt{3})-18(4\sqrt{3}+9)+6(21+8\sqrt{3})\right) \\
+&=\frac{1}{24}\cdot 18 \br
+&= \frac{3}{4}
+\end{align*}
+}
+
+Dermed er kravet oppfylt. \vsk 
+
+Av punkt 2) krever vi at i punktet $B$ er
+\[ g''(x)=0 \]
+Videre har vi at
+\begin{align*}
+	g'(x)&=(6\sqrt{3} + 8)x^2 - 2(4\sqrt{3}+9)x + \frac{7\sqrt{3} + 8}{2} \\
+	g''(x)&=2(6\sqrt{3} + 8)x - 2(4\sqrt{3}+9)
+\end{align*}
+I punktet $B$ er
+\begin{align*}
+	g''\left(\frac{\sqrt{3}}{2}\right)&=2(6\sqrt{3} + 8)\frac{\sqrt{3}}{2} - 2(4\sqrt{3}+9) \\
+	&=18+8\sqrt{3}-8\sqrt{3}-18 \\
+	&=0
+\end{align*}
+Følgelig er kravet oppfylt.\vsk
+
+Av vinkelsummen til $\triangle AEB$ har vi at 
+\[ \angle BEA=180^\circ-\angle EAB-\angle ABE=180^\circ-60^\circ-45^\circ=75^\circ \]
+Av punkt 3) krever vi at i punket $B$ er
+\[ g'(x)=-\tan 75^\circ =-2-\sqrt{3} \]
+
+I puntet $B$ er
+\begin{align*}
+	g'\left(\frac{\sqrt{3}}{2}\right)&=(6\sqrt{3} + 8)\left(\frac{\sqrt{3}}{2}\right)^2 - 2(4\sqrt{3}+9)\frac{\sqrt{3}}{2} + \frac{7\sqrt{3} + 8}{2} \\
+	&=(6\sqrt{3}+8)\frac{3}{4}- 2(4\sqrt{3}+9)\frac{\sqrt{3}}{2} + \frac{7\sqrt{3} + 8}{2} \\
+	&=\frac{1}{4}\left(18\sqrt{3}+24-(48+36\sqrt{3})+14\sqrt{3}+16\right)\\
+	&=\frac{1}{4}(-8-4\sqrt{3}) \\
+	&=-2-\sqrt{3}
+\end{align*}
+Dermed er kravet oppfylt.\newpage
+
+
+}
+
+
+
 
 \end{document}

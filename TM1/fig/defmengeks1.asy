@@ -11,8 +11,8 @@ real f(real x) {
 real a = 1;
 real b = 3;
 
-mkgrid((0,4),(0,5));
-yaks(0,f(b),aex=1.1,tck=true,l="$f$");
+mkgrid((0,4),(0,6));
+yaks(0,f(b)+1,aex=1.1,tck=true,l="$f$");
 xaks(0,4,tck=true,l="$x$");
 
 

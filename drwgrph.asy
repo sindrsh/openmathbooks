@@ -41,12 +41,10 @@ void yaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false
 }
 
 void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
-	int nx = floor(abs((A.y-A.x)/dx));
-	int ny = floor(abs((B.y-B.x)/dy));
-	for (int i=0; floor(A.x) + i*dx<= floor(A.y); ++i){
+	for (int i=0; A.x + i*dx<= A.y; ++i){
 		draw((A.x + i*dx, B.x)--(A.x + i*dx, B.y), p);
 }
-	for (int i=0; floor(B.x) + i*dy <= B.y; ++i){
+	for (int i=0; B.x + i*dy <= B.y; ++i){
 		draw((A.x, B.x+ i*dy)--(A.y,B.x+ i*dy), p);
 }
 }

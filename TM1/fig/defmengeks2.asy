@@ -14,9 +14,9 @@ real b1 = -3;
 real a2 = 2;
 real b2 = 5;
 
-mkgrid((-3,5),(-1,0.5), dy=1/10);
-yaks(-1,0.5,aex=1.3, bex=1.5,tck=true,l="$f$");
-xaks(-3,5,tck=true,bex=1.1,l="$x$");
+mkgrid((-4,6),(-1.1,0.601), dy=1/10);
+yaks(-1,0.6,aex=1.3, bex=1.3,tck=true,l="$f$");
+xaks(-4,6,tck=true,bex=1.1,l="$x$");
 
 
 mktcy(1/2,"$\frac{1}{2}$");

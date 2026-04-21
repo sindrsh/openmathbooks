@@ -1,24 +1,24 @@
 \begin{theindex}
 
-  \item amplitude, \hyperpage{59}
-  \item analysens fundamentalteorem, \hyperpage{144}
-  \item antiderivert, \hyperpage{142}
-  \item arcuscosinus, \hyperpage{42}
-  \item arcussinus , \hyperpage{42}
-  \item arcustangens , \hyperpage{42}
+  \item amplitude, \hyperpage{60}
+  \item analysens fundamentalteorem, \hyperpage{143}
+  \item antiderivert, \hyperpage{141}
+  \item arcuscosinus, \hyperpage{43}
+  \item arcussinus , \hyperpage{43}
+  \item arcustangens , \hyperpage{43}
   \item avstand
     \subitem fra punkt til linje, \hyperpage{123}
     \subitem fra punkt til plan, \hyperpage{125}
 
   \indexspace
 
-  \item bølgelengde, \hyperpage{59}
-  \item bølgetall, \hyperpage{60}
+  \item bølgelengde, \hyperpage{60}
+  \item bølgetall, \hyperpage{61}
 
   \indexspace
 
-  \item cosinus, \hyperpage{40}
-    \subitem -funksjon, \hyperpage{59}
+  \item cosinus, \hyperpage{41}
+    \subitem -funksjon, \hyperpage{60}
 
   \indexspace
 
@@ -28,12 +28,12 @@
 
   \item eksplisitt formel, \hyperpage{10, 11}
   \item element, \hyperpage{9}
-  \item enhetssirkelen, \hyperpage{34}
+  \item enhetssirkelen, \hyperpage{35}
 
   \indexspace
 
-  \item fase, \hyperpage{60}
-  \item faseforskyvning, \hyperpage{60}
+  \item fase, \hyperpage{61}
+  \item faseforskyvning, \hyperpage{61}
   \item følge, \hyperpage{9}
     \subitem aritmetisk, \hyperpage{11}
     \subitem endelig, \hyperpage{10}
@@ -44,27 +44,27 @@
 
   \item induksjon, \hyperpage{22}
   \item integral
-    \subitem som areal, \hyperpage{161}
-    \subitem som volum, \hyperpage{164}
-    \subitem ubestemt, \hyperpage{144}
-  \item integrand, \hyperpage{156}
+    \subitem som areal, \hyperpage{160}
+    \subitem som volum, \hyperpage{163}
+    \subitem ubestemt, \hyperpage{143}
+  \item integrand, \hyperpage{155}
   \item integrasjon
-    \subitem bytte av variabel, \hyperpage{150}
-    \subitem delbrøksoppspaltning, \hyperpage{156}
-    \subitem delvis, \hyperpage{153}
+    \subitem bytte av variabel, \hyperpage{149}
+    \subitem delbrøksoppspaltning, \hyperpage{155}
+    \subitem delvis, \hyperpage{152}
 
   \indexspace
 
-  \item kjerne, \hyperpage{41}
-  \item konstantledd, \hyperpage{59}
+  \item kjerne, \hyperpage{42}
+  \item konstantledd, \hyperpage{60}
   \item kryssprodukt, \hyperpage{95}
   \item kule, \hyperpage{120}
-  \item kvadrant, \hyperpage{42}
+  \item kvadrant, \hyperpage{43}
 
   \indexspace
 
   \item Lagranges identitet., \hyperpage{101}
-  \item likevektslinje, \hyperpage{59}
+  \item likevektslinje, \hyperpage{60}
   \item linje, \hyperpage{109}
     \subitem mellom to plan, \hyperpage{118}
 
@@ -75,8 +75,8 @@
   \indexspace
 
   \item omdreiningslegeme
-    \subitem volumet av, \hyperpage{166}
-  \item omdreiningsleme, \hyperpage{166}
+    \subitem volumet av, \hyperpage{165}
+  \item omdreiningsleme, \hyperpage{165}
 
   \indexspace
 
@@ -85,7 +85,7 @@
   \item parameterisering
     \subitem  av linje, \hyperpage{109}
     \subitem av plan, \hyperpage{111}
-  \item periode, \hyperpage{59}
+  \item periode, \hyperpage{60}
   \item plan, \hyperpage{111}
     \subitem ligningen til, \hyperpage{115}
   \item pyramide, \hyperpage{97}
@@ -104,8 +104,8 @@
 
   \indexspace
 
-  \item sinus, \hyperpage{40}
-    \subitem -funksjon, \hyperpage{64}
+  \item sinus, \hyperpage{41}
+    \subitem -funksjon, \hyperpage{65}
   \item summetegnet, \hyperpage{20}
 
   \indexspace
@@ -115,9 +115,9 @@
   \item tetreaeder, \hyperpage{97}
   \item trekant, \hyperpage{97}
   \item trigonometrisk
-    \subitem identitet, \hyperpage{45}
+    \subitem identitet, \hyperpage{46}
     \subitem ligning
-      \subsubitem lineær, \hyperpage{49}
+      \subsubitem lineær, \hyperpage{50}
 
   \indexspace
 
@@ -132,9 +132,9 @@
     \subitem mellom to punkt, \hyperpage{81}
   \item vektorprodukt, \hyperpage{95}
     \subitem som areal og volum, \hyperpage{97}
-  \item vinkel, \hyperpage{34}
-    \subitem mellom linjer, \hyperpage{129}
-    \subitem mellom plan, \hyperpage{131}
-    \subitem mellom plan og linje, \hyperpage{132}
+  \item vinkel, \hyperpage{35}
+    \subitem mellom linjer, \hyperpage{128}
+    \subitem mellom plan, \hyperpage{130}
+    \subitem mellom plan og linje, \hyperpage{131}
 
 \end{theindex}
