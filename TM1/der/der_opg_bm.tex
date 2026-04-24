@@ -12,7 +12,7 @@ Bruk definisjonen av den deriverte til å vise at for funksjonen $f(x)=\frac{1}{
 \op{opgderxn} \vs
 \abc{
 	\item Bruk definisjonen av den deriverte til å finne den deriverte funksjonen til henholdsvis $ {f_1(x)=x} $, ${f_2(x)=x^2} $, ${f_3(x)= x^3} $.
-	\item La $ f_n(x)=x^n $ for $ n\in \mathbb{N} $. Bruk det du fant i oppgave a) til å foreslå et uttrykk for $ f_n'(x)=x^n $.
+	\item La $ f_n(x)=x^n $ for $ n\in \mathbb{N} $. Bruk det du fant i oppgave a) til å foreslå et uttrykk for $ f_n'(x)$ når $f_n()=x^n $.
 }
 
 \nes
@@ -36,7 +36,7 @@ Deriver uttrykkene \os
 }
 
 \op{opgderxr}
-Forklar hvordan du kan omskrive uttrykk på formen $\frac{1}{x^k} $ slik at du kan anvende \eqref{derxr} til å derivere uttrykkene.
+Skriv om uttrykket $\frac{1}{x^k} $ slik at \eqref{derxr} kan anvendes. Finn det deriverte uttrykket.
 
 \op{opgderxr2}
 Deriver uttrykkene (Hint: Se \refops{opgderxr})\os
@@ -51,9 +51,9 @@ Deriver uttrykkene (Hint: Se \refops{opgderxr})\os
 Deriver funksjonene \os
 \abch{
 	\item $ g(x)= 3x^3-4x+\frac{1}{x} $
-	\item $ f(x) = x^2 +\ln x $
+	\item $ f(x) = x^5 +\ln x $
 	\item $ h(x)= \ln x+x^2+2 $
-	\item $ a(x)=x^2+e^x $
+	\item $ a(x)=x+e^x $
 	\item $ p(x)=e^x+\ln x $
 	\item $b(x)=\frac{1}{3}x^3+\sqrt{x}+2$
 }
@@ -70,9 +70,9 @@ Gitt funksjonen
 \end{equation*}
 \abc{
 	\item Avgjør om $f$ er kontiunerlig i $x=0$.
-	\item Avgjør om $f$ er deriverbar i $x=0$
+	\item Avgjør om $f$ er deriverbar i $x=0$.
 }
-\newpage
+
 \op{opgdermhpx}
 Deriver uttrykkene med hensyn på $ x $. \os
 
@@ -88,14 +88,20 @@ Deriver funksjonene \os
 \item $ f(x)=x\sqrt{1-2x} $
 \item $ p(x)= 3xe^{2x} $
 \item $ h(x)=3x^2\ln x $
+} \os
+\abchs{4}{
 \item $ k(x)=\sqrt{4x^2-5} $
 \item $ f(x)=x^3\sqrt{2x-1} $
 \item $ q(x)=\frac{x^3}{x^2-2} $
+} \\[-5pt]
+\abchs{7}{
 \item $ f(x)=\left(x^2+2\right)^7 $
 \item $ h(x)=\frac{x}{e^{x^2}} $
 \item $f(x)=\frac{e^{2x}}{x}$
-\item $4x^2\ln(3x)$
-\item $xe^2x$
+} \os
+\abchs{11}{
+\item $k(x)=4x^2\ln(3x)$
+\item $h(x)=xe^2x$
 }
 
 \eksop{1TV21}{1tv21d1opg7}
@@ -108,7 +114,7 @@ Løs \grubr{R1V23D1opg2} ved hjelp av L'Hopitals regel.
 Funksjonen $g(x)=\frac{2x-3}{e^x}$ er kontinuerlig og deriverbar for alle $x\in \mathbb{R}$.
 \abc{
 \item Finn $g'(2)$ og $g'(3)$.
-\item Hva forteller svarene i oppgave a) om grafen til $g$ når $x\in[2, 3]$ 
+\item Hva forteller svarene i oppgave a) om grafen til $g$ når $x\in[2, 3]$? 
 }
 
 \op{opgderfindtoppbunn} %eksamensoppgaver
@@ -137,16 +143,17 @@ Finn de respektive verdiene til $a$, $b$, $c$ og $d$.
 
 \grubop{1th23d2opg6}
 Gitt funksjonen
-\[ f(x)=ax^3+bx^2+cx+d \]
+\[ f(x)=ax^3+bx^2+cx-64 \]
 Vi har at
 \begin{itemize}
 	\item Punktet $(-8, 0)$ er et toppunkt for $f$
 	\item Stigningstallet til linja gjennom punktene $(0, f(0))$ og $(5, f(5))$ er $\frac{64}{5}$.
 \end{itemize}
+Bestem $a$, $b$ og $c$.
 
 \grubop{1tv22d2opg6}
 Gitt funksjonen
-\[ f(x)=ax^3-2bx^2+(b^2+3)x	 \]
+\[ f(x)=x^3-2bx^2+(b^2+3)x	 \]
 \abc{
 \item Vis at $f$ bare har ett nullpunkt, uavhengig av verdien til $b$.
 \item For hvilke verdier av $b$ har $f$ bare ett stasjonært punkt?
@@ -165,7 +172,8 @@ f(x)= \left\lbrace{
 	}\right. 
 \end{equation*}
 \abc{
-\item Bestem tallet $ t $ slik at $ f $ blir en kontinuerlig funksjon. Husk å grunngi svaret. \item Avgjør om $ f $ er deriverbar i $ x=2 $ for den verdien av $ t $ du fant i oppgave a).
+\item Bestem tallet $ t $ slik at $ f $ blir en kontinuerlig funksjon. Husk å grunngi svaret. 
+\item Avgjør om $ f $ er deriverbar i $ x=2 $ for den verdien av $ t $ du fant i oppgave a).
 }
 
 \grubop{r1h25d2opg6b}
@@ -190,9 +198,6 @@ Gitt en andregradsfunksjon $f(x)$. Vi har at
 \item tantenten i punktet $(8, -10)$ har likningen $y=-11x+78$.
 }
 Bestem $f'(x)$.
-
-\grubop{opgdersirkrekt}
-Et rektangel er innskrevet i en sirkel. Vis at rektangelets areal er størst hvis det er et kvadrat.
 
 \newpage
 
@@ -274,7 +279,7 @@ Punktet $C$ ligger på grafen til $f$. Finn koordinatene til $C$ slik at rektang
 \fig{r1v24d2opg6}
 
 \grubop{opgderrectincircle}
-Et rektangel har hjørner som ligger på en sirkelbue. Vis at rektangelet har størst areal hvis det er et kvadrat.
+Et rektangel er innskrevet i en sirkel. Vis at rektangelets areal er størst hvis det er et kvadrat.
 \fig{opgderrectincircle}
 
 \newpage
@@ -353,5 +358,16 @@ Vi setter $C=(c, f(c))$.
 
 \mers{Egenskapene vi har vist her kan generaliseres til å gjelde for alle parabler.}
 
+\grubop{opgderpointb}
+\fig{opgderpointb}
+Origo og $B$ ligger på grafen til vektorfunksjonen $\vec{v}(t)$.
+\abc{
+	\item Vi har at $\tan 15^\circ = 2-\sqrt{3}$. Finn uttrykket for $\vec{v}$.
+	\item Vi har at $C=\left(4\sqrt{3}-5, -1\right)$ og
+	\[  |OC|^2-|BO|^2-|BC|^2=24(7\sqrt{3}-13) \]
+	Finn en andregradsfunksjon $f(t)$ slik at $B=\vec{v}(t)$ når $f(t)=0$.
+	\item Vis at ekstremalverdien til $f$ er $t=\frac{3\sqrt{3}+1}{8}$.
+	\item Den éne løsningen for $f(t)=0$ er $t=\frac{3\sqrt{3}-15}{4}$.\\ Finn koordinatene til $B$.
+} 
 
 \end{document}

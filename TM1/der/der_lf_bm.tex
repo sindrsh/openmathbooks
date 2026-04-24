@@ -117,5 +117,55 @@ $\triangle FOE\cong\triangle DJE$ fordi begge er rettvinklede, $OF=JD=p$ og $OE=
 \item Da $\triangle FCD$ er likebeint og $E$ er midtpunktet på $FD$, er $\angle ACE=\angle ECD$. $\angle HCG=\angle ECD$ fordi de er toppunkt. Dermed er $\angle FCE=\angle HCG$.
 }
 
+\newpage
+\grubr{opgderpointb}
+\fig{opgderpointb_lf}
+
+\abc{
+\item Da $\vec{v}$ danner vinkelen $15^\circ$ med $x$-aksen, er $[1, \tan 15^\circ]$ en retningsvektor for $\vec{v}$. Dermed er
+\[ \vec{v}(t)=O+t[1, \tan 15^\circ]=t[1, 2-\sqrt{3}] \]
+\item Vi har at
+\begin{align*}
+	\vv{BO}&=-t[1, 2-\sqrt{3}] \vn
+	\vv{BC}&=[4\sqrt{3}-5-t, -1-t(2-\sqrt{3})]
+\end{align*}
+Følgelig er
+\begin{align*}
+	\vv{BO}\cdot\vv{BC}&=-(4\sqrt{3}-5)t+t^2+(2-\sqrt{3})t+(2-\sqrt{3})^2t^2 \\
+	&=(8-4\sqrt{3})t^2+(7-5\sqrt{3})t
+\end{align*}
+Av cosinusstetningen har vi at
+\begin{align*}
+	|BO||BC|&=-\frac{|OC|^2-|BO|^2-|BC|^2}{2\cos \angle OBC} \br
+	&=-\frac{24(7\sqrt{3}-13)}{2\cos \angle OBC} \br
+	&=\frac{12(13-7\sqrt{3})}{\cos \angle OBC}
+\end{align*}
+Nå har vi at
+\begin{align*}
+	\frac{\vv{BO}\cdot\vv{BC}}{|BO||BC|}&=\cos \angle OBC \br
+	\left((8-4\sqrt{3})t^2+(7-5\sqrt{3})t\right) \frac{\cos \angle OBC}{12(13-7\sqrt{3})} &= \cos \angle OBC \\
+	(8-4\sqrt{3})t^2+(7-5\sqrt{3})t &= 12(13-7\sqrt{3}) \\
+	(8-4\sqrt{3})t^2+(7-5\sqrt{3})t - 12(13-7\sqrt{3})&=0
+\end{align*}
+Dermed er
+\[ f(t)=(8-4\sqrt{3})t^2+(7-5\sqrt{3})t - 12(13-7\sqrt{3}) \]
+\item Ekstremalverdien til $f$ er gitt ved
+\begin{align*}
+	f'(t)&=0 \\
+	2(8-4\sqrt{3})t+(7-5\sqrt{3}) &=0 \\
+	8(2-\sqrt{3})t&=5\sqrt{3}-7 \\
+	t &= \frac{5\sqrt{3}-7}{8(2-\sqrt{3})} \br
+	&= \frac{(5\sqrt{3}-7)}{8(2-\sqrt{3})}\cdot \frac{2+\sqrt{3}}{2+\sqrt{3}} \br
+	&=\frac{10\sqrt{3}-14+15-7\sqrt{3}}{8} \br
+	&=\frac{3\sqrt{3}+1}{8}
+\end{align*}
+\item Vi vet at ekstremalpunktet ligger midt mellom nullpunktene til en andregradsfunksjon. Avstanden mellom ekstremalpunktet og det gitte nullpunktet er
+\[\frac{3\sqrt{3}+1}{8}-\frac{3\sqrt{3}-15}{4}=\frac{31-3\sqrt{3}}{8}\]
+Det andre nullpunktete er dermed gitt ved
+\[ \frac{3\sqrt{3}+1}{8}+\frac{31-3\sqrt{3}}{8}=4 \]
+I punktet $B$ er dermed $t=4$, og da er
+\[ B=\vec{v}(4)=(4, 4(2-\sqrt{3})) \]
+}
+\newpage
 
 \end{document}

@@ -5,6 +5,30 @@
 \begin{document}
 \footnotesize
 
+<<<
+\grubr{opggeovinkar}
+\fig{opggeovinkar_lf}
+Det blå området kan deles inn i $\triangle AOC$ og en sektor vi skal kalle for sektor $OBC$. Da $\angle BOC$ er sentralvinkelen til periferivinkelen $\angle BAC$, er $\angle BOC=2v$. Dermed er 
+\begin{align*}
+	A_{\triangle AOC}&=\frac{1}{2} AO\cdot DC\br
+	&=\frac{1}{2}r\cdot OC\sin \angle BOC \br
+	&= \frac{1}{2}r^2 \sin (2v)
+\end{align*}
+Videre har vi at (se \mb\ for formelen for arealet til en sektor)
+\[ A_{\text{sektor $OBC$}} = \pi r^2 \frac{2v}{360^\circ}=\pi r^2\frac{v}{180^\circ} \]
+Dermed er
+\[ A_\text{blått område}=r^2\left(\frac{1}{2}\sin(2v)+\frac{\pi v}{180^\circ}\right) \]
+
+\grubr{opggeoslope}\\
+Vi har at
+\alg{
+q&=\frac{BC}{AB}=\tan u \vn
+p&=\frac{-EF}{ED}=-\frac{EF}{ED}=-\tan v
+}
+\fig{opggeoslope_lf}
+
+
+
 \grubr{opggeokordteo}
 \fig{opggeokordteolos}
 Av \rref{perfvink} har vi at $ \angle CBA=\angle CDA $. Da $ \angle CPA=\angle DPB $ (de er toppvinkler), er dermed $ \triangle PDA \sim \triangle PBC$. Altså har vi at
@@ -28,10 +52,10 @@ v = \angle BAE=45^\circ
 
 \grubr{opggeosin18}
 \fig{opggeosin18los}
-Da $ \angle BAC=\angle CBA=72^\circ $, er $ \triangle ABC $ likebeint ($ AC=BC $) og $ \angle ACB= 36^\circ $. Altså er også $ \triangle BEC $ likebeint ($ EB=EC $). $ \triangle ABC \sim \triangle DBE$ fordi de har $ \angle BAC $ felles, og $ \angle ACB=\angle EBD $. Vi setter $ x=AB $ og $ y=BC $, og får at
+Da $ \angle BAC=\angle CBA=72^\circ $, er $ \triangle ABC $ likebeint ($ AC=BC $) og $ \angle ACB= 36^\circ $. Altså er også $ \triangle BEC $ likebeint ($ EB=EC $). $ \triangle ABC \sim \triangle AEB$ fordi de har $ \angle BAC $ felles, og $ \angle ACB=\angle EBA $. Vi setter $ x=AB $ og $ y=BC $, og får at
 \alg{
 \frac{AB}{BC}&=\frac{EA}{AB} \br
-\frac{x}{y}&=\frac{y-x}{y} \\
+\frac{x}{y}&=\frac{y-x}{y} \br
 xy+x^2-y^2 &=0
 }
 Av \textit{abc}-formelen har vi at
