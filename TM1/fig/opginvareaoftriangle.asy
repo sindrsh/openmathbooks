@@ -1,5 +1,6 @@
 import "../../inhopg" as inh;
 import "../../drwgrph" as drwgrph;
+import "../../geo" as geo;
 size(7cm);
 
 
@@ -51,5 +52,10 @@ xaks(-1, 2.4, "$x$");
 yaks(C.y-0.2,2, "$y$");
 
 
+Tri t = mktri(abs(B-C), abs(A-C), abs(B-A));
+write(t.Ar);
 
+write(abs(B-C));
+write(abs(A-C));
+write(abs(B-A));
 

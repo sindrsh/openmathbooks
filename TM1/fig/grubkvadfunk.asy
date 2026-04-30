@@ -32,4 +32,5 @@ dott(B, "$ B $", E);
 dott(C, "$ C $", NE);
 dott(D, "$ D $" , NW);
 dott(Ep, "$ E $", NE);
-write(abs(A-C), 2k);
+write(abs(A-C), 2*abs(D-Ep)/sqrt(2));
+write(abs(D-Ep));

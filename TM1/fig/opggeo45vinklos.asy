@@ -1,6 +1,6 @@
 import "../../inhopg" as inh;
 import "../../geo" as geo;
-size(5cm);
+size(4cm);
 
 pair B = (2,0);
 pair C = (2,2);

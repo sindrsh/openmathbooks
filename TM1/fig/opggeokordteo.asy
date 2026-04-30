@@ -1,4 +1,4 @@
-import "../../inh" as inh;
+import "../../inhopg" as inh;
 import "../../geo" as geo;
 
 size(3.5cm);

@@ -1,7 +1,7 @@
 import "../../inhopg" as inh;
 import "../../geo" as geo;
 
-size(4cm);
+size(3.5cm);
 
 pair f(real x){
 	return (cos(x), sin(x));

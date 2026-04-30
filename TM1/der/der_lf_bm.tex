@@ -5,18 +5,62 @@
 
 \begin{document}
 
-\grubr{opgderkont}
+\grubr{opgderarchi}
+\fig{opgderarchi_lf}
 \abc{
-\item Av \eqref{derdefalt} har vi at
-\[ f'(a)=\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}\]
-For at denne grensen skal eksistere, må vi ha at $ \lim\limits_{b\to a} \left(f(b)-f(a)\right)=0 $ (hvis ikke går grensen mot $ \pm \infty $, og da er ikke den deriverte definert), og følgelig er $ \lim\limits_{a\to b} f(b)=f(a) $. Dermed er $ f $ kontinuerlig for alle $ x $.
-\item Gitt funksjonen $ f(x)=0 $, da er $ f'(x)=0 $ for alle $ x $. Av resultatet fra a) er dermed $ f(x)=0 $ kontinuerlig. \os
+	\item Vi har at
+	\[ A=(p, ap^2+ bp+c)\qquad,\qquad B = (q, aq^2+bq+c) \]
+	Vi lar $g(x)$ være funksjonen som beskriver linja gjennom $AB$. Da er
+	\alg{
+		g'(x)&= \frac{f(q)-f(p)}{q-p} \br
+		&=\frac{aq^2+bq+c-(ap^2+ bp+c)}{q-p} \br
+		&=\frac{a(q^2-p^2)+b(q-p)}{q-p} \br
+		&=\frac{a(q+p)(q-p)+b(q-p)}{q-p} \br
+		&=a(q+p)+b
+	}
+	Vi setter $C=(t, f(t))$. Da har vi at
+	\alg{
+		f'(t)&=a(q+p)+b \\
+		2a t+ b &= a(q+p)+b \\
+		t &= \frac{1}{2}(q+p)
+	}
+	\item Vi lar $D$ være midtpunktet til $AB$. Da er $D=\left(t, \frac{1}{2}(f(q)+f(p))\right)$ (se \refops{vekopgmidt}). Videre er
+	\alg{
+		DC&=\frac{1}{2}\left(f(q)+f(p)\right)-f(t) \br
+		&= \frac{1}{2}\left(a(p^2+q^2)+b(p+q)+2c\right)-a\left(\frac{1}{2}(p+q)\right)^2+b \left(\frac{1}{2}(p+q)\right)+c \br
+		&= \frac{a}{2}(p^2+q^2)-\frac{a}{4}(p+q)^2 \br
+		&=\frac{a}{4}(2p^2+2q^2-p^2-q^2-2pq) \\
+		&=\frac{a}{4}(q-p)^2
+	}
+	Vi plasserer $E$ og $F$ slik at $\square AEFB$ er et parallellogram. Med $AE$ som grunnlinje, har $\square AEFB$ høyde $q-p$. Da $AE=DC$, er
+	\nn{
+		A_{\triangle ABC}=\frac{1}{2}A_{\square AEFB}=\frac{1}{2}\cdot\frac{a}{4}(q-p)^2(q-p)=\frac{a}{8}(q-p)^3
+	}
+}
 
-Gitt funksjonen $ g(x)=a $, hvor $ a $ er en konstant. Da er $ f'(x)=0 $, og dermed er $ g(x) $ kontinuerlig.\os
-
-Gitt funksjonene $ h(x)=ax+b $ hvor $ a $ og $ b $ er konstanter. Da er $ h'(x)=g(x) $, og dermed er $ h(x) $ kontinuerlig.
-
-Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi måtte ønske det, og dermed er alle polynomfunksjoner kontinuerlige.
+\grubr{directrix}
+\fig{directrix_lf}
+\abc{
+	\item Av $y$-verdien til $A$ har vi at
+	\begin{align*}
+		&&	p&=f(2p) \\
+		&&	p&= 4p^2 && (p\neq 0) \\
+		&& 1 &= 4p \\
+		&& p &= \frac{1}{4}
+	\end{align*}
+	\item Av \pyt\ på $\triangle AKC$ har vi at
+	\alg{
+		&&FC^2 &= FK^2+CK^2 \\
+		&&&= c^2+(f(c)-p)^2 \\
+		&&&= c^2 + (c^2-p)^2 \\
+		&&&=c^2 +c^4 -2c^2p+p^2 \\
+		&&&= c^2+c^4-\frac{1}{2}c^2+\frac{1}{16} \\
+		&&&=c^4+\frac{1}{2}c^2+\frac{1}{16} \\
+		&&&= \left(c^2+\frac{1}{4}\right)^2 && (FC>0) \\
+		&&FC&= c^2+\frac{1}{4} 
+	}
+	\item Av \refops{opgderxsquare} har vi at $E=\left(\frac{c}{2}, 0\right)$. $\triangle FOE\cong\triangle DJE$ fordi begge er rettvinklede, $OF=JD=p$ og $OE=EJ=\frac{c}{2}$. Følgelig er $E$ midptunktet på $FD$.
+	\item Da $\triangle FCD$ er likebeint og $E$ er midtpunktet på $FD$, er $\angle ACE=\angle ECD$. $\angle HCG=\angle ECD$ fordi de er toppunkt. Dermed er $\angle FCE=\angle HCG$.
 }
 
 \grubr{opgder2dx} \\
@@ -28,42 +72,44 @@ Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi mått
 &= \lim\limits_{h\to0}\left[f'(x)+f'(x-h)\right] \\
 &= 2f'(x)
 }
+}
+
+
+
+
 
 \newpage
-\grubr{opgderarchi}
-\fig{opgderarchi_lf}
-\abc{
-\item Vi har at
-\[ A=(p, ap^2+ bp+c)\qquad,\qquad B = (q, aq^2+bq+c) \]
-}
-Vi lar $g(x)$ være funksjonen som beskriver linja gjennom $AB$. Da er
+
+\grubr{opgderxsquare}
+\fig{opgderxsquare_lf}
+ Vi har at $f'(c)=2ac$. Tangenten til $f$ i $A$ kan derfor beskrives ved funksjonen $g(x)=2acx+b$. I punktet $A$ har vi at
+\begin{align*}
+	g(c) &= f(c) \\
+	2ac^2+b &= ac^2 \\
+	b &= -ac^2
+\end{align*}
+I punket $B$ har vi at
 \alg{
- g'(x)&= \frac{f(q)-f(p)}{q-p} \br
- &=\frac{aq^2+bq+c-(ap^2+ bp+c)}{q-p} \br
- &=\frac{a(q^2-p^2)+b(q-p)}{q-p} \br
- &=\frac{a(q+p)(q-p)+b(q-p)}{q-p} \br
- &=a(q+p)+b
-}
-Vi setter $C=(t, f(t))$. Da har vi at
-\alg{
-f'(t)&=a(q+p)+b \\
-2a t+ b &= a(q+p)+b \\
-t &= \frac{1}{2}(q+p)
-}
-\item Vi lar $D$ være midtpunktet til $AB$. Da er $D=\left(t, \frac{1}{2}(f(q)+f(p))\right)$ (se \refops{vekopgmidt}). Videre er
-\alg{
-DC&=\frac{1}{2}\left(f(q)+f(p)\right)-f(t) \br
-&= \frac{1}{2}\left(a(p^2+q^2)+b(p+q)+2c\right)-a\left(\frac{1}{2}(p+q)\right)^2+b \left(\frac{1}{2}(p+q)\right)+c \br
-&= \frac{a}{2}(p^2+q^2)-\frac{a}{4}(p+q)^2 \br
-&=\frac{a}{4}(2p^2+2q^2-p^2-q^2-2pq) \\
-&=\frac{a}{4}(q-p)^2
-}
-}
-Vi plasserer $E$ og $F$ slik at $\square AEFB$ er et parallellogram. Med $AE$ som grunnlinje, har $\square AEFB$ høyde $q-p$. Da $AE=DC$, er
-\nn{
-A_{\triangle ABC}=\frac{1}{2}A_{\square AEFB}=\frac{1}{2}\cdot\frac{a}{4}(q-p)^2(q-p)=\frac{a}{8}(q-p)^3
+	&&g(x) &= 0 && \\
+	&&2acx-ac^2 &= 0 && (c\neq0, a\neq0) \\
+	&& 2x-c &= 0 \\
+	&& x &= \frac{c}{2}
 }
 
+\begin{comment}
+	\grubr{opgderkont}
+	\abc{
+		\item Av \eqref{derdefalt} har vi at
+		\[ f'(a)=\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}\]
+		For at denne grensen skal eksistere, må vi ha at $ \lim\limits_{b\to a} \left(f(b)-f(a)\right)=0 $ (hvis ikke går grensen mot $ \pm \infty $, og da er ikke den deriverte definert), og følgelig er $ \lim\limits_{a\to b} f(b)=f(a) $. Dermed er $ f $ kontinuerlig for alle $ x $.
+		\item Gitt funksjonen $ f(x)=0 $, da er $ f'(x)=0 $ for alle $ x $. Av resultatet fra a) er dermed $ f(x)=0 $ kontinuerlig. \os
+		
+		Gitt funksjonen $ g(x)=a $, hvor $ a $ er en konstant. Da er $ f'(x)=0 $, og dermed er $ g(x) $ kontinuerlig.\os
+		
+		Gitt funksjonene $ h(x)=ax+b $ hvor $ a $ og $ b $ er konstanter. Da er $ h'(x)=g(x) $, og dermed er $ h(x) $ kontinuerlig.
+		
+		Med samme resonnement kan vi stegvis øke graden av polynomet så høyt vi måtte ønske det, og dermed er alle polynomfunksjoner kontinuerlige.
+	}
 
 \opr{opgderdernotdefnd}
 Vi har at
@@ -74,98 +120,6 @@ Vi har at
 	&=-\infty
 \end{align*}
 Dermed eksisterer ikke $f'(0)$.
-\newpage
-%\grubr{directrix}
-\textbf{Gruble 27}\\
-\fig{directrix_lf}
-\abc{
-\item Av $y$-verdien til $A$ har vi at
-\begin{align*}
-&&	p&=f(2p) \\
-&&	p&= 4p^2 && (p\neq 0) \\
-&& 1 &= 4p \\
-&& p &= \frac{1}{4}
-\end{align*}
-\item Av \pyt på $\triangle AKC$ har vi at
-\alg{
-&&FC^2 &= FK^2+CK^2 \\
-&&&= c^2+(f(c)-p)^2 \\
-&&&= c^2 + (c^2-p)^2 \\
-&&&=c^2 +c^4 -2c^2p+p^2 \\
-&&&= c^2+c^4-\frac{1}{2}c^2+\frac{1}{16} \\
-&&&=c^4+\frac{1}{2}c^2+\frac{1}{16} \\
-&&&= \left(c^2+\frac{1}{4}\right)^2 && (FC>0) \\
-&&FC&= c^2+\frac{1}{4} 
-}
-\item 
-Vi har at
-\[ CD=CJ+JD=f(c)+p=c^2+\frac{1}{4}=FC \]
-\item Vi har at $f'(c)=2c$. Tangenten til $f$ i $C$ kan derfor beskrives ved funksjonen $g(x)=2cx+b$. I punktet $C$ har vi at
-\begin{align*}
-g(c) &= f(c) \\
-2c^2+b &= c^2 \\
-b &= -c^2
-\end{align*}
-I punket $E$ har vi at
-\alg{
-&&g(x) = 0 && \\
-&&2cx-c^2 = 0 && (c\neq0) \\
-&& 2x-c &= 0 \\
-&& x &= \frac{c}{2}
-}
-$\triangle FOE\cong\triangle DJE$ fordi begge er rettvinklede, $OF=JD=p$ og $OE=EJ=\dfrac{c}{2}$. Følgelig er $E$ midptunktet på $FD$.
-\item Da $\triangle FCD$ er likebeint og $E$ er midtpunktet på $FD$, er $\angle ACE=\angle ECD$. $\angle HCG=\angle ECD$ fordi de er toppunkt. Dermed er $\angle FCE=\angle HCG$.
-}
-
-\newpage
-\grubr{opgderpointb}
-\fig{opgderpointb_lf}
-
-\abc{
-\item Da $\vec{v}$ danner vinkelen $15^\circ$ med $x$-aksen, er $[1, \tan 15^\circ]$ en retningsvektor for $\vec{v}$. Dermed er
-\[ \vec{v}(t)=O+t[1, \tan 15^\circ]=t[1, 2-\sqrt{3}] \]
-\item Vi har at
-\begin{align*}
-	\vv{BO}&=-t[1, 2-\sqrt{3}] \vn
-	\vv{BC}&=[4\sqrt{3}-5-t, -1-t(2-\sqrt{3})]
-\end{align*}
-Følgelig er
-\begin{align*}
-	\vv{BO}\cdot\vv{BC}&=-(4\sqrt{3}-5)t+t^2+(2-\sqrt{3})t+(2-\sqrt{3})^2t^2 \\
-	&=(8-4\sqrt{3})t^2+(7-5\sqrt{3})t
-\end{align*}
-Av cosinusstetningen har vi at
-\begin{align*}
-	|BO||BC|&=-\frac{|OC|^2-|BO|^2-|BC|^2}{2\cos \angle OBC} \br
-	&=-\frac{24(7\sqrt{3}-13)}{2\cos \angle OBC} \br
-	&=\frac{12(13-7\sqrt{3})}{\cos \angle OBC}
-\end{align*}
-Nå har vi at
-\begin{align*}
-	\frac{\vv{BO}\cdot\vv{BC}}{|BO||BC|}&=\cos \angle OBC \br
-	\left((8-4\sqrt{3})t^2+(7-5\sqrt{3})t\right) \frac{\cos \angle OBC}{12(13-7\sqrt{3})} &= \cos \angle OBC \\
-	(8-4\sqrt{3})t^2+(7-5\sqrt{3})t &= 12(13-7\sqrt{3}) \\
-	(8-4\sqrt{3})t^2+(7-5\sqrt{3})t - 12(13-7\sqrt{3})&=0
-\end{align*}
-Dermed er
-\[ f(t)=(8-4\sqrt{3})t^2+(7-5\sqrt{3})t - 12(13-7\sqrt{3}) \]
-\item Ekstremalverdien til $f$ er gitt ved
-\begin{align*}
-	f'(t)&=0 \\
-	2(8-4\sqrt{3})t+(7-5\sqrt{3}) &=0 \\
-	8(2-\sqrt{3})t&=5\sqrt{3}-7 \\
-	t &= \frac{5\sqrt{3}-7}{8(2-\sqrt{3})} \br
-	&= \frac{(5\sqrt{3}-7)}{8(2-\sqrt{3})}\cdot \frac{2+\sqrt{3}}{2+\sqrt{3}} \br
-	&=\frac{10\sqrt{3}-14+15-7\sqrt{3}}{8} \br
-	&=\frac{3\sqrt{3}+1}{8}
-\end{align*}
-\item Vi vet at ekstremalpunktet ligger midt mellom nullpunktene til en andregradsfunksjon. Avstanden mellom ekstremalpunktet og det gitte nullpunktet er
-\[\frac{3\sqrt{3}+1}{8}-\frac{3\sqrt{3}-15}{4}=\frac{31-3\sqrt{3}}{8}\]
-Det andre nullpunktete er dermed gitt ved
-\[ \frac{3\sqrt{3}+1}{8}+\frac{31-3\sqrt{3}}{8}=4 \]
-I punktet $B$ er dermed $t=4$, og da er
-\[ B=\vec{v}(4)=(4, 4(2-\sqrt{3})) \]
-}
-\newpage
+\end{comment}
 
 \end{document}

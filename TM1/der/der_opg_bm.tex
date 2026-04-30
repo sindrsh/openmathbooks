@@ -82,8 +82,42 @@ Deriver uttrykkene med hensyn på $ x $. \os
 \item $ -9qx^7+3px^3+b^3 $
 }
 
+\op{opgderkjerne}
+Deriver uttrykkene.\os
+\abch{
+\item $e^{2x}$ 
+\item $5e^{-x}$ 
+\item $\ln (5x)$ 
+\item $-2\ln(x^3-x)$
+}
+
+\op{opgdershiwel}
+Vis at \os
+\abch{
+\item $\left(e^{kx}\right)'=ke^{kx}$ \item $(\ln (kx))'=k\ln (kx)$
+}
+
+
+\op{opgderdele}
+Deriver uttrykkene. \os
+\abch{
+\item $x\ln x$
+\item $-2x^3e^x$
+\item $4x^{-3}\ln x$ 
+\item $e^x \ln x$
+}
+
+\op{opgderdiv}
+Deriver uttrykkene. \os
+\abch{
+\item $\frac{e^x}{x^2}$
+\item $\frac{x+2}{\ln x}$
+\item $\frac{2x+3}{x-1}$
+\item $\frac{\ln x+ e^x}{x^4}$
+}
+
 \op{opgderrules}
-Deriver funksjonene \os
+Deriver funksjonene. \os
 \abch{
 \item $ f(x)=x\sqrt{1-2x} $
 \item $ p(x)= 3xe^{2x} $
@@ -101,47 +135,27 @@ Deriver funksjonene \os
 } \os
 \abchs{11}{
 \item $k(x)=4x^2\ln(3x)$
-\item $h(x)=xe^2x$
+\item $h(x)=xe^{-4x}$
 }
 
-\eksop{1TV21}{1tv21d1opg7}
-Gitt funksjonen $f(x)=-5x^2+ax+1$. Toppunktet til $f$ er $(2, f(2))$. Finn $a$.
+
 
 \op{opgderlhopeks}
-Løs \grubr{R1V23D1opg2} ved hjelp av L'Hopitals regel.
+Løs \grubrs{R1V23D1opg2} ved hjelp av L'Hopitals regel.
 
 \eksop{R1H25}{r1h25opg1}
-Funksjonen $g(x)=\frac{2x-3}{e^x}$ er kontinuerlig og deriverbar for alle $x\in \mathbb{R}$.
+Funksjonen $g(x)=\frac{2x-3}{e^x}$ er kontinuerlig og deriverbar for alle ${x\in \mathbb{R}}$.
 \abc{
 \item Finn $g'(2)$ og $g'(3)$.
-\item Hva forteller svarene i oppgave a) om grafen til $g$ når $x\in[2, 3]$? 
+\item Hva forteller svarene i oppgave a) om grafen til $g$ når ${x\in[2, 3]}$? 
 }
 
-\op{opgderfindtoppbunn} %eksamensoppgaver
-Finn eventuelle topp- og bunnpunkt til funksjonene. \os
-\abch{
-\item $f(x)=4x^2 \ln x$
-\item $g(x)=\frac{1}{2}e^x(2x-1)^2$
-}
 
-\newpage
-
-\grubop{1th24d2opg5} (1TH24)
-Gitt funksjonen
-\[ f(x)=ax^3+bx^2+cx+d \]
-Vi har at
-\begin{itemize}
-	\item Grafen til $f$ skjærer punktet $(2, 6)$
-	\item Punktet $(-2, 8) $ er et toppunkt for $f$
-	\item Tangenten til $f$ når $x=3$ har stigningstall 4
-\end{itemize}
-Finn de respektive verdiene til $a$, $b$, $c$ og $d$.
-
-\grubop{1tv24d2opg6}
+\grubeksoprecc{1tv24d2opg6}{1TV24}
 	Den rette linja i figuren under er grafen til den deriverte funksjonen til $f(x)$. Punktet $P=(1, 2)$ ligger på grafen til $f$. Finn uttrykket til tangenten til $f$ i punktet $P$.
 \fig{1tv24d2opg6}
 
-\grubop{1th23d2opg6}
+\grubeksoprecc{1th23d2opg6}{1TH23}
 Gitt funksjonen
 \[ f(x)=ax^3+bx^2+cx-64 \]
 Vi har at
@@ -150,8 +164,8 @@ Vi har at
 	\item Stigningstallet til linja gjennom punktene $(0, f(0))$ og $(5, f(5))$ er $\frac{64}{5}$.
 \end{itemize}
 Bestem $a$, $b$ og $c$.
-
-\grubop{1tv22d2opg6}
+\newpage
+\grubeksoprecc{1tv22d2opg6}{1TV22}
 Gitt funksjonen
 \[ f(x)=x^3-2bx^2+(b^2+3)x	 \]
 \abc{
@@ -160,8 +174,7 @@ Gitt funksjonen
 \item Hvis ${b\neq0}$, har $f$ to tangenter med stigningstall 3. Bestem uttrykkene for hver av tangentene.
 }
 
-\grubop{R1V22D1opg1}
-(R1V22D1)\\
+\grubeksoprecc{r1v22d1opg1}{R1V22}
 En funskjon $ f $ er gitt ved
 \begin{equation*}
 f(x)= \left\lbrace{
@@ -176,13 +189,32 @@ f(x)= \left\lbrace{
 \item Avgjør om $ f $ er deriverbar i $ x=2 $ for den verdien av $ t $ du fant i oppgave a).
 }
 
-\grubop{r1h25d2opg6b}
+\grubeksoprecc{1th22d1opg4}{1TH22}
+Gitt en andregradsfunksjon $f(x)$. Vi har at
+\abc{
+	\item tangenten i punktet $(2, 0)$ har likningen $y=9x+18$.
+	\item tantenten i punktet $(8, -10)$ har likningen $y=-11x+78$.
+}
+Bestem $f'(x)$.
+
+\grubeksoprecc{t1h23d1opg3}{T1H23D1}
+Funksjonen $ f $ er gitt ved
+\[ f(x)=x^3-3x^2-x+4\]
+Bestem ligningen for tangenten til $ f $ i punktet $ (1, f(1) $.
+
+\newpage
+\grubeksoprecc{1th21d1opg5}{1TH21}
+Tredjegradsfunksjonen $f$ har bunnpunkt $(-2, -11)$ og toppunkt $(4, 25)$. Likningen til tangenten til $f$ i punktet $(1, 7)$ er $y=9x-2$. \os
+
+Finn $f(x)$.
+
+\grubeksoprecc{r1h25d2opg6b}{R1H25}
 Vurder om påstanden er rett.
 \begin{center}
 	Funksjonen $f(x)=|x|$ er deriverbar for alle $x\in\mathbb{R}$, \\bortsett fra for $x=0$. 
 \end{center}
-\newpage
-\grubop{r1h24d1opg6}
+
+\grubeksoprecc{r1h24d1opg6}{R1H24}
 I figuren under ser du et utsnitt av grafene til tre funksjoner. For funksjonen $f(x)$ har vi at
 \begin{itemize}
 	\item $\frac{f(4)-f(0)}{4}=\frac{1}{2}$
@@ -191,34 +223,15 @@ I figuren under ser du et utsnitt av grafene til tre funksjoner. For funksjonen 
 Hvilken av grafene er grafen til $f$?
 \fig{r1h24d1opg6}
 
-\grubop{1th22d1opg4}
-Gitt en andregradsfunksjon $f(x)$. Vi har at
-\abc{
-\item tangenten i punktet $(2, 0)$ har likningen $y=9x+18$.
-\item tantenten i punktet $(8, -10)$ har likningen $y=-11x+78$.
-}
-Bestem $f'(x)$.
-
 \newpage
 
-\grubop{t1h23d1opg3} (T1H23D1)\os
-Funksjonen $ f $ er gitt ved
-\[ f(x)=x^3-3x^2-x+4\]
-Bestem ligningen for tangenten til $ f $ i punktet $ (1, f(1) $.
+\gruboprecc{opgbevisdivreg}
+Vis at \eqref{divdereq} er gyldig.
 
-\grubop{1th21d1opg5}
-Tredjegradsfunksjonen $f$ har bunnpunkt $(-2, -11)$ og toppunkt $(4, 25)$. Likningen til tangenten til $f$ i punktet $(1, 7)$ er $y=9x-2$. \os
+\gruboprecc{opgbevisapow(x)der}
+Vis at $ \left(a^x\right)'= a^x\ln a $.
 
-Finn $f(x)$.
-
-
-\grubop{opgbevisdivreg}
-Bevis at \eqref{divdereq} er gyldig.
-
-\grubop{opgbevisapow(x)der}
-Bevis at $ \left(a^x\right)'= a^x\ln a $.
-
-\grubop{r1v25d2opg2}
+\grubeksoprecc{r1v25d2opg2}{R1V25}
 Funksjonen $f$ er gitt ved
 \[ 	f(x)=\frac{1}{3}x^3-2x^2-1 \]
 og har definisjonsmengde $D_f=[a, b]$.
@@ -228,9 +241,7 @@ og har definisjonsmengde $D_f=[a, b]$.
 \item $g$ har en annen tangent med samme stigningstall som tangenten i $(-10,3 )$. Finn dette tangeringspunktet.
 }
 
-\newpage
-
-\grubop{r1h25d2opg2}
+\grubeksoprecc{r1h25d2opg2}{R1H25}
 Gitt funksjonen
 \begin{equation*}
 	f(x)= \left\lbrace{
@@ -246,7 +257,8 @@ Gitt funksjonen
 \item Bestem $a$, $b$, $c$ og $k$ slik at $f$ er kontinuerlig og deriverbar når $x=-2$ og $x=k$.
 }
 
-\grubop{r1v25d2opg3}
+\newpage
+\grubeksoprecc{r1v25d2opg3}{R1V25}
 Gitt funksjonen
 \begin{equation*}
 	f(x)= \left\lbrace{
@@ -260,7 +272,7 @@ Gitt funksjonen
 Bestem $a$, $b$, $c$ og $d$ slik at	$f$ er kontiunerlig og deriverbar for alle $x\in\mathbb{R}$.
 
 
-\grubop{r1v25d2opg5} (R1V25)
+\grubeksop{r1v25d2opg5}{R1V25}
 I figuren under vises grafen til funksjonen $f(x)=\ln x$. Tangenten til $f$ i punktet $B$ går gjennom $A=(0, 0)$. Punktet $C$ er plassert på linja $y=x$ slik at $\angle ACB=90^\circ$.
 \abc{
 \item Finn $B$.
@@ -268,22 +280,15 @@ I figuren under vises grafen til funksjonen $f(x)=\ln x$. Tangenten til $f$ i pu
 }
 \fig{r1v25opg5}
 
+
+
 \newpage
 
+\gruboprecc{opgderxsquare}
+Gitt funksjonen $f(x)=ax^2$. Tangenten til $f$ i punktet $A$ skjærer $x$-aksen i punktet $B$. Vis at hvis $A=(c, f'(c))$, så er $B=\left(\frac{c}{2}, 0\right)$.
+\fig{opgderxsquare} 
 
-\grubop{r1v24d2opg6}
-Gitt punktet $A=(0, 0)$ og funksjonen
-\[ f(x)=-x^2+4\qquad,\qquad x\in[0, 2] \]
-Punktet $C$ ligger på grafen til $f$. Finn koordinatene til $C$ slik at rektangelet $\square ABCD$ får størst mulig areal.
-
-\fig{r1v24d2opg6}
-
-\grubop{opgderrectincircle}
-Et rektangel er innskrevet i en sirkel. Vis at rektangelets areal er størst hvis det er et kvadrat.
-\fig{opgderrectincircle}
-
-\newpage
-\grubop{opgderarchi}
+\gruboprecc{opgderarchi}
 Gitt funksjonen $f(x)=a x^2+b x + c$ og punktene $A=(p, f(p))$ og $B=(q, f(q))$. Tangenten til $f$ i punktet $C=(t, f(t))$ er parallell med segmentet $AB$. \os
 \abc{
 	\item Vis at $t=\frac{1}{2}(p+q)$.
@@ -291,58 +296,13 @@ Gitt funksjonen $f(x)=a x^2+b x + c$ og punktene $A=(p, f(p))$ og $B=(q, f(q))$.
 }
 \fig{opgderarchi}
 
-\grubop{opgder2dx}
-Gitt at $ f'(x) $ er kontinuerlig, vis at
-\[ \lim\limits_{h\to0}\frac{f(x+h)-f(x-h)}{h}=2f'(x) \]
 
-\grubop{r1h23d2opg4} (R1H23)
-Gitt et prisme med kvadratisk grunnflate. Overflatearealet til prismet kan ikke være mer enn 120.
-\abc{
-\item Hva er det største volumet prismet kan ha hvis sidelengden til grunnflaten er 5?
-\item Hva er det maksimale volumet prismet kan ha?
-\item Hva er det minste overflatearealet prismet kan ha hvis volumet er 80?
-}
+
+
 
 
 \newpage
-\grubop{r1v22d2opg5}
-Gitt funksjonen
-\[ f(x)=1-x^2\qquad,\qquad x\in[0, 1] \]
-Tangenten til $f$ i punktet $P=(a, f(a))$ skjærer henholdsvis $x$- og $y$-aksen i punktene $A$ og $B$.
-\abc{
-\item Finn arealet til $\triangle OAB$ når $a=\frac{1}{2}$.
-\item Finn $a$ når $\triangle OAB$ har så lite areal som mulig.
-}
-
-\fig{r1v22d2opg5}
-
-\grubop{r1v23d2opg6}
-En linje $l$ går gjennom punktene $A=(4, -2)$ og $B=(6, 6)$.
-\abc{
-\item Bestem avstanden fra punktet $P=(2, 8)$ til linja.
-\item Gitt funksjonen $f(x)=x^2+2x$. Finn den minste avstanden mellom grafen til $f$ og $l$. 
-}
-
-\grubop{r1v22d2opg6} (R1V22)
-Gitt funksjonen $f(x)=x^3- 3x^2-13x+15$ og punktene $A=(1, 0)$, $B=(s, 0)$ og $C=(s, g(s))$, hvor $s\in(1, 5)$. Finn $s$ slik at arealet til $\triangle ABC$ blir størst mulig, og finn arealet.
-
-\grubop{r1v22d1opg1}
-Gitt funksjonen
-\begin{equation*}
-	f(x)= \left\lbrace{
-		\begin{array}{rcc}
-			x^2+1 &,&x<2 \br
-			x-t   &,& x\geq2 \br
-		\end{array}
-	}\right. 
-\end{equation*}
-\abc{
-\item Bestem tallet $t$ slik at $f$ er en kontiunerlig funksjon.
-\item Avgjør om $f$ er deriverbar i $x=2$ for den verdien av $t$ du fant i oppgave a).
-}
-
-\newpage
-\grubop{directrix}
+\gruboprecc{directrix}
 Gitt funksjonen $f(x)=x^2$. Det finnes et \outl{brennpunkt} $F=(0, p)$ og en \outl{styrelinje} gitt ved $s(x)=-p$ slik at $AF=AB$, hvor $A$ ligger på grafen til $f$, $AF\perp AB$, og $p\neq0$.
 \abc{
 \item Finn verdien til $p$.
@@ -358,16 +318,12 @@ Vi setter $C=(c, f(c))$.
 
 \mers{Egenskapene vi har vist her kan generaliseres til å gjelde for alle parabler.}
 
-\grubop{opgderpointb}
-\fig{opgderpointb}
-Origo og $B$ ligger på grafen til vektorfunksjonen $\vec{v}(t)$.
-\abc{
-	\item Vi har at $\tan 15^\circ = 2-\sqrt{3}$. Finn uttrykket for $\vec{v}$.
-	\item Vi har at $C=\left(4\sqrt{3}-5, -1\right)$ og
-	\[  |OC|^2-|BO|^2-|BC|^2=24(7\sqrt{3}-13) \]
-	Finn en andregradsfunksjon $f(t)$ slik at $B=\vec{v}(t)$ når $f(t)=0$.
-	\item Vis at ekstremalverdien til $f$ er $t=\frac{3\sqrt{3}+1}{8}$.
-	\item Den éne løsningen for $f(t)=0$ er $t=\frac{3\sqrt{3}-15}{4}$.\\ Finn koordinatene til $B$.
-} 
+
+
+
+
+\grubop{opgder2dx}
+Gitt at $ f'(x) $ er kontinuerlig, vis at
+\[ \lim\limits_{h\to0}\frac{f(x+h)-f(x-h)}{h}=2f'(x) \]
 
 \end{document}
