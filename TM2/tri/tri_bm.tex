@@ -492,18 +492,18 @@ Av figuren merker vi oss følgende:
 \end{itemize}
 Om vi ikke visste uttrykket til $ f $, kunne vi altså ut ifra  \fref{fcosfig} og punktene over sett at\footnote{Som vi straks skal se, kunne $ a $ også vært $ -2 $. Men når vi skal finne et cosinusuttrykk, kan vi alltid finne et uttrykk med ${ a>0} $ som vil samsvare med grafen.} $ {a=2} $ og $ {d=1} $. Men hva med $ k $ og $ c $? \vsk
 
-La oss starte med det enkleste: Når vi kjenner perioden $ {P=4 }$, kan vi finne \textit{bølgetallet}\index{bølgetall} $ k $ ut ifra følgende relasjon:
+La oss starte med det enkleste: Når vi kjenner perioden $ {P=4 }$, kan vi finne \outl{bølgetallet}\index{bølgetall} $ k $ ut ifra følgende relasjon:
 \alg{
 	k &= \frac{2\pi}{P} \br
 	&= \frac{2\pi}{4} \br
 	&= \frac{\pi}{2}	
 }
-For å bestemme $ c $ gjør vi denne observasjonen: En cosinusfunksjon med positiv $ a $ må ha et toppunkt der hvor $ {kx+c=0} $ (fordi $ \cos 0=1 $). Da $ f $ har et toppunkt der $ {x=2} $, må vi ha at
+For å bestemme \outl{fasen}\index{fase} $ c $ gjør vi denne observasjonen: En cosinusfunksjon med positiv $ a $ må ha et toppunkt der hvor $ {kx+c=0} $ (fordi $ \cos 0=1 $). Da $ f $ har et toppunkt der $ {x=2} $, må vi ha at
 \alg{
 	\frac{\pi}{2}\cdot 2 +c &= 0 \\
 	c &= -\pi
 }
-En endring i $ c $ vil forskyve cosinusfunksjonen horisontalt, $ c $ kalles derfor \textit{faseforskyvningen}\index{faseforskyvning} (eventuelt bare \textit{fasen}\index{fase}).\vsk
+En endring i $ c $ vil forskyve cosinusfunksjonen horisontalt.\vsk
 
 La oss også kort studere grafen til
 \[ {g(x) = -2\cos\left(\frac{\pi}{2}x-\pi\right)+1} \]
@@ -517,9 +517,9 @@ Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktore
 	\end{equation}
 	kalles en cosinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $.
 	\fig{fcos2}
-	Gitt et maskimalpunkt $ x_t $ og et minimumspunkt $ x_m $. Da er
+	Gitt et maskimalpunkt $ x_t $ og et minimumspunkt $ x_b $. Da er
 	\begin{equation}\label{konstantd}
-		d=\frac{x_t+x_m}{2}
+		d=\frac{x_t+x_b}{2}
 	\end{equation}
 	For to naboliggende maksimal/minimumspunkt $ x_1 $ og $ x_2 $ er
 	\begin{equation}\label{perioden}
@@ -539,6 +539,11 @@ Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktore
 	\end{equation}
 	hvor $ n\in \mathbb{Z} $.
 }
+\newpage
+\outl{Faseforskyvningen} $\phi$ til en cosinusfunksjon $g(x)=a \cos(kx+c)+d$ er funksjonens horisontale forskyvning relativ til funskjonen $f(x)=a\cos(kx)+d$.
+\figc{cosshift}{Grafene til $f$ og $g$ over en periode.}. Ved å skrive
+\[ g(x)=a\cos\left(k\left(x+\frac{c}{k}\right)\right)+d \]
+
 \newpage
 \fork{\ref{cosfunk} \cosfunk}{
 Vi skal nå vise hvorfor vi for en cosinusfunksjon har relasjonen $ {k=\frac{2\pi}{P}} $. Det samme resonnementet kan brukes for en sinusfunksjon, og et veldig lignende et kan brukes for å vise at $ {k=\frac{\pi}{P}} $ for en tangensfunksjon.\vsk

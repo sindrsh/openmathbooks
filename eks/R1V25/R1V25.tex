@@ -2,7 +2,6 @@
 \input{../../preamb}
 
 
-
 \begin{document}
 {\Large Eksamen Matematikk R1 våren 2025\hfill \\ {\footnotesize Løsning fra \color{blue} \href{https://sindreheggen.wordpress.com/}{OpenMathBooks prosjektet}}}	
 
@@ -36,21 +35,143 @@ $g$ har altså toppunkt $\left(-\frac{3}{2}, 2e^{-\frac{3}{2}}\right)$ og bunnpu
 \subsection*{Oppgave 3}
 \abc{
 \item 
-\begin{align}
+\begin{align*}
 	3^{3x+2}-5&=76 \\
 	3^{3x}\cdot3^2&=81 \\
 	3^{3x}&=\frac{3^4}{3^{2}} \\
 	3^{3x}&=3^{2}
-\end{align}
+\end{align*}
 Altså er $3x=2$, og da er $x=\frac{2}{3}$.
 \item 
-\begin{align}
+\begin{align*}
 	3\lg x+2\lg x^2 + \lg \frac{1}{x^9}&=2 \\
 	3\lg x + 2\cdot2\lg x -9\lg x&= 2 \\
 	-2\lg x &=2 \\
 	\lg x &= -1 
-\end{align}
+\end{align*}
 Antatt at $\lg$ har 10 som base, får vi at $x=\frac{1}{10}$.
 }
+
+\subsection*{Oppgave 4}
+\abc{
+\item Når $x\to 3$, går telleren går mot 18, mens nevneren går mot 0. Dermed eksisterer ikke grenseverdien.
+\item 
+\[ \lim\limits_{x\to4} \frac{\sqrt{x}-2}{x-4}=\lim\limits_{x\to4}\frac{\sqrt{x}-2}{(\sqrt{x}+2)(\sqrt{x}-2)}=\lim\limits_{x\to4} \sqrt{x}+2= 4 \]
+}
+
+\subsection*{Oppgave 5}
+\abc{
+\item Vi setter $g(x)=x^2+2$ og $h(x)=2e^x$. Vi har at 
+\begin{align*}
+	\lim\limits_{x\to0^-} g&= \lim\limits_{x\to0^-} 0^2+2=2 \br
+	\lim\limits_{x\to0^+} h&=\lim\limits_{x\to0^+} 2e^0=2
+\end{align*}
+Da grenseverdiene er like, er $f$ kontinuerlig i $x=0$.
+\item Vi har at $g'(x)=2x$ og $h'(x)=2e^x$. Da er $g'(0)=0$ og $h'(0)=2$. Dermed er ikke funksjonen deriverbar.
+}
+
+\subsection*{Oppgave 6}
+\abc{
+\item Vi har at $\vv{AN}=[-1-1, 2-1]=[-2, 1]$. Dermed er $|\vv{AN}|=\sqrt{(-2)^2+1^2}=\sqrt{5}$. Avstanden mellom Nils og Ahmad er $\sqrt{5}\enh{m}$.
+\item Vi setter $B=(-1, a)$, da er $\vv{JB}=[-1, a]$. Kravet om parallellitet tilsier at $\vv{JB}$ er et multiplum av $\vv{AN}$. $2\vv{JB}=\vv{AN}$ hvis $a=\frac{1}{2}$.
+\item Vi setter $M=(x, y)$. Da er $\vv{JM}=[x, y]$ og $\vv{AM}=[x-1, y-1]$. 
+Av ortogonaliteten har vi at
+\begin{align*}
+	\vv{AM}\cdot\vv{JM}&=0\\
+	[x-1, y-1]\cdot[1, 1]&=0 \\
+	x-1+y-1&=0 \\
+	y &= 2-x 
+\end{align*}
+Av lengden har vi at
+\begin{align*}
+x^2+y^2&=10 \\
+x^2+(2-x)^2&=10 \\
+x^2+4-4x+x^2 &= 10 \\
+x^2-2x+3 &= 0
+\end{align*}
+Da $3=1\cdot(-3)$ og $1+(-3)=-2$, er 
+\[ (x+1)(x-3)=0 \]
+Dermed er $M=(-1, 3)$ eller $M=(3, -1)$. Av de to ligger $N$ nærmest $(-1, 3)$, og derfor er $M=(-1, 3)$.
+}
+\newpage
+\subsection*{Oppgave 1}
+\abc{
+\item Halvparten av husstandene har batteriet når $S(t)=1\,500\,000$. Av rad 3 har vi at dette skjer etter ca 103 uker.
+\item $S'(52)$ er gitt i rad 4. Tallet viser den momentane endringen i antall husstander med batteriet i uke 52. Etter et år (52 uker) øker antall husstander med batteri med ca. 4873 per uke.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.35]{opg1ab}
+\end{figure}
+}
+\abcs{3}{
+\item Vi starter Med å skrive det generelle uttrykket for en logistisk funksjon i celle 1 (CAS).
+\begin{itemize}
+	\item At totalt 1\,500\,000	husstander skal ha batteriet, tilsier at dette er den horisontale asymptoten. Dermed er $a=1\,500\,000$ (celle 2).
+	\item At 500 husstander har batteriet ved lansering, tilsier at $F(0)=500$. Vi setter $t=0$ (celle 3), og løser likningen med hensyn på $c$ (celle 4). Finner da at $c=2999$, som vi setter inn i uttrykket vårt.
+	\item At flest nye husstander kjøper batteriet i uke 60, tilsier at $t=60$ er et maksimalpunkt for $F'(t)$, og da er $t=60$ et nullpunkt for $F''(t)$. Vi finner $F'(t)$ (celle 6) og så $F''(t)$ (celle 7). Vi setter $F''(60)=0$ (celle 8), og løser likningen (celle 9). Da finner vi at $b\approx 0,13$. Dermed er
+	\[ F(t)=\frac{1500000}{1+2999e^{-0.13t}} \]
+	{\footnotesize \textsl{Merk}: Vi kunne fått en litt enklere utregning ved å utnytte at for en logistisk funksjon $f(t)$ med horisontal asymptote $a$, så er den deriverte størst hvor $F(t)=\frac{a}{2}$.}
+\end{itemize}
+\begin{figure}
+	\includegraphics[scale=0.3]{opg1c}
+\end{figure}
+}
+
+\newpage
+\subsection*{Oppgave 2}
+\abc{
+\item Vi skriver funksjonen i CAS (celle 1), og finner ekstremalpunktene (celle 2). Mellom et toppunkt og et bunnpunkt er en kontinuerlig funksjon injektiv. $I=[0, 4]$ er det største intervallet hvor $f$ er injektiv og som inneholder 2.
+\item Siden det er snakk om stigningstallet til $g$, antar vi at det er snakk om et koordinatsystem med $y$ langs horisontalaksen og $x$ langs vertikalaksen. I punktet $(-10, 3)$ er da $y=-10$ og $x=3$. Av formelen for den deriverte av en omvendt funksjon har vi at (celle 3)
+\[ g(-10)=\frac{1}{f'(3)}=-\frac{1}{3} \]
+\item Av formelen for den deriverte av en omvendt funksjon har vi at
+\[ g'(y)=\frac{1}{f'(x)=-\frac{1}{3}} \]
+Ved å løse denne likningen finner vi at det andre punktet har $x=1$ (celle 4). Da $f(1)=-\frac{3}{8}$, er tangeringspunktet $\left(-\frac{8}{3}, 1\right)$
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg2}
+\end{figure}
+
+\newpage
+\subsection*{Oppgave 3}
+Vi setter de tre funksjonene fra den delte forskriften slik celle 1-3 viser. Kravet om kontinuitet gir likningene i celle 5 og 6, mens kravet om deriverbarhet gir likningene i celle 6 og 7. I celle 8 har vi løst dette likningssystemet. Vi har at
+\[ h(x)=-\frac{13}{27}x^3+\frac{7}{9}x^2-\frac{1}{9}x-\frac{113}{27} \]
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{opg3}
+\end{figure}
+\newpage
+\subsection*{Oppgave 4}
+\abc{
+\item I CAS definerer vi $\vec{r}$ (celle 1). Farten er lengden til $r'(t)$ (celle 2). Omgjort til knop er farten ca. 5,1 (celle 3).
+\item Vi finner funksjonen som gir avstanden mellom $\vec{r}$ og $(4, 7)$ (celle 4). I celle 5 f finner vi bunnpunktet til funksjonen, som gir at den minste avstanden mellom fiskebåten og fyret er ca. 0,95\enh{km}.
+\item Posisjonen $\vec{p}(t)$ til fiskestimen er gitt ved $\vec{p}(t)=[1+4t, -3+11t]$. Av celle 6 finner vi at $\vec{r}$ og $\vec{p}$ bare har lik $x$-verdi når $t=0$. Men når $t=0$ er $\vec{p}=[1, -3]$, mens $\vec{r}=[1, 4]$, og da er $y$-verdiene forskjellige. Fiskebåten vil ikke treffe fiskestimen.
+\item  Posisjonen $\vec{m}(t)$ til den andre fiskebåten er gitt ved \\ $\vec{m}(t)=[-2+6at, 4at]$. Skal denne fiskebåten treffe fiskestimen, må de to likningene i celle 7 og 8 være oppfylt. Ved å løse dette likningssystemet (celle 9), finner vi at $a=\frac{3}{2}$. Da er
+\[ \vec{m}'(t)=\frac{3}{2}[6, 4]=3[3, 2] \]
+Videre er
+\[ |3[3,2]|=3\sqrt{3^2+2^2}=3\sqrt{13}\approx10,81 \]
+}
+Altså må denne båten ha $10,81\enh{km/h}$ som fart for å treffe fiskestimen.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg4}
+\end{figure}
+{\footnotesize \textit{Alternativ metode for oppgave b}\\
+Avstanden $h$ mellom et punkt $B$ og en linje gitt av punktene $A$ og retningsvektoren $\vec{v}$ er gitt som
+\[ h=\frac{|\det\left(\vv{AB}, \vec{v}\right)|}{|\vec{v}|} \]
+Linjen $\vec{r}$ er gitt av punktet $A=(1, 4)$ og retningsvektoren $\vec{v}=\vec{r}\,'(t)=[5, 8]$. Vi setter $B=(4, 7)$, da er $\vv{AB}=[3, 3]$. Ved å skrive \texttt{h=Determinant\{\{3,3\},\{5, 8\}\}/|(5, 8)|} i CAS, får vi at
+\[ h=\frac{9}{\sqrt{89}}\approx 0,95 \]
+Dermed er den minste avstanden mellom fiskebåten og fyret ca. 0,95\enh{km}.
+}
+\newpage
+\subsection*{Oppgave 5}
+\abc{
+	\item Vi lar $g(x)$ være tangenten til $f$ i punktet $B$, og setter $B=(a, g(a))$. 	Da tangenten går gjennom origo, er den beskrevet av funskjonen $g(x)=f'(a)\cdot x$. Løser likningen $g(a)=f(a)$ (celle 3), og får at $a=e$. Dermed er $B=(e, 1)$ (celle 4). Da $C$ ligger på linjen $y=x$, er $C=(x, x)$. Siden $\angle ACB=90^\circ$, er $\vv{AC}\cdot \vv{BC}=0$. Ved å løse denne likningen (celle 9), finner vi at $x=\frac{1}{2}(e+1)$, og dermed er $C=\left(\frac{1}{2}(e+1), \frac{1}{2}(e+1)\right)$.
+	\item Vi uttrykker arealet til $\triangle ABC$ i celle 11, og setter inn verdien vi fant for $x$ (celle 12). Arealet til trekanten er $\frac{1}{4}(e^2-\frac{1}{4})$.
+}
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{opg5}
+\end{figure}
 
 \end{document} 

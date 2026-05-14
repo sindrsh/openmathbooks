@@ -4,7 +4,49 @@
 
 
 \begin{document}
+\section{Midtpunktsmetoden}
+Gitt en kontinuerlig funksjon $f(x)$, hvor $f(a_0)$ og $f(b_0)$ har forskjellige fortegn. For å finne et tilnærmet nullpunkt $x_t$ til $f$, kan vi anvende \outl{halveringsmetoden}\index{halveringsmetoden}. Tre iterasjoner ved denne metoden kan beskrives slik:
+\st{
+\textsl{Figur a}
+\begin{itemize}
+	\item Vi setter $m_0=\frac{a_0+b_0}{2}$.
+	\item Vi sjekker om ${f(m_0)=0}$ (i så fall er ${x_t=m_0}$). Dette er ikke tilfellet, og dermed går vi videre.
+\end{itemize}
+\textsl{Figur b}
+\begin{itemize}
+	\item Vi sjekker om $f(a_0)$ og $f(m_0)$ har ulikt fortegn. I så fall er $f(a_0)\cdot f(m_0)<0$. Hvis ulikheten er sann, er $x_t\in[a_0, m_0]$.  Hvis ulikheten er usann, er $x_t\in[m_0, b_0]$. Ulikheten er usann, og dermed setter vi $a_1=m_0$ og $b_1=b_0$.
+	\item Vi setter $m_1=\frac{a_1+b_1}{2}$.
+	\item Vi sjekker om ${f(m_1)=0}$. Dette er ikke tilfellet, og dermed går vi videre.
+\end{itemize}
+\textsl{Figur c}
+\begin{itemize}
+	\item Vi sjekker om ${f(a_0)\cdot f(m_0)<0}$. Ulikheten er sann, og dermed setter vi $a_2=a_1$ og $b_2=m_1$.
+	\item Vi setter $m_2=\frac{a_2+b_2}{2}$.
+	\item Vi sjekker om ${f(m_2)=0}$. Dette er ikke tilfellet, og dermed går vi videre (med mindre vi vurderer $m_2$ som en god nok tilnærming).
 	
+\end{itemize}
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{bisectmeth_a}}}\;
+	\subfloat[]{\includegraphics{\figp{bisectmeth_b}}}\;
+	\subfloat[]{\includegraphics{\figp{bisectmeth_c}}} 
+	%\subfloat[]{\includegraphics{\figp{bisectmeth_d}}}
+\end{figure}
+}
+
+
+\reg[Halveringsmetoden]{
+Gitt en kontiunerlig funksjon $f(x)$, hvor $f(a_0)$ og $f(b_0)$ har forskjellige fortegn. La $x_n$ for ${n\in\mathbb{N}}$ være en tilnærming til et nullpunkt til $f$ på intervallet $[a_0, b_0]$. Ved halveringsmetoden er $x_n$ gitt ved
+\[ x_n=\frac{a_n+b_n}{2} \]
+For $n>0$ har vi at
+\begin{itemize}
+	\item Hvis $f(a_{n-1})\cdot f(m_{n-1})<0$, er $a_n=a_{n-1}$ og $b_n=m_{n-1}$. Hvis ikke, er $a_n=m_{n-1}$ og $b_n=b_{n-1}$.
+\end{itemize}
+}
+\spr{
+\textit{Halveringsmetoden} kalles også \outl{midtpunktsmetoden}.
+}
+
 \section{Newtons metode}
 Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Ved \outl{Newtons metode} gjør vi denne antakelsen for å en tilnærming $ a $: \regv
 \st{
@@ -28,7 +70,7 @@ La $ x_2 $ være skjæringspunktet mellom $ x $-aksen og tangenten til $ f $ i $
 Prosedyren kan vi gjenta fram til vi har funnet en $ x $-verdi som gir en tilstrekkelig\footnote{Hva som er en \textit{tilstrekkelig tilnærming} er det opp til oss selv å bestemme.} tilnærming til $ a$.
 \newpage
 \reg[Newtons metode]{
-Gitt en funskjon $ f(x) $ si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
+Gitt en funskjon $ f(x) $. Si at vi ønsker å finne et tall $ a $ slik at $ {f(a)=0} $. Gitt $ x $-verdiene $ x_{n} $ og $ x_{n+1} $ for $ {n\in\mathbb{N}} $. Ved å bruke formelen
 \nn{
 x_{n+1} = x_n-\frac{f(x_n)}{f'(x_n)} 
 }

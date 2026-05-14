@@ -67,12 +67,12 @@ Dermed er $D=(2, -3)$.
 $f$ har toppunkt/bunnpunkt der hvor $f'(x)=0$. $4x=0$ når $x=0$, men $\ln 0$ er ikke definert. Dette betyr at $f'(x)=0$ bare når $2\ln x=-1$, som betyr at $x=e^{-\frac{1}{2}}$. $4x$ er positiv på intervallet for alle $x>0$, mens $2\ln x +1$ skifter fortegn fra negativ til positiv når $x=e^{-\frac{1}{2}}$. Dette er altså et minimumspunkt for $f$. Vi har at
 \[ f\left(e^{-\frac{1}{2}}\right)=4\cdot \left(e^{-\frac{1}{2}}\right)^2\cdot \ln e^{-\frac{1}{2}}=4e^{-1}\cdot\left(-\frac{1}{2}\right)=-2e^{-1} \]
 Altså er $\left(e^{-\frac{1}{2}}, -2e^{-1}\right)$ et bunnpunkt på grafen til $f$.
-\item Eleven prøver å finne nullpunktet til funksjonen. \os
+\item Eleven prøver å finne nullpunktet til funksjonen ved halveringsmetoden. \os
 
 Vi lar $x=x_1$ være løsningen av likningen $f(x)=0$.
 \\Linje 11: Starter med "å gjette" at $x_1$ er midtpunktet mellom $a$ og $b$.\\
 Linje 13: Itererer så lenge $f(m)$ er over $0,0001$.\\
-Linje 15-18: Setter $b=m$ hvis $f(a)\cdot f(m)<0$, og $a=m$ hvis ikke. Hvis vilkåret er oppfylt, har $f(a)$ og $f(m)$ forskjellig fortegn, og siden $f(a)<0$, vet vi at $x_1\in[a, m]$. Da må ny høyre grense settes til $m$. Hvis vilkåret  ikke er oppfylt er $x_1\in[m, b]$. Da må ny venstre grense settes til $m$.\\
+Linje 15-18: Setter $b=m$ hvis $f(a)\cdot f(m)<0$, og $a=m$ hvis ikke. Hvis vilkåret er oppfylt, har $f(a)$ og $f(m)$ forskjellig fortegn, og da vet vi at $x_1\in[a, m]$. Da må ny $b$-verdi settes til $m$. Hvis vilkåret  ikke er oppfylt, er $x_1\in[m, b]$. Da må ny $a$-verdi settes til $m$.\\
 Linje 20: ''Gjetter'' at $x$ er midpunktet mellom nye $a$ og $b$. \os
 
 $f(x)=0$ når $\ln x =0$, altså når $x=1$.

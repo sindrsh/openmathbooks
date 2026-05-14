@@ -22,35 +22,36 @@ Finn det bestemte integralet \y{\int\limits_1^4 f(x) \, dx}.
 \op{ecos2x}
 \textbf{a)} Deriver funksjonen $ f(x)=e^{\cos^2 x} $.\os
 
-\textbf{b)} Finn det ubestemte integralet \[ \int -\sin (2x)\, e^{\cos^2 x}\,dx \]\vs\vs
+\textbf{b)} Finn det ubestemte integralet \[ \int -\sin (2x)\, e^{\cos^2 x}\deltax \]\vs\vs
 
 \op{visantider}
 Vis at\os
-\textbf{a)} $\displaystyle \int x(x+2)e^x \,dx = x^2 e^x + C $ \os
+\textbf{a)} $\displaystyle \int x(x+2)e^x \deltax = x^2 e^x + C $ \os
 
-\textbf{b)} $\displaystyle \int -e^{x^2+\cos x} (-2 x+\sin x)\,dx= e^{\cos x+x^2}+C  $
+\textbf{b)} $\displaystyle \int -e^{x^2+\cos x} (-2 x+\sin x)\deltax= e^{\cos x+x^2}+C  $
 
 \nes
 
 \op{intsopg}
 Finn integalene:\os
 \begin{tabular}{@{}l l l l}	
-\textbf{a)} $ \displaystyle \int \frac{3}{4 x} \,dx$ &\quad \textbf{b)} $ \displaystyle \int-\frac{7}{\cos^2 t}\,dt $ &\quad \textbf{c)} $ -4x^5 $ \\[20 pt]
-\textbf{d)}\ $\displaystyle \int \cos(\pi x) \,dx$ & \quad
-\textbf{e)} $\displaystyle \int 4e^{-4t} \,dt$ &\quad\textbf{f)} $ \displaystyle \int \left(2x^4\,dx - \frac{3}{x^{\frac{3}{2}}}\right) \,dx$ \\[20pt]
-\textbf{g)} $\displaystyle \int \sqrt{x^5}\,dx $
+\textbf{a)} $ \displaystyle \int \frac{3}{4 x} \deltax$ &\quad \textbf{b)} $ \displaystyle \int-\frac{7}{\cos^2 t}\,dt $ &\quad \textbf{c)} $ -4x^5 $ \\[20 pt]
+\textbf{d)}\ $\displaystyle \int \cos(\pi x) \deltax$ & \quad
+\textbf{e)} $\displaystyle \int 4e^{-4t} \,dt$ &\quad\textbf{f)} $ \displaystyle \int \left(2x^4\deltax - \frac{3}{x^{\frac{3}{2}}}\right) \deltax$ \\[20pt]
+\textbf{g)} $\displaystyle \int \sqrt{x^5}\deltax $
 \end{tabular} 
 \newpage
 \op{opgintbestmt}
 Regn ut de bestemte integralene.\os
 \abch{
-\item $\displaystyle \int_{-1}^{1} \left(4x^3-x\right)\,dx $
-\item  $\displaystyle \int_{0}^{\ln 2} e^{2x}\,dx $
+\item $\displaystyle \int_{-1}^{1} \left(4x^3-x\right)\deltax $
+\item  $\displaystyle \int_{0}^{\ln 2} e^{2x}\deltax $
+\item $\displaystyle \int_{0}^{1} 4x^2+3\deltax$
 }
 
 \op{avcos}
 Gjennomsnittet av en funksjon $ f(x) $ over et intervall $ [a, b] $ kan vi skrive som
-\[ \frac{1}{b-a}\int\limits_a^b f(x)\,dx \]
+\[ \frac{1}{b-a}\int\limits_a^b f(x)\deltax \]
 Gitt et vilkårlig tall $ c $, vis at gjennomsnittet av $f(x)=\cos x+k  $ over intervallet $ [c, c+2\pi] $ er lik $ k $. 
 
 \op{opgintviselmnt}
@@ -58,35 +59,72 @@ Bevis \eqref{intsinkx}-\eqref{intexpkx} ved å bruke integrasjon ved substutisjo
 
 \op{bytvaropg}
 Finn integralene:\os
+\abch{
+\item $\displaystyle \int xe^{x^2} \, dx  $ 
+\item $\displaystyle \int\limits_1^2 8xe^{2x^2-3}\deltax $ 
+\item $\displaystyle \int \tan x \, dx $ 
+} \os
+\abchs{4}{
+\item $ \displaystyle \int\limits_0^\frac{\pi}{3}\frac{\sin x}{\cos^3 x} \, dx $ \item $ \displaystyle \int \frac{4x+5}{2x^2 + 5x}\deltax $
+\item $ \displaystyle \int \frac{3x+2}{3x^2 + 4x+3}\deltax $
+} \os
+\abchs{8}{
+\item $\displaystyle \int 4x\sqrt{x^2+2}\deltax$
+\item $\displaystyle \int \sin^3 x \cos x \deltax $
+}
 
-\begin{tabular}{@{}l l l}	
-\textbf{a)} $\displaystyle \int xe^{x^2} \, dx  $ &\;\textbf{b)} $\displaystyle \int\limits_1^2 8xe^{2x^2-3}\,dx $ &\;\textbf{c)} $\displaystyle \int \tan x \, dx $ \\ \vspace{3pt} 
-\textbf{d)} $ \displaystyle \int\limits_0^\frac{\pi}{3}\frac{\sin x}{\cos^3 x} \, dx $ &\;\textbf{e)} $ \displaystyle \int \frac{4x+5}{2x^2 + 5x}\,dx $
-&\;\textbf{f)} $ \displaystyle \int \frac{3x+2}{3x^2 + 4x+3}\,dx $
-\end{tabular} 
+\op{eksmpr2v23d1opg7}
+Vi har at
+\[ \int \frac{1}{(1-x)^2}\deltax=\frac{1}{1-x}+C \]
+\abc{
+\item Vis dette ved derivasjon.
+\item Vis dette ved integrasjon.
+}
+
+\eksop{R2H23}{r2h23d1opg1}
+Regn ut integralet
+\[ \int_{-1}^{1}x^3+2x\deltax \]
+Hva forteller svaret deg?
 
 \op{trigint}
 Anvend to av de trigonometriske identitetene og bytte av variabel to ganger for å finne integralet
-\[ \int \sin (2x) e^{1-\cos^2 x}\,dx \]\vs
+\[ \int \sin (2x) e^{1-\cos^2 x}\deltax \]\vs
 
+
+\eksop{R2V24}{r2v24d1opg1}
+En funksjon $f$ er gitt ved
+\[ -x^3+3x \]
+\abc{
+\item Regn ut ingegralet
+\[ \int_{-1}^{0}f(x)\deltax \]
+\item Bestem arealet som er avgrenset av grafen til $f$, $x$-aksen og linjene $x=-1$ og $x=1$.
+}
 
 \op{delvisintopg}
 Finn det bestemte/ubestemte integralet:\os
+\abch{
+\item $\displaystyle \int (x-1)\cos x \, dx$
+\item $\displaystyle \int \sqrt{x}\ln x\deltax $ 
+\item $\displaystyle \int\limits_1^e  \frac{\ln x}{x^2} $ 
+}
+
+
+
 \begin{tabular}{@{}l l l}	
-	\textbf{a)} $\displaystyle \int (x-1)\cos x \, dx$&\quad	\textbf{b)} $\displaystyle \int \sqrt{x}\ln x\,dx $ &\quad\textbf{c)} $\displaystyle \int\limits_1^e  \frac{\ln x}{x^2} $ 
+	
 \end{tabular}
 
 \op{delbropsopg}
 Finn det bestemte/ubestemte integralet:\os
 
 \begin{tabular}{@{}l l l}	
-	\textbf{a)} $ \displaystyle \int\limits_4^5 \frac{13-4x}{x^2-5x+6}\,dx $	&\quad \textbf{b)} $ \displaystyle \int \frac{41 - 4 x}{(x - 5) (x + 2)}\, dx $ \\ \\
+	\textbf{a)} $ \displaystyle \int\limits_4^5 \frac{13-4x}{x^2-5x+6}\deltax $	&\quad \textbf{b)} $ \displaystyle \int \frac{41 - 4 x}{(x - 5) (x + 2)}\, dx $ \\ \\
 	\textbf{c)}$\displaystyle \int\limits \frac{x^2+9x-16}{(x-2)(x^2-1)} dx$  &\quad \textbf{d)} $ \displaystyle \int\frac{3 x^2 - 14 x + 10}{x^3 - 3 x^2 + 2 x} $
 \end{tabular}
 
 \op{delbrogpoldiv}
 Finn det ubestemte integralet:
-\[\int \frac{3 x^3 - 2 x^2 - 20 x + 2}{x^2-x-6}\,dx \]
+\[\int \frac{3 x^3 - 2 x^2 - 20 x + 2}{x^2-x-6}\deltax \]
 \textsl{Hint}: Bruk polynomdivisjon.
 
 \newpage
@@ -100,7 +138,7 @@ Relasjonen mellom to funksjoner $ f(x) $ og $ g(x) $ og en positiv konstant \\$ 
 \includegraphics[scale=0.9]{../fig/int6a}\quad
 \includegraphics[scale=0.9]{../fig/int6b}
 \end{figure}
-Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \,dx=\int\limits_a^b g\,dx -(b-a)k  \]
+Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \deltax=\int\limits_a^b g\deltax -(b-a)k  \]
 \textbf{b)} Bekreft likheten i oppgave a) ved integrasjon.
 
 \op{fogF}
@@ -129,31 +167,25 @@ Finn volumet av omdreiningslegemene til funksjonene på intervallet $ [0, 1] $:\
 \newpage
 \grubop{opgint2i}
 \abc{
-\item La $I=\int \frac{\ln x}{x}\,dx$ og $x>0$. Bruk delvis integrasjon til å vise at
+\item La $I=\int \frac{\ln x}{x}\deltax$ og $x>0$. Bruk delvis integrasjon til å vise at
 \[ I=(\ln x)^2-I \]
 \item Vis at 
 \[ \int e^x\cos x = \frac{1}{2}e^x(\cos x+\sin x)+C \]
 \item Vis at
-\[ \int \sin^2 x\,dx=\frac{1}{2}(x-\sin x \cos x)+C \]
+\[ \int \sin^2 x\deltax=\frac{1}{2}(x-\sin x \cos x)+C \]
 }
 
-\grubop{r2v23d1opg2}
-(R2V23D1)
+\grubeksop{r2v23d1opg2}{R2V23}
 \abc{
 \item Vis at hvis $ f(x)=\tan x $, så er $ f'(x)=1+\tan^2 x $.
 \item Regn ut
 \[ \int \frac{1+\tan^2 x}{\tan x}\, dx \]
 }
 
-\grubop{r2h23d1opg1}
-(R2H23D1)\os
-Regn ut integralet
-\[ \int_{-1}^{1}x^3+2x\,dx \]
-Hva forteller svaret deg?
 
 
-\grubop{r2h23d1opg2}
-(R2H23D1)\os
+
+\grubeksop{r2h23d1opg2}{R2H23D1}
 Figuren viser grafene til funksjonene $ f(x)=\cos x$ og $ g(x)=\sin x $.
 \fig{r2h23d1opg2}
 Bestem arealet til det fargede området.
@@ -174,7 +206,7 @@ Gitt en funksjon $ f(x) $ integrerbar på intervallet $ [a, b] $. Ta det for git
 \[ \lim_{n\to \infty}\sum\limits_{i=1}^n \left|P_{i+1}-P_i\right| \]
 For $ i,n\in\mathbb{N} $, hvor $ P_i =(x_i, f(x_i)) $, $ x_1=a $, $ x_n=b $, $ x_{i+1}-x_i=\Delta x $, og $ \lim\limits_{n\to\infty}\Delta x=0 $.
 Vis at vi da kan skrive
-\[ l=\int_{a}^{b} \sqrt{1+g^2}\,dx \]
+\[ l=\int_{a}^{b} \sqrt{1+g^2}\deltax \]
 hvor $ g(x)=f'(x) $.
 \fig{opgfunklen}
 
@@ -191,7 +223,7 @@ hvor $ g(x)=f'(x) $.
 
 \grubop{opgintxkvadmdef}
 Bruk definisjonen fra (\ref{bint}) til å vise at
-\[ \int\limits_a^b x^2 \,dx = \frac{1}{3}(b^3-a^3) \]
+\[ \int\limits_a^b x^2 \deltax = \frac{1}{3}(b^3-a^3) \]
 \begin{comment}
 	\textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
 \end{comment}
