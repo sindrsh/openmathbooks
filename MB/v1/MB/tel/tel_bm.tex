@@ -1,0 +1,286 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\newpage
+\section{Likhetstegnet, mengder og tallinjer}
+\index{tall}
+\subsection*{Likhetstegnet}
+Som navnet tilsier, viser \outl{likhetstegnet} \index{likhetstegnet} 
+%id{symeq}
+\sym{$ = $}
+%\id
+til at noe er likt. I hvilken grad og når man kan si at noe er likt er en filosofisk diskusjon, så i starten er vi prisgitt dette: \textsl{Hvilken likhet
+%id{symeq}
+\sym{$ = $}
+%\id
+sikter til må bli forstått ut fra konteksten tegnet blir brukt i}. Slik kan vi studere noen grunnleggende egenskaper for tallene våre, og så komme tilbake til mer\\ presise betydninger av tegnet. \regv
+\spr{
+Vanlige måter å si 
+%id{symeq}
+\sym{$ = $}
+%\id
+på er
+\begin{itemize}
+	\item ''er lik'' \\
+	\item ''er det samme som''\\
+	\item ''tilsvarer''
+\end{itemize}
+}
+\subsection*{Mengder og tallinjer}
+I denne boka skal vi bruke to måter å representere tallene på; tall som en \textsl{mengde} og tall som en \textsl{plassering på en linje}. Alle representasjoner av tall tar utgangspunkt i forståelsen av tallene 0 og 1.
+\newpage
+%span{numbers_as_amounts}
+\subsubsection*{Tall som mengde}
+	Når vi snakker om en mengde, vil tallet 0 bety\!\!
+	%id{0interpretations}
+	\footnote{I \refkap{Rekneartane} 
+	skal vi se at det også er andre tolkninger av 0.} 
+	%\id
+	''ingenting''. En figur der det ikke er noe til stede vil slik være det samme som 0:
+	%id{equalszero}
+	\[ =0 \]
+	%\id
+	1 vil vi tegne som en rute:
+	\fig{rut1}
+Andre tall vil da være definert ut fra hvor mange enerruter ('enere') vi har: \vs
+	\fig{rut2}
+	\fig{rut3}	
+%\span
+%span{numbers_on_numberline}
+\subsubsection*{Tall som plassering på ei linje}
+	Når vi plasserer tall på ei linje, vil 0 være utgangspunket vårt:
+	\fig{lin0a}
+	Så plasserer vi 1 en viss lengde til høyre for 0:
+	\fig{lin0b}
+	Andre tall vil da være definert ut fra hvor mange enerlengder ('enere') vi er unna 0:
+	\fig{lin1}
+%\span
+\subsection*{Positive heltall}
+Vi skal straks se at tall ikke nødvendigvis trenger å være \textsl{hele} antall enere, men tallene som \textsl{er} det har et eget navn:\regv
+
+\reg[Positive heltall]{
+Tall som er et helt antall enere kalles 
+%id{posintoutl}
+\outl{positive\footnotemark heltall}\index{positive heltall}.
+%\id
+De positive heltallene er
+%id{posint}
+\[ 1, 2, 3, 4, 5 \text{ og så videre.} \]
+%\id
+Positive heltall blir også kalt \outl{naturlige tal}\index{tall!naturlige}.
+}
+\info{Hva med 0?}{
+Noen forfattere inkluderer også 0 i begrepet naturlige tal. I noen sammenhenger vil dette lønne seg, i andre ikke.
+}
+%id{posinterpre}
+\footnotetext{Hva ordet \textit{positiv} betyr skal vi se i \refkap{Negtal}.}
+%\id
+\subsubsection{Ulikhetstegn}
+Vi har også symboler som viser at verdier \textsl{ikke} er like. Noen ganger er det nok å si at de ikke er like, andre ganger er det også behov for å si hvilken av verdiene som er størst (og minst).
+\spr{ \vs
+	%id{unequals}
+	\begin{center}
+		\renewcommand{\arraystretch}{1.2}
+		\begin{tabular}{@{}cp{0.4cm}l}
+			$\neq$&& ''er ikke like''\\
+			$ < $ && ''er mindre enn'' \\
+			$ > $ && ''er større enn'' \\
+			$ \leq $ && ''er mindre enn eller lik'' \\
+			$ \geq $ && ''er større enn eller lik'' 
+		\end{tabular}
+		\renewcommand{\arraystretch}{1}
+	\end{center}
+	%\id
+} 
+\newpage
+\eks{ \vsb
+%id{unequalexample}
+\alg{
+0 &\neq 1 \vn
+7&<9 \vn
+5&>2 \vn
+\text{positive partall}&\geq 2\\
+3&\leq \text{positive oddetall}
+}
+%\id
+}
+\info{Leseretning}{
+Strengt tatt har vi bare tre symboler for ulikhet, nemlig 
+%id{neq}
+\sym{$\neq$}
+%\id
+\!\!, 
+%id{<}
+\sym{$<$}
+%\id
+ og 
+%id{leq} 
+\sym{$\leq$}
+%\id
+\!\!. De to sistnevnte symbolene krever leseretning fra venstre mot høyre. Ulikheten
+%id{3<5}
+${3<5}$ 
+%\id
+leser vi som ''3 er mindre enn 5''. Men vi kan også si at 
+%id{<}
+\sym{$<$}
+%\id
+er et symbol med retning, hvor den spisse enden skal peke mot den minste verdien. Dette betyr at vi kan lese 
+%id{3<5}
+${3<5}$
+%\id
+fra høyre som ''5 er større enn 3''. Det at vi i tillegg bruker symbolene 
+%id{>}
+\sym{$>$} 
+%\id
+og 
+%id{geq}
+\sym{$\geq$}
+%\id
+er et resultat av at vi noen ganger ønsker å si ''større enn'' også når vi leser fra venstre.
+}
+
+\newpage
+%span{integers_larger_than_9}
+\section{Tall, siffer og verdi \label{tallsiff}}
+Tallene våre er bygd opp av \outl{sifrene}\index{siffer} 
+0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og \textsl{plasseringen} av dem. Sifrene og deres plassering definerer
+%id{10pos}
+\footnote{Etter hvert skal vi også se at \textit{fortegn} er med på å definere verdien til tallet (se \refkap{Negtal}).}
+%\id
+\outl{verdien} \index{verdi} til tallet.
+\subsection*{Heltall større enn 9}
+La oss som et eksempel skrive tallet 'fjorten' ved hjelp av sifrene våre.
+\fig{tel}
+En gruppe med ti 'enere' kaller vi en 'tier'. Av 'fjorten' kan vi lage 1 'tier', og i tillegg har vi da 4 'enere'. Da skriver vi 'fjorten' slik:
+%id{14}
+\[ \text{fjorten}=14 \]
+%\id
+\amounts{\fig{tel2_bm}} 
+\numrline{\fig{tel2t}}
+\vsk
+%/span
+\newpage
+\subsection*{Desimaltall}
+I mange tilfeller har vi ikke et helt antall enere, og da vil det være behov for å dele 1 inn i mindre biter. La oss starte med å tegne en\\ ener\!\!
+%id{defof1}
+\footnote{Her definerer vi enerlengden større enn tidligere.}:
+%\id
+\amounts{\fig{maal} \vs} 
+\numrline{\fig{des1}}
+Så deler vi eneren vår inn i 10 mindre biter:
+\amounts{\fig{maal1} \vs} \vs
+\numrline{\fig{des1a}}
+Siden vi har delt 1 inn i 10 biter, kaller vi en slik bit for en 'tidel':
+\amounts{\fig{maal1a_bm} \vs} 
+\numrline{\fig{des1b_bm} \vs}
+\begin{comment}
+\eks{\vs
+	\fig{maal2}
+	\fig{des2}
+}\vsk
+\end{comment}
+Tideler skriver vi ved hjelp av  \outl{desimaltegnet} \sym{,}  :
+\amounts{\fig{maal1b} \vs} 
+\numrline{\fig{des1c} \vs}
+\eks[]{\vs 
+	\fig{maal2a}
+	\fig{des3}
+}\regv
+\spr{
+På engelsk bruker man punktum \sym{.} som desimaltegn:
+%id{dotcomma}
+\alg{
+	3,5&\quad(norsk) \\
+	3.5&\quad (english)
+}
+%\id
+Når vi kombinerer matematiske symboler\!\!
+%id{digits}
+\footnote{Sifrene regnes som matematiske symboler.}
+%\id
+\!\!, får vi det vi kaller et matematisk \outl{uttrykk}.
+}
+
+\newpage
+%span{the_decimal_system}
+\subsection*{Titallsystemet}
+Vi har nå sett hvordan vi kan uttrykke verdien til tall ved å plassere \\siffer etter antall tiere, enere og tideler, og det stopper selvsagt ikke der: \regv
+
+\reg[Titallsystemet \label{titalsys}]{
+Verdien til et tall er gitt av sifrene 0, 1, 2, 3, 4, 5, 6, 7, 8 og 9, og plasseringen av dem. Med sifferet som viser enere som utgangspunkt vil
+\begin{itemize}
+	\item siffer til venstre (i rekkefølge) vise antall tiere, \\hundrere, tusener og så videre.
+	\item siffer til høyre (i rekkefølge) vise antall tideler, \\hundredeler, tusendeler og så videre.
+\end{itemize}
+}
+\eks[1]{\vs 
+	\fig{maal3_bm}
+}
+\eks[2]{ \vs \vs
+\fig{titalsys_bm}
+}
+%span
+\newpage
+\reg[Partall og oddetall \label{parogodd}]{
+Heltall som har 0, 2, 4, 6 eller 8 på enerplassen kalles \outl{partall}\index{partall}.\vsk
+
+Heltall som har 1, 3, 5, 7 eller 9 på enerplassen kalles \outl{oddetall}\index{oddetall}.
+}
+\eks{
+De ti første (positive) partallene er
+%id{even2to18}
+\[ \text{0, 2, 4, 6, 8, 10, 12, 14, 16, og 18} \]
+%\id
+De ti første (positive) oddetallene er
+%id{odd1to19}
+\[ \text{1, 3, 5, 7, 9, 11, 13, 15, 17, og 19} \]
+%\id
+}
+
+\newpage
+\section{Koordinatsystem \label{Koord}}
+I mange tilfeller er det nyttig å bruke to tallinjer samtidig. Dette kaller vi et \outl{koordinatsystem}\index{koordinatsystem}\!\!
+%id{coord}
+\footnote{Strengt tatt finnes det mange typer koordinatsystem, men i denne boka bruker vi ordet om bare én sort, nemlig det \outl{kartesiske koordinatsystem}. Det er oppkalt etter den franske filosofen og matematikeren René Descartes.}
+%\id
+\!\!. Vi plasserer da én tallinje (en akse) som går \textsl{horisontalt} og én som går \textsl{vertikalt}. En plassering i et koordinatsystem kaller vi et \outl{punkt}\index{punkt}. 
+\regdef[Koordinatsystem]{Et punkt skriver vi som to tall inni en parentes. De to tallene blir kalt \outl{førstekoordinaten} og \outl{andrekoordinaten} til\\ punktet. \os
+	
+Førstekoordinaten viser punktets plassering langs horisontal-aksen.\os
+
+Andrekoordinaten viser punktets plassering langs vertikalaksen.
+}
+\eks[1]{
+I figuren ser vi punktene 
+%id{p23}
+$ (2, 3) $
+%\id
+\!\!,
+%id{p51}
+$ (5, 1) $
+%\id
+og 
+%id{p00}
+$ (0, 0) $
+%\id
+\!\!.
+\fig{kord}
+}
+\spr{
+Punktet der aksene møtes, altså
+%id{p00comma}
+$ (0, 0) $
+%\id
+\!\!, kalles \outl{origo}\index{origo}.	
+}
+\newpage
+\info{Merk}{
+Størrelsen av en enerlengde kan være forskjellige på de to\\ aksene.
+}
+\eks[2]{
+\fig{kord2}
+}
+\end{document}

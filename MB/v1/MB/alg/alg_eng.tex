@@ -1,0 +1,435 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\section{\algintro}
+Simply said, \outl{algebra}\index{algebra} is mathematics where letters represent numbers. This makes it easier working with \textsl{general} cases. For example, $ 3\cdot 2=2\cdot3 $ and $ {6\cdot7=7\cdot6} $ but these are only two of the infinitely many examples of the commutative property of multiplication! One of the aims of algebra is giving \textsl{one} example that explains \textsl{all} cases, and since our digits (0-9) are inevitably connected to specific numbers, we apply letters to reach this target. \vsk
+
+The value of the numbers represented by letters will often vary, in that case we call the letter-numbers \textit{variables}\index{variable}. If letter-numbers on the other hand have a specific value, they are called \textit{constants}\index{constant}.
+
+\vsk
+
+In \hrs{Del1}{Part}, we studied calculations through examples with specific numbers, however, most of these rules are \textsl{general}; they are valid for all numbers. On page \pageref{regstart}\,-\,\pageref{regslutt}, many of these rules are reproduced in a general form. A good way of getting acquainted with algebra is comparing the rules here presented by the way they are expressed in\footnote{The number of the rules as found in \hrs{Del1}{Part} are written inside parentheses.} \hrs{Del1}{Part}. \vsk
+
+\regv
+\label{regstart}
+\reg[\adkom\;(\ref{adkom}) \label{adkomalg}]{\vs
+\[ a+ b =b+a \]
+}
+\eks{ \vsb
+\[ 7+ 5=5+7 \]
+} \vsk \vsk
+
+\reg[\gangkom\;(\ref{gangkom})]{\vs
+	\[ a\cdot b =b\cdot a \]
+}
+\eks[1]{ \vsb
+	\[ 9\cdot 8=8\cdot9 \]
+}
+\eks[2]{ \vsb
+\[  8\cdot a= a\cdot 8  \]
+}
+\newpage
+\info{Multiplication involving letters}{When multiplication involves letters, it is common to omit the symbol of multiplication. If a specific number and a letter are multiplied together, the specific number is written first. For example,
+	\[ a\cdot b= ab \]
+	and
+	\[ a\cdot 8 =8a \]
+We also write
+\[ 1\cdot a=a \]
+In addition, it is common to omit the symbol of multiplication when an expression with parentheses is involved:
+\[ 
+3\cdot(a+b)=3(a+b) \]
+}
+\vsk 
+
+\reg[\brdef\;(\ref{brdef})]{
+\[ a:b=\frac{a}{b} \]
+}
+\eks[]{ \vs
+\[a:2= \frac{a}{2} \]
+}
+ \vsk 
+
+\reg[\brtbr\; (\ref{brtbr})]{
+\[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
+}
+\eks[1]{ \vs
+\algv{
+\frac{2}{11}\cdot \frac{13}{21}&=\frac{2\cdot 13}{11\cdot21} =\frac{26}{231}
+}
+}
+\eks[2]{ \vs
+	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
+}
+\newpage
+\reg[\brdelmbr\;(\ref{delmbr})]{ 
+\[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
+}
+\eks[1]{ \vs
+\[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
+}
+\eks[2]{ \vsb \vs
+\alg{
+\frac{a}{13}:\frac{b}{3}&=\frac{a}{13}\cdot \frac{3}{b} \br
+&=\frac{3a}{13b}
+}
+} \vsk \vsk
+
+\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{ \vs
+\[ (a+b)c = a c + b c \]
+} 
+\eks[1]{ \vs
+\[ (2+a)b =2b+ab \]
+}
+\eks[2]{\vs
+\[ a(5b-3)=5ab-3a \]
+} 
+\vsk \vsk
+\reg[\gangmnegto\;(\ref{gangmnegto})]{
+\[ a\cdot(-b)=-(a\cdot b) \]
+}
+\eks[1]{ \vsb \vs
+\alg{
+3\cdot(-4)&=-(3\cdot 4) \\
+&= 	-12
+}
+}
+\eks[2]{ \vsb
+	\algv{
+	(-a)\cdot7&=-(a\cdot 7)\\
+	&=-7a 
+}
+} \vsk \vsk
+
+\reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{
+\[ (-a)\cdot(-b)=a\cdot b \]
+}
+\eks[1]{ \vs \vs
+\alg{
+(-2)\cdot(-8)&=2\cdot 8 \\
+&= 	16
+}	
+}
+\eks[2]{ \vs 
+\[ (-a)\cdot(-15)=15a \]
+}
+\label{regslutt}
+\vsk \vsk
+
+\newpage
+\info{Extensions of the rules}{
+One of the strengths of algebra is that we can express compact rules which are easily extended to apply for other cases. Let's, as an example, find another expression of
+	\[ (a+b+c)d \]
+\rref{gangpara} does not directly imply how to calculate between the expression inside the parentheses and $ d $, but there is no wrongdoing in defining $ a+b $ as $ k $:
+\[ a+b=k \]
+Then
+\[ (a+b+c)d=(k+c)d \]
+Now, by \rref{gangpara}, we have
+\[ (k+c)d = kd+cd \]
+Inserting the expression for $ k $, we have 
+\[ kd+cd=(a+b)d+cd \]
+By applying \rref{gangpara} once more we can write
+\[ (a+b)d+cd=ad+bc+cd \]
+Then
+\[ (a+b+c)d=ad+bc+cd \]
+\it Notice! This example is \textsl{not} meant to show how to handle expressions not directly covered by \rref{adkomalg}\,-\,\rref{gangmnegtrea}, but to emphasize why it's always sufficient to write rules with the least amount of terms, factors etc. Usually you apply extension of the rules without even thinking about it, and surely not in such meticulous manner as here provided.
+}
+
+
+\section{\pot \label{Potensar}}
+\fig{pot_eng}
+A power is composed by a \textit{base}\index{base} and an \textit{exponent}\index{exponent}. For example, $2^{3}$ is a power with base 2 and
+exponent 3. An exponent which is a positive integer indicates the amount of instances of the base to be multiplied together, that is
+\[ 2^3 =2\cdot2\cdot2 \]
+
+\reg[Powers]{
+	$ {a^n} $ is a power with base $ a $ and exponent $ n $. 
+	\vsk
+	
+	If $ n $ is a natural number, $ a^n $ corresponds to $ n $ instances of $ a $ multiplied together. \vsk
+	
+	\mer $ a^1=a $
+} \regv
+
+\eks[1]{\vs \vs
+	\algv{
+		5^3 &= 5\cdot5\cdot5 \\
+		&= 125
+	}
+}\regv
+
+\eks[2]{\vs \vs
+	\[ c^4 = c\cdot c \cdot c \cdot c \]
+}\regv
+
+\eks[3]{ \vs \vs
+	\algv{
+		(-7)^2 &= (-7)\cdot(-7) \\
+		&= 49
+	}
+}
+\newpage
+\spr{
+	Common ways of saying $ 2^3 $ are\footnote{Attention! The examples illustrate a paradox in the English language; \textit{power} is also a synonym for \textit{exponent}.}
+	\begin{itemize}
+		\item ''2 (raised) to the power of 3''
+		\item ''2 to the third power''
+	\end{itemize}
+	
+	In computer programming, the symbol \sym{\^{}} or the symbols \sym{**} is usually written between the base and the exponent. \vsk
+	
+	Raising a number to the power of 2 is called ''squaring'' the number.
+}\regv
+
+\info{\note}{
+	The next pages declares rules concerning powers with corresponding explanations. Even though one wish to have these explanations as general as possible, we choose to use, mostly, specific numbers as exponents . Using variables as exponents would lead to less reader-friendly expressions, and it is our claim that the general cases are well illustrated by the specific cases. 
+} \vsk \vsk
+
+\reg[\potgang \label{potgang}]{
+	\begin{equation}
+		a^{m}\cdot a^{n}=a^{m+n}	
+	\end{equation}
+}
+\eks[1]{\vs \vs
+	\algv{3^{5}\cdot3^{2}&=3^{5+2}\\&=3^{7}}
+}
+\eks[2]{\vs \vs
+	\algv{
+		b^4\cdot b^{11}&= b^{3+11}\\
+		&=b^{14}
+	}
+}
+\eks[3]{ \vs \vs
+	\algv{
+		a^5\cdot a^{-7} &= a^{5+(-7)} \\
+		&=a^{5-7} \\
+		&= a^{-2} 
+	}
+	(See \rref{potneg} regarding how powers with negative exponents can be interpreted.)	
+} 
+
+\fork{\ref{potgang} \potgang}{
+	Let's study the case 
+	\[ a^{2}\cdot a^{3} \]
+	We have
+	\algv{
+		a^{2} & =2\cdot2\vn
+		a^{3} & =2\cdot2\cdot2
+	}
+	Hence we can write 
+	\begin{align*}
+		a^{2}\cdot a^{3} & =\overbrace{a \cdot a}^{a^{2}}\cdot\overbrace{a\cdot a\cdot a}^{a^{3}}\\
+		& =a^{5}
+	\end{align*}
+} \vsk \vsk
+
+\reg[\potdivpot \label{potdivpot}]{\vs
+	\[ \frac{a^{m}}{a^{n}}=a^{m-n} \] }
+
+\eks[1]{\vspace{-20 pt}
+	\[
+	\frac{3^{5}}{3^{2}}=3^{5-2}=3^{3}
+	\]
+} 
+\eks[2]{ \vs \vsb
+	\alg{
+		\frac{2^{4}\cdot a^{7}}{a^{6}\cdot2^{2}}&=2^{4-2}\cdot a^{7-6}\\
+		&=2^{2}a \\
+		&=4a
+	}
+}
+\newpage
+\fork{\ref{potdivpot} \potdivpot}{
+	Let's examine the fraction $  \frac{a^{5}}{a^{2}}  $.
+	Expanding the powers, we get
+	\begin{align*}
+		\frac{a^{5}}{a^{2}} & =\frac{a\cdot a\cdot a\cdot a\cdot a}{a\cdot a}\br
+		& =\frac{\bcancel{a}\cdot\bcancel{a}\cdot a\cdot a\cdot a}{\bcancel{a}\cdot\bcancel{a}}\\
+		& =a\cdot a\cdot a\\
+		& =a^{3}
+	\end{align*}
+	The above calculations are equivalent to writing
+	\begin{align*}
+		\frac{a^{5}}{a^{2}} & =a^{5-2}\\
+		& =a^{3}
+	\end{align*}
+} \vsk \vsk
+
+\reg[\potanull \label{pota0}]{\vsb
+	\[
+	a^{0}=1
+	\]
+}
+\eks[1]{\vs \vs\[
+	1000^{0}=1
+	\]}
+\eks[2]{\vs \vs\[
+	(-b)^{0}=1
+	\]}
+\fork{\ref{pota0} \potanull}{
+	A number divided by itself always equals 1, therefore
+	\[
+	\frac{a^{n}}{a^{n}}=1
+	\]
+	From this, and \rref{potdivpot}, it follows that
+	\alg{
+		1&=\frac{a^{n}}{a^{n}}
+		\\& =a^{n-n}\\
+		& =a^{0}
+	}
+} \vsk \vsk
+
+\reg[\potneg \label{potneg}]{
+	\[ a^{-n}=\frac{1}{a^n} \]
+}
+\eks[1]{ \vs \vs
+	\alg{
+		a^{-8}&=\frac{1}{a^8}  
+	}	
+}
+\eks[2]{ \vs \vs
+	\alg{
+		(-4)^{-3}&=\frac{1}{(-4)^3} 
+		=-\frac{1}{64}
+	}
+}
+\fork{\ref{potneg} \potneg}{
+	By \rref{pota0}, we have $ a^0=1 $. Thus
+	\alg{
+		\frac{1}{a^n}=\frac{a^0}{a^n}
+	}
+	By \rref{potdivpot}, we obtain
+	\algv{
+		\frac{a^0}{a^n}&=a^{0-n} \\
+		&=a^{-n}
+	}
+} \vsk \vsk
+
+
+
+\reg[\potbr \label{potbr}]{\vs
+	\begin{equation}\label{pbrg}
+		\left(\frac{a}{b}\right)^{m}=\frac{a^{m}}{b^{m}}
+\end{equation}} 
+\eks[1]{ \vs \vs
+	\alg{
+		\left(\frac{3}{4}\right)^2=\frac{3^2}{4^2} 
+		=\frac{9}{16}
+	}
+}
+\eks[2]{ \vs \vs
+	\alg{
+		\left(\frac{a}{7}\right)^3=\frac{a^3}{7^3} 
+		=\frac{a^3}{343}
+	}
+}
+\newpage
+\fork{\ref{potbr} \potbr}{
+	Let's study
+	\[ \left(\frac{a}{b}\right)^3 \]
+	We have
+	\begin{align*}
+		\left(\frac{a}{b}\right)^3 	&=\frac{a}{b}\cdot \frac{a}{b}\cdot \frac{a}{b}\br
+		& =\frac{a\cdot a\cdot a}{b\cdot b\cdot b}\br
+		& =\frac{a^{3}}{b^{3}}
+	\end{align*}
+}\vsk \vsk
+
+\reg[\faktgr \label{faktgr}]{
+	\begin{equation}\label{key}
+		\left(ab\right)^{m}=a^{m}b^{m}
+	\end{equation}
+}
+\eks[1]{ \vs \vs \vs
+	\alg{
+		(3a)^5&=3^5a^5 \\
+		&=243a^5 
+	}	
+}
+\eks[2]{\vs\vs
+	\[
+	(ab)^{4}=a^{4}b^{4}
+	\]
+}
+\fork{\ref{faktgr} \faktgr}{
+	Let's use ${(a\cdot b)^{3}}$ as an example. We have
+	\alg{
+		(a\cdot b)^{3}&=(a\cdot b)\cdot(a\cdot b)\cdot(a\cdot b) \\
+		&=a\cdot a\cdot a \cdot b \cdot b \cdot b \\
+		&=a^3b^3
+	}
+}\vsk \vsk
+
+\newpage
+\reg[\potsomgrunn \label{potsomgrunn}]{\vs
+	\begin{equation}
+		\left(a^{m}\right)^{n}=a^{m\cdot n}
+\end{equation}}
+\eks[1]{ \vs \vs
+	\alg{
+		\left(c^4\right)^5&=c^{4\cdot5}\\
+		&=c^{20}	
+	}	
+}
+\eks[2]{ \vs \vs 
+	\alg{
+		\left(3^\frac{5}{4}\right)^8&=3^{\frac{5}{4}\cdot8} \\
+		&=3^{10}
+	}	
+}
+\fork{\ref{potsomgrunn} \potsomgrunn}{
+	Let's use $\left(a^{3}\right)^{4}$ as an example. We have
+	\begin{align*}
+		\left(a^{3}\right)^{4} & =a^{3}\cdot a^{3}\cdot a^{3}\cdot a^{3}
+	\end{align*}
+	
+	
+	By \rref{potgang}, we get
+	\alg{
+		a^{3}\cdot a^{3}\cdot a^{3}\cdot a^{3} & =a^{3+3+3+3}\\
+		& =a^{3\cdot4}\\
+		&=a^{12}
+	}	
+}
+
+\newpage
+\reg[\textit{n}-root]{ \vs
+	\[ a^\frac{1}{n}=\sqrt[n]{a} \]
+	The symbol \sym{$ \sqrt{\phantom{a}} $} is called the \textit{radical sign}\index{radical sign}. In the case of an exponent equal to $ \frac{1}{2} $, it is common to omit 2 from the radical:
+	\[ a^\frac{1}{2}=\sqrt{a} \]
+}
+\eks{
+	By \rref{potsomgrunn}, we have
+	\alg{
+		\left(a^b\right)^\frac{1}{b}&=a^{b\cdot \frac{1}{b}} \\
+		&=a	
+	}
+	For example is	
+	\algv{
+		9^\frac{1}{2}=\sqrt{9}=3 &\text{, since } 3^2 =9 \vn
+		125^\frac{1}{3}=\sqrt[3]{125}=5 &\text{, since } 5^3 =125 \vn	
+		16^\frac{1}{4}=\sqrt[4]{16}=2 &\text{, since } 2^4 =16
+	}	
+}
+\spr{
+	$\sqrt{9} $ is called '' the square (the 2nd) root of 9'' \vsk
+	
+	$\sqrt[3]{8} $ is called ''the cube (the 3th) root of 8'' \vsk
+}
+\newpage
+\section{\irrasj}
+\reg[Irrational numbers]{
+	A number which is \textsl{not} a rational number, is an irrational number\index{number!irrational}\footnotemark.\vsk
+	
+	The value of an irrational number are decimal numbers with infinite digits in a non-repeating manner.
+}
+\footnotetext{Strictly speaking, irrational numbers are all \textit{real} numbers which are not rational numbers. But to explain what \textit{real} numbers are, we have to mention \textit{imaginary} numbers, and this we choose not to do in this book. }
+\eks[1]{
+	$ \sqrt{2} $ is an irrational number.
+	\[ \sqrt{2}=1.414213562373... \]
+}
+
+\end{document}
+
+

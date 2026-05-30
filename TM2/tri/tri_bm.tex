@@ -539,10 +539,7 @@ Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktore
 	\end{equation}
 	hvor $ n\in \mathbb{Z} $.
 }
-\newpage
-\outl{Faseforskyvningen} $\phi$ til en cosinusfunksjon $g(x)=a \cos(kx+c)+d$ er funksjonens horisontale forskyvning relativ til funskjonen $f(x)=a\cos(kx)+d$.
-\figc{cosshift}{Grafene til $f$ og $g$ over en periode.}. Ved å skrive
-\[ g(x)=a\cos\left(k\left(x+\frac{c}{k}\right)\right)+d \]
+
 
 \newpage
 \fork{\ref{cosfunk} \cosfunk}{
@@ -711,6 +708,33 @@ Av kjerneregelen og produktregelen ved derivasjon (se \tmen) har vi at
 	&= \frac{1}{\cos^2 x}
 }
 }
+
+\newpage
+\subsection*{Faseforskyvning}
+Gitt de to cosinusfunksjonene 
+\[ f_1(x)=|a_1|\cos(kx+c_1)+d_1\quad,\quad f_2(x)=|a_2|\cos(kx+c_2)+d_2 \]
+Vi kan si at punktene $(q_1, f_1(q_1))$ og $(q_2, f_2(q_2))$ er \textsl{samsvarende} hvis kjernene til $f_1$ og $f_2$ har lik verdi for henholdsvis $x=q_1$ og $x=q_2$. I figuren under er horisontalavstanden mellom to samsvarende punkt forskjellig fra 0. Da sier vi at $f_1$ og $f_2$ er \outl{faseforskjøvet} i forhold til hverandre. Målet på hvor mye $f_2$ er faseforskjøvet i forhold til $f_1$, er differansen mellom $q_2$ og $q_1$. Da punktene er samsvarende, vet vi at
+\begin{align*}
+	k(q_1+c_1)&=k(q_2+c_2) \\
+	q_2-q_1&=\frac{c_1-c_2}{k}
+\end{align*}
+\fig{cosshiftd}
+
+\reg[Faseforskyvning]{
+Gitt funksjonene
+\[ f_1(x)=|a_1|\,\text{tri}(kx+c_1)+d_1\quad,\quad f_2(x)=|a_2|\,\text{tri}(kx+c_2)+d_2 \]
+hvor 'tri' er 'cos', 'sin' eller 'tan'. Faseforskyvningen $\phi$ til $f_2$ i forhold til $f_1$ er da gitt ved
+\begin{equation}
+	\phi = \frac{c_1-c_2}{k}
+\end{equation}
+}
+\spr{
+Med uttrykket ''faseforskyvningen til $f_2$'' er det underforstått at det er snakk om faseforskyvningen til $f_2$ i forhold til $f_1$ hvor $c_1=0$.
+}
+
+
+
+
 \newpage
 \tsec{Forklaringer}
 \fork{\ref{trid} \trid}{{\boldmath $ \cos(-x)=\cos x$ \textbf{og} $ \sin(-x)=-\sin x $} \bs

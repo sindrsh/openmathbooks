@@ -1,0 +1,48 @@
+\input{../doc}
+\input{../preamb}
+
+\begin{document}
+	
+\section*{Comment (for the particularly interested) \label{Kommentar1}}
+Mathematics is \textit{axiomatically} founded. This means we declare\footnote{Preferably, as few as possible.} some propositions to be true, and these are called \textit{axioms} or \textit{postulates}. For the subject of calculations we have 12 axioms\footnote{The number can slightly vary, depending on how the axioms are expressed.}, but in this book we have confined ourselves to explicitly mention the following 6:
+\regv 
+
+\begin{tcolorbox}[boxrule=0.3 mm,arc=0mm,colback=blue!5] {\large \textbf{Axioms} \vspace{5 pt}}\newline
+For the numbers $ a $, $ b $ and $ c $ we have
+\alg{
+a+(b+c)&=(a+b)+c \tag{A1} \label{a1}\\
+a+b&=b+a \tag{A2}\label{a2}\\
+a(bc)&=(ab)c \tag{A3}\label{a3}\\
+ab&=ba \tag{A4}\label{a4}\\
+a(b+c)&=ab+ac \tag{A5} \label{a5}\\
+a\cdot\frac{1}{a}&=1 &&(a\neq0) \tag{A6} \label{a6}
+} 
+\rule{1\linewidth}{0.75bp}
+\begin{center}
+	\begin{tabular}{rl}
+		\eqref{a1} &Associative law for addition\\
+		\eqref{a2} & Commutative law for addition \\	
+		\eqref{a3} & Associative law for multiplication \\
+		\eqref{a4} & Commutative law for multiplication \\		
+		\eqref{a5} & Distributive law\\	
+		\eqref{a6} & Existence of a multiplicative identity
+	\end{tabular}
+\end{center}
+\end{tcolorbox}
+\vsk
+By applying axioms, we can derive more complex contexts which we call \textit{theorems}. In this book we chose to let \textsl{rules} be the collective name for definitions, theorems and axioms. This is because alle three, in practice, draws up guidelines (rules) inside the mathematical system in which we wish to operate.\vsk
+\newpage
+In \hrs{Del1}{Part} we have tried to present the \textsl{motivation} behind the axioms, because (obviously) they are not randomly selected. The train of thoughts that leads us to them is the following:
+\begin{enumerate}
+	\item Vi define positive numbers as representations of either an amount or a placement on a number line.
+	\item We define what addition, subtraction, multiplication and division entail for positive integers (and 0).
+	\item From the marks above, it's as good as self-evident that \eqref{a1}\,-\,\eqref{a6} is valid for all positive integers.
+	\item We define also fractions as representations of either an amount or a placement on a number line. What the elementary operations entail for fractions rests upon what is valid for the positive integers.
+	\item From the remarks above, we conclude that \eqref{a1}\,-\,\eqref{a6} is valid for all rational numbers.
+	\item We introduce negative numbers and an extended interpretation of addition and subtraction. This in turn leads to the interpretations of multiplication and division involving negative numbers.
+	\item \eqref{a1}\,-\,\eqref{a6} is still valid after the introduction of negative integers. Deriving that they are also valid for negative rational numbers is a formality (omitted in the book).
+	\item We can never write the value of an irrational number exact, but it can be approximated by a rational number\footnote{For example, we can write $ \sqrt{2}=1.414213562373...\approx\frac{1414213562373}{1000000000000} $}. Therefore, all calculations involving irrational umbers is, in practice, calculations involving rational numbers, and in this way we can conclude that\footnote{\textsl{Attention!} This explanation is good enough for the aim of this book but is a rather extreme simplification. Irrational numbers are a very complex subject, in fact, many books presenting advanced mathematics utilize several chapters to cover the subject in full depth .} \eqref{a1}\,-\,\eqref{a6} is also valid for irrational numbers.
+\end{enumerate}
+A similar train of thoughts can be applied concerning the power-rules found in \refsec{Potensar}. 
+\end{document}
+

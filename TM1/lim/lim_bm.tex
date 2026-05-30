@@ -22,25 +22,26 @@ x\to a &\quad  \text{''}x \text{ går mot } a \text{ (fra både høyre og venstr
 \info{\note}{
 	\sym{$ x\to a$} omfatter de to tilfellene \sym{$ x\to a^+ $} og \sym{$ x\to a^- $}. Ofte vil disse være så like at vi kan behandle \sym{$ x\to a $} som ett tilfelle.
 }
+\newpage
 \spr{
 Å gå mot en verdi fra høyre/venstre kalles også å gå mot en verdi ovenfra/nedenfra. \os
 
 Vi kan også si at $\lim\limits_{x\to a} f(x)$ er $\text{''}\text{verdien }f\text{ går mot når }x \text{ går mot }a\text{''}.$ \os
 
-Hvis $\lim\limits_{x\to a} f(x)$ er et endelig tall, sier vi at \outl{grensen eksisterer}. Hvis den \textsl{ikke} er et endelig tall, sier vi at \outl{grensen ikke eksisterer}. Krav for at en grense skal eksistere er altså at $\lim\limits_{x\to a}f(x)\neq \pm \infty$ og at $\lim\limits_{x\to a^+} f(x)=\lim\limits_{x\to a^-}f(x)$. \os
+Både \sym{$\lim\limits_{x\to a^-}$} og \sym{$\lim\limits_{x\to a^+}$} kalles \outl{ensidige grenser}, mens \sym{$\lim\limits_{x\to a}$} kalles den \outl{tosidige grensen}.\os
+
+Hvis $\lim\limits_{x\to a} f(x)$ er et eksakt tall, sier vi at \outl{grensen eksisterer}.\\ Hvis den \textsl{ikke} er et eksakt tall, sier vi at \outl{grensen ikke eksisterer}. Krav for at grense skal eksistere er altså at ${\lim\limits_{x\to a}f(x)\neq \pm \infty}$. Hvis grensen er tosidig kreves det i tillegg at $\lim\limits_{x\to a^+} f(x)=\lim\limits_{x\to a^-}f(x)$. \os
 
 Hvis ${\lim\limits_{x\to a}\neq \pm \infty}$, sier vi at grensen ''går mot $\pm$uendelig'', selv om grensen ikke eksisterer. \os
-
-Både \sym{$\lim\limits_{x\to a^-}$} og \sym{$\lim\limits_{x\to a^+}$} kalles \outl{ensidige grenser}, mens\\ \sym{$\lim\limits_{x\to a}$} kalles den \outl{tosidige grensen}.
 }
 
 
 \info{En utvidelse av \sym{$ = $}}{
-Det litt paradoksale med grenserverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel er
+Det litt paradoksale med grenseverdier hvor $ x $ går mot $ a $, er at vi ofte ender opp med å erstatte $ x $ med $ a $, selv om vi per definisjon har at $ x\neq a $. For eksempel er
 \begin{equation} \label{limxto2}
 	\lim_{x\to 2}(x+1)=2+1=3 
 \end{equation}
-Det er verd å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli eksakt lik 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går mot} en eksakt verdi. Dette gjør altså at grenseverdier bringer en utvidet betydning av \sym{$ = $}.
+Det er verdt å filosofere litt over likhetene i \eqref{limxto2}. Når $ x $ går mot 2, vil $ x $ aldri bli eksakt lik 2. Dette betyr at $ {x+1} $ aldri kan bli eksakt lik 3. Men \textsl{jo nærmere} $ x $ er lik 2, \textsl{jo nærmere} er $ {x+1} $ lik 3. Med andre ord går $ {x+1} $ mot 3 når $ x $ går mot 2. Den venstre likheten i \eqref{limxto2} viser altså ikke til et uttrykk som er \textsl{eksakt lik} en verdi, men et uttrykk som \textsl{går mot} en eksakt verdi. Dette gjør altså at grenseverdier bringer en utvidet betydning av \sym{$ = $}.
 }
 \reg[Regneregler for grenseverdier]{
 	Gitt funksjonene $f(x)$ og $g(x)$ hvis $\lim\limits_{x\to a} f(x)$ og $\lim\limits_{x\to a} g(x)$ eksisterer, er
@@ -131,6 +132,9 @@ Visuelt kan vi skille mellom kontinuerlige og diskontinuerlige funksjoner slik; 
 \fig{konteks1}
 Grafer fungerer utmerket til å avgjøre hvilke funskjoner vi \textsl{forventer} å være kontinuerlige eller ikke, men er aldri gyldige som et bevis for dette. 
 }
+
+
+
 
 \newpage
 \end{document}

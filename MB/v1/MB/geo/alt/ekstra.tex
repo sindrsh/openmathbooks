@@ -1,0 +1,44 @@
+\input{/home/sindre/G/doc}
+\input{/home/sindre/G/preamb}
+
+\begin{document}
+\eks[2]{
+	Finn lengda verdien til $ x $ i trekanten under:
+	\fig{tri26i} \vs \vs
+	
+	\sv
+	
+	Vi veit at:
+	\[ c^2=a^2+x^2 \]
+	hvor $ c $ er lengden til den lengste siden og $ a $ lengden til den andre kortsiden. Derfor få vi at:
+	\alg{
+		17^2 &= 13^2 + x^2 \\
+		289-225&=x^2  \\
+		64&=x^2
+	}
+	Da $ \sqrt{64}=8 $, må lengden til $ x $ vere.
+}
+\newpage
+Med denne trekanten som utgangspunkt dannar vi eit rektangel:
+%\fig{tri20a_old}
+Vi bruker no dei same namna på areala til dei farga trekantane som vi brukte på side \pageref{arnames}. Da er
+\alg{
+	R=4\cdot 5=20\quad,\quad
+	O=\frac{4\cdot 3}{2}=6\quad,\quad
+	G=\frac{2\cdot4}{2}=4
+}
+No har vi at
+\algv{
+	B &= R-O-G \\
+	&=20-6-4 \\
+	&=10
+}
+
+\fork{\ref{360} \firsum}{
+	Inni firkanten teiknar vi eit punkt $ E $, som er slik at vi kan teikne ein strek fra kvart hjørne og til $ E $, utan å krysse sidene i firkanten. No har vi dei fire trekantane $ \triangle ABE $, $ \triangle BCE $, $ \triangle CDE $ og $ \triangle DEA $.
+	\fig{kant6a_old}
+	Av \rref{180} veit vi at summen av vinkelverdiane til desse trekantane er $ 4\cdot 180^\circ = 720^\circ $. I tillegg er
+	\[  \angle AEB+\angle BEC+\angle CED+\angle DEA=360^\circ \]
+	Altså utgjer dei andre vinklane i dei fire trekantane $ {720^\circ-360^\circ =360^\circ} $, og desse vinklane er $ \angle BAD $, $ \angle CBA $, $ \angle DCB $ og $ \angle ADC $.}
+\end{document}
+

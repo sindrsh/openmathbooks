@@ -287,7 +287,6 @@ Vi rangerer datasettet fra lavest til høyest verdi:
 \[0\quad0\quad 1\quad 1\quad 4\quad 4\quad 4\quad  \colr{5}\quad 5\quad  6\quad6\quad  7\quad8\quad8 \quad14\]
 Tallet i midten er 5, altså er medianen 5.
 }
-\newpage
 \st{
 \textbf{Undersøkelse 4} \os
 (Utregning utelatt. Verdiene er rundet ned til nærmeste éner).
@@ -441,5 +440,116 @@ La oss se hva som skjer hvis vi gjentar utregningen fra \textsl{Eksempel} på si
 \end{multline}
 Men brøken $ \frac{\colb{2+5+9+7+7}}{5} $ er jo per definisjon gjennomsnittet til datasettet, og dermed blir uttrykket over lik 0. Dette vil gjelde for alle datasett, så i denne sammenhengen gir ikke tallet 0 noen ytterligere informasjon. Om vi derimot kvadrerer avvikene, unngår vi et uttrykk som alltid blir lik 0.
 }
+\newpage
+\section*{Grupperte datasett}
+
+\subsection*{Grupper og intervall}
+Si at vi skal undersøke antall medlemmer i et idrettslag. I et idrettslag kan det være medlemmer som er alt fra 0 til 100 år gamle. Skal vi få en rask oversikt over aldersfordelingen, kan vi ikke presentere antallet for hver enkelt alder. I stedet kan vi lage aldersgrupper. Under vises antall medlemmer i et idrettslag, inndelt i aldersgrupper.
+\begin{center}
+	\textbf{Aldersfordeling i et idrettslag}
+	\begin{tabular}{|c|r|}
+		\hline
+		Aldersgruppe (år) & Frekvens (medlemmer) \\ \hline
+		0\,-\,5& 10\\ \hline
+		6\,-\,9	& 60\\ \hline
+		10\,-\,12  &	50\\ \hline
+		13\,-\,16  &	40\\ \hline
+		17\,-\,19  &	21\\ \hline
+		20\,-\,66  &	72 \\ \hline
+		67\,-100 & 53  \\ \hline
+	\end{tabular}
+\end{center}
+Ved denne tabellen melder det seg straks et spørsmål; Si at en person er 66 år og 11 måneder gammel. Skal denne personen telles med i gruppen 20\,-\,66 eller 67\,-\,120? For å presisere dette, kan vi skrive gruppene våre som \outl{intervall}. Da bruker vi følgende symbol:
+\reg[Symboler for intervall]{
+\sym{$\left[\right.$} betyr ''fra og med'' \os
+\sym{$\left.\right]$} betyr ''til og med'' \os
+\sym{$\langle$} betyr ''fra, men ikke med''\os
+\sym{$\left.\right\rangle$} betyr ''til, men ikke med''
+}
+\eks{
+0 er i intervallet $\left[0, 6\right\rangle$.\os 
+5,99999 er i intervallet $\left[0, 6\right\rangle$. \os
+6 er ikke i intervallet $\left[0, 6\right\rangle$.\os
+}
+\newpage
+Ved å bruke intervall kan vi skrive tabellen for idrettslaget slik:
+\begin{center}
+	\textbf{Aldersfordeling i et idrettslag}
+	\begin{tabular}{|c|r|}
+		\hline
+		Aldersgruppe (år) & Frekvens (medlemmer) \\ \hline
+		$\left[0, 6\right\rangle$& 12\\ \hline
+		$\left[6, 10\right\rangle$	& 60\\ \hline
+		$\left[10, 13\right\rangle$  &	50\\ \hline
+		$\left[13, 17\right\rangle$  &	40\\ \hline
+		$\left[17, 20\right\rangle$  &	21\\ \hline
+		$\left[20, 67\right\rangle$  &	72 \\ \hline
+		$\left[67, 120\right]$ & 53  \\ \hline
+	\end{tabular}
+\end{center}
+\label{sportstable}
+En 66-åring skal altså telles i intervallet $\left[20, 67\right\rangle$ helt frem til dagen hen fyller 67 år.
+
+\subsection*{Antakelser}
+For grupperte datasett er vi nødt til å gjøre noen antakelser for å finne sentralmål og spredningsmål. En vanlig antakelse er denne:
+\reg[Antakelsen om lik fordeling]{
+I et gruppert datasett er det vanlig å anta at frekvensene fordeler seg likt over intervallet. \vsk
+
+Gitt et intervall $\left[a, b\right\rangle$ med frekvens $f$. Antakelsen betyr at 
+\begin{itemize}
+	\item differansen mellom hvert element i invervallet er $\frac{b-a}{f}$, og at første element har verdi $a$.
+	\item Verdien til element nummer $n$ i et intervall er $a+(n-1)\frac{b-a}{f}$
+	\item gjennomsnittsverdien i hvert intervall er gitt ved $\frac{a+b}{2}$. 
+\end{itemize}
+}
+\eks[1]{
+I tabellen på side \pageref{sportstable} er det 12 medlemmer (element) i intervallet $\left[0, 6\right\rangle$. Ved \textsl{antakelsen om lik fordeling} er aldersdifferansen mellom hvert medlem lik ${\frac{6-0}{12}=0,5}$. Dette betyr at person nummer 7 i dette intervallet er $(0+(7-1)\cdot0,5)\enh{år}=3\enh{år}$
+}
+\newpage
+\eks[2]{
+I tabellen på side \pageref{sportstable} er det éne intervallet $\left[13, 17\right\rangle$. Ved \textsl{antakelsen om lik fordeling} er gjennomsnittsalderen i dette intervallet lik $\frac{13+17}{2}=15$ år.
+}
+\subsection*{Histogram}
+Tabellen\footnote{Tall hentet fra SSB: https://www.ssb.no/statbank/table/03781} under viser aldersfordelingen av personer i arbeid i Norge i 2026:
+\begin{comment}
+	\begin{center}
+		\textbf{Aldersfordeling av ansatte} \\
+		\begin{tabular}{|c | r|}
+			\hline
+			intervall & sysselsatte (i antall 1\,000) \\ \hline
+			15–24 år & 202 \\ \hline
+			25–29 år & 306 \\ \hline
+			30–39 år & 662 \\ \hline
+			40–59 år & 1199 \\ \hline
+			60–64 år & 223\\ \hline
+			65–74 år & 50 \\ \hline
+		\end{tabular}
+	\end{center}
+\end{comment}
+\begin{center}
+	\textbf{Aldersfordeling av ansatte} \\
+	\begin{tabular}{|c | r|}
+		\hline
+		årsintervall & sysselsatte (i antall 1\,000) \\ \hline
+		$\left[15, 25\right\rangle$ & 202 \\ \hline
+		$\left[25, 30\right\rangle$ & 306 \\ \hline
+		$\left[30, 40\right\rangle$ & 662 \\ \hline
+		$\left[40, 60\right\rangle$ & 1199 \\ \hline
+		$\left[60, 65\right\rangle$ & 223\\ \hline
+		$\left[65, 75\right\rangle$ & 50 \\ \hline
+	\end{tabular}
+\end{center} \label{histtable}
+Når vi skal lage diagram som illustrerer data fordelt over intervaller, er det vanlig å bruke \outl{histogram}.
+\reg[Histogram]{
+Gitt et intervall $\left[a, b\right\rangle$ med frekvens $f$. Høyden $h$ til en søyle i et histgram er da gitt ved
+\[ h=\frac{f}{b-a} \]
+}
+\newpage
+\eks{
+Histogram for tabellen fra side \pageref{histtable}:	
+\fig{stathist}
+}
+
+
 \end{document}
 

@@ -96,11 +96,12 @@ Gitt ligningen
 \[ x^3-5x^2-8x + 12 = (x - 1)(x +a)(x - b) \]
 Bestem $ a $ og $ b $ slik at ligningen blir en identitet.
 
-\eksop{1TH21 og 1TV25}{opgalgeksuneq}
+\eksop{1TH21, 1TV25 og 1TV26}{opgalgeksuneq}
 Løs ulikhetene. \os
 \abch{
 	\item $x^2+2x-8 < 0$ %1TH21
 	\item $x^2-4x-12 < 0$ %1TV25
+	\item $x^2+7x+6\leq0$ %1TV26
 }
 
 \op{opgalgulikgraf}
@@ -184,12 +185,23 @@ Bestem $k$ slik at likningen har én løsning
 Grafen til $ {f(x)=x^2+2x-8} $ er symmetrisk\footnote{Se også \grubr{opggeokvadsym}.} om vertikallinja som går gjennom bunnpunktet. Finn $ x $-verdien til dette punktet.
 \fig{opgalgsym}
 
-\eksop{1TH21D1}{1TH21D1opg5} \vs \vs
+\eksop{1TV26}{1tv26d1opg2}
+Gitt likningssystemet 
+\begin{align*}
+	-x^2+4 &= y \tag{I}\br
+	x-y &= 2 \tag{II}
+\end{align*}
+\abc{
+\item Løs likningssystemet ved rekning.
+\item Løs likningssystemet grafisk.
+}
+
+\eksop{1TH21}{1TH21D1opg5} \vs
 \alg{
 x^2+2x-y =-1 \tag{I}\vn
 x+y = -2 \tag{II}
 }
-Vis at ligningssystemet ikke har løsning
+Vis at ligningssystemet ikke har en løsning
 \abc{
 \item grafisk
 \item ved regning
@@ -209,10 +221,10 @@ Gitt funksjonen $ f(x)=ax^2+bx+c $ og tallene $ t=\frac{-b+\sqrt{b^2-4ac}}{2a} $
 \op{algopgpoldiv}
 Utfør polynomdivisjon på uttrykkene \os
 \abch{
-\item $ \dfrac{x^4-2x^3+x^2-2x}{x^3+x} $
+\item $ \dfrac{x^4-2x^3+x^2-2x}{x^3+x} $\ \ 
 \item $ \dfrac{-4x^4+7x^2-3}{-4x^2+3}  $
-}
-\abcs{3}{
+} \os
+\abchs{3}{
 \item $ \dfrac{2x^3-6x^2+9x-27}{2x^2+9} $
 \item $\dfrac{x^2+2x+1}{x-2}$
 }
@@ -220,11 +232,11 @@ Utfør polynomdivisjon på uttrykkene \os
 \eksop{1TV24}{1tv24d1opg2}
 Vis at
 \[ 2x^3+3x^2-11x-6=(2x^2+7x+3)(x-2) \]
-ved å utføre to forskjellige polynomdivisjoner. (Utfør polynomdivisjon med to forskjellige divisorer.)
+ved å utføre to forskjellige polynomdivisjoner. \\(Utfør polynomdivisjon med to forskjellige divisorer.)
 
 \eksop{1TV22}{1tv22d1opg6}
 Funksjonen $f$ er gitt ved
-\[ f(x)=2x^3-x^2-18x-9 \]
+\[ f(x)=2x^3+x^2-18x-9 \]
 Vis at divisjonen $f(x):(x-3)$ går opp.
 
 
@@ -253,7 +265,7 @@ Gitt funksjonene $f(x)=x^3-x^2-4x+8$ og $g(x)=2x+8$. Finn skjæringspunktene til
 
 \eksop{R1H23D1}{R1H23D1opg2}
 Skriv uttrykkene nedenfor i stigende rekkefølge
-\[ 2\ln e\quad,\quad3\log_{10} 70\quad,\quad e^{3\ln 2} \]
+\[ 2\ln e\quad,\quad3\log 70\quad,\quad e^{3\ln 2} \]
 Grunngi svaret.
 
 
@@ -270,9 +282,8 @@ Løs likningen. \os
 \item $ 11\cdot2^x=19 $
 }
 
-
 \op{opgalgpot2}
-Vis at likningen 
+Vis at likningen
 \[ b\cdot a^x =c \]
 har løsningen
 \[ x=\log_a\frac{c}{b} \]
@@ -290,17 +301,28 @@ Løs likningen. (Hint; se \refved{Bytvar})\os
 
 \abch{
 \item $ (\ln x)^2-5\ln x+ 6=0$
-\item $ (\ln x)^2-3\ln x- 70=0$
+\item $ \ln^2 x-3\ln x- 70=0$
 } \os
 \abchs{3}{
-\item $ e^{2x}-2e^x-3=0 $ \hspace{1cm}
+\item $ e^{2x}-2e^x-3=0 $  \ \ \ \ \ \ \ 
 \item $ e^{2x}+7e^x-18=0 $
-\item $e^{2x}-e^x=2$
 } \os
-\abchs{6}{
-\item $(\ln x)^2-2\ln x=8$
-\item $100^x-3\cdot10^x$ 
-\item $(\ln x)^2-\ln x=6$
+\abchs{5}{
+\item $e^{2x}-e^x=2$ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+\item $(\log x)^2-2\log_{10} x=8$
+}
+ \os
+\abchs{7}{
+\item $100^x-3\cdot10^x$ \ \ \ \ \ \ \ \ \ \ \ \  
+\item $\ln^2 x-\ln x=6$
+}
+
+\eksop{R1V26}{r1v26d1opg3}
+\abc{
+\item Sorter uttrykkene i stigende rekkefølge.
+\[ \log_2 8\qquad e^{3\ln 1}\qquad \lg 7\qquad \sqrt[4]{3^3}\]
+\item Skriv så enkelt som mulig.
+\[ \lg(ab)-\lg\left(\frac{a}{b}\right)+\lg(100b^3) \]
 }
 
 \eksop{R1H25}{r1h25d1opg2}
@@ -310,21 +332,31 @@ Bestem $a$ slik at
 \op{opgalglog}
 Løs ligningene \os
 \abch{
-\item $ \ln(2x-6)=2 $
+\item $ \ln(2x-6)=2 $ \ \ \ \ 
 \item $ 3^{x+2}-5=76$
-\item $ \dfrac{3^{2x}+3^{2x}+4}{2}=29 $ 
 } \os
-\abchs{4}{
+\abchs{3}{
+\item $ \dfrac{3^{2x}+3^{2x}+4}{2}=29 $	
 \item $ 3\ln x+2\ln x^2 + \ln \frac{1}{x^9}=2 $
 }
 
 \gruboprecc{opggeokvadsym}
 Gitt funksjonen  ${f(x)=a x^2+bx +c} $. Vis at grafen til $ f $ er symmetrisk om linja $ {x=-\frac{b}{2a}} $.
 
+\newpage
 \grubeksoprecc{t1h23d1opg2}{1TH23}
 Funksjonen $ f $ er gitt ved
 \[ f(x)=x^3+2x^2-5x-6\]
 I hvilke punkt skjærer grafen til funksjonen $ x $-aksen?
+
+\grubeksoprecc{t1v26d1opg3}{1TV26}
+Løs likninngen
+\[ 2x^3+3x^2-18x+8=0 \]	
+
+\grubeksoprecc{1tv26d1opg4}{1TV26}
+Gitt likningen
+\[ a(x+b)^2=x^2+8x+c \]
+Bestem $a$, $b$ og $c$ slik at likningen blir en identitet.
 
 \grubeksoprecc{1tv25d1opg3}{1TV25}
 En andregradsfunksjon har ett nullpunkt. Grafen til $f$ skjærer $y$-aksen
@@ -336,17 +368,17 @@ Bestem et mulig funksjonsuttrykk for $f$.
 \grubeksoprecc{1th24d1opg2}{1TH24}
 Finn bunnpunktet til $f(x)=(x-1)(x+3)$.
 
-\newpage
 \grubeksoprecc{1th24d1opg3}{1TH24} 
 Funksjonen $f$ er gitt ved
 \[ f(x)=x^3+7x^2+4x-12 \]
 Løs ulikheten $f(x)<0$, og illustrer løsningen grafisk ved å lage en skisse.
 
-\grubeksop{1th21d1opg3}{1TH21}
+\grubeksoprecc{1th21d1opg3}{1TH21}
 Løs likningen 
 \[ x^3+2x^2-7x+4=0 \]
 
-\grubop{1tv24d1opg5}{1TV24}
+\newpage
+\grubeksoprecc{1tv24d1opg5}{1TV24}
 Figuren under viser grafen til funksjonen $f$.
 \abc{
 	\item Bestem $f(x)$.
@@ -374,17 +406,20 @@ Faktoriser uttrykkene
 	\item $y^2-9k^5y-k^2y+9k^7$
 }
 
+\grubop{opgalglogxlnx}
+Vis at
+\[ \log_{a} x = \frac{\ln x}{\ln a} \]
+
+
 \gruboprecc{opggeoher}
 For en trekant med sidelengder $ a $, $ b $ og $ c $ er arealet $ T $ gitt ved \outl{Herons formel}:
 \[ T=\frac{1}{4}\sqrt{(a+b+c)(a+b-c)(a-b+c)(b+c-a)} \]
 Bevis formelen.
 
-
-\newpage
 \gruboprecc{opgalgsym2}
 Gitt funksjonen $f(x)=ax^2+bx+c$. 
 \abc{
-	\item Finn et uttrykk for ekstremalverdien\footnote{Definisjonen av \textit{ekstremalverdi} finner du på side??} til $f$. (Se \grubrs{opggeokvadsym}).
+	\item Finn et uttrykk for ekstremalverdien\footnote{Definisjonen av \textit{ekstremalverdi} finner du på side \pageref{extremumpoints}} til $f$. (Se \grubrs{opggeokvadsym}).
 	\item Forklar hvorfor
 	\begin{itemize}
 		\item en endring av $c$ vil føre til en vertikalforskyvning av grafen til $f$.
@@ -398,9 +433,11 @@ Gitt funksjonen $ f(x)=ax^2+bx+c $. I \grubrs{opggeokvadsym} viste vi at $ f $ e
 Bruk dette til å utlede \textit{abc}-formelen.
 
 
-\grubop{opgalglogxlnx}
-Vis at
-\[ \log_{a} x = \frac{\ln x}{\ln a} \]
+\grubop{opgalglnxforskjv}
+Forklar hvorfor påstanden er riktig/ikke riktig: \os
+
+\textsl{Grafen til $f(x)=\ln(ax)$ tilsvarer grafen til $\ln(x)$ forskjøvet langs $y$-aksen.
+}
 
 
 \grubop{opgalgsqrt27} \vs
@@ -417,15 +454,13 @@ Skriv uttrykkene på formen $ \left(\sqrt{a}+\sqrt{b}\right)^2 $, hvor $ a $ og 
 \item $ 8+4\sqrt{3} $
 \item $ 42-14\sqrt{5} $
 }
-\newpage
+
 \grubop{opgalgq3minp3} \vs
 \abc{
 \item Faktoriser uttrykket $q^3-p^3$.
 \item Vis at
 \[ \frac{1}{2}(p+q)(q^2-p^2)-pq(q-p)-\frac{1}{3}(q^3-p^3)=\frac{1}{6}(q-p)^3 \]
 }
-
-
 \grubop{opgalgrdh}
 Faktoriser uttrykket $ d^2  r^2-(d+r)^2  r^2+4b d^2 (b-r) $ slik at\\ $ 2bd-2dr-r^2 $ er en faktor.
 

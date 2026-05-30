@@ -79,7 +79,7 @@ Skriv uttrykket så enkelt som mulig.
 
 \sv \vsb
 \begin{align*}
-	t(\vec{u}+\vec{v})-(t\vec{u}+\vec{v}) = t\vec{u}+t\vec{v}-t\vec{u}-\vec{v}=(1-t)\vec{v}
+	t(\vec{u}+\vec{v})-(t\vec{u}+\vec{v}) = t\vec{u}+t\vec{v}-t\vec{u}-\vec{v}=(t-1)\vec{v}
 \end{align*}
 }
 
@@ -223,7 +223,9 @@ Det er mange måter å uttrykke at $ {\vec{u}\perp \vec{v}} $ på. Blant annet k
 	\[ \vec{a}\cdot\vec{b}=5\cdot6+(-3)\cdot10=0 \]
 	Altså er $ \vec{a}\perp\vec{b} $. Videre er
 	\[ \vec{a}\cdot\vec{c}=5\cdot2+(-3)\cdot7 = 11 \]
-Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Da $ {\vec{a}\perp\vec{b}} $, kan heller ikke $ \vec{b} $ og $ \vec{c} $ være ortogonale.
+	Altså er $ \vec{a} $ og $ \vec{c} $ \textsl{ikke} ortogonale. Videre er
+	\[ \vec{b}\cdot\vec{c}=6\cdot2+10\cdot7=82 \]
+	Altså er $\vec{b}$ og $\vec{c}$ \textsl{ikke} ortogonale.
 }
 \newpage
 \info{Nullvektoren}{
@@ -289,7 +291,7 @@ Gitt to funksjoner $ f(t) $ og $ g(t) $. En vektor $ \vec{v} $ på formen
 \[ \vec{v}(t)=[f(t), g(t)] \]
 er da en \outl{vektorfunksjon}.\vsk
 
-$ \vec{v} $ kan skrives på \outl{parameterisert form} som
+Alternativt kan $ \vec{v} $ skrives som
 \begin{equation*}\vec{v}(t): \left\lbrace{
 		\begin{array}{l}
 			x= f(t)   \\
@@ -300,10 +302,13 @@ $ \vec{v} $ kan skrives på \outl{parameterisert form} som
 Mengden av alle endepunktene til $ \vec{v} $ utgjør grafen til $ \vec{v} $.
 \fig{vek0}
 }
+\spr{
+Koordinater uttrykt ved én eller flere variabler (parametere) kalles en \outl{parameterisering}\index{parameterisering}. En vektorfunksjoner er altså en parameterisering av en kurve.
+}
 
 \newpage
 \subsection*{Vektorfunksjonen til en linje}
-Gitt en linje $ \vec{l}(t) $, som vist i figuren under
+Gitt en linje beskrevet av vektorfunksjonen $ \vec{l}(t) $, som vist i figuren\\ under. Vi omtaler denne linja som linja $\vec{l}$.
 \fig{linje}
 Hvis en vektor $ \vec{r} $ er parallell med $ \vec{l} $, kalles den en \outl{retningsvektor}\index{retningsvektor!for linje}  for linja. Si at $ {\vec{r}=[a, b]} $ er en retningsvektor for $ \vec{l} $, og at $ A=(x_0, y_0) $ er et punkt på $ \vec{l} $. Om vi starter i $ A $ og vandrer parallellt med $ \vec{r} $, kan vi være sikre på at vi fortsatt befinner oss på linja. Dette må bety at vi for en variabel $ t $ kan nå et vilkårlig punkt $ {B=(x, y)} $ på linja ved følgende utregning:
 \[B= A+t\vec{r} \]
@@ -311,20 +316,20 @@ På koordinatform kan vi skrive dette som\footnote{Se \eqref{Aplusu}.}
 \[(x, y)= (x_0 +at, y_0+bt) \]
 Altså kan linja skrives som en vektorfunksjon:\regv
 \reg[Linje som vektorfunksjon]{
-	En linje $ \vec{l}(t) $ som går gjennom punktet $ {A=(x_0, y_0,)} $, og som har retningsvektor $ {\vec{r}=[a, b] }$, er gitt som
+	En linje $ \vec{l}(t) $, og som går gjennom punktet $ {A=(x_0, y_0,)} $ og har retningsvektor $ {\vec{r}=[a, b] }$, er gitt som
 	\nn{
 	\vec{l}=[x_0 + at, y_0+ bt]	\label{linje}
 	}
 }
 \eks[1]{
-En linje $\vec{l}(t)$ går gjennom punktene $(3, 6)$ og $(5, 13)$. Finn uttrykket for $\vec{l}$. Skriv uttrykket både som en vektorfunksjon og på parameterisert form.
+En linje $\vec{l}(t)$ går gjennom punktene $(3, 6)$ og $(5, 13)$. Finn uttrykket til $\vec{l}$.
 
 \sv
 Vi finner retningsvektoren $\vec{r}$ til linja:
 \[ \vec{r}=[5-3, 13-6]=[2, 7] \]
 Altså er
 \[ \vec{l}(t)=(3, 6)+[2, 7]t=[3+2t, 6+7t] \]
-På parameterisert form er
+Alternativt kan vi skrive
 \begin{equation*}\vec{l}(t): \left\lbrace{
 		\begin{array}{l}
 			x= 3+2t\\
@@ -393,7 +398,7 @@ Dermed har sirkelen sentrum $ (2, -5) $ og radius 7.
 
 \section{Determinanter} \index{determinant}
 \reg[\boldmath$ 2\times 2 $ determinanter]{
-\outl{Determinanten} $ \det(\vec{u}, \vec{v}) $ av to vektorer $ {\vec{u}=[a, b] }$ og $ {\vec{v}=[b, c]} $ er gitt som
+\outl{Determinanten} $ \det(\vec{u}, \vec{v}) $ av to vektorer $ {\vec{u}=[a, b] }$ og $ {\vec{v}=[c, d]} $ er gitt som
 \begin{equation}\label{determinant2eq}
 	\det(\vec{u}, \vec{v}) = \left|\begin{matrix}
 		a & b \\
@@ -410,7 +415,7 @@ Dermed har sirkelen sentrum $ (2, -5) $ og radius 7.
 			-1 & 3 \\
 			-2 & 4
 		\end{matrix}\right| \\
-		&= (-1)4-3(-2)	\\
+		&= (-1)\cdot4-3\cdot(-2)	\\
 		&= 2
 	}
 }
@@ -456,7 +461,7 @@ Gitt to vektorer $ {\vec{u}=[a, b]} $ og $ {\vec{v}=[c, d]} $, hvor $ {a, b, c, 
 O &= (0, 0) & B&=(a, b) & C &= (a+b, c+d) \br
   D&= (c, d) & E &= (a+c, 0) & F &= (0, b+d)
 }
-Med $ OE $ som grunnlinje har $ \triangle OEB $ høgde $ b $, altså er
+Med $ OE $ som grunnlinje, har $ \triangle OEB $ høyde $ b $, altså er
 \[  2A_{\triangle OEB}=(a+c)b \]
 Tilsvarende er
 \[  2A_{\triangle FDO}=(b+d)c \]
@@ -470,8 +475,8 @@ A_{\square ABCD}&=A_{\square OECF}-2A_{\triangle OBE}-2A_{\triangle FDO} \\
 I figurene har vi antatt at (den minste) vinkelen mellom $ \vec{v} $ og $ x $-aksen er mindre enn vinkelen mellom $ \vec{u} $ og $ x $-aksen. I omvendt tilfelle ville vi fått at 
 \[ A_{\square OECF}=bc-ad \]
 Altså er
-\[  A_{\square OECF}=|ac-bd| \]
-På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $, se \refops{det2arbevis}. \vsk
+\[  A_{\square OECF}=|ad-bc| \]
+På lignende måte kan det vises at \eqref{det2arparl} gjelder for alle $a, b, c, d\in\mathbb{R} $. \vsk
 
 \mers{\eqref{det2arparl} kan også vises veldig kortfattet ved å anvende trigonometri. Dette er gitt som en oppgave i \tmto.}
 }

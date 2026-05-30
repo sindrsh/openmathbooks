@@ -1,0 +1,70 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+\begin{document}
+
+\grubr{opgalgsquare}
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{opgalgsquare1_lf}}}\qquad \qquad
+	\subfloat[]{\includegraphics{\figp{opgalgsquare2_lf}}}
+\end{figure}
+\abc{
+\item Da det røde kvadratet har sidelengde $a$ og det grønne kvadratet har sidelengde $b$, har det største kvadratet sidelengde $a+b$. Hver av de hvite rektanglene har areal $ab$. Dermed har vi at
+\begin{align*}
+	A_{\text{størst kvadrat}}&=A_\text{rødt kvadrat}+A_\text{grønt kvadrat}+2A_\text{hvitt rektangel} \\
+	(a+b)^2 &= a^2+b^2+2ab
+\end{align*}
+\item Det blå kvadratet har sidelengde $a-b$. Hver av de hvite rektanglene har areal $(a-b)b$. Dermed har vi at
+\begin{align*}
+	A_{\text{størst kvadrat}}&=A_\text{blått kvadrat}+A_\text{grønt kvadrat}+2A_\text{hvitt rektangel} \\
+	a^2&= (a-b)^2+b^2+2(a-b)b \\
+	a^2&= (a-b)^2+b^2+2ab-2b^2 \\
+	a^2-2ab+b^2 &= (a-b)^2
+\end{align*}
+\item \begin{align*}
+	a^2-b^2 &= A_{\text{størst kvadrat}}-A_\text{grønt kvadrat} \\
+	&=A_\text{blått kvadrat}+2A_\text{hvitt rektangel} \\
+	&=(a-b)^2+2(a-b)b \\ 
+	&=(a-b)(a-b+2b) \\
+	&=(a-b)(a+b)
+\end{align*}
+}
+\newpage
+\grubr{opgalgdeterminant}
+\fig{determinant_lf}
+Vi lar
+\alg{
+ E &= (a+c, 0) & F &= (0, b+d)
+}
+Med $ OE $ som grunnlinje har $ \triangle OEB $ høyde $ b $, altså er
+\[  2A_{\triangle OEB}=(a+c)b \]
+Tilsvarende er
+\[  2A_{\triangle FDO}=(b+d)c \]
+Da $ A_{\triangle OEB}=A_{\triangle CDF}$ og $ A_{\triangle FDO}=A_{\triangle EBC} $, har vi at
+\alg{
+	A_{\square ABCD}&=A_{\square OECF}-2A_{\triangle OBE}-2A_{\triangle FDO} \\
+	&=(a+c)(b+d)-(a+c)b-(b+d)c \\
+	&=(a+c)d-(b+d)c\\
+	&= ad-bc
+}
+
+\grubr{opgalglikbrok} \\
+Vi har at
+\[ a= \frac{cb}{d} \]
+Dermed er
+\alg{
+\frac{a-c}{b-d}=\frac{\frac{cb}{d}-c}{b-d}=\frac{c(b-d)}{d(b-d)}=\frac{c}{d}=\frac{a}{b}
+}
+
+\grubr{opgalgtverrsum}\\
+Gitt et tall $n=abc $, hvor $ a $, $ b $ og $ c $ er sifrene til tallet 
+Da har vi at
+\alg{
+n &= 100a+10b+c \\
+&= 99a+99b+a+b+c
+}
+Leddene med 99 som faktor er delelige med 3, og dermed er $ n $ delelig med 3 hvis $ a+b+c $ er delelig med 3.
+\end{document}
+
+

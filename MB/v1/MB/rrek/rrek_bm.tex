@@ -1,0 +1,311 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+%\newpage
+\section{Regnerekkefølge}
+\subsection*{Prioriteringen av regneartene}
+Se på følgende regnestykke:
+%id{2plus3times4}
+\[ 2+3\cdot4 \]
+%\id
+Et slikt regnestykke \textsl{kunne} man tolket på to måter:
+%id{interprets}
+\begin{enumerate}[label=(\roman*)]
+	\item ''2 pluss 3 er 5. 5 ganget med 4 er 20. Svaret er 20.''
+	\item ''3 ganget med 4 er 12. 2 pluss 12 er 14. Svaret er 14.''
+\end{enumerate}
+%\id
+Men svarene blir ikke like! Det er altså behov for å ha noen regler om hva vi skal regne ut først. Den ene regelen er at vi må regne ut \\ganging eller deling \textsl{før} vi legger sammen eller trekker fra. Dette betyr at
+\st{ \vs
+%id{2plus3times4lang}	
+\alg{
+	2+3\cdot 4&=\text{''Regn ut }3\cdot4\text{, og legg sammen med 2''}  \\
+	&= 2+12 \\
+	&= 14
+}
+%\id
+}
+Men hva om vi ønsket å legge sammen $ 2 $ og $ 3 $ først, og så gange\\ summen med 4? Å fortelle at noe skal regnes ut først gjør vi ved hjelp av parenteser:
+\st{\vs
+%id{(2plus3)times4}	
+\alg{
+(2+3)\cdot4&=\text{''Legg sammen 2 og 3, og gang med 4 etterpå''} \\
+&= 5\cdot 4 \\
+&= 20
+}
+%\id
+}\regv
+
+\reg[Regnerekkefølge I\label{rrek}]{ \vspace{-5pt}
+%id{calcorder}
+\begin{enumerate}
+	\item Uttrykk med parentes
+	\item Multiplikasjon eller divisjon
+	\item Addisjon eller subtraksjon
+\end{enumerate}
+%\id
+} 
+\newpage
+\eks[1]{
+Regn ut
+%id{calcorderexmp1}
+\[ 23-(3+9)+4\cdot 7 \]
+%\id
+\sv \vs \vs
+%id{calcorderexmp1s}
+\alg{
+&& 23-\colb{(3+9)}+4\cdot 7&=23-\colb{12}+4\cdot7 &&\text{Parentes} \br
+&&23-12+\colg{4\cdot7}&=23-12+\colg{28} &&\text{Multiplikasjon} \br
+&&23-12+28&=39 &&\text{Addisjon og subtraksjon}
+}
+%\id
+}
+\eks[2]{
+	Regn ut
+	%id{calcorderexmp2}
+	\[ 18:(7-5)-3 \]
+	%\id
+	\sv \vsb
+	%id{calcorderexmp2}
+	\algv{
+		&& 18:\colb{(7-5)}-3&=18:\colb{2}-3 &&\text{Parentes} \\
+		&&\colg{18:2}-3&=\colg{9}-3 &&\text{Divisjon} \\
+		&&9-3&=6 &&\text{Subtraksjon}
+	}
+	%\id
+}
+\subsection*{Ganging med parentes}
+Hvor mange ruter ser vi i figuren under?
+\fig{gang}
+To måter man kan tenke på er disse:
+%id{twoways}
+\begin{enumerate}[label=(\roman*)]
+	\item Det er $ 2\cdot4 =8 $ lilla ruter og $ 3\cdot4=12 $ grønne ruter. Til sammen er det $ 8+12 =20 $ ruter. Dette kan vi skrive som
+\[ 2\cdot 4 + 3\cdot 4 = 20  \] 
+	\item Det er $ 2+3=5 $ ruter bortover og 4 ruter oppover. Altså er det $ 5\cdot4 =20 $ ruter totalt. Dette kan vi skrive som
+	\[ (2+3)\cdot 4 = 20 \]
+\end{enumerate}
+%\id
+Av disse to utregningene har vi at
+%id{2p3t4}
+\[ (2+3)\cdot4 = 2\cdot 4+ 3\cdot4 \]
+%\id
+\reg[Ganging med parentes (distributiv lov) \label{gangpar}]{
+Når et parentesuttrykk er en faktor, kan vi gange de andre faktorene med hvert enkelt ledd i parentesuttrykket.	 
+%\fig{gang1}
+}
+\eks[1]{
+\vs
+%id{distex1}
+\[ (\colo{4}+\colg{7})\cdot \colb{8}=\colo{4}\cdot\colb{8}+\colg{7}\cdot\colb{8} \]	
+%\id
+}
+\eks[2]{ \vsb
+%id{distex2}
+\alg{
+(10-7)\cdot2 &= 10\cdot 2-7\cdot2\\
+&=20-14 \\
+&=6
+}	
+%\id
+\mer Her vil det selvsagt være raskere å regne slik:
+%id{distnote}
+\[ (10-7)\cdot 2=3\cdot 2 =6 \]
+%\id
+}
+\eks[3]{
+Regn ut 
+%id{distex3a}
+$ 12\cdot 3 $
+%\id
+\!\!.
+
+\sv
+\vsb
+%id{distex3b}
+\alg{
+12\cdot 3&= (10+2)\cdot 3 \\
+&=10\cdot 3 +2\cdot 3 \\
+&=30 +6 \\
+&=36
+}
+%\id	
+}
+\info{\note}{
+Vi introduserte parenteser som en indikator på hva som skulle regnes ut først, men \rref{gangpar} gir en alternativ og likeverdig betydning av parenteser.
+}
+\info{Ganging med parentes og gangetenget}{
+Det er vanlig å utelate gangetegnet når et tall ganges med en parentesuttrykk. For eksempel er ${2(3-1)}$ det samme som $2\cdot(3-1)$. 
+}
+\newpage
+\spr{
+Når vi gjør utregninger som gjør at parentesutrykk forsvinner, sier vi at vi ''skriver ut'' eller ''løser opp'' uttrykkene.
+}
+
+\subsubsection{Å gange med 0}
+Vi har tidligere sett at 0 kan skrives som en differanse mellom to tall. Dette kan vi utnytte til å finne produktet når vi ganger med 0.\os
+
+La oss se på regnestykket
+%id{2min2t3a}
+\[ (2-2)\cdot3 \]
+%\id
+Av \rref{gangpar} har vi at
+%id{2min2t3b}
+\alg{
+	(2-2)\cdot3 &= 2\cdot3-2\cdot3\\&=6-6\\&=0
+}
+%\id
+Siden 
+%id{2min2t3c}
+$ 0=2-2 $
+%\id
+\!\!, må dette bety at
+%id{2min2t3d}
+\[ 0\cdot3=0 \]
+%\id
+
+\reg[Ganging med 0]{
+	Hvis 0 er en faktor, er produktet lik 0.
+}
+\eks[1]{ \vsb 
+%id{times0}
+	\alg{
+		7\cdot0&=0\vn
+		0\cdot219 &=0
+	}
+%\id
+}
+\newpage
+\subsection*{Assosiative lover}
+\reg[Assosiativ lov ved addisjon]{
+Plasseringen av parenteser mellom ledd har ingen påvirkning på summen.
+}
+\eks[]{ \vsb 
+%id{asso}
+\alg{
+(2+3)+4&=5+4=9 \vn
+2+(3+4)&=2+7=9
+}
+%\id
+%\fig{asso0}
+}
+
+
+\reg[Assosiativ lov ved multiplikasjon]{
+Plasseringen av parenteser mellom faktorer har ingen påvirkning på produktet.
+}
+\eks[]{ \vsb 
+%id{timesasso}
+\alg{
+(2\cdot3)\cdot4 &=6\cdot 4=24 \vn
+2\cdot(3\cdot4)&=2\cdot 12 =24
+}
+%\id
+}  \vsk
+
+I motsetning til addisjon og multiplikasjon, er hverken subtraksjon eller divisjon assosiative:
+%id{minantiasso}
+\alg{
+(12-5)-4&=7-4=3 \vn
+12-(5-4)&=12-1=11
+}
+%\id
+%id{divantiasso}
+\alg{
+	(80:10):2&=8:2=4 \vn
+	80:(10:2)&=80:5=16
+}
+%\id
+\newpage
+\subsection*{Retning på utregninger}
+Vi har sett at parentesene hjelper oss med å si noe om \textsl{prioriteringen} av regneartene, men det at subtraksjon og divisjon ikke er assosiative fører til at vi også må ha en regel for hvilken \textsl{retning} vi skal regne i. \regv
+
+
+\reg[Retning på utregninger \label{rret}]{
+Regnearter som ut fra \rref{rrek} har lik prioritet, skal regnes fra venstre mot høyre.
+}
+\eks[1]{ \vsb
+	%id{dir1}
+	\alg{
+		12-5-4&=(12-5)-4 \\
+		&=7-4\\
+		&=3
+	}
+	%\id
+}
+\eks[2]{ \vsb 
+	%id{dir2}
+	\alg{
+		80:10:2&=(80:10):2 \\
+		&=8:2 \\
+		&=4
+	}
+	%\id
+}
+\eks[3]{ \vsb
+	%id{dir3}
+	\alg{
+		6: 3\cdot 4 &= (6:3)\cdot4\\ 
+		&=2\cdot4 \\
+		&= 8
+	}
+	%\id
+}
+\info{Divisor og faktors plassering}{
+I uttrykk som bare inneholder divisjon og multiplikasjon kan vi flytte på divisorer og faktorer uten at verdien endres. For eksempel kan vi skrive uttrykket ${3:8\cdot16}$ som ${3\cdot16:8}$
+}
+
+\section{Faktorisering \label{Faktorisering}}
+Når en heltalls dividend og en heltalls divisor resulterer i en heltalls \\kvotient, sier vi at dividenden er \outl{delelig} med divisoren. For eksempel\\ er 6 delelig med 3 fordi 
+%id{6div3}
+$ {6:3=2} $
+%\id
+\!\!, og 40 er delelig med 10 fordi \\
+%id{40div10}
+$ {40:10=4} $
+%\id
+\!\!. Begrepet delelig er med på å definere \outl{primtall}\index{primtall}:\regv
+
+\regdef[Primtall]{
+	Et naturlig tall som er større enn 1, og som bare er delelig med seg selv og 1, er et primtall.
+}
+\info{Primtallene mellom 1-100}{
+	Primtallene er markert med blått.
+	\label{primtalfig}
+	\fig{primn100}
+}
+\newpage
+\spr{
+	\outl{Faktorisering} er å skrive et tall som et produkt av andre tall\index{faktorisering}. \vsk
+	
+	Faktorisering med bare primtall som faktorer kalles \\\outl{primtallsfaktorisering}\index{primtallsfaktorisering}. \vsk
+	
+	Da 12 er delelig med 4, sier vi at 4 er en faktor i 12.
+}
+\eks[1]{
+	Faktoriser 24 på tre forskjellige måter.
+	
+	\sv  \vsb
+	%id{24fakt}
+	\alg{
+		24&=2\cdot 12 \br
+		24&=3\cdot 8 \br
+		24&=2\cdot 3 \cdot 4
+	}
+	%\id
+} 
+
+\eks[2]{
+	Primtallsfaktoriser 12.
+	
+	\sv \vs
+	%id{12primfakt}
+	\[ 12= 2 \cdot2\cdot3 \]
+	%\id
+}
+
+
+\end{document}
+

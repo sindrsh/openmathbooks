@@ -2,6 +2,8 @@
 \input{../../preamb}
 \input{../bm}
 
+\usepackage{xr}
+\externaldocument{../TM1_bm}
 
 \begin{document}
 
@@ -74,12 +76,133 @@
 }
 }
 
+\newpage
+\grubr{r1v26d2opg5} \\
+Vi lar $g(x)=ax$ være funksjonen som beskriver tangenten til $f$ i $T$ ($g$ har ikke konstantledd siden linjen går gjennom origo). Videre setter vi $x$-verdien til $T=c$, da er $T=(c, f(c))$. Vi har at
+\begin{align*}
+	g'(c)&=f'(c) \\
+	a &= 2e^{2c}
+\end{align*}
+I tillegg er 
+\begin{align*}
+&&	g(c)&=f(c)\\
+&&	2e^{2c}c &= e^{2c} && (e^{2c}\neq0) \\
+&& 	c &= \frac{1}{2}
+\end{align*}
+Følgelig har vi at
+$T=\left(\frac{1}{2}, e\right)$
+\newpage
 
+\grubr{opgderlogistdiffeq}
+\abc{
+\item Vi setter $u=1+Ce^{-bx}$ og $g(u)=\frac{a}{u}=a u^{-1}$. Av kjerneregelen ved derivasjon har vi at
+\[ u'(x)= -Cbe^{-bx}\]
+Videre er
+\[ g'(u)=-au^{-2} \]
+Av kjerneregelen har vi at
+\begin{align*}
+	f'(x)&=au^{-2}Cbe^{-bx} \\
+	&= ab\frac{Ce^{-bx}}{\left(1+Ce^{-bx}\right)^2} \\
+	&=ab\frac{Ce^{-bx}+1-1}{\left(1+Ce^{-bx}\right)^2} \\
+	&=b\left(\frac{a}{1+Ce^{-bx}}-\frac{a}{\left(1+Ce^{-bx}\right)^2}\right) \\
+	&=b\left(f-\frac{1}{a}f^2\right) \br
+	&=\frac{b}{a}f\cdot(a-f)
+\end{align*}
+\item Med $f$ som variabel, er $f'$ en konkav andregradsfunksjon, og har derfor ett topppunkt. Maksimalpunktet ligger midt mellom nullpunktene $f=0$ og $f=a$, og dermed er $f=\frac{a}{2}$ maksimalpunktet til $f'$. Dette betyr at $f''(d)=0$ når 
+\begin{align*}
+	f(d)&=\frac{a}{2} \br
+	\frac{a}{1+Ce^{-bd}}&=\frac{a}{2} \br
+	1+Ce^{-bd}&= 2 \\
+	e^{-bd}&=C^{-1} \\
+	-bd &= \ln(C^{-1}) \\
+	-bd &= -\ln C \\
+	d &= \frac{\ln C}{b}
+\end{align*}
+\item Vi har at
+\begin{align*}
+	\frac{a}{1+Ce^{-bd}}&=\frac{a}{2} \\
+	1+Ce^{-bd}&= 2 \\
+	e^{-bd}&=C^{-1} \\
+	-bd &= \ln(C^{-1}) \\
+	-bd &= -\ln C \\
+	d &= \frac{\ln C}{b}
+\end{align*}
+\item Vi har at
+\begin{align*}
+	f(d-x)&=\frac{a}{1+Ce^{-b\left(\frac{\ln C}{b}-x\right)}} \\
+	&= \frac{a}{1+Ce^{-\ln C+bx}}\\
+	&= \frac{a}{1+Ce^{-\ln C}\cdot e^{bx}}\\
+	&= \frac{a}{1+e^{bx}} \br
+ 	f(d+x)&=\frac{a}{1+e^{-bx}}
+\end{align*}
+Dermed er
+\begin{align*}
+	f(d-x)+f(d+x)&=\frac{a}{1+e^{-bx}}+\frac{a}{1+e^{bx}} \\
+	&=\frac{a}{(1+e^{-bx})(1+e^{bx})}\left(1+e^{bx}+1+e^{-bx}\right) \\
+	&=\frac{a}{1+e^{bx}+e^{-bx}+e^{-bx}e^{bx}}\left(2+e^{bx}+e^{-bx}\right) \\
+	&=\frac{a}{2+e^{bx}+e^{-bx}}\left(2+e^{bx}+e^{-bx}\right)\\
+	&=a
+\end{align*}
+\item Vi har at
+\begin{align*}
+	h_0-h_1 &=f(d)-f(d-x)-(f(d+x)-f(d)) \\
+	&= f(d)+f(d)- (f(d-x)+f(d+x)) \\
+	&= a-a \\
+	&=0
+\end{align*}
+Dermed er $h_0=h_1=a$. Dette betyr at den vertikale avstanden mellom grafen til $f$ og linja $y=f(d)$ er konstant\footnote{Nærmere bestemt er grafen til $f$ rotert $90^\circ$ om linja $y=f(d)$.}.
+\fig{logistsym_lf}
+\item Da $f(d-x)+f(d+x)=a$, har vi at
+\[ \dfrac{\text{d}}{\text{d}x}\left(f(d-x)+f(d+x)\right)=0 \]
+Av kjerneregelen er
+\[ \dfrac{\text{d}}{\text{d}x}\left(f(d-x)+f(d+x)\right)'=-f'(d-x)+f'(d+x) \]
+Videre er
+\[ \frac{\text{d}}{\text{d}x}\left(-f'(d-x)+f'(d+x)\right)=f''(d-x)+f''(d+x) \]
+Følgelig er
+\[ f''(d-x)=-f''(d+x) \]
+Dette betyr at $f''(x)$ skifter fortegn i $x=d$ (og $f''(d)=0$), som dermed er infleksjonspunktet\footnote{Av oppgave b) har vi at $f$ bare har ett infleksjonspunkt.} til $f$. Da er $(d, f(d))$ vendepunktet til $f$.
+}
 
 
 
 \newpage
+\begin{comment}
+	\grubr{opgderlogder} \\
+	Vi setter $u=1+Ce^{-bx}$ og $g(u)=\frac{a}{u}=a u^{-1}$. Av kjerneregelen ved derivasjon har vi at
+	\[ u'(x)= -Cbe^{-bx}\]
+	Videre er
+	\[ g'(u)=-au^{-2} \]
+	Av kjerneregelen har vi at
+	\begin{align*}
+		f'(x)&=au^{-2}Cbe^{-bx} \\
+		\frac{f'(x)}{abC} &= \frac{e^{-bx}}{u^2}
+	\end{align*}
+	Vi setter $v=u^2$ og $k=e^{-bx}$. Av kjerneregelen har vi at
+	\begin{align*}
+		v' &= -2u\cdot Cbe^{-bx}=-2Cbuk \br
+		k' &= -be^{-bx}=-bk 
+	\end{align*}
+	
+	Av produktregelen ved derivasjon har vi at
+	\begin{align*}
+		\frac{f''(x)}{abC}&=\frac{k'v-kv'}{v^2} \br
+		\frac{v^2 f''(x)}{abc}&=-bk u^2-k(-2Cbuk) \\
+		&=bku(2Ck-u)
+	\end{align*}
+	Hvis $f''(x)=0$, må vi ha at $(2Ck-u)=0$, og da er
+	\begin{align*}
+		2Ck-\left(1+Ck\right) &= 0 \\
+		Ck-1 &= 0 \\
+		k &= \frac{1}{C}\\
+		e^{-bx} &= C^{-1} \\
+		-bx &= \ln C^{-1} \\
+		x &= \frac{1}{b}\ln C
+	\end{align*}
+	Altså er $x=\frac{1}{b}\ln C$ maksimalpunktet til $f'(x)$. Videre har vi at
+	\[ f\left(\frac{1}{b}\ln C\right)=\frac{a}{1+Ce^{-\ln C}}=\frac{a}{1+1}=\frac{a}{2} \]
+\end{comment}
 
+\newpage
 \grubr{opgderxsquare}
 \fig{opgderxsquare_lf}
  Vi har at $f'(c)=2ac$. Tangenten til $f$ i $A$ kan derfor beskrives ved funksjonen $g(x)=2acx+b$. I punktet $A$ har vi at

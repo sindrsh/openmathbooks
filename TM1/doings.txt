@@ -1,5 +1,3 @@
-definer eksisterende grenseverdi
-
 opg: skriv hvilke elementære funksjoner som er konkave/konvekse.
 opg: vis at ekstremalpunktene til en tredjegradsfunksjon er nullpunktene
 til den deriverte funksjonen. vis at infleksjonspunktet til tredjegradsfunksjonen
@@ -12,4 +10,7 @@ opg: vis at tangenten til x^2 skjærer i x/2
 toppunkt midt mellom nullpunkt også for 3. grads?
 
 "omvendt funksjon" ved delt forskrift.
-ln^2
+
+ei linje
+
+oppgave om å addere og subtrahere vektorer

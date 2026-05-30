@@ -24,10 +24,10 @@ Hvis $ {f(x_1)\geq f(x_2) }$ kan erstattes med $ {f(x_1)> f(x_2)} $, er $ f $ \o
 } \newpage
 
 \reg[\monder \label{monder}]{
-Gitt $ f(x) $ deriverbar på intervallet $ [a, b] $.
+Gitt funksjonen $ f(x) $, deriverbar på intervallet $ [a, b] $. Vi har at
 \begin{itemize}
-\item Hvis $ {f'\geq0} $ for $ {x\in(a, b)} $, er $ f $ \outl{voksende} for $ x\in[a, b] $
-\item Hvis $ {f'\leq0} $ for $ {x\in(a, b)} $, er $ f $ \outl{avtagende} for $ x\in[a, b] $
+\item $ {f'\geq0} $ for $ {x\in(a, b)} \iff f $ er \outl{voksende} for $ x\in[a, b] $
+\item $ {f'\leq0} $ for $ {x\in(a, b)} \iff f $ er \outl{avtagende} for $ x\in[a, b] $
 \end{itemize}
 Hvis henholdsvis \sym{$ \geq $} og \sym{$ \leq $} kan erstattes med \sym{$ > $} og \sym{$ < $}, er $ f $ \outl{strengt voksende/strengt avtagende}. 
 } \regv
@@ -90,6 +90,23 @@ Gitt en kontinuerlig funksjon $ f(x) $. Da har vi at
 \end{itemize} 
 }
 \end{comment}
+\newpage
+\reg[Konvekse og konkave funksjoner \label{konvkonk}]{
+	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
+	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konveks} for $ x\in[a, b] $.	
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konv}}
+	\end{figure}	
+	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konkav} for $ x\in[a, b] $.
+	\begin{figure}
+		\centering
+		\includegraphics[]{\figp{konk}}
+	\end{figure}
+	\vs
+}
+
 
 \section{Ekstremalpunkt, vendepunkt og infleksjons-punkt}
 \reg[Endepunkt]{
@@ -115,9 +132,9 @@ Gitt en funksjon $f(x)$. Hvis ${D_f=[a, b]}$, er $a$ og $b$ \outl{endepunktene} 
 	\end{itemize}\vs
 }
 \spr{
-Et maksimum/minimum blir også kalt en\\ \outl{maksimumsverdi/minimumsverdi}.
+Et maksimum/minimum blir også kalt en \outl{maksimumsverdi}/\outl{minimumsverdi}.
 }
-\reg[Ekstremalverdi og ekstremalpunkt]{\index{ekstremalpunkt}\index{ekstremalverdi}
+\reg[Ekstremalverdi og ekstremalpunkt \label{extremumpoints}]{\index{ekstremalpunkt}\index{ekstremalverdi}
 	Gitt en funksjon $ f(x) $ med maksimum/minimum $ f(c) $. Da er
 	\begin{itemize}
 		\item $ f(c) $ en \outl{ekstremalverdi} for $ f $.
@@ -134,36 +151,49 @@ Et tall $ c $ er et \outl{kritisk punkt} for en funksjon $ f(x) $ hvis ett av f�
 }
 
 \reg[\fderekstr \label{fderekstr}]{
-Gitt en deriverbar funksjon $ f(x) $ og tallene $a$, $b$ og $c$, hvor $ [a, b] \in D_f $ og $a<c<b$.
+Gitt en deriverbar funksjon $ f(x) $ og tallene $a$, $b$ og $c$, hvor ${a<c<b}$ og $a, b, c\in D_f$.
 \begin{enumerate}[label=(\roman*)]
-	\item Hvis $ c $ er et lokalt ekstremalpunkt for $ f $, er $ {f'(c)= 0}$
-	\item Hvis $ {f'>0} $ for $ {x\in(a, c)} $ og $ {f'<0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt maksimumspunkt for $ f $
-	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $
+	\item Hvis $ c $ er et lokalt ekstremalpunkt for $ f $, er $ {f'(c)= 0}$.
+	\item Hvis $ {f'>0} $ for $ {x\in(a, c)} $ og $ {f'<0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt maksimumspunkt for $ f $.
+	\item Hvis $ {f'<0} $ for $ {x\in(a, c)} $ og $ {f'>0} $ for $ {x\in(c, b)} $, er $ c $ et lokalt minimumspunkt for $ f $.
 \end{enumerate}
 }
 \regv
 \spr{
-	Det som blir beskrevet i punkt (ii) og (iii) over omtales ofte som at ''$ f $ skifter fortegn i $ c $''. 
-} \vsk
-
+	Det som blir beskrevet i punkt (ii) og (iii) over omtales som at ''$ f $ skifter fortegn i $ c $''.\vsk
+	
+	Hvis $f'(c)=0$, kalles $c$ også et \outl{stasjonært punkt}. 
+}
 \info{Obs!}{
 I andre tekster kan man finne definisjoner som skiller seg noe fra de vi har bestemt her. I noen tekster er for eksempel $c$ et kritisk punkt hvis $f$ ikke er deriverbar for $x=c$.
 }
 \newpage
-\eks[1]{
+\reg[Naboliggende esktremalpunkt \label{extremumaandb}]{
+	Gitt en kontinuerlig funksjon $f(x)$ med lokale ekstremalpunkt $c$ og $d$. Gitt videre at $f$ ikke har andre lokale ekstremalpunkt på intervallet $(c, d)$. Da har vi at
+	\begin{itemize}
+		\item ${f(c)>f(d)}$, er $c$ et lokalt maksimalpunkt og $d$ et lokalt minimumspunkt.
+		\item ${f(d)>f(c)}$, er $d$ et lokalt maksimalpunkt og $c$ et lokalt minimumspunkt.
+	\end{itemize}
+}
+\eks[]{
 Finn det lokale bunnpunktet og toppunktet til 
 \[ f(x)=2x^3 + 9x^2 - 60x \]
 \sv \vs
 Vi starter med å finne $ f' $:
 \[ f'=6x^2+18x-60 = 6(x^2+3x-10) \]
-Siden $ 5\cdot(-2)=10 $ og $ 5+(-2)=3 $, har vi av \rref{a1a2} at
+Siden $ 5\cdot(-2)=-10 $ og $ 5+(-2)=3 $, har vi av \rref{a1a2} at
 \[ f'=6(x-2)(x+5) \]
-$ f'=0 $ for $ x=2 $ og $ x=-5 $. Vi har at
+$f'=0$ for $x=2$ og $x=-5$. Videre har vi at
 \alg{
 f(2)&=2^3+9\cdot2^2-60\cdot2 = -68	\br
 f(-5)&=5^3+9\cdot5^2-60\cdot5 = 275 
 }
-Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
+${f(-5)>f(2)}$, altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til $ f $.
+}
+
+
+\fork{\ref{extremumaandb} Naboliggende esktremalpunkt}{
+Da $c$ er et lokalt ekstremalpunkt, skifter $f'$ fortegn i $c$. Og siden $d$ er det neste lokale ekstremalpunktet, må $f'$ har likt fortegn på intervallet $(c,d)$. Siden $f(c)>f(d)$, må $f$ være avtagende på intervallet $(c, d)$, som betyr at $f'<0$ på dette intervallet.
 }
 
 
@@ -176,6 +206,22 @@ Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til 
 		\item Hvis $ {f'(c)=0 }$ og $ {f''(c)>0} $, er $ f(c) $ et lokalt minimum.
 		\item Hvis ${ f'(c)=f''(c)=0 }$, kan man ikke ut fra denne informasjonen alene si om $ f(c) $ er et lokalt maksimum eller minimum.
 	\end{itemize}	
+}
+\eks[1]{
+Finn lokale maksimum og minimum til funksjonen ${f(x)=x^3-3x^2}$.
+
+\sv
+Vi har at
+\begin{align*}
+	f'(x)= 3x^2-6x =3x(x-2)
+\end{align*}
+Altså er $f'=0$ for $x=0$ og $x=2$. Videre har vi at
+\begin{align*}
+	f''(x)&=6x-6 \br
+	f''(0)&=-6 \br
+	f''(2)&=6
+\end{align*}
+Dermed er $f(0)=0$ et lokalt maksimum, og $f(2)=-4$ et lokalt minimum.
 }
 \fork{\ref{andredertest} \andredertest}{
 	Av definisjonen for den deriverte har vi at
@@ -192,7 +238,7 @@ Altså er $ (-5, 275) $ toppunktet til $ f $ og $ (2, -68) $ er bunnpunktet til 
 	\begin{itemize}
 		\item Hvis $ {f''(c)=0} $ og $ f'' $ skifter fortegn i $ c $, er $ c $ et \outl{infleksjonspunkt} for $ f $.
 		\item Hvis $ c $ er et infleksjonspunkt for $ f $, er $ (c, f(c)) $ et \outl{vendepunkt} for $f$.
-		\item $ f $ er konveks på intervall hvor $ {f''>0} $, og konkav på intervall hvor $ {f''<0} $.
+		%\item $ f $ er konveks på intervall hvor $ {f''>0} $, og konkav på intervall hvor $ {f''<0} $.
 	\end{itemize}\vs
 }
 \newpage
@@ -255,22 +301,7 @@ Gitt en funksjon $ f(x) $. Hvis ${\lim\limits_{x\to \infty} f(x)=c}$ eller ${\li
 	\[ \lim\limits_{x\to \pm\infty}\left(\frac{1}{x-3}+2\right)=2 \]
 	Altså er $ y=2 $ en horisontal asymptote for $ f $.
 }
-\section{Konvekse og konkave funksjoner}
-\reg[Konvekse og konkave funksjoner \label{konvkonk}]{
-	Gitt en kontinuerlig funksjon $ f(x) $.	\vsk
-	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger over grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konveks} for $ x\in[a, b] $.	
-	\begin{figure}
-		\centering
-		\includegraphics[]{\figp{konv}}
-	\end{figure}	
-	Hvis hele linja mellom $ (a, f(a)) $ og $ (b, f(b)) $ ligger under grafen til $ f $ på intervallet $ [a, b] $, er $ f $ \outl{konkav} for $ x\in[a, b] $.
-	\begin{figure}
-		\centering
-		\includegraphics[]{\figp{konk}}
-	\end{figure}
-	\vs
-}
+
 \section{Injektive og omvendte funksjoner}
 \subsubsection{Injektive funksjoner}
 \reg[Injektive funksoner]{
@@ -341,17 +372,24 @@ Hvis $ f $ og $ g $ er omvendte funksjoner, skrives $ g $ ofte som $ f^{-1} $. D
 I alle andre tilfeller enn ved $ {n=-1} $, vil det i denne boka være slik at
 \[ f^n=(f)^n \] 
 }
-\section*{Forklaringer}
+\section{Forklaringer}
 \fork{\ref{monder}\,\monder}{
+	{$\bm {f'\geq0} $ \textbf{for} $\bm {x\in(a, b) \Rightarrow f} $ \textbf{er voksende for} \boldmath$ x\in[a, b] $} \os
 	Gitt $ f(x) $, hvor $ {f'\geq0} $ for $ {x\in[a, b]} $. La $ {x_1, x_2 \in(a, b)}$ og $ {x_2>x_1} $. Av \refunnbr{meanval}{middelverdisetningen} (se side \pageref{meanval}) finnes det et tall $ {c\in(x_1, x_2)} $ slik at
 	\alg{
 		f'(c) &=\frac{f(x_2)-f(x_1)}{x_2-x_1}
 	}
 	Da $ c\in[a, b] $, er $ {f'(c)\geq 0} $, og da er
 	\alg{
-		0\geq \frac{f(x_2)-f(x_1)}{x_2-x_1}
+		0\leq \frac{f(x_2)-f(x_1)}{x_2-x_1}
 	}
-	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $.
+	Følgelig er $ {f(x_2)\geq f(x_1)} $, og av \dref{voksogav} er da $ f $ voksende på intervallet $ (a, b) $.\vsk
+	
+{$\bm {f'\geq0} $ \textbf{for} $\bm {x\in(a, b) \Leftarrow f} $ \textbf{er voksende for} \boldmath$ x\in[a, b] $} \os
+Av definisjonen til den deriverte har vi at
+\[ f'(x_1)=\lim\limits_{x_2\to x_1} \frac{f(x_2)-f(x_1)}{x_2-x_1}\]
+For ${x_1, x_2\in(a, b)}$ vet vi (siden $f$ er voksende på intervallet) at $f(x_2)\geq f(x_1)$ hvis $x_2>x_1$, og at $f(x_1)>f(x_2)$ hvis $x_2<x_1$. I begge tilfeller får vi at $f'(x_1)\geq0$.
+	
 }\vsk
 
 \begin{comment}
@@ -381,7 +419,7 @@ Da $ f $ er voksende, kan vi hele tiden være sikre på at $ {f(x_1)\leq f(x_3)\
 	Altså er $ {f'(c)=0} $, og $ f' $ skifter fortegn fra positiv til negativ i $ c $. Med samme framgangsmåte kan det vises at dette også gjelder dersom $ c $ er et minimumspunkt, bare at da skifter $ f' $ fra negativ til positiv.\vsk
 	
 	\textbf{Punkt (ii)} \os
-	Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er sterkt voksende på intervallet. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ sterkt avtagende på intervallet. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
+	Hvis $ {f'>0} $ på intervallet $ (a, c) $, har vi av \rref{monder} at $ f $ er strengt voksende på intervallet. Hvis $ {f'<0} $ på $ (c, b) $, er $ f $ strengt avtagende på intervallet. Dette må nødvendigvis bety at $ {f(c)\geq f(x)} $ for $ {x\in(a, b)} $, og da er $ c $ et maksimumspunkt.\vsk
 	
 	\textbf{Punkt (iii)} \os
 	Tilsvarende resonnement som for punkt (ii).

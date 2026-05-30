@@ -1,0 +1,43 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\footnotesize
+
+
+\opr{opgfunkligset} \os
+\abc{
+\item Av \eqref{eks3a} har vi at \vs
+\alg{
+	x-y&=5 \\
+	y&=x-5
+}
+Av \eqref{eks3b} har vi at \vs
+\alg{
+	x+y&=9 \\
+	y &= 9-x 
+}
+De to uttrykkene for $ y $ er uttrykket for to rette linjer, som henholdsvis sammenfaller med uttrykkene for $ f(x) $ og $ g(x) $.
+\item Når $ f(x)=g(x) $, har vi at
+\alg{
+x-5 &= 9-x \\
+2x&=14 \\
+x &= 7
+}
+Videre er da $ y=9-7=2 $. Altså er $ x=7 $ og $ y=2 $.
+}
+
+\grubr{opgfunkkvad}
+\abc{
+\item Ved å gange ut parentesene får vi at
+\[ (x+2)(x-4)=x^2-4x+2x-8=x^2-2x-8=x^2-2x-8 \]
+Dette tilsvarer funksjonsuttrykket til $f$.
+\item Av uttrykket fra a), finner vi at $f=0$ når $x=-2$ og $x=4$.
+\item Vi har at
+\begin{align*}
+	f(-3)&=(-3+2)(-3-4)=(-1)\cdot(-7)=7 \\
+	f(5)&=(5+2)(5-4)=7\cdot1 =7
+\end{align*
+
+\end{document}

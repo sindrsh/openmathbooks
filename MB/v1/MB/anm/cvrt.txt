@@ -1,0 +1,2 @@
+convert -density 1000 -quality 100 brutv1-*.pdf brutv.png
+

@@ -69,7 +69,7 @@ Altså er $ f'(a)=3a^2 $.
 Et annet ord for en \textit{tangeringslinje} er en \outl{tangent}. \os
 
 
-Hvis vi for to funksjoner $f(x)$ og $g(x)$ har at ${f'(a)=g'(a)}$, sier vi at funksjonene tangerer hverandre i punktet $a$. \os
+Hvis vi for to funksjoner $f(x)$ og $g(x)$ har at ${f'(a)=g'(a)}$ og $f(a)=g'(a)$, sier vi at funksjonene tangerer hverandre for $x=a$ (eventuelt i punktet $(a, f(a))$. \os
 
 Hvis vi for en funksjon $f(x)$ har at $f'(a)$ eksisterer, sier vi at $f$ er \outl{deriverbar} for $x=a$.
 
@@ -132,7 +132,7 @@ Gitt en funksjon $f$. Hvis vi deriverer $f'$, får vi den \outl{andrederiverte} 
 	For at denne grensen skal eksistere, må vi ha at $ {\lim\limits_{b\to a} \left(f(b)-f(a)\right)=0} $ (hvis ikke går grensen mot $ \pm \infty $, og da er ikke den deriverte definert), og følgelig er $ {\lim\limits_{b\to a} f(b)=f(a)} $. Dermed er $ f $ kontinuerlig for $ x=a $.
 }
 \info{Merk}{
-	Det er veldig viktig å være klar over at vilkåret i \rref{derladstocont} ikke kan bli snudd; at en funksjon er kontinuerlig gir ingen garanti for at den er deriverbar. Men \rref{derladstocont} gir et krav om at en funksjon må være kontinuerlig i et punkt for å være deriverbar i det samme punktet.
+	Det er veldig viktig å være klar over at vilkåret i \rref{derleadstocont} ikke kan bli snudd; at en funksjon er kontinuerlig gir ingen garanti for at den er deriverbar. Men \rref{derleadstocont} gir et krav om at en funksjon må være kontinuerlig i et punkt for å være deriverbar i det samme punktet.
 }
 \reg[Den deriverte ved delt forskrift \label{derdeltforskrift}]{
 	Gitt funksjonene $g(x)$ og $k(x)$, hvor $D_g=\mathbb{R}$ og $ D_k= \mathbb{R}$, og 
@@ -277,9 +277,9 @@ f' &= u'v+uv' \\
 
 \reg[\divder \label{divder}]{
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor $ f=\dfrac{u}{v} $. Da er
-\begin{equation}\label{divdereq}
+\begin{equation*}\label{divdereq}
 	f'=\frac{u'v-uv'}{v^2} 
-\end{equation}
+\end{equation*}
 }
 \eks{
 Finn den deriverte av funksjonen $ f(x)=\frac{\ln x}{x^4} $.
@@ -422,7 +422,7 @@ Siden vi for en kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \tild
 \textbf{Likning (\ref{derxr})}\\
 Vi starter med å merke oss at
 \[ (\ln x^r)'=(r \ln x)' = \frac{r}{x} \]
-Vi setter $ u=x^r $. Av kjerneregelen har vi da at
+Vi setter $ u=x^r $. Av \refunnbr{kjerne}{kjerneregelen} (\rref{kjerne}) har vi da at
 \alg{
 \frac{r}{x}&=	(\ln u)'\\
 	&=\frac{1}{u} u' \\
@@ -437,12 +437,12 @@ Vi har at $ {x=e^{\ln x}} $. Vi setter $ {u=\ln x} $ og $ g(u)=e^u $. Da har vi 
 g'(u) &= e^u=e^{\ln x}=x \br
 u'(x) &= \left(\ln x\right)'
 }
-Av kjerneregelen har vi at
+Av \refunnbr{kjerne}{kjerneregelen} (\rref{kjerne}) har vi at
 \alg{
 \left(x\right)' &= g'(u)u'(x)\\
 &= x \left(\ln x\right)'
 }
-Da\footnote{Se oppgave ??.}  ${\left(x\right)'=1} $, har vi at
+Da\footnote{Se \refops{opgderxn}.}  ${\left(x\right)'=1} $, har vi at
 \[ 1 = x\left(\ln x \right)' \]
 Altså er
 \[ \left(\ln x\right)'= \frac{1}{x} \]

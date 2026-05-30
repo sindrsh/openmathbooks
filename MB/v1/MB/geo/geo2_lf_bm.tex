@@ -1,0 +1,386 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+\grubr{opggeo263} \\
+\textbf{Alternativ 1} \\
+\fig{opggeo263_lf}
+Av \pyt\ på $\triangle ACB$ har vi at
+\[ BC=\sqrt{6^2+2^2}=\sqrt{40}=2\sqrt{10} \]
+$\triangle ACB\sim \triangle DCE$ fordi begge er rettvinklede og $\angle BCA=\angle ECD$ (de er toppvinkler). Dermed har vi at
+\alg{
+	\frac{CE}{DE}&=\frac{BC}{AB} \br
+	\frac{CE}{1}&=\frac{2\sqrt{10}}{2} \\
+	CE&=\sqrt{10}
+}
+Altså er
+\[ BE=BC+CE=2\sqrt{10}+\sqrt{10}=3\sqrt{10} \]
+\textbf{Alternativ 2}
+\fig{opggeo263_lf2}
+$\triangle ACB\sim \triangle DCE$ fordi begge er rettvinklede og $\angle BCA=\angle ECD$ (de er toppvinkler). Dermed har vi at
+\begin{align*}
+	\frac{CD}{DE}&=\frac{AC}{AB} \br
+	\frac{CD}{1}&=\frac{6}{2}\br
+	CD&=3
+\end{align*}
+Av \pyt\ på $\triangle FBE$ har vi at
+\[ BE=\sqrt{BF^2+EF^2}=\sqrt{(6+3)^2+(2+1)^2}=\sqrt{90}=3\sqrt{10} \]
+
+\newpage	
+	
+\grubr{opggeotrapz}
+\fig{opggeotrapz}
+Vi har at
+\begin{align*}
+	\frac{7+x}{2}\cdot3&=15 \\
+	(7+x)\cdot3&=30 \\
+	7+x &= 10 \\
+	x &= 3
+\end{align*}
+
+\grubr{opggeopytrapz}
+\fig{opggeopytrapz_lf}
+Av \pyt\ på $\triangle ABC$ har vi at
+\begin{align*}
+	AC^2&=BC^2-AC^2 \\
+	AC^2&=5^2-3^2 \\
+	AC&=\sqrt{16} \\
+	AC &= 4
+\end{align*}
+Dermed er arealet til trapeset
+\[ \frac{8+2}{2}\cdot4=20 \]
+\newpage
+
+\grubr{opggeopytgrub} \\
+Vi setter den ukjente siden lik $a$. Da må vi enten ha at
+\[ a=\sqrt{9^2+12^2}=3\sqrt{9+16}=3\cdot5=15 \]
+eller at
+\[ a=\sqrt{12^2-9^2}=3\sqrt{16-9}=3\sqrt{7} \]
+
+\grubr{opggeoeqlheight}
+\fig{opggeoeqlheightlos}
+\abc{
+	\item Da $ \triangle ABC $ er likesidet, er $ D $ midtpunktet på $ AB $. Dermed er 
+	\nn{
+		AD=DB=\frac{AB}{2}=\frac{s}{2}
+	}
+	$ \triangle ACD $ er en trekant med vinkler lik $ 30^\circ $, $ 60^\circ $ og $ 90^\circ $ og $ AC=2AD $. Altså er den lengste siden dobbelt så lang som den korteste.
+	\item Av \pyt på $ \triangle ADC $ har vi at
+	\alg{
+		CD^2 &= AC^2 - AD^2 \\
+		&= s^2+\left(\frac{1}{2}\right)^2 \\
+		&= \frac{3}{4}s^2
+	}
+}
+Altså er 
+\[ CD=\sqrt{\frac{3}{4}s^2}=\frac{\sqrt{3}}{2}s \]
+
+\grubr{opggeoarforhold}
+\fig{opggeoarforhold_lf}
+$ \triangle AGB \sim \triangle DHF $ fordi de har parvis parallelle sider. Følgelig er 
+\alg{
+\frac{DE}{AB}&=\frac{h_2}{h_1} \br
+DE &= a\cdot AB
+}
+Nå har vi at
+\alg{
+2A_{\triangle ABC}&= AB\cdot h_1 \vn
+2A_{\triangle DEF}&=DE\cdot h_2 = a\cdot AB\cdot ah_1 = a^2 AB\cdot h_1
+}
+Dermed er
+\nn{
+\frac{A_{\triangle DEF}}{A_{\triangle ABC}}=a^2
+}
+\grubr{opggeoarforhold2}
+\fig{opggeoarforhold_lf}
+$\dfrac{h_1}{a_1}=\dfrac{h_2}{a_2}$ kan vi omskrive til
+\[ \frac{h_1}{h_2}=\frac{a_1}{a_2} \]
+$ \triangle AGB \sim \triangle DHF $ fordi de har parvis parallelle sider. Følgelig er
+\[ \frac{BG}{HF}=\frac{h_1}{h_2}=\frac{AC}{DF} \]
+Da $\triangle ABC\sim \triangle DEF$, har vi at
+\[ \frac{h_1}{h_2}=\frac{AC}{DF}=\frac{BC}{EF}=\frac{AB}{DE} \]
+
+\newpage
+\grubr{opggeosekt}
+\fig{opggeosekt}
+\abc{
+\item Av \pyt\ er
+\[ s=\sqrt{h^2+r^2} \]
+\item Arealet $A_c$ til sirkelen er $A_c=\pi r^2$. Buelengden til sektoren må være $2\pi r$, og dermed har vi av \rref{areskten} at arealet $A_s$ til sektoren er
+\[ A_s=\frac{1}{2}s\cdot2\pi r=\pi rs \]
+Altså har vi at
+\[ A_O = A_c+A_s=\pi r^2 + \pi rs= \pi r (r+s)  \]
+}
+
+\grubr{opggeopytar}
+Den største sidelengden multiplisert med 3 må utgjøre mer enn omkretsen til trekanten. Da $3\cdot8=24$, er dermed siden med lengde 8 en katet. Vi setter den andre kateten lik $a$ og hypotenusen lik $c$. Da har vi at
+\alg{
+a+8+\sqrt{a^2+8^2}&=40 \\
+\sqrt{a^2+64}&=32-a\\
+a^2+64&=(32-a)^2 \\
+a^2+2\cdot32&=32^2-2\cdot32a+a^2 \\
+32-2 &= 2a \\
+15 &=a
+}
+Dermed er $c=\sqrt{15^2+64}=\sqrt{189}=17$. Sidelengdene er 8, 15, og 17.
+
+\grubr{opggeotale}
+\fig{opggeotale_lf}
+$\triangle AOC$ og $\triangle BOC$ er likebeint ($OA=OC=OB$). Dette betyr at
+\[ \angle COA=180^\circ-2u\qquad,\qquad\angle BOC=180^\circ-2v\]
+Dermed har vi at
+\begin{align}
+	\angle COA+\angle BOC =180^\circ \\
+	180^\circ-2u+180^\circ-2v=180^\circ \\
+	2(u+v)&=180^\circ \\
+	u+v=90^\circ
+\end{align}
+Altså er $\angle ACB=u+v=90^\circ$.\vsk
+
+\grubr{opglikbmidtn}
+\fig{opglikbmidtnlos}
+Vi lar $ D $ være punktet der halveringslinja til $ \angle ACB $ skjærer $ AB $. $ \triangle DAC\cong \triangle DBC $ fordi de har $ CD $ felles og $ AC=BC $ (trekantene oppfyller altså vilkår iii for formlikhet, og må da være kongruente). Følgelig er $ \angle BDA=\angle ADC $, og da er $ 2\angle DBA=180^\circ $. Altså er $ \angle DBA=90^\circ $, og da $ AD=BD $, ligger $ DC $ på midtnormalen til $ AB $.
+\newpage
+
+\grubr{opggeovispyt}
+\fig{opggeovispyt}
+\abc{
+\item $ \triangle CDA \sim \triangle BCA $ fordi begge er rettvinklede og de har $ \angle BAC $ felles. Dermed er
+\alg{
+AD&=\frac{AC}{AB}AC = \frac{b^2}{c}
+}
+\item $ \triangle BDA \sim \triangle BCA $ fordi begge er rettvinklede og de har $ \angle CBA $ felles. Dermed er
+\alg{
+	DB&=\frac{BC}{AB}BC = \frac{a^2}{c}
+}
+\item Vi har at
+\alg{
+c&=AD+DB \\
+c &= \frac{b^2}{c}+ \frac{a^2}{c} \br
+c^2 &= b^2+a^2
+}
+}
+\grubr{opgGV21D1opg12} \\
+En regulær sekskant kan deles in i seks kongruente, likesidete trekanter. Dette betyr at $ \angle C=120^\circ$. Da $ \triangle ABC $ er likebeint, er derfor
+\alg{
+	2\angle BAC +120^\circ &= 180^\circ \\
+	\angle BAC &= 30^\circ
+}
+\fig{opggv21d1opg12los}
+
+\grubr{opggeotresirk}
+\fig{opggeotresirklos}
+$ \triangle ABD $ er likesidet fordi $ AD=AB=BD $, og har dermed areal lik $ \frac{1}{2}\cdot \frac{\sqrt{3}}{2}AB^2=\sqrt{3} $. Da $ \angle B=60^\circ $, utgjør den grønne sektoren $ \frac{1}{6} $ av sirklenes areal, følgelig er arealet til den grønne sektoren $ \frac{1}{6}\cdot \pi\cdot2^2=\frac{2\pi}{3} $. Vi har at
+\alg{
+\text{areal til grønt og blått område}&=2\cdot\text{areal til grønt område}-A_{\triangle ABD} \\
+&=\frac{4\pi}{3}-\sqrt{3}
+}
+Videre har vi at
+\alg{
+\text{areal til rødt omrdåde}&=\text{areal til sirkel}-4\cdot\text{areal til grønt og blått område} \\
+&= 4\pi-4\left(\frac{4\pi}{3}-\sqrt{3}\right) \\
+&= 4\sqrt{3}-\frac{4}{3}\pi
+}
+
+\grubr{opggeoqrst}
+\fig{opggeoqrst_lf}	
+$ {\triangle EFC \sim \triangle DFB} $ fordi begge er rettvinklede, og $ {\angle CFE = \angle BFD}$ (de er toppvinkler). Dermed har vi at
+\begin{equation}\label{opggeoqrsteq1}
+	\frac{EF}{CE}=\frac{FD}{BD} 
+\end{equation}
+Videre er
+\begin{equation}\label{opggeoqrsteq2}
+	EF+FD= AD-AE
+\end{equation}
+Ved å løse likningssettet vi får av \eqref{opggeoqrsteq1} og \eqref{opggeoqrsteq2}, med hensyn på $ EF $ og $ ED $, får vi at
+\[ 
+EF = \frac{AD-AE}{CE+BD}CE\qquad,\qquad  FD=\frac{AD-AE}{CE+BD}BD
+\]
+Det doble arealet til $ \triangle ABC $ er gitt som
+\begin{multline*}
+(AE+EF)CE+(AD-FD)BD \\=\left(AE+\frac{AD-AE}{CE+BD}CE\right)CE+\left(AD-\frac{AD-AE}{CE+BD}BC\right)BD	
+\end{multline*}
+\alg{
+&=\frac{1}{CE+BD}\left[\left(AE\cdot BD+AD\cdot CE\right)CE+\left(AD\cdot CE+AE\cdot BD\right)BD\right]\br
+&=AD\cdot CE+ AE\cdot BD
+}
+
+\newpage
+\grubr{opggeolikar} \\
+\textbf{Alternativ 1 (sendt inn av Erika (15 år))} \os 
+Da $I$, $F$, $G$ og $H$ er midtpunkt, er $\square HIFG$ et kvadrat. De grønne trekantene i $\square HIFG$ har grunnlinje med lik lengde, og høyder som til sammen utgjør en sidelengde i $\square HIFG$. Dermed utgjør de halve området til $\square HIFG$, og da må de blå trekantene utgjøre den andre halvparten. Utenfor $\square HIFG$ har vi nå fire kongruente trekanter, hvor to er blå og to er grønne. Dermed er det blå området like stort som det grønne området både innenfor og utenfor $\square HIFG$, og dermed er hele det blå området like stort som hele det grønne området.
+\fig{opggeolikarlos2}
+
+
+\textbf{Alternativ 2} \\
+Av å legge merke til trekanter med grunnlinje og høgde med lik lengde, finner vi at
+\alg{
+A_{\triangle AFE}=A_{\triangle FBE} &&
+A_{\triangle AIE}=A_{\triangle EDI}\vn
+A_{\triangle BGE}=A_{\triangle GCE}&&
+A_{\triangle HDE}=A_{\triangle HCE}
+}
+De åtte trekantene i likningene over utgjør hele $\square ABCD$ uten å overlappe hverandre, og hver likhet inneholder én blå og én grønn trekant. Dermed må arealet til det blå området tilsvare arealet til det grønne området.
+\fig{opggeolikarlos}
+
+\grubr{opggeosirkfirk}\\
+Vi lar $ r $ være radien til sirkelen. Vi har at $ AS=ES=r $, $ AF=2 $, og at $ FS=EF-SE=4-r $. Av \pyt\ med hensyn på $ \triangle AFS $ er
+\alg{
+AS^2&=AF^2+SF^2 \br
+r^2&=2^2+(4-r)^2 \\
+r^2&=4+16-8r+r^2 \\
+8r &= 20 \\
+r&= \frac{5}{2}
+} 
+\fig{opggeosirkfirk_lf}
+\newpage
+
+\grubr{opggeo1530}
+\abc{ 
+	\item \mbox{}
+	\textbf{Alternativ 1}
+	\fig{opggeosin15invlos3}
+	Med hensyn på vinkelsummen i $ \triangle ABC $ har vi at $ \angle ACB= 90-15^\circ=75^\circ$. Vi lar $ D $ være punktet på $ AB $ slik at $ \angle ACD=15^\circ $. Da er $ \angle CDA =75^\circ$ og $ \angle DCE=60^\circ $. Videre lar vi $ E $ være punktet på $ BC $ slik at $ CD=CE $, da er $ \triangle CDE $ likesidet. Vi setter $ s=CD $. Med hensyn på vinkelsummen i $ \triangle CBD $ er $ \angle BDC=180^\circ-15^\circ-60^\circ=105^\circ $, og da er $ \angle FDE=45^\circ $. Altså er $ \triangle DFE $ rettvinklet og likebeint, som betyr at $ DF=\frac{s}{\sqrt{2}} $. Altså er
+	\[ CF = CG+GF=\frac{\sqrt{3}}{2}s+\frac{s}{2} \]
+	Vi uttrykker det doble arealet til $ \triangle DFC $ på to måter:
+	\begin{flalign*}
+	&&DF\cdot CA &= GD\cdot CF \\
+	&&\frac{s}{\sqrt{2}} b &=\frac{s}{2}\left(\frac{\sqrt{3}}{2}s+\frac{s}{2}\right) &&(s\neq0) \\
+	&&4b&=s(\sqrt{2}+\sqrt{6}) \\
+	&& s&= \frac{4b}{\sqrt{2}+\sqrt{6}}
+	\end{flalign*}
+	Da $ \triangle ABC\sim \triangle BFE $, er
+	\alg{
+	\frac{BC}{AC}&=\frac{BE}{EF} \br 
+	\frac{a}{b}&=\frac{a-s}{\frac{s}{\sqrt{2}}}\\
+	sa-a\sqrt{2}&=-bs\sqrt{2}\br
+	\frac{a}{b} &= s\frac{\sqrt{2}}{\sqrt{2}b-s}
+	}
+	Altså er
+	\[ \frac{a}{b}=\frac{4b}{\sqrt{2}+\sqrt{6}}\cdot\frac{\sqrt{2}}{\sqrt{2}b-\frac{4b}{\sqrt{2}+\sqrt{6}}}=\sqrt{2}+\sqrt{6} \]
+	\newpage
+	\textbf{Alternativ 2}
+	\fig{opggeosin15invlos2}
+	Med hensyn på vinkelsummen i $ \triangle ABC $ har vi at $ \angle ACB= 90-15^\circ=75^\circ$. Vi lar $ D $ være punktet på $ AB $ slik at $ \angle ACD=15^\circ $. Da er $ \angle CDA =75^\circ$ og $ \angle DCE=60^\circ $, og dermed er $ \triangle CDE $ en $ 30^\circ $, $ 60^\circ $, $ 90^\circ $ trekant. Vi setter $ s=CE $ og $ c=AB $. Da er $ DE=\frac{\sqrt{3}}{2}s $ og $ CE=\frac{s}{2} $. $ \triangle ABC \sim \triangle ACD \sim \triangle EBD$ fordi alle er rettvinklede og har en vinkel lik $ 15^\circ $. Dermed er
+	\alg{
+	CD\cdot AB&=BC\cdot AC \\
+	cs &= ab
+	}
+	Videre har vi at
+	\alg{
+	\frac{AB}{AC}&=\frac{EB}{DE}  \br
+	\frac{c}{b}&=\frac{a-\frac{s}{2}}{\frac{\sqrt{3}}{2}s} \br
+	c&=\frac{2ab-s}{\sqrt{3}s} \\
+	\sqrt{3}c &= 2c-b 
+	}
+	Altså er
+	\[ c= \frac{b}{2-\sqrt{3}}=b(2+\sqrt{3}) \]
+	Av \pyt\ med hensyn på $ \triangle ABC $ er
+	\alg{
+	a^2 &=b^2+c^2 \\
+	a^2 &= b^2(2+\sqrt{3})^2+b^2 \\
+	\frac{a^2}{b^2}&= 8+4\sqrt{3}
+	} 
+	Da $ (\sqrt{2}+\sqrt{6})^2=8+4\sqrt{3} $, er
+	\[ \frac{a}{b}=\sqrt{2}+\sqrt{6} \]
+	\newpage
+	\textbf{Alternativ 3}
+	\fig{opggeosin15invlos}
+	Med hensyn på vinkelsummen i $ \triangle ABC $ har vi at $ \angle ACB= 90-15^\circ=75^\circ$. Vi lar $ D $ være punktet på $ AB $ slik at $ \angle ACD=15^\circ $. Da er $ \angle CDA =75^\circ$ og $ \angle DCE=60^\circ $. Videre lar vi $ E $ være punktet på $ BC $ slik at $ CD=CE $, da er $ \triangle CDE $ likesidet. Vi setter $ s=CD $, og $ c=AB $. $ \triangle ABC\sim \triangle ACD $ fordi begge er rettvinklede, og $ \angle ACD=\angle ABC$. Dermed er
+	\alg{
+		AD=AC\frac{AC}{AB}=\frac{b^2}{c} \vn
+		s=BC\frac{AC}{AB}=\frac{ab}{c}
+	}
+	Med hensyn på vinkelsummen i $ \triangle CBD $ er $ \angle BDC=180^\circ-15^\circ-60^\circ=105^\circ $, og da er $ \angle FDE=45^\circ $. Altså er $ \triangle DFE $ rettvinklet og likebeint, som betyr at $ DF=FE=\frac{s}{\sqrt{2}} $. Da $ \triangle ABC\sim FBE$, er $ \triangle ACD\sim \triangle FBE $, og dermed er
+	\begin{flalign*}
+		&&	EF\cdot CD &= AD\cdot EB \\
+		&&	\frac{1}{\sqrt{2}}\left(\frac{ab}{c}\right)^2&=\frac{b^2}{c}\left(a-\frac{ab}{c}\right) &&(a,b\neq0) \\
+		&& a&=c\sqrt{2}-b\sqrt{2}
+	\end{flalign*}
+	Av \pyt\ med hensyn på $ \triangle ABC$ har vi at $ c^2=a^2-b^2 $, og følgelig er
+	\alg{
+		a&=\sqrt{2}\sqrt{a^2-b^2}-b\sqrt{2} \\
+		a+b\sqrt{2}&=\sqrt{2}\sqrt{a^2-b^2} \\
+		a^2+2ab\sqrt{2}+2b^2&= 2(a^2-b^2) \\
+		-a^2+2ab\sqrt{2}+4b^2&=0
+	}
+	Av \textit{abc}-formelen har vi at
+	\alg{
+		a&=\frac{-2b\sqrt{2}\pm \sqrt{8b^2+16b^2}}{-2} \\
+		&= \left(\sqrt{2}\mp \sqrt{6}\right)b
+	}
+	Vi forkaster den negative løsningen for $ a $, og får at
+	\nn{
+		\frac{a}{b}=\sqrt{2}+\sqrt{6}
+	}
+\newpage
+	\item \mbox{}
+	
+	\fig{opggeo1530los}
+	$ A_{\triangle DBC}=A_{\triangle ADC} $ fordi med henholdsvis $ DB $ og $ AD $ som grunnlinje har de lik høgde, og $ DB=AD $. Altså er $ AF\cdot DC = EB\cdot DC $, og da er $ AF=EB $. Videre er $ \triangle DAF\cong \triangle DBE $ fordi begge er rettvinklede $ \angle ADF =\angle BDE$ (de er toppvinkler), og $ AD=DB $. Vi setter $ x=DE $, $ a=EB $ og $ b=AC $. Da $ \triangle BCE $ er en $ 30^\circ $, $ 60^\circ $, $ 90^\circ $ trekant, er $ EC=\sqrt{3}a $ og $ BC=2a $. Da $ \triangle BGC $ er en $ 45^\circ $, $ 45^\circ $ , $ 90^\circ $ trekant, er $ GB=\frac{2}{\sqrt{2}}a $. Da $ A_{\triangle ABC}=2A_{\triangle DBC} $, har vi at
+	\alg{
+		b\cdot \frac{2}{\sqrt{2}}a &= 2(\sqrt{3}a+x)\cdot a \\
+		b &= \sqrt{2}(\sqrt{3}a+x)
+	}
+	Av løsningen i oppgave a) har vi at $ {AC=(\sqrt{2}+\sqrt{6})AF}$, og dermed er $ b=a\sqrt{2}(\sqrt{3}+1)$. Altså er $ x=a $, som betyr at $ \triangle AFD $ er en $ 45^\circ $, $ 45^\circ $, $ 90^\circ $ trekant. Ved å betrakte vinkelsummen i $ \triangle CAF $, finner vi da at
+	\alg{
+		\angle DAC &=180^\circ-15^\circ-90^\circ-45^\circ \\
+		&=30^\circ
+	}
+	\textbf{Alternativ metode for å vise at \boldmath $ x=a $} \os
+	Av Pytagoras' setning på $ \triangle ACF $ har vi at
+	\alg{
+		AC^2 &= FC^2 + AF^2 \\
+		2(\sqrt{3}a+x)^2 &= (\sqrt{3}a+2x)^2 + a^2 \\
+		x^2 &= a^2
+	}
+}
+\newpage
+\grubr{opggeotrekulik}
+\abc{
+\item 
+\textbf{Alternativ 1}
+\fig{opggeotrekulikisclosp}
+Vi lar $ \triangle A'B'C' $ være en speilet utgave av $ \triangle ABC $. Da $ \angle C=\angle C' $, $ \frac{BC}{AB}=\frac{B'C'}{AB} $ og $ \frac{AC}{B'C'}=\frac{BC}{A'C'} $, har vi av vilkår (iii) i \rref{vilkform} at $ \triangle ABC\sim \triangle BA'C' $. Mer spesifikt betyr dette at $ AC $ er den samsvarende siden til $ B'C' $, som betyr at $ \angle B =\angle A'=\angle A $.\vsk
+
+\textbf{Alternativ 2}
+\fig{opggeotrekulikisclos}
+Vi kan alltids konsturere en rettvinklet trekant $ \triangle A'D'C' $ hvor $ 2AD'=AB $ og $ A'C'=AC $. Ved å la $ B' $ være $ A' $ speilet om $ C'D' $, har vi at $ \angle A' = \angle B $ og $ B'C'=A'C $. Dermed har $ \triangle ABC $ og $ \triangle A'B'C' $ parvis like lange sider, og er derfor kongruente. Da $ AB $ er den samsvarende siden til $ A'B' $, er $ BC $ den samsvarende siden enten til $ B'C' $ eller til $ A'C' $. Uansett hvilke to av disse det er, har vi at $ \angle A= \angle A'=\angle B' $, og tilsvarende er $ \angle B=\angle A'=\angle B' $. 
+\newpage
+\item Vi plasserer $ D $ på forlengelsen av $ CB $ slik at $ CD=CA $. Av oppgave a) er da $ \angle DAC=\angle D $, som betyr at 
+\begin{equation}\label{opggeotrekulikbac}
+	\angle BAC<\angle D \qquad, \qquad \angle D-\angle BAC>0
+\end{equation}
+Videre er $ \angle C=180^\circ-2\angle D $, og da er
+\begin{equation}\label{opggeotrekulikvb}
+	B=180^\circ-\angle C-\angle BAC= 2\angle D-\angle BAC
+\end{equation}
+Av \eqref{opggeotrekulikbac} og \eqref{opggeotrekulikvb} har vi at
+\[ \angle B> \angle D \]
+Dermed er 
+\[ \angle BAC<\angle D<\angle B \]
+\fig{opggeotrekulikvinklos} 
+\item Hvis $ CD $ ligger utenfor $ \triangle ABC $, har vi av \pyt\ at
+\[ (AB+DB)^2=AC^2-CD^2 \]
+Dette betyr at 
+\alg{
+(AB+DB)^2 &< AC^2 \\
+AB^2 &< AC^2 \\
+AB &< AC 
+}
+Da $ AB $ er den lengste siden i $ \triangle ABC $, er dette en selvmotsigelse, og dermed må $ CD $ ligge inni trekanten.
+\fig{opggeotrekulikh}
+\item At $ a+c>b $ og at $ b+c>a $ følger direkte av at $ c $ er den største lengden. Av oppgave $ c) $ vet vi at $ CD $ ligger inni $ \triangle ABC $, som vist i figuren under.
+\fig{opggeotrekuliklos}
+Av \pyt\ har vi at
+\[ b^2=AD^2+h^2\qquad,\qquad a^2=BD^2+h^2 \]
+Som betyr at
+\[ b>AD \qquad,\qquad a>BD \]
+Da $ c=AD+DB $, er dermed
+\[ c<b+a \]
+}
+
+\end{document}
+

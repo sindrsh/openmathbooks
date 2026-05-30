@@ -1,25 +1,8 @@
-/plus/min/gang/del
-- fiks oppgaver på nynorsk
-
-/geo
-- legg til volum i _eng
-- legg til omvendt pyt i _eng
-
-/rekar
-legg til opg om omvendt operasjon
-
-/rek
-- legg til kap i _eng
-
-/lig
-- legg til ulikskap i _eng
-
 /funk
-- fiks oppgaver på nynorsk
-- legg til eks[4] paa engelsk
 - legg til teori om ikke-lineære grafer
 - opg: skisser grafen til f(x)=1/x.
+- Legg til grafisk løsning av likningssystem
 
-
-/brok
-- legg til blanda tal pa engelsk
+opg:
+2PV26: 9, 11
+1PV26: 3, 4, 5, 10, 11, 12
