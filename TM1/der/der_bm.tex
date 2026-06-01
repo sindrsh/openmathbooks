@@ -27,14 +27,14 @@ I \mb\ har vi sett at uttrykket over gir stigningstallet til linja som går gjen
 I teksten og figurene over har vi tatt utgangspunkt i at $ {b>a }$, men dette er ikke en forutsetning for at uttrykkene er gyldige.
 }
 \regdef[Den deriverte\label{derdefa}]{
-Gitt en funksjon $ f(x) $. Den  \outl{deriverte}  av $ f $ i $ {x=a} $ er da gitt som
-\begin{equation}\label{derdefalt}
+Gitt en funksjon $ f(x) $. Den  \outl{deriverte}\index{den deriverte}  av $ f $ i $ {x=a} $ er da gitt som
+\begin{equation*}
 	f'(a)=	\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}
-\end{equation}
+\end{equation*}
 Alternativt kan vi skrive
-\begin{equation}\label{derdefaeq}
+\begin{equation*}
 	f'(a) =\lim\limits_{h \to 0} \frac{f(a+h)-f(a)}{h}
-\end{equation}
+\end{equation*}
 Linja som har stigningstall $ f'(a) $, og som går gjennom punktet $ (a, f(a)) $, kalles \outl{tangeringslinja} til $ f $ for $ x=a $.
 \fig{der1}
 }
@@ -66,12 +66,12 @@ Altså er $ f'(a)=3a^2 $.
 }
 
 \spr{
-Et annet ord for en \textit{tangeringslinje} er en \outl{tangent}. \os
+Et annet ord for en \textit{tangeringslinje} er en \outl{tangent}\index{tangent}. \os
 
 
-Hvis vi for to funksjoner $f(x)$ og $g(x)$ har at ${f'(a)=g'(a)}$ og $f(a)=g'(a)$, sier vi at funksjonene tangerer hverandre for $x=a$ (eventuelt i punktet $(a, f(a))$. \os
+Hvis vi for to funksjoner $f(x)$ og $g(x)$ har at ${f'(a)=g'(a)}$ og $f(a)=g(a)$, sier vi at funksjonene tangerer hverandre for $x=a$ (eventuelt i punktet $(a, f(a))$. \os
 
-Hvis vi for en funksjon $f(x)$ har at $f'(a)$ eksisterer, sier vi at $f$ er \outl{deriverbar} for $x=a$.
+Hvis vi for en funksjon $f(x)$ har at $f'(a)$ eksisterer, sier vi at $f$ er \outl{deriverbar}\index{deriverbarhet} for $x=a$.
 
 }
 
@@ -103,9 +103,9 @@ Hvis vi for en funksjon $f(x)$ har at $f'(a)$ eksisterer, sier vi at $f$ er \out
 
 \section{Derivasjonsregler}
 \subsubsection{Den deriverte funksjonen}
-\textsl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien i \eqref{derdefaeq} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
+\textsl{Eksempel 2} på side \pageref{dereks2} belyser noe viktig; hvis grenseverdien gitt i \dref{derdefa} eksisterer, vil $ f'(a) $ være uttrykt ved $ a $. Og selv om $ a $ betraktes som en konstant langs veien som fører til dette uttrykket, er det ingenting som hindrer oss i å etterpå behandle $ a $ som en variabel. Hvis $ f'(a) $ er et resultat av derivasjon av funksjonen $ f(x) $ er det også hendig å omdøpe $ a $ til $ x $:\regv
 \reg[Den deriverte funksjonen]{
-	Gitt en funksjon $ f(x) $. Den \outl{deriverte funksjonen} til $ f $ er funksjonen som fremkommer ved å erstatte $ a $ i \eqref{derdefaeq} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
+	Gitt en funksjon $ f(x) $. Den \outl{deriverte funksjonen}\index{derivert funksjon} til $ f $ er funksjonen som fremkommer ved å erstatte $ a $ i \dref{derdefa} med $ x $. Denne funksjonen skriver vi som $ f'(x) $.
 }
 \eks[]{
 Gitt $ {f(x)=x^3} $. Siden\footnote{Se \textsl{Eksempel 2}, side \pageref{dereks2}.} $ {f'(a)=3a^2} $, er $ f'(x)=3x^2 $. 
@@ -115,19 +115,19 @@ Gitt $ {f(x)=x^3} $. Siden\footnote{Se \textsl{Eksempel 2}, side \pageref{dereks
 Alternative skrivemåter for \sym{$f'(x)$} er \sym{$f'$}, 
 \sym{$ (f)'$} og \sym{$\frac{\text{d}}{\text{d}x} f $}. \os
 
-Den deriverte funksjonen til $f$ kalles også den \outl{førstederiverte} funksjonen av $f$. \vsk
+Den deriverte funksjonen til $f$ kalles også den \outl{førstederiverte}\index{førstederiverte} funksjonen av $f$. \vsk
 
-En funksjon $f(x)$ som er deriverbar for alle ${x\in D_f}$ kaller vi en \outl{deriverbar funksjon}.
+En funksjon $f(x)$ som er deriverbar for alle ${x\in D_f}$ kaller vi en \outl{deriverbar funksjon}\outl{deriverbar}.
 }
 \info{Den deriverte av høyere orden}{
-Gitt en funksjon $f$. Hvis vi deriverer $f'$, får vi den \outl{andrederiverte} funksjonen av $f$, som vi skriver som $f''$. Altså er ${(f')'=f''}$. På samme måte er ${(f'')'=f'''}$, ${(f''')'=f''''}$ og så videre.
+Gitt en funksjon $f$. Hvis vi deriverer $f'$, får vi den \outl{andrederiverte}\index{andrederiverte} funksjonen av $f$, som vi skriver som $f''$. Altså er ${(f')'=f''}$. På samme måte er ${(f'')'=f'''}$, ${(f''')'=f''''}$ og så videre.
 }
 \newpage
 \reg[Deriverbarhet impliserer kontinuitet \label{derleadstocont}]{
 	Gitt en funksjon $f(x)$. Hvis $f$ er deriverbar for ${x=a}$, er $f$ kontinuerlig for ${x=a}$.
 }
 \fork{(\ref{derleadstocont}) Deriverbarhet impliserer kontinuitet}{
-	Av \eqref{derdefalt} har vi at
+	Av \dref{derdefa} har vi at
 	\[ f'(a)=\lim\limits_{b\to a} \frac{f(b)-f(a)}{b-a}\]
 	For at denne grensen skal eksistere, må vi ha at $ {\lim\limits_{b\to a} \left(f(b)-f(a)\right)=0} $ (hvis ikke går grensen mot $ \pm \infty $, og da er ikke den deriverte definert), og følgelig er $ {\lim\limits_{b\to a} f(b)=f(a)} $. Dermed er $ f $ kontinuerlig for $ x=a $.
 }
@@ -147,7 +147,7 @@ Gitt en funksjon $f$. Hvis vi deriverer $f'$, får vi den \outl{andrederiverte} 
 	
 	Hvis $g'(a)\neq k'(a)$, er ikke $f$ deriverbar for $x=a$.
 }
-
+\newpage
 \eks[1]{
 Gitt funksjonen
 	\begin{equation*}f(x)= \left\lbrace{
@@ -206,8 +206,8 @@ en \outl{flervariabel funksjon}, avhengig av både $ x $ og $ y $. I dette tilfe
 For en variabel $ x $ og en konstant $ r $ er
 \begin{align}
 (e^x)' &=e^{x} \label{derex} \vn	
-(x^r)' &= r x^{r-1} \label{derxr} \vn
-(\ln |x|)' &=  \frac{1}{x} \label{derlnx}
+(\ln |x|)' &=  \frac{1}{x} \label{derlnx} \vn
+(x^r)' &= r x^{r-1} \label{derxr}
 \end{align}
 }	
 \eks{
@@ -216,13 +216,13 @@ Deriver uttrykket $x^7$.
 \sv
 \[ \left(x^7\right)'=7x^{7-1}=7x^6 \]
 }
-\reg[Den deriverte av sammensatte funksjoner]{
+\reg[Den deriverte av sammensatte funksjoner \label{dersam}]{
 Gitt en konstant $ a $ og funksjonene $ f(x) $ og $ g(x) $. Da er
-\begin{align}
+\begin{align*}
 	\left(a\cdot f\right)'&=a\cdot f' \vn
 	\left(f+g\right)' &=f'+g' \vn
 	\left(f-g\right)'&=f'-g'
-\end{align}
+\end{align*}
 }
 \eks{
 Deriver uttrykket $2e^x-4x^2+3\ln x$.
@@ -230,15 +230,17 @@ Deriver uttrykket $2e^x-4x^2+3\ln x$.
 \sv
 \[ (2e^x-4x^2+3\ln x)'=2e^x-8x+\frac{3}{x} \]
 }
-
+\fork{(\ref{dersam}) Den deriverte av sammensatte funksjoner}{
+De tre likningene følger så og si direkte av \dref{derdefa}.
+}
  
 \newpage
 \subsection*{Kjerne-, produkt- og divisjonsregelen ved derivasjon}
 \reg[\kjernereg \label{kjerne}]{
 For en funksjon $ f(x)=g\left[u(x)\right] $ har vi at
-\begin{equation}\label{kjerneeq}
+\begin{equation*}
 	f'(x) = g'(u)u'(x)
-\end{equation}
+\end{equation*}
 }
 \eks{
 Finn $ f'(x) $ når  $ f(x)=e^{x^2+x+1} $.\\
@@ -326,8 +328,15 @@ Den deriverte funksjonen $ \vec{r}\,'(t) $ til $ \vec{r} $ er da definert som
 $ \vec{r}\,'(a) $ er en retningsvektor til tangenten til $ \vec{r} $ for $t=a$.
 \fig{vekder}
 }
+\eks[]{
+Gitt vektorfunksjonen $\vec{r}(t)=[2t^2, 5+e^t]$. Finn $\vec{r}'(t)$.
+
+\sv
+\[ \vec{r}\,'(t)=[4t, e^t] \]
+}
+
 \newpage
-\section*{Forklaringer}
+\section{Forklaringer}
 \fork{\ref{derdeltforskrift} Den deriverte ved delt forskrift}{
 Vi har at
 \alg{
@@ -346,6 +355,7 @@ Hvis vi derimot har at $g'(a)\neq k'(a)$, er
 \[ \lim\limits_{b\to a^-} \frac{g(b)-g(a)}{b-a}\neq\lim\limits_{b\to a^+} \frac{k(b)-g(a)}{b-a} \]
 Dermed er ikke $f$ deriverbar for $x=a$.
 }
+\newpage
 \fork{\ref{kjerne} \kjernereg}{
 Gitt en deriverbar funksjon $k(x)$. Vi lar $v_k(b)$ være funksjonen slik at 
 \begin{equation}
@@ -361,7 +371,7 @@ Vi setter ${t=u(x)}$ og ${s=u(b)}$. Ved å bruke uttrykket fra \eqref{kjernefork
 Ved å sette uttrykket for $t-s$ inn i uttrykket for $f(b)-f(x)$, har vi at
 \begin{align*}
 	f(b)-f(x)&=(b-x)[u'(x)+v_f(b)][g'(t)+v_g(b)] \br
-	\frac{f(b)-g(x)}{b-x}&=[u'(x)+v_u(b)][g'(t)+v_g(b)]
+	\frac{f(b)-f(x)}{b-x}&=[u'(x)+v_u(b)][g'(t)+v_g(b)]
 \end{align*}
 Følgelig har vi at
 \begin{align*}
@@ -400,6 +410,7 @@ f'(x)&=u'(x)g'(u)
 		}
 	} \vsk
 \end{comment}
+\newpage
 \fork{\ref{prodregder} \prodregder}{
 Gitt funksjonene $ f(x) $, $ u(x) $ og $ v(x) $, hvor
 \[ f=uv \] 
@@ -419,20 +430,11 @@ Siden vi for en kontinuerlig funksjon $ g $ har at $ {\lim\limits_{h\to 0} \tild
 
 \newpage
 \fork{\ref{derel} \derel}{
-\textbf{Likning (\ref{derxr})}\\
-Vi starter med å merke oss at
-\[ (\ln x^r)'=(r \ln x)' = \frac{r}{x} \]
-Vi setter $ u=x^r $. Av \refunnbr{kjerne}{kjerneregelen} (\rref{kjerne}) har vi da at
-\alg{
-\frac{r}{x}&=	(\ln u)'\\
-	&=\frac{1}{u} u' \\
-	&=\frac{1}{x^r}(x^r)' 
-}
-Altså er
-\[ 	(x^r)'= \frac{r}{x}x^r = r x^{r-1} \]
-
-\textbf{Likning (\ref{derlnx})}\\	
-Vi har at $ {x=e^{\ln x}} $. Vi setter $ {u=\ln x} $ og $ g(u)=e^u $. Da har vi at $ x=g(u) $, og at
+\textbf{Likning (\ref{derex})}\\
+Se \refved{eulerstallfork}. \vsk
+	
+\textbf{Likning (\ref{derlnx})}\\
+Gitt at ${x>0}$, da er $ {x=e^{\ln x}} $. Vi setter $ {u=\ln x} $ og $ {g(u)=e^u} $. Da har vi at $ x=g(u) $, og at
 \alg{
 g'(u) &= e^u=e^{\ln x}=x \br
 u'(x) &= \left(\ln x\right)'
@@ -446,6 +448,30 @@ Da\footnote{Se \refops{opgderxn}.}  ${\left(x\right)'=1} $, har vi at
 \[ 1 = x\left(\ln x \right)' \]
 Altså er
 \[ \left(\ln x\right)'= \frac{1}{x} \]
+for $x>0$. \os
+
+Gitt at $x<0$, da er $x=-e^{\ln(-x)}$. Ved å sette $u=\ln(-x)$ og $g(u)=-e^u$, har vi av kjerneregelen at
+\[ (x)'=-e^{\ln(-x)}\cdot (\ln (-x))' \]
+Dermed er
+\[ (\ln(-x))'=\frac{1}{x} \]
+for $x<0$. \vsk
+
+\newpage
+\textbf{Likning (\ref{derxr})}\\
+Gitt at $x>0$, da har vi at
+\[ (\ln x^r)'=(r \ln x)' = \frac{r}{x} \]
+Vi setter $ u=x^r $. Av kjerneregelen har vi at
+\alg{
+	\frac{r}{x}&=	(\ln u)'\\
+	&=\frac{1}{u} u' \\
+	&=\frac{1}{x^r}(x^r)' 
+}
+Altså er
+\[ 	(x^r)'= \frac{r}{x}x^r = r x^{r-1} \]
+For tilfellet hvor ${x<0}$, men $x^r$ og $(-1)^r$ er definert, kan vi skrive
+\[ x^r=((-1)(-x))^r=(-1)^r(-x)^r=(-1)^r\left(e^{\ln(-x)}\right)^r=(-1)^re^{r\ln (-x)} \]
+Ved å sette $u=r\ln(-x)$, har vi av kjerneregelen at
+\[ \left(x^r\right)' = (-1)^re^{r\ln(-x)}\frac{1}{x}=(-1)^r(-x)^r\frac{r}{x}=rx^{r-1} \]
 } 
 
 \fork{\ref{divder} \divder}{
@@ -454,13 +480,13 @@ Altså er
 	Av \refunnbr{prodregder}{produktregelen} (\rref{prodregder}) og \refunnbr{kjerne}{kjerneregelen} (\rref{kjerne}) er da
 	\[ f'= u' v^{-1} - u v^{-2}v'= \frac{u'v - u v'}{v^2} \]
 }
-
+\newpage
 \fork{\ref{Lhop} \lhop}{
 	Siden $ f(a)=g(a)=0 $, er
 	\alg{
 		\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a} \frac{f(x)-f(a)}{g(x)-g(a)}=\frac{\dfrac{f(x)-f(a)}{x-a}}{\dfrac{g(x)-g(a)}{x-a}}
 	}
-	Av \eqref{derdefalt} har vi da at
+	Av \dref{derdefa} har vi da at
 	\[ \lim\limits_{x\to a}\frac{f(x)}{g(x)}=\lim\limits_{x\to a}\frac{f'(x)}{g'(x)} \]
 }
 

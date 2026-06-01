@@ -5,35 +5,35 @@
 \begin{document}
 \section{Definisjoner}
 \regdef[Halveringslinje]{
-Gitt $ \angle BAC $. For et punkt $ P $ som ligger på \outl{halveringslinja} til vinkelen (blå linje i figuren), er
-\begin{equation}
+Gitt $ \angle BAC $. For et punkt $ P $ på \outl{halveringslinja}\index{halveringslinje} til vinkelen (blå linje i figuren) er
+\begin{equation*}
 	\angle BAP = \angle PAC=\frac{1}{2}\angle BAC
-\end{equation}
+\end{equation*}
 \fig{halfline}
 }	
 \regdef[Midtpunkt]{
-\outl{Midtpunktet} $ C $ til $ AB $ er punktet på linjestykket slik at $ {AC=CB} $.
+\outl{Midtpunktet}\index{midtpunkt} $ C $ til $ AB $ er punktet på linjestykket slik at $ {AC=CB} $.
 \fig{midtp} 
 }
 \regdef[Midtnormal]{
-\outl{Midtnormalen} til $ AB $ (blå linje i figuren) står normalt på $AB$, og går gjennom midtpunktet til $ AB $.
+\outl{Midtnormalen}\index{midtnormal} til $ AB $ (blå linje i figuren) står normalt på $AB$, og går gjennom midtpunktet til $ AB $.
 \fig{midnorm0}
 }
 \newpage
-\regdef[sin, cos og tan I]{
+\regdef[sin, cos og tan I \label{sincostan}]{\index{sin} \index{cos} \index{tan}
 Gitt en rettvinklet trekant med katetene $ a $ og $ b $, hypotenus $ c $, og vinkel $ v $, som vist i figuren under.
 \fig{sincostan}
 Da er \vs
-\begin{align}
-\sin v &= \frac{a}{c} \label{sindef1}\vn
-\cos v &= \frac{b}{c} \label{cosdef1}\vn
+\begin{align*}
+\sin v &= \frac{a}{c} \vn
+\cos v &= \frac{b}{c} \vn
 \tan v &= \frac{a}{b} 	
-\end{align}
+\end{align*}
 }
 \spr{
 I figuren over blir $ a $ kalt den \outl{motstående} kateten til vinkel $ v $, og $ b $ den \outl{hosliggende} kateten til vinkel $v$.\vsk
 
-sin, cos og tan er forkortelser for henholdsvis \outl{sinus}, \outl{cosinus} og \outl{tangens}.
+sin, cos og tan er forkortelser for henholdsvis \outl{sinus}\index{sinus}, \outl{cosinus}\index{cosinus} og \outl{tangens}\index{tangens}.
 }
 
 \info{Eksaktverdier}{
@@ -45,15 +45,15 @@ sin, cos og tan er forkortelser for henholdsvis \outl{sinus}, \outl{cosinus} og 
 \[ \sin v =\frac{3}{5}\quad,\quad \cos v = \frac{4}{5}\quad,\quad \tan v = \frac{3}{4} \]
 }\vsk
 
-\reg[sin, cos og tan II]{
+\reg[sin, cos og tan II \label{sincostan2}]{ 
 	Gitt $ \triangle ABC$, hvor $ {v=\angle BAC>90^\circ} $, som vist i figuren under.
 	\fig{sincostan2}
 	Da er \vs
-\begin{align}
-	\sin v &= \frac{CD}{AC} \label{sindef2} \vn
-	\cos v &= -\frac{AD}{AC} \label{cosdef2}  \vn
-	\tan v &= -\frac{CD}{AD} \label{tandef2}
-\end{align}
+\begin{align*}
+	\sin v &= \frac{CD}{AC}  \vn
+	\cos v &= -\frac{AD}{AC} \vn
+	\tan v &= -\frac{CD}{AD}
+\end{align*}
 }
 \eks[]{ \vsb
 \fig{sincostaneks2}
@@ -63,7 +63,7 @@ I figuren over er $ CD=\sqrt{3} $, $ AD=1 $ og $ AC=2 $. Da er
 
 \section{Egenskaper til sirkler}
 \reg[\tang \label{tang}]{
-	En linje som skjærer en sirkel i bare ett punkt, kalles en \\\outl{tangent} til sirkelen.\vsk
+	En linje som skjærer en sirkel i bare ett punkt, kalles en \\\outl{tangent}\index{tangent} til sirkelen.\vsk
 	
 	La $ S $ være sentrum i en sirkel, og la $ A $ være skjæringspunktet til denne sirkelen og en linje. Da har vi at
 	\nn{
@@ -75,14 +75,14 @@ I figuren over er $ CD=\sqrt{3} $, $ AD=1 $ og $ AC=2 $. Da er
 \reg[\perfvink \label{perfvink}]{
 	Både periferi- og sentralvinkler har vinkelbein som ligger (delvis) inni en sirkel. \vsk
 	
-	En \outl{sentralvinkel} har toppunkt i sentrum av en sirkel.\vsk
+	En \outl{sentralvinkel}\index{sentralvinkel} har toppunkt i sentrum av en sirkel.\vsk
 	
-	En \outl{periferivinkel} har toppunkt på sirkelbuen.\vsk
+	En \outl{periferivinkel}\index{periferivinkel} har toppunkt på sirkelbuen.\vsk
 	
 	Gitt en periferivinkel $ u $ og en sentralvinkel $ v $, som er innskrevet i samme sirkel og som spenner over samme sirkelbue. Da er\vs
-	\begin{equation}\label{v2u}
+	\begin{equation*}
 		v=2u
-	\end{equation}
+	\end{equation*}
 	\centering
 	\includegraphics[]{\figp{pervink0a}}\qquad
 	\includegraphics[]{\figp{pervink0b}}\qquad
@@ -98,9 +98,9 @@ I figuren over er $ CD=\sqrt{3} $, $ AD=1 $ og $ AC=2 $. Da er
 	\subfloat[]{\includegraphics{\figp{arealsetnb}}}
 \end{figure}
 Arealet $ T $ til $ \triangle ABC $ er
-\begin{equation}
+\begin{equation*}
 T=\frac{1}{2} AB\cdot AC\cdot\sin \angle A
-\end{equation}
+\end{equation*}
 }
 \eks[]{\vs
 \fig{arealsetneks1}
@@ -114,9 +114,9 @@ Da $ \sin 60^\circ =\frac{\sqrt{3}}{2} $, er arealet $ T $ til $ \triangle ABC $
 	\subfloat[]{\includegraphics{\figp{arealsetn}}}\qquad
 	\subfloat[]{\includegraphics{\figp{arealsetnb}}}
 \end{figure}
-	\begin{equation}
+	\begin{equation*}
 		\frac{\sin \angle A}{BC}= \frac{\sin \angle B}{AC}=\frac{\sin \angle C}{AB}
-	\end{equation}
+	\end{equation*}
 }
 \eks[]{
 $ BC=\sqrt{2} $, $ \angle A=135^\circ $, og $ \angle B=30^\circ $. Finn lengden til $ AC $.
@@ -140,9 +140,9 @@ Gitt en trekant med sidelengder $ a $, $ b $ og $ c $, og vinkel $ v $, som vist
 	\includegraphics{\figp{cossetnb}}
 \end{figure}
 Da er
-\begin{equation}
-a^2 = b^2+c^2-2bc\cos v	\label{cossetneq}
-\end{equation}
+\begin{equation*}
+a^2 = b^2+c^2-2bc\cos v	
+\end{equation*}
 }
 \eks[]{
 Finn verdien til $ x $.
@@ -165,7 +165,7 @@ Høyden $ DC $ ligger da på midtnormalen til $ AB $.
 }
 \end{comment}
 \reg[\trkmedian \label{trkmedian}]{
-En \outl{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
+En \outl{median}\index{median} er et linjestykke som går fra et hjørne i en trekant til midtpunktet på den motstående siden i trekanten. \vsk
 
 De tre medianene i en trekant skjærer hverandre i ett og samme punkt.
 \fig{median1a}
@@ -176,12 +176,12 @@ Gitt $ \triangle ABC $ med medianer $ CD $, $ BF $ og $ AE $, som skjærer hvera
 } \vsk
 
 \reg[\midtrk \label{midtrk}]{
-Midtnormalene til en trekant møtes i ett og samme punkt, som er sentrum i den \outl{omskrevne sirkelen} til trekanten. Hjørnene til trekanten ligger på buen til den omskrevne sirkelen.	
+Midtnormalene til en trekant møtes i ett og samme punkt, som er sentrum i den \outl{omskrevne sirkelen}\index{omskreven sirkel} til trekanten. Hjørnene til trekanten ligger på buen til den omskrevne sirkelen.	
 \fig{midnorm1a}
 }
 
 \reg[\innskrsirk \label{innskrsirk}]{
-Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i trekantens \outl{innskrevne sirkel}, som tangerer hver av sidene til trekanten.
+Halveringslinjene til vinklene i en trekant møtes i ett og samme punkt. Dette punktet er sentrum i trekantens \outl{innskrevne sirkel}\index{innskreven sirkel}, som tangerer hver av sidene til trekanten.
 \fig{innskr1a}
 }
 
@@ -266,10 +266,10 @@ Gitt et vilkårlig punkt $ B $, som ikke samsvarer med $ A $, på linja. Da er $
 		\includegraphics{\figp{arealsetnforklb}}
 	\end{figure}
 	Arealet $ T $ til $ \triangle ABC$ er i begge tilfeller
-	\begin{equation}
+	\begin{equation*}
 		T = \frac{1}{2}AB\cdot h
-	\end{equation}
-	Av henholdsvis \eqref{sindef1} og \eqref{sindef2} har vi at $ h=AC\cdot \sin \angle BAC $, og da er
+	\end{equation*}
+	Av henholdsvis \dref{sincostan} og \dref{sincostan2} har vi at $ {h=AC\cdot \sin \angle BAC} $, og da er
 	\[ T = \frac{1}{2}AB\cdot h=\frac{1}{2}AB\cdot AC\sin \angle BAC \]
 }
 \newpage
@@ -290,7 +290,7 @@ Gitt et vilkårlig punkt $ B $, som ikke samsvarer med $ A $, på linja. Da er $
 		a^2&=b^2-h^2+2xc+c^2+h^2 \\
 		&=b^2+c^2+2xc \label{cossetnforkl3}
 	\end{align}
-	Av \eqref{cosdef2} har vi at $ x=-b\cos v $, og da er
+	Av \dref{sincostan2} har vi at $ x=-b\cos v $, og da er
 	\nn{
 		a^2=b^2+c^2-2bc\cos v
 	}
@@ -299,7 +299,7 @@ Gitt et vilkårlig punkt $ B $, som ikke samsvarer med $ A $, på linja. Da er $
 	Dette tilfellet skiller seg fra tilfellet hvor $ {v\in(90^\circ, 180^\circ]} $ på to måter:
 	\begin{enumerate}[label=(\roman*)]
 		\item I \eqref{cosetnforkla2} får vi $ {(c-x)^2} $ i stedet for $ {(x+c)^2} $. I \eqref{cossetnforkl3} får vi da $ -2xc $ i stedet for $ +2xc $.
-		\item Av \eqref{cosdef1} er $ x=b\cos v $. Av punkt (i) følger det da at
+		\item Av \dref{sincostan} er $ {x=b\cos v} $. Av punkt (i) følger det da at
 		\[ a^2=b^2+c^2-2bc\cos v \]
 	\end{enumerate}
 }

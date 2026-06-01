@@ -1,7 +1,7 @@
 import "../../inh" as inh;
 import "../../geo" as geo;
 
-unitsize(1cm);
+unitsize(0.75cm);
 
 draw(unitcircle);
 

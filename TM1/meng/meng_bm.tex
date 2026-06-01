@@ -6,7 +6,7 @@
 \section{Mengder}
 \subsection*{Definisjon}
 En samling av tall kalles en \outl{mengde}\footnote{En mengde kan også være en samling av andre matematiske objekter, som for eksempel funksjoner, men i denne boka holder det å se på mengder av tall.
-}, og et tall som er en del av en mengde kalles et \outl{element}. Mengder kan inneholde et endelig\\ antall elementer og de kan inneholde uendelig mange elementer. \regv
+}\index{mengde}, og et tall som er en del av en mengde kalles et \outl{element}\index{element}. Mengder kan inneholde et endelig\\ antall elementer og de kan inneholde uendelig mange elementer. \regv
 \regdef[Mengder]{
 For to reelle tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
 \begin{center}
@@ -21,7 +21,7 @@ For to reelle tall $ a $ og $ b $, hvor $ a\leq b $, har vi at
 		&og mindre enn $ b $.
 	\end{tabular}
 \end{center}
-$ [a, b] $ kalles et \outl{lukket intervall}, $ (a, b) $ kalles et \outl{åpent \\intervall}, og både $ (a, b] $ og $ [a, b) $ kalles \outl{halvåpne intervall}.\vsk
+$ [a, b] $ kalles et \outl{lukket intervall}\index{intervall}\index{intervall!lukket}, $ (a, b) $ kalles et \outl{åpent \\intervall}\index{intervall!åpent}, og både $ (a, b] $ og $ [a, b) $ kalles \outl{halvåpne intervall}\index{intervall!halvåpent}. \\ $a$ og $b$ er \outl{endepunktene} til intervallet.\vsk
 
 Mengden som inneholder bare $ a $ og $ b $ skrives som $ \{a, b\} $. \vsk
 
@@ -79,6 +79,9 @@ I uttrykket $ 0\ ?\  x\  ?\  1 $, erstatt begge \sym{?} med ulikhetssymbol slik 
 	\end{tabular}
 \end{center}
 }
+\spr{
+Når vi skriver ''tallet $x$'' eller ''konstanten $k$'', tas det i denne boka for gitt at $x$ og $k$ er reelle tall. Når vi skriver ''funksjonen $f(x)$'', tar vi det for gitt at $x$ er et reelt tall og at alle andre symboler i funksjonsuttrykket er reelle konstanter.
+}
 \subsection*{Symbolet for uendelig}
 Mengdene i \dref{mengder} inneholder uendelig mange elementer. Noen ganger ønsker vi å avgrense deler av en uendelig mengde, og da melder det seg et behov for et symbol som  er med på å symbolisere dette. \sym{$ \infty $} er symbolet for en uendelig stor, positiv verdi.\regv 
 
@@ -97,9 +100,9 @@ De to intervallene i eksempelet over kan også skrives som $ [2, \rightarrow) $ 
 \regdef[Verdi- og definisjonsmengder]{
 Gitt en funksjon $ f(x) $. \vsk
 
-Mengden som utelukkende inneholder alle $ x $-verdier som kan anvendes i funksjonsuttrykket til $f$, er \outl{definisjonsmengden} til $ f $. Denne mengden skrives som $ D_f $. \vsk
+Mengden som utelukkende inneholder alle $ x $-verdier som kan anvendes i funksjonsuttrykket til $f$, er \outl{definisjonsmengden}\index{definisjonsmengde} til $ f $. Denne mengden skrives som $ D_f $. \vsk
 
-Mengden som utelukkende inneholder alle $ f $-verdier for $ {x\in D_f} $, er \outl{verdimengden} til $ f $. Denne mengden skrives som $ V_f $. 
+Mengden som utelukkende inneholder alle $ f $-verdier for $ {x\in D_f} $, er \outl{verdimengden}\index{verdimengde} til $ f $. Denne mengden skrives som $ V_f $. 
 }
 \eks[1]
 { \label{mengeks1}
@@ -133,7 +136,7 @@ Det er veldig viktig å være bevisst forskjellen på \sym{$ \Rightarrow $} og \
 }
 \newpage
 \subsection*{Funksjoner med vilkår}
-En funksjon kan ha flere uttrykk som gjelder ved forskjellige vilkår. Da sier vi at funksjonen har \outl{delt forskrift}. La oss for eksempel definere en funksjon $ f(x) $ slik:
+En funksjon kan ha flere uttrykk som gjelder ved forskjellige vilkår. Da sier vi at funksjonen har \outl{delt forskrift}\index{delt forskrift}. La oss for eksempel definere en funksjon $ f(x) $ slik:
 \alg{
 &\text{For }x<1 \text{ er funksjonsuttrykket } {-2x+1}.\\
 &\text{For }x\geq 1\text{ er funksjonsuttrykket } x^2-2x.

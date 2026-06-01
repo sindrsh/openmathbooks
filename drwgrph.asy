@@ -40,7 +40,7 @@ void yaks(real a, real b, string l="", real bex=1.15, real aex=1, bool tck=false
     }
 }
 
-void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
+void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=mediumgray){
 	for (int i=0; A.x + i*dx<= A.y; ++i){
 		draw((A.x + i*dx, B.x)--(A.x + i*dx, B.y), p);
 }

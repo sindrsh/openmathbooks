@@ -6,7 +6,7 @@ size(3.5cm);
 Tri t = mktri(3,5,4);
 
 draw(t.A--t.B--t.C--t.A);
-
+mksq2(t.B, t.A);
 
 dv(t.B,t.C,t.A,"$v$",0.5N+E);
 
