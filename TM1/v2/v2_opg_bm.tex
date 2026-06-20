@@ -1,0 +1,128 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+\setcounter{chapter}{1}
+\setcounter{section}{1}
+\begin{document}
+\op{opgvekuperp}	
+\st{
+Gitt en vektor $\textbf{w}$. Vi definerer $\textbf{w}_p$ som vektoren som
+\begin{itemize}
+	\item står vinkelrett på $\textbf{w}$.
+	\item peker til venstre med hensyn til retningen til \textbf{w}.
+	\item har lik lengde som $\textbf{w}$.
+\end{itemize}
+Hvis ${\textbf{w}=[x, y]}$, kan det vises at ${\textbf{w}_p=[-y, x]}$, og at $-\textbf{w}_p$ peker til høyre for $\textbf{w}$.
+\fig{uandup}
+}
+Gitt vektorene $\textbf{u}=[a, b]$, $\textbf{u}_p=[-b, a]$, $\textbf{v}=[c, d]$ og $\textbf{v}_p=[-d, c]$. Vis at 
+\abc{
+\item $\textbf{u}\cdot\textbf{v}_p+\textbf{u}_p\cdot\textbf{v}=0$
+\item $(\textbf{u}_p)_p=-\textbf{u}$
+\item $(\textbf{u}+\textbf{v})_p=\textbf{u}_p+\textbf{v}_p$
+}
+\sv
+\abc{
+\item $[a, b]\cdot[-d, c] + [-b, a]\cdot[c, d] =-ad+bc-bd+ad=0$
+\item $(\textbf{u}_p)_p=([-b, a])_p=[-a, -b]=-\textbf{u}$.
+\item
+\begin{align*}
+	(\textbf{u}+\textbf{v})_p&=([a+c, b+d])_p\\
+	&=[-(b+d), a+c]\\
+	&=[-b, a]+[-d, c]\\ 
+	&=\textbf{u}_p+\textbf{v}_p
+\end{align*}
+}
+\newpage
+\op{opgvekbotema}
+Den røde og den grønne firkanten er begge et kvadrat. Vi setter\os $\textbf{v}=\vv{AC}$ og $\textbf{u}=\vv{CB}$. $F$ er midtpunktet på $DE$.\os
+\abc{
+\item Finn koordinatene til $F$ uttrykt ved $\textbf{u}$, $\textbf{v}$, $\textbf{u}_p$ og $\textbf{v}_p$.
+\item Beskriv den eventuelle forflytningen til $F$ hvis $C$ forskyves i en vilkårlig retning. (Det holder å se på tilfellet hvor $C$ ligger over $AB$).
+}
+\fig{opgvekbottema}
+
+\sv
+
+\fig{opgvekbottema_lf}
+Vi innfører et koordinatsystem med origo i $A$. Da er $D=\textbf{v}_p$. Videre er $E=\textbf{u}+\textbf{v}+\textbf{u}_p$. Videre er $\vv{DE}=-\textbf{v}_p+\textbf{v}+\textbf{u}+\textbf{u}_p$ Dermed er
+\[ F = D+\frac{1}{2}\vv{DE}=\frac{1}{2}(\textbf{v}_p+\textbf{v}+\textbf{u}+\textbf{u}_p)=\frac{1}{2}(\textbf{u}+\textbf{v}+\textbf{u}_p+\textbf{v}_p) \]
+$\textbf{u}+\textbf{v}$ og $\textbf{u}_p+\textbf{v}_p$ er ortogonale og har lik lengde. Så lenge $\textbf{u}+\textbf{v}$ ikke endres, vil altså ikke $F$ forflyttes. En forskyvning av $C$ medfører ingen endring av $\textbf{u}+\textbf{v}$, og dermed er poisjonen til $F$ uavhengig av posisjonen til $C$.
+
+\newpage
+\op{opgveknapl}
+De blå linjestykkene inngår i likesidede trekanter på utsiden av $\triangle ABC$. $D$, $E$ og $F$ er de respektive midtpunktene til de likesidede trekantene. \os
+
+Vis at $\triangle DEF$ er likesidet.
+\fig{opgveknapl}.
+
+\sv
+Vi setter $\vv{AC}=2\textbf{v}$ og $\vv{AB}=2\textbf{u}$. Da er $\vv{BC}=2\textbf{v}-2\textbf{u}$. Videre har vi at
+\begin{align*}
+	D&=\textbf{v}+k\textbf{v}_p \vn
+	E&=\textbf{u}-k\textbf{u}_p \vn
+	F&=\textbf{u}+\textbf{v}-k(\textbf{v}_p-\textbf{u}_p)
+\end{align*} 
+hvor $k=\frac{1}{\sqrt{3}}$. Altså er
+\begin{align*}
+	\vv{DF}&=\textbf{u}+k(\textbf{u}_p-2\textbf{v}_p) \\
+	\vv{DE}&=\textbf{u}-\textbf{v}-k(\textbf{u}_p+\textbf{v}_p) \\
+	\vv{EF}&=\textbf{v}+k(2\textbf{u}_p-\textbf{v}_p)
+\end{align*} 
+Da er
+\begin{align*}
+DF^2&=\textbf{u}^2+2k\textbf{u}(\textbf{u}_p-2\textbf{v}_p)+k^2(\textbf{u}_p-2\textbf{v}_p)^2\\
+&=\textbf{u}^2-4k\textbf{u}\cdot\textbf{v}_p+k^2(\textbf{u}_p^2-4\textbf{u}_p\cdot\textbf{v}_p+4\textbf{v}_p^2) \\
+&=\frac{4}{3}(\textbf{u}^2+\textbf{v}^2-\textbf{u}_p\cdot\textbf{v}_p)-4k\textbf{u}\cdot\textbf{v}_p
+\end{align*}
+\begin{align*}	DE^2&=(\textbf{u}-\textbf{v})^2-2k(\textbf{u}-\textbf{v})(\textbf{u}_p+\textbf{v}_p)+k^2(\textbf{u}_p+\textbf{v}_p)^2 \\
+&=\textbf{u}^2-2\textbf{u}\cdot\textbf{v}+\textbf{v}^2-2k(\textbf{u}\cdot\textbf{v}_p-\textbf{u}_p\cdot\textbf{v})+k^2(\textbf{u}_p^2+2\textbf{u}_p\cdot\textbf{v}_p+\textbf{v}_p^2)\\
+&=\frac{4}{3}(\textbf{u}^2+\textbf{v}^2-\textbf{u}_p\cdot\textbf{v}_p)-4k\textbf{u}\cdot\textbf{v}_p
+\end{align*}
+
+\begin{align*}
+	EF^2 &= \textbf{v}^2+2k\textbf{v}(2\textbf{u}_p-\textbf{v}_p)+k^2(2\textbf{u}_p-\textbf{v}_p)^2 \\
+	&=\textbf{v}^2+4k\textbf{u}_p\cdot\textbf{v}+k^2(4\textbf{u}_p-4\textbf{u}_p\textbf{v}_p+\textbf{v}_p^2) \\
+	&=\frac{4}{3}(\textbf{u}^2+\textbf{v}^2-\textbf{u}_p\cdot\textbf{v}_p)-4k\textbf{u}\cdot\textbf{v}_p
+\end{align*}
+\newpage
+\op{opgvekvonbl}
+Firkantene på utsiden av $\square ABCD$ er kvadrater. $E$, $F$, $G$ og $H$ er de respektive midtpunktene til kvadratene. Vis at $EG=FH$ og $\vv{EG}\perp\vv{FH}$.
+\fig{opgvekvonbl}
+
+Vi innfører et koordinatsystem med origo i $A$, og setter $\vv{DA}=2\textbf{v}$, $\vv{AB}=2\textbf{u}$, og $\vv{BC}=2\textbf{w}$. Da er
+\begin{align*}
+	E&=-\textbf{v}-\textbf{v}_p \\
+	F&=\textbf{u}-\textbf{u}_p \\
+	G &= 2\textbf{u}+\textbf{w}-\textbf{w}_p\\
+	H&=\textbf{u}+\textbf{w}-\textbf{v}+\textbf{u}_p+\textbf{v}_p+\textbf{w}_p
+\end{align*}
+Dermed er 
+\begin{align*}
+\vv{EG}&=2\textbf{u}+\textbf{w}-\textbf{w}_p+\textbf{v}+\textbf{v}_p=2\textbf{u}+\textbf{w}+\textbf{v}+\textbf{v}_p-\textbf{w}_p \\
+\vv{FH}&=\textbf{w}-\textbf{v}+2\textbf{u}_p+\textbf{v}_p+\textbf{w}_p
+\end{align*}
+Dermed er
+\[ \vv{FH}_p=\textbf{w}_p-\textbf{v}_p-2\textbf{u}-\textbf{v}-\textbf{w}=-\vv{EG} \]
+Dette betyr at $\vv{FH}$ og $\vv{EG}$ er ortogonale. Videre er
+\[ FH=|\vv{FH}_p|=|-\vv{EG}|=EG \]
+
+\newpage
+\subsection*{Problem: Bottema's theorem}
+
+The red and the green quadrilateral are both squares. $F$ is the midpoint of $DE$. Let $\textbf{v}=\vv{AC}$ and $\textbf{u}=\vv{CB}$. Given a vector $\textbf{w}$, we define $\textbf{w}_p$ as the vector perpendicular to $\textbf{w}$, pointing to the left with respect to the direction of $\textbf{w}$, and with equal length as $\textbf{w}$.\os
+\begin{enumerate}[label=\alph*)]
+	\item Find the coordinates of $F$ expressed in terms of $\textbf{u}$, $\textbf{v}$, $\textbf{u}_p$, and $\textbf{v}_p$.
+	\item Describe the possible displacement of $F$ if $C$ is shifted in an arbitrary direction. (It is sufficient to consider the case where $C$ is above $AB$).
+\end{enumerate}
+\fig{opgvekbottema}
+
+\subsection*{Solution}
+
+\fig{opgvekbottema_lf}
+
+We introduce a coordinate system with the origin at $A$. Then $D=\textbf{v}_p$. Furthermore, $E=\textbf{u}+\textbf{v}+\textbf{u}_p$. Furthermore, $\vv{DE}=-\textbf{v}_p+\textbf{v}+\textbf{u}+\textbf{u}_p$. Thus,
+\[ F = D+\frac{1}{2}\vv{DE}=\frac{1}{2}(\textbf{v}_p+\textbf{v}+\textbf{u}+\textbf{u}_p)=\frac{1}{2}(\textbf{u}+\textbf{v}+\textbf{u}_p+\textbf{v}_p) \]
+
+$\textbf{u}+\textbf{v}$ and $\textbf{u}_p+\textbf{v}_p$ are orthogonal and have the same length. As long as $\textbf{u}+\textbf{v}$ does not change, $F$ will not be displaced. A displacement of $C$ does not change $\textbf{u}+\textbf{v}$, and thus the position of $F$ is independent of the position of $C$.
+\end{document}

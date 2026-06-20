@@ -1,0 +1,35 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\op{opggeomidtparl}
+$E$, $F$, $G$ og $H$ er de respektive midtpunktene til sidene til $\square ABCD$.
+\abc{
+\item Vis at $\square EFGH$ er et parallellogram.
+\item Vis at $A_{\square EFGH}=\frac{1}{2}A_{\square ABCD}$
+}
+\fig{opggeomidtparl}
+\mers{Sammenhengen fra oppgave a) kalles \outl{Varignons teorem}.}
+
+\newpage
+\sv
+\fig{opggeomidtparl_lf}
+\abc{
+\item $\triangle ACD\sim\triangle HGD$ fordi $\angle ADC=\angle HDG$ og $\frac{AD}{HD}=\frac{DC}{DG}=2$. Tilsvarende er $\triangle ABC\sim \triangle EBF$. Dermed er både $HG$ og $EF$ parallelle med $AC$. Tilsvarende kan vi vise at $HE$ og $GF$ er parallelle med $BD$. Dermed er $\square EFGH$ et parallellogram.
+\item Vi har at
+\begin{align}
+	2A_{\square ABCD} &= A_{\triangle ACD}+A_{\triangle ABC}+A_{\triangle ABD}+A_{\triangle BCD} \label{opggeomidtparlabcd}
+\end{align}
+og at 
+\begin{align}
+	A_{\square EFGH}&=A_{\square ABCD}-A_{\triangle HGD}-A_{\triangle EBF}-A_{\triangle AEH}-A_{\triangle FCH} \label{opggeomidtparlefgh}
+\end{align}
+Av formlikheten vi viste i oppgave a), vet vi at
+\[ A_{\triangle HGD}=\left(\frac{1}{2}\right)^2 A_{\triangle ACD}=\frac{1}{4}A_{\triangle ACD}\]
+Tilsvarende sammenheng har vi mellom de andre trekantene fra \eqref{opggeomidtparlabcd} og trekantene fra \eqref{opggeomidtparlefgh}, og dermed er
+\begin{align*}
+	A_{\square EFGH}&=A_{\square ABCD}- \frac{1}{4}\cdot 2A_{\square ABCD}=\frac{1}{2}A_{\square ABCD}
+\end{align*}
+}
+\end{document}

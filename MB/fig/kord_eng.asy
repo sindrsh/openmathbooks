@@ -1,0 +1,17 @@
+import "../../inh" as inh;
+import drwgrph;
+unitsize(0.7 cm);
+
+int a = 6;
+int b = 6;
+mkgrid((0,a),(0,a));
+xaks(0,a,bex=1.10,tck=true);
+yaks(0,b,bex=1.10,tck=true);
+
+
+dott((2,3),"$(2, 3)$",N);
+dott((5,1),"$(5, 1)$",N);
+dott((0,0),"$(0, 0)$",SW);
+
+label(rotate(90)*Label("vertical axis"),(-1,3.5));
+label("horizontal axis",(3.5,-1));
