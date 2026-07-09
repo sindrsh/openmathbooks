@@ -71,7 +71,7 @@
 \contentsline {subsubsection}{Avrunding}{131}{subsubsection*.72}%
 \contentsline {subsubsection}{Overslagsregning}{132}{subsubsection*.73}%
 \contentsline {subsubsection}{Overslag ved addisjon og ganging}{132}{subsubsection*.74}%
-\contentsline {subsubsection}{Overslag ved subtraskjon og deling}{133}{subsubsection*.75}%
+\contentsline {subsubsection}{Overslag ved subtraksjon og deling}{133}{subsubsection*.75}%
 \contentsline {subsubsection}{Overslagsregning oppsummert}{134}{subsubsection*.76}%
 \contentsline {section}{\numberline {6.8}Standardform}{135}{section.6.8}%
 \contentsline {section}{Oppgaver}{138}{section*.79}%
@@ -105,18 +105,18 @@
 \contentsline {section}{\numberline {9.4}Potenslikninger}{223}{section.9.4}%
 \contentsline {section}{\numberline {9.5}Ulikheter}{226}{section.9.5}%
 \contentsline {section}{\numberline {9.6}Likninger med flere ukjente; likningssett}{228}{section.9.6}%
-\contentsline {subsubsection}{Likningssett}{229}{subsubsection*.144}%
-\contentsline {section}{Oppgaver}{233}{section*.157}%
+\contentsline {subsubsection}{Likningssett}{229}{subsubsection*.142}%
+\contentsline {section}{Oppgaver}{233}{section*.155}%
 \contentsline {chapter}{\numberline {10}Funksjoner }{237}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Introduksjon}{238}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Lineære funksjoner og grafer}{242}{section.10.2}%
 \contentsline {section}{\numberline {10.3}Viktige punkt på grafer}{250}{section.10.3}%
 \contentsline {section}{\numberline {10.4}Navn på funksjoner}{253}{section.10.4}%
-\contentsline {section}{Oppgaver}{257}{section*.165}%
+\contentsline {section}{Oppgaver}{257}{section*.167}%
 \contentsline {chapter}{\numberline {11}Geometri }{269}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Formler for areal, omkrets og volum}{270}{section.11.1}%
 \contentsline {section}{\numberline {11.2}Kongruente og formlike trekanter}{285}{section.11.2}%
 \contentsline {section}{\numberline {11.3}Forklaringer}{290}{section.11.3}%
-\contentsline {section}{Oppgaver}{301}{section*.186}%
-\contentsline {chapter}{Fasit}{319}{section*.188}%
-\contentsline {chapter}{Indeks}{328}{chapter*.189}%
+\contentsline {section}{Oppgaver}{301}{section*.192}%
+\contentsline {chapter}{Fasit}{319}{section*.194}%
+\contentsline {chapter}{Indeks}{328}{chapter*.195}%

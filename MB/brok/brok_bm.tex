@@ -6,10 +6,7 @@
 \section{\brgrpr \label{brgrpr}}
 \reg[Brøk som omskriving av et divisjonsstykke \label{brdef}]{
 	En brøk\index{brøk} er en annen måte å skrive et divisjonsstykke på. I en brøk kaller vi dividenden for \outl{teller}\index{teller} og divisoren for \outl{nevner}\index{nevner}.
-	\begin{figure}
-		\centering
-		\includegraphics[]{\figp{br0_bm}}
-	\end{figure}
+	\fig{br0_bm}
 }\vsk
 
 \spr{
@@ -33,26 +30,21 @@ La oss se på brøken
 %id{1over4}
 $ \frac{1}{4} $
 %\id 
-som en mengde. Vi starter med å definere en rute\footnote{Her har vi valgt en enerrute som er større enn den vi brukte i \refkap{Talavare}.} med verdi 1: 
-\begin{figure}[hbt]
-	\centering
-	\includegraphics{\figp{br1}}
-\end{figure}
+som en mengde. Vi starter med å definere en rute\!\!
+%id{def1}
+\footnote{Her har vi valgt en enerrute som er større enn den vi brukte i \refkap{Talavare}.}
+%\id
+ med verdi 1: 
+\fig{br1}
 Så  deler vi denne ruten inn i fire mindre ruter som er like store. Hver av disse rutene er da
 %id{1over4} 
 $ \frac{1}{4} $
 %\id
 (1 av 4):
-\begin{figure}[hbt]
-	\centering
-	\includegraphics{\figp{br2}}
-\end{figure} 
+\fig{br2}
 
 Har vi én slik rute, har vi altså 1 firedel:
-\begin{figure}[hbt]
-	\centering
-	\includegraphics{\figp{br3a}}
-\end{figure} 
+\fig{br3a}
 Men skal man fra en figur kunne se hvor stor en brøk er, må man vite hvor stor 1 er, og for å få dette lettere til syne skal vi også ta med de ''tomme'' rutene:
 \fig{br3}
 \newpage
@@ -62,7 +54,7 @@ Slik vil de blå og de tomme rutene fortelle oss hvor mange biter 1 er delt inn 
 %id{numdenom}
 \alg{
 	\text{antall blå ruter}&=\text{teller} \\	
-	\text{antall blå ruter}+\text{antall tommme ruter}&=\text{nevner} 
+	\text{antall blå ruter}+\text{antall tomme ruter}&=\text{nevner} 
 }
 %\id
 \fig{br0a}
@@ -82,37 +74,107 @@ Selv om vi har vært innom det allerede, er det så avgjørende å forstå hva t
 \end{itemize}
 }
 \newpage
-\section{\brvu}
+\section{Verdi, utviding og forkorting av brøk}
 \reg[Verdien til en brøk]{Verdien til en brøk finner vi ved å dele telleren med nevneren.}
 \eks{
 Finn verdien til 
-%id{display1over4}
-$ \dfrac{1}{4} $.
+%id{1over4}
+$ \dfrac{1}{4} $
 %\id
+\!\!.
 
-\sv 
+\sv
+%id{value1over4} 
 \[ \frac{1}{4}=0,25 \]
-(Se \refkap{Utrekning} for hvordan man kan finne at $ 1:4=0,25 $.)
+%\id
+(Se \refkap{Utrekning} for hvordan man kan finne at
+%id{1div4equals} 
+$ 1:4=0,25 $
+%\id
+\!\!.)
 }
 \subsubsection{Brøker med lik verdi}
-Brøker kan ha lik verdi selv om de ser forskjellige ut. De kalles da \outl{likeverdige}\index{likeverdig} brøker. Hvis du regner ut $ 1:2 $, $ 2:4 $ og $ 4:8 $, får du i alle tilfeller 0,5 som svar. Dette betyr at
+Brøker kan ha lik verdi selv om de ser forskjellige ut. De kalles da \outl{likeverdige}\index{likeverdig} brøker. Hvis du regner ut 
+%id{1over2}
+$ 1:2 $
+%\id
+, 
+%id{2over4}
+$ 2:4 $
+%\id
+og 
+%id{4over8}
+$ 4:8 $
+%\id
+\!\!, får du i alle tilfeller 0,5 som svar. Dette betyr at
+%id{1o2=2o4=4o8}
 \alg{
 \frac{1}{2}=\frac{2}{4}=\frac{4}{8}=0,5
-} \\[5pt]
+}
+%\id
+\\[5pt]
 \amounts{\fig{br12}}
 \numrline{\fig{br12a}}
 \subsubsection{Utviding}
-At brøker kan se forskjellige ut, men ha lik verdi, betyr at vi kan\\ endre på utseendet til en brøk uten å endre verdien. La oss som \\eksempel gjøre om $ \frac{3}{5} $ til en brøk med lik verdi, men med 10 som nevner:
+At brøker kan se forskjellige ut, men ha lik verdi, betyr at vi kan\\ endre på utseendet til en brøk uten å endre verdien. La oss som et \\eksempel gjøre om 
+%id{3o5}
+$ \frac{3}{5} $
+%\id
+ til en brøk med lik verdi, men med 10 som nevner:
 \begin{itemize}
-	\item $ \frac{3}{5} $ kan vi gjøre om til en brøk med 10 i nevner om vi deler hver femdel inn i 2 like biter, for da er 1 til sammen delt inn i\\ $ {5\cdot2=10} $ biter.
-	\item Telleren i $ \frac{3}{5} $ viser at der er 3 femdeler. Når disse deles i to, blir de totalt til $ 3\cdot2=6 $ tideler. Altså har $ \frac{3}{5} $ lik verdi som $ \frac{6}{10} $.
+	\item 
+	%id{3o5}
+	$ \frac{3}{5} $ 
+	%\id
+	 kan vi gjøre om til en brøk med 10 i nevner om vi deler hver femdel inn i 2 like biter, for da er 1 til sammen delt inn i\\ 
+	 %id{5t2eq10}
+	 $ {5\cdot2=10} $
+	 %\id
+	  biter.
+	\item Telleren i 
+	%id{3o5}
+	$ \frac{3}{5} $ 
+	%\id
+	 viser at der er 3 femdeler. Når disse deles i to, blir de totalt til 
+	 %id{3t2eq6}
+	 $ 3\cdot2=6 $
+	 %\id
+	  tideler. Altså har 
+	 %id{3o5} 
+	 $ \frac{3}{5} $
+	 %\id
+	  lik verdi som
+	 %id{6o10}
+	  $ \frac{6}{10} $
+	 %\id
+	 \!\!.
 \end{itemize}
+%id{3o5eq6o10}
 \[ \frac{3}{5}=\frac{3\cdot2}{5\cdot2}=\frac{6}{10} \]
+%\id
 \amounts{\fig{br13}}
 \numrline{\fig{br13a}}
 \subsubsection{Forkorting}
-Siden vi kan skrive om $\frac{3}{5}$ til $\frac{6}{10}$ ved å gange både teller og nevner med 2, må vi også kunne gjøre det omvendte. $ \frac{6}{10} $ kan vi skrive om til $\frac{3}{5}$ ved å dele både teller og nevner med 2:
+Siden vi kan skrive om 
+%id{3o5}
+$\frac{3}{5}$
+%\id
+til 
+%\id{3o6}
+$\frac{6}{10}$ 
+%\id
+ved å gange både teller og nevner med 2, må vi også kunne gjøre det omvendte. 
+%id{6o10}
+$ \frac{6}{10} $
+%\id
+ kan vi skrive om til 
+%id{3o5} 
+ $\frac{3}{5}$
+%\id
+ ved å dele både teller og nevner med 2:
+ %id{6o10eq3o5}
 \[ \frac{6}{10}=\frac{6:2}{10:2}=\frac{3}{5} \]
+%\id
 \newpage
 \reg[Utviding og forkorting av brøk]{
 Vi kan gange eller dele teller og nevner med det samme tallet uten at brøken endrer verdi. \vsk
@@ -120,41 +182,95 @@ Vi kan gange eller dele teller og nevner med det samme tallet uten at brøken en
 Å gange med et tall større enn 1 kalles å \outl{utvide}\index{brøk!utviding av} brøken. Å dele med et tall større enn 1 kalles å \outl{forkorte}\index{brøk!forkorting av} brøken.
 }
 \eks[1]{
-Utvid $\frac{7}{3}$ med 4.
+Utvid 
+%id{7o3}
+$\frac{7}{3}$
+%\id
+ med 4.
 
 \sv
+%id{exp7o3}
 \[ \frac{7}{3}=\frac{7\cdot4}{3\cdot4}=\frac{21}{12} \]
+
 }
-\eks[2]{Utvid $ \frac{3}{5} $ til en brøk med 20 som nevner.
+\eks[2]{Utvid 
+%id{3o5}
+$ \frac{3}{5} $
+%\id
+ til en brøk med 20 som nevner.
 	
 	\sv
-	Da $ {5\cdot4=20} $, utvider vi brøken med 4:
+	Da 
+	%id{5t4eq20}
+	$ {5\cdot4=20} $
+	%\id
+	\!\!, utvider vi brøken med 4:
+	%id{3o5eq12o20}
 	\[ \frac{3}{5} = \frac{3\cdot4}{5\cdot4} = \frac{12}{20} \]
+	%\id
 }
 \eks[3]{
-Forkort $\frac{6}{10}$ med 2.
+Forkort 
+%id{8o6}
+$\frac{8}{6}$
+%\id
+ med 2.
 
 \sv
-\[ \frac{6}{10}=\frac{6:2}{10:2}=\frac{3}{5} \]
+%id{8o6eq4o3}
+\[ \frac{8}{6}=\frac{8:2}{6:2}=\frac{4}{3} \]
+%\id
 }
 \newpage
 \eks[4]{
-	Forkort $ \frac{18}{30} $ til en brøk med 5 som nevner.
+	Forkort 
+	%id{18o30}
+	$ \frac{18}{30} $
+	%\id
+	 til en brøk med 5 som nevner.
 	
 	\sv
-	Da $ 30:6=5 $, forkorter vi brøken med 6:
+	Da 
+	%id{30div6}
+	$ 30:6=5 $
+	%\id
+	\!\!, forkorter vi brøken med 6:
+	%id{18o30eq3o5}
 	\[ \frac{18}{30}=\frac{18:6}{30:6} =\frac{3}{5} \]
+	%\id
 }
 \eks[5]{
-Undersøk om brøkene $\frac{2}{3}$ og $\frac{5}{7}$ har lik eller ulik verdi.
+Undersøk om brøkene 
+%id{2o3}
+$\frac{2}{3}$
+%\id
+ og 
+%id{3o5} 
+ $\frac{5}{7}$
+%\id 
+  har lik eller ulik verdi.
 
 \sv
-Vi utvider begge brøkene slik at de har lik nevner. Ved å utvide $\frac{2}{3}$ med 7 og $\frac{5}{7}$ med 3, får vi at
+Vi utvider begge brøkene slik at de har lik nevner. Ved å utvide 
+%id{2o3}
+$\frac{2}{3}$
+%\id
+ med 7 og 
+%id{5o7}
+$\frac{5}{7}$
+%\id
+ med 3, får vi at
+ %id{2o3eq14o21}
 \[ \frac{2}{3}=\frac{2\cdot7}{3\cdot7}=\frac{14}{21}\qquad,\qquad\frac{5}{7}=\frac{5\cdot3}{7\cdot3}=\frac{15}{21} \]
+%\id
 Vi har at
+%id{14o21leq15o21}
 \[ \frac{14}{21}<\frac{15}{21} \]
+%\id
 Altså er
+%id{2o3leq5o7}
 \[ \frac{2}{3}<\frac{5}{7} \]
+%\id
 }
 \newpage
 \section{\bradsub}
@@ -255,7 +371,7 @@ Multiplikasjon mellom heltall og brøk er også kommutativ\footnote{Husk at $ \f
 &=6:5 \\
 &=\frac{6}{5}
 }
-\reg[\label{brhel}Brøk ganget med heltal]{
+\reg[\label{brhel}Brøk ganget med heltall]{
 Når vi ganger en brøk med et heltall, ganger vi heltallet med telleren i brøken.
 }
 \eks[1]{
@@ -378,7 +494,7 @@ Når bare består av faktorer, kan man alltid omrokkere slik vi har gjort over, 
 	\mers{Hvis alle faktorer er kansellert i telleren/nevneren, er telleren/nevneren lik 1.}
 }
 \newpage
-\info{Forkorting ved primtalsfaktorisering}{
+\info{Forkorting ved primtallsfaktorisering}{
 	Det er ikke alltid like lett å legge merke til en felles faktor, slik vi har gjort i \textsl{Eksempel 2} og \textsl{Eksempel 3} på side \pageref{eksbrkan}. Vil man være helt sikker på at man ikke har oversett felles faktorer, kan man primtalsfaktorisere (se \refsec{Faktorisering}) både teller og nevner. For eksempel har vi at
 \[ \frac{12}{42}=\frac{\cancel{2}\cdot2\cdot\cancel{3}}{\cancel{2}\cdot\cancel{3}\cdot7}=\frac{2}{7} \]
 }
@@ -401,7 +517,7 @@ Når bare består av faktorer, kan man alltid omrokkere slik vi har gjort over, 
 	\alg{
 		\frac{30\cancel{00}}{7\cancel{00}}&= \frac{30}{7}
 	}
-	\textsl{Obs!} Null er de eneste sifferet vi kan ''stryke'' slik, for eksempel kan vi ikke forkorte $ \frac{123}{13} $ på noen som helst måte. I tillegg kan vi bare ''stryke'' nuller som står som bakerste siffer, for eksempel kan vi ikke ''stryke'' nuller i brøken $ \frac{101}{10} $.  
+	\textsl{Obs!} Null er det eneste sifferet vi kan ''stryke'' slik, for eksempel kan vi ikke forkorte $ \frac{123}{13} $ på noen som helst måte. I tillegg kan vi bare ''stryke'' nuller som står som bakerste siffer, for eksempel kan vi ikke ''stryke'' nuller i brøken $ \frac{101}{10} $.  
 }
 \newpage
 \section{\brdelmbr}

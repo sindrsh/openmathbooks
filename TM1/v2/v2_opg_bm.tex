@@ -14,7 +14,8 @@ Gitt en vektor $\textbf{w}$. Vi definerer $\textbf{w}_p$ som vektoren som
 \end{itemize}
 Hvis ${\textbf{w}=[x, y]}$, kan det vises at ${\textbf{w}_p=[-y, x]}$, og at $-\textbf{w}_p$ peker til høyre for $\textbf{w}$.
 \fig{uandup}
-}
+} \regv \regv 
+
 Gitt vektorene $\textbf{u}=[a, b]$, $\textbf{u}_p=[-b, a]$, $\textbf{v}=[c, d]$ og $\textbf{v}_p=[-d, c]$. Vis at 
 \abc{
 \item $\textbf{u}\cdot\textbf{v}_p+\textbf{u}_p\cdot\textbf{v}=0$
@@ -25,7 +26,7 @@ Gitt vektorene $\textbf{u}=[a, b]$, $\textbf{u}_p=[-b, a]$, $\textbf{v}=[c, d]$ 
 \abc{
 \item $[a, b]\cdot[-d, c] + [-b, a]\cdot[c, d] =-ad+bc-bd+ad=0$
 \item $(\textbf{u}_p)_p=([-b, a])_p=[-a, -b]=-\textbf{u}$.
-\item
+\item \phantom{} \vs \vs
 \begin{align*}
 	(\textbf{u}+\textbf{v})_p&=([a+c, b+d])_p\\
 	&=[-(b+d), a+c]\\
@@ -86,11 +87,13 @@ DF^2&=\textbf{u}^2+2k\textbf{u}(\textbf{u}_p-2\textbf{v}_p)+k^2(\textbf{u}_p-2\t
 	&=\frac{4}{3}(\textbf{u}^2+\textbf{v}^2-\textbf{u}_p\cdot\textbf{v}_p)-4k\textbf{u}\cdot\textbf{v}_p
 \end{align*}
 \newpage
-\op{opgvekvonbl}
-Firkantene på utsiden av $\square ABCD$ er kvadrater. $E$, $F$, $G$ og $H$ er de respektive midtpunktene til kvadratene. Vis at $EG=FH$ og $\vv{EG}\perp\vv{FH}$.
-\fig{opgvekvonbl}
+\op{opgvekvanbl}
+De fargede firkantene er kvadrater. $E$, $F$, $G$ og $H$ er de respektive midtpunktene til kvadratene. Vis at $EG=FH$ og $\vv{EG}\perp\vv{FH}$.
+\fig{opgvekvanbl}
 
-Vi innfører et koordinatsystem med origo i $A$, og setter $\vv{DA}=2\textbf{v}$, $\vv{AB}=2\textbf{u}$, og $\vv{BC}=2\textbf{w}$. Da er
+\textbf{Svar}
+\fig{opgvekvanbl_lf}
+Vi innfører et koordinatsystem med origo i $A$, og setter $\vv{DA}=2\textbf{v}$, $\vv{AB}=2\textbf{u}$, og $\vv{BC}=2\textbf{w}$ (i figuren er $\textbf{s}=\textbf{u}+\textbf{v}+\textbf{w}$). Da er
 \begin{align*}
 	E&=-\textbf{v}-\textbf{v}_p \\
 	F&=\textbf{u}-\textbf{u}_p \\
@@ -102,10 +105,42 @@ Dermed er
 \vv{EG}&=2\textbf{u}+\textbf{w}-\textbf{w}_p+\textbf{v}+\textbf{v}_p=2\textbf{u}+\textbf{w}+\textbf{v}+\textbf{v}_p-\textbf{w}_p \\
 \vv{FH}&=\textbf{w}-\textbf{v}+2\textbf{u}_p+\textbf{v}_p+\textbf{w}_p
 \end{align*}
-Dermed er
+Vi har at
 \[ \vv{FH}_p=\textbf{w}_p-\textbf{v}_p-2\textbf{u}-\textbf{v}-\textbf{w}=-\vv{EG} \]
 Dette betyr at $\vv{FH}$ og $\vv{EG}$ er ortogonale. Videre er
 \[ FH=|\vv{FH}_p|=|-\vv{EG}|=EG \]
+
+\newpage
+\op{opgvekuperp}
+\st{
+	Given a vector $\textbf{w}$. We define $\textbf{w}_p$ as the vector that
+	\begin{itemize}
+		\item is perpendicular to $\textbf{w}$.
+		\item points to the left with respect to the direction of $\textbf{w}$.
+		\item has the same length as $\textbf{w}$.
+	\end{itemize}
+	If ${\textbf{w}=[x, y]}$, it can be shown that ${\textbf{w}_p=[-y, x]}$, and that $-\textbf{w}_p$ points to the right of $\textbf{w}$.
+	\fig{uandup}
+} \regv \regv
+
+Given the vectors $\textbf{u}=[a, b]$, $\textbf{u}_p=[-b, a]$, $\textbf{v}=[c, d]$, and $\textbf{v}_p=[-d, c]$. Show that
+\abc{
+	\item $\textbf{u}\cdot\textbf{v}_p+\textbf{u}_p\cdot\textbf{v}=0$
+	\item $(\textbf{u}_p)_p=-\textbf{u}$
+	\item $(\textbf{u}+\textbf{v})_p=\textbf{u}_p+\textbf{v}_p$
+}
+\textbf{Answer} \\
+\abc{
+	\item $[a, b]\cdot[-d, c] + [-b, a]\cdot[c, d] =-ad+bc-bd+ad=0$
+	\item $(\textbf{u}_p)_p=([-b, a])_p=[-a, -b]=-\textbf{u}$.
+	\item \phantom{} \vs \vs
+	\begin{align*}
+		(\textbf{u}+\textbf{v})_p&=([a+c, b+d])_p\\
+		&=[-(b+d), a+c]\\
+		&=[-b, a]+[-d, c]\\
+		&=\textbf{u}_p+\textbf{v}_p
+	\end{align*}
+}
 
 \newpage
 \subsection*{Problem: Bottema's theorem}
@@ -125,4 +160,79 @@ We introduce a coordinate system with the origin at $A$. Then $D=\textbf{v}_p$. 
 \[ F = D+\frac{1}{2}\vv{DE}=\frac{1}{2}(\textbf{v}_p+\textbf{v}+\textbf{u}+\textbf{u}_p)=\frac{1}{2}(\textbf{u}+\textbf{v}+\textbf{u}_p+\textbf{v}_p) \]
 
 $\textbf{u}+\textbf{v}$ and $\textbf{u}_p+\textbf{v}_p$ are orthogonal and have the same length. As long as $\textbf{u}+\textbf{v}$ does not change, $F$ will not be displaced. A displacement of $C$ does not change $\textbf{u}+\textbf{v}$, and thus the position of $F$ is independent of the position of $C$.
+
+
+\newpage
+\textbf{Problem: van Aubel's theorem} \\
+The colored quadrilaterals are squares. $E$, $F$, $G$, and $H$ are the respective midpoints of the squares. Show that $EG = FH$ and $\vv{EG} \perp \vv{FH}$.
+\fig{opgvekvanbl}
+
+\textbf{Answer}
+\fig{opgvekvanbl_lf}
+We introduce a coordinate system with the origin at $A$, and set $\vv{DA} = 2\textbf{v}$, $\vv{AB} = 2\textbf{u}$, and $\vv{BC} = 2\textbf{w}$ (in the figure, $\textbf{s} = \textbf{u} + \textbf{v} + \textbf{w}$). Then,
+\begin{align*}
+	E &= -\textbf{v} - \textbf{v}_p \\
+	F &= \textbf{u} - \textbf{u}_p \\
+	G &= 2\textbf{u} + \textbf{w} - \textbf{w}_p \\
+	H &= \textbf{u} + \textbf{w} - \textbf{v} + \textbf{u}_p + \textbf{v}_p + \textbf{w}_p
+\end{align*}
+Thus,
+\begin{align*}
+	\vv{EG} &= 2\textbf{u} + \textbf{w} - \textbf{w}_p + \textbf{v} + \textbf{v}_p = 2\textbf{u} + \textbf{w} + \textbf{v} + \textbf{v}_p - \textbf{w}_p \\
+	\vv{FH} &= \textbf{w} - \textbf{v} + 2\textbf{u}_p + \textbf{v}_p + \textbf{w}_p
+\end{align*}
+We have
+\[
+\vv{FH}_p = \textbf{w}_p - \textbf{v}_p - 2\textbf{u} - \textbf{v} - \textbf{w} = -\vv{EG}
+\]
+This means that $\vv{FH}$ and $\vv{EG}$ are orthogonal. Furthermore,
+\[ FH = |\vv{FH}_p| = |-\vv{EG}| = EG \]
+
+\newpage
+$A$, $B$, $C$ og $D$ ligger på sirkelen, og $\angle ACB=\angle BAC=v$.\os
+
+Vis at 
+\[ BD = \frac{CD+DA}{2\cos v} \] 
+\fig{opggeoisoabc}
+
+\sv
+$\angle BDC$ og $\angle ADB$ spenner over samme bue som henholdsvis $\angle ACB$ og $\angle BAC$. Alle disse er periferivinkler, og da $\angle ACB=\angle BAC$, har de alle like størrelse. Videre følger det at $BC=AB$. Av cosinussetingen har vi da at
+\begin{align*}
+	CD^2+BD^2-2CD\cdot BD\cos v &= DA^2+BD^2-2DA\cdot BD\cos v \\
+	CD^2-DA^2 &= 2BD\cos v(CD-DA) \\
+	(CD+DA)(CD-DA)&= 2BD\cos v(CD-DA)
+\end{align*}
+Antatt at $CD-DA\neq0$, er 
+\[ BD=\frac{CD+DA}{2\cos v} \]
+I tilfellet hvor ${CD=DA}$, er $BD$ en diameter i sirkelen. Da har vi av Thales' setning omvendt at $\angle DCB=90^\circ$. Altså er
+\begin{align*}
+	BC &= \frac{CD}{\cos v}  = \frac{CD+DA}{2\cos v} \br
+\end{align*}
+\newpage
+$A$, $B$, $C$ and $D$ lies on the circle, and
+$\angle ACB=\angle BAC=v$.\os 
+
+Show that
+\[ BD = \frac{CD+DA}{2\cos v} \] 
+\fig{opggeoisoabc}
+\newpage
+$\triangle ABC$ er likesidet, og $\triangle ACD\cong\triangle BAE$.
+\abc{
+\item Avgjør hvilke av disse vinklene som har lik verdi. Bestem vinkel-verdien om det lar seg gjøre.
+\[\angle BDC, \angle ADB, \angle CFD, \angle ACE, \angle BEC, \angle EFB\text{ og } \angle CAD \]
+\item Vis at $BD=CD+DA$.
+}
+\fig{opggeoisab}
+\sv
+\abc{
+\item $\angle BDC=\angle BEC=\angle BAC=60^\circ$ fordi de er periferivinkler som spenner over samme bue. Tlsvarende kan vi finne at $\angle ADB=60^\circ$. $\angle CAD=\angle ACE$ fordi de er periferivinkler som spenner over sirkelsegmenter med lik lengde. Av vinkelsummen til $\angle ADC$ er $\angle DCA=60-\angle CAD$. Dermed er
+\[ \angle DCF=\angle DCA+ACE=60^\circ \]
+Altså er $\triangle CDF$ likesidet. $\angle EFB=\angle CFD$ fordi de er toppvinkler, og dermed er også $\triangle FEB$ likesidet. Følgelig har vi at
+\[ \angle BDC=\angle ADB=\angle CFD=\angle BEC=\angle EFB=60^\circ \]
+og 
+\[ \angle CAD=\angle ACE \]
+\item Da $\triangle CDF$ og $\triangle FEB$ er likesidet, har vi at
+\[ BD=BF+FD=BE+CD=AD+CD \]
+}
+
 \end{document}

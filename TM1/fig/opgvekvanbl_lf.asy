@@ -17,18 +17,10 @@ pair wp = (-w.y, w.x);
 
 draw(O--B--C--D--O);
 
-filldraw(O-- -2vp-- -2vp-2v -- D--cycle, arpenr);
-filldraw(O-- -2up -- -2up+2u--B--cycle, arpeny);
-filldraw(B-- B-2wp -- B-2wp+2w--C--cycle, arpeng);
-filldraw(C-- C+2vp+2up+2wp -- C+2vp+2up+2wp-2u-2v-2w--D--cycle, arpen);
-
 pair A1 = 1/2*(D-2vp);
 pair A2 = 1/2*(B-2up);
 pair A3 = 1/2*(B+B-2wp+2w);
 pair A4 = 1/2*(C+C+2vp+2up+2wp-2u-2v-2w);
-
-draw(A1--A3);
-draw(A2--A4);
 
 dott(O, "$A$", SW);
 dott(B, "$B$", SE);
@@ -46,3 +38,11 @@ write(A2, u-up);
 write(A3, 2u+w-wp);
 write(A4, -v+u+w+vp+up+wp);
 
+draw(O--D/2, arrow=Arrow(), L="$-\textbf{v}$");
+draw(D/2--A1, arrow=Arrow(), L="$-\textbf{v}_p$");
+draw(O--B/2, arrow=Arrow(), L="$\textbf{u}$");
+draw(B/2--A2, arrow=Arrow(), L="$-\textbf{u}_p$", E);
+draw(B--B+(C-B)/2, arrow=Arrow(), L="$\textbf{w}$");
+draw(B+(C-B)/2--A3, arrow=Arrow(), L="$\textbf{w}_p$", N);
+draw(C--C+(D-C)/2, arrow=Arrow(), L="$\textbf{s}$");
+draw(C+(D-C)/2--A4, arrow=Arrow(), L="$\textbf{s}_p$", E);

@@ -16,7 +16,7 @@ mksq2(D1,B);
 draw(O--B--C--O);
 draw(O--D1,blue);
 draw(B--D1,deepgreen);
-draw(C--D2,Cyan);
+draw(C--D2,red);
 
 Tri A = mktri(abs(C-B),abs(C),abs(B));
 

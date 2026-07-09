@@ -1,0 +1,304 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+	
+	\chapter{Luvttut ja loahppu}
+	\newpage
+	\section{Likhetstegnet, juovla ja luvttat}
+	
+	\subsection*{Likhetstegnet}
+	Namma lea čálá, dat čálá, ahte \outl{likhetstegnet} \index{luvttu}
+	%id{symeq}
+	\sym{$ = $}
+	%\id
+	čálá, ahte dat lea veahkki. Mii mákkár áiggi ja go lea veahkki veahkki lea filisofalaš diskusjovdna, de vuolgga geahččat dán: \textsl{Dát likhetstegnet
+		%id{symeq}
+		\sym{$ = $}
+		%\id
+		gáhtto, mii likhetstegnet gáhtto, galgá vuoigatvuodat kontekstas, mas tegnet lea geahččan.}. Dáin áigáin sáhtát doallat veahá luvttuid ovddasvástádus, ja de sáhtát dárkkistit veahá eará precíisa mearkkašumit dán tegnet.
+	
+	\regv
+
+	\spr{
+		Sámeallat, moai leat veahá geahččat
+		%id{symeq}
+		\sym{$ = $}
+		%\id
+		:
+		\begin{itemize}
+			\item ''le a'' \\
+			\item ''le seammá guovtti'' \\
+			\item ''vástá''
+		\end{itemize}
+	}
+	
+	\subsection*{Juovla ja luvttat}
+	Dán girjis leat guovtti mángga, moai sáhtát representere luvttuid: luvttu guovtti \textsl{juovla} ja luvttu guovtti \textsl{luvttabáiki luvttaláinjiin}. Allat luvttuid representášuvdnat leat álggahuvvan 0 ja 1 luvttuid vuoigatvuodain.
+	
+	\newpage
+	\subsubsection*{Luvttu guovtti juovla}
+	Go dat lea juovla, de luvttu 0 gáhtto
+	%id{0interpretations}
+	\footnote{\refkap{Rekneartane} girjis beasat ahte 0 lea veahá eará tolkmus.}
+	%\id
+	''iežas''. Figura, mas ii leat niegut, lea seammá go 0:
+	%id{equalszero}
+	\[ =0 \]
+	%\id
+	1 lea čálá go okta ruttu:
+	\fig{rut1}
+	Eará luvttut leat de definere go gii okta "okta" ruttut (''okta'') leat:
+	\vs
+	\fig{rut2}
+	\fig{rut3}
+	
+	\subsubsection*{Luvttu guovtti luvttaláinjiin}
+	Go dat lea luvttabáiki luvttaláinjiin, de 0 lea álgogáhtto:
+	\fig{lin0a}
+	De dat lea 1 veahá guovllu oarji 0:
+	\fig{lin0b}
+	Eará luvttut leat de definere go gii okta "okta" guovllu (''okta'') leat oarji 0:
+	\fig{lin1}
+	
+	\subsection*{Positiiva guovtteluvttut}
+	Dat lea de sáhtát nákcá, ahte luvttut ii leat veahá \textsl{guovtti} okta "okta", de luvttut, gii \textsl{leat} dat, leat veahá eanem namma:
+	
+	\reg[Positiiva guovtteluvttut]{
+		Luvttut, gii leat guovtti okta "okta", leat
+		%id{posintoutl}
+		\outl{positiiva\footnotemark guovtteluvttut}\index{positiiva guovtteluvttut}.
+		%\id
+		Positiiva guovtteluvttut leat
+		%id{posint}
+		\[ 1, 2, 3, 4, 5 \text{ ja soahtá.} \]
+		%\id
+		Positiiva guovtteluvttut leat maid nammahuvvan \outl{naturlá luvttut}\index{luvttu!naturlá}.
+	}
+	\info{Mii 0?}{
+		Okta girjejoaddá lea 0 nammahuvvan naturlá luvttui. Okta kontekstas dat lea veahá luohte, eará kontekstas ii.
+	}
+	
+	%id{posinterpre}
+	\footnotetext{Mii sána \textit{positiiva} gáhtto, dat beasat \refkap{Negtal} girjis.}
+	%\id
+	
+	\subsubsection*{Eanem luvttut}
+	Maid leat symbolat, gii čálá, ahte áigáid \textsl{ii leat} veahkki. Okta áigáin dat lea buoret go diehtit, ahte dat ii leat veahkki, eará áigáin lea veahá gáhtto, mii áigá lea stuorát (ja unnit).
+	
+	\spr{ \vs
+		%id{unequals}
+		\begin{center}
+			\renewcommand{\arraystretch}{1.2}
+			\begin{tabular}{@{}cp{0.4cm}l}
+				$\neq$&& ''ii leat veahkki''\\
+				$ < $ && ''le unnit go'' \\
+				$ > $ && ''le stuorát go'' \\
+				$ \leq $ && ''le unnit go dahje veahkki'' \\
+				$ \geq $ && ''le stuorát go dahje veahkki''
+			\end{tabular}
+			\renewcommand{\arraystretch}{1}
+		\end{center}
+		%\id
+	}
+	
+	\newpage
+	\eks{ \vsb
+		%id{unequalexample}
+		\alg{
+			0 &\neq 1 \vn
+			7&<9 \vn
+			5&>2 \vn
+			\text{positiiva bealáluvttut}&\geq 2\\
+			3&\leq \text{positiiva oddaluvttut}
+		}
+		%\id
+	}
+	
+	\info{Loahpahusáigi}{
+		Stuorámus, leat guovtti eanem symbolat eanem luvttuid: 
+		%id{neq}
+		\sym{$\neq$}
+		%\id
+		\!\!, 
+		%id{<}
+		\sym{$<$}
+		%\id
+		ja 
+		%id{leq}
+		\sym{$\leq$}
+		%\id
+		\!\!. Dá logu symbolat gáhtto loahpahus vuostá veahkki oarji. Eanem luvttu
+		%id{3<5}
+		${3<5}$
+		%\id
+		loahpahat go ''3 le unnit go 5''. Dat lea maid sáhtát diehtit, ahte
+		%id{<}
+		\sym{$<$}
+		%\id
+		le a symbola guovllus, mas guovtti sárri galgá čájehit unnit áigá geahččat. Dát gáhtto, ahte sáhtát
+		%id{3<5}
+		${3<5}$
+		%\id
+		loahpahit oarji go ''5 le stuorát go 3''. Dát, ahte maid ge geahččat symbolat
+		%id{>}
+		\sym{$>$}
+		%\id
+		ja
+		%id{geq}
+		\sym{$\geq$}
+		%\id
+		le go dat lea okta áigáin veahá geahččat ''stuorát go'' go loahpahat vuostá veahkki.
+	}
+	
+	\newpage
+	\section{Luvttut, čálá ja áigi \label{tallsiff}}
+	Luvttut leat rakkahuvvan
+	\outl{čáláin}\index{čálá}
+	0, 1, 2, 3, 4, 5, 6, 7, 8 ja 9, ja dás \textsl{báiki} gos dat leat. Čálá ja dás báiki definere
+	%id{10pos}
+	\footnote{De lea beasat ahte \textit{merke} lea maid definere luvttuid áigi (jáddadán \refkap{Negtal}).}
+	%\id
+	\outl{áigi}\index{áigi} luvttui.
+	
+	\subsection*{Guovtteluvttut, gii leat stuorát go 9}
+	Geahččat okta dás, moai sáhtát čálá luvttui ''vuokta''. \fig{tel}
+	Okta juovla 10 ''okta'' nammahuvvat ''logi''. ''Vuokta'' sáhtát rakkahit 1 ''logi'', ja de leat 4 ''okta''. De čálá ''vuokta'' dás:
+	%id{14}
+	\[ \text{vuokta}=14 \]
+	%\id
+	\amounts{\fig{tel2_bm}}
+	\numrline{\fig{tel2t}}
+	\vsk
+	
+	\newpage
+	\subsection*{Desimálluvttut}
+	Okta áigáin ii leat guovtti okta "okta", ja de lea veahá gáhtto doallat 1 veahá unnit báhpaide. Geahččat okta dás, moai sáhtát doallat okta "okta":
+	%id{defof1}
+	\footnote{Dát definere "okta" guovllu stuorámus go áige.}
+	%\id
+	\amounts{\fig{maal} \vs}
+	\numrline{\fig{des1}}
+	De doallat "okta" 10 veahá unnit báhpaide:
+	\amounts{\fig{maal1} \vs} \vs
+	\numrline{\fig{des1a}}
+	Go leat doallan 1 10 báhpaide, de nammahuvvat dát báhpi ''desimál'':
+	\amounts{\fig{maal1a_bm} \vs}
+	\numrline{\fig{des1b_bm} \vs}
+	
+	Desimálat čálá geahččat
+	\outl{desimálmerke} \sym{,}:
+	\amounts{\fig{maal1b} \vs}
+	\numrline{\fig{des1c} \vs}
+	
+	\eks[]{\vs
+		\fig{maal2a}
+		\fig{des3}
+	}
+	
+	\regv
+	\spr{
+		Beaivvášgiella geahččat \sym{.} desimálmerki:
+		%id{dotcomma}
+		\alg{
+		3,5&\quad(\textit{norsk}) \\
+		3.5&\quad (\textit{beaivvášgiella})
+		}
+		%\id
+		Go leat kombinere matemahtalaš symbolat
+		%id{digits}
+		\footnote{Čálá leat matemahtalaš symbolat.}
+		%\id
+		\!\!, de leat dat nammahuvvan matemahtalaš \outl{ohcá}.
+	}
+
+	\newpage
+	\subsection*{Logisysteema}
+	Dat leat de beasat, moai sáhtát ohcat luvttuid áigi go čáláin logi, okta ja desimálat, ja dat ii jávkka dás:
+	\regv
+	
+	\reg[Logisysteema \label{titalsys}]{
+		Luvttuid áigi lea veahá čáláin 0, 1, 2, 3, 4, 5, 6, 7, 8 ja 9, ja dás báiki gos dat leat. Okta čálá, gii čálá okta, lea álgogáhtto:
+		\begin{itemize}
+			\item čálá, gii lea guovtti, čálá logi, sádde, duhát ja soahtá.
+			\item čálá, gii lea oarji, čálá desimál, sádde ja duhát.
+		\end{itemize}
+	}
+	
+	\eks[1]{\vs
+		\fig{maal3_bm}
+	}
+	
+	\eks[2]{ \vs \vs
+		\fig{titalsys_bm}
+	}
+	
+	\newpage
+	\reg[Bealáluvttut ja oddaluvttut \label{parogodd}]{
+		Guovtteluvttut, gii leat 0, 2, 4, 6 dahje 8 okta báhpaáigisin, leat nammahuvvan \outl{bealáluvttut}\index{bealáluvttut}.\vsk
+		
+		Guovtteluvttut, gii leat 1, 3, 5, 7 dahje 9 okta báhpaáigisin, leat nammahuvvan \outl{oddaluvttut}\index{oddaluvttut}.
+	}
+	
+	\eks{
+		10 vuostá bealáluvttut leat
+		%id{even2to18}
+		\[ \text{0, 2, 4, 6, 8, 10, 12, 14, 16, ja 18} \]
+		%\id
+		10 vuostá oddaluvttut leat
+		%id{odd1to19}
+		\[ \text{1, 3, 5, 7, 9, 11, 13, 15, 17, ja 19} \]
+		%\id
+	}
+
+	\newpage
+	\section{Koordináhtasysteema \label{Koord}}
+	Okta áigáin lea veahá geahččat guovtti luvttaláinji. Dát nammahuvvat \outl{koordináhtasysteema}\index{koordináhtasysteema}
+	%id{coord}
+	\footnote{Stuorámus, leat okta mángga koordináhtasysteemat, de dán girjis geahččat sána vaikku dás okta, nammá kartesalaš koordináhtasysteema. Dat lea nammahuvvan fránskkalaš filosofa ja matemahtalaš René Descartes.}
+	%\id
+	\!\!. Dat lea de okta luvttaláinji (aksá) guovtti: okta lea \textsl{horisontála} ja okta \textsl{vertikála}. Okta báiki koordináhtasysteemas lea nammahuvvan \outl{báiki}\index{báiki}.
+
+	\regdef[Koordináhtasysteema]{Okta báiki čálá geahččat guovtti luvttut guovtti paranteesis. Dá logu luvttut leat nammahuvvan \outl{vuostebáiki} ja \outl{maŋebáiki} dán báhkki. \os
+		
+		Vuostebáiki čálá báhkki báiki horisontálaksáin. \os
+		
+		Maŋebáiki čálá báhkki báiki vertikálaksáin.
+	}
+
+	\eks[1]{
+		Figuras beasat báhkit
+		%id{p23}
+		$ (2, 3) $
+		%\id
+		\!\!,
+		%id{p51}
+		$ (5, 1) $
+		%\id
+		ja
+		%id{p00}
+		$ (0, 0) $
+		%\id
+		\!\!.
+		\fig{kord}
+	}
+	
+	\spr{
+		Báiki, mas aksat gáhtto, de
+		%id{p00comma}
+		$ (0, 0) $
+		%\id
+		\!\!, lea nammahuvvan \outl{origo}\index{origo}.
+	}
+	
+	\newpage
+	\info{Merke}{
+		Okta "okta" guovllu sáhtá leat eará stuorámus horisontálaksáin ja vertikálaksáin.
+	}
+	
+	\eks[2]{
+		\fig{kord2}
+	}
+\end{document}

@@ -9,8 +9,8 @@ real g(real x){return x+4;}
 int a = 0;
 int b = 4;
 mkgrid((a,b),(0,9));
-xaks(a, b,tck=true, tc=1);
-yaks(0,9, l="$$", bex=1.15, tck=true, tc=1);
+xaks(a, b,tck=true, l="$x$", tc=1);
+yaks(0,9, bex=1.15, tck=true, tc=1, l="$y$");
 
 draw((a,f(a))--(b,f(b)),blue);
 draw((a,g(a))--(b,g(b)),red);

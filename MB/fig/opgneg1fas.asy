@@ -3,7 +3,10 @@ import figs;
 defaultpen(fontsize(9pt));
 unitsize(0.6 cm);
 
-xaks(-9,9, tckl=false,omite=true, bex=0.05, aex=0.05);
+draw((-8, 0)--(8,0));
+for(int i=-8; i<=8; ++i) {
+	mktc(i, "");
+}
 
 
 mktc(0,"0");
