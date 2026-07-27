@@ -1,8 +1,9 @@
-\input{../../doc}
+\documentclass[english,oneside, hidelinks, 11 pt, class=report,crop=false]{standalone}
 \input{../../preamb}
 \input{../bm}
 \setcounter{chapter}{1}
 \setcounter{section}{1}
+
 \begin{document}
 \op{opgvekuperp}	
 \st{
@@ -235,4 +236,248 @@ og
 \[ BD=BF+FD=BE+CD=AD+CD \]
 }
 
+\newpage
+\subsubsection*{The Quatratic Function}
+
+\subsubsection*{Problem 1}
+Given the function ${f(x) = a x^2 + b x + c}$. Show that the graph of $f$ is symmetric about the line ${x = -\frac{b}{2a}}$.
+
+\subsubsection*{Answer}
+For the graph of $f$ to be symmetric about the line ${x = -\frac{b}{2a}}$, for any number $k$, we must have
+\begin{equation}\label{opggeokvadsymeq}
+	f\left(k - \frac{b}{2a}\right) = f\left(-k - \frac{b}{2a}\right)
+\end{equation}
+
+For a number $d$, we have
+\[
+d - \frac{b}{2a} = \frac{2ad - b}{2a}
+\]
+
+Furthermore,
+\begin{align*}
+	f\left(d - \frac{b}{2a}\right) &= a\left(\frac{2ad - b}{2a}\right)^2 + b\left(\frac{2ad - b}{2a}\right) + c \\
+	&= \frac{4a^2d^2 - 4abd + b^2}{4a} + \frac{2abd - b^2}{2a} + c \\
+	&= \frac{4a^2d^2 - b^2}{4a} + c
+\end{align*}
+
+This means that regardless of whether $d = k$ or $d = -k$, the expression above will be the same, and thus \eqref{opggeokvadsymeq} holds.
+
+\subsection*{Problem 2}
+Given the function $f(x) = ax^2 + bx + c$. In Problem 1, we showed that $f$ is symmetric about the line $x = \frac{-b}{2a}$. Furthermore, it can be shown that for all numbers $k$,
+\[
+f\left(\pm k - \frac{b}{2a}\right) = \frac{4a^2k^2 - b^2}{4a} + c
+\]
+Use this to derive the \textit{abc}-formula.
+
+\subsection*{Answer}
+If \( f(x) = ax^2 + bx + c = 0 \), then for a number \( k \), we have
+\[
+f\left(\pm k - \frac{b}{2a}\right) = \frac{4a^2k^2 - b^2}{4a} + c = 0.
+\]
+Solving this equation for \( k \), we obtain
+\[
+k = \pm \frac{\sqrt{b^2 - 4ac}}{2a}.
+\]
+This means that
+\[
+f\left(\pm \frac{\sqrt{b^2 - 4ac}}{2a} - \frac{b}{2a}\right) = 0.
+\]
+\newpage
+\subsection*{Problem 3}
+Given the function \( f(x) = ax^2 + bx + c \).
+
+\abc{
+	\item Find an expression for the extremal value.
+	\item Explain why
+	\begin{itemize}
+		\item a change in \( c \) will result in a vertical shift of the graph of \( f \).
+		\item a change in \( a \) or \( b \) will result in both a horizontal and a vertical shift of the graph of \( f \).
+	\end{itemize}
+}
+
+\subsection*{Answer}
+\textit{In this solution, we assume the function has a minimum point. The case where it has a maximum point is entirely analogous.}
+
+\abc{
+	\item Since \( x = -\frac{b}{2a} \) is the extremal point of \( f \), the extremal value \( f_e \) is given by
+	\[
+	f_\text{e} = f\left(-\frac{b}{2a}\right) = a\left(-\frac{b}{2a}\right)^2 + b\left(-\frac{b}{2a}\right) + c = -\frac{b^2}{4a} + c
+	\]
+	
+	\item Since the extremal point is expressed in terms of \( a \) and \( b \), a change in \( c \) will not affect the horizontal position of the minimum point. However, \( c \) is part of the expression for \( f_e \), so a change in \( c \) will alter the vertical position of the minimum point.
+	
+	Both \( a \) and \( b \) are part of the expressions for the extremal point and \( f_e \). Thus, a change in \( a \) or \( b \) will shift the minimum point both horizontally and vertically.
+	
+	A shift in the minimum point necessarily corresponds to a shift in the graph of \( f \).
+}
+
+\newpage
+\subsection*{Problem 4}
+Given the function \( f(x) = ax^2 + bx + c \), where\footnote{The case where \( a < 0 \) is entirely analogous.} \( a > 0 \).
+To describe the shape of the graph of \( f \), we do the following\footnote{The case where \( f \) has a maximum point instead of a minimum point is entirely identical.}:
+
+\begin{itemize}
+	\item Let \( g(x) \) be the function that describes the difference between \( f(x) \) and the minimum value of \( f \).
+	\item Let \( h(g) \) be the horizontal distance between \( g(x) \) and the line \( x = -\frac{b}{2a} \).
+\end{itemize}
+
+If two quadratic functions have identical expressions for \( h(g) \), we can say that the functions have the same shape.
+
+\abc{
+	\item Show that
+\[
+h(g) = \sqrt{\frac{g}{a}}
+\]
+
+\item Refer back to Problem 3, and create a summary of how a change in \( a \), \( b \), or \( c \) might affect
+\begin{itemize}
+	\item the horizontal shift of the graph,
+	\item the vertical shift of the graph,
+	\item the shape of the graph.
+\end{itemize}
+}
+
+\fig{opginvsym}
+
+\newpage
+\subsection*{Answer}
+\abc{
+	\item In Problem 3, we found that the extremal value \( f_\text{e} \) of \( f \) is
+	\[
+	f_\text{e} = -\frac{b^2}{4a} + c
+	\]
+	Therefore,
+	\[
+	g(x) = f(x) - f_\text{e} = ax^2 + bx + c - \left(-\frac{b^2}{4a} + c\right) = ax^2 + bx + \frac{b^2}{4a}
+	\]
+	Solving this equation for \( x \), we get from the quadratic formula:
+	\[
+	x = \frac{-b \pm \sqrt{b^2 - 4a\left(\frac{b^2}{4a} - g\right)}}{2a} = \frac{-b \pm 2\sqrt{ag}}{2a}
+	\]
+	Let \( p(g) = x \) be the inverse function of \( g \) for \( x \in [-\infty, -\frac{b}{2a}] \). Then,
+	\[
+	p(g) = \frac{-b - 2\sqrt{ag}}{2a}
+	\]
+	Furthermore,
+	\[
+	h(g) = p(g) - \left(-\frac{b}{2a}\right) = \sqrt{\frac{g}{a}}
+	\]
+	
+	\item A change in \( c \) vertically shifts the graph but does not change its shape.
+	
+	A change in \( b \) shifts the graph both horizontally and vertically but does not change its shape.
+	
+	A change in \( a \) shifts the graph both horizontally and vertically and changes the shape of the graph.
+}
+\newpage
+\subsection*{Problem 5}
+Given the function \( f(x) = a x^2 + b x + c \), and the points \( {A = (p, f(p))} \) and \( B = (q, f(q)) \). The tangent to \( f \) at the point \( C = (t, f(t)) \) is parallel to the segment \( AB \).
+
+\abc{
+	\item Show that \( t = \frac{1}{2}(p + q) \).
+	\item Show that the area of \( \triangle ABC \) is \( \frac{1}{8}(q - p)^3 \).
+}
+\fig{opgderarchi}
+\newpage
+\subsection*{Answer}
+\fig{opgderarchi_lf}
+\abc{
+	\item We have
+	\[
+	A = (p, a p^2 + b p + c) \qquad \text{and} \qquad B = (q, a q^2 + b q + c)
+	\]
+	Let \( g(x) \) be the function describing the line through \( AB \). Then,
+	\begin{align*}
+		g'(x) &= \frac{f(q) - f(p)}{q - p} \\
+		&= \frac{a q^2 + b q + c - (a p^2 + b p + c)}{q - p} \\
+		&= \frac{a(q^2 - p^2) + b(q - p)}{q - p} \\
+		&= \frac{a(q + p)(q - p) + b(q - p)}{q - p} \\
+		&= a(q + p) + b
+	\end{align*}
+	Let \( C = (t, f(t)) \). Then we have
+	\begin{align*}
+		f'(t) &= a(q + p) + b \\
+		2a t + b &= a(q + p) + b \\
+		t &= \frac{1}{2}(q + p)
+	\end{align*}
+	
+	\item Let \( D \) be the midpoint of \( AB \). Then,
+	\[
+	D = \left(t, \frac{1}{2}(f(q) + f(p))\right)
+	\]
+	Furthermore,
+	\begin{align*}
+		DC &= \frac{1}{2}\left(f(q) + f(p)\right) - f(t) \\
+		&= \frac{1}{2}\left(a(p^2 + q^2) + b(p + q) + 2c\right) - a\left(\frac{1}{2}(p + q)\right)^2 + b\left(\frac{1}{2}(p + q)\right) + c \\
+		&= \frac{a}{2}(p^2 + q^2) - \frac{a}{4}(p + q)^2 \\
+		&= \frac{a}{4}(2p^2 + 2q^2 - p^2 - q^2 - 2pq) \\
+		&= \frac{a}{4}(q - p)^2
+	\end{align*}
+	We place \( E \) and \( F \) such that \( \square AEFB \) is a parallelogram. With \( AE \) as the base, the height of \( \square AEFB \) is \( q - p \). Since \( AE = DC \), we have
+	\[
+	A_{\triangle ABC} = \frac{1}{2} A_{\square AEFB} = \frac{1}{2} \cdot \frac{a}{4}(q - p)^2 (q - p) = \frac{a}{8}(q - p)^3
+	\]
+}
+
+\newpage
+\subsection*{Problem 6}
+Given the function $f(x)=a x^2+b x + c$ and the points $A=(p, f(p))$ og $B=(q, f(q))$.
+\abc{
+	\item Let $I$ be the area bounded by the graph of $f$ and the line segment $AB$. Determine which of $a$, $b$, $c$, $p$ and $q$ we can expect to be included in the expression for $I$.
+	\item  Find the expression for $I$.
+	\item Find $\frac{I}{A_{\triangle ABC}}$.
+	\item Find $\frac{A_{\triangle ABC}}{A_\text{blue area}}$.
+}
+\begin{figure}
+	\centering
+	\includegraphics[]{../../TM2/fig/opgintarchi}
+\end{figure}
+\newpage
+\subsection*{Answer}
+\abc{
+	\item We expect $p$ and $q$ to appear in the expression for $I$ since these determine the positions of $A$ and $B$. As long as the shape of $f$ remains the same, the bounded area will not change. Since only $a$ affects the shape of $f$, $a$ must also appear in the expression for $I$, but not $b$ and $c$.
+	
+	\item Let $g(x)$ be the function describing the line through $AB$. Then
+	\begin{align*}
+		g(x) &= (a(p+q)+b)(x-p) + f(p) \\
+		&= (a(p+q)+b)x - (a(p+q)+b)p + ap^2 + bp + c \\
+		&= (a(p+q)+b)x - apq + c
+	\end{align*}
+	We have that
+	\[
+	g - f = ax(p+q) - apq - ax^2
+	\]
+	Therefore,
+	\begin{align*}
+		I &= \int_{p}^{q} (g - f) \, dx \\
+		&= \left[\frac{ax^2}{2}(p+q) - apqx - \frac{1}{3}ax^3\right]_p^q \\
+		&= \frac{aq^2}{2}(p+q) - apq^2 - \frac{1}{3}aq^3 - \left(\frac{ap^2}{2}(p+q) - ap^2q - \frac{1}{3}ap^3\right) \\
+		&= \frac{a}{2}(p+q)(q^2 - p^2) - apq(q - p) - \frac{a}{3}(q^3 - p^3) \\
+		&= \frac{a}{2}(q-p)((p+q)^2 - 2pq) - \frac{a}{3}(q^3 - p^3) \\
+		&= \frac{a}{2}(q-p)(p^2 + q^2) - \frac{a}{3}(q^3 - p^3) \\
+		&= \frac{a}{2}(q-p)(p^2 + q^2) - \frac{a}{3}(q-p)(p^2 + q^2 + pq) \\
+		&= \frac{a}{6}(q-p)(3p^2 + q^2 - 2p^2 - 2q^2 - 2pq) \\
+		&= \frac{a}{6}(q-p)^3
+	\end{align*}
+	
+	\item Since $I = \frac{a}{6}(q-p)^3$ and $A_{\triangle ABC} = \frac{a}{8}(q-p)^3$, we have
+	\[
+	\frac{I}{A_{\triangle ABC}} = \frac{4}{3}
+	\]
+	
+	\item We have that
+	\begin{align*}
+		A_{\text{blue area}} + A_{\triangle ABC} &= \frac{4}{3}A_{\triangle ABC} \\
+		\frac{A_{\triangle ABC}}{A_{\text{blue area}}} &= 3
+	\end{align*}
+}
+
+\newpage
+Grafen til $f=x^2+\frac{3}{4}$ tangerer sirkelen i $A$ og $B$. $AB=\sqrt{3}$. \os 
+Finn arealet til den røde sektoren.
+\fig{opgderareainscrcirc} \vsk
+
+The graph of ${f = x^2 + \frac{3}{4}}$ are tangent to the circle at $A$ and $B$. $AB = \sqrt{3}$. \os
+Find the area of the red sector.
+\fig{opgderareainscrcirc}
 \end{document}

@@ -4,60 +4,92 @@
 \begin{document}
 
 \section{Følger}\index{følge}
-Følger er en oppramsing av tall i en bestemt rekkefølge, gjerne skilt med komma. I følgen 
+\subsection*{Introduksjon}
+\outl{Følger}\index{følge} har mange likhetstrekk med mengder (se \tmen):
+\begin{itemize}
+	\item De er en samling av tall.
+	\item Et tall som er del av en følge kalles et \outl{element}\index{element}.
+	\item Vi bruker \sym{$ \lbrace\rbrace $} for å indikere en følge, og \sym{$ \in $} for å vise at et\\ element er inneholdt i en følge.
+	\item Følger kan være både endelige eller uendelige.
+\end{itemize}
+Det som virkelig skiller følger fra mengder er dette:
+\begin{itemize}
+	\item  En følge kan inneholde flere elementer med lik verdi.
+	\item Elementene i en følge er gitt i en bestemt rekkefølge. For eksempel, hvis $\lbrace{2, 4, 6\rbrace}$ og ${\lbrace2, 6, 4\rbrace}$ beskriver to følger, er ikke følgene like. Hvis de to uttrykkene derimot beskriver mengder, er de like.
+\end{itemize}
+Hvert element i en følge beskrives gjerne ved hjelp av en indeksert bokstav. Lar vi $ a_i $ betegne elementene i en følge, bruker vi $ {i\in \mathbb{N}}$.
+\eks{
+Gitt følgen\footnote{Når det er erklært at en samling av tall er en følge, er det vanlig å utelate klammeparentesene.}
 \begin{equation}
-2, 4, 8, 16  \label{folg}
+	2, 4, 8, 16 
 \end{equation}
-sier vi at vi har fire \outl{element}\index{element}. Element nr.\,1 har verdi 2, element nr.\,2 har verdi 4 og så videre. Hvert element i en følge beskrives gjerne ved hjelp av en indeksert bokstav. Velger vi oss bokstaven $ a $ for følgen over, kan vi skrive
-\[ a_1=2\quad,\quad a_2=4\quad,\quad a_3=8\quad,\quad a_4=16 \] 
-
-Når vi lar $ a_i $ betegne elementene i en følge, bruker vi $ {i\in \mathbb{N}}$. I likhet med mengder, kan vi bruke \sym{$ \lbrace\rbrace $} for å indikere en følge, og \sym{$ \in $} for å vise at et element er inneholdt i en følge. For eksempel er $ 8\in\lbrace2, 4, 8, 16\rbrace $ og $\lbrace a_i\rbrace=\lbrace2, 4, 8, 16\rbrace$. \vsk
-
-Ofte kan tallene i en følge settes i sammenheng med hverandre. Multipliserer vi for eksempel et element i følgen fra \eqref{folg} med $ 2 $, så har vi funnet det neste elementet. Den \outl{rekursive formelen}\index{rekursiv formel} er da
-\[ a_i = 2\cdot a_{i-1} \]
-I den rekursive formelen bruker vi altså den forrige\footnote{Det kan også være nødvendig å bruke flere foregående verdier.} verdien for å finne den neste. \vsk
-
-Av uttrykket for $a_i$ kan vi legge til uendelig mange nye element i \eqref{folg}, og får da følgen
-\begin{equation}
- 2, 4, 8, 16, 32, 64, ...  \label{folg1}
-\end{equation}
-Symbolet \sym{$ ... $} viser at nye element fortsetter i det uendelige.\vsk
-
-Hva om vi for denne følgen ønsker å finne element nr. 20, altså $ a_{20} $? Det vil da lønne seg å finne en \outl{eksplisitt formel}\index{eksplisitt formel}. For å gjøre dette skriver vi opp noen element, og ser om vi finner et mønster: 
-\alg{
-& a_1 = 2 = 2^1 \\
-& a_2 = 4 = 2^2 \\
-& a_3 = 8 = 2^3
+Denne følgen kan vi skriv som $\{a_i\}$, hvor
+\[ a_1=2\quad,\quad a_2=4\quad,\quad a_3=8\quad,\quad a_4=16 \]
 }
-Av ligningene over innser vi at vi for element nr.\,$ i $ kan skrive
-\[ a_i=2^i \] 
-Og slik kan vi fort finne element nr.\,20:
-\[ a_{20}=2^{20}= 1048576 \]
-En eksplisitt formel gir oss et uttrykk der verdien til et element regnes ut. Når man har et slikt uttrykk er det også vanlig å skrive dette som siste element i rekken, \eqref{folg1} blir da seende slik ut:
-\[  2, 4, 8, 16, 32, 64, ..., 2^i \]
 \spr{
-En følge med et konkret antall element kalles en \outl{endelig følge}\index{følge!endelig}. En følge med uendelig mange element kalles en \outl{uendelig følge}\index{følge!uendelig}. Følgen fra \eqref{folg} er altså en endelig følge, mens følgen fra \eqref{folg1} er en uendelig følge.\vsk
-
-Om ''element nr. $i$'' i en følge sier vi gjerne det ''$i$-te elementet'' i følgen.
-}
-\info{Forskjell på følge og mengde}{
-I en følge har rekkefølgen på tallene noe å si. Hvis $\lbrace{2, 4, 6\rbrace}$ og ${\lbrace2, 6, 4\rbrace}$ beskriver to følger, er ikke følgene like. Hvis de to uttrykkene derimot beskriver mengder, er de like.\vsk
-
-En mengde inneholder ikke flere element med samme verdi, mens en følge kan gjøre det.
+	Om ''element nr. $i$'' i en følge sier vi gjerne det ''$i$-te elementet'' i følgen.
 }
 
-\subsection{Aritmetiske følger} \index{følge!aritmetisk}
 
-Følgen 
-\[ 2, 5, 8, 11, 14, 17 \]
-kalles en \textit{aritmetisk følge}. I en aritmetisk følge har to naboelement konstant differanse, i dette tilfellet 3. Skriver vi opp de tre første elementene kan vi finne mønsteret til en eksplisitt formel\index{eksplisitt formel}:
+
+
+\subsection*{Rekursiv og eksplisitt formel}
+Ofte kan tallene i en følge settes i sammenheng med hverandre. I en \outl{rekursiv formel}\index{rekursiv formeel} er verdien til neste elementet i følgen gitt ved verdien til ett eller flere foregående elementer.
+\eks{
+Finn den rekursive formelen til følgen 
+\begin{equation*}
+	2, 4, 8, 16 
+\end{equation*}
+\sv \vs
+
+Det neste elementet i denne følgen er gitt ved å multiplisere det forrige elementet med 2. Den rekursive formelen er da
+\[ a_i=2a_{i-1} \]
+} \vsk
+
+En \outl{eksplisitt formel}\index{eksplisitt formel} er et uttrykk der verdien til et element er gitt ved indeksen.
+\eks{
+Gitt følgen\footnote{Symbolet \sym{$ ... $} viser at nye elementet fortsetter i det uendelige.}
+\begin{equation*}
+	2, 4, 8, 16, 32, 64, ...  
+\end{equation*}
+\abc{
+\item Finn den eksplisitte formelen til følgen.
+\item Finn verdien til element nummer 20.
+}
+
+
+\sv \vs \regv
+\abc{
+\item Vi skriver opp de tre første elementene, og ser om vi finner et mønster: 
 \alg{
-& a_1 = 2 = 2+3\cdot0\\
-& a_2 = 5 = 2+3\cdot1\\
-& a_3 = 8 = 2 +3\cdot2
+	& a_1 = 2 = 2^1 \\
+	& a_2 = 4 = 2^2 \\
+	& a_3 = 8 = 2^3
 }
-Av ligningene over observerer vi at
-\[ a_i=2+3(i-1) \]
+Av ligningene over ser vi at element nummer $ i $ er gitt ved
+\[ a_i=2^i \] 
+\item $a_{20}=2^{20}= 1048576 $
+}
+}
+\info{Eksplisitt formel som siste ledd}{
+Når en eksplisitt formel er gitt, er det vanlig å inkludere dette i uttrykket for følgen. For eksempel kan vi skrive $\{2, 4, 8, 16, 32, 64, ...\}$ som $\{2, 4, 8, 16, 32, 64, ..., 2^i\}$ eller $\{2^i\}$.
+}
+
+
+
+
+\subsection*{Aritmetiske følger} \index{følge!aritmetisk}
+Gitt en aritmetisk følge $\{a_i\}$. I en aritmetisk følge er differansen $d=a_i-a_{i-1}$ en konstant. Dermed er den rekursive formelen gitt ved
+\[ a_i=a_{i-1}+d \]
+Videre har vi at
+\alg{
+	& a_1 = a_1+d(1-1)\\
+	& a_2 = a_1 + d=a_1+d(2-1)\\
+	& a_3 = a_2+d = a_1+d(3-1)
+}
+Av dette innser vi at den eksplisitte formelen er gitt ved
+\[ a_i=a_1=(d-1) \]
+
 \reg[Aritmetisk følge]{
 	Et element $ a_i $  i en aritmetisk følge er gitt ved den rekursive formelen
 	\begin{equation}\label{arrekeq}
@@ -67,29 +99,30 @@ Av ligningene over observerer vi at
 	\begin{equation}
 		a_i=a_1+d(i-1) \label{ekspl}
 	\end{equation}
-	hvor $ d $ er den konstante differansen $ a_i-a_{i-1} $.}
+	hvor differansen $ d=a_i-a_{i-1} $ er en konstant.}
 \newpage
 \eks[]{Finn den rekursive og den eksplisitte formelen til følgen
 	\[ 7, 13, 19, 25, ... \]	\vs
 	\sv
-	Følgen har konstant differanse $ {d=6} $ og første element $ {a_1=7} $. Den rekursive formelen blir da
+	Følgen har konstant differanse $ {d=6} $ og første element $ {a_1=7} $. Den rekursive formelen er da
 	\[ a_i = a_{i-1}+6 \]
-	Mens den eksplisitte formelen blir
+	Den eksplisitte formelen er da
 	\[ a_i=7+6(i-1) \]
 }
-\subsection{Geometriske følger} \index{følge!geometrisk}
-Følgen 
-\[ 2, 6, 18, 54, 162 \]
-kalles en \outl{geometrisk følge}. I en geometrisk følge har forholdet mellom to naboelement den samme kvotienten, i dette tilfellet 3. Også her kan vi gjenkjenne et fast mønster:
-\algv{
-	& a_1 = 2 = 2\cdot3^0\\
-	& a_2 = 6 = 2\cdot3^1\\
-	& a_3 = 18 = 2\cdot3^2
-}
-Den eksplisitte formelen blir derfor
-\[ a_i = 2\cdot3^{i-1} \]
+\subsection*{Geometriske følger} \index{følge!geometrisk}
+Gitt en geometrisk følge $\{a_i\}$. I en geometrisk følge er kvotienten $k=\frac{a_i}{a_{i-1}}$ en konstant. Dermed er den rekursive formelen gitt ved
+\[ a_i=a_{i-1}\cdot k \]
+Videre har vi at
+\begin{align*}
+&a_1 = a_1=a_1\cdot k^{1-1}\cdot \\
+&a_2 = a_1\cdot k = a_1\cdot k^{2-1} \\
+&a_3 = a_2\cdot k = a_1\cdot k^{3-1}
+\end{align*}
+Av dette innser vi at den eksplisitte formelen er gitt ved
+\[ a_i=a_1\cdot k^{i-1} \]
+
 \reg[Geometrisk følge]{
-	Et element $ a_i $  i en geometrisk følge med kvotient $ k $ er gitt ved den rekursive formelen
+	Et element $ a_i $  i en geometrisk følge er gitt ved den rekursive formelen
 	\begin{equation}\label{geofolgrek}
 		a_i=a_{i-1}\cdot k
 	\end{equation}
@@ -97,23 +130,25 @@ Den eksplisitte formelen blir derfor
 	\begin{equation}\label{geofolgeks}
 		a_i=a_1\cdot k^{i-1}
 	\end{equation}
+	hvor kvotienten $k=\frac{a_i}{a_{i-1}}$ er en konstant.
 }
 \eks[]{
 Finn den rekursive og den eksplisitte formelen til følgen
 \[ 5, 10, 20, 40, ... \]
 
 \sv
-Følgen har konstant kvotient $ {k=2} $ og første element $ {a_1=5} $. Den rekursive formelen blir da
+Følgen har kvotient $ {k=2} $. Den rekursive formelen er da
 \[ a_i= a_{i-1}\cdot 2 \]
-Mens den eksplisitte formelen blir
+Første element i følgen er $ {a_1=5} $. Den eksplisitte formelen er da
 \[ a_i=5\cdot2^{i-1} \]
 }
 
 
 \section{Rekker}\index{rekke}
+\subsection*{Introduksjon}
 Ved å addere tall, danner vi en \outl{rekke}. Et eksempel er
 \[ 2+6+18+54+162 \]
-Vi indekserer leddene på samme måte som vi gjør for element i en følge; i rekken over har ledd nr. 3 verdien 18.\vsk
+Vi indekserer leddene på samme måte som vi gjør for element i en følge; i rekken over har ledd nummer 3 verdien 18.\vsk
 
 For en rekke er det naturlig at vi ikke bare ønsker å vite verdien til hvert enkelt ledd, men også hva summen av alle leddene er.
 \spr{
@@ -128,7 +163,7 @@ Skrives ofte bare som
 \[ 1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}+... \]
 }
 
-\subsection{Aritmetiske rekker}
+\subsection*{Aritmetiske rekker}
 \reg[\sumarrek \label{sumarrek}]{
 	
 	\index{rekke!aritmetisk}
@@ -161,7 +196,7 @@ Skrives ofte bare som
 	\end{equation}
 	Men et ledd i rekken kan også uttrykkes slik:
 	\[ a_i= a_n-(n-i)d \]
-	Og da kan vi skrive summen som (her står ledd nr. $n$ først, deretter ledd nr. $n-1$ osv.)
+	Og da kan vi skrive summen som (her står ledd nummer $n$ først, deretter ledd nummer $n-1$ osv.)
 	\begin{equation}
 		S_n = a_n + (a_n-d)+(a_n-2d)+...+(a_n-d(n-1)) \label{a2}
 	\end{equation}
@@ -172,14 +207,14 @@ Skrives ofte bare som
 	}
 }
 \newpage
-\subsection{Geometriske rekker} 
+\subsection*{Geometriske rekker} 
 \reg[\sumgerek \label{geom} \index{rekke!geometrisk}]{
 Hvis leddene i en rekke kan beskrives som en geometrisk følge, kalles rekken en \outl{geometrisk rekke}.	\vsk
 
 Summen $ S_n $ av de $ n $ første leddene i en geometrisk rekke med kvotient $ k $ og første ledd $ a_1 $ er gitt som
-	\begin{equation}
-		S_n=a_1\frac{1-k^n}{1-k}\quad, \quad k\neq 1 \label{sumg}
-	\end{equation}
+	\begin{flalign*}
+		&&S_n=a_1\frac{1-k^n}{1-k} & & (k\neq 1) 
+	\end{flalign*}
 	Hvis $ {k=1}, $ er
 	\begin{equation}
 		 S_n = na_1
@@ -191,7 +226,7 @@ Gitt den uendelige rekken
 Finn summen av de 15 første leddene.
 
 \sv
-Dette er en geometrisk rekke med $ {a_1=3} $ og $ {k=2} $. Summen av de 15 første leddene blir da
+Dette er en geometrisk rekke med $ {a_1=3} $ og $ {k=2} $. Summen av de 15 første leddene er da
 \alg{
 	S_{15}&= 3\cdot\frac{1-2^{15}}{1-2} \br
 	&= 	3\cdot\frac{1-32768}{-1} \br

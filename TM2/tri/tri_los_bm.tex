@@ -435,6 +435,28 @@ Dermed er
 Da av \eqref{-sinxsinx} i \tmto\ har vi at $ |\sin (-x)|=\sin x $, og dermed er
 \[|\det(\vec{u}, \vec{v})|= ||\vec{u}||\vec{v}|\sin(\pm \angle(\vec{u}, \vec{v}))|=|\vec{u}||\vec{v}|\sin \angle(\vec{u}, \vec{v}) \]
 %\det(\vec{u}, \vec{v})=|u||v|\sin\angle(\vec{u}, \vec{v})
+
+\grubr{opgtriomskriv}
+ Det eneste vi må sørge for er å gjøre om cosinusuttrykket til et sinusuttrykk. Av \eqref{cossomsi} vet vi at
+\alg{
+	\cos(3x+\pi)&= \cos\left(3x+\pi+\frac{\pi}{2}-\frac{\pi}{2}\right)\\
+	&= \sin\left(3x+\pi+\frac{\pi}{2}\right)	\\
+	&= \sin\left(3x+\frac{3\pi}{2}\right)
+}
+Dermed er
+\[ f(x) = 2\sin\left(3x+\frac{3\pi}{2}\right)+1\]
+
+\op{opgtrifinnmaks}
+Fordi sinusuttrykket multipliseres med det positive tallet 2, må toppunktene være der hvor sinusuttrykket blir 1. Da er $ x $ gitt ved ligningen
+\alg{
+	kx + c &= \frac{\pi}{2}+2\pi n
+}	
+Vi får derfor at
+\alg{
+	3x + \frac{3\pi}{2} &= \frac{\pi}{2}+2\pi n \br
+	3x &= 2\pi n -\pi \br
+	x &= \frac{\pi}{3}(2n-1)
+}
 \end{document}
 
 

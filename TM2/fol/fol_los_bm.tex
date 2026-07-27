@@ -365,4 +365,63 @@ Det andre lettet i $ a_n $ gjenkjenner vi som en geometrisk rekke med $ n-1 $ le
 Altså er
 \[ a_n = k^{n-1}a_1+d\frac{1-k^{n-1}}{1-k} \]
 
+\grubr{opgfolg1o4expnsums} \\
+Vi setter arealet til det største kvadratet lik 1. Videre kan vi dele kvadratet inn i tre og tre kvadrater med lik størrelse. Hver av de grønne kvadratene utgjør $\frac{1}{3}$ av en gruppe med tre kvadrater. Summen av de grønne kvadratene utgjør dermed $\frac{1}{3}$ av det største kvadratet. Sett nederste fra venstre har de grønne kvadratene sidelengder henholdsvis lik $\frac{1}{2}$, $\frac{1}{4}$, $\frac{1}{8}$ og så videre. Det samlede arealet til det grønne området kan vi dermed skrive som
+\[ \left(\frac{1}{2}\right)^2+\left(\frac{1}{4}\right)^2+\left(\frac{1}{8}\right)^2+...=\frac{1}{4}+\frac{1}{16}+\frac{1}{64}+... \]
+Følgelig er
+\[ \frac{1}{4}+\frac{1}{16}+\frac{1}{64}+...=\frac{1}{3} \]
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{opgfolg1o4expnsums_lf}}} \qquad\qquad
+	\subfloat[]{\includegraphics{\figp{opgfolg1o4expnsums}}}
+\end{figure}
+\newpage
+\grubr{opgfolgarchi} \\
+\fig{opgfolgarchi_lf}
+\abc{
+\item Vi lar $h_{UV}$ vise til horisontalavstanden mellom to punkt $U$ og $V$. Altså er $h_{AB}=s$ og $h_{AC}=h_{CB}=\frac{1}{2}s$. Av opplysningene som er gitt følger det at
+\begin{align*}
+	h_{AF}&= \frac{1}{2} h_{AC}=\frac{1}{4} s \br
+\end{align*}
+Videre følger det at
+\begin{align*}
+	A_{\triangle ACD} &= \frac{a}{8}\left(\frac{1}{2}s\right)^3=\frac{T}{2^3} \vn
+	A_{\triangle AFD} &= \frac{a}{8}\left(\frac{1}{4}s\right)^3=\frac{T}{4^3}
+\end{align*}
+Tilsvarende kan vi vise at de blå trekantene har likt areal og at de røde trekantene har likt areal.\os
+
+La oss kalle den største horisontalavstanden mellom to punkt på en trekant for bredden til trekanten. Hvis vi  ''lager nye trekanter'' på utsiden av de røde trekantene, får vi åtte nye trekanter med bredde $\frac{1}{8}s$. Deretter 16 nye med bredde $\frac{1}{16}s$, og så videre. Dermed har vi at
+\begin{align*}
+	I&= T + 2\cdot\frac{T}{2^3} +4\cdot\frac{T}{4^3}+8\cdot\frac{T}{8^3}+16\cdot\frac{T}{16^3}+... \br
+	&=T + \frac{T}{4}+\frac{T}{4^2}+\frac{T}{8^2}+\frac{T}{16^2}+... \br
+	&=T + \frac{T}{4}+\frac{T}{16}+\frac{T}{64}+\frac{T}{256}+...
+\end{align*}
+\item \textbf{Alternativ 1}\\
+Vi har at
+\[ I=T + \frac{T}{4}+\frac{T}{16}+\frac{T}{64}+\frac{T}{256}+...=T+\frac{T}{4}+\frac{T}{4^2}+\frac{T}{4^3}+\frac{T}{4^4}+... \]
+Dette er en geometrisk rekke med første ledd $T$ og kvotient $\frac{1}{4}$.
+
+\textbf{Alternativ 2}\\
+Vi har at
+\begin{align*}
+	I&=T + \frac{T}{(2^1)^2}+\frac{T}{(2^2)^2}+\frac{T}{(2^3)^2}+\frac{T}{(2^4)^2}+...\br
+	&=T + \frac{T}{4}+\frac{T}{(2^2)^2}+\frac{T}{(2^2)^3}+\frac{T}{(2^2)^4}+... \br
+	&=T+\frac{T}{4}+\frac{T}{4^2}+\frac{T}{4^3}+\frac{T}{4^4}+...
+\end{align*}
+Dette er en geometrisk rekke med første ledd $T$ og kvotient $\frac{1}{4}$.
+\item $I$ tilsvarer summen av den geometriske rekka (som er konvergent):
+\[ I= \frac{T}{1-\frac{1}{4}}=\frac{4T}{3} \]
+}
+
+\begin{comment}
+	\begin{align*}
+		&=T + \frac{T}{4}+\frac{T}{(2^2)^2}+\frac{T}{(2^3)^2}+\frac{T}{(2^4)^2}+...\br
+		&=T + \frac{T}{4}+\frac{T}{(2^2)^2}+\frac{T}{(2^2)^3}+\frac{T}{(2^2)^4}+... \br
+		&=T+\frac{T}{4}+\frac{T}{4^2}+\frac{T}{4^3}+\frac{T}{4^4}+...
+	\end{align*}
+\end{comment}
+
+
+
+
 \end{document}

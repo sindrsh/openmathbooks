@@ -1,8 +1,12 @@
 definer vektor/linje parallell med plan
 definer kurve som tangerer plan
 
-gruble: finn forskyvningen langs likevektslinja
+omskriv definisjonen av en eksplisitt formel
 
+opg: skriv om formel for aritmetisk følge til å gjelde a_n+1
+
+opg: finn areal mellom graf og innskrevet sirkel i f(x)=x^2.
+Dv acos osv.
 
 antakelse om lik fordeling
 

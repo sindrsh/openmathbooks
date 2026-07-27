@@ -15,14 +15,12 @@ I \tmen\ har vi sett på todimensjonale vektorer beskrevet ved hjelp av en $ x $
 	\end{equation} \vs
 } 
 \eks{
-	Finn vektoren $ \vec{u} $ mellom punktet  ${A=(1, 2, 0) } $ og $ B=(3, 0,\\ 1) $.
+	Finn vektoren $ \vec{u} $ mellom punktet  ${A=(1, 2, 0) } $ og $ {B=(3, 0,\\ 1)} $.
 	
-	\sv \vs
-	\algv{
-		\vec{u} &= [3-1, 0-2, 1-0] \\
-		& = [2, -2, 1]	}\vs
+	\sv 
+	\[ \vec{u} = [3-1, 0-2, 1-0] = [2, -2, 1] \]
 } \vsk
-\newpage
+
 \info{Merk}{
 Seksjon \ref{vekleng}\,-\,\ref{vinkrogpar} handler om visse egenskaper og regneregler for tredimensjonale vektorer. Det er mange likheter ved todimensjonale og tredimensjonale vektorer, så i tilfeller hvor en regel mangler forklaring, er det fordi forklaringen for det todimensjonale tilfellet (som du finner i \tmen) enkelt kan generaliseres til det tredimensjonale tilfellet.
 }
@@ -31,10 +29,7 @@ Seksjon \ref{vekleng}\,-\,\ref{vinkrogpar} handler om visse egenskaper og regner
 La oss prøve å finne lengden til en vektor $ {\vec{u}=[x_1, y_1, z_1]} $, som skissert i \fref{lenu}. Grafisk er lengden avstanden fra den butte enden til pilspissen.
 \figc{vekt3}{\label{lenu}}
 Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $ og $ \hat{u}=\sqrt{x_1^2+y_1^2} $. Av Pytagoras' setning har vi da at
-\alg{
-	|\vec{u}|&=\sqrt{\hat{u}^2+z_1^2} \\
-	&= \sqrt{x_1^2+y_1^2+z_1^2} 
-}
+\[ |\vec{u}|=\sqrt{\hat{u}^2+z_1^2} = \sqrt{x_1^2+y_1^2+z_1^2} \]
 \reg[lengden til en vektor]{
 	Lengden $ |\vec{u}|$ av en vektor $ {\vec{u}=[x_1, y_1, z_1]} $ er gitt som
 	\nreq{|\vec{u}|=\sqrt{x_1^2+y_1^2+z_1^2} \label{lengd}} \vs
@@ -48,18 +43,6 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 		&= \sqrt{4+16+1} \\
 		&= \sqrt{21}
 	}\vs \vspace{-4pt}
-}
-\eks[2]{
-	Finn lengden til vektoren ${\vec{a}= [-9, 18, 27]} $.
-	
-	\sv
-	Ved å bruke \eqref{fellesfakt} sparer vi oss for kvadrater av store tall:
-	\[ [-9, 18, 27]=9[-1, 2, 3] \]
-	Lengden blir da (se \refops{lenfakt})
-	\alg{
-		|\vec{a}|&= 9\sqrt{(-1)^2+2^2+3^2} \\
-		&= 9\sqrt{14}
-	}\vs
 }
 
 \section{Regneregler og skalarprodukt}
@@ -86,6 +69,15 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 		(\vec{u}+\vec{v})+\vec{w} &= \vec{u}+(\vec{v}+\vec{w}) \br
 		\vec{u}-(\vec{v}+\vec{w}) &= \vec{u}-\vec{v}-\vec{w}
 	\end{align}
+}
+\eks{
+	Finn lengden til vektoren ${\vec{a}= [-9, 18, 27]} $.
+	
+	\sv
+	Ved å bruke \eqref{fellesfakt} sparer vi oss for kvadrater av store tall:
+	\[ [-9, 18, 27]=9[-1, 2, 3] \]
+	Lengden blir da (se \refops{lenfakt})
+	\[ |\vec{a}|= 9\sqrt{(-1)^2+2^2+3^2} = 9\sqrt{14} \]
 }
 \newpage
 \eks[]{
@@ -131,10 +123,10 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 	\end{equation}	\vs
 	
 }
-\eks{Finn skalarproduktet av vektorene $ {\vec{a}=[1, 2, 3]} $ og $ \vec{b}=[4,-3,\\-2] $.
+\eks{Finn skalarproduktet av vektorene $ {\vec{a}=[1, 2, 3]} $ og $ \vec{b}=[4,-3,-2] $.
 	
-	\sv \vs
-	\algv{\vec{a}\cdot\vec{b}&= 1\cdot4 + 2\cdot(-3)+3\cdot(-2)\\ &=-8 }\vs
+	\sv
+	\[ \vec{a}\cdot\vec{b}= 1\cdot4 + 2\cdot(-3)+3\cdot(-2)=-8 \]
 } \vsk
 
 \reg[Skalarproduktet II]{
@@ -145,37 +137,33 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 	hvor $ \theta=\angle(\vec{u}, \vec{v}) $.
 }
 \eks[1]{
-	En vektor $ \vec{a} $ har lengde 3 og en vektor $ \vec{b} $ har lengde 2. De utspenner vinkelen $ 45^\circ $. Finn skalarproduktet $ \vec{a}\cdot\vec{b}$. \\
+	En vektor $ \vec{a} $ har lengde 3 og en vektor $ \vec{b} $ har lengde 2. De danner en vinkel med størrelse $ 45^\circ $. Finn $ \vec{a}\cdot\vec{b}$. 
 	
 	\sv
-	\vs
-	\vs
 	\algv{\vec{a}\cdot\vec{b} &= 3\cdot2 \cos (45^\circ) \br
 		&= 6\cdot\frac{\sqrt{2}}{2} \br
 		&= 3\sqrt{2}}\vs
 }
 \newpage
 \eks[2]{
-	Finn vinkelen $ v$ utspent av vektorene $ {\vec{a}=[-5, 4, -3]}$ og $ {\vec{b}=[-2, 5, -5]} $. \\
+	Finn vinkelen $ v$ dannet av vektorene $ {\vec{a}=[-5, 4, -3]}$ og $ {\vec{b}=[-2, 5, -5]} $. \\
 	
 	\sv
-	Vi starter med å finne lengdene og skalarproduktene av vektorene:
+	Vi har at
 	\alg{
 		|\vec{a}|&= \sqrt{(-5)^2+4^2+(-3)^2} \\
 		&= \sqrt{50} \\
-		&= 5\sqrt{2} \\
+		&= 5\sqrt{2} \vn
 		|\vec{b}| &= \sqrt{(-2)^2+5^2+(-5)^2} \\
 		&= \sqrt{54} \\
-		&= 3\sqrt{6} \\
+		&= 3\sqrt{6} \vn
 		\vec{a}\cdot\vec{b} &= (-5)\cdot(-2) + 5\cdot4+(-3)\cdot(-5) \\&= 45
 	}
-	Videre har vi at
-	\algv{\vec{a}\cdot \vec{b}&= |\vec{a}||\vec{b}|\cos v \\
-		45 &= 5\sqrt{2}\cdot3\sqrt{6}\cos v \\
-		\cos v &= \frac{5\cdot9}{5\cdot3\sqrt{12}} \\
-		&= \frac{5\cdot9}{4\cdot3\cdot2\sqrt{3}}  \\
-		&= \frac{3}{2\sqrt{3}} \\
-		&= \frac{3}{2\sqrt{3}} \cdot \frac{\sqrt{3}}{\sqrt{3}} \\
+	Videre er
+	\algv{\vec{a}\cdot \vec{b}&= |\vec{a}||\vec{b}|\cos v \br
+		45 &= 5\sqrt{2}\cdot3\sqrt{6}\cos v \br
+		\cos v &= \frac{3}{\sqrt{2}\sqrt{6}} \br
+		&= \frac{\sqrt{3}\sqrt{3}}{\sqrt{2}\sqrt{2}\sqrt{3}} \br
 		&= \frac{\sqrt{3}}{2}
 	}
 	Siden $ {\cos v = \frac{\sqrt{3}}{2}} $, er $ {v=30^\circ} $.
@@ -194,7 +182,7 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 	når du vet at $ \vec{b}\cdot\vec{c}=0 $. \\
 	
 	\sv
-	\algv{\vec{b}\cdot(\vec{a}+\vec{c}) + \vec{a}\cdot(\vec{a}+\vec{b})+\vec{b}^{\,2} &= \vec{b}\cdot\vec{a}+\vec{b}\cdot\vec{c} + \vec{a}\cdot\vec{a}+\vec{a}\cdot\vec{b}+\vec{b}^2 \\
+	\alg{\vec{b}\cdot(\vec{a}+\vec{c}) + \vec{a}\cdot(\vec{a}+\vec{b})+\vec{b}^{\,2} &= \vec{b}\cdot\vec{a}+\vec{b}\cdot\vec{c} + \vec{a}\cdot\vec{a}+\vec{a}\cdot\vec{b}+\vec{b}^2 \\
 		&= \vec{a}^{\,2} + 2 \vec{a}\cdot \vec{b} + \vec{b}^{\,2} \\
 		&= \left(\vec{a}+ \vec{b}\right)^2
 	}\vs
@@ -202,7 +190,7 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 
 \section{Vinkelrette og parallelle vektorer \label{vinkrogpar}}
 \reg[Vinkelrette vektorer ]{
-	To vektorer $ \vec{u} $ og $ \vec{v} $ står vinkelrett på hverandre hvis skalarproduktet av dem er null:
+	For vektorer $ \vec{u} $ og $ \vec{v} $ har vi at
 	\begin{equation}\label{vnkr}
 		\vec{u} \cdot \vec{v} = 0\iff \vec{u}\perp \vec{v}
 	\end{equation}
@@ -211,7 +199,8 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 \eks[1]{
 Sjekk om vektorene $ {\vec{a}=[5, -3, 2]} $ og $ {\vec{b}=[2, 4, 1]} $ er ortogonale.
 
-\sv \vs
+\sv 
+Vi har at
 \algv{
 \vec{a}\cdot\vec{b}&=[5, -3, 2]\cdot[2, 4, 1] \\
 &=10-12+2 \\
@@ -221,7 +210,7 @@ Altså er $ \vec{a}\perp\vec{b} $.
 }\vsk
 
 \reg[\parvek \label{parvek}]{
-	To vektorer $ {\vec{u}=[x_1, y_1, z_1]} \text{ og } {\vec{v}=[x_2, y_2, z_2]} $ har vi at
+	For to vektorer $ {\vec{u}=[x_1, y_1, z_1]} \text{ og } {\vec{v}=[x_2, y_2, z_2]} $ har vi at
 	\begin{equation}
 		\frac{x_1}{x_2}=\frac{y_1}{y_2}=\frac{z_1}{z_2} \iff \vec{u}\parallel\vec{v}
 	\end{equation}
@@ -232,7 +221,7 @@ Alternativt, for et tall $ t $ har vi at
 }
 \newpage
 \eks[1]{
-	Gitt vektorene $ {\vec{u}=[1, 2, 3] }$ og ${\vec{v}=[3, 2(1-t), 11+t]} $, finn \textit{t} slik at $ \vec{u}$ og $ \vec{v} $ er parallelle.  \\
+	Gitt vektorene $ {\vec{u}=[1, 2, 3] }$ og ${\vec{v}=[3, 2(1-t), 11+t]} $. Finn \textit{t} slik at $ \vec{u}$ og $ \vec{v} $ er parallelle.  \\
 	
 	\sv 
 	Vi starter med å kreve at forholdet mellom korresponderende komponenter er likt. Vi dividerer $ x $- og $ y$-komponenten i $ \vec{v} $ med henholdsvis $ x $- og $ y$-komponenten i $ \vec{u} $:
@@ -241,24 +230,23 @@ Alternativt, for et tall $ t $ har vi at
 		3 & = 1- t \\
 		t &= -2
 	\end{align*}
-	Siden forholdet mellom de to $ x $-komponentene og de to $ y $-koordinatene er 3, må dette også stemme for $ z $-koordinatene for at $ \vec{u} $ og $ \vec v$ skal være parallelle:
+	Siden forholdet mellom de to $ x $-komponentene og de to $ y $-koordinatene er 3, må dette også stemme for $ z $-komponentene for at $ \vec{u} $ og $ \vec v$ skal være parallelle:
 	\begin{align*}
-		\frac{11+t}{3} &= \frac{11+(-2)}{3} \\
-		&= 3
+		\frac{11+t}{3} = \frac{11+(-2)}{3} = 3
 	\end{align*}
 	Altså er $ \vec{u}\parallel\vec{v} $ hvis ${ t=-2 }$.
 }
 \eks[2]{
-Finn $ s $ og $ t $ slik at vektorene $ {\vec{u}=[-1, 2s, 4]} $ og $\vec{v}=[3, 18, \\4t+4]$ er parallelle.
+Finn $ s $ og $ t $ slik at vektorene $ {\vec{u}=[-1, 2s, 4]} $ og $\vec{v}=[3, 18, 4t+4]$ er parallelle.
 
 \sv
-Vi observerer at forholdet mellom $ x $-komponeten i $ \vec{v} $ og $ \vec{u} $ er $ {\frac{3}{-1}=-3} $. Hvis $ {\vec{u}\parallel\vec{v}} $, er altså $ {\vec{v}=-3\vec{u}} $. Vi kan derfor sette opp følgende ligning for $ s $:
+Vi observerer at forholdet mellom $ x $-komponentene til $ \vec{v} $ og $ \vec{u} $ er $ {\frac{3}{-1}=-3} $. Hvis $ {\vec{u}\parallel\vec{v}} $, er altså $ {\vec{v}=-3\vec{u}} $. Av $y$-komponentene følger det da at
 \alg{
-18 &= -3(2s) \\
+18 &= -3\cdot2s \\
 s &= -3}
-Videre må vi ha at
-\algv{
-4t+4 &= -3(4)\\
+Av $z$-komponentene følger det at
+\alg{
+4t+4 &= -3\cdot4\\
 t &= -4
 }\vs
 }
@@ -287,7 +275,7 @@ t &= -4
 	\end{align}\vs
 }
 \eks{\label{eks33}
-	Finn $ \det(\vec{a}, \vec{b}, \vec{c}) $ til vektorene $ \vec{a}=[1, -2, 2], \vec{b}=[2, 2, -3]  $ og \\ $ \vec{c}=[4, -1, 2] $.	\\
+	Finn $ \det\left(\vec{a}, \vec{b}, \vec{c}\right) $ til vektorene $ \vec{a}=[1, -2, 2], \vec{b}=[2, 2, -3]  $ og \\ $ \vec{c}=[4, -1, 2] $.	\\
 	
 	\sv 
 	Vi skal altså regne ut følgende:
@@ -328,10 +316,10 @@ t &= -4
 		2 & 2  \\
 		4 & -1
 	\end{matrix}\right| \]
-	Vi har nå funnet alle ledd vi trenger og kan da skrive
-	\footnotesize
+	Vi har nå funnet alle ledd vi trenger:
+	\small
 	\alg{
-		\det(\vec{a}, \vec{b}, \vec{c}) &= 1\cdot\left|\begin{matrix}
+		\det\left(\vec{a}, \vec{b}, \vec{c}\right) &= 1\cdot\left|\begin{matrix}
 			2 & -3  \\
 			-1 & 2
 		\end{matrix}\right|-(-2)\cdot\left|\begin{matrix}
@@ -349,7 +337,7 @@ t &= -4
 Vi har sett hvordan vi ved skalarproduktet kan sjekke om to vektorer $ \vec{u} $ og $ \vec{v} $ står normalt på hverandre, men ofte kan vi isteden være interessert i å finne en vektor som står normalt på begge disse. En slik vektor får vi ved \outl{vektorproduktet} av $ \vec{u} $ og $ \vec{v} $, som vi skriver som $ {\vec{u}\times\vec{v}} $.\regv
 
 \reg[\vekpro \label{vekpro}]{
-	Vektorpruduktet av vektorene $  {\vec{u}=[a, b, c]} $ og $ {\vec{v}=[d, e, f]} $ er gitt som
+	Vektorproduktet av vektorene $  {\vec{u}=[a, b, c]} $ og $ {\vec{v}=[d, e, f]} $ er gitt som
 	\begin{equation}
 		\vec{u}\times\vec{v}=[bf-ce, -(af-cd), ae-bd] \label{vekproeq}
 	\end{equation}
@@ -363,7 +351,7 @@ Vi har sett hvordan vi ved skalarproduktet kan sjekke om to vektorer $ \vec{u} $
 	\end{equation}
 	hvor $ \vec{e}_x=[1, 0, 0], \vec{e}_y=[0, 1, 0] $ og $ \vec{e}_z=[0, 0, 1] $.\vsk
 	
-	Videre har vi at\footnote{Kryssprodukt må regnes ut før skalarprodukt.}\vs
+	Videre har vi at\footnote{Vektorprodukt må regnes ut før skalarprodukt.}\vs
 	\begin{align}
 		&\vec{u}\times\vec{v}\cdot\vec{u}=0 \\
 		&\vec{u}\times\vec{v}\cdot\vec{v} =0 \\
@@ -375,7 +363,7 @@ Et vektorprodukt kalles også et \outl{kryssprodukt}\index{kryssprodukt}.
 } \vsk
 
 \info{\note}{
-For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet får en vektor. Det er derfor veldig viktig å skille symbolet $ \cdot $ fra $ \times $.
+For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet får en vektor. Det er derfor veldig viktig å skille symbolet \sym{$ \cdot $} fra \sym{$ \times $}.
 }
 \newpage
 \eks{
@@ -391,7 +379,7 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 	2 & -2 & 1
 	\end{matrix}\right|  \]
 	Vi får da at (se gjerne tilbake til eksempelet på side \pageref{eks33})
-	\small
+	{\small
 	\alg{
 		\vec{a}\times\vec{b}&=\vec{e}_x\left|\begin{matrix}
 			2 & 3 \\
@@ -407,9 +395,10 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 		&= 8\vec{e}_x+9\vec{e}_y+2\vec{e}_z \\
 		&= [8, 9, 2]	
 	}
-\textbf{b)} To vektorer står normalt på hverandre dersom skalarproduktet av dem er 0:\vs \alg{
-&[8, 9, 2]\cdot[-3,2,3]=-24+18+6=0 \os
-&[8, 9, 2]\cdot[2,-2,1]=16-18+2=0
+}
+\textbf{b)} To vektorer står normalt på hverandre dersom skalarproduktet av dem er 0: \alg{
+&[8, 9, 2]\cdot[-3, 2, 3]=-24+18+6=0 \vn
+&[8, 9, 2]\cdot[2, -2, 1]=16-18+2=0
 }
 \vs
 } \vsk
@@ -424,7 +413,7 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 }
 \newpage
 \subsection{Vektorprodukt som areal og volum}\index{vektorprodukt!som areal og volum}
-En anvendelse av vektorproduktet (og skalarproduktet) er å finne arealet og volumet av noen geometriske former som kan sies å være \textsl{utspent}\index{utspent!geometrisk figur} av vektorer. Med dette mener vi at to eller tre vektorer som starter i samme utgangspunkt, utgjør grunnlaget for en trekant, et parallellogram, et \outl{parallellepiped}, en pyramide eller et \outl{tetraeder}.
+En anvendelse av vektorproduktet (og skalarproduktet) er å finne arealet og volumet av noen geometriske former som kan sies å være \textsl{dannet}\index{utspent!geometrisk figur} av vektorer. Med dette mener vi at to eller tre vektorer som starter i samme utgangspunkt utgjør grunnlaget for en trekant, et parallellogram, et \outl{parallellepiped}, en pyramide eller et \outl{tetraeder}.
 \begin{figure}
 	\centering
 	\subfloat[Trekant]{\includegraphics[]{\figp{trk}}}\qquad
@@ -436,18 +425,18 @@ En anvendelse av vektorproduktet (og skalarproduktet) er å finne arealet og vol
 \end{figure}
 
 \reg[\vekproarvol \label{vekproarvol}]{
-	Arealet $ A $ av et parallellogram utspent av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt som
+	Arealet $ A $ av et parallellogram dannet av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt ved
 	\nreq{A = |\vec{u}\times\vec{v}| \label{vekpar} }
 	%	\includegraphics[scale=1]{\asym{parll}}
-	Arealet $ A $ av en trekant utspent av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt som
+	Arealet $ A $ av en trekant dannet av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt ved
 	\nreq{A = \frac{1}{2}|\vec{u}\times\vec{v}|\label{vektre}}
-	Volumet $ V $ av parallellepipedet utspent av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt som
+	Volumet $ V $ av parallellepipedet dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved
 	\nreq{V = \left|\vec{u}\times\vec{v}\cdot\vec{w}\,\right|}
 	%\includegraphics[scale=1]{\asym{par}}
-	Volumet $ V $ av pyramiden utspent av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt som
+	Volumet $ V $ av pyramiden dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved
 	\nreq{V = \frac{1}{3}|\vec{u}\times\vec{v}\cdot\vec{w}\,|\label{volavpyr} }
 	%\includegraphics[scale=1]{\asym{pyram}}
-	Volumet $ V $ til tetraedet utspent av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt som			
+	Volumet $ V $ til tetraedet dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved			
 	\nreq{ V = \frac{1}{6}|\vec{u}\times\vec{v}\cdot\vec{w}\,|}\vs
 	%\includegraphics[scale=1]{\asym{tetra}}	
 }
@@ -567,7 +556,7 @@ svar på gruble
 Arealet av et paralellogram er gitt som grunnlinja ganger høyden. For et parallellogram utspent av vektorene $ \vec{u} $ og $ \vec{v} $, tilsvarer dette produktet $ |\vec{u}||\vec{v}|\sin \theta $, som er det samme som lengden $ |\vec{u}\times\vec{v}| $. Arealet av trekanten utspent av $ \vec u $ og $ \vec{v} $ er halvparten av arealet av parallellogrammet.
 \subsection*{Vektorproduktet som volum \label{vekprsomvolforkl}}
 \figc{par}{\label{vopar3}}
-Volumet $ V $ av et parallellepiped tilsvarer grunnflaten $ A $ ganger høyden $ h $:
+Volumet $ V $ av et parallellepiped tilsvarer grunnflaten $ A $ ganger høyden $ h $ (reff ??):
 \begin{equation}
 	V = Ah \label{vopar0}
 \end{equation}
@@ -595,7 +584,7 @@ Av \eqref{skal2}, \eqref{vopar0}, \eqref{vopar1} og \eqref{vopar2}, og  har vi d
 	&=Ah \\
 	&= V	
 }
-Av klassisk geometri har vi videre at
+Av klassisk geometri har vi videre at (?? endres ??)
 \begin{itemize}
 	\item volumet av pyramiden utspent av $ \vec{u} $ og $ \vec{v} $ er $ \frac{1}{3} $ av volumet av parallellepipedet.
 	\item volumet av tetraedet utspent av $ \vec{u} $ og $ \vec{v} $ er $ \frac{1}{6} $ av volumet av parallellepipedet.
