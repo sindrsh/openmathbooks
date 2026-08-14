@@ -4,16 +4,11 @@
 
 \begin{document}
 \section{Bestemt og ubestemt integral \label{BestemtogubestemtI}}
-\regdef[Integral som areal]{
-Gitt en funksjon $ f(x) $ som er positiv og kontinuerlig for alle $ {x\in[a, b] }$. \outl{Integralet} $ I $ til $ f $ på intervallet $ {x\in[a, b]} $  tilsvarer da arealet avgrenset av $ x $-aksen, linjene $ {x=a} $ og ${ x= b} $, og grafen til $ f $.
-\fig{intpos}
-}\vsk
-
-Gitt en funksjon $ f(x) $, som vist i \fref{fartvar}. Vi ønsker nå å finne  en tilmærming for integralet $ I $ til $ f $ på intervallet $ [a, b] $.
-\figc{int1a}{\label{fartvar}}
-Vi starter med å dele $ [a, b] $ inn i tre delintervaller, som da får bredden $ \Delta x=\frac{b-a}{3} $. Videre bruker vi $ f(x) $ i starten av hvert delintervall som høgden i et rektangel. $ x $-verdiene dette gjelder kaller vi $ {x_1=a} $, $ x_2 $ og $ x_3 $. Vi kan nå tilnærme $ I $ som summen av tre areal, $ s_1 $, $ s_2 $ og $ s_3 $:
+Gitt en funksjon $ f(x) $, som vist i \fref{fartvar}. Vi ønsker å finne  en tilmærming for arealet $A$ avgrenset av grafen til $f$, $x$-aksen og linjene $x=a$ og $x=b$. $ I $ til $ f $ på intervallet $ [a, b] $.
+\figc{int1a}{Arealet $A$ avgrenset av grafen til $f$, $x$-aksen og linjene $x=a$ og $x=b$. \label{fartvar}}
+Vi starter med å dele $ [a, b] $ inn i tre delintervaller, som da får bredden $ \Delta x=\frac{b-a}{3} $. Videre bruker vi verdien til $ f(x) $ i starten av hvert delintervall som de respektive høydene i tre rektangler. $ x $-verdiene dette gjelder kaller vi $ {x_1=a} $, $ x_2 $ og $ x_3 $. Vi kan nå tilnærme $ A $ som summen av tre areal, $ s_1 $, $ s_2 $ og $ s_3 $:
 \alg{
-	I &\approx s_1 + s_2 + s_3 \\
+	A &\approx s_1 + s_2 + s_3 \\
 	&\approx f(a)\Delta x + f(x_2)\Delta x + f(x_3)\Delta x \\
 	&\approx \left[f(a) +f(x_2) +f(x_3)\right]\Delta x
 }
@@ -28,10 +23,12 @@ Intuitivt vil vi tenke at jo mindre intervaller vi bruker, jo bedre må tilnærm
 \end{figure}
 Lar vi $ n $ være antall delintervaller, og $ {n\to \infty} $, får vi at
 \begin{align}
-	I&\approx\lim\limits_{n\to \infty}\left[f(x_1)+f(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
+	A&\approx\lim\limits_{n\to \infty}\left[f(x_1)+f(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
 	&\approx \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{intdefpreeq}
 \end{align}
-hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ x_1=a $). Det kan vises at grenseverdien i \eqref{intdefpreeq} er lik $ I $, og det fører oss til følgende definisjon:
+hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ x_1=a $).\vsk
+
+Vi har her tatt utgangspunkt i at $f$ er positiv for alle $x\in[a, b]$. I så fall kan det vises at \sym{$\approx$} i \eqref{intdefpreeq} kan erstattes med \sym{$=$}. Hvis derimot $f$ var negativ for alle $x\in[a, b]$, måtte vi i tillegg ha multiplisert $A$ med $-1$ (forklar for deg selv hvorfor) for at likheten skulle vært gyldig. Og hvis $f$ var skiftvis positiv og negativ på intervallet, måtte vi gjort enda flere justeringer for å oppnå en gydlig likhet. Dette motiverer oss til å definere grensesummen som noe helt eget:
 \regdef[\bestminten \label{bestminten}]{\outl{Det bestemte integralet} $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
 	\begin{equation}
 		I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{bint}

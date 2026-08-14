@@ -60,7 +60,7 @@
 \vspace{20pt}
 \import{vek/}{vek_bm}
 \newpage
-\import{opg/vek/}{opg}
+\import{vek/}{vek_opg_bm}
 
 \chapter{Romgeometrier\label{Romgeometrier}}
 \vspace{20pt}
@@ -86,12 +86,14 @@
 \setlength{\parskip}{5pt}
 \addtocontents{toc}{\protect\vspace{-5pt}}
 \addcontentsline{toc}{chapter}{Fasit}\phantomsection
-\import{opg/fol/}{fas}
-\import{opg/tri/}{fas}
-\newpage
-\import{opg/vek/}{fas}
-\import{opg/rom/}{fas}
+
+{\footnotesize
+\import{fol/}{fol_fas}
+\import{tri/}{tri_fas}
+\import{vek/}{vek_fas}
+\import{rom/}{rom_fas}
 \import{int/}{int_fas}
+}
 \phantom{}
 \newpage
 \thispagestyle{empty}

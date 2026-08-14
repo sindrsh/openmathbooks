@@ -1,9 +1,6 @@
-//import babel;
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 unitsize(2cm);
-import mods;
-import graph;
 
 real r = 1;
 pair o = (0, 0);

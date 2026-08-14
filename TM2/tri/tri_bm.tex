@@ -66,10 +66,11 @@ Ekstra verdt å legge merke til i \fref{enh} er symmetrien om horisontallinjen, 
 \regdef[Sinus og cosinus]{ \label{defsincos}
 	La enhetssirkelen være tegnet inn i et koordinatsystem med sentrum i origo, som vist i figuren under. 
 	\fig{sincos}
-	La videre $ x $ representere en buelengde vandret i positiv (mot klokka) eller negativ retning fra punktet $ (1, 0) $ til et punkt $ (a_0, b_0) $. Da er\vs
+	La videre $ x $ representere en buelengde vandret i positiv eller negativ retning fra punktet $ (1, 0) $ til et punkt $ (a_0, b_0) $. Da er
 	\begin{align}
-		\cos x &= a_0 \label{sindef}\\
-		\sin x &= b_0\label{cosdef}
+		\cos x &= a_0 \label{sindef}\vn
+		\sin x &= b_0\label{cosdef} \vn
+		\tan x &= \frac{\sin x}{\cos x}=\frac{a_0}{b_0}
 	\end{align}
 }
 \info{Merk}{
@@ -84,10 +85,7 @@ Da enhetssirkelen befinner seg i intervallet $ [-1, 1] $ både langs horisontala
 Vi bruker begrepet \outl{kjerne}\index{kjerne} om tallet vi finner den trigonometriske verdien av. For eksempel er $ x $ kjernen til cosinusuttrykket $ \cos x $, mens $ {kx+c} $ er kjernen til sinusutrykket $ \sin (kx+c) $.
 }
 \newpage
-\reg[Tangens]{\vs	\vspace{-5pt}
-	\begin{equation}\label{tandef}
-		\tan x = \frac{\sin x}{\cos x} 
-	\end{equation}\vs}
+
 
 \subsection{Arcuscosinus, arcusinus og arcustangens}\index{arcuscosinus}\index{arcussinus }\index{arcustangens }
 Av figuren til \rref{defsincos} kan vi se at $ {\cos \pi = -1}$ (og at $ {\sin \pi =0} $). Altså er $ \pi $ et tall med cosinusverdi $ -1 $. Dette kan uttrykkes ved begrepet \outl{arcuscosinus}\index{arcuscosinus}, som gjerne forkortes til $\acos$. Da skriver vi
@@ -96,7 +94,7 @@ Av figuren til \rref{defsincos} kan vi se at $ {\cos \pi = -1}$ (og at $ {\sin \
 	\centering
 	\subfloat[]{\includegraphics[]{\figp{acospi}}}\qquad
 	\subfloat[]{\includegraphics[]{\figp{acospib}}}	
-	\caption{\textsl{(a)} $ \pi $ plassert på enhetssirkelen som tallinje. \textsl{(b)} I koordinatsystemet fra \rref{defsincos} samsvarer verdien $ \pi $ med punktet $ (-1, 0) $. }
+	\caption{}
 \end{figure}
 
 \spr{
@@ -111,7 +109,7 @@ Si vi har ligningen
 hvor \y{d\in[-1, 1]}. Å bestemme verdien til $ x $ uten bruk av hjelpemidler er ofte vrient, men vi kan likevel si noe om \textsl{hvor} på enhetssirkelen $ x $ befinner seg:\vsk
 
 Et koordinatsystem plassert i sentrum av enhetssirkelen gir en inndeling i fire sektorer. Disse sektorene kalles første, andre, tredje og fjerde \outl{kvadrant} \index{kvadrant}.\vs
-\subimport{fig/}{kvad}
+\figc{kvad}{Enhetssirkelen inndelt i kvadranter, med ekstremalverdiene til cosinus og sinus i endene. \label{kvadr}}
 Det er helt avjørende å forstå at vi i trigonometri snakker om tre forskjellige tallinjer, nemlig enhetssirkelen, horisontalaksen og vertikalaksen. Mens \fref{enh} viser tall plassert langs buen til enhetssirkelen, er $ -1 $ og 1 i \fref{kvadr} plassert på horisontal- og vertikalaksen. 1 og $ -1 $ representerer ekstremverdiene til cosinus (horisontalaksen) og sinus (vertikalaksen).\vsk
 
 Av dette observerer vi at hvis \y{d\in[0,1]}, må $ x $ ligge\footnote{Tall med cosinusverdi lik $ -1, 0 $ eller 1 ligger i grensesjiktet mellom to kvadranter.} på buen til første eller fjerde kvadrant. På samme vis må $ x $ ligge på buen til andre eller tredje kvadrant hvis \y{d\in[-1, 0]}. \vsk
@@ -131,13 +129,13 @@ Prinsippet bak arcussinus og arcustangens er akkurat det samme som for arcuscosi
 		\text{tri}\;d=x
 	\end{equation}
 }
-\eks[]{\vs
+\eks[]{
 	\alg{
 		\acos\left(-1\right) &= \pi &&,&
 		\cos(\pi) &= -1 \vn
 		\asin \left(\frac{1}{2}\right)&=\frac{\pi}{6} &&, &
 		\sin\left(\frac{\pi}{6}\right)&= \frac{1}{2}	\vn
-		\atan(1)&=\frac{\pi}{4} &&,& \tan \frac{\pi}{4} = 1  
+		\atan(1)&=\frac{\pi}{4} &&,& \tan \left(\frac{\pi}{4}\right) = 1  
 	}	\vs
 }
 \subsection{Eksaktverdier \label{eksaktverdier}}

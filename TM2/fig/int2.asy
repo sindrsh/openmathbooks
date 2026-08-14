@@ -15,7 +15,7 @@ ints(f, a, b, n);
 path s = graph(f, xmin, xmax, operator..);
 draw(s,L=Label("$f$", position=EndPoint),blue);
 xaks(xmin, xmax, l="$x$");
-yaks(xmin, f(xmax));
+yaks(xmin, f(xmax), l="$y$");
 draw((b,0)--(b,f(b)), dotted);
 
 mktc(a, "$a$");

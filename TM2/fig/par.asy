@@ -1,6 +1,6 @@
+import "../../inh" as inh;
 import three;
 size(4 cm, 3 cm, keepAspect=false);
-settings.outformat="pdf";
 settings.render=0;
 defaultpen(fontsize(11pt));
 currentprojection=orthographic(1,-0.5,0.5);

@@ -1,8 +1,7 @@
+import "../../inhopg" as inh;
 import mods;
-settings.outformat="pdf";
 settings.render=0; 
-defaultpen(fontsize(11pt));
-size(7 cm,0);
+size(5 cm,0);
 
 //xyz(0.7,0.7,0.3, tc=false);   
 triple O= (0.1,0,0);
@@ -22,7 +21,7 @@ draw(B--B-0.1*A, blue);
 
 //dot(P, L=Label("$A$"));
 //dot(P+0.3A, L=Label("$B$"));
-draw(P -- P+0.2A, arrow=Arrow3(DefaultHead2), red, L=Label("$\vec r$", position=Relative(0.5)));
+draw(P -- P+0.2A, arrow=Arrow3(DefaultHead2), green, L=Label("$\vec r$", position=Relative(0.5)));
 
 triple proj = (1,-1,0.5);
 currentprojection=orthographic(proj);

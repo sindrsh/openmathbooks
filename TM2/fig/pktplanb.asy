@@ -1,5 +1,4 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
 unitsize(1.5cm);
 import mods;
 import graph;

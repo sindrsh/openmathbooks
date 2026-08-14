@@ -9,7 +9,7 @@ void ints(real f(real x),real a, real b, int n, bool lb = false){
         real x = a + (i-1)*dx;       
         path p= box((x,0), (x+dx,f(x)));       
         draw(p, green);
-        fill(p, palegreen+opacity(0.5));
+        fill(p, arpeng);
         string sn = format("$s_{%d}$", i);
         if (lb){label( sn, (x+0.5*dx, f(x)/2) );}
     } 

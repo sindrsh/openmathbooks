@@ -1,3 +1,4 @@
+import "../../inhopg.asy" as inhopg;
 import mods2;
 unitsize(2cm);
 
@@ -16,11 +17,11 @@ real dx = (b-a)/n;
 path s = graph(f, xmin, xmax, operator..);
 path s1 = (a,0)--graph(f,a,c)-- (c,0) --cycle;
 path s2 = (c,0)--graph(f,c,b)-- (b,0) --cycle;
-fill(s1, palegreen+opacity(1));
-fill(s2, paleblue+opacity(1));
+fill(s1, arpeng);
+fill(s2, arpen);
 draw(s, L=Label("$f$", position=Relative(1)));
-xaks(xmin, xmax);
-yaks(xmin, max(s).y);
+xaks(xmin, xmax, l="$x$");
+yaks(xmin, max(s).y, l="$y$");
 
 mktc(a, "$a$");
 mktc(b, "$b$");

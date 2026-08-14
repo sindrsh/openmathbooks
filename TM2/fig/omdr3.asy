@@ -1,10 +1,9 @@
+import "../../inh.asy" as inh;
 import graph3;
-settings.outformat="pdf";
 currentprojection = orthographic(3,0,10, up=Y);
 settings.outformat="pdf";
 settings.prc=false;
-settings.render =0;
-size(6 cm, 2.5 cm, keepAspect=false);
+unitsize(2cm);
 import mods;
 
 
@@ -45,8 +44,8 @@ draw(s1);
 draw(s2, blue);
 draw(s3, blue);
 real sz = 0.002 cm;
-mctckx3(a,"$a$", a=sz);
-mctckx3(b,"$b$", a=sz);
+mktckx3(a,"$a$", a=sz);
+mktckx3(b,"$b$", a=sz);
 //draw(surface(s3--cycle),yellow+opacity(.6));
 
 

@@ -1,9 +1,7 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
+import "../../geo" as inh;
+import "../../drwgrph" as grph;
 unitsize(2cm);
-import mods;
-import graph;
-
 
 real r = 1;
 pair o = (0, 0);
@@ -16,8 +14,8 @@ path s = graph(f, a, 2*pi, operator ..);
 draw(s);
 
 real b = 3*pi/4;
-draw(o -- f(a), black, L=Label("$r$", align=NW,position=Relative(0.7)));
-draw((-1,0)--(1,0));
+draw((-1,0)--(0,0), green, L="$r$");
+draw((0, 0)--(1, 0));
 
 r= 1;
 path s = graph(f, 0, a, operator ..);
@@ -27,3 +25,13 @@ r= 0.3;
 path s = graph(f, 0, a, operator ..);
 draw(s, L=Label("$v$", position=Relative(0.5)));
 //g(4,4, true);
+
+r = 1;
+pair A = (0, 0);
+pair B = 1.2*f(a);
+pair C = (1.3, 0);
+draw(C--A--B);
+
+dott(A, "$A$", S);
+dott(C, "$C$", S);
+dott(B, "$B$", NE);

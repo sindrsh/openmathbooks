@@ -1,3 +1,4 @@
+import "../../inh.asy" as inh;
 import mods2;
 size(6 cm, 5 cm, keepAspect=false);
 real f(real x){
@@ -14,7 +15,7 @@ ints(f, a, b, n, lb=true);
 path s = graph(f, xmin, xmax, operator..);
 draw(s,L=Label("$f$", position=EndPoint),blue);
 xaks(xmin, xmax,l="$x$");
-yaks(xmin, f(xmax), l="");
+yaks(xmin, f(xmax), l="$y$");
 draw((b,0)--(b,f(b)), dotted);
 
 mktc(a, "$a$");

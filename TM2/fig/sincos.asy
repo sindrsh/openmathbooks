@@ -1,8 +1,6 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 unitsize(2cm);
-import axes;
-import graph;
 
 
 real r = 1;

@@ -1,6 +1,4 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
-usepackage("esvect");
+import "../../inh" as inh;
 
 import mods;
 size(4 cm,3 cm, keepAspect=false);

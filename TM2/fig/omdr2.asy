@@ -1,8 +1,7 @@
+import "../../inh.asy" as inh;
 import graph3;
 import mods;
-settings.outformat="pdf";
-//unitsize(2cm);
-size(6 cm, 2.5 cm, keepAspect=false);
+unitsize(2cm);
 
 currentprojection = orthographic(1,0,10, up=Y);
 settings.outformat="pdf";
@@ -42,8 +41,8 @@ path3 s1 = graph(f1, a, b, operator..);
 
 draw(s1, L=Label("$f(x)$",position=EndPoint));
 real sz = 0.002 cm;
-mctckx3(a,"$a$", a=sz);
-mctckx3(b,"$b$", a=sz);
+mktckx3(a,"$a$", a=sz);
+mktckx3(b,"$b$", a=sz);
 //draw(surface(s3--cycle),yellow+opacity(.6));
 
 

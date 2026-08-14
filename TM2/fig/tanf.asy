@@ -1,7 +1,6 @@
+import "../../inh" as inh;
+import "../../drwgrph" as grph;
 size(6 cm,4 cm, keepAspect=false);
-defaultpen(fontsize(11pt));
-settings.outformat="pdf";
-import graph;
 
 real f(real x) {return tan(pi*x);}
 

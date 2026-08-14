@@ -1,3 +1,4 @@
+import "../../inh.asy" as inh;
 import mods2;
 size(6 cm, 4 cm, keepAspect=false);
 real f(real x){
@@ -13,11 +14,11 @@ real dx = (b-a)/n;
 
 path s = graph(f, xmin, xmax, operator..);
 path s1 = (a,0) --(a,f(a))--s--(b, f(b))-- (b,0) --cycle;
-fill(s1, palegreen);
+fill(s1, arpeng);
 draw(s,L=Label("$f$", position=EndPoint),blue);
-xaks(xmin, xmax);
-yaks(xmin, max(s).y);
-label("$A=I$", (a+(b-a)/2, 0.5));
+xaks(xmin, xmax, l="$x$");
+yaks(xmin, max(s).y, l="$y$");
+label("$I$", (a+(b-a)/2, 0.5));
 mktc(a, "$a$");
 mktc(b, "$b$");
 

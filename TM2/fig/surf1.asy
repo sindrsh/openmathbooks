@@ -1,5 +1,4 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
 settings.render=0; 
 import graph3;
 import three;
@@ -14,7 +13,7 @@ triple N = 3Z;
 real s=8;
 path3 g=O--s*X--s*(X+Y)--s*Y--cycle;
 //draw(g);
-draw(surface(g),paleblue+opacity(0.5),nolight);
+draw(surface(g),blue+opacity(0.2),nolight);
 
 draw(A -- B, arrow=Arrow3(DefaultHead2), L=Label("$\vec u$", position=Relative(0.5)));
 draw(6X+4Y--6X+4Y+N, arrow=Arrow3(DefaultHead2), L=Label("$\vec n$", position=Relative(0.5), align=E));

@@ -1,7 +1,6 @@
+import "../../inh.asy" as inh;
 import mods2;
 size(6 cm, 5 cm, keepAspect=false);
-settings.outformat="pdf";
-settings.render = 5;
 
 void ints(real f(real x),real a, real b, int n, bool lb = false){
     real dx = (b-a)/n;
@@ -12,10 +11,10 @@ void ints(real f(real x),real a, real b, int n, bool lb = false){
         real smax = max(s).y;
         path p= box((x,0), (x+dx, smin));    
         draw(p, green);
-        fill(p, palegreen+opacity(0.5));      
+        fill(p, green+opacity(0.5));      
         path p2= box((x,smin+ 0.01 pt), (x+dx, smax+ 0.01 pt)); 
         draw(p2, blue);
-        fill(p2, paleblue+opacity(0.5)); 
+        fill(p2, blue+opacity(0.5)); 
         string sn = format("$s_{%d}$", i);
         if (lb){label( sn, (x+0.5*dx, smin/2) );}
         sn = format("$c_{%d}$", i);

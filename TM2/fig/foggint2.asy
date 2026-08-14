@@ -1,5 +1,5 @@
+import "../../inh.asy" as inh;
 import mods2;
-defaultpen(fontsize(11pt));
 size(6 cm,4 cm, keepAspect=false);
 
 real f(real x){
@@ -19,7 +19,7 @@ path t = graph(g, xmin, xmax, operator..);
 
 
 path s1 = (a,g(a)) --(a,f(a))--graph(f,a,b)--(b, f(b))-- (b,g(b)) --cycle;
-fill(s1, palegreen+opacity(1));
+fill(s1, arpeng);
 
 xaks(xmin, xmax);
 yaks(xmin, max(s).y, l="{}");

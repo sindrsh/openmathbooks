@@ -1,4 +1,4 @@
-settings.outformat="pdf";
+import "../../inhopg.asy" as inhopg;
 size(6 cm, 5 cm, keepAspect=false);
 import mods2;
 real f(real x){
@@ -20,7 +20,7 @@ path s1 = graph(g, xmin, xmax, operator..);
 real y1 = -1.5;
 real y2 = f(xmax)+0.2;
 xaks(xmin, xmax,l="$x$");
-yaks(y1, y2, l="");
+yaks(y1, y2, l="$y$");
 
 
 for (int i = 1; i <= n; ++i){
@@ -36,10 +36,10 @@ for (int i = -1; i <= (int) y2; ++i){
 }
 path s2 = (0,0)--graph(f,a,c)--(c,0) --cycle;
 path s3 = (c,0)--graph(f,c,b)--(b,0) --cycle;
-fill(s2, palegreen+opacity(0.5));
-fill(s3, orange+opacity(0.4));
+fill(s2, arpeng);
+fill(s3, arpeno);
 
-draw(s,deepgreen,L=Label("$f$", position=EndPoint));
+draw(s,green,L=Label("$f$", position=EndPoint));
 draw(s1,blue,L=Label("$F$", position=EndPoint));
 
 void grid(){

@@ -1,5 +1,6 @@
 definer vektor/linje parallell med plan
-definer kurve som tangerer plan
+definer kurve/kule som tangerer plan
+beskriv xy-, xz-, yz- plan
 
 omskriv definisjonen av en eksplisitt formel
 

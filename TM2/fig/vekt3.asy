@@ -1,7 +1,6 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
 import three;
 import mods;
+import "../../inh" as inh;
 unitsize(1cm);
 
 
@@ -26,10 +25,11 @@ draw(O -- a*X+b*Y, dotted, L=Label("$\hat u$", position=Relative(0.5)));
 draw(c*Z -- A, dotted);
 draw(a*X+b*Y -- A, dotted);
 
+mksq(b*Y, a*X, b*Y);
 mksq(a*X, b*Y, a*X);
 mksq(a*X+b*Y, c*Z, a*X+b*Y, l=0.15);
-mktcx3("$x_1$", a);
-mktcy3("$y_1$", b);
-mktcz3("$z_1$", c);
+mktckx3(a, "$x_1$");
+mktcky3(b, "$y_1$");
+mktckz3(c, "$z_1$");
 currentprojection=orthographic(proj);
 

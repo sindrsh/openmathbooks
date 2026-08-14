@@ -1,5 +1,4 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
 settings.render=0; 
 import graph3;
 import three;
@@ -13,7 +12,7 @@ triple B = A+a*X+b*Y;
 real s=10;
 path3 g=O--s*X--s*(X+Y)--s*Y--cycle;
 //draw(g);
-draw(surface(g),paleblue+opacity(0.5),nolight);
+draw(surface(g),blue+opacity(0.2),nolight);
 draw(O -- 3X, arrow=Arrow3(DefaultHead2), L=Label("$\vec u$", position=Relative(0.5)));
 draw(O -- 4Y, arrow=Arrow3(DefaultHead2), L=Label("$\vec v$", position=Relative(0.5)));
 //draw(A -- B, arrow=Arrow3(DefaultHead2));

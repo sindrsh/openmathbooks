@@ -1,4 +1,4 @@
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
 import three;
 settings.outformat="pdf";
 size(3.6 cm, 3 cm, keepAspect=false);

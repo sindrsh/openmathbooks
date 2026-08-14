@@ -23,18 +23,21 @@ Alternativt kan $\vec{v}$ skrives som
 
 \subsection{Linje i rommet}\index{linje}\index{parameterisering! av linje}
 \reg[\linrom \label{linrom}]{
-	En linje $\vec{l}(t)$ som går gjennom punktet $ {A=(x_0, y_0, z_0)} $ og har retningsvektor $ {\vec{r}=[a, b, c] }$ er gitt ved
+	En linje $\vec{l}$ som går gjennom punktet $ {A=(x_0, y_0, z_0)} $ og har retningsvektor $ {\vec{r}=[a, b, c] }$ er gitt ved
 	\[ \vec{l}(t)=A+t\vec{r}=[x_0+at, y_0+bt, z_0+ct] \]
 	\fig{lin}
 }
 \eks{\label{lirep}
 	En linje går gjennom punktene ${ A=(-2, 2, 1)} $ og $ {B=(2, 4, -5)} $.\os
+	\abc{
+	\item Finn en parameterisering for linja $ \vec{l} $ som går gjennom $ A $ og $ B $. \os
+	\item Sjekk om punktet ${C= (-5, 3, 6)} $ ligger på linja.
+	}
 	
-	\textbf{a)} Finn en parameterisering for linja $ \vec{l} $ som går gjennom $ A $ og $ B $. \os
-	\textbf{b)} Sjekk om punktet ${C= (-5, 3, 6)} $ ligger på linja.
 	
 	\sv
-	\textbf{a)}
+	\abc{
+	\item
 	$ \vv{AB} $ er en retningsvektor for linja:
 	\alg{
 		\vv{AB}&=[2-(-2),4-2, -5-1] \\
@@ -49,12 +52,13 @@ Alternativt kan $\vec{v}$ skrives som
 		y=2+t \\
 		z=1-3t
 	\end{array}\right. \]
-	\textbf{b)} Skal $ C $ ligge på $ l $, må parameteriseringen gi oss koordinaten til $ C $ for rett valg av $ t $. Skal for eksempel $ y$-koordinaten bli riktig, må vi ha at
+	\item Skal $ C $ ligge på $ l $, må parameteriseringen gi oss koordinaten til $ C $ for rett valg av $ t $. Skal for eksempel $ y$-koordinaten bli riktig, må vi ha at
 	\alg{
 		2+t &= 3 \\
 		t &= 1
 	} 
 	For $ {t=1 }$ blir ${ x=0 }$, men $ x $-koordinaten til $ C $ er $ -5 $, altså ligger ikke $ C $ på linja.
+	}
 }
 \fork{\ref{linrom} \linrom}{
 Det todimensjonale tilfellet som er vist i \tmen\ kan enkelt utvides til det tredimensjonale tilfellet. Dette er overlatt til leseren å vise.
@@ -69,16 +73,19 @@ Hvis vi ønsker å komme oss til et vilkårlig punkt $\alpha(s, t)= B=(x, y ,z) 
 \[ \alpha(s, t)=B = A + s\vec{u}+t\vec{v} \]
 \reg[Plan i rommet]{
 	Et plan $\alpha$ som inneholder punktet $A=[x_0, y_0]$, og som er utspent av vektorene $\vec{u}=[a_1, b_1, c_1]$ og $\vec{v}=[a_2, b_2, c_2]$, er gitt ved
-	\[ \alpha(s, t)=A + s\vec{u}+t\vec{v}=[(x_0 + a_1s + a_2t, y_0+b_1s+b_2t, z_0+c_1s+c_2t)] \]
+	\[ \alpha(s, t)=A + s\vec{u}+t\vec{v} \]
 }
 \eks[1]{ \label{plpare}
-Et plan $\alpha(s, t)$ inneholder punktene $ {A=(-2, 3, 5) }$, $ {B=(-10, 1, 9)} $ og $C= {(0, 5, -4)} $.\os
+Et plan $\alpha$ inneholder punktene $ {A=(-2, 3, 5) }$, $ {B=(-10, 1, 9)} $ og $C= {(0, 5, -4)} $.
+\abc{
+\item Finn en parameterisering til planet.\os
+\item Sjekk om punktet $ (4, 6, -6) $ ligger i planet.
+}
 
-\textbf{a)} Finn en parameterisering til planet.\os
-\textbf{b)} Sjekk om punktet $ (4, 6, -6) $ ligger i planet.
 
 \sv
-\textbf{a)}
+\abc{
+\item
 En vektor mellom to av punktene $ A$, $ B $ og $ C $ er en retningsvektor for planet. Vi starter derfor med å finne to slike:
 \algv{
 \vv{AB} &= [-10-(-2), 1-3, 9-5]\\
@@ -100,7 +107,7 @@ Alternativt kan vi skrive
 	z= 5 +2s-9t
 	\end{array}
 }\right. \]
-\textbf{b)} Vi starter med å finne en $ s $ og en $ t $ som oppfyller kravet for $ x $ og $ y $-komponentene, og får da ligningssystemet
+\item Vi starter med å finne en $ s $ og en $ t $ som oppfyller kravet for $ x $ og $ y $-komponentene, og får da ligningssystemet
 \alg{
 	-2 -4s+2t &= 4  \tag{I} \label{planI} \\
 	3 -s +2t &= 6 \tag{II} \label{planII} 
@@ -116,6 +123,7 @@ Altså er $ s=-1 $ og $ t=1 $. $ z $-komponenten er da
 5+2\cdot(-1)-9\cdot1 &= -6
 }
 Kravet for $ z $-komponenten er altså oppfylt, og punktet $ (4, 6, -6) $ ligger derfor i planet.
+}
 }
 \eks[2]{\label{plpare2}
 Et plan $ \alpha $ inneholder ei linje $ l $ og punktet $ {A=(-3, -2, 6)} $. $ A $ ligger ikke på $ l $. Finn en parameterisering til planet når $ l $ er gitt som
@@ -195,12 +203,16 @@ Om vi slår sammen alle konstantene til én konstant $ d=-(ax_0+by_0+cz_0) $, ka
 \eks[2]{\label{plroe2}
 	Et plan $ \alpha $ er gitt ved ligningen
 	\[ 3x-y-2z+6=0 \]
-	\textbf{a)} Finn en parameterisering til planet.\os
+	\abc{
+	\item Finn en parameterisering til planet.\os
 	
-	\textbf{b)} Finn et punkt som ligger i planet.
+	\item Finn et punkt som ligger i planet.
+	}
+	
 	
 	\sv
-	\textbf{a)} For å finne en parameterisering til et plan gitt av en ligning, står vi fritt til selv å velge to av $ {x, y} $ og $ z $ som lik hver av parameteriseringsvariablene. Vi velger her $ {x=s} $ og $ {z=t} $, og får at \vs
+	\abc{
+	\item For å finne en parameterisering til et plan gitt av en ligning, står vi fritt til selv å velge to av $ {x, y} $ og $ z $ som lik hver av parameteriseringsvariablene. Vi velger her $ {x=s} $ og $ {z=t} $, og får at \vs
 	\alg{3s-y-2t+6&=0 \\
 		y&= 3s+2t-6}
 	Parameteriseringen blir da
@@ -211,7 +223,8 @@ Om vi slår sammen alle konstantene til én konstant $ d=-(ax_0+by_0+cz_0) $, ka
 			z= t 
 		\end{array}
 	}\right. \]
-	\textbf{b)} Ut ifra parameteriseringen ser vi at et punkt i planet må være $ (0, -6, 0) $
+	\item Ut ifra parameteriseringen ser vi at et punkt i planet må være $ (0, -6, 0) $
+	}
 }
 \eks[3]{\label{plpare3}
 Et plan $ \alpha $ gitt ved ligningen ${2x-3y-3z-11=0}  $ møter en linje $ \vec{l} $ i et punkt $ A $. Finn koordinatene til $ A $ når $ \vec{l} $ er gitt ved
@@ -270,9 +283,9 @@ Ved å løse dette ligningssystemet finner vi at ${ x=-2} $ og $ {z= -2}$, alts�
 }
 \newpage
 \subsection{Kuleligningen}\index{kule}
-Gitt ei kule med sentrum $ {S=(x_0, y_0, z_0)} $ og et vilkårlig punkt \\${A= (x, y, z)} $, som ligger på kulen. 
+Gitt en kule med sentrum $ {S=(x_0, y_0, z_0)} $ og et vilkårlig punkt \\${A= (x, y, z)} $, som ligger på kula. 
 
-\figc{kule}{Kule med sentrum $ {S=(x_0, y_0, z_0) }$. Punktet $ {A=(x, y, z)} $ ligger på kuleflaten.}
+\figc{kule}{Kule med sentrum $ {S=(x_0, y_0, z_0) }$. Punktet $ {A=(x, y, z)} $ ligger på kula.}
 Lengden til $ \vv{SA} $ er da lik radien $ r $ til kula, og dermed har vi at
 \alg{
 	r &= |\vv{SA}| \\
@@ -290,13 +303,17 @@ Overflaten som dannes av alle punktene som oppfyller kulelikningen kalles \outl{
 }
 \label{kulee}	\eks[1]{
 	En kule er beskrevet ved ligningen
-	\[ x^2-6 x+y^2+4 y+z^2-4 z-19=0 \]	
-	\textbf{a)} Finn sentrum $ S $ og radiusen til kula. \os
-	\textbf{b)} Vis at punktet $A= (7, -6, 4) $ ligger på kuleflaten.\os
-	\textbf{c)} Finn tangentplanet til kuleflaten i punktet $ A $.
+	\[ x^2-6 x+y^2+4 y+z^2-4 z-19=0 \]
+	\abc{
+	\item Finn sentrum $ S $ og radiusen til kula. \os
+	\item Vis at punktet $A= (7, -6, 4) $ ligger på kuleflaten.\os
+	\item Finn tangentplanet til kuleflaten i punktet $ A $.
+	}	
+	
 	
 	\sv
-	\textbf{a)} For å løse denne oppgaven må vi finne de fullstendige kvadratene:
+	\abc{
+	\item For å løse denne oppgaven må vi finne de fullstendige kvadratene:
 	\algv{x^2-6x &= (x-3)^2-(-3)^2 \\[5 pt]
 		y^2+4y &= (y+2)^2-2^2 \\[5 pt]
 		z^2-4z &= (z-2)^2-(-2)^2
@@ -308,9 +325,9 @@ Overflaten som dannes av alle punktene som oppfyller kulelikningen kalles \outl{
 		(x-3)^2 +(y+2)^2 +(z-2)^2 &= 36 \\
 		&= 6^2
 	}
-	Kula har altså sentrum i punktet $S= (3, -2, 2) $ og radius lik 6.\vsk\\
+	Kula har altså sentrum i $(3, -2, 2) $ og radius lik 6.\vsk\\
 	
-	\textbf{b)} Skal $ A $ ligge på kuleflaten, må koordinatene til $ A $ oppfylle kuleligningen:
+	\item Skal $ A $ ligge på kula, må koordinatene til $ A $ oppfylle kuleligningen:
 	\alg{
 		(7-3)^2 +(-6+2)^2 +(4-2)^2 &= 36 \\
 		4^2 + (-4)^2 + 2^2 &= 36\\
@@ -318,7 +335,7 @@ Overflaten som dannes av alle punktene som oppfyller kulelikningen kalles \outl{
 	}
 	Dermed har vi vist det vi skulle. \vsk
 	
-	\textbf{c)} Tangentplanet står normalt på kuleflaten i $ A $ og har derfor $ \vv{SA} $ som normalvektor:
+	\item Tangentplanet står normalt på kuleflaten i $ A $, og har derfor $ \vv{SA} $ som normalvektor:
 	\alg{
 		\vv{SA} &= [7-3, -6-(-2), 4-2] \\
 		&= [4, -4, 2] \\
@@ -330,7 +347,8 @@ Overflaten som dannes av alle punktene som oppfyller kulelikningen kalles \outl{
 		2(x-7)-2(y+6)+1(z-4)&=0\\
 		2x-14-2y-12+z-4 &= 0\\
 		2x-2y-z-30=0
-	}\vs
+	}
+}
 }
 \newpage
 \eks[2]{
@@ -346,36 +364,36 @@ I to punkt skjærer kuleflaten ei linje $ l $ parameterisert ved
 }\right. \]
 Finn skjæringspunktene mellom kuleflaten og $ l $. \\
 
-\sv Vi skal her bruke to løsningsmetoder. Den første gir oss direkte en andregradsligning som vi kan løse, mens den andre unngår nettopp dette, men krever til gjengjeld litt resonnering i forkant.\vsk\\
+\sv 
 
-\textit{Løsningsmetode 1:}
+\metode{Metode 1}{2cm}
 
 Der hvor kuleflaten skjærer linja, må parameteriseringen til linja oppfylle kuleligningen:
 \alg{
-((-4-2t)+2)^2+((5+2t)-3)^2+((3+t)-2)^2&= 3^2 \\
-(-2(t+1))^2+(2(t+1))^2+(t+1)^2&=9\\
-9(t+1)^2 &=9  \\
-(t+1) &=\pm 1 \\
-t &= \pm 1 -1
+((-4-2t)+2)^2+((5+2t)-3)^2+((3+t)-2)^2&= 9^2 \\
+(-2(t+1))^2+(2(t+1))^2+(t+1)^2&=9^2\\
+9(t+1)^2 &=9^2  \\
+t+1 &=\pm 3 \\
+t &= \pm 3 -1
 }
-Altså er $ {t\in\lbrace{0, -2\rbrace}} $. For $ {t=0} $ får vi punktet $ (-4, 5, 3) $ og for $ {t=-2} $ får vi punktet $ (0, 1, 1) $.\vsk\\
+Altså er $ {t\in\lbrace{-4, 2\rbrace}} $. For $ {t=-4} $ får vi punktet $ (4, -3, -1) $ og for $ {t=8} $ får vi punktet $ (-8, 9, 5) $.\vsk\\
 
-\textit{Løsningsmetode 2:} 
+\metode{Metode 2}{2cm}
 
-$ [-2, 2, 1] $ er en retningsvektor for linja og har lengden $ 3 $. Vektoren $ \frac{1}{3}[-2, 2, 1] $ er derfor også en retningsvektor, men har lengde 1. Siden skjæringspunktene ligger på kuleflaten, må avstanden fra $ S $ tilsvare radiusen (altså $ 3 $). De to punktene må da være gitt av uttrykket
+$ [-2, 2, 1] $ er en retningsvektor for linja og har lengde $ 3 $. Vektoren $ \frac{1}{3}[-2, 2, 1] $ er derfor også en retningsvektor, men har lengde 1. Siden skjæringspunktene ligger på kula, må avstanden mellom disse og $ S $ tilsvare radien (altså $ 9 $). De to punktene må da være gitt av uttrykket
 \alg{
-S\pm 3\cdot\frac{1}{3}[-2, 2, 1]
+S\pm 9\cdot\frac{1}{3}[-2, 2, 1]=(-2, 3, 2)\pm 3[-2, 2, 1]
 }
-Regner man ut de to tilfellene $ {S\pm [-2, 2, 1]} $, får man de samme punktene som i \textit{Løsningsmetode 1}.
+Dette uttrykket gir de samme punktene som ved \textsl{Metode 1}.
 }
 \section{Avstander mellom geometrier}
 \subsection{Avstand mellom punkt og linje}\index{avstand!fra punkt til linje}
-La oss tenke at vi har ei linje $ l $ i rommet, beskrevet ut ifra et punkt \textit{A} og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja, som skissert i \fref{plin}.
+Gitt en linje $ \vec{l} $ i rommet, beskrevet av punktet \textit{A} og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja.
 
 \figc{plin}{Punkt $ B $ en avstand $ h $ fra linja $ l $. \label{plin}}
-Vi ønsker nå å finne den korteste avstanden\footnote{Når man snakker om avstanden mellom geometrier, menes den \textit{korteste} avstanden (så lenge ikke annet er nevnt).} fra \textit{B} til linja. Denne avstanden identifiserer vi som høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Fra (\ref{vektre}) vet vi at arealet er gitt ved uttrykket
+Vi ønsker nå å finne den korteste avstanden fra \textit{B} til linja. Denne avstanden identifiserer vi som høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Av (\ref{vektre}) har vi at arealet til trekanten er gitt ved uttrykket
 \[ \frac{1}{2}\left|\vv{AB}\times \vec r\,\right| \]
-Men vi er også kjent med at arealet til en trekant er gitt som grunnlinja ganger høyden, dermed er
+Av den klassiske arealformelen for en trekant (se \mb) er
 \alg{\frac{1}{2}|\vec{r}|h &=\frac{1}{2}\left|\vv{AB}\times \vec r\,\right|  \br
 	h &= \frac{\left|\vv{AB}\times \vec r\,\right| }{|\vec{r}|}
 }
@@ -391,20 +409,12 @@ Ei linje $ l $ går gjennom punktene $ {A=(-2, 4, 1)} $ og ${B= (-5, 7,-2)} $. F
 
 \sv
 Vektoren mellom de to punktene er en retningsvektor for linja:
-\alg{
-[-5-(-2), 7-4, -2-1] &= [-3, 3, -3] \\
-&=3[-1, 1,-1]
-}
-Vi fortsetter med å finne lengden til den faktoriserte retningsvektoren:
-\alg{
-\sqrt{(-1)^2+1^2+(-1)^2} &= \sqrt{3}
-}
-Vektoren mellom $ A $ og $ C $ er gitt som
-\alg{
-\vv{AC}&= [1-(-2), 3-4, -2-1] \\
-&= [3, -1, -3]
-}
-Kryssproduktet av $ {[-1, 1,-1]} $ og $ \vv{AC} $ blir
+\[ [-5-(-2), 7-4, -2-1] = [-3, 3, -3] =3[-1, 1,-1] \]
+Altså er ${\vec{r}=[-1, 1, -1]}$ også en retningsvektor for linja. Vi har at
+\[ |\vec{r}|=\sqrt{(-1)^2+1^2+(-1)^2} = \sqrt{3} \]
+Videre har vi at
+\[ \vv{AC}= [1-(-2), 3-4, -2-1]= [3, -1, -3] \]
+Vi finner kryssproduktet av $\vv{AC}$ og $\vec{r}$:
 \alg{
 	\left|\begin{matrix}
 		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
@@ -423,20 +433,18 @@ Kryssproduktet av $ {[-1, 1,-1]} $ og $ \vv{AC} $ blir
 	&= \vec{e}_x (1-(-3))-\vec{e}_y(-3-3)+\vec{e}_z(3-1) \\
 	&= [4, 6, 2]  
 }
-Lengden av denne vektoren er
-\alg{
-2\sqrt{2^2+3^2+1^2} &= 2\sqrt{14}
-}
-Nå har vi alle størrelser vi trenger for å finne avstanden $ h $ mellom linja og $ C $: 
+Da $[4, 6, 2]=2[2, 3, 1]$, er
+\[\left|\vv{AC}\times\vec{r}\right|= 2\sqrt{2^2+3^2+1^2} = 2\sqrt{14} \]
+Dermed er
 \algv{
 	h &= \frac{2\sqrt{14}}{\sqrt{3}}
 }\vsb
 }
 \subsection{Avstand mellom punkt og plan}\index{avstand!fra punkt til plan}
-Når et punkt ligger over et plan, kan man trekke et linjestykke som \\treffer punktet og står normalt på planet. Lengden av dette linjestykket er den korteste avstanden mellom punktet og planet.
+Når et punkt ligger over et plan, kan man trekke et linjestykke som står normalt på planet, og som har et endepunkt i $A$ og et endepunkt i planet. Lengden til dette linjestykket er den korteste avstanden mellom punktet og planet.
 \figc{pplan}{Den korteste avstanden $ h $ mellom punktet $ A $ og planet (i blått).}
 \reg[\avstplnpkt \label{avstplnpkt}]{
-	Avstanden $ h $ mellom et punkt ${ A=(x_0, y_0, z_0)} $ og et plan beskrevet av ligningen $ {ax + by + cz +d = 0 }$, er gitt som
+	Avstanden $ h $ mellom et punkt ${ A=(x_0, y_0, z_0)} $ og et plan gitt av ligningen $ {ax + by + cz +d = 0 }$ er gitt ved
 	\nreq{h= \frac{|a x_0 + b y_0 + c z_0 + d|}{\sqrt{a^2 + b^2 + c^2}}\label{avplp}} \vs
 }
 \eks[]{Finn avstanden mellom punktet $ (-1,4,5) $ og planet 
@@ -467,40 +475,38 @@ I planet velger vi oss punktet $ {P_0=(x_0, y_0, z_0)} $ slik at $ \vv{P_0P_1} $
 	ax_0+by_0+cz_0 +d&= 0 \nonumber\\
 	d &= -(ax_0+by_0+cz_0) \label{dlig}
 \end{align}
-Normalvektoren gitt av ligningen til planet er $ {\vec{n}=[a, b, c]} $, ved hjelp av (\ref{dlig}) kan vi skrive skalarproduktet av $ \vec{n} $ og $ \vv{P_0P_1} $ som
+Normalvektoren gitt av ligningen til planet er $ {\vec{n}=[a, b, c]} $. Dermed er 
 \begin{align}
 	\vec{n}\cdot\vv{P_0P_1}&= [a, b, c]\cdot[x_1-x_0, y_1-y_0, z_1-z_0]\nonumber \\
 	&= a(x_1-x_0)+b(y_1-y_0)+c(z_1-z_0)\nonumber\\
 	&= ax_1 + by_1 + cz_1+d\label{dlig2}
 \end{align}
-La oss kalle vinkelen mellom $ \vec{n} $ og $ \vv{P_0P_1} $ for $ v $. Fra definisjonen av skalarproduktet har vi at
+Vi setter vinkelen mellom $ \vec{n} $ og $ \vv{P_0P_1} $ lik $ v $. Fra definisjonen av skalarproduktet har vi at
 \[ |\vec{n}|\left|\vv{P_0P_1}\right|\cos v = \vec{n}\cdot\vv{P_0P_1} \]	
-Siden begge vektorene er normalvektorer, må $ v $ være enten $ 0^\circ $ eller $ 180^\circ $, altså er $ {\cos v=\pm1}  $. Tar vi tallverdien av skalarproduktet, får vi at
+Siden både $\vec{n}$ og $\vv{P_0P_1}$ er normalvektorer til planet, må vi ha at $ {v=\{0^\circ, 180^\circ\}} $. Altså er $ {\cos v=\pm1}  $. Følgelig har vi at
 \alg{
 	\left||\vec{n}|\left|\vv{P_0P_1}\right|\cos v\right|&=\left|\vec{n}\cdot\vv{P_0P_1}\right| \br
 	\left|\vv{P_0P_1}\right| &= \frac{\left|\vec{n}\cdot\vv{P_0P_1}\right| }{|\vec{n}|}
 }
-Av (\ref{dlig2}) og definisjonen av lengden til en vektor har vi nå at
+Av (\ref{dlig2}) og \rref{veklen}
 \[\left|\vv{P_0P_1}\right|= \frac{|ax_1 + by_1 + cz_1+d|}{\sqrt{a^2 +b^2  +c^2}} \]
-Lengden av $ \vv{P_0P_1} $ er nettopp avstanden mellom $ P_1 $ og planet $ \alpha $.
 }
 
 \newpage
 \section{Vinkler mellom geometrier}
-Når geometrier i rommet skjærer hverandre, utspenner de forskjellige vinkler mellom seg. Når vi bruker begrepet \textit{vinkelen mellom} geometrier,  søker vi alltid den minste av disse vinklene.
+Når geometrier i rommet skjærer hverandre, danner de forskjellige vinkler mellom seg. Så lenge ikke annet er nevnt, vil det vi omtaler som \textsl{vinkelen mellom geometrier} være den minste vinkelen geometriene danner.
 \subsection{Vinkelen mellom to linjer \label{vinkellin}}\index{vinkel!mellom linjer}
 \begin{figure}
 		\centering
-	\subfloat[a)]{\includegraphics[]{\figp{vinkell}}}\,
-	\subfloat[b)]{\includegraphics[]{\figp{vinkellb}}}
+	\subfloat[]{\includegraphics[]{\figp{vinkell}}}\,
+	\subfloat[]{\includegraphics[]{\figp{vinkellb}}}
 	\captionof{figure}{\textsl{a)} $ \vec{r}_1$ og $ \vec{r}_2 $ utspenner vinkelen $ v $. \textsl{b)} $ \vec{r}_1$ og $ \vec{r}_2 $ utspenner vinkelen $ u $.\label{vinkell}}
 \end{figure}
-Si vi har to linjer $ m $ og $ l $ med hver sine retningsvektorer $ \vec{r}_1 $ og $ \vec{r}_2 $. Vi er nå interessert i å finne den minste vinkelen mellom disse linjene. Vi lar $ u $ betegne den største og $ v $ den minste vinkelen mellom linjene.  Linjene danner et par av vinkelen $ u $ og et par av vinkelen $ v $, mens retningsvektorene $ r_1 $ og $ r_2 $ vil utspenne enten $ u $ eller $ v $ (se \fref{vinkell}). \vsk
+Gitt to linjer $ m $ og $ l $ med hver sine retningsvektorer $ \vec{r}_1 $ og $ \vec{r}_2 $. Vi ønsker å finne den minste vinkelen mellom disse linjene. Vi lar $ u $ betegne den største vinkelen og $ v $ den minste vinkelen mellom linjene.  Linjene danner et par av vinkelen $ u $ og et par av vinkelen $ v $, mens retningsvektorene $ r_1 $ og $ r_2 $ vil utspenne enten $ u $ eller $ v $ (se \fref{vinkell}). \vsk
 
 Av \eqref{skal2} har vi at
 \[ \cos \angle(\vec{r}_1, \vec{r}_2 )=\frac{\vec{r}_1\cdot\vec{r}_2}{|\vec{r}_1||\vec{r}_2|} \]
-Vi vet at uttrykket over representerer cosinusverdien til $ u $ eller $ v $, men ikke hvilken av dem. Det blir tungvint å alltid måtte inspisere $ \vec{r}_1 $ og $ \vec{r}_2 $ grafisk bare for å sjekke dette, vi merker oss derfor følgende:
-Siden $ {v=180^\circ-u} $, er tallverdien til $ \cos u $ og $\cos v $ eksakt lik. Videre er \\$ {180^\circ \geq u\geq90^\circ} $ og $ {90^\circ \geq u\geq0^\circ} $. Altså er ${ \cos u \leq 0} $ og ${ \cos v \geq 0} $. Dette betyr at \vs
+Vi vet at uttrykket over representerer cosinusverdien til $ u $ eller $ v $, men ikke hvilken av dem. Siden $ {v=180^\circ-u} $, er  $ |\cos u|=|\cos v| $. Videre er $ {180^\circ \geq u\geq90^\circ} $ og $ {90^\circ \geq u\geq0^\circ} $. Altså er ${ \cos u \leq 0} $ og ${ \cos v \geq 0} $. Dette betyr at
 \alg{
 \cos v &= |\cos \angle(\vec{r}_1, \vec{r}_2)|	\br
 &= \left|\frac{\vec{r}_1\cdot\vec{r}_2}{|\vec{r}_1||\vec{r}_2|}\right| \br&=
@@ -517,37 +523,26 @@ Siden $ {v=180^\circ-u} $, er tallverdien til $ \cos u $ og $\cos v $ eksakt lik
 Finn vinkelen mellom ei linje med retnigsvektor $ {\vec{r}_1=[4, 1, 1]} $ og ei linje med retningsvektor $ {\vec{r}_2=[ -1, 0, 1]}	 $.\\
 
 \sv
-Vi starter med å regne ut skalarproduktet og lengdene av retningsvektorene:
+Vi har at
 \alg{
-	\vec{r}_1\cdot\vec{r_2}&= [4, 1, 1]\cdot [ -1, 0, 1] \\
-	&= -4+0+1 \\
-	&= -3
-	}\vs
-\alg{
-	|\vec{r}_1|&=\sqrt{4^2+1^2+1^2} \\
-	&= \sqrt{18} \\
-	&= 3\sqrt{2}
-	& \br
-	|\vec{r}_2|&=\sqrt{(-1)^2+0^2+1^2} \\
-	&= \sqrt{2}
+	|\vec{r}_1\cdot\vec{r_2}|&= [4, 1, 1]\cdot [ -1, 0, 1] = -3 \vn
+	|\vec{r}_1|&=\sqrt{4^2+1^2+1^2} = 3\sqrt{2}
+	& \vn
+	|\vec{r}_2|&=\sqrt{(-1)^2+0^2+1^2}= \sqrt{2}
 	}
-Cosinus til vinkelen $ v $ mellom linjene er derfor gitt som
-\alg{
-\cos v &= \frac{|\vec{r}_1\cdot\vec{r}_2|}{|\vec{r}_1||\vec{r}_2|}\br
-&= \frac{3}{3\sqrt{2}\cdot\sqrt{2}}	\br
-&= \frac{1}{2}
-	}
+For vinkelen $ v $ mellom linjene har vi at
+\[ \cos v = \frac{3}{3\sqrt{2}\cdot\sqrt{2}} = \frac{1}{2} \]
 Altså er $ v=60^\circ $.	
 }
 
 \subsection{Vinkelen mellom to plan}\index{vinkel!mellom plan}\vspace{-3pt}
-Som tidligere nevnt vil skjæringspunktene mellom to plan danne ei linje (se \fref{plskj}). Om vi betrakter geometriene langsmed denne linja, vil planene selv framstå som to linjer som, analogt til forrige delseksjon, danner et par av to vinkler.\vspace{-5pt}
+Som vi har sett, vil skjæringspunktene mellom to plan danne ei linje (se \fref{plskj}). Om vi betrakter geometriene langsmed denne linja, vil planene selv framstå som to linjer som, analogt til forrige delseksjon, danner et par av to vinkler.\vspace{-5pt}
 \begin{figure}
 	
 	\centering
-	\subfloat[\textsl{a)}]{\includegraphics[]{\figp{vinkelpl}}}
+	\subfloat[]{\includegraphics[]{\figp{vinkelpl}}}
 	\qquad\quad
-	\subfloat[\textsl{b)}]{\includegraphics[]{\figp{vinkelplb}}}
+	\subfloat[]{\includegraphics[]{\figp{vinkelplb}}}
 	\captionof{figure}{\textsl{a)} $ \vec{n}_1$ og $ \vec{n}_2 $ utspenner vinkelen $ v $. \textsl{b)} $ \vec{n}_1$ og $ \vec{n}_2 $ utspenner vinkelen $ u $.\label{vinkelpl}}
 \end{figure} 
 Gitt to plan $ \alpha $ og $ \beta $ med hver sine normalvektorer $ \vec{n}_1 $ og $ \vec{n}_2 $. De to linjene som går gjennnom normalvektorene utspenner de to samme
@@ -566,9 +561,9 @@ vinkelparene som de skjærende planene\footnote{Hvis vi roterer begge planene $ 
 	\subfloat[]{\includegraphics[]{\figp{vinkelb}}}	
 	\captionof{figure}{\textsl{a)} $ \vec{n}$ og $ \vec{r} $ utspenner vinkelen $ {w<90^\circ} $. \textsl{b)} $ \vec{n}$ og $ \vec{r} $ utspenner vinkelen $ {m>90^\circ} $.\label{vinkelpll}}
 \end{figure} 
-Når ei linje med retningsvektor $ \vec{r} $ og et plan med normalvektor $ \vec{n} $ skjærer hverandre, vil linjene gjennom retningsvektoren og normalvektoren danne to vinkler $ w $ og $ m $ (se \fref{vinkelpll}). \vsk
+Når ei linje med retningsvektor $ \vec{r} $ og et plan med normalvektor $ \vec{n} $ skjærer hverandre, vil de respektive linjene gjennom retningsvektoren og normalvektoren danne to vinkler $ w $ og $ m $ (se \fref{vinkelpll}). \vsk
 
-Vi lar $ w $ være den minste av disse to vinklene, da tilsvarer $|\cos \angle(\vec{n}, \vec{r})| $ cosinusverdien til $ w $. Hvis vi kaller den minste vinkelen utspent av planet og linja for $ v $, har vi at
+Vi lar $ w $ være den minste av disse to vinklene, da tilsvarer $|\cos \angle(\vec{n}, \vec{r})| $ cosinusverdien til $ w $. Hvis vi setter den minste vinkelen dannet av planet og linja lik $ v $, har vi at
 \[ v= 90^\circ-w \]
 \reg[Vinkel mellom plan og linje]{Vinkelen $ v $ mellom et plan med normalvektor $ \vec{n} $ og ei linje med retningsvektor $ \vec{r} $ er gitt som
 	\begin{equation}

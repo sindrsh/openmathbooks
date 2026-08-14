@@ -1,3 +1,4 @@
+import "../../inhopg.asy" as inhopg;
 import mods2;
 unitsize(2cm);
 
@@ -23,13 +24,13 @@ path s = graph(f, xmin, xmax, operator..);
 path s1 = (a,d)--graph(f,a,c)-- (c,d) --cycle;
 path s2 = (a,0)--graph(g,a,c)--graph(f,c,b)-- (b,0) --cycle;
 path s3 = (c,d)--graph(f,c,b)--(b,d) --cycle;
-fill(s1, palegreen+opacity(1));
-fill(s2, orange+opacity(0.5));
-fill(s3, paleblue+opacity(1));
+fill(s1, arpeng);
+fill(s2, arpeno);
+fill(s3, arpen);
 draw(gs);
 draw(s, L=Label("$g$", position=Relative(1)));
-xaks(xmin, xmax);
-yaks(xmin, max(s).y);
+xaks(xmin, xmax, l="$x$");
+yaks(xmin, max(s).y, l="$y$");
 
 mktc(a, "$a$");
 mktc(b, "$b$");

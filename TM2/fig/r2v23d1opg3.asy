@@ -1,7 +1,6 @@
-defaultpen(fontsize(9pt));
+import "../../inhopg" as inh;
 import graph3;
 import three;
-settings.outformat="pdf";
 size(5cm);
 settings.render=0;
 currentprojection=orthographic((1,-1,0.5));

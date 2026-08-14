@@ -1,16 +1,15 @@
+import "../../inh" as inh;
 unitsize(0.3cm);
-defaultpen(fontsize(11pt));
-settings.outformat="pdf";
 real s =1.1;
 real dy = 2;
 real dx = 0;
 
 
 void h(int M=1, int N=1, int nx=0, int ny=0){
-	filldraw(shift(dx+nx*s+M,ny*s+N)*unitcircle,green);
+	filldraw(shift(dx+nx*s+M,ny*s+N)*unitcircle,arpeng);
 }
 void h2(int M=1, int N=1, int nx=0, int ny=0){
-	filldraw(shift(dx+nx*s+M,ny*s+N)*unitcircle,blue);
+	filldraw(shift(dx+nx*s+M,ny*s+N)*unitcircle,arpen);
 }
 
 real b=2.5;
@@ -36,7 +35,6 @@ h(N=2,ny=1);
 h(2,2,1,ny=1);
 h2(3,2,2,ny=1);
 h(N=3,ny=2);
-h(2,2,1,ny=1);
 h2(3,3,2,ny=2);
 h2(2,3,1,ny=2);
 h2(4,3,3,ny=2);

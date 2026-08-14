@@ -71,13 +71,13 @@ bool lb=true, bool tc=true, bool tcl=true){
         }
     }
 }
-void mctckx3(real x, real y=0, string h = "", real a=0.01cm){
+void mktckx3(real x, real y=0, string h = "", real a=0.01cm){
         draw(x*X+(a+y)*Y -- x*X+(y-a)*Y, L=Label(h, position=EndPoint));
 }
-void mktcy3(string lb, real pos){
+void mktcky3(real pos, string lb){
     draw(pos*Y+0.1X -- pos*Y-0.1X, L=Label(lb, position=EndPoint));
 }
-void mktcz3(string lb, real pos, triple zn=(1, 1, 0)){
+void mktckz3(real pos, string lb, triple zn=(1, 1, 0)){
     draw(pos*Z+0.05*zn -- pos*Z-0.05*zn, L=Label(lb, position=EndPoint));
 }
 

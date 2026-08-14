@@ -1,8 +1,7 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
-
-import three;
 import mods;
+import three;
+import "../../inh" as inh;
+
 unitsize(1cm);
 
 void xyz(real[] t = {1,1,1}, triple zp=(1,1,0), 

@@ -6,7 +6,7 @@
 \section{Vektorer i rommet}\index{vektor!i rommet}
 I \tmen\ har vi sett på todimensjonale vektorer beskrevet ved hjelp av en $ x $- og en $ y $-akse. Når vi skal beskrive en \outl{tredimensjonal vektor}, innfører vi i tillegg en $ z $-akse som står normalt på de to andre aksene. 
 
-\figc{vekt1}{$ \vec{u}=[2, 3, 4] $\label{vekt1}}
+\figc{vekt1}{Den tredimensjonale vektoren $ \vec{u}=[2, 3, 4] $\label{vekt1}}
 
 \regdef[Vektoren mellom to punkt \index{vektor!mellom to punkt}]{
 	En vektor $ \vec{v} $ med startpunkt $ {A=(x_1, y_1, z_1)}$ og endepunkt ${B=(x_2, y_2, z_2) }$ er gitt som
@@ -26,7 +26,7 @@ Seksjon \ref{vekleng}\,-\,\ref{vinkrogpar} handler om visse egenskaper og regner
 }
 
 \section{Lengden til en vektor \label{vekleng}}\index{vektor!lengden til}
-La oss prøve å finne lengden til en vektor $ {\vec{u}=[x_1, y_1, z_1]} $, som skissert i \fref{lenu}. Grafisk er lengden avstanden fra den butte enden til pilspissen.
+La oss finne lengden til en vektor $ {\vec{u}=[x_1, y_1, z_1]} $, som skissert i \fref{lenu}. Lengden er avstanden mellom endepunktene.
 \figc{vekt3}{\label{lenu}}
 Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $ og $ \hat{u}=\sqrt{x_1^2+y_1^2} $. Av Pytagoras' setning har vi da at
 \[ |\vec{u}|=\sqrt{\hat{u}^2+z_1^2} = \sqrt{x_1^2+y_1^2+z_1^2} \]
@@ -37,12 +37,8 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 \eks{
 	Finn lengden til vektoren $ {\vec{u}=[-2, 4, 1]} $.
 	
-	\sv \vs
-	\algv{
-		|\vec{u}|&= \sqrt{(-2)^2+4^2+1^2} \\
-		&= \sqrt{4+16+1} \\
-		&= \sqrt{21}
-	}\vs \vspace{-4pt}
+	\sv 
+	\[ |\vec{u}|= \sqrt{(-2)^2+4^2+1^2}= \sqrt{21} \]
 }
 
 \section{Regneregler og skalarprodukt}
@@ -75,8 +71,8 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 	
 	\sv
 	Ved å bruke \eqref{fellesfakt} sparer vi oss for kvadrater av store tall:
-	\[ [-9, 18, 27]=9[-1, 2, 3] \]
-	Lengden blir da (se \refops{lenfakt})
+	\[ \vec{a}=9[-1, 2, 3] \]
+	Nå har vi at (se \refops{lenfakt})
 	\[ |\vec{a}|= 9\sqrt{(-1)^2+2^2+3^2} = 9\sqrt{14} \]
 }
 \newpage
@@ -368,39 +364,43 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 \newpage
 \eks{
 	Gitt vektorene $ {\vec{a}=[-3, 2, 3]} $ og $ {\vec{b}=[2, -2, 1]} $.\os
-	\textbf{a)} Finn $ \vec{a}\times\vec{b} $.\os
-	\textbf{b)} Vis at vektoren du fant i a) står normalt på både $ \vec{a} $ og $ \vec{b} $. 
+	\abc{
+	\item Finn $ \vec{a}\times\vec{b} $.\os
+	\item Vis at vektoren du fant i a) står normalt på både $ \vec{a} $ og $ \vec{b} $. 
+	}
 	
 	\sv
-	\textbf{a)} Vi bruker uttrykket fra (\ref{vp1}),	og regner ut følgende $ {3\times3} $ determinant:
+	\abc{
+		\item Vi bruker uttrykket fra (\ref{vp1}),	og regner ut følgende $ {3\times3} $ determinant:
 	\[ \vec{a}\times\vec{b} =\left|\begin{matrix}
-	\vec{e}_x & \vec{e}_y & \vec{e}_z \\
-	-3 & 2 & 3 \\
-	2 & -2 & 1
+		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
+		-3 & 2 & 3 \\
+		2 & -2 & 1
 	\end{matrix}\right|  \]
 	Vi får da at (se gjerne tilbake til eksempelet på side \pageref{eks33})
 	{\small
-	\alg{
-		\vec{a}\times\vec{b}&=\vec{e}_x\left|\begin{matrix}
-			2 & 3 \\
-			-2 & -1
-		\end{matrix}\right|-\vec{e}_y\left|\begin{matrix}
-			-3 & 3 \\
-			2 & 1
-		\end{matrix}\right|+\vec{e}_z\left|\begin{matrix}
-			-3 & 2 \\
-			2 & -2
-		\end{matrix}\right|  \\
-		&= \vec{e}_x(2\cdot1-3\cdot(-2))-\vec{e}_y(-3\cdot1-3\cdot2)+\vec{e}_z(-3\cdot (-2)-2\cdot2) \\
-		&= 8\vec{e}_x+9\vec{e}_y+2\vec{e}_z \\
-		&= [8, 9, 2]	
+		\alg{
+			\vec{a}\times\vec{b}&=\vec{e}_x\left|\begin{matrix}
+				2 & 3 \\
+				-2 & -1
+			\end{matrix}\right|-\vec{e}_y\left|\begin{matrix}
+				-3 & 3 \\
+				2 & 1
+			\end{matrix}\right|+\vec{e}_z\left|\begin{matrix}
+				-3 & 2 \\
+				2 & -2
+			\end{matrix}\right|  \\
+			&= \vec{e}_x(2\cdot1-3\cdot(-2))-\vec{e}_y(-3\cdot1-3\cdot2)+\vec{e}_z(-3\cdot (-2)-2\cdot2) \\
+			&= 8\vec{e}_x+9\vec{e}_y+2\vec{e}_z \\
+			&= [8, 9, 2]	
+		}
 	}
-}
-\textbf{b)} To vektorer står normalt på hverandre dersom skalarproduktet av dem er 0: \alg{
-&[8, 9, 2]\cdot[-3, 2, 3]=-24+18+6=0 \vn
-&[8, 9, 2]\cdot[2, -2, 1]=16-18+2=0
-}
-\vs
+	\item To vektorer står normalt på hverandre dersom skalarproduktet av dem er 0: \alg{
+		&[8, 9, 2]\cdot[-3, 2, 3]=-24+18+6=0 \vn
+		&[8, 9, 2]\cdot[2, -2, 1]=16-18+2=0
+	}
+	}
+
 } \vsk
 \reg[Regneregler for vektorproduktet]{
 	For vektorene $ \vec{u}, \vec{v} $ og $ \vec{w} $ og en konstant $ t $ har vi at

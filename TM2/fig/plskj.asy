@@ -1,5 +1,5 @@
+import "../../inh" as inh;
 size(6cm,4cm);
-settings.outformat="pdf";
 import bsp;
 import math;
 
@@ -14,14 +14,14 @@ path3 g=rotate(90,X)*rotate(70,Y)*y;
 
 face[] faces;
 
-pen p = paleblue+opacity(0.5);
+pen p = blue+opacity(0.4);
 filldraw(faces.push(l),project(l),p, drawpen=p);
 
-pen p = green+opacity(0.5);
+pen p = green+opacity(0.4);
 filldraw(faces.push(g),project(g),p, drawpen=p);
 add(faces);
 
 path3 s = O..2Z;
 path ny = path(s);
 draw(pic1,ny);
-drawline((0,0),(0.5,0.5), blue);
+drawline((0,0),(0.5,0.5));

@@ -90,7 +90,7 @@ Videre har vi at
 Av dette innser vi at den eksplisitte formelen er gitt ved
 \[ a_i=a_1=(d-1) \]
 
-\reg[Aritmetisk følge]{
+\reg[Aritmetisk følge]{ \label{arfol}
 	Et element $ a_i $  i en aritmetisk følge er gitt ved den rekursive formelen
 	\begin{equation}\label{arrekeq}
 		a_i=a_{i-1}+d
@@ -121,7 +121,7 @@ Videre har vi at
 Av dette innser vi at den eksplisitte formelen er gitt ved
 \[ a_i=a_1\cdot k^{i-1} \]
 
-\reg[Geometrisk følge]{
+\reg[Geometrisk følge]{ \label{geofol}
 	Et element $ a_i $  i en geometrisk følge er gitt ved den rekursive formelen
 	\begin{equation}\label{geofolgrek}
 		a_i=a_{i-1}\cdot k
@@ -250,7 +250,7 @@ Ganger vi denne summen med $ k $, får vi at
 	S_n &= a_1\frac{1-k^n}{1-k}
 }
 }
-\subsection{Uendelige geometrisk rekker}
+\subsection*{Uendelige geometrisk rekker}
 For en geometrisk rekke med uendelig mange ledd merker vi oss dette: \vsk
 
 Hvis $ {|k|<1} $, er
@@ -273,14 +273,12 @@ Dette er en geometrisk rekke med $a_1=7$ og $k=10^{-1}=\frac{1}{10}$. Dermed har
 \[ S_\infty=\frac{7}{1-\frac{1}{10}}=\frac{70}{9} \]
 }
 \newpage
-\subsection{Summetegnet}\index{summetegnet}
-Vi skal nå se på et symbol som forenkler skrivemåten av rekker betraktelig. Symbolet blir spesielt viktig i \refkap{Integrasjon}.\vsk
-
+\subsection*{Summetegnet}\index{summetegnet}
 Tidligere har vi skrevet rekkene mer eller mindre bent frem. For eksempel har vi sett på rekken
 \[ 2+6+18+54+162 \]
 med eksplisitt formel
 \[ a_i = 2\cdot3^{i-1} \]
-Ved hjelp av summetegnet \sym{$\sum$} kan rekken vår komprimeres betratelig. Ved å skrive $ \sum\limits_{i=1}^5 $ indikerer vi at $ i $ er en løpende variabel som starter på 1, og deretter øker med 1 opp til 5. Da kan vi skrive rekken som $ \sum\limits_{i=1}^5 2\cdot3^{i-1} $, underforstått at vi skal sette et plusstegn hver gang $ i $ øker med 1:
+Ved hjelp av summetegnet\footnote{Symbolet blir spesielt viktig i \refkap{Integrasjon}.} \sym{$\sum$} kan rekken vår komprimeres betratelig. Ved å skrive $ \sum\limits_{i=1}^5 $ indikerer vi at $ i $ er en løpende variabel som starter på 1, og deretter øker med 1 opp til 5. Da kan vi skrive rekken som $ \sum\limits_{i=1}^5 2\cdot3^{i-1} $, underforstått at vi skal sette et plusstegn hver gang $ i $ øker med 1:
 \[ 2+6+18+54+162=\sum\limits_{i=1}^5 2\cdot3^{i-1} \]
 Den uendelige rekken 
 $ 2+6+18+... $ kan vi skrive som $\sum\limits_{i=1}^\infty 2\cdot3^{i-1}$.

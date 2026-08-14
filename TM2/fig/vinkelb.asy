@@ -1,5 +1,4 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh" as inh;
 unitsize(1.5cm);
 import mods;
 import graph;
@@ -14,9 +13,11 @@ pair f(real z){
 
 real b = pi/4;
 real c = pi/24+ pi/2;
-draw(o -- f(b), heavyred, arrow=Arrow, L=Label("$\vec r$"), align=N);
-draw(o -- -f(c), heavyblue, arrow=Arrow, L=Label("$\vec n$", position=relative(0.8)));
 
 r =0.2;
 path s = graph(f, b, c-pi, operator ..);
 draw(s, L=Label("$m$", align=E,position=Relative(0.5)));
+
+r = 1;
+draw(o -- f(b), red, arrow=Arrow, L=Label("$\vec r$"), align=N);
+draw(o -- -f(c), blue, arrow=Arrow, L=Label("$\vec n$", position=relative(0.8)));
