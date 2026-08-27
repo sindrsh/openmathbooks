@@ -2,11 +2,11 @@
 \input{../../preamb}
 \input{../bm}
 
-%\usepackage{xr}
-%\externaldocument{geo_opg_bm}
+\usepackage{xr}
+\externaldocument{geo_opg_bm}
 
-%\renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
-%\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
+\renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
+\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
 
 \begin{document}
 
@@ -69,6 +69,83 @@ Vi har at
 \[ \tan v=\frac{BC}{AB}=\frac{\frac{BC}{AC}}{\frac{AB}{AC}}=\frac{\sin v}{\cos v} \]
 \fig{opggeovistan_lf}
 
+\opr{opggeoquadrants}
+Vis at hvis $u=180^\circ-v$, så er $\sin u=\sin v$ og $\cos u=-\cos v$.
+
+Av \rref{sincostan} og \rref{sincostan2} har vi at
+\begin{align*}
+	\sin u &=\frac{AC}{OC}=\sin v \vn
+	\cos u &= -\frac{AO}{OC}=-\cos v
+\end{align*}
+\fig{quadrants_lf}
+
+\opr{opggeofindsincostan}
+\abc{
+	\item Vi har at
+	\begin{align*}
+		\sin 180^\circ&=\sin(180^\circ-180^\circ)=\sin 0^\circ =0 \vn
+		\cos 180^\circ&=-\cos(180^\circ-180^\circ)=-\cos 0^\circ =-1
+	\end{align*}
+	Da $\tan x = \frac{\sin x}{\cos x}$ (se \refops{opggeovistan}), er
+	\begin{align*}
+		\tan 180^\circ&=\frac{0}{-1}=0.
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\sin 150^\circ&=\sin(180^\circ-150^\circ)=\sin 30^\circ =\frac{1}{2} \vn
+		\cos 150^\circ&=-\cos(180^\circ-150^\circ)=-\cos 30^\circ =\frac{\sqrt{3}}{2}\vn
+		\tan 150^\circ&= \frac{\frac{1}{2}}{-\frac{\sqrt{3}}{2}}=-\frac{1}{\sqrt{3}}
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\sin 135^\circ&=\sin(180^\circ-135^\circ)=\sin 45^\circ =\frac{\sqrt{2}}{2} \vn
+		\sin 135^\circ&=-\cos(180^\circ-135^\circ)=\cos 45^\circ =-\frac{\sqrt{2}}{2} \vn
+		\tan 135^\circ &= -1
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\sin 120^\circ&=\sin(180^\circ-120^\circ)=\sin 60^\circ =\frac{\sqrt{3}}{2} \vn
+		\cos 120^\circ&=-\cos(180^\circ-120^\circ)=\cos 60^\circ =-\frac{1}{2} \vn
+		\tan 120^\circ&=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}
+	\end{align*}
+}
+
+\opr{1TV23D1opg1}
+\abc{
+	\item Vi har at
+	\[ \sin u = \frac{AB}{BC}=\frac{4}{5}\quad,\quad \cos u = \frac{3}{5} \]
+	Dermed er
+	Av \pyt\ er
+	\begin{align*}
+		(\sin u)^2+(\cos u)^2 &=\left(\frac{4}{5}\right)^2+\left(\frac{3}{5}\right)^2 \br
+		&=\frac{16}{25}+\frac{9}{25} \br
+		&= 1
+	\end{align*}
+	\item Vi har at 
+	\[ \frac{\sin u}{\cos u}=\frac{\frac{4}{5}}{\frac{3}{5}}=\frac{4}{3}=\frac{AC}{AB}=\tan u \]
+	\item Vi har at
+	\[ \tan v =\frac{AB}{AC}=\frac{3}{4} \]
+	Dermed er
+	\[ \tan u \tan v = \frac{4}{3}\cdot \frac{3}{4}=1 \]
+	\item Vis at likningene fra a), b) og c) gjelder for alle rettvinklede trekanter.
+	Av \pyt\ har vi at
+	\begin{align*}
+		AB^2 + AC^2 &= BC^2 \\
+		\frac{AB^2}{BC^2}+\frac{AC^2}{BC^2}&= 1 \br
+		\left(\frac{AB}{BC}\right)^2+\left(\frac{AC}{BC}\right)^2 &= 1\br
+		(\sin u)^2+(\cos u)^2 &= 1
+	\end{align*}
+	At $\frac{\sin u}{\cos u}=\tan u$ har vi vist i \refops{opggeovistan}. Videre
+	har vi at
+	\[ \tan u \tan v = \frac{AC}{AB}\cdot\frac{AB}{AC}=1 \]
+}
+\begin{figure}
+	\centering
+	\includegraphics{\figp{1th22opg1_lf}} \qquad
+	\includegraphics{\figp{1th22opg1b_lf}}
+\end{figure}
+
+
 \opr{opggeo2r}
 \abc{
 	\item Vi har at
@@ -86,7 +163,7 @@ Vi har at
 		(a+b+c)r &= ac \\
 		r &= \frac{ac}{a+b+c}
 	}
-	\item Av oppgave (a) og (b) er
+	\item Av oppgave a) og b) er
 	\algv{
 		c+a-b &= \frac{2ac}{a+b+c} \\
 		(c+a-b)(a+b+c)&=2ac \\
@@ -101,7 +178,7 @@ Vi har at
 Vi setter $ v=\angle BAC $.
 Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
 \[ \angle EBC=90^\circ-\angle CBO=u \]
-
+\newpage
 \grubr{opggeoslope}\\
 Vi har at
 \alg{
@@ -119,6 +196,7 @@ Vi har at $ y=360-x $. Da $ x $ og $ y $ er de tilhørende sentralvinklene til h
 	y&=180^\circ-v
 }
 
+\newpage
 \grubr{opggeokordteo}
 \fig{opggeokordteolos}
 Av \rref{perfvink} har vi at $ \angle CBA=\angle CDA $. Da $ \angle CPA=\angle DPB $ (de er toppvinkler), er dermed $ \triangle PDA \sim \triangle PBC$. Altså har vi at
@@ -146,6 +224,7 @@ $ \triangle ABE $ er rettvinklet og likebeint. Periferivinklene $ \angle BCE $ o
 v = \angle BAE=45^\circ
 }
 
+\newpage
 \grubr{opggeosin18}
 \fig{opggeosin18los}
 Da $ \angle BAC=\angle CBA=72^\circ $, er $ \triangle ABC $ likebeint ($ AC=BC $) og $ \angle ACB= 36^\circ $. Altså er også $ \triangle BEC $ likebeint ($ EB=EC $). $ \triangle ABC \sim \triangle AEB$ fordi de har $ \angle BAC $ felles, og $ \angle ACB=\angle EBA $. Vi setter $ x=AB $ og $ y=BC $, og får at
@@ -163,7 +242,18 @@ Vi forkaster den negative løsningen for $ x $, og får at
 \[BD=\frac{x}{2}=\frac{\sqrt{5}-1}{4}y  \]
 Da $ \sin 18^\circ=\frac{BD}{BC} $, er
 \[ \sin 18^\circ = \frac{\sqrt{5}-1}{4} \]
+\newpage
+\grubr{opggeoR}
+\fig{opggeoRlos}
+Av \rref{perfvink} er $ \angle CSA=2\angle CBA $. Da $ \triangle ASC $ er likesidet, er derfor $ \angle DSA=\angle CBA $. Følgelig er $ \triangle ASD\sim \triangle CBE $. Dette betyr at
+\alg{
+	\frac{a}{EC}&=\frac{r}{\frac{1}{2}b} \\
+	r&=\frac{ab}{2EC}
+}
+Da $ 2A_{\triangle ABC}=EC\cdot c $, er $ EC=\frac{2A_{\triangle ABC}}{c} $, og dermed er
+\[ r=\frac{abc}{4A_{\triangle ABC}} \]
 
+\newpage
 \grubr{opggeoviscosuv}
 \fig{opgcoscos}
 I figuren over merker vi oss at
@@ -183,18 +273,8 @@ OD &= OH-CH-DC \\
 \cos(u+v)&=1-(1-\cos u)-\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u \\
 &= \cos u \cos v- \sin u \sin v
 }
+
 \newpage
-\grubr{opggeoR}
-\fig{opggeoRlos}
-Av \rref{perfvink} er $ \angle CSA=2\angle CBA $. Da $ \triangle ASC $ er likesidet, er derfor $ \angle DSA=\angle CBA $. Følgelig er $ \triangle ASD\sim \triangle CBE $. Dette betyr at
-\alg{
-\frac{a}{EC}&=\frac{r}{\frac{1}{2}b} \\
-r&=\frac{ab}{2EC}
-}
-Da $ 2A_{\triangle ABC}=EC\cdot c $, er $ EC=\frac{2A_{\triangle ABC}}{c} $, og dermed er
-\[ r=\frac{abc}{4A_{\triangle ABC}} \]
-
-
 \grubr{opggeotalesTMconv} \\
 Gitt $ \triangle ABC$, hvor $ \angle C=90^\circ $, $ a=BC $, $ b=AC $, og $ c=AB $. Da er $ 4A_{\triangle ABC}=2ab $.
 Av \grubrs{opggeoR} er da $  r=\frac{c}{2} $. Altså er $ c=2r $, og er dermed en diameter i den omskrevne sirkelen.
@@ -202,7 +282,7 @@ Av \grubrs{opggeoR} er da $  r=\frac{c}{2} $. Altså er $ c=2r $, og er dermed e
 \grubr{opggeotangentsq}\\
 Av \refops{opggeotanchord} er $\angle ADB=\angle BAC$. Dermed har $\triangle BAC$ og $\triangle BDA$ to parvis like store vinkler (de har $\angle DBA$ felles), og dermed er trekantene formlike. Altså har vi at
 \alg{
-\frac{AB}{BD}&=\frac{BC}{AB} \\
+\frac{AB}{BD}&=\frac{BC}{AB} \br
 AB^2 &= BC\cdot BD
 }
 \fig{opggeotangentsq_los}
