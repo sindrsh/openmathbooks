@@ -20,10 +20,10 @@ Det som virkelig skiller følger fra mengder er dette:
 Hvert element i en følge beskrives gjerne ved hjelp av en indeksert bokstav. Lar vi $ a_i $ betegne elementene i en følge, bruker vi $ {i\in \mathbb{N}}$.
 \eks{
 Gitt følgen\footnote{Når det er erklært at en samling av tall er en følge, er det vanlig å utelate klammeparentesene.}
-\begin{equation}
+\begin{equation*}
 	2, 4, 8, 16 
-\end{equation}
-Denne følgen kan vi skriv som $\{a_i\}$, hvor
+\end{equation*}
+Denne følgen kan vi skrive som $\{a_i\}$, hvor
 \[ a_1=2\quad,\quad a_2=4\quad,\quad a_3=8\quad,\quad a_4=16 \]
 }
 \spr{
@@ -48,7 +48,7 @@ Det neste elementet i denne følgen er gitt ved å multiplisere det forrige elem
 
 En \outl{eksplisitt formel}\index{eksplisitt formel} er et uttrykk der verdien til et element er gitt ved indeksen.
 \eks{
-Gitt følgen\footnote{Symbolet \sym{$ ... $} viser at nye elementet fortsetter i det uendelige.}
+Gitt følgen\footnote{Symbolet \sym{$ ... $} viser at nye elementer fortsetter i det uendelige.}
 \begin{equation*}
 	2, 4, 8, 16, 32, 64, ...  
 \end{equation*}
@@ -92,13 +92,13 @@ Av dette innser vi at den eksplisitte formelen er gitt ved
 
 \reg[Aritmetisk følge]{ \label{arfol}
 	Et element $ a_i $  i en aritmetisk følge er gitt ved den rekursive formelen
-	\begin{equation}\label{arrekeq}
+	\begin{equation*}
 		a_i=a_{i-1}+d
-	\end{equation}
+	\end{equation*}
 	og den eksplisitte formelen
-	\begin{equation}
-		a_i=a_1+d(i-1) \label{ekspl}
-	\end{equation}
+	\begin{equation*}
+		a_i=a_1+d(i-1)
+	\end{equation*}
 	hvor differansen $ d=a_i-a_{i-1} $ er en konstant.}
 \newpage
 \eks[]{Finn den rekursive og den eksplisitte formelen til følgen
@@ -123,13 +123,13 @@ Av dette innser vi at den eksplisitte formelen er gitt ved
 
 \reg[Geometrisk følge]{ \label{geofol}
 	Et element $ a_i $  i en geometrisk følge er gitt ved den rekursive formelen
-	\begin{equation}\label{geofolgrek}
+	\begin{equation*}
 		a_i=a_{i-1}\cdot k
-	\end{equation}
+	\end{equation*}
 	og den eksplisitte formelen
-	\begin{equation}\label{geofolgeks}
+	\begin{equation*}
 		a_i=a_1\cdot k^{i-1}
-	\end{equation}
+	\end{equation*}
 	hvor kvotienten $k=\frac{a_i}{a_{i-1}}$ er en konstant.
 }
 \eks[]{
@@ -170,9 +170,9 @@ Skrives ofte bare som
 	Hvis leddene i en rekke kan beskrives som en aritmetisk følge, kalles rekken en \outl{aritmetisk rekke}.\vsk
 	
 	Summen $ S_n $ av de $ n $ første leddene i en aritmetisk rekke er gitt som
-	\begin{equation}\label{arrek}
+	\begin{equation*}
 		S_n = n\frac{a_1+a_n}{2}
-	\end{equation}
+	\end{equation*}
 	hvor $ a_1 $ er det første elementet i rekken.
 } \regv
 
@@ -184,19 +184,19 @@ Skrives ofte bare som
 	\sv
 	Det $ i $-te leddet $a_i$ i rekken er gitt ved formelen
 	\[ a_i=3+4(i-1) \]
-	Dette er derfor en aritmetisk rekke, og summen av de $ n $ første  leddene er da gitt av \eqref{arrek}. Ledd nr.\,10 blir da
+	Dette er en aritmetisk rekke, og da er
 	\[ a_{10} = 3+4(10-1) = 39 \]
 	Altså har vi at
 	\[ S_{10} = 10\cdot\frac{3+39}{2} = 210 \]
 } \vsk
 \fork{\ref{sumarrek} \sumarrek}{
-	Ved å bruke den eksplisitte formelen fra \eqref{ekspl}, kan vi skrive summen av en aritmetisk rekke med $ n $ element som
+	Ved å bruke den eksplisitte formelen fra \rref{arfol} kan vi skrive summen av en aritmetisk rekke med $ n $ elementer som
 	\begin{equation}
 		S_n = a_1 + (a_1+d) + (a_1+ 2d)+...+ (a_1+d(n-1)) \label{a1}
 	\end{equation}
 	Men et ledd i rekken kan også uttrykkes slik:
 	\[ a_i= a_n-(n-i)d \]
-	Og da kan vi skrive summen som (her står ledd nummer $n$ først, deretter ledd nummer $n-1$ osv.)
+	Og da kan vi skrive summen som (her står ledd nummer $n$ først, deretter ledd nummer $n-1$ og så videre)
 	\begin{equation}
 		S_n = a_n + (a_n-d)+(a_n-2d)+...+(a_n-d(n-1)) \label{a2}
 	\end{equation}
@@ -216,9 +216,9 @@ Summen $ S_n $ av de $ n $ første leddene i en geometrisk rekke med kvotient $ 
 		&&S_n=a_1\frac{1-k^n}{1-k} & & (k\neq 1) 
 	\end{flalign*}
 	Hvis $ {k=1}, $ er
-	\begin{equation}
+	\begin{equation*}
 		 S_n = na_1
-	\end{equation}
+	\end{equation*}
 }
 \eks{ \label{gerekeks}
 Gitt den uendelige rekken
@@ -260,16 +260,16 @@ Hvis $ {|k|<1} $, er
 Summen av uendelig mange ledd går altså mot en konkret verdi. I dette tilfellet er altså rekken konvergent. Hvis derimot $ |k|\geq 1$, går summen mot $ \pm \infty$. Da er rekken divergent.\regv
 \reg[Summen av en uendelig geometrisk rekke]{
 	For en uendelig geometrisk rekke med kvotient $ {k<|1|} $ og første element $ a_1 $ er summen $ S_\infty $ av rekken gitt som
-	\begin{equation}
-		S_\infty = \frac{a_1}{1-k} \label{infsum}
-	\end{equation}
+	\begin{equation*}
+		S_\infty = \frac{a_1}{1-k}
+	\end{equation*}
 }
 \newpage
 \eks{
 Finn summen av rekken
 \[ 7+7\cdot10^{-1}+7\cdot10^{-2}+... \]
 \sv
-Dette er en geometrisk rekke med $a_1=7$ og $k=10^{-1}=\frac{1}{10}$. Dermed har vi at
+Dette er en geometrisk rekke med ${a_1=7}$ og ${k=10^{-1}=\frac{1}{10}}$. Dermed har vi at
 \[ S_\infty=\frac{7}{1-\frac{1}{10}}=\frac{70}{9} \]
 }
 \newpage
@@ -328,9 +328,9 @@ Men frem til ledd nr. $ k $ er det tatt for gitt at \eqref{induk} gjelder, derme
 Altså er ligningen gyldig. Og nå kommer den briljante konklusjonen: Vi har vist at \eqref{induk} er sann for ${ n=1 }$. I tillegg har vi vist at hvis ligningen gjelder for ${n= k} $, så gjelder den også for $ {n=k+1} $. På grunn av dette vet vi at \eqref{induk} gjelder for ${n= 1+1=2} $. Men når vi vet at den gjelder for $ {n=2} $, gelder den også for $ {n=2+1=3} $ og så videre, altså for alle heltall!\regv
 \reg[Induksjon \label{reginduksjon}]{
 	Når vi ved induksjon ønsker å vise at ligningen
-	\begin{equation}\label{induksjon}
-		A(n)=B(n)
-	\end{equation}
+	\begin{equation*}\label{induksjon}
+		A(n)=B(n) \tag{a}
+	\end{equation*}
 	er sann for alle $ n\in\mathbb{N} $, gjør vi følgende:
 	\begin{enumerate}
 		\item Sjekker at \eqref{induksjon} er sann for $ {n=1} $.

@@ -1,0 +1,125 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+
+\begin{document}
+\opgt
+
+\op{opgder1overx}
+Use the definition of the derivative to show that for the function $f(x)=\frac{1}{x}$, $f'(x)=-\frac{1}{x^2}$.
+
+\op{opgderpoly}
+Differentiate the expressions\os
+\abch{
+	\item $ 5x^3 $
+	\item $ -8x^{6} $
+	\item $ \frac{3}{7}x^7 $
+	\item $ -x^{\frac{2}{3}} $
+	\item $ x^{\frac{9}{7}} $
+}
+
+\op{dereogln}
+Differentiate the expressions \os
+\abch{
+	\item $ 2e^x $
+	\item $ -30e^x $
+	\item $ 8\ln x $
+	\item $ -4\ln x $
+}
+
+\op{opgderxr}
+Explain how you can rewrite expressions in the form $\frac{1}{x^k}$ so that you can use \eqref{derxr} to differentiate the expressions.
+
+\op{opgderxr2}
+Differentiate the expressions (Hint: See \refops{opgderxr})\os
+\abch{
+	\item $ \dfrac{5}{x^2} $
+	\item $ \dfrac{7}{x^{10}} $
+	\item $ -\dfrac{2}{9x^{7}} $
+	\item $ \dfrac{3}{11x^{\frac{8}{5}}} $
+}
+
+\op{opgderruleselmnt}
+Differentiate the functions \os
+\abch{
+	\item $ g(x)= 3x^3-4x+\frac{1}{x} $
+	\item $ f(x) = x^2 +\ln x $
+	\item $ h(x)= \ln x+x^2+2 $
+	\item $ a(x)=x^2+e^x $
+	\item $ p(x)=e^x+\ln x $
+}
+
+\op{opgdermhpx}
+Differentiate the expressions with respect to $ x $. \os
+
+\abch{
+	\item $ ax^2+bx+c $ 
+	\item $ 7x^5-3ax+b $
+	\item $ -9qx^7+3px^3+b^3 $
+}
+
+
+\nes
+
+
+\op{opgderrules}
+Differentiate the functions \os
+\abch{
+	\item $ f(x)=x\sqrt{1-2x} $
+	\item $ p(x)= 3xe^{2x} $
+	\item $ h(x)=3x^2\ln x $
+	\item $ k(x)=\sqrt{4x^2-5} $
+	\item $ f(x)=x^3\sqrt{2x-1} $
+	\item $ q(x)=\frac{x^3}{x^2-2} $
+	\item $ f(x)=\left(x^2+2\right)^7 $
+	\item $ h(x)=\frac{x}{e^{x^2}} $
+}
+\newpage
+\op{opgderlhopeks}
+Solve \grubr{R1V22D1opg2} using L'Hopital's rule.
+
+\newpage
+\grubop{R1V22D1opg1}
+(R1V22D1)\\
+A function $ f $ is given by
+\begin{equation*}
+	f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x^2+1 &,&x<2 \br
+			x-t   &,& x\geq 2
+		\end{array}
+	}\right. 
+\end{equation*}
+\abc{
+	\item Determine the number $ t $ so that $ f $ becomes a continuous function. Remember to justify your answer. \item Decide if $ f $ is differentiable at $ x=2 $ for the value of $ t $ you found in part a).
+}
+
+\grubop{opgderxn}
+Use the definition of the derivative to find the derivative function for $ {f_1(x)=x} $, ${f_2(x)=x^2} $, ${f_3(x)= x^3} $. \os
+
+Let $ f_n(x)=x^n $ for $ n\in \mathbb{N} $. Use what you have found to suggest an expression for $ f_n'(x)=x^n $.
+
+\grubop{t1h23d1opg3} (T1H23D1)\os
+The function $ f $ is given by
+\[ f(x)=x^3-3x^2-x+4\]
+Determine the equation of the tangent to $ f $ at the point $ (1, f(1) $).
+
+\grubop{opgbevisdivreg}
+Prove that \eqref{divdereq} is valid.
+
+\grubop{opgbevisapow(x)der}
+Prove that $ \left(a^x\right)'= a^x\ln a $.
+
+\newpage
+\grubop{opgderkont}
+\abc{
+	\item Show that
+	\st{
+		If the derivative function of $ f(x) $ is continuous for $ x\in[a, b] $, then $ f $ is continuous for $ x\in(a, b) $.
+	}
+	Hint: Use \eqref{derdefalt}.
+	\item Use the result from part a) to explain why all polynomial functions are continuous for all $ x $.
+}
+
+\end{document}

@@ -1,0 +1,31 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\vedlegg{Rolle's Theorem and the Mean Value Theorem} \label{vdlrollandmeanval}
+\reg[Rolle's Theorem \label{rolle}]{
+	Given a continuous function $ f(x) $, differentiable on the interval $ (a, b) $, and where $ f(a)=f(b) $. Then there exists a number $ c\in[a, b] $ such that $ f'(c)=0 $.
+	\fig{roll}
+}
+\fork{\ref{rolle} \rolle}{
+	If the expression for $ f $ is a constant, then $ f'(x)=0 $ over the entire interval, and the statement about the number $ c $ is obviously true. \vsk
+	
+	If the expression for $ f $ is not constant, this implies that $ f $ has a local extremum on the interval $ (a, b) $ (since $ {f(a)=f(b)} $). Let $ c $ be this extremum point, by \rref{fderekstr} then $ f'(c)=0 $.
+}\vsk \vsk
+
+\reg[\meanval \label{meanval}]{
+	Given a function $ f(x) $, differentiable on the interval $ (a, b) $. Then there exists a number $ c\in(a, b) $ such that
+	\begin{equation}\label{meanvaleq}
+		f'(c)=\frac{f(b)-f(a)}{b-a}
+	\end{equation}
+	\fig{meanval}
+}
+\fork{\ref{meanval} \meanval}{
+	Let $ g(x) $ be the linear function that describes the line passing through the points $ (a, f(a)) $ and $ (b, f(b)) $. We further define
+	\[ h(x)=f-g=f(x)-\frac{f(b)-f(a)}{b-a}(a-x)+f(a) \]
+	Then we have that $ h(a)=h(b)=0 $. By \refunnbr{rolle}{\rolle} we know then that there exists a number $ c\in(a, b) $ where $ {h'(c)=0} $. This means that
+	\[ f'(c)-\frac{f(b)-f(a)}{b-a}=0 \]
+}
+
+\end{document}

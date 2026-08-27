@@ -1,5 +1,6 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import mods;
+import three;
+import "../../inh" as inh;
 
 import three;
 import mods;

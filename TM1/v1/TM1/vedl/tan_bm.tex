@@ -1,0 +1,75 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+\vedlegg{Tangeringslinja til en graf} \label{vdltangent}
+\subsection*{Introduksjon}
+Innen geometri er en \textit{tangeringslinje til en sirkel} definert som en linje som skjærer en sirkel i bare ett punkt (Moise, 1974). Av denne definisjonen kan det vises at 
+\begin{itemize}
+	\item en tangeringslinje står normalt på vektoren dannet av sentrum i sirkelen og skjæringspunktet
+	\item enhver linje som har et skjæringspunkt med en sirkel, og hvor skjæringspunktet og sentrum i sirkelen danner en normalvektor til linja, er en tangeringslinje til sirkelen.
+\end{itemize}
+(Se \textsl{figur \ref{sirkoggraf}a}.) \vsk
+
+Gitt en deriverbar funksjon $ f(x) $. Innen reell analyse defineres \textit{tangeringslinja til f i punktet $ (a, f(a)) $} som linja som går gjennom $ (a, f(a)) $ og har stigningstall $ f'(a) $ (Spivak, 1994). (Se \textsl{Figur \ref{sirkoggraf}b}.)
+\begin{figure}[H]
+\centering
+\subfloat[]{\includegraphics{\figp{tang0a}}}\qquad \qquad
+\subfloat[]{\includegraphics{\figp{tang0b}}}
+\caption{\label{sirkoggraf}}
+\end{figure}
+Det er for mange ganske intuitivt at tangeringslinjer til sirkler og tangeringslinjer til grafer er nært beslektet, men formålet med denne teksten er å formalisere dette.
+
+\subsection*{Senteret til krumningen}
+Gitt en funksjon $ {\vec{r}(t)=[f(t), g(t)]} $ der $ f $ og $ g $ er kontinuerlige og to ganger deriverbare for alle $ t\in\mathbb{R} $, og hvor $ f''(t), g''(t)\neq0 $. For $ a, h\in\mathbb{R} $ setter vi $ b=a-h $ og $ c=a+h $. Videre innfører vi  punktene
+\nn{
+A=\vec{r}(a)\quad,\quad B= \vec{r}(b)\quad,\quad C=\vec{r}(c)
+}
+I tillegg introduserer vi skrivemåten $ k_d^{\hat{n}}(t) $, hvor $ \hat n $ erstattet med $ n $ eksemplar  av $ ' $ viser til den $ n $-te deriverte av funksjonen $ k(t) $ i punktet $ d $. \vsk
+
+La $ S=(S_x, S_y) $ være sentrum i den omskrevne sirkelen til $ \triangle ABC $. På samme måte som vi finner den \textit{deriverte} i et punkt ved å la avstanden mellom to punkt på en graf gå mot 0, kan man finne \outl{krumningen} i et punkt ved å la avstanden mellom tre punkt gå mot 0. I vårt tilfelle er krumningen beskrevet av den omskrevne sirkelen til $ \triangle ABC $ når $ h $ går mot 0.
+\begin{figure}[H]
+\centering
+\subfloat[]{
+\includegraphics{\figp{tang1b}}
+}
+\subfloat[]{\includegraphics{\figp{tang1c}}}
+\caption{\label{krumnfig}}
+\end{figure}
+\subsection*{Et likningssett for $\bm S $}
+Vi har at
+\alg{
+	\vv{BA}&= [f_s-f_{b}, g_a-g_{b}] \br \vv{AC}&=[f_c-f_a, g_c-g_a]
+}
+La $ B_m $ og $ C_m $ være midptunktene til henholdsvis  (sekantene) $ AB $ og $ AC $. Da er
+\nn{
+	B_m = \frac{1}{2}(A+B)\qquad,\qquad C_m = \frac{1}{2}(A+C)
+}
+$ [g_a-g_b,f_b-f_a] $ er en normalvektor for $ \vv{BA} $, dette betyr at midtnormalen $\bm l_1 $ til $ AB $ kan parameterisere som
+\nn{
+{\bm l_1(p)}=B_m+[g_a-g_b,f_b-f_a] p \label{l1}
+}
+Tilsvarende er midtnormalen $\bm l_2 $ til $ AC $ parameterisert ved
+\[ {\bm l_2(q)}=C_m+[g_a-g_c,f_c-f_a] q \]
+$ S $ sammenfaller med skjæringspunktet til $\bm l_1 $ og $\bm l_2 $.
+Ved å kreve at $\bm l_1= \bm l_2 $, får vi et lineært likningssett med $ p $ og $ q $ som ukjente. La $ q=q_s $ være løsningen av dette likningssettet, da vet vi at
+\[ S=C_m+[g_a-g_c, f_c-f_a]q_s\]
+Videre er
+\[ \lim\limits_{h\to0}S=\lim\limits_{h\to0}\left(C_m+[g_a-g_c, f_c-g_a]\frac{h}{h}q_s\right)=A+[-g'_a, f'_a]\lim\limits_{h\to 0}h q_s \]
+At grensen $ \lim\limits_{h\to 0}h q_s $ eksisterer viser vi avslutningsvis, og observerer nå dette: Når $ h\to0 $, blir $ \vv{AS} $ parallell med vektoren $ [-g'_a, f'_a] $. Vi har at $ \vec{r}'(a)=[f'_a, g'_a] $, og dermed er er 
+\[ \vv{AS}\cdot \vec{r}\,'(a)=0 \]
+Linja som går gjennom punktet $ \vec{r}(a) $, og som har $ \vec{r}\,'(a) $ som retningsvektor er altså en tangeringslinje til sirkelen som beskriver krumningen til $ \vec{r} $ i $ a $. \vsk
+
+\subsubsection{Undersøkelse av grensenverdien}
+Ved å løse det nevnte likningssettet, finner vi at
+\nn{
+	q_s=\frac{1}{2}\frac{f_c(f_c-f_a)+f_b(f_a-f_c)+g_c(g_c-g_a)+g_b(g_a-g_c)}{f_b(g_c-g_a)+f_c(g_a-g_b)+f_a(g_b-g_c)}
+}
+Videre er
+\[ \lim\limits_{h\to 0} q_s=\lim\limits_{h\to 0}\frac{h}{h}q_s=\lim\limits_{h\to 0}\frac{f_cf_a'-f_bf_a'+g_cg_a'-g_bg_a'}{f_bg_a'+f_cg_b'-2f_ag_a'} \]
+Ved samme prosedyre har vi at
+\[\lim\limits_{h\to 0}q_s= \lim\limits_{h\to 0} \frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'} \]
+Videre har vi at {\footnotesize
+\[ \lim\limits_{h\to 0}h q_s= h\frac{(f_a')^2+(g_a')^2}{f_a'g_b'-f_b'g_a'-f_b'g_b'+f_b'g_b'}=\lim\limits_{h\to 0}\frac{(f_a')^2+(g_a')^2}{f_b''g_b'+f_b'g_b''}=\frac{(f_a')^2+(g_a')^2}{f_a''g_a'+f_a'g_a''} \]}
+\end{document}

@@ -87,5 +87,53 @@ Sirkelen har radius $ r $.	Vis at $ 4BC\cdot r=\sqrt{2}BE\cdot CF $
 Let $ r $ denote the radius of the circle.	Show that
 \[ 4BC\cdot r=\sqrt{2}BE\cdot CF \]	
 \fig{opggeo4zr}
+
+\newpage
+\abc{
+\item Given the functions $f(x)=4x$ and $g(x)=-\frac{1}{4}x$. Show that the graph of $f$ and the graph of $g$ are perpendicular.
+\item Given the functions $f(x)=ax+b$ and $g(x)=-\frac{1}{a}x+c$. Show that the graph of $f$ and the graph of $g$ are perpendicular.
+}
+
+
+\newpage
+\abc{
+\item \textbf{Method 1}\\
+The graphs of $f$ and $g$ intersect when $x=0$. We set\\ $A=(0, 0)$, $B=(1, 0)$, and $C=(1, f(1))=(1, 4)$. Furthermore, we set $D=(-4, 0)$ and $E=(-4, g(-4))=(-4, 1)$. Since $DE=AB$ and $DA=BC$, and $\angle ADE=\angle CBA$, the triangles $\triangle EDA \sim \triangle ABC$.
+\fig{opggeoperlina1_lf}
+\newpage
+\textbf{Method 2} \\
+The graphs of $f$ and $g$ clearly intersect when $x=0$. We set\\ $A=(0, 0)$, $B=(1, 0)$, and $C=(1, f(1))=(1, 4)$. Let $E$ be the point on the graph of $g$ with the same $y$-value as $C$. At $E$,
+\alg{
+	g(x)&=4 \\
+	-\frac{1}{4}x &= 4 \\
+	x &= -16
+}
+Thus, $E=(-16, 4)$. We set $D=(-16, 0)$. By the Pythagorean theorem on $\triangle AED$, we have
+\[ EA^2 = ED^2 + AD^2 = 4^2 + 16^2 = 16 + 16^2 = 16(1 + 16) = 16 \cdot 17 \]
+By the Pythagorean theorem on $\triangle BAC$, we have
+\[ AC^2 = AB^2 + BC^2 = 1^2 + 4^2 = 17 \]
+If the graphs of $f$ and $g$ are perpendicular to each other, then $\angle CAE = 90^\circ$, and $\triangle AEC$ must satisfy the Pythagorean theorem. We know that $EC = BD = 17$, and thus we must require that
+\[ EC^2 = AC^2 + EA^2 = 17^2 \]
+We have
+\[ AC^2 + EA^2 = 17 + 16 \cdot 17 = 17(1 + 16) = 17^2 \]
+Thus, $\triangle AEC$ is a right triangle.
+\fig{opggeoperlina2_lf}
+\newpage
+\item We assume $a > 1$. If $f = g$, we have
+\begin{align*}
+	ax + b &= -\frac{1}{a}x + c \br
+	x &= \frac{a(b - c)}{a^2 + 1}
+\end{align*}
+This equation is guaranteed to have a solution, and thus we know that $f$ and $g$ intersect at a point $A$. We place $B$ and $D$ on the same horizontal line as $A$ such that $AD = BD = 1$. Furthermore, we place $E$ and $C$ on the graphs of $g$ and $f$, respectively, such that $DA \perp ED$ and $AB \perp BC$. Then, $DE = \frac{1}{a}$ and $BC = a$. We know that in $\triangle ADE$, the longest leg is $AD$ and the shortest leg is $DE$, and in $\triangle ABC$, the longest leg is $BC$ and the shortest leg is $AB$. Furthermore,
+\[ \frac{DE}{AD} = \frac{AB}{BC} = \frac{1}{a} \]
+Since $\angle ADE = \angle CBA$, it follows that $\triangle ADE \sim \triangle CBA$, and thus
+\begin{align*}
+	\angle CAE &= 180^\circ - \angle EAD - \angle BAC \\
+	&= 180^\circ - \angle EAD - \left(90^\circ - \angle EAD\right) \\
+	&= 90^\circ
+\end{align*}
+The explanations for the cases where $0 < a < 1$ or $a < 0$ are almost identical to the one we have given for $a > 1$.
+\fig{opggeoperlinb_lf}
+}
 \end{document}
 

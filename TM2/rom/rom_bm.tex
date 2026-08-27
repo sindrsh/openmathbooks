@@ -4,12 +4,12 @@
 
 \begin{document}
 
-\section{Vektorfunksjoner (Parameteriseringer)}
+\section{Vektorfunksjoner (Parameteriseringer) \index{vektorfunksjon}\index{parameterisering}}
 \subsection*{Vektorfunksjoner i rommet}
 I \tmen\, så vi på todimensjonale vektorfunksjoner. Ved å legge til en $z$-komponent, får vi tredimensjonale vektorfunksjoner. I denne boka skal vi i tillegg se på vektorfunksjoner som kan ha flere enn én variabel.
 \reg[Vektorfunksjoner i rommet]{
 Gitt tre funksjoner $f(s, t)$, $g(s, t)$, og $h(s, t)$. En vektor $\vec{v}$ på formen
-\[ \vec{v}=[f(s, t), g(s, t), h(s, t)] \]
+\[ \vec{v}(s, t)=[f(s, t), g(s, t), h(s, t)] \]
 er da en vektorfunksjon i rommet. \vsk
 
 Alternativt kan $\vec{v}$ skrives som
@@ -19,18 +19,50 @@ Alternativt kan $\vec{v}$ skrives som
 	z=h(s, t)
 \end{array}\right. \]
 
+} 
+
+\reg[Den deriverte av en vektorfunksjon]{
+Gitt tre deriverbare funksjoner $f(t)$, $g(t)$ og $h(t)$, og vektorfunksjonen
+\[ \vec{r}(t)=[f(t), g(t), h(t)] \]
+Den deriverte funksjonen $\vec{r}\,'(t)$ til $\vec{r}$ er da definert som
+\[ \vec{r}\,'(t)=[f'(t), g'(t), h'(t)] \]
+$\vec{r}'(a)$ er en retningsvektor til tangenten til $\vec{r}$ for $t=a$.
+\fig{vekvek}
+Den andrederiverte funksjonen $\vec{r}\,''(t)$ til $\vec{r}$ er definert som
+\[ \vec{r}\,''(t)=\left(\vec{r}\,'\right)'=[f''(t), g''(t), h''(t)] \]
+
+
+}
+\newpage
+\eks{
+Gitt vektorfunksjonen $\vec{r}(t)=[2t^2, -t, \cos t]$.
+\abc{
+\item Finn $\vec{r}\,'(t)$.
+\item Finn $\vec{r}\,''(0)$
 }
 
-\subsection{Linje i rommet}\index{linje}\index{parameterisering! av linje}
+\sv
+\abc{
+\item Vi har at
+\[ \vec{r}\,'(t)=\left[\left(2t^2\right)', (-t)', (\cos t)'\right]=[4t, -1, -\sin t] \]
+\item Vi har at
+\[ \vec{r}\,''(t)=\left[(4t)', (-1)', (-\sin t)'\right]=[4, 0, -\cos t] \]
+Følgelig er $\vec{r}\,''(0)=[4, 0, -1]$
+}
+
+}
+
+\subsection*{Linje i rommet}\index{linje}\index{parameterisering! av linje}
 \reg[\linrom \label{linrom}]{
-	En linje $\vec{l}$ som går gjennom punktet $ {A=(x_0, y_0, z_0)} $ og har retningsvektor $ {\vec{r}=[a, b, c] }$ er gitt ved
-	\[ \vec{l}(t)=A+t\vec{r}=[x_0+at, y_0+bt, z_0+ct] \]
+	En linje $l$ som går gjennom punktet $ {A=(x_0, y_0, z_0)} $ og har retningsvektor $ {\vec{r}=[a, b, c] }$ er gitt ved
+	\[ l(t)=A+t\vec{r}=[x_0+at, y_0+bt, z_0+ct] \]
 	\fig{lin}
 }
+\newpage
 \eks{\label{lirep}
-	En linje går gjennom punktene ${ A=(-2, 2, 1)} $ og $ {B=(2, 4, -5)} $.\os
+	Gitt punktene ${ A=(-2, 2, 1)} $ og $ {B=(2, 4, -5)} $.\os
 	\abc{
-	\item Finn en parameterisering for linja $ \vec{l} $ som går gjennom $ A $ og $ B $. \os
+	\item Finn en parameterisering for linja $ l $ som går gjennom\\ $ A $ og $ B $. \os
 	\item Sjekk om punktet ${C= (-5, 3, 6)} $ ligger på linja.
 	}
 	
@@ -45,9 +77,9 @@ Alternativt kan $\vec{v}$ skrives som
 		&= 2[2, 1, -3]
 	}
 	Dette betyr at ${\vec{r}=[2, 1, -3]}$ også er en retningsvektor for linja. Følgelig er
-	\[\vec{l}(t)= A+t\vv{r}=[-2 + 2t,	2 + t, 1 -3t] \]
+	\[l(t)= A+t\vv{r}=[-2 + 2t,	2 + t, 1 -3t] \]
 	Alternativt kan vi skrive
-	\[ \vec{l}(t):\left\{\begin{array}{lll}
+	\[ l(t):\left\{\begin{array}{lll}
 		x=-2+2t \\
 		y=2+t \\
 		z=1-3t
@@ -61,7 +93,7 @@ Alternativt kan $\vec{v}$ skrives som
 	}
 }
 \fork{\ref{linrom} \linrom}{
-Det todimensjonale tilfellet som er vist i \tmen\ kan enkelt utvides til det tredimensjonale tilfellet. Dette er overlatt til leseren å vise.
+Det todimensjonale tilfellet som er vist i \tmen\ kan enkelt utvides til det tredimensjonale tilfellet. 
 }
 \newpage
 \subsection{Plan i rommet}\index{plan}\index{parameterisering!av plan}
@@ -75,6 +107,7 @@ Hvis vi ønsker å komme oss til et vilkårlig punkt $\alpha(s, t)= B=(x, y ,z) 
 	Et plan $\alpha$ som inneholder punktet $A=[x_0, y_0]$, og som er utspent av vektorene $\vec{u}=[a_1, b_1, c_1]$ og $\vec{v}=[a_2, b_2, c_2]$, er gitt ved
 	\[ \alpha(s, t)=A + s\vec{u}+t\vec{v} \]
 }
+
 \eks[1]{ \label{plpare}
 Et plan $\alpha$ inneholder punktene $ {A=(-2, 3, 5) }$, $ {B=(-10, 1, 9)} $ og $C= {(0, 5, -4)} $.
 \abc{
@@ -149,7 +182,9 @@ Parameteriseringen til planet blir altså
 }\right. \]
 \textsl{Merk:} Vi har her introdusert variabelen $ q $ for å tydeligjøre at variabelen for $ l $ og variablene for $ \alpha $ er uavhengige av hverandre.
 }
-
+\spr{
+Hvis alle punkt på ei linje også ligger i ett og samme plan, sier vi at linja ligger i planet.
+}
 \section{Ligninger til geometrier}
 \subsection{Ligningen til et plan}\index{plan!ligningen til}
 En mer kompakt metode enn parameterisering er å beskrive et plan ved en ligning. 
@@ -164,17 +199,17 @@ a(x-x_0)+b(y-y_0)+c(z-z_0)&= 	0
 	}
 Om vi slår sammen alle konstantene til én konstant $ d=-(ax_0+by_0+cz_0) $, kan vi videre skrive
 \[ ax+bx+cz+d =0\]
-\reg[Ligningen til et plan i rommet]{
+\reg[Ligningen til et plan i rommet \label{romplan}]{
 	Et plan med normalvektor $ {\vec{n}=[a, b, c]} $ kan uttrykkes ved ligningen
-	\begin{equation}\label{planlig}
+	\begin{equation*}
 		a(x-x_0) + b(y-y_0) + c(z-z_0)=0
-	\end{equation}
+	\end{equation*}
 	hvor $ A=(x_0, y_0, z_0) $ er et vilkårlig punkt i planet. \vsk\\
 	
 	Eventuelt kan man skrive
-	\begin{equation}\label{planlig2}
+	\begin{equation*}
 		ax + by + zc + d=0
-	\end{equation}
+	\end{equation*}
 	hvor $ -(ax_0 + by_0 +cz_0)=d $.
 }
 \eks[1]{\label{plroe1}
@@ -198,6 +233,8 @@ Om vi slår sammen alle konstantene til én konstant $ d=-(ax_0+by_0+cz_0) $, ka
 		8x+24+7y-21+3z-12 &= 0 \\
 		8x+7y+3z-9&=0
 	}\vs
+}
+\spr{Gitt et plan $\alpha$ med normalvektor $\vec{n}$. Hvis vi for en vektor $\vec{v}$ har at $\vec{v}\cdot\vec{n}=0$, sier vi at $\vec{v}$ ligger i $\alpha$.
 }
 \newpage
 \eks[2]{\label{plroe2}
@@ -227,8 +264,8 @@ Om vi slår sammen alle konstantene til én konstant $ d=-(ax_0+by_0+cz_0) $, ka
 	}
 }
 \eks[3]{\label{plpare3}
-Et plan $ \alpha $ gitt ved ligningen ${2x-3y-3z-11=0}  $ møter en linje $ \vec{l} $ i et punkt $ A $. Finn koordinatene til $ A $ når $ \vec{l} $ er gitt ved
-		\[\vec{l}(t): \left\lbrace{\begin{array}{l}
+Et plan $ \alpha $ gitt ved ligningen ${2x-3y-3z-11=0}  $ møter en linje $ l $ i et punkt $ A $. Finn koordinatene til $ A $ når $ l $ er gitt ved
+		\[l(t): \left\lbrace{\begin{array}{l}
 	x= -1 -2t   \\
 	y= -1 + t    \\
 	z= 1 + 2t 
@@ -243,13 +280,29 @@ t &= -1
 }
 Koordinatene til $ A $ blir da
 \alg{
-A &=(-1-2(-1), -1+(-1), 1+2(-1)) \\
+A &=(-1-2\cdot(-1), -1+(-1), 1+2\cdot(-1)) \\
  &= (1, -2, -1)
 }\vs
-}\vsk
+}
+\spr{
+Gitt en vektorfunksjon $\vec{u}$ og et plan $\alpha$ med normalvektor $\vec{n}$. Hvis vi for et punkt $A=\vec{u}(a)$ har at $\vec{u}\,'(a)\cdot \vec{n}=0$, sier vi at kurven til $\vec{u}$ tangerer $\alpha$ i $A$.
+\vsk
+
+Gitt vektorene $\vec{e}_x=[1, 0, 0]$, $\vec{e}_y=[0, 1, 0]$ og $\vec{e}_z=[0, 0, 1]$.
+\begin{itemize}
+	\item Planet utspent av $e_x$ og $e_y$ kalles $xy$-planet.
+	\item Planet utspent av $e_x$ og $e_z$ kalles $xz$-planet.
+	\item Planet utstpent av $e_y$ og $e_z$ kalles $yz$-planet.
+\end{itemize}
+
+}
+\eks[4]{
+Ku
+}
+
 
 \subsection{Linja mellom to plan}\index{linje!mellom to plan}
-Gitt to ikke-parallelle plan, det ene med normalvektor $ \vec{n}_1 $ og det andre med normalvektor $ \vec{n}_2 $. Planene vil skjære hverandre langs ei linje med en retningsvektor som må ligge i begge planene. Dette innebærer at retningsvektoren står normalt på både $ \vec{n}_1 $ og $ \vec{n}_2 $, med andre ord må\footnote{Alle vektorer som står normalt på både $ \vec{n}_1 $ og $ \vec{n}_2 $ er parallelle med vektoren $ \vec{n}_1\times\vec{n}_2 $ (se s. \pageref{allekrypropar}). } $ \vec{n}_1\times\vec{n}_2 $ være en retningsvektor for linja.
+Gitt to ikke-parallelle plan, det ene med normalvektor $ \vec{n}_1 $ og det andre med normalvektor $ \vec{n}_2 $. Planene vil skjære hverandre langs ei linje med en retningsvektor som må ligge i begge planene. Dette innebærer at retningsvektoren står normalt på både $ \vec{n}_1 $ og $ \vec{n}_2 $, med andre ord må\footnote{Alle vektorer som står normalt på både $ \vec{n}_1 $ og $ \vec{n}_2 $ er parallelle med vektoren $ \vec{n}_1\times\vec{n}_2 $ (se side \pageref{allekrypropar}). } $ \vec{n}_1\times\vec{n}_2 $ være en retningsvektor for linja.
 
 \figc{plskj}{Skjæringslinje mellom to plan.\label{plskj}}
 \reg[Linja mellom to plan]{
@@ -341,7 +394,7 @@ Overflaten som dannes av alle punktene som oppfyller kulelikningen kalles \outl{
 		&= [4, -4, 2] \\
 		&=2[2, -2, 1]
 	}
-	Altså er $ [2, -2, 1] $ en normalvektor for tangentplanet. Av (\ref{planlig}) kan dette planet uttrykkes ved ligningen
+	Altså er $ [2, -2, 1] $ en normalvektor for tangentplanet. Av \rref{romplan} kan dette planet uttrykkes ved ligningen
 	\alg{
 		2(x-7)-2(y-(-6))+1(z-4)&=0 \\
 		2(x-7)-2(y+6)+1(z-4)&=0\\
@@ -388,13 +441,13 @@ Dette uttrykket gir de samme punktene som ved \textsl{Metode 1}.
 }
 \section{Avstander mellom geometrier}
 \subsection{Avstand mellom punkt og linje}\index{avstand!fra punkt til linje}
-Gitt en linje $ \vec{l} $ i rommet, beskrevet av punktet \textit{A} og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja.
+Gitt en linje $ l $ i rommet, beskrevet av punktet \textit{A} og en retningsvektor $ \vec{r} $. I tillegg ligger et punkt \textit{B} utenfor linja.
 
 \figc{plin}{Punkt $ B $ en avstand $ h $ fra linja $ l $. \label{plin}}
-Vi ønsker nå å finne den korteste avstanden fra \textit{B} til linja. Denne avstanden identifiserer vi som høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Av (\ref{vektre}) har vi at arealet til trekanten er gitt ved uttrykket
+Vi ønsker nå å finne den korteste avstanden fra \textit{B} til linja. Denne avstanden identifiserer vi som høyden \textit{h} i trekanten utspent av $ \vec{r} $ og $ \vv{AB} $. Av \rref{vekproarvol} har vi at arealet til trekanten er gitt ved
 \[ \frac{1}{2}\left|\vv{AB}\times \vec r\,\right| \]
 Av den klassiske arealformelen for en trekant (se \mb) er
-\alg{\frac{1}{2}|\vec{r}|h &=\frac{1}{2}\left|\vv{AB}\times \vec r\,\right|  \br
+\alg{\frac{1}{2}|\vec{r}\hspace{1pt}|h &=\frac{1}{2}\left|\vv{AB}\times \vec r\,\right|  \br
 	h &= \frac{\left|\vv{AB}\times \vec r\,\right| }{|\vec{r}|}
 }
 \newpage
@@ -457,9 +510,12 @@ h &= \frac{|2(-1)-4+3\cdot5-21|}{\sqrt{2^2+(-1)^2+3^2}} \\
  &= \frac{|-12|}{\sqrt{14}}\\
  &= \frac{12}{\sqrt{14}}
 }
-
 }
 \newpage
+\spr{Hvis avstanden mellom et plan og sentrum i en kule tilsvarer radien til kula, sier vi at planet tangerer kula.\vsk
+
+Gitt et plan og en kule med sentrum $S$ og radius $r$. Hvis planet tangerer kula, og vi for punktet $A$ i planet har at $AS=r$, så er $A$ tangeringspunktet til planet og kula.
+}
 \fork{\ref{avstplnpkt} \avstplnpkt}{
 \begin{figure}
 	\centering
@@ -488,7 +544,7 @@ Siden både $\vec{n}$ og $\vv{P_0P_1}$ er normalvektorer til planet, må vi ha a
 	\left||\vec{n}|\left|\vv{P_0P_1}\right|\cos v\right|&=\left|\vec{n}\cdot\vv{P_0P_1}\right| \br
 	\left|\vv{P_0P_1}\right| &= \frac{\left|\vec{n}\cdot\vv{P_0P_1}\right| }{|\vec{n}|}
 }
-Av (\ref{dlig2}) og \rref{veklen}
+Av (\ref{dlig2}) og \rref{veklen} har vi at
 \[\left|\vv{P_0P_1}\right|= \frac{|ax_1 + by_1 + cz_1+d|}{\sqrt{a^2 +b^2  +c^2}} \]
 }
 
@@ -504,7 +560,7 @@ Når geometrier i rommet skjærer hverandre, danner de forskjellige vinkler mell
 \end{figure}
 Gitt to linjer $ m $ og $ l $ med hver sine retningsvektorer $ \vec{r}_1 $ og $ \vec{r}_2 $. Vi ønsker å finne den minste vinkelen mellom disse linjene. Vi lar $ u $ betegne den største vinkelen og $ v $ den minste vinkelen mellom linjene.  Linjene danner et par av vinkelen $ u $ og et par av vinkelen $ v $, mens retningsvektorene $ r_1 $ og $ r_2 $ vil utspenne enten $ u $ eller $ v $ (se \fref{vinkell}). \vsk
 
-Av \eqref{skal2} har vi at
+Av \rref{skalarproduktet2} har vi at
 \[ \cos \angle(\vec{r}_1, \vec{r}_2 )=\frac{\vec{r}_1\cdot\vec{r}_2}{|\vec{r}_1||\vec{r}_2|} \]
 Vi vet at uttrykket over representerer cosinusverdien til $ u $ eller $ v $, men ikke hvilken av dem. Siden $ {v=180^\circ-u} $, er  $ |\cos u|=|\cos v| $. Videre er $ {180^\circ \geq u\geq90^\circ} $ og $ {90^\circ \geq u\geq0^\circ} $. Altså er ${ \cos u \leq 0} $ og ${ \cos v \geq 0} $. Dette betyr at
 \alg{

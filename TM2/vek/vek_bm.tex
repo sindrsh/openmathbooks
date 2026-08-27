@@ -10,9 +10,9 @@ I \tmen\ har vi sett på todimensjonale vektorer beskrevet ved hjelp av en $ x $
 
 \regdef[Vektoren mellom to punkt \index{vektor!mellom to punkt}]{
 	En vektor $ \vec{v} $ med startpunkt $ {A=(x_1, y_1, z_1)}$ og endepunkt ${B=(x_2, y_2, z_2) }$ er gitt som
-	\begin{equation}\label{vektmpunkt}
+	\begin{equation*}
 		\vec{u}= [x_2-x_1, y_2-y_1, z_2-z_1] 
-	\end{equation} \vs
+	\end{equation*} \vs
 } 
 \eks{
 	Finn vektoren $ \vec{u} $ mellom punktet  ${A=(1, 2, 0) } $ og $ {B=(3, 0,\\ 1)} $.
@@ -30,7 +30,7 @@ La oss finne lengden til en vektor $ {\vec{u}=[x_1, y_1, z_1]} $, som skissert i
 \figc{vekt3}{\label{lenu}}
 Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $ og $ \hat{u}=\sqrt{x_1^2+y_1^2} $. Av Pytagoras' setning har vi da at
 \[ |\vec{u}|=\sqrt{\hat{u}^2+z_1^2} = \sqrt{x_1^2+y_1^2+z_1^2} \]
-\reg[lengden til en vektor]{
+\reg[Lengden til en vektor]{
 	Lengden $ |\vec{u}|$ av en vektor $ {\vec{u}=[x_1, y_1, z_1]} $ er gitt som
 	\nreq{|\vec{u}|=\sqrt{x_1^2+y_1^2+z_1^2} \label{lengd}} \vs
 }
@@ -109,14 +109,14 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 
 \reg[Skalarproduktet I]{
 	Skalarproduktet av to vektorer  $ {\vec{u}=[x_1, y_1, z_1]} $ og $ {\vec{v}=[x_2, y_2, z_2]} $ kan skrives som	
-	\begin{equation}
+	\begin{equation*}
 		\vec{u} \cdot \vec{v} = x_1 x_2+y_1 y_2+z_1 z_2
-	\end{equation}
+	\end{equation*}
 	
 	For særtilfellet $ \vec{u}\cdot\vec{u} $ er
-	\begin{equation}
+	\begin{equation*}
 		\vec{u}\cdot\vec{u}=\vec{u}^{\,2}
-	\end{equation}	\vs
+	\end{equation*}	\vs
 	
 }
 \eks{Finn skalarproduktet av vektorene $ {\vec{a}=[1, 2, 3]} $ og $ \vec{b}=[4,-3,-2] $.
@@ -125,11 +125,11 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 	\[ \vec{a}\cdot\vec{b}= 1\cdot4 + 2\cdot(-3)+3\cdot(-2)=-8 \]
 } \vsk
 
-\reg[Skalarproduktet II]{
+\reg[Skalarproduktet II \label{skalarproduktet2}]{
 	Skalarproduktet av to vektorer  $ \vec{u} $ og $ \vec{v}$ er gitt som
-	\begin{equation}
-		\vec{u} \cdot \vec{v}= |\vec{u}| |\vec{v}| \cos \theta \label{skal2}
-	\end{equation}
+	\begin{equation*}
+		\vec{u} \cdot \vec{v}= |\vec{u}| |\vec{v}| \cos \theta 
+	\end{equation*}
 	hvor $ \theta=\angle(\vec{u}, \vec{v}) $.
 }
 \eks[1]{
@@ -185,11 +185,11 @@ Vi kan alltid lage en rettvinklet trekant med sidelengder $ |\vec{u}| $, $ z_1 $
 }
 
 \section{Vinkelrette og parallelle vektorer \label{vinkrogpar}}
-\reg[Vinkelrette vektorer ]{
+\reg[Vinkelrette vektorer \label{uvort}]{
 	For vektorer $ \vec{u} $ og $ \vec{v} $ har vi at
-	\begin{equation}\label{vnkr}
+	\begin{equation*}
 		\vec{u} \cdot \vec{v} = 0\iff \vec{u}\perp \vec{v}
-	\end{equation}
+	\end{equation*}
 }
 
 \eks[1]{
@@ -207,13 +207,13 @@ Altså er $ \vec{a}\perp\vec{b} $.
 
 \reg[\parvek \label{parvek}]{
 	For to vektorer $ {\vec{u}=[x_1, y_1, z_1]} \text{ og } {\vec{v}=[x_2, y_2, z_2]} $ har vi at
-	\begin{equation}
+	\begin{equation*}
 		\frac{x_1}{x_2}=\frac{y_1}{y_2}=\frac{z_1}{z_2} \iff \vec{u}\parallel\vec{v}
-	\end{equation}
+	\end{equation*}
 Alternativt, for et tall $ t $ har vi at
-\begin{equation}
+\begin{equation*}
 	\vec{u}=t\vec{v}\iff \vec{u}\parallel\vec{v}
-\end{equation}
+\end{equation*}
 }
 \newpage
 \eks[1]{
@@ -248,14 +248,14 @@ t &= -4
 }
 
 \section{Determinanter} \index{determinant}
-\reg[\boldmath$ 3\times3$ determinanter]{
+\reg[\label{determinant}\boldmath$ 3\times3$ determinanter]{
 	Determinanten $ \det(\vec{u}, \vec{v}, \vec{w}) $ av tre vektorer $ {\vec{u}=[a, b, c]} $, $ {\vec{v}=[d, e, f]} $ og $ {\vec{w}=[g, h, i] }$ er gitt som
-	\begin{align}
+	\begin{align*}
 		\det(\vec{u}, \vec{v}, \vec{w}) &= \left|\begin{matrix}
 			a & b & c \\
 			d & e & f \\
 			h & i & j
-		\end{matrix}\right|\nonumber \\[5 pt]
+		\end{matrix}\right|\\[5 pt]
 		&= a\left|\begin{matrix}
 			e & f \\
 			i & j
@@ -265,31 +265,31 @@ t &= -4
 		\end{matrix}\right|+c\left|\begin{matrix}
 			d & e \\
 			h & i
-		\end{matrix}\right| \label{3det1}
+		\end{matrix}\right| 
 		\\[5 pt]
-		&= a(ej-fi)-b(dj-fh)+c(di-eh) \label{3det2}
-	\end{align}\vs
+		&= a(ej-fi)-b(dj-fh)+c(di-eh) 
+	\end{align*}
 }
 \eks{\label{eks33}
 	Finn $ \det\left(\vec{a}, \vec{b}, \vec{c}\right) $ til vektorene $ \vec{a}=[1, -2, 2], \vec{b}=[2, 2, -3]  $ og \\ $ \vec{c}=[4, -1, 2] $.	\\
 	
 	\sv 
-	Vi skal altså regne ut følgende:
+	Vi har at
 	\[ 
-	\left|\begin{matrix}
+	\det\left(\vec{a}, \vec{b}, \vec{c}\right)=\left|\begin{matrix}
 		1 & -2 & 2 \\
 		2 & 2 & -3 \\
 		4 & -1 & 2
 	\end{matrix}\right|
 	\]
 	
-	Å gå rundt å huske (\ref{3det2}) er ikke bare bare, så vi skal her bruke et triks som gjør det enklere for oss å komme fram til høyresiden i (\ref{3det1}).\vsk \\
+	Det er selvsagt mulig å sette tallene direkte inn i uttrykket gitt i \rref{determinant}, men vi skal bruke anledningen til å vise en annen metode.\vsk
 	
 	Vi starter med å finne tallet i første rad og kolonne, i vårt tilfelle 1. Deretter danner vi en $ {2\times 2}$ determinant ved å utelukke raden og kolonnen dette tallet tilhører:
 	\begin{center}
 		\includegraphics[]{fig/331}
 	\end{center}
-	Når vi ganger 1 med denne determinanten, har vi funnet det første leddet fra (\ref{3det1}):
+	Når vi ganger 1 med denne determinanten, har vi funnet det første leddet til $ \det\left(\vec{a}, \vec{b}, \vec{c}\right) $:
 	\[ 1\cdot\left|\begin{matrix}
 		2 & -3  \\
 		-1 & 2
@@ -298,16 +298,16 @@ t &= -4
 	\begin{center}
 		\includegraphics[]{fig/332}
 	\end{center}
-	Når vi setter et minustegn foran $ -2 $ ganger denne determinanten, har vi funnet andre ledd fra (\ref{3det1}):
+	Når vi setter et minustegn foran $ -2 $ ganger denne determinanten, har vi funnet det andre leddet til $ \det\left(\vec{a}, \vec{b}, \vec{c}\right) $:
 	\[ -(-2)\cdot\left|\begin{matrix}
 		2 & -3  \\
 		4 & 2
 	\end{matrix}\right| \]
-	Vi avslutter med determinanten vi får ved å utelukke første rad og tredje kolonne:
+	Vi avslutter med tallet i første rad og tredje kolonne, altså 2, og den tilhørende $2\times2$ determinanten:
 	\begin{center}
 		\includegraphics[]{fig/333}
 	\end{center}
-	Ganger vi denne med tallet som står i både raden og kolonnen som er utelatt, altså 2, får vi siste ledd i (\ref{3det1}):
+	Dette gir oss det siste leddet i $ \det\left(\vec{a}, \vec{b}, \vec{c}\right) $:
 	\[ 2\cdot\left|\begin{matrix}
 		2 & 2  \\
 		4 & -1
@@ -334,25 +334,25 @@ Vi har sett hvordan vi ved skalarproduktet kan sjekke om to vektorer $ \vec{u} $
 
 \reg[\vekpro \label{vekpro}]{
 	Vektorproduktet av vektorene $  {\vec{u}=[a, b, c]} $ og $ {\vec{v}=[d, e, f]} $ er gitt som
-	\begin{equation}
-		\vec{u}\times\vec{v}=[bf-ce, -(af-cd), ae-bd] \label{vekproeq}
-	\end{equation}
+	\begin{equation*}
+		\vec{u}\times\vec{v}=[bf-ce, -(af-cd), ae-bd]
+	\end{equation*}
 	Eventuelt kan man skrive
-	\begin{equation}
+	\begin{equation*}
 		\vec{u}\times\vec{v} = \left|\begin{matrix}
 			\vec{e}_x & \vec{e}_y & \vec{e}_z \\
 			a & b & c \\
 			d & e & f
-		\end{matrix}\right| \label{vp1}
-	\end{equation}
+		\end{matrix}\right| 
+	\end{equation*}
 	hvor $ \vec{e}_x=[1, 0, 0], \vec{e}_y=[0, 1, 0] $ og $ \vec{e}_z=[0, 0, 1] $.\vsk
 	
 	Videre har vi at\footnote{Vektorprodukt må regnes ut før skalarprodukt.}\vs
-	\begin{align}
+	\begin{align*}
 		&\vec{u}\times\vec{v}\cdot\vec{u}=0 \\
 		&\vec{u}\times\vec{v}\cdot\vec{v} =0 \\
-		&|\vec{u}\times\vec{v}|=|\vec{u}||\vec{v}|\sin \angle(\vec{u}, \vec{v}) \label{vekplen}
-	\end{align}\vs\vs
+		&|\vec{u}\times\vec{v}|=|\vec{u}||\vec{v}|\sin \angle(\vec{u}, \vec{v})
+	\end{align*}
 } \vsk
 \spr{
 Et vektorprodukt kalles også et \outl{kryssprodukt}\index{kryssprodukt}.
@@ -371,13 +371,13 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 	
 	\sv
 	\abc{
-		\item Vi bruker uttrykket fra (\ref{vp1}),	og regner ut følgende $ {3\times3} $ determinant:
+		\item Vi har at
 	\[ \vec{a}\times\vec{b} =\left|\begin{matrix}
 		\vec{e}_x & \vec{e}_y & \vec{e}_z \\
 		-3 & 2 & 3 \\
 		2 & -2 & 1
 	\end{matrix}\right|  \]
-	Vi får da at (se gjerne tilbake til eksempelet på side \pageref{eks33})
+	Dermed er (se gjerne tilbake til eksempelet på side \pageref{eks33})
 	{\small
 		\alg{
 			\vec{a}\times\vec{b}&=\vec{e}_x\left|\begin{matrix}
@@ -404,12 +404,12 @@ For skalarproduktet får vi en skalar (et tall), mens vi for vektorproduktet få
 } \vsk
 \reg[Regneregler for vektorproduktet]{
 	For vektorene $ \vec{u}, \vec{v} $ og $ \vec{w} $ og en konstant $ t $ har vi at
-	\begin{align}
+	\begin{align*}
 		\vec{u}\times\vec{v} &= -\vec{v}\times\vec{u} \\
 		\vec{u}\times{(t\vec{v})} &= t(\vec{u}\times\vec{v}) \\
 		\vec{u}\times(\vec{v}+\vec{w})&=\vec{u}\times\vec{v}+\vec{u}\times\vec{w}\\
-		\vec{u}\times\vec{v}\cdot\vec{w}&= \vec{w}\times\vec{u}\cdot\vec{v} \label{ukryvpriw}
-	\end{align}\vs
+		\vec{u}\times\vec{v}\cdot\vec{w}&= \vec{w}\times\vec{u}\cdot\vec{v}
+	\end{align*}
 }
 \newpage
 \subsection{Vektorprodukt som areal og volum}\index{vektorprodukt!som areal og volum}
@@ -426,25 +426,35 @@ En anvendelse av vektorproduktet (og skalarproduktet) er å finne arealet og vol
 
 \reg[\vekproarvol \label{vekproarvol}]{
 	Arealet $ A $ av et parallellogram dannet av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt ved
-	\nreq{A = |\vec{u}\times\vec{v}| \label{vekpar} }
+	\begin{equation*}
+		A = |\vec{u}\times\vec{v}|
+	\end{equation*}
 	%	\includegraphics[scale=1]{\asym{parll}}
 	Arealet $ A $ av en trekant dannet av vektorene $ \vec{u} $ og $ \vec{v} $ er gitt ved
-	\nreq{A = \frac{1}{2}|\vec{u}\times\vec{v}|\label{vektre}}
+	\begin{equation*}
+		A = \frac{1}{2}|\vec{u}\times\vec{v}|
+	\end{equation*}
 	Volumet $ V $ av parallellepipedet dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved
-	\nreq{V = \left|\vec{u}\times\vec{v}\cdot\vec{w}\,\right|}
+	\begin{equation*}
+		V = \left|\vec{u}\times\vec{v}\cdot\vec{w}\,\right|
+	\end{equation*}
 	%\includegraphics[scale=1]{\asym{par}}
 	Volumet $ V $ av pyramiden dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved
-	\nreq{V = \frac{1}{3}|\vec{u}\times\vec{v}\cdot\vec{w}\,|\label{volavpyr} }
+	\begin{equation*}
+		V = \frac{1}{3}|\vec{u}\times\vec{v}\cdot\vec{w}\,|
+	\end{equation*}
 	%\includegraphics[scale=1]{\asym{pyram}}
 	Volumet $ V $ til tetraedet dannet av vektorene $ \vec{u}$, $ \vec{v} $ og $ \vec{w} $ er gitt ved			
-	\nreq{ V = \frac{1}{6}|\vec{u}\times\vec{v}\cdot\vec{w}\,|}\vs
+	\begin{equation*}
+		V = \frac{1}{6}|\vec{u}\times\vec{v}\cdot\vec{w}\,|
+	\end{equation*}
 	%\includegraphics[scale=1]{\asym{tetra}}	
 }
 
 \newpage
 \tsec{Forklaringer}
 \fork{\ref{parvek} \parvek}{
-Ligning \eqref{vekpar} forteller oss at $ {|\vec{u}\times\vec{v}|} $ tilsvarer arealet av parallellogramet utspent av $ \vec{u} $ og $ \vec{v} $. Dette arealet kan bare ha verdien 0 hvis $ \vec{u} $ og $ \vec{v} $ er parallelle, og den eneste vektoren med lengde 0 er nullvektoren $ [0, 0, 0] $. Kombinerer vi dette kravet med \eqref{vekpro}, får vi at
+Av \rref{vekproarvol} vet vi at $ {|\vec{u}\times\vec{v}|} $ tilsvarer arealet av parallellogramet dannet av $ \vec{u} $ og $ \vec{v} $. Dette arealet kan bare ha verdien 0 hvis $ \vec{u} $ og $ \vec{v} $ er parallelle, og den eneste vektoren med lengde 0 er nullvektoren $ [0, 0, 0] $. Kombinerer vi dette kravet med \eqref{vekpro}, får vi at
 \[ [y_1z_2-z_1y_2, -(x_1z_2-z_1x_2), x_1y_2-y_1x_2]=[0, 0, 0] \]
 Uttrykket over gir oss tre ligninger
 \alg{
@@ -463,7 +473,7 @@ Til slutt kan vi samle alle tre til én ligning:
 } \vsk
 
 \fork{\ref{vekpro} \vekpro}{
-Hensikten med vektorproduktet er å innføre en regneoperasjon som gir oss en vektor $  {\vec{w}=[x, y, z]} $ som står normalt på to andre vektorer $ {\vec{u}=[a, b, c]} $ og $ {\vec{v}=[d, e, f]} $. For at dette skal være sant, vet vi av (\ref{vnkr}) at \vs
+Hensikten med vektorproduktet er å innføre en regneoperasjon som gir oss en vektor $  {\vec{w}=[x, y, z]} $ som står normalt på to andre vektorer $ {\vec{u}=[a, b, c]} $ og $ {\vec{v}=[d, e, f]} $. For at dette skal være sant, vet vi av \rref{uvort} at \vs
 \begin{align}
 	\vec{u}\cdot\vec{w}&=0 \nonumber \\ 
 	ax+by+cz &=0 \nonumber\\
@@ -522,7 +532,7 @@ Til slutt merker vi oss to ting (overlatt til leseren å vise):
 For å komme fram til det vi ønsker, skal vi benytte oss av \outl{Lagranges identitet}\footnote{Den spesielt interesserte finner utledningen for identieten i \refved{lagrange}}\index{Lagranges identitet.}. Denne sier at vi for to vektorer
 $ \vec{v} $ og $ \vec{u} $ har at
 \[\phantom{testingcloservl} |\vec{v}\times\vec{u}|^2=|\vec{v}|^2|\vec{u}|^2-(\vec{v}\cdot\vec{u}\,)^2 \tag{Lagranges identitet}\]
-Ved å anvende \eqref{skal2} og \eqref{1} kan vi skrive 
+Ved å anvende \rref{skalarproduktet2} og likning \eqref{1} fra \rref{trid} kan vi skrive 
 \alg{
 	|\vec{v}\times\vec{u}|^2&=|\vec{v}|^2|\vec{u}|^2-|\vec{v}|^2|\vec{u}|^2\cos^2 \theta \\
 	|\vec{v}\times\vec{u}|^2&= |\vec{v}|^2|\vec{u}|^2(1-\cos^2 \theta) \\
@@ -536,9 +546,9 @@ svar på gruble
 	La oss ta utgangspunkt i et parallellogram utspent av to vektorer $ \vec{u}=[a, b] $ og $ \vec{v}=[c, d] $ med en vinkel $ \theta \leq 90^\circ $ mellom seg, som skissert i \fref{det}. Fra klassisk arealregning og trigonometri vet vi at arealet $ A $ av parallallogrammet er:
 	\[ A = |\vec{v}||\vec{u}|\sin \theta  \]
 	Ved hjelp av identieten fra ref?? kan vi omskrive dette til:
-	\begin{equation}
+	\begin{equation*}
 	A = |\vec{v}||\vec{u}|\cos (90^\circ -\theta) \label{ardet}
-	\end{equation}
+	\end{equation*}
 	Vi kan altså tolke $ A $ som skalarproduktet av $ \vec{u} $ og en vektor $ \vec{w} $ med samme lengde som $ \vec{v} $, men en retning slik at $ \angle(\vec{u}, \vec{w})=(90^\circ-\theta) $. Dette medfører at $\angle (\vec{v},\vec{w} )=90^\circ $, og da blir $ \vec{w}\cdot\vec{v}=0 $. Derfor må vi ha at:
 	\[ \vec{w}=[-d, c] \quad\vee\quad \vec{w}=[d, -c] \] 
 	Bare én av disse gir oss den ønskede retningen som fører oss tilbake til (\ref{ardet}), men vi merker oss følgende:
@@ -566,7 +576,7 @@ Volumet $ V $ av et parallellepiped tilsvarer grunnflaten $ A $ ganger høyden $
 	\includegraphics[]{\figp{voparb}}
 	\captionof{figure}{\label{vopar}}	
 \end{figure}
-I \fref{vopar3} er grunnflaten $ A $ utspent av vektorene $ \vec{v} $ og $ \vec{v} $, og vi vet fra (\ref{vekpar}) at
+I \fref{vopar3} er grunnflaten $ A $ utspent av vektorene $ \vec{v} $ og $ \vec{v} $, og vi vet fra \rref{vekproarvol} at
 \begin{equation}
 	A = |\vec{u}\times\vec{v}|  \label{vopar1}
 \end{equation}
@@ -578,7 +588,7 @@ For alle $ \theta\in[0^\circ, 180^\circ] $ kan vi derfor skrive
 \begin{equation}
 	h = \big| |\vec{w}\,|\cos \theta \big| \label{vopar2}
 \end{equation}
-Av \eqref{skal2}, \eqref{vopar0}, \eqref{vopar1} og \eqref{vopar2}, og  har vi derfor at
+Av \rref{skalarproduktet2}, \eqref{vopar0}, \eqref{vopar1} og \eqref{vopar2}, og  har vi derfor at
 \alg{
 	\big|\vec{u}\times\vec{v}\cdot\vec{w}\,\big|&= \big||\vec{u}\times\vec{v}||\vec{w}\,|\cos \theta\big|\\
 	&=Ah \\

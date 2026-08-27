@@ -1,0 +1,322 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+	
+	
+\opgt
+
+\op{antiderint} \vs
+\abc{
+\item Deriver funksjonen $ f(x)=4x^5 $.
+
+\item Finn det bestemte integralet $ \int\limits_0^2 20 x^4 \, dx $.
+}
+
+
+\op{Fogf}
+Relasjonen mellom en funksjon $ F(x) $ og $f(x) $ er at $ F'(x)=f(x) $. Videre er $ F(1)=1 $ og $ F(4)=9 $.\os
+
+Finn det bestemte integralet \y{\int\limits_1^4 f(x) \, dx}.
+
+\op{ecos2x} \vs
+\abc{
+\item Deriver funksjonen $ f(x)=e^{\cos^2 x} $.
+
+\item Finn det ubestemte integralet \[ \int -\sin (2x)\, e^{\cos^2 x}\deltax \]
+}
+
+
+\op{visantider}
+Vis at
+\abc{
+\item $\displaystyle \int x(x+2)e^x \deltax = x^2 e^x + C $
+
+\item $\displaystyle \int -e^{x^2+\cos x} (-2 x+\sin x)\deltax= e^{\cos x+x^2}+C  $
+}
+
+
+\nes
+
+\op{intsopg}
+Finn integralene. \os
+\abch{
+	\item $ \displaystyle \int \frac{3}{4 x} \deltax$ 
+	\item $ \displaystyle \int-\frac{7}{\cos^2 t}\,dt $ 
+	\item $ -4x^5 $
+	\item $\displaystyle \int \cos(\pi x) \deltax$
+	\item $\displaystyle \int 4e^{-4t} \,dt$ 
+	\item $ \displaystyle \int \left(2x^4\deltax - \frac{3}{x^{\frac{3}{2}}}\right) \deltax$ 
+	\item $\displaystyle \int \sqrt{x^5}\deltax $
+}
+
+\newpage
+\op{opgintbestmt}
+Regn ut de bestemte integralene.\os
+\abch{
+\item $\displaystyle \int_{-1}^{1} \left(4x^3-x\right)\deltax $
+\item  $\displaystyle \int_{0}^{\ln 2} e^{2x}\deltax $
+\item $\displaystyle \int_{0}^{1} \left(4x^2+3\right)\deltax$
+}
+\abchs{4}{
+\item $\displaystyle \int_{0}^{1} (2e^x+2x^2)\deltax$
+\item $\displaystyle \int_{0}^{2}(e^{2x}+x)\deltax$
+}
+
+\op{avcos}
+Gjennomsnittet av en funksjon $ f(x) $ over et intervall $ [a, b] $ kan vi skrive som
+\[ \frac{1}{b-a}\int\limits_a^b f(x)\deltax \]
+Gitt et vilkårlig tall $ c $, vis at gjennomsnittet av $f(x)=\cos x+k  $ over intervallet $ [c, c+2\pi] $ er lik $ k $. 
+
+\eksop{R2V23}{r2v23d1opg2}\vs
+\abc{
+\item Vis at hvis $f(x)=\tan x$, så er $f'(x)=1+\tan^2 x$.
+\item Regn ut $\displaystyle \int \frac{1+\tan^2 x}{\tan x}\deltax$.
+}
+
+\op{opgintviselmnt}
+Bevis \eqref{intsinkx}-\eqref{intexpkx} ved å bruke integrasjon ved substutisjon.
+
+\op{bytvaropg}
+Finn integralene:\os
+\abch{
+\item $\displaystyle \int xe^{x^2} \, dx  $ 
+\item $\displaystyle \int\limits_1^2 8xe^{2x^2-3}\deltax $ 
+\item $\displaystyle \int \tan x \, dx $ 
+} \os
+\abchs{4}{
+\item $ \displaystyle \int\limits_0^\frac{\pi}{3}\frac{\sin x}{\cos^3 x} \, dx $ \item $ \displaystyle \int \frac{4x+5}{2x^2 + 5x}\deltax $
+\item $ \displaystyle \int \frac{3x+2}{3x^2 + 4x+3}\deltax $
+} \os
+\abchs{7}{
+\item $\displaystyle \int 4x\sqrt{x^2+2}\deltax$
+\item $\displaystyle \int \sin^3 x \cos x \deltax $
+\item $\displaystyle \frac{2x-1}{x^2-x-6}\deltax$
+} \os
+\abchs{10}{
+\item $\displaystyle \int \frac{\sin(\ln x)}{x}\deltax$
+}
+
+
+\op{eksmpr2v23d1opg7}
+Vi har at
+\[ \int \frac{1}{(1-x)^2}\deltax=\frac{1}{1-x}+C \]
+\abc{
+\item Vis dette ved derivasjon.
+\item Vis dette ved integrasjon.
+}
+
+\eksop{R2H23}{r2h23d1opg1}
+Regn ut integralet
+\[ \int_{-1}^{1}x^3+2x\deltax \]
+Hva forteller svaret deg?
+
+\op{trigint}
+Anvend to av de trigonometriske identitetene og bytte av variabel to ganger for å finne integralet
+\[ \int \sin (2x) e^{1-\cos^2 x}\deltax \]\vs
+
+
+\eksop{R2V24}{r2v24d1opg1}
+Gitt funksjonen $f(x)=-x^3+3x$.
+\abc{
+\item Regn ut integralet $\displaystyle \int_{-1}^{0}f(x)\deltax$
+\item Bestem arealet som er avgrenset av grafen til $f$, $x$-aksen og linjene $x=-1$ og $x=1$.
+}
+
+\op{delvisintopg}
+Finn det bestemte/ubestemte integralet:\os
+\abch{
+\item $\displaystyle \int (x-1)\cos x \, dx$
+\item $\displaystyle \int \sqrt{x}\ln x\deltax $ 
+\item $\displaystyle \int\limits_1^e  \frac{\ln x}{x^2} $
+} \os
+\abchs{4}{
+\item $\displaystyle \int x^2\cdot\ln x\deltax$ 
+\item $\int 4x\cos x \deltax$
+}
+
+
+\op{delbropsopg}
+Finn det bestemte/ubestemte integralet:\os
+\abch{
+	\item $ \displaystyle \int\limits_4^5 \frac{13-4x}{x^2-5x+6}\deltax $ 
+	\item $ \displaystyle \int \frac{41 - 4 x}{(x - 5) (x + 2)}\, dx $ 
+	\item $ \displaystyle \int\limits \frac{x^2+9x-16}{(x-2)(x^2-1)} dx$
+	\item $ \displaystyle \int\frac{3 x^2 - 14 x + 10}{x^3 - 3 x^2 + 2 x} $
+}
+
+
+\op{delbrogpoldiv}
+Finn det ubestemte integralet:
+\[\int \frac{3 x^3 - 2 x^2 - 20 x + 2}{x^2-x-6}\deltax \]
+\textsl{Hint}: Bruk polynomdivisjon.
+
+\newpage
+\nes
+
+\eksop{R2V26}{r2v26d1opg2b}
+Gitt funksjonene $f(x)=x$ og $g(x)=-\frac{3}{x}+4$. Finn arealet avgrenset av grafene til $f$ og $g$.
+
+
+\op{gerfminusdb}
+Gitt to funksjoner $ f(x) $ og $ g(x) $ og en positiv konstant $ k $ slik at
+\[ g=f+k \]
+\abc{
+\item De respektive grafene til $ f $ og $ g $ er vist i figurene under.
+\begin{figure}
+	\centering
+	\includegraphics[]{../fig/int6a}\quad
+	\includegraphics[]{../fig/int6b}
+\end{figure}
+Forklar ut ifra en arealbetraktning hvorfor\[ \int\limits_a^b f \deltax=\int\limits_a^b g\deltax -(b-a)k  \]
+\item Bekreft likheten i oppgave a) ved integrasjon.
+}
+
+
+
+\op{fogF}
+Under vises grafene til $ F(x) $ og $ f(x) $. $ F $ er en antiderivert av $ f $.
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.9]{../fig/faropg}\\
+	\raggedright
+\end{figure}
+Forklar hvorfor arealet av det oransje området er like stort som arealet av det grønne området.
+
+\nes
+\op{kulevolopg}
+La en kule med radius $ r $ være plassert i et koordinatsystem med variabelen $ x $ langs horisontalaksen. Kula er plassert slik at sentrum ligger i origo.\os
+\abc{
+\item Lag en tegning og bestem kulas tverrsnitt $ A $ langs horisontalaksen, uttrykt ved $ r $ og $ x $.
+
+\item Finn volumet $ V $ av kula.
+}
+
+
+\op{omdropg} 
+Finn volumet av omdreiningslegemet til $f$ på intervallet $ [0, 1] $. \os
+\abch{
+\item $ f(x)=e^x  $
+\item $\displaystyle f(x)= \frac{1}{\sqrt{2}}\sqrt{1-\cos(2 \pi x)}$
+}
+
+\eksop{R2H25}{r2h25d1opg2}
+Finn volumet til omdreiningslegemet til $f(x)=\sqrt{x+4}$ på intervallet $[0, 10]$
+
+\eksop{R2V26}{r2v26d1opg5}
+Finn volumet til omdreiningslegemet til $f(x)=2x-1$ på intervallet $[1, 3]$.
+
+\newpage
+
+\grubeksoprecc{r2h24d2opg2c}{R2H24}
+Gitt funksjonene $f(x)=x^3-x^2-ax$ og $g(x)=-x^2+x$.\\
+Avgjør om påstanden er rett. Grunngi svaret ditt.
+\begin{center}
+	\textit{Grafene til} $f$ \textit{og} $g$ \textit{avgrenser to områder som er like store når} $a>-1$
+\end{center}
+
+\grubop{opgint2i}
+\abc{
+\item La $I=\int \frac{\ln x}{x}\deltax$ og $x>0$. Bruk delvis integrasjon til å vise at
+\[ I=(\ln x)^2-I \]
+\item Vis at 
+\[ \int e^x\cos x = \frac{1}{2}e^x(\cos x+\sin x)+C \]
+\item Vis at
+\[ \int \sin^2 x\deltax=\frac{1}{2}(x-\sin x \cos x)+C \]
+}
+
+\grubeksoprecc{r2h24d1opg1}{R2H24}
+\abc{
+\item Bestem $x$ slik at $\displaystyle \int_{0}^{x} \sin\left(\pi t+\frac{\pi}{4}\right)\text{d}t=0$ og $x\in(0, \pi)$.
+\item Hva kan vi vite om arealene til de avgrensede områdene beskrevet av integralet fra oppgave a)?
+}
+
+\grubeksoprecc{r2h25d1opg3}{R2H25}
+Figuren under viser grafen til $f(x)=x^3+x^2-2x$.
+\fig{r2h25d1opg3}
+\abc{
+\item Finn 	arealet til det grønne området.
+\item Forklar hvorfor $\displaystyle \int_{a}^{1}f\deltax$ har to løsninger hvor $a<0$. Den éne tilnærmede løsningen er $a\approx-0,6$. Forklar hvordan man ut i fra figuren kan finne en tilnærmet verdi for den andre løsningen.
+}
+
+
+\grubeksoprecc{r2v25d1opg2}{R2V25}
+Bestem et uttrykk for funksjonen $f$ når
+\begin{itemize}
+	\item $f'(x)=-\frac{2}{x^3}$
+	\item Arealet av området som er avgrenset av grafen til $f$, $x$-aksen og linjene $x=1$ og $x=2$ er $\frac{11}{14}$. Hele området ligger over $x$-aksen.
+\end{itemize}
+
+
+\grubeksop{r2h23d1opg2}{R2H23}
+Figuren viser grafene til funksjonene $ f(x)=\cos x$ og $ g(x)=\sin x $. \\
+Bestem arealet til det fargede området.
+\fig{r2h23d1opg2}
+
+\grubeksop{r2v25d2opg4}{R2V25} \vs
+\abc{
+\item Forklar hvorfor vi for $|x|<1$ har at
+\[ \int 1 \deltax + \int x \deltax + \int x^2 \deltax +...=\int \frac{1}{1-x}\deltax \]
+\item Vis at 
+\[ \frac{1}{2}+\frac{1}{2}\cdot\frac{1}{2^2}+\frac{1}{3}\cdot\frac{1}{2^3}+...=\ln 2 \]
+}
+
+\grubeksop{r2v26d1opg2a}{R2V26}
+Gitt en funksjon $f$ hvor
+\begin{itemize}
+	\item $f$ er definert for $x>0$.
+	\item $f'(x)=\frac{2}{x^2}$
+	\item Grafen til $f$ skjærer punktet $(2, 2)$.
+\end{itemize}
+Finn et uttrykk for $f(x)$.
+
+\op{r2v23d1opg8}
+Figuren under viser grafene til $f(x)=\cos(2x)$ og $g(x)$.
+\abc{
+\item Finn arealet til det røde området.
+\item Vis at
+\[ f^2 = \frac{1}{2}(\cos(4x)+1) \]
+\item Finn volumet til omdreiningslegemet vi får ved å dreie det røde området om $x$-aksen.
+}
+\fig{r2v23d1opg8}
+
+\newpage
+\grubop{opgintarchi}
+Gitt funksjonen $f(x)=a x^2+b x + c$ og punktene $A=(p, f(p))$ og $B=(q, f(q))$.
+\abc{
+\item La $I$ være arealet avgrenset av grafen til $f$ og $AB$. Se  \refgrubs{opginvsym} i \tmen, og avgjør hvilke av $a$, $b$, $c$, $p$ og $q$ vi kan forvente at inngår i uttrykket for $I$.
+\item  Finn uttrykket for $I$.
+\item Se \refgrubs{opgderarchi} i \tmen. Finn $\frac{I}{A_{\triangle ABC}}$.
+\item Finn $\frac{A_{\triangle ABC}}{A_\text{blått område}}$.
+}
+\fig{opgintarchi}
+
+\newpage
+\grubop{opgfunklen}
+Gitt en funksjon $ f(x) $ integrerbar på intervallet $ [a, b] $. Ta det for gitt at lengden $ l $ til grafen til $ f $ er gitt som
+\[ \lim_{n\to \infty}\sum\limits_{i=1}^n \left|P_{i+1}-P_i\right| \]
+For $ i,n\in\mathbb{N} $, hvor $ P_i =(x_i, f(x_i)) $, $ x_1=a $, $ x_n=b $, $ x_{i+1}-x_i=\Delta x $, og $ \lim\limits_{n\to\infty}\Delta x=0 $.
+Vis at vi da kan skrive
+\[ l=\int_{a}^{b} \sqrt{1+g^2}\deltax \]
+hvor $ g(x)=f'(x) $.
+\fig{opgfunklen}
+
+\begin{comment}
+	\subsection*{GeoGebra-oppgaver}
+	\op
+	Hvis $ |x|\ll 1 $ kan man gjøre følgende tilnærming:
+	\[f(x)= \frac{1}{\cos^2 {x}} \approx g(x)=1 + x^2 + \frac{2}{3}x^4 \]
+	
+	\textbf{a)} Tegn $ f(x) $ og $ g(x) $ inn i et koordinatsystem for $ x\in  [-0.4, 0.4]$
+	
+	\textbf{b)} Bruk det faktum at $  \int f(x)\, dx = \tan x $ og at $ \int f(x)\, dx \approx \int g(x)\, dx$ for å finne en tilnærming til $ \tan x $
+\end{comment}
+
+\grubop{opgintxkvadmdef}
+Bruk definisjonen fra (\ref{bint}) til å vise at
+\[ \int\limits_a^b x^2 \deltax = \frac{1}{3}(b^3-a^3) \]
+\begin{comment}
+	\textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
+\end{comment}
+\end{document}

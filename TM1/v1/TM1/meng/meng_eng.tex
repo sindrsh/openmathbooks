@@ -1,0 +1,146 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}
+\section{Sets}
+\subsection{Definition}
+A collection of numbers is called a \outl{set}\footnote{A set can also be a collection of other mathematical objects, such as functions, but in this book, it is sufficient to consider sets of numbers.}, and a number that is part of a set is called an \outl{element}. Sets can contain a finite number of elements and they can contain infinitely many elements. \regv
+\regdef[Sets]{
+	For two numbers $ a $ and $ b $, where $ a\leq b $, we have that
+	\begin{center}
+		\begin{tabular}{c l}
+			$ [a, b] $ & is the set of all numbers greater than or equal to $ a $ \\
+			&and less than or equal to $ b $. \\
+			$ (a, b] $ & is the set of all numbers greater than $ a $ \\
+			&and less than or equal to $ b $.\\ 
+			$ [a, b) $ & is the set of all real numbers greater than or equal to $ a $ \\
+			&and less than $ b $.
+		\end{tabular}
+	\end{center}
+	$ [a, b] $ is called a \outl{closed interval}, $ (a, b) $ is called an \outl{open interval}, and both $ (a, b] $ and $ [a, b) $ are called \outl{half-open intervals}.\vsk
+	
+	The set that contains only $ a $ and $ b $ is written as $ \{a, b\} $. \vsk
+	
+	That $ x $ is an element in a set $ M $ is written as $ x\in M $.\vsk
+	
+	That $ x $ \textsl{is not} an element in a set $ M $ is written as $ x\not \in M $. \vsk
+	
+	That the set $ M $ consists of the sets $ M_1 $ and $ M_2 $ is written as \\$ M = M_1 \cup M_2 $. \vsk
+	
+	That $ x $ is omitted from a set $ M $ is written as $ M \setminus x $
+}
+\spr{
+	$ x \in M$ is pronounced ''$ x $ contained in $ M $''.\vsk
+	
+	Many texts use \sym{$ \langle $} instead of \sym{$ ( $} to indicate open (or half-open) intervals.
+}
+\info{\note}{
+	When we define an interval described by $ a $ and $ b $ hereafter in the book, we take it for granted that $ a $ and $ b $ are two numbers, and that $ a\leq b $.
+}
+
+\eks[1]{
+	The set of all integers greater than 0 and less than 10 can be written as
+	\[ \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \]
+	This set contains 9 elements. 3 is an element in this set, and thus we can write $ 3\in\{1, 2, 3, 4, 5, 6, 7, 8, 9\}  $\vsk 
+	
+	10 is not an element in this set, and thus we can write \\$ 10 \not\in  \{1, 2, 3, 4, 5, 6, 7, 8, 9\} $.
+} 
+\eks[2]{
+	In the expression $ 0\ ?\  x\  ?\  1 $, replace \sym{?} with an inequality symbol so that the expression applies to all $ {x\in M} $, and determine if 1 is contained in $ M $.
+	\abc{
+		\item $ M = [0, 1] $
+		\item $ M = (0, 1] $
+		\item $ M = [0, 1) $
+	}
+	\sv \vs
+	\abc{
+		\item $ 0\leq x \leq 1 $. Furthermore, $ 1\in M $.
+		\item $ 0< x \leq 1 $. Furthermore, $ 1\in M $.
+		\item $ 0\leq x < 1 $. Furthermore, $ 1\not \in M $.
+	}
+}\vsk
+
+\regdef[Names of sets \label{sets}]{\vs
+	\begin{center}
+		\begin{tabular}{c l}
+			$ \mathbb{N} $ & The set of all positive integers\footnote{Does \textsl{not} include 0.}\os
+			$ \mathbb{Z} $ & The set of all integers\footnote{Includes 0.}\os
+			$ \mathbb{Q} $ & The set of all rational numbers\os
+			$ \mathbb{R} $ & The set of all real numbers\os
+			$ \mathbb{C} $ & The set of all complex numbers\\
+		\end{tabular}
+	\end{center}
+}
+
+\subsection{The Symbol for Infinity}
+The sets in \dref{sets} contain infinitely many elements. Sometimes we wish to limit parts of an infinite set, and then there arises a need for a symbol that helps symbolize this. \sym{$ \infty $} is the symbol for an infinitely large, positive value.\regv 
+
+\eks[]{
+	A condition that $ x\geq2 $ can be written as $ x\in[2 ,\, \infty) $.\vsk
+	
+	A condition that $ x<-7 $ can be written as $ x\in(-\infty ,-7) $.\vsk
+}
+\spr{
+	The two intervals in the example above can also be written as $ [2, \rightarrow) $ and $ (\leftarrow, -7) $.
+}
+\info{\note}{
+	\sym{$ \infty $} is not any specific number. Therefore, using the four basic operations alone with this symbol makes no sense.
+}
+\subsection{Domain and Range}
+\regdef[Domain and Range]{
+	Given a function $ f(x) $. 
+	\begin{itemize}
+		\item The set that exclusively contains all the values $ x $ can have, is the \outl{domain} of $ f $. This set is written as $ D_f $.
+		\item The set that exclusively contains all the values $ f $ can have when $ {x\in D_f} $, is the \outl{range} of $ f $. This set is written as $ V_f $. 
+	\end{itemize}
+}
+\eks[1]
+{ \label{setex1}
+	Below figure shows $ {f(x)=2x+1} $, where $ {D_f=[1, 3]} $. Then ${ V_f=[3, 7]} $. \vs
+	\fig{defmengeks1}
+}
+\eks[2]{
+	Below figure shows $ f(x)={\frac{1}{x}} $, where $ {D_f}=[-3, -1] \cup [2, 5] $. Then $ {V_f=\left[-1, -\frac{1}{3}\right]\cup \left[\frac{1}{5},\frac{1}{2}\right]} $. \vs
+	\fig{defmengeks2}
+}
+\newpage
+\info{\note}{
+	The domain of a function is determined by two things; the context in which the function is used, and any values that result in an undefined function expression. In \textsl{Example 1} on page \pageref{setex1}, the domain is arbitrarily chosen, since the function is defined for all $ x $. In \textsl{Example 2}, however, the function is not defined for $ {x=0} $, so a domain including this value for $ x $ would not make sense.
+}
+\section{Conditions}
+\subsection{Symbols for Conditions}
+The symbol \sym{$ \Rightarrow $} is used to indicate that if one condition is satisfied, then another (or several) condition(s) are also satisfied. For example; in \mb\; we saw that if a triangle is right-angled, then Pythagoras' theorem is valid. We can write this as:
+\[ \text{the triangle is right-angled} \Rightarrow \text{Pythagoras' theorem is valid}\]
+But we also saw that the converse is true; if Pythagoras' theorem is valid, then the triangle must be right-angled. Thus, we can write
+\[ \text{the triangle is right-angled} \iff \text{Pythagoras' theorem is valid}\]
+It is very important to be aware of the difference between \sym{$ \Rightarrow $} and \sym{$ \iff $}; that condition A satisfied implies condition B satisfied does not necessarily mean that condition B satisfied implies condition A satisfied! \regv
+
+\eks[1]{ \vs \vs
+	\[ \text{the square is a square}\Rightarrow\text{the square has four equal sides} \]
+}
+\eks[2]{ \vs 
+	\[ \text{the number is a prime number greater than 2}\Rightarrow\text{the number is an odd number} \]
+}
+\eks[3]{\vs
+	\[ \text{the number is an even number}\iff\text{the number is divisible by 2} \]
+}
+\newpage
+\subsection{Functions with Conditions}
+Functions can have multiple expressions that apply under different conditions. Let us define a function $ f(x) $ as follows:
+\alg{
+	&\text{For }x<1 \text{ the function expression is } {-2x+1}\\
+	&\text{For }x\geq 1\text{ the function expression is } x^2-2x
+}
+\figc{funkvilk}{The graph of $ f $ on the interval $ [-1, 3] $.}
+This can be written as
+\begin{equation*}f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			-2x+1 &,&x<1 \br
+			x^2-2x   &,& x\geq 1
+		\end{array}
+	}\right. \label{fsplit}
+\end{equation*}
+
+
+\end{document}

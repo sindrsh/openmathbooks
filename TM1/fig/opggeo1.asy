@@ -1,6 +1,5 @@
-import "../../inh" as inh;
+import "../../inhopg" as inhopg;
 import "../../geo" as geo;
-defaultpen(fontsize(7 pt));
 unitsize(2cm);
 
 Tri t = mktri(1,sqrt(2),1);
@@ -24,7 +23,7 @@ Tri t2 = mktri(sc*sqrt(3)/2,sc*1,sc*1/2);
 t2.rors(sh=(2,0));
 
 dv(t2.C,t2.B,t2.A,"$60^\circ$",0.5N+E,sc=0.25);
-dv(t2.A,t2.B,t2.C,"$30^\circ$",S+0.15W,sc=0.35);
+dv(t2.A,t2.B,t2.C,"$30^\circ$",S+0.15W,sc=0.45);
 
 draw(t2.A--t2.B--t2.C--t2.A);
 

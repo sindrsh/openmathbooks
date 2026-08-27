@@ -1,0 +1,92 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}	
+\vedlegg{Eulers tall} \label{eulerstallfork}
+\subsubsection{Den deriverte som motivajon}
+Gitt funksjonen $ f(x)=a^x $. Da har vi at
+\alg{
+\left(a^x\right)'&=\lim\limits_{h\to 0}\frac{a^{x+h}-a^x}{h}\br
+&= \lim\limits_{h\to 0}\frac{a^{x}a^h-a^x}{h}
+}
+Da $ x $ er uavhengig av $ h $, får vi at
+\alg{
+\left(a^x\right)'=a^x\lim\limits_{h\to 0}\frac{a^h-1}{h}
+}
+Likningen over peker mot noe fantastisk; hvis det finnes et tall $ a $ som er slik at $ {\lim\limits_{h\to 0}\frac{a^h-1}{h}=1} $, så vil funksjonen $ a^x $ være sin egen deriverte funksjon! Altså er da $ \left(a^x\right)'=a^x $. Vi legger nå merke til at hvis
+\[ a=\lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} \]
+så er 
+\algv{
+\lim\limits_{h\to 0}\frac{a^h-1}{h}&=\lim\limits_{h\to 0}\frac{\left(\left(1+h\right)^\frac{1}{h}\right)^h-1}{h}\br
+&=\frac{1+h-1}{h}\\
+&=1
+}
+Hvis vi kan vise at grenseverdien $ \lim\limits_{h\to 0}\left(1+h\right)^\frac{1}{h} $ eksisterer, har vi altså funnet akkurat det uttrykket for $ a $ som vi ønsker oss.
+
+\subsubsection{Undersøking av grenseverdien}
+Vi innfører følgende to funksjoner (motivasjonen for å innføre $ g $ vil komme fram senere):
+\[ f(h)=1+h \qquad,\qquad g(h)=2-\left(\frac{1}{4}\right)^{h}\]
+Videre undersøker vi for hvilke verdier $ f $ er mindre enn  $ g $. Når $ f=g $, har vi at
+\begin{equation}\label{eforkleqh}
+	1+h=2-\left(\frac{1}{4}\right)^h 
+\end{equation}
+Vi gjør nå følgende observasjon: Gitt to tall $ c $ og $ k $, og funksjonen $ p(h)=b^h $, hvor $ k>0 $ og $ 0<b<1 $. Da har vi at
+\alg{
+p(c+k)-p(c)=b^{c+k}-b^{c}=b^c\left(b^{k}-1\right)
+}
+Tilsvarende er
+\alg{
+p(c+2k)-p(c+k)&=b^{c+k}\left(b^{k}-1\right)
+}
+Videre er $ b^{c+k}<b^c $ og $ b^k-1<1 $, som betyr at
+\[ \frac{p(c+k)-p(c)}{k}<\frac{p(c+2k)-p(c+k)}{k} \]
+Dermed må linja mellom $ (c, p(c)) $ og $ (c+k, p(c+k)) $ være brattere enn linja mellom $ (c+k, p(c+k)) $ og $ (c+2k, p(c+2k)) $, og da må $ (c+k, p(c+k)) $ ligge under linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $.
+\fig{ekspfunk3}
+Da $ p(h) $ ikke er en lineær funksjon, må én av disse tre påstandene være gyldig:
+\begin{itemize}
+	\item $ p $ er konveks for alle $ h$
+	\item $ p $ er konkav for alle $ h $
+	\item $ p $ er skiftvis konkav/konveks
+\end{itemize}
+Men hvis $ p $ er konkav, må det finnes et intervall hvor $ (c+k, p(c+k)) $ ligger over linja mellom $ (c, p(c)) $ og $ (c+2k, p(c+2k)) $, og dette er selvmotsigende. Altså må $ p $ nødvendigvis være konveks for alle $ h $.\vsk
+
+\newpage
+Av det vi akkurat har funnet, kan vi konkludere med at funksjonen $2-\left(\frac{1}{4}\right)^h $ er konkav for alle $ h $, og da $ 1+h$ er et lineært uttrykk, har \eqref{eforkleqh} maksimalt to løsninger. Det er enkelt å vise at $ h=0 $ og $ h=\frac{1}{2} $ er løsningene til \eqref{eforkleqh}, og dette betyr at
+\begin{equation}\label{1plushleq}
+1+h\leq 2-\left(\frac{1}{4}\right)^h\qquad,\qquad x\in\left[0, \frac{1}{2}\right] 	
+\end{equation}
+\fig{ekspfunk2}
+Vi setter $z=\frac{1}{h} $ for $ h\neq0 $. Da er
+\[ \lim\limits_{h\to 0} (1+h)^h=\lim\limits_{z\to\infty}=\left(1+\frac{1}{z}\right)^\frac{1}{z} \]
+Videre kan \eqref{1plushleq} omskrives til
+\begin{equation}\label{eforkleqz}
+	1+\frac{1}{z}\leq 2-\left(\frac{1}{4}\right)^\frac{1}{z}\qquad,\qquad z\in[2, \infty]
+\end{equation}
+
+For $ z\to\infty $ kan vi derfor være sikre på at
+\[ 1+\frac{1}{z}<1+1-\left(\frac{1}{4}\right)^\frac{1}{z}+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^2+\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)^3+... \]
+Høgresiden i ulikheten over kjenner vi igjen\footnote{Se om geometriske rekker i \tmto.} som en uendelig geometrisk rekke hvor summen er gitt som
+\[ \frac{1}{1-\left(1-\left(\frac{1}{4}\right)^\frac{1}{z}\right)} =\frac{1}{\left(\frac{1}{4}\right)^\frac{1}{z}}=4^\frac{1}{z} \]
+Altså er
+\begin{equation}\label{eforkllim4}
+	\lim\limits_{z\to\infty}\left(1+\frac{1}{z}\right)^z\leq \lim\limits_{z\to\infty}\left(4^\frac{1}{z}\right)^z=4
+\end{equation}
+\newpage
+Videre er det enkelt å vise at likningen
+\[ 1+h=2-\left(\frac{1}{2}\right)^h \]
+har løsningene $ h=-1 $ og $ h=0 $, som betyr at
+\[ 1+h\geq2-\left(\frac{1}{2}\right)^h \qquad,\qquad h\in[0, \infty]\]
+På tilsvarende måte som vi kom fram til en øvre grense, kan vi bruke dette til å slå fast at
+\[ \lim\limits_{z\to \infty}\left(1 + \frac{1}{z}\right)^z\geq 2 \] 
+Dermed vet vi at $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ ligger et sted mellom 2 og 4. Da\\ uttrykket inneholder utelukkende positive ledd for $ {z\to\infty} $, kan vi også være sikre på at grenseverdien er endelig\footnote{I motsetning til å være ubestemt. For eksempel vil $ \lim\limits_{x\to \infty} \cos x $  være ubestemt, fordi $ \cos x $ svinger mellom $ -1 $ og $ 1 $.}. Det gir derfor mening å behandle grenseverdien som et tall, som vi kaller for $ e $:
+\[ e=\lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^z=\lim\limits_{h\to0}\left(1+h\right)^{\frac{1}{h}}  \]
+\info{Merk}{
+Den mest klassiske metoden for å finne en øvre og en nedre grense for $ \lim\limits_{z\to\infty }\left(1+\frac{1}{z}\right)^n $ er ved å bruke \net{https://en.wikipedia.org/wiki/Binomial\_theorem\#General\_case}{Binomialteoremet}. 
+}
+\subsubsection{Et tilbakeblikk på den deriverte}
+Derivasjon av potensfunksjoner var det som motiverte oss til å undersøke tallet $ e $. Av det vi har drøftet i de foregående avsnittene, følger det at
+\[ \left(e^x\right)'=e^x \]
+Likningen over er rett og slett én av de viktigste likningene i\\
+matematikk.
+\end{document}

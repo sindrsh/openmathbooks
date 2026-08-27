@@ -1,5 +1,5 @@
-settings.outformat="pdf";
-defaultpen(fontsize(11pt));
+import "../../inh.asy" as inh;
+import "../../geo.asy" as geo;
 unitsize(2cm);
 import mods;
 import graph;
@@ -22,5 +22,5 @@ draw(f(a)--f(b));
 pair s = f(a)-f(b);
 draw(-0.5*s+f(b)--0.5*s+f(a), L=Label("$\alpha$", position=Relative(1)));
 draw(o--f(b)+0.5*s, dotted);
-dot(o, L=Label("$S$",align=S));
-dot(f(b)+0.5*s, L=Label("$A$",align=N));
+dott(o, "$S$", S);
+dott(f(b)+0.5*s, "$A$",N);

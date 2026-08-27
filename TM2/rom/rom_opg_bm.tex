@@ -6,6 +6,15 @@
 	
 \opgt
 
+\op{opgvekderr}
+Finn $\vec{r}\,'(t)$ og $\vec{r}\,''(t)$ når \os
+\abch{
+\item $\vec{r}(t)=[t^2, -2t, 3t]$
+\item $\vec{r}(t)=[3\sin t, 4\cos t, 5t^3]$
+}
+
+\nes
+
 \op{parlinjeo}
 Ei linje går gjennom punktene $ A=(-2, 3, -5) $ og $ B=(-1, 1, -4) $.\os
 \abc{
@@ -39,6 +48,9 @@ Et plan inneholder punktene $ (1, 1,-1) $, $ (-2, -3, -1) $ og $ (5, 6, 1) $.
 \item Finn en parameterisering for planet.
 \item Sjekk om punktet $ (-9, 5, 3) $ ligger i planet.
 }
+
+\op{opgvekderkurv}
+Gitt vektorfunksjonen $\vec{r}(t)=[e^t, 2t, 3t^2]$. Finn et ettrykk for tangeringslinja til $\vec{r}$ når $t=0$.
 
 \op{finnparplan2}
 Et plan har retningsvektoren $ [2, 1, -5] $ og inneholder linja gitt ved parameteriseringen
@@ -123,16 +135,25 @@ Ei kule er gitt ved ligningen
 
 
 \op{opgromdist}
-Gitt et punkt $A=(x_0, y_0, z_0)$ og planet gitt ved likningen
+Gitt punktene $O=(0, 0, 0)$ og $A=(x_0, y_0, z_0)$ og planet gitt ved likningen
 \[ ax+by+cz+d=0 \] 
 Vis at avstanden $h$ mellom punktet og planet kan skrives som
-\[ h=\frac{\vv{OA}\cdot\vec{n}+d}{|\vec{n}|^2} \]
+\[ h=\frac{\left|\vv{OA}\cdot\vec{n}+d\right|}{|\vec{n}|} \]
 hvor $O$ er origo og $\vec{n}=[a, b, c]$.
 
 \op{avstplopg}
 Et plan er gitt ved ligningen:
 \[ -3x+4y+z-7 = 0 \]
 Finn avstanden mellom planet og punktet $ (-3,2,3) $.
+
+\op{opgromplkudist}
+Gitt en kule med  sentrum $S=(1, 0, -2)$ og radius $3$.
+\abc{
+\item Kula tangerer et plan i punktet $A=(3, 2, 1)$. Finn likningen til dette planet.
+\item Kula tangerer også et plan gitt ved likningen
+\[ -2x-y+2z-3=0 \]
+Finn tangeringspunktet til kula og planet.
+}
 
 \op{toparllin} 
 To parallelle plan $ \alpha $ og $ \beta $ er henholdsvis gitt ved ligningene 
@@ -151,7 +172,7 @@ og
 
 
 \op{kuleopg3}
-Når et plan $ \alpha $ skjærer en kuleflate med sentrum $ S $, kan vi alltids studere geometrien fra en slik vinkel at planet ligger rett horisontalt. Et snitt av figuren vil da se slik ut:
+Når et plan $ \alpha $ skjærer en kuleflate med sentrum $ S $, kan vi alltids studere geometrien fra en slik vinkel at planet ligger rett horisontalt. En skisse av figuren vil da kunne se slik ut:
 \fig{plkul}
 Punktet $ A $ er sentrum i sirkelen hvor kuleflaten skjærer planet, og ved formlikhet kan vi vise at linjestykket $ AS $ står normalt på $ \alpha $.\os
 
@@ -168,7 +189,7 @@ Dette planet skjærer en kuleflate gitt ved ligningen
 
 \item Hva er koordinatene til $ A $?
 
-\item Hvor stor er radiusen til sirkelen hvor $ A $ er sentrum?
+\item Hvor stor er radien til sirkelen hvor $ A $ er sentrum?
 }
 \newpage
 

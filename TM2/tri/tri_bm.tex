@@ -29,10 +29,10 @@ Når man skriver vinkler i radianer er det vanligst å oppgi vinkelmålet bare v
 Som vi har sett i \mb, vil buen til en halv enhetssirkel kunne deles inn i $ 180^\circ $. Lengden til denne buen er $ \pi $ (forklar for deg selv hvorfor), som betyr at 
 \[ 180^\circ = \pi \]
 \figc{radgrad}{}
-\reg[Grader og absolutt vinkelmål (radianer)]{\vspace{-5 pt}
-	\begin{equation}\label{gradertilrad}
+\reg[Grader og absolutt vinkelmål (radianer)]{
+	\begin{equation*}
 		1^\circ\ = \frac{\pi}{180}
-	\end{equation}
+	\end{equation*}
 }
 \eks[]{
 Tabellen under viser ekvivalente lengder målt i grader (øverst) og målt i radianer (nederst).
@@ -46,7 +46,7 @@ Tabellen under viser ekvivalente lengder målt i grader (øverst) og målt i rad
 \end{center}
 } 
 \subsection{Enhetssirkelen som tallinje}
-Tenk at noen ber deg tegne hele tallinjen. Dette virker som en umulig oppgave siden tallinjen består av intervallet $ [-\infty, \infty] $. 
+Tenk at noen ber deg tegne hele tallinjen. Dette virker som en umulig oppgave, siden tallinjen består av intervallet $ [-\infty, \infty] $. 
 \figc{hortal}{Horisontal tallinje på intervallet $ [-5, 5] $}
 
 Men hva med dette?\regv
@@ -103,7 +103,7 @@ Noen matematiske tekster bruker $ \arccos x$ eller $ \cos^{-1} x$ i stedet for $
 \vsk
 
 Si vi har ligningen
-\begin{equation}\label{acosderx}
+\begin{equation} \label{acosderx}
 \acos d=x 
 \end{equation}
 hvor \y{d\in[-1, 1]}. Å bestemme verdien til $ x $ uten bruk av hjelpemidler er ofte vrient, men vi kan likevel si noe om \textsl{hvor} på enhetssirkelen $ x $ befinner seg:\vsk
@@ -121,13 +121,13 @@ Prinsippet bak arcussinus og arcustangens er akkurat det samme som for arcuscosi
 \newpage
 \reg[Arcusuttrykkene]{
 	Uttrykket
-	\begin{equation}
+	\begin{equation*}
 		\text{atri}\;x = d
-	\end{equation}
+	\end{equation*}
 	hvor tri erstattes med $ \sin, \cos $ eller $ \tan $, betyr at
-	\begin{equation}
+	\begin{equation*}
 		\text{tri}\;d=x
-	\end{equation}
+	\end{equation*}
 }
 \eks[]{
 	\alg{
@@ -209,9 +209,9 @@ Vi vet at $ {\cos \left(\frac{2\pi}{3}\right)=-\frac{1}{2} }$ og at $ {\sin \lef
 Av \textsl{Eksempel 2} på forrige side merker vi oss at da et sinusuttrykk kan skrives om til et kombinert sinus- og cosinusuttrykk, må det også gå an å gå andre veien:\regv
 \reg[\sincoskomb \label{sincoskomb} ]{
 	Vi kan skrive
-	\begin{equation}\label{rsin}
+	\begin{equation*}
 		a \cos (kx) +b \sin (kx)= r\sin(kx+c)
-	\end{equation}
+	\end{equation*}
 	der $ r=\sqrt{a^2+b^2} $, og hvor
 	\[ \cos c = \frac{b}{r}\qquad,\qquad
 	\sin c = \frac{a}{r} \]
@@ -238,7 +238,7 @@ Gitt uttrykket
 \begin{equation}
 	a \cos (kx) + b \sin (kx) \label{sc}
 \end{equation}
-Vi vet at (se (\ref{suv}))
+Vi vet at (se likning (\ref{suv}) i \rref{trid})
 \begin{equation}
 	r \sin(kx+c)= r\sin c\cos (kx) + r\cos c \sin (kx)  \label{s}
 \end{equation}
@@ -287,13 +287,13 @@ Og hva nå om vi står i punktet til den ene av løsningene og derifra vandrer e
 For tilfellene hvor $d\in\{-1, 1\}$ kan vi bruke lignende, men noe enklere resonnement som over. Dette overlates til leseren.
 \reg[Cosinusligninger \label{coslig}]{
 	Gitt ligningen
-	\begin{equation}
-		\cos x=d \label{cosligorig} 
-	\end{equation}
+	\begin{equation*}
+		\cos x=d 
+	\end{equation*}
 	For ${n\in \mathbb{Z}} $ har vi at
-	\begin{equation}
-		x=\pm\acos d+ 2\pi n \label{cosligeq}
-	\end{equation}
+	\begin{equation*}
+		x=\pm\acos d+ 2\pi n
+	\end{equation*}
 }
 \eks[1]{
 	Løs ligningen:
@@ -330,9 +330,9 @@ For tilfellene hvor $d\in\{-1, 1\}$ kan vi bruke lignende, men noe enklere reson
 \newpage
 \subsection{Sinusligninger}
 Gitt ligningen 
-\begin{equation}
-\sin x = d \label{slig}
-\end{equation}
+\begin{equation*}
+\sin x = d 
+\end{equation*}
 hvor $d\in[-1, 1]$. \vsk
 
 Hvis $ {d\in(0, 1)}$, må vi ha en løsning $ {x=v_1} $ i første kvadrant (se \fref{kvadr} og \textit{\ref{sinligfig}}). Men om vi starter i $ \pi $ og går en buelengde $ v_1 $ i negativ retning, har vi kommet akkurat like høyt langs vertikalaksen, og dermed må også ${x=\pi-v_1} $ være en løsning.\vsk
@@ -347,13 +347,13 @@ For tilfellene hvor $d\in\{-1, 1\}$ kan vi bruke lignende, men noe enklere reson
 \reg[Sinusligninger \label{sinlig}]{
 	
 	Gitt ligningen 
-	\begin{equation}
-		\sin x=d\ \label{silig} 
-	\end{equation}
+	\begin{equation*}
+		\sin x=d  
+	\end{equation*}
 	For ${n\in \mathbb{Z}} $ har vi at
-	\begin{equation}
-	x=\asin d+ 2\pi n\quad\vee\quad x=\pi-\asin d + 2\pi n \label{sinligeq}
-\end{equation}	
+	\begin{equation*}
+	x=\asin d+ 2\pi n\quad\vee\quad x=\pi-\asin d + 2\pi n 
+\end{equation*}	
 }
 \newpage
 \eks{
@@ -382,12 +382,13 @@ I én av kvadrantene må det finnes en løsning ${ x=v }$. Hvis vi vandrer en bu
 Dette tallet har altså samme tangensverdi som $ v $, og må derfor også være en løsning. Og vandrer vi $ \pm \pi $ herfra får vi stadig nye løsninger. \regv
 
 \reg[Tangensligninger \label{tanlig}]{
-	Ligningen \begin{equation}
-		\tan x=d\  \label{tanligeq}
-	\end{equation}har løsningene		
-	\begin{equation}
-		x=\atan d + \pi n \label{tansols}
-	\end{equation}
+	Ligningen \begin{equation*}
+		\tan x=d
+	\end{equation*}
+	har løsningene		
+	\begin{equation*}
+		x=\atan d + \pi n 
+	\end{equation*}
 	hvor $ {d\in\mathbb{R}} $ og ${n\in \mathbb{Z}} $.}
 \newpage
 \eks{
@@ -412,7 +413,7 @@ a\sin (kx) + b\cos (kx) =0
 \end{equation}
 hvor $ a $, $ b $ og $ k $ er konstanter forskjellige fra 0. \vsk
 
-Det første vi observerer er at hvis $ \cos(kx)=0 $, er\footnote{Se \eqref{cosligeq}.} $ x=\frac{1}{k}\left(\pm\frac{\pi }{2}+2\pi n\right) $. I så tilfelle er $ \sin
+Det første vi observerer er at hvis $ \cos(kx)=0 $, er\footnote{Se \rref{coslig}.} $ x=\frac{1}{k}\left(\pm\frac{\pi }{2}+2\pi n\right) $. I så tilfelle er $ \sin
 (kx)=\pm 1 $, og da får vi at
 \alg{
 a\sin (kx) + b\cos (kx) =\pm a+0 \neq 0
@@ -424,7 +425,7 @@ Dette funnet gjør at vi trygt kan dele (\ref{trikomblig0}) med $ \cos (kx) $:
  a\tan (kx) &= -b \br
  \tan (kx) &= -\frac{b}{a}
 	}
-Vi har nå endt opp med en tangensligning med løsninger gitt ved \eqref{tansols}. \regv
+Vi har nå endt opp med en tangensligning med løsninger gitt av \rref{tanlig}. \regv
 	\reg[\boldmath $ a\sin (kx) + b\cos (kx) =0 $]{
 	Ligningen
 	\begin{equation}
@@ -450,13 +451,13 @@ x &= n - \frac{1}{6}
 	}
 \newpage
 \subsection[$ a\sin (kx) + b\cos (kx) =d $]{\boldmath $ a\sin (kx) + b\cos (kx) =d $}
-En noe mer avansert utgave av \eqref{asinbcos00} får vi hvis høyresiden er en konstant $ d $ istedenfor 0. Da utnytter vi \eqref{rsin} for å omskrive ligningen til en form vi kan løse:\regv
+En noe mer avansert utgave av \eqref{asinbcos00} får vi hvis høyresiden er en konstant $ d $ istedenfor 0. Da utnytter vi \rref{sincoskomb} for å omskrive ligningen til en form vi kan løse:\regv
 \reg[\boldmath $ a\sin (kx) + b\cos (kx) = d$]{
 	Ligningen 
 	\begin{equation}
 		a\sin (kx) + b\cos (kx) = d 
 	\end{equation}
-	kan løses ved å omforme venstresiden til et reint sinusuttrykk, og deretter løse den resulterende sinusligningen.
+	kan løses ved å omforme venstresiden til et rent sinusuttrykk, og deretter løse den resulterende sinusligningen.
 }
 \eks{
 	Løs ligningen
@@ -473,7 +474,7 @@ En noe mer avansert utgave av \eqref{asinbcos00} får vi hvis høyresiden er en 
 		\sqrt{2}\sin\left(3x+\frac{\pi}{4}\right)&=\sqrt{2} \br
 		\sin\left(3x+\frac{\pi}{4}\right)&=1
 	}
-	Altså har vi at
+	Da $\acos 1=\frac{\pi}{2}$, har vi at (se \rref{sinlig})
 	\alg{
 		3x + \frac{\pi}{4} &= \frac{\pi}{2} + 2\pi n\br
 		x &= \frac{\pi}{3}\left(\frac{1}{4}+2n\right)
@@ -513,26 +514,26 @@ La oss også studere grafen til funksjonen
 Den eneste forskjellen på uttrykkene til $ f $ og $ g $ er at $ g $ har faktoren $ -2 $ foran cosinusuttrykket. Vertikalavstanden fra likevektslinja til et toppunkt er likevel 2 også for $ g $, som derfor har 2 som amplitude. For en hvilken som helst cosinusfunksjon er altså $ |a| $ lik verdien til amplituden. Da $ a $ er negativ, har $ g $ et toppunkt når $ {kx+c=\pi} $ (siden $ \cos \pi=-1 $).\newpage
 \reg[\cosfunk \label{cosfunk}]{
 	Funksjonen
-	\begin{equation}\label{cosinusfunksjonen}
+	\begin{equation*}
 	f(x)= a \cos (kx+c) + d 
-	\end{equation}
+	\end{equation*}
 	er en cosinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $.
 	\fig{fcos2}
 	Gitt et maskimalpunkt $ x_t $ og et minimumspunkt $ x_b $ for $f$. Da er
-	\begin{equation}
-		|a|=\frac{x_t-x_b}{2}
-	\end{equation}
-	\begin{equation}\label{konstantd}
-		d=\frac{x_t+x_b}{2}
-	\end{equation}
+	\begin{equation*}
+		|a|=\frac{f(x_t)-f(x_b)}{2}
+	\end{equation*}
+	\begin{equation*}
+		d=\frac{f(x_t)+f(x_b)}{2}
+	\end{equation*}
 	For to naboliggende maksimalpunkt $ x_1 $ og $ x_2 $ for $f$ er perioden $P$ gitt ved
-	\begin{equation}\label{perioden}
+	\begin{equation*}
 	P=x_2-x_1
-	\end{equation}
+	\end{equation*}
 	og
-	\begin{equation}\label{ker2pioverP}
+	\begin{equation*}
 	k = \frac{2\pi}{P} 
-	\end{equation}
+	\end{equation*}
 	$ c $ er gitt av likningen
 	\begin{align*}\label{c}
 	k x_1+ c = 0&\text{, hvis } a>0 \\
@@ -586,18 +587,18 @@ Fasen finner vi derimot ved å observere at en sinusfunksjon må ha en maksimalv
 	\item $ {{kx+c = -\frac{\pi}{2}} }$, hvis $ a $ er negativ \big(fordi $ \sin \left(-\frac{\pi}{2}\right)=-1 $\big).
 \end{itemize}
 \reg[Sinusfunksjonen]{
-	Funksjon
-	\begin{equation}\label{sinfunk}
+	Funksjonen
+	\begin{equation*}
 		f(x)= a \sin (kx+c) + d
-	\end{equation}
+	\end{equation*}
 	er en sinusfunksjon med amplitude $ |a| $, bølgetall $ k $, fase $ c $ og likevektslinje $ y=d $. \vsk
 	
 	Amplituden, bølgetallet og likevektslinjen er gitt tilsvarende som for en cosinusfunksjon.\vsk
 	
 	$ c $ er gitt ved ligningen
-	\begin{equation}\label{sinc}
+	\begin{equation*}
 		k x_1+ c = \frac{a}{|a|}\cdot\frac{\pi}{2}
-	\end{equation}
+	\end{equation*}
 	hvor $ x_1 $ er et maksimalpunkt for $f$.
 }
 \newpage
@@ -630,28 +631,28 @@ Det spesielle med tangensfunksjoner er at den asymptotiske oppførselen gjentar 
 Med en litt annen tolkning enn tidligere kan man også se på ${ y=d} $ som en likevektslinje, men for tangensfunksjoner er det asymptotetene og perioden som er av størst interesse. \regv
 \reg[Tangensfunksjoner]{
 	Funksjonen
-	\begin{equation}\label{tanfunk}
+	\begin{equation*}
 		f(x)=a \tan(kx + c)+d
-	\end{equation}
+	\end{equation*}
 	er en tangensfunksjon. Den har vertikale asymptoter for alle $ x $ der
-	\begin{equation}\
+	\begin{equation*}\
 		kx+c = \frac{\pi}{2}+\pi n
-	\end{equation}
+	\end{equation*}
 	hvor $ n\in \mathbb{Z} $.\vsk\\
 	
 	Perioden $ P $ er gitt ved
-	\begin{equation}\
+	\begin{equation*}\
 		P = \frac{\pi}{k}
-	\end{equation}\vs
+	\end{equation*}\vs
 }
 \newpage
 \subsection{\deravtri \label{deravtri}}
 \reg[\deravtri]{ \vsb
-\begin{align}
-	& (\cos x)' = -\sin (x) \label{dercosx} \vn
-	& (\sin x)' = \cos (x) \label{dersinx} \vn
-	& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x \label{dertanx}
-\end{align}
+\begin{align*}
+	& (\cos x)' = -\sin (x) \vn
+	& (\sin x)' = \cos (x)  \vn
+	& (\tan x)' =  \frac{1}{\cos^{2}x} =  1+\tan^{2} x
+\end{align*}
 }\vsk
 
 \fork{\ref{deravtri} \deravtri}{
@@ -659,10 +660,10 @@ Vi skal her anvende følgende to ligninger (se \refved{sinxcosxlim}):
 \alg{&\lim\limits_{x\to0} \frac{\sin x}{x}=1 \tag{I} \label{Isinxx}\br
 	&\lim\limits_{x\to0} \frac{\cos x-1}{x}=0\tag{II} \label{Icosxx}	
 }
-\textbf{Likning (\ref{dercosx})}\\
+{\boldmath $ (\cos x)' = -\sin (x)$}\os
 Av definisjonen av den deriverte (se \tmen) har vi at
 \[ (\cos x)'= \lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h} \]
-Av (\ref{cu-v}) kan vi skrive
+Av likning (\ref{cu-v}) i \rref{trid} kan vi skrive
 \alg{
 	\lim\limits_{h\to 0}\frac{\cos(x+h)-\cos x}{h}&=\lim\limits_{h\to 0} \frac{\cos x \cos h-\sin x\sin h-\cos x}{h} \\
 	&=\lim\limits_{h\to 0}\frac{(\cos h-1)\cos x-\sin x\sin h}{h} \\
@@ -672,7 +673,7 @@ Av (\ref{cu-v}) kan vi skrive
 }
 Mellom tredje og fjerde linje i likningen over brukte vi (\ref{Isinxx}) og (\ref{Icosxx}). \vsk
 
-\textbf{Likning (\ref{dersinx})}\\
+{\boldmath $(\sin x)' = \cos (x)$}\os
 Av \eqref{cossomsi}, (\ref{sinsomcos}) og (\ref{-cosxcosx}) har vi at
 \alg{
 	\sin x &= \cos\left(x-\frac{\pi}{2}\right) \br
@@ -686,7 +687,7 @@ Bruker vi det faktum at $ {(\cos x)'=-\sin x} $, i kombinasjon med kjerneregelen
 	&= \cos x
 }
 
-\textbf{Likning (\ref{dertanx})}\\
+{\boldmath $(\tan x)' =  \frac{1}{\cos^{2}x}=1+\tan^2 x$}\os
 Av kjerneregelen og produktregelen (se \tmen) har vi at
 \alg{
 	(\tan x)' &= \left(\frac{\sin x}{\cos x}\right)' \\
@@ -713,9 +714,9 @@ Vi kan si at punktene $(q_1, f_1(q_1))$ og $(q_2, f_2(q_2))$ er \textsl{samsvare
 Gitt funksjonene
 \[ f_1(x)=|a_1|\,\text{tri}(kx+c_1)+d_1\quad,\quad f_2(x)=|a_2|\,\text{tri}(kx+c_2)+d_2 \]
 hvor 'tri' er 'cos', 'sin' eller 'tan'. Faseforskyvningen $\phi$ til $f_2$ i forhold til $f_1$ er da gitt ved
-\begin{equation}
+\begin{equation*}
 	\phi = \frac{c_1-c_2}{k}
-\end{equation}
+\end{equation*}
 }
 \spr{
 Med uttrykket ''faseforskyvningen til $f_2$'' er det underforstått at det er snakk om faseforskyvningen til $f_2$ i forhold til $f_1$ hvor $c_1=0$.

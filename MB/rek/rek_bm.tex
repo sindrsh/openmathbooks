@@ -217,7 +217,7 @@ Subtraksjon med oppstilling baserer seg på plassverdisystemet, der man trinnvis
 Tabellmetoden for subtraksjon baserer seg på at subtraksjon er den omvendte operasjonen av addisjon. For eksempel, svaret på spørsmålet ''Hva er $ 83-67 $?'' er det samme som svaret på spørsmålet ''Hvor mye må jeg legge til på 67 for å få 83?''. Med tabellmetoden følger du ingen spesiell regel underveis, men velger selv tallene du mener passer best for å nå målet.\\
 \begin{center}
 \parbox{0.35\linewidth}{
-\eks[2]{
+\eks[1]{
 	$ \colb{83}-\colr{67}=\colo{16} $	 \vsk
 	
 	\begin{tabular}{r|r}
@@ -229,7 +229,7 @@ Tabellmetoden for subtraksjon baserer seg på at subtraksjon er den omvendte ope
 }	
 } \qquad
 \parbox{0.35\linewidth}{
-\eks[1]{
+\eks[2]{
 	$ \colb{789}-\colr{324}=\colo{465} $	 \vsk
 	
 	\begin{tabular}{r|r}
@@ -421,9 +421,9 @@ Gitt tallet $109$.\os
 Flytter vi komma fire plasser til høyre, får vi $1\,090\,000$.
 \fig{komma6}
 }
-\spr{Som nevnt, brukes punktum som desimaltegn i programmerings-språk. Mange programmeringsspråk godtar at man skriver punktum helst til venstre i et tall. For eksempel kan man skrive $\sym{\texttt{0.1}}$ som \sym{\texttt{.1}}.\vsk
+\spr{Som nevnt, brukes punktum som desimaltegn i programmerings-språk. Mange programmeringsspråk godtar at man skriver punktum helt til venstre i et tall. For eksempel kan man skrive $\sym{\texttt{0.1}}$ som \sym{\texttt{.1}}.\vsk
 	
-Mange programmeringsspråk godtar også at man skriver \\ punktum helt til høyre i et tall, men da vil det ofte bety om tallet skal leses som et heltall eller ikke. For eksempel kan \sym{\texttt{1}} tolkes som et heltall, mens \sym{\texttt{1.0}} kan tolkes som et desimaltall. I programmering kan det være forskjell på et heltall og et desimaltall selv om de har lik verdi.
+Mange programmeringsspråk godtar også at man skriver \\ punktum helt til høyre i et tall, men da vil det ofte bety om tallet skal leses som et heltall eller ikke. For eksempel kan \sym{\texttt{1}} tolkes som et heltall, mens \sym{\texttt{1.}} kan tolkes som et desimaltall. I programmering kan det være forskjell på et heltall og et desimaltall selv om de har lik verdi.
 }
 
 \section{Ganging} \label{rekGanging}
@@ -485,7 +485,7 @@ Mange programmeringsspråk godtar også at man skriver \\ punktum helt til høyr
 \eks[3]{ \vsb
 	\alg{
 	7{\color{black},}9\cdot 1\,000 &= 7900{\color{black},}=7\,900 \vn
-	38{\color{black},}02\cdot10\,000&=38020{\color{black},}=380\,200 \vn
+	38{\color{black},}02\cdot10\,000&=380200{\color{black},}=380\,200 \vn
 	0{\color{black},}57\cdot 100\,000 &=57000{\color{black},}=57\,000
 }
 }
@@ -1023,7 +1023,7 @@ Det er ikke alltid vi trenger å vite svaret på regnestykker helt nøyaktig, of
 \subsubsection{Overslag ved addisjon og ganging}
 La oss gjøre et overslag på regnestykket
 \[ 98,2+24,6 \]
-Vi ser at $ 98,2 \approx 100 $. Skriver vi 100 i steden for 98,2 i regnestykket vårt, får vi noe som er litt mer enn det nøyaktige svaret. Skal vi endre på 24,6 bør vi derfor gjøre det til et tall som er litt mindre. 24,6 er ganske nærme 20, så vi kan skrive
+Vi ser at $ 98,2 \approx 100 $. Skriver vi 100 i stedet for 98,2 i regnestykket vårt, får vi noe som er litt mer enn det nøyaktige svaret. Skal vi endre på 24,6 bør vi derfor gjøre det til et tall som er litt mindre. 24,6 er ganske nærme 20, så vi kan skrive
 \[ 98,2+24,6 \approx 100 + 20 = 120 \]
 Når vi gjør overslag på to tall som legges sammen, bør vi altså prøve å gjøre det éne tallet større (runde opp) og det andre tallet mindre (runde ned).\\
 \newpage
@@ -1042,7 +1042,7 @@ Hvis vi runder 186,4 opp til 190 får vi et svar som er større enn det egentlig
 \linje
 Samme prinsippet gjelder for deling. La oss gjøre et overslag på
 \[ 264:17 \]
-Vi runder 17 opp til 20. Deler vi noe med 20 i steden for 17, blir svaret mindre. Derfor bør vi også runde 264 oppover (til 300):
+Vi runder 17 opp til 20. Deler vi noe med 20 i stedet for 17, blir svaret mindre. Derfor bør vi også runde 264 oppover (til 300):
 \[ 294:17 \approx 300:20 = 15 \]
 
 \newpage
@@ -1133,7 +1133,7 @@ Men å dele med 100 er det samme som å gange med $ 10^{-2} $, altså er
 \info{Tips}{
 	For å skrive om tall på standardform kan du gjøre følgende:
 	\begin{enumerate}
-		\item Flytt komma slik at du får et tall som ligger mellom 0 og 10 (men er ikke lik hverken 0 eller 10).
+		\item Flytt komma slik at du får et tall som er større enn 0 og mindre enn 10.
 		\item Gang dette tallet med en tierpotens som har eksponent med tallverdi lik antallet plasser du flyttet komma. \qquad  Flyttet du komma mot venstre/høyre, er eksponenten positiv/negativ. 
 	\end{enumerate}
 }

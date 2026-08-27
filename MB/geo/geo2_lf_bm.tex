@@ -114,6 +114,7 @@ Altså har vi at
 \[ A_O = A_c+A_s=\pi r^2 + \pi rs= \pi r (r+s)  \]
 }
 
+
 \grubr{opggeopytar}
 Den største sidelengden multiplisert med 3 må utgjøre mer enn omkretsen til trekanten. Da $3\cdot8=24$, er dermed siden med lengde 8 en katet. Vi setter den andre kateten lik $a$ og hypotenusen lik $c$. Da har vi at
 \alg{
@@ -236,6 +237,50 @@ r&= \frac{5}{2}
 } 
 \fig{opggeosirkfirk_lf}
 \newpage
+
+
+\grubr{opggeoperlin} \os
+\abc{
+\item \textbf{Metode 1}\\
+Grafene til $f$ og $g$ skjærer hverandre når $x=0$. Vi setter\\ $A=(0, 0)$, $B=(1, 0)$ og $C=(1, f(1))=(1, 4)$. Videre setter vi $D=(-4, 0)$ og $E=(-4, g(-4))=(-4, 1)$. Da $DE=AB$ og $DA=BC$, og $\angle ADE=\angle CBA $, er $\triangle EDA\sim\triangle ABC$.
+\fig{opggeoperlina1_lf}
+
+
+\textbf{Metode 2} \\
+$f$ og $g$ vil åpenbart skjære hverandre når $x=0$. Vi setter \\ $A=(0, 0)$, $B=(1, 0)$ og $C=(1, f(1))=(1, 4)$. Vi lar $E$ være punktet på grafen til $g$ som har lik $y$-verdi som $C$. I $E$ er
+\alg{
+g(x)&=4 \\
+-\frac{1}{4}x &= 4 \\
+x &= -16
+}
+Dermed er $E=(-16, 4)$. Vi setter $D=(-16, 0)$. Av \pyt\ på $\triangle AED$ har vi at
+\[ EA^2 = ED^2+AD^2 = 4^2+16^2=16+16^2=16(1+16)=16\cdot17 \]
+Av \pyt\ på $\triangle BAC$ har vi at
+\[ AC^2 = AB^2 + BC^2 =1^2+4^2=17 \] 
+Hvis grafene til $f$ og $g$ står vinkelrette på hverandre, må $\angle CAE=90^\circ$, og da må $\triangle AEC$ oppfylle \pyt. Vi vet at $EC=BD=17$, og dermed må vi kreve at 
+\[ EC^2 = AC^2+EA^2=17^2 \]
+Vi har at
+\[ AC^2+EA^2 =17+16\cdot 17=17(1+16)=17^2 \]
+Altså er $\triangle AEC$ rettvinklet.
+\fig{opggeoperlina2_lf}
+\item Vi tar utgangspunkt i at $a>1$. Hvis $f=g$, har vi at
+\begin{align*}
+	ax+b &= -\frac{1}{a}x+c \br
+	x &= \frac{a(b-c)}{a^2+1}
+\end{align*}
+Denne likningen har garantert en løsning, og dermed vet vi at grafene til $f$ og $g$ skjærer hverandre i et punkt $A$. Vi plasserer $B$ og $D$ på samme horisontallinje som $A$ slik at $AD=BD=1$. Videre plasserer vi $E$ og $C$ på grafen til henholdsvis $g$ og $f$ slik at $DA\perp ED$ og $AB\perp BC$. Da er $DE=\frac{1}{a}$ og $BC=a$. Da vet vi at i $\triangle ADE$ har lengste katet $AD$ og korteste katet $DE$, og at $\triangle ABC$ har lengste katet $BC$ og korteste katet $AB$. Videre er da
+\[ \frac{DE}{AD}=\frac{AB}{BC}=\frac{1}{a} \]
+Da $\angle ADE=\angle CBA$, følger det at $\triangle ADE\sim\triangle CBA$, og da er 
+\begin{align*}
+	\angle CAE &=180^\circ-\angle EAD-\angle BAC \\
+	&=180^\circ-\angle EAD-\left(90^\circ-\angle EAD\right) \\
+	&=90^\circ
+\end{align*}
+Forklaringene for tilfellene hvor $0<a<1$ eller hvor $a<0$ blir så og si identiske med den vi har gitt for $a>1$.
+\fig{opggeoperlinb_lf}
+}
+
+
 
 \grubr{opggeo1530}
 \abc{ 
@@ -381,6 +426,9 @@ Som betyr at
 Da $ c=AD+DB $, er dermed
 \[ c<b+a \]
 }
+
+
+\newpage
 
 \end{document}
 

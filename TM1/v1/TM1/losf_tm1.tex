@@ -1,0 +1,47 @@
+\input{../doc}
+\input{../preamb}
+\input{bm}
+
+\usepackage{xr}
+\externaldocument{TM1_bm}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag TM1}}
+\newcommand{\lost}[1]{\section*{Kapittel \ref{#1} \addcontentsline{toc}{chapter}{Kapittel \ref{#1}}\phantomsection }
+	}
+\setlength{\parskip}{11pt}
+\titleformat{\chapter}[display]
+{\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\large}
+\begin{document}
+\allowdisplaybreaks	
+\footnotesize
+\tableofcontents
+\lost{Meng}
+\import{meng/}{meng_lf_bm}
+\newpage
+
+\lost{Alg}
+\import{alg/}{alg_lf_bm}
+\newpage
+
+\lost{Geo}
+\import{geo/}{geo_lf_bm}
+\newpage
+
+\lost{Vek}
+\import{vek/}{vek_lf_bm}
+\newpage
+
+\lost{Lim}
+\import{lim/}{lim_lf_bm}
+\newpage
+
+\lost{Der}
+\import{der/}{der_lf_bm}
+\newpage
+
+\lost{Funk}
+\import{inv/}{inv_lf_bm}
+\newpage
+
+
+\end{document}

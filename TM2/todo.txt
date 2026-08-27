@@ -1,6 +1,8 @@
-definer vektor/linje parallell med plan
+definer vektor/linje parallell med plan (?)
 definer kurve/kule som tangerer plan
 beskriv xy-, xz-, yz- plan
+
+forklar ln|x| opp mot ln x ved delvis integrasjon
 
 omskriv definisjonen av en eksplisitt formel
 

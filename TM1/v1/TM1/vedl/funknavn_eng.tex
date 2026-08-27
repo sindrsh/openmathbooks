@@ -1,0 +1,41 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../eng}
+
+\begin{document}	
+\vedlegg{Names of Functions} \label{vdlfunknavn}
+\regdef[Power Functions]{
+	Given $ x, k, b\in \mathbb{R} $. A function of the form
+	\begin{equation}\label{powrfunc}
+		f(x)=k x^m	
+	\end{equation}
+	is then a \outl{power function} with \outl{coefficient} $ k $ and \outl{exponent} $ m $.
+}
+\regdef[Polynomial Functions]{
+	A \outl{polynomial function} is one of the following:
+	\begin{itemize}
+		\item a power function with an integer exponent greater than or equal to 0.
+		\item the sum of several power functions with integer exponents greater than or equal to 0.
+	\end{itemize}
+	Polynomial functions are categorized by the highest exponent in the function expression. For the constants $ a $, $ b $, $ c $, and $ d$, and a variable $ x $, we have \vs
+	\begin{center}
+		\begin{tabular}{|r|l|} \hline
+			\textbf{function expression} & \textbf{function name} \\ \hline
+			$ ax+b $ &1st-degree function/polynomial (linear) \\
+			$ ax^2+bx+c $& 2nd-degree function/polynomial (quadratic) \\
+			$ ax^3+bx^2+cx+d $& 3rd-degree function/polynomial (cubic) \\ \hline
+		\end{tabular}
+	\end{center}
+}
+\eks[1]{ 
+	$ 4x^7-5x^2+4 $ is a 7th-degree polynomial. \vsk
+	
+	$ \frac{2}{7}x^5-3 $ is a 5th-degree polynomial.
+}
+\regdef[Exponential Functions]{
+	Given $ x, a, b, c, d\in\mathbb{R} $, where $ b>0 $. A function $ f $ given as
+	\[ f(x)=a\cdot b^{cx+d} \]
+	is then an \outl{exponential function}.
+}
+
+\end{document}

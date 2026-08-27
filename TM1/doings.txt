@@ -1,3 +1,11 @@
+Legg til oppgave i opgalgfullkvad3 med (ax)^2 ledd.
+Ta med eksempel om identitet i forkant av 1tv21d1opg8?
+Flytt 1TV23D1opg3 til gruble
+I opggeouminv: Vis at cos(v) = sin(u)
+
+
+
+-- old ---
 opg: skriv hvilke elementære funksjoner som er konkave/konvekse.
 opg: vis at ekstremalpunktene til en tredjegradsfunksjon er nullpunktene
 til den deriverte funksjonen. vis at infleksjonspunktet til tredjegradsfunksjonen

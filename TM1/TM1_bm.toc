@@ -38,24 +38,24 @@
 \contentsline {section}{\numberline {6.2}Derivasjonsregler}{135}{section.6.2}%
 \contentsline {subsubsection}{Den deriverte funksjonen}{135}{subsubsection*.58}%
 \contentsline {section}{\numberline {6.3}Derivasjon av vektorfunksjoner}{144}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Forklaringer}{145}{section.6.4}%
-\contentsline {section}{Oppgaver}{151}{section*.69}%
-\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{161}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{162}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{165}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Asymptoter}{171}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Injektive og omvendte funksjoner}{173}{section.7.4}%
-\contentsline {subsubsection}{Injektive funksjoner}{173}{subsubsection*.83}%
-\contentsline {subsubsection}{Omvendte funksjoner}{173}{subsubsection*.85}%
-\contentsline {section}{\numberline {7.5}Forklaringer}{176}{section.7.5}%
-\contentsline {section}{Oppgaver}{178}{section*.88}%
-\contentsline {chapter}{Vedlegg A-F}{193}{chapter*.89}%
-\contentsline {subsubsection}{Tips}{196}{subsubsection*.95}%
-\contentsline {subsubsection}{Den deriverte som motivajon}{197}{subsubsection*.96}%
-\contentsline {subsubsection}{Undersøking av grenseverdien}{197}{subsubsection*.97}%
-\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{200}{subsubsection*.98}%
-\contentsline {subsubsection}{Undersøkelse av grensenverdien}{205}{subsubsection*.101}%
+\contentsline {section}{\numberline {6.4}Forklaringer}{146}{section.6.4}%
+\contentsline {section}{Oppgaver}{152}{section*.69}%
+\contentsline {chapter}{\numberline {7}Funksjonsdrøfting}{163}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Monotoniegenskaper}{164}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Ekstremalpunkt, vendepunkt og infleksjons-punkt}{167}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Asymptoter}{173}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Injektive og omvendte funksjoner}{175}{section.7.4}%
+\contentsline {subsubsection}{Injektive funksjoner}{175}{subsubsection*.83}%
+\contentsline {subsubsection}{Omvendte funksjoner}{175}{subsubsection*.85}%
+\contentsline {section}{\numberline {7.5}Forklaringer}{178}{section.7.5}%
+\contentsline {section}{Oppgaver}{180}{section*.88}%
+\contentsline {chapter}{Vedlegg A-F}{195}{chapter*.89}%
+\contentsline {subsubsection}{Tips}{198}{subsubsection*.95}%
+\contentsline {subsubsection}{Den deriverte som motivajon}{199}{subsubsection*.96}%
+\contentsline {subsubsection}{Undersøking av grenseverdien}{199}{subsubsection*.97}%
+\contentsline {subsubsection}{Et tilbakeblikk på den deriverte}{202}{subsubsection*.98}%
+\contentsline {subsubsection}{Undersøkelse av grensenverdien}{207}{subsubsection*.101}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{208}{chapter*.102}%
+\contentsline {chapter}{Indeks}{210}{chapter*.102}%
 \vspace {-5pt}
-\contentsline {chapter}{Fasit}{209}{chapter*.104}%
+\contentsline {chapter}{Fasit}{211}{chapter*.104}%

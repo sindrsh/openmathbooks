@@ -1,0 +1,94 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+\begin{document}
+
+\opgt
+
+%\opopop{opglimx}
+%For hvilke $ x $-verdier er $ f(x)=\frac{|x|}{x} $ kontinuerlig?
+
+\nes
+
+\op{opglimkont}
+Undersøk om funksjonene er kontinuerlige.
+\begin{equation*}
+	f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x-5 &,&x<4 \br
+			-x+3   &,& x\geq 4
+		\end{array}
+	}\right. 
+\end{equation*}
+
+\begin{equation*}
+	g(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x^2+7 &,&x<1 \br
+			5x+1   &,& x\geq 1
+		\end{array}
+	}\right. 
+\end{equation*}
+\begin{equation*}
+	h(x)= \left\lbrace{
+		\begin{array}{rcr}
+			2x^2-4 &,& x\leq -2 \br
+			-\frac{1}{2}x+3   &,& x>-2 
+		\end{array}
+	}\right. 
+\end{equation*}
+
+\op{opglimfinna}
+Bestem $ a $ slik at $ f $ er kontinuerlig
+\begin{equation*}
+	f(x)= \left\lbrace{
+		\begin{array}{rcr}
+			x^2 - 4 + a &,& x < 3 \\
+			2x + 1 & ,& x \geq 3
+		\end{array}
+	}\right. 
+\end{equation*}
+
+\op{opglimfind}
+Bestem grenseverdiene. \os
+\abch{
+\item $\lim\limits_{x\to3} \dfrac{3(x^2-3)}{x-3}$ 
+\item $\lim\limits_{x\to\infty}\dfrac{x^2+x+12}{2x^2-18}$
+\item $\lim\limits_{x\to\infty}e^{-x}$
+} \os
+\abchs{4}{
+\item $\lim\limits_{x\to-\infty}e^{-x}$\ \ \ \ \ \ 
+\item $\lim\limits_{x\to3} \dfrac{x-3}{x^2+x-12}$\ \
+\item $\lim\limits_{x\to 4} \dfrac{\sqrt{x}-2}{x-4}$
+} \os
+\abchs{7}{
+	\item $\lim\limits_{x\to\infty} \dfrac{2x+2}{3x^2+2}$
+}
+
+\eksop{R1H22}{r1h22d1opg2}
+Bestem grenseverdien
+\[ \lim\limits_{h\to 0} \frac{(4+h)^2-4^2}{h}\]
+
+\newpage
+\eksop{R1H25}{r1h25opg3}
+\abc{
+\item Forklar hvorfor grenseverdien ikke eksisterer.
+\[ \lim\limits_{x\to -2} \frac{x^2-4x+2}{x^2-2x-8} \]
+\item Bestem $a$ slik at grenseverdien eksisterer, og finn grenseverdien.
+\[ \lim\limits_{x\to -2}\frac{x^2+ax+2}{x^2-2x-8} \]
+}
+
+\grubeksoprecc{R1V23D1opg2}{R1V23D1}
+Bestem grenseverdien
+\[ \lim\limits_{x\to0}\frac{x^3-8}{x^2-4} \]
+
+\grubeksoprecc{r1h24d2opg2a}{R1H24}
+Vurder om påstanden er rett.
+\begin{center}
+		Dersom $\lim\limits_{x\to\infty}f(x)=\lim\limits_{x\to\infty}g(x)$ og $\lim\limits_{x\to-\infty}f(x)=\lim\limits_{x\to-\infty}=g(x)$,\\ så er 
+		$f(x)=g(x)$.
+\end{center}
+
+
+\end{document}

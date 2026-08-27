@@ -2,8 +2,286 @@
 \input{../../preamb}
 \input{../bm}
 
+
+%\usepackage{xr}
+%\externaldocument{alg_opg_bm}
+
+\renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
+\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
 \begin{document}
 	
+\opr{opgalgfullkvad}
+Ved positivt fortegn bruker vi 1. kvadratsetning. Ved negativt fortegn bruker vi 2. kvadratsetning.
+\abc{
+	\item \phantom{text}\vs
+	\begin{align*}
+		x^2+6x+9&=x^2+2\cdot3\cdot x+3^2 \\
+		&=(x+3)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		b^2+14b+49&=b^2+7\cdot2\cdot b+7^2 \\
+		&=(b+7)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		a^2-2a+1&=a^2-2\cdot1\cdot a+1^2 \\
+		&=(a-1)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		k^2-\frac{2}{3}k+\frac{1}{9}&=k^2-2\cdot\frac{1}{3}\cdot k + \left(\frac{1}{3}\right)^2 \\
+		&=\left(k-\frac{1}{3}\right)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		c^2-\frac{1}{2}c+\frac{1}{16}&=c^2-2\cdot\frac{1}{4}\cdot c +\left(\frac{1}{4}\right)^2 \\
+		&=\left(c-\frac{1}{4}\right)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		y^2+\frac{6}{7}y+\frac{9}{49}&=y^2+2\cdot\frac{3}{7}\cdot y+\left(\frac{3}{7}\right)^2 \\
+		&=\left(y+\frac{3}{7}\right)^2
+	\end{align*}
+}	
+
+\opr{opgalgfullkvad2}
+Ved positivt fortegn bruker vi 1. kvadratsetning. Ved negativt fortegn bruker vi 2. kvadratsetning.
+\abc{
+	\item \phantom{text}\vs
+	\begin{align*}
+		25a^2+90a+81&=(5a)^2+2\cdot5a\cdot9+9^2\\ &=(5a+9)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		9b^2+12a+4&=(3b)^2+2\cdot3b\cdot2+2^2\\ &=(3b+2)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		64c^2-16c+1&=(8c)^2-2\cdot8+1^2\\&=(8c-1)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		\frac{1}{4}d^2+\frac{3}{4}d+\frac{9}{16}&=\left(\frac{1}{2}d\right)^2+2\cdot\frac{1}{2}d\cdot\frac{3}{4}+\left(\frac{3}{4}\right)^2\\ &=\left(\frac{1}{2}d+\frac{3}{4}\right)^2
+	\end{align*}
+	Eventuelt kan vi også skrive at
+	\[ \left(\frac{1}{2}d+\frac{3}{4}\right)^2=\left[\frac{1}{2}\left(d+\frac{3}{2}\right)\right]^2=\left(\frac{1}{2}\right)^2\left(d+\frac{3}{2}\right)^2=\frac{1}{4}\left(d+\frac{3}{2}\right)^2 \]
+	\item \phantom{text}\vs
+	\begin{align*}
+		\frac{1}{25}e^2+\frac{4}{35}e+\frac{4}{49}&=\left(\frac{1}{5}e\right)^2+2\cdot\frac{1}{25}e\cdot\left(\frac{2}{7}\right)^2\\
+		&=\left(\frac{1}{5}e^2+\frac{2}{7}\right)^2
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		\frac{81}{64}f^2-\frac{15}{4}f+\frac{25}{9}&=\left(\frac{9}{8}f\right)^2+2\cdot\frac{9}{8}f\cdot\frac{5}{3}+\left(\frac{5}{3}\right)^2\\ &=\left(\frac{9}{8}f-\frac{5}{3}\right)
+	\end{align*}
+}
+
+\opr{opgalgkongsetn}
+Vi bruker konjugatsetningen.
+\abc{
+	\item \phantom{text}\vs
+	\begin{align*}
+		(a-b)^2-b^2&=(a-b+b)(a-b-b) \\
+		&=a(a-2b)
+	\end{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
+		(k+x)^2-(k-x)^2&=(k+x-(k-x))(k+x+(k-x))\\
+		&=2x\cdot2k \\
+		&=4kx
+	\end{align*}
+}
+
+\opr{1tv22d1opg} 
+\metode{Metode 1}{2cm} \\
+Vi har at
+\[ 9x^2-30x+r = (3x)^2-2\cdot3x\cdot5+r \]
+Hvis $s=5$ og $r=s^2=25$, har vi at
+\[ (3x)^2-2\cdot3x\cdot5+r=(3x-5)^2=(3x-s)^2 \]
+\metode{Metode 2}{2cm} \\
+Vi har at
+\begin{align*}
+	(3x-s)^2&=9x^2-2\cdot3x\cdot s+s^2 \\
+	&=9x^2-6xs+s^2
+\end{align*}
+For å få en identitet, må vi for alle $s$ og $r$ ha at
+\begin{align*}
+	9x^2-6xs+s^2 &= 9x^2-30x+r \\
+	-6xs+s^2 &= -30x+r 
+\end{align*}
+Dette er oppfylt hvis $-6xs=-30x$ og $s^2=r$. Av den første likheten får vi at $s=5$, og da er $r=25$. \vsk
+
+\opr{1tv21d1opg8} 
+Vi har at
+\[ 4x^2+16x+r=(2x)^2+2\cdot2x\cdot4+r \]
+Hvis $s=2$, $t=4$ og $r=t^2=16$, har vi at
+\[ (2x)^2+2\cdot2x\cdot4+r =(2x+4)^2=(sx+t)^2 \]
+
+\opr{opgalgft}
+\abc{
+	\item Av fortegnsskjemaet ser vi at
+	\begin{itemize}
+		\item $f>0$ når $x\in (-1, 2)\cup(7, \infty)$
+		\item $f<0$ når $x\in(-\infty, -1)\cup (2, 7)$
+	\end{itemize}
+	\fig{fortgnskj5}
+	\item Da $(-3)\cdot1=-3$ og $(-3)+1=-2$, har vi at sum-produkt-metoden at
+	\[ f=x^2-2x-3 =(x-3)(x+1) \]
+	Av fortegnsskjemaet ser vi at
+	\begin{itemize}
+		\item $f>0$ når $x\in(-\infty, -1)\cup(3, \infty)$.
+		\item $f<0$ når $x\in(-1, 3)$.
+	\end{itemize}
+	\fig{fortgnskj6}
+}
+
+\newpage	
+
+\opr{1tv24d1opg3} 
+Vi kan uttrykke arealet til det grønne området på to måter:
+\begin{enumerate}
+	\item Arealet til det største grønne rektangelet er $a(a-b)$. Arealet til det minste grønne rektangelet er $b(a-b)$. Arealet til det grønne området er
+	\[ a(a-b)+b(a-b)=(a+b)(a-b) \]
+	\item Arealet til hele kvadratet er $a^2$. Arealet til det hvite kvadratet er $b^2$. Arealet til det grønne området er dermed
+	\[ a^2-b^2 \]
+\end{enumerate}
+Av de to uttrykkene for arealet til det grønne området har vi at
+\[ a^2-b^2=(a+b)(a-b) \]
+\fig{1tv24opg3}
+
+\opr{opgalgbrokforenkl} 
+\abc{
+	\item Av 3. kvadratsetning har vi at
+	\begin{align*}
+		(a+\sqrt{b})(a-\sqrt{b})&= a^2-(\sqrt{b})^2=a^2-b
+	\end{align*}
+	Da $a$ og $b$ er heltall, må $a^2-b$ også være et heltall.
+	
+	\item Vi har at
+	\begin{align*}
+		\frac{5}{4-\sqrt{3}} &= \frac{5}{4-\sqrt{3}}\cdot \frac{4+\sqrt{3}}{4+\sqrt{3}} \br
+		&=\frac{5(4+\sqrt{3})}{4^2-(\sqrt{3})^2} \\
+		&=\frac{5(4+\sqrt{3})}{13}
+	\end{align*}
+	
+	\item Vi har at
+	\begin{align*}
+		\frac{1}{\sqrt{a}+\sqrt{b}}&= \frac{1}{\sqrt{a}+\sqrt{b}}\cdot\frac{\sqrt{a}-\sqrt{b}}{\sqrt{a}-\sqrt{b}} \br
+		&=\frac{\sqrt{a}-\sqrt{b}}{(\sqrt{a})^2-(\sqrt{b})^2} \br
+		&=\frac{\sqrt{a}-\sqrt{b}}{a-b} \\
+	\end{align*}
+}
+
+\opr{opgalgledd}
+\abc{
+	\item 
+	\begin{align*}
+		x^2+6x-7 &= x^2+2\cdot3x+3^2-3^2-7 \\
+		&=(x+3)^2-9 -7 \\
+		&=(x+3)^2-16
+	\end{align*}
+	\item 
+	\begin{align*}
+		x^2-8x-20 &= x^2-2\cdot4x+4^2-4^2-20 \\
+		&= (x-4)^2-16-20 \\
+		&= (x-4)^2-36
+	\end{align*}
+	\item \begin{align*}
+		x^2+12x+117 &= x^2+2\cdot6x +6^2-6^2+11 \\
+		&=(x+6)^2-36+117 \\
+		&=(x+6)^2+81
+	\end{align*}
+	\item \begin{align*}
+		4x^2-12x+11 &= (2x)^2-2\cdot2x\cdot3 + 3^2-3^2+11 \\
+		&=(2x-3)^2-9+11 \\
+		&=(2x-3)^2+2
+	\end{align*}
+	\item 
+	\begin{align*}
+		49x^2+126x+80 &= (7x)^2+2\cdot7x\cdot9+8^2-9^2+80 \\
+		&= (7x+8)^2-81+80 \\
+		&=(7x+8)-1
+	\end{align*}
+}
+
+\opr{algopga1a2} 
+Kravet om at $a_1+a_2=b$ kan oppfylles for veldig mange forskjellige heltallsverdier av $a_1$ og $a_2$, mens kravet om at $a_1a_2=c$ bare kan oppfylles av noen få heltallsverdier av $a_1$ og $a_2$. \vsk
+
+\opr{opgalgfakt}
+\abc{
+\item Vi har allerede funnet at $x^2+6x-7=(x+3)^2-16$. Ved å bruke 3. kvadratsetning, får vi at
+\begin{align*}
+	(x+3)^2-16 &= (x+3)-4^2 \\
+	&=(x+3+4)(x+3-7) \\
+	&=(x+7)(x-1)
+\end{align*}
+\item Vi har allerede funnet at $x^2-8x-20=(x-4)^2-36$. Ved å bruke 3. kvadratsetning, får vi at
+\begin{align*}
+	(x-4)^2-36 &= (x-4)^2-6^2 \\
+	&= (x-4+6)(x-4-6) \\
+	&= (x+2)(x-10)
+\end{align*}
+}
+
+\opr{opgalgfullkvad3}
+\abc{
+	\item \begin{align*}
+		x^2-10kx+25k^2 &= x^2-2\cdot x\cdot5k+5k^2\\
+		&= (x-5k)^2
+	\end{align*}
+	\item
+	\begin{align*}
+		y^2+8yz+16z^2 &= y^2+2\cdot y\cdot 4z + (4z)^2 \\
+		&= (y+4z)^2
+	\end{align*}
+	\item 
+	\begin{align*}
+		a^2-20aq+100q^2 &= a^2-2\cdot a\cdot10q+(10q)^2 \\
+		&= (a-10q)^2
+	\end{align*}
+}
+
+\opr{1TV23D1opg3}
+Vi har at
+\begin{align*}
+	(x - 1)(x +a)(x - b) &= (x^2+a x-x-a)(x-b) \\
+	&= x^3+ax^2-x^2-ax-bx^2-abx+bx+ab \\
+	&= x^3+(a-b-1)x^2+(b-a-ab)x+ab
+\end{align*}
+Skal dette alltid være likt $x^3-5x^2-8x + 12$, må vi ha at
+\begin{align*}
+	a-b-1&=-5  \tag{i}\label{1tv23d1opg3a} \vn
+	b-a-ab &= -8 \tag{ii}\label{1tv23d1opg3b} \vn
+	a b &= 12 \tag{iii}\label{1tv23d1opg3c}
+\end{align*}
+Vi setter uttrykket for $ab$ inn i \eqref{1tv23d1opg3b}:
+\begin{align*}
+	b-a-12 &= -8 \\
+	b &= a+4
+\end{align*}
+Vi setter dette uttrykket for $b$ inn i \eqref{1tv23d1opg3c}:
+\begin{align*}
+	a-(a+4)-1 &= -5 \\
+	-4 &= 4
+\end{align*}
+Denne likningen er altså alltid oppfylt for $b=a+4$. Vi setter $b=a+4$ inn i \eqref{1tv23d1opg3c}:
+\begin{align*}
+	a(a+4)&=12 \\
+	a^2+4a-12 &= 0
+\end{align*}
+Da $-2\cdot6=-12$ og $-2+6=4$, har vi at sum-produkt-metoden at
+\[ a^2+4a-12=(a-2)(a+6) \]
+
+\opr{opgalgeksuneq}
+\abc{
+	\item Vi setter $f(x)=x^2+2x-8$. Da $-2\cdot4=-8$ og $-2+4=2$, har vi av sum-produkt-metoden at
+	\[ f=x^2+2x-8=(x-2)(x+4) \]
+	Av fortegnsskjemaet ser vi at $f<0$ for $-4<x<2$.
+	
+	\fig{fortgnskj7}
+}
+
 \opr{opgalgligukonst2}	
 \abc{
 \item 
@@ -20,14 +298,14 @@ Altså er $ x=0 $, eller
 }
 }
 
-\opr{opgalgsym}\\
+\opr{opgalgsym}
 La $ x_b $ være minimumspunktet til $ f $. Av symmetriegenskapene til $ f $ har vi at $ x_b=\frac{x_1+x_2}{2} $ hvis $ f(x_1)=f(x_2) $. Da $ {(-2)4=-8} $ og $ {4-2=2} $, er
 \[ f(x)=x^2+2x-8=(x-2)(x+4) \]
 Dette betyr at $ f(2)=f(-4)=0 $, og da er
 \[ x_b=\frac{2+(-4)}{2}=-1 \]
 
 
-\opr{opgalgpot2}\\
+\opr{opgalgpot2}
 Vi har at
 \begin{align*}
 	a^x &= \frac{c}{b} \br

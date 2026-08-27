@@ -2,8 +2,72 @@
 \input{../../preamb}
 \input{../bm}
 
+%\usepackage{xr}
+%\externaldocument{geo_opg_bm}
+
+%\renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
+%\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
+
 \begin{document}
-\footnotesize
+
+\opr{opggeoviscos}
+Se figur under.
+\abc{
+	\item Av \pyt har vi at
+	\[ AC=\sqrt{1^2+1^2}=\sqrt{2} \]
+	Dermed er
+	\[ \cos 45^\circ = \frac{AB}{AC}=\frac{1}{\sqrt{2}}=\frac{1}{\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}=\frac{\sqrt{2}}{2} \]
+	Videre er 
+	\[ \sin 45^\circ = \frac{BC}{AC}=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2} \]
+	\item Av \pyt har vi at
+	\[ DF=\sqrt{1^2+(\sqrt{3})^2}=2 \]
+	Dermed er
+	\[ \sin 30^\circ=\frac{DE}{DF}=\frac{1}{2} \]
+	\item Vi har at
+	\[ \cos 30^\circ=\frac{EF}{DF}=\frac{\sqrt{3}}{2} \]
+	\item Vi har at
+	\[ \sin 60^\circ = \frac{EF}{DF}=\frac{\sqrt{3}}{2} \quad,\quad
+	\cos 60^\circ = \frac{DE}{DF}=\frac{1}{2} \]
+	\item Finn $\tan 45^\circ$, $\tan 30^\circ$ og $\tan 60^\circ$
+	Vi har at
+	\begin{align*}
+		\tan 45^\circ &= \frac{BC}{AB}=1 \vn
+		\tan 30^\circ &= \frac{DE}{EF}=\frac{1}{\sqrt{3}} \\
+		\tan 60^\circ &= \frac{EF}{DE}=\frac{\sqrt{3}}{1}=\sqrt{3}
+	\end{align*}
+} \vsb 
+\fig{opggeo1_lf}
+
+\opr{opggeouminv}
+Av vinkelsummen trekanten har vi at
+\begin{align*}
+	180^\circ &= u+v+90^\circ \\
+	v &= 90^\circ-u
+\end{align*}
+Altså er
+\[ \cos(90^\circ-u)=\cos v \]
+\textsl{Merk: Vi har også at}
+\[ \sin v =\frac{AB}{AC}=\cos u \]
+\fig{opggeouminv_lf}
+
+\opr{opggeovistan}
+\metode{Metode 1}{2cm} \\
+Vi har at
+\[ \tan v = \frac{BC}{AB} \]
+Videre har vi at
+\begin{align*}
+	\sin v &= \frac{BC}{AC} \\
+	BC &= AC\sin v
+\end{align*}
+Tilsvarende er
+\[ AB= AC\cos v \]
+Dermed har vi at
+\[ \tan v = \frac{AC\sin v}{AC \cos v}=\frac{\sin v}{\cos v} \] \os
+
+\metode{Metode 2}{2cm} \\
+Vi har at
+\[ \tan v=\frac{BC}{AB}=\frac{\frac{BC}{AC}}{\frac{AB}{AC}}=\frac{\sin v}{\cos v} \]
+\fig{opggeovistan_lf}
 
 \opr{opggeo2r}
 \abc{
