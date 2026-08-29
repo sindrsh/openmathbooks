@@ -3,8 +3,8 @@
 \input{../bm}
 
 
-%\usepackage{xr}
-%\externaldocument{alg_opg_bm}
+\usepackage{xr}
+\externaldocument{alg_opg_bm}
 
 \renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
 \renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
@@ -270,40 +270,466 @@ Denne likningen er altså alltid oppfylt for $b=a+4$. Vi setter $b=a+4$ inn i \e
 	a(a+4)&=12 \\
 	a^2+4a-12 &= 0
 \end{align*}
-Da $-2\cdot6=-12$ og $-2+6=4$, har vi at sum-produkt-metoden at
+Da $-2\cdot6=-12$ og $-2+6=4$, har vi av sum-produkt-metoden at
 \[ a^2+4a-12=(a-2)(a+6) \]
 
-\opr{opgalgeksuneq}
+\opr{opgalgeksuneq} \vso
 \abc{
 	\item Vi setter $f(x)=x^2+2x-8$. Da $-2\cdot4=-8$ og $-2+4=2$, har vi av sum-produkt-metoden at
 	\[ f=x^2+2x-8=(x-2)(x+4) \]
 	Av fortegnsskjemaet ser vi at $f<0$ for $-4<x<2$.
 	
 	\fig{fortgnskj7}
+	\item Vi setter $f=x^2-4x-12$. Da $2\cdot(-6)=-12$ og $2+(-6)=-4$, har vi at sum-produkt-metoden at
+	\[ f=x^2-4x-12=(x+2)(x-6) \]
+	Av fortegnsskjemat ser vi at $f<0$ for $-2<x<6$.
+	
+	\fig{fortgnskj8}
+	\item Vi setter $f=x^2+7x+6$. Da $1\cdot6=6$ og $1+6=7$, har vi av sum-produkt-metoden at
+	\[ f=x^2+7x+6=(x+1)(x+6) \]
+	Vi kan selvsagt også her lage et fortegnsskjema, men velger å heller utnytte egenskapene til andregradsfunksjoner, som vi kan legge merke til blant annet av oppgave a) og b). Fra venstre har vi at
+	\begin{itemize}
+		\item $f$ har samme fortegn for alle $x$ før nullpunktet $x=-6$ og etter nullpunktet $x=-1$. \\
+		Da $f(-7)=(-7+1)(-7+6)=6$, er $f>0$ for $x<-1$ og $x>-1$.
+		\item $f$ har samme fortegn for alle $x$ som ligger mellom nullpunktene $x=-6$ og $x=-1$. \\
+		Da $f(-2)=(-2+1)(-2+6)=-4$, er $f<0$ for $-6<x<-1$.
+	\end{itemize}
+	Følgelig er $f\leq0$ for $-6\leq x\leq -1$.
 }
 
-\opr{opgalgligukonst2}	
+\opr{opgalgulikgraf}
+Gitt ulikheten 
+\[ x^2-9x+20>x-1 \]
 \abc{
-\item 
+	\item Av figuren ser vi at $x^2-9x+20>x-1$ for $x<3$ og $x>7$.
+	\item Vi omskriver ulikheten
+	\begin{align*}
+		x^2-9x+20>x-1 \\
+		x^2-10x+21>0
+	\end{align*}
+	Da $3\cdot7=21$ og $3+7=10$, har vi av sum-produkt-metoden at
+	\[ x^2-10x+21=(x+7)(x+3) \]
+	\fig{opgalgulik_lf}
+	\metode{Metode 1}{2cm} \\
+	Vi setter $f=x^2-10x+21=(x+7)(x+3$. Ulikheten krever dermed at $f>0$.
+	Av fortegnsskjemaet ser vi at $f>0$ for $x<-7$ og $x>-3$.
+	\fig{fortgnskj9}
+	
+	\metode{Metode 2}{2cm} \\
+	$f$ har likt fortegn før venstre nullpunkt og etter høyre nullpunkt, og likt fortegn mellom nullpunktene.
+	\begin{itemize}
+		\item Da $f(-8)=(-8+7)(-8+3)=5$, er $f>0$ for $x<-7$ og $x>-3$.
+		\item Da $f(-6)=(-6+7)(-6+3)=-3$, er $f<0$ for $-7<x<-3$.
+	\end{itemize}
+	Følgelig er $f>0$ for $x<-7$ og $x>-3$.
+}
+
+\opr{1TH21D1opg3}
+\abc{
+	\item Av 3. kvadratsetning har vi at
+	\[ 2x^2-2= 2(x^2-1)=2(x+1)(x-1) \]
+	Av 2. kvadratsetning har vi at $x^2-2x+1=(x-1)^2$. Følgelig er
+	\[ \frac{2x^2-2}{x^2-2x +1}=\frac{2(x+1)(x-1)}{(x-1)^2}=\frac{2(x+1)}{x-1} \]
+	\item Av 3. kvadratsetning er $x^2-9=(x+3)(x-3)$. Dermed har vi at
+	{\small
+	\begin{align*}
+		\frac{x}{x-3}+\frac{x-6}{x+3}-\frac{18}{x^2-9} &= \frac{x}{x-3}+\frac{x-6}{x+3}-\frac{18}{(x+3)(x-3)} \\
+		&=\frac{x(x+3)}{(x-3)(x+3)}+\frac{(x-6)(x-3)}{(x+3)(x-3)}-\frac{18}{(x+3)(x-3)} \\
+		&=\frac{x^2+3x}{(x-3)(x+3)}+\frac{x^2-3x-6x+18}{(x+3)(x-3)}-\frac{18}{(x+3)(x-3)}\\
+		&=\frac{2x^2-6x}{(x+3)(x-3)} \\
+		&=\frac{2x(x-3)}{(x+3)(x-3)} \\
+		&=\frac{2x}{x+3}
+	\end{align*}
+}
+}
+
+\opr{opgalgulikbrok}
+Gitt ulikheten
+\[ \frac{10}{x+3}-\frac{2}{x+5}>0 \]
+\abc{
+	\item Vi kan ikke gange begge sider av ulikheten med en fellesnevner, fordi faktorene $x+3$ og $x+5$ kan være både positive og negative. For noen tilfeller vil altså ganging med disse ''snu'' ulikheten.
+	\item Vi har at
+	\begin{align*}
+		\frac{10}{x+3}-\frac{2}{x+5} &= \frac{10(x+5)}{(x+3)(x+5)}-\frac{2(x+3)}{(x+5)(x+3)} \br
+		&=\frac{8x+44}{(x+5)(x+3)} \br
+		&=\frac{4(2x+11)}{(x+5)(x+3)}
+	\end{align*}
+	Vi setter $f=\frac{4(2x+11)}{(x+5)(x+3)}$. Ulikheten krever da at $f>0$. Av fortegnsskjemaet ser vi at
+	$f>0$ for $x\in\left(-\frac{11}{2}, -5\right)\cup (-3, \infty)$
+	\fig{fortgnskj10}
+}
+
+\opr{opgalgligukonst} 
+Vi har at
+\begin{align*}
+	ax^2+bx&=0 \\
+	x(ax+b)&= 0
+\end{align*}
+Dermed er $x=0$, eller
+\begin{align*}
+	ax+b &= 0 \\
+	x &= -\frac{b}{a}
+\end{align*}
+
+\opr{opgalgligukonst2}
+
+\abc{
+\item \metode{Metode 1}{2cm} \\
 Vi har at
 \algv{
 	2x^2-4x&=0 \\
-	x(2x-4)&=0
+	2x(x-2)&=0
 }
 Altså er $ x=0 $, eller 
 \algv{
-	2x-4&=0 \\
-	2x&=4 \\
+	x-2&=0 \\
 	x&=2
 }
+\metode{Metode 2}{2cm}\\
+Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+\[ x=0\quad\vee\quad x=-\frac{4}{2}=2 \]
+\item \metode{Metode 1}{2cm} \\
+Vi har at
+\algv{
+	3x^2+27x&=0 \\
+	3x(x+9)&=0
+}
+Altså er $ x=0 $, eller 
+\algv{
+	x+9&=0 \\
+	x&=-9
+}
+\metode{Metode 2}{2cm}\\
+Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+\[ x=0\quad\vee\quad x=-\frac{27}{3}=-9 \]
+\item \metode{Metode 1}{2cm} \\
+Vi har at
+\algv{
+	8x-9x^2=0 \\
+	x(8-9x)&=0
+}
+Altså er $ x=0 $, eller 
+\algv{
+	8-9x&=0 \\
+	x&=\frac{8}{9}
+}
+\metode{Metode 2}{2cm}\\
+Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+\[ x=0\quad\vee\quad x=-\frac{8}{-9}=\frac{8}{9} \]
 }
 
-\opr{opgalgsym}
-La $ x_b $ være minimumspunktet til $ f $. Av symmetriegenskapene til $ f $ har vi at $ x_b=\frac{x_1+x_2}{2} $ hvis $ f(x_1)=f(x_2) $. Da $ {(-2)4=-8} $ og $ {4-2=2} $, er
-\[ f(x)=x^2+2x-8=(x-2)(x+4) \]
-Dette betyr at $ f(2)=f(-4)=0 $, og da er
-\[ x_b=\frac{2+(-4)}{2}=-1 \]
 
+\opr{1TV23D1opg2}
+\metode{Metode 1}{2cm} \\
+Da $2\cdot(-4)=-8$ og $2+(-4)=-2$, har vi av sum-produkt-metoden at
+\[ f(x)=x^2-2x-8=(x+2)(x-4) \]
+Grafen til $f$ skjærer $x$-aksen når $x=-2$ og $x=4$. \os
+
+\metode{Metode 2}{2cm}\\
+Vi løser likningen $f(x)=x^2-2x-8=0$ ved \textit{abc}-formelen:
+\begin{align*}
+	x &= \frac{-(-2)\pm\sqrt{(-2)^2-4\cdot1\cdot(-8)}}{2\cdot1} \br
+	&=\frac{2\pm\sqrt{36}}{2}\br
+	&=\frac{2\pm 6}{2} \br
+	&= 1\pm 3
+\end{align*}
+Altså er 
+\[ x=1+3=4\quad\vee\quad x=1-3=-2 \]
+Grafen til $f$ skjærer $x$-aksen når $x=-2$ og $x=4$.
+
+\opr{opgalgabc}
+
+\abc{
+	\item 
+	\metode{Metode 1}{2cm}\\
+	Da $-3\cdot5=-15$ og $-3+5=2$, er
+	\[ x^2+2x-15=(x-3)(x+5)=0 \]
+	Altså er 
+	\[ x=3\quad\vee\quad x=5 \]
+	
+	\metode{Metode 2}{2cm} \\
+	Gitt likningen $ x^2+2x-15=0 $. Vi bruker \textit{abc}-formelen:
+	\begin{align*}
+		x &= \frac{-2\pm\sqrt{2^2-4\cdot1\cdot(-15)}}{2\cdot1} \br
+		&=\frac{-2\pm\sqrt{64}}{2}\br
+		&=\frac{-2\pm 8}{2} \\
+		&= -1\pm 4
+	\end{align*}
+	Altså er 
+	\[ x=-1+4=3\quad\vee\quad x=-1-4=-5 \]
+	\item 
+	\metode{Metode 1}{2cm}\\
+	Da $-7\cdot10=-70$ og $-7+10=3$, er
+	\[ x^2+3x-70=(x-7)(x+10)=0 \]
+	Altså er 
+	\[ x=7\quad\vee\quad x=-10 \]
+	
+	\metode{Metode 2}{2cm} \\
+	Gitt likningen $ x^2+3x-70=0 $. Vi bruker \textit{abc}-formelen:
+	\begin{align*}
+		x &= \frac{-3\pm\sqrt{3^2-4\cdot1\cdot(-70)}}{2\cdot1} \br
+		&=\frac{-3\pm\sqrt{189}}{2}\br
+		&=\frac{-3\pm 17}{2} \\
+	\end{align*}
+	Altså er 
+	\[ x=\frac{-3+17}{2}=7\quad\vee\quad x=\frac{-3-17}{2}=-10 \] 
+	\item Gitt likningen $ x^2+5x-7=0 $. Vi bruker \textit{abc}-formelen:
+	\begin{align*}
+		x&=\frac{-5\pm\sqrt{5^2-4\cdot1\cdot(-7)}}{2\cdot1} \br
+		&= \frac{-5\pm\sqrt{53}}{2}
+	\end{align*}
+	Altså er
+	\[ x=\frac{-5+\sqrt{53}}{2}\quad\vee\quad x=-\frac{5+\sqrt{53}}{2} \]
+}
+\abcs{7}{
+\item Gitt likningen $ 5x^2+2x-7=0 $. Vi bruker \textit{abc}-formelen:
+\begin{align*}
+	x&=\frac{-2\pm\sqrt{2^2-4\cdot5\cdot(-7)}}{2} \br
+	&=\frac{-2\pm\sqrt{144}}{2\cdot5} \br
+	&=\frac{-2\pm12}{2\cdot5} \br
+	&=\frac{-1\pm 6}{5}
+\end{align*}
+Altså er
+\[ x=\frac{-1+6}{5}=1\quad\vee x=\frac{-1-6}{5}=\frac{7}{5} \]
+}
+
+
+\opr{1TH21D1opg4}
+Grafen til en andregradsfunksjon $ f $ går gjennom punktene $ (0, 12) $, $ (-3, 0) $ og $ (2, 0) $. Bestem $ f(x) $.
+
+Vi setter $f(x)=ax^2+bx+c$. Da har vi at
+\begin{align*}
+	f(0)&=c=12 \vn
+	f(-3)&=a\cdot(-3)^2+b\cdot(-3)+c \\
+	&= 9a-3b+c \\
+	&=0 \\
+	f(2)&=a\cdot2^2+b\cdot2+c \\
+	&= 0
+\end{align*}
+Ved å sett inn at $c=12$, får vi følgende likningssystem:
+\begin{align*}
+	9a-3b+12 &= 0 \tag{i*} \vn
+	4a+2b+12 &= 0 \tag{ii*}
+\end{align*}
+Som vi forenkler til
+\begin{align*}
+	3a-b+4 &= 0 \tag{i}\label{1th21d1opg4a} \vn
+	2a+b+6 &= 0 \tag{ii}\label{1th21d1opg4b}
+\end{align*}
+Ved å summere \eqref{1th21d1opg4a} og \eqref{1th21d1opg4b}, får vi at
+\begin{align*}
+	5a+10 &= 0 \\
+	a &= -2
+\end{align*}
+Vi setter dette uttrykket for $a$ inn i \eqref{1th21d1opg4a}:
+\begin{align*}
+	3\cdot(-2)-b+4 &= 0 \\
+	b &= 2
+\end{align*}
+Altså er
+\[ f(x)=-2x^2-2x+12 \]
+
+
+\opr{1tv21opg4}
+\metode{Metode 1}{2cm} \\
+Skal likningen ha én løsning, må vi kunne skrive uttrykket som et fullstendig kvadrat med $x$ som et ledd. Av 1. kvadratsetning har vi at
+\begin{align*}
+	x^2+2kx-2k-1 &= (x+k)^2-k^2-2k-1
+\end{align*}
+Dermed må vi kreve at $-k^2-2k-1=k^2+2k+1=0$. Av 1. kvadratsetning har vi at $k^2+2k+1=(k+1)^2$. $(k+1)^2=0$ hvis $k=-1$. \os
+
+\metode{Metode 2}{2cm} \\
+Gitt likningen $x^2+2kx-2k-1=0$. Vi bruker \textit{abc}-formelen:
+\begin{align*}
+	x &= \frac{-2k\pm\sqrt{(2k)^2-4\cdot1\cdot(-2k-1)}}{2\cdot1} \br
+	&= \frac{-2k\pm\sqrt{4(k^2+2k+1)}}{2}
+\end{align*} 
+Skal likningen ha én løsning, må uttrykket i rottegnet være lik 0, altså at $k^2+2k+1=0$. Av 1. kvadratsetning har vi at \\ $k^2+2k+1=(k+1)^2$. $(k+1)^2=0$ hvis $k=-1$.
+
+\opr{opgalgsym}
+Grafen til $ f $ er symmetrisk om vertikallinja som går gjennom bunnpunktet, må $x$-verdien til bunnpunktet ligge midt mellom nullpunktene. Da $-2\cdot4=-8$ og $-2+4=2$, har vi av sum-produkt-metoden at
+\begin{align*}
+	f=x^2+2x-8=(x-2)(x+4)
+\end{align*}
+Dermed er $x=2$ og $x=-4$ nullpunktene til $f$, og da er $x$-verdien til bunnpunktet gitt ved
+\[ x=\frac{2+(-4)}{2}=-1 \]
+
+\opr{1tv26d1opg2}
+
+\abc{
+	\item Vi er gitt likningssystemet
+	\begin{align*}
+		-x^2+4 &= y \tag{I}\label{1tv26d1opg2a}\br
+		x-y &= 2 \tag{II} \label{1tv26d1opg2b}
+	\end{align*}
+	Vi setter uttrykket for $y$ fra \eqref{1tv26d1opg2a} inn i \eqref{1tv26d1opg2b}:
+	\begin{align*}
+		x-(-x^2+4)&=2 \\
+		x+x^2-4 &= 2 \\
+		x^2+x-6 &= 0
+	\end{align*}
+	Da $3\cdot(-2)=-6$ og $3+(-2)=1$, har vi at
+	\[ x^2+x-6=(x+3)(x-2) \]
+	Dermed er kan vi ha at $x=-3$, og da er (her bruker vi \eqref{1tv26d1opg2b}) $y=-3-2=-5$. Eller så er $x=2$, og da er $y=2-2=0$.
+	\item $x-y=2$ beskriver en rett linje. Når $x=0$, er $y=-2$. Når $y=0$, er $x=2$. Linja går altså gjennom punktene $(0, -2)$ og $(2, 0)$. \vsk
+	
+	$-x^2+4=y$ beskriver grafen til en andregradsfunksjon. Vi velger oss fem punkt på denne grafen:
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{r|r}
+			\hline
+			$x$ & $y$ \\ \hline
+			0 & $-0^2+4=4$ \\ \hline
+			1 & $-1^2+4=3$ \\ \hline
+			$-1$ & $-(-1)^2+4=3$ \\ \hline 
+			3 & $-4^2+4=-12$ \\ \hline
+			$-4$  & $-(-4)^2+4=-12$
+		\end{tabular}
+	\end{center}
+	
+	Vi skisserer grafene i et ruteark hvor de kvadratiske rutene har sidelengde 1, og finner at grafene skjærer hverandre i punktene $(-3, -5)$ og $(2, 0)$. Dermed er $x=-3$ og $y=-5$, eller $x=2$ og $y=0$.
+	\fig{1tv26d1opg2}
+}
+
+\opr{1TH21D1opg5}
+\abc{
+	\item $x+y=2$ beskriver en rett linje. Når $x=0$, er $y=-2$. Når $y=0$, er $x=-2$. Linja går altså gjennom punktene $(0, -2)$ og $(-2, 0)$. \vsk
+	
+	$x^2+2x-y=1$ kan vi skrive som $x^2+2x+1=y$.  Dette beskriver grafen til en andregradsfunksjon. Av 1. kvadratsetning har vi videre at $y=(x+1)^2$.
+	Vi velger oss tre punkt på denne grafen:
+	\begin{center}
+		\renewcommand{\arraystretch}{1.5}
+		\begin{tabular}{r|r}
+			\hline
+			$x$ & $y$ \\ \hline
+			$-1$ & $(-1+1)^2=0$ \\ \hline
+			1 & $(1+1)^2=4$ \\ \hline
+			$-3$ & $(-3+1)=4$ \\ \hline 
+		\end{tabular}
+	\end{center}
+	Vi skisserer grafene i et ruteark hvor de kvadratiske rutene har sidelengde 1, og ser da at grafene ikke skjærer hverandre. Dette betyr at likningssystemet ikke har en løsning.
+	\fig{1th21d1opg5}
+	\item Vi er gitt likningssystemet
+	\alg{
+		x^2+2x-y =-1 \tag{I} \label{1th21d1opg5a}\vn
+		x+y = -2 \tag{II} \label{1th21d1opg5b}
+	}
+	Vi adderer \eqref{1th21d1opg5a} med \eqref{1th21d1opg5b}:
+	\begin{align*}
+		x^2+2x-y+x+y &= -1+(-2) \\
+		x^2+3x+3 &= 0
+	\end{align*}
+	Av \textit{abc}-formelen er
+	\begin{align*}
+		x &= \frac{-3\pm\sqrt{3^2-4\cdot1\cdot3}}{2} \br
+		&= \frac{-3\pm\sqrt{-3}}{2}
+	\end{align*}
+	Da vi har et negativt uttrykk i rottegnet, har ikke likningen noen reell løsning. \os
+	
+	\mers{
+		I stedet for å bruke hele uttrykket fra \textit{abc}-formelen, kunne vi regnet ut bare $b^2-4ac$.
+	}
+}
+
+\op{opgalgabcomv}
+Vi er gitt funksjonen $ f(x)=ax^2+bx+c $ og tallene $ t=\frac{-b+\sqrt{b^2-4ac}}{2a} $ og $ s=\frac{-b-\sqrt{b^2-4ac}}{2a} $.
+\abc{
+	\item Vi gjennkjenner $t$ og $s$ som løsningene gitt av \textit{abc}-formelen. Dermed er $f(s)=f(t)=0$.
+	\item Vi har at
+	{ \small
+	\begin{align*}
+		f(t)&=a\left(\frac{-b+\sqrt{b^2-4ac}}{2a}\right)^2+b\frac{-b+\sqrt{b^2-4ac}}{2a}+c \br
+		&=a\frac{b^2-2b\sqrt{b^2-2ac}+b^2-4ac}{4a^2}+b\frac{-b+\sqrt{b^2-4ac}}{2a}+c \br
+		&=\frac{b^2-b\sqrt{b^2-4ac}-2ac}{2a}+\frac{-b^2+b\sqrt{b^2-4ac}}{2a}+c \\
+		&=\frac{-2ac}{2a}+c \\
+		&=-c+c \\
+		&=0
+	\end{align*}
+	\begin{align*}
+		f(s)&=a\left(\frac{-b-\sqrt{b^2-4ac}}{2a}\right)^2+b\frac{-b-\sqrt{b^2-4ac}}{2a}+c \br
+		&=a\frac{b^2+2b\sqrt{b^2-2ac}+b^2-4ac}{4a^2}+b\frac{-b-\sqrt{b^2-4ac}}{2a}+c \br
+		&=\frac{b^2+b\sqrt{b^2-4ac}-2ac}{2a}+\frac{-b^2-b\sqrt{b^2-4ac}}{2a}+c \\
+		&=\frac{-2ac}{2a}+c \\
+		&=-c+c \\
+		&=0
+	\end{align*}
+	}
+	\item Vi har at
+	\begin{align*}
+		t-s &= \frac{-b+\sqrt{b^2-4ac}}{2a}-\frac{-b-\sqrt{b^2-4ac}}{2a} \br
+		&=\frac{2\sqrt{b^2-4ac}}{2a} \br
+		&=\frac{\sqrt{b^2-4ac}}{2a}
+	\end{align*}
+	Utregningen over viser at $t>s$. Altså er $t-s$ avstanden mellom nullpunktene til $f$.
+	\item Vi har at
+	\begin{align*}
+		t+s &= \frac{-b+\sqrt{b^2-4ac}}{2a}+\frac{-b-\sqrt{b^2-4ac}}{2a} \\
+		&= \frac{-2b}{2a} \\
+		&= -\frac{b}{a}
+	\end{align*}
+	Dermed er 
+	\[ \frac{t+s}{2}=-\frac{b}{2a} \]
+	Dette tallet er midtpunktet mellom $t$ og $s$.
+	\item Av 3. kvadratsetning har vi at
+	\begin{align*}
+		s\cdot t&= \frac{-b+\sqrt{b^2-4ac}}{2a}\cdot\frac{-b-\sqrt{b^2-4ac}}{2a} \br
+		&=\frac{(-b)^2-\left(\sqrt{b^2-4ac}\right)^2}{4a^2} \\
+		&=\frac{b^2-(b^2-4ac)}{4a^2} \\
+		&= \frac{4ac}{4a^2} \br
+		&= \frac{c}{a}
+	\end{align*}
+	Hvis $f(0)=15$, er $c=15$. Hvis $st=3$, er da
+	\begin{align*}
+		\frac{15}{a} &= 3 \\
+		a &= 5 
+	\end{align*}
+}
+
+\opr{algopgpoldiv}
+\abc{
+	\item Vi har at 
+	\begin{align*}
+		\frac{x^4-2x^3+x^2-2x}{x^3+x} &= \frac{x(x^3+x)-x^2-2x^3+x^2-2x}{x^3+x} \br
+		&= x+\frac{-2x^3-2x}{x^3+x} \br
+		&=x+\frac{-2(x^3+x)}{x^3+x} \br
+		&=x-2
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\frac{-4x^4+7x^2-3}{-4x^2+3} &= \frac{x^2(-4x^2+3)-3x^2+7x^2-3}{-4x^2+3} \br
+		&=x^2+\frac{4x^2-3}{-4x^2+3} \br
+		&=x^2-1
+	\end{align*}
+}
+
+\opr{1tv24d1opg2}
+Vi har at
+\alg{
+	\phantom{-}&(2x^3+3x^2-11x-6):(2x^2+7x+3) = x-2\\ 
+	-&\underline{(2x^3+7x^2+3x)} \\
+	&\phantom{000\,\,x\;}10x^2-14x-6  \\
+	&\phantom{xx}-\underline{(10x^2-14x-6)}\\
+	&\phantom{aaaaaaaaaaaaaaaa''}0 \\
+}
+Videre er
+\alg{
+	\phantom{-}&(2x^3+3x^2-11x-6):(x-2) = 2x^2+7x+3\\ 
+	-&\underline{(2x^3-4x^2)} \\
+	&\phantom{000\,\,x-}7x^2-11x-6  \\
+	&\phantom{xxx}-\underline{(7x^2-14x)}\\
+	&\phantom{aaaaaaaaaaa''\,}3x-6 \\
+	&\phantom{aaaaaaaax}-\underline{(3x-6)}\\
+	&\phantom{aaaaaaaaaaaaaaaaa} 0
+}
+
+\opr{1tv22d1opg6}
+Gitt funksjonen $f(x)=2x^3+x^2-18x-9$. Divisjonen $f(x):(x-3)$ går opp hvis $x-3$ er en faktor i uttrykket for $f$. Hvis $f(3)=0$, er $x-3$ en faktor. Vi har at
+\begin{align*}
+	f(3)&= 2\cdot3^3+3^2-18\cdot3-9 \\
+	&= 2\cdot27+9-18\cdot3-9 \\
+	&= 0
+\end{align*}
+Divisjonen går altså opp.
 
 \opr{opgalgpot2}
 Vi har at

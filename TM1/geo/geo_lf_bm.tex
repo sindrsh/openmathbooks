@@ -2,14 +2,13 @@
 \input{../../preamb}
 \input{../bm}
 
-\usepackage{xr}
-\externaldocument{geo_opg_bm}
+%\usepackage{xr}
+%\externaldocument{geo_opg_bm}
 
 \renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
 \renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
 
 \begin{document}
-
 \opr{opggeoviscos}
 Se figur under.
 \abc{
@@ -145,6 +144,61 @@ Av \rref{sincostan} og \rref{sincostan2} har vi at
 	\includegraphics{\figp{1th22opg1b_lf}}
 \end{figure}
 
+\opr{opggeoperf}
+\abc{
+\item Da periferivinkelen $\angle BAC$ spenner over samme bue som sentralvinkelen $\angle BOC$ (se \rref{perfvink}), er $\angle BOC=2\angle BAC=60^\circ$. Da $\triangle OBC$ er likebeint ($OB=OC$), er 
+\begin{align*}
+	2v &= 180^\circ-\angle BOC \\
+	2v &= 180^\circ-60^\circ \\
+	v &= 60^\circ
+\end{align*}
+\fig{opggeoperfa_lf}
+\item Da periferivinkelen $\angle BAC$ spenner over samme bue som sentralvinkelen $\angle BOC$, er $\angle BOC=2\angle BAC=160^\circ$. Da $\triangle OBC$ er likebeint ($OB=OC$), er 
+\begin{align*}
+	2v &= 180^\circ-\angle BOC \\
+	2v &= 180^\circ-160^\circ \\
+	v &= 10^\circ
+\end{align*}
+\fig{opggeoperfb_lf}
+}
+
+\opr{opggeolikeperf}
+Periferivinklene $\angle ACB$ og $\angle ADB$ spenner over samme bue som sentralvinkelen $\angle AOC$. Av \rref{perfvink} er da $\angle ACB=\angle ADB=\frac{1}{2}\angle AOB$.
+\fig{opggeolikeperf_lf}
+
+\opr{opggeotalesTM}
+\abc{
+	\item Tales' setning sier at hvis $\angle ACB$ er en periferivinkel som spenner over diameteren til sirkelen, er $\angle ACB = 90^\circ$. \vsk
+	
+	Bevis: Hvis $\angle ACB$ spenner over diameteren, er sentralvinkelen $\angle BOA = 180^\circ$. Av \rref{perfvink} har vi da at $\angle ACB=\frac{1}{2}\angle BOA=90^\circ$.
+	
+	\fig{opggeotalesTM}
+	\item Tales' setning kan vi skrive som
+	{\small
+		\[\angle C=90^\circ \Leftarrow \text{$ AB $ er en diameter i den omskrevne sirkelen til }\triangle ABC\]
+	}
+	
+	Det \textsl{omvendte} tilfellet kan vi altså skrive som
+	{\small
+		\[\angle C=90^\circ \Rightarrow \text{$ AB $ er en diameter i den omskrevne sirkelen til }\triangle ABC\]}
+	(Se \grubrs{opggeotalesTMconv} for bevis av det omvendte tilfellet.)
+	}
+
+\opr{opggeotanchord}
+\fig{geoopgtanchordlf}
+Vi setter $ v=\angle BAC $.
+Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
+\[ \angle EBC=90^\circ-\angle CBO=u \]
+\newpage
+
+\grubr{opggeoabcr}
+Vi setter $a=BC$, $b=AC$ og $c=AB$. Videre lar vi $r$ være radien til den innskrevne sirkelen. Da har vi at
+\begin{align*}
+	2T &= 2A_{\triangle SAB} + 2A_{\triangle SBC}+2A_{\triangle SCA} \\
+	&= cr+ar+br \\
+	T &= \frac{1}{2}(a+b+c)r
+\end{align*}
+\fig{opggeoabcr}
 
 \opr{opggeo2r}
 \abc{
@@ -173,12 +227,47 @@ Av \rref{sincostan} og \rref{sincostan2} har vi at
 	Formelen kjenner vi igjen som Pytagoras' setning.
 }
 
-\opr{opggeotanchord}
-\fig{geoopgtanchordlf}
-Vi setter $ v=\angle BAC $.
-Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
-\[ \angle EBC=90^\circ-\angle CBO=u \]
-\newpage
+\opr{1tv21d1opg2}
+\metode{Metode 1}{2cm} \\
+Da $\sin A = \frac{BC}{AC}$, er
+\begin{align*}
+	BC&= AC\sin \angle A \\
+	&=10\cdot\frac{3}{5} \\
+	&=6
+\end{align*}
+\metode{Metode 2}{2cm} \\
+Vi gjenkjenner $\sin \angle A=\frac{3}{5}$ som forholdet det Pytagoreiske trippelet 3, 4, 5. Da $AC=10=2\cdot5$, er $BC=2\cdot3=6$.
+
+\fig{1tv21d1opg2_lf}
+
+\opr{1tv25d1opg5}
+\abc{
+	\item Vi bruker arealsetningen (se \rref{arsetn}), og får at
+	\begin{align*}
+		T &= \frac{1}{2}AB\cdot AC\cdot\sin A \\
+		&= \frac{1}{2}\cdot 10\cdot 6\cdot \frac{1}{2} \\
+		&= 15
+	\end{align*}
+	\item Vi bruker cosinussetningen, og får at
+	\begin{align*}
+		QR^2 &= PQ^2+PR^2-2PQ\cdot PR\cos 60^\circ \\
+		&= 8^2+3^2-2\cdot8\cdot3\cdot\frac{1}{2} \\
+		&=64+9-24 \\
+		&= 49 \\
+		QR &= \sqrt{49} \\
+		&= 7
+	\end{align*}
+	(Da $QR$ er en lengde, har vi forkastet den negative løsningen for $QR$.)
+}
+
+\opr{opggeoeqar}
+I en likesidet trekant er alle vinklene lik $60^\circ$. Av arealsetningen har vi da at
+\begin{align*}
+	T &= \frac{1}{2}\cdot4\cdot4\cdot\sin 60^\circ \\
+	&= 8\cdot\frac{\sqrt{3}}{2} \br
+	&= 4\sqrt{3}
+\end{align*}
+
 \grubr{opggeoslope}\\
 Vi har at
 \alg{
