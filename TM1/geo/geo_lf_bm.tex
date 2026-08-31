@@ -1,24 +1,26 @@
 \input{../../doc}
 \input{../../preamb}
 \input{../bm}
+\input{../../lf}
 
-%\usepackage{xr}
+
+\usepackage{xr}
 %\externaldocument{geo_opg_bm}
-
+%\externaldocument{../TM1_bm}
 \renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
-\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
+\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}} \\}
 
 \begin{document}
-\opr{opggeoviscos}
-Se figur under.
+\opr{opggeoviscos} \vs
+\fig{opggeo1_lf}
 \abc{
-	\item Av \pyt har vi at
+	\item Av \pyt\ har vi at
 	\[ AC=\sqrt{1^2+1^2}=\sqrt{2} \]
 	Dermed er
 	\[ \cos 45^\circ = \frac{AB}{AC}=\frac{1}{\sqrt{2}}=\frac{1}{\sqrt{2}}\cdot\frac{\sqrt{2}}{\sqrt{2}}=\frac{\sqrt{2}}{2} \]
 	Videre er 
 	\[ \sin 45^\circ = \frac{BC}{AC}=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2} \]
-	\item Av \pyt har vi at
+	\item Av \pyt\ har vi at
 	\[ DF=\sqrt{1^2+(\sqrt{3})^2}=2 \]
 	Dermed er
 	\[ \sin 30^\circ=\frac{DE}{DF}=\frac{1}{2} \]
@@ -34,11 +36,11 @@ Se figur under.
 		\tan 30^\circ &= \frac{DE}{EF}=\frac{1}{\sqrt{3}} \\
 		\tan 60^\circ &= \frac{EF}{DE}=\frac{\sqrt{3}}{1}=\sqrt{3}
 	\end{align*}
-} \vsb 
-\fig{opggeo1_lf}
+} 
 
+\newpage
 \opr{opggeouminv}
-Av vinkelsummen trekanten har vi at
+Av vinkelsummen i trekanten har vi at
 \begin{align*}
 	180^\circ &= u+v+90^\circ \\
 	v &= 90^\circ-u
@@ -68,6 +70,7 @@ Vi har at
 \[ \tan v=\frac{BC}{AB}=\frac{\frac{BC}{AC}}{\frac{AB}{AC}}=\frac{\sin v}{\cos v} \]
 \fig{opggeovistan_lf}
 
+\newpage
 \opr{opggeoquadrants}
 Vis at hvis $u=180^\circ-v$, så er $\sin u=\sin v$ og $\cos u=-\cos v$.
 
@@ -143,8 +146,8 @@ Av \rref{sincostan} og \rref{sincostan2} har vi at
 	\includegraphics{\figp{1th22opg1_lf}} \qquad
 	\includegraphics{\figp{1th22opg1b_lf}}
 \end{figure}
-
-\opr{opggeoperf}
+\newpage
+\opr{opggeoperf} \vs
 \abc{
 \item Da periferivinkelen $\angle BAC$ spenner over samme bue som sentralvinkelen $\angle BOC$ (se \rref{perfvink}), er $\angle BOC=2\angle BAC=60^\circ$. Da $\triangle OBC$ er likebeint ($OB=OC$), er 
 \begin{align*}
@@ -166,6 +169,7 @@ Av \rref{sincostan} og \rref{sincostan2} har vi at
 Periferivinklene $\angle ACB$ og $\angle ADB$ spenner over samme bue som sentralvinkelen $\angle AOC$. Av \rref{perfvink} er da $\angle ACB=\angle ADB=\frac{1}{2}\angle AOB$.
 \fig{opggeolikeperf_lf}
 
+\newpage
 \opr{opggeotalesTM}
 \abc{
 	\item Tales' setning sier at hvis $\angle ACB$ er en periferivinkel som spenner over diameteren til sirkelen, er $\angle ACB = 90^\circ$. \vsk
@@ -185,13 +189,12 @@ Periferivinklene $\angle ACB$ og $\angle ADB$ spenner over samme bue som sentral
 	}
 
 \opr{opggeotanchord}
-\fig{geoopgtanchordlf}
 Vi setter $ v=\angle BAC $.
 Da $ \angle BAC $ er en periferivinkel, er $ \angle BOC=2v $. $ \triangle BCO $ er likebeint, og derfor er $ \angle CBO=90^\circ-u$ (forklar for deg selv hvorfor). Nå har vi at
 \[ \angle EBC=90^\circ-\angle CBO=u \]
-\newpage
+\fig{geoopgtanchordlf}
 
-\grubr{opggeoabcr}
+\opr{opggeoabcr}
 Vi setter $a=BC$, $b=AC$ og $c=AB$. Videre lar vi $r$ være radien til den innskrevne sirkelen. Da har vi at
 \begin{align*}
 	2T &= 2A_{\triangle SAB} + 2A_{\triangle SBC}+2A_{\triangle SCA} \\
@@ -200,7 +203,9 @@ Vi setter $a=BC$, $b=AC$ og $c=AB$. Videre lar vi $r$ være radien til den innsk
 \end{align*}
 \fig{opggeoabcr}
 
+\newpage
 \opr{opggeo2r}
+\fig{geoopg2r_lf}
 \abc{
 	\item Vi har at
 	\algv{
@@ -212,7 +217,7 @@ Vi setter $a=BC$, $b=AC$ og $c=AB$. Videre lar vi $r$ være radien til den innsk
 		c-r+a-r&=b \\
 		c+a-b&=2r
 	}
-	\item Med $ c $ som grunnlinje har $ \triangle ABC $ høgde $ b $. Av den klassiske arealformelen for en trekant (se \mb) og formelen fra \refop{opggeoabcr} har vi da at
+	\item Med $ c $ som grunnlinje har $ \triangle ABC $ høyde $ b $. Av den klassiske arealformelen for en trekant (se \mb) og formelen fra \refops{opggeoabcr} har vi da at
 	\alg{
 		(a+b+c)r &= ac \\
 		r &= \frac{ac}{a+b+c}
@@ -229,7 +234,7 @@ Vi setter $a=BC$, $b=AC$ og $c=AB$. Videre lar vi $r$ være radien til den innsk
 
 \opr{1tv21d1opg2}
 \metode{Metode 1}{2cm} \\
-Da $\sin A = \frac{BC}{AC}$, er
+Da $\sin A = \frac{BC}{AC}$, er 
 \begin{align*}
 	BC&= AC\sin \angle A \\
 	&=10\cdot\frac{3}{5} \\
@@ -242,7 +247,7 @@ Vi gjenkjenner $\sin \angle A=\frac{3}{5}$ som forholdet det Pytagoreiske trippe
 
 \opr{1tv25d1opg5}
 \abc{
-	\item Vi bruker arealsetningen (se \rref{arsetn}), og får at
+	\item Vi bruker arealsetningen (se \rref{arealsetn}), og får at
 	\begin{align*}
 		T &= \frac{1}{2}AB\cdot AC\cdot\sin A \\
 		&= \frac{1}{2}\cdot 10\cdot 6\cdot \frac{1}{2} \\
@@ -260,6 +265,42 @@ Vi gjenkjenner $\sin \angle A=\frac{3}{5}$ som forholdet det Pytagoreiske trippe
 	(Da $QR$ er en lengde, har vi forkastet den negative løsningen for $QR$.)
 }
 
+\opr{opggeoarealsetn}
+\abc{
+	\item
+	Vi bruker arealsetningen (se \rref{arealsetn}), og får at
+	\begin{align*}
+		T &= \frac{1}{2}AB\cdot AC\cdot\sin A \\
+		&= \frac{1}{2}\cdot 5\cdot 7\cdot \frac{\sqrt{3}}{2} \\
+		&= \frac{35\sqrt{3}}{4}
+	\end{align*} 
+	\item Vi bruker arealsetningen, og får at
+	\begin{align*}
+		T&= \frac{1}{2}\cdot 4\cdot 3\cdot \frac{\sqrt{5}-1}{4} \\
+		&= \frac{3(\sqrt{5}-1)}{2}
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\angle C &= 180^\circ -\angle A - \angle B \\
+		&= 180^\circ-75^\circ-60^\circ\\
+		&= 45^\circ
+	\end{align*}
+	Vi bruker arealsetningen, og får at
+	\begin{align*}
+		T &= \frac{1}{2}AC\cdot BC\cdot\sin C \\
+		&= \frac{1}{2}\cdot \sqrt{6}\cdot (\sqrt{3}+1)\cdot \frac{\sqrt{2}}{2} \br
+		&= \frac{\sqrt{2}\sqrt{3}(\sqrt{3}+1)\sqrt{2}}{4} \br
+		&= \frac{3+\sqrt{3}}{2}
+	\end{align*}
+}
+
+\opr{opggeoarealsetn}
+\abc{
+	\item Se bevis gitt på side \pageref{arealsetnbevis} i \tmen.
+	\item Se bevis gitt på side \pageref{cossetnbevis} i \tmen.
+}
+
+
 \opr{opggeoeqar}
 I en likesidet trekant er alle vinklene lik $60^\circ$. Av arealsetningen har vi da at
 \begin{align*}
@@ -268,13 +309,88 @@ I en likesidet trekant er alle vinklene lik $60^\circ$. Av arealsetningen har vi
 	&= 4\sqrt{3}
 \end{align*}
 
-\grubr{opggeoslope}\\
+\opr{1th21d1opg2}
+Da $\cos \angle A\neq 1$ og $\sin \angle C\neq 0$, er $\angle B=90^\circ$, og da er $AC$ hypotenusen til trekanten. Dermed er
+\begin{align*}
+	\cos A &= \frac{AB}{AC}\br
+	AC &= \frac{AB}{\cos A} \br
+	&= \frac{4}{\frac{1}{2}} \br
+	&= 8
+\end{align*}
+
+\opr{1tv26d1opg6}
+Da $\angle B=90^\circ$, er $AC$ hypotenusen. Da $\tan A = \frac{BC}{AB}=1$, er $BC=AB$. Dermed er $\triangle ABC$ rettvinklet og likebeint. Vi setter $BC=AB=1$. Av \pyt\ er da
+\[ AC=\sqrt{AB+BC}=\sqrt{2} \]
+\fig{1th21d1opg2_lf}
+
+\opr{1TH21D1opg8}
+Vi bruker cosinussetningen (se \rref{cossetn}), og får at
+\begin{align*}
+	BC^2 &= AC^2+AB^2 -2\cdot\cos 120^\circ \\
+	&= 2^2+4^2-2\cdot2\cdot4\cdot\left(-\frac{1}{2}\right) \\
+	&= 28\\
+	BC &= \sqrt{28}
+\end{align*}
+
+\newpage
+\opr{1tv26d1opg7}
+Vi er gitt trekanten
+\fig{t1v26d1opg7_lf}
+\abc{
+	\item Vi bruker arealsetningen (se \rref{arealsetn}), og får at
+	\begin{align*}
+		T &= \frac{1}{2}\cdot10\sqrt{3}\cdot4\cdot\sin 30^\circ \\
+		&= \frac{1}{2}\cdot10\sqrt{3}\cdot4\cdot\frac{1}{2}\\
+		&=\cdot10\sqrt{3}
+	\end{align*}
+	\item Av cosinussetningen (se \rref{cossetn}) har vi at
+	\begin{align*}
+		x^2 =& \left(10\sqrt{3}\right)^2+4^2-2\cdot10\sqrt{3}\cdot4\cdot\cos 30^\circ \\
+		&= 316-80\sqrt{3}\cdot\frac{\sqrt{3}}{2} \br
+		&= 316-40\cdot3 \\
+		&= 196 \\
+		x &= \sqrt{196} \\
+		&= 14
+	\end{align*}
+	Dermed er omkretsen $O$ gitt ved
+	\[ O=4+10\sqrt{3}+14=18+10\sqrt{3} \]
+}
+
+
+\grubr{opggeoslope}
 Vi har at
 \alg{
 	q&=\frac{BC}{AB}=\tan u \vn
 	p&=\frac{-EF}{ED}=-\frac{EF}{ED}=-\tan v
 }
 \fig{opggeoslope_lf}
+
+\newpage
+\grubr{1tv24d2opg3}
+Av arealsetningen (se \rref{arealsetn}) har vi at
+\begin{align*}
+	T &= \frac{1}{2}AB\cdot AC\cdot\sin A \br
+	AC &= \frac{AB\cdot \sin A}{2T} \br
+	&= \frac{8\cdot\frac{\sqrt{3}}{2}}{4\sqrt{3}} \\
+	&= 2
+\end{align*}
+Av cosinussetningen (se \rref{cossetn}) har vi at
+\begin{align*}
+	BC^2 &= AC^2+AB^2-2AC\cdot AB\cdot \cos A \\
+	&= 2^2+8^2-2\cdot2\cdot8\cdot\left(-\frac{1}{2}\right) \\
+	&= 84 \\
+	BC &= \sqrt{84} \\
+	&= \sqrt{4\cdot21} \\
+	&= 2\sqrt{21}
+\end{align*}
+
+For $\triangle ABC$ har vi at
+\begin{itemize}
+	\item $AB=8$
+	\item $\angle A=120^\circ$
+	\item Arealet til trekanten er $4\sqrt{3}$
+\end{itemize}
+Finn de respektive lengdene til $AC$ og $BC$.
 
 
 \grubr{opggeo180minv}
@@ -306,12 +422,59 @@ Dermed er
 \[ A_\text{blått område}=r^2\left(\frac{1}{2}\sin(2v)+\frac{\pi v}{180^\circ}\right) \]
 
 \newpage
+\grubr{opggeoR}
+\fig{opggeoRlos}
+Av \rref{perfvink} er $ \angle CSA=2\angle CBA $. Da $ \triangle ASC $ er likesidet, er derfor $ \angle DSA=\angle CBA $. Følgelig er $ \triangle ASD\sim \triangle CBE $. Dette betyr at
+\alg{
+	\frac{a}{EC}&=\frac{r}{\frac{1}{2}b} \\
+	r&=\frac{ab}{2EC}
+}
+Da $ 2A_{\triangle ABC}=EC\cdot c $, er $ EC=\frac{2A_{\triangle ABC}}{c} $, og dermed er
+\[ r=\frac{abc}{4A_{\triangle ABC}} \]
+
+\newpage
+\grubr{opggeoviscosuv}
+\fig{opgcoscos}
+I figuren over merker vi oss at
+\alg{
+	EB&=\sin v & AC &= \sin u  \br
+	OE&=\cos v & OC&=\cos u
+}
+Da $ \triangle OCA \sim \triangle BEF $, har vi at
+\[ FE=\frac{BE}{OC}AC=\frac{\sin v}{\cos u}\sin u \]
+Videre har vi at $ EA=OA-OE=1-\cos v $. Tilsvarende er $ CH=1-\cos u $. I tillegg er 
+\nn{
+	DC=FG=(FE+EA)\cos u=\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u
+}
+Nå har vi at
+\alg{
+	OD &= OH-CH-DC \\
+	\cos(u+v)&=1-(1-\cos u)-\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u \\
+	&= \cos u \cos v- \sin u \sin v
+}
+
+\grubr{opggeotalesTMconv}
+Gitt $ \triangle ABC$, hvor $ \angle C=90^\circ $, $ a=BC $, $ b=AC $, og $ c=AB $. Da er $ 4A_{\triangle ABC}=2ab $.
+Av \grubrs{opggeoR} er da $  r=\frac{c}{2} $. Altså er $ c=2r $, og er dermed en diameter i den omskrevne sirkelen.
+
+\newpage
+
 \grubr{opgeo45vink}
 \fig{opggeo45vinklos}
 $ \triangle ABE $ er rettvinklet og likebeint. Periferivinklene $ \angle BCE $ og $ \angle BAE $ spenner over samme bue, og dermed er
 \nn{
-v = \angle BAE=45^\circ
+	v = \angle BAE=45^\circ
 }
+
+
+
+\grubr{opggeotangentsq}
+Av \refops{opggeotanchord} er $\angle ADB=\angle BAC$. Dermed har $\triangle BAC$ og $\triangle BDA$ to parvis like store vinkler (de har $\angle DBA$ felles), og dermed er trekantene formlike. Altså har vi at
+\alg{
+	\frac{AB}{BD}&=\frac{BC}{AB} \br
+	AB^2 &= BC\cdot BD
+}
+\fig{opggeotangentsq_los}
 
 \newpage
 \grubr{opggeosin18}
@@ -331,50 +494,7 @@ Vi forkaster den negative løsningen for $ x $, og får at
 \[BD=\frac{x}{2}=\frac{\sqrt{5}-1}{4}y  \]
 Da $ \sin 18^\circ=\frac{BD}{BC} $, er
 \[ \sin 18^\circ = \frac{\sqrt{5}-1}{4} \]
-\newpage
-\grubr{opggeoR}
-\fig{opggeoRlos}
-Av \rref{perfvink} er $ \angle CSA=2\angle CBA $. Da $ \triangle ASC $ er likesidet, er derfor $ \angle DSA=\angle CBA $. Følgelig er $ \triangle ASD\sim \triangle CBE $. Dette betyr at
-\alg{
-	\frac{a}{EC}&=\frac{r}{\frac{1}{2}b} \\
-	r&=\frac{ab}{2EC}
-}
-Da $ 2A_{\triangle ABC}=EC\cdot c $, er $ EC=\frac{2A_{\triangle ABC}}{c} $, og dermed er
-\[ r=\frac{abc}{4A_{\triangle ABC}} \]
 
-\newpage
-\grubr{opggeoviscosuv}
-\fig{opgcoscos}
-I figuren over merker vi oss at
-\alg{
-EB&=\sin v & AC &= \sin u  \br
-OE&=\cos v & OC&=\cos u
-}
-Da $ \triangle OCA \sim \triangle BEF $, har vi at
-\[ FE=\frac{BE}{OC}AC=\frac{\sin v}{\cos u}\sin u \]
-Videre har vi at $ EA=OA-OE=1-\cos v $. Tilsvarende er $ CH=1-\cos u $. I tillegg er 
-\nn{
-DC=FG=(FE+EA)\cos u=\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u
-}
-Nå har vi at
-\alg{
-OD &= OH-CH-DC \\
-\cos(u+v)&=1-(1-\cos u)-\left(\frac{\sin v}{\cos u}\sin u+1-\cos v\right)\cos u \\
-&= \cos u \cos v- \sin u \sin v
-}
-
-\newpage
-\grubr{opggeotalesTMconv} \\
-Gitt $ \triangle ABC$, hvor $ \angle C=90^\circ $, $ a=BC $, $ b=AC $, og $ c=AB $. Da er $ 4A_{\triangle ABC}=2ab $.
-Av \grubrs{opggeoR} er da $  r=\frac{c}{2} $. Altså er $ c=2r $, og er dermed en diameter i den omskrevne sirkelen.
-
-\grubr{opggeotangentsq}\\
-Av \refops{opggeotanchord} er $\angle ADB=\angle BAC$. Dermed har $\triangle BAC$ og $\triangle BDA$ to parvis like store vinkler (de har $\angle DBA$ felles), og dermed er trekantene formlike. Altså har vi at
-\alg{
-\frac{AB}{BD}&=\frac{BC}{AB} \br
-AB^2 &= BC\cdot BD
-}
-\fig{opggeotangentsq_los}
 
 \end{document}
 

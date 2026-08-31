@@ -1,13 +1,14 @@
 \input{../doc}
 \input{../preamb}
 \input{bm}
-
+\input{../lf}
 \usepackage{xr}
 \externaldocument{TM1_bm}
 
 \addto\captionsenglish{\renewcommand{\contentsname}{Løsningsforslag TM1}}
-\newcommand{\lost}[1]{\section*{Kapittel \ref{#1} \addcontentsline{toc}{chapter}{Kapittel \ref{#1}}\phantomsection }
-	}
+\newcommand{\lost}[1]{\section*{Kapittel \ref{#1} \addcontentsline{toc}{chapter}{Kapittel \ref{#1}}\phantomsection } 
+\newpage
+}
 \setlength{\parskip}{11pt}
 \titleformat{\chapter}[display]
 {\normalfont\LARGE\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\large}

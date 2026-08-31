@@ -1,4 +1,5 @@
 Legg til oppgave i opgalgfullkvad3 med (ax)^2 ledd.
+Utvid opggeokvadsym til å fise at x=-b/(2a) er ekstremalpunkt, og at dette er midtpuntet mellom nullpunktene.
 Ta med eksempel om identitet i forkant av 1tv21d1opg8?
 Flytt 1TV23D1opg3 til gruble
 I opggeouminv: Vis at cos(v) = sin(u)
@@ -11,6 +12,12 @@ skriv x^2 + summen av a og b, multiplisert med x, og deretter produktet av a og 
 1tv26d1opg2: b) Skisser en grafisk løsning av likningssystemet.
 opg: Vis at 2. gradslikninger ikke har løsninger.
 opg: Vis at i rettvinklet trekant er a = b*sin A, b = b*cos A.
+ta med i cos-sin def at cos 90=1 og sin 90=0
+opg: bruke sinussetningen
+eksempel side 14: Faktoriser i stedet for å vise til polynomdivisjon.
+Flere oppgaver om å faktorisere andregradsuttrykk hvor løsning ikke er gitt ved sum-produkt?
+Gruble: Hvorfor kan vi ikke lose ln-likninger med partallspotenser av x ved ln x**a = a ln x
+Legg til 1tv25d1opg3 ?
 
 
 

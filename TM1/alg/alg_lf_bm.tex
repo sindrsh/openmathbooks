@@ -1,13 +1,14 @@
 \input{../../doc}
 \input{../../preamb}
 \input{../bm}
+\input{../../lf}
 
 
-\usepackage{xr}
-\externaldocument{alg_opg_bm}
+%\usepackage{xr}
+%\externaldocument{../TM1_bm}
 
 \renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
-\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}}
+\renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}}\\}
 \begin{document}
 	
 \opr{opgalgfullkvad}
@@ -173,31 +174,34 @@ Av de to uttrykkene for arealet til det grønne området har vi at
 	\end{align*}
 }
 
+\newpage
 \opr{opgalgledd}
 \abc{
-	\item 
+	\item \phantom{text}\vs
 	\begin{align*}
 		x^2+6x-7 &= x^2+2\cdot3x+3^2-3^2-7 \\
 		&=(x+3)^2-9 -7 \\
 		&=(x+3)^2-16
 	\end{align*}
-	\item 
+	\item \phantom{text}\vs
 	\begin{align*}
 		x^2-8x-20 &= x^2-2\cdot4x+4^2-4^2-20 \\
 		&= (x-4)^2-16-20 \\
 		&= (x-4)^2-36
 	\end{align*}
-	\item \begin{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
 		x^2+12x+117 &= x^2+2\cdot6x +6^2-6^2+11 \\
 		&=(x+6)^2-36+117 \\
 		&=(x+6)^2+81
 	\end{align*}
-	\item \begin{align*}
+	\item \phantom{text}\vs
+	\begin{align*}
 		4x^2-12x+11 &= (2x)^2-2\cdot2x\cdot3 + 3^2-3^2+11 \\
 		&=(2x-3)^2-9+11 \\
 		&=(2x-3)^2+2
 	\end{align*}
-	\item 
+	\item \phantom{text}\vs
 	\begin{align*}
 		49x^2+126x+80 &= (7x)^2+2\cdot7x\cdot9+8^2-9^2+80 \\
 		&= (7x+8)^2-81+80 \\
@@ -273,6 +277,7 @@ Denne likningen er altså alltid oppfylt for $b=a+4$. Vi setter $b=a+4$ inn i \e
 Da $-2\cdot6=-12$ og $-2+6=4$, har vi av sum-produkt-metoden at
 \[ a^2+4a-12=(a-2)(a+6) \]
 
+\newpage
 \opr{opgalgeksuneq} \vso
 \abc{
 	\item Vi setter $f(x)=x^2+2x-8$. Da $-2\cdot4=-8$ og $-2+4=2$, har vi av sum-produkt-metoden at
@@ -296,7 +301,7 @@ Da $-2\cdot6=-12$ og $-2+6=4$, har vi av sum-produkt-metoden at
 	\end{itemize}
 	Følgelig er $f\leq0$ for $-6\leq x\leq -1$.
 }
-
+\newpage
 \opr{opgalgulikgraf}
 Gitt ulikheten 
 \[ x^2-9x+20>x-1 \]
@@ -323,7 +328,7 @@ Gitt ulikheten
 	\end{itemize}
 	Følgelig er $f>0$ for $x<-7$ og $x>-3$.
 }
-
+\newpage
 \opr{1TH21D1opg3}
 \abc{
 	\item Av 3. kvadratsetning har vi at
@@ -386,7 +391,7 @@ Altså er $ x=0 $, eller
 	x&=2
 }
 \metode{Metode 2}{2cm}\\
-Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+Vi bruker resultatet fra \refops{opgalgligukonst}, og får at
 \[ x=0\quad\vee\quad x=-\frac{4}{2}=2 \]
 \item \metode{Metode 1}{2cm} \\
 Vi har at
@@ -400,7 +405,7 @@ Altså er $ x=0 $, eller
 	x&=-9
 }
 \metode{Metode 2}{2cm}\\
-Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+Vi bruker resultatet fra \refops{opgalgligukonst}, og får at
 \[ x=0\quad\vee\quad x=-\frac{27}{3}=-9 \]
 \item \metode{Metode 1}{2cm} \\
 Vi har at
@@ -414,7 +419,7 @@ Altså er $ x=0 $, eller
 	x&=\frac{8}{9}
 }
 \metode{Metode 2}{2cm}\\
-Vi bruker resultatet fra \refops{opgalgligkonst}, og får at
+Vi bruker resultatet fra \refops{opgalgligukonst}, og får at
 \[ x=0\quad\vee\quad x=-\frac{8}{-9}=\frac{8}{9} \]
 }
 
@@ -494,9 +499,8 @@ Altså er
 }
 
 
+\newpage
 \opr{1TH21D1opg4}
-Grafen til en andregradsfunksjon $ f $ går gjennom punktene $ (0, 12) $, $ (-3, 0) $ og $ (2, 0) $. Bestem $ f(x) $.
-
 Vi setter $f(x)=ax^2+bx+c$. Da har vi at
 \begin{align*}
 	f(0)&=c=12 \vn
@@ -528,9 +532,7 @@ Vi setter dette uttrykket for $a$ inn i \eqref{1th21d1opg4a}:
 \end{align*}
 Altså er
 \[ f(x)=-2x^2-2x+12 \]
-
-
-\opr{1tv21opg4}
+\opr{1tv21opg4} \vs
 \metode{Metode 1}{2cm} \\
 Skal likningen ha én løsning, må vi kunne skrive uttrykket som et fullstendig kvadrat med $x$ som et ledd. Av 1. kvadratsetning har vi at
 \begin{align*}
@@ -544,7 +546,7 @@ Gitt likningen $x^2+2kx-2k-1=0$. Vi bruker \textit{abc}-formelen:
 	x &= \frac{-2k\pm\sqrt{(2k)^2-4\cdot1\cdot(-2k-1)}}{2\cdot1} \br
 	&= \frac{-2k\pm\sqrt{4(k^2+2k+1)}}{2}
 \end{align*} 
-Skal likningen ha én løsning, må uttrykket i rottegnet være lik 0, altså at $k^2+2k+1=0$. Av 1. kvadratsetning har vi at \\ $k^2+2k+1=(k+1)^2$. $(k+1)^2=0$ hvis $k=-1$.
+Skal likningen ha én løsning, må uttrykket i rottegnet være lik 0, altså at $k^2+2k+1=0$. Av 1. kvadratsetning har vi at $k^2+2k+1=(k+1)^2$. $(k+1)^2=0$ hvis $k=-1$.
 
 \opr{opgalgsym}
 Grafen til $ f $ er symmetrisk om vertikallinja som går gjennom bunnpunktet, må $x$-verdien til bunnpunktet ligge midt mellom nullpunktene. Da $-2\cdot4=-8$ og $-2+4=2$, har vi av sum-produkt-metoden at
@@ -571,6 +573,7 @@ Dermed er $x=2$ og $x=-4$ nullpunktene til $f$, og da er $x$-verdien til bunnpun
 	Da $3\cdot(-2)=-6$ og $3+(-2)=1$, har vi at
 	\[ x^2+x-6=(x+3)(x-2) \]
 	Dermed er kan vi ha at $x=-3$, og da er (her bruker vi \eqref{1tv26d1opg2b}) $y=-3-2=-5$. Eller så er $x=2$, og da er $y=2-2=0$.
+	\newpage
 	\item $x-y=2$ beskriver en rett linje. Når $x=0$, er $y=-2$. Når $y=0$, er $x=2$. Linja går altså gjennom punktene $(0, -2)$ og $(2, 0)$. \vsk
 	
 	$-x^2+4=y$ beskriver grafen til en andregradsfunksjon. Vi velger oss fem punkt på denne grafen:
@@ -590,7 +593,7 @@ Dermed er $x=2$ og $x=-4$ nullpunktene til $f$, og da er $x$-verdien til bunnpun
 	Vi skisserer grafene i et ruteark hvor de kvadratiske rutene har sidelengde 1, og finner at grafene skjærer hverandre i punktene $(-3, -5)$ og $(2, 0)$. Dermed er $x=-3$ og $y=-5$, eller $x=2$ og $y=0$.
 	\fig{1tv26d1opg2}
 }
-
+\newpage
 \opr{1TH21D1opg5}
 \abc{
 	\item $x+y=2$ beskriver en rett linje. Når $x=0$, er $y=-2$. Når $y=0$, er $x=-2$. Linja går altså gjennom punktene $(0, -2)$ og $(-2, 0)$. \vsk
@@ -631,7 +634,8 @@ Dermed er $x=2$ og $x=-4$ nullpunktene til $f$, og da er $x$-verdien til bunnpun
 	}
 }
 
-\op{opgalgabcomv}
+\newpage
+\opr{opgalgabcomv}
 Vi er gitt funksjonen $ f(x)=ax^2+bx+c $ og tallene $ t=\frac{-b+\sqrt{b^2-4ac}}{2a} $ og $ s=\frac{-b-\sqrt{b^2-4ac}}{2a} $.
 \abc{
 	\item Vi gjennkjenner $t$ og $s$ som løsningene gitt av \textit{abc}-formelen. Dermed er $f(s)=f(t)=0$.
@@ -687,19 +691,72 @@ Vi er gitt funksjonen $ f(x)=ax^2+bx+c $ og tallene $ t=\frac{-b+\sqrt{b^2-4ac}}
 
 \opr{algopgpoldiv}
 \abc{
-	\item Vi har at 
+	\item 
+	\metode{Metode 1}{2cm}
 	\begin{align*}
 		\frac{x^4-2x^3+x^2-2x}{x^3+x} &= \frac{x(x^3+x)-x^2-2x^3+x^2-2x}{x^3+x} \br
 		&= x+\frac{-2x^3-2x}{x^3+x} \br
 		&=x+\frac{-2(x^3+x)}{x^3+x} \br
 		&=x-2
 	\end{align*}
-	\item Vi har at
+	\metode{Metode 2}{2cm}
+	\alg{
+		\phantom{-}&(x^4 - 2x^3 + x^2 - 2x) : (x^3 + x) = x - 2 \\
+		-&\underline{(x^4 + x^2)} \\
+		&\phantom{x^4 + \,\,} -2x^3 - 2x \\
+		&\phantom{-\,} -\underline{(-2x^3 - 2x)} \\
+		&\phantom{aaaaaaaaaaaaa}0 \\
+	}
+	\item \metode{Metode 1}{2cm}\\
 	\begin{align*}
 		\frac{-4x^4+7x^2-3}{-4x^2+3} &= \frac{x^2(-4x^2+3)-3x^2+7x^2-3}{-4x^2+3} \br
 		&=x^2+\frac{4x^2-3}{-4x^2+3} \br
 		&=x^2-1
 	\end{align*}
+	\newpage
+	\metode{Metode 2}{2cm} \\
+	\alg{
+		\phantom{-}&(-4x^4 + 7x^2 - 3) : (-4x^2 + 3) = x^2 - 1 \\
+		-&\underline{(-4x^4 + 3x^2)} \\
+		&\phantom{-4x^4 + \,\,} 4x^2 - 3 \\
+		&\phantom{4x^2\;} -\underline{(4x^2 - 3)} \\
+		&\phantom{aaaaaaaaaaaa}0 \\
+	}
+	\item 
+	\metode{Metode 1}{2cm}
+	\begin{align*}
+		\frac{2x^3 - 6x^2 + 9x - 27}{2x^2 + 9} &= \frac{2x^3 + 9x - 6x^2 - 27}{2x^2 + 9} \br
+		&= \frac{x(2x^2 + 9) - 3(2x^2 + 9)}{2x^2 + 9} \br
+		&= \frac{(x - 3)(2x^2 + 9)}{2x^2 + 9} \br
+		&= x - 3
+	\end{align*}
+	
+	\metode{Metode 2}{2cm}
+	\alg{
+		\phantom{-}&(2x^3 - 6x^2 + 9x - 27) : (2x^2 + 9) = x - 3 \\
+		-&\underline{(2x^3 + 9x)} \\
+		&\phantom{2x^3 + \,\,} -6x^2 - 27 \\
+		&\phantom{-\,} -\underline{(-6x^2 - 27)} \\
+		&\phantom{aaaaaaaaaaaaa}0 \\
+	}
+	\item 
+	\metode{Metode 1}{2cm}
+	\begin{align*}
+		\frac{x^2 + 2x + 1}{x - 2} &= \frac{x^2 - 2x + 4x + 1}{x - 2} \br
+		&= \frac{x(x - 2) + 4x + 1}{x - 2} \br
+		&= x + \frac{4x + 1}{x - 2} \br
+		&= x+\frac{4(x-2)+8+1}{x-2} \br
+		&= x+4+\frac{9}{x-2}
+	\end{align*}
+	
+	\metode{Metode 2}{2cm}
+	\alg{
+		\phantom{-}&(x^2 + 2x + 1) : (x - 2) = x + 4 + \frac{9}{x-2} \\
+		-&\underline{(x^2 - 2x)} \\
+		&\phantom{x^2 + \,\,} 4x + 1 \\
+		&\phantom{-} -\underline{(4x - 8)} \\
+		&\phantom{aaaaaaaaa}9 \\
+	}
 }
 
 \opr{1tv24d1opg2}
@@ -731,6 +788,129 @@ Gitt funksjonen $f(x)=2x^3+x^2-18x-9$. Divisjonen $f(x):(x-3)$ går opp hvis $x-
 \end{align*}
 Divisjonen går altså opp.
 
+\opr{algopgpolfakt}
+\abc{
+	\item Vi setter de forskjellige $x$-verdiene inn i uttrykket for $P$, og finner at
+	$P(3)=0$. Da vet vi at $x-3$ er en faktor i $P$:
+	\begin{align*}
+		P&= x^3 - 37x + 84 \\
+		&= x^2(x-3) + 3x^2-37x + 84 \\
+		&= x^2(x-3) + 3x(x-3) + 9x-37x+84 \\
+		&= x^2(x-3) + 3x(x-3) - 28x + 84 \\
+		&= x^2(x-3) + 3x(x-3) - 28(x-3) \\
+		&= (x-3)(x^2+3x-28)
+	\end{align*}
+	Da $-4\cdot7=-28$ og $-4+7=3$, har vi av sum-produkt-metoden at
+	\[ P=(x-3)(x-4)(x+7) \]
+	\item Vi setter de forskjellige $x$-verdiene inn i uttrykket for $P$, og finner at
+	$P(-1)=0$. Da vet vi at $x+1$ er en faktor i $P$:
+	\begin{align*}
+		P&=x^3+9x^2+23x+15 \\
+		&= x^2(x+1)-x^2+9x^2+23x+15 \\
+		&= x^2(x+1)+8x(x+1)-8x+23x+15 \\
+		&= x^2(x+1)+8x(x+1)+15(x+1) \\
+		&= (x+1)(x^2+8x+15)
+	\end{align*}
+	Da $3\cdot5=15$ og $3+5=8$, har vi av sum-produkt-metoden at
+	\[ P=(x+1)(x+3)(x+5) \]
+	\item Vi setter de forskjellige $x$-verdiene inn i uttrykket for $P$, og finner at
+	$P(-1)=0$. Da vet vi at $x+1$ er en faktor i $P$:
+	\begin{align*}
+		P&=2x^3+21x^2+61x+42 \\
+		&= 2x^2(x+1)-2x^2+21x^2+61x+42 \\
+		&= 2x^2(x+1)+19x(x+1)-19x+61+42 \\
+		&= 2x^2(x+1)+19(x+1)+42(x+1) \\
+		&= (x+1)(2x^2+19+42)
+	\end{align*}
+	Vi bruker \textit{abc}-formelen på likingen $2x^2+19+42=0$:
+	\begin{align*}
+		x &= \frac{-19\pm\sqrt{19^2-4\cdot2\cdot42}}{2\cdot2} \br
+		&= \frac{-19\sqrt{25}}{4} \\
+		&=\frac{-19\pm5}{4}
+	\end{align*}
+	Altså er $x=\frac{-19+5}{4}=-\frac{7}{2}$ eller $x=\frac{-19-5}{4}=6$. Følgelig er
+	\begin{align*}
+		2x^2+19+42&=2\left(x-\frac{7}{2}\right)(x-6) \\
+		&= (2x-7)(x-6)
+	\end{align*}
+	Dermed har vi at
+	\[ P=(x+1)(2x-7)(x-6) \]
+}
+
+\opr{1tv21d1opg3}
+Vi setter $P=x^3+x^2-2x-8$. Etter litt prøving og feiling, finner vi at $P(2)=0$. Dermed går disjonen opp hvis $k=-2$.\vsk
+
+\opr{opgalgfind}
+Skjæringspunktene er gitt der $f=g$, altså hvor
+\begin{align*}
+	x^3-x^2-4x+8 &= 2x+8 \\
+	x^3-x^2-6x &= 0
+\end{align*}
+Altså er $x=0$, eller så er
+\begin{align*}
+	x^2-x-6 &= 0
+\end{align*}
+Da $2\cdot(-3)=-6$ og $2+(-3)=-1$, har vi av sum-produkt-metoden at
+\[ x^2-x-6=(x+2)(x-3) \]
+$f$ og $g$ skjærer hverandre for $x\in\{-2, 0, 3\}$.
+Videre har vi at
+\begin{align*}
+	g(-2)=4\quad,\quad g(0)=8\quad,\quad g(3)=14
+\end{align*}
+SKjæringspunktene er altså $(-2, 4)$, $(0, 8)$ og $(3, 14)$.
+
+
+\opr{R1H23D1opg2}
+Vi har at
+\begin{align*}
+	2\ln e &= 2\cdot 1=2 \vn
+	3\log 70 &> 3 \log 10 =3\cdot1 =3 \vn
+	e^{3 \ln 2} &= \left(e^{\ln 2}\right)^3 = 2^3=8
+\end{align*}
+Dermed er $2\ln e<3\log 70< e^{3\ln 2}$.
+
+\opr{r1h22d1opg3}
+Vi har at
+\begin{align*}
+	3\sqrt{11}=\sqrt{3^2\cdot11}=\sqrt{99}<\sqrt{100}=10 \vn
+	10\log 9 <10 \log 10 = 10\cdot1 =10 \vn
+\end{align*}
+Da $3>e$, må $\ln 3>\ln e$. Dermed er
+\[ 5\ln 9=5\ln 3^2=5\cdot2\ln 3>10\ln e=10 \]
+Altså er $3\sqrt{11}$ og $ 10\log 9 $ mindre enn 10.
+
+\opr{opgalgpot1}
+\abc{
+\item Vi har at
+\begin{align*}
+	7\cdot5^x&=14 \\
+	5^x &= 2 \\
+	\ln 5^x &= \ln 2 \\
+	x \ln 5 &= \ln 2 \\
+	x &= \frac{\ln 5}{\ln 2}
+\end{align*}
+\item Vi har at
+\begin{align*}
+	3 \cdot 8^x &= 27 \\
+	8^x &= 9 \\
+	\ln 8^x &= \ln 9 \\
+	x \ln 8 &= \ln 9 \\
+	x &= \frac{\ln 9}{\ln 8}
+\end{align*}
+
+\item Vi har at
+
+\begin{align*}
+	11 \cdot 2^x &= 19 \\
+	2^x &= \frac{19}{11} \\
+	\ln 2^x &= \ln \left( \frac{19}{11} \right) \\
+	x \ln 2 &= \ln \left( \frac{19}{11} \right) \\
+	x &= \frac{\ln \left( \frac{19}{11} \right)}{\ln 2}
+\end{align*}
+Alternativt kan vi skrive
+\[ x = \frac{\ln 19-\ln 11}{\ln 2} \]
+}
+
 \opr{opgalgpot2}
 Vi har at
 \begin{align*}
@@ -740,8 +920,164 @@ Vi har at
 	x &= \log_a \frac{c}{b}
 \end{align*}
 
-\grubr{opggeokvadsym} \\
-\textbf{Alternativ 1}\\
+\opr{opgzeros}
+\abc{
+\item Gitt funksjonen $g(x)=\frac{1}{2}e^x(2x-1)^2 $. Da $e^x>0$ for alle $x$, kan er $g=0$ bare der hvor $2x-1=0$, altså når $x=\frac{1}{2}$.
+\item Gitt funksjonen $f(x)=(x^2+2x-3)(e^x-1)$. Da $3\cdot(-1)=-3$ og $3+(-1)=2$, har vi av sum-produkt-metoden at 
+\[ f(x)=(x+3)(x-1)(e^x-1) \]
+Da er $f=0$ for $x=-3$ og $x=1$, og når $e^x-1=0$. Ved sistnevnte tilfelle må vi ha at $x=0$.
+}
+
+\opr{opgalgsub}
+
+\abc{
+	\item
+	Gitt likningen
+	\[ (\ln x)^2-5\ln x+ 6=0 \]
+	Vi setter $u=\ln x$, da er
+	\[ u^2-5u+6=0 \]
+	Da $-2\cdot(-3)=6$ og $-2+(-3)=-5$, har vi av sum-produkt-metoden at
+	\[ u^2-5u+6=(u-2)(u-3) \]
+	Dermed er $u=2$ eller $u=3$, og da er $\ln x=2$ eller $\ln x = 3$. Følgelig er 
+	\[ x=e^2\quad\vee x=e^3 \]
+	\item  Gitt likningen
+	\[ (\ln x)^2 - 3\ln x - 70 = 0  \]
+	Vi setter  $u = \ln x$, da er
+	\[ u^2 - 3u - 70 = 0 \]
+	Da $10 \cdot (-7) = -70$ og $10 + (-7) = 3$, har vi av sum-produkt-metoden at
+	\[ u^2 - 3u - 70 = (u - 10)(u + 7) \]
+	Dermed er$u = 10$  $u = -7$, og da er $\ln x = 10$ eller $\ln x = -7$. Følgelig er
+	\[ x=e^{10}\quad\vee\quad x=e^{-7} \]
+	\item Gitt likningen
+	\[ e^{2x} - 2e^x - 3 = 0 \]
+	Vi setter $u = e^x$, da er
+	\[ u^2 - 2u - 3 = 0 \]
+	Av sum-produkt-metoden har vi
+	\[ u^2 - 2u - 3 = (u - 3)(u + 1) \]
+	Dermed er $u = 3$ eller $u = -1$. Siden $u = e^x > 0$, forkaster vi $u = -1$.
+	Følgelig er $e^x = 3$, og da er
+	\[ x = \ln 3 \]
+	\item Gitt likningen
+	\[ e^{2x} + 7e^x - 18 = 0 \]
+	Vi setter $u = e^x$, da er
+	\[ u^2 + 7u - 18 = 0 \]
+	Av sum-produkt-metoden har vi
+	\[ u^2 + 7u - 18 = (u + 9)(u - 2) \]
+	Dermed er $u = -9$ eller $u = 2$. Siden $u = e^x > 0$, forkaster vi $u = -9$.
+	Følgelig er $e^x = 2$, og da er
+	\[ x = \ln 2 \]
+	\item Gitt likningen
+	\[ e^{2x} - e^x = 2 \]
+	Vi setter $u = e^x$, da er
+	\[ u^2 - u - 2 = 0 \]
+	Av sum-produkt-metoden har vi
+	\[ u^2 - u - 2 = (u - 2)(u + 1) \]
+	Dermed er $u = 2$ eller $u = -1$. Siden $u = e^x > 0$, forkaster vi $u = -1$.
+	Følgelig er $e^x = 2$, og da er
+	\[ x = \ln 2 \]
+	\item Gitt likningen
+	\[ (\log x)^2 - 2\log x = 8 \]
+	Vi setter $u = \log x$, da er
+	\[ u^2 - 2u - 8 = 0 \]
+	Av sum-produkt-metoden har vi
+	\[ u^2 - 2u - 8 = (u - 4)(u + 2) \]
+	Dermed er $u = 4$ eller $u = -2$.
+	Følgelig er $\log x = 4$ eller $\log x = -2$, og da er
+	\[ x = 10^4 \quad \vee \quad x = 10^{-2} \]
+	\item Gitt likningen
+	\[ 100^x - 3 \cdot 10^x = 0 \]
+	Vi setter $u = 10^x$, da er
+	\[ u^2 - 3u = 0 \]
+	\[ u(u - 3) = 0 \]
+	Dermed er $u = 0$ eller $u = 3$. Siden $u = 10^x > 0$, forkaster vi $u = 0$.
+	Følgelig er $10^x = 3$, og da er
+	\[ x = \log 3 \]
+	\item Gitt likningen
+	\[ \ln^2 x - \ln x = 6 \]
+	Vi setter $u = \ln x$, da er
+	\[ u^2 - u - 6 = 0 \]
+	Av sum-produkt-metoden har vi
+	\[ u^2 - u - 6 = (u - 3)(u + 2) \]
+	Dermed er $u = 3$ eller $u = -2$.
+	Følgelig er $\ln x = 3$ eller $\ln x = -2$, og da er
+	\[ x = e^3 \quad \vee \quad x = e^{-2} \]
+}
+
+
+\opr{r1v26d1opg3}
+\abc{
+	\item Vi har at
+	\begin{align*}
+		\log_2 8 &= \log_2 2^3 = 3 \vn
+		e^{3\ln 1} &= \left(e^{\ln 1}\right)^3 =1^3 = 1 \vn
+		\lg 7 &< \lg 10 = 1 \vn
+		\sqrt[4]{3^3}<\sqrt[4]{3^4}=3 \\
+		\sqrt[4]{3^3}>\sqrt{4}{2^4}=2
+	\end{align*}
+	Altså er
+	\[ \lg 7< e^{3\ln 1} < \sqrt[4]{3^3} < \log_2 8 \]
+	\item Vi har at
+	\begin{align*}
+		\lg(ab)-\lg\left(\frac{a}{b}\right)+\lg(100b^3) &= \lg a + \lg b-(\lg a-\lg b) + \lg 100 + \lg b^3 \\
+		&=2\lg b+\lg 10^2+\lg b^3 \\
+		&= 2\lg b+ 2+3\lg b \\
+		&= 5\lg b+2
+	\end{align*}
+	Eventuelt kan vi skrive
+	\begin{align*}
+		5\lg b+2 &= \lg b^5 + \lg 10^2 \\
+		&= \lg(b^5\cdot10^2) \\
+		&= \lg(100b^5)
+	\end{align*}
+}
+
+\opr{r1h25d1opg2}
+Vi har at $\sqrt[3]{64}=\sqrt[3]{4^3}=4$. Dermed er $\frac{1}{64}=4^{-3}$, og da er 
+\[ \log_4 \frac{1}{64}=-3 \]
+
+\opr{opgalglog}
+\abc{
+	\item Vi har at
+	\begin{align*}
+		\ln(2x-6)=2 \\
+		e^{\ln 2x-6} &= e^2 \\
+		2x-6 &= e^2 \\
+		x &= \frac{e^2+6}{2}
+	\end{align*} 
+	\item Vi har at
+	\begin{align*}
+		3^{x+2} - 5 &= 76 \\
+		3^{x+2} &= 81 \\
+		3^{x+2} &= 3^4 \\
+		x + 2 &= 4 \\
+		x &= 4 - 2 \\
+		x &= 2
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		\frac{3^{2x} + 3^{2x} + 4}{2} &= 29 \\
+		\frac{2 \cdot 3^{2x} + 4}{2} &= 29 \\
+		3^{2x} + 2 &= 29 \\
+		3^{2x} &= 27 \\
+		3^{2x} &= 3^3 \\
+		2x &= 3 \\
+		x &= \frac{3}{2}
+	\end{align*}
+	\item Vi har at
+	\begin{align*}
+		3\ln x + 2\ln x^2 + \ln \frac{1}{x^9} &= 2 \\
+		3\ln x + 4\ln x + \ln x^{-9} &= 2 \\
+		3\ln x + 4\ln x - 9\ln x &= 2 \\
+		(3 + 4 - 9)\ln x &= 2 \\
+		-2\ln x &= 2 \\
+		\ln x &= -1 \\
+		x &= e^{-1} \\
+		x &= \frac{1}{e}
+	\end{align*}
+}
+
+\grubr{opggeokvadsym}
+\metode{Metode 1}{2cm}
 Skal grafen til $ f $ være symmetrisk om linja $ {x=-\frac{b}{2a}} $, må vi for et tall $ k $ ha at
 \begin{equation}\label{opggeokvadsymeq}
 	f\left(k-\frac{b}{2a}\right)=f\left(-k-\frac{b}{2a}\right)
@@ -756,7 +1092,7 @@ Videre er
 }
 Dette betyr at uansett om $ d=k $ eller om $ d=-k $, så vil uttrykket over være likt, og altså er \eqref{opggeokvadsymeq} gyldig. \vsk
 
-\textbf{Alternativ 2}\\
+\metode{Metode 1}{2cm}\\
 Skal $ f $ være symmetrisk om en vertikallinje, må det bety at to tall $ t $ og $ s $ gir lik $ f $-verdi:
 \begin{flalign*}
 	&&f(s)&=f(t) \\
@@ -773,7 +1109,87 @@ Vi lar $ x_s $ være $ x $-verdien til symmetrilinja til $ f $. $ x_s $ må ligg
 	&=-\frac{b}{2a}
 }
 
+\grubr{t1h23d1opg2}
+Ved litt prøving og feiling for forskjellige (lave og heltallige) verdier av $x$, finner vi at $f(-1)=0$. Da er $x+1$ en faktor i uttrykket til $f$:
+\begin{align*}
+	x^3+2x^2-5x-6 &= x^2(x+1)-x^2+2x^2-5x-6 \\
+	&= x^2(x+1)+x(x+1)-x-5x-6 \\
+	&= x^2(x+1)+x(x+1)-6(x+1)
+\end{align*}
+Dermed er
+\[ f=(x+1)(x^2+x-6) \]
+Da $3\cdot(-2)$ og $3+(-2)=1$, har vi av sum-produkt-metoden at
+\[ f=(x+1)(x-2)(x+3) \]
+$f$ skjærer altså $x$-aksen i punktene $x=-1$, $x=2$ og $x=-3$.
 
+
+\grubr{t1v26d1opg3}
+Vi setter $f=2x^3+3x^2-18x+8=0$. Ved litt prøving og feiling for forskjellige (lave og heltallige) verdier av $x$, finner vi at $f(2)=0$. Da er $x-2$ en faktor i uttrykket til $f$:
+\begin{align*}
+	2x^3+3x^2-18x+8 &= 2x^2(x-2)+4x^2+3x^2-18x+8 \\
+	&= 2x^2(x-2)-x(x-2) + 7x(x-2)+14x-18x+8 \\ 
+	&= 2x^2(x-2)-x(x-2) + 7x(x-2)-4x+8 \\
+	&= 2x^2(x-2)-x(x-2) + 7x(x-2)-4(x-2) \\
+	&= (x-2)(2x^2+7x-4)
+\end{align*}
+Vi bruker \textit{abc}-formelen på likningen $2x^2+7x-4$:
+\begin{align*}
+	x &= \frac{-7\pm\sqrt{7^2-4\cdot2\cdot(-4)}}{2\cdot2} \br
+	&= \frac{-7\pm\sqrt{81}}{4} \\
+	&= \frac{-7\pm 9}{4}
+\end{align*}
+Dermed er $x=\frac{1}{2}$ eller $x=-4$. Altså er $f=0$ for $x=2$, $x=\frac{1}{2}$ og $x=-4$  
+
+\grubr{1tv26d1opg4}
+Gitt likningen
+\[ a(x+b)^2=x^2+8x+c \]
+Bestem $a$, $b$ og $c$ slik at likningen blir en identitet.
+Vi har at 
+\[ a(x+b)^2=ax^2+2abx+ab^2 \]
+For at $a(x+b)^2=x^2+8x+c$, må følgende likningssystem være oppfylt:
+\begin{align*}
+	ax^2 &= x^2 \tag{i*} \label{1tv26d1opg4a} \vn
+	2abx &= 8x \tag{ii*} \label{1tv26d1opg4b} \vn
+	ab^2 &= c \tag{iii*} \label{1tv26d1opg4c}
+\end{align*}
+Som vi kan forenkle til
+\begin{align*}
+	a &= 1 \tag{i} \label{1tv26d1opg4a} \vn
+	2ab &= 8 \tag{ii} \label{1tv26d1opg4b} \vn
+	ab^2 &= c \tag{iii} \label{1tv26d1opg4c}
+\end{align*}
+Av \eqref{1tv26d1opg4b} og \eqref{1tv26d1opg4b} har vi at 
+\begin{align*}
+	2\cdot1\cdot b &= 8 \\
+	b &= 4
+\end{align*}
+Da $a=1$ og $b=4$, har vi av \eqref{1tv26d1opg4c} at
+\begin{align*}
+	1\cdot 4^2 &= c \\
+	16 &= c
+\end{align*}
+
+\grubr{1tv25d1opg3}
+Gitt
+\[ f(x)=ax^2+bx+c \]
+Hvis $f$ bare har ett nullpunkt, har vi av \textit{abc}-formelen at
+\[ b^2-4ac=0 \]
+Videre har vi at
+\[ f(0)=c=9 \]
+Altså er
+\[ b^2-36a=0 \]
+Setter vi $a=1$, kan $b$ være lik 6. Da er
+\[ f(x)=x^2+6+9 \]
+
+\grubr{1th24d1opg2}
+$f$ er symmetrisk om bunnpunktet (se \refops{opgalgkvadsym}), som betyr at $x$-verdien ligger midt mellom nullpunktene $x=1$ og $x=-3$. $x$-verdien til bunnpunktet er dermed $x=\frac{-3+1}{2}=-1$. Videre har vi at
+\begin{align*}
+	f(-1)&=(-1-1)(-1+3) \\
+	&= -4
+\end{align*} 
+Bunnpunktet til $f$ er $(-1, -4)$.
+
+\newpage
 \grubr{opgfunkfindx}
 \fig{opgfunkfindx_lf}	
 Vi lar $f(x)=ax+b$= være funksjonen som beskriver linja gjennom $AB$. Da er
@@ -791,6 +1207,7 @@ Videre har vi at $EB=12-c$ og $ED=3-f(c)$. Dermed har vi at
 \end{align*}
 Da $c<12$, er $c=6$.
 
+\newpage
 \grubr{opggeoher}
 \fig{opggeoher}
 Vi setter $ a=BC $, $ b=AC $, $ c=AB $, $ h=CD $ og $ d=AD $. Av \pyt\ med hensyn på $ \triangle ADC $ og $ \triangle DCB $ har vi at
@@ -816,7 +1233,7 @@ Arealet $ T $ til $ \triangle ABC $ er nå gitt som
 \mers{Da en trekant må ha et areal med positiv verdi, kan Herons formel brukes for å vise \textit{trekantulikheten}, som vi utledet i \mb.}
 
 
-\grubr{opgalgsym2} \\
+\grubr{opgalgsym2}
 \textit{I denne løsningen antar vi at funksjonen har at bunnpunkt. Tilfellet hvor den har et toppunkt er helt tilsvarende.}
 \abc{
 	\item Siden $x=-\frac{b}{2a}$ er ekstremalpunktet til $f$, er ekstremalverdien $f_e$ gitt ved
@@ -828,7 +1245,7 @@ Arealet $ T $ til $ \triangle ABC $ er nå gitt som
 	En forskyvning av bunnpunktet må nødvendigvis tilsvare en forskyvning av grafen til $f$.
 }
 
-\grubr{opgbevisabc} \\
+\grubr{opgbevisabc}
 Hvis $ f(x)=ax^2+bx+c=0 $, har vi for et tall $ k $ at
 \[ f\left(\pm k-\frac{b}{2a}\right)=\frac{4a^2k^2-b^2}{4a}+c=0 \]
 Løser vi denne ligningen med hensyn på $ k $, får vi at
@@ -836,16 +1253,7 @@ Løser vi denne ligningen med hensyn på $ k $, får vi at
 Dette betyr at
 \[ f\left(\pm \frac{\sqrt{b^2-4ac}}{2a}-\frac{b}{2a}\right)=0 \]
 
-\grubr{opgalgrdh}
-\alg{
-	d^2  r^2-(d+r)^2r^2&+4b d^2 (b-r)\\
-	&=(-2dr-r^2) r^2+2b d (2bd-2dr)\\
-	&=(2bd-2dr-r^2)r^2-2bdr^2+2bd(2bd-2dr-r^2)+2bdr^2\\
-	&=(2bd-2dr-r^2)\left(r^2+2bd\right)
-} 
-
-
-\grubr{opgalgsqrt27}\\
+\grubr{opgalgsqrt27}
 Da
 \[ (\sqrt{x}+\sqrt{y})^2 = x^2+2\sqrt{xy}+y^2=27  \]
 må $ \sqrt{xy} $ også være et heltall, og dermed må $ xy $ være et kvadrattall. %obs! Definer ordet 
@@ -856,31 +1264,40 @@ Ved litt prøving og feiling finner vi at
 \abc{
 	\item 
 	\alg{
-	10-2\sqrt{21} &= 10-2\sqrt{7}\sqrt{3} \\
-	&= \sqrt{7}^2+\sqrt{3}^2-2\sqrt{7}\sqrt{3} \\
-	&= (\sqrt{7}-\sqrt{3})^2
+		10-2\sqrt{21} &= 10-2\sqrt{7}\sqrt{3} \\
+		&= \sqrt{7}^2+\sqrt{3}^2-2\sqrt{7}\sqrt{3} \\
+		&= (\sqrt{7}-\sqrt{3})^2
 	}
 	\item
 	\alg{
-	13+2\sqrt{22} &= 13+2\sqrt{11}\sqrt{2} \\
-	&= \sqrt{11}^2+\sqrt{2}^2+2\sqrt{11}\sqrt{2}\\
-	&= (\sqrt{11}+\sqrt{2})^2
+		13+2\sqrt{22} &= 13+2\sqrt{11}\sqrt{2} \\
+		&= \sqrt{11}^2+\sqrt{2}^2+2\sqrt{11}\sqrt{2}\\
+		&= (\sqrt{11}+\sqrt{2})^2
 	}
 	\item
 	\alg{
-	8+4\sqrt{3} &= 2(4+2\sqrt{3}) \\
-	&= 2(\sqrt{3}^2+\sqrt{1}^2 +2\sqrt{1}\sqrt{3}) \\
-	&= 2(\sqrt{3}+1)^2 \\
-	&= (\sqrt{6}+\sqrt{2})^2
+		8+4\sqrt{3} &= 2(4+2\sqrt{3}) \\
+		&= 2(\sqrt{3}^2+\sqrt{1}^2 +2\sqrt{1}\sqrt{3}) \\
+		&= 2(\sqrt{3}+1)^2 \\
+		&= (\sqrt{6}+\sqrt{2})^2
 	}
 	\item
 	\alg{
-	42-14\sqrt{5} &= 7(6-2\sqrt{5}) \\
-	&= 7(\sqrt{5}^2+\sqrt{1}^2-\sqrt{5}\sqrt{1})\\
-	&= 7(\sqrt{5}-\sqrt{1})^2 \\
-	&= (\sqrt{35}-\sqrt{7})^2
+		42-14\sqrt{5} &= 7(6-2\sqrt{5}) \\
+		&= 7(\sqrt{5}^2+\sqrt{1}^2-\sqrt{5}\sqrt{1})\\
+		&= 7(\sqrt{5}-\sqrt{1})^2 \\
+		&= (\sqrt{35}-\sqrt{7})^2
 	}
 }
+
+\grubr{opgalgrdh}
+\alg{
+	d^2  r^2-(d+r)^2r^2&+4b d^2 (b-r)\\
+	&=(-2dr-r^2) r^2+2b d (2bd-2dr)\\
+	&=(2bd-2dr-r^2)r^2-2bdr^2+2bd(2bd-2dr-r^2)+2bdr^2\\
+	&=(2bd-2dr-r^2)\left(r^2+2bd\right)
+} 
+
 
 
 
