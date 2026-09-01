@@ -6,7 +6,7 @@
 
 \usepackage{xr}
 %\externaldocument{geo_opg_bm}
-%\externaldocument{../TM1_bm}
+\externaldocument{../TM1_bm}
 \renewcommand{\opr}[1]{\vspace{20pt}{\color{blue}\textbf{\ref{#1}}}\\}
 \renewcommand{\grubr}[1]{\vspace{20pt}{\color{blue}\textbf{Gruble \ref{#1}}} \\}
 
@@ -384,13 +384,74 @@ Av cosinussetningen (se \rref{cossetn}) har vi at
 	&= 2\sqrt{21}
 \end{align*}
 
-For $\triangle ABC$ har vi at
-\begin{itemize}
-	\item $AB=8$
-	\item $\angle A=120^\circ$
-	\item Arealet til trekanten er $4\sqrt{3}$
-\end{itemize}
-Finn de respektive lengdene til $AC$ og $BC$.
+\grubr{1th22d2opg3}
+\abc{
+\item Vi setter radien til sirkelen lik $r$. Av arealsetningen (se \rref{arsetn}), og da $SB=SC=r$, har vi at
+\begin{align*}
+	A_{\triangle SBC} &= \frac{1}{2}SB\cdot SC\cdot \sin \angle BSC \\
+	A_{\triangle SBC} &= \frac{1}{2}r^2\cdot \sin 45^\circ \\
+	r^2& = \frac{2A_{\triangle SBC}}{\sin 45^\circ} \br
+	&= \frac{2\cdot3\sqrt{2}}{\frac{\sqrt{2}}{2}} \\
+	&= 4\cdot3 \\
+	r &= 2\sqrt{3}
+\end{align*}
+\item Med henholdsvis $SB$ og $AB$ som grunnlinje, har $\triangle SBC$ og $\triangle ABC$ lik høyde. Da $AB=2SB$, er dermed
+\[ A_{\triangle ABC}=2A_{\triangle SBC}=6\sqrt{2} \]
+}
+
+\fig{1th22d2opg3_lf}
+
+\grubr{1tv23d2opg5}
+Vi setter radien til sirkelen lik $r$. Periferivinkelen $\angle BAC$ spenner over samme sirkelbue som sentralvinkelen $\angle BSC$, og dermed er
+\[ \angle BAC=\frac{1}{2}\angle BSC=45^\circ \]
+Da $\triangle SAB$ er likebeint ($SA=SB$), følger det at
+\begin{align*}
+	\angle SAC&=\angle BAC-\angle BAS \\
+	&= \angle 45^\circ-30^\circ \\
+	&=15^\circ
+\end{align*}
+Vi har at
+\[ 2A_{\triangle ABC}=2A_{\triangle SAB}+2A_{\triangle SAC} + 2A_{\triangle SBC} \]
+Av (blant annet) arealsetningen (se \rref{arsetn}) har vi at
+\begin{align*}
+	2A_{\triangle ABC} &= r^2\sin 120^\circ + r^2\sin 150^\circ+r^2 \\
+	2(2\sqrt{3}+6)&= r^2\left(\frac{\sqrt{3}}{2}+\frac{1}{2}+1\right) \\
+	4(\sqrt{3}+3)&=\frac{1}{2}r^2(\sqrt{3}+3) \\
+	8 &= r^2 \\
+	r&=2\sqrt{2}
+\end{align*}
+
+\fig{1tv23d2opg5_lf}
+
+
+\grubr{1th22d2opg4}
+\abc{
+\item Gitt sidelengden $x$ som oppfyller cosinussetningen (se \rref{cossetn}) gitt av likningen
+\[ 14^2 = 16^2+x^2-16x \]
+Vi gjenkjenner $14^2$ og $16^2$ som kvadratene av de to kjente sidelengdene. Vi gjenkjenner $-16x$ som leddet $-2\cdot16 x\cos u$, hvor $u$ er vinkelen mellom sidene med de respektive lengdene 16 og $x$. Altså er $\cos u=\frac{1}{2}$, som betyr at $u=60^\circ$.
+\item Vi har at
+\begin{align*}
+	14^2 &= 16^2+x^2-16x \\
+	x^2-16x+16^2-14^2 &= 0 \\
+	x^2-16x+(16+14)(16-14)&=0 \\
+	x^2-16x+60 &=0
+\end{align*}
+Da $-6\cdot(-10)=60$ og $-6+(-10)=-16$, har vi av sum-produkt-metoden at
+\[ x^2-16x+60=(x-6)(x-10) \]
+Dermed er $x=6$ eller $x=10$. Altså er sidelengdene $14$, $16$ og $6$, eller $14$, $16$ og $10$.
+\item For å ha én løsning, må vi ende opp med likningen $x^2-16x+16^2-a^2=0$, hvor venstre side kan skrives som et fullstendig kvadrat. Vi har at
+\begin{align*}
+	x^2-2\cdot8\cdot x+16^2-a^2 &= (x-8)^2-8^2+16^2-a^2 \\
+	&= (x-8)^2-16\cdot4+16\cdot16 -a^2
+\end{align*}
+For å få et fullstendig kvadrat må vi ha at
+\begin{align*}
+	a^2 &= 16\cdot12 \\
+	a &= \sqrt{16}\sqrt{12} \\
+	&= 8\sqrt{3}
+\end{align*}
+}
+\fig{1th22d2opg4a_lf}
 
 
 \grubr{opggeo180minv}
