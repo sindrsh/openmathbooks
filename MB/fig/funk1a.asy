@@ -8,7 +8,7 @@ transform sh = shift(0,0);
 real x = 1;
 real y = -0.55;
 real y2 = 0;
-real pp = 0.04;
+real pp = 0.0;
 
 db(I=2,J=1, opac=0.6);
 db(J=1,sh=(0.5,1+pp),p=red, opac=0.6);

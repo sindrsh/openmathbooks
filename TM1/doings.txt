@@ -1,5 +1,6 @@
 Legg til oppgave i opgalgfullkvad3 med (ax)^2 ledd, og uttrykk med rot
 Utvid opggeokvadsym til å fise at x=-b/(2a) er ekstremalpunkt, og at dette er midtpuntet mellom nullpunktene.
+opg: vis at 4+sqrt(3) = (1+sqrt(3))^2, før opggeo1575.
 Ta med eksempel om identitet i forkant av 1tv21d1opg8?
 Flytt 1TV23D1opg3 til gruble
 I opggeouminv: Vis at cos(v) = sin(u)
@@ -18,6 +19,8 @@ eksempel side 14: Faktoriser i stedet for å vise til polynomdivisjon.
 Flere oppgaver om å faktorisere andregradsuttrykk hvor løsning ikke er gitt ved sum-produkt?
 Gruble: Hvorfor kan vi ikke lose ln-likninger med partallspotenser av x ved ln x**a = a ln x
 Legg til 1tv25d1opg3 ?
+Endre opggeo1575
+t1h23d1opg4 som nummerert oppgave
 
 
 

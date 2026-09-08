@@ -1,5 +1,4 @@
 import three;
-defaultpen(fontsize(11pt));
 
 triple nvec(triple x){
     return x/abs(x);

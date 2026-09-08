@@ -6,7 +6,7 @@ unitsize(0.5 cm);
 transform sh = shift(0,0);
 real x = 1;
 real y = -0.55;
-real pp = 0.04;
+real pp = 0.0;
 
 db(I=1,J=1, opac=0.6);
 db(I=3,sh=(-1,1+pp),p=YellowOrange, opac=0.6);

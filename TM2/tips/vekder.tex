@@ -3,12 +3,40 @@
 \input{../bm}
 
 \begin{document}
-Vi skal her se nærmere på en tangentlinje til en kurve i rommet.
-Vi innfører da en kurve $\vec{r}(t)$, hvor $\vec{r}(0)=(0, 0, 0)$. Siden det her er selve formen på kurven det er snakk om, vil resultatene vi kommer frem til for denne vektorfunksjonen gjelde for alle vektorfunksjoner. Vi skal derfor skrive $\vec{r}\,'(0)$ og $\vec{r}\,''(0)$ som henholdsvis $\vec{r}\,'$ og $\vec{r}\,''$. \vsk
+\section*{The tangent vector}
+Gitt en vektorfunkson $\vec{r}(t)$, og punktene $A=\vec{r}(a)$, $B=\vec{r}(a-h)$ og $C=\vec{r}(a+h)$. I det todimensjonale tilfellet, så vi i \tmen\ at  tangeringslinja til $\vec{r}$ i $A$ står normalt på $\vv{AS}$, hvor $S$ er sentrum i den omskrevne sirkelen til $\triangle ABC$ når $h\to 0$. Denne sirkelen kalles den oskulerende sirkelen.
+\begin{figure}
+	\centering
+	\subfloat[]{\includegraphics{\figp{veddera}}} \qquad
+	\subfloat[]{\includegraphics{\figp{vedderb}}}
+	\caption{Den blå linja er tangeringslinja til $\vec{r}$ i $A$. \textsl{(a)} Når 
+	}
+\end{figure}	
+Vi skal her se nærmere på en tangentlinje til en kurve i rommet. Vi setter da  ${\vec{r}(0)=(0, 0, 0)}$. Siden det her er selve formen på kurven det er snakk om, vil resultatene vi kommer frem til gjelde for alle $\vec{r}(a)$, så lenge noen kriterier er oppfylt. Vi skal derfor skrive $\vec{r}\,'(0)$ og $\vec{r}\,''(0)$ som henholdsvis $\vec{r}\,'$ og $\vec{r}\,''$.
 
-Vi setter $\vec{u}=\vec{r}(-h)$ og $\vec{v}=\vec{r}(h)$. Videre setter vi $A=\vec{r}(0)$, $B=\vec{u}$ og $C=\vec{v}$. Den omskrevne sirkelen til $\triangle ABC$ ligger i planet utspent av $\vec{u}$ og $\vec{v}$, og har dermed normalvektor $\vec{u}\times\vec{v}$. Sentrum til denne sirkelen ligger på midtnormalen til punktet $\frac{1}{2}\vec{u}$. Denne midtnormalen kan uttrykkes ved
+\subsection*{Sentrum i den omskrevne sirkelen}
+Vi setter $\vec{u}=\vec{r}(-h)$ og $\vec{v}=\vec{r}(h)$. Da er $A=\vec{r}(0)$, $B=\vec{u}$ og $C=\vec{v}$. Den omskrevne sirkelen til $\triangle ABC$ ligger i planet utspent av $\vec{u}$ og $\vec{v}$, og har dermed normalvektor $\vec{u}\times\vec{v}$. Sentrum til denne sirkelen ligger på midtnormalen til punktet $\frac{1}{2}\vec{u}$. Denne midtnormalen $l_1(t)$ kan uttrykkes ved
 \[ l_1(t)=\frac{1}{2}\vec{u}+t\vec{u}\times(\vec{u}\times\vec{v}) \]
-Tilsvarende kan vi uttrykke midtnormalen gjennom punktet $\frac{1}{2}\vec{v}$ som
-\[ l_2(q)=\frac{1}{2}\vec{v}+t\vec{u}\times(\vec{u}\times\vec{v}) \]
+Tilsvarende kan vi uttrykke midtnormalen $l_2(q)$ gjennom punktet $\frac{1}{2}\vec{v}$ som
+\[ l_2(q)=\frac{1}{2}\vec{v}+q\vec{v}\times(\vec{u}\times\vec{v}) \]
 Disse linjene skjærer hverandre i sentrum til den omskrevne sirkelen, så i det punktet er
+\begin{equation*}
+	\frac{1}{2}\vec{u}+t\vec{u}\times(\vec{u}\times\vec{v}) = \frac{1}{2}\vec{v}+q\vec{v}\times(\vec{u}\times\vec{v}) 
+\end{equation*}
+Ved å ta prikkproduktet av $\vec{v}$ på begge sider av dene likningen, ender vi opp med et uttrykk for $t$:
+\[ t=\frac{|\vec{v}|^2-\vec{u}\cdot\vec{v}}{2(\vec{u}\cdot\vec{v})^2-|\vec{u}|^2|\vec{v}|^2} \]
+Ved å sette dette uttrykket for $t$ inn i uttrykket for $l_1(t)$, finner vi at
+\[ \vv{AS} = \frac{1}{2}\vec{u}+\frac{|\vec{v}|^2-\vec{u}\cdot\vec{v}}{2(\vec{u}\cdot\vec{v})-|\vec{u}|^2|\vec{v}|^2}\vec{u}\times(\vec{u}\times\vec{v}) \]
+Videre kan det vises\footnote{For eksempel ved \textit{Taylor-rekken} til en vektorfunksjon.} at
+\[ \lim\limits_{h\to0} \vv{AS}=k (\vec{r}\,''|\vec{r}\,'|-\vec{r}\,'(\vec{r}\,'\cdot\vec{r}\,''))\]
+hvor $k$ er en konstant. I dette tilfellet er $S$ sentrum i den oskulerende sirkelen til $\vec{r}$ i punktet $A$.\vsk
+
+\subsection*{Planet den omskrevne sirkelen ligger i}
+Den omskrevne sirkelen til $\triangle ABC$ må ligge i samme plan $\triangle ABC$, altså i planet utspent av $\vec{u}$ og $\vec{v}$. Da er $\vec{u}\times\vec{v}$ en normalvektor til dette planet, og dermed er $\vec{p}=\frac{1}{h^3}(\vec{u}\times\vec{v})$ også en normalvektor til planet. Det kan vises at\footnote{For eksempel, igjen, ved en \textit{Taylor-rekke}. Faktoren $\frac{1}{h^3}$ er valgt nettopp for å få et uttrykk som konvergerer.}
+\[ \lim\limits_{h\to0} \frac{1}{h^3}(\vec{u}\times\vec{v})=	\vec{r}\,'\times\vec{r}\,'' \]
+
+\subsection*{Den geometriske tolkningen av tangeringslinja}
+Det er helt trivielt å vise at når ${h\to 0}$, er $\vv{AS}\cdot \vec{r}\,'=0$ og $\vec{p}\cdot\vec{r}\,'=0$. Altså; i punktet $A$ står $\vec{r}\,'$ normalt både på vektoren som peker inn mot sentrum i den oskulerende sirkelen, og på normalvektoren til planet den oskulerende sirkelen ligger i.\vsk
+
+Noen antakelser har vi tatt: I uttrykket for $t$ har vi antatt at $\vec{u}$ og $\vec{v}$ ikke er parallelle. I uttrykket for $\lim\limits_{h\to 0} \vv{AS}$ er $k$ bare en konstant hvis $\vec{r}\,'$ og $\vec{r}\,''$ eksisterer og er forskjellige fra 0.
 \end{document}

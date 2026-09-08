@@ -4,7 +4,7 @@
 
 \begin{document}
 \section{Bestemt og ubestemt integral \label{BestemtogubestemtI}}
-Gitt en funksjon $ f(x) $, som vist i \fref{fartvar}. Vi ønsker å finne  en tilmærming for arealet $A$ avgrenset av grafen til $f$, $x$-aksen og linjene $x=a$ og $x=b$. $ I $ til $ f $ på intervallet $ [a, b] $.
+Gitt en funksjon $ f(x) $, som vist i \fref{fartvar}. Vi ønsker å finne  en tilmærming for arealet $A$ til området avgrenset av grafen til $f$, $x$-aksen og linjene $x=a$ og $x=b$. $ I $ til $ f $ på intervallet $ [a, b] $.
 \figc{int1a}{Arealet $A$ avgrenset av grafen til $f$, $x$-aksen og linjene $x=a$ og $x=b$. \label{fartvar}}
 Vi starter med å dele $ [a, b] $ inn i tre delintervaller, som da får bredden $ \Delta x=\frac{b-a}{3} $. Videre bruker vi verdien til $ f(x) $ i starten av hvert delintervall som de respektive høydene i tre rektangler. $ x $-verdiene dette gjelder kaller vi $ {x_1=a} $, $ x_2 $ og $ x_3 $. Vi kan nå tilnærme $ A $ som summen av tre areal, $ s_1 $, $ s_2 $ og $ s_3 $:
 \alg{
@@ -26,16 +26,17 @@ Lar vi $ n $ være antall delintervaller, og $ {n\to \infty} $, får vi at
 	A&\approx\lim\limits_{n\to \infty}\left[f(x_1)+f(x_2)+...+f(x_{n})\right]\Delta x \nonumber \\
 	&\approx \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{intdefpreeq}
 \end{align}
-hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $ (legg merke til at $ x_1=a $).\vsk
+hvor $ x_i=a+(i-1)\Delta x$ og $ \Delta x=\frac{b-a}{n} $.\vsk
 
-Vi har her tatt utgangspunkt i at $f$ er positiv for alle $x\in[a, b]$. I så fall kan det vises at \sym{$\approx$} i \eqref{intdefpreeq} kan erstattes med \sym{$=$}. Hvis derimot $f$ var negativ for alle $x\in[a, b]$, måtte vi i tillegg ha multiplisert $A$ med $-1$ (forklar for deg selv hvorfor) for at likheten skulle vært gyldig. Og hvis $f$ var skiftvis positiv og negativ på intervallet, måtte vi gjort enda flere justeringer for å oppnå en gydlig likhet. Dette motiverer oss til å definere grensesummen som noe helt eget:
+Vi har her tatt utgangspunkt i at $f$ er positiv for alle $x\in[a, b]$. I så fall kan det vises at \sym{$\approx$} i \eqref{intdefpreeq} kan erstattes med \sym{$=$}. Hvis derimot $f$ var negativ for alle $x\in[a, b]$, måtte vi i tillegg ha multiplisert $A$ med $-1$ (forklar for deg selv hvorfor) for at likheten skulle vært gyldig. Og hvis $f$ var skiftvis positiv og negativ på intervallet, måtte vi gjort enda flere justeringer for å oppnå en gyldig likhet. Dette motiverer oss til å definere grensesummen som noe helt eget:
 \regdef[\bestminten \label{bestminten}]{\outl{Det bestemte integralet} $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
 	\begin{equation}
 		I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x \label{bint}
 	\end{equation}
 	hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $.
 }
-\eks{
+\newpage
+\eks{ \label{eksfinnint}
 Finn det bestemte integralet av ${ f(x)=x }$ på intervallet $ {x\in[0, 4]} $.
 
 \sv
@@ -50,7 +51,7 @@ I&= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n}(i-1)\left(\frac{4}{n}\right)^
 \mers{I overgangen mellom første og andre linje i ligningen over har vi brukt summen av en aritmetisk rekke.}
 }
 \newpage
-I kommende seksjoner skal vi finne integraler på en helt annen måte enn i eksempelet over. Læresetningen som sørger for dette er så viktig at den rett og slett kalles \outl{analysens fundamentalteorem}\footnote{Analyse i matematisk sammenheng kan, kort oppsummert, sies å være studien av funksjoner. Et teorem er en læresetning som kan bevises.}. Da teoremet gir oss en metode som omgår utregning av summer, lønner det seg å skrive integralet på en mer kompakt form:\regv
+I kommende seksjoner skal vi finne integraler på en helt annen måte enn i eksempelet på side \pageref{eksfinnint}. Læresetningen som sørger for dette er så viktig at den rett og slett kalles \outl{analysens fundamentalteorem}\footnote{Analyse i matematisk sammenheng kan, kort oppsummert, sies å være studien av funksjoner. Et teorem er en læresetning som kan bevises.}. Da teoremet gir oss en metode som omgår utregning av summer, lønner det seg å skrive integralet på en mer kompakt form:\regv
 \reg[Bestemt integral II]{
 	Det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ skrives som
 \begin{equation}
@@ -108,17 +109,17 @@ Allerede nå innser vi at det finnes en haug av funksjoner, rett og slett uendel
 	}
 }
 \subsection{Ubestemte integral}\index{integral!ubestemt}
-Vi har hittil sett på det \outl{bestemte integralet}, som har sitt navn fordi integralet er over et intervall der start- og sluttverdien er gitt. Det \textit{ubestemte} integralet til en funksjon $ f(x) $ skriver vi derimot som
-\[ \int\limits_c^x f(t)\, dt \]
-Navnet ubestemt kommer av at $ c $ er en vilkårlig konstant og at $ x $ er en varierende verdi\footnote{Det kan kanskje se litt rart ut at vi har skrevet $ f(t) $ i integralet når vi snakker om $ f(x) $, men dette gjøres bare for å skille mellom de to varierende verdiene $ x $ og $ t $. $ x $ kan være en hvilken som helst verdi, men for det ubestemte integralet ser vi på $ f $ for verdiene $ {t\in [a, x]} $, altså $ f(t) $. Og da er det ikke $ x $ som varierer, men $ t $, derav $ dt $.}.\vsk
+Vi har hittil sett på det \outl{bestemte integralet}, som har sitt navn fordi integralet er over et intervall der start- og sluttverdien er gitt. Det \outl{ubestemte} integralet til en funksjon $ f(x) $ skriver vi derimot som
+\[ \int\limits_c^x f(t)\, \textrm{d}t \]
+Navnet ubestemt kommer av at $ c $ er en vilkårlig konstant og at $ x $ er en variabel\footnote{Det kan kanskje se litt rart ut at vi har skrevet $ f(t) $ i integralet når vi snakker om $ f(x) $, men dette gjøres bare for å skille mellom variablene $ x $ og $ t $. $ x $ kan ha en hvilken som helst verdi, men for det ubestemte integralet ser vi på $ f $ for verdiene $ {t\in [a, x]} $, altså $ f(t) $. Og da er det ikke $ x $ som varierer, men $ t $, derav $ \textrm{d}t $.}.\vsk
 
 Hvis vi lar $ F$ være en antiderivert til $ f $, har vi fra (\ref{anfund2}) at:
-\[ \int\limits_c^x f(t)\, dt = F(x)-F(c)  \]
+\[ \int\limits_c^x f(t)\, \textrm{d}t = F(x)-F(c)  \]
 Siden $ c $ er en konstant, må $ -F(c) $ også være det. Denne kalles \outl{integrasjonskonstanten}, og omdøpes gjerne til $ C $. Det er også vanlig å forenkle skrivemåten til det ubestemte integralet ved å fjerne grensene og bare skrive $ f(x)\,dx $ etter integraltegnet.\regv
 \reg[Ubestemt integral]{
 	Det ubestemte integralet av $ f(x) $ er gitt som
 	\begin{equation}
-		\int f(x)\, dx  = F(x)+ C \label{uint}
+		\int f(x)\deltax  = F(x)+ C \label{uint}
 	\end{equation}
 	Hvor $ F $ er en antiderivert til $ f $ og $ C $ er en vilkårlig konstant.
 }

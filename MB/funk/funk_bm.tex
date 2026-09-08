@@ -17,15 +17,19 @@ I figurene over endrer antallet ruter seg etter et bestemt mønster. Matematisk 
 }
 For en figur med et vilkårlig nummer $ x $ har vi at
 \[ \text{Antall ruter i \textsl{Figur }}{\coln x}=2{\coln x}+1 \]
-Antall ruter endrer seg altså i takt med at $ x $ endrer seg, og da sier vi at\regv
-\st{\text{''Antall ruter i \textsl{Figur }$ x $'' er en funksjon av $ x $}\vsk
+Antall ruter endrer seg altså i takt med at $ x $ endrer seg, og da \\ sier vi at
+\st{
+\begin{itemize}
+	\item \text{''Antall ruter i \textsl{Figur }$ x $'' er en funksjon av $ x $.}
+	\item $ {2x+1} $ er \outl{funksjonsuttrykket}\index{funksjonsuttrykk} til funksjonen ''Antall ruter  i \textsl{Figur }$ x $''.
+\end{itemize}	
 
-$ {2x+1} $ er \outl{funksjonsuttrykket}\index{funksjonsuttrykk} til funksjonen ''Antall ruter \\ i \textsl{Figur }$ x $''.
+
 }
 
 \newpage
 \textbf{Generelle uttrykk} \\
-Skulle vi jobbet videre med funksjonen vi akkurat har sett på, ville det blitt tungvint å hele tiden måtte skrive ''Antall ruter i \textsl{Figur }$ x $''. Det er vanlig å kalle også funksjoner bare for en bokstav, og i tillegg skrive variabelen funksjonen er avhengig av i parentes. La oss nå omdøpe funksjonen ''Antall ruter i \textsl{Figur} $ x $'' til $ a(x) $. Da har vi at
+Skulle vi jobbet videre med funksjonen vi akkurat har sett på, ville det blitt tungvint å hele tiden måtte skrive ''Antall ruter i \textsl{Figur }$ x $''. Det er vanlig å kalle også funksjoner bare for en bokstav, og i tillegg skrive variabelen funksjonen er avhengig av i parentes. La oss omdøpe funksjonen ''Antall ruter i \textsl{Figur} $ x $'' til $ a(x) $. Da har vi at
 \[ \text{Antall ruter i \textsl{Figur }}x=a(x)=2x+1 \]
 Hvis vi skriver $ a(x) $, men erstatter $ x $ med et bestemt tall, betyr det at vi skal erstatte $ x $ med dette tallet i funksjonsuttrykket vårt:
 \alg{
@@ -34,15 +38,60 @@ a({\colb2})&=2\cdot{\colb2}+1=5 \\
 a({\colb3})&=2\cdot{\colb3}+1=7\\
 a({\colb4})&=2\cdot{\colb4}+1=9
 }
-\fig{funk1a}
+\fig{funk1a} \vsk
+
+\eks[1]{ \vs
+\abc{
+\item Gitt funksjonen $f(x)=5x$. Finn $f(3)$.
+\item Gitt funksjonen $g(x)=9x+2$. Finn $g(7)$.
+\item Gitt funksjonen $h(x)=x^2$. Finn $g(5)$.
+}	
+\sv \vs
+\abc{
+\item $f(3)=5\cdot3= 15$
+\item $g(7)=9\cdot7+2=65$
+\item $h(5)=5^2=25$
+}
+
+}
 \newpage
-\eks{
+\eks[2]{
+La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
+\fig{funk8}	
+\abc{
+\item Finn uttrykket for $a(x)$.
+\item Hvor mange ruter er det når $x=100$?
+\item Finn $x$ når $a(x)=47$
+}
+\sv
+\abc{
+\item Vi legger merke til at
+\begin{itemize}
+	\item når $ x=1 $, er det $ 5\cdot1+2=7 $ ruter.
+	\item når $ x=2 $, er det $ 5\cdot2+2=12 $ ruter.
+	\item når $ x=3 $, er det $ 5\cdot3+2=17 $ ruter.
+\end{itemize} 
+Altså er 
+\[ a(x)=5\cdot x+2 = 5x+2 \]
+\item Vi har at
+\[ a(100)=5\cdot100+2=500+2=502 \]
+Når $x=100$, er det 502 ruter.
+\item At $a(x)=47$ gir oss likningen
+\alg{
+5x+2 &= 47 \\
+5x &= 45 \\
+x &= 9
+}
+}
+}
+\newpage
+\eks[3]{
 La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
 \fig{funk2}
 \abc{
 \item Finn uttrykket for $ a(x) $.\bs
-\item Hvor mange ruter er der når $ x=10 $? \bs
-\item Hva er verdien til $ x $ når $ a(x)=628 $?
+\item Hvor mange ruter er det når $ x=10 $? \bs
+\item Finn $ x $ når $ a(x)=628 $?
 }
 
 
@@ -57,14 +106,15 @@ La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
 \end{itemize} 
 Altså er
 \[ a(x)=x\cdot x +3 =x^2+3 \]
-\item \[ a(10)=10^2+3=100+3=103 \]
+\item Vi har at
+\[ a(10)=10^2+3=100+3=103 \]
 Når $ x=10 $, er det 103 ruter.
-\item Vi har likningen
-\algv{
+\item At $a(x)=628$ gir oss likningen
+\alg{
 	x^2+3&=628 \\
 	x^2&=625
-}	
-Altså er
+}
+$15\cdot15=625$, altså er
 \[ x=15\qquad\vee\qquad x=-15 \]
 Siden vi søker en positiv verdi for $ x $, er $ x=15 $.	
 }

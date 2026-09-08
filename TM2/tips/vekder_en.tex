@@ -1,0 +1,63 @@
+\input{../../doc}
+\input{../../preamb}
+\input{../bm}
+
+
+\begin{document}
+	
+	\section*{The Tangent Vector}
+	Given a vector function $\vec{r}(t)$, and the points $A = \vec{r}(a)$, $B = \vec{r}(a-h)$, and $C = \vec{r}(a+h)$. In the two-dimensional case, we have shown in \tmen\ that the tangent line to $\vec{r}$ at $A$ is perpendicular to $\vv{AS}$, where $S$ is the center of the circumscribed circle of $\triangle ABC$ as $h \to 0$. This circle is called the osculating circle.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics{\figp{veddera}} \qquad
+		\includegraphics{\figp{vedderb}}
+		\caption{The blue line is the tangent line of $\vec{r}$ at $A$.}
+	\end{figure}
+	
+	We will now examine a tangent line to a curve in space. We set $\vec{r}(0) = (0, 0, 0)$. Since the shape of the curve is what matters here, the results we derive will apply to all $\vec{r}(a)$, provided certain criteria are met. Therefore, we will write $\vec{r}\,'(0)$ and $\vec{r}\,''(0)$ as $\vec{r}\,'$ and $\vec{r}\,''$, respectively.
+	
+	\subsection*{Center of the Circumscribed Circle}
+	Let $\vec{u} = \vec{r}(-h)$ and $\vec{v} = \vec{r}(h)$. Then, $A = \vec{r}(0)$, $B = \vec{u}$, and $C = \vec{v}$. The circumscribed circle of $\triangle ABC$ lies in the plane spanned by $\vec{u}$ and $\vec{v}$, and thus has a normal vector $\vec{u} \times \vec{v}$. The center of this circle lies on the perpendicular bisector of the point $\frac{1}{2}\vec{u}$. This perpendicular bisector $l_1(t)$ can be expressed as:
+	\[
+	l_1(t) = \frac{1}{2}\vec{u} + t\vec{u} \times (\vec{u} \times \vec{v})
+	\]
+	Similarly, the perpendicular bisector $l_2(q)$ through the point $\frac{1}{2}\vec{v}$ can be expressed as:
+	\[
+	l_2(q) = \frac{1}{2}\vec{v} + q\vec{v} \times (\vec{u} \times \vec{v})
+	\]
+	These lines intersect at the center of the circumscribed circle, so at that point:
+	\[
+	\frac{1}{2}\vec{u} + t\vec{u} \times (\vec{u} \times \vec{v}) = \frac{1}{2}\vec{v} + q\vec{v} \times (\vec{u} \times \vec{v})
+	\]
+	By taking the dot product of $\vec{v}$ on both sides of this equation, we arrive at an expression for $t$:
+	\[
+	t = \frac{|\vec{v}|^2 - \vec{u} \cdot \vec{v}}{2(\vec{u} \cdot \vec{v})^2 - |\vec{u}|^2|\vec{v}|^2}
+	\]
+	Substituting this expression for $t$ into the expression for $l_1(t)$, we find that:
+	\[
+	\vv{AS} = \frac{1}{2}\vec{u} + \frac{|\vec{v}|^2 - \vec{u} \cdot \vec{v}}{2(\vec{u} \cdot \vec{v}) - |\vec{u}|^2|\vec{v}|^2} \vec{u} \times (\vec{u} \times \vec{v})
+	\]
+	Furthermore, it can be shown\footnote{E.g., using the \textit{Taylor series} of a vector function} that:
+	\[
+	\lim_{h \to 0} \vv{AS} = k (\vec{r}\,''|\vec{r}\,'| - \vec{r}\,'(\vec{r}\,' \cdot \vec{r}\,''))
+	\]
+	where $k$ is a constant. In this case, $S$ is the center of the osculating circle of $\vec{r}$ at point $A$.
+	
+	\subsection*{The Plane of the Circumscribed Circle}
+	The circumscribed circle of $\triangle ABC$ must lie in the same plane as $\triangle ABC$, i.e., in the plane spanned by $\vec{u}$ and $\vec{v}$. Thus, $\vec{u} \times \vec{v}$ is a normal vector to this plane, and so $\vec{p} = \frac{1}{h^3}(\vec{u} \times \vec{v})$ is also a normal vector to the plane. It can be shown\footnote{Again, e.g., using a \textit{Taylor series}} that:
+	\[
+	\lim_{h \to 0} \frac{1}{h^3}(\vec{u} \times \vec{v}) = \vec{r}\,' \times \vec{r}\,''
+	\]
+	
+	\subsection*{Geometric Interpretation of the Tangent Line}
+	It is trivial to show that as $h \to 0$, $\vv{AS} \cdot \vec{r}\,' = 0$ and $\vec{p} \cdot \vec{r}\,' = 0$. Therefore, at point $A$, $\vec{r}\,'$ is perpendicular to both the vector pointing toward the center of the osculating circle and the normal vector of the plane in which the osculating circle lies.
+	
+	\subsection*{Assumptions}
+	We have made some assumptions:
+	\begin{itemize}
+		\item In the expression for $t$, we assumed that $\vec{u}$ and $\vec{v}$ are not parallel.
+		\item In the expression for $\lim_{h \to 0} \vv{AS}$, $k$ is only a constant if $\vec{r}\,'$ and $\vec{r}\,''$ exist and are non-zero.
+	\end{itemize}
+	
+\end{document}

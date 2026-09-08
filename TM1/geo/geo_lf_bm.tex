@@ -386,7 +386,7 @@ Av cosinussetningen (se \rref{cossetn}) har vi at
 
 \grubr{1th22d2opg3}
 \abc{
-\item Vi setter radien til sirkelen lik $r$. Av arealsetningen (se \rref{arsetn}), og da $SB=SC=r$, har vi at
+\item Vi setter radien til sirkelen lik $r$. Av arealsetningen (se \rref{arealsetn}), og da $SB=SC=r$, har vi at
 \begin{align*}
 	A_{\triangle SBC} &= \frac{1}{2}SB\cdot SC\cdot \sin \angle BSC \\
 	A_{\triangle SBC} &= \frac{1}{2}r^2\cdot \sin 45^\circ \\
@@ -410,6 +410,11 @@ Da $\triangle SAB$ er likebeint ($SA=SB$), følger det at
 	&= \angle 45^\circ-30^\circ \\
 	&=15^\circ
 \end{align*}
+Da både $\triangle SAB$ og $\triangle ASC$ er likebeinte $(SA=SB=SC)$, har vi at
+\begin{align*}
+	\angle ASB = 180^\circ - 2\angle SBA=120^\circ \vn
+	\angle CSA = 180^\circ - 2\angle SAC=150^\circ
+\end{align*}
 Vi har at
 \[ 2A_{\triangle ABC}=2A_{\triangle SAB}+2A_{\triangle SAC} + 2A_{\triangle SBC} \]
 Av (blant annet) arealsetningen (se \rref{arsetn}) har vi at
@@ -423,7 +428,7 @@ Av (blant annet) arealsetningen (se \rref{arsetn}) har vi at
 
 \fig{1tv23d2opg5_lf}
 
-
+\newpage
 \grubr{1th22d2opg4}
 \abc{
 \item Gitt sidelengden $x$ som oppfyller cosinussetningen (se \rref{cossetn}) gitt av likningen
@@ -453,7 +458,221 @@ For å få et fullstendig kvadrat må vi ha at
 }
 \fig{1th22d2opg4a_lf}
 
+\newpage
+\grubr{opggeo1575}
+Da $\sin 15^\circ =\frac{\sqrt{3}-1}{2\sqrt{2}}$, kan vi lage en rettvinklet trekant som vist i figuren under.
+\fig{opggeo1575_lf}
+Av \pyt\ har vi at
+\begin{align*}
+	AB^2 &= (2\sqrt{2})^2-(\sqrt{3}-1)^2 \\
+	&= 8-(3-2\sqrt{3}+1) \\
+	&= 4+2\sqrt{3} \\
+	&= 3+2\sqrt{3}+1 \\
+	&= (\sqrt{3})^2+2\sqrt{3}+1 \\
+	&= (\sqrt{3}+1)^2
+\end{align*}
+Dermed er $AB=\sqrt{3}+1$, og da er 
+\begin{align*}
+	\cos 15^\circ &= \frac{AB}{AC} \br
+	&= \frac{\sqrt{3}+1}{2\sqrt{2}}
+\end{align*}
+Videre har vi at
+\begin{align*}
+	\angle ACB&=90^\circ-\angle BAC \\
+	&= 75^\circ 
+\end{align*}
+Dermed er
+\begin{align*}
+	\sin 75^\circ &= \frac{AB}{AC} = \cos 15^\circ =\frac{\sqrt{3}+1}{2\sqrt{2}} \vn
+	\cos 75^\circ &= \frac{BC}{AC}=\sin 15^\circ=\frac{\sqrt{3}-1}{2\sqrt{2}}
+\end{align*}
+I tillegg er
+\begin{align*}
+	\tan 15^\circ &= \frac{BC}{AB} \br
+	&= \frac{\sqrt{3}-1}{\sqrt{3}+1} \br
+	&= \frac{\sqrt{3}-1}{\sqrt{3}+1}\cdot\frac{\sqrt{3}-1}{\sqrt{3}-1} \br
+	&= \frac{(\sqrt{3})^2-2\sqrt{3}+1}{(\sqrt{3}^2-1)} \br
+	&= 2-\sqrt{3}
+\end{align*}
 
+\newpage
+\grubr{1tv22d2opg3}
+
+\metode{Metode 1}{2cm}
+\fig{1tv22d2opg3a_lf}
+Av cosinussetningen (se \rref{cossetn}) har vi at
+\begin{align*}
+	BD^2 &= (2a)^2+(2a)^2-2\cdot2a\cdot 2a\cdot \cos 120^\circ \\
+	&= 8a^2-8a^2\cdot\left(-\frac{1}{2}\right) \\
+	&= 12a^2 \\
+	BD &= 2a\sqrt{3}
+\end{align*}
+Av vinkelsummen i $\triangle ABD$ er 
+\begin{align*}
+	\angle ADB&=180^\circ-45^\circ-75^\circ \\
+	&= 60^\circ
+\end{align*}
+Av sinussetningen har vi at
+\begin{align*}
+	\frac{BD}{\sin \angle BAD} &= \frac{AB}{\sin \angle ADB} \br
+	AB &= BD\frac{\sin \angle ADB}{\sin \angle BAD} \br
+	&= 2a\sqrt{3}\cdot \frac{\sqrt{3}}{2}\cdot\frac{2}{\sqrt{2}} \br
+	&= 3a\sqrt{2}
+\end{align*}
+Tilsvarende har vi at
+\begin{align*}
+	AD &= BD\frac{\sin \angle DBA}{\sin \angle BAD} \\
+	&= 2a\sqrt{3}\cdot \frac{\sqrt{3}+1}{2\sqrt{2}}\cdot \frac{2}{\sqrt{2}} \\
+	&= (3+\sqrt{3})a
+\end{align*}
+Omkretsen $O$ til $\square ABCD$ er derved gitt ved
+\begin{align*}
+	O &= AB+BC+CD+DA \\
+	&= 3a\sqrt{2} + 2a + 2a + (3+\sqrt{3})a \\
+	&=(7+3\sqrt{2}+\sqrt{3})a
+\end{align*}
+\newpage
+\metode{Metode 2}{2cm}
+\fig{1tv22d2opg3b_lf}
+Av cosinussetningen (se \rref{cossetn}) har vi at
+\begin{align*}
+	BD^2 &= (2a)^2+(2a)^2-2\cdot2a\cdot 2a\cdot \cos 120^\circ \\
+	&= 8a^2-8a^2\cdot\left(-\frac{1}{2}\right) \\
+	&= 12a^2 \\
+	BD &= 2a\sqrt{3}
+\end{align*}
+Videre har vi at
+\begin{align*}
+	ED &= BD\sin 75^\circ =2a\sqrt{3}\frac{\sqrt{3}+1}{2\sqrt{2}}=\frac{3+\sqrt{3}}{\sqrt{2}}a \vn
+	BE &= BD\sin 75^\circ =2a\sqrt{3}\frac{\sqrt{3}-1}{2\sqrt{2}}=\frac{3-\sqrt{3}}{\sqrt{2}}a
+\end{align*}
+Da $\angle AED=45^\circ$ og $\angle DEA=90^\circ$, er $\triangle AED$ rettvinklet og likebeint. Dermed er $AE=ED$ og $AD=\sqrt{2}ED$. Omkretsen $O$ til $\square ABCD$ er derved gitt ved
+\begin{align*}
+	O &= AE+EB+BC+CD+AD \\
+	&= \frac{3+\sqrt{3}}{\sqrt{2}}a+\frac{3-\sqrt{3}}{\sqrt{2}}a+2a+2a+(3+\sqrt{3})a \\
+	&= (7+3\sqrt{2}+\sqrt{3})a
+\end{align*}
+
+
+\grubr{1TV21D1opg2}
+Vi har at
+\begin{align*}
+	\sin 60^\circ &= \frac{\sqrt{3}}{2}>\frac{1}{2} \vn
+	\left(\frac{3}{4}\right)^{-1} &= \frac{4}{3}>1 \vn
+	0<\sin 160^\circ &< \sin 150^\circ = \frac{1}{2}\vn
+	\log 1 &= 0
+\end{align*}
+Dermed er
+\[ \log 1< \sin 160^\circ < \sin 60^\circ < \left(\frac{3}{4}\right)^{-1} \]
+
+\newpage
+\grubr{t1h23d1opg1}
+\abc{
+\item Da $\triangle ABC$ er likesidet, er $\angle BAC=\angle CBA=\angle ACB=60^\circ$. Dermed er
+\[ \cos 60^\circ = \frac{AD}{AC}=\frac{1}{2} \]
+\item Av \pyt\ på $\triangle ADC$ har vi at
+\begin{align*}
+	CD^2 &= 2^2-1^2 \\
+	&= 3 \\
+	CD &= \sqrt{3} 
+\end{align*}
+Da $CD$ halverer $\angle ACB$, er $\angle ACD=30^\circ$.
+\begin{align*}
+	\sin 30^\circ &= \frac{AD}{AC}=\frac{1}{2} \vn
+	\cos 30^\circ&=\frac{CD}{AC}=\frac{\sqrt{3}}{2}
+\end{align*}
+}
+Følgelig er
+\begin{align*}
+	2\sin 30^\circ \sin 30^\circ&= 2\cdot\frac{1}{2}\cdot\frac{1}{2} \\
+	&=\frac{1}{2} \\
+	&=\cos 60^\circ \\
+	&=\cos (2\cdot 30^\circ) 
+\end{align*}
+\fig{t1h23d1opg1_lf}
+
+\grubr{1tv22d1opg3}
+Vi krever at 
+\abc{
+	\item 
+	Da $\triangle ABC$ er rettvinklet og $\tan \angle B=\frac{3}{4}$, er $\triangle ABC$ formlik en trekant som har kateter med lengde 3 og 4. I så fall har hypotenusen lengde 5 (overlatt til leseren å eventuelt regne ut). Men da er $\sin B=\frac{3}{5}$. Altså kan vi ikke ha at $\sin \angle B = \frac{3}{10}$.
+	
+	
+	\item \metode{Metode 1}{2cm} \\
+	Hvis katetene har respektive lengder 6 og 8, kan vi ha at
+	\[ \tan B=\frac{6}{8}=\frac{3}{4} \]
+	Dette stemmer overens med den opplyste tangensverdien.
+	\item Siden tangensverdien er et forholdstall, vil ikke tangensverdien endre seg selv om sidelengdene til $\triangle ABC$ skaleres (så lenge de skaleres likt). Hypotenusen kan dermed ha en vilkårlig lengde, og kan altså være kortere enn 4.
+}
+
+
+\grubr{t1h23d1opg4}
+Vi lar $V$ og $H$ være arealet til trekantent til henholdsvis venstre og høyre. Av arealsetningen har vi da at
+\begin{align*}
+	V &= \frac{1}{2}\cdot6^2\sin 150^\circ \vn
+	H &= \frac{1}{2}\cdot6^2\sin 32^\circ
+\end{align*}
+Da $\sin 150^\circ=\sin 30^\circ<32^\circ$, er $V<H$.
+\fig{t1h23d1opg4_lf}
+
+
+\grubr{1tv25d2opg3} 
+\fig{1tv25d2opg3a_lf}
+\abc{
+\item 
+Sentralvinklene til trekantene er lik $\frac{360^\circ}{12}=30^\circ$.
+Vi setter radien til sirkelen lik $r$, og arealet til én trekant lik $T$. Av arealsetningen har vi at
+\begin{align*}
+	T &= \frac{1}{2}r^2\sin 30^\circ \\
+	&= \frac{1}{2}r^2\cdot \frac{1}{2} \\
+	&= \frac{1}{4}r^2
+\end{align*}
+Da tolvkanten har areal 120, er
+\begin{align*}
+	12\cdot \frac{1}{4}r^2 &= 120 \\
+	r^2 &= 40 \\
+	r &= 2\sqrt{10}
+\end{align*}
+\item 
+\newpage
+\metode{Metode 1}{2cm} \\
+Vi setter den ukjente sidelengden i trekantene lik $x$. Av cosinussetningen har vi at
+\begin{align*}
+	x^2 &= r^2+r^2-2\cdot r\cdot r\cos 30^\circ \\
+	&= 2r^2-\sqrt{3}r^2 \\
+	&= (2-\sqrt{3})r^2 \br
+	&= \frac{1}{2}(4-2\sqrt{3})r^2 \br
+	&= \frac{1}{2}(3-2\sqrt{3}+1)r^2 \br
+	&= \frac{1}{2}(\sqrt{3}^2-2\sqrt{3}+1)r^2 \br
+	&= \frac{1}{2}(\sqrt{3}-1)^2r^2 \\
+	x&= \pm\frac{1}{\sqrt{2}}(\sqrt{3}-1)r
+\end{align*}
+Da $x>0$ og $\sqrt{3}>-1$, er
+\begin{align*}
+	x&= \frac{1}{\sqrt{2}}(\sqrt{3}-1)r
+\end{align*}
+Dermed er omkretsen $O$ til tolvkanten gitt ved
+\begin{align*}
+	O &= 12\frac{1}{\sqrt{2}}(\sqrt{3}-1)\cdot2\sqrt{10} \\
+	&= 24\sqrt{5}(\sqrt{3}-1)
+\end{align*}
+\metode{Metode 2}{2cm}
+\fig{1tv25d2opg3b_lf}
+Trekantene kan deles inn slik figuren over viser. Dermed er
+\begin{align*}
+	CD &= AC\cdot \sin 15^\circ \\
+	&= r\cdot \frac{\sqrt{3}-1}{2\sqrt{2}}
+\end{align*}
+Dermed er omkretsen $O$ til tolvkanten gitt ved
+\begin{align*}
+	O &= 12\cdot2CD\\
+	&= r\cdot \frac{\sqrt{3}-1}{\sqrt{2}} \\
+	&=12\cdot2\sqrt{10}\cdot\frac{\sqrt{3}-1}{\sqrt{2}} \\
+	&=24\sqrt{5}(\sqrt{3}-1)
+\end{align*}
+}
+
+\newpage
 \grubr{opggeo180minv}
 \fig{opggeo180minvlos}
 Vi har at $ y=360-x $. Da $ x $ og $ y $ er de tilhørende sentralvinklene til henholdsvis $ v $ og $ u $, er
@@ -462,7 +681,6 @@ Vi har at $ y=360-x $. Da $ x $ og $ y $ er de tilhørende sentralvinklene til h
 	y&=180^\circ-v
 }
 
-\newpage
 \grubr{opggeokordteo}
 \fig{opggeokordteolos}
 Av \rref{perfvink} har vi at $ \angle CBA=\angle CDA $. Da $ \angle CPA=\angle DPB $ (de er toppvinkler), er dermed $ \triangle PDA \sim \triangle PBC$. Altså har vi at
