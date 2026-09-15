@@ -13,7 +13,7 @@ real dx = (b-a)/n;
 ints(f, a, b, n, lb=true);
 
 path s = graph(f, xmin, xmax, operator..);
-draw(s,L=Label("$f$", position=EndPoint),blue);
+draw(s,L=Label("$f$", position=EndPoint));
 xaks(xmin, xmax,l="$x$");
 yaks(xmin, f(xmax), l="$y$");
 draw((b,0)--(b,f(b)), dotted);

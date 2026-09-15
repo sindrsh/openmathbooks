@@ -1,164 +1,174 @@
 \begin{theindex}
 
-  \item $ \pi $, \hyperpage{304}
+  \item $ \pi $, \hyperpage{236}
 
   \indexspace
 
-  \item absolute value, \hyperpage{100}
-  \item algebra, \hyperpage{201}
-  \item altitude, \hyperpage{165}
-  \item angle, \hyperpage{157}
-    \subitem right, \hyperpage{159}
-    \subitem side, \hyperpage{157}
-    \subitem vertex, \hyperpage{157}
-    \subitem vertical, \hyperpage{162}
-  \item arc, \hyperpage{155}
-  \item area, \hyperpage{174}
+  \item absolute value, \hyperpage{93}
+  \item addition, \hyperpage{29}, \hyperpage{105}
+  \item algebra, \hyperpage{156}
+  \item altitude, \hyperpage{128}
+  \item angle, \hyperpage{123}
+    \subitem right, \hyperpage{124}
+    \subitem side, \hyperpage{123}
+    \subitem vertex, \hyperpage{123}
+    \subitem vertical, \hyperpage{126}
+  \item arc, \hyperpage{122}
+  \item area, \hyperpage{134}
   \item areal
-    \subitem of a circle, \hyperpage{282}
-    \subitem of a rectangle, \hyperpage{275}
-    \subitem of a trapezoid, \hyperpage{278}
+    \subitem of a circle, \hyperpage{221}
+    \subitem of a rectangle, \hyperpage{214}
+    \subitem of a trapezoid, \hyperpage{217}
+  \item arithmetic operation, \hyperpage{28}, \hyperpage{104}
 
   \indexspace
 
-  \item base, \hyperpage{165}, \hyperpage{208}
-  \item base surface, \hyperpage{189}
+  \item base, \hyperpage{128}, \hyperpage{161}
+  \item base surface, \hyperpage{145}
 
   \indexspace
 
-  \item cancellation, \hyperpage{77}
-  \item circle, \hyperpage{155}
-    \subitem center, \hyperpage{155}
-  \item circumference, \hyperpage{281}
+  \item calculation, \hyperpage{28}, \hyperpage{104}
+  \item cancellation, \hyperpage{74}
+  \item circle, \hyperpage{122}
+    \subitem center, \hyperpage{122}
+  \item circumference, \hyperpage{220}
   \item common denominator, \hyperpage{67}
-  \item constant, \hyperpage{201}
-  \item coordinate system, \hyperpage{18}
+  \item constant, \hyperpage{156}
+  \item coordinate system, \hyperpage{21}
 
   \indexspace
 
-  \item degree, \hyperpage{159}
-  \item denominator, \hyperpage{56}
-  \item diameter, \hyperpage{155}
-  \item difference, \hyperpage{27}
-  \item digits, \hyperpage{13}
-  \item dividend, \hyperpage{32}
-  \item divisor, \hyperpage{32}
+  \item degree, \hyperpage{124}
+  \item denominator, \hyperpage{58}
+  \item diameter, \hyperpage{122}
+  \item difference, \hyperpage{31}, \hyperpage{107}
+  \item digits, \hyperpage{16}
+  \item dividend, \hyperpage{37}, \hyperpage{113}
+  \item division, \hyperpage{37}, \hyperpage{113}
+  \item divisor, \hyperpage{37}, \hyperpage{113}
 
   \indexspace
 
-  \item edge, \hyperpage{163}
-  \item equal sign, \hyperpage{10}
-  \item equation, \hyperpage{228}
-  \item exponent, \hyperpage{208}
+  \item edge, \hyperpage{127}
+  \item equality sign, \hyperpage{12}
+  \item equation, \hyperpage{178}
+  \item even numbers, \hyperpage{20}
+  \item exponent, \hyperpage{161}
 
   \indexspace
 
-  \item factor, \hyperpage{29}
-  \item factorization, \hyperpage{49}
-  \item formula, \hyperpage{275}
-  \item fraction, \hyperpage{56}
-    \subitem expansion of, \hyperpage{61}
-    \subitem inverted, \hyperpage{83}
-    \subitem simplifying of, \hyperpage{61}
-  \item function, \hyperpage{253}
-    \subitem graph, \hyperpage{257}
-    \subitem linear, \hyperpage{257}
+  \item factor, \hyperpage{34}, \hyperpage{110}
+  \item factorization, \hyperpage{51}
+  \item formula, \hyperpage{214}
+  \item fraction, \hyperpage{58}
+    \subitem expansion of, \hyperpage{62}
+    \subitem inverted, \hyperpage{79}
+    \subitem simplifying of, \hyperpage{62}
+  \item function, \hyperpage{196}
+    \subitem graph, \hyperpage{199}
+    \subitem linear, \hyperpage{199}
 
   \indexspace
 
-  \item height, \hyperpage{165}
-  \item hypotenuse, \hyperpage{168}
+  \item height, \hyperpage{128}
+  \item hypotenuse, \hyperpage{130}
 
   \indexspace
 
-  \item intercept, \hyperpage{259}
-  \item interval, \hyperpage{257}
+  \item intercept, \hyperpage{201}
+  \item interval, \hyperpage{199}
+  \item inverse operation, \hyperpage{33}, \hyperpage{109}
 
   \indexspace
 
-  \item legs, \hyperpage{168}
-  \item length, \hyperpage{99}, \hyperpage{175}
-  \item line, \hyperpage{153}
+  \item legs, \hyperpage{130}
+  \item length, \hyperpage{92}, \hyperpage{135}
+  \item line, \hyperpage{120}
 
   \indexspace
 
-  \item magnitude, \hyperpage{100}
+  \item magnitude, \hyperpage{93}
+  \item mathematical operation, \hyperpage{28}, \hyperpage{104}
+  \item multiplication, \hyperpage{34}, \hyperpage{110}
 
   \indexspace
 
-  \item number
-    \subitem irrational, \hyperpage{218}
-    \subitem length of, \hyperpage{100}
-    \subitem natural, \hyperpage{12}
-    \subitem negative, \hyperpage{99}
-    \subitem positive, \hyperpage{99}
-    \subitem prime, \hyperpage{49}
-    \subitem rational, \hyperpage{86}
+  \item number, \hyperpage{12}
+    \subitem irrational, \hyperpage{169}
+    \subitem length of, \hyperpage{93}
+    \subitem negative, \hyperpage{92}
+    \subitem positive, \hyperpage{92}
+    \subitem prime, \hyperpage{51}
+    \subitem rational, \hyperpage{81}
   \item numbers
-    \subitem even, \hyperpage{17}
-    \subitem mixed, \hyperpage{86}
-    \subitem odd, \hyperpage{17}
-  \item numerator, \hyperpage{56}
+    \subitem mixed, \hyperpage{81}
+    \subitem natural, \hyperpage{14}
+  \item numerator, \hyperpage{58}
 
   \indexspace
 
-  \item of a parallelogram, \hyperpage{277}
-  \item of a triangle, \hyperpage{276}
+  \item odd numbers, \hyperpage{20}
+  \item of a parallelogram, \hyperpage{216}
+  \item of a triangle, \hyperpage{215}
+  \item origin, \hyperpage{21}
 
   \indexspace
 
-  \item parallel, \hyperpage{157}
-  \item perimeter, \hyperpage{172}
-    \subitem of a circle, \hyperpage{281}
-  \item point, \hyperpage{18}, \hyperpage{153}
-  \item point-slope equation, \hyperpage{273}
-  \item polygon, \hyperpage{163}
-    \subitem vertices of, \hyperpage{163}
-  \item positive integers, \hyperpage{12}
-  \item power equation, \hyperpage{244}
-  \item prime factorization, \hyperpage{51}
-  \item product, \hyperpage{29}
+  \item parallel, \hyperpage{123}
+  \item perimeter, \hyperpage{133}
+    \subitem of a circle, \hyperpage{220}
+  \item point, \hyperpage{21}, \hyperpage{120}
+  \item point-slope equation, \hyperpage{212}
+  \item polygon, \hyperpage{127}
+    \subitem vertices of, \hyperpage{127}
+  \item positive integers, \hyperpage{14}
+  \item power equation, \hyperpage{190}
+  \item prime factorization, \hyperpage{52}
+  \item product, \hyperpage{34}, \hyperpage{110}
 
   \indexspace
 
-  \item quadrilateral, \hyperpage{163}
-  \item quotient, \hyperpage{32}
+  \item quadrilateral, \hyperpage{127}
+  \item quotient, \hyperpage{37}, \hyperpage{113}
 
   \indexspace
 
-  \item radical sign, \hyperpage{217}
-  \item radius, \hyperpage{155}
-  \item ratio, \hyperpage{32}
-  \item remainder, \hyperpage{132}
+  \item radical sign, \hyperpage{168}
+  \item radius, \hyperpage{122}
+  \item ratio, \hyperpage{37}, \hyperpage{113}
+  \item ratio value, \hyperpage{37}, \hyperpage{113}
 
   \indexspace
 
-  \item sector, \hyperpage{155}
-  \item segment, \hyperpage{153}
-    \subitem perpendicular, \hyperpage{160}
+  \item sector, \hyperpage{122}
+  \item segment, \hyperpage{120}
+    \subitem perpendicular, \hyperpage{124}
   \item side
-    \subitem corresponding, \hyperpage{290}
-    \subitem of polygon, \hyperpage{163}
-  \item sign, \hyperpage{100}
-  \item slope, \hyperpage{259}
-  \item sum, \hyperpage{25}
-  \item surface, \hyperpage{174}
+    \subitem corresponding, \hyperpage{226}
+    \subitem of polygon, \hyperpage{127}
+  \item sign, \hyperpage{93}
+  \item slope, \hyperpage{201}
+  \item subtraction, \hyperpage{31}, \hyperpage{107}
+  \item sum, \hyperpage{29}, \hyperpage{105}
+  \item summing, \hyperpage{29}, \hyperpage{105}
+  \item surface, \hyperpage{134}
 
   \indexspace
 
-  \item tal, \hyperpage{10}
-  \item term, \hyperpage{25}, \hyperpage{27}
-  \item triangle, \hyperpage{163}
-    \subitem congruent, \hyperpage{288}
-    \subitem similar, \hyperpage{289}
+  \item term, \hyperpage{29}, \hyperpage{31}, \hyperpage{105}, 
+		\hyperpage{107}
+  \item triangle, \hyperpage{127}
+    \subitem congruent, \hyperpage{225}
+    \subitem similar, \hyperpage{225}
 
   \indexspace
 
-  \item value, \hyperpage{13}
-  \item variable, \hyperpage{201}
+  \item value, \hyperpage{16}
+  \item variable, \hyperpage{156}
 
   \indexspace
 
-  \item width, \hyperpage{175}
+  \item width, \hyperpage{135}
 
 \end{theindex}

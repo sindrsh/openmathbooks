@@ -7,8 +7,8 @@
 
 \op{odpar} \vs
 \abc{
-\item Lag en rekursiv og en eksplisitt formel positivt partall nummerr $i$.
-\item Lag en rekursiv og en eksplisitt formel for positivt oddetall nr $i$. 
+\item Lag en rekursiv og en eksplisitt formel for positivt partall nummer $i$. (Ta utgangspunkt i at 2 er det første partallet).
+\item Lag en rekursiv og en eksplisitt formel for positivt oddetall nummer $i$. 
 }
 
 \op{opgfolari}
@@ -44,6 +44,15 @@ Gitt følgen
 	\item Hva er verdien til $i$ når $a_i=128$?
 }
 
+\op{opgfolfibn}
+Figuren viser de fem første elementene i en \outl{Fibonacci-følge}. I denne følgen er $a_i>a_{i-1}$ for $i\geq 3$. De to minste kvadratene har sidelengde 1.
+\abc{
+\item Finn verdien til de fem første elemenentene.
+\item Finn en rekursiv formel for Fibonacci-følgen (for $i\geq3$).
+\item Vi kan inkludere et element $a_0$ i følgen, slik at den rekursive formelen er gyldig for $i\geq2$. Finn verdien til $a_0$.
+}
+\fig{opgfolfibn}
+
 \begin{comment}
 	\op
 Bruk formelen fra oppgave \textsl{\ref{sumkvad}a} og det eksplisitte uttrykket for en aritmetisk følge til å forklare at summen av en aritmetisk rekke kan skrives som:
@@ -76,7 +85,7 @@ Finn $ S_{10} $ for rekkene:\os
 \op{ar435}
 Gitt rekken 
 \[ 8+11+14+\ldots \]
-Finn $ n $ er summen av rekken lik 435?
+Finn $ n $ når summen av rekken er 435?
 
 \op{opgarekfraeks}
 Gitt rekken
@@ -168,9 +177,8 @@ Vis ved induksjon at for alle $ n\in \mathbb{N} $ er\os
 	\item $ 1^2 + 2^2+3^2+ \ldots+ n^2 = \dfrac{n(2n+1)(n+1)}{6} $ 
 }
 
-\op{div3}
-Vis ved induksjon at $ n(n^2+2) $ er delelig med 3 for alle $ n\in\mathbb{N} $.
 
+\begin{comment}
 \op{factorials}
 \abc{
 \item
@@ -181,13 +189,33 @@ Vis ved induksjon at:
 
 \item Hvordan kan venstresiden i a) skrives enklere? Utfør induksjonsbeviset på nytt etter forenklingen.
 }
+\end{comment}
 \newpage
 \gruboprecc{opgfoliplusone}
 Omskriv de rekursive og eksplisitte formlene fra \rref{arfol} og \rref{geofol} til formler som gir uttrykk for $a_{i+1}$ i steden for $a_i$. \vsk
 
 \gruboprecc{opgfolarrekomv}
-Forklar hvorfor den eksplisitte formelen til en aritmetisk rekke med $n$ element også kan skrives som
+Forklar hvorfor den eksplisitte formelen til en aritmetisk rekke med $n$ elementer også kan skrives som
 \[ a_i=a_n-(n-i)d \]
+
+\gruboprecc{opgfolrekurs}
+En følge er gitt ved at $a_1=0$ og den rekursive formelen
+\[ a_i=a_{i-1}+2(i-1) \] 
+Vis at den eksplisitte formelen er $a_i=i(i-1)$.
+
+\grubeksoprecc{r2v25d1opg3}{R2V25}
+En følge er gitt ved at $a_1=2$ og den rekursive formelen
+\[ a_{i+1}=a_i+i+2 \]
+Vis ved induksjon at den eksplisitte formelen er
+\[ a_i=\frac{i(i+3)}{2} \]
+
+\gruboprecc{div3}
+Vis ved induksjon at $ n(n^2+2) $ er delelig med 3 for alle $ n\in\mathbb{N} $.
+
+\gruboprecc{opgfolindfactorial}
+Vis ved induksjon at for alle $n\in\mathbb{N}$ er\footnote{Definisjon: For et heltall $p$ er $p!=1\cdot2\cdot3\cdot...\cdot(p-1)\cdot p$}
+\[ 1\cdot1! + 2\cdot2!+3\cdot3!+...+n\cdot n! \]
+
 
 \grubeksoprecc{r2v26d1opg6}{R2V26}
 \abc{
@@ -236,13 +264,6 @@ hvor $d$ er den konstante differansen mellom to naboelement.
 hvor $k$ er den konstante kvotienten mellom to naboelement.
 \item Løs oppgave \refop{eksgeo}c og \refop{eksar}b ved å bruke formlene fra a) og b).
 }
-
-\grubeksoprecc{r2v25d1opg3}{R2V25}
-\abc{
-\item Finn en rekursiv formel for følgen $2, 5, 9, 14, 20, ...$.
-\item Vis ved induksjon at den eksplisitte formelen til følgen er gitt ved $a_i=\frac{i(i+3)}{3}$.
-}
-
 
 \gruboprecc{opgfol}
 Desimaltallet 0.097097... er et desimaltall med repeterende desimalmønster. Desimalmønsteret 097 har verdi 97 og 3 repeterende siffer.
@@ -306,6 +327,13 @@ Målet med denne oppgaven er å, uten bruk av induksjon, vise at summen av $ n $
 \item Ut ifra det du fant i a), forklar at
 \[ \sum\limits_{i=1}^n i^2 = n+\sum\limits_{i=1}^n (n-i)(2i+1)  \]
 \item Skriv ut alle kjente summer fra b) og løs ligningen med\\ hensyn på $ \sum\limits_{i=1}^n i^2 $. Du skal da komme fram til (\ref{sumkvad}).
+}
+
+\newpage
+\grubop{opgfolquadar} \vso
+\abc{
+\item Gitt følgen $\{a_i\}$ gitt ved $1, 6, 11, 16, ...$\,. Vis at for alle $n\in\mathbb{N}$ er $(a_n)^2\in \{a_i\}$.
+\item Gitt følgen ${b_i}$ gitt ved $b_i=1+d(i-1)$, hvor $d$ er et heltall. Vis at for alle $n\in\mathbb{N}$ er $(b_n)^2\in\{b_i\}$.
 }
 
 \grubop{opgfoldelelig}

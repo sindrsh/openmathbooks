@@ -149,6 +149,40 @@ Gitt tre punkt. Finn avstanden fra det éne punktet til de to andre.
 \grubop{opggeotrivek}
 For trekant utspent av vektorene $[a, b]$ og $[c, d]$. Vis at $T=ad-bc$.
 
+\grubop{opggeodistpoint}
+Finn lengden til det grønne linjestykket.
+\fig{opggeodistpoint}
+
+\newpage
+\fig{opggeodistpoint_lf}
+Vi plasserer linjestykkene i et kvadratisk rutenett hvor rutene har sidelengde 1.
+Vi har at
+\begin{align*}
+	A_{\triangle ABE}&=\frac{1}{2}AB\cdot AE=\frac{1}{2}\cdot12\cdot5 = 30 \vn
+	A_{\triangle EDF}&=\frac{1}{2}ED\cdot DF=\frac{1}{2}\cdot1\cdot6 = 3 \vn
+	A_{\triangle FCB}&=\frac{1}{2}FC\cdot BC=\frac{1}{2}\cdot6\cdot6=18\vn
+	A_{\square ABCD}&=AB\cdot BC=12\cdot6=72
+\end{align*}
+Dermed er 
+\begin{align*}
+	A_{\triangle EBF}&=A_{\square ABCD}-A_{\triangle ABE}-A_{\triangle EDF}-A_{\triangle FCB} \\
+	&= 72-30-3-18 \\
+	&=21
+\end{align*}
+Av \pyt\ på $\triangle ABE$ har vi at
+\begin{align*}
+	BE^2 &= AE^2 + AB^2 \\
+	&= 5^2+12^2 \\
+	&= 169 \\
+	BE &= 13
+\end{align*}
+Videre har vi at
+\begin{align*}
+	BE\cdot DF&=2A_{\triangle EBF} \\
+	DF &= \frac{2A_{\triangle EBF}}{BE} \br
+	DF &= \frac{2\cdot 21}{13} \br
+	&= \frac{42}{13}
+\end{align*}
 
 \end{document}
 

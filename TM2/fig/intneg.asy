@@ -15,7 +15,7 @@ real dx = (b-a)/n;
 path s = graph(f, xmin, xmax, operator..);
 path s1 = (a,0) --(a,f(a))--s--(b, f(b))-- (b,0) --cycle;
 fill(s1, arpeng);
-draw(s,L=Label("$f$", position=EndPoint),blue);
+draw(s,L=Label("$f$", position=EndPoint));
 xaks(xmin, xmax, l="$x$");
 yaks(min(s).y, xmin+0.5, l="$y$");
 label("$-I$", (a+(b-a)/2, -0.5));

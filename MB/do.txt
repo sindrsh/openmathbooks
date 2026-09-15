@@ -10,4 +10,5 @@ fiks GV21D1opg10
 Gruble vis at sqrt(ab)=sqrt(a)*sqrt(b). Bruk regelen til å forenkle sqrt(a^2b) (med gitte verdier)
 legg til eksempel etter distributiv lov som ber om å faktorisere et uttrykk.
 
-flere oppgaver om faktorisering.
+flere oppgaver om faktorisering, både med og uten potenser.
+eksempel, a(b-c) = a(b+(-c))

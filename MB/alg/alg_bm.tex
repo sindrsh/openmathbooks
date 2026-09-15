@@ -53,33 +53,24 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \reg[\brtbr\,(\ref{brtbr})]{
 \[ \frac{a}{b}\cdot\frac{c}{d}=\frac{a c}{b d} \]
 }
-\eks[1]{ \vs
+\eks[1]{ \vso
 \[ \frac{2}{11}\cdot \frac{13}{21}=\frac{2\cdot 13}{11\cdot21} =\frac{26}{231} \]
 }
-\eks[2]{ \vs
+\eks[2]{ \vso
 	\[ \frac{3}{b}\cdot \frac{a}{7}=\frac{3 a}{7b} \]
 } \vsk
 
 \reg[\brdelmbr\;(\ref{delmbr})]{ 
 \[ \frac{a}{b}:\frac{c}{d}=\frac{a}{b}\cdot \frac{d}{c} \]
 }
-\eks[1]{ \vs
+\eks[1]{ \vso
 \[ \frac{1}{2}:\frac{5}{7}=\frac{1}{2}\cdot \frac{7}{5} \]
 }
-\eks[2]{ \vs
+\eks[2]{ \vso
 \[ \frac{a}{13}:\frac{b}{3}=\frac{a}{13}\cdot \frac{3}{b} =\frac{3a}{13b} \]
-} \vsk
+}\vsk
 
-\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{
-\[ (a+b)c = a c + b c \]
-} 
-\eks[1]{ \vs
-\[ (2+a)b =2b+ab \]
-}
-\eks[2]{\vs
-\[ a(5b-3)=5ab-3a \]
-} 
-\newpage
+
 \reg[\gangmnegto\;(\ref{gangmnegto})]{
 \[ a\cdot(-b)=-(a\cdot b) \]
 }
@@ -88,8 +79,8 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 }
 \eks[2]{ \vs
 \[ (-a)\cdot7=-(a\cdot 7)=-7a \]
-} \vsk
-
+}
+\newpage
 \reg[\gangmnegtre\;(\ref{gangmnegtre}) \label{gangmnegtrea}]{
 \[ (-a)\cdot(-b)=a\cdot b \]
 }
@@ -99,14 +90,51 @@ Det er også vanlig å utelate gangetegn der parentesuttrykk er en faktor:\[
 \eks[2]{ \vs 
 \[ (-a)\cdot(-15)=15a \]
 } \vsk
-\label{regslutt}
 
+
+\reg[\gangpar\;(\ref{gangpar}) \label{gangpara}]{
+	\[ (a+b)c = a c + b c \]
+} 
+\eks[1]{ \vs
+	\[ (2+a)b =2b+ab \]
+}
+\eks[2]{
+Faktoriser uttrykket $5x+10$.
+
+\sv \vsb
+\begin{align*}
+	5x+10 &= 5x+ 5\cdot 2 \\
+	&= 5(x+2)
+\end{align*}	
+
+}
+\info{Merk}{
+	Vi har at \vspace{-6pt}
+	\algv{
+		(a-b)c&= (a+(-b))c \\
+		&= ac+(-b)c \\
+		&= ac-bc
+	}
+} \vs
+\eks[3]{\vs
+	\[ a(5b-3)=5ab-3a \]
+}
+\eks[4]{
+Faktoriser uttrykket $8a-2$.
+
+\sv \vsb
+\begin{align*}
+	8a-2 &= 2\cdot4a-2\cdot1 \\
+	&= 2(4a-1)
+\end{align*}
+}
+
+\label{regslutt}
 
 \spr{
 Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet, og konstanter og variabler på den andre siden, sier vi at den isolerte variabelen er \outl{uttrykt ved} de andre tallene. For eksempel, om vi har uttrykket $ {a=2b-4} $, sier vi at ''$ a $ er uttrykt ved $ b $''. Har vi uttrykket $ {q = 9y-x} $, sier vi at ''$ q $ er uttrykt ved $ x $ og $ y $''.
-}
+} \regv
 
-\newpage
 \info{Minus foran parentes}{
 	La oss se på uttrykket $-(a-b)$. Vi har at
 	\alg{
@@ -117,42 +145,67 @@ Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet
 	Dermed er 
 	\[ -(a-b)=-a+b \]
 	Hvis vi skal skrive ut et uttrykk med minus foran parentes, kan vi altså si at vi da ''snur'' fortegnene på leddene inni parentesen.
+} \vs
+\eks[5]{
+Skriv ut parentesen i uttrykket $-(5-7a)$.
+
+\sv \vso
+\[ -(5-7a)=-5-7a \]
 }
-\eks[1]{
+\eks[6]{
 Skriv uttrykket så enkelt som mulig.
-\[ a^2+5bc-4a-(5bc-4a) \]
-\sv
-\[ a^2+5bc-4a-(5bc-4a)=a^2+5bc-4a-5bc+4a=a^2 \]
+\[ d+5bc-4a-(5bc-4a) \]
+\sv \vsb
+\alg{
+d+5bc-4a-(5bc-4a)&=d+5bc-4a-5bc+4a\\
+&=d
 }
-\eks[2]{
-	Skriv uttrykket så enkelt som mulig.
-	\[ 3bc-9ac-2c(5c-4a+b) \]
-	\sv
-	\alg{
-	3bc-9ac-2c(5c-4a+b)&=3bc-9ac-10c^2+8ac-2bc\\
-	&=bc-ac-10c^2 \\
-	&=c(b-a-10c)
-	}
 }
 \newpage
 \info{Utvidelser av reglene}{
-Noe av styrken til algebra er at vi kan lage oss kompakte regler som det er lett å utvide også til andre tilfeller. La oss som et eksempel finne et annet uttrykk for
+	Noe av styrken til algebra er at vi kan lage oss kompakte regler som det er lett å utvide også til andre tilfeller. La oss som et eksempel finne et annet uttrykk for
 	\[ (a+b+c)d \]
-\hrs{gangpara}{Regel} forteller oss ikke direkte hvordan vi kan regne mellom parentesuttrykket og $ d $, men det er ingenting som hindrer oss i å omdøpe $ a+b $ til $ k $:
-\[ a+b=k \]
-Da er
-\[ (a+b+c)d=(k+c)d \]
-Av \rref{gangpara} har vi nå at
-\[ (k+c)d = kd+cd \]
-Om vi setter inn igjen uttrykket for $ k $, får vi 
-\[ kd+cd=(a+b)d+cd \]
-Ved å utnytte \rref{gangpara} enda en gang kan vi skrive
-\[ (a+b)d+cd=ad+bd+cd \]
-Altså er
-\[ (a+b+c)d=ad+bd+cd \]
-{\footnotesize
-\it Obs! Dette eksempelet er \textsl{ikke} ment for å vise hvordan man skal gå fram når man har uttrykk som ikke direkte er omfattet av regel \ref{adkomalg}\,-\,\ref{gangmnegtrea}, men for å vise hvorfor det alltid er nok å skrive regler med færrest mulige ledd, faktorer og lignende. Oftest vil man bruke utvidelser av reglene uten engang å tenke over det, og i alle fall langt fra så pertentlig som det vi gjorde her.}
+	\hrs{gangpara}{Regel} forteller oss ikke direkte hvordan vi kan regne mellom parentesuttrykket og $ d $, men det er ingenting som hindrer oss i å omdøpe $ a+b $ til $ k $:
+	\[ a+b=k \]
+	Da er
+	\[ (a+b+c)d=(k+c)d \]
+	Av \rref{gangpara} har vi nå at
+	\[ (k+c)d = kd+cd \]
+	Om vi setter inn igjen uttrykket for $ k $, får vi 
+	\[ kd+cd=(a+b)d+cd \]
+	Ved å utnytte \rref{gangpara} enda en gang kan vi skrive
+	\[ (a+b)d+cd=ad+bd+cd \]
+	Altså er
+	\[ (a+b+c)d=ad+bd+cd \]
+	{\footnotesize
+		\it Obs! Dette eksempelet er \textsl{ikke} ment for å vise hvordan man skal gå fram når man har uttrykk som ikke direkte er omfattet av regel \ref{adkomalg}\,-\,\ref{gangmnegtrea}, men for å vise hvorfor det alltid er nok å skrive regler med færrest mulige ledd, faktorer og lignende. Oftest vil man bruke utvidelser av reglene uten engang å tenke over det, og i alle fall langt fra så pertentlig som det vi gjorde her.}
 }
+\newpage
+
+\eks[7]{ \vso
+\[ d(4a+3b+7)=4ad+3bd+7d \]
+}
+\eks[8]{
+Faktoriser uttrykket $7a+14b+28c$.
+
+\sv \vsb
+
+\alg{
+6a-12b+24c &= 6a -6\cdot2b+6\cdot4c \\
+&= 6(a-2b+4c)
+}
+}
+\eks[9]{
+	Skriv uttrykket så enkelt som mulig.
+	\[ 3b-9a-2(5c-4a+b) \] 
+	\sv \vsb 
+	\alg{
+	3b-9a-2(5c-4a+b)&=3b-9a-10c+8a-2b\\
+	&=b-a-10c 
+	}
+}
+
+
 
 \section{\pot \label{Potensar}}
 \fig{pot} \vs

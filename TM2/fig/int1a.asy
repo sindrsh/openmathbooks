@@ -12,7 +12,7 @@ real dx = (b-a)/n;
 
 
 path s = graph(f, xmin, xmax, operator..);
-draw(s,L=Label("$f$", position=EndPoint),blue);
+draw(s,L=Label("$f$", position=EndPoint));
 
 path s1 = (a,0) --(a,f(a))--s--(b, f(b))-- (b,0) --cycle;
 fill(s1, arpeng);
