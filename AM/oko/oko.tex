@@ -6,11 +6,8 @@
 \begin{document}
 \newpage
 \section{Indeksregning}
-\subsection{Introduksjon}
-\parbox{0.6\linewidth}{Innen økonomi er \textit{indekser} forholdstall som forteller hvor mye størrelser har forandret seg. For eksempel kostet kroneisen ca 0,75\,kr (!) da den ble lansert i 1953, mens den i 2021 kostet ca 27\,kr. Forholdet mellom prisen i 2021 og i 1953 er da
-	\[ \frac{\text{pris 2021}}{\text{pris 1953}}=\frac{27}{0,75}= 36 \]
-}
-\parbox[r]{0.3\linewidth}{\includegraphics[scale=2]{kr}}\\[2pt]
+Innen økonomi er \outl{indekser}\index{indeks} forholdstall som forteller hvor mye størrelser har forandret seg. For eksempel kostet en krone-is ca 0,75\,kr (!) da den ble lansert i 1953, mens den i 2021 kostet ca 27\,kr. Forholdet mellom prisen i 2021 og i 1953 er da
+\[ \frac{\text{pris 2021}}{\text{pris 1953}}=\frac{27}{0,75}= 36 \]
 I denne sammenhengen  er tallet 36 en indeks for prisendringen på kroneis mellom 1953 og 2021.
 
 \begin{comment}
@@ -31,7 +28,7 @@ I denne sammenhengen  er tallet 36 en indeks for prisendringen på kroneis mello
 	}
 \end{comment}
 \subsection{Konsumprisindeks og basisår}
-\textit{Konsumprisindeksen} (KPI) er en indeks som beskriver et sammenlignbart prisnivå på varer og tjenester som en typisk husstand i Norge bruker penger på i løpet av et år. Disse varene er \vs
+\outl{Konsumprisindeksen}\index{konsumprisindeks} (KPI)\index{KPI} er en indeks som beskriver et sammenlignbart prisnivå på varer og tjenester som en typisk husstand i Norge bruker penger på i løpet av et år. Disse varene og tjenestene er \vs
 
 \parbox[t]{0.49\linewidth}{\begin{itemize}
 		\item Matvarer og alkoholfrie drikkevarer
@@ -49,8 +46,12 @@ I denne sammenhengen  er tallet 36 en indeks for prisendringen på kroneis mello
 		\item Hotell- og restauranttjenester
 		\item Elektrisitet
 \end{itemize}}
-For å sammenligne noe må man alltid ha et utgangspunkt, og konsumprisindeksen tar utgangspunkt i prisnivået på de nevnte varene/tjenestene i året 2015. 2015 kalles da \textit{basisåret}\footnote{Hvilket år som er basisår forandrer seg med tiden. Forrige basisår var 1998.}, og i dette året er indeksen satt til 100.\regv
-\reg[Basisår]{I et basisår er verdien til indeksen 100. For konsumprisindeksen er 2015 basisåret.}\vsk
+For å sammenligne noe, må man alltid ha et utgangspunkt. Konsumprisindeksen tar utgangspunkt i prisnivået på de nevnte varene/tjenestene i det som er satt som \outl{basisår}\index{basisår}. 
+\newpage
+\reg[Basisår]{I et basisår er verdien til indeksen satt til 100.}
+\info{Nye basisår}{
+Hvilket år som er basisår forandrer seg med tiden. I denne boka bruker vi 2015 som basisår. Dette var basisåret satt av \outl{Statissk sentralbyrå} (SSB) i perioden 2017-2025. Før det var basisåret 1998. Fra og med 2026 bruker SSB 2025 som basisår.
+}
 
 Tabellen under viser samlet KPI i perioden 2011-2020:
 \begin{center}
@@ -67,7 +68,7 @@ Tabellen under viser samlet KPI i perioden 2011-2020:
 		2012&	93,9\\
 		2011&	93,3\\
 	\end{tabular}
-	\captionof{table}{Kunsumprisindeksen for årene 2011-2020. Tall hentet fra \net{https://www.ssb.no/priser-og-prisindekser/konsumpriser/statistikk/konsumprisindeksen}{SSB}. \label{KPI}}
+	\captionof{table}{Kunsumprisindeksen for årene 2011-2020, med 2015 som basisår. Tall hentet fra \net{https://www.ssb.no/priser-og-prisindekser/konsumpriser/statistikk/konsumprisindeksen}{SSB}. \label{KPI}}
 \end{center}
 Av tabellen kan vi for eksempel lese dette:
 \begin{itemize}
@@ -87,10 +88,10 @@ I juli 2021 var KPI for	matvarer 109,4. Hvor mye har prisen på matvarer endret 
 I juli 2021 var KPI for sko 98,0. Hvor mye har prisen på sko endret seg sammenlignet med basisåret?
 
 \sv 
-$ 98,0-100=-2 $. Prisen på sko har altså blitt redusert med 2\% sammenlignet med basisåret.  
+$ {98,0-100=-2} $. Prisen på sko er altså redusert med 2\% sammenlignet med basisåret.  
 }
 \subsection{Kroneverdi}
-Vi har nevnt at en kroneis kostet 0,75 \,kr i 1953 og 27\,kr i 2021. Når vi ved to tidspunkt må betale \textsl{forskjellig} pris på den \textsl{samme} varen skyldes det ofte at \textit{kroneverdien} har forandret seg;\textsl{ 1\enh{kr} i 1953 var mer verd  enn 1\enh{kr} i 2021.
+Vi har nevnt at en kroneis kostet 0,75 \,kr i 1953 og 27\,kr i 2021. Når vi ved to tidspunkt må betale \textsl{forskjellig} pris på den \textsl{samme} varen, skyldes det ofte at \outl{kroneverdien}\index{kroneverdi} har forandret seg;\textsl{ 1\enh{kr} i 1953 var mer verd  enn 1\enh{kr} i 2021.
 }\vsk
 
 Kroneverdien for et gitt år regnes ut fra KPI til basisåret (100): \regv
@@ -142,27 +143,27 @@ Altså er
 Altså var 10\,000\enh{kr} mer verd i 1928 enn det 350\,000\enh{kr} var verd i 2020.
 }
 \subsection{Reallønn og nominell lønn}
-Hvor god \textit{råd} vi har avhenger av hvor mye vi tjener og hva prisnivået er. Tenk at du  hadde en årslønn på 500\,000\,kr i både 2020 og i 2019. \hyperref[KPI]{\textsl{Tabell \ref*{KPI}}} forteller oss da at du hadde du best råd i 2019, fordi da var prisnivået (KPI) lavere enn i 2020. \vsk
+Hvor god \textsl{råd} vi har avhenger av hvor mye vi tjener og hva prisnivået er. Tenk at du  hadde en årslønn på 500\,000\,kr i både 2020 og i 2019. \hyperref[KPI]{\textsl{Tabell \ref*{KPI}}} forteller oss da at du hadde du best råd i 2019, fordi da var prisnivået (KPI) lavere enn i 2020. \vsk
 
-At prisnivået har blitt høgere er det samme som at kroneverdien har blitt lavere. Dette betyr igjen at hvis lønnen din var den samme i 2019 og 2020, er \textsl{realverdien} til lønnen din høgere i 2019 enn i 2020. Den opprinnelige lønnen og realverdien til lønnen er så mye brukt i statistikk at de har fått egne navn:\regv
+At prisnivået har blitt høyere er det samme som at kroneverdien har blitt lavere. Dette betyr at hvis lønnen din var den samme i 2019 og 2020, er \textsl{realverdien} til lønnen din høyere i 2019 enn i 2020. Den opprinnelige lønnen og realverdien til lønnen er så mye brukt i statistikk at de har fått egne navn:\regv
 
 \reg[Reallønn og nominell lønn\label{realnomonn}]{
-Nominell lønn er lønn  mottatt et gitt år. \vsk
+\outl{Nominell lønn}\index{nominell lønn} er lønn  mottatt et gitt år. \vsk
 
-Reallønnen er realverdien til den nominelle lønnen. 	
+\outl{Reallønnen}\index{reallønn} er realverdien til den nominelle lønnen. 	
 }
 \eks{
 I 2016 tjente Per 450\,000 kr, mens i 2012 tjente han 420\,000 kr. I 2016 var $ {\text{KPI}=103,6} $, mens i 2012 var $ {\text{KPI}=93,9} $. I hvilket av disse årene hadde Per best råd?
 
 \sv
-For å finne ut hvilket av årene Per hadde best råd i, sjekker vi hvilket år han hadde høgest reallønn\footnote{KPI-verdiene i utregningen henter vi fra \hyperref[KPI]{\textsl{Tabell 1}}.} (se \rref{realverdi}):
+For å finne ut hvilket av årene Per hadde best råd i, sjekker vi hvilket år han hadde høyest reallønn\footnote{KPI-verdiene i utregningen henter vi fra \hyperref[KPI]{\textsl{Tabell 1}}.} (se \rref{realverdi}):
 \alg{
 \text{reallønn i 2016}&= 450\,000\cdot\frac{100}{103,6}\enh{kr} \\
 & \approx 434\,363 \enh{kr}\vn
 \text{reallønn i 2012}&= 420\,000\cdot\frac{100}{93,9} \\
 & \approx 447\,284 \enh{kr}
 }
-Reallønnen til Per var altså høgest i 2012, derfor hadde han bedre råd da enn i 2016.
+Reallønnen til Per var altså høyest i 2012, derfor hadde han bedre råd da enn i 2016.
 }
 \newpage
 \reg[Verdi som følger indeks]{
@@ -194,24 +195,24 @@ Videre er
 	\frac{\text{pris på brus i 2010*}}{\text{KPI i 2010}} &= \frac{12,5}{92,1}\approx 0,136 \vn
 	\frac{\text{pris på brus i 2020*}}{\text{KPI i 2020}} &= \frac{19}{112,1}\approx 0,169
 }
-Altså er det rimelig å si at prisen for sjokolade har fulgt indeks, mens prisen for brus ikke har gjort det.
+Altså har prisen for sjokolade (tilnærmet) fulgt indeks, mens prisen for brus ikke har gjort det.
 }
 
 \section{Lån og sparing}
 \subsection{Lån}
-Noen ganger har vi  ikke nok penger til å kjøpe det vi ønsker oss, og må derfor ta opp et lån fra en bank. Banken gir oss da en viss \textit{lånesum} mot at vi betaler tilbake denne, og \textit{renter}, i løpet av en bestemt tid. Det vanligste er at vi underveis betaler banken det som kalles \textit{terminbeløp}, som på sin side består av \textit{avdrag} og renter. Det vi til enhver tid skylder banken kaller vi \textit{gjelden}. \vsk
+Noen ganger har vi  ikke nok penger til å kjøpe det vi ønsker oss, og må derfor ta opp et lån fra en bank. Banken gir oss da en viss \outl{lånesum}\index{lånesum} mot at vi betaler tilbake denne, og \outl{renter}\index{renter}, i løpet av en bestemt tid. Det vanligste er at vi underveis betaler banken det som kalles \outl{terminbeløp}\index{terminbeløp}, som på sin side består av \outl{avdrag}\index{avdrag} og renter. Pengebeløpet vi skylder banken kaller vi \outl{gjelden}\index{gjeld}. \vsk
 
 Si at en bank låner  oss 100\,000\,kr, som da er lånesummen. Lånet skal tilbakebetales i løpet av 5 år, med ett terminbeløp hvert år, og renten er 10\%. Det finnes forskjellige måter å betale tilbake et lån på, men følgende vil som regel gjelde:
 \begin{itemize}
-	\item \textbf{Summen av alle avdragene skal tilsvare lånesummen}.\os
+	\item \textbf{Summen av alle avdragene skal tilsvare lånesummen}.\\
 	 For å gjøre det enkelt i vårt eksempel, bestemmer vi oss for å betale tilbake lånet med like avdrag hvert år. Siden 100\,000 kr skal fordeles likt over 5 år, må det årlige avdraget bli $ \frac{100\,000}{5}\enh{kr}=20\,000 $\,kr.
-	\item \textbf{Det man betaler i avdrag skal trekkes fra gjelden.}\os
+	\item \textbf{Det man betaler i avdrag skal trekkes fra gjelden.}\\
 	
 	Startgjelden er 100\,000\enh{kr}, men det første året betaler vi 20\,000\,kr i avdrag, og da blir gjelden $100\,000\enh{kr}-20\,000\enh{kr} =80\,000\enh{kr} $. Det andre året betaler vi nye 20\,000\,kr, og da blir gjelden $ 80\,000\enh{kr}-20\,000\enh{kr} =60\,000\enh{kr}  $. Og slik fortsetter det de neste tre årene.
-	\item \textbf{Renter skal beregnes av gjelden.}\os 
+	\item \textbf{Renter skal beregnes av gjelden.}\\
 	Siden gjelden det første året er 100\,000\,kr, må vi betale \\${ 100\,000\enh{kr}\cdot0,1=10\,000\enh{kr} } $ i renter. Siden gjelden det andre året er 80\,000\,kr må vi betale ${ 80\,000\enh{kr}\cdot0,1=8\,000\enh{kr} } $ i renter.  Og slik fortsetter det de neste tre årene.
 	
-	\item \textbf{Terminbeløpet er summen av avdraget og rentene}.\os
+	\item \textbf{Terminbeløpet er summen av avdraget og rentene}.\\
 	
 	Av første og tredje punkt får vi at\os
 	\centering
@@ -236,13 +237,11 @@ Hvis vi har betalt avdrag lik 20\,000\enh{kr} i 5 år, er gjelden 0\enh{kr}. Har
 
 {\footnotesize\mer Du har alltid rett til å betale større avdrag enn det som først er avtalt. Betaler du hele gjelden vil lånet avsluttes så lenge eventuelle renter også er betalt.}
 \end{itemize}\vsk
-\textbf{Serielån og annuitetslån}\os
+\textbf{Serielån og annuitetslån}\\
 To vanlige typer lån er \textit{serielån} og \textit{annuitetslån}. Lånet fra eksempelet vi akkurat har sett på er et serielån fordi avdragene er like store. Hvis terminbeløpene hadde vært like store, ville det isteden vært et annuitetslån. Hvis lånesum, rente og nedbetalingstid er lik, vil et serielån alltid medføre minst utgifter totalt sett. For privatpersoner er det likevel veldig populært å velge annuitetslån på grunn av at det er lettere å planlegge økonomien når man betaler det samme beløpet hver gang. \vsk
 
-\textbf{Kredittkort}\os
-\prbxl{0.6}{Kredittkort er et betalingskort som er slik at hvis du f.eks. bruker kortet for å betale 10\,000\,kr, så låner du pengene fra banken. Etter en tid som er avtalt med banken vil den kreve renter av gjelden din. Til hvilken tid du betaler denne gjelden }\qquad
-\parbox{0.3\linewidth}{\includegraphics[scale=0.1]{kred}}\\[-3pt]
-er delvis opp til deg selv, men generelt har kredittkort veldig høge renter, så det lureste er å betale før rentekravet har startet!
+\textbf{Kredittkort}\\
+Kredittkort er et betalingskort som er slik at hvis du f.eks. bruker kortet for å betale 10\,000\,kr, så låner du pengene fra banken. Etter en tid som er avtalt med banken vil den kreve renter av gjelden din. Til hvilken tid du betaler denne gjeldener delvis opp til deg selv, men generelt har kredittkort veldig høye renter, så det lureste er å betale før rentekravet har startet.
 \regv
 \reg[Lån]{
 \renewcommand{\arraystretch}{1.5}
@@ -262,31 +261,36 @@ er delvis opp til deg selv, men generelt har kredittkort veldig høge renter, s�
 }
 \newpage
 \eks[1]{
-Fra en bank låner du 300\,000 kr med 3\% årlig rente. Lånet skal betales tilbake som et serielån med 5 årlige terminbeløp. \os
-\textbf{a)} Hva blir det årlige avdraget?\os
-\textbf{b)} Hva er gjelden din etter at du har betalt tredje terminbeløp?\os
-\textbf{c)} Hvor mye må du betale i renter ved fjerde terminbeløp?\os
-\textbf{d)} Hvor stort blir det fjerde terminbeløpet?\os 
+Fra en bank låner du 300\,000 kr med 3\,\% årlig rente. Lånet skal betales tilbake som et serielån med 5 årlige terminbeløp. \os
+\abc{
+\item Hva blir det årlige avdraget?
+\item Hva er gjelden din etter at du har betalt tredje terminbeløp?
+\item Hvor mye må du betale i renter ved fjerde terminbeløp?
+\item Hvor stort blir det fjerde terminbeløpet?
+}
 
 
-\sv
-\textbf{a)} Siden 300\,000\,kr skal betales over 5 år, blir det årlige avdraget
+
+\sv \vs
+\abc{
+\item Siden 300\,000\,kr skal betales over 5 år, blir det årlige avdraget
 \[ \frac{300\,000\enh{kr}}{5}=60\,000\enh{kr} \]
-\textbf{b)} Når tredje terminbeløp er betalt, har du betalt tre avdrag. Det betyr at gjelden din er
+\item Når tredje terminbeløp er betalt, har du betalt tre avdrag. Det betyr at gjelden din er
 \alg{
 300\,000-60\,000\cdot3 &= 300\,000-180\,000 \\
 &= 120\,000
 }
 Altså 120\,000\,kr.\os
 
-\textbf{c)} Ut fra oppgave b) vet vi at gjelden er 120\,000 kr når fjerde terminbeløp skal betales. 3\% av gjelden blir da
+\item Ut fra oppgave b) vet vi at gjelden er 120\,000 kr når fjerde terminbeløp skal betales. 3\,\% av gjelden blir da
 \[ 120\,000\cdot0,03=3\,600 \]
 Altså 3\,600 kr.\os
-\textbf{d)} Terminbeløpet tilsvarer avdrag pluss renter. Ut fra oppgave a) og c) vet vi da at det fjerde terminbeløpet blir
+\item Terminbeløpet tilsvarer avdrag pluss renter. Ut fra oppgave a) og c) vet vi da at det fjerde terminbeløpet blir
 \[ 60\,000\enh{kr}+3\,600\enh{kr} =63\,600\enh{kr}\]}
+}
 \newpage
 \eks[2]{
-Fra en bank låner du 100\,000\,kr med 6,4\% årlig rente. Lånet skal betales tilbake som et annuitetslån over 5 år, og banken har da regnet ut at terminbeløpet blir 24\,000\enh{kr}.\os
+Fra en bank låner du 100\,000\,kr med 6,4\,\% årlig rente. Lånet skal betales tilbake som et annuitetslån over 5 år, og banken har regnet ut at terminbeløpet blir 24\,000\enh{kr}.\os
 
 Regn ut avdrag og renter for det første terminbeløpet.
 
@@ -309,38 +313,38 @@ Altså må du betale 17\,600\enh{kr} i avdrag det første året.
 \newpage
 \subsection{Sparing; innskuddsrente og forventet avkastning}
 \subsubsection{Innskuddsrente}
-Vi har sett at vi må betale renter når vi låner penger av en bank, men hvis vi i steden setter penger (gjør et innskudd) i en bank  \textsl{får} vi renter: \regv
+Vi har sett at vi må betale renter når vi låner penger av en bank, men hvis vi i stedet setter penger (gjør et innskudd) i en bank  \textsl{får} vi renter:
 \reg[Innskuddsrente]{
-Innskuddsrente er en prosentvis økning av pengene du har i banken, gjentatt over faste tidsintervaller (månedlig, årlig o.l.) 
+\outl{Innskuddsrente}\index{innskuddsrente} er en prosentvis økning av pengene du har i banken, gjentatt over faste tidsintervaller (månedlig, årlig o.l.) 
 }
 \eks[1]{
 Du setter inn 20\,000\,kr i en bank som gir 2\% årlig sparerente. Hvor mye penger har du i banken etter 8 år? 
 
 \sv
-For å beregne innskuddsrenter kan vi anvende \rref{progjen}. Siden renten er 2\%, er vekstfaktoren 1,02. Originalverdien er 20\,000 og antall endringer (tiden) er 8:
-\[ 20\,000\cdot1,02^8\approx 23\,433 \]
+For å beregne innskuddsrenter kan vi anvende \rref{progjen}. Siden renten er 2\,\%, er vekstfaktoren 1,02. Originalverdien er 20\,000 og antall endringer (tiden) er 8. Dermed er
+\[ \text{ny verdi}=20\,000\cdot1,02^8\approx 23\,433 \]
 Du har altså ca. 23\,433\,kr i banken etter 8 år med sparing.
 }
 \subsubsection{Forventet avkastning}
-En annen måte å spare penger på, er å investere i et aksjefond. Da vil man snakke om \textit{forventet avkastning}:\regv
+En annen måte å spare penger på er å investere i et aksjefond. Da vil man snakke om \outl{forventet avkastning}\index{forventet avkastning}:\regv
 \reg[Forventet avkastning]{
-Forventet avkastning angir en \textsl{forventet} prosentvis økning av en investering, gjentatt over faste tidsintervaller.
+Forventet avkastning angir en \textsl{forventet} økning av en investering.
 }
 \newpage
 \eks[1]{
-Du investerer 15\,000 i et aksjefond som forventer 5\% årlig avkastning. Hvor mye penger er investeringen verd etter 8 år ved en slik avkastning?
+Du investerer 15\,000 i et aksjefond som forventer 5\% årlig avkastning. Hvor mye er investeringen verd etter 8 år ved en slik avkastning?
 
 \sv
-Også for forventet avkastning kan vi bruke \rref{progjen}. Vekstfaktoren er 1,05, originalverdien er 15\,000 og antall endringer (tiden) er 8:
-\[ 15\,000\cdot1,05^8\approx22\,162 \]
+Også her kan vi bruke \rref{progjen}. Vekstfaktoren er 1,05, originalverdien er 15\,000 og antall endringer (tiden) er 8. Dermed er
+\[ \text{ny verdi}=15\,000\cdot1,05^8\approx22\,162 \]
 Etter 8 år er det forventet at investeringen er verdt 22\,162\enh{kr}.
 }
 \vsk
 
 \info{Spare med innskuddsrente eller aksjefond?}{
-Som regel er forventet avkastning på et aksjefond høgere enn innskudsrenten du får i en bank, men ulempen er at forventet avkastning ikke gir noen garantier. Forventet avkastning oppgir bare økningen eksperter antar vil skje. Er du heldig blir økningen høgere, er du uheldig blir den lavere, og kan til og med føre til en \textsl{reduksjon} av investeringen din. I verste fall, rett nok i ekstremt sjeldne tilfeller, kan hele investeringen din ende opp med å bli verd 0\enh{kr}. \vsk
+Som regel er forventet avkastning på et aksjefond høyere enn innskudsrenten du får i en bank, men ulempen er at forventet avkastning ikke gir noen garantier. Forventet avkastning oppgir bare økningen noen antar vil skje. Er du heldig blir økningen høyere, er du uheldig blir den lavere, og kan til og med føre til en \textsl{reduksjon} av investeringen din. I verste fall, rett nok i ekstremt sjeldne tilfeller, kan hele investeringen din ende opp med å bli verdt 0\enh{kr}. \vsk
 
-Innskuddsrenten kan også forandre seg noe med tiden, men den kan aldri føre til en reduksjon av investeringen din.
+Innskuddsrenten kan også forandre seg noe med tiden, men vil så og si aldri føre til en reduksjon av investeringen din.
 }
 \begin{comment}
 	\eks[2]{Du betaler 27\,000\,kr med et kreddittkort som krever 1,4\% rente for hver måned du betaler for seint.\os
@@ -362,7 +366,7 @@ Innskuddsrenten kan også forandre seg noe med tiden, men den kan aldri føre ti
 \section{Skatt}
 Om du har en inntekt, må du som regel betale en del av disse pengene til staten. Disse pengene kalles \textit{skatt} (og noen ganger \textit{avgift}). Hensikten med skatt er at staten skal ha råd til å gi innbyggerne tilbud som skole, helsetjenester og mye mer. I dag blir skatten i stor grad beregnet av datasystemer, men det er ditt ansvar å sjekke at beregningene er riktige $ - $ og da er det viktig å forstå hvordan skattesystemet fungerer.\vsk
 
-\info{Obs!}{I eksamensoppgaver og i virkeligheten vil du fort oppdage at skattesystemer er presentert på en litt annen måte enn i denne boka. Dette er blant annet fordi skattereglene kan forandre seg fra år til år, og i denne boka har vi tatt utgangspunkt i skattereglene for 2018. Det viktigste er ikke at du husker spesifikt disse reglene, men at du lærer deg hva som menes med begrepene \outl{bruttolønn}, \outl{fradrag}, \outl{skattegrunnlag}, \outl{trygdeavgift} og \outl{nettolønn}.}
+\info{Obs!}{I eksamensoppgaver og i virkeligheten vil du fort oppdage at skattesystemer er presentert på en litt annen måte enn i denne boka. Dette er blant annet fordi skattereglene kan forandre seg fra år til år, og i denne boka har vi tatt utgangspunkt i skattereglene for 2018. Det viktigste er ikke at du husker spesifikt disse skattereglene, men at du lærer deg hva som menes med begrepene \outl{bruttolønn}, \outl{fradrag}, \outl{skattegrunnlag}, \outl{trygdeavgift} og \outl{nettolønn}.}
 \subsection{Bruttolønn, fradrag og skattegrunnlag}
 \prbxl{0.68}{De fleste må betale 23\% av det som kalles \textit{skattegrunnlaget}, som er \textit{bruttolønnen} minus \textit{fradrag}. Bruttolønnen er lønnen du mottar fra arbeidsgiver, mens fradrag kan være mye forskjellig. \textit{Personfradrag} og  \textit{minstefradrag} er noe alle skattebetalere får, i tillegg kan man }\qquad
 \prbxr{0.22}{Skattegrunnlag kalles noen ganger \textit{trekkgrunnlag}.} \\[-16pt]

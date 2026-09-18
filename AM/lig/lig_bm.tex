@@ -43,7 +43,7 @@ Taxituren koster altså 305\enh{kr}.
 \info{Tips}{
 	Ved å la enkeltbokstaver representere størrelser, får man kortere uttrykk. La $ k $ stå for 'kostnad for taxituren' og $ x $ for 'antall kilometer kjørt'. Da blir uttrykket fra \textsl{Eksempel 1} over dette:
 	\[ k=50+15x \]
-	I tillegg kan man gjerne bruke skrivemåten for funksjoner:
+	Eventuelt kan vi skrive
 	\[ k(x)=50+15x \] 
 }
 \eks[2]{
@@ -60,7 +60,7 @@ Taxituren koster altså 305\enh{kr}.
 		\footnotesize
 		\[ \text{penger allerede skaffet}+\text{penger per lodd}\cdot\text{antall lodd}=\text{prisen på turen} \]
 		\normalsize
-		Den eneste størrelsen vi ikke vet om er 'antall lodd'. Vi erstatter\footnote{Dette gjør vi bare fordi det da blir mindre for oss å skrive.} \textit{antall lodd} med $ x $, og setter verdiene til de andre størrelsene inn i likningen:
+		Den eneste størrelsen vi ikke vet om er 'antall lodd'. Vi erstatter\footnote{Dette gjør vi bare fordi det da blir mindre for oss å skrive.} 'antall lodd' med $ x $, og setter verdiene til de andre størrelsene inn i likningen:
 		\[ 2\,000+25\cdot x = 11\,000 \]
 		\item \ \vs \vs
 		\alg{
@@ -200,7 +200,7 @@ Utfører vi regresjon også med en andregradsfunksjon, får vi følgende resulta
 I figuren over kan vi merke oss at
 \begin{itemize}
 	\item begge modellene (funksjonene) ''oppfører'' seg feilaktig i starten. Den lineære funksjonen starter med et negativt antall biler, mens den kvadratiske funksjonen starter med at antallet synker fra år 0 til år 1.
-	\item Grafen til den kvadratiske passer punktene mye bedre enn grafen til den lineære funksjonen.
+	\item Grafen til den kvadratiske funksjonen passer punktene mye bedre enn grafen til den lineære funksjonen.
 \end{itemize}
 Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var ca. 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit er at antall elbiler i 2021 var 455\,271.
 \fig{elbilsalg4}
@@ -222,13 +222,14 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 	
 	Hvis vi ser tilbake til (den alternative) definisjonen av den deriverte i \tmen, innser vi at $ f'(a) $ er den gjennomsnittlige vekstfaktoren til $ f $ på intervallet $ [a, b] $ når $ {b\to a} $. Da går $ [a, b] $ mot å inneholde bare ett element, som er $ a $.
 }
+\eks[1]{??}
 \newpage
-\eks[]{
+\eks[2]{
 	Se for deg at vi slipper en ball fra 50 meter over bakken, og lar den falle fritt nedover. Når vi slipper ballen, starter vi også en stoppeklokke. Antall meter $ h $ ballen er over bakken etter $ t $ sekunder kan da tilnærmes ved funksjonen
 	\[ h(t)=5\left(10-t^2\right)\quad,\quad t\in\left[0, \sqrt{10}\right] \]
 	\abc{
 		\item Finn den gjennomsnittlige vekstfarten til $ h $ på intervallet $ t\in[1, 3] $. Gi en praktisk tolkning av denne verdien.
-		\item Finn den momentane vekstfarten til $ h $ i 3. Gi en praktisk tolkning av denne verdien.
+		\item Finn den momentane vekstfarten til $ h $ når $t=3$. Gi en praktisk tolkning av denne verdien.
 	} \vs
 	\sv
 	\vs
@@ -248,8 +249,9 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 		\item $ \vec{r}\,''(t) $ kalles \outl{akselerasjonsvektoren} og	 $ | \vec{r}\,''(t)|$ kalles\\ \outl{baneakselerasjonen}.
 	\end{itemize}
 }
+\eks{??}
 \fork{\ref{fartogaksvekt} Farts- og akselerasjonsvektor}{
-	Hvis $ \vec{r}(t) $ representerer en posisjon (altså en relativ lengde fra et referansepunkt), og $ t $ en tid, vil $ \vec{r}\,'(t) $ innebære en lengde delt på en tid. Da vil $ \vec{r}\,'(t) $ representere en størrelse med en enhet for fart. $ \vec{r}\,''(t) $  vil innebære en fart delt på en tid, som da vil representere en akselerasjon.
+	Hvis $\vec{r}(t)$ representerer en posisjon, og $t$ representerer en tid, vil komponentene til $\vec{r}$ representere lengder fra et referansepunkt. Komponentene til $ \vec{r}\,'(t) $ vil da bestå av lengde delt på tid. Altså vil $ \vec{r}\,'(t) $ representere en størrelse med en enhet for fart. Komponentene til $ \vec{r}\,''(t) $  bestå av fart delt på tid, som dermed representerer en størrelse med enhet for akselerasjon.
 }
 \end{document}
 

@@ -20,7 +20,6 @@ for(int i = 0; i < is.length-1; ++i) {
 yaks(0, 70, tck=true, tc=5, bex=1.05);
 mktcy(0, "0");
 
-label((-4, 75), "antall 1000 ansatte per år", E);
+label((-4, 75), "antall 1000 ansatte", E);
 label((40, -5), "årsintervall");
-
 

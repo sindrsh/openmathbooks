@@ -62,3 +62,12 @@ void mk_endbar(real f(real x), real x1, real dx=1, bool leftbar=true, pen p=blue
   }
 
 }
+
+void xbar(pair A, pair B, real y, string l="", pair al=S) {
+	mktc(A.x, y=y);
+	mktc(B.x, y=y);
+	draw(shift(0, y)*(A--B));
+	if (l != "") {
+		label(l, 1/2*(A+B), al);
+	}
+}

@@ -13,7 +13,10 @@
 % exercises
 \newcommand{\opgt}{\newpage \phantomsection \addcontentsline{toc}{section}{Oppgåver} \section*{Oppgaver for kapittel \thechapter}\vs \setcounter{section}{1}}
 
-\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{blue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubop}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubeksop}[2]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble \thegrub} (#2) \vspace{2 pt} \label{#1} \\}
+\newcommand{\gruboprecc}[1]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble* \thegrub} \vspace{2 pt} \label{#1} \\}
+\newcommand{\grubeksoprecc}[2]{\vspace{15pt} \refstepcounter{grub}\large \textbf{\color{NavyBlue} Gruble* \thegrub} (#2) \vspace{2 pt} \label{#1} \\}
 \newcommand{\grubr}[1]{\vspace{3pt}\textbf{Gruble \ref{#1}}}
 
 %references

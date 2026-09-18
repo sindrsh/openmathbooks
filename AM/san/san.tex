@@ -231,14 +231,17 @@ Om en klasse med 29 elever vet vi følgende:
 	\item 2 elever spiller både håndball og volleyball, men ikke fotball.	
 	\item 1 elev spiller alle tre sportene.
 \end{itemize}
-\textbf{a)} Sett opp et venndiagram som beskriver fordelingen av de tre sportene i klassen.\br
 
-\textbf{b)} Én person trekkes tilfeldig ut av klassen. Hva er sannsynligheten for at denne personen spiller enten fotball, håndball eller volleyball?\br
+\abc{
+\item Sett opp et venndiagram som beskriver fordelingen av de tre sportene i klassen.\br
 
-\textbf{c)} Personen som trekkes ut viser seg å spille fotball. Hva er sjansen for at denne personen også spiller håndball?
+\item Én person trekkes tilfeldig ut av klassen. Hva er sannsynligheten for at denne personen spiller enten fotball, håndball eller volleyball?\br
 
+\item Personen som trekkes ut viser seg å spille fotball. Hva er sjansen for at denne personen også spiller håndball?
+}
 \sv
-La $ F $ bety 'spiller fotball', $ H $ bety 'spiller håndball' og $ V $ bety 'spiller volleyball'. Når vi skal lage et venndiagram, er det lurt å skrive inn de felles utfallene først. Ut ifra fjerde til syvende punkt kan vi tegne dette:
+\abc{
+\item La $ F $ bety 'spiller fotball', $ H $ bety 'spiller håndball' og $ V $ bety 'spiller volleyball'. Når vi skal lage et venndiagram, er det lurt å skrive inn de felles utfallene først. Ut ifra fjerde til syvende punkt kan vi tegne dette:
 \begin{figure}
 	\centering
 	\includegraphics[]{\figp{venn3ea}}
@@ -248,9 +251,10 @@ Da ser vi videre at \y{16-5-1-3=7} elever spiller \textsl{bare} fotball, \y{12-5
 	\centering
 	\includegraphics[]{\figp{venn3e}}
 \end{figure} 
-\textbf{b)} Av diagrammet vårt ser vi at det er $ 7+5+1+3+4+2+3= 25 $ unike elever som spiller én eller flere av sportene. Sjansen for å trekke en av disse 25 i en klasse med 29 elever er $ \frac{25}{29} $. \br
+\item Av diagrammet vårt ser vi at det er $ 7+5+1+3+4+2+3= 25 $ unike elever som spiller én eller flere av sportene. Sjansen for å trekke én av disse 25 i en klasse med 29 elever er $ \frac{25}{29} $. \br
 
-\textbf{c)} Vi leser av diagrammet at av de totalt 16 som spiller fotball, er det \y{5+1=6} som også spiller håndball. Sjansen for at personen som er trukket ut spiller håndball er derfor $ \frac{6}{16}=\frac{3}{8} $.
+\item Vi leser av diagrammet at av de totalt 16 som spiller fotball, er det \y{5+1=6} som også spiller håndball. Sjansen for at personen som er trukket ut spiller håndball er derfor $ \frac{6}{16}=\frac{3}{8} $.
+}
 }
 \subsection{Krysstabell}
 Når det er snakk om to hendelser, kan vi også sette opp en \textit{krysstabell} for å skaffe oss oversikt. Si at det på en skole med 300 elever deles ut melk og epler til de elevene som ønsker det i lunsjen. Si videre at 220 av elevene får melk, mens 250 får eple. Av disse er det 180 som får både melk og eple. Hvis vi lar $ M $ bety \textit{får melk} og $ E $ bety \textit{får eple}, vil krysstabellen vår først se slik ut:
@@ -426,18 +430,20 @@ P(GB\cup BG)&=P(GB)+P(BG) \\
 
 
 \sv
-\textbf{a)}
-\begin{figure}[H]
+\abc{
+\item }
+\begin{figure}[bt]
 	\centering
 	\includegraphics{\figp{treee}}
 \end{figure}
-\textbf{b)} Av valgtreet vårt ser vi at
+\abcs{2}{
+\item Av valgtreet vårt ser vi at
 \alg{
 	P(RR)&=\frac{2}{10}\cdot\frac{1}{9}\br
 	&= \frac{2}{90} \br
 	&= \frac{1}{45}
 }
-\textbf{c)} Både permutasjonen $ GB $ og $ BG $ gir oss én blå og én grønn kule. Sannsynligheten for hver av dem er
+\item Både permutasjonen $ GB $ og $ BG $ gir oss én blå og én grønn kule. Sannsynligheten for hver av dem er
 \alg{
 P(GB)&= \frac{3}{10}\cdot\frac{5}{9} \br
 &= \frac{15}{90} \br
@@ -454,14 +460,14 @@ P(GB\cup BG) &= P(GB)+P(BG) \\
 &= \frac{2}{6} \br
 &= \frac{1}{3}
 }
-\textbf{d)} For å svare på denne oppgaven kan vi selvsagt legge sammen sannsynligheten for permutasjonene $ GG $, $ GB $, $ GR$, $ BG $, $ BB $, $ BR $, $ RG $ og $ RB $, men vi sparer oss veldig mye arbeid hvis vi merker oss dette: Å få \textsl{minst} én blå eller én grønn kule er det motsatte av å \textsl{bare} få røde kuler. Sannsynligheten for dette, å få to røde kuler, fant vi i oppgave b). Av \rref{motsatt} har vi at
+\item For å svare på denne oppgaven kan vi selvsagt legge sammen sannsynligheten for permutasjonene $ GG $, $ GB $, $ GR$, $ BG $, $ BB $, $ BR $, $ RG $ og $ RB $, men vi sparer oss veldig mye arbeid hvis vi merker oss dette: Å få \textsl{minst} én blå eller én grønn kule er det motsatte av å \textsl{bare} få røde kuler. Sannsynligheten for dette, å få to røde kuler, fant vi i oppgave b). Av \rref{motsatt} har vi at
 \alg{
 P(\bar{R}\bar{R}) &= 1-P(RR) \br
 &= 1- \frac{1}{45} \br
 &= \frac{45}{45}-\frac{1}{45} \br
 &= \frac{44}{45}
 }
-Sannsynligheten for å få \textsl{minst} én blå \textsl{eller minst} én grønn kule er altså $ \frac{44}{45} $.
+Sannsynligheten for å få \textsl{minst} én blå \textsl{eller minst} én grønn kule er altså $ \frac{44}{45} $.}
 }
 
 \end{document}
