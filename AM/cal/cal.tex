@@ -3,29 +3,221 @@
 \input{../bm}
 
 \newcommand{\p}[1]{
-\includegraphics[scale=0.3]{fig/#1}
+\includegraphics[scale=0.15]{fig/#1}
+}
+
+\newcommand{\calcfig}[1]{
+	\includegraphics[scale=0.475]{fig/#1} 
 }
 
 \begin{document}
 \chapter*{Kalkulator}
 I dette kapitlet skal vi vise de grunnleggende metodene for å løse oppgaver med hjelp av en håndholdt kalkulator. Bildene viser bruk av en Casio FX 82 kalkulator, som innfrir Udirs nye krav til hjelpemidler på Del 2 av skriftlig eksamen i videregående skoler. I de fleste tilfeller vil fremgangsmåte og utseende være veldig lik også på andre kalkulatorer. Eksempler som viser bruk som er spesifikke for Casio FX 82 vil være markert.
-\section*{Grunnleggende utregninger}
-I figuren under vises utregning av utvalgte regnestykker Alle regnestykker avsluttes med knappen \p{enter}.
-
+\newpage
+\subsection*{Grunnleggende utregninger}
+I figuren under vises utregning av utvalgte regnestykker. Alle regnestykker avsluttes med knappen \p{exe}.
 \begin{center}
-	\begin{minipage}{0.48\linewidth}
-		\begin{center}
-			\begin{tabular}{l | l}
-				$9\cdot3$ & \p{9}\p{times}\p{3} \\
-				$5^2$ & \p{5}\p{x2}\\
-				$\sqrt{25}$ & \p{sqrt}\p{2}\p{5} \\
-				$\log_{10} 100$ & \p{log} \p{1}\p{0}\p{0} \\
-				$7\pi$ & \p{7}\p{times}\p{pi}
-			\end{tabular}
-		\end{center}
-	\end{minipage}
-	\begin{minipage}{0.5\linewidth}
-		\includegraphics[scale=0.5]{fig/p1}
-	\end{minipage}
+	\begin{tabular}{c | l | l} 
+		\hline
+		$2+3$ &\p{2}\p{plus}\p{3} & \calcfig{2plus3}\\ \hline
+		$7-6$ & \p{7}\p{min}\p{6} & \calcfig{7min6} \\ \hline
+		$9\cdot3$ & \p{9}\p{times}\p{3} & \calcfig{9t3} \\ \hline
+		$20:10$ & \p{2}\p{0}\p{div}\p{1}\p{0} &\calcfig{20div10}\\ \hline
+		$\frac{2}{3}+\frac{5}{3}$ &\p{fraction}\p{2}\p{down}\p{3}\p{plus}\p{fraction}\p{5}\p{down}\phantom{3} & \calcfig{2o3plus5o3} \\ \hline
+		$5^2$ & \p{5}\p{pow2} & \calcfig{5pow2}\\ \hline
+		$2\cdot(3+7)$ & \p{2}\p{times}\p{parl}\p{3}\p{plus}\p{7}\p{parr} & \calcfig{2tp3plus7p} \\ \hline
+		$\frac{4}{3\cdot9}$ & \p{4}\p{div}\p{9} & \calcfig{4divp3t9pa} \\ \hline
+		$\frac{4}{3\cdot9}$ & \p{fraction}\p{4}\p{down}\p{3}\p{times}\p{9} & \calcfig{4divp3t9pb} \\ \hline		
+		$\sqrt{25}$ & \p{sqrt}\p{2}\p{5} & \calcfig{sqrt25} \\ \hline
+		$\pi\cdot2^3$ & \p{shift}\p{7}\p{times}\p{2}\p{pown}\p{3} & \calcfig{pit2pow3} \\ \hline
+		$\log_{10} 100$ & \p{log} \p{1}\p{0}\p{0} & \calcfig{log_10_100}\\ \hline
+		$\log_e 100$ & \p{log}\p{shift}\p{8}\p{1}\p{0}\p{0} & \calcfig{log_e_100}\\ \hline
+	\end{tabular}
 \end{center}
+\newpage
+\info{Obs!}{
+Hvis vi skriver \p{2}\p{div}\p{5}\p{parl}\p{2}\p{plus}\p{1}\p{parr}, vil 5 ''hekte'' seg til parentesuttrykket. Kalkulatoren vil altså regne ut $\frac{2}{5(1+2)}$: 
+\begin{figure}
+	\centering
+	\calcfig{obsen}
+\end{figure}
+(Parentesene som omslutter \texttt{5(1+2)} er lagt til av kalkulatoren etter inntasting).
+}
+\subsection*{Omgjøring av format}
+\textbf{Standardformat} \\
+Skriver svar som heltall hvor det er mulig. Skriver divisjonsstykker som brøker, og forkorter brøker hvis mulig.
+\eks[1]{
+${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, er ${\frac{4}{8}=\frac{1}{2}}$.
+\begin{figure}
+	\centering
+	\calcfig{4o8}
+\end{figure}
+} \vsk
+
+\textbf{Desimaltall}\\
+Svar kan gjøres om til desimaltall med opp til 9 desimaler.
+\eks[1]{
+Vi skriver om $4:8$ til et desimaltall.
+\begin{figure}
+	\subfloat[]{\calcfig{4o8}}
+	\subfloat[]{\p{format}}
+	\subfloat[]{\calcfig{standardfraction}}
+	\subfloat[]{\p{down}} \\
+	\subfloat[]{\calcfig{decimalfraction}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{4o8decimal}}
+\end{figure}
+}
+\eks[2]{
+\begin{figure}
+	\subfloat[]{\calcfig{calcpi}}
+	\subfloat[]{\p{format}}
+	\subfloat[]{\calcfig{standard}}
+	\subfloat[]{\p{down}} \\
+	\subfloat[]{\calcfig{decimal}} 
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{picalcdecimal}}
+\end{figure}
+} \vsk
+
+
+\textbf{Standardform}\\
+Skriver tall på standardform.
+\eks{
+\begin{figure}
+	\subfloat[]{\calcfig{2369}}
+	\subfloat[]{\p{format}}
+	\subfloat[]{\calcfig{standardwhole}}
+	\subfloat[]{\p{down}\p{down}\p{down}} \\
+	\subfloat[]{\calcfig{standardformatwhole}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{2369standardformat}}
+\end{figure}
+}\vsk
+
+\textbf{Ekte og uekte brøk}
+\eks{
+\begin{figure}
+	\subfloat[]{\calcfig{3plus1o5}}
+	\subfloat[]{\p{format}}
+	\subfloat[]{\calcfig{standardfraction}}
+	\subfloat[]{\p{down}\p{down}\p{down}} \\
+	\subfloat[]{\calcfig{mixedfraction}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{3plus1o5mixed}}
+\end{figure}
+}
+\textbf{Primtallsfaktorisering}
+\eks{
+\begin{figure}
+	\subfloat[]{\calcfig{100}}
+	\subfloat[]{\p{format}}
+	\subfloat[]{\calcfig{standardwhole}}
+	\subfloat[]{\p{down}} \\
+	\subfloat[]{\calcfig{primefactor}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{100primepfactored}}
+\end{figure}
+}
+
+\subsection*{Trigonometri}
+
+\newpage
+\subsection*{Analyseverktøy}
+\textbf{Sentral- og spredningsmål}
+\eks{
+Gitt datasettet
+\[ 13\quad11\quad12\quad13\quad15 \]
+\abc{
+\item Finn variasjonsbredden og medianen til datasettet.
+\item Finn gjennomsnittet, variansen og standardavviket til datasettet.
+}
+\sv
+
+\abc{
+\item Vi skriver verdiene inn i \texttt{Statistics}, og sorterer dem i stigende rekkefølge:
+\begin{figure}
+	\subfloat[]{\calcfig{stat}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{1variable}}
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{statinputx}}
+	\subfloat[]{\calcfig{statinputy}}
+	\subfloat[]{\p{tools}} \\
+	\subfloat[]{\calcfig{edit}}
+	\subfloat[]{\p{down}\p{down}}
+	\subfloat[]{\calcfig{sort}}
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{sortedx}}
+	\subfloat[]{\calcfig{sortedy}}
+\end{figure}
+Her ser vi at minste verdi er 11 og største verdi er 15. Dermed er variasjonsbredden ${15-11=4}$. I et datasett med 5 elementer, er medianen element nummer 3 etter sortering. Dermed er medianen 13.
+\item Vi bruker 1-variabel analyse:
+\begin{figure}
+	\subfloat[]{\calcfig{sortedx}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{1varresults}}
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{anlys}} 
+\end{figure}
+$\bar{\texttt{x}}$ gir at gjennomsnittet er 12,8. \\
+$\sigma^2\texttt{x}$ gir at variansen er 1,76. \\
+$\sigma\texttt{x}$ gir at standardavviket er ca. $1,33$. 
+
+\mers{Verdiene trenger ikke være sorterte for å utføre analysen.}
+}
+
+
+} \vsk
+
+\textbf{Regressjon} \\
+Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon på et datasett med $x$- og $y$-verdier. Vi har følgende regresjonsmuligheter: \\
+\begin{center}
+	\begin{tabular}{l| l | l}
+		\textbf{Type} & \textbf{Matematisk uttrykk} & \textbf{Uttrykk i kalkulator} \\
+		lineær &  $y=ax+b$ &	\texttt{y=ax+b} \\
+		kvadratisk & $y=a+bx+cx^2$ & \texttt{y=a+bx+cx\textasciicircum2} \\
+		logaritmist & $y=a+b\ln x$ & \texttt{y=a+b$\cdot$ln(x)} \\
+		eksponentiell 1 & $y=ae^{bx}$ & \texttt{y=a$\cdot$e\textasciicircum(bx)} \\
+		eksponentiell 2 & $y=ab^x$ & \texttt{y=a$\cdot$b\textasciicircum x} \\
+		potens & $y=ax^b$ & \texttt{y=a$\cdot$x\textasciicircum b} \\
+		rasjonell & $y=a+\frac{b}{x}$ & \texttt{y=a+b/x}
+	\end{tabular} 
+\end{center}
+Ved valg av type får vi oppgitt den best tilpassede verdien for \texttt{a}, \texttt{b} og (eventuelt) \texttt{c}, i tillegg til verdien \texttt{r}. Verdien til \texttt{r} ligger mellom $-1$ og 1, hvor tilpasningen er bedre jo nærmere tallverdien ligger 1. Hvis tallverdien til \texttt{r} er 1, stemmer funksjonen eksakt med datasettet.
+
+\newpage
+\eks{
+La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
+\fig{funk2}
+Finn uttrykket for $ a(x) $.
+
+\sv
+Vi lager et datasett av $x$-verdiene og tilhørende antall ruter som $y$-verdier. Ved lineær regresjon får vi en $\texttt{r}$-verdi
+\begin{figure}
+	\subfloat[]{\calcfig{stat}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{1variable}}
+	\subfloat[]{\p{down}}\\
+	\subfloat[]{\calcfig{2variable}}
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{regxy}}
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{regresults}}
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{linreg}} 
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{linregr}}
+	\subfloat[]{\p{back}}
+	\subfloat[]{\calcfig{regxy}} 
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{linreg}}
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{polyreg2}}
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{polyreg2r}}
+\end{figure}
+}
+
+
 \end{document}

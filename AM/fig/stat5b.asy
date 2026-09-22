@@ -1,12 +1,16 @@
 import "../../inh" as inh;
 import "../../drwgrph" as drwgrph;
-size(11cm,6.5cm,keepAspect=false);
+size(11cm,6.75cm,keepAspect=false);
 
 pair O = (0, 0);
 mkgrid((0,6),(200,700),dx=10,dy=100);
 xaks(0,6,tck=false);
 yaks(200,750,tck=false, bex=1.1);
 mktcy(200, "2000");
+mktcy(300, "2100");
+mktcy(400, "2200");
+mktcy(500, "2300");
+mktcy(600, "2400");
 mktcy(700, "2500");
 
 pen p2 = blue;
@@ -44,7 +48,7 @@ mktc(6,"2014");
 pair L1 = (6.1,1500);
 pair L2 = (6.5,1500);
 
-//label(rotate(90)*Label("antall 1000 mobiltelefoner solgt"), (-1.2,1300));
+label(rotate(90)*Label("antall 1000 mobiltelefoner solgt"), (-1.2,410));
 label("år",(3.5,-150));
 
 label("Totalt mobiltelefonsalg i Norge 2009-2015",(3.5,800));
