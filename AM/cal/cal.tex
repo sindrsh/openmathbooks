@@ -14,27 +14,43 @@
 \chapter*{Kalkulator}
 I dette kapitlet skal vi vise de grunnleggende metodene for å løse oppgaver med hjelp av en håndholdt kalkulator. Bildene viser bruk av en Casio FX 82 kalkulator, som innfrir Udirs nye krav til hjelpemidler på Del 2 av skriftlig eksamen i videregående skoler. I de fleste tilfeller vil fremgangsmåte og utseende være veldig lik også på andre kalkulatorer. Eksempler som viser bruk som er spesifikke for Casio FX 82 vil være markert.
 \newpage
-\subsection*{Grunnleggende utregninger}
-I figuren under vises utregning av utvalgte regnestykker. Alle regnestykker avsluttes med knappen \p{exe}.
+\tableofcontents
+\newpage
+\section{Grunnleggende utregninger}
+I figuren under vises utregning av utvalgte regnestykker, som vi regner ut i \texttt{Calculate}:
+\begin{center}
+	\calcfig{calculate}
+\end{center}
+Alle regnestykker avsluttes med knappen \p{exe}.
 \begin{center}
 	\begin{tabular}{c | l | l} 
 		\hline
 		$2+3$ &\p{2}\p{plus}\p{3} & \calcfig{2plus3}\\ \hline
 		$7-6$ & \p{7}\p{min}\p{6} & \calcfig{7min6} \\ \hline
 		$9\cdot3$ & \p{9}\p{times}\p{3} & \calcfig{9t3} \\ \hline
+		$8,4\cdot3$ & \p{8}\p{dot}\p{4}\p{times}\p{3} & \calcfig{8comma4t3} \\ \hline
 		$20:10$ & \p{2}\p{0}\p{div}\p{1}\p{0} &\calcfig{20div10}\\ \hline
 		$\frac{2}{3}+\frac{5}{3}$ &\p{fraction}\p{2}\p{down}\p{3}\p{plus}\p{fraction}\p{5}\p{down}\phantom{3} & \calcfig{2o3plus5o3} \\ \hline
 		$5^2$ & \p{5}\p{pow2} & \calcfig{5pow2}\\ \hline
+		$3^4$ &\p{3}\p{pown}\p{4} & \calcfig{3pow4} \\ \hline
 		$2\cdot(3+7)$ & \p{2}\p{times}\p{parl}\p{3}\p{plus}\p{7}\p{parr} & \calcfig{2tp3plus7p} \\ \hline
 		$\frac{4}{3\cdot9}$ & \p{4}\p{div}\p{9} & \calcfig{4divp3t9pa} \\ \hline
-		$\frac{4}{3\cdot9}$ & \p{fraction}\p{4}\p{down}\p{3}\p{times}\p{9} & \calcfig{4divp3t9pb} \\ \hline		
-		$\sqrt{25}$ & \p{sqrt}\p{2}\p{5} & \calcfig{sqrt25} \\ \hline
-		$\pi\cdot2^3$ & \p{shift}\p{7}\p{times}\p{2}\p{pown}\p{3} & \calcfig{pit2pow3} \\ \hline
-		$\log_{10} 100$ & \p{log} \p{1}\p{0}\p{0} & \calcfig{log_10_100}\\ \hline
-		$\log_e 100$ & \p{log}\p{shift}\p{8}\p{1}\p{0}\p{0} & \calcfig{log_e_100}\\ \hline
+		$\frac{4}{3\cdot9}$ & \p{fraction}\p{4}\p{down}\p{3}\p{times}\p{9} & \calcfig{4divp3t9pb} \\ \hline
 	\end{tabular}
 \end{center}
-\newpage
+
+\begin{center}
+	\begin{tabular}{c | l | l} 		
+	$\sqrt{25}$ & \p{sqrt}\p{2}\p{5} & \calcfig{sqrt25} \\ \hline
+	$\sqrt[3]{8}$ & \p{shift}\p{sqrt}\p{8} & \calcfig{sqrt_3_8} \\ \hline 
+	$\pi\cdot2^3$ & \p{shift}\p{7}\p{times}\p{2}\p{pown}\p{3} & \calcfig{pit2pow3} \\ \hline
+	$\sqrt{5}\cdot 4 $ & \p{sqrt}\p{5}\p{right}\p{times}\p{4} & \calcfig{sqrt5t4} \\ \hline
+	$\log_{10} 100$ & \p{shift}\p{pow2}\p{1}\p{0}\p{0} & \calcfig{log100} \\ \hline
+	$\log_{10} 100$ & \p{log} \p{1}\p{0}\p{0} & \calcfig{log_10_100}\\ \hline 
+	$\ln 100$ & \p{shift}\p{log}\p{1}\p{0}\p{0} & \calcfig{ln100}\\ \hline 
+	$\log_e 100$ & \p{log}\p{shift}\p{8}\p{1}\p{0}\p{0} & \calcfig{log_e_100}\\ \hline
+\end{tabular}
+\end{center}
 \info{Obs!}{
 Hvis vi skriver \p{2}\p{div}\p{5}\p{parl}\p{2}\p{plus}\p{1}\p{parr}, vil 5 ''hekte'' seg til parentesuttrykket. Kalkulatoren vil altså regne ut $\frac{2}{5(1+2)}$: 
 \begin{figure}
@@ -43,8 +59,9 @@ Hvis vi skriver \p{2}\p{div}\p{5}\p{parl}\p{2}\p{plus}\p{1}\p{parr}, vil 5 ''hek
 \end{figure}
 (Parentesene som omslutter \texttt{5(1+2)} er lagt til av kalkulatoren etter inntasting).
 }
-\subsection*{Omgjøring av format}
-\textbf{Standardformat} \\
+\newpage
+\section{Omgjøring av format}
+\subsection*{Standardformatet}
 Skriver svar som heltall hvor det er mulig. Skriver divisjonsstykker som brøker, og forkorter brøker hvis mulig.
 \eks[1]{
 ${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, er ${\frac{4}{8}=\frac{1}{2}}$.
@@ -54,10 +71,16 @@ ${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, 
 \end{figure}
 } \vsk
 
-\textbf{Desimaltall}\\
+\subsection*{Desimaltall}
 Svar kan gjøres om til desimaltall med opp til 9 desimaler.
 \eks[1]{
-Vi skriver om $4:8$ til et desimaltall.
+
+\metode{Metode 1}{2cm}
+\begin{figure}
+\subfloat[]{\p{4}\p{div}\p{8}\p{shift}\p{exe}}	
+\subfloat[]{\calcfig{4o8decimal}}
+\end{figure}
+\metode{Metode 2}{2cm} \vs
 \begin{figure}
 	\subfloat[]{\calcfig{4o8}}
 	\subfloat[]{\p{format}}
@@ -68,7 +91,16 @@ Vi skriver om $4:8$ til et desimaltall.
 	\subfloat[]{\calcfig{4o8decimal}}
 \end{figure}
 }
+\newpage
 \eks[2]{
+	
+\metode{Metode 1}{2cm}
+\begin{figure}
+	\subfloat[]{\p{shift}\p{7}\p{shift}\p{exe}}
+	\subfloat[]{\calcfig{picalcdecimal}}
+\end{figure}
+	
+\metode{Metode 2}{2cm}
 \begin{figure}
 	\subfloat[]{\calcfig{calcpi}}
 	\subfloat[]{\p{format}}
@@ -81,7 +113,7 @@ Vi skriver om $4:8$ til et desimaltall.
 } \vsk
 
 
-\textbf{Standardform}\\
+\subsection*{Standardform}
 Skriver tall på standardform.
 \eks{
 \begin{figure}
@@ -95,7 +127,9 @@ Skriver tall på standardform.
 \end{figure}
 }\vsk
 
-\textbf{Ekte og uekte brøk}
+\newpage
+\subsection*{Brøker og blandede tall}
+Standardinnstillingen er at kalkulatoren viser uekte brøker. Ønsker vi blandet tall, må vi velge \texttt{mixed fraction}.
 \eks{
 \begin{figure}
 	\subfloat[]{\calcfig{3plus1o5}}
@@ -106,7 +140,8 @@ Skriver tall på standardform.
 	\subfloat[]{\p{ok}}
 	\subfloat[]{\calcfig{3plus1o5mixed}}
 \end{figure}
-}
+} \vsk
+
 \textbf{Primtallsfaktorisering}
 \eks{
 \begin{figure}
@@ -120,10 +155,71 @@ Skriver tall på standardform.
 \end{figure}
 }
 
-\subsection*{Trigonometri}
+\section{Trigonometri}\index{kalkulator!trigonometri}
+Når vi skal regne trigonometrisk, er det helt avgjørende at vi har det klart for oss om vi skal regne med grader eller radianer. 
 
+\subsection*{Regning med grader}
+I Casio DX 82 er grader standardinnstilling:
+\begin{figure}
+	\subfloat[]{\calcfig{calculate}}
+	\subfloat[]{\p{settings}}
+	\subfloat[]{\calcfig{settingsmenu}}
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{inputslashoutput}}\\
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{angleunit}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{degree}}
+	\subfloat[]{\p{ok}}
+\end{figure}
+Vi kan nå regne trigonometrisk med grader i \texttt{Calculate}. Alle \\ regnestykker under avsluttes med \p{exe}.
+\begin{center}
+	\begin{tabular}{c | l | l}
+	\hline
+	$\sin 30^\circ$ & \p{sin}\p{3}\p{0} & \calcfig{sin30} \\ \hline
+	$\cos 30^\circ$ & \p{cos}\p{3}\p{0} & \calcfig{cos30} \\ \hline
+	$\tan 30^\circ$ & \p{tan}\p{3}\p{0} & \calcfig{tan30} \\ \hline\\
+	$\asin \left(\frac{1}{2}\right)$ & \p{shift}\p{sin}\p{1}\p{div}\p{2} & \calcfig{asin} \\ \hline
+	$\acos \left(\frac{\sqrt{3}}{2}\right)$ & \p{shift}\p{cos}\p{sqrt}\p{3}\p{right}\p{div}\p{2}& \calcfig{acos} \\ \hline
+	$\atan \left(\frac{\sqrt{3}}{3}\right)$ & \p{shift}\p{tan}\p{sqrt}\p{3}\p{right}\p{div}\p{3} & \calcfig{atan} \\ \hline
+	\end{tabular}
+\end{center}
+\mers{Vi har valgt å bruke \p{div} for divisjon. Ved å bruke \p{fraction} vil kalkolator-uttrykket ligne enda mer på det matematiske uttrykket.}
 \newpage
-\subsection*{Analyseverktøy}
+\subsection*{Regning med radianer}
+Skal vi regne med radianer, må vi endre vinkelmålet til dette:
+\begin{figure}
+	\subfloat[]{\calcfig{calculate}}
+	\subfloat[]{\p{settings}}
+	\subfloat[]{\calcfig{settingsmenu}}
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{inputslashoutput}}\\
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{angleunit}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{degree}}
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{degree}} \\
+	\subfloat[]{\calcfig{radian}}
+	\subfloat[]{\p{ok}}
+\end{figure}
+\begin{center}
+	\begin{tabular}{c | l | l}
+		\hline
+		$\sin \left(\frac{\pi}{6}\right)$ & \p{shift}\p{7}\p{div}\p{6} & \calcfig{sin30r} \\ \hline
+		$\cos \left(\frac{\pi}{6}\right)$ & \p{shift}\p{7}\p{div}\p{6} & \calcfig{cos30r} \\ \hline
+		$\tan \left(\frac{\pi}{6}\right)$ & \p{shift}\p{7}\p{div}\p{6} & \calcfig{tan30r} \\ \hline\\
+		$\asin \left(\frac{1}{2}\right)$ & \p{shift}\p{sin}\p{1}\p{div}\p{2} & \calcfig{asinr} \\ \hline
+		$\acos \left(\frac{\sqrt{3}}{2}\right)$ & \p{shift}\p{cos}\p{sqrt}\p{3}\p{right}\p{div}\p{2}& \calcfig{acosr} \\ \hline
+		$\atan \left(\frac{\sqrt{3}}{3}\right)$ & \p{shift}\p{tan}\p{sqrt}\p{3}\p{right}\p{div}\p{3} & \calcfig{atanr} \\ \hline
+	\end{tabular}
+\end{center}
+\info{Tips}{
+Start alltid med å skrive \texttt{sin(90)} på kalkulatoren når du skal regne trigonometrisk.
+Er svaret 1, er kalkulatoren innstilt på grader. Er svaret ca. 0,89, er kalkulatoren innstilt på radianer.
+}
+\newpage
+\section{Analyseverktøy}
 \textbf{Sentral- og spredningsmål}
 \eks{
 Gitt datasettet
@@ -170,7 +266,7 @@ $\sigma\texttt{x}$ gir at standardavviket er ca. $1,33$.
 
 } \vsk
 
-\textbf{Regressjon} \\
+\subsection*{Regresjon}
 Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon på et datasett med $x$- og $y$-verdier. Vi har følgende regresjonsmuligheter: \\
 \begin{center}
 	\begin{tabular}{l| l | l}
@@ -184,40 +280,69 @@ Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon p
 		rasjonell & $y=a+\frac{b}{x}$ & \texttt{y=a+b/x}
 	\end{tabular} 
 \end{center}
-Ved valg av type får vi oppgitt den best tilpassede verdien for \texttt{a}, \texttt{b} og (eventuelt) \texttt{c}, i tillegg til verdien \texttt{r}. Verdien til \texttt{r} ligger mellom $-1$ og 1, hvor tilpasningen er bedre jo nærmere tallverdien ligger 1. Hvis tallverdien til \texttt{r} er 1, stemmer funksjonen eksakt med datasettet.
+Ved valg av type får vi oppgitt den best tilpassede verdien for \texttt{a}, \texttt{b} og (eventuelt) \texttt{c}, i tillegg til verdien \texttt{r}. Verdien til \texttt{r} ligger mellom $-1$ og 1, hvor tilpasningen er bedre jo nærmere tallverdien ligger 1. Hvis tall-verdien til \texttt{r} er 1, stemmer funksjonen eksakt med datasettet.
 
+\info{Obs!}{
+Ved kvadratisk regresjon gis ingen \texttt{r}-verdi.
+}
 \newpage
 \eks{
-La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
-\fig{funk2}
-Finn uttrykket for $ a(x) $.
-
-\sv
-Vi lager et datasett av $x$-verdiene og tilhørende antall ruter som $y$-verdier. Ved lineær regresjon får vi en $\texttt{r}$-verdi
-\begin{figure}
-	\subfloat[]{\calcfig{stat}}
-	\subfloat[]{\p{ok}}
-	\subfloat[]{\calcfig{1variable}}
-	\subfloat[]{\p{down}}\\
-	\subfloat[]{\calcfig{2variable}}
-	\subfloat[]{\p{ok}} 
-	\subfloat[]{\calcfig{regxy}}
-	\subfloat[]{\p{ok}} \\
-	\subfloat[]{\calcfig{regresults}}
-	\subfloat[]{\p{ok}} 
-	\subfloat[]{\calcfig{linreg}} 
-	\subfloat[]{\p{ok}} \\
-	\subfloat[]{\calcfig{linregr}}
-	\subfloat[]{\p{back}}
-	\subfloat[]{\calcfig{regxy}} 
-	\subfloat[]{\p{ok}} \\
-	\subfloat[]{\calcfig{linreg}}
-	\subfloat[]{\p{down}}
-	\subfloat[]{\calcfig{polyreg2}}
-	\subfloat[]{\p{ok}} \\
-	\subfloat[]{\calcfig{polyreg2r}}
-\end{figure}
+	Finn funksjonen $f(x)$ som beskriver linja gjennom punktene $(-4, 2)$ og $(3, 7)$.
+	
+	\sv
+	Vi skriver punktene inn i en 2-variabel tabell, og utfører lineær regresjon:
+	\begin{figure}
+		\subfloat[]{\calcfig{stat}}
+		\subfloat[]{\p{ok}}
+		\subfloat[]{\calcfig{1variable}}
+		\subfloat[]{\p{down}}\\
+		\subfloat[]{\calcfig{2variable}}
+		\subfloat[]{\p{ok}} 
+		\subfloat[]{\calcfig{xy2}}
+		\subfloat[]{\p{ok}} \\
+		\subfloat[]{\calcfig{regresults}}
+		\subfloat[]{\p{ok}} 
+		\subfloat[]{\calcfig{linreg}} 
+		\subfloat[]{\p{ok}} \\
+		\subfloat[]{\calcfig{linr2}}
+	\end{figure}
+	Altså har vi at
+	\[ f(x)=5,125x+0,625 \]
 }
+\newpage
+\begin{comment}
+	\eks{
+		La antall ruter i mønsteret under være gitt av funksjonen $ a(x) $.
+		\fig{funk2}
+		Finn uttrykket for $ a(x) $.
+		
+		\sv
+		Vi lager et datasett av $x$-verdiene og tilhørende antall ruter som $y$-verdier. Ved lineær regresjon får vi en $\texttt{r}$-verdi
+		\begin{figure}
+			\subfloat[]{\calcfig{stat}}
+			\subfloat[]{\p{ok}}
+			\subfloat[]{\calcfig{1variable}}
+			\subfloat[]{\p{down}}\\
+			\subfloat[]{\calcfig{2variable}}
+			\subfloat[]{\p{ok}} 
+			\subfloat[]{\calcfig{regxy}}
+			\subfloat[]{\p{ok}} \\
+			\subfloat[]{\calcfig{regresults}}
+			\subfloat[]{\p{ok}} 
+			\subfloat[]{\calcfig{linreg}} 
+			\subfloat[]{\p{ok}} \\
+			\subfloat[]{\calcfig{linregr}}
+			\subfloat[]{\p{back}}
+			\subfloat[]{\calcfig{regxy}} 
+			\subfloat[]{\p{ok}} \\
+			\subfloat[]{\calcfig{linreg}}
+			\subfloat[]{\p{down}}
+			\subfloat[]{\calcfig{polyreg2}}
+			\subfloat[]{\p{ok}} \\
+			\subfloat[]{\calcfig{polyreg2r}}
+		\end{figure}
+	}
+\end{comment}
 
 
 \end{document}
