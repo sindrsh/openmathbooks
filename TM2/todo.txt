@@ -5,6 +5,7 @@ radien radiusen
 i stedet
 linje linja
 
+
 forklar ln|x| opp mot ln x ved delvis integrasjon
 
 omskriv definisjonen av en eksplisitt formel
@@ -12,6 +13,7 @@ omskriv definisjonen av en eksplisitt formel
 opg: skriv om formel for aritmetisk følge til å gjelde a_n+1
 
 opg: finn areal mellom graf og innskrevet sirkel i f(x)=x^2.
+opg: areal ellipse
 Dv acos osv.
 opg: omskriv opg3v25
 
