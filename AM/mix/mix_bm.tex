@@ -1056,6 +1056,28 @@ Hva finner Ada ved å kjøre dette programmet?
 \python{python/2pv22d2opg4.py}
 
 
+
+\eksop{1PV26D1}{1pv26d1opg1}
+Fru Hansen eier en gammel bil. Når hun kjører med en fart på $x$\,km/h, slipper
+bilen ut $U(x)$ gram CO$_2$ per kilometer, der $U(x)$ er gitt ved
+\[
+U(x) = \frac{5400}{x} + 0{,}0074x^2 + 50, \qquad 30 < x < 110
+\]
+
+\abc{
+\item Hvor mange gram CO$_2$ slipper bilen ut per kilometer dersom fru
+Hansen kjører med en fart på 50~km/h?
+
+\item Hvilken fart gir minst utslipp av CO$_2$ per kilometer?\\
+Hvor mange gram CO$_2$ slipper bilen ut per kilometer ved denne farten?
+¨
+
+\item Fru Hansen kjører med en fart på 90~km/h i 20 minutter. Hvor mange gram CO$_2$ slipper bilen ut i løpet av disse 20
+minuttene?
+}
+
+
+
 \eksop{2PV22D2}{2pv22d2opg3}
 I en bydel er det i dag 30 000 innbyggere. Anta at innbyggertallet vil øke med en fast
 prosent hvert år, og at det i løpet av 10 år vil være doblet.
@@ -1063,6 +1085,18 @@ Lag en modell $f$ som illustrerer situasjonen. \os
 
 Tegn grafen til $f$, og marker punktet $(5, f(5))$. Forklar hva koordinatene til dette
 punktet forteller om situasjonen.
+
+\eksop{1PV26D1}{1pv26d1opg13}
+I 2026 består en fuglebestand av $20\,000$ individer. Sofie er forsker. Hun antar at bestanden vil minke de kommende årene. Hun har laget to modeller og skrevet programkoden nedenfor.
+\pythonut{python/1pv26d1opg13.py}{
+10 \\
+17000 \\
+17020.83963620087
+}
+\abc{
+\item Gi en praktisk tolkning av modellene $f$ og $g$.
+\item Hva forteller verdiene som skrives ut når programmet kjøres?
+}
 
 \eksop{1PV23D2}{1pv23d2opg1}
 De siste årene har Lars bodd på Svalbard fra 1.februar til 1.oktober.
@@ -1302,6 +1336,7 @@ han satte personlig rekord på 1500 meter.
 \item Da Jakob Ingebrigtsen satte personlig rekord på 1 engelsk mil,
 holdt han en gjennomsnittsfart på omtrent 25{,}89 km/h. Vis hvordan denne opplysningen kan brukes for å avgjøre omtrent hvor mange meter det er i 1 engelsk mil.
 }
+
 
 \eksop{1PV24D2}{1pv24d2opg6}
 Lufttrykk måles ofte i hektopascal (hPa). Lufttrykket ved havets overflate er
@@ -1568,6 +1603,10 @@ som viser sammenhengen mellom radius og overflateareal.
 Hva må radius i boksen være for at overflatearealet skal bli minst mulig?
 Hvor stort blir overflatearealet da?
 }
+\newpage
+\eksop{2PH22D1}{2ph22d1opg3}
+I programmet under kan \texttt{a}, \texttt{b} og \texttt{c} endres for å undersøke om en trekant har en spesifikk egenskap. Fullfør setningen som printes.
+\python{python/2ph22d1opg3.py}
 
 \eksop{1PH25D2}{1ph25d2opg7}
 Figuren under består av et rektangel med bredde $x$ og lengde $y$, og en halvsirkel.
@@ -1582,8 +1621,76 @@ Vi setter $O=12$.
 \abcs{4}{
 \item Finn $y$ uttrykt ved $x$.
 \item Lag et regneark som viser arealet $A$ til figuren ved forskjellige verdier for $x$. La $x$ ha verdiene 1, 2, 3, 4, 5 og 6.
+\item Lag en funksjon $A(x)$ som gir arealet til figuren med bredde $x$. Tegn grafen, og bestem det største mulige arealet.
 }
 
+\eksop{1PV26D1}{1pv26d1opg8}
+En stålplate har form som et rektangel.
+Platen er 1000\,mm lang, 500\,mm bred og 6\,mm tykk. Stål har en massetetthet på $8\enh{g/}\text{cm}^3$. \os
+
+Hvor mye veier stålplaten?
+
+\eksop{1PV26D2}{1pv26d2opg3}
+Vipa er en kritisk truet fugleart i Norge.
+
+I 2013 ble bestanden av viper anslått til å være omtrent 9000 par. I 2022 var
+bestanden omtrent 2500 par.
+
+\begin{center}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		År & 2013 & 2022 \\
+		\hline
+		Vipebestand (par) & 9000 & 2500 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Tor antar at bestanden av viper har avtatt lineært og vil fortsette å avta
+lineært i årene framover. Egil antar at nedgangen har vært, og fortsatt vil
+være, eksponentiell.
+
+La $x$ være antall år etter 2013.
+
+\abc{
+\item Lag en modell $f$ som viser utviklingen av vipebestanden ut fra
+Tors antakelser. Forklar hva modellen forteller om utviklingen.
+
+\item Lag en modell $g$ som viser utviklingen av vipebestanden ut fra
+Egils antakelser. Forklar hva modellen forteller om utviklingen.
+}
+
+Myndigheter og interesseorganisasjoner arbeider med å verne hekkeområdene
+til vipa. De håper at dette skal bidra til å stoppe nedgangen, slik at
+bestanden vil stabilisere seg. \os
+
+Egil ønsker å lage en ny modell som tar hensyn til dette. Han lager først
+den eksponentielle funksjonen $p(x)$. Så lager han funksjonen $q(x)$. Uttrykket til $q$ består av to ledd. Det éne leddet tilsvarer $p$ og det andre er en konstant. Nedenfor ser du grafene til de to funksjonene.
+\fig{1pv26d2opg3}
+\abcs{3}{
+\item Det er $q$ som modellerer fuglebestanden. Hvilket antall er det Egil antar at fuglebestanden vil stabilisere seg på? Bestem de respektive uttrykkene til $p$ og $q$.
+}
+
+\eksop{2PV23D2}{2pv23d2opg7}
+Sofie har tatt opp et forbrukslån på 100\,000 kroner. Hun skal betale ned på lånet hver måned, og terminbeløpet skal være 6378 kroner. Hver måned skal hun betale 2\,\% av resterende gjeld i renter.
+Sofie vil ha en nedbetalingsplan for lånet og har laget programmet nedenfor.
+\python{python/2pv23d2opg7.py}
+Dette er resultatet når programmet kjøres:
+\begin{center}
+	\small
+	\ttfamily
+	\begin{tabular}{lllll}
+		\textbf{Måned} & \textbf{Terminbeløp} & \textbf{Renter} & \textbf{Avdrag} & \textbf{Restlån} \\
+		1 & 6378 & 0 & 0 & 0 \\
+		2 & 6378 & 0 & 0 & 0 \\
+		3 & 6378 & 0 & 0 & 0 \\
+		4 & 6378 & 0 & 0 & 0 \\
+	\end{tabular}
+\end{center}
+\abc{
+\item Sett inn formler i stedet for \texttt{0} i linje 12, 13 og 14, slik at riktige verdier for renter, avdrag og gjeld printes.
+\item Hvor mange måneder vil det ta før lånet er nedbetalt?
+}
 \eksop{R1H23D1}{R1H23D1opg4}
 Funksjonen $ f $ er gitt ved
 \[ f(x)=2x^2-9x-2 \]
@@ -1598,7 +1705,72 @@ Svaret han får er ikke rett.
 \abcs{2}{
 	\item Foreslå en endring i koden som vil gi Egil et riktigere svar.
 }
+
+
+\eksop{2PH23D1}{2ph23d1opg1}
+Selma er på ferie og vil bruke buss for å komme seg rundt i området. Hun vurderer
+om hun skal kjøpe en enkeltbillett for hver reise eller et fleksikort med 20 reiser.
+\begin{itemize}
+	\item Hver enkeltbillett koster 25 kroner.
+	\item Et fleksikort med 20 reiser koster 415 kroner.
+\end{itemize}
+\abc{
+\item Hvor mange reiser må hun ta med bussen for at det skal lønne seg å kjøpe et
+fleksikort med 20 reiser?
+
+\item Tenk deg at Selma kjøper et fleksikort med 20 reiser og bruker alle reisene.Hvor mange prosent sparer hun sammenliknet med å kjøpe 20 enkeltbilletter?
+}
+
+\eksop{2PH23D2}{2ph23d2opg4}
+Adam har tatt opp et lån på 2 500 000 kroner for å kjøpe bolig.
+Han skal betale tilbake lånet i månedlige terminer.
+Renten er 0,33\,\% per måned. I tillegg må han betale et gebyr på 50 kroner per termin.
+Terminbeløpet skal være 13 385 kroner.
+Lag en oversikt som viser hvor stort lånet hans vil være måned for måned de to
+første årene.
+
+
+
 \newpage
+
+\newpage
+\eksop{2PH24D2}{2ph24d2opg1}
+En bedrift produserer iste. Funksjonen $F$ gitt ved
+\[
+F(x) = 620 \cdot 1,045^x
+\]
+er en modell som viser hvor mange flasker av isteen bedriften regner med å
+selge $x$ måneder etter desember 2024.
+
+\abc{
+\item Hvor mange flasker iste regner bedriften med å selge i
+desember 2025 ifølge modellen?
+
+\item Når vil bedriften for første gang selge mer enn 2000
+flasker iste i løpet av en måned ifølge modellen?
+\item Hvor mange prosent vil salget øke med fra desember 2024
+til desember 2026 ifølge modellen?
+}
+
+\eksop{2PH24D2}{2ph24d2opg2}
+Tabellen nedenfor viser gjennomsnittlig månedslønn (i kr) for arbeidstakere i Norge i
+perioden 2015--2022.Tabellen viser også konsumprisindeksen (KPI) de samme
+årene.
+\begin{center}
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+		\hline
+		År & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 \\
+		\hline
+		Lønn & 42\,580 & 43\,640 & 44\,660 & 46\,010 & 47\,720 & 48\,750 & 50\,790 & 53\,150 \\
+		\hline
+		KPI & 100 & 103,6 & 105,5 & 108,4 & 110,8 & 112,2 & 116,1 & 122,8 \\
+		\hline
+	\end{tabular}
+\end{center}
+Undersøk hvordan kjøpekraften har endret seg år for år i perioden 2015\,--\,2022.
+Presenter resultatet på en oversiktlig måte.
+
 \eksop{R1V23D1}{r1v23d1opg4}
 En elev har fått følgende oppgave:
 \st{
@@ -1614,6 +1786,126 @@ For å løse oppgaven har eleven lagd følgende program:
 	\item Forklar strategien eleven har brukt.
 	\item Løs oppgaven eleven har fått.
 }
+
+\eksop{2PH23D2}{2ph23d2opg6}
+Nedenfor ser du en tabell som viser antall helsefagarbeidere i Norge i perioden
+2015–2022, fordelt på kjønn
+\begin{center}
+	\small
+	\begin{tabular}{|r|r|r|}
+		\hline
+		\textbf{År} & \textbf{Menn} & \textbf{Kvinner} \\
+		\hline
+		2015 & 2\,232 & 17\,493 \\
+		\hline
+		2016 & 2\,911 & 21\,439 \\
+		\hline
+		2017 & 3\,558 & 24\,785 \\
+		\hline
+		2018 & 3\,957 & 27\,327 \\
+		\hline
+		2019 & 4\,698 & 30\,733 \\
+		\hline
+		2020 & 5\,511 & 33\,958 \\
+		\hline
+		2021 & 6\,447 & 37\,357 \\
+		\hline
+		2022 & 7\,317 & 40\,472 \\
+		\hline
+	\end{tabular}
+\end{center}
+\abc{
+\item Lag ett eller to linjediagram som presenterer datasettet. Grunngi enten hvorfor du skilte mellom menn og kvinner, eller hvorfor du samlet begge i samme diagram.
+\item Lag et linjediagram som viser hvor stor prosentdel menn utgjorde av antall helsefagarbeidere for hvert år i perioden.
+\item Kan man si at linjediagrammet også fra b) også viser hvor stor prosentandel kvinner utgjorde av antall helsefagarbeidere? Grunngi svaret ditt.
+}
+
+\eksop{2PV24D2}{2pv24d2opg1}
+Tuva har en profil et sosialt medium. Tabellen nedenfor viser hvor mange følgere hun har
+hatt de siste seks månedene.
+\begin{center}
+\small
+\begin{tabular}{|l|r|r|r|r|r|r|}
+	\hline
+	\textbf{Måned} & November & Desember & Januar & Februar & Mars & April \\
+	\hline
+	\textbf{Følgere} & 5335 & 7035 & 9467 & 12\,780 & 17\,208 & 24\,008 \\
+	\hline
+\end{tabular}
+\end{center}
+\abc{
+\item Tuva har laget en modell som viser at antallet følgere har økt med ca. 35\,\% hver
+måned i perioden november 2023–april 2024. La $x$ være antall måneder etter november 2023, og vis hvordan Tuva kan ha laget denne modellen.
+}
+Tuva har som mål at økningen i antall følgere ikke skal fortsette å være på
+35\,\% etter april 2024, men øke med 5 prosentpoeng hver måned.
+\abcs{2}{
+\item Vis at antall følgere vil være 33 611 i mai og 48 736 i juni dersom Tuva klarer å nå
+målet sitt for disse månedene.
+\item Hvor mange prosent flere følgere vil Tuva ha i august 2024 dersom hun klarer å
+nå det nye målet sitt for hver måned, sammenliknet med om økningen fortsetter å
+være på 35\,\% hver måned?
+}
+
+\eksop{2PH23D2}{2ph23d2opg8}
+I 1990 var Norges klimagassutslipp på 51,3 millioner tonn CO$_2$-ekvivalenter.
+I 2022 var Norges klimagassutslipp på 48,9 millioner tonn CO$_2$-ekvivalenter.
+Norske myndigheter har satt som mål at klimagassutslippet skal reduseres med
+55\,\% innen 2030, sammenliknet med hva utslippet var i 1990. \os
+
+Anta at utslippet reduseres med en fast prosent hvert år etter 2022. Lag en modell som viser hvor mange prosent den årlige reduksjonen må være for å nå målet i 2030.
+
+\abc{
+\item Lag en modell $U(x)$ som gir antall CO$_2$-ekvivalenter $x$ år etter 2022, og som når utslipssmålet for 2030. Hva er den årlige, prosentvise reduksjonen i utslipp?
+}
+
+
+Norge har som mål å bli et lavutslippssamfunn innen 2050. Da må
+klimagassutslippet reduseres med 90\,--\,95\,\% sammenliknet med utslippet i 1990.
+
+\begin{enumerate}
+	\item[b)] Bruk modellen du fant i oppgave a), og vurder den opp mot
+	opplysningene om målet for klimagassutslipp i 2050.
+\end{enumerate}
+
+\eksop{2PV24D2}{2pv24d2opg3}
+Histogrammet nedenfor viser hvor mange minutter elevene ved en skole brukte på lekser i løpet av en dag.
+\fig{2pv24d2opg3}
+Under antakelsen om lik fordeling, argumenter for at hver av de fire utsagnene nedenfor er riktig.
+\begin{enumerate}
+	\item
+	80 elever brukte mindre enn 40 minutter på lekser denne ettermiddagen.
+	\item
+	Den relative frekvensen for 100–150 minutter brukt på lekser er $\frac{1}{5}$.
+	\item
+	Elevene som brukte mindre enn 60 minutter på leksene,
+	brukte i gjennomsnitt 38 minutter.
+	\item
+	For elevene som brukte mindre enn 60 minutter på leksene, er medianen for antall
+	minutter høyere enn gjennomsnittet for antall minutter.
+\end{enumerate}
+
+\newpage
+\eksop{2PH24D2}{2ph24d2opg6}
+Tabellen nedenfor viser hvor mange timer menn og kvinner brukte på ulike aktiviteter
+en gjennomsnittsdag i 1970, i 1990 og i 2010.
+\begin{center}
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		\rowcolor{Gray!20}  & \multicolumn{3}{c|}{Menn} & \multicolumn{3}{c|}{Kvinner} \\ \hline
+		\rowcolor{Gray!20}  År & 1970 & 1990 & 2010 & 1970 & 1990 & 2010 \\ \hline
+		Inntektsgivende arbeid & 5,48 & 4,50 & 4,17 & 1,93 & 2,80 & 3,02 \\ \hline
+		Husholdsarbeid         & 2,22 & 2,60 & 3,00 & 5,92 & 4,37 & 3,83 \\ \hline
+		Utdanning              & 0,38 & 0,48 & 0,45 & 0,28 & 0,55 & 0,47 \\ \hline
+	\end{tabular}
+\end{center}
+\abc{
+\item Lag et diagram som viser utviklingen i antall timer menn og kvinner (hver for seg) har brukt på inntektsgivende arbeid. Lag tilsvarende diagram for husholdsarbeid og utdanning (hver for seg).
+\item La oss kalle summen av tid brukt på de tre aktivitetene for totaltiden. Lag et linjediagram som viser utviklingen av hvor stor prosentdel av sin totaltid menn og kvinner (hver for seg) har brukt på husholdsarbeid.
+\item For menn og kvinner hver for seg, finn den prosentvise endringen i tid brukt på utdanning fra 1970 til 1990, og fra 1990 til 2010.
+}
+
+
 \newpage
 \eksop{R2V23D1}{r2v23d1opg4}
 En elev har skrevet følgende kode:
@@ -1622,7 +1914,6 @@ En elev har skrevet følgende kode:
 	\item Forklar hva eleven vil regne ut.
 	\item Hva blir resultatet når man kjører programmet, hvis N settes til 100 i linje 4?
 }
-
 
 \section{Teoretiske utvidelser}
 \op{opgintpi}

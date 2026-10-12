@@ -6,27 +6,27 @@
 \begin{document}
 \newpage
 \section{Indeksregning}
-Innen økonomi er \outl{indekser}\index{indeks} forholdstall som forteller hvor mye størrelser har forandret seg. For eksempel kostet en krone-is ca 0,75\,kr (!) da den ble lansert i 1953, mens den i 2021 kostet ca 27\,kr. Forholdet mellom prisen i 2021 og i 1953 er da
-\[ \frac{\text{pris 2021}}{\text{pris 1953}}=\frac{27}{0,75}= 36 \]
-I denne sammenhengen  er tallet 36 en indeks for prisendringen på kroneis mellom 1953 og 2021.
-
+Innen økonomi er en \outl{indeks}\index{indeks} et tall som forteller hvor mye en størrelse har forandret seg i forhold til en bestemt referanse. Som regel er indeksen et forholdstall ganget med 100, slik at vi kan utnytte prosentregning til å drøfte endringene.
 \begin{comment}
+	For eksempel kostet en krone-is ca 0,75\,kr (!) da den ble lansert i 1953, mens den i 2021 kostet ca 27\,kr. Forholdet mellom prisen i 2021 og i 1953 er da
+	\[ \frac{\text{pris 2021}}{\text{pris 1953}}=\frac{27}{0,75}= 36 \]
+	I denne sammenhengen  er tallet 36 en indeks for prisendringen på kroneis mellom 1953 og 2021.
+	
+	
 	\regv 
 	\reg[Indeks]{\vsb
-	\[ \frac{\text{verdi 1}}{\text{verdi 2}}\cdot 100 = \text{indeks} \]
+		\[ \frac{\text{verdi 1}}{\text{verdi 2}}\cdot 100 = \text{indeks} \]
 	}
-	\eks[1]{
-	En vare kostet 15\,kr i 2017 og 5\,kr i 1990. Regn ut indeksen for prisendringen fra 2017 til 1990.
-	
-	\sv 
-	Vi deler prisen fra 2017 med prisen fra 1990 og ganger medd 100:
-	\[ \frac{15}{5}\cdot 100 = 300 \]
-	Indeksen er altså 300.
-	}
-	\eks[2]{
-	En vare kostet i 2000 10 kr. In
+	\eks[]{
+		En vare kostet 15\,kr i 2017 og 5\,kr i 1990. Regn ut indeksen for prisendringen fra 2017 til 1990.
+		
+		\sv 
+		Vi deler prisen fra 2017 med prisen fra 1990 og ganger medd 100:
+		\[ \frac{15}{5}\cdot 100 = 300 \]
+		Indeksen er altså 300.
 	}
 \end{comment}
+
 \subsection{Konsumprisindeks og basisår}
 \outl{Konsumprisindeksen}\index{konsumprisindeks} (KPI)\index{KPI} er en indeks som beskriver et sammenlignbart prisnivå på varer og tjenester som en typisk husstand i Norge bruker penger på i løpet av et år. Disse varene og tjenestene er \vs
 
@@ -164,6 +164,43 @@ For å finne ut hvilket av årene Per hadde best råd i, sjekker vi hvilket år 
 }
 Reallønnen til Per var altså høyest i 2012, derfor hadde han bedre råd da enn i 2016.
 }
+\reg[Nominell lønn og KPI ved to tidspunkt]{
+La $R_T$, $N_T$, og $\text{KPI}_T$ betegne henholdsvis reallønn, nominell lønn og KPI ved tidspunkt $T$. Ved sammenlikning av respektiv reallønn ved to tidspunkt $A$ og $B$ har vi at
+\begin{itemize}
+	\item[] $\frac{N_B}{N_A}>\frac{\text{KPI}_B}{\text{KPI}_A} \iff$  Reallønnen er høyest ved tidspunkt $B$.
+	\item[] $\frac{N_B}{N_A}<\frac{\text{KPI}_B}{\text{KPI}_A}\iff$ Reallønnen er lavest ved tidspunkt $B$.
+	\item[] $\frac{N_B}{N_A}=\frac{\text{KPI}_B}{\text{KPI}_A}\iff$ Reallønnenene er like.
+\end{itemize}
+}
+
+\fork{??}{
+Vi lar $K_T$ betegne kroneverdien ved tidspunkt $T$. Av \rref{realverdi} har vi at \alg{
+\frac{R_B}{R_A}&=\frac{N_B\cdot K_B}{N_A\cdot K_A} 
+}
+Av \rref{kroneverdi} er
+\alg{
+\frac{R_B}{R_A}&=\frac{N_B\cdot\frac{100}{\text{KPI}_B}}{N_A\cdot\frac{100}{\text{KPI}_A}} \br
+&=\frac{N_B\cdot\text{KPI}_A}{N_A\cdot\text{KPI}_B}
+}
+{$\boldmath \frac{N_B}{N_A}>\frac{\textbf{KPI}_B}{\textbf{KPI}_A} \Rightarrow $ \textbf{Reallønnen er høyest ved tidspunkt B}
+} \os
+Hvis $ \frac{N_B}{N_A}>\frac{\text{KPI}_B}{\text{KPI}_A} $, har vi at
+\alg{
+\frac{N_B}{N_A}\cdot\frac{N_A}{N_B}&>\frac{\text{KPI}_B}{\text{KPI}_A}\cdot\frac{N_A}{N_B} \br
+1 &> \frac{R_A}{R_B} \\
+R_B &> R_A
+}
+{\textbf{Reallønnen er høyest ved tidspunkt B} $\boldmath \Rightarrow \frac{N_B}{N_A}>\frac{\textbf{KPI}_B}{\textbf{KPI}_A}  $
+} \os
+Hvis reallønnen er høyest ved tidspunkt $B$, er $\frac{R_B}{R_A}>1$, og da er
+\alg{
+\frac{N_B\cdot\text{KPI}_A}{N_A\cdot\text{KPI}_B}&>1 \br
+\frac{N_B}{N_A} &> \frac{\text{KPI}_B}{\text{KPI}_A}
+} \vsk
+
+Tilfellet hvor reallønnen ved tidspunkt $B$ er lavest er helt tilsvarende, med snudd ulikhetstegn som eneste forskjell. Tilfellet hov reallønnene er like er helt tilsvarende, med uliketstegnet erstattet med likhetstegnet som eneste forskjell.
+}
+
 \newpage
 \reg[Verdi som følger indeks]{
 En verdi er sagt å ha \textit{fulgt indeks} hvis forholdet mellom verdi og indeks ved to tidspunkt er like.
@@ -196,6 +233,7 @@ Videre er
 }
 Altså har prisen for sjokolade (tilnærmet) fulgt indeks, mens prisen for brus ikke har gjort det.
 }
+
 
 \section{Lån og sparing}
 \subsection{Lån}
