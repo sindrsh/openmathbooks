@@ -12,7 +12,7 @@
 
 \begin{document}
 \chapter*{Kalkulator}
-I dette kapitlet skal vi vise de grunnleggende metodene for å løse oppgaver med hjelp av en håndholdt kalkulator. Bildene viser bruk av en Casio FX 82 kalkulator, som innfrir Udirs nye krav til hjelpemidler på Del 2 av skriftlig eksamen i videregående skoler. I de fleste tilfeller vil fremgangsmåte og utseende være veldig lik også på andre kalkulatorer. Eksempler som viser bruk som er spesifikke for Casio FX 82 vil være markert.
+I dette kapitlet skal vi vise de grunnleggende metodene for å løse oppgaver med hjelp av en håndholdt kalkulator. Bildene viser bruk av en Casio FX-82CW kalkulator, som innfrir Udirs nye krav til hjelpemidler på Del 2 av skriftlig eksamen i videregående skoler.
 \newpage
 \tableofcontents
 \newpage
@@ -159,7 +159,7 @@ Standardinnstillingen er at kalkulatoren viser uekte brøker. Ønsker vi blandet
 Når vi skal regne trigonometrisk, er det helt avgjørende at vi har det klart for oss om vi skal regne med grader eller radianer. 
 
 \subsection*{Regning med grader}
-I Casio DX 82 er grader standardinnstilling:
+I Casio FX-82CW er grader standardinnstilling:
 \begin{figure}
 	\subfloat[]{\calcfig{calculate}}
 	\subfloat[]{\p{settings}}
@@ -214,10 +214,15 @@ Skal vi regne med radianer, må vi endre vinkelmålet til dette:
 		$\atan \left(\frac{\sqrt{3}}{3}\right)$ & \p{shift}\p{tan}\p{sqrt}\p{3}\p{right}\p{div}\p{3} & \calcfig{atanr} \\ \hline
 	\end{tabular}
 \end{center}
-\info{Tips}{
-Start alltid med å skrive \texttt{sin(90)} på kalkulatoren når du skal regne trigonometrisk.
-Er svaret 1, er kalkulatoren innstilt på grader. Er svaret ca. 0,89, er kalkulatoren innstilt på radianer.
+\info{Obs!}{
+Pass alltid på at du regner med rett vinkelmål. Ved å se på eksemplene med bruk av grader vil du se at det står \texttt{D} markert øverst i skjermen. I eksemplene med bruk av radianer står det \texttt{R} markert øverst i skjermen.
 }
+\begin{comment}
+	\info{Tips}{
+		Start alltid med å skrive \texttt{sin(90)} på kalkulatoren når du skal regne trigonometrisk.
+		Er svaret 1, er kalkulatoren innstilt på grader. Er svaret ca. 0,89, er kalkulatoren innstilt på radianer.
+	}
+\end{comment}
 \newpage
 \section{Analyseverktøy}
 \textbf{Sentral- og spredningsmål}
@@ -344,5 +349,84 @@ Ved kvadratisk regresjon gis ingen \texttt{r}-verdi.
 	}
 \end{comment}
 
+\section*{Bruk av variabler og funksjoner}
+Når man er i \texttt{Calculate}, \texttt{Statistics} eller \texttt{Table}, kan man lage egendefinerte variabler og funksjoner. \os
+
+\eks[1]{
+Vi bruker \texttt{Calculate}, og regner ut $A\cdot B$ når $A=2$ og $B=5$:	
+\begin{figure}
+	\subfloat[]{\calcfig{blank}}
+	\subfloat[]{\p{variable}}	
+	\subfloat[]{\calcfig{variables}}
+	\subfloat[]{\p{2}} \\
+	\subfloat[]{\calcfig{defa}}
+	\subfloat[]{\p{exe}} 
+	\subfloat[]{\calcfig{defa2}}
+	\subfloat[]{\p{right}} \\
+	\subfloat[]{\calcfig{gotob}}
+	\subfloat[]{\p{5}} 
+	\subfloat[]{\calcfig{defb}} 
+	\subfloat[]{\p{exe}}
+	\subfloat[]{\p{back}} \\
+	\subfloat[]{\p{shift}\p{4}\p{shift}\p{4}\p{exe}}
+	\subfloat[]{\calcfig{axb}}
+\end{figure}
+}
+\newpage
+\eks[2]{
+Vi bruker \texttt{Calculate}, definerer $x^2-x+3$, og finner $f(97)$:
+\begin{figure}
+	\subfloat[]{\calcfig{blank}}
+	\subfloat[]{\p{function}}	
+	\subfloat[]{\calcfig{deffandg}}
+	\subfloat[]{\p{down}\p{down}} \\
+	\subfloat[]{\calcfig{deff}}
+	\subfloat[]{\p{exe}} 
+	\subfloat[]{\p{shift}\p{0}\p{pow2}\p{min}\p{shift}\p{0}\p{plus}\p{3}} \\
+	\subfloat[]{\calcfig{deff-}}
+	\subfloat[]{\p{exe}} 
+	\subfloat[]{\calcfig{blank}}
+	\subfloat[]{\p{function}} \\
+	\subfloat[]{\calcfig{deffandg}} 
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{fp}}
+	\subfloat[]{\p{9}\p{7}\p{exe}} \\
+	\subfloat[]{\calcfig{f97}}
+\end{figure}
+}
+\info{Tips}{
+Man kan også definere funksjoner som inneholder variablene $A$, $B$, $C$, og så videre.
+}
+\newpage
+\subsubsection{Table-verktøyet}
+Når vi har definert en funksjon, slik vi har gjort i foregående eksempel, kan vi bruke \texttt{Table}-verktøyet for å finne forskjellige funksjonsverdier.
+\eks[1]{
+Vi bruker \texttt{Table} til å finne $f(x)=x^2-x+3$ (som allerede er definert) for verdiene $x=-1$ og $x=4$.
+\begin{figure}
+	\subfloat[]{\calcfig{table}}
+	\subfloat[]{\calcfig{tableb}}
+	\subfloat[]{\calcfig{tablec}}
+\end{figure}
+\mers{Kalkulatoren opplyser om at $g(x)$ ikke er definert.}
+}
+\eks[1]{
+	Vi bruker \texttt{Table} og \texttt{Table Range} til å finne $f(x)=x^2-x+3$ (som allerede er definert) for $x$ når
+	\begin{itemize}
+		\item $x$ starter på $-2$ (\texttt{Start}).
+		\item $x$ øker deretter med 1 (\texttt{Step}), frem til $x$ er lavere eller lik $2$ (\texttt{End}).
+	\end{itemize}
+	\begin{figure}
+		\subfloat[]{\calcfig{tableb}}
+		\subfloat[]{\p{tools}}
+		\subfloat[]{\calcfig{tablerange}}
+		\subfloat[]{\calcfig{rangeval}} \\
+		\subfloat[]{\calcfig{tableexecute}}
+		\subfloat[]{\calcfig{tableranges}}
+	\end{figure}
+	\mers{Kalkulatoren opplyser om at $g(x)$ ikke er definert.}
+}
+
+	
+ 
 
 \end{document}
