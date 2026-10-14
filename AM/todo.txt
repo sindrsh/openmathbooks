@@ -6,7 +6,6 @@ gv24d2opg4
 
 typetall ikke definert. kommenter oppgaver
 store talls lov
-D og R for vinkler på kalk.
 gyldighetsområde
 legg til derivasjon i teoretisk utvidelse for 1P
 dimensional analysis
@@ -14,6 +13,7 @@ dobling
 
 1ph21d2opg7?
 1ph22d2opg6?
+1pv22d2opg
 
 flytte 1PV23D1opg4 til mix?
 droppe 2pv22d2opg8?
@@ -27,4 +27,5 @@ rentefot?
 gebyr
 prosentvis
 søylediagram med to sorter? grupperte stolpediagram.
-
+månedlig rente
+verdimengde
