@@ -283,7 +283,7 @@ Gitt et rektangel med omkrets $ O $, og la $ x $ være den éne sidelengden.
 	\#logaritmer \#overslag
 }
 \outl{Momentmagnitudeskalaen} er en skala som brukes til å representere styrken på jordskjelv. Hvis $ S $ er det målte \outl{seismiske momentet} til jordskjelvet, er massemagnituden $ M_w $ gitt som\footnote{Kilde: \net{https://en.wikipedia.org/wiki/Moment_magnitude_scale}{Wikipedia}.}
-\[ M_w=\frac{2}{3} \log S-10.7 \]
+\[ M_w=\frac{2}{3} \log S-3,2 \]
 Energien som jordskjelvet utløser er tilnærmet proporsjonal med $ S $.\os
 
 Gitt to jordskjelv, jordskjelv $ A $ og jordskjelv $ B $, med henholdsvis seismisk moment $ S_A $ og $ S_B $. Si videre at proporsjonalitetskonstanten for energi utløst av det seismiske momentet er likt for begge jordskjelvene. Hvis jordskjelv $ A $ er målt til 1 mer enn jordskjelv $ B $ på momentmagnitudeskalaen, hva er da forholdet mellom energi utløst av jordskjelv $ A $ og energi utløst av jordskjelv $ B $? 
@@ -308,23 +308,7 @@ La funksjonen $ s(t) $ beskrive hvor langt et objekt har bevegd seg etter tiden 
 	\item Undersøk begrepet ''bevegelsesligninger''\footnote{''Eqautions of motion på engelsk.} (også kalt ''veiformler'') i en fysikkbok eller på internett. Sammenlign uttrykkene du finner med uttrykket du fant for $ s(t) $. 
 }
 \newpage
-\op{opgbane}
-\tagop{
-	\#vektorer i planet \#derivasjon
-}
-Posisjonen $ \vec{s} $ til et objekt som beveger seg i en sirkelbane kan uttrykkes som 
-\[ \vec{s} = r[\cos\left(2\pi f t\right), \sin\left(2\pi f t\right)] \]
-hvor $ r $ er radien til sirkelbanen, $ t $ er tiden og $ f $ er frekvensen. 
-\abc{
-	\item $ f $ beskriver antall runder objektet fullfører per tidsenhet\footnote{Hvis tidsenheten er 'sekund', har $ f $ benevningen '1/sekund'.}. Forklar hvorfor $ 2\pi f $ kalles \outl{vinkelfarten} til objektet.
-	\item Finn $ \vec{s}\,'(t) $. 
-	\item Hva er vinkelen mellom $ \vec{s}(t) $ og $ \vec{s}\,'(t) $?
-	\item Bestem lengden til $ \vec{s}\,'(t) $
-	\item Finn $ \vec{s}\,''(t) $.
-	\item Bestem lengden til $ \vec{s}\,''(t) $
-	\item  Hva er vinkelen mellom $ \vec{s}(t) $ og $ \vec{s}\,''(t) $? Peker $ \vec{s}\,''(t) $ innover i sirkelbanen eller ut fra sirkelbanen?
-	\item Bruk en fysikkbok eller internett til å undersøke begrepet \outl{sentripetalakselerasjon}. Sammenlign funnene dine i denne oppgaven med informasjonen du finner.
-}
+
 
 \newpage
 \op{opgfloogfjere}
@@ -2267,6 +2251,7 @@ fortsetter så med å lage figur 2, figur 3 osv.
 og hvor mange små kvadrater du har igjen når du har laget alle figurene.
 }
 
+\newpage
 \eksop{1TV26D2}{1tv26d2opg2} \vs
 \abc{
 \item Finn de respektive lengdene til $AB$, $DC$ og $AC$.
@@ -2274,6 +2259,74 @@ og hvor mange små kvadrater du har igjen når du har laget alle figurene.
 }
 \fig{1tv26d2opg2}
 
+\eksop{R1V22D1}{r1v22d1opg5}
+En elev har skrevet følgende kode:
+\python{python/r1v22d1opg5.py}
+\abc{
+\item Forklar hva som skjer når koden kjøres. Hva ønsker eleven å finne en tilnærming av?
+\item Finn ved regning verdien som eleven ønsker å finne.
+}
+
+\eksop{R1V22D2}{r1v22d2opg4}
+Ifølge Newtons avkjølingslov vil temperaturen $T$ til et objekt
+etter $t$ minutter være gitt ved
+
+\[
+\ln(T - T_0) = -k \cdot t + r
+\]
+
+hvor $T_0$ er romtemperaturen, og der $k$ og $r$ er konstanter.
+
+I et rom med temperatur $22^\circ\mathrm{C}$ setter vi en kopp
+med kaffe. Ved tidspunktet $t = 0$ er temperaturen i kaffen
+$82^\circ\mathrm{C}$. Etter $2$ minutter er temperaturen
+$66^\circ\mathrm{C}$. \os
+
+Hvor lang tid tar det før temperaturen i kaffen er mindre enn
+$40^\circ\mathrm{C}$?
+
+\eksop{R1V22D2}{r1v22d2opg7}
+Båten til en pirat kjører med konstant fart. Posisjonen
+$\vec{r}_1$ til båten etter $t$ timer er
+
+\[
+\vec{r}_1(t) = [2 + 24t, 4 + 20t]
+\]
+
+Enhetene langs aksene er kilometer.
+
+\abc{
+\item Hvor stor er banefarten til båten?
+}
+
+Politiet ønsker å stoppe piraten. Samtidig som piraten er i
+punktet $(2, 4)$, starter en politibåt sin jakt. Politibåten
+starter i punktet $(0, 10)$ og holder konstant fart langs en
+rett linje. Posisjonen $\vec{r}_2$ til politibåten er
+
+\[
+\vec{r}_2(t) = [26t, 10 - 22t]
+\]
+
+\abcs{2}{
+\item Undersøk om politiet vil møte piraten.
+}
+
+En annen politibåt starter også i $(0, 10)$. Denne båten
+holder også konstant fart.
+
+\abcs{3}{
+\item Hvor stor må banefarten til denne båten være
+dersom de skal treffe piraten i punktet $(8, 9)$?
+}
+
+\eksop{R1H22D1}{r1h22d1opg5}
+En elev har skrevet følgende kode:
+\python{python/r1h22d1opg5.py}
+\abc{
+\item Forklar hva uttrykket som printes beskriver.
+\item Eleven finner en tilnærming til $b$. Finn den eksakte verdien til $b$.
+}
 
 \eksop{R2V23D1}{r2v23d1opg4}
 En elev har skrevet følgende kode:
@@ -2281,6 +2334,504 @@ En elev har skrevet følgende kode:
 \abc{
 	\item Forklar hva eleven vil regne ut.
 	\item Hva blir resultatet når man kjører programmet, hvis N settes til 100 i linje 4?
+}
+
+\eksop{R1H22D2}{r1h22d2opg1}
+Tabellen under viser antall gigawattimer (GWH) produsert i Norge noen utvalgte år.
+\begin{center}
+	\small
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		År & 1950 & 1960 & 1970 & 1981 & 1990 & 2000 & 2012 & 2020 \\
+		\hline
+		GWh & 16924 & 31121 & 57606 & 93397 & 121848 & 142816 & 147716 & 154197 \\
+		\hline
+	\end{tabular}
+\end{center}
+\abc{
+\item Bruk tallene fra tabellen til å lage en logistisk modell $g$ som viser oss
+Norges energiproduksjon $x$ år etter 1950
+\item I hvilket år økte produksjonen raskest ifølge modellen?
+}
+
+\eksop{R1H22D2}{r1h22d2opg2}
+Når du bruker blitsen på et fotokamera, vil batteriet lade den opp igjen.
+Ladningen $Q$ i blitsen $t$ sekunder etter at den går av, er gitt ved
+\[
+Q(t) = Q_0\left(1 - e^{-2.3t}\right)\quad, \quad t \geq 0
+\]
+der $Q_0$ er den maksimale ladningen.
+
+\abc{
+\item Bestem den omvendte funksjonen til $Q$.
+\item Beregn hvor lang tid det tar før blitsen har nådd 90\,\% av den maksimale ladningen.
+}
+
+\eksop{R1V23D2}{r1v23d2opg1}
+Tabellen nedenfor viser timelønnen til en yrkesgruppe for noen år i perioden
+2008\,--\,2022.
+\begin{center}
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		Årstall & 2008 & 2010 & 2013 & 2015 & 2019 & 2022 \\
+		\hline
+		Timelønn & 272,55 & 285,50 & 307,30 & 314,00 & 327,60 & 340,10 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\abc{
+\item Hva har den gjennomsnittlige årlige prosentvise veksten i lønn
+vært i årene 2008\,--\,2022?
+
+\item Bruk tallene i tabellen til å lage en eksponentialfunksjon $g$
+som er en modell for timelønnen til denne yrkesgruppen $x$ år
+etter 2008.
+}
+
+Per og Amalie hadde begge en timelønn på 272,55 kroner i 2008.
+Per har hatt en lønnsutvikling i samsvar med modellen fra oppgave b), mens Amalies lønn har steget med 2,3 prosent per år. De har begge jobbet 1700 timer per år.
+
+\abcs{3}{
+\item Bestem den samlede lønnen til Amalie i årene 2008 til 2022.
+Bestem også den samlede lønnen til Per i disse årene.
+
+\item Fagforeningen til Per krever at han i 2025 skal ha samme timelønn
+som Amalie. Hvor mange prosent må lønnen til Per gå opp hvert år dersom
+dette kravet skal innfris? (Med lønnen i 2022 som utgangspunkt.)
+}
+
+\eksop{R1V23D2}{r1v23d2opg5}
+Sammenhengen mellom lydstyrken $L$ (målt i dB) og lydintensiteten $I$
+(målt i W/m$^2$) er gitt ved
+\[
+L = 120 + 10 \cdot \lg I
+\]
+
+Menneskets øre har en smertegrense for lydstyrke som ligger omkring 130 dB.
+
+\abc{
+\item Bestem lydintensiteten når lydstyrken er 130 dB.
+\item Hvor mange prosent øker lydintensiteten med dersom lydstyrken øker
+med 2 dB?
+}
+
+Dersom effekten til lyden som sendes ut fra en lydkilde er $E$, vil
+lydintensiteten $I$ på en avstand $r$ (målt i m) fra denne lydkilden være
+%
+\[
+I = \frac{E}{4\pi r^2}
+\]
+
+Lydstyrken fra et fly er 140 dB dersom du er 50 m fra flyet.
+
+\abcs{3}{
+\item Bestem den minste avstanden til dette flyet der lydstyrken er
+lavere enn 130 dB.
+}
+
+\eksop{R1H23D2}{r1h23d2opg1}
+Tabellen nedenfor viser konsentrasjonen $K$, i millimol per liter (mmol/L), av et
+stoff, $t$ sekunder etter at en kjemisk reaksjon startet. 
+Når det har gått lang tid, vil konsentrasjonen av stoffet stabilisere seg på 2,5\,mmol/L. Tabellen viser derfor også konsentrasjonen fratrukket $-2,5$\,mmol/L.
+
+\begin{center}
+	\small
+	\begin{tabular}{l r r r r r r r}
+		\hline
+		Tid (s) & 0 & 10 & 20 & 30 & 40 & 50 & 60 \\
+		K (mmol/L)& 0 & 0{,}28 & 0{,}53 & 0{,}76 & 0{,}95 & 1{,}13 & 1{,}28 \\
+		K $-2{,}5$ (mmol/L) & $-2{,}5$ & $-2{,}22$ & $-1{,}97$ & $-1{,}74$ & $-1{,}55$ & $-1{,}37$ & $-1{,}22$ \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\abc{
+\item Bruk lineær regresjon til å vise at
+funksjonen
+\[ f(t) = 2{,}5 - 2{,}5 \cdot 0{,}99^t \]
+er en god modell for konsentrasjonen $f$ av stoffet $t$ sekunder etter at
+reaksjonen startet.
+
+\item Ifølge modellen, hvor lang tid vil det ta før konsentrasjonen er 2{,}0 mmol/L?
+
+\item Ifølge modellen, hvor lang tid vil det ta før konsentrasjonen øker med mindre
+enn 0,001 mmol/L per sekund?
+}
+
+\eksop{R1D2H23}{r1d2h23opg4}
+Du skal lage en kasse uten lokk. Den skal ha form som et rett prisme.
+Grunnflaten i kassen skal være kvadratisk. For at vekten ikke skal bli for stor,
+kan ikke det samlede arealet av platene som brukes til å lage kassen, være mer
+enn $120\enh{dm}^2$.
+\abc{
+\item Hva er det største volumet kassen kan få dersom sidene i bunnen skal være
+5 dm?
+\item Hva er det maksimale volumet kassen kan få?
+Du skal lage en slik kasse som rommer $80\enh{dm}^3$.
+\item Hva er det minste samlede arealet platene kan ha, dersom du skal lage en
+slik kasse?
+}
+
+\eksop{R1H25D2}{r1h25d2opg5}
+En ishockeybane er 60 m lang og 30 m bred. Vi plasserer et koordinatsystem
+slik at origo er midt på banen. 
+En hockeyspiller sender av gårde en puck. Vektorfunksjonen 
+\[
+\vec{r}(t) = \big[8(e^{-t} - t), 5(e^{-t} - t)\big]
+\]
+gir puckens posisjon $t$ sekunder etter at den ble sendt av gårde. Denne
+vektorfunksjonen gir puckens posisjon helt til den treffer vantet (vegg på
+banen).
+
+\abc{
+\item Hvilken fart hadde pucken idet den ble sendt av gårde?
+\item Hvor lang tid gikk det før pucken traff vantet?
+}
+
+En annen hockeyspiller var i posisjonen $P(-18, 11)$ da pucken ble sendt av
+gårde. Spilleren hadde konstant fart $\vec{v} = [3, -7]$.
+\abcs{3}{
+\item Begrunn at denne spilleren ikke ble truffet av pucken.
+}
+
+\eksop{R1V24D2}{r1v24d2opg1}
+En influensaepidemi bryter ut på en videregående skole med 1\,000 elever.
+I starten er det få smittede, men antallet øker raskt. Antallet smittede
+elever $S(t)$ etter $t$ dager er tilnærmet gitt ved
+\[
+S(t) = \frac{300}{1 + 28e^{-0{,}3t}}
+\]
+\abc{
+\item Hvor lang tid tar det før 100 elever er smittet?
+\item På hvilket tidspunkt blir flest elever smittet, og hvor raskt
+sprer smitten seg da?
+\item Undersøk om $S$ har asymptoter, og forklar hvilken praktisk
+tolkning asymptotene eventuelt har.
+}
+
+\eksop{R1V24D2}{r1v24d2opg3}
+To biler $A$ og $B$ kjører på hver sin vei. Posisjonen til bil $A$ er gitt ved $\vec{r}_A$, og posisjonen til bil $B$ er gitt ved $\vec{r}_B$. Videre er
+\[
+\vec{r}_A(t) = \left[\tfrac{1}{2}(t - 4),\ t\right],\quad
+\quad
+\vec{r}_B(t) = \left[\tfrac{1}{2}t,\ \tfrac{3}{2}\!\left(t - \tfrac{1}{5}\right)\right]
+\]
+der $t$ er tiden målt i minutter, og avstander er målt i kilometer.
+
+\abc{
+\item Bestem avstanden i luftlinje mellom bilene etter 1 minutt.
+\item Én av veiene er en motorvei, og den andre er en vei med
+lavere fartsgrense. Argumenter for hvilken av bilene som kjører på motorveien.
+\item Veiene krysser hverandre i et veikryss. Agjør hvilken av bilene som kommer til veikrysset først.
+}
+
+\eksop{R1H24D1}{r1h24d1opg2}
+En elev har skrevet koden.
+\python{python/r1h24d1opg2.py}
+\abc{
+\item Beskriv hvilken $x$-verdi eleven ønsker å finne.
+\item Finn denne $x$-verdien ved regning.
+}
+
+\eksop{R1H24D2}{r1h24d2opg1}
+Et gammelt vannreservoar lekker vann. Mengden vann $V$ (målt i liter) i reservoaret er gitt ved
+\[
+V(t) = 10000 \cdot e^{-0,07t} + 500
+\]
+der $t$ er antall timer etter at lekkasjen startet.
+
+\begin{enumerate}[label=\alph*)]
+	\item Hvor lang tid vil det gå før vannmengden er halvert.
+	\item Bestem $V'(12)$ og $V''(12)$, og gi en praktisk tolkning av svarene.
+	\item Undersøk om $V$ har asymptoter, og gi i så fall en praktisk tolkning av disse.
+\end{enumerate}
+
+\eksop{R1H24D2}{r1h24d2opg3}
+Forskere har registrert en ny fiskeart i en innsjø. I tabellen nedenfor ser
+du hvor mange fisk av arten det var i innsjøen noen måneder etter at arten
+først ble registrert.
+\begin{center}
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+		\hline
+		Mnd. etter første registrering & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+		\hline
+		Antall tusen fisk & 1 & 2,5 & 5,5 & 9 & 14 & 22 & 32 & 45 & 60 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Fiskepopulasjonen kan beskrives med en modell på formen
+\[
+A(t) = A_0 \cdot k^t
+\]
+der $A(t)$ er antall tusen fisk $t$ måneder etter første registrering.
+
+\abc{
+\item Bestem $A_0$ og $k$, og gi en praktisk tolkning av disse verdiene.
+}
+
+Fiskepopulasjonen kan også beskrives med en logistisk modell på formen
+\[
+N(t) = \frac{B}{1 + \frac{B - N_0}{N_0}\, e^{-rt}}
+\]
+$B$ er bæreevnen, $N_0$ er antall tusen fisk ved $t = 0$, og $r$ er
+vekstparameteren.
+
+\abc{
+\item Bestem $N_0$, $B$ og $r$.
+\item Bestem den deriverte til funksjonene du fant i oppgave a) og b). Forklar hvordan vekstfarten endrer seg i følge
+hver av de to modellene.
+\item Hvilken modell mener du beskriver den praktiske situasjonen best? Grunngi svaret.
+Hvor mange fisk vil det være 12 måneder etter første registrering, ifølge denne
+modellen?
+}
+
+
+\eksop{R1H24D2}{r1h24d2opg6}
+To småfugler er ute og flyr. Posisjonen til de to fuglene er respektivt gitt ved
+\[
+\vec{r}_1(t) = [-10 + 6t, 35 - 3t\,]\quad,
+\quad
+\vec{r}_2(t) = [2 + 5t, 4t\,].
+\]
+Tiden $t$ er målt i sekunder, og enhetene langs aksene er målt i meter.
+
+\abc{
+\item Hvor fort flyr hver av de to småfuglene?
+\item Hvor stor er avstanden mellom småfuglene når $t = 0$?
+\item På hvilket tidspunkt er småfuglene nærmest hverandre, og hvor
+langt unna hverandre er de da?
+}
+
+En rovfugl er også ute og flyr og oppdager småflyene ved tidspunktet
+${t = 0}$. Posisjonen til rovfuglen de første 6 sekundene er gitt ved
+\[
+\vec{r}_A(t) = [7t - 10, 2t^2 - 6t + 5].
+\]
+\abcs{4}{
+\item Avgjør om råfuglen greier å fange noen av småfuglene.
+}
+
+\eksop{R1V25D2}{r1v25d2opg1}
+Teknologiselskapet PowBat skal lansere en ny batteriteknologi i en by med 3 millioner
+husstander. PowBat regner med at antallet husstander som har batteriet $t$ uker etter
+lanseringen, vil følge modellen $S$ gitt ved
+\[ S(t) = \frac{2\,500\,000}{1 + 2500e^{-0{,}08t}} \]
+\abc{
+\item Hvor lang tid vil det ta før halvparten av husstandene i byen har batteriet, ifølge modellen?
+\item Bestem $S'(52)$ . Gi en praktisk tolkning av svaret.
+}
+Det viser seg at konkurrenten BA3 planlegger å lansere et batteri med tilsvarende teknologi
+samtidig. Dette vil påvirke salget til PowBat.
+Etter å ha hørt om planene til BA3 antar PowBat at
+\begin{itemize}
+	\item de totalt vil få solgt batteriet sitt til 1,5 millioner husstander.
+	\item 500 husstander har batteriet når det lanseres.
+	\item flest nye husstander kjøper batteriet i uke 60.
+\end{itemize}
+\abcs{3}{
+\item Bruk antakelsene ovenfor til å finne en ny logistisk modell $F$ for antallet husstander som har batteriet etter $t$ uker.
+}
+
+\eksop{R1V25D2}{r1v25d2opg4}
+Posisjonen $\vec{r}$ til en fiskebåt $t$ timer etter at den drar fra land, er gitt ved
+\[
+\vec{r}(t) = [1 + 5t,\, 4 + 8t].
+\]
+Enhetene langs aksene er kilometer. Farten til en båt måles vanligvis i knop, der 1 knop er $1852$ meter per time.
+
+\abc{
+\item Bestem farten til fiskerbåten i knop.
+\item Et fyr står i posisjonen $(4, 7)$. Bestem den minste avstanden mellom fiskebåten og fyret.
+\item En fiskestim er i punktet $(1, -3)$ ved tiden ${t = 0}$, og stimen svømmer med hastigheten
+$\vec{v}(t) = [4, 11]$. Vil fiskebåten treffe fiskestimen?
+\item En annen fiskebåt er i punktet $(-2, 0)$ ved tiden ${t = 0}$, og holder konstant fart i retning langs $\vec{u} = [6, 4]$. Bestem farten denne fiskebåten må holde for å treffe fiskestimen.
+}
+
+\eksop{R1H25D1}{r1h25d1opg5}
+Gitt funksjonen
+\[ f(x)=4x^2\cdot \ln x \]
+\abc{
+\item Bestem koordinatene til eventuelle topp- og bunnpunkt på grafen til $f$.	
+}
+En elev har skrevet kode under.
+\python{python/r1h25d1opg5.py}
+\abcs{2}{
+\item Hva ønsker eleven å finne ut?
+\item Forklar hva programmet gjør i linje 10\,-\,20
+\item Finn den eksakte verdien som eleven finner en tilnærming til.
+}
+
+\eksop{R1H25D2}{r1h25d2opg1}
+Tabellen nedenfor viser folketallet på et lite tettsted, noen år i
+perioden 1960\,--\,1980.
+
+\begin{center}
+	\small	
+	\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+		\hline
+		År & 1960 & 1961 & 1963 & 1965 & 1967 & 1971 & 1975 & 1977 & 1980 \\
+		\hline
+		Folketall & 500 & 604 & 852 & 1043 & 1510 & 2163 & 2544 & 2639 & 2715 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\abc{
+\item Bruk informasjonen til å lage en modell $F$ på formen
+\[
+F(t) = \frac{B}{1 + a \cdot e^{-kt}}
+\]
+for antall personer $F$ som bodde på dette tettstedet $t$ år etter
+1960. Vurder modellens gyldighetsområde.
+
+\item Bestem $F'(12)$ og $F''(12)$. Gi en praktisk tolkning av
+svarene.
+
+\item Når økte antall personer som bodde på dette tettstedet
+med mer enn 150 personer per år ifølge modellen?
+}
+
+
+\eksop{R1H25D2}{r1H25d2opg3}
+Et selskap foretar analyser hvor de målet nivå av lukt fra luftprøver.
+Prøvene analyseres, og hver prøve gis en luktverdi $C$. Denne luktverdien gir antall odour units per kubikkmeter (OU/$\text{m}^3$). Selskapet har utviklet en modell som kobler luktverdien til opplevd luktintensitet $I$. Modellen er gitt ved
+
+\begin{equation*}
+	I = 1,4 \cdot \lg(C) - 0,3
+\end{equation*}
+
+Luktintensiteten vurderes etter følgende tabell:
+
+\begin{center}
+	\begin{tabular}{c l}
+		\hline
+		\textbf{Luktintensitet ($I$)} & \textbf{Vurdering} \\
+		\hline
+		$< 1$   & uproblematisk \\
+		$1\text{\,-\,}2$ & akseptabelt \\
+		$2\text{\,-\,}3$ & kan aksepteres kortvarig \\
+		$3\text{\,-\,}4$ & plagsomt, bør begrenses \\
+		$> 4$   & plagsomt, tiltak kreves \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item I prøver fra et område varierte verdiene til $C$ mellom 500\,-\,1400.
+	\item[b)] Hvilken luktverdi må prøver vise for at luktintensiteten skal være akseptabel?
+\end{enumerate}
+
+\eksop{R1H25D2}{r1h25d2opg4}
+Ina følger en sti fra ei hytte til et utsiktspunkt. I et koordinatsystem der
+enheten langs aksene er meter, ligger hytta i punktet ${H=(0, 300)}$ og
+utsiktspunktet i ${U=(1200, 400)}$. Stien mellom hytta og utsiktspunktet er en
+rett linje. Ina går med konstant fart.
+
+\abc{
+\item Forklar at parameterframstillingen
+\[
+i:\quad
+\begin{cases}
+	x = 1200s \\
+	y = 300 + 100s
+\end{cases}
+\qquad s \in [0, 1]
+\]
+gir den rette linja mellom hytta og utsiktspunktet.
+}
+
+Hele turen tar 20 minutter.
+
+\abcs{2}{
+\item Bestem posisjonen til Ina etter 5 minutter.
+\item Regn ut farten til Ina. Gi svaret i m/s.
+}
+
+Jonas er ute på tur i samme område som Ina. De to vennene møter hverandre.
+Jonas sin posisjon $t$ minutter etter at han startet sin tur, er gitt ved
+\[
+j:\quad
+\begin{cases}
+	x = 520 - 20t \\
+	y = 310 + 5t
+\end{cases}
+\]
+\abcs{4}{
+\item Hvor langt har Ina gått når hun møter Jonas?
+}
+
+
+\eksop{R1V26D1}{r1v26d1opg9}
+Gitt følgende kode.
+\python{python/r1v26d1opg9.py}
+\abc{
+\item Forklar sammenhengen mellom $f$ og $g$.
+\item Erstatt henholdsvis A, B og C med riktige begreper.
+\item Hvilken av linje 18, linje 20 og linje 20 vil skrives når programmet kjøres? Grunngi svaret ditt.
+}
+
+\eksop{R1V26D2}{r1v26d2opg1}
+Tabellen nedenfor viser farten til en rakett noen sekunder etter at raketten har forlatt
+utskytingsrampen.
+\begin{center}
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|c|c|}
+		\hline
+		Tid (sekunder) & 1 & 5 & 10 & 20 & 50 & 100 & 150 \\ \hline
+		Fart (meter per sekund) & 7,3 & 9,2 & 10,7 & 25,6 & 61,3 & 183,0 & 218,2 \\ \hline
+	\end{tabular}
+\end{center}
+
+\abc{
+\item Lag en modell $V$ på formen
+\[
+V(t) = \frac{C}{1 + a \cdot e^{-kt}}
+\]
+for farten $V(t)$ meter per sekund, $t$ sekunder etter at raketten har forlatt utskytingsrampen.
+
+\item Hvor lang tid tar det før raketten oppnår en fart på $100$\,m/s?
+
+\item Når er fartsøkningen (akselerasjonen) til raketten størst? Hvor stor er denne fartsøkningen?
+
+\item Hvor lenge øker farten til raketten med mer enn $2$ m/s\textsuperscript{2}?
+}
+
+\eksop{R1V26D2}{r1v26d2opg2}
+I et koordinatsystem der enhetene langs aksene er meter, er posisjonen til partikkel A gitt ved
+\[
+l:\quad
+\begin{cases}
+	x = 6t + 120 \\[4pt]
+	y = \frac{5}{3}\,t + 50
+\end{cases}
+\qquad t \in [0,\, 200]
+\]
+\abc{
+\item Bestem banefarten og posisjonen til partikkelen etter et halvt minutt.
+}
+I samme koordinatsystem er posisjonen til partikkel B gitt ved
+\[
+m:\quad
+\begin{cases}
+	x = \frac{13}{2}\,t + 250 \\[4pt]
+	y = -\frac{9}{5}\,t + 520
+\end{cases}
+\qquad t \in [0,\, 200]
+\]
+\abcs{2}{
+\item Vis at partikkel A og B ikke vil møte hverandre.
+}
+For å få A og B til å møtes, kan vi etter 1 minutt gi partikkel A en ny konstant banefart, i samme retning som før. Finn denne banefarten.
+
+\eksop{R1V26D2}{r1v26d2opg3}
+Gitt funksjon $f(x) = 100 \cdot 0,8^x$, tallet $a\in[0,5)$, og punktene $A=(a, f(a))$, $B=(5, f(a))$, $C=(5, 200)$ og $D=(a, 200)$.
+\abc{
+\item Lag en skisse av grafen til $f$ og rektangelet $\square ABCD$.
+\item Finn det største arealet $\square ABCD$ kan ha.
 }
 
 \section{Teoretiske utvidelser}
@@ -2333,6 +2884,24 @@ I \mb\ har vi vist at punktet $(x, y)$ på en ellipse oppfyller likningen
 \[ \sqrt{(x-c)^2+y^2}+\sqrt{(x+c)^2+y^2}=2a \]
 \fig{opgamellipse}
 
+
+\op{opgbane}
+\tagop{
+	\#vektorer i planet \#derivasjon
+}
+Posisjonen $ \vec{s} $ til et objekt som beveger seg i en sirkelbane kan uttrykkes som 
+\[ \vec{s} = r[\cos\left(2\pi f t\right), \sin\left(2\pi f t\right)] \]
+hvor $ r $ er radien til sirkelbanen, $ t $ er tiden og $ f $ er frekvensen. 
+\abc{
+	\item $ f $ beskriver antall runder objektet fullfører per tidsenhet\footnote{Hvis tidsenheten er 'sekund', har $ f $ benevningen '1/sekund'.}. Forklar hvorfor $ 2\pi f $ kalles \outl{vinkelfarten} til objektet.
+	\item Finn $ \vec{s}\,'(t) $. 
+	\item Hva er vinkelen mellom $ \vec{s}(t) $ og $ \vec{s}\,'(t) $?
+	\item Bestem lengden til $ \vec{s}\,'(t) $
+	\item Finn $ \vec{s}\,''(t) $.
+	\item Bestem lengden til $ \vec{s}\,''(t) $
+	\item  Hva er vinkelen mellom $ \vec{s}(t) $ og $ \vec{s}\,''(t) $? Peker $ \vec{s}\,''(t) $ innover i sirkelbanen eller ut fra sirkelbanen?
+	\item Bruk en fysikkbok eller internett til å undersøke begrepet \outl{sentripetalakselerasjon}. Sammenlign funnene dine i denne oppgaven med informasjonen du finner.
+}
 
 
 
