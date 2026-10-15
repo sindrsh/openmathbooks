@@ -36,39 +36,39 @@
 \contentsline {subsection}{\numberline {3.6.1}Vektorprodukt som areal og volum}{107}{subsection.3.6.1}%
 \contentsline {section}{Forklaringer}{109}{section*.75}%
 \contentsline {section}{Oppgaver}{114}{section*.77}%
-\contentsline {chapter}{\numberline {4}Romgeometrier}{121}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Vektorfunksjoner (Parameteriseringer) }{121}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Plan i rommet}{125}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Ligninger til geometrier}{128}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Ligningen til et plan}{128}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Linja mellom to plan}{131}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Kuleligningen}{134}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Avstander mellom geometrier}{137}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Avstand mellom punkt og linje}{137}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Avstand mellom punkt og plan}{139}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Vinkler mellom geometrier}{142}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Vinkelen mellom to linjer }{142}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Vinkelen mellom to plan}{143}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Vinkelen mellom plan og linje}{144}{subsection.4.4.3}%
-\contentsline {section}{Oppgaver}{146}{section*.98}%
-\contentsline {chapter}{\numberline {5}Integrasjon }{157}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Bestemt og ubestemt integral }{157}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Den antideriverte}{161}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Analysens fundamentalteorem}{163}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Ubestemte integral}{163}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Integralregning}{166}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Integralet av utvalge funksjoner}{166}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Bytte av variabel}{169}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Delvis integrasjon}{172}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Delbrøksoppspaltning}{175}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Areal og volum}{180}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Avgrenset areal}{180}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Volumet av en figur}{183}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Volum av omdreiningslegemer}{185}{subsection.5.3.3}%
-\contentsline {section}{Forklaringer}{187}{section*.113}%
-\contentsline {section}{Oppgaver}{193}{section*.114}%
-\contentsline {chapter}{Vedlegg A-F}{205}{chapter*.115}%
+\contentsline {chapter}{\numberline {4}Romgeometrier}{119}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Vektorfunksjoner (Parameteriseringer) }{119}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Plan i rommet}{123}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Ligninger til geometrier}{126}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Ligningen til et plan}{126}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Linja mellom to plan}{129}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Kuleligningen}{132}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Avstander mellom geometrier}{135}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Avstand mellom punkt og linje}{135}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Avstand mellom punkt og plan}{137}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Vinkler mellom geometrier}{140}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Vinkelen mellom to linjer }{140}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Vinkelen mellom to plan}{141}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Vinkelen mellom plan og linje}{142}{subsection.4.4.3}%
+\contentsline {section}{Oppgaver}{144}{section*.98}%
+\contentsline {chapter}{\numberline {5}Integrasjon }{155}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bestemt og ubestemt integral }{155}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Den antideriverte}{159}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Analysens fundamentalteorem}{161}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Ubestemte integral}{161}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Integralregning}{164}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Integralet av utvalge funksjoner}{164}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Bytte av variabel}{167}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Delvis integrasjon}{170}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Delbrøksoppspaltning}{173}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Areal og volum}{178}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Avgrenset areal}{178}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Volumet av en figur}{181}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Volum av omdreiningslegemer}{183}{subsection.5.3.3}%
+\contentsline {section}{Forklaringer}{185}{section*.113}%
+\contentsline {section}{Oppgaver}{191}{section*.114}%
+\contentsline {chapter}{Vedlegg A-F}{203}{chapter*.115}%
 \vspace {-5pt}
-\contentsline {chapter}{Indeks}{220}{chapter*.130}%
+\contentsline {chapter}{Indeks}{218}{chapter*.130}%
 \vspace {-5pt}
-\contentsline {chapter}{Fasit}{221}{chapter*.132}%
+\contentsline {chapter}{Fasit}{219}{chapter*.132}%
