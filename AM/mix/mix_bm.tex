@@ -94,7 +94,7 @@ I et system hvor to tannhjul virker sammen, er det ønskelig at en tann og et ka
 \abc{
 	\item Et tannhjul med 12 tenner er koblet til et tannhjul med 21 tenner, som vist i figuren under. Hvor mange omdreininger må det røde tannhjulet ta for at tann A og kammer 1 skal møtes igjen?
 	\item Gjenta spørsmålet fra oppgave a), men hvor det blå tannhjulet er erstattet med et tannhjul som har 11 tenner?\footnote{Legg merke til at antall tenner og antall kammer alltid vil være like}.
-	\item Hvis to tall ikke har noen annen felles faktor enn 1, sier vi at de er \outl{relativt primiske}. Hvorfor er systemer med tannhjul helst innrettet slik at antall tenner på de forskjellige tannhjulene er relativt primiske?
+	\item Hvis to tall ikke har noen annen felles faktor enn 1, sier vi at de er \outl{relativt primiske}. Hvorfor er systemer med tannhjul helst innrettet slik at antall tenner på de forskjellige tannhjulene er relativt primske?
 }
 \fig{tannhjul}
 \newpage
@@ -2837,16 +2837,167 @@ Gitt funksjon $f(x) = 100 \cdot 0,8^x$, tallet $a\in[0,5)$, og punktene $A=(a, f
 \eksop{R2V23D2}{r1v23d2opg3}
 En fabrikk lager kroker ved hjelp av en 3D-printer. Posisjonen til dysen i 3D-printeren etter $t$ sekunder er gitt ved
 \[
-\vec{r}(t) = \left[\, 1 + e^{\frac{t}{20}}, 1 - \sin t, \frac{1}{10} e^{-2t+2} + \cos t \right]\quad, \quad t \in [0, 5]
+\vec{r}(t) = \left[1 + e^{\frac{t}{20}}, 1 - \sin t, \frac{1}{10} e^{-2t+2} + \cos t \right]\quad, \quad t \in [0, 5]
 \]
 Her er cm enheten langs aksene.
 \abc{
 \item Bestem banefarten til dysen etter 1 sekund.
-\item Dysen har sin laveste banefart i løpet av tidsintervallet ${t\in(0, 5)}$. Hvilken verdi har $\vec{r}\,'(t)$ når banefarten er på sitt laveste?
+\item Dysen har sin laveste banefart i på tidsintervallet ${t\in(0, 5)}$. Hvilken verdi har $\vec{r}\,''(t)$ når banefarten er på sitt laveste?
 \item Avgjør om fartsretningen noen gang er parallell med $xz$-planet eller parallell
 med $yz$-planet.
 }
 
+\eksop{R2H23D2}{r2h23d2opg3}
+En tønne er 75\,cm høy. Diameteren i bunnen og toppen er 45 cm.
+Den største diameteren er 52 cm.
+Siden i tønnen fra toppen til bunnen er formet som en parabel. Se skisse under.
+Finn volumet til tønnen.
+\fig{r2h23d2opg3}
+
+
+\eksop{R2H23D2}{r2h23d2opg4}
+I et veikryss varierer en type luftforurensning periodisk hvert døgn.
+Luftforurensningen øker ut over formiddagen og minker igjen mot kvelden.
+Mengden luftforurensning $M$ kan beskrives med funksjonen
+
+\begin{equation*}
+	M(t) = A \sin(ct + k) + d
+\end{equation*}
+
+der $t$ er antall timer etter midnatt. \os
+
+Den største mengden luftforurensning i løpet av døgnet er $31{,}2\ \mu\text{g}/\text{m}^3$,
+og den minste mengden er $18{,}2\ \mu\text{g}/\text{m}^3$.
+
+\abc{
+	\item Bestem $A$, $c$ og $d$.
+	
+	\item Ved to tidspunkter i løpet av døgnet er mengden luftforurensning $27\ \mu\text{g}/\text{m}^3$.
+	Den første gangen er klokken 13:00. Når er det andre tidspunktet?
+}
+
+\eksop{R2V24D1}{r2v24d1opg3}
+En elev har skrevet koden under.
+\python{python/r2v24d1opg3.py}
+\abc{
+	\item Forklar hva eleven prøver å finne ut.
+	\item Finn verdien eleven får skrevet ut når
+	programmet kjøres.
+}
+
+\eksop{R2V24D2}{r2v24d2opg1}
+En fotballspiller skal ta en corner på en fotballbane. Posisjonen $r$
+til ballen etter $t$ sekunder er gitt ved
+\[ \vec{r}(t) = [30t, 5t, 7t - 4.9t^2] \]
+Her er posisjonen gitt i meter, og koordinatsystemet er lagt slik at origo er i
+ett av hjørnene til fotballbanen (der corneren tas fra). $x$-aksen går langs kortsiden og $y$-aksen går langs
+langsiden.
+\abc{
+	\item Hvor stor er farten til ballen idet den blir skutt?
+	\item Hvor langt fra hjørnemerket er ballen når den treffer bakken igjen?
+}
+
+\eksop{R2V24D2}{r2v24d2opg3}
+En sensor skal slå på utelyset foran ytterdøra til et hus. Lyset blir slått på $T$
+timer etter midnatt. $T$ er gitt ved
+\[ T(x) = 4 \sin(0.0055\pi x - 0.5\pi) + 19 \]
+$x$ er antall dager etter 31. desember 2023, slik at $x=1$ svarer til 1. januar 2024.
+Tidspunktet sensoren slår på utelyset, varierer fra kl. 15:00 til kl. 23:00, og det
+varierer periodisk i løpet av et år. Den 1. april slår lyset seg på kl. 19:00.
+\abc{
+	\item Forklar hvordan de ulike verdiene i uttrykket til $T$ passer med
+	opplysningene gitt ovenfor.
+}
+To ganger i 2024 vil tidspunktet da lyset slår seg på forlenges med momentan hastighet på 3 minutter per dag.
+\abcs{2}{
+	\item Sett opp en likning som kan løses for å finne dette tidspunktet.
+	\item Lag et skript som finner en tilnærming til minst én av løsningene av likningen fra oppgave b).
+}
+Én gang i 2024 vil tidspunktet da lyset slår seg på forlenges med høyest mulig momentan hastighet.
+\abcs{4}{
+	\item Når er dette, og hva er da den momentane hastigheten? 
+}
+
+\eksop{R2H24D2}{r2h224d2opg1}
+En ball kastes fra en høyde over bakkenivå. Posisjonen $\vec{r}$ til ballen $t$ sekunder etter at den ble kastet er gitt ved
+\[
+\vec{r}(t) = \left[2t, 4t, 6 - 0.7t - 4.9t^2 \right]
+\]
+i et koordinatsystem hvor $xy$-planet ligger langs bakken. Måleenheten på aksene er meter.
+\abc{
+	\item Hvor høyt over bakken ble ballen kastet fra?
+	\item Hva er posisjonen til ballen etter 0,5\,s?
+	\item Bestem farten til ballen når den treffer bakken.
+	\item Ved hvilket tidspunkt er farten til ballen 10 m/s?
+}
+
+\eksop{R2H24D2}{r2h24d2opg4}
+Anders og Ivana har kjøpt seg russebil. De skal kjøre bilen til en garasje, men på
+turen begynner motoren å fuske. Farten $v$ kan tilnærmes ved
+\[
+v(t) = -6 \sin\left(360t - \frac{\pi}{2}\right) + 54
+\]
+Her er $v$ gitt i km/t, og $t$ er antall timer etter at motoren har begynt å fuske.
+\abc{
+	\item Bestem det første tidspunktet gjennomsnittsfarten blir 54\,km/t.
+	\item På hvilke tidspunkt har bilen størst akselerasjon når den kjører med farten $v$?
+	Hvor stor er denne akselerasjonen?
+}
+Når bilen begynner å fuske, er det 2\,km til garasjen som bilen skal parkeres i.
+\abcs{3}{
+\item Sett opp en likning for tiden $T$ Anders og Ivana vil bruke på å komme til garasjen.
+\item Lag et skript som finner en tilnærmet vedi for $T$.
+}
+
+\eksop{R2H24D2}{r2h24d2opg5} \vs
+\abc{
+\item Bestem en rekursiv formel for tallfølgen 1, 2, 6, 15, 31, 56, ... .
+\item Bruk den rekursive formelen du fant i oppgave a), og lag et program som
+regner ut summen av de 30 første leddene i tallfølgen.
+}
+
+\eksop{R2V25D1}{r2v25d1opg6}
+En elev har skrevet koden under, som skriver ut en tilnærmet verdi av en størrelse. Finn den eksakte verdien til denne størrelsen.
+\python{python/r2v25d1opg6.py}
+
+\eksop{R2V25D2}{r2v25d2opg1}
+En bil kjører opp en spiralformet vei inne i et parkeringshus. Posisjonen $\vec{r}$ til bilen etter $t$ sekunder er gitt ved
+\[ \vec{r}(t) = \left[ 4\cos\left(\frac{\pi}{5} t\right),\ 4\sin\left(\frac{\pi}{5} t\right) + 2,\ 5 + \frac{1}{3} t \right], \quad t \in [0, 20] \]
+der bakkenivået er $xy$-planet i et koordinatsystem med meter som enhet langs aksene.
+\abc{
+\item Hvor høyt over bakkenivået er bilen etter 5 sekunder?
+\item Finn farten til bilen etter 10 sekunder.
+\item Gjør nødvendige antakelser og bestem en mulig avstand mellom etasjene i parkeringshuset.
+}
+
+\eksop{R2V25D2}{r2v25d2opg2}
+Nora vil begynne å spare til egen pensjon på følgende vis:
+\begin{itemize}
+	\item Hun vil sette et fast beløp inn på en konto i banken\\ 1. januar hvert år. 
+	\item Hun vil begynne sparingen 1. januar 2026, og holde på til og med januar 2055.
+	\item Målet hennes er å ha 3\,750\,000 kroner i banken etter at rentene for 2055 er lagt til. 
+	\item Nora venter at den årlige rentesatsen på kontoen vil være 2,5\,\%.
+\end{itemize}
+\abc{
+\item Hvor stort beløp må Nora sette i banken hvert år for å nå målet?
+}
+1. januar 2026 tar Nora også opp et huslån på 3\,000\,000 kroner. Lånet skal ha årlige terminer, og Nora betaler terminbeløpet i januar hvert år. Første terminbeløp skal betales 1. januar 2027.
+Nora har regnet seg fram til at hun må betale 150\,000 kroner hver termin fra og med januar 2027 til og med januar 2058 før lånet er nedbetalt.
+\abcs{2}{
+\item La $p$ være den årlige rentesatsen på lånet Nora har regnet med. (Eksempel: Hvis rentesatsen var $10\,\%$, ville vi hatt at $p=0,1$). Bruk informasjonen om lånet til å sette opp en likning med $p$ som eneste ukjent.
+\item Skriv et program som finner en tilnærmet løsning av likningen i oppgave b).
+}
+
+\eksop{R2V25D2}{r2v25d2opg3}
+Farten $v$ til en hare er gitt ved	
+\[ v(t) = 8,3 - 17,4 \cdot e^{-5t} + 9,1 \cdot e^{-0,08t} \]
+hvor $v$ gir farten målt i meter per sekund, $t$ sekunder etter at haren startet å løpe.
+\abc{
+\item Hvor lang tid vil det gå før akselerasjonen til haren er null?
+\item Hvor langt løper haren i løpet av de første 7 sekundene?
+\item Etter $t_1$ sekunder har haren løpt 200 meter. Bruk et integral til å sette opp en likning med $t_1$ som eneste ukjent.
+\item Skriv integralet som gir gjennomsnittsfarten til haren de første 200 meterne, uttrykt ved $t_1$.
+}
 
 \section{Teoretiske utvidelser}
 \op{opgintpi}
@@ -2862,12 +3013,15 @@ Gitt funksjonen
 
 \op{opganubevis}
 \tagop{\#følger og rekker \#annuitetslån}
-Gitt et annuitetslån (se \am)  med lånebeløp $ L_0 $, årlig rente $ r\% $, og nedbetalingstid $ t $. Lånet skal nedbetales med et årlig terminbeløp $ T $. 
+Gitt et annuitetslån med lånebeløp $ L_0 $, årlig rente $ r\% $, og nedbetalingstid $ t $ år. Lånet skal nedbetales med et årlig terminbeløp $ T $, hvor første nedbetaling utføres når $t=1$. 
 \abc{
 	\item La $ L_n $ være resterende lånebeløp etter $ n $-te nedbetaling.\\ Forklar hvorfor 
 	\[ L_n=(1+p)L_{n-1}-T \]
 	hvor $p=\frac{r}{100}$.
-	\item Finn en formel for terminbeløpet $ T $, uttrykt ved $ L_0 $, $ t $ og $ p $.
+	\item Vis at
+	\[ T=\frac{p}{1-(1+p)^{-t}}L_0 \]
+	\textit{Obs! Hvis første nedbetaling utføres når $t=0$, har vi at}
+	\[ T=\frac{p}{(1+p)\left(1-(1+p)^{-t}\right)}L_0 \]
 }
 Annuitetslån blir ofte forklart med utgangspunnkt i det vi her skal kalle \textit{spareperspektivet} og \textit{realverdiperspektivet}: \os
 
@@ -2885,11 +3039,15 @@ Annuitetslån blir ofte forklart med utgangspunnkt i det vi her skal kalle \text
 	\item Ta utgangspunkt i likningen merket med (*) i løsningsforslaget, og lag en likning som beskriver nåverdiperspektivet.
 }
 \newpage
-\op{utfrskrasjfunk}
-\tagop{\#rasjonale funksjoner \#funksjonsdrøfting \#digital graftegning}
-Definer funksjonen
-\[ \frac{ax-b}{x-c} \]
-i en digital graftegner (GeoGebra). Beskriv hva som skjer med grafen til $ f $ når du øker/minker én av $ a $, $ b $ og $ c $ på intervallet $ [-3, 3] $.
+\begin{comment}
+	\op{utfrskrasjfunk}
+	\tagop{\#rasjonale funksjoner \#funksjonsdrøfting \#digital graftegning}
+	Definer funksjonen
+	\[ \frac{ax-b}{x-c} \]
+	i en digital graftegner (GeoGebra). Beskriv hva som skjer med grafen til $ f $ når du øker/minker én av $ a $, $ b $ og $ c $ på intervallet $ [-3, 3] $.
+\end{comment}
+
+
 
 
 \section{Teoretiske utvidelser}
@@ -2916,7 +3074,6 @@ hvor $ r $ er radien til sirkelbanen, $ t $ er tiden og $ f $ er frekvensen.
 	\item  Hva er vinkelen mellom $ \vec{s}(t) $ og $ \vec{s}\,''(t) $? Peker $ \vec{s}\,''(t) $ innover i sirkelbanen eller ut fra sirkelbanen?
 	\item Bruk en fysikkbok eller internett til å undersøke begrepet \outl{sentripetalakselerasjon}. Sammenlign funnene dine i denne oppgaven med informasjonen du finner.
 }
-
 
 
 \end{document}

@@ -26,32 +26,32 @@ Av \eqref{restbelop} og \eqref{avdrag} er
 Da $ \text{rentebeløp}=\text{forrige lånebeløp}\cdot r $, har vi at
 \[ \text{resterende lånebeløp}=(1+r)\cdot\text{forrige lånebeløp}-\text{terminbeløp} \]
 Med størrelsene slik de er definert i oppgaven kan dette skrives som
-\[ L_n=(1+r)L_{n-1}-T \]
+\[ L_n=(1+p)L_{n-1}-T \]
 \item Vi har at
 \alg{
-	L_1&=(1+r)L_0 - T\vn
-	L_2&= (1+r)L_1 - T\\
-	&= (1+r)\left[(1+r)L_0 - T\right]\\
-	&=(1+r)^2L_0+(1+r)T-T \vn
-	L_3 &= (1+r)L_2 - T \\
-	&= (1+r)\left[(1+r)^2L_0-(1+r)T-T\right] \\
-	&=(1+r)^3L_0-(1+r)^2T-(1+r)T-T \\
+	L_1&=(1+p)L_0 - T\vn
+	L_2&= (1+p)L_1 - T\\
+	&= (1+p)\left[(1+p)L_0 - T\right]\\
+	&=(1+p)^2L_0+(1+p)T-T \vn
+	L_3 &= (1+p)L_2 - T \\
+	&= (1+p)\left[(1+p)^2L_0-(1+p)T-T\right] \\
+	&=(1+p)^3L_0-(1+p)^2T-(1+p)T-T \\
 }
 Følgelig er
-\[ L_n=(1+r)^nL_0-T-(1+r)T-(1+r)^2-...-(1+r)^{n-1}T \]
+\[ L_n=(1+p)^nL_0-T-(1+p)T-(1+p)^2-...-(1+p)^{n-1}T \]
 }
 Etter $ t $ år er $ L_t=0 $, og dermed er
-\[T+(1+r)T+(1+r)^2+...+(1+r)^{t-1}T =(1+r)^t \tag{*}\]
-Venstresiden i likningen over er summen av en geometrisk rekke med første ledd $ T $ og kvotient $ 1+r $, og av \eqref{sumg} i \tmto\ har vi at
+\[T+(1+p)T+(1+p)^2+...+(1+p)^{t-1}T =(1+p)^t \tag{*}\]
+Venstresiden i likningen over er summen av en geometrisk rekke med første ledd $ T $ og kvotient $ 1+p $, og av \eqref{sumg} i \tmto\ har vi at
 \alg{
-T\frac{1-(1+r)^t}{-r} &= (1+r)^tL_0 \\
-T&= \frac{-r}{1-(1+r)^t}(1+r)^tL_0 
+T\frac{1-(1+p)^t}{-p} &= (1+p)^tL_0 \\
+T&= \frac{-p}{1-(1+p)^t}(1+p)^tL_0 
 }
-Da $ (1+r)^t=\frac{1}{(1+r)^{-t}} $, kan vi skrive
+Da $ (1+p)^t=\frac{1}{(1+p)^{-t}} $, kan vi skrive
 \alg{
-T&=\frac{-r}{1-(1+r)^t}\cdot\frac{1}{(1+r)^{-t}}L_0\br
-&=\frac{-r}{(1+r)^{-t}-1}L_0 \br
-&= \frac{r}{1-(1+r)^{-t}}L_0
+T&=\frac{-p}{1-(1+p)^t}\cdot\frac{1}{(1+p)^{-t}}L_0\br
+&=\frac{-p}{(1+p)^{-t}-1}L_0 \br
+&= \frac{p}{1-(1+p)^{-t}}L_0
 }
 
 	

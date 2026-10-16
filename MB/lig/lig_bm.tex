@@ -415,7 +415,7 @@ Om vi ganger begge sider av ulikheten med $ -1 $, får vi $ -9 $ på venstre sid
 	Her kan vi selvsagt unngå å dele med $ -2 $ ved å isolere $ x $-ene på høyre side av ulikheten i stedet for venstre.	
 	} 
 }
-\section{Likninger med flere ukjente; likningssett}
+\section{Likninger med flere ukjente}
 \spr{
 Hvis vi har en likning med flere ukjente, bruker vi uttrykket ''å løse med hensyn på'' for å vise til hvilken av de ukjente vi isolerer på én side av likhetstegnet.
 }
@@ -553,7 +553,48 @@ Vi setter løsningen for $ y $ inn i dette uttrykket for $ x $:
 \[ x=2y-5=2\cdot 3-5=1 \]
 Altså er $ x=1 $ og $ y=3 $.
 }
+\newpage
+\subsubsection{Omskriving av formler}
+En likning som inneholder flere variabler, kalles gjerne en \outl{formel}\index{formel}.
+For eksempel er
+\[ z = x+y \]
+en formel. Da $z$ er isolert på én side, kaller vi også likningen en formel for $z$. Kjenner vi verdiene til $x$ og $y$, kan vi direkte regne ut verdien til $z$. Hvis for eksempel $x=2$ og $y=3$, er
+\[ z=2+3=5 \]
+I et annet tilfelle kan det være at vi kjenner verdien til $z$ og $x$, men ikke til $y$. Da kan vi selvsagt sette verdiene for $z$ og $x$ inn i den opprinnelige formelen, og deretter løse likningen med hensyn på $y$. Men vi kan også skrive om formelen vår til en formel for $y$, og deretter sette inn verdiene vi kjenner. Ved å løse formelen vår med hensyn på $y$, har vi at \vs
+\begin{align*}
+	z&=x+y \\
+	z-x&=y
+\end{align*}
+Nå har vi altså funnet en formel for $y$. Hvis for eksempel $z=10$ og $x=2$, har vi at
+\[ y=z-x=10-2=8 \]
+\eks[1]{
+\abc{
+\item Skriv om formelen $s=v\cdot t$ til en formel for $t$.
+\item Finn $t$ når $s=20$ og $v=4$
+}
+\sv
+\abc{
+\item Vi har at 
+\algv{
+v\cdot t &= s \br
+\frac{\cancel{v}\cdot t}{\cancel{v}} &= \frac{s}{v} \br
+t &= \frac{s}{v}
+}
+\item Av formelen for $t$ er
+\[ t =\frac{s}{v}=\frac{20}{4}=5 \]
+}
+}
+\eks[2]{
+Skriv om formelen $A=\frac{a+b}{2}\cdot h$ til en formel for $h$.
 
+\sv
+Vi har at
+\alg{
+\frac{a+b}{2}\cdot h &= A \\
+(a+b)h &= 2A \\
+h &= \frac{2A}{a+b}
+}
+}
 \newpage
 \begin{comment}
 \eks[3]{

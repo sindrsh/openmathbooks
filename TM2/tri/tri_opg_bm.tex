@@ -194,7 +194,7 @@ Løs likningen
 \op{cosmaks}	
 Forklar hvorfor en cosinusfunksjon $ f(x)=a\cos(kx+c)+d $ har\os
 \abc{
-\item maksimalverdi for $ kx+c= 2\pi n$ og minimalverdi for $ kx+c= \pi + 2\pi n $ når $ a>0 $.
+\item maksimalverdi for $ kx+c= 2\pi n$ og minimalverdi for\\ $ kx+c= \pi + 2\pi n $ når $ a>0 $.
 \item maksimalverdi for $ kx+c= \pi+2\pi n$ og minimalverdi for $ kx+c= 2\pi n $ når $ a<0 $.
 \item ekstremalverdi for $kx+c=\pi n$.
 }
@@ -307,6 +307,8 @@ Gitt funksjonen
 
 \op{opgtriderfunk}
 Finn den deriverte av funksjonen $ f(x)=\frac{\cos x}{x^4} $.
+
+\op{opgtrivende}
 \newpage
 
 \grubop{udir}
@@ -323,10 +325,24 @@ Forklar hvorfor radianer ut ifra denne definisjonen også kan sees på som en bu
 	\includegraphics[]{\figp{rad}}
 \end{figure}
 
-
 \grubop{opgtricos2}
 Vis at
 \[ 2\cos^2 x=1+\cos(2x) \]
+
+\gruboprecc{opgtricossym}
+Gitt funksjonen
+\[ f(x)=a\cos(kx+c)+d \]
+\abc{
+\item Vis at $f\left(-\frac{c}{k}-p\right)=f\left(-\frac{c}{k}+p\right)$.
+\item Det som er vist i a) er at $f$ er symmetrisk om linja $x=-\frac{c}{k}$. Lag en skisse av grafen til $f$ og punktene $\left(-\frac{c}{k}, f\left(-\frac{c}{k}\right)\right)$, \\
+$\left(-\frac{c}{k}-p, f\left(-\frac{c}{k}-p\right)\right)$, og $\left(-\frac{c}{k}+p, f\left(-\frac{c}{k}+p\right)\right)$. La $p$ være mindre enn perioden til $f$. 
+\item Gitt en cosinusfunksjon med periode lik 20, og med bunnpunkt for ${x=10}$. Videre er $f(6)=1-\sqrt{5}$. Finn den neste $x$-verdien som er større enn 6, og som er slik at $f(x)=1-\sqrt{5}$.
+}
+\mers{Symmetri om vertikallinja gjennom et ekstremalpunkt gjelder også for sinusfunksjoner. Dette kan vises omtrent helt tilsvarende som vi har vist i denne oppgaven.}
+
+\gruboprecc{opgtridf}
+Gitt en cosinusfunksjon/sinusfunksjon $f$. Forklar hvorfor absoluttverdien til $f'$ har sin høyeste verdi i de punktene hvor $f$ skjærer sin egen likevektslinje. 
+
 
 \grubeksoprecc{r2h24d1opg5}{R2H24}
 Figuren viser grafen til funksjonen
@@ -373,6 +389,7 @@ Gitt at
 \[ \tan x = \frac{a}{b} \]
 Vis at $ \sin x = \dfrac{a}{\sqrt{a^2+b^2}} $ og at $ \cos x = \dfrac{b}{\sqrt{a^2+b^2}} $.
 
+\newpage
 \grubop{opgtridet}
 Gitt vektorene $ \vec{u}=[a, b] $ og $ \vec{v}=[c, d] $. Vis at
 \[ |\det(\vec{u}, \vec{v})|=|u||v|\sin\angle(\vec{u}, \vec{v}) \]
@@ -408,5 +425,4 @@ f) Vis at:
 \[\lim\limits_{x\to 0} \frac{\cos x-1}{x}=0 \]
 \big(Hint: Multipliser ligningen med $ \frac{\cos x+1}{\cos x+1} $ og bruk deretter det du fant i $ e $.\big) \\
 \end{comment}
-
 \end{document}
