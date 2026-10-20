@@ -3,7 +3,7 @@ import "../../inhopg.asy" as inhopg;
 unitsize(1cm);
 
 real a = 3;
-real b = 2;
+real b = 1.5;
 real s = 0.25;
 
 pair A = (0, 0);

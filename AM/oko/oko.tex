@@ -6,7 +6,47 @@
 \begin{document}
 \newpage
 \section{Indeksregning}
-Innen økonomi er en \outl{indeks}\index{indeks} et tall som forteller hvor mye en størrelse har forandret seg i forhold til en bestemt referanse. Som regel er indeksen et forholdstall ganget med 100, slik at vi kan utnytte prosentregning til å drøfte endringene.
+\subsection{Introduksjon}
+Innen økonomi er en \outl{indeks}\index{indeks} et tall som forteller hvor mye en størrelse har forandret seg i forhold til en bestemt referanseverdi. Som regel er indeksen et forholdstall ganget med 100, slik at vi kan utnytte prosentregning til å drøfte endringene.
+
+Det vanligste er å se på endring av pris over tid, og da er det verdien ved et bestemt tidspunkt som er referanseverdien. Dette tidspunktet kaller vi \outl{basistidspunktet}.
+\regdef[Prisindeks]{ \label{defprisindeks}
+\[ \text{indeks for tidspunkt A}=\frac{\text{verdi i tidspunkt A}}{\text{verdi i basistidspunkt}}\cdot100 \]
+}
+\reg[Indeks for basistidspunkt]{
+	Indeksen for et basistidspunkt er alltid 100.
+}
+\reg[Prosentvis endring]{ \label{proindeksend}
+La $P$ være den prosentvise endringen av verdi fra basistidspunktet til tidspunkt A. Da er
+\[ P = \text{indeks for tidspunkt A}-100 \]
+Positiv verdi for $P$ betyr en økning. Negativ verdi for $P$ betyr en reduksjon.
+}
+\info{Obs!}{
+I \rref{proindeksend} kan det se ut som at vi forveksler regning med prosent med regning med prosentpoeng, men i spesialtilfellet hvor referanseverdien er 100, vil disse to regnemetodene gi samme resultat. 
+}
+\newpage
+\eks[1]{
+I 2015 kostet en bukse 200\,kr. I 2020 kostet den samme buksen 210\,kr. 
+\abc{
+\item Finn prisindeksen for buksen i 2020, med 2015 som basisår.
+\item I 2024 er prisindeksen for den samme buksen 107. Hvor mange prosent hadde prisen steget i forhold til prisen i basisåret 2015?
+}
+
+\sv
+\abc{
+\item Vi har at \vs
+\[ \text{prisindeks for buksen i 2020}=\frac{210\enh{kr}}{200\enh{kr}}\cdot100=105 \]
+\item Vi har at $107-100=7$. Følgelig har prisen for buksen steget med 7\,\% i 2024, sammenlignet med prisen i 2015.
+}
+}
+\vsk
+
+\info{Basisår satt til 2015}{ 
+I denne boka bruker vi 2015 som \outl{basisår}\index{basisår} (så lenge ikke annet er nevnt).
+}
+\info{Basisår endres}{
+	Hvilket år som er basisår forandrer seg med tiden.  2015 var basisåret satt av \outl{Statistisk sentralbyrå} (SSB) i perioden 2017-2025. Før det var basisåret 1998. Fra og med 2026 bruker SSB 2025 som basisår.
+}
 \begin{comment}
 	For eksempel kostet en krone-is ca 0,75\,kr (!) da den ble lansert i 1953, mens den i 2021 kostet ca 27\,kr. Forholdet mellom prisen i 2021 og i 1953 er da
 	\[ \frac{\text{pris 2021}}{\text{pris 1953}}=\frac{27}{0,75}= 36 \]
@@ -27,6 +67,7 @@ Innen økonomi er en \outl{indeks}\index{indeks} et tall som forteller hvor mye 
 	}
 \end{comment}
 
+\newpage
 \subsection{Konsumprisindeks og basisår}
 \outl{Konsumprisindeksen}\index{konsumprisindeks} (KPI)\index{KPI} er en indeks som beskriver et sammenlignbart prisnivå på varer og tjenester som en typisk husstand i Norge bruker penger på i løpet av et år. Disse varene og tjenestene er \vs
 
@@ -46,55 +87,37 @@ Innen økonomi er en \outl{indeks}\index{indeks} et tall som forteller hvor mye 
 		\item Hotell- og restauranttjenester
 		\item Elektrisitet
 \end{itemize}}
-For å sammenligne noe, må man alltid ha et utgangspunkt. Konsumprisindeksen tar utgangspunkt i prisnivået på de nevnte varene/tjenestene i det som er satt som \outl{basisår}\index{basisår}. 
-\newpage
-\reg[Basisår]{I et basisår er verdien til indeksen satt til 100.}
-\info{Nye basisår}{
-Hvilket år som er basisår forandrer seg med tiden. I denne boka bruker vi 2015 som basisår. Dette var basisåret satt av \outl{Statissk sentralbyrå} (SSB) i perioden 2017-2025. Før det var basisåret 1998. Fra og med 2026 bruker SSB 2025 som basisår.
-}
-
-Tabellen under viser samlet KPI i perioden 2011-2020:
+Konsumprisindeksen tar utgangspunkt i prisnivået på de nevnte varene/tjenestene i det som er satt som basisår. Tabellen under viser samlet KPI i perioden 2011-2018:
 \begin{center}
-	\begin{tabular}{c|c}
-		År &  KPI \\ \hline
-		2020 & 112,2\\
-		2019 & 	110,8\\
-		2018 &  112,2 \\
-		2017&	105,5\\
-		2016&	103,6\\
-		2015&	100\\
-		2014&	97,9\\
-		2013&	95,9\\
-		2012&	93,9\\
-		2011&	93,3\\
+	\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
+		År  & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017 & 2018  \\
+		\hline
+		KPI & 93,3  & 93,9  & 95,9  & 97,9  & 100   & 103,6 & 105,5 & 108,4 
 	\end{tabular}
-	\captionof{table}{Kunsumprisindeksen for årene 2011-2020, med 2015 som basisår. Tall hentet fra \net{https://www.ssb.no/priser-og-prisindekser/konsumpriser/statistikk/konsumprisindeksen}{SSB}. \label{KPI}}
+	\captionof{table}{Konsumprisindeksen for årene 2011-2018, med 2015 som basisår. Tall hentet fra SSB. Obs! SSB utfører periodevis nye beregninger av KPI. Tall i denne tabellen kan dermed avvike fra SSBs offisielle tall. \label{KPI}}
 \end{center}
 Av tabellen kan vi for eksempel lese dette:
 \begin{itemize}
 	\item Da KPI for 2017 er 105,5\,, har prisene steget med 5,5\% siden 2015.
 	\item Da KPI i 2011 er 93,3\,, var prisene 6,7\% lavere i 2011 enn i 2015.
 \end{itemize}
-\reg[Prosentvis endring fra basisår]{
-\[ \text{indeks}-100=\text{prosentvis endring fra basisår} \]
-}
-\eks[1]{
-I juli 2021 var KPI for	matvarer 109,4. Hvor mye har prisen på matvarer endret seg sammenlignet med basisåret?
 
-\sv $ {109,4-100=9,4}  $. Prisen på matvarer har altså økt med 9,4\% sammenlignet med basisåret.
+\eks[1]{
+I 2021 var KPI for	matvarer 109,4. Hvor mye har prisen på matvarer endret seg sammenlignet med basisåret?
+
+\sv $ {109,4-100=9,4}  $. Prisen på matvarer har altså økt med 9,4\% sammenlignet med basisåret (2015).
 }
 \newpage
 \eks[2]{
-I juli 2021 var KPI for sko 98,0. Hvor mye har prisen på sko endret seg sammenlignet med basisåret?
+I 2021 var KPI for sko 98,0. Hvor mye har prisen på sko endret seg sammenlignet med basisåret?
 
 \sv 
-$ {98,0-100=-2} $. Prisen på sko er altså redusert med 2\% sammenlignet med basisåret.  
+$ {98,0-100=-2} $. Prisen på sko er altså redusert med 2\% sammenlignet med basisåret (2015).  
 }
 \subsection{Kroneverdi}
-Vi har nevnt at en kroneis kostet 0,75 \,kr i 1953 og 27\,kr i 2021. Når vi ved to tidspunkt må betale \textsl{forskjellig} pris på den \textsl{samme} varen, skyldes det ofte at \outl{kroneverdien}\index{kroneverdi} har forandret seg;\textsl{ 1\enh{kr} i 1953 var mer verd  enn 1\enh{kr} i 2021.
-}\vsk
+At vi ved to forskjellige tidspunkt må betale \textsl{forskjellig} pris på den \textsl{samme} varen, skyldes ofte at \outl{kroneverdien}\index{kroneverdi} har forandret seg. For eksempel er det flere ting vi kunne kjøpt i en butikk for 1\,kr i 1960, mens i 2021 var det (kanskje) ingenting. Vi sier da at en 1\enh{kr} i 1960 var mer verd enn 1\enh{kr} i 2021. Dette betyr at kroneverdien var høyere i 1960 enn i 2021.
 
-Kroneverdien for et gitt år regnes ut fra KPI til basisåret (100): \regv
+\regv
 	
 \reg[Kroneverdi \label{kroneverdi}]{
 \[ \text{kroneverdi}=\frac{100}{\text{KPI}} \]

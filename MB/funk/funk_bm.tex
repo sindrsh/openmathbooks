@@ -138,7 +138,7 @@ f(1)&=2\cdot1-1=1 \vn
 f(2)&=2\cdot2-1=3 \vn
 f(3)&=2\cdot3-1=5
 } 
-Disse parene av verdier kan vi sette opp i en tabell:
+Disse parene av verdier kan vi sette opp i en \outl{verditabell}\index{verditabell}:
 	\begin{center}
 	\begin{tabular}{c | c |c |c|c}
 		$ x $ & 0 & 1 & 2 & 3 \\ \hline
@@ -252,17 +252,26 @@ For funksjonen $g$ ser vi at om vi står i et punkt på grafen og går 5 til hø
 }
 \newpage
 \info{Rette linjer I}{
-De to uttrykkene $f(x)=ax+b$ og $y=ax+b$ er bare to \\forskjellige skrivemåter av samme sak; en rett linje med\\ stigningstall $a$ og konstantledd $b$.\vsk
-
-${y=b}$ beskriver en  horisontallinje som går gjennom \\punktet $(0, b)$.\vsk
-
-$x=b$ beskriver en vertikallinje som går gjennom punktet $(b, 0)$.
+De to uttrykkene 
+\[ f(x)=ax+b \]
+og
+\[ y=ax+b \]
+er to forskjellige skrivemåter av samme sak; en rett linje med\\ stigningstall $a$ og konstantledd $b$.\vsk
 }
+\info{Rette linjer II}{	
+	${y=b}$ beskriver en  horisontallinje som går gjennom \\punktet $(0, b)$.\vsk
+	
+	$x=b$ beskriver en vertikallinje som går gjennom punktet $(b, 0)$.
+	\fig{funkxyline}
+}
+
+\newpage
 \spr{
 Ordet \textsl{lineært} uttrykk viser til at alle variablene i uttrykket er opphøyd i 1. For eksempel er ${3x+1}$ et lineært uttrykk, mens ${3x^2+1}$ ikke er det.
-}
+} \regv
 
-\info{Rette linjer II}{
+
+\info{Rette linjer III}{
 Hvis $x$ og $y$ er de to eneste variablene i en likning, vil alle lineære likninger beskrive en linje.
 }
 \eks[4]{
@@ -363,7 +372,7 @@ Punkt der funksjonen har sin høyeste verdi.
 	\begin{equation}\label{powrfunc}
 		f(x)=k x^m	
 	\end{equation}
-	er da en \outl{potensfunksjon} med \outl{koeffisient} $ k $ og \outl{eksponent} $ m $.
+	er en \outl{potensfunksjon} med \outl{koeffisient} $ k $ og \outl{eksponent} $ m $.
 }
 \eks{
 $f(x)=2x^3$ er en potensfunksjon med koeffisient $2$ og\\ eksponent $3$.
@@ -376,11 +385,11 @@ $f(x)=2x^3$ er en potensfunksjon med koeffisient $2$ og\\ eksponent $3$.
 	\end{itemize}
 	Polynomfunksjoner kategoriseres etter den største eksponenten i funksjonsuttrykket. For konstantene $ a $, $ b $, $ c $ og $ d$, og en variabel $ x $, har vi at 
 	\begin{center}
-		\begin{tabular}{|r|l|} \hline
+		\begin{tabular}{r|l} \hline
 			\textbf{funksjonsuttrykk} & \textbf{funksjonsnavn} \\ \hline
 			$ ax+b $ &1. grads funksjon/polynom (lineær) \\
 			$ ax^2+bx+c $& 2. grads funksjon/polynom (kvadratisk) \\
-			$ ax^3+bx^2+cx+d $& 3. grads funksjon/polynom (kubisk) \\ \hline
+			$ ax^3+bx^2+cx+d $& 3. grads funksjon/polynom (kubisk) \\ 
 		\end{tabular}
 	\end{center}
 }
@@ -407,6 +416,51 @@ Hvis
 sier vi at $f$ og $x$ er \outl{omvendt proporsjonale størrelser}.\vsk
 
 I begge tilfellene kalles $a$ for \outl{proporsjonalitetskonstanten}.
+}
+\reg[Andregradsfunksjoner]{
+Gitt andregradsfunksjonen
+\[ f(x)=a x^2+bx+c \]
+Vi har at
+\begin{itemize}
+	\item $f$ har ingen, ett, eller to nullpunkt.
+	\item $f$ har ett bunnpunkt hvis ${a>0}$. $f$ har ett toppunkt hvis ${a<0}$.
+	\item $f$ er symmetrisk om vertikallinja gjennom bunnpunktet/ \\ toppunktet.
+	\item $f$ har bunnpunkt/toppunkt i $x=-\frac{b}{2a}$.
+\end{itemize}
+\begin{center}
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics{\figp{fnctns_quad_a}}\\
+		$a>0$
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{fnctns_quad_b}}\\
+			$a<0$
+		\end{figure}
+	\end{minipage}
+\end{center}
+}
+\newpage
+\eks[1]{
+Gitt funksjonen $f(x)=x^2-6x$.
+\abc{
+\item Finn nullpunktene til $f$.
+\item Avgjør om $f$ har et toppunkt eller et bunnpunkt, og finn koordinatene til dette punktet.
+}
+\sv
+\abc{
+\item Vi har at $f(x)=x^2-6x=x(x-6)$. Dermed er $f=0$ når $x=0$ eller $x=6$. 
+\item Siden $f$ er en andregradsfunksjon hvor ${a=1>0}$, har $f$ et bunnpunkt. Av symmetrien til $f$, må $x$-verdien til bunnpunktet ligge midt mellom nullpunktene. Verdien midt mellom $0$ og $6$ er 3. Videre har vi at ${f(3)=3(3-6)=-9}$. Dermed er bunnpunktet $(3, -9)$.
+}
+}
+\eks[2]{
+Gitt funksjonen ${f(x)=-3 x^2+ 5 x + 7}$. Avgjør om $f$ har et toppunkt eller et bunnpunkt, og finn $x$-verdien til dette punktet.
+
+\sv
+Dette er en andregradsfunksjon hvor $a=-3$, $b=5$ og $c=7$. Da $a<0$, har $f$ et toppunkt. $x$-verdien til toppunktet er gitt ved
+\[ x=-\frac{b}{2a}=-\frac{5}{2\cdot(-3)}=\frac{5}{6} \]
 }
 
 \section*{Forklaringer}

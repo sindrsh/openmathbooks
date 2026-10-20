@@ -212,35 +212,73 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 \small
 \textbf{Andregradsfunksjon}
 \[ f(x)= a x^2 + bx + c \]
+\begin{center}
+	\footnotesize
+	\begin{minipage}{0.4\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{\figp{fnctns_quad_a}}\\
+			$a>0$
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.5]{\figp{fnctns_quad_b}}\\
+			$a<0$
+		\end{figure}
+	\end{minipage}
+\end{center}
 \begin{itemize}
 	\item Har ingen, ett, eller to nullpunkt.
 	\item Har ett bunnpunkt hvis ${a>0}$. Har ett toppunkt hvis ${a<0}$.
 	\item Er symmetrisk om vertikallinja gjennom bunnpunktet/ \\ toppunktet.
-	\item Kan passe til regresjon hvis:
-	\begin{enumerate}
-		\item Verdier øker eller avtar raskt. def??
-		\item Gjennomsnittlig stigning 
-		\item Verdiene svinger mellom lave og høye verdier, men bare én gang.
-	\end{enumerate}
+	\item Verdien til $f$ endres sakte i nærheten av bunnpunktet/toppunktet, men endres raskt når langt unna dette punktet.
+	\item Verdiene svinger mellom (relativt) lave og høye verdier, men bare én gang.
+	\item Regresjontest:
+	\begin{itemize}
+		\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at ${x_3-x_2=x_2-x_1=h}$
+		\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$, men lik verdi for $h$, skal du få at uttrykket
+		\[ f(x_3)-2f(x_2)+f(x_1) \]
+		er tilnærmet konstant.
+	\end{itemize}
 \end{itemize}
-\begin{center}
-	\footnotesize
-\begin{minipage}{0.4\linewidth}
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.5]{\figp{fnctns_quad_a}}\\
-		$a>0$
-	\end{figure}
-\end{minipage}
-\begin{minipage}{0.4\linewidth}
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.5]{\figp{fnctns_quad_b}}\\
-		$a<0$
-	\end{figure}
-\end{minipage}
-\end{center}
+
 }
+
+\stf{\textbf{Eksponentialfunksjon}
+\[ f(x)=a b^{x}\quad,\quad b>0\text{ og } b\neq 1 \]
+\begin{itemize}
+	\item Funksjonsverdien enten øker heller tiden eller minker hele tiden.
+	\item $f(0)=a$.
+	\item Hvis $b<1$: Verdien til $f$ vil nærme seg 0 når $x$ øker, men aldri bli eksakt lik 0.
+	\item Hvis $b>1$: Verdien til $f$ vil øke når $x$ øker.
+	\item Typisk situasjon: Den prosentvise endringen mellom like stor intervaller er den samme.
+	\item Regresjonstest: 
+	\begin{itemize}
+		\item[(i)] Velg ut to $x$-verdier $x_1$ og $x_2$ slik at $x_2-x_1=h$.
+		\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, men lik verdi for $h$, skal du få at
+		\[ \frac{f(x_2)}{f(x_1)}\approx b^h \] 
+	\end{itemize}
+	\mers{Regresjonstesten kan oppsummeres slik: Den prosentvise endringen mellom like store intervaller er den samme.}
+\end{itemize}
+}
+\stf{\textbf{Potensfunksjon}
+	\[ f(x)=a x^{b}\quad,\quad a>0, b>0,\text{ og } x\geq0\]
+	\begin{itemize}
+		\item Verdien til $f$ stiger hele tiden.
+		\item Har $x=0$ som eneste nullpunkt.
+		\item Hvis ${b<1}$: Verdien til $f$ stiger raskt for små verdier av $x$, og stiger sakte for store verdier av $x$.
+		\item Hvis ${b>1}$: Verdien til $f$ stiger sakte for små verdier av $x$, og stiger raskt for store verdier av $x$.
+		\item Regresjonstest: 
+		\begin{itemize}
+			\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at\\ ${x_3>x_2>x_1>0}$. Sett ${y_1=f(x_1)}$, ${y_2=f(x_2)}$ og ${y_3=f(x_3)}$.
+			\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, skal du få at
+			\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}  \] 		
+		\end{itemize}	
+	\end{itemize}
+}  
+
 
 \section{Vekstfart, fart og akselerasjon}
 \regdef[Gjennomsnittlig og momentan vekstfart]{
