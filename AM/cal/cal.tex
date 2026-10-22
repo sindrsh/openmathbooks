@@ -11,12 +11,12 @@
 }
 
 \begin{document}
-\chapter*{Kalkulator}
-I dette kapitlet skal vi vise de grunnleggende metodene for å løse oppgaver med hjelp av en håndholdt kalkulator. Bildene viser bruk av en Casio FX-82CW kalkulator, som innfrir Udirs nye krav til hjelpemidler på Del 2 av skriftlig eksamen i videregående skoler.
+\section{Kalkulator}
+I denne seksjonen skal vi vise de grunnleggende metodene for utregninger utført med en håndholdt kalkulator. Bildene viser bruk av en Casio FX-82CW kalkulator, som innfrir Udirs nye krav til hjelpemidler på del 2 av skriftlig eksamen i videregående skoler. \vsk
+
+Obs! Det er ikke egne oppgaver til denne seksjonen. Som øving\\ anbefales det at du selv gjennomfører alle inntastinger som blir vist i dette kapitlet.
 \newpage
-\tableofcontents
-\newpage
-\section{Grunnleggende utregninger}
+\subsection{Grunnleggende utregninger}
 I figuren under vises utregning av utvalgte regnestykker, som vi regner ut i \texttt{Calculate}:
 \begin{center}
 	\calcfig{calculate}
@@ -60,8 +60,8 @@ Hvis vi skriver \p{2}\p{div}\p{5}\p{parl}\p{2}\p{plus}\p{1}\p{parr}, vil 5 ''hek
 (Parentesene som omslutter \texttt{5(1+2)} er lagt til av kalkulatoren etter inntasting).
 }
 \newpage
-\section{Omgjøring av format}
-\subsection*{Standardformatet}
+\subsection{Omgjøring av format}
+\subsubsection*{Standardformatet}
 Skriver svar som heltall hvor det er mulig. Skriver divisjonsstykker som brøker, og forkorter brøker hvis mulig.
 \eks[1]{
 ${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, er ${\frac{4}{8}=\frac{1}{2}}$.
@@ -69,9 +69,9 @@ ${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, 
 	\centering
 	\calcfig{4o8}
 \end{figure}
-} \vsk
+} 
 
-\subsection*{Desimaltall}
+\subsubsection*{Desimaltall}
 Svar kan gjøres om til desimaltall med opp til 9 desimaler.
 \eks[1]{
 
@@ -113,22 +113,23 @@ Svar kan gjøres om til desimaltall med opp til 9 desimaler.
 } \vsk
 
 
-\subsection*{Standardform}
-Skriver tall på standardform.
-\eks{
-\begin{figure}
-	\subfloat[]{\calcfig{2369}}
-	\subfloat[]{\p{format}}
-	\subfloat[]{\calcfig{standardwhole}}
-	\subfloat[]{\p{down}\p{down}\p{down}} \\
-	\subfloat[]{\calcfig{standardformatwhole}}
-	\subfloat[]{\p{ok}}
-	\subfloat[]{\calcfig{2369standardformat}}
-\end{figure}
-}\vsk
+\begin{comment}
+	\subsection*{Standardform}
+	\eks{
+		\begin{figure}
+			\subfloat[]{\calcfig{2369}}
+			\subfloat[]{\p{format}}
+			\subfloat[]{\calcfig{standardwhole}}
+			\subfloat[]{\p{down}\p{down}\p{down}} \\
+			\subfloat[]{\calcfig{standardformatwhole}}
+			\subfloat[]{\p{ok}}
+			\subfloat[]{\calcfig{2369standardformat}}
+		\end{figure}
+	}\vsk
+\end{comment}
 
-\newpage
-\subsection*{Brøker og blandede tall}
+
+\subsubsection*{Brøker og blandede tall}
 Standardinnstillingen er at kalkulatoren viser uekte brøker. Ønsker vi blandet tall, må vi velge \texttt{mixed fraction}.
 \eks{
 \begin{figure}
@@ -142,7 +143,7 @@ Standardinnstillingen er at kalkulatoren viser uekte brøker. Ønsker vi blandet
 \end{figure}
 } \vsk
 
-\textbf{Primtallsfaktorisering}
+\subsubsection{Primtallsfaktorisering}
 \eks{
 \begin{figure}
 	\subfloat[]{\calcfig{100}}
@@ -154,20 +155,21 @@ Standardinnstillingen er at kalkulatoren viser uekte brøker. Ønsker vi blandet
 	\subfloat[]{\calcfig{100primepfactored}}
 \end{figure}
 }
-
-\section{Trigonometri}\index{kalkulator!trigonometri}
+\newpage
+\subsection{Trigonometri}\index{kalkulator!trigonometri}
 Når vi skal regne trigonometrisk, er det helt avgjørende at vi har det klart for oss om vi skal regne med grader eller radianer. 
 
-\subsection*{Regning med grader}
+\subsubsection*{Regning med grader}
 I Casio FX-82CW er grader standardinnstilling:
 \begin{figure}
 	\subfloat[]{\calcfig{calculate}}
+	\subfloat[]{\calcfig{blankd}}
 	\subfloat[]{\p{settings}}
 	\subfloat[]{\calcfig{settingsmenu}}
-	\subfloat[]{\p{ok}} 
-	\subfloat[]{\calcfig{inputslashoutput}}\\
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{inputslashoutput}}
 	\subfloat[]{\p{down}}
-	\subfloat[]{\calcfig{angleunit}}
+	\subfloat[]{\calcfig{angleunit}} 
 	\subfloat[]{\p{ok}}
 	\subfloat[]{\calcfig{degree}}
 	\subfloat[]{\p{ok}}
@@ -186,20 +188,21 @@ Vi kan nå regne trigonometrisk med grader i \texttt{Calculate}. Alle \\ regnest
 \end{center}
 \mers{Vi har valgt å bruke \p{div} for divisjon. Ved å bruke \p{fraction} vil kalkolator-uttrykket ligne enda mer på det matematiske uttrykket.}
 \newpage
-\subsection*{Regning med radianer}
+\subsubsection*{Regning med radianer}
 Skal vi regne med radianer, må vi endre vinkelmålet til dette:
 \begin{figure}
 	\subfloat[]{\calcfig{calculate}}
+	\subfloat[]{\calcfig{blankd}}
 	\subfloat[]{\p{settings}}
 	\subfloat[]{\calcfig{settingsmenu}}
-	\subfloat[]{\p{ok}} 
-	\subfloat[]{\calcfig{inputslashoutput}}\\
+	\subfloat[]{\p{ok}} \\
+	\subfloat[]{\calcfig{inputslashoutput}}
 	\subfloat[]{\p{down}}
 	\subfloat[]{\calcfig{angleunit}}
 	\subfloat[]{\p{ok}}
 	\subfloat[]{\calcfig{degree}}
-	\subfloat[]{\p{down}}
-	\subfloat[]{\calcfig{degree}} \\
+	\subfloat[]{\p{down}} \\
+	\subfloat[]{\calcfig{degree}} 
 	\subfloat[]{\calcfig{radian}}
 	\subfloat[]{\p{ok}}
 \end{figure}
@@ -213,10 +216,12 @@ Skal vi regne med radianer, må vi endre vinkelmålet til dette:
 		$\acos \left(\frac{\sqrt{3}}{2}\right)$ & \p{shift}\p{cos}\p{sqrt}\p{3}\p{right}\p{div}\p{2}& \calcfig{acosr} \\ \hline
 		$\atan \left(\frac{\sqrt{3}}{3}\right)$ & \p{shift}\p{tan}\p{sqrt}\p{3}\p{right}\p{div}\p{3} & \calcfig{atanr} \\ \hline
 	\end{tabular}
-\end{center}
-\info{Obs!}{
+\end{center} \vsk
+
+\mers{
 Pass alltid på at du regner med rett vinkelmål. Ved å se på eksemplene med bruk av grader vil du se at det står \texttt{D} markert øverst i skjermen. I eksemplene med bruk av radianer står det \texttt{R} markert øverst i skjermen.
 }
+
 \begin{comment}
 	\info{Tips}{
 		Start alltid med å skrive \texttt{sin(90)} på kalkulatoren når du skal regne trigonometrisk.
@@ -224,7 +229,7 @@ Pass alltid på at du regner med rett vinkelmål. Ved å se på eksemplene med b
 	}
 \end{comment}
 \newpage
-\section{Analyseverktøy}
+\subsection{Analyseverktøy}
 \textbf{Sentral- og spredningsmål}
 \eks{
 Gitt datasettet
@@ -271,7 +276,7 @@ $\sigma\texttt{x}$ gir at standardavviket er ca. $1,33$.
 
 } \vsk
 
-\subsection*{Regresjon}
+\subsubsection*{Regresjon}
 Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon på et datasett med $x$- og $y$-verdier. Vi har følgende regresjonsmuligheter: \\
 \begin{center}
 	\begin{tabular}{l| l | l}
@@ -348,8 +353,8 @@ Ved kvadratisk regresjon gis ingen \texttt{r}-verdi.
 		\end{figure}
 	}
 \end{comment}
-
-\section*{Bruk av variabler og funksjoner}
+\newpage
+\subsection{Bruk av variabler og funksjoner}
 Når man er i \texttt{Calculate}, \texttt{Statistics} eller \texttt{Table}, kan man lage egendefinerte variabler og funksjoner. \os
 
 \eks[1]{
@@ -426,7 +431,62 @@ Vi bruker \texttt{Table} til å finne $f(x)=x^2-x+3$ (som allerede er definert) 
 	\mers{Kalkulatoren opplyser om at $g(x)$ ikke er definert.}
 }
 
-	
- 
-
+\section*{Midlertidig lagring}
+Når vi regner i \texttt{Calculate}, vil kalkulatoren milertidig lagre det forrige resultatet. Om vi først regner ut $778\cdot3$ og deretter $40-4$, kan vi bruke piltastene for å bla oss frem og tilbake mellom utregningene:
+\begin{figure}
+	\subfloat[]{\calcfig{94times3up}}
+	\subfloat[]{\calcfig{40min4}}
+	\subfloat[]{\p{up}}
+	\subfloat[]{\calcfig{94times3down}} \\
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{40min4}}
+\end{figure}
+Om vi ønsker å bruke resultatet fra forrige utregning, kan vi\\ bruke \p{ans}. Under har vi først regnet ut at $50+50=100$. Deretter regner vi ut $100\cdot2$.
+\begin{figure}
+	\subfloat[]{\calcfig{50plus50}}
+	\subfloat[]{\p{ans}\p{times}\p{2}\p{exe}}
+	\subfloat[]{\calcfig{anstimes2}}
+\end{figure}
+Vi kan også bruke piltastene til å endre på regnestykkene våre:
+\begin{figure}
+	\subfloat[]{\calcfig{10times5}}
+	\subfloat[]{\p{left}\p{left}\p{left}\p{left}\p{erase}\p{9}\p{0}\p{exe}}
+	\subfloat[]{\calcfig{90times5}}
+\end{figure}
+Dette kan vi også utnytte for raskt å prøve ut noen funksjonsverdier. Her har vi på forhånd definert $f(x)=x+3$:
+\begin{figure}
+	\subfloat[]{\calcfig{fp2}}
+	\subfloat[]{\p{left}\p{left}\p{erase}\p{1}\p{0}\p{exe}}
+	\subfloat[]{\calcfig{fp10}}
+\end{figure}
+\newpage
+\subsection{Andre innstillinger}
+Vi har allerede sett hvordan vi kan gå inn på innstillinger for å endre vinkelmål fra grader til radianer. En annen ting som kan være praktisk å endre på er visningen av desimaltall. Standardinnstillingen (\texttt{Norm1}) er at tall som har tallverdi mindre enn $0,01$ blir vist på standardform: \vs
+\begin{figure}
+	\centering
+	\subfloat[]{\p{2}\p{div}\p{1}\p{0}\p{0}\p{0}\p{shift}\p{exe}}
+	\subfloat[]{\calcfig{2div1000}}
+\end{figure}
+Ved å velge \texttt{Norm2} kan vi gjøre slik at desimaltall vises i stedet.
+\begin{figure}
+	\calcfig{2div1000}
+	\subfloat[]{\p{settings}}
+	\subfloat[]{\calcfig{settingsmenu}}
+	\subfloat[]{\p{ok}} 
+	\subfloat[]{\calcfig{inputslashoutput}} \\
+	\subfloat[]{\p{down}\p{down}}
+	\subfloat[]{\calcfig{numberformat}}
+	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{fix}}
+	\subfloat[]{\p{down}\p{down}} \\
+	\subfloat[]{\calcfig{norm}} 
+	\subfloat[]{\calcfig{norm1}} 
+	\subfloat[]{\p{down}}
+	\subfloat[]{\calcfig{norm2}} 
+	\subfloat[]{\p{ok}}
+\end{figure}
+Ved valg av dette nummerformatet får vi at
+\begin{center}
+	\calcfig{0point002}
+\end{center}
 \end{document}

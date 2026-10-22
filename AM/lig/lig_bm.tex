@@ -207,9 +207,29 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 \newpage
 
 \section{Egenskaper til utvalgte funksjoner}
-
+I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjoner. En god del av dem skal vi oppsummere her. I tillegg vil vi for hver funksjon presentere en regresjonstest. Vi antar da at vi har fått et datasett i form av en verditabell
+\begin{center}
+	\begin{tabular}
+		content...
+	\end{tabular}
+\end{center}
 \stf{
-\small
+\textbf{Lineær funksjon} \\
+\[ f(x)=ax+b\quad,\quad a \neq 0 \]
+\begin{itemize}
+	\item Har ett nullpunkt.
+	\item Grafen er en rett linje.
+	\item Går grafen gjennom origo, er $f$ og $x$ proporsjonale størrelser.
+\end{itemize}
+Regresjonstest:
+\begin{itemize}
+	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$, slik at $x_1<x_2<x_3$.
+	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$ skal du få at
+	\[ \frac{f(x_2)-f(x_1)}{x_2-x_1}\approx \frac{f(x_3)-f(x_2)}{x_3-x_2} \]
+\end{itemize}
+}
+\newpage
+\stf{
 \textbf{Andregradsfunksjon}
 \[ f(x)= a x^2 + bx + c \]
 \begin{center}
@@ -235,17 +255,16 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 	\item Er symmetrisk om vertikallinja gjennom bunnpunktet/ \\ toppunktet.
 	\item Verdien til $f$ endres sakte i nærheten av bunnpunktet/toppunktet, men endres raskt når langt unna dette punktet.
 	\item Verdiene svinger mellom (relativt) lave og høye verdier, men bare én gang.
-	\item Regresjontest:
-	\begin{itemize}
-		\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at ${x_3-x_2=x_2-x_1=h}$
-		\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$, men lik verdi for $h$, skal du få at uttrykket
-		\[ f(x_3)-2f(x_2)+f(x_1) \]
-		er tilnærmet konstant.
-	\end{itemize}
 \end{itemize}
-
+Regresjontest:
+\begin{itemize}
+	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at ${x_3-x_2=x_2-x_1=h}$
+	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$, men lik verdi for $h$, skal du få at uttrykket
+	\[ f(x_3)-2f(x_2)+f(x_1) \]
+	er tilnærmet konstant.
+\end{itemize}
 }
-
+\newpage
 \stf{\textbf{Eksponentialfunksjon}
 \[ f(x)=a b^{x}\quad,\quad b>0\text{ og } b\neq 1 \]
 \begin{itemize}
@@ -253,31 +272,50 @@ Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antalle
 	\item $f(0)=a$.
 	\item Hvis $b<1$: Verdien til $f$ vil nærme seg 0 når $x$ øker, men aldri bli eksakt lik 0.
 	\item Hvis $b>1$: Verdien til $f$ vil øke når $x$ øker.
-	\item Typisk situasjon: Den prosentvise endringen mellom like stor intervaller er den samme.
-	\item Regresjonstest: 
-	\begin{itemize}
-		\item[(i)] Velg ut to $x$-verdier $x_1$ og $x_2$ slik at $x_2-x_1=h$.
-		\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, men lik verdi for $h$, skal du få at
-		\[ \frac{f(x_2)}{f(x_1)}\approx b^h \] 
-	\end{itemize}
-	\mers{Regresjonstesten kan oppsummeres slik: Den prosentvise endringen mellom like store intervaller er den samme.}
 \end{itemize}
+Regresjonstest: 
+\begin{itemize}
+	\item[(i)] Velg ut to $x$-verdier $x_1$ og $x_2$ slik at $x_2-x_1=h$.
+	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, men lik verdi for $h$, skal du få at
+	\[ \frac{f(x_2)}{f(x_1)}\approx b^h \] 
+\end{itemize}
+\mers{Regresjonstesten kan oppsummeres slik: Den prosentvise endringen mellom like store intervaller er den samme.}
 }
+\newpage
 \stf{\textbf{Potensfunksjon}
 	\[ f(x)=a x^{b}\quad,\quad a>0, b>0,\text{ og } x\geq0\]
 	\begin{itemize}
 		\item Verdien til $f$ stiger hele tiden.
 		\item Har $x=0$ som eneste nullpunkt.
 		\item Hvis ${b<1}$: Verdien til $f$ stiger raskt for små verdier av $x$, og stiger sakte for store verdier av $x$.
-		\item Hvis ${b>1}$: Verdien til $f$ stiger sakte for små verdier av $x$, og stiger raskt for store verdier av $x$.
-		\item Regresjonstest: 
-		\begin{itemize}
-			\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at\\ ${x_3>x_2>x_1>0}$. Sett ${y_1=f(x_1)}$, ${y_2=f(x_2)}$ og ${y_3=f(x_3)}$.
-			\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, skal du få at
-			\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}  \] 		
-		\end{itemize}	
+		\item Hvis ${b>1}$: Verdien til $f$ stiger sakte for små verdier av $x$, og stiger raskt for store verdier av $x$.	
 	\end{itemize}
-}  
+Regresjonstest: 
+\begin{itemize}
+	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at\\ ${0<x_1<x_2<x_3}$. Sett ${y_1=f(x_1)}$, ${y_2=f(x_2)}$ og ${y_3=f(x_3)}$.
+	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, skal du få at
+	\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}  \] 		
+\end{itemize}
+}
+\newpage
+\stf{
+\textbf{Logistisk funksjon}
+\[ f(x)=\frac{a}{1+Ce^{-bx}}\quad,\quad C>0, a>0, b>0\]
+\begin{itemize}
+	\item Grafen har en form som kan minne om en S.
+	\item For lave verdier av $x$ vil $f$ være tilnærmet lik 0, men aldri eksakt lik 0. For høye verdier av $x$ vil $f$ være tilnærmet lik $a$, men aldri eksakt lik $a$.
+	\item $a$ blir ofte kalt \outl{bæreevnen}.
+	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$ (dette er $x$-verdien til vendepunktet).
+	\item To punkt som har lik vertikalavstand til vendepunktet, vil ha lik horisontalavstand til vendepunktet (og omvendt).
+\end{itemize}
+Regresjonstest:
+\begin{itemize}
+	\item[(i)] Finn tilnæremde koordinater for vendepunktet. Sett dette punktet til $(x_v, y_v)$.
+	\item[(ii)] Finn to $y$-verdier $y_1$ og $y_2$ slik at ${y_1<y_v<y_2}$ og ${y_v-y_1\approx y_2-y_v}$. Sett de samsvarende $x$-verdiene til henholdsvis $y_1$ og $y_2$ lik $x_1$ og $x_2$.
+	\item[(iii)] Ved forskjellige valg av $y_1$ og $y_2$ skal du få at
+	\[ x_v-x_1\approx x_2-x_v \]
+\end{itemize}
+}
 
 
 \section{Vekstfart, fart og akselerasjon}
