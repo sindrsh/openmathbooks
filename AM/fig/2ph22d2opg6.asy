@@ -1,7 +1,7 @@
 import "../../inhopg.asy" as inh;
 import "../../drwgrph.asy" as drwgrph;
 
-size(6cm, 6cm, keepAspect=false);
+size(6cm, 5cm, keepAspect=false);
 
 pair[] ps = {(0, 10), (1, 18), (2, 35), (3, 61), (4, 108), (5, 189)};
 string[] ss = {"2013", "2015", "2026", "2027", "2018", "2021"};

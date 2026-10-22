@@ -2,11 +2,11 @@ import "../../inhopg" as inh;
 import "../../drwgrph" as drwprgh;
 
 
-size(8cm, 7cm, keepAspect=false);
+size(7cm, 5cm, keepAspect=false);
 
 void mkb(real x, int i, string s) {
-	filldraw(shift(i-0.5, 0)*scale(0.5, x)*unitsquare, blue);
-	label(s, (i-0.25, 0), S);
+	filldraw(shift(i-0.75, 0)*scale(0.5, x)*unitsquare, blue);
+	label(s, (i-0.5, 0), S);
 }
 
 

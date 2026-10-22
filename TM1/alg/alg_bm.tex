@@ -19,35 +19,54 @@ $ (a+b)^2 $ og $ (a-b)^2 $ kalles \outl{fullstendige kvadrat}\index{fullstendig 
 	
 3. kvadratsetning kalles også \outl{konjugatsetningen}\index{konjugatsetningen}.\vsk
 
-Alle kvadratsetningene er \textit{identiteter}. En \outl{identitet}\index{identitet} er en likning som er oppfylt uansett hvilke verdier man gir variablene i likningen. 
+De tre kvadratsetningene er \textit{identiteter}. En \outl{identitet}\index{identitet} er en\\ likning som er oppfylt uansett hvilke verdier man gir variablene i likningen. 
 }
 \eks[1]{
 Skriv om $ a^2+8a+16 $ til et fullstendig kvadrat.
 
 \sv \vsb
 \alg{
-a^2+8a+16 &= a^2+2\cdot4a+4^2 \\
+a^2+8a+16 &= a^2+2\cdot4\cdot a+4^2 \\
 &= (a+4)^2
 }
 }
 \eks[2]{
-Skriv om $ {k^2+6k +7} $ til et uttrykk der $ k $ er et ledd i et fullstendig kvadrat.
+Skriv om $ q^2 - 5 q + \frac{25}{4}$ til et fullstendig kvadrat. 
 
-\sv \vsb 
+\sv \vsb
 \alg{
-k^2+6k +7 &= k^2+2\cdot3k+7  \\
-&= k^2+2\cdot3k+ 3^2-3^2+7 \\
-&= (k+3)^2-2
+q^2 - 5 q + \frac{25}{4} &= q^2-2\cdot\frac{5}{2}\cdot q+\left(\frac{5}{2}\right)^2 \br
+&= \left(q-\frac{5}{2}\right)^2
 }
 }
 \newpage
 \eks[3]{
+Skriv om $ 9x^2-24x+16$ til et fullstendig kvadrat.
+
+\sv \vsb
+\alg{
+9x^2-24x+16 &= (3x)^2-2\cdot3x\cdot4+4^2 \\
+&= (3x-4)^2
+}
+}
+\eks[4]{
+Skriv om $ {k^2+6k +7} $ til et uttrykk der $ k $ er et ledd i et\\ fullstendig kvadrat.
+
+\sv \vsb 
+\alg{
+k^2+6k +7 &= k^2+2\cdot3k+7  \\
+&= k^2+2\cdot3\cdot k+ 3^2-3^2+7 \\
+&= (k+3)^2-2
+}
+}
+
+\eks[5]{
 Faktoriser $ x^2-10x+16 $.
 
 \sv
 Vi starter med å lage et fullstendig kvadrat:
 \alg{
-x^2-10x+16 &= x^2-2\cdot5x+5^2-5^2+16 \\
+x^2-10x+16 &= x^2-2\cdot5\cdot x+5^2-5^2+16 \\
 &= (x-5)^2-9
 }
 Vi legger merke til at $ 9=3^2 $, og bruker 3. kvadratsetning:
@@ -57,17 +76,63 @@ Vi legger merke til at $ 9=3^2 $, og bruker 3. kvadratsetning:
 }
 Altså er 
 \[ x^2-10x+16=(x-2)(x-8) \]
-} 
-\fork{\ref{kvadset} \kvadset}{
-Kvadratsetningene følger direkte av distributiv lov ved multiplikasjon (se \mb).
 }
-\vsk
+\newpage
+\eks[6]{
+Finn verdier for $r$ og $t$ slik at likningen blir en identitet.
+\[ 25 x^2 - rx + 81 = (5x-s)^2 \] \vs \vs \vs
 
+\sv
+\metode{Metode 1}{2cm} \\
+Skal likningen bli en identitet, må uttrykket på venstre side kunne skrives som et fullstendig kvadrat (fordi uttrykket på høyre side er det). Hvis $r=90$, er
+\alg{
+25x^2-rx+81 &= (5x)^2-90x+9^2\\
+&= (5x)^2-2\cdot9\cdot5x+9^2 \\
+&= (5x-9)^2
+}
+Videre er $(5x-9)^2=(5x-s)^2$ hvis ${s=9}$. Dermed er likningen en identitet hvis ${r=90}$ og ${s=9}$. \vsk
+
+\metode{Metode 2}{2cm}\\
+Ved å skrive ut høyre side av likningen, får vi at
+\alg{
+25 x^2 - rx + 81 &= 25x^2-10sx+s^2 \\
+10sx-rx + 81+s^2 &= 0 \\
+x(10s-r)+(81-s^2) &= 0
+}
+Skal dette uttrykket være en identitet, må likningen oppfylles for alle verdier av $x$. Da må uttrykkene i parentesene være lik 0. Ved å velge positiv verdi for $s$, får vi at ${s=\sqrt{81}=9}$, og da er $r=9$. \vsk
+
+\mers{Ved \textsl{Metode 1} kunne vi også valgt ${r=-90}$ for å lage det fullstendige kvadratet $(5x+9)^2$. I så fall ville vi fått at $s=-9$. Ved \textsl{Metode 2} kunne vi valgt negativ verdi for $s$, og fått at $s=-9$, og dermed at $r=-90$.
+}
+}
+\newpage
+\fork{\ref{kvadset} \kvadset}{
+\textbf{1. kvadratsetning} \\
+Av distributiv lov ved multiplikasjon (se \mb) har vi at
+\alg{
+(a+b)^2 &= (a+b)(a+b) \\
+&= a^2+ab+ba+b^2 \\
+&= a^2+2ab+b^2 
+}
+\textbf{2. kvadratsetning} \\
+\alg{
+(a-b)^2 &= (a+(-b))(a+(-b)) \\
+&= a^2+a\cdot(-b)+(-b)\cdot a+(-b)^2 \\
+&= a^2-ab-ab+b^2 \\
+&= a^2-2ab+b^2
+}
+\textbf{3. kvadratsetning} \\
+\alg{
+(a+b)(a-b) &= (a+b)(a+(-b)) \\
+&= a^2+a\cdot(-b)+ba+b\cdot(-b) \\
+&= a^2-ab+ab+b^2 \\
+&= a^2-b^2
+}
+}
+
+\newpage
 \reg[\aenato \label{a1a2}]{
 Gitt $ x, b, c \in \mathbb{R} $. Hvis $ a_1+a_2=b $ og $ a_1a_2=c$, er 
-\begin{equation}
-x^2+bx+c=(x+a_1)(x+a_2)	\label{a1a2eq}
-\end{equation}
+\[ x^2+bx+c=(x+a_1)(x+a_2) \]
 }
 \eks[1]{
 Faktoriser uttrykket $ x^2-x-6 $.
@@ -76,7 +141,6 @@ Faktoriser uttrykket $ x^2-x-6 $.
 Siden $ 2\cdot(-3)=-6 $ og $ 2+(-3)=-1 $, er
 \[ x^2-x-6=(x+2)(x-3) \]
 }
-\newpage
 \eks[2]{
 	Faktoriser uttrykket $ b^2-5b+4 $.
 	

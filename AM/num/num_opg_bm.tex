@@ -7,12 +7,21 @@
 
 \opgt
 \nes
+\op{opgnummidtmet}
+Gitt likningen
+\[ x^3+4x^2-5=0 \]
+\abc{
+\item Lag et skript som ved halveringsmetoden finner en tilnærmet til løsning av likningen på intervallet $[0, 2]$. La $m$ være den tilnærmede verdien.
+Stopp søket når $|f(m)| <10^{-6} $. (Løsningen er $x=1$).
+\item Idéelt sett bør vi sjekke verdien til produktet $f(0)\cdot f(2)$ før i kjører skriptet. Hva må vi kreve at dette produktet for at halveringsmetoden skal fungere?
+}
+
 \op{opgnumnewtmet}
 Gitt likningen
 \[ x^3+4x^2-5=0 \]
 \abc{
-\item Hvorfor vil ikke Newtons metode fungere viss du starter med $ x_0=0 $?
-\item Lag et skript som finner tilnærminger for de tre løsningene av likningen. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. 
+\item Lag et skript som ved Newtons metode finner en tilnærmed verdi til løsningen av likningen på intervallet $[0.5, 2]$. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. (Løsningen er $x=1$).
+\item Hvorfor vil ikke metoden fungere viss du starter med $ x_0=0 $?
 }
 
 \nes
@@ -21,12 +30,9 @@ Gitt likningen
 Forklar hvorfor \eqref{trapmeteq} også kan skrives som
 \[ \int_{a}^{b} f\,dx \approx \Delta x\left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}\left[f(x_i)+f(x_{i+1})\right]\right)  \]
 
-\op{opgintdef}
-I \tmto\ har vi sett at det bestemte integralet $ I $ av en funksjon $ f(x) $ over intervallet $ [a, b] $ er gitt som
-\begin{equation}
-	I= \lim\limits_{n\to \infty}\sum\limits_{i=1}^{n} f(x_{i})\Delta x 
-\end{equation}
-hvor $ {x_i=a+(i-1)\Delta x}$ og $ {\Delta x=\frac{b-a}{n}} $. La $ I_n $ være tilnærmingen av $ I $ gitt ved å la $ n $ være et gitt tall. Implementer $ I_n $ i et skript, og bruk integralet $ \int\limits_{0}^1 3x^2\,dx $ til å sjekke at du får output som forventet.
+\gruboprecc{opgprgtrap}
+Lag et skript som implementerer trapesmetoden for tilnærming av $\int_{a}^{b}f(x)\,dx$. Sett $f(x)=e^x$, $a=0$, $b=2$ og $n=100$.
+
 
 \op{opgnumtrapkonveks}
 Hvis funksjonen du skal integrere er konkav, vil trapesmetoden gi et overestimat eller et underestimat?

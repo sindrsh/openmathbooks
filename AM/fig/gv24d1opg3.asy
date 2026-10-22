@@ -2,12 +2,12 @@ import "../../inhopg" as inhopg;
 
 unitsize(0.275cm);
 
-pen p = purple;
-pen r = red;
-pen g = gray;
+pen p = Purple+opacity(0.5);
+pen r = arpenr;
+pen g = Gray+opacity(0.5);
 pen w = yellow;
 pen b = Cyan;
-pen gr = green;
+pen gr = arpeng;
 
 pen[] ps = {p, r, g, w, b, gr};
 
@@ -20,12 +20,12 @@ void mklb(pair A, string s, pen pn) {
 	label(s, A+(1, 0.5), E);
 }
 
-pair A = (-21, 3);
+pair A = (-5, 5);
 pair B = A + (9, 0);
 pair C = B + (12, 0);
-pair D = C + (13, 0);
-pair Ep = D + (8, 0);
-pair F = Ep + (8, 0);
+pair D = A + (0, -2);
+pair Ep = D + (9, 0);
+pair F = Ep + (12, 0);
 
 mklb(A, "ikke noe tid", p);
 mklb(B, "under 30 minutter", r);
@@ -50,27 +50,27 @@ void drwbxs(int[] is, string l) {
 }
 
 int[] is = {3, 9, 12, 19, 20, 37};
-drwbxs(is, "SOSIALE MEDIER");
+drwbxs(is, "Sosiale medier");
 
 y = -1.5;
 int[] is = {4, 10, 22, 28, 18, 18};
-drwbxs(is, "FILMER/SERIER/YOUTUBE");
+drwbxs(is, "Filmer/serier/youtube");
 
 y = -3;
 int[] is = {28, 27, 16, 12, 7, 10};
-drwbxs(is, "SPILL P\AA\, TELEFON/NETTBRETT");
+drwbxs(is, "Spill P\aa\, telefon/nettbrett");
 
 y = -4.5;
 int[] is = {29, 29, 20, 13, 5, 4};
-drwbxs(is, "SE P\AA TV");
+drwbxs(is, "Se p\aa\,TV");
 
 y = -6;
 int[] is = {40, 10, 10, 13, 11, 16};
-drwbxs(is, "DATASPILL/TV-SPLL");
+drwbxs(is, "Dataspill/TV-spill");
 
 y = -7.5;
 int[] is = {64, 21, 8, 3, 2, 2};
-drwbxs(is, "LESE B\O KER\, (IKKE SKOLEB\O KER)");
+drwbxs(is, "Lese b\o ker\, (ikke skoleb\o ker)");
 
 
 //label("TID BRUKT P\AA\, ULIKE MEDIER", (10, 7));

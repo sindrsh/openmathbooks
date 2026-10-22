@@ -4,7 +4,7 @@ unitsize(0.275cm);
 
 pen p = blue;
 pen r = Orange;
-pen g = gray;
+pen g = Gray+opacity(0.5);
 pen w = yellow;
 pen b = Cyan;
 pen gr = green;

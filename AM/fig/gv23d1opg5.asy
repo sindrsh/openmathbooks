@@ -1,6 +1,6 @@
 import "../../inhopg" as inh;
 
-size(12cm);
+size(11cm);
 
 real b1 = 6;
 real b2 = 15;
@@ -11,7 +11,7 @@ pen p0 = blue+opacity(0.2);
 pen p1 = black+opacity(0.1);
 pen p2 = white;
 
-real h = 1;
+real h = 0.7;
 real l = 20;
 
 path p = shift(0, -0.5)*scale(l,1)*unitsquare;
