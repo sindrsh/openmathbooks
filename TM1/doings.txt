@@ -42,3 +42,6 @@ opg: vis at tangenten til x^2 skjærer i x/2
 toppunkt midt mellom nullpunkt også for 3. grads?
 
 (sin x)^n = sin^n x
+fin asymptote for logistisk
+flytt logistisk oppgaven
+vis log forhold

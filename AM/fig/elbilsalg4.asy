@@ -1,9 +1,8 @@
 import "../../inh" as inh;
 import "../../drwgrph" as inh;
 import "../../geo" as geo;
+import elbilsalg0;
 usepackage("inputenc");
-
-unitsize(0.75cm);
 
 real s = 50000;
 
@@ -50,12 +49,11 @@ for(int i=1; i<10; ++i){
 
 mktc(0,"0");
 
-label("År etter 2010",(5,-1.5));
-label(rotate(90)*Label("Antall elbiler"),(-2.5,4));
 
 xaks(0,11,bex=1.05,tck=true);
 yaks(-2,9,bex=1.05);
 
-draw(graph(f,0,11), blue, L=Label("lineær regresjon",position=MidPoint,align=2NW));
+draw(graph(f,0,11), blue, L=Label("lineær funksjon",position=MidPoint,align=2NW));
 
 draw(graph(g,0,11), deepgreen, L=Label("andregradsfunksjon",position=EndPoint,align=S+2W));
+

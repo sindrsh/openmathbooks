@@ -184,33 +184,62 @@ Resistansen er altså $ 6\,\Omega $.
 }
 }
 \section{Regresjon \label{Regresjon}}
-Å forsøke å beskrive hvordan noe vil \textsl{utvikle} seg er en av de viktigste anvendelsene for funksjoner. Hvis vi har et datasett som beskriver tidligere hendelser, kan vi prøve å finne den funksjonen som passer best til datasettet. Dette kalles å utføre \outl{regresjon}. \vsk
-
-Grafen under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} antall elbiler i Norge etter år 2010.
-\fig{elbilsalg1}
-Vi ønsker nå å finne en funksjon som
+Å beskrive hvordan noe har utviklet seg eller vil utvikle seg er en viktig anvendelsene av funksjoner. Hvis vi har et datasett som vi kan skrive til en verditabell med $x$- og $y$-verdier, kan vi prøve å finne en funksjon som så godt som mulig samsvarer med verditabellen. Dette kalles å utføre \outl{regresjon}. Ved regresjon ønsker vi å finne en funksjon med en graf som
 \begin{enumerate}[label=(\roman*)]
-	\item så godt som mulig skjærer hvert punkt.
-	\item har en graf som passer til situasjonen vi modellerer.
+	\item ligger så nærme som mulig hvert punkt fra verditabellen. Da kan vi si noe om hvordan utviklingen \textsl{har} vært.
+	\item har kjennetegn som passer til situasjonen vi modellerer. Da kan vi anta hvordan utviklingen vil fortsette.
 \end{enumerate}
-Hvis vi utfører regresjon med en lineær funksjon i GeoGebra (se side \pageref{ggbreg}), får vi denne grafen:
+
+\subsection{Utføring av regresjon}
+Tabellen under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} antall $y$ elbiler solgt i Norge $x$ år etter 2010. 
+\begin{figure}
+	\small
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		$x$ & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+		$y$ & 3347 & 5381 & 9565 & 19678 & 42356 & 73312 \\ \hline
+	\end{tabular}
+	\\[5pt]
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		$x$ & 6 & 7 & 8 & 9 & 10 & 11 \\ \hline
+		$y$ & 101126 & 138477 & 194900 & 260688 & 337201 & 455271 \\ \hline
+	\end{tabular}
+\end{figure}
+Av denne verditabellen kan vi plassere punkt i et koordinatsystem:
+\fig{elbilsalg1}
+\newpage
+\label{linsalg}
+Hvis vi utfører regresjon med en lineær funksjon\footnote{Dette kan vi blant annet gjøre i i GeoGebra se side \pageref{ggbreg}}, får vi denne grafen:
 \fig{elbilsalg2}
 Utfører vi regresjon også med en andregradsfunksjon, får vi følgende resultat:
 \fig{elbilsalg3}
-I figuren over kan vi merke oss at
+\newpage
+Av figurene på side forrige side ser vi at at
 \begin{itemize}
 	\item begge modellene (funksjonene) ''oppfører'' seg feilaktig i starten. Den lineære funksjonen starter med et negativt antall biler, mens den kvadratiske funksjonen starter med at antallet synker fra år 0 til år 1.
 	\item Grafen til den kvadratiske funksjonen passer punktene mye bedre enn grafen til den lineære funksjonen.
 \end{itemize}
-Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var ca. 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit er at antall elbiler i 2021 var 455\,271.
+Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var litt under 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit er at antall elbiler i 2021 var 455\,271.
 \fig{elbilsalg4}
+\subsection{Gyldighetsområde}
+Hvis $f(x)$ er en funksjon som modellerer en situasjon fra virkeligheten, vil $f$ ha et \outl{gyldighetsområde}\index{gyldighetsområde}. Innenfor gyldighetsområdet til en modell krever vi at både $x$ og $f(x)$ har en praktisk tolkning som gir mening. Siden verdien til $f(x)$ er gitt av $x$, er det vanlig å uttrykke gyldighetsområdet ved gyldige verdier for $x$. Som oftest er de ikke slik at vi kan gi eksakte gyldighetsområder, men så er det heller ikke poenget; det viktigste med å drøfte gyldighetsområdet er å sørge for at vi ikke gjør antakelser som er helt urimelige.
+\newpage
+
+For elbilsalget vi har studert, la oss kalle den lineære modellen for $f_l$ og den kvadratiske (andregradfunksjonen) modellen for $f_k$. \os
+
+Modellen $f_l$ er helt klart ikke gyldig for ${x<2}$, da negativt antall solgte biler ikke gir mening. For $x>2$ gir modellen $y$-verdier som i praksis kunne gitt mening, men grafen samsvarer ikke særlig godt med punktene fra verditabellen. Vi kan derfor si at $f_l$ ikke har noe annet gyldighetsområde enn akkurat $x=2$ og $x=9$
+\vsk
+
+Modellen $f_k$ gir verdier som i praksis gir mening for alle $x>0$, men når $0\leq x \leq 1$ samsvarer modellen dårlig med verditabellen. Her beskriver modellen en nedgang i bilsalg, mens verditabellen beskriver en økning. Når $1\leq x \leq 10$ samsvarer modellen godt med verditabellen, og vi kan dermed si at dette definitivt er et gyldighetsområde for $f_k$. Når vi også har sett at den ga et godt anslag av bilsalget i 2021, kan vi utvide det definitive gyldighetsområdet til $1\leq x \leq 11$. 
 \newpage
 
 \section{Egenskaper til utvalgte funksjoner}
 I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjoner. En god del av dem skal vi oppsummere her. I tillegg vil vi for hver funksjon presentere en regresjonstest. Vi antar da at vi har fått et datasett i form av en verditabell
 \begin{center}
-	\begin{tabular}
-		content...
+	\begin{tabular}{l|c|c|c|c|c}
+	 $x$& $x_a$ & $x_b$ & $x_c$&... \\ \hline
+	 $y$& $y_a$ & $y_b$ & $y_x$&...
 	\end{tabular}
 \end{center}
 \stf{
@@ -219,14 +248,40 @@ I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjon
 \begin{itemize}
 	\item Har ett nullpunkt.
 	\item Grafen er en rett linje.
-	\item Går grafen gjennom origo, er $f$ og $x$ proporsjonale størrelser.
+	\item $f(0)=b$.
+	\item Hvis $f$ og $x$ proporsjonale størrelser, er $b=0$.
 \end{itemize}
 Regresjonstest:
 \begin{itemize}
 	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$, slik at $x_1<x_2<x_3$.
 	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$ skal du få at
-	\[ \frac{f(x_2)-f(x_1)}{x_2-x_1}\approx \frac{f(x_3)-f(x_2)}{x_3-x_2} \]
+	\[ \frac{f(x_2)-f(x_1)}{x_2-x_1}\approx \frac{f(x_3)-f(x_2)}{x_3-x_2}\approx a \]
 \end{itemize}
+}
+\newpage
+\eks{
+\mers{I denne oppgaven har vi valgt å bruke \sym{.} som desimaltegn}. \vsk
+
+Tabellen viser gjennomsnittlig energiforruk i en by ved\\ forskjellige temperaturer.
+\begin{center}
+	\small
+	\begin{tabular}{|l|r |r |r |r |r |r|}
+		\hline
+		Temperatur ($^\circ$C) & $-10{,}3$ & $-6{,}4$ & $-4{,}0$ & $0{,}1$ & $4{,}3$ & $7{,}8$ \\ \hline
+		Forbruk (TWh) & $1.866$ & $1.732$ & $1.613$ & $1.517$ & $1.332$ & $1.237$ \\
+		\hline
+	\end{tabular}
+\end{center}
+La $F(T)$ være forbruket (i TWh) ved $T$ grader celsius. Skisser grafen til $F$, og argumenter for at 
+\[ F(T)=1.5-0.035T \]
+er en passende modell.
+
+\sv
+Det ser ut til at punktene tilnærmet ligger langs samme linje, og at $F(0)=1,5$. Dette passer godt med en lineær modell.
+\fig{regreglin}
+Regresjonstest: Først velger vi ${(x_A, y_A)=(-10.3, 1.866)}$ og ${(x_B, y_B)=(-6.4, 1.732)}$. Deretter velger vi ${(x_A, y_A)=(-0,1, 1.517)}$ og ${(x_B, y_B)=(-7.8, 1.237)}$. Da får vi at
+\[ \frac{1.732-1.866}{-6.4-(-10.3)}\approx -0.034\quad,\quad \frac{1.237-1.517}{7.8-0.1}\approx -0.036 \]
+Forholdstallene er altså relativt like, og relativt lik $-0.036$, som er stigningstallet til $F$. Det ser altså ut til at en lineær funksjon passer godt som modell for $F$.
 }
 \newpage
 \stf{
@@ -259,10 +314,37 @@ Regresjonstest:
 Regresjontest:
 \begin{itemize}
 	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at ${x_3-x_2=x_2-x_1=h}$
-	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$, men lik verdi for $h$, skal du få at uttrykket
-	\[ f(x_3)-2f(x_2)+f(x_1) \]
-	er tilnærmet konstant.
+	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$, men lik verdi for $h$, skal du få at
+	\[ \frac{f(x_3)-2f(x_2)+f(x_1)}{h^2}\approx 2a \]
+
 \end{itemize}
+}
+\newpage
+\eks{
+En ball slippes fra en høyde, og strekningen ballen har falt måles (i m) ved visse tidspunkt målt i sekunder etter at fallet startet.
+\begin{center}
+		\small
+		\centering
+		\begin{tabular}{|l|c|c|c|c|c|}
+			\hline
+			Falltid (s) & 0.25 & 0.35 & 0.45 & 0.55 & 0.65 \\
+			\hline
+			Strekning (m) & 0.307 & 0.605 & 0.994 & 1.487 & 2.080 \\
+			\hline
+		\end{tabular}
+\end{center}
+La $s(t)$ være strekningen ballen har falt $t$ sekunder etter start. Skisser grafen til $s$, og argumenter for at
+\[ s(t)=4.92t^2 \]
+er en passende modell.
+
+\sv
+Grafen til $s$ ser ut til å stige når $x$ stiger, og stiger raskt når $x$-verdiene øker. Dette samsvarer godt med en kvadratisk funksjon.
+\fig{regregkvad}
+Regresjonstest: Vi velger først ${(x_A, y_A)=(0.25, 0.307)}$, $(x_B, y_B)=(0.35, 0.605)$ og $(x_C, y_X)=(0.45, 0.994)$. Vi har at
+\[ \frac{0.994-2\cdot0.605+0.307}{0.1^2} = 9.1 \]
+Deretter velger vi $(x_A, y_C)=(0.35, 0.605)$ og $(x_B, y_B)=(0.45, 0.994)$ og $(x_C, y_X)=(0.55, 1.487)$. Vi har at
+\[ \frac{1.487-2\cdot 0.994+0.605}{0.1^2}=10.4 \]
+I modellen for $s$ er ${2a=2\cdot4.92=9.84}$. Begge forholdene vi har regnet ut over er tilnærmet lik 9.84. Alt dette taler for at en kvadratisk funksjon er en passende modell.
 }
 \newpage
 \stf{\textbf{Eksponentialfunksjon}
@@ -271,16 +353,91 @@ Regresjontest:
 	\item Funksjonsverdien enten øker heller tiden eller minker hele tiden.
 	\item $f(0)=a$.
 	\item Hvis $b<1$: Verdien til $f$ vil nærme seg 0 når $x$ øker, men aldri bli eksakt lik 0.
-	\item Hvis $b>1$: Verdien til $f$ vil øke når $x$ øker.
+	\item Hvis $b>1$: Verdien til $f$ øker gradvis raskere når $x$ øker.
 \end{itemize}
 Regresjonstest: 
 \begin{itemize}
 	\item[(i)] Velg ut to $x$-verdier $x_1$ og $x_2$ slik at $x_2-x_1=h$.
 	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, men lik verdi for $h$, skal du få at
-	\[ \frac{f(x_2)}{f(x_1)}\approx b^h \] 
+	\[ \frac{f(x_2)}{f(x_1)}\approx b^h \]
 \end{itemize}
 \mers{Regresjonstesten kan oppsummeres slik: Den prosentvise endringen mellom like store intervaller er den samme.}
 }
+\newpage
+\eks{
+I et eksperiment ble antall bakterier i en væske telt hver halvtime. Tabellen viser målinger gjort 60\,-\,150 minutter etter første måling. \vs
+\begin{center}
+	\small
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		Tid (min) & 60 & 90 & 120 & 150 \\ \hline
+		Bakterier (millioner) & 4.2 & 8.1 & 17.5 & 37.0 \\
+		\hline
+	\end{tabular}
+\end{center}
+Lag $B(t)$ være antall bakterier 1\,h og $t$ minutter etter første måling. Skisser grafen til $B$, og argumenter for at
+\[ B(t)=4.08\cdot1.0246^x \]
+er en passende modell. 
+
+\sv
+Vi omskriver verditabellen slik at ${t=0}$ tilsvarer 60 minutter \\ (1\,h) etter første måling:
+\begin{center}
+	\small
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		$t$ (min) & 0 & 30 & 60 & 90 \\ \hline
+		Bakterier (millioner) & 4.2 & 8.1 & 17.5 & 37.0 \\
+		\hline
+	\end{tabular}
+\end{center}
+Vi har at ${B(0)=4.08}$. Dette samsvarer godt med punktet $(0, 4.2)$ fra verditabellen. Videre ser vi at punktene ser ut til å ligge på en graf som øker gradvis raskere når $x$ øker. Dette samsvarer godt med en eksponentialfunksjon.
+\fig{regregeks}
+Regresjonstest:
+Vi velger først ${(x_A, y_A)=(0, 4.2)}$ og ${(x_B, y_B)=(30, 8.1)}$, og deretter ${(x_A, y_A)=(60, 17.5)}$ og ${(x_B, y_B)=(90, 37.0)}$. Da har vi at
+\[ \frac{8.1}{4.2}\approx 1.929\quad,\quad \frac{37.0}{17.5}\approx 2.114 \]
+Her er ${x_B-x_A=h=30}$, og i modellen er ${b=1.0246}$. Da er ${b^h=1.0246^30\approx 2.073}$. Dette tallet er relativt likt begge forholdstallene vi fant, og det taler for at en eksponentialfunksjon er en god modell.
+}
+
+\newpage
+\eks{
+Tabellen under viser et anslag av verdens befolkning for utvalgte år i perioden 1800\,-\,2020.
+\begin{center} 
+	\small
+	\begin{tabular}{|l|r|r|r|r|r|r|}
+		\hline
+		År & 1800 & 1850 & 1900 & 1950 & 2000 & 2020 \\
+		\hline
+		Befolkning (milliarder) & 1{,}00 & 1{,}26 & 1{,}65 & 2{,}50 & 6{,}14 & 7{,}84 \\
+		\hline
+	\end{tabular}
+\end{center}
+La $B(t)$ være befolkningen (i antall milliarder) $t$ år etter året 1800. Skisser grafen til $B$, og argumenter for at
+\[ B(t)=0.80\cdot1.05^x \]
+er en passende modell.
+
+\sv
+Vi omskriver verditabellen slik at ${t=0}$ tilsvarer året 1800:
+\begin{center} 
+	\small
+	\begin{tabular}{|l|r|r|r|r|r|r|}
+		\hline
+		$t$ (år) & 0 & 50 & 100 & 150 & 200 & 220 \\
+		\hline
+		Befolkning (milliarder) & 1.00 & 1.26 & 1.65 & 2.50 & 6.14 & 7.84 \\
+		\hline
+	\end{tabular}
+\end{center}
+I modellen er $B(0)=0.80\cdot1.05^0=0.80$. Dette samsvarer greit nok med punktet $(0, 1.00)$ fra verditabellen (modellen avviker verditabellen med 20\%). Grafen øker gradvis raskere når $t$ øker, og det gjør også en eksponentialfunksjon.
+%\fig{regregeksp}
+Regresjonsanalyse:
+Vi velger først ${(x_A, y_B)=(0, 1.00)}$ og ${(x_B, y_B)=(50, 1.26)}$, og deretter ${(x_A, y_A)=(150, 2.50)}$ og ${(x_B, y_B)=(200, 6.14)}$.
+Da får vi at
+\[ \frac{1.26}{1,00}=1.26\quad,\quad \frac{6.14}{2.50}\]
+I modellen har vi at $b=1.05$. Videre er
+\[ 1.26\approx 1.05^50 \]
+}
+
+
 \newpage
 \stf{\textbf{Potensfunksjon}
 	\[ f(x)=a x^{b}\quad,\quad a>0, b>0,\text{ og } x\geq0\]
@@ -294,8 +451,32 @@ Regresjonstest:
 \begin{itemize}
 	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$ slik at\\ ${0<x_1<x_2<x_3}$. Sett ${y_1=f(x_1)}$, ${y_2=f(x_2)}$ og ${y_3=f(x_3)}$.
 	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, skal du få at
-	\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}  \] 		
+	\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}\approx b  \] 		
 \end{itemize}
+}
+\newpage
+\eks{
+I et forsøk målte man drivstoffforbruket til en båt ved forksjellige hastigheter. Resultatet av målingene er vist i tabellen under.
+\begin{center}
+	\begin{tabular}{lccccc}
+		\hline
+		fart (knop) & 10 & 12 & 14 & 16 & 18 \\
+		\hline
+		forbruk (L/h) & 180 & 280 & 420 & 600 & 850 \\
+		\hline
+	\end{tabular}
+\end{center}
+La $F(v)$ være forbruket (i L/h) ved farten $v$ knop. Skisser grafen til $F$, og forklar hvorfor 
+\[ F(v)=0,41\cdot v^{2,63} \]
+kan være en passende modell.
+
+\sv
+Vi ser at grafen til $F$ stiger hele tiden, og at den stiger raskere etthvert som $v$ øker. Med tanke på at den stiger saktere for mindre verdier av $x$, kan det se ut som at grafen omtrent vil skjære origo. Alt dette passer godt med en potensfunksjon.
+\fig{regregpot}
+For å være ekstre grundige gjennomfører vi en regresjontest. Vi velger først ${(x_A, y_A)=(10, 180)}$ og ${(x_B, y_B)=(12, 280)}$, og deretter $(x_A, y_A)=(10, 180)$ og ${(x_B, y_B)=(18, 850)}$.
+Vi finner da at
+\[ \frac{\log 280-\log 180}{\log 12-\log 10} \approx 2,42\quad,\quad \frac{\log 850-\log 180}{\log 18-\log 10} \approx 2,64 \]
+Forholdstallene er altså relativt like og relativt lik 2.63, som er eksponenten til $F$. Det ser altså ut til at en potensfunksjon passer godt som modell for $F$.
 }
 \newpage
 \stf{
@@ -305,7 +486,7 @@ Regresjonstest:
 	\item Grafen har en form som kan minne om en S.
 	\item For lave verdier av $x$ vil $f$ være tilnærmet lik 0, men aldri eksakt lik 0. For høye verdier av $x$ vil $f$ være tilnærmet lik $a$, men aldri eksakt lik $a$.
 	\item $a$ blir ofte kalt \outl{bæreevnen}.
-	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$ (dette er $x$-verdien til vendepunktet).
+	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$. Dette er $x$-verdien til vendepunktet, som har $y$-verdi $\frac{a-f(0)}{2}$.
 	\item To punkt som har lik vertikalavstand til vendepunktet, vil ha lik horisontalavstand til vendepunktet (og omvendt).
 \end{itemize}
 Regresjonstest:
@@ -316,7 +497,91 @@ Regresjonstest:
 	\[ x_v-x_1\approx x_2-x_v \]
 \end{itemize}
 }
+\info{Merk}{
+For både en logistisk funksjon og en sinusfunksjon (se side \pageref{regsin}) vil det ofte være raskere å utføre en regresjonstest direkte ut i fra en skisse, heller enn å utføre konkrete utregninger.
+}
+\newpage
+\eks{
+I et eksperiment ble antall celler i en gjærkultur målt over en 18 timers periode. Tall fra målingene er vist i tabellen under.
+\begin{center}
+	\small
+	\begin{tabular}{|l|c|c|c|c|c|c|c|}
+		\hline
+		Timer & 0 & 3 & 6 & 9 & 12 & 15 & 18 \\
+		\hline
+		Celler (tusen) & 9.6 & 29.0 & 119.1 & 350.7 & 594.8 & 640.8 & 661.8 \\
+		\hline
+	\end{tabular}
+\end{center}
+La $C(t)$ være antall tusen celler målt i gjærkulturen $t$ timer etter første måling. Skisser grafen til $C$, og argumenter for at
+\[ C(x) = \frac{665}{1 + 155.4\, e^{-0.58t}} \]
+er en passende modell.
 
+\sv
+Grafen til $C$ ser ut til å ha den klassiske $S$-formen som kjennetegner en logistisk funksjon. $C$ har horisontal asymptote ${y=665}$. Dette samsvarer godt med punktet $(18, 661.8)$ fra verditabellen, da $y$-verdien til dette punktet ser ut til å være nær en maksimalverdi. At ${C(0)=\frac{665}{1+155.4}\approx4.25}$ samsvarer ikke helt med med punktet $(0, 9.6)$ fra verditabellen, men relativt til maksimalverdien er ikke forskjellen så stor. Da maksimalverdien og minimalverdien ser ut til å ha en differanse på ca $660$, er $y$-verdien til vendepunktet ca. 330. Det betyr at punktet $(9, 350.7)$ er nært å være et vendepunkt. Av verditabellen ser vi to punkt som har lik horisontalavstand til $(9, 350.7)$, har også forholdsvis lik vertikalavstand til dette punktet. Alt dette tyder på at en logistisk funksjon er en passende modell.
+\fig{regreglog}
+}
+
+\newpage
+\stf{
+\textbf{Sinusfunksjon} \label{regsin}
+\[ f(x)=a\sin(kx+c)-d\quad,\quad k>0 \]
+\begin{itemize}
+	\item Har maksimumsverdi $|a|$ og minimumsverdi $-|a|$.
+	\item Svinger periodisk mellom ekstremalverdiene med periode $P=\frac{2\pi}{k}$.
+	\item Øker/avtar mest når ${x=\frac{\pi n-c}{k}}$, hvor ${n\in\mathbb{Z}}$. Dette er $x$-verdien til vendepunktet.
+	\item Er symmetrisk om vertikallinja gjennom et lokalt toppunkt/bunnpunkt. 
+\end{itemize}
+Regresjonstest 1:
+\begin{itemize}
+	\item[(i)] Finn tilnæremde koordinater for vendepunktet. Sett dette punktet til $(x_v, y_v)$.
+	\item[(ii)] Finn to $y$-verdier $y_1$ og $y_2$ slik at ${y_1<y_v<y_2}$ og ${y_v-y_1\approx y_2-y_v}$. Sett de samsvarende $x$-verdiene til henholdsvis $y_1$ og $y_2$ lik $x_1$ og $x_2$.
+	\item[(iii)] Ved forskjellige valg av $y_1$ og $y_2$ skal du få at
+	\[ x_v-x_1\approx x_2-x_v \]
+\end{itemize}
+Regresjonstest 2:
+\begin{itemize}
+	\item[(i)] Finn tilnærmede koordinater for et lokalt toppunkt/bunnpunkt. Sett dette punktet til $(x_C, y_C)$.
+	\item[(ii)] Velg $y_A$ og $y_B$, slik at begge ligger mellom to naboliggende toppunkt og bunnpunkt, og slik at ${y_A\approx y_B}$. Sett de samsvarende $x$-verdiene til henholdsvis $y_A$ og $y_B$ lik $x_A$ og $x_B$.
+	\item[(iii)] Ved forskjellige valg av $y_A$ og $y_B$ skal du få at
+	\[ x_C-x_A\approx x_B-x_C \]
+\end{itemize}
+}
+\newpage
+\eks{
+Ved å innføre en prosentvis skala for belysningsgraden til månen, får vi at belysningsgraden er 0\,\% ved nymåne og 100\% ved fullmåne. Tabellen under viser observert belysningsgrad for månen i perioden 9.\,-\,27. desember.
+\begin{center}
+	\small
+	\begin{tabular}{l|r|r|r|r|r|r|r|}
+		\hline
+		Dato (desember) & 09. & 12. & 15. & 18. & 21. & 24. & 27. \\
+		\hline
+		Belysningsgrad (\%) & 0 & 9 & 34 & 66 & 91 & 100 & 89 \\
+		\hline
+	\end{tabular}
+\end{center}
+La $B(t)$ være belysningsgraden til månen $t$ dager etter 9. desember. Skisser grafen til $B$, og argumenter for at
+\[ B(t)=50,0 + 50,0\sin(2\pi(x - 7,5)/29,3) \]
+kan være en passende modell.
+
+\sv
+Vi starter med å omskrive verditabellen slik at ${t=0}$ tilsvarer 09. desember:
+\begin{center}
+	\small
+	\begin{tabular}{l|r|r|r|r|r|r|r|}
+		\hline
+		Dato (desember) & 0 & 3 & 6 & 9 & 12 & 15 & 18 \\
+		\hline
+		Belysningsgrad (\%) & 0 & 9 & 34 & 66 & 91 & 100 & 89 \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Månenfasene svinger periodisk, og det gjør også en sinusfunksjon. Når ${t=0}$ er ${B\approx 0}$ (utregning utelatt), og dette samsvarer godt med verditabellen. Da belysningsgraden går fra minimum til maksimum i løpet av ca. 15 dager, forventer vi at perioden er ca. 30 dager. Perioden til $B$ er ${\frac{2\pi}{\frac{2\pi}{29.3}}=29,3}$. Dette samsvarer godt med verditabellen. I tillegg ser vi at $B(12)\approx B(18)$. Dette antyder symmetri om vertikallinja gjennom toppunktet $(15, 100)$. Alt dette taler for at en sinusfunksjon er en passende modell for $B$.
+
+\fig{regregsin}
+}
+\newpage
 
 \section{Vekstfart, fart og akselerasjon}
 \regdef[Gjennomsnittlig og momentan vekstfart]{

@@ -33,14 +33,16 @@ Alle regnestykker avsluttes med knappen \p{exe}.
 		$\frac{2}{3}+\frac{5}{3}$ &\p{fraction}\p{2}\p{down}\p{3}\p{plus}\p{fraction}\p{5}\p{down}\phantom{3} & \calcfig{2o3plus5o3} \\ \hline
 		$5^2$ & \p{5}\p{pow2} & \calcfig{5pow2}\\ \hline
 		$3^4$ &\p{3}\p{pown}\p{4} & \calcfig{3pow4} \\ \hline
+		$5\cdot 10^3$ & \p{5}\p{stnd}\p{3} & \calcfig{5exp3} \\ \hline
 		$2\cdot(3+7)$ & \p{2}\p{times}\p{parl}\p{3}\p{plus}\p{7}\p{parr} & \calcfig{2tp3plus7p} \\ \hline
 		$\frac{4}{3\cdot9}$ & \p{4}\p{div}\p{9} & \calcfig{4divp3t9pa} \\ \hline
-		$\frac{4}{3\cdot9}$ & \p{fraction}\p{4}\p{down}\p{3}\p{times}\p{9} & \calcfig{4divp3t9pb} \\ \hline
+		
 	\end{tabular}
 \end{center}
 
 \begin{center}
 	\begin{tabular}{c | l | l} 		
+	$\frac{4}{3\cdot9}$ & \p{fraction}\p{4}\p{down}\p{3}\p{times}\p{9} & \calcfig{4divp3t9pb} \\ \hline	
 	$\sqrt{25}$ & \p{sqrt}\p{2}\p{5} & \calcfig{sqrt25} \\ \hline
 	$\sqrt[3]{8}$ & \p{shift}\p{sqrt}\p{8} & \calcfig{sqrt_3_8} \\ \hline 
 	$\pi\cdot2^3$ & \p{shift}\p{7}\p{times}\p{2}\p{pown}\p{3} & \calcfig{pit2pow3} \\ \hline
@@ -63,7 +65,7 @@ Hvis vi skriver \p{2}\p{div}\p{5}\p{parl}\p{2}\p{plus}\p{1}\p{parr}, vil 5 ''hek
 \subsection{Omgjøring av format}
 \subsubsection*{Standardformatet}
 Skriver svar som heltall hvor det er mulig. Skriver divisjonsstykker som brøker, og forkorter brøker hvis mulig.
-\eks[1]{
+\eks[]{
 ${4:8}$ kan skrives som $\frac{4}{8}$. Da både $4$ og $8$ er delelige med $4$, er ${\frac{4}{8}=\frac{1}{2}}$.
 \begin{figure}
 	\centering
@@ -186,7 +188,7 @@ Vi kan nå regne trigonometrisk med grader i \texttt{Calculate}. Alle \\ regnest
 	$\atan \left(\frac{\sqrt{3}}{3}\right)$ & \p{shift}\p{tan}\p{sqrt}\p{3}\p{right}\p{div}\p{3} & \calcfig{atan} \\ \hline
 	\end{tabular}
 \end{center}
-\mers{Vi har valgt å bruke \p{div} for divisjon. Ved å bruke \p{fraction} vil kalkolator-uttrykket ligne enda mer på det matematiske uttrykket.}
+\mers{Vi har valgt å bruke \p{div} for divisjon. Ved å bruke \p{fraction} vil kalkulator-uttrykket ligne enda mer på det matematiske uttrykket.}
 \newpage
 \subsubsection*{Regning med radianer}
 Skal vi regne med radianer, må vi endre vinkelmålet til dette:
@@ -281,7 +283,7 @@ Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon p
 \begin{center}
 	\begin{tabular}{l| l | l}
 		\textbf{Type} & \textbf{Matematisk uttrykk} & \textbf{Uttrykk i kalkulator} \\
-		lineær &  $y=ax+b$ &	\texttt{y=ax+b} \\
+		lineær &  $y=a+bx$ &	\texttt{y=a+bx} \\
 		kvadratisk & $y=a+bx+cx^2$ & \texttt{y=a+bx+cx\textasciicircum2} \\
 		logaritmist & $y=a+b\ln x$ & \texttt{y=a+b$\cdot$ln(x)} \\
 		eksponentiell 1 & $y=ae^{bx}$ & \texttt{y=a$\cdot$e\textasciicircum(bx)} \\
@@ -290,14 +292,18 @@ Med moduset \texttt{2-variable} i \texttt{Statistics} kan vi utføre regresjon p
 		rasjonell & $y=a+\frac{b}{x}$ & \texttt{y=a+b/x}
 	\end{tabular} 
 \end{center}
-Ved valg av type får vi oppgitt den best tilpassede verdien for \texttt{a}, \texttt{b} og (eventuelt) \texttt{c}, i tillegg til verdien \texttt{r}. Verdien til \texttt{r} ligger mellom $-1$ og 1, hvor tilpasningen er bedre jo nærmere tallverdien ligger 1. Hvis tall-verdien til \texttt{r} er 1, stemmer funksjonen eksakt med datasettet.
+Ved valg av type får vi oppgitt de best tilpassede verdiene for \texttt{a}, \texttt{b} og (eventuelt) \texttt{c}, i tillegg til verdien \texttt{r}. Verdien til \texttt{r} ligger mellom $-1$ og 1, hvor tilpasningen er bedre jo nærmere tallverdien til $r$ ligger 1. Hvis tallverdien til \texttt{r} er 1, stemmer funksjonen eksakt med datasettet.
 
 \info{Obs!}{
+Legg merke til at den lineære og den kvadratiske funksjonen er ''snudd'' i forhold til slik vi som oftest skriver dem i denne bokserien. Mens vi som oftest skriver ${y=ax+b}$, bruker kalkulatoren regresjon med ${y=a+bx}$. Da er altså $a$ konstantleddet og $b$ er stigningstallet. 
+
+\vsk
+	
 Ved kvadratisk regresjon gis ingen \texttt{r}-verdi.
 }
 \newpage
 \eks{
-	Finn funksjonen $f(x)$ som beskriver linja gjennom punktene $(-4, 2)$ og $(3, 7)$.
+	Finn funksjonen $f(x)$ som beskriver linja gjennom punktene $(-5, 2)$ og $(3, 7)$.
 	
 	\sv
 	Vi skriver punktene inn i en 2-variabel tabell, og utfører lineær regresjon:
@@ -317,7 +323,9 @@ Ved kvadratisk regresjon gis ingen \texttt{r}-verdi.
 		\subfloat[]{\calcfig{linr2}}
 	\end{figure}
 	Altså har vi at
-	\[ f(x)=5,125x+0,625 \]
+	\[ f(x)=5,125+0,625x \]
+	Eventuelt kan vi skrive
+	\[ f(x)=0,625x+5,125 \]
 }
 \newpage
 \begin{comment}
@@ -414,11 +422,11 @@ Vi bruker \texttt{Table} til å finne $f(x)=x^2-x+3$ (som allerede er definert) 
 \end{figure}
 \mers{Kalkulatoren opplyser om at $g(x)$ ikke er definert.}
 }
-\eks[1]{
+\eks[2]{
 	Vi bruker \texttt{Table} og \texttt{Table Range} til å finne $f(x)=x^2-x+3$ (som allerede er definert) for $x$ når
 	\begin{itemize}
 		\item $x$ starter på $-2$ (\texttt{Start}).
-		\item $x$ øker deretter med 1 (\texttt{Step}), frem til $x$ er lavere eller lik $2$ (\texttt{End}).
+		\item $x$ øker deretter med 1 (\texttt{Step}), frem til $x$ er mindre eller lik $2$ (\texttt{End}).
 	\end{itemize}
 	\begin{figure}
 		\subfloat[]{\calcfig{tableb}}
@@ -432,7 +440,7 @@ Vi bruker \texttt{Table} til å finne $f(x)=x^2-x+3$ (som allerede er definert) 
 }
 
 \section*{Midlertidig lagring}
-Når vi regner i \texttt{Calculate}, vil kalkulatoren milertidig lagre det forrige resultatet. Om vi først regner ut $778\cdot3$ og deretter $40-4$, kan vi bruke piltastene for å bla oss frem og tilbake mellom utregningene:
+Når vi regner i \texttt{Calculate}, vil kalkulatoren midlertidig lagre det forrige resultatet. Om vi først regner ut $778\cdot3$ og deretter $40-4$, kan vi bruke piltastene for å bla oss frem og tilbake mellom utregningene:
 \begin{figure}
 	\subfloat[]{\calcfig{94times3up}}
 	\subfloat[]{\calcfig{40min4}}
@@ -461,32 +469,38 @@ Dette kan vi også utnytte for raskt å prøve ut noen funksjonsverdier. Her har
 \end{figure}
 \newpage
 \subsection{Andre innstillinger}
-Vi har allerede sett hvordan vi kan gå inn på innstillinger for å endre vinkelmål fra grader til radianer. En annen ting som kan være praktisk å endre på er visningen av desimaltall. Standardinnstillingen (\texttt{Norm1}) er at tall som har tallverdi mindre enn $0,01$ blir vist på standardform: \vs
+Vi har allerede sett hvordan vi kan gå inn på innstillinger for å endre vinkelmål fra grader til radianer. En annen ting som kan være praktisk å endre på er visningen av desimaltall og store tall. 
+\subsection*{Desimaltall}
+Standardinnstillingen (\texttt{Norm1}) er at tall som har tallverdi mindre enn $0,01$ blir vist på standardform: \vs
 \begin{figure}
 	\centering
 	\subfloat[]{\p{2}\p{div}\p{1}\p{0}\p{0}\p{0}\p{shift}\p{exe}}
 	\subfloat[]{\calcfig{2div1000}}
 \end{figure}
-Ved å velge \texttt{Norm2} kan vi gjøre slik at desimaltall vises i stedet.
+Ved å velge \texttt{Norm2} gjør vi slik at desimaltall vises i stedet.
 \begin{figure}
 	\calcfig{2div1000}
 	\subfloat[]{\p{settings}}
 	\subfloat[]{\calcfig{settingsmenu}}
 	\subfloat[]{\p{ok}} 
 	\subfloat[]{\calcfig{inputslashoutput}} \\
-	\subfloat[]{\p{down}\p{down}}
 	\subfloat[]{\calcfig{numberformat}}
 	\subfloat[]{\p{ok}}
 	\subfloat[]{\calcfig{fix}}
-	\subfloat[]{\p{down}\p{down}} \\
-	\subfloat[]{\calcfig{norm}} 
+	\subfloat[]{\calcfig{norm}} \\
 	\subfloat[]{\calcfig{norm1}} 
-	\subfloat[]{\p{down}}
 	\subfloat[]{\calcfig{norm2}} 
 	\subfloat[]{\p{ok}}
+	\subfloat[]{\calcfig{0point002}}
 \end{figure}
-Ved valg av dette nummerformatet får vi at
-\begin{center}
-	\calcfig{0point002}
-\end{center}
+\subsection*{Store tall}
+Ved å skru på \texttt{Digit Seperator}, får vi små mellomrom mellom tusener:
+\begin{figure}
+	\subfloat[]{\calcfig{settingsmenu}}
+	\subfloat[]{\calcfig{inputslashoutput}}
+	\subfloat[]{\calcfig{digitSeperator}} \\
+	\subfloat[]{\calcfig{digitalSeperatoroff}}
+	\subfloat[]{\calcfig{digitalSeperatoron}} 
+	\subfloat[]{\calcfig{1000000}}
+\end{figure}
 \end{document}

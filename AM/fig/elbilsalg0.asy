@@ -3,7 +3,7 @@ import "../../drwgrph" as inh;
 import "../../geo" as geo;
 usepackage("inputenc");
 
-unitsize(0.75cm);
+unitsize(0.65cm);
 
 real s = 50000;
 
@@ -49,5 +49,5 @@ for(int i=1; i<8; ++i){
 
 mktc(0,"0");
 
-label("År etter 2010",(5,-1.5));
-label(rotate(90)*Label("Antall elbiler"),(-2.5,4));
+label("år etter 2010",(5,-1.5));
+label(rotate(90)*Label("antall elbiler"),(-2.5,4));

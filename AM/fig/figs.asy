@@ -314,7 +314,7 @@ void mksq2(pair A=(0,0), pair B=(1,0), real sc=1, real u=sc, pen p=black, real r
     draw(A,rotate(rot)*sq, p);
     }
     
-void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=lightgray){
+void mkgrid(pair A, pair B, real dx=1, real dy=1, pen p=mediumgray){
 	int nx = floor(abs((A.y-A.x)/dx));
 	int ny = floor(abs((B.y-B.x)/dy)); 
 	for (int i=floor(A.x); i*dx<= floor(A.y); ++i){
