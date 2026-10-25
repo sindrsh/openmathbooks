@@ -184,14 +184,27 @@ I utregninger behandler vi benevninger på samme måte som vi behandler variable
 	\alg{
 		\text{grunnflatearealet til sylinderen}&=\pi\cdot \left(4\enh{cm}\right)^2 
 		= 16 \pi \enh{cm}^2 \vn
-		\text{volumet til sylinderen}&= 16\pi \enh{cm}^2 \cdot2\enh{cm} 
-		= 32\pi \enh{cm}^3
+		\text{volumet til sylinderen}= 16\pi \enh{cm}^2 \cdot2\enh{cm} 
+		&= 32\pi \enh{cm}^3 \approx 100,5\enh{cm}^3
 	}
+}
+\eks[3]{
+I en rettvinklet trekant er lengdene til katetene henholdsvis $3\enh{m}$ og $4\enh{m}$. Finn lengden til hypotenusen.
+
+\sv
+Av Pytagoras' setning (se \mb) har vi at
+\alg{
+\text{lengden til hypotenusen}&=\sqrt{(3\enh{m})^2+(4\enh{m})^2} \\
+&=\sqrt{9\enh{cm}^2+16\enh{cm}^2} \\
+&=\sqrt{25\enh{cm}^2} \\
+&= \sqrt{25}\sqrt{\text{cm}^2} \\
+&= 5\enh{cm}	
+}
 }
 \info{\textit{Per}}{
 Mange benevninger inneholder ordet \textit{per} når vi uttaler dem. For eksempel vil melk koste ca. 25\enh{kr} per liter. Dette betyr at for hver hele liter melk vi kjøper, må vi betale 25 kroner. Matematisk sett betyr \textit{per} at benevningen som står etter ordet skal stå i nevner. I stedet for å skrive at melk koster 25\enh{kr} per liter kan vi skrive at melk koster $25\,\frac{\text{kr}}{\text{liter}}$. Gjerne skriver man dette som $25\enh{kr/liter}$.
 }
-\eks[3]{
+\eks[4]{
 En type poteter koster 20\enh{kr/kg}. Hvor mye koster 5\enh{kg} poteter? 
 
 \sv
@@ -311,6 +324,34 @@ Nå har vi at
 	Av \rref{kilopris} har vi nå at
 		\[ \text{kilopris*}=\frac{600}{0,005}=120\,000 \]
 		Altså koster safran 120\,000\enh{kr/kg}.
+}
+\subsubsection*{Omgjøring av arel og volum}
+Gitt et rektangel med lengde $2\enh{dm}$ og bredde $3\enh{dm}$. Da har vi at
+\[ \text{arealet til rektangelet}=2\enh{dm}\cdot3\enh{dm}=6\enh{dm}^2 \]
+Hvis vi i stedet skriver lengdene målt i cm, og regner ut arealet, får vi at
+\[ \text{arealet til lengdene}=20\enh{cm}\cdot30\enh{cm}=600\enh{cm}^2 \]
+Når vi endrer benevningen til en lengde fra dm til cm, flytter vi komma én plass til høyre. Når vi går fra å regne ut et areal med lengder målt i dm til et areal med lengder målt i 'cm', ganger vi altså sammen to verdier som begge har flyttet komma én plass til høyre sammenlignet med de opprinnelige verdiene. Det betyr at den nye verdien til arealet vil ha komma flyttet to plasser til høyre, sammenlignet med den opprinnelige verdien. Tilsvarende kan vi vise at det for et volum vil være snakk om flytting av komma tre plasser.
+
+\reg[Endring av benevning på areal]{
+Når vi skal endre benevning på et areal, må vi flytte komma 2 ganger mellom hver prefiks.
+}
+\eks{
+Skriv om $34\enh{m}^2$ til antall mm.
+
+\sv
+For å gå fra 'm' til 'mm', må vi gå 3 plasser til høyre (se \rref{ompref}). Da må vi flytte komma ${2\cdot3=6}$ plasser til høyre når vi får fra 'm$^2$' til 'mm$^2$'. Altså er
+\[ 34\enh{m}^2=34\,000\,000\enh{mm}^2 \]
+} \regv
+
+\reg[Endring av benevning på volum]{
+	Når vi skal endre benevning på et volum, må vi flytte komma 3 ganger mellom hver prefiks.
+}
+\eks{
+Skriv om $8\enh{cm}^3$ til antall 'dm$^3$'.
+
+\sv
+For å gå fra 'cm' til 'dm', må vi flytte oss 1 plass til venstre (se \rref{ompref}). Da må vi flytte oss ${3\cdot1=3}$ plasser til venstre for å gå fra 'cm$^3$' til 'dm$^3$'. Altså er
+\[ 8\enh{cm}^3=0,008\enh{dm}^3 \]
 }
 
 \end{document}

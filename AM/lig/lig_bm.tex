@@ -4,13 +4,13 @@
 
 \begin{document}
 
-\section{Å finne størrelser}
+\section{Å finne størrelser indirekte}
 Ligninger, formler og funksjoner er begreper som dukker opp i forskjellige sammenhenger, men som i bunn og grunn handler om det samme; \textsl{de uttrykker relasjoner mellom størrelser}. De fleste regelboksene i denne boka inneholder en formel. For eksempel inneholder \rref{maalstk} en formel for 'målestokk'. Når de andre størrelsene er gitt, kan vi sette disse inn i formelen for å finne 'målestokk'. Slik kan vi si at vi da finner 'målestokk' \textsl{direkte}. Har man gjort oppgaver tilknyttet de tidligere kapitlene, har man allerede øvd rikelig på det å finne størrelser \textsl{direkte}.\vsk
 
 I denne seksjonen skal vi se på det å finne størrelser \textsl{indirekte}. Med det mener vi at minst én av følgende gjelder:
 \begin{itemize}
-	\item Vi må løse en likning for å finne den ukjente størrelsen.
 	\item Vi må ut fra en situasjonsbeskrivelse sette opp en formel som inneholder den ukjente størrelsen.
+	\item Vi må løse en likning for å finne den ukjente størrelsen.
 \end{itemize}
 
 
@@ -19,6 +19,10 @@ I denne seksjonen er det bare gitt eksempler, og ingen regler. Det er fordi vi b
 
 På side \pageref{nondimension} så vi hvordan vi kan utføre utregninger uten å ta med benevningene til størrelsene. Det vil vi utelukkende gjøre i dette kapittelet, og derfor vil vi ikke her markere størrelser med \sym{*}.
 }
+\spr{
+Å bruke matematikk til å beskrive en praktisk situasjon kalles \outl{modellering}\index{modellering}. Hvis det er en funksjon som beskriver den praktiske situasjonen, kaller vi gjerne funksjonen for en \outl{modell}\index{modell}.
+}
+\newpage
 \vsk
 \eks[1]{
 For en taxi er det følgende kostnader:
@@ -191,7 +195,7 @@ Resistansen er altså $ 6\,\Omega $.
 \end{enumerate}
 
 \subsection{Utføring av regresjon}
-Tabellen under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} antall $y$ elbiler solgt i Norge $x$ år etter 2010. 
+Verditabellene under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elbilstatistikk/}{elbil.no}} antall $y$ elbiler solgt i Norge $x$ år etter 2010. 
 \begin{figure}
 	\small
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -206,21 +210,21 @@ Tabellen under viser\footnote{Tall hentet fra \net{https://elbil.no/om-elbil/elb
 		$y$ & 101126 & 138477 & 194900 & 260688 & 337201 & 455271 \\ \hline
 	\end{tabular}
 \end{figure}
-Av denne verditabellen kan vi plassere punkt i et koordinatsystem:
+Punkt fra verditabellene kan vi plassere i et koordinatsystem:
 \fig{elbilsalg1}
 \newpage
 \label{linsalg}
 Hvis vi utfører regresjon med en lineær funksjon\footnote{Dette kan vi blant annet gjøre i i GeoGebra se side \pageref{ggbreg}}, får vi denne grafen:
 \fig{elbilsalg2}
-Utfører vi regresjon også med en andregradsfunksjon, får vi følgende resultat:
+Utfører vi regresjon med en andregradsfunksjon, får vi følgende resultat:
 \fig{elbilsalg3}
 \newpage
-Av figurene på side forrige side ser vi at at
+Av figurene på side forrige side ser vi at
 \begin{itemize}
 	\item begge modellene (funksjonene) ''oppfører'' seg feilaktig i starten. Den lineære funksjonen starter med et negativt antall biler, mens den kvadratiske funksjonen starter med at antallet synker fra år 0 til år 1.
 	\item Grafen til den kvadratiske funksjonen passer punktene mye bedre enn grafen til den lineære funksjonen.
 \end{itemize}
-Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var litt under 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit er at antall elbiler i 2021 var 455\,271.
+Hvis vi hadde antatt at den lineære funksjonen ga en god beskrivelse av antallet elbiler fremover i tid, kunne vi lest av fra grafen at antall elbiler i 2021 var litt under 350\,000. Hadde vi i stedet antatt det samme om den kvadratiske funksjonen, kunne vi lest av fra grafen at antall elbiler i 2021 var litt over 425\,000. Fasit (rødt punkt) er at antall elbiler i 2021 var 455\,271.
 \fig{elbilsalg4}
 \subsection{Gyldighetsområde}
 Hvis $f(x)$ er en funksjon som modellerer en situasjon fra virkeligheten, vil $f$ ha et \outl{gyldighetsområde}\index{gyldighetsområde}. Innenfor gyldighetsområdet til en modell krever vi at både $x$ og $f(x)$ har en praktisk tolkning som gir mening. Siden verdien til $f(x)$ er gitt av $x$, er det vanlig å uttrykke gyldighetsområdet ved gyldige verdier for $x$. Som oftest er de ikke slik at vi kan gi eksakte gyldighetsområder, men så er det heller ikke poenget; det viktigste med å drøfte gyldighetsområdet er å sørge for at vi ikke gjør antakelser som er helt urimelige.
@@ -235,13 +239,17 @@ Modellen $f_k$ gir verdier som i praksis gir mening for alle $x>0$, men når $0\
 \newpage
 
 \section{Egenskaper til utvalgte funksjoner}
-I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjoner. En god del av dem skal vi oppsummere her. I tillegg vil vi for hver funksjon presentere en regresjonstest. Vi antar da at vi har fått et datasett i form av en verditabell
 \begin{center}
 	\begin{tabular}{l|c|c|c|c|c}
-	 $x$& $x_a$ & $x_b$ & $x_c$&... \\ \hline
-	 $y$& $y_a$ & $y_b$ & $y_x$&...
+		$\bm x$& $x_1$ & $x_2$ & $x_3$&... \\ \hline
+		$\bm y$& $y_1$ & $y_2$ & $y_3$&...
 	\end{tabular}
 \end{center}
+Når vi ønsker å utføre regresjon på en samling av punkter (et datasett), vil det være nyttig å skissere en graf mellom punktene. Dette vil hjelpe oss med å avgjøre hvilke type funksjoner som kan passe til regresjon. I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjoner. I tillegg vil vi for hver funksjon presentere en regresjonstest. \vsk
+
+Obs! Da regresjonsanalyse er en form for tilnærming av et datasett, er det ikke mulig å gi regler man kan følge slavisk for å avgjøre hva som er en passende modell eller ikke. I et datasett kan det være elementer som gjør at man kan argumentere både for og imot at en spesifikk funksjon passer som modell, så det vil alltid være behov for en helhetsvurdering. Spesielt varsom skal vi være med å konkludere basert på regresjonstestene vi her gir. Kort fortalt kan vi si at en ''bestått'' regresjonstest kan brukes som et godt argument for at en funksjon \textsl{er} en passende modell, mens en ''feilet'' regresjonstest ikke nødvendigvis er et godt argument for at en funksjon \textsl{ikke er} en passende modell.
+
+\newpage
 \stf{
 \textbf{Lineær funksjon} \\
 \[ f(x)=ax+b\quad,\quad a \neq 0 \]
@@ -253,10 +261,26 @@ I \mb, \tmen\ og \tmto\ har vi funnet mange egenskaper til forskjellige funksjon
 \end{itemize}
 Regresjonstest:
 \begin{itemize}
-	\item[(i)] Velg ut tre $x$-verdier $x_1$, $x_2$ og $x_3$, slik at $x_1<x_2<x_3$.
-	\item[(ii)] Ved forskjellige valg av $x_1$, $x_2$ og $x_3$ skal du få at
-	\[ \frac{f(x_2)-f(x_1)}{x_2-x_1}\approx \frac{f(x_3)-f(x_2)}{x_3-x_2}\approx a \]
+	\item[(i)] Velg ut to punkt $(x_A, y_A)$ og $(x_B, y_B)$, slik at $x_A<x_B$.
+	\item[(ii)] Ved forskjellige valg av punkt skal vi få at
+	\[ \frac{y_B-y_A}{x_B-x_A}\approx a \]
 \end{itemize}
+\begin{center}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{reglinfunka}} \\
+			$a>0$
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{reglinfunkb}} \\
+			$a<0$
+		\end{figure}
+	\end{minipage}
+\end{center}
 }
 \newpage
 \eks{
@@ -357,11 +381,27 @@ I modellen for $s$ er ${2a=2\cdot4.92=9.84}$. Begge forholdene vi har regnet ut 
 \end{itemize}
 Regresjonstest: 
 \begin{itemize}
-	\item[(i)] Velg ut to $x$-verdier $x_1$ og $x_2$ slik at $x_2-x_1=h$.
-	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, men lik verdi for $h$, skal du få at
-	\[ \frac{f(x_2)}{f(x_1)}\approx b^h \]
+	\item[(i)] Velg ut to punkt $(x_A, y_A)$ og $(x_B, y_B)$, slik at $x_B-x_A=h$.
+	\item[(ii)] Ved forskjellige valg av punkt, men lik verdi for $h$, skal vi få at
+	\[ \frac{y_B}{y_A}\approx b^h \]
 \end{itemize}
 \mers{Regresjonstesten kan oppsummeres slik: Den prosentvise endringen mellom like store intervaller er den samme.}
+\begin{center}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{regekspfunka}} \\
+			$b>0$
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{regekspfunkb}} \\
+			$b<0$
+		\end{figure}
+	\end{minipage}
+\end{center}
 }
 \newpage
 \eks{
@@ -399,53 +439,13 @@ Her er ${x_B-x_A=h=30}$, og i modellen er ${b=1.0246}$. Da er ${b^h=1.0246^30\ap
 }
 
 \newpage
-\eks{
-Tabellen under viser et anslag av verdens befolkning for utvalgte år i perioden 1800\,-\,2020.
-\begin{center} 
-	\small
-	\begin{tabular}{|l|r|r|r|r|r|r|}
-		\hline
-		År & 1800 & 1850 & 1900 & 1950 & 2000 & 2020 \\
-		\hline
-		Befolkning (milliarder) & 1{,}00 & 1{,}26 & 1{,}65 & 2{,}50 & 6{,}14 & 7{,}84 \\
-		\hline
-	\end{tabular}
-\end{center}
-La $B(t)$ være befolkningen (i antall milliarder) $t$ år etter året 1800. Skisser grafen til $B$, og argumenter for at
-\[ B(t)=0.80\cdot1.05^x \]
-er en passende modell.
-
-\sv
-Vi omskriver verditabellen slik at ${t=0}$ tilsvarer året 1800:
-\begin{center} 
-	\small
-	\begin{tabular}{|l|r|r|r|r|r|r|}
-		\hline
-		$t$ (år) & 0 & 50 & 100 & 150 & 200 & 220 \\
-		\hline
-		Befolkning (milliarder) & 1.00 & 1.26 & 1.65 & 2.50 & 6.14 & 7.84 \\
-		\hline
-	\end{tabular}
-\end{center}
-I modellen er $B(0)=0.80\cdot1.05^0=0.80$. Dette samsvarer greit nok med punktet $(0, 1.00)$ fra verditabellen (modellen avviker verditabellen med 20\%). Grafen øker gradvis raskere når $t$ øker, og det gjør også en eksponentialfunksjon.
-%\fig{regregeksp}
-Regresjonsanalyse:
-Vi velger først ${(x_A, y_B)=(0, 1.00)}$ og ${(x_B, y_B)=(50, 1.26)}$, og deretter ${(x_A, y_A)=(150, 2.50)}$ og ${(x_B, y_B)=(200, 6.14)}$.
-Da får vi at
-\[ \frac{1.26}{1,00}=1.26\quad,\quad \frac{6.14}{2.50}\]
-I modellen har vi at $b=1.05$. Videre er
-\[ 1.26\approx 1.05^50 \]
-}
-
-
-\newpage
 \stf{\textbf{Potensfunksjon}
 	\[ f(x)=a x^{b}\quad,\quad a>0, b>0,\text{ og } x\geq0\]
 	\begin{itemize}
 		\item Verdien til $f$ stiger hele tiden.
 		\item Har $x=0$ som eneste nullpunkt.
-		\item Hvis ${b<1}$: Verdien til $f$ stiger raskt for små verdier av $x$, og stiger sakte for store verdier av $x$.
 		\item Hvis ${b>1}$: Verdien til $f$ stiger sakte for små verdier av $x$, og stiger raskt for store verdier av $x$.	
+		\item Hvis ${b<1}$: Verdien til $f$ stiger raskt for små verdier av $x$, og stiger sakte for store verdier av $x$.
 	\end{itemize}
 Regresjonstest: 
 \begin{itemize}
@@ -453,6 +453,22 @@ Regresjonstest:
 	\item[(ii)] Ved forskjellige valg av $x_1$ og $x_2$, skal du få at
 	\[ \frac{\log(y_2)-\log(y_1)}{\log(x_2)-\log(x_1)} \approx \frac{\log(y_3)-\log(y_2)}{\log(x_3)-\log(x_2)}\approx b  \] 		
 \end{itemize}
+\begin{center}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{regpotfunka}} \\
+			$b>1$
+		\end{figure}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+		\begin{figure}
+			\centering
+			\includegraphics{\figp{regpotfunkb}} \\
+			$b<1$
+		\end{figure}
+	\end{minipage}
+\end{center}
 }
 \newpage
 \eks{
@@ -482,11 +498,12 @@ Forholdstallene er altså relativt like og relativt lik 2.63, som er eksponenten
 \stf{
 \textbf{Logistisk funksjon}
 \[ f(x)=\frac{a}{1+Ce^{-bx}}\quad,\quad C>0, a>0, b>0\]
+\fig{reglogfunk}
 \begin{itemize}
 	\item Grafen har en form som kan minne om en S.
 	\item For lave verdier av $x$ vil $f$ være tilnærmet lik 0, men aldri eksakt lik 0. For høye verdier av $x$ vil $f$ være tilnærmet lik $a$, men aldri eksakt lik $a$.
 	\item $a$ blir ofte kalt \outl{bæreevnen}.
-	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$. Dette er $x$-verdien til vendepunktet, som har $y$-verdi $\frac{a-f(0)}{2}$.
+	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$. Dette er $x$-verdien til vendepunktet, som har $y$-verdi $\frac{a}{2}$.
 	\item To punkt som har lik vertikalavstand til vendepunktet, vil ha lik horisontalavstand til vendepunktet (og omvendt).
 \end{itemize}
 Regresjonstest:
@@ -496,9 +513,10 @@ Regresjonstest:
 	\item[(iii)] Ved forskjellige valg av $y_1$ og $y_2$ skal du få at
 	\[ x_v-x_1\approx x_2-x_v \]
 \end{itemize}
+
 }
 \info{Merk}{
-For både en logistisk funksjon og en sinusfunksjon (se side \pageref{regsin}) vil det ofte være raskere å utføre en regresjonstest direkte ut i fra en skisse, heller enn å utføre konkrete utregninger.
+For både en logistisk funksjon og en sinusfunksjon (se side \pageref{regsin}) vil det ofte være raskere å utføre en regresjonstest direkte ut fra en skisse, heller enn å utføre konkrete utregninger.
 }
 \newpage
 \eks{
@@ -518,7 +536,7 @@ La $C(t)$ være antall tusen celler målt i gjærkulturen $t$ timer etter først
 er en passende modell.
 
 \sv
-Grafen til $C$ ser ut til å ha den klassiske $S$-formen som kjennetegner en logistisk funksjon. $C$ har horisontal asymptote ${y=665}$. Dette samsvarer godt med punktet $(18, 661.8)$ fra verditabellen, da $y$-verdien til dette punktet ser ut til å være nær en maksimalverdi. At ${C(0)=\frac{665}{1+155.4}\approx4.25}$ samsvarer ikke helt med med punktet $(0, 9.6)$ fra verditabellen, men relativt til maksimalverdien er ikke forskjellen så stor. Da maksimalverdien og minimalverdien ser ut til å ha en differanse på ca $660$, er $y$-verdien til vendepunktet ca. 330. Det betyr at punktet $(9, 350.7)$ er nært å være et vendepunkt. Av verditabellen ser vi to punkt som har lik horisontalavstand til $(9, 350.7)$, har også forholdsvis lik vertikalavstand til dette punktet. Alt dette tyder på at en logistisk funksjon er en passende modell.
+Grafen til $C$ ser ut til å ha den klassiske $S$-formen som kjennetegner en logistisk funksjon. $C$ har horisontal asymptote ${y=665}$. Dette samsvarer godt med punktet $(18, 661.8)$ fra verditabellen, da $y$-verdien til dette punktet ser ut til å være nær en maksimalverdi. At ${C(0)=\frac{665}{1+155.4}\approx4.25}$ samsvarer ikke helt med med punktet $(0, 9.6)$ fra verditabellen, men relativt til maksimalverdien er ikke forskjellen så stor. Da maksimalverdien ser ut til å være ca. $660$, er $y$-verdien til vendepunktet ca. 330. Det betyr at punktet $(9, 350.7)$ er nært å være et vendepunkt. Av verditabellen ser vi to punkt som har lik horisontalavstand til $(9, 350.7)$, har også forholdsvis lik vertikalavstand til dette punktet. Alt dette tyder på at en logistisk funksjon er en passende modell.
 \fig{regreglog}
 }
 
@@ -526,6 +544,7 @@ Grafen til $C$ ser ut til å ha den klassiske $S$-formen som kjennetegner en log
 \stf{
 \textbf{Sinusfunksjon} \label{regsin}
 \[ f(x)=a\sin(kx+c)-d\quad,\quad k>0 \]
+\fig{regsinfunk}
 \begin{itemize}
 	\item Har maksimumsverdi $|a|$ og minimumsverdi $-|a|$.
 	\item Svinger periodisk mellom ekstremalverdiene med periode $P=\frac{2\pi}{k}$.

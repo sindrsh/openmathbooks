@@ -138,8 +138,9 @@ Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet
 \info{Minus foran parentes}{
 	La oss se på uttrykket $-(a-b)$. Vi har at
 	\alg{
-	-(a-b)=(-1)\cdot(a-b)	
+	-(a-b)=(-1)\cdot(a-b)	 
 	}
+	
 	Av \rref{gangpara} er
 	\[ (-1)\cdot(a-b)=(-1)\cdot a-(-1)\cdot b=-a+b \]
 	Dermed er 
@@ -149,13 +150,13 @@ Hvis vi i et uttrykk har én variabel isolert på den ene siden av likhetstegnet
 \eks[5]{
 Skriv ut parentesen i uttrykket $-(5-7a)$.
 
-\sv \vso
-\[ -(5-7a)=-5-7a \]
+\sv \vs
+\[ -(5-7a)=-5+7a \]
 }
 \eks[6]{
 Skriv uttrykket så enkelt som mulig.
 \[ d+5bc-4a-(5bc-4a) \]
-\sv \vsb
+\sv \vsb \vs
 \alg{
 d+5bc-4a-(5bc-4a)&=d+5bc-4a-5bc+4a\\
 &=d
@@ -259,9 +260,7 @@ Med innføringen av potenser legger vi også til en linje i \rref{rrek}:
 } \vsk 
 
 \reg[\potgang \label{potgang}]{
-	\begin{equation}
-		a^{m}\cdot a^{n}=a^{m+n}	
-	\end{equation}
+	\[ a^{m}\cdot a^{n}=a^{m+n} \]
 }
 \eks[1]{\vs 
 	\[ 3^{5}\cdot3^{2}=3^{5+2}=3^{7} \]
@@ -278,6 +277,15 @@ Med innføringen av potenser legger vi også til en linje i \rref{rrek}:
 	(Se \rref{potneg} for hvordan en potens med negativ eksponent kan tolkes.)	
 } 
 \newpage
+\eks[4]{
+Faktoriser uttrykket $x^4-2x^3$.
+
+\sv \vsb
+\alg{
+x^4-2x^3 &= x^3\cdot x-x^3\cdot2 \\
+&= x^3(x-2)
+}
+}
 \fork{\ref{potgang} \potgang}{
 	La oss se på tilfellet 
 	\[ a^{2}\cdot a^{3} \]
