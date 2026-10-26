@@ -20,7 +20,7 @@ Stopp søket når $|f(m)| <10^{-6} $. (Løsningen er $x=1$).
 Gitt likningen
 \[ x^3+4x^2-5=0 \]
 \abc{
-\item Lag et skript som ved Newtons metode finner en tilnærmed verdi til løsningen av likningen på intervallet $[0.5, 2]$. Stopp søket når $ {|x_{n+1}-x_1}|<10^{-6} $. (Løsningen er $x=1$).
+\item Lag et skript som ved Newtons metode finner en tilnærmed verdi til løsningen av likningen på intervallet $[0.5, 2]$. Stopp søket når $ {|x_{n+1}-x_n}|<10^{-6} $. (Løsningen er $x=1$).
 \item Hvorfor vil ikke metoden fungere viss du starter med $ x_0=0 $?
 }
 
@@ -28,7 +28,7 @@ Gitt likningen
 
 \op{opgnumtrapalt}
 Forklar hvorfor \eqref{trapmeteq} også kan skrives som
-\[ \int_{a}^{b} f\,dx \approx \Delta x\left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}\left[f(x_i)+f(x_{i+1})\right]\right)  \]
+\[ \int_{a}^{b} f\,dx \approx \Delta x \left(\frac{f(a)+f(b)}{2}+\sum_{i=1}^{n-1}f(x_i)\right)  \]
 
 \gruboprecc{opgprgtrap}
 Lag et skript som implementerer trapesmetoden for tilnærming av $\int_{a}^{b}f(x)\,dx$. Sett $f(x)=e^x$, $a=0$, $b=2$ og $n=100$.
@@ -40,7 +40,7 @@ Hvis funksjonen du skal integrere er konkav, vil trapesmetoden gi et overestimat
 \newpage
 \grubop{opgtrapeunordered}
 Trapesmetoden kan også implementeres slik at delintervallene ikke nødvendigvis har samme bredde. Forklar hvorfor \eqref{trapmeteq} da kan skrives som
-\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right]  \]
+\[ \int_{a}^{b} f\,dx \approx \frac{1}{2}\sum_{i=0}^{n-1} (x_{i+1}-x_i)\left[f(x_i)+f(x_{i+1})\right]  \]
 
 Gitt funksjonen 
 \[ f(x)= 1+\frac{1}{2}x^2+\sin(\pi x) \qquad x\in [0, 2]\]

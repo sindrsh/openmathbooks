@@ -4,6 +4,7 @@ legge til om effektiv rente
 gv24d2opg4
 "snitt"
 
+
 typetall ikke definert. kommenter oppgaver
 store talls lov
 gyldighetsområde
@@ -23,7 +24,7 @@ skriv om 1ph23d2opg5, legg til i MB?
 definere innskudd? innskuddsrente? lånerente?
 72 regelen. Vil +- senke eller heve doblingstiden?
 prisindeks?
-rentefot?
+rentefot? låneopptak?
 gebyr
 prosentvis
 søylediagram med to sorter? grupperte stolpediagram.
@@ -38,3 +39,7 @@ gjennomsnittlig prosentvis enring?
 
 verd/verdt
 tjener/tene
+
+del opp volumoppgavene som sprør om liter
+
+

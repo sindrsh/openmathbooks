@@ -16,6 +16,6 @@ draw(D--Ep,red);
 
 dott(A, "$A$",NW);
 dott(B, "$B$",S);
-dott(C, "$C$",SE);
+dott(C, "$C$",N);
 //dott(D, "$D$",SW);
 dott(Ep, "$E$",S);

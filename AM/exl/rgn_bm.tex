@@ -5,7 +5,7 @@
 \begin{document}
 \section{Regneark}
 
-\textit{I denne boka tar vi utgangspunkt i Mircrosofts programvare Excel. Det finnes andre gode regneark på markedet, for eksempel Google Sheets og Libre Office Calc. Disse tre nevnte regnearkene ligner hverandre mye både i utforming og i funksjoner de har å tilby.
+\textit{I denne boka tar vi utgangspunkt i Microsofts programvare Excel. Det finnes andre gode regneark på markedet, for eksempel Libre Office Calc. Disse to ligner hverandre mye både i utforming og i funksjoner de har å tilby.
 } 
 
 \subsection{Introduksjon}
@@ -41,19 +41,19 @@ Når vi trykket enter-tasten, er det resultatet, 1750, som vises i cellen. Ønsk
 \subsection{Cellereferanser}
 Excels kanskje viktigste egenskap er \textit{cellereferanser}. Dette betyr kort sagt at vi bruker celler istedenfor tall når vi skal gjøre utregninger. I forrige seksjon regnet vi lønnen til Ole ved å gange 250 (timelønnen) med 7 (timer i uka). Ved å bruke cellereferanser kunne vi isteden gjort dette:\vsk
 
-Tallet tilhørende timelønnen (250) står i celle B2, mens tallet tilhørende timer (35) står i celle B3. For å gange tallene i disse cellene kan vi skrive {\tt =B2$ ^* $B3}: 
+Tallet tilhørende timelønnen (250) står i celle B2, mens tallet tilhørende timer (7) står i celle B3. For å gange sammen tallene i disse cellene kan vi skrive {\tt =B2$ ^* $B3}: 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{figs/ex5}\qquad
 	\includegraphics[scale=0.3]{figs/ex4}
 \end{figure}
-Én av fordelene med å bruke cellereferanser er at det blir mye lettere å rette opp i feil som har blitt gjort. Si f.eks. at det skulle stått 300 istedenfor 250 i B3. Om vi derfor endrer B3, vil resultatet i B4 endre seg deretter:
+Én av fordelene med å bruke cellereferanser er at utregninger blir oppdatert når vi gjør endringer. Om vi endrer verdien i B3 til 300, vil resultatet i B4 endre seg deretter:
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{figs/ex6}
 \end{figure}
-\textsl{Merk:} Du kan også trykke på cellene du ønsker å bruke i formlene dine, slik som vist \net{https://drive.google.com/open?id=1S43og4XFAiYyZeFh7tGClBYXoPSv2i0R}{her}.
+\newpage
 \subsection{Kopiering og låsing av celler}
 Kopiering av cellene er en metode som hindrer deg i å skrive de samme formlene om og om igjen. Vi ønsker nå å lage at ark som passer til følgende informasjon:
 \begin{itemize}
@@ -117,7 +117,7 @@ Skal vi låse en celle \textsl{nedover} må vi sette dollaren foran radnummeret,
 \begin{itemize}
 	\item {\tt{=SUMMER}(celle1:celle2)} \\
 	Summerer alle verdiene fra og med celle 1 til og med celle 2.
-	\item {\tt{=MODUS}(celle1:cell2)} \\
+	\item {\tt{=MODUS}(celle1:celle2)} \\
 	Finner typetallet for alle verdiene fra og med celle 1 til og med celle 2.\\
 	\textit{Obs! Hvis datasettet har flere verdier som det er mest av, vil den minste verdien gis som typetallet.}
 	\item {\tt{=GJENNOMSNITT}(celle1:celle2)} \\

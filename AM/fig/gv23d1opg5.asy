@@ -16,7 +16,7 @@ real l = 20;
 
 path p = shift(0, -0.5)*scale(l,1)*unitsquare;
 
-string[] fylker= {"Viken", "Oslo", "Innlandet", "Vestfold og Telemark", "Agder", "Rogaland", "Vestland", "M\o re og Romsdal", "Tr\o ndelag", "Nordland", "Troms og Finmark"};
+string[] fylker= {"Viken", "Oslo", "Innlandet", "Vestfold og Telemark", "Agder", "Rogaland", "Vestland", "M\o re og Romsdal", "Tr\o ndelag", "Nordland", "Troms og Finnmark"};
 int[] antall = {26988, 3991, 14889, 10281, 9920, 8190, 20265, 8852, 15374, 7017, 8293};
 real[] pro = {17.2, 5.8, 37.7, 21.2, 25.3, 12.7, 26.4, 28.2, 28.1, 26.3, 31.4};
 

@@ -11,5 +11,6 @@ omskriving av formler
 areal sylinder
 
 omveltninger i algoppgaver
-skriv at sqrt(3)*2 skrives 2sqrt(3)
-Noen oppgaver med faktorisering av sqrt.
+legg til eksempel \frac{15ab}{a}=\frac{3\cdot5ab}{a}
+
+sjekk om kvadrat o.l. er i indeks.

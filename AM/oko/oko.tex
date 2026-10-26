@@ -187,16 +187,16 @@ For å finne ut hvilket av årene Per hadde best råd i, sjekker vi hvilket år 
 }
 Reallønnen til Per var altså høyest i 2012, derfor hadde han bedre råd da enn i 2016.
 }
-\reg[Nominell lønn og KPI ved to tidspunkt]{
+\reg[Nominell lønn og KPI ved to tidspunkt]{ \label{nomikp}
 La $R_T$, $N_T$, og $\text{KPI}_T$ betegne henholdsvis reallønn, nominell lønn og KPI ved tidspunkt $T$. Ved sammenlikning av respektiv reallønn ved to tidspunkt $A$ og $B$ har vi at
 \begin{itemize}
 	\item[] $\frac{N_B}{N_A}>\frac{\text{KPI}_B}{\text{KPI}_A} \iff$  Reallønnen er høyest ved tidspunkt $B$.
 	\item[] $\frac{N_B}{N_A}<\frac{\text{KPI}_B}{\text{KPI}_A}\iff$ Reallønnen er lavest ved tidspunkt $B$.
-	\item[] $\frac{N_B}{N_A}=\frac{\text{KPI}_B}{\text{KPI}_A}\iff$ Reallønnenene er like.
+	\item[] $\frac{N_B}{N_A}=\frac{\text{KPI}_B}{\text{KPI}_A}\iff$ Reallønnene er like.
 \end{itemize}
 }
 
-\fork{??}{
+\fork{\ref{nomikp} Nominell lønn og KPI ved to tidspunkt}{
 Vi lar $K_T$ betegne kroneverdien ved tidspunkt $T$. Av \rref{realverdi} har vi at \alg{
 \frac{R_B}{R_A}&=\frac{N_B\cdot K_B}{N_A\cdot K_A} 
 }
@@ -221,7 +221,7 @@ Hvis reallønnen er høyest ved tidspunkt $B$, er $\frac{R_B}{R_A}>1$, og da er
 \frac{N_B}{N_A} &> \frac{\text{KPI}_B}{\text{KPI}_A}
 } \vsk
 
-Tilfellet hvor reallønnen ved tidspunkt $B$ er lavest er helt tilsvarende, med snudd ulikhetstegn som eneste forskjell. Tilfellet hov reallønnene er like er helt tilsvarende, med uliketstegnet erstattet med likhetstegnet som eneste forskjell.
+Tilfellet hvor reallønnen ved tidspunkt $B$ er lavest er helt tilsvarende, med snudd ulikhetstegn som eneste forskjell. Tilfellet hov reallønnene er like er helt tilsvarende, med ulikhetstegnet erstattet med likhetstegnet som eneste forskjell.
 }
 
 \newpage
@@ -258,7 +258,7 @@ Altså har prisen for sjokolade (tilnærmet) fulgt indeks, mens prisen for brus 
 }
 
 
-\section{Lån og sparing}
+\section{Lån og sparing I}
 \subsection{Lån}
 Noen ganger har vi  ikke nok penger til å kjøpe det vi ønsker oss, og må derfor ta opp et lån fra en bank. Banken gir oss da en viss \outl{lånesum}\index{lånesum} mot at vi betaler tilbake denne, og \outl{renter}\index{renter}, i løpet av en bestemt tid. Det vanligste er at vi underveis betaler banken det som kalles \outl{terminbeløp}\index{terminbeløp}, som på sin side består av \outl{avdrag}\index{avdrag} og renter. Pengebeløpet vi skylder banken kaller vi \outl{gjelden}\index{gjeld}. \vsk
 
@@ -301,7 +301,7 @@ Hvis vi har betalt avdrag lik 20\,000\enh{kr} i 5 år, er gjelden 0\enh{kr}. Har
 To vanlige typer lån er \textit{serielån} og \textit{annuitetslån}. Lånet fra eksempelet vi akkurat har sett på er et serielån fordi avdragene er like store. Hvis terminbeløpene hadde vært like store, ville det isteden vært et annuitetslån. Hvis lånesum, rente og nedbetalingstid er lik, vil et serielån alltid medføre minst utgifter totalt sett. For privatpersoner er det likevel veldig populært å velge annuitetslån på grunn av at det er lettere å planlegge økonomien når man betaler det samme beløpet hver gang. \vsk
 
 \textbf{Kredittkort}\\
-Kredittkort er et betalingskort som er slik at hvis du f.eks. bruker kortet for å betale 10\,000\,kr, så låner du pengene fra banken. Etter en tid som er avtalt med banken vil den kreve renter av gjelden din. Til hvilken tid du betaler denne gjeldener delvis opp til deg selv, men generelt har kredittkort veldig høye renter, så det lureste er å betale før rentekravet har startet.
+Kredittkort er et betalingskort som er slik at hvis du f.eks. bruker kortet for å betale 10\,000\,kr, så låner du pengene fra banken. Etter en tid som er avtalt med banken vil den kreve renter av gjelden din. Til hvilken tid du betaler denne gjelden er delvis opp til deg selv, men generelt har kredittkort veldig høye renter, så det lureste er å betale før rentekravet har startet.
 \regv
 \reg[Lån]{
 \renewcommand{\arraystretch}{1.5}
@@ -402,7 +402,7 @@ Etter 8 år er det forventet at investeringen er verdt 22\,162\enh{kr}.
 \vsk
 
 \info{Spare med innskuddsrente eller aksjefond?}{
-Som regel er forventet avkastning på et aksjefond høyere enn innskudsrenten du får i en bank, men ulempen er at forventet avkastning ikke gir noen garantier. Forventet avkastning oppgir bare økningen noen antar vil skje. Er du heldig blir økningen høyere, er du uheldig blir den lavere, og kan til og med føre til en \textsl{reduksjon} av investeringen din. I verste fall, rett nok i ekstremt sjeldne tilfeller, kan hele investeringen din ende opp med å bli verdt 0\enh{kr}. \vsk
+Som regel er forventet avkastning på et aksjefond høyere enn innskuddsrenten du får i en bank, men ulempen er at forventet avkastning ikke gir noen garantier. Forventet avkastning oppgir bare økningen noen antar vil skje. Er du heldig blir økningen høyere, er du uheldig blir den lavere, og kan til og med føre til en \textsl{reduksjon} av investeringen din. I verste fall, rett nok i ekstremt sjeldne tilfeller, kan hele investeringen din ende opp med å bli verdt 0\enh{kr}. \vsk
 
 Innskuddsrenten kan også forandre seg noe med tiden, men vil så og si aldri føre til en reduksjon av investeringen din.
 }
@@ -459,7 +459,7 @@ Vi starter med å regne ut skattegrunnlaget, som er bruttolønnen minus fradrage
 		$ = $ &345\,400 & skattegrunnlag* \\ \hline
 	\end{tabular}
 \end{center}
-$23\%\text{ av 345\,000}=79\,350 $. Magnus må betale $79\,350\enh{kr}$ i skatt.
+$23\%\text{ av 345\,000}=79\,442 $. Magnus må betale $79\,442\enh{kr}$ i skatt.
 }
 
 \subsection{Trygdeavgift}
@@ -627,6 +627,72 @@ I et budsjett fører man opp \textsl{forventede} inntekter og utgifter, mens i e
 		\end{tabular}
 	\end{center}
 Lisa gikk altså med 2\,060\,kr i overskudd, men 600\,kr mindre enn forventet ut fra budsjettet. 	
+}
+\section{Lån og sparing II}
+I \tmto\ har vi lagt et teoretisk grunnlag for følger og rekker som kommer til nytte når vi ønsker å studere visse typer modeller for lån og sparing.
+\reg[Formelen for et annuitetslån \label{anugeoforml}]{
+Gitt et annuitetslån med gjeld $ L_0 $, årlig rentefot $ r\,\% $, og ned-betalingstid $ t $ år. Lånet skal nedbetales med et årlig terminbeløp $ T $, hvor første betaling utføres ett år etter låneopptaket. Da er
+	\[ T=\frac{p}{1-(1+p)^{-t}}L_0 \]
+hvor $p=\frac{r}{100}$.
+}
+\eks{
+Du tar opp et lån på 200\,000\,kr som skal nedbetales med årlige beløp i 15 år. Rentefoten er $6\,\%$. Første betaling skal skje ett år etter låneopptaket. Finn det årlige terminbeløpet du må betale.
+
+\sv
+Terminbeløpet $T$ er gitt ved
+\[ T=\frac{0,06}{1-(1+0,06)^{-15}}\cdot200\,000\approx20\,593 \]
+Terminbeløpet er ca. 20\,593\,kr.
+}
+\info{Obs!}{Hvis første nedbetaling utføres umiddelbart etter låneopptaket, har vi at
+\[ T=\frac{p}{(1+p)\left(1-(1+p)^{-t}\right)}L_0 \]}
+\newpage
+\fork{(\ref{anugeoforml}) Formelen for et annuitetslån}{
+Vi har at
+\begin{equation}\label{restbelop}
+	\text{resterende gjeld}=\text{forrige gjeld}-\text{avdrag} 
+\end{equation}
+Ved et annuitetslån er terminbeløpet likt ved hver nedbetaling av lånet. Dette betyr at
+\begin{align}
+	\text{terminbeløp}&=\text{avdrag}+\text{renter} \nonumber \\ 
+	\text{avdrag}&=\text{terminbeløp}-\text{renter} \label{avdrag}
+\end{align}
+Av \eqref{restbelop} og \eqref{avdrag} er
+{
+\alg{
+	\text{resterende gjeld}&=\text{forrige gjeld}-(\text{terminbeløp}-\text{renter}) \\
+	&= \text{forrige gjeld}+\text{renter}-\text{terminbeløp}
+}}
+Da $ \text{renter}=\text{forrige gjeld}\cdot p $, har vi at
+\[ \text{resterende gjeld}=(1+p)\cdot\text{forrige gjeld}-\text{terminbeløp} \]
+Med størrelsene slik de er definert i oppgaven kan dette skrives som
+\[ L_n=(1+p)L_{n-1}-T \]
+Vi har at
+\alg{
+	L_1&=(1+p)L_0 - T\vn
+	L_2&= (1+p)L_1 - T\\
+	&= (1+p)\left[(1+p)L_0 - T\right]-T\\
+	&=(1+p)^2L_0-(1+p)T-T \vn
+	L_3 &= (1+p)L_2 - T \\
+	&= (1+p)\left[(1+p)^2L_0-(1+p)T-T\right] \\
+	&=(1+p)^3L_0-(1+p)^2T-(1+p)T-T \\
+}
+Følgelig er
+\[ L_n=(1+p)^nL_0-T-(1+p)T-(1+p)^2T-...-(1+p)^{n-1}T \]
+Etter $ t $ år er $ L_t=0 $, og dermed er
+\begin{equation}
+	T+(1+p)T+(1+p)^2T+...+(1+p)^{t-1}T =(1+p)^tL_0 \label{anuitetslikningen}
+\end{equation}
+Venstresiden i \eqref{anuitetslikningen} er en geometrisk rekke med første ledd $ T $ og kvotient $ 1+p $. Av formelen for summen av en geometrisk rekke har vi at
+\alg{
+\frac{1-(1+p)^t}{-p}T &= (1+p)^tL_0 \\
+T&= \frac{-p}{1-(1+p)^t}(1+p)^tL_0 
+}
+Da $ (1+p)^t=\frac{1}{(1+p)^{-t}} $, kan vi skrive
+\alg{
+T&=\frac{-p}{1-(1+p)^t}\cdot\frac{1}{(1+p)^{-t}}L_0\br
+&=\frac{-p}{(1+p)^{-t}-1}L_0 \br
+&= \frac{p}{1-(1+p)^{-t}}L_0
+}	
 }
 
 \end{document}

@@ -103,6 +103,10 @@ Skal dette uttrykket være en identitet, må likningen oppfylles for alle verdie
 
 \mers{Ved \textsl{Metode 1} kunne vi også valgt ${r=-90}$ for å lage det fullstendige kvadratet $(5x+9)^2$. I så fall ville vi fått at $s=-9$. Ved \textsl{Metode 2} kunne vi valgt negativ verdi for $s$, og fått at $s=-9$, og dermed at $r=-90$.
 }
+} \vsk
+
+\info{Merk}{
+Av 2. kvadratsetning følger det at $(a-b)^2=(b-a)^2$.
 }
 \newpage
 \fork{\ref{kvadset} \kvadset}{
@@ -336,6 +340,19 @@ Vi gjør følgende trinnvis; med den største potensen av $ x $ i telleren som u
 	&\phantom{aaaaaaaaaa''\,}31 
 }
 }
+\info{Merk}{
+	\textsl{Metode 1} i eksempelet over kan vi også skrive slik:\vsk
+	
+Vi faktoriserer ut nevneren $x+5$ fra telleren $2x^2+3x-4$:
+\alg{
+2x^2+3x-4 &= 2x(x+5)-10x+3x-4 \\
+&= 2x(x+5)-7(x+5)+35-4 \\
+&= 2x(x+5)-7(x+5)+31 \\
+&= (2x-7)(x+5)+31
+}
+Dermed er
+\[ \frac{2x^2+3x-4}{x+5}=\frac{(2x-7)(x+5)+31}{x+5}=2x-7+\frac{31}{x+5} \]
+}
 \newpage
 \eks[2]{
 Utfør polynomdivisjon på uttrykket
@@ -384,6 +401,7 @@ Utfør polynomdivisjon på uttrykket
 %\mer Dette betyr at
 %\[ x^3-3x^2-6x+8 = (x^2+x-2)(x-4) \]
 }
+
 \newpage
 \subsection*{Delelighet og faktorer}
 Eksemplene på side \pageref{polydiveks1}\,-\,\pageref{polydiveks3} peker på noen viktige sammenhenger som gjelder for generelle tilfeller:\regv

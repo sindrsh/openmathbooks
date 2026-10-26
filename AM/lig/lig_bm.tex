@@ -91,7 +91,7 @@ Taxituren koster altså 305\enh{kr}.
 }
 \newpage
 \eks[4]{
-	Et sportsklubb planlegger en tur som krever bussreise. De får tilbud fra to busselskap:
+	En sportsklubb planlegger en tur som krever bussreise. De får tilbud fra to busselskap:
 	\begin{itemize}
 		\item \textbf{Busselskap 1} \\
 		Klassen betaler 10\,000\,kr uansett, og 10\enh{kr} per km.
@@ -125,7 +125,7 @@ Taxituren koster altså 305\enh{kr}.
 }
 
 \eks[5]{
-	\textit{Ohms lov} sier at strømmen $ I $ gjennom en metallisk leder (med konstant temeperatur) er gitt ved formelen
+	\textit{Ohms lov} sier at strømmen $ I $ gjennom en metallisk leder (med konstant temperatur) er gitt ved formelen
 	\[ I = \frac{U}{R} \]
 	hvor $ U $ er spenningen og $ R $ er resistansen.
 	
@@ -172,7 +172,7 @@ Resistansen er altså $ 6\,\Omega $.
 	\alg{
 		T_F &= \frac{9}{5}\cdot T_C+32 \\
 		T_F-32 &= \frac{9}{5}\cdot T_C \\
-		5(T_F-32) &= \cancel{5}\cdot\frac{9}{\cancel{5}}\cdot F_C \\
+		5(T_F-32) &= \cancel{5}\cdot\frac{9}{\cancel{5}}\cdot T_C \\
 		5(T_F-32) &= 9T_C \\
 		\frac{5(T_F-32)}{9} &= \frac{\cancel{9}T_C}{\cancel{9}} \\
 		\frac{5(T_F-32)}{9} &= T_C
@@ -188,7 +188,7 @@ Resistansen er altså $ 6\,\Omega $.
 }
 }
 \section{Regresjon \label{Regresjon}}
-Å beskrive hvordan noe har utviklet seg eller vil utvikle seg er en viktig anvendelsene av funksjoner. Hvis vi har et datasett som vi kan skrive til en verditabell med $x$- og $y$-verdier, kan vi prøve å finne en funksjon som så godt som mulig samsvarer med verditabellen. Dette kalles å utføre \outl{regresjon}. Ved regresjon ønsker vi å finne en funksjon med en graf som
+Å beskrive hvordan noe har utviklet seg eller vil utvikle seg er en viktig anvendelse av funksjoner. Hvis vi har et datasett som vi kan skrive til en verditabell med $x$- og $y$-verdier, kan vi prøve å finne en funksjon som så godt som mulig samsvarer med verditabellen. Dette kalles å utføre \outl{regresjon}. Ved regresjon ønsker vi å finne en funksjon med en graf som
 \begin{enumerate}[label=(\roman*)]
 	\item ligger så nærme som mulig hvert punkt fra verditabellen. Da kan vi si noe om hvordan utviklingen \textsl{har} vært.
 	\item har kjennetegn som passer til situasjonen vi modellerer. Da kan vi anta hvordan utviklingen vil fortsette.
@@ -214,7 +214,7 @@ Punkt fra verditabellene kan vi plassere i et koordinatsystem:
 \fig{elbilsalg1}
 \newpage
 \label{linsalg}
-Hvis vi utfører regresjon med en lineær funksjon\footnote{Dette kan vi blant annet gjøre i i GeoGebra se side \pageref{ggbreg}}, får vi denne grafen:
+Hvis vi utfører regresjon\footnote{Regresjonen er utført med et digitalt hjelpemiddel.} med en lineær funksjon, får vi denne grafen:
 \fig{elbilsalg2}
 Utfører vi regresjon med en andregradsfunksjon, får vi følgende resultat:
 \fig{elbilsalg3}
@@ -257,7 +257,7 @@ Obs! Da regresjonsanalyse er en form for tilnærming av et datasett, er det ikke
 	\item Har ett nullpunkt.
 	\item Grafen er en rett linje.
 	\item $f(0)=b$.
-	\item Hvis $f$ og $x$ proporsjonale størrelser, er $b=0$.
+	\item Hvis $f$ og $x$ er proporsjonale størrelser, er $b=0$.
 \end{itemize}
 Regresjonstest:
 \begin{itemize}
@@ -286,7 +286,7 @@ Regresjonstest:
 \eks{
 \mers{I denne oppgaven har vi valgt å bruke \sym{.} som desimaltegn}. \vsk
 
-Tabellen viser gjennomsnittlig energiforruk i en by ved\\ forskjellige temperaturer.
+Tabellen viser gjennomsnittlig energiforbruk i en by ved\\ forskjellige temperaturer.
 \begin{center}
 	\small
 	\begin{tabular}{|l|r |r |r |r |r |r|}
@@ -305,7 +305,7 @@ Det ser ut til at punktene tilnærmet ligger langs samme linje, og at $F(0)=1,5$
 \fig{regreglin}
 Regresjonstest: Først velger vi ${(x_A, y_A)=(-10.3, 1.866)}$ og ${(x_B, y_B)=(-6.4, 1.732)}$. Deretter velger vi ${(x_A, y_A)=(-0,1, 1.517)}$ og ${(x_B, y_B)=(-7.8, 1.237)}$. Da får vi at
 \[ \frac{1.732-1.866}{-6.4-(-10.3)}\approx -0.034\quad,\quad \frac{1.237-1.517}{7.8-0.1}\approx -0.036 \]
-Forholdstallene er altså relativt like, og relativt lik $-0.036$, som er stigningstallet til $F$. Det ser altså ut til at en lineær funksjon passer godt som modell for $F$.
+Forholdstallene er altså relativt like, og relativt lik $-0.035$, som er stigningstallet til $F$. Det ser altså ut til at en lineær funksjon passer godt som modell for $F$.
 }
 \newpage
 \stf{
@@ -374,7 +374,7 @@ I modellen for $s$ er ${2a=2\cdot4.92=9.84}$. Begge forholdene vi har regnet ut 
 \stf{\textbf{Eksponentialfunksjon}
 \[ f(x)=a b^{x}\quad,\quad b>0\text{ og } b\neq 1 \]
 \begin{itemize}
-	\item Funksjonsverdien enten øker heller tiden eller minker hele tiden.
+	\item Verdien til $f$ enten øker hele tiden eller minker hele tiden.
 	\item $f(0)=a$.
 	\item Hvis $b<1$: Verdien til $f$ vil nærme seg 0 når $x$ øker, men aldri bli eksakt lik 0.
 	\item Hvis $b>1$: Verdien til $f$ øker gradvis raskere når $x$ øker.
@@ -415,7 +415,7 @@ I et eksperiment ble antall bakterier i en væske telt hver halvtime. Tabellen v
 		\hline
 	\end{tabular}
 \end{center}
-Lag $B(t)$ være antall bakterier 1\,h og $t$ minutter etter første måling. Skisser grafen til $B$, og argumenter for at
+La $B(t)$ være antall bakterier 1\,h og $t$ minutter etter første måling. Skisser grafen til $B$, og argumenter for at
 \[ B(t)=4.08\cdot1.0246^x \]
 er en passende modell. 
 
@@ -472,7 +472,7 @@ Regresjonstest:
 }
 \newpage
 \eks{
-I et forsøk målte man drivstoffforbruket til en båt ved forksjellige hastigheter. Resultatet av målingene er vist i tabellen under.
+I et forsøk målte man drivstoffforbruket til en båt ved forskjellige hastigheter. Resultatet av målingene er vist i tabellen under.
 \begin{center}
 	\begin{tabular}{lccccc}
 		\hline
@@ -489,7 +489,7 @@ kan være en passende modell.
 \sv
 Vi ser at grafen til $F$ stiger hele tiden, og at den stiger raskere etthvert som $v$ øker. Med tanke på at den stiger saktere for mindre verdier av $x$, kan det se ut som at grafen omtrent vil skjære origo. Alt dette passer godt med en potensfunksjon.
 \fig{regregpot}
-For å være ekstre grundige gjennomfører vi en regresjontest. Vi velger først ${(x_A, y_A)=(10, 180)}$ og ${(x_B, y_B)=(12, 280)}$, og deretter $(x_A, y_A)=(10, 180)$ og ${(x_B, y_B)=(18, 850)}$.
+Regresjonstest: Vi velger først ${(x_A, y_A)=(10, 180)}$ og ${(x_B, y_B)=(12, 280)}$, og deretter $(x_A, y_A)=(10, 180)$ og ${(x_B, y_B)=(18, 850)}$.
 Vi finner da at
 \[ \frac{\log 280-\log 180}{\log 12-\log 10} \approx 2,42\quad,\quad \frac{\log 850-\log 180}{\log 18-\log 10} \approx 2,64 \]
 Forholdstallene er altså relativt like og relativt lik 2.63, som er eksponenten til $F$. Det ser altså ut til at en potensfunksjon passer godt som modell for $F$.
@@ -503,7 +503,7 @@ Forholdstallene er altså relativt like og relativt lik 2.63, som er eksponenten
 	\item Grafen har en form som kan minne om en S.
 	\item For lave verdier av $x$ vil $f$ være tilnærmet lik 0, men aldri eksakt lik 0. For høye verdier av $x$ vil $f$ være tilnærmet lik $a$, men aldri eksakt lik $a$.
 	\item $a$ blir ofte kalt \outl{bæreevnen}.
-	\item $f$ vokser raskest i når ${x=\frac{\ln C}{b}}$. Dette er $x$-verdien til vendepunktet, som har $y$-verdi $\frac{a}{2}$.
+	\item $f$ vokser raskest når ${x=\frac{\ln C}{b}}$. Dette er $x$-verdien til vendepunktet, som har $y$-verdi $\frac{a}{2}$.
 	\item To punkt som har lik vertikalavstand til vendepunktet, vil ha lik horisontalavstand til vendepunktet (og omvendt).
 \end{itemize}
 Regresjonstest:
@@ -543,17 +543,17 @@ Grafen til $C$ ser ut til å ha den klassiske $S$-formen som kjennetegner en log
 \newpage
 \stf{
 \textbf{Sinusfunksjon} \label{regsin}
-\[ f(x)=a\sin(kx+c)-d\quad,\quad k>0 \]
+\[ f(x)=a\sin(kx+c)+d\quad,\quad k>0 \]
 \fig{regsinfunk}
 \begin{itemize}
-	\item Har maksimumsverdi $|a|$ og minimumsverdi $-|a|$.
+	\item Har maksimumsverdi $|a|+d$ og minimumsverdi $-|a|+d$.
 	\item Svinger periodisk mellom ekstremalverdiene med periode $P=\frac{2\pi}{k}$.
 	\item Øker/avtar mest når ${x=\frac{\pi n-c}{k}}$, hvor ${n\in\mathbb{Z}}$. Dette er $x$-verdien til vendepunktet.
 	\item Er symmetrisk om vertikallinja gjennom et lokalt toppunkt/bunnpunkt. 
 \end{itemize}
 Regresjonstest 1:
 \begin{itemize}
-	\item[(i)] Finn tilnæremde koordinater for vendepunktet. Sett dette punktet til $(x_v, y_v)$.
+	\item[(i)] Finn tilnærmede koordinater for vendepunktet. Sett dette punktet til $(x_v, y_v)$.
 	\item[(ii)] Finn to $y$-verdier $y_1$ og $y_2$ slik at ${y_1<y_v<y_2}$ og ${y_v-y_1\approx y_2-y_v}$. Sett de samsvarende $x$-verdiene til henholdsvis $y_1$ og $y_2$ lik $x_1$ og $x_2$.
 	\item[(iii)] Ved forskjellige valg av $y_1$ og $y_2$ skal du få at
 	\[ x_v-x_1\approx x_2-x_v \]
@@ -568,7 +568,7 @@ Regresjonstest 2:
 }
 \newpage
 \eks{
-Ved å innføre en prosentvis skala for belysningsgraden til månen, får vi at belysningsgraden er 0\,\% ved nymåne og 100\% ved fullmåne. Tabellen under viser observert belysningsgrad for månen i perioden 9.\,-\,27. desember.
+Ved å innføre en prosentvis skala for belysningsgraden til månen, får vi at belysningsgraden er 0\,\% ved nymåne og 100\% ved fullmåne. Tabellen under viser observerte belysningsgrader for månen i perioden 9.\,-\,27. desember.
 \begin{center}
 	\small
 	\begin{tabular}{l|r|r|r|r|r|r|r|}
@@ -596,7 +596,7 @@ Vi starter med å omskrive verditabellen slik at ${t=0}$ tilsvarer 09. desember:
 	\end{tabular}
 \end{center}
 
-Månenfasene svinger periodisk, og det gjør også en sinusfunksjon. Når ${t=0}$ er ${B\approx 0}$ (utregning utelatt), og dette samsvarer godt med verditabellen. Da belysningsgraden går fra minimum til maksimum i løpet av ca. 15 dager, forventer vi at perioden er ca. 30 dager. Perioden til $B$ er ${\frac{2\pi}{\frac{2\pi}{29.3}}=29,3}$. Dette samsvarer godt med verditabellen. I tillegg ser vi at $B(12)\approx B(18)$. Dette antyder symmetri om vertikallinja gjennom toppunktet $(15, 100)$. Alt dette taler for at en sinusfunksjon er en passende modell for $B$.
+Månefasene svinger periodisk, og det gjør også en sinusfunksjon. Når ${t=0}$ er ${B\approx 0}$ (utregning utelatt), og dette samsvarer godt med verditabellen. Da belysningsgraden går fra minimum til maksimum i løpet av ca. 15 dager, forventer vi at perioden er ca. 30 dager. Perioden til $B$ er ${\frac{2\pi}{\frac{2\pi}{29.3}}=29,3}$. Dette samsvarer godt med verditabellen. I tillegg ser vi at $B(12)\approx B(18)$. Dette antyder symmetri om vertikallinja gjennom toppunktet $(15, 100)$. Alt dette taler for at en sinusfunksjon er en passende modell for $B$.
 
 \fig{regregsin}
 }
@@ -619,7 +619,7 @@ Månenfasene svinger periodisk, og det gjør også en sinusfunksjon. Når ${t=0}
 	\[ \frac{f(b)-f(a)}{b-a} \]
 	Hvis vi antar at dette forholdet er konstant for $ {x\in[a, b]} $, antar vi at $ f $ og $ x $ representerer proporsjonale størrelser på intervallet.\vsk
 	
-	Hvis vi ser tilbake til (den alternative) definisjonen av den deriverte i \tmen, innser vi at $ f'(a) $ er den gjennomsnittlige vekstfaktoren til $ f $ på intervallet $ [a, b] $ når $ {b\to a} $. Da går $ [a, b] $ mot å inneholde bare ett element, som er $ a $.
+	Hvis vi ser tilbake til (den alternative) definisjonen av den deriverte i \tmen, innser vi at $ f'(a) $ er den gjennomsnittlige vekstfarten til $ f $ på intervallet $ [a, b] $ når $ {b\to a} $. Da går $ [a, b] $ mot å inneholde bare ett element, som er $ a $.
 }
 \eks[1]{??}
 \newpage
