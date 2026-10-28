@@ -285,6 +285,10 @@ Figuren under viser de respektive grafene til funksjonene $f(x) = \cos(2x)$ og $
 \grubop{opgintlogist}
 Finn integralet.
 \[\int \displaystyle \frac{1}{1+e^{-kx}}\deltax \]
+
+\grubop{opgintoverflatekule}
+Gitt funksjonen $f(x)=\sqrt{r^2-x^2}$.
+Bruk formelen fra \refgrubs{opgintomdroverflate} til å finne overflatearealet til $f$ på intervallet $[-r, r]$.
 \newpage
 \grubop{opgintarchi}
 Gitt funksjonen $f(x)=a x^2+b x + c$ og punktene $A=(p, f(p))$ og $B=(q, f(q))$.
@@ -331,9 +335,35 @@ hvor $ g(x)=f'(x) $.
 	\textbf{b)} Bruk det faktum at $  \int f(x)\, dx = \tan x $ og at $ \int f(x)\, dx \approx \int g(x)\, dx$ for å finne en tilnærming til $ \tan x $
 \end{comment}
 
+\grubop{opgintomdroverflate}
+Gitt omdreiningslegemet til funksjonen $f(x)$ på intervallet $[a, b]$. Vis at overflatearealet til omdreiningslegemet er gitt ved
+\[ A=2\pi\int_{a}^{b} f\sqrt{1+(f')^2}\deltax \]
+
 \grubop{opgintxkvadmdef}
 Bruk definisjonen fra (\ref{bint}) til å vise at
 \[ \int\limits_a^b x^2 \deltax = \frac{1}{3}(b^3-a^3) \]
+
+\grubop{opgintoverflatekule}
+Gitt omdreiningslegemet vi får ved å dreie grafen til $f(x)$ om $x$-aksen på intervallet $[a, b]$. Overflatearealet til omdreiningslegemet er da gitt ved
+\[ A=2\pi\int_{a}^{b} f\sqrt{1+(f')^2}\deltax \]
+hvor overflaten i endene ikke er medregnet. \vsk
+
+Gitt funksjonen $f(x)=\sqrt{r^2-x^2}$.
+Bruk formelen fra \refgrubs{opgintomdroverflate} til å finne overflatearealet til omdreiningslegemet på intervallet $[-r, r]$, hvor $r>0$. Hvilken type legeme er dette?\vsk
+
+
+Given the solid of revolution obtained by rotating the graph of
+$f(x)$ about the $x$-axis on the interval $[a, b]$. The surface
+area of the solid of revolution is then given by
+\[
+A = 2\pi \int_{a}^{b} f\sqrt{1+(f')^2}\,\mathrm{d}x,
+\]
+where the end surfaces are not included. \vsk
+
+Given the function $f(x)=\sqrt{r^2-x^2}$, where $r>0$.
+Find the
+surface area of the solid of revolution on the interval $[-r, r]$.
+What type of solid is this?
 \begin{comment}
 	\textsl{Hint}: Bruk summen av de naturlige tallene og \eqref{sumkvad} fra s. \pageref{sumkvad}.
 \end{comment}

@@ -364,7 +364,7 @@ Svaret med henholdsvis høyest og lavest verdi er 124 og 38. Altså er
 Kvartilbredden til et datasett kan finnes på følgende måte:
 \begin{enumerate}
 	\item Ranger datasettet fra lavest til høyest verdi.
-	\item Skill det rangerte datasettet på midten, slik at to nye sett oppstår. (Viss det er oddetalls antall verdier i datasettet, utelates medianen).
+	\item Skill det rangerte datasettet på midten, slik at to nye sett oppstår. (Hvis det er oddetalls antall verdier i datasettet, utelates medianen).
 	\item Finn de respektive medianene i de to nye settene.
 	\item Finn differansen mellom medianene fra punkt 3.
 \end{enumerate}
@@ -589,7 +589,26 @@ Histogram for tabellen på side \pageref{histtable}:
 	\fig{stathist}
 \end{center}
 }
-
+\section*{Sentral- og spredningsmål oppsummert}
+Nå som vi har sett på mange forskjellige sentral- og spredningsmål, kan det være greit med en oppsummering av dem. Merk at vi her tar utangspunkt i et datasett hvor elementenene har tallverdier. For å forenkle noen setninger vil vi også skrive bare \textit{verdier}, selv om det er verdier til elementer vi snakker om.
+\stf{
+\begin{center}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{@{}p{2.5cm}  p{8.25cm}}
+		\textbf{Typetall} & Verdien som forekommer flest ganger. Hvis flere verdier forekommer like mange ganger, sier man\newpage enten at typtallet ikke er definert, eller at data-\newline settet har flere typetall.
+		\\
+		\textbf{Median} & Verdien i midten etter at datasettet er sortert fra lavest til høyest. Rundt regnet er 50\% av verdiene i datasettet lavere enn medianen, mens 50\,\% er høyere. \\
+		\textbf{Gjennomsnitt} & Verdien hvert element ville hatt dersom alle\newline elementene hadde lik verdi. \\
+		\textbf{Variasjons}-\newline \textbf{bredde}  & Differansen mellom den høyeste og den laveste verdien i datasettet. \\
+		\textbf{Varians} & Gjennomsnittet av de kvadrerte avvikene. Et mål på hvor mye hvert element skiller seg fra gjennomsnittet. Stor varians vil som regel bety at det er store forskjeller mellom verdiene. Lav varians vil som regel bety små forskjeller.\\
+		\textbf{Standard-}\newline \textbf{avvik} & Kvadratroten av variansen. Indikerer det samme som variansen. \\
+		\textbf{1. kvartil} & Medianen til den laveste halvdelen av det sorterte datasettet. Rundt regnet er 25\% av verdiene i datasettet lavere enn 1. kvartil, mens 75\,\% er høyere.
+		\\
+		\textbf{3. kvartil} & Medianen til den høyeste halvdelen av det sorterte datasettet. Rundt regnet er 25\,\% av verdiene i datasettet høyere enn 3. kvartil, mens 75\% er lavere.\\
+		\textbf{Kvartilbredde} & Differansen mellom 3. kvartil og 1. kvartil.
+	\end{tabular}
+\end{center}
+}
 
 \end{document}
 

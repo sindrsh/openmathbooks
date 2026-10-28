@@ -6,6 +6,81 @@
 \begin{document}
 	
 \section{Faktorisering}
+\subsection*{Samtidig addisjon og subtraksjon}
+Når vi faktoriserer ønsker vi gjerne å få fram en bestemt faktor. Da kan vi utnytte at å legge til og subtrahere med et tall samtidig vil endre på utseendet til uttrykket vårt uten å endre verdien.
+\info{Merk}{
+Omskrivingene vi foretar i kommende \textsl{Eksempel 1} og \textsl{Eksempel 2} kan virke unødvendige, men eksemplene er gitt for å vise en framgangsmåte som vil vise seg å være svært nyttig.
+}
+\eks[1]{
+	Skriv om ${3x^2}$ til et uttrykk hvor minst ett ledd har ${x+1}$ som faktor.
+	
+	\sv
+	Fremgangsmåten vår kan vi beskrive slik
+	\begin{enumerate}
+		\item[(i)] Vi lager et produkt hvor 
+		\begin{itemize}
+			\item $x+1$ inngår som en faktor
+			\item $3x^2$ er et ledd hvis vi skriver ut produktet.
+		\end{itemize}
+		Ved å velge produktet $3x(x+1)$ er begge kriterien oppfylt, siden $x+1$ er en faktor og
+		$3x(x+1)=3x^2+3x$.
+		\item[(ii)] Fra produktet vi har lagd, subtraherer vi det som trengs for at den endelige summen skal bli $3x^2$.
+		Da produktet tilsvarer $3x^2+3x$, må vi subtrahere $3x$ for at den endelige summen skal bli $3x^2$.
+	\end{enumerate}
+	Dette betyr at
+	\[ 3x^2 = 3x(x+1)-3x \]
+} 
+\newpage
+\eks[2]{
+Skriv om ${4x^2+5x+1}$ til et uttrykk hvor minst to ledd har ${x+2}$ som faktor.
+
+\sv
+Vi starter med å omskrive leddet med høyest grad, altså $4x^2$. Med ${x+2}$ som utgangspunkt, har vi at
+\[ 4x^2 = 4x(x+2)-8x\]
+Dermed er
+\[ 4x^2+5x+1=4x(x+2)-8x+5x+1=4x(x+2)-3x+1 \]
+Av de ''resterende'' leddene $-3x$ og $1$ er det $-3x$ som har høyest grad. Vi har at
+\[ -3x=-3(x+2)+6 \]
+Dermed er 
+\alg{
+4x^2+5x+1&=4x(x+2)-3(x+2)+6+1 \\
+&=4x(x+2)-3(x+2)+7
+}
+\mers{Man trenger selvsagt ikke å følge fremgangsmåten vi viser her helt skjematisk. Mange vil nok (for eksempel) se at ${-3x+1=-3x-6+6+1=-3(x+2)+7}$.
+}
+}
+\eks[3]{
+Vis ved faktorisering at $(2x+5)$ er en faktor i $ 2 x^2 + 17 x + 30$. 
+
+\sv
+Vi har at
+\alg{
+2x^2+17x+30 &= x(2x+5)-5x+17x+30 \\
+			&= x(2x+5)+12x+30 \\
+			&= x(2x+5)+6(2x+5)-30+30 \\
+			&= x(2x+5)+6(2x+5) \\
+			&=(x+6)(2x+5)
+}
+\mers{
+Ved å merke oss at  både 12 og 30 har 6 som faktor, kunne vi etter 2. linje skrevet at $12x+30=6(x+5)$, og slik havnet rett på 4. linje.
+}
+}
+\newpage
+\eks[4]{
+Vis ved faktorisering at ${7x^3-2}$ er en faktor i ${35 x^7 - 10 x^4 + 7 x^3 - 2} $.
+
+\sv
+Vi har at
+\alg{
+35 x^7 - 10 x^4 + 7 x^3 - 2  &= 5x^4(7x^3-2)+10x^4- 10 x^4 + 7 x^3 - 2 \\
+&= 5x^4(7x^3-2) + 7 x^3 - 2 \\
+&= 5x^4(7x^3-2) + 1(7 x^3 - 2)\\
+&=(5x^4+1)(7x^3-2)
+}
+}
+
+\newpage
+\subsection*{Kvadratsetningene}
 \reg[\kvadset \label{kvadset}]{
 For to reelle tall $ a $ og $ b $ er \index{kvadratsetningene}
 \alg{
@@ -24,7 +99,7 @@ De tre kvadratsetningene er \textit{identiteter}. En \outl{identitet}\index{iden
 \eks[1]{
 Skriv om $ a^2+8a+16 $ til et fullstendig kvadrat.
 
-\sv \vsb
+\sv
 \alg{
 a^2+8a+16 &= a^2+2\cdot4\cdot a+4^2 \\
 &= (a+4)^2
@@ -33,7 +108,7 @@ a^2+8a+16 &= a^2+2\cdot4\cdot a+4^2 \\
 \eks[2]{
 Skriv om $ q^2 - 5 q + \frac{25}{4}$ til et fullstendig kvadrat. 
 
-\sv \vsb
+\sv
 \alg{
 q^2 - 5 q + \frac{25}{4} &= q^2-2\cdot\frac{5}{2}\cdot q+\left(\frac{5}{2}\right)^2 \br
 &= \left(q-\frac{5}{2}\right)^2
@@ -50,6 +125,12 @@ Skriv om $ 9x^2-24x+16$ til et fullstendig kvadrat.
 }
 }
 \eks[4]{
+	Faktoriser uttrykket $x^2-9$.
+	
+	\sv \vs
+	\[ x^2-9=(x+3)(x-3) \]
+}
+\eks[5]{
 Skriv om $ {k^2+6k +7} $ til et uttrykk der $ k $ er et ledd i et\\ fullstendig kvadrat.
 
 \sv \vsb 
@@ -60,7 +141,7 @@ k^2+6k +7 &= k^2+2\cdot3k+7  \\
 }
 }
 
-\eks[5]{
+\eks[6]{
 Faktoriser $ x^2-10x+16 $.
 
 \sv
@@ -78,7 +159,7 @@ Altså er
 \[ x^2-10x+16=(x-2)(x-8) \]
 }
 \newpage
-\eks[6]{
+\eks[7]{
 Finn verdier for $r$ og $t$ slik at likningen blir en identitet.
 \[ 25 x^2 - rx + 81 = (5x-s)^2 \] \vs \vs \vs
 
@@ -134,7 +215,8 @@ Av distributiv lov ved multiplikasjon (se \mb) har vi at
 }
 
 \newpage
-\reg[\aenato \label{a1a2}]{
+\subsubsection{Sum-produkt-metoden}
+\reg[\aenato \label{a1a2}]{ \index{sum-produkt-metoden}
 Gitt $ x, b, c \in \mathbb{R} $. Hvis $ a_1+a_2=b $ og $ a_1a_2=c$, er 
 \[ x^2+bx+c=(x+a_1)(x+a_2) \]
 }
@@ -164,7 +246,7 @@ Hvis $ a_1+a_2=b $ og $ {a_1a_2=c}$, er
 }
 }
 \newpage
-\section*{Fortegnsskjema}
+\subsection*{Fortegnsskjema}
 En funksjon $f(x)$ består gjerne av uttrykk som har positive og negative verdier for forskjellige verdier av $x$. For å få et tydeligere bilde av når $f$ er positiv eller negativ, kan vi lage et \outl{fortegnsskjema}\index{fortegnsskjema}.
 \eks[1]{
 	Løs ulikheten
